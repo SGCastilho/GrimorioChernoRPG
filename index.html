@@ -17,12 +17,6 @@
     <button class="search-trigger" onclick="openPalette()" aria-label="Buscar no grimório">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>Buscar no grimório…</span><span class="kbd"><span>Ctrl</span><span>K</span></span>
     </button>
-    <div class="data-tools">
-      <button class="mini-btn" onclick="exportData()" title="Exportar backup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>Exportar</button>
-      <button class="mini-btn" onclick="document.getElementById('importFile').click()" title="Importar backup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21V9m0 0l-4 4m4-4l4 4M4 5h16"/></svg>Importar</button>
-      <button class="mini-btn" onclick="syncSrd(true)" title="Atualizar magias SRD"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-5V2M4 17h5v5M19 4a9 9 0 00-15 6M5 20a9 9 0 0015-6"/></svg>Sincronizar</button>
-      <input id="importFile" type="file" accept="application/json,.json" class="hidden" onchange="importData(event)">
-    </div>
     <nav class="nav" id="navContent"></nav>
     <div class="sidebar-footer">
       <button class="icon-btn" onclick="navigate('classes')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Classes</button>
@@ -36,7 +30,7 @@
 </div>
 <div class="palette-overlay" id="paletteOverlay" onclick="if(event.target===this)closePalette()"><div class="palette"><div class="palette-input-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="paletteInput" placeholder="Buscar classes, subclasses ou magias…" oninput="renderPaletteResults()"><span class="esc-hint">Esc</span></div><div class="palette-results" id="paletteResults"></div></div></div>
 <div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()"><div class="modal">
-  <h2 id="modalTitle">Adicionar ao grimório</h2><div class="modal-sub">Conteúdo próprio fica salvo somente neste navegador e pode ser exportado em JSON.</div>
+  <h2 id="modalTitle">Adicionar ao grimório</h2><div class="modal-sub">Conteúdo próprio fica salvo somente neste navegador.</div>
   <div class="modal-tabs"><div class="modal-tab active" id="tabSpell" onclick="switchTab('spell')">Magia</div><div class="modal-tab" id="tabClass" onclick="switchTab('class')">Classe</div><div class="modal-tab" id="tabSubclass" onclick="switchTab('subclass')">Subclasse</div></div>
   <form id="formSpell" onsubmit="return submitSpell(event)">
     <input type="hidden" id="sp_edit_id"><div class="field"><label>Nome</label><input required id="sp_name" placeholder="Ex.: Lâmina de Geada"></div>

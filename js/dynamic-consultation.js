@@ -305,7 +305,7 @@
     const progressionHtml = progression ? renderProgressionTable(c, progression, state.level) : '';
     const featuresHtml = (c.features || []).length ? featuresTab(c, state.level) : '';
     const subclassesHtml = subs.length ? subclassesTab(c, subs, state.level) : '';
-    return '<div class="complete-overview"><div class="overview-guide"><strong>Consulta completa</strong><span>A visão geral reúne fundamentos, criação, progressão, características e subclasses. As abas continuam disponíveis para consultas focadas.</span></div>' + overview + basics + creation + progressionHtml + featuresHtml + subclassesHtml + '</div>';
+    return '<div class="complete-overview">' + overview + basics + creation + progressionHtml + featuresHtml + subclassesHtml + '</div>';
   }
 
   function featuresTab(c, selectedLevel) {
@@ -414,7 +414,7 @@
     const featureContent = (s.features || []).length ? subclassFeatures(s, c, selectedLevel) : '';
     const extraTables = supplementalSubclassTables(s);
     const tableContent = extraTables.length ? renderStructuredTables({...s, tables:extraTables}) : '';
-    return '<div class="complete-overview subclass-complete-overview"><div class="overview-guide"><strong>Consulta completa da subclasse</strong><span>A visão geral reúne apresentação, progressão própria e características da subclasse. A progressão da classe-base permanece somente na página da classe.</span></div><div class="content-panel subclass-intro" style="--card-color:' + attr(c?.color || '#c9a55c') + '"><div class="prose lead-prose">' + formatRichText(s.desc) + '</div></div>' + availability + ownProgression + featureContent + tableContent + '</div>';
+    return '<div class="complete-overview subclass-complete-overview"><div class="content-panel subclass-intro" style="--card-color:' + attr(c?.color || '#c9a55c') + '"><div class="prose lead-prose">' + formatRichText(s.desc) + '</div></div>' + availability + ownProgression + featureContent + tableContent + '</div>';
   }
 
   function subclassFeatures(s, c, selectedLevel) {
@@ -446,7 +446,7 @@
 
   // Atualiza a página Sobre para refletir a estrutura em pasta e a nova versão.
   viewAbout = function () {
-    return '<div class="eyebrow"><span class="dot"></span>Sobre o projeto</div><h1 class="page-title">Grimório ' + APP_VERSION + '</h1><p class="lede">Aplicação local organizada em arquivos de interface, lógica e dados. Classes, subclasses, progressões, favoritos, notas e conteúdo próprio ficam disponíveis diretamente no navegador.</p><div class="license-card"><strong>Atribuição do SRD 5.1</strong><p>Este trabalho inclui material do Documento de Referência do Sistema 5.1 (“SRD 5.1”), da Wizards of the Coast LLC, licenciado sob a Licença Internacional Creative Commons Atribuição 4.0.</p><p>As classes, subclasses e tabelas de progressão oficiais foram estruturadas a partir do Livro do Jogador fornecido para este projeto. Conteúdos identificados como homebrew preservam sua fonte e autoria separadamente.</p></div><div class="license-card"><strong>Conteúdo KibblesTasty</strong><p>Inclui conteúdo de Kibbles’ Compendium of Legends and Legacies, por KibblesTasty Homebrew LLC, disponibilizado no Kibbles’ Reference Document e licenciado sob CC-BY-4.0. As artes do PDF não foram incorporadas.</p></div><div class="license-card"><strong>Armazenamento e backup</strong><p>O projeto não envia suas classes, magias, notas ou favoritos a um servidor. Use <b>Exportar</b> periodicamente para criar um backup JSON.</p></div>';
+    return '<div class="eyebrow"><span class="dot"></span>Sobre o projeto</div><h1 class="page-title">Grimório ' + APP_VERSION + '</h1><p class="lede">Aplicação local organizada em arquivos de interface, lógica e dados. Classes, subclasses, progressões, favoritos, notas e conteúdo próprio ficam disponíveis diretamente no navegador.</p><div class="license-card"><strong>Atribuição do SRD 5.1</strong><p>Este trabalho inclui material do Documento de Referência do Sistema 5.1 (“SRD 5.1”), da Wizards of the Coast LLC, licenciado sob a Licença Internacional Creative Commons Atribuição 4.0.</p><p>As classes, subclasses e tabelas de progressão oficiais foram estruturadas a partir do Livro do Jogador fornecido para este projeto. Conteúdos identificados como homebrew preservam sua fonte e autoria separadamente.</p></div><div class="license-card"><strong>Conteúdo KibblesTasty</strong><p>Inclui conteúdo de Kibbles’ Compendium of Legends and Legacies, por KibblesTasty Homebrew LLC, disponibilizado no Kibbles’ Reference Document e licenciado sob CC-BY-4.0. As artes do PDF não foram incorporadas.</p></div><div class="license-card"><strong>Armazenamento local</strong><p>O projeto não envia suas classes, magias, notas ou favoritos a um servidor. Conteúdos próprios, favoritos e notas permanecem armazenados localmente neste navegador.</p></div>';
   };
 
   render();

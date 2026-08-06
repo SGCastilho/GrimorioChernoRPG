@@ -1,5 +1,5 @@
 {
-  "version": "4.5.0",
+  "version": "4.6.0",
   "classes": 14,
   "subclasses": 51,
   "classNames": [
@@ -34,8 +34,12 @@
     "Patrulheiro": 3,
     "Spellblade": 9
   },
-  "uiRevision": "Classe Spellblade v1.3 integral em PT-BR v4.5",
+  "uiRevision": "Limpeza de interface e correções de cartões v4.6",
   "improvements": [
+    "Correção de contenção dos selos de fonte nos cartões de subclasses",
+    "Remoção dos avisos de consulta completa nas visões gerais",
+    "Remoção dos botões Exportar, Importar e Sincronizar da interface",
+    "Remoção do cartão de status do cache de magias no painel principal",
     "Classe Spellblade v1.3 integralmente traduzida para PT-BR",
     "9 Técnicas de Spellblade com progressões próprias",
     "Progressão real de 1º a 20º nível da classe Spellblade",
