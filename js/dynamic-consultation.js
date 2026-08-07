@@ -320,7 +320,7 @@
   function subclassesTab(c, subs, selectedLevel) {
     const subclassIntro = (c.references || []).find(x => x.kind === 'subclassIntro');
     return '<section class="class-section"><div class="section-heading"><div><h2 class="page-title small-title">Subclasses</h2><p class="section-help">' + subs.length + ' opções disponíveis para esta classe.</p></div></div>' +
-      (subclassIntro ? '<div class="content-panel subclass-group-intro"><div class="panel-head"><h3>' + esc(subclassIntro.title) + '</h3>' + sourceBadge(subclassIntro.page) + '</div><div class="prose">' + formatRichText(subclassIntro.text) + '</div></div>' : '') +
+      (subclassIntro ? '<div class="content-panel subclass-group-intro"><div class="panel-head"><h3>' + esc(subclassIntro.title) + '</h3>' + sourceBadge(subclassIntro.page, subclassIntro.sourceTitle || c.source?.title || 'Livro do Jogador') + '</div><div class="prose">' + formatRichText(subclassIntro.text) + '</div></div>' : '') +
       '<div class="subclass-card-grid">' + subs.map(s => {
         const acquired = selectedLevel ? sectionsAtLevel(s.features || [], selectedLevel).filter(x => x._effectiveLevel).length : (s.features || []).length;
         const firstLevel = effectiveLevelSections(s.features || []).find(x => x._effectiveLevel)?._effectiveLevel || null;
@@ -414,7 +414,8 @@
     const featureContent = (s.features || []).length ? subclassFeatures(s, c, selectedLevel) : '';
     const extraTables = supplementalSubclassTables(s);
     const tableContent = extraTables.length ? renderStructuredTables({...s, tables:extraTables}) : '';
-    return '<div class="complete-overview subclass-complete-overview"><div class="content-panel subclass-intro" style="--card-color:' + attr(c?.color || '#c9a55c') + '"><div class="prose lead-prose">' + formatRichText(s.desc) + '</div></div>' + availability + ownProgression + featureContent + tableContent + '</div>';
+    const referenceContent = (s.references || []).length ? '<section class="class-section subclass-reference-section"><div class="section-heading"><div><h2 class="page-title small-title">Informações da subclasse</h2><p class="section-help">Preceitos, compulsões, relíquias e outras regras sem nível próprio preservadas da fonte.</p></div></div>' + renderContentSections(s.references, true) + '</section>' : '';
+    return '<div class="complete-overview subclass-complete-overview"><div class="content-panel subclass-intro" style="--card-color:' + attr(c?.color || '#9d465b') + '"><div class="prose lead-prose">' + formatRichText(s.desc) + '</div></div>' + referenceContent + availability + ownProgression + featureContent + tableContent + '</div>';
   }
 
   function subclassFeatures(s, c, selectedLevel) {
@@ -422,14 +423,17 @@
     const groupId = 'subclassFeatures-' + s.id;
     return '<section class="class-section"><div class="section-heading"><div><h2 class="page-title small-title">Características da subclasse</h2><p class="section-help">' + (selectedLevel ? 'Características disponíveis até o nível ' + selectedLevel + '.' : 'Progressão completa da subclasse.') + '</p></div>' + detailGroupTools(groupId) + '</div>' +
       sectionLevelSummary(s.features || [], selectedLevel) +
-      (filtered.length ? renderFeatureSections(filtered, c?.color || '#c9a55c', groupId, s.source?.title || c?.source?.title || 'Livro do Jogador') : '<div class="empty"><b>Nenhuma característica disponível</b>Selecione um nível em que esta subclasse já tenha sido escolhida.</div>') + '</section>';
+      (filtered.length ? renderFeatureSections(filtered, c?.color || '#9d465b', groupId, s.source?.title || c?.source?.title || 'Livro do Jogador') : '<div class="empty"><b>Nenhuma característica disponível</b>Selecione um nível em que esta subclasse já tenha sido escolhida.</div>') + '</section>';
   }
 
   viewSubclass = function (id) {
     const s = getSubclass(id);
     if (!s) return notFound('subclasse');
     const c = getClass(s.classId);
-    const classState = stateFor(c?.id || '', 'class');
+    const parentName = c?.name || s.parentClassName || s.classId || 'Classe-base não integrada';
+    const parentColor = c?.color || '#9d465b';
+    const parentSigil = c?.sigilKey || 'book';
+    const classState = c ? stateFor(c.id, 'class') : {level:null};
     const ownState = stateFor(id, 'subclass');
     if (!consultationState[id] && classState.level) ownState.level = classState.level;
     const extraTables = supplementalSubclassTables(s);
@@ -437,16 +441,18 @@
     const tabs = [{id:'overview',label:'Visão geral'},{id:'progression',label:'Progressão',count:progressionRows.length},{id:'features',label:'Características',count:(s.features || []).length},{id:'tables',label:'Tabelas',count:extraTables.length}].filter(tab => tab.id !== 'tables' || tab.count);
     const levels = [...new Set(effectiveLevelSections(s.features || []).map(f => f._effectiveLevel).filter(Boolean))];
     const levelSummary = levels.length ? '<div class="level-strip"><span>Características nos níveis</span>' + levels.map(level => '<b>' + esc(level) + '</b>').join('') + '</div>' : '';
+    const parentCrumb = c ? '<a onclick="navigate(\'class\',\'' + attr(c.id) + '\')" style="cursor:pointer">' + esc(parentName) + '</a>' : '<span>' + esc(parentName) + '</span>';
+    const pendingParentLine = (!c && s.pendingParent) ? '<div class="source-line class-source-line secondary-source-line"><span>Classe-base</span><span>' + esc(parentName) + (s.parentSource ? ' · ' + esc(s.parentSource) : '') + ' · ainda não integrada ao Grimório</span></div>' : '';
 
-    return '<div class="breadcrumb"><a onclick="navigate(\'classes\')" style="cursor:pointer">Classes</a><span>/</span><a onclick="navigate(\'class\',\'' + attr(c?.id || '') + '\')" style="cursor:pointer">' + esc(c?.name || '?') + '</a><span>/</span><span>' + esc(s.name) + '</span></div>' +
-      '<header class="class-hero subclass-hero"><div class="detail-header"><div class="detail-sigil" style="--sigil-bg:' + attr(c?.color || '#c9a55c') + '22;--sigil-color:' + attr(c?.color || '#c9a55c') + '">' + sigil(c?.sigilKey || 'book') + '</div><div><div class="eyebrow class-type-label"><span class="dot"></span>Subclasse de ' + esc(c?.name || '?') + '</div><h1 class="page-title" style="margin-bottom:0">' + esc(s.name) + '</h1></div>' + detailActions('subclass', id) + '</div><div class="source-line class-source-line"><span>' + esc(s.source?.title || c?.source?.title || 'Livro do Jogador') + '</span>' + ((s.source?.pages || s.sourcePage) ? '<span>p. ' + esc(s.source?.pages || s.sourcePage) + '</span>' : '') + '</div>' + levelSummary + '</header>' +
+    return '<div class="breadcrumb"><a onclick="navigate(\'classes\')" style="cursor:pointer">Classes</a><span>/</span>' + parentCrumb + '<span>/</span><span>' + esc(s.name) + '</span></div>' +
+      '<header class="class-hero subclass-hero"><div class="detail-header"><div class="detail-sigil" style="--sigil-bg:' + attr(parentColor) + '22;--sigil-color:' + attr(parentColor) + '">' + sigil(parentSigil) + '</div><div><div class="eyebrow class-type-label"><span class="dot"></span>Subclasse de ' + esc(parentName) + '</div><h1 class="page-title" style="margin-bottom:0">' + esc(s.name) + '</h1>' + ((s.aliases||[]).length ? '<div class="spell-original-title">Também conhecida como: ' + esc(s.aliases.join(', ')) + '</div>' : '') + '</div>' + detailActions('subclass', id) + '</div><div class="source-line class-source-line"><span>' + esc(s.source?.title || c?.source?.title || 'Livro do Jogador') + '</span>' + ((s.source?.pages || s.sourcePage) ? '<span>p. ' + esc(s.source?.pages || s.sourcePage) + '</span>' : '') + '</div>' + pendingParentLine + ((s.otherSources||[]).length ? '<div class="source-line class-source-line secondary-source-line"><span>Outras fontes</span><span>' + (s.otherSources||[]).map(x=>esc(x.title||'Outra fonte') + (x.pages?' · p. '+esc(x.pages):'')).join(' · ') + '</span></div>' : '') + levelSummary + '</header>' +
       consultationToolbar(id, ownState, tabs, true, 'subclass') +
       '<div id="consultation-content" class="consultation-content" tabindex="-1">' + (ownState.tab === 'progression' ? subclassProgressionTable(s, c, ownState.level) : ownState.tab === 'features' ? subclassFeatures(s, c, ownState.level) : ownState.tab === 'tables' ? renderStructuredTables({...s, tables:extraTables}) : subclassOverview(s, c, ownState.level)) + '</div>';
   };
 
   // Atualiza a página Sobre para refletir a estrutura em pasta e a nova versão.
   viewAbout = function () {
-    return '<div class="eyebrow"><span class="dot"></span>Sobre o projeto</div><h1 class="page-title">Grimório ' + APP_VERSION + '</h1><p class="lede">Aplicação local organizada em arquivos de interface, lógica e dados. Classes, subclasses, progressões, favoritos, notas e conteúdo próprio ficam disponíveis diretamente no navegador.</p><div class="license-card"><strong>Atribuição do SRD 5.1</strong><p>Este trabalho inclui material do Documento de Referência do Sistema 5.1 (“SRD 5.1”), da Wizards of the Coast LLC, licenciado sob a Licença Internacional Creative Commons Atribuição 4.0.</p><p>As classes, subclasses e tabelas de progressão oficiais foram estruturadas a partir do Livro do Jogador fornecido para este projeto. Conteúdos identificados como homebrew preservam sua fonte e autoria separadamente.</p></div><div class="license-card"><strong>Guia de Xanathar para Todas as Coisas</strong><p>Esta versão incorpora as 31 subclasses do Capítulo 1 e as 95 magias do Capítulo 3 do PDF em português fornecido para o projeto. As subclasses mantêm suas progressões, características e tabelas auxiliares, e as magias são armazenadas localmente com escola, nível, classes, componentes e regras completas.</p></div><div class="license-card"><strong>Conteúdo KibblesTasty</strong><p>Inclui conteúdo de Kibbles’ Compendium of Legends and Legacies, por KibblesTasty Homebrew LLC, disponibilizado no Kibbles’ Reference Document e licenciado sob CC-BY-4.0. As artes do PDF não foram incorporadas.</p></div><div class="license-card"><strong>Armazenamento local</strong><p>O projeto não envia suas classes, magias, notas ou favoritos a um servidor. Conteúdos próprios, favoritos e notas permanecem armazenados localmente neste navegador.</p></div>';
+    return '<div class="eyebrow"><span class="dot"></span>Sobre o projeto</div><h1 class="page-title">Grimório ' + APP_VERSION + '</h1><p class="lede">Aplicação local organizada em arquivos de interface, lógica e dados. As fontes e catálogos são registrados declarativamente, permitindo incorporar novos livros sem alterar a lógica central da aplicação.</p>' + registeredSourceAboutCards() + '<div class="license-card"><strong>Armazenamento local</strong><p>O projeto não envia suas classes, magias, notas ou favoritos a um servidor. Conteúdos próprios, favoritos e notas permanecem armazenados localmente neste navegador.</p></div>';
   };
 
   render();

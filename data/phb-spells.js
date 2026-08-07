@@ -7223,3 +7223,4 @@ window.GRIMORIO_PHB_SPELLS = [
     "category": "D&D 5e 2014"
   }
 ];
+window.GRIMORIO_REGISTRY.registerSpellCatalog({id:'phb-2014-spells',sourceId:'phb-2014',spells:window.GRIMORIO_PHB_SPELLS});

@@ -368,3 +368,12 @@ body{background:radial-gradient(ellipse 900px 500px at 15% -10%,rgba(169,156,232
 
 /* V4.6 — correções de contenção dos cartões de subclasse */
 .subclass-card-top>div{min-width:0;max-width:100%;overflow:hidden}.subclass-card .source-badge{box-sizing:border-box;width:fit-content;max-width:100%}.subclass-card h3{overflow-wrap:anywhere}
+
+/* V5.2 — Costa da Espada: fontes históricas sem duplicação */
+.secondary-source-line{margin-top:-.55rem;opacity:.88}
+.secondary-source-line>span:last-child{overflow-wrap:anywhere;text-align:right}
+.legacy-spell-section{margin-top:1.35rem}
+.legacy-spell-version .feature-meta span{color:var(--gold);font-family:var(--mono);font-size:.68rem}
+.legacy-spell-version .detail-body{padding-top:.3rem}
+.legacy-stat-grid{margin:.25rem 0 1rem}
+@media(max-width:700px){.secondary-source-line{align-items:flex-start;flex-direction:column;gap:.25rem}.secondary-source-line>span:last-child{text-align:left}.legacy-stat-grid{grid-template-columns:1fr 1fr}}

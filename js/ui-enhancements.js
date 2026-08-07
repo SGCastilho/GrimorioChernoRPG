@@ -137,8 +137,8 @@ function classBasicsData(c) {
   const flat = normalizeBookText(c.basics?.text || '').replace(/\n+/g, ' ').replace(/\s{2,}/g, ' ');
   return {
     hitDie: extractBetween(flat, /Dado de Vida:\s*/i, [/Pontos de Vida no 1[°º]\s*Nível:/i]),
-    hp1: extractBetween(flat, /Pontos de Vida no 1[°º]\s*Nível:\s*/i, [/Pontos de Vida nos Níveis Seguintes:/i]),
-    hpNext: extractBetween(flat, /Pontos de Vida nos Níveis Seguintes:\s*/i, [/PROFICIÊNCIAS/i]),
+    hp1: extractBetween(flat, /Pontos de Vida no 1[°º]\s*Nível:\s*/i, [/Pontos de Vida (?:nos Níveis Seguintes|em níveis superiores):/i]),
+    hpNext: extractBetween(flat, /Pontos de Vida (?:nos Níveis Seguintes|em níveis superiores):\s*/i, [/PROFICIÊNCIAS/i]),
     equipment: extractBetween(flat, /EQUIPAMENTO\s*/i, [])
   };
 }
@@ -251,6 +251,14 @@ renderNav = function() {
     }
   });
 
+  const pendingParents = allSubclasses().filter(s => s.pendingParent && !getClass(s.classId));
+  if (pendingParents.length) {
+    html += '</div><div class="nav-section"><div class="nav-title">Subclasses sem classe-base <span class="count">' + pendingParents.length + '</span></div>';
+    pendingParents.forEach(s => {
+      html += '<a class="nav-item sub ' + (route.view === 'subclass' && route.id === s.id ? 'active' : '') + '" style="cursor:pointer" onclick="navigate(\'subclass\',\'' + attr(s.id) + '\')"><span class="nav-sigil" style="color:#9d465b">' + sigil('book') + '</span><span class="nav-label">' + esc((s.parentClassName || s.classId) + ' · ' + s.name) + '</span></a>';
+    });
+  }
+
   html += '</div><div class="nav-section"><div class="nav-title">Magias <span class="count">' + allSpells().length + '</span></div><a class="nav-item ' + (route.view === 'spells' ? 'active' : '') + '" style="cursor:pointer" onclick="navigate(\'spells\')"><svg class="nav-sigil" style="color:var(--arcane)" viewBox="0 0 32 32">' + SIGILS.spell + '</svg>Catálogo de magias</a><a class="nav-item ' + (route.view === 'about' ? 'active' : '') + '" style="cursor:pointer" onclick="navigate(\'about\')"><svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg>Sobre e licença</a></div>';
   nav.innerHTML = html;
 };
@@ -294,7 +302,7 @@ viewClass = function(id) {
   if (features) toc.push({ id: 'caracteristicas', label: 'Características' });
 
   const subclassIntro = (c.references || []).find(x => x.kind === 'subclassIntro');
-  const subgrid = subs.length ? '<section class="class-section anchor-section" id="subclasses"><div class="section-heading"><div><h2 class="page-title small-title">Subclasses</h2><p class="section-help">' + subs.length + ' opções disponíveis no Livro do Jogador.</p></div></div>' + (subclassIntro ? '<div class="content-panel subclass-group-intro"><div class="panel-head"><h3>' + esc(subclassIntro.title) + '</h3>' + sourceBadge(subclassIntro.page) + '</div><div class="prose">' + formatRichText(subclassIntro.text) + '</div></div>' : '') + '<div class="subclass-card-grid">' + subs.map(s => '<article class="subclass-card" style="--card-color:' + attr(c.color) + '" onclick="navigate(\'subclass\',\'' + attr(s.id) + '\')"><div class="subclass-card-top"><span class="mini-sigil" style="color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</span><div><h3>' + esc(s.name) + '</h3>' + sourceBadge(s.sourcePage) + '</div></div><p>' + esc(cleanExcerpt(s.desc, 180)) + '</p><span class="read-link">Consultar subclasse →</span></article>').join('') + '</div></section>' : '';
+  const subgrid = subs.length ? '<section class="class-section anchor-section" id="subclasses"><div class="section-heading"><div><h2 class="page-title small-title">Subclasses</h2><p class="section-help">' + subs.length + ' opções disponíveis para esta classe.</p></div></div>' + (subclassIntro ? '<div class="content-panel subclass-group-intro"><div class="panel-head"><h3>' + esc(subclassIntro.title) + '</h3>' + sourceBadge(subclassIntro.page) + '</div><div class="prose">' + formatRichText(subclassIntro.text) + '</div></div>' : '') + '<div class="subclass-card-grid">' + subs.map(s => '<article class="subclass-card" style="--card-color:' + attr(c.color) + '" onclick="navigate(\'subclass\',\'' + attr(s.id) + '\')"><div class="subclass-card-top"><span class="mini-sigil" style="color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</span><div><h3>' + esc(s.name) + '</h3>' + sourceBadge(s.sourcePage) + '</div></div><p>' + esc(cleanExcerpt(s.desc, 180)) + '</p><span class="read-link">Consultar subclasse →</span></article>').join('') + '</div></section>' : '';
   if (subgrid) toc.push({ id: 'subclasses', label: 'Subclasses' });
 
   const refs = (c.references || []).filter(x => x.kind !== 'subclassIntro');

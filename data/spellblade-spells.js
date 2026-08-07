@@ -5700,3 +5700,4 @@ window.GRIMORIO_SPELLBLADE_SPELLS = [
     "sourceNote": "Referência incompleta na fonte. Consulte o autor ou uma versão posterior do compêndio antes de usar esta magia."
   }
 ];
+window.GRIMORIO_REGISTRY.registerSpellCatalog({id:'kibbles-spell-compendium',sourceId:'kibbles',spells:window.GRIMORIO_SPELLBLADE_SPELLS});

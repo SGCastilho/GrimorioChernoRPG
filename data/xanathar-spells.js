@@ -1902,3 +1902,4 @@ window.GRIMORIO_XANATHAR_SPELLS=[
     "category": "Guia de Xanathar"
   }
 ];
+window.GRIMORIO_REGISTRY.registerSpellCatalog({id:'xanathar-spells',sourceId:'xanathar',spells:window.GRIMORIO_XANATHAR_SPELLS});
