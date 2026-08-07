@@ -1,5 +1,14 @@
 # Changelog
 
+## 4.9.0
+
+- Adicionada a subclasse homebrew **Juramento da Lâmina de Bahamut** à classe Paladino.
+- Adicionados os Dogmas da Lâmina e as opções Presença do Rei Dragão e Arma de Platina de Canalizar Divindade.
+- Adicionadas as características Chamas da Redenção (7º), Alvorada Prometida (15º) e O Alvorecer (20º).
+- Adicionada tabela estruturada das Magias da Lâmina de Bahamut.
+- Elowen Nightfall foi registrada na apresentação como a primeira portadora conhecida do juramento, conforme solicitado para a campanha.
+- O título da fonte foi preservado como “Os Lâminas de Bahamut — Homebrew Original”, enquanto o nome da subclasse segue a denominação usada no texto: “Juramento da Lâmina de Bahamut”.
+
 ## 4.8.0
 
 - Incorporadas as 361 magias do Livro do Jogador de D&D 5e 2014 em português.

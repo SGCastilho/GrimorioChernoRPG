@@ -1,7 +1,7 @@
 {
-  "version": "4.8.0",
+  "version": "4.9.0",
   "classes": 14,
-  "subclasses": 51,
+  "subclasses": 52,
   "classNames": [
     "Bardo",
     "Bruxo",
@@ -30,12 +30,18 @@
     "Ladino": 3,
     "Mago": 8,
     "Monge": 3,
-    "Paladino": 3,
+    "Paladino": 4,
     "Patrulheiro": 3,
     "Spellblade": 9
   },
-  "uiRevision": "Catálogo completo de 361 magias do Livro do Jogador incorporado localmente v4.8",
+  "uiRevision": "Juramento da Lâmina de Bahamut integrado como subclasse homebrew do Paladino v4.9",
   "improvements": [
+    "Subclasse homebrew Juramento da Lâmina de Bahamut adicionada ao Paladino",
+    "Progressão própria da Lâmina de Bahamut nos níveis 3, 7, 15 e 20",
+    "Tabela estruturada de Magias da Lâmina de Bahamut",
+    "Dogmas, Canalizar Divindade, Chamas da Redenção, Alvorada Prometida e O Alvorecer catalogados",
+    "Elowen Nightfall registrada na descrição como primeira portadora conhecida do juramento",
+    "Fonte homebrew preservada separadamente do Livro do Jogador",
     "361 magias do Livro do Jogador de D&D 5e 2014 incorporadas integralmente em PT-BR e disponíveis offline",
     "Substituição do catálogo SRD parcial pelo catálogo completo do Livro do Jogador",
     "Braços de Hadar, Armadura de Agathys, Bruxaria e demais magias não presentes no SRD adicionadas",
@@ -118,5 +124,9 @@
     "Mago": 215,
     "Paladino": 45,
     "Patrulheiro": 46
-  }
+  },
+  "bahamutPaladinSubclass": true,
+  "bahamutPaladinSubclassName": "Juramento da Lâmina de Bahamut",
+  "bahamutPaladinFeatureCount": 6,
+  "bahamutPaladinOathSpellRows": 5
 }

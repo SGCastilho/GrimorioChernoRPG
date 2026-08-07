@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 4.8
+# Grimório D&D 5e PT-BR — versão 4.9
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e conteúdos homebrew identificados.
 
@@ -10,7 +10,14 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 
 O conteúdo de classes, subclasses, progressões e do Spell Compendium funciona offline.
 
-## Novidades da versão 4.8
+## Novidades da versão 4.9
+
+- Adicionada a subclasse homebrew **Juramento da Lâmina de Bahamut** para Paladino.
+- A apresentação registra **Elowen Nightfall** como a primeira portadora conhecida do juramento.
+- Incluídos os Dogmas da Lâmina, as duas opções de Canalizar Divindade, Chamas da Redenção, Alvorada Prometida e O Alvorecer.
+- Incluída uma tabela real com as Magias da Lâmina de Bahamut nos níveis 3, 5, 9, 13 e 17.
+- A progressão dinâmica da subclasse aparece nos níveis 3, 7, 15 e 20 e suas características são clicáveis.
+- O conteúdo foi mantido como **Homebrew Original**, separado das subclasses oficiais do Livro do Jogador.
 
 - **361 magias do Livro do Jogador de D&D 5e 2014**, extraídas e estruturadas diretamente da edição em português fornecida para o projeto.
 - O catálogo oficial agora é **totalmente offline** e não depende do cache SRD ou de sincronização externa.
@@ -39,7 +46,7 @@ O conteúdo de classes, subclasses, progressões e do Spell Compendium funciona 
 ## Estrutura
 
 ```text
-grimorio_dnd5e_ptbr_project_4.8/
+grimorio_dnd5e_ptbr_project_4.9/
 ├── index.html
 ├── README.md
 ├── CHANGELOG.md
@@ -49,6 +56,7 @@ grimorio_dnd5e_ptbr_project_4.8/
 │   ├── classes.js
 │   ├── progression.js
 │   ├── homebrew-emissario.js
+│   ├── homebrew-paladin-bahamut.js
 │   ├── homebrew-spellblade-class.js
 │   ├── spells.js
 │   └── spellblade-spells.js
