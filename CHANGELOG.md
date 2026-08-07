@@ -1,5 +1,20 @@
 # Changelog
 
+## 5.9.0
+
+- Integra as duas classes do Capítulo 6 de *Somnus Domina — Zagalhta's Exolunar Collection*: **Cavaleiro Dracônico** (*Dragoneer*) e **Piloto de Frame** (*Frame Pilot*), ambas integralmente localizadas para PT-BR.
+- Adiciona progressões estruturadas do 1º ao 20º nível para as duas classes.
+- Preserva a arquitetura incomum do Cavaleiro Dracônico, em que o **Conceito Central** determina Dados de Vida, salvaguardas, proficiências e tipo de progressão de magia.
+- Integra os **9 Conceitos Centrais** do Cavaleiro Dracônico e os **19 Tipos de Encarnação** descritos pela classe.
+- Integra as **5 Designações Tecnológicas** do Piloto de Frame e preserva as regras de frame unit, Junção, Crescimento e Aprimoramento Inerente.
+- Integra **36 subclasses adicionais** do capítulo para 16 classes já presentes no Grimório.
+- Totaliza **50 novas entradas de subclasse/especialização** de Zagalhta e eleva o projeto para **359 subclasses**.
+- Vincula à nova classe Cavaleiro Dracônico as três subclasses já incorporadas de *Blade, Bone, & Benefit*: Golpeador Sombrio, Véu da Fortuna e Cavaleiro da Escama Fásica.
+- Estrutura **256 características** e **30 tabelas** entre as novas especializações e subclasses de Zagalhta.
+- Preserva as **Compulsões dos Fardos** de Destimus, Jalasaor, Ombra, Setanta, Sihlu e Zega como blocos complementares das subclasses de Alma Favorecida.
+- Mantém os nomes originais em inglês como aliases pesquisáveis, com apresentação e regras de consulta em português brasileiro.
+- Mantém as magias do Capítulo 7 de Zagalhta fora do escopo desta versão.
+
 ## 5.8.0
 
 - Integra a classe **Ministro de Sangue** do Capítulo IX de *Somnus Domina — Blade, Bone, & Benefit*, incluindo criação, fundamentos, 17 características catalogadas e tabela de progressão do 1º ao 20º nível.

@@ -115,10 +115,30 @@
       about: [
         'O Capítulo IX está integrado com a classe Ministro de Sangue, sua progressão completa do 1º ao 20º nível e as oito Seitas Genéticas apresentadas pela fonte.',
         'O índice efetivo do Capítulo X enumera 55 subclasses, todas incorporadas em PT-BR. O sumário geral do livro anuncia 59; o Grimório preserva essa divergência documental e não inventa quatro entradas ausentes do índice.',
-        'Três subclasses do Capítulo X pertencem ao Dragoneer, cuja classe-base é atribuída pelo próprio livro a Zagalhta’s Exolunar Collection. Elas permanecem consultáveis em uma seção de classe-base ainda não integrada, sem fabricar regras do Dragoneer.',
+        'As três subclasses de Cavaleiro Dracônico do Capítulo X — Golpeador Sombrio, Véu da Fortuna e Cavaleiro da Escama Fásica — agora estão vinculadas à classe-base integrada a partir de Zagalhta’s Exolunar Collection.',
         'Fardo de Gotham e Fardo de Scorn possuem texto mecanicamente revisado neste compêndio em relação às versões de Lyre e, por isso, são preservados como versões próprias de Blade, Bone, & Benefit em vez de sobrescrever as anteriores.',
         'O Capítulo XI — Biblioteca de Magias está representado integralmente: 48 entradas novas no catálogo e 60 magias reimpressas vinculadas às entradas de Lyre já existentes, evitando duplicação na busca.',
         'Os grupos de magia da fonte — Artes do Valor, Valores Sangrentos, Palavras Seladas, Códice Pecaminoso, Moralismos Desvinculados e Zanjen — são preservados como traços pesquisáveis. O conteúdo segue a estrutura opcional 5.19 descrita pelo próprio livro.'
+      ]
+    },
+    {
+      id: 'zagalhta-exolunar',
+      title: "Somnus Domina — Zagalhta's Exolunar Collection",
+      shortTitle: "Zagalhta's Exolunar Collection",
+      filterLabel: "Zagalhta's Exolunar Collection",
+      homeLabel: "Zagalhta's Exolunar Collection",
+      catalogLabel: "Zagalhta's Exolunar Collection",
+      order: 57,
+      showOnHome: true,
+      showInAbout: true,
+      aliases: ["Zagalhta's Exolunar Collection", 'Zagalhta’s Exolunar Collection', 'Somnus Domina — Zagalhta’s Exolunar Collection'],
+      matchIncludes: ["Zagalhta's Exolunar Collection", 'Zagalhta’s Exolunar Collection'],
+      about: [
+        'O Capítulo 6 está integrado com duas classes completas em PT-BR: Cavaleiro Dracônico (Dragoneer) e Piloto de Frame (Frame Pilot), ambas com progressão estruturada do 1º ao 20º nível.',
+        'O Cavaleiro Dracônico preserva sua arquitetura modular: nove Conceitos Centrais alteram Dados de Vida, salvaguardas, proficiências e progressão de conjuração. A classe também mantém os 19 Tipos de Encarnação e suas regras próprias.',
+        'O Piloto de Frame preserva o subsistema de pilotagem da fonte e inclui cinco Designações Tecnológicas: Coordenador, Escaramuçador, Soldado de Assalto, Tecnocarregador e Manipulador de Vórtice.',
+        'As 36 subclasses adicionais do Capítulo 6 foram localizadas para PT-BR e vinculadas às classes correspondentes. Somadas aos nove Conceitos Centrais e cinco Designações Tecnológicas, a fonte adiciona 50 entradas de especialização/subclasse ao Grimório.',
+        'As regras e termos exclusivos da 5.19 — como Fadiga de Combate, aceleração 0-G, Junção, Cargas Arcanas, Dado de Favor e Astromancia — foram preservados quando fazem parte das mecânicas da fonte. As magias do Capítulo 7 não fazem parte desta etapa de integração.'
       ]
     },
     {

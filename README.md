@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 5.8
+# Grimório D&D 5e PT-BR — versão 5.9
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
 
@@ -10,21 +10,44 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 
 Os catálogos incorporados funcionam offline.
 
-## Novidades da versão 5.8
+## Novidades da versão 5.9
 
-- **Ministro de Sangue** integrado como a 20ª classe do Grimório, com progressão estruturada do 1º ao 20º nível, fundamentos, criação, características e referência às Seitas Genéticas.
-- **8 Seitas Genéticas** do Ministro de Sangue integradas em PT-BR.
-- **55 subclasses** efetivamente enumeradas pelo índice do Capítulo X integradas às classes correspondentes.
-- O sumário geral do PDF anuncia **59 subclasses** no Capítulo X, enquanto o índice do capítulo enumera **55**; a versão 5.8 documenta essa divergência e não cria quatro subclasses inexistentes no índice.
-- As **3 subclasses de Dragoneer** são preservadas e podem ser consultadas mesmo sem a classe-base. O próprio livro remete essa classe a *Zagalhta’s Exolunar Collection*, fonte ainda não integrada ao Grimório.
-- **Fardo de Gotham** e **Fardo de Scorn** permanecem como versões próprias de *Blade, Bone, & Benefit*, pois o texto do compêndio contém mudanças mecânicas em relação às versões já catalogadas de Lyre.
-- **339 características de subclasses** da nova fonte foram estruturadas com nível e página de origem.
-- **12 tabelas complementares** foram estruturadas para Magias de Domínio, Magias do Círculo, Magias de Capítulo, Magias de Juramento e listas expandidas de Bruxo.
-- Regras sem nível próprio que fazem parte da identidade mecânica das subclasses — **Compulsões dos Fardos**, **Preceitos dos Juramentos** e **Relíquias dos Caminhos** — permanecem visíveis na visão geral.
-- A navegação lateral, a busca Ctrl+K e a ficha de subclasse agora suportam subclasses cuja classe-base ainda não foi incorporada.
-- O catálogo de magias da versão 5.7 permanece intacto: **48 entradas novas + 60 reimpressões vinculadas**, totalizando 108 magias recuperáveis pela fonte *Blade, Bone, & Benefit*.
+- Integrado o Capítulo 6 — **Opções de Classe** de *Somnus Domina — Zagalhta's Exolunar Collection*.
+- **Cavaleiro Dracônico** (*Dragoneer*) integrado como classe completa, traduzida para PT-BR, com progressão do 1º ao 20º nível.
+- A arquitetura modular do Cavaleiro Dracônico foi preservada: seus **9 Conceitos Centrais** determinam Dado de Vida, salvaguardas, proficiências e progressão de conjuração.
+- Os **19 Tipos de Encarnação** do Cavaleiro Dracônico foram estruturados como tabela real da classe.
+- **Piloto de Frame** (*Frame Pilot*) integrado como classe completa, com progressão do 1º ao 20º nível, Crescimento, Aprimoramentos Inerentes e regras de Junção.
+- As **5 Designações Tecnológicas** do Piloto de Frame foram integradas como especializações consultáveis.
+- Foram integradas **36 subclasses adicionais** do capítulo para Bárbaro, Bardo, Clérigo, Druida, Alma Favorecida, Guerreiro, Inscritor, Monge, Paladino, Cavaleiro das Pétalas, Patrulheiro, Ladino, Feiticeiro, Santo da Espada, Bruxo e Mago.
+- No total, a fonte adiciona **50 novas entradas de subclasse/especialização**: 9 Conceitos Centrais + 5 Designações Tecnológicas + 36 subclasses.
+- As **3 subclasses de Cavaleiro Dracônico** já presentes em *Blade, Bone, & Benefit* agora estão vinculadas à classe-base, deixando de aparecer como conteúdo com classe externa pendente.
+- Nomes originais em inglês são preservados em `originalName`/aliases para pesquisa, enquanto nomes, características, tabelas e textos de consulta ficam em português brasileiro.
+- Termos exclusivos da 5.19, como Fadiga de Combate, aceleração 0-G, Junção, Cargas Arcanas, Dado de Favor e Astromancia, foram preservados conforme a fonte.
+- As magias do Capítulo 7 de Zagalhta **não** foram incluídas nesta etapa.
 
-### Arquitetura para próximas fontes
+## Conteúdo atual
+
+- **22 classes**.
+- **359 subclasses/especializações**.
+- **22 progressões estruturadas**.
+- **1046 registros-base de magias/poderes** antes de conteúdo personalizado do usuário.
+- 361 magias do Livro do Jogador.
+- 95 magias do Guia de Xanathar.
+- 21 magias do Caldeirão de Tasha.
+- 280 magias/revisões de *Lyre's Guide to Retia*.
+- 48 novas entradas de *Blade, Bone, & Benefit*; outras 60 magias do capítulo são vinculadas como reimpressões às entradas já existentes de Lyre.
+- 240 magias/poderes completos + 1 referência incompleta do Spell Compendium.
+- Conteúdo homebrew incorporado anteriormente.
+
+### Distribuição de Zagalhta
+
+- Cavaleiro Dracônico: **9 Conceitos Centrais novos** + **3 subclasses de Blade, Bone, & Benefit já existentes** = 12 opções consultáveis.
+- Piloto de Frame: **5 Designações Tecnológicas**.
+- Subclasses tradicionais de Zagalhta: **36**.
+- Características de subclasses/especializações da nova fonte estruturadas: **256**.
+- Tabelas estruturadas da nova fonte: **30**.
+
+## Arquitetura para próximas fontes
 
 1. Cadastre a fonte com `GRIMORIO_REGISTRY.registerSource(...)`.
 2. Carregue os módulos de classe/subclasse pelo `index.html`.
@@ -32,23 +55,10 @@ Os catálogos incorporados funcionam offline.
 4. Para magias, registre o array com `GRIMORIO_REGISTRY.registerSpellCatalog(...)`.
 5. Execute `node tools/validate-project.js` antes de empacotar a nova versão.
 
-## Conteúdo atual
-
-- **20 classes**.
-- **309 subclasses** no total, incluindo 3 opções de Dragoneer com classe-base externa ainda não integrada.
-- **1046 registros-base de magias/poderes** antes de conteúdo personalizado do usuário.
-- 361 magias do Livro do Jogador.
-- 95 magias do Guia de Xanathar.
-- 21 magias do Caldeirão de Tasha.
-- 280 magias/revisões de Lyre's Guide to Retia.
-- 48 novas entradas de Blade, Bone, & Benefit; outras 60 magias do capítulo são vinculadas como reimpressões às entradas já existentes de Lyre.
-- 240 magias/poderes completos + 1 referência incompleta do Spell Compendium.
-- Conteúdo homebrew incorporado anteriormente.
-
 ## Estrutura relevante
 
 ```text
-grimorio_dnd5e_ptbr_project_5.8/
+grimorio_dnd5e_ptbr_project_5.9/
 ├── index.html
 ├── README.md
 ├── CHANGELOG.md
@@ -62,6 +72,12 @@ grimorio_dnd5e_ptbr_project_5.8/
 │   ├── lyre-subclasses.js
 │   ├── blade-bone-benefit-classes.js
 │   ├── blade-bone-benefit-subclasses.js
+│   ├── zagalhta-classes.js
+│   ├── zagalhta-specializations.js
+│   ├── zagalhta-subclasses-standard.js
+│   ├── zagalhta-subclasses-standard-2.js
+│   ├── zagalhta-subclasses-standard-3.js
+│   ├── zagalhta-compulsions.js
 │   ├── phb-spells.js
 │   ├── xanathar-spells.js
 │   ├── tasha-spells.js

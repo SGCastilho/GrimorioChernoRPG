@@ -151,6 +151,49 @@ for (const item of bbbSubclasses) {
 }
 ok(`Blade, Bone, & Benefit: 1 classe, ${bbbBloodSects.length} Seitas Genéticas, ${bbbChapterX.length} subclasses do Capítulo X, ${bbbFeatureTotal} características, ${bbbTableTotal} tabelas e ${bbbReferenceTotal} blocos complementares verificados`);
 
+// Integridade da integração editorial de Zagalhta's Exolunar Collection v5.9.
+const zagTitle = "Somnus Domina — Zagalhta's Exolunar Collection";
+const zagClasses = classes.filter(item => item?.source?.title === zagTitle);
+const zagSubclasses = subclasses.filter(item => item?.source?.title === zagTitle);
+const zagCoreConcepts = zagSubclasses.filter(item => item.classId === 'dragoneer');
+const zagTechDesignations = zagSubclasses.filter(item => item.classId === 'frame-pilot');
+const zagStandard = zagSubclasses.filter(item => !['dragoneer', 'frame-pilot'].includes(item.classId));
+const zagFeatureTotal = zagSubclasses.reduce((total, item) => total + (item.features || []).length, 0);
+const zagTableTotal = zagSubclasses.reduce((total, item) => total + (item.tables || []).length, 0);
+if (!registry.getSource('zagalhta-exolunar')) fail("Zagalhta: fonte zagalhta-exolunar ausente do registro central.");
+if (zagClasses.length !== 2) fail(`Zagalhta: esperado 2 classes próprias, encontradas ${zagClasses.length}.`);
+for (const cls of zagClasses) {
+  const progression = progressions.find(item => item?.id === cls.id);
+  if (!progression || progression.rows?.length !== 20) fail(`Zagalhta: progressão de ${cls.id} deve possuir 20 níveis.`);
+}
+if (zagCoreConcepts.length !== 9) fail(`Zagalhta: esperado 9 Conceitos Centrais do Cavaleiro Dracônico, encontrados ${zagCoreConcepts.length}.`);
+if (zagTechDesignations.length !== 5) fail(`Zagalhta: esperado 5 Designações Tecnológicas do Piloto de Frame, encontradas ${zagTechDesignations.length}.`);
+if (zagStandard.length !== 36) fail(`Zagalhta: esperado 36 subclasses adicionais, encontradas ${zagStandard.length}.`);
+if (zagSubclasses.length !== 50) fail(`Zagalhta: esperado total de 50 novas entradas de especialização/subclasse, encontradas ${zagSubclasses.length}.`);
+if (zagFeatureTotal !== 256) fail(`Zagalhta: esperado 256 características de subclasse/especialização, encontradas ${zagFeatureTotal}.`);
+if (zagTableTotal !== 30) fail(`Zagalhta: esperado 30 tabelas estruturadas, encontradas ${zagTableTotal}.`);
+for (const item of zagSubclasses) {
+  if (!item.name || !item.originalName) fail(`Zagalhta: subclasse sem nome localizado/original em ${item.id}.`);
+  for (const feature of item.features || []) {
+    if (!feature.title || !feature.text) fail(`Zagalhta: característica incompleta em ${item.id}.`);
+    const level = Number(feature.level);
+    if (!Number.isFinite(level) || level < 1 || level > 20) fail(`Zagalhta: nível inválido em ${item.id}: ${feature.level}`);
+    if (!feature.page) warn(`Zagalhta: característica sem página em ${item.id}: ${feature.title || '(sem título)'}`);
+  }
+  for (const table of item.tables || []) {
+    if (!table.title || !Array.isArray(table.columns) || !table.columns.length || !Array.isArray(table.rows) || !table.rows.length) fail(`Zagalhta: tabela incompleta em ${item.id}.`);
+  }
+}
+const bbbDragoneer = bbbSubclasses.filter(item => item.classId === 'dragoneer');
+if (bbbDragoneer.length !== 3) fail(`Zagalhta/BBB: esperado 3 subclasses de Cavaleiro Dracônico herdadas de Blade, Bone, & Benefit, encontradas ${bbbDragoneer.length}.`);
+if (bbbDragoneer.some(item => item.pendingParent)) fail('Zagalhta/BBB: as subclasses de Cavaleiro Dracônico não devem permanecer com classe-base pendente após a v5.9.');
+const burdenIds = ['destimus', 'jalasaor', 'ombra', 'setanta', 'sihlu', 'zega'].map(name => `zagalhta-favored-soul-${name}`);
+for (const id of burdenIds) {
+  const item = subclasses.find(subclass => subclass.id === id);
+  if (!item?.references?.some(ref => ref.title === 'COMPULSÃO DO FARDO')) fail(`Zagalhta: compulsão de Fardo ausente em ${id}.`);
+}
+ok(`Zagalhta: 2 classes, ${zagCoreConcepts.length} Conceitos Centrais, ${zagTechDesignations.length} Designações Tecnológicas, ${zagStandard.length} subclasses adicionais, ${zagFeatureTotal} características e ${zagTableTotal} tabelas verificados`);
+
 const sourceEntities = [
   ...classes.map(item => ({ type: 'classe', id: item.id, source: item.source })),
   ...subclasses.map(item => ({ type: 'subclasse', id: item.id, source: item.source }))

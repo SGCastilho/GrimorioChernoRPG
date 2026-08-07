@@ -1145,7 +1145,7 @@
     "aliases": [
       "Darkstriker"
     ],
-    "desc": "Um Dragoneer de alma dracônica corrompida que desfere explosões de energia violenta.",
+    "desc": "Um Cavaleiro Dracônico de alma dracônica corrompida que desfere explosões de energia violenta.",
     "sourcePage": 94,
     "source": {
       "title": "Somnus Domina — Blade, Bone, & Benefit",
@@ -1179,7 +1179,7 @@
         "level": 7,
         "page": 94,
         "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
-        "text": "Uma vez por turno, quando obtiver um acerto crítico por resultado natural no d20 de uma jogada de ataque, causa dano adicional do tipo de sua Encarnação igual a 1d8 × o nível do maior espaço de magia de Dragoneer a que tenha acesso, incluindo espaços já gastos."
+        "text": "Uma vez por turno, quando obtiver um acerto crítico por resultado natural no d20 de uma jogada de ataque, causa dano adicional do tipo de sua Encarnação igual a 1d8 × o nível do maior espaço de magia de Cavaleiro Dracônico a que tenha acesso, incluindo espaços já gastos."
       },
       {
         "title": "SIMPATIA VÃ",
@@ -1195,10 +1195,7 @@
         "text": "Você obtém acerto crítico com 18, 19 ou 20 no d20.",
         "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit"
       }
-    ],
-    "pendingParent": true,
-    "parentClassName": "Dragoneer",
-    "parentSource": "Zagalhta’s Exolunar Collection"
+    ]
   },
   {
     "id": "bbb-dragoneer-fortune-veil",
@@ -1258,10 +1255,7 @@
         "text": "Quando obtiver um acerto crítico em um ataque, role dois d20 e registre o maior resultado como uma nova Mudança de Maré, que desaparece no fim do combate.",
         "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit"
       }
-    ],
-    "pendingParent": true,
-    "parentClassName": "Dragoneer",
-    "parentSource": "Zagalhta’s Exolunar Collection"
+    ]
   },
   {
     "id": "bbb-dragoneer-phasescale-knight",
@@ -1283,7 +1277,7 @@
         "title": "REPERTÓRIO DA LÂMINA DRACÔNICA",
         "level": 1,
         "page": 96,
-        "text": "Magias do grupo Zanjen contam como estando na lista de Dragoneer para você, permitindo aprendê-las, prepará-las e conjurá-las. Ao conjurar uma magia Zanjen, pode receber seus efeitos de Bônus de Santo da Espada tratando seus níveis de Dragoneer como níveis de Santo da Espada. Quando uma magia Zanjen causaria dano contundente, perfurante ou cortante, pode substituir esses tipos pelo dano de sua Encarnação.",
+        "text": "Magias do grupo Zanjen contam como estando na lista de Cavaleiro Dracônico para você, permitindo aprendê-las, prepará-las e conjurá-las. Ao conjurar uma magia Zanjen, pode receber seus efeitos de Bônus de Santo da Espada tratando seus níveis de Cavaleiro Dracônico como níveis de Santo da Espada. Quando uma magia Zanjen causaria dano contundente, perfurante ou cortante, pode substituir esses tipos pelo dano de sua Encarnação.",
         "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit"
       },
       {
@@ -1297,7 +1291,7 @@
         "title": "DESAFIO FÁSICO",
         "level": 3,
         "page": 96,
-        "text": "Quando sofre dano de um ataque com arma, pode usar sua reação para transformar brevemente o corpo em uma duplicata ilusória e evitar completamente o ataque, fazendo-o errar. Em seguida, torna-se semi-etéreo até o fim do turno; ataques subsequentes contra você nesse período têm desvantagem. Usos por Descanso iguais ao nível do maior espaço de magia de Dragoneer que possua.",
+        "text": "Quando sofre dano de um ataque com arma, pode usar sua reação para transformar brevemente o corpo em uma duplicata ilusória e evitar completamente o ataque, fazendo-o errar. Em seguida, torna-se semi-etéreo até o fim do turno; ataques subsequentes contra você nesse período têm desvantagem. Usos por Descanso iguais ao nível do maior espaço de magia de Cavaleiro Dracônico que possua.",
         "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit"
       },
       {
@@ -1318,13 +1312,10 @@
         "title": "CORPO DE NÉVOA AFORTUNADA",
         "level": 17,
         "page": 96,
-        "text": "Sempre que um ataque ou efeito fosse reduzir você a 0 PV, matá-lo instantaneamente ou causar dano enquanto estiver a 0 PV, role 1d100. Se o resultado for igual ou inferior a duas vezes seu nível de Dragoneer, o ataque ou efeito não tem efeito sobre você, pois atinge uma ilusão enevoada em seu lugar.\n\nTIPOS DE ENCARNAÇÃO ADICIONAIS DE DRAGONEER. Esta subclasse também apresenta duas opções de Encarnação. DRAGÃO DE SANGUE: energia encarnada necrótica (salvaguarda de Destreza), movimento de escalada; quando uma criatura a até 3 m o acerta com ataque corpo a corpo, pode usar reação para forçá-la a uma salvaguarda de Destreza, sofrendo 1d10 + metade do seu nível de Dragoneer (arredondado para cima) de dano de fogo ou necrótico, à sua escolha, em falha. SERPENTE DO LAGO: energia encarnada ácida (salvaguarda de Constituição), movimento de natação; você respira ar e água e pode usar Disparada como ação bônus enquanto estiver totalmente submerso em líquido.",
+        "text": "Sempre que um ataque ou efeito fosse reduzir você a 0 PV, matá-lo instantaneamente ou causar dano enquanto estiver a 0 PV, role 1d100. Se o resultado for igual ou inferior a duas vezes seu nível de Cavaleiro Dracônico, o ataque ou efeito não tem efeito sobre você, pois atinge uma ilusão enevoada em seu lugar.\n\nTIPOS DE ENCARNAÇÃO ADICIONAIS DE DRAGONEER. Esta subclasse também apresenta duas opções de Encarnação. DRAGÃO DE SANGUE: energia encarnada necrótica (salvaguarda de Destreza), movimento de escalada; quando uma criatura a até 3 m o acerta com ataque corpo a corpo, pode usar reação para forçá-la a uma salvaguarda de Destreza, sofrendo 1d10 + metade do seu nível de Cavaleiro Dracônico (arredondado para cima) de dano de fogo ou necrótico, à sua escolha, em falha. SERPENTE DO LAGO: energia encarnada ácida (salvaguarda de Constituição), movimento de natação; você respira ar e água e pode usar Disparada como ação bônus enquanto estiver totalmente submerso em líquido.",
         "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit"
       }
-    ],
-    "pendingParent": true,
-    "parentClassName": "Dragoneer",
-    "parentSource": "Zagalhta’s Exolunar Collection"
+    ]
   },
   {
     "id": "bbb-druid-circle-of-ancestors",
