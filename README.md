@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 4.6
+# Grimório D&D 5e PT-BR — versão 4.7
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e conteúdos homebrew identificados.
 
@@ -10,12 +10,13 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 
 O conteúdo de classes, subclasses, progressões e do Spell Compendium funciona offline.
 
-## Novidades da versão 4.6
+## Novidades da versão 4.7
 
-- Corrigida a contenção de textos de fonte longos nos cartões de subclasses.
-- Removidos os avisos amarelos de “Consulta completa” das visões gerais.
-- Removidos os controles Exportar, Importar e Sincronizar da barra lateral.
-- Removido o cartão de status/cache de magias do painel inicial.
+- Ícones exclusivos em SVG para Abjuração, Adivinhação, Conjuração, Encantamento, Evocação, Ilusão, Necromancia, Transmutação, Psiônica e escola não informada.
+- Aplicação automática dos ícones em todas as magias do catálogo.
+- Páginas individuais de magia agora exibem o ícone da escola correspondente no cabeçalho.
+- Busca rápida (Ctrl+K) também passou a exibir os ícones corretos por escola.
+- Mantidas as melhorias de interface da versão 4.6, incluindo a remoção dos controles de exportação/importação e dos banners de consulta completa.
 
 - Classe **Spellblade** completa, traduzida para português brasileiro.
 - Progressão real do 1º ao 20º nível com truques, magias conhecidas e espaços de 1º a 5º nível.
@@ -30,7 +31,7 @@ O conteúdo de classes, subclasses, progressões e do Spell Compendium funciona 
 ## Estrutura
 
 ```text
-grimorio_dnd5e_ptbr_project_4.6/
+grimorio_dnd5e_ptbr_project_4.7/
 ├── index.html
 ├── README.md
 ├── CHANGELOG.md

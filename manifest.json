@@ -1,5 +1,5 @@
 {
-  "version": "4.6.0",
+  "version": "4.7.0",
   "classes": 14,
   "subclasses": 51,
   "classNames": [
@@ -34,8 +34,12 @@
     "Patrulheiro": 3,
     "Spellblade": 9
   },
-  "uiRevision": "Limpeza de interface e correções de cartões v4.6",
+  "uiRevision": "Ícones exclusivos por escola de magia e aplicação no catálogo v4.7",
   "improvements": [
+    "Ícones exclusivos em SVG para cada escola de magia",
+    "Aplicação dos ícones em todas as magias do catálogo e na busca rápida",
+    "Cabeçalhos de magias agora usam o ícone da escola correspondente",
+    "Cartões de lista de magias reorganizados para destacar escola e nível",
     "Correção de contenção dos selos de fonte nos cartões de subclasses",
     "Remoção dos avisos de consulta completa nas visões gerais",
     "Remoção dos botões Exportar, Importar e Sincronizar da interface",

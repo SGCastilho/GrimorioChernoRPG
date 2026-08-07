@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.7.0
+
+- Criados ícones exclusivos em SVG para cada escola de magia, seguindo a linguagem visual do Grimório.
+- Aplicados os ícones de escola em todas as magias da listagem principal.
+- Cabeçalhos das páginas de magia agora usam o ícone correspondente à escola da magia.
+- Busca rápida (Ctrl+K) de magias agora exibe os ícones corretos por escola.
+- Reorganizada a meta das linhas de magia para mostrar escola, nível, ritual, concentração e fonte com melhor legibilidade.
+
 ## 4.6.0
 
 - Corrigida a quebra e contenção de fontes longas nos cartões de subclasses.
