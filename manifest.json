@@ -1,7 +1,7 @@
 {
-  "version": "4.9.0",
+  "version": "5.0.0",
   "classes": 14,
-  "subclasses": 52,
+  "subclasses": 83,
   "classNames": [
     "Bardo",
     "Bruxo",
@@ -19,23 +19,30 @@
     "Spellblade"
   ],
   "subclassCounts": {
-    "Bárbaro": 2,
-    "Bardo": 2,
-    "Bruxo": 3,
-    "Clérigo": 7,
-    "Druida": 2,
+    "Bárbaro": 5,
+    "Bardo": 5,
+    "Bruxo": 5,
+    "Clérigo": 9,
+    "Druida": 4,
     "Emissário Espiritual": 1,
-    "Feiticeiro": 2,
-    "Guerreiro": 3,
-    "Ladino": 3,
-    "Mago": 8,
-    "Monge": 3,
-    "Paladino": 4,
-    "Patrulheiro": 3,
+    "Feiticeiro": 5,
+    "Guerreiro": 6,
+    "Ladino": 7,
+    "Mago": 9,
+    "Monge": 6,
+    "Paladino": 6,
+    "Patrulheiro": 6,
     "Spellblade": 9
   },
-  "uiRevision": "Juramento da Lâmina de Bahamut integrado como subclasse homebrew do Paladino v4.9",
+  "uiRevision": "Guia de Xanathar integrado: subclasses e magias oficiais v5.0",
   "improvements": [
+    "31 subclasses do Guia de Xanathar para Todas as Coisas adicionadas em português",
+    "165 características de subclasses estruturadas com níveis e páginas de origem",
+    "10 tabelas auxiliares de subclasses convertidas para dados reais",
+    "95 magias do Capítulo 3 do Guia de Xanathar incorporadas em português e offline",
+    "Filtro de fonte reconhece Guia de Xanathar separadamente no catálogo de magias",
+    "Deduplicação por ID preservada entre Livro do Jogador, Guia de Xanathar e Spell Compendium",
+    "Correção do carregamento do Juramento da Lâmina de Bahamut no index principal",
     "Subclasse homebrew Juramento da Lâmina de Bahamut adicionada ao Paladino",
     "Progressão própria da Lâmina de Bahamut nos níveis 3, 7, 15 e 20",
     "Tabela estruturada de Magias da Lâmina de Bahamut",
@@ -114,7 +121,7 @@
     "Necromancia": 27,
     "Transmutação": 64
   },
-  "baseCatalogEntries": 602,
+  "baseCatalogEntries": 697,
   "phbSpellClassCounts": {
     "Bardo": 120,
     "Bruxo": 74,
@@ -128,5 +135,31 @@
   "bahamutPaladinSubclass": true,
   "bahamutPaladinSubclassName": "Juramento da Lâmina de Bahamut",
   "bahamutPaladinFeatureCount": 6,
-  "bahamutPaladinOathSpellRows": 5
+  "bahamutPaladinOathSpellRows": 5,
+  "xanatharSubclasses": 31,
+  "xanatharSubclassFeatures": 165,
+  "xanatharStructuredTables": 10,
+  "xanatharSpells": 95,
+  "xanatharSpellLevels": {
+    "0": 12,
+    "1": 10,
+    "2": 12,
+    "3": 12,
+    "4": 10,
+    "5": 16,
+    "6": 12,
+    "7": 4,
+    "8": 4,
+    "9": 3
+  },
+  "xanatharSpellSchools": {
+    "Abjuração": 6,
+    "Adivinhação": 2,
+    "Conjuração": 17,
+    "Encantamento": 6,
+    "Evocação": 23,
+    "Ilusão": 3,
+    "Necromancia": 9,
+    "Transmutação": 29
+  }
 }
