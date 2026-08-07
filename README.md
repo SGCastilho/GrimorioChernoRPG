@@ -1,86 +1,95 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="dark">
-<title>Grimório D&D 5e 2014 — Livro do Jogador e Homebrews</title>
-<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<div class="app">
-  <aside class="sidebar" id="sidebar">
-    <div class="brand">
-      <svg class="brand-mark" viewBox="0 0 32 32" fill="none"><path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" stroke="currentColor" stroke-width="1.4"/><path d="M16 2 V30 M4 9 L28 23 M28 9 L4 23" stroke="currentColor" stroke-width="1" opacity=".5"/></svg>
-      <div><div class="brand-name">Grimório</div><div class="brand-sub">Compêndio de Campanha</div></div>
-    </div>
-    <button class="search-trigger" onclick="openPalette()" aria-label="Buscar no grimório">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>Buscar no grimório…</span><span class="kbd"><span>Ctrl</span><span>K</span></span>
-    </button>
-    <nav class="nav" id="navContent"></nav>
-    <div class="sidebar-footer">
-      <button class="icon-btn" onclick="navigate('classes')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Classes</button>
-      <button class="icon-btn" onclick="navigate('spells')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z"/></svg>Magias</button>
-    </div>
-  </aside>
-  <div class="content-wrap">
-    <div class="topbar"><button onclick="toggleSidebar()" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><div class="brand-name" style="font-size:1.08rem">Grimório</div><button style="margin-left:auto" onclick="openPalette()" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button></div>
-    <main id="mainContent"></main>
-  </div>
-</div>
-<div class="palette-overlay" id="paletteOverlay" onclick="if(event.target===this)closePalette()"><div class="palette"><div class="palette-input-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="paletteInput" placeholder="Buscar classes, subclasses ou magias…" oninput="renderPaletteResults()"><span class="esc-hint">Esc</span></div><div class="palette-results" id="paletteResults"></div></div></div>
-<div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()"><div class="modal">
-  <h2 id="modalTitle">Adicionar ao grimório</h2><div class="modal-sub">Conteúdo próprio fica salvo somente neste navegador.</div>
-  <div class="modal-tabs"><div class="modal-tab active" id="tabSpell" onclick="switchTab('spell')">Magia</div><div class="modal-tab" id="tabClass" onclick="switchTab('class')">Classe</div><div class="modal-tab" id="tabSubclass" onclick="switchTab('subclass')">Subclasse</div></div>
-  <form id="formSpell" onsubmit="return submitSpell(event)">
-    <input type="hidden" id="sp_edit_id"><div class="field"><label>Nome</label><input required id="sp_name" placeholder="Ex.: Lâmina de Geada"></div>
-    <div class="field-row"><div class="field"><label>Nível</label><select id="sp_level"><option value="0">Truque</option><option value="1">1º nível</option><option value="2">2º nível</option><option value="3">3º nível</option><option value="4">4º nível</option><option value="5">5º nível</option><option value="6">6º nível</option><option value="7">7º nível</option><option value="8">8º nível</option><option value="9">9º nível</option></select></div><div class="field"><label>Escola</label><select id="sp_school"><option>Abjuração</option><option>Conjuração</option><option>Adivinhação</option><option>Encantamento</option><option>Evocação</option><option>Ilusão</option><option>Necromancia</option><option>Transmutação</option></select></div></div>
-    <div class="field-row"><div class="field"><label>Tempo de conjuração</label><input id="sp_time" placeholder="1 ação"></div><div class="field"><label>Alcance</label><input id="sp_range" placeholder="18 metros"></div></div>
-    <div class="field-row"><div class="field"><label>Componentes</label><input id="sp_comp" placeholder="V, S, M"></div><div class="field"><label>Duração</label><input id="sp_duration" placeholder="Instantânea"></div></div>
-    <div class="field"><label>Classes que conjuram</label><input id="sp_classes" placeholder="Mago, Feiticeiro"></div><div class="check-field"><input type="checkbox" id="sp_ritual"><label for="sp_ritual">Ritual</label><input type="checkbox" id="sp_concentration" style="margin-left:1rem"><label for="sp_concentration">Concentração</label></div>
-    <div class="field"><label>Descrição</label><textarea id="sp_desc" placeholder="Efeito da magia..."></textarea></div><div class="field"><label>Em níveis superiores</label><textarea id="sp_higher" placeholder="Efeito ao usar espaços superiores..."></textarea></div>
-    <div class="modal-actions"><button type="button" class="btn" onclick="closeModal()">Cancelar</button><button type="submit" class="btn primary">Salvar magia</button></div>
-  </form>
-  <form id="formClass" class="hidden" onsubmit="return submitClass(event)">
-    <input type="hidden" id="cl_edit_id"><div class="field"><label>Nome da classe</label><input required id="cl_name" placeholder="Ex.: Cultivador"></div><div class="field-row"><div class="field"><label>Dado de vida</label><input id="cl_hitdie" placeholder="d8"></div><div class="field"><label>Habilidade principal</label><input id="cl_ability" placeholder="Sabedoria"></div></div><div class="field"><label>Testes de resistência</label><input id="cl_saves" placeholder="Inteligência, Sabedoria"></div><div class="field-row"><div class="field"><label>Armaduras</label><input id="cl_armor"></div><div class="field"><label>Armas</label><input id="cl_weapons"></div></div><div class="field"><label>Descrição</label><textarea id="cl_desc"></textarea></div><div class="modal-actions"><button type="button" class="btn" onclick="closeModal()">Cancelar</button><button type="submit" class="btn primary">Salvar classe</button></div>
-  </form>
-  <form id="formSubclass" class="hidden" onsubmit="return submitSubclass(event)">
-    <input type="hidden" id="sc_edit_id"><div class="field"><label>Classe-base</label><select id="sc_class" required></select></div><div class="field"><label>Nome da subclasse</label><input required id="sc_name" placeholder="Ex.: Caminho do Dragão Celestial"></div><div class="field"><label>Descrição</label><textarea id="sc_desc"></textarea></div><div class="field"><label>Características</label><textarea id="sc_features" placeholder="Uma por linha: 3 | Nome | Descrição"></textarea></div><div class="modal-actions"><button type="button" class="btn" onclick="closeModal()">Cancelar</button><button type="submit" class="btn primary">Salvar subclasse</button></div>
-  </form>
-</div></div>
-<button class="fab" onclick="openModal()" title="Adicionar conteúdo" aria-label="Adicionar conteúdo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></button><div class="toast" id="toast"></div>
-<script src="js/config.js"></script>
-<script src="js/registry.js"></script>
-<script src="data/sources.js"></script>
-<script src="data/classes.js"></script>
-<script src="data/progression.js"></script>
-<script src="data/tasha-artificer.js"></script>
-<script src="data/lyre-classes.js"></script>
-<script src="data/zagalhta-classes.js"></script>
-<script src="data/lyre-subclasses.js"></script>
-<script src="data/blade-bone-benefit-classes.js"></script>
-<script src="data/zagalhta-specializations.js"></script>
-<script src="data/zagalhta-subclasses-standard.js"></script>
-<script src="data/zagalhta-subclasses-standard-2.js"></script>
-<script src="data/zagalhta-subclasses-standard-3.js"></script>
-<script src="data/zagalhta-compulsions.js"></script>
-<script src="data/blade-bone-benefit-subclasses.js"></script>
-<script src="data/homebrew-emissario.js"></script>
-<script src="data/xanathar-subclasses.js"></script>
-<script src="data/tasha-subclasses.js"></script>
-<script src="data/scag-subclasses.js"></script>
-<script src="data/homebrew-paladin-bahamut.js"></script>
-<script src="data/phb-spells.js"></script>
-<script src="data/xanathar-spells.js"></script>
-<script src="data/tasha-spells.js"></script>
-<script src="data/scag-spells.js"></script>
-<script src="data/spells.js"></script>
-<script src="data/spellblade-spells.js"></script>
-<script src="data/lyre-spells.js"></script>
-<script src="data/blade-bone-benefit-spells.js"></script>
-<script src="data/homebrew-spellblade-class.js"></script>
-<script src="js/app.js"></script>
-<script src="js/ui-enhancements.js"></script>
-<script src="js/dynamic-consultation.js"></script>
-</body>
-</html>
+# Grimório D&D 5e PT-BR — versão 5.9
+
+Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
+
+## Como abrir
+
+1. Extraia toda a pasta do arquivo ZIP.
+2. Mantenha a estrutura de pastas intacta.
+3. Abra `index.html` em um navegador moderno.
+
+Os catálogos incorporados funcionam offline.
+
+## Novidades da versão 5.9
+
+- Integrado o Capítulo 6 — **Opções de Classe** de *Somnus Domina — Zagalhta's Exolunar Collection*.
+- **Cavaleiro Dracônico** (*Dragoneer*) integrado como classe completa, traduzida para PT-BR, com progressão do 1º ao 20º nível.
+- A arquitetura modular do Cavaleiro Dracônico foi preservada: seus **9 Conceitos Centrais** determinam Dado de Vida, salvaguardas, proficiências e progressão de conjuração.
+- Os **19 Tipos de Encarnação** do Cavaleiro Dracônico foram estruturados como tabela real da classe.
+- **Piloto de Frame** (*Frame Pilot*) integrado como classe completa, com progressão do 1º ao 20º nível, Crescimento, Aprimoramentos Inerentes e regras de Junção.
+- As **5 Designações Tecnológicas** do Piloto de Frame foram integradas como especializações consultáveis.
+- Foram integradas **36 subclasses adicionais** do capítulo para Bárbaro, Bardo, Clérigo, Druida, Alma Favorecida, Guerreiro, Inscritor, Monge, Paladino, Cavaleiro das Pétalas, Patrulheiro, Ladino, Feiticeiro, Santo da Espada, Bruxo e Mago.
+- No total, a fonte adiciona **50 novas entradas de subclasse/especialização**: 9 Conceitos Centrais + 5 Designações Tecnológicas + 36 subclasses.
+- As **3 subclasses de Cavaleiro Dracônico** já presentes em *Blade, Bone, & Benefit* agora estão vinculadas à classe-base, deixando de aparecer como conteúdo com classe externa pendente.
+- Nomes originais em inglês são preservados em `originalName`/aliases para pesquisa, enquanto nomes, características, tabelas e textos de consulta ficam em português brasileiro.
+- Termos exclusivos da 5.19, como Fadiga de Combate, aceleração 0-G, Junção, Cargas Arcanas, Dado de Favor e Astromancia, foram preservados conforme a fonte.
+- As magias do Capítulo 7 de Zagalhta **não** foram incluídas nesta etapa.
+
+## Conteúdo atual
+
+- **22 classes**.
+- **359 subclasses/especializações**.
+- **22 progressões estruturadas**.
+- **1046 registros-base de magias/poderes** antes de conteúdo personalizado do usuário.
+- 361 magias do Livro do Jogador.
+- 95 magias do Guia de Xanathar.
+- 21 magias do Caldeirão de Tasha.
+- 280 magias/revisões de *Lyre's Guide to Retia*.
+- 48 novas entradas de *Blade, Bone, & Benefit*; outras 60 magias do capítulo são vinculadas como reimpressões às entradas já existentes de Lyre.
+- 240 magias/poderes completos + 1 referência incompleta do Spell Compendium.
+- Conteúdo homebrew incorporado anteriormente.
+
+### Distribuição de Zagalhta
+
+- Cavaleiro Dracônico: **9 Conceitos Centrais novos** + **3 subclasses de Blade, Bone, & Benefit já existentes** = 12 opções consultáveis.
+- Piloto de Frame: **5 Designações Tecnológicas**.
+- Subclasses tradicionais de Zagalhta: **36**.
+- Características de subclasses/especializações da nova fonte estruturadas: **256**.
+- Tabelas estruturadas da nova fonte: **30**.
+
+## Arquitetura para próximas fontes
+
+1. Cadastre a fonte com `GRIMORIO_REGISTRY.registerSource(...)`.
+2. Carregue os módulos de classe/subclasse pelo `index.html`.
+3. Para classes, registre também `GRIMORIO_CLASS_PROGRESSIONS` quando houver progressão estruturada.
+4. Para magias, registre o array com `GRIMORIO_REGISTRY.registerSpellCatalog(...)`.
+5. Execute `node tools/validate-project.js` antes de empacotar a nova versão.
+
+## Estrutura relevante
+
+```text
+grimorio_dnd5e_ptbr_project_5.9/
+├── index.html
+├── README.md
+├── CHANGELOG.md
+├── manifest.json
+├── css/
+├── data/
+│   ├── sources.js
+│   ├── classes.js
+│   ├── progression.js
+│   ├── lyre-classes.js
+│   ├── lyre-subclasses.js
+│   ├── blade-bone-benefit-classes.js
+│   ├── blade-bone-benefit-subclasses.js
+│   ├── zagalhta-classes.js
+│   ├── zagalhta-specializations.js
+│   ├── zagalhta-subclasses-standard.js
+│   ├── zagalhta-subclasses-standard-2.js
+│   ├── zagalhta-subclasses-standard-3.js
+│   ├── zagalhta-compulsions.js
+│   ├── phb-spells.js
+│   ├── xanathar-spells.js
+│   ├── tasha-spells.js
+│   ├── scag-spells.js
+│   ├── spellblade-spells.js
+│   ├── lyre-spells.js
+│   └── blade-bone-benefit-spells.js
+├── js/
+│   ├── app.js
+│   ├── config.js
+│   ├── registry.js
+│   └── dynamic-consultation.js
+└── tools/
+    └── validate-project.js
+```

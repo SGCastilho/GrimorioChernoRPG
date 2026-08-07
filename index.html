@@ -1,240 +1,86 @@
-#!/usr/bin/env node
-'use strict';
-
-const fs = require('fs');
-const path = require('path');
-const vm = require('vm');
-
-const root = path.resolve(__dirname, '..');
-const indexHtml = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-const scriptPaths = [...indexHtml.matchAll(/<script\s+src="([^"]+)"/g)]
-  .map(match => match[1])
-  .filter(file => !/^js\/(app|ui-enhancements|dynamic-consultation)\.js$/.test(file));
-
-const context = { console };
-context.window = context;
-vm.createContext(context);
-
-const errors = [];
-const warnings = [];
-const ok = message => console.log('✓ ' + message);
-const fail = message => errors.push(message);
-const warn = message => warnings.push(message);
-
-for (const relative of scriptPaths) {
-  const filename = path.join(root, relative);
-  try {
-    vm.runInContext(fs.readFileSync(filename, 'utf8'), context, { filename: relative });
-  } catch (error) {
-    fail(`Falha ao carregar ${relative}: ${error.message}`);
-    break;
-  }
-}
-
-if (errors.length) finish();
-
-const registry = context.GRIMORIO_REGISTRY;
-if (!registry) fail('GRIMORIO_REGISTRY não foi inicializado.');
-if (errors.length) finish();
-
-const sources = registry.getSources();
-const catalogs = registry.getSpellCatalogs();
-const classes = context.GRIMORIO_CLASSES || [];
-const subclasses = context.GRIMORIO_SUBCLASSES || [];
-const progressionStore = context.GRIMORIO_CLASS_PROGRESSIONS || {};
-const progressions = Array.isArray(progressionStore) ? progressionStore : Object.values(progressionStore);
-
-if (!sources.length) fail('Nenhuma fonte foi registrada.');
-else ok(`${sources.length} fontes registradas`);
-
-if (!catalogs.length) fail('Nenhum catálogo de magias foi registrado.');
-else ok(`${catalogs.length} catálogos de magias registrados`);
-
-const catalogIds = new Set();
-const spellIds = new Map();
-let spellTotal = 0;
-for (const catalog of catalogs) {
-  if (catalogIds.has(catalog.id)) fail(`ID de catálogo duplicado: ${catalog.id}`);
-  catalogIds.add(catalog.id);
-  if (!registry.getSource(catalog.sourceId)) fail(`Catálogo ${catalog.id} usa fonte inexistente: ${catalog.sourceId}`);
-  if (!Array.isArray(catalog.spells)) {
-    fail(`Catálogo ${catalog.id} não possui array de magias.`);
-    continue;
-  }
-  spellTotal += catalog.spells.length;
-  for (const spell of catalog.spells) {
-    if (!spell || typeof spell !== 'object') {
-      fail(`Entrada inválida em ${catalog.id}.`);
-      continue;
-    }
-    if (!spell.id) fail(`Magia sem id em ${catalog.id}: ${spell.name || '(sem nome)'}`);
-    if (!spell.name) fail(`Magia sem name em ${catalog.id}: ${spell.id || '(sem id)'}`);
-    if (spell.id) {
-      const previous = spellIds.get(spell.id);
-      if (previous) fail(`ID de magia duplicado entre catálogos: ${spell.id} (${previous} e ${catalog.id})`);
-      else spellIds.set(spell.id, catalog.id);
-    }
-    const level = Number(spell.level);
-    if (!Number.isFinite(level) || level < 0 || level > 9) warn(`Nível incomum em ${spell.id || spell.name}: ${spell.level}`);
-  }
-}
-ok(`${spellTotal} registros-base de magias/poderes validados`);
-
-function duplicateIds(items, label) {
-  const seen = new Set();
-  for (const item of items) {
-    if (!item?.id) {
-      fail(`${label} sem id: ${item?.name || '(sem nome)'}`);
-      continue;
-    }
-    if (seen.has(item.id)) fail(`ID duplicado em ${label}: ${item.id}`);
-    seen.add(item.id);
-  }
-  return seen;
-}
-
-const classIds = duplicateIds(classes, 'classes');
-duplicateIds(subclasses, 'subclasses');
-ok(`${classes.length} classes e ${subclasses.length} subclasses com IDs verificados`);
-
-let pendingParentCount = 0;
-for (const subclass of subclasses) {
-  if (classIds.has(subclass.classId)) continue;
-  if (subclass.pendingParent && subclass.parentClassName) {
-    pendingParentCount += 1;
-    continue;
-  }
-  fail(`Subclasse ${subclass.id} referencia classId inexistente: ${subclass.classId}`);
-}
-if (pendingParentCount) ok(`${pendingParentCount} subclasses com classe-base externa documentada`);
-
-const progressionIds = new Set(progressions.map(item => item?.id).filter(Boolean));
-for (const cls of classes) {
-  if (!progressionIds.has(cls.id)) fail(`Classe sem progressão estruturada: ${cls.id}`);
-}
-for (const progression of progressions) {
-  if (progression?.id && !classIds.has(progression.id)) warn(`Progressão sem classe correspondente: ${progression.id}`);
-}
-ok(`${progressionIds.size} progressões estruturadas verificadas`);
-
-
-// Integridade da integração editorial de Blade, Bone, & Benefit v5.8.
-const bbbTitle = 'Somnus Domina — Blade, Bone, & Benefit';
-const bbbClass = classes.find(item => item.id === 'blood-minister-somnus');
-const bbbSubclasses = subclasses.filter(item => item?.source?.title === bbbTitle);
-if (!bbbClass) fail('Blade, Bone, & Benefit: classe blood-minister-somnus ausente.');
-else {
-  const bloodProgression = progressions.find(item => item?.id === bbbClass.id);
-  if (!bloodProgression || bloodProgression.rows?.length !== 20) fail('Blade, Bone, & Benefit: progressão do Ministro de Sangue deve possuir 20 níveis.');
-  if ((bbbClass.features || []).length !== 17) fail(`Blade, Bone, & Benefit: esperado 17 características de classe, encontradas ${(bbbClass.features || []).length}.`);
-}
-const bbbBloodSects = bbbSubclasses.filter(item => item.classId === 'blood-minister-somnus');
-const bbbChapterX = bbbSubclasses.filter(item => item.classId !== 'blood-minister-somnus');
-const bbbFeatureTotal = bbbSubclasses.reduce((total, item) => total + (item.features || []).length, 0);
-const bbbTableTotal = bbbSubclasses.reduce((total, item) => total + (item.tables || []).length, 0);
-const bbbReferenceTotal = bbbSubclasses.reduce((total, item) => total + (item.references || []).length, 0);
-if (bbbBloodSects.length !== 8) fail(`Blade, Bone, & Benefit: esperado 8 Seitas Genéticas, encontradas ${bbbBloodSects.length}.`);
-if (bbbChapterX.length !== 55) fail(`Blade, Bone, & Benefit: esperado 55 subclasses enumeradas no Capítulo X, encontradas ${bbbChapterX.length}.`);
-if (bbbFeatureTotal !== 339) fail(`Blade, Bone, & Benefit: esperado 339 características de subclasse, encontradas ${bbbFeatureTotal}.`);
-if (bbbTableTotal !== 12) fail(`Blade, Bone, & Benefit: esperado 12 tabelas complementares estruturadas, encontradas ${bbbTableTotal}.`);
-if (bbbReferenceTotal !== 12) fail(`Blade, Bone, & Benefit: esperado 12 blocos complementares sem nível, encontrados ${bbbReferenceTotal}.`);
-for (const item of bbbSubclasses) {
-  for (const feature of item.features || []) {
-    if (!feature.title || !feature.text) fail(`Blade, Bone, & Benefit: característica incompleta em ${item.id}.`);
-    const level = Number(feature.level);
-    if (!Number.isFinite(level) || level < 1 || level > 20) fail(`Blade, Bone, & Benefit: nível inválido em ${item.id}: ${feature.level}`);
-    if (!feature.page) warn(`Blade, Bone, & Benefit: característica sem página em ${item.id}: ${feature.title || '(sem título)'}`);
-  }
-  for (const table of item.tables || []) {
-    if (!table.title || !Array.isArray(table.columns) || !table.columns.length || !Array.isArray(table.rows) || !table.rows.length) fail(`Blade, Bone, & Benefit: tabela incompleta em ${item.id}.`);
-  }
-}
-ok(`Blade, Bone, & Benefit: 1 classe, ${bbbBloodSects.length} Seitas Genéticas, ${bbbChapterX.length} subclasses do Capítulo X, ${bbbFeatureTotal} características, ${bbbTableTotal} tabelas e ${bbbReferenceTotal} blocos complementares verificados`);
-
-// Integridade da integração editorial de Zagalhta's Exolunar Collection v5.9.
-const zagTitle = "Somnus Domina — Zagalhta's Exolunar Collection";
-const zagClasses = classes.filter(item => item?.source?.title === zagTitle);
-const zagSubclasses = subclasses.filter(item => item?.source?.title === zagTitle);
-const zagCoreConcepts = zagSubclasses.filter(item => item.classId === 'dragoneer');
-const zagTechDesignations = zagSubclasses.filter(item => item.classId === 'frame-pilot');
-const zagStandard = zagSubclasses.filter(item => !['dragoneer', 'frame-pilot'].includes(item.classId));
-const zagFeatureTotal = zagSubclasses.reduce((total, item) => total + (item.features || []).length, 0);
-const zagTableTotal = zagSubclasses.reduce((total, item) => total + (item.tables || []).length, 0);
-if (!registry.getSource('zagalhta-exolunar')) fail("Zagalhta: fonte zagalhta-exolunar ausente do registro central.");
-if (zagClasses.length !== 2) fail(`Zagalhta: esperado 2 classes próprias, encontradas ${zagClasses.length}.`);
-for (const cls of zagClasses) {
-  const progression = progressions.find(item => item?.id === cls.id);
-  if (!progression || progression.rows?.length !== 20) fail(`Zagalhta: progressão de ${cls.id} deve possuir 20 níveis.`);
-}
-if (zagCoreConcepts.length !== 9) fail(`Zagalhta: esperado 9 Conceitos Centrais do Cavaleiro Dracônico, encontrados ${zagCoreConcepts.length}.`);
-if (zagTechDesignations.length !== 5) fail(`Zagalhta: esperado 5 Designações Tecnológicas do Piloto de Frame, encontradas ${zagTechDesignations.length}.`);
-if (zagStandard.length !== 36) fail(`Zagalhta: esperado 36 subclasses adicionais, encontradas ${zagStandard.length}.`);
-if (zagSubclasses.length !== 50) fail(`Zagalhta: esperado total de 50 novas entradas de especialização/subclasse, encontradas ${zagSubclasses.length}.`);
-if (zagFeatureTotal !== 256) fail(`Zagalhta: esperado 256 características de subclasse/especialização, encontradas ${zagFeatureTotal}.`);
-if (zagTableTotal !== 30) fail(`Zagalhta: esperado 30 tabelas estruturadas, encontradas ${zagTableTotal}.`);
-for (const item of zagSubclasses) {
-  if (!item.name || !item.originalName) fail(`Zagalhta: subclasse sem nome localizado/original em ${item.id}.`);
-  for (const feature of item.features || []) {
-    if (!feature.title || !feature.text) fail(`Zagalhta: característica incompleta em ${item.id}.`);
-    const level = Number(feature.level);
-    if (!Number.isFinite(level) || level < 1 || level > 20) fail(`Zagalhta: nível inválido em ${item.id}: ${feature.level}`);
-    if (!feature.page) warn(`Zagalhta: característica sem página em ${item.id}: ${feature.title || '(sem título)'}`);
-  }
-  for (const table of item.tables || []) {
-    if (!table.title || !Array.isArray(table.columns) || !table.columns.length || !Array.isArray(table.rows) || !table.rows.length) fail(`Zagalhta: tabela incompleta em ${item.id}.`);
-  }
-}
-const bbbDragoneer = bbbSubclasses.filter(item => item.classId === 'dragoneer');
-if (bbbDragoneer.length !== 3) fail(`Zagalhta/BBB: esperado 3 subclasses de Cavaleiro Dracônico herdadas de Blade, Bone, & Benefit, encontradas ${bbbDragoneer.length}.`);
-if (bbbDragoneer.some(item => item.pendingParent)) fail('Zagalhta/BBB: as subclasses de Cavaleiro Dracônico não devem permanecer com classe-base pendente após a v5.9.');
-const burdenIds = ['destimus', 'jalasaor', 'ombra', 'setanta', 'sihlu', 'zega'].map(name => `zagalhta-favored-soul-${name}`);
-for (const id of burdenIds) {
-  const item = subclasses.find(subclass => subclass.id === id);
-  if (!item?.references?.some(ref => ref.title === 'COMPULSÃO DO FARDO')) fail(`Zagalhta: compulsão de Fardo ausente em ${id}.`);
-}
-ok(`Zagalhta: 2 classes, ${zagCoreConcepts.length} Conceitos Centrais, ${zagTechDesignations.length} Designações Tecnológicas, ${zagStandard.length} subclasses adicionais, ${zagFeatureTotal} características e ${zagTableTotal} tabelas verificados`);
-
-const sourceEntities = [
-  ...classes.map(item => ({ type: 'classe', id: item.id, source: item.source })),
-  ...subclasses.map(item => ({ type: 'subclasse', id: item.id, source: item.source }))
-];
-for (const entity of sourceEntities) {
-  if (!entity.source) continue;
-  if (!registry.resolveSource(entity.source)) warn(`${entity.type} ${entity.id} usa fonte não registrada: ${entity.source.title || entity.source}`);
-}
-
-for (const catalog of catalogs) {
-  for (const spell of catalog.spells) {
-    const tagged = { ...spell, _catalogId: catalog.id, _sourceId: catalog.sourceId };
-    const groups = registry.spellGroupLabels(tagged);
-    if (!groups.length) fail(`Magia ${spell.id} não pode ser agrupada por fonte.`);
-    for (const legacy of spell.legacyVersions || []) {
-      if ((legacy.source || legacy.category) && !registry.resolveSource(legacy)) warn(`Versão alternativa de ${spell.id} usa fonte não registrada: ${legacy.source || legacy.category}`);
-    }
-  }
-}
-ok('Agrupamento de fontes das magias verificado');
-
-const filterGroups = new Set();
-for (const catalog of catalogs) {
-  for (const spell of catalog.spells) {
-    registry.spellGroupLabels({ ...spell, _catalogId: catalog.id, _sourceId: catalog.sourceId }).forEach(group => filterGroups.add(group));
-  }
-}
-console.log('  Filtros de fonte detectados: ' + [...filterGroups].sort((a, b) => a.localeCompare(b, 'pt-BR')).join(' · '));
-
-finish();
-
-function finish() {
-  if (warnings.length) {
-    console.log('\nAvisos:');
-    warnings.forEach(message => console.log('! ' + message));
-  }
-  if (errors.length) {
-    console.error('\nErros:');
-    errors.forEach(message => console.error('✗ ' + message));
-    console.error(`\nValidação reprovada: ${errors.length} erro(s), ${warnings.length} aviso(s).`);
-    process.exit(1);
-  }
-  console.log(`\nValidação aprovada${warnings.length ? ` com ${warnings.length} aviso(s)` : ' sem avisos'}.`);
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Grimório D&D 5e 2014 — Livro do Jogador e Homebrews</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none"><path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" stroke="currentColor" stroke-width="1.4"/><path d="M16 2 V30 M4 9 L28 23 M28 9 L4 23" stroke="currentColor" stroke-width="1" opacity=".5"/></svg>
+      <div><div class="brand-name">Grimório</div><div class="brand-sub">Compêndio de Campanha</div></div>
+    </div>
+    <button class="search-trigger" onclick="openPalette()" aria-label="Buscar no grimório">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>Buscar no grimório…</span><span class="kbd"><span>Ctrl</span><span>K</span></span>
+    </button>
+    <nav class="nav" id="navContent"></nav>
+    <div class="sidebar-footer">
+      <button class="icon-btn" onclick="navigate('classes')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Classes</button>
+      <button class="icon-btn" onclick="navigate('spells')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z"/></svg>Magias</button>
+    </div>
+  </aside>
+  <div class="content-wrap">
+    <div class="topbar"><button onclick="toggleSidebar()" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><div class="brand-name" style="font-size:1.08rem">Grimório</div><button style="margin-left:auto" onclick="openPalette()" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button></div>
+    <main id="mainContent"></main>
+  </div>
+</div>
+<div class="palette-overlay" id="paletteOverlay" onclick="if(event.target===this)closePalette()"><div class="palette"><div class="palette-input-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="paletteInput" placeholder="Buscar classes, subclasses ou magias…" oninput="renderPaletteResults()"><span class="esc-hint">Esc</span></div><div class="palette-results" id="paletteResults"></div></div></div>
+<div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()"><div class="modal">
+  <h2 id="modalTitle">Adicionar ao grimório</h2><div class="modal-sub">Conteúdo próprio fica salvo somente neste navegador.</div>
+  <div class="modal-tabs"><div class="modal-tab active" id="tabSpell" onclick="switchTab('spell')">Magia</div><div class="modal-tab" id="tabClass" onclick="switchTab('class')">Classe</div><div class="modal-tab" id="tabSubclass" onclick="switchTab('subclass')">Subclasse</div></div>
+  <form id="formSpell" onsubmit="return submitSpell(event)">
+    <input type="hidden" id="sp_edit_id"><div class="field"><label>Nome</label><input required id="sp_name" placeholder="Ex.: Lâmina de Geada"></div>
+    <div class="field-row"><div class="field"><label>Nível</label><select id="sp_level"><option value="0">Truque</option><option value="1">1º nível</option><option value="2">2º nível</option><option value="3">3º nível</option><option value="4">4º nível</option><option value="5">5º nível</option><option value="6">6º nível</option><option value="7">7º nível</option><option value="8">8º nível</option><option value="9">9º nível</option></select></div><div class="field"><label>Escola</label><select id="sp_school"><option>Abjuração</option><option>Conjuração</option><option>Adivinhação</option><option>Encantamento</option><option>Evocação</option><option>Ilusão</option><option>Necromancia</option><option>Transmutação</option></select></div></div>
+    <div class="field-row"><div class="field"><label>Tempo de conjuração</label><input id="sp_time" placeholder="1 ação"></div><div class="field"><label>Alcance</label><input id="sp_range" placeholder="18 metros"></div></div>
+    <div class="field-row"><div class="field"><label>Componentes</label><input id="sp_comp" placeholder="V, S, M"></div><div class="field"><label>Duração</label><input id="sp_duration" placeholder="Instantânea"></div></div>
+    <div class="field"><label>Classes que conjuram</label><input id="sp_classes" placeholder="Mago, Feiticeiro"></div><div class="check-field"><input type="checkbox" id="sp_ritual"><label for="sp_ritual">Ritual</label><input type="checkbox" id="sp_concentration" style="margin-left:1rem"><label for="sp_concentration">Concentração</label></div>
+    <div class="field"><label>Descrição</label><textarea id="sp_desc" placeholder="Efeito da magia..."></textarea></div><div class="field"><label>Em níveis superiores</label><textarea id="sp_higher" placeholder="Efeito ao usar espaços superiores..."></textarea></div>
+    <div class="modal-actions"><button type="button" class="btn" onclick="closeModal()">Cancelar</button><button type="submit" class="btn primary">Salvar magia</button></div>
+  </form>
+  <form id="formClass" class="hidden" onsubmit="return submitClass(event)">
+    <input type="hidden" id="cl_edit_id"><div class="field"><label>Nome da classe</label><input required id="cl_name" placeholder="Ex.: Cultivador"></div><div class="field-row"><div class="field"><label>Dado de vida</label><input id="cl_hitdie" placeholder="d8"></div><div class="field"><label>Habilidade principal</label><input id="cl_ability" placeholder="Sabedoria"></div></div><div class="field"><label>Testes de resistência</label><input id="cl_saves" placeholder="Inteligência, Sabedoria"></div><div class="field-row"><div class="field"><label>Armaduras</label><input id="cl_armor"></div><div class="field"><label>Armas</label><input id="cl_weapons"></div></div><div class="field"><label>Descrição</label><textarea id="cl_desc"></textarea></div><div class="modal-actions"><button type="button" class="btn" onclick="closeModal()">Cancelar</button><button type="submit" class="btn primary">Salvar classe</button></div>
+  </form>
+  <form id="formSubclass" class="hidden" onsubmit="return submitSubclass(event)">
+    <input type="hidden" id="sc_edit_id"><div class="field"><label>Classe-base</label><select id="sc_class" required></select></div><div class="field"><label>Nome da subclasse</label><input required id="sc_name" placeholder="Ex.: Caminho do Dragão Celestial"></div><div class="field"><label>Descrição</label><textarea id="sc_desc"></textarea></div><div class="field"><label>Características</label><textarea id="sc_features" placeholder="Uma por linha: 3 | Nome | Descrição"></textarea></div><div class="modal-actions"><button type="button" class="btn" onclick="closeModal()">Cancelar</button><button type="submit" class="btn primary">Salvar subclasse</button></div>
+  </form>
+</div></div>
+<button class="fab" onclick="openModal()" title="Adicionar conteúdo" aria-label="Adicionar conteúdo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></button><div class="toast" id="toast"></div>
+<script src="js/config.js"></script>
+<script src="js/registry.js"></script>
+<script src="data/sources.js"></script>
+<script src="data/classes.js"></script>
+<script src="data/progression.js"></script>
+<script src="data/tasha-artificer.js"></script>
+<script src="data/lyre-classes.js"></script>
+<script src="data/zagalhta-classes.js"></script>
+<script src="data/lyre-subclasses.js"></script>
+<script src="data/blade-bone-benefit-classes.js"></script>
+<script src="data/zagalhta-specializations.js"></script>
+<script src="data/zagalhta-subclasses-standard.js"></script>
+<script src="data/zagalhta-subclasses-standard-2.js"></script>
+<script src="data/zagalhta-subclasses-standard-3.js"></script>
+<script src="data/zagalhta-compulsions.js"></script>
+<script src="data/blade-bone-benefit-subclasses.js"></script>
+<script src="data/homebrew-emissario.js"></script>
+<script src="data/xanathar-subclasses.js"></script>
+<script src="data/tasha-subclasses.js"></script>
+<script src="data/scag-subclasses.js"></script>
+<script src="data/homebrew-paladin-bahamut.js"></script>
+<script src="data/phb-spells.js"></script>
+<script src="data/xanathar-spells.js"></script>
+<script src="data/tasha-spells.js"></script>
+<script src="data/scag-spells.js"></script>
+<script src="data/spells.js"></script>
+<script src="data/spellblade-spells.js"></script>
+<script src="data/lyre-spells.js"></script>
+<script src="data/blade-bone-benefit-spells.js"></script>
+<script src="data/homebrew-spellblade-class.js"></script>
+<script src="js/app.js"></script>
+<script src="js/ui-enhancements.js"></script>
+<script src="js/dynamic-consultation.js"></script>
+</body>
+</html>
