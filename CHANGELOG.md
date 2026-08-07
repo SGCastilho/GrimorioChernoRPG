@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.8.0
+
+- Incorporadas as 361 magias do Livro do Jogador de D&D 5e 2014 em português.
+- O catálogo do Livro do Jogador passou a ser local e offline, sem dependência de sincronização SRD.
+- Adicionadas as magias ausentes do SRD, incluindo Braços de Hadar.
+- Reconstruídas as associações de classes a partir das listas de magia do Capítulo 11.
+- Adicionadas páginas de origem a todas as magias oficiais.
+- Catalogadas e documentadas três divergências internas de metadados no PDF: Falar com Plantas, Muralha de Pedra e Telepatia.
+- Validada a unicidade das 361 magias oficiais.
+
 ## 4.7.0
 
 - Criados ícones exclusivos em SVG para cada escola de magia, seguindo a linguagem visual do Grimório.

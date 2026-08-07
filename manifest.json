@@ -1,5 +1,5 @@
 {
-  "version": "4.7.0",
+  "version": "4.8.0",
   "classes": 14,
   "subclasses": 51,
   "classNames": [
@@ -34,8 +34,16 @@
     "Patrulheiro": 3,
     "Spellblade": 9
   },
-  "uiRevision": "Ícones exclusivos por escola de magia e aplicação no catálogo v4.7",
+  "uiRevision": "Catálogo completo de 361 magias do Livro do Jogador incorporado localmente v4.8",
   "improvements": [
+    "361 magias do Livro do Jogador de D&D 5e 2014 incorporadas integralmente em PT-BR e disponíveis offline",
+    "Substituição do catálogo SRD parcial pelo catálogo completo do Livro do Jogador",
+    "Braços de Hadar, Armadura de Agathys, Bruxaria e demais magias não presentes no SRD adicionadas",
+    "Deduplicação do catálogo oficial: cada magia do Livro do Jogador possui um único registro",
+    "Classes conjuradoras reconstruídas a partir das listas de magia do Capítulo 11",
+    "Páginas de origem do Livro do Jogador registradas em cada magia",
+    "Divergências internas do PDF documentadas em Falar com Plantas, Muralha de Pedra e Telepatia",
+    "Catálogo oficial não depende mais de sincronização ou cache remoto",
     "Ícones exclusivos em SVG para cada escola de magia",
     "Aplicação dos ícones em todas as magias do catálogo e na busca rápida",
     "Cabeçalhos de magias agora usam o ícone da escola correspondente",
@@ -76,5 +84,39 @@
   "incompleteSpellReferences": 1,
   "spellbladeClass": true,
   "spellbladeTechniques": 9,
-  "spellbladeAegisEffects": 32
+  "spellbladeAegisEffects": 32,
+  "phb2014Spells": 361,
+  "phbSpellLevels": {
+    "0": 27,
+    "1": 62,
+    "2": 59,
+    "3": 50,
+    "4": 35,
+    "5": 42,
+    "6": 32,
+    "7": 20,
+    "8": 18,
+    "9": 16
+  },
+  "phbSpellSchools": {
+    "Abjuração": 45,
+    "Adivinhação": 30,
+    "Conjuração": 59,
+    "Encantamento": 34,
+    "Evocação": 74,
+    "Ilusão": 28,
+    "Necromancia": 27,
+    "Transmutação": 64
+  },
+  "baseCatalogEntries": 602,
+  "phbSpellClassCounts": {
+    "Bardo": 120,
+    "Bruxo": 74,
+    "Clérigo": 106,
+    "Druida": 110,
+    "Feiticeiro": 129,
+    "Mago": 215,
+    "Paladino": 45,
+    "Patrulheiro": 46
+  }
 }

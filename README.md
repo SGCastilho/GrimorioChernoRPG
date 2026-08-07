@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 4.7
+# Grimório D&D 5e PT-BR — versão 4.8
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e conteúdos homebrew identificados.
 
@@ -10,7 +10,15 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 
 O conteúdo de classes, subclasses, progressões e do Spell Compendium funciona offline.
 
-## Novidades da versão 4.7
+## Novidades da versão 4.8
+
+- **361 magias do Livro do Jogador de D&D 5e 2014**, extraídas e estruturadas diretamente da edição em português fornecida para o projeto.
+- O catálogo oficial agora é **totalmente offline** e não depende do cache SRD ou de sincronização externa.
+- Inclusão das magias do Livro do Jogador que não faziam parte do catálogo SRD anterior, incluindo **Braços de Hadar**, **Armadura de Agathys** e **Bruxaria**.
+- Cada magia oficial possui nível, escola, classes, tempo de conjuração, alcance, componentes, duração, ritual, concentração, descrição e página de origem.
+- Deduplicação do catálogo oficial: **361 nomes e 361 IDs únicos**.
+- As inconsistências internas encontradas no PDF para **Falar com Plantas**, **Muralha de Pedra** e **Telepatia** foram documentadas, utilizando a classificação das listas de classe.
+- Mantidos os 240 registros completos e 1 referência incompleta do Spell Compendium.
 
 - Ícones exclusivos em SVG para Abjuração, Adivinhação, Conjuração, Encantamento, Evocação, Ilusão, Necromancia, Transmutação, Psiônica e escola não informada.
 - Aplicação automática dos ícones em todas as magias do catálogo.
@@ -31,7 +39,7 @@ O conteúdo de classes, subclasses, progressões e do Spell Compendium funciona 
 ## Estrutura
 
 ```text
-grimorio_dnd5e_ptbr_project_4.7/
+grimorio_dnd5e_ptbr_project_4.8/
 ├── index.html
 ├── README.md
 ├── CHANGELOG.md
