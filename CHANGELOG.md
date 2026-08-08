@@ -1,5 +1,21 @@
 # Changelog
 
+## 5.10.0
+
+### Zagalhta's Exolunar Collection — Capítulo 7: Magias
+
+- Integradas e localizadas para português brasileiro todas as **63 magias** descritas no Capítulo 7.
+- Criado o catálogo registrado `data/zagalhta-spells.js` com **62 novas entradas-base**.
+- **Dragonskin / Pele de Dragão** foi reconhecida como reimpressão mecanicamente equivalente à entrada de Lyre; a nova procedência e as listas de classe adicionais foram vinculadas sem duplicar a magia no catálogo.
+- As versões **Legacy/5.19** de Cure Wounds, Healing Word, Mass Cure Wounds, Mass Healing Word e Slow foram preservadas como entradas próprias de Zagalhta, mantendo as alterações mecânicas da fonte separadas das versões oficiais.
+- Preservados os grupos **Arsenal Temível de Ahma, Astromancia, Eidomancia, Encarnações de Milarose e Legado de Oyd** como traços pesquisáveis.
+- Preservadas regras específicas como Bônus de Astromancia, Bônus do Cavaleiro Dracônico, Queima de Eidomancia, Fadiga de Combate, Pegada e efeitos de gravidade zero.
+- As listas de classe das páginas finais do capítulo foram aplicadas às entradas, e a lista de magia do Cavaleiro Dracônico foi cruzada com o Capítulo 6.
+- `Summon Belzer / Invocar Belzer` está marcado como ritual.
+- O filtro de fonte de Zagalhta retorna **63 magias**, embora o catálogo próprio contenha 62 entradas, por incluir a reimpressão vinculada de Pele de Dragão.
+- O Grimório passa a possuir **1.108 registros-base de magias/poderes** e **7 catálogos registrados**.
+- `tools/validate-project.js` recebeu validações específicas para a cobertura integral do Capítulo 7.
+
 ## 5.9.0
 
 - Integra as duas classes do Capítulo 6 de *Somnus Domina — Zagalhta's Exolunar Collection*: **Cavaleiro Dracônico** (*Dragoneer*) e **Piloto de Frame** (*Frame Pilot*), ambas integralmente localizadas para PT-BR.

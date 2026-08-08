@@ -194,6 +194,35 @@ for (const id of burdenIds) {
 }
 ok(`Zagalhta: 2 classes, ${zagCoreConcepts.length} Conceitos Centrais, ${zagTechDesignations.length} Designações Tecnológicas, ${zagStandard.length} subclasses adicionais, ${zagFeatureTotal} características e ${zagTableTotal} tabelas verificados`);
 
+// Integridade do Capítulo 7 — Magias de Zagalhta v5.10.
+const zagSpellCatalog = catalogs.find(item => item.id === 'zagalhta-spells');
+const expectedZagSpellNames = [
+  'Antigravity Zone','Astral Collision','Astral Fissure','Astral Weapon','Aurashroud','Auto-Repair','Blasting Tail','Bright Arrow','Conjure Frame Echo','Cure Wounds','Dead Light','Dead Nova','Deathgate','Designate Constructs','Diamond Air','Dragon Strike','(Volcora’s) Empowered Familiar','Extinction','Force Horn','Freezing Lance','Frenzied Wyrmbolt','Galactic Meteor','Ghostly Bite','Gigaburst','Glittering Star Curtain','Gravitational Purge','Healing Word','Limited Wish','Magma Wave','Momentous Weapon','Mass Cure Wounds','Mass Healing Word','Occluding Mists','Open Communication','Outer Breath','Passage of Light','Phantom Breath','Power Word Roar','Propulsion','Radiant Barrage','Rain of Light','Ravenous Tornado','Repair Construct','Rose Tornado','Ruinous End','Seeking Spear','Shroud of Spines','Slipstream Gate','Slow','Sovereignty','Stadyfyre’s Principle','Stasis','Summon Belzer','Summon Frame Unit','Sunspot Arrow','Surging Scythe','Sweeping Glaive','Sympathetic Gateway','Thunder Tongue','Transmission','Vortex Drill','Winged Charge'
+];
+if (!zagSpellCatalog) fail('Zagalhta: catálogo zagalhta-spells ausente.');
+else {
+  if (zagSpellCatalog.spells.length !== 62) fail(`Zagalhta: esperado 62 entradas próprias no catálogo, encontradas ${zagSpellCatalog.spells.length}.`);
+  for (const spell of zagSpellCatalog.spells) {
+    if (!spell.originalName || !spell.name) fail(`Zagalhta: magia sem nome original/localizado: ${spell.id || '(sem id)'}.`);
+    if (!spell.desc) fail(`Zagalhta: magia sem descrição traduzida: ${spell.id || spell.originalName}.`);
+    if (!spell.classes) fail(`Zagalhta: magia sem lista de classes: ${spell.id || spell.originalName}.`);
+    if (spell.sourcePage < 187 || spell.sourcePage > 207) fail(`Zagalhta: página de origem fora da biblioteca de magias em ${spell.id}: ${spell.sourcePage}.`);
+  }
+}
+const dragonskinReprint = catalogs.flatMap(item => item.spells || []).find(spell => spell.id === 'lyre-dragonskin');
+if (!dragonskinReprint?.otherSources?.some(item => registry.resolveSource(item)?.id === 'zagalhta-exolunar')) fail('Zagalhta: reimpressão de Dragonskin/Pele de Dragão não está vinculada à fonte.');
+if (!String(dragonskinReprint?.classes || '').includes('Cavaleiro Dracônico') || !String(dragonskinReprint?.classes || '').includes('Mago')) fail('Zagalhta: Pele de Dragão não recebeu as listas de classe adicionais da nova fonte.');
+const zagFilterSpells = catalogs.flatMap(catalog => (catalog.spells || []).map(spell => ({spell,catalog})))
+  .filter(({spell,catalog}) => registry.spellGroupLabels({...spell,_catalogId:catalog.id,_sourceId:catalog.sourceId}).includes("Zagalhta's Exolunar Collection"));
+if (zagFilterSpells.length !== 63) fail(`Zagalhta: filtro da fonte deve retornar 63 magias, mas retorna ${zagFilterSpells.length}.`);
+const representedOriginalNames = new Set(zagSpellCatalog?.spells?.map(spell => spell.originalName) || []);
+representedOriginalNames.add('Dragonskin');
+for (const name of expectedZagSpellNames) if (!representedOriginalNames.has(name)) fail(`Zagalhta: magia do Capítulo 7 ausente: ${name}.`);
+const zagLegacyNames = new Set(['Cure Wounds','Healing Word','Mass Cure Wounds','Mass Healing Word','Slow']);
+for (const spell of zagSpellCatalog?.spells || []) if (zagLegacyNames.has(spell.originalName) && !(spell.traits || []).includes('Legado 5.19')) fail(`Zagalhta: versão Legacy sem identificação: ${spell.originalName}.`);
+if (!(zagSpellCatalog?.spells || []).find(spell => spell.originalName === 'Summon Belzer')?.ritual) fail('Zagalhta: Invocar Belzer deve estar marcado como ritual.');
+ok(`Zagalhta Capítulo 7: ${zagSpellCatalog?.spells?.length || 0} entradas próprias + 1 reimpressão vinculada = ${zagFilterSpells.length} magias verificadas`);
+
 const sourceEntities = [
   ...classes.map(item => ({ type: 'classe', id: item.id, source: item.source })),
   ...subclasses.map(item => ({ type: 'subclasse', id: item.id, source: item.source }))

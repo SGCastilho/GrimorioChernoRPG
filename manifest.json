@@ -1,5 +1,5 @@
 {
-  "version": "5.9.0",
+  "version": "5.10.0",
   "classes": 22,
   "subclasses": 359,
   "classNames": [
@@ -50,8 +50,17 @@
     "Emissário Espiritual": 1,
     "Spellblade": 9
   },
-  "uiRevision": "Classes e Subclasses Zagalhta v5.9",
+  "uiRevision": "Magias de Zagalhta v5.10",
   "improvements": [
+    "Capítulo 7 — Magias de Zagalhta's Exolunar Collection integrado integralmente em PT-BR",
+    "63 magias do capítulo auditadas: 62 entradas próprias e 1 reimpressão equivalente vinculada à entrada existente de Pele de Dragão",
+    "Cinco versões Legacy/5.19 preservadas separadamente das versões oficiais: Curar Ferimentos, Palavra Curativa, Curar Ferimentos em Massa, Palavra Curativa em Massa e Lentidão",
+    "Grupos Arsenal Temível de Ahma, Astromancia, Eidomancia, Encarnações de Milarose e Legado de Oyd preservados como traços pesquisáveis",
+    "Listas de magias de Bardo, Clérigo, Druida, Alma Favorecida, Inscritor, Paladino, Cavaleiro das Pétalas, Patrulheiro, Feiticeiro, Bruxo e Mago aplicadas conforme o final do Capítulo 7",
+    "Lista própria de magias do Cavaleiro Dracônico cruzada com o Capítulo 6 e aplicada às entradas correspondentes",
+    "Regras especiais de Astromancia, Eidomancia, Bônus do Cavaleiro Dracônico, Fadiga de Combate, Pegada e ambientes de gravidade zero preservadas conforme a fonte",
+    "Invocar Belzer marcado como ritual e textos extensos de Conjurar Eco de Frame, Soberania, Extinção e Princípio de Stadyfyre preservados integralmente",
+    "Filtro de fonte de Zagalhta passa a retornar as 63 magias do capítulo sem duplicar Pele de Dragão",
     "Cavaleiro Dracônico (Dragoneer) de Zagalhta's Exolunar Collection integrado em PT-BR com progressão completa de 20 níveis",
     "Piloto de Frame (Frame Pilot) integrado em PT-BR com progressão completa de 20 níveis",
     "9 Conceitos Centrais do Cavaleiro Dracônico integrados como especializações e 19 Tipos de Encarnação estruturados",
@@ -211,7 +220,7 @@
     "Necromancia": 27,
     "Transmutação": 64
   },
-  "baseCatalogEntries": 1046,
+  "baseCatalogEntries": 1108,
   "phbSpellClassCounts": {
     "Bardo": 120,
     "Bruxo": 74,
@@ -300,7 +309,7 @@
   "scagSpellEntriesAdded": 0,
   "scagSpellDeduplicationStrategy": "As quatro magias foram integradas como versões originais das entradas revisadas já existentes em Tasha, preservando nomes e regras de Costa da Espada sem duplicar linhas no catálogo.",
   "lyreSpells": 280,
-  "baseSpellRecords": 1046,
+  "baseSpellRecords": 1108,
   "lyreClassesIntegrated": true,
   "lyreSubclassesIntegrated": true,
   "lyreOriginalClasses": 4,
@@ -327,7 +336,7 @@
   "sourceRegistryFile": "data/sources.js",
   "registryEngineFile": "js/registry.js",
   "registeredSources": 12,
-  "registeredSpellCatalogs": 6,
+  "registeredSpellCatalogs": 7,
   "validationScript": "tools/validate-project.js",
   "bladeBoneBenefitSpellDescriptions": 108,
   "bladeBoneBenefitNewSpellEntries": 48,
@@ -427,5 +436,17 @@
     "Bruxo": 2,
     "Mago": 2
   },
-  "zagalhtaSpellsIntegrated": false
+  "zagalhtaSpellsIntegrated": true,
+  "zagalhtaChapter7SpellDescriptions": 63,
+  "zagalhtaNewSpellEntries": 62,
+  "zagalhtaLinkedSpellReprints": 1,
+  "zagalhtaSpellGroups": [
+    "Arsenal Temível de Ahma",
+    "Astromancia",
+    "Eidomancia",
+    "Legado 5.19",
+    "Encarnações de Milarose",
+    "Legado de Oyd"
+  ],
+  "zagalhtaLegacySpellVersions": 5
 }

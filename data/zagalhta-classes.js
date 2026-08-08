@@ -1030,7 +1030,7 @@
         "title": "MAGIAS MARCADAS COM ASTERISCO",
         "page": 129,
         "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
-        "text": "Na lista da classe, magias com asterisco foram publicadas em Lyre’s Guide to Retia ou possuem lá uma versão modificada. Esta integração de v5.9 registra a lista como parte da classe, mas não adiciona automaticamente as magias inéditas do Capítulo 7 de Zagalhta; elas poderão ser incorporadas em uma etapa própria."
+        "text": "Na lista da classe, magias com asterisco foram publicadas em Lyre’s Guide to Retia ou possuem lá uma versão modificada. As magias do Capítulo 7 de Zagalhta estão integradas ao catálogo do Grimório a partir da v5.10; reimpressões equivalentes são vinculadas à entrada já existente quando apropriado."
       }
     ]
   },

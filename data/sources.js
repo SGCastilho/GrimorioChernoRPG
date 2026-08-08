@@ -138,7 +138,8 @@
         'O Cavaleiro Dracônico preserva sua arquitetura modular: nove Conceitos Centrais alteram Dados de Vida, salvaguardas, proficiências e progressão de conjuração. A classe também mantém os 19 Tipos de Encarnação e suas regras próprias.',
         'O Piloto de Frame preserva o subsistema de pilotagem da fonte e inclui cinco Designações Tecnológicas: Coordenador, Escaramuçador, Soldado de Assalto, Tecnocarregador e Manipulador de Vórtice.',
         'As 36 subclasses adicionais do Capítulo 6 foram localizadas para PT-BR e vinculadas às classes correspondentes. Somadas aos nove Conceitos Centrais e cinco Designações Tecnológicas, a fonte adiciona 50 entradas de especialização/subclasse ao Grimório.',
-        'As regras e termos exclusivos da 5.19 — como Fadiga de Combate, aceleração 0-G, Junção, Cargas Arcanas, Dado de Favor e Astromancia — foram preservados quando fazem parte das mecânicas da fonte. As magias do Capítulo 7 não fazem parte desta etapa de integração.'
+        'As regras e termos exclusivos da 5.19 — como Fadiga de Combate, aceleração 0-G, Junção, Cargas Arcanas, Dado de Favor, Astromancia e Eidomancia — foram preservados quando fazem parte das mecânicas da fonte.',
+        'O Capítulo 7 — Magias está integrado integralmente: 62 entradas próprias e 1 reimpressão equivalente vinculada à entrada existente de Pele de Dragão, totalizando 63 magias consultáveis pela fonte. As cinco magias Legacy/revisadas foram mantidas como versões próprias da 5.19 para não sobrescrever as versões oficiais.'
       ]
     },
     {

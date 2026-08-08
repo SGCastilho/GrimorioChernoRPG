@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 5.9
+# Grimório D&D 5e PT-BR — versão 5.10
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
 
@@ -10,32 +10,34 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 
 Os catálogos incorporados funcionam offline.
 
-## Novidades da versão 5.9
+## Novidades da versão 5.10
 
-- Integrado o Capítulo 6 — **Opções de Classe** de *Somnus Domina — Zagalhta's Exolunar Collection*.
-- **Cavaleiro Dracônico** (*Dragoneer*) integrado como classe completa, traduzida para PT-BR, com progressão do 1º ao 20º nível.
-- A arquitetura modular do Cavaleiro Dracônico foi preservada: seus **9 Conceitos Centrais** determinam Dado de Vida, salvaguardas, proficiências e progressão de conjuração.
-- Os **19 Tipos de Encarnação** do Cavaleiro Dracônico foram estruturados como tabela real da classe.
-- **Piloto de Frame** (*Frame Pilot*) integrado como classe completa, com progressão do 1º ao 20º nível, Crescimento, Aprimoramentos Inerentes e regras de Junção.
-- As **5 Designações Tecnológicas** do Piloto de Frame foram integradas como especializações consultáveis.
-- Foram integradas **36 subclasses adicionais** do capítulo para Bárbaro, Bardo, Clérigo, Druida, Alma Favorecida, Guerreiro, Inscritor, Monge, Paladino, Cavaleiro das Pétalas, Patrulheiro, Ladino, Feiticeiro, Santo da Espada, Bruxo e Mago.
-- No total, a fonte adiciona **50 novas entradas de subclasse/especialização**: 9 Conceitos Centrais + 5 Designações Tecnológicas + 36 subclasses.
-- As **3 subclasses de Cavaleiro Dracônico** já presentes em *Blade, Bone, & Benefit* agora estão vinculadas à classe-base, deixando de aparecer como conteúdo com classe externa pendente.
-- Nomes originais em inglês são preservados em `originalName`/aliases para pesquisa, enquanto nomes, características, tabelas e textos de consulta ficam em português brasileiro.
-- Termos exclusivos da 5.19, como Fadiga de Combate, aceleração 0-G, Junção, Cargas Arcanas, Dado de Favor e Astromancia, foram preservados conforme a fonte.
-- As magias do Capítulo 7 de Zagalhta **não** foram incluídas nesta etapa.
+- Integrado integralmente o **Capítulo 7 — Magias** de *Somnus Domina — Zagalhta's Exolunar Collection*.
+- Foram auditadas **63 magias** descritas no capítulo.
+- **62 entradas próprias** foram adicionadas ao novo catálogo `zagalhta-spells`.
+- **Pele de Dragão (Dragonskin)** foi identificada como reimpressão mecanicamente equivalente à entrada de Lyre e recebeu apenas a nova procedência, evitando duplicação no catálogo.
+- As versões **Legacy/5.19** de **Curar Ferimentos, Palavra Curativa, Curar Ferimentos em Massa, Palavra Curativa em Massa e Lentidão** permanecem como entradas próprias de Zagalhta, sem substituir as versões oficiais do D&D 5e.
+- Foram preservados como traços pesquisáveis os grupos **Arsenal Temível de Ahma, Astromancia, Eidomancia, Encarnações de Milarose e Legado de Oyd**.
+- As regras especiais do capítulo, como **Bônus de Astromancia, Bônus do Cavaleiro Dracônico, Queima de Eidomancia, gravidade zero, Pegada e Fadiga de Combate**, foram mantidas conforme a fonte.
+- As listas de magia apresentadas ao final do capítulo foram aplicadas a Bardo, Clérigo, Druida, Alma Favorecida, Inscritor, Paladino, Cavaleiro das Pétalas, Patrulheiro, Feiticeiro, Bruxo e Mago. A lista própria do Cavaleiro Dracônico foi cruzada com o Capítulo 6.
+- **Invocar Belzer** está corretamente marcado como ritual.
+- Magias extensas, incluindo **Conjurar Eco de Frame, Soberania, Extinção e Princípio de Stadyfyre**, preservam seus subsistemas e efeitos completos em PT-BR.
+- O filtro **Zagalhta's Exolunar Collection** retorna as **63 magias** do capítulo sem gerar uma segunda linha para Pele de Dragão.
+
+A integração de classes e subclasses realizada na v5.9 permanece intacta: Cavaleiro Dracônico, Piloto de Frame, seus 14 conjuntos de especialização e as 36 subclasses adicionais continuam disponíveis.
 
 ## Conteúdo atual
 
 - **22 classes**.
 - **359 subclasses/especializações**.
 - **22 progressões estruturadas**.
-- **1046 registros-base de magias/poderes** antes de conteúdo personalizado do usuário.
+- **1108 registros-base de magias/poderes** antes de conteúdo personalizado do usuário.
 - 361 magias do Livro do Jogador.
 - 95 magias do Guia de Xanathar.
 - 21 magias do Caldeirão de Tasha.
 - 280 magias/revisões de *Lyre's Guide to Retia*.
 - 48 novas entradas de *Blade, Bone, & Benefit*; outras 60 magias do capítulo são vinculadas como reimpressões às entradas já existentes de Lyre.
+- 62 novas entradas de *Zagalhta's Exolunar Collection*; **Pele de Dragão** é vinculada como reimpressão, totalizando 63 magias do Capítulo 7 disponíveis pelo filtro da fonte.
 - 240 magias/poderes completos + 1 referência incompleta do Spell Compendium.
 - Conteúdo homebrew incorporado anteriormente.
 
@@ -58,7 +60,7 @@ Os catálogos incorporados funcionam offline.
 ## Estrutura relevante
 
 ```text
-grimorio_dnd5e_ptbr_project_5.9/
+grimorio_dnd5e_ptbr_project_5.10/
 ├── index.html
 ├── README.md
 ├── CHANGELOG.md
@@ -84,7 +86,8 @@ grimorio_dnd5e_ptbr_project_5.9/
 │   ├── scag-spells.js
 │   ├── spellblade-spells.js
 │   ├── lyre-spells.js
-│   └── blade-bone-benefit-spells.js
+│   ├── blade-bone-benefit-spells.js
+│   └── zagalhta-spells.js
 ├── js/
 │   ├── app.js
 │   ├── config.js
