@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 5.12
+# Grimório D&D 5e PT-BR — versão 5.15
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
 
@@ -9,6 +9,36 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 3. Abra `index.html` em um navegador moderno.
 
 Os catálogos incorporados funcionam offline.
+
+## Novidades da versão 5.15
+
+- Implementada a **Fase 3 da exportação Foundry VTT** diretamente na interface.
+- Fichas de magia agora possuem **Exportar Foundry**, com pré-validação, diagnóstico, **Copiar YAML** e **Baixar YAML**.
+- O catálogo de magias possui **Exportar filtro atual**, que gera um lote com todo o resultado dos filtros ativos, independentemente da paginação.
+- A janela de lote separa itens **Prontos**, **Revisão editorial** e **Bloqueados**; itens bloqueados são omitidos do YAML sem impedir a exportação das demais magias.
+- O perfil continua homologado para **Foundry 13.351 + DnD5e 5.3.3 + 5e Item Importer 13.9.1**.
+- A cobertura permanece em **1.169 magias exportáveis**, sendo 1.167 prontas, 2 em revisão editorial e 1 bloqueada.
+- A camada visual foi isolada em `js/exporters/foundry-export-ui.js`, preservando `app.js` independente do Foundry.
+- Consulte `FOUNDRY_EXPORT_FASE3.md` e `VALIDACAO_FOUNDRY_EXPORT_5.15.md`.
+
+## Novidades da versão 5.14
+
+- Concluída a **Fase 2 da exportação para Foundry VTT** após aprovação da prova local no ambiente **Foundry 13.351 + DnD5e 5.3.3 + 5e Item Importer 13.9.1**.
+- A cobertura passou de **938 para 1.167 magias prontas sem alertas**.
+- Das 1.170 entradas, **1.169 são exportáveis**, apenas **2 permanecem em revisão editorial** e **1 permanece bloqueada** por ausência do bloco de regras na própria fonte.
+- As **43 magias de ritual** foram homologadas no fluxo testado e deixaram de gerar aviso automático.
+- Alcances decimais são preservados por conversão exata de unidade, sem arredondamento.
+- Ativações alternativas, alcance/duração `Especial`, áreas e alvos variáveis receberam normalização ampliada.
+- As **12 magias de escola Psiônica** agora recebem uma escola técnica individual para o formato do importer, mas `Psiônica` continua preservada como escola editorial na descrição exportada.
+- `data/export/foundry-v13-overrides.js` concentra exceções auditáveis sem modificar as fichas do Grimório.
+- Criada uma bateria de regressão em `tests/foundry-v13/phase2/`.
+- O botão público **Exportar** continua fora da interface por design; sua implementação é a **Fase 3**.
+- Consulte `FOUNDRY_EXPORT_FASE2.md` e `VALIDACAO_FOUNDRY_EXPORT_5.14.md`.
+
+## Novidades da versão 5.13
+
+- Implementadas as **Fases 0 e 1 da exportação para Foundry VTT**, com perfil congelado, registro desacoplado de exportadores, conversor YAML e kit inicial de cinco magias.
+- A auditoria inicial havia identificado 938 magias prontas, 232 em revisão e 13 bloqueadas; esses números foram posteriormente tratados pela Fase 2.
 
 ## Novidades da versão 5.12
 

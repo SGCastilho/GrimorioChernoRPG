@@ -1,5 +1,53 @@
 # Changelog
 
+
+## 5.15.0
+
+### Foundry Export — Fase 3
+
+- Adicionada interface de exportação de magias diretamente no Grimório.
+- Fichas de magia recebem o botão **Exportar Foundry**.
+- Criada pré-validação individual com perfil, status, dados normalizados e diagnóstico de compatibilidade.
+- Adicionadas ações **Copiar YAML** e **Baixar YAML**.
+- Adicionada exportação em lote pelo **filtro atual** do catálogo, considerando todos os resultados e não apenas a página visível.
+- O resumo do lote informa quantidades prontas, em revisão e bloqueadas.
+- Itens bloqueados são omitidos do YAML em lote e exibidos no diagnóstico.
+- Mantida cobertura da Fase 2: 1.170 analisadas, 1.169 exportáveis, 1.167 prontas, 2 em revisão e 1 bloqueada.
+- Criado `js/exporters/foundry-export-ui.js`, carregado após `dynamic-consultation.js`, sem acoplar o `app.js` ao Foundry.
+- Adicionados `FOUNDRY_EXPORT_FASE3.md`, `VALIDACAO_FOUNDRY_EXPORT_5.15.md` e `tools/validate-foundry-export-ui.js`.
+
+## 5.14.0
+
+### Foundry VTT — Fase 2
+
+- Fase 0 confirmada no ambiente real Foundry 13.351 / DnD5e 5.3.3 / 5e Item Importer 13.9.1.
+- Normalização de magias ampliada de 938 para **1.167 entradas prontas sem alertas**.
+- Cobertura final da fase: **1.170 analisadas, 1.169 exportáveis, 2 em revisão editorial e 1 bloqueada**.
+- Rituais homologados no fluxo do importer; 43 entradas deixam de exigir revisão apenas por serem rituais.
+- Conversão exata de alcances decimais entre unidades compatíveis com os campos inteiros do Strict Spell Template.
+- Tempos alternativos e valores explicitamente especiais passam a usar `Special`/`spec`, preservando a redação original.
+- Normalização expandida de durações, alvos e áreas; overrides explícitos adicionados para geometrias e quantidades dinâmicas.
+- 12 magias Psiônicas de Kibbles recebem classificação técnica Foundry individual, preservando `Psiônica` na descrição exportada.
+- `Investida Santificada` permanece bloqueada por ausência do bloco mecânico na fonte; `Geada Divina` e `Chuva de Flechas de Tamamo` permanecem exportáveis com revisão por duração editorial incompleta.
+- Adicionados `FOUNDRY_EXPORT_FASE2.md`, `VALIDACAO_FOUNDRY_EXPORT_5.14.md` e bateria de regressão em `tests/foundry-v13/phase2/`.
+- O botão de exportação permanece reservado para a Fase 3.
+
+## 5.13.0
+
+### Foundry VTT — Fases 0 e 1
+
+- Criado o perfil `foundry13-dnd5e533-item-importer1391` para Foundry VTT 13.351, DnD5e 5.3.3 e 5e Item Importer 13.9.1.
+- Criado `js/exporters/registry.js` para registrar formatos externos sem acoplar o `app.js`.
+- Criado `js/exporters/foundry-v13.js` para gerar Strict Spell Template v2 em YAML.
+- A conversão cobre escola, nível, V/S/M, materiais e custos, consumo, preparação, ativação, alcance, duração, concentração, alvo, áreas comuns, descrição HTML, níveis superiores e fonte/página.
+- Criado `data/export/foundry-v13-overrides.js` para casos especiais revisados.
+- Criado kit de prova Fase 0 com cinco magias e lote YAML em `tests/foundry-v13/phase0/`.
+- Criados `tools/generate-foundry-phase0.js` e `tools/validate-foundry-export.js`.
+- Auditoria dos 8 catálogos atuais: 1.170 magias; 1.157 exportáveis; 938 prontas; 232 com revisão; 13 bloqueadas.
+- Bloqueios conhecidos mantidos explícitos: 12 magias de escola Psiônica e uma entrada sem escola informada.
+- Botões de exportação permanecem fora da interface até validação real da Fase 0.
+
+
 ## 5.12.0
 
 ### Ryoko's Guide to the Yokai Realms — Capítulo 13: Magias

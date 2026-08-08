@@ -1,0 +1,66 @@
+SPELL:
+  ITEM:
+    Name: "Chuva Ácida"
+    Level: 3
+    School: "con"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: true
+
+  MATERIALS:
+    Value: "uma gota de ácido"
+    Cost: 0
+    Supply: 1
+    Consumed: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "action"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "m"
+    Value: 27
+
+  DURATION:
+    Units: "minute"
+    Value: 1
+    Concentration: true
+  TARGETS:
+    Type: "space"
+    Count: 1
+    Choice: true
+    Special: "Um ponto dentro do alcance."
+
+  AREA:
+    Shape: "cylinder"
+    Size: 6
+    Units: "m"
+    Count: 1
+    Width: n/a
+    Height: 18
+    Contiguous: n/a
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Com um suave tamborilar, gotas corrosivas se acumulam até formar uma chuva torrencial de ácido em um cilindro de 6 metros de raio e 18 metros de altura, centrado em um ponto dentro do alcance. Quando a chuva começa, cada criatura na área deve realizar um teste de resistência de Destreza. Em caso de falha, sofre 4d6 de dano ácido; em caso de sucesso, sofre metade desse dano. Pela duração da magia, uma criatura também deve realizar esse teste de resistência quando entrar na área da magia pela primeira vez em seu turno ou terminar o turno nela.</p>
+      <section class="secret" id="upcast"><p><strong>Em Níveis Superiores.</strong> Quando você conjura esta magia usando um espaço de 4º nível ou superior, o dano ácido aumenta em 1d6 para cada nível do espaço acima do 3º.</p></section>
+      <hr><p><small><strong>Fonte:</strong> Ryoko&#039;s Guide to the Yokai Realms, p. 276.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a

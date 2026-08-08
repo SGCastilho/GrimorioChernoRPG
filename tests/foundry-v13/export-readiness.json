@@ -1,0 +1,139 @@
+{
+  "profile": {
+    "id": "foundry13-dnd5e533-item-importer1391",
+    "label": "Foundry VTT 13.351 · DnD5e 5.3.3 · 5e Item Importer 13.9.1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "itemImporterVersion": "13.9.1",
+    "format": "5e-item-importer-strict-spell-v2",
+    "mediaType": "text/yaml",
+    "fileExtension": ".yaml",
+    "phase": 3,
+    "compatibility": {
+      "foundry": "verified-local",
+      "dnd5e": "verified-local",
+      "itemImporter": "verified-local",
+      "note": "A prova local da Fase 0 foi aprovada no ambiente-alvo pelo usuário. A Fase 2 normalizou o catálogo mantendo bloqueio explícito quando a fonte não contém dados suficientes; a Fase 3 expõe essa camada na interface do Grimório."
+    }
+  },
+  "phase": 2,
+  "summary": {
+    "catalogs": 8,
+    "total": 1170,
+    "exportable": 1169,
+    "ready": 1167,
+    "reviewRequired": 2,
+    "blocked": 1,
+    "warningCounts": {
+      "source-duration-incomplete": 2
+    },
+    "rituals": 43,
+    "psionicFallbacks": 12
+  },
+  "byCatalog": [
+    {
+      "id": "phb-2014-spells",
+      "sourceId": "phb-2014",
+      "total": 361,
+      "exportable": 361,
+      "ready": 361,
+      "reviewRequired": 0,
+      "blocked": 0
+    },
+    {
+      "id": "xanathar-spells",
+      "sourceId": "xanathar",
+      "total": 95,
+      "exportable": 95,
+      "ready": 95,
+      "reviewRequired": 0,
+      "blocked": 0
+    },
+    {
+      "id": "tasha-spells",
+      "sourceId": "tasha",
+      "total": 21,
+      "exportable": 21,
+      "ready": 21,
+      "reviewRequired": 0,
+      "blocked": 0
+    },
+    {
+      "id": "lyre-spells",
+      "sourceId": "lyre",
+      "total": 280,
+      "exportable": 280,
+      "ready": 278,
+      "reviewRequired": 2,
+      "blocked": 0
+    },
+    {
+      "id": "blade-bone-benefit-spells",
+      "sourceId": "blade-bone-benefit",
+      "total": 48,
+      "exportable": 48,
+      "ready": 48,
+      "reviewRequired": 0,
+      "blocked": 0
+    },
+    {
+      "id": "zagalhta-spells",
+      "sourceId": "zagalhta-exolunar",
+      "total": 62,
+      "exportable": 62,
+      "ready": 62,
+      "reviewRequired": 0,
+      "blocked": 0
+    },
+    {
+      "id": "ryoko-spells",
+      "sourceId": "ryoko-yokai-realms",
+      "total": 62,
+      "exportable": 62,
+      "ready": 62,
+      "reviewRequired": 0,
+      "blocked": 0
+    },
+    {
+      "id": "kibbles-spell-compendium",
+      "sourceId": "kibbles",
+      "total": 241,
+      "exportable": 240,
+      "ready": 240,
+      "reviewRequired": 0,
+      "blocked": 1
+    }
+  ],
+  "review": [
+    {
+      "id": "lyre-divine-frost",
+      "name": "Geada Divina",
+      "warnings": [
+        "Duração incompleta na fonte e preservada como Especial: \"Concentração, até 1 — unidade não informada no PDF\"."
+      ]
+    },
+    {
+      "id": "lyre-tamamos-arrowfall",
+      "name": "Chuva de Flechas de Tamamo",
+      "warnings": [
+        "Duração incompleta na fonte e preservada como Especial: \"Não informada no PDF\"."
+      ]
+    }
+  ],
+  "blocked": [
+    {
+      "id": "spellblade-sanctified-charge",
+      "name": "Investida Santificada",
+      "errors": [
+        "Fonte incompleta: Investida Santificada é apenas referenciada no compêndio e não possui bloco de regras suficiente para uma exportação fiel.",
+        "Tempo de conjuração ausente na fonte: \"Não informado\".",
+        "Alcance ausente na fonte: \"Não informado\"."
+      ],
+      "warnings": [
+        "Duração incompleta na fonte e preservada como Especial: \"Não informada\".",
+        "Tipo/quantidade de alvo não pôde ser determinado com segurança."
+      ]
+    }
+  ],
+  "validationErrors": []
+}

@@ -1,0 +1,57 @@
+SPELL:
+  ITEM:
+    Name: "Passo pelas Nuvens"
+    Level: 4
+    School: "trs"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: true
+
+  MATERIALS:
+    Value: "uma pena de mithral no valor de pelo menos 100 po, consumida pela magia"
+    Cost: 100
+    Supply: 1
+    Consumed: true
+  PREPARATION:
+    Method: "ritual"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "minute"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "m"
+    Value: 9
+
+  DURATION:
+    Units: "hour"
+    Value: 24
+    Concentration: false
+  TARGETS:
+    Type: "willing"
+    Count: 10
+    Choice: true
+    Special: "Até dez criaturas voluntárias que você possa ver dentro do alcance."
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Esta magia concede a até dez criaturas voluntárias que você possa ver dentro do alcance a capacidade de caminhar sobre vapor de água fortemente obscurecente — como nuvens, neblina e névoa — como se fosse chão sólido até a magia terminar. Uma criatura afetada pode suspender esse efeito sobre si como uma ação bônus, permitindo que atravesse vapor de água, e retomá-lo como uma ação bônus.</p>
+      <p>Uma criatura afetada por esta magia cai à velocidade de 18 metros por rodada, não sofre dano de queda ao aterrissar e pode cair de pé. Além disso, a distância de seus saltos é quadruplicada quando ela salta a partir de vapor de água, mas deixa um rastro de condensação claramente visível em seu caminho.</p>
+      <hr><p><small><strong>Fonte:</strong> Ryoko&#039;s Guide to the Yokai Realms, p. 279.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a

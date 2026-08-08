@@ -1,0 +1,748 @@
+SPELL:
+  ITEM:
+    Name: "Chuva de Meteoros"
+    Level: 9
+    School: "evo"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "action"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "m"
+    Value: 1500
+
+  DURATION:
+    Units: "inst"
+    Value: n/a
+    Concentration: false
+  TARGETS:
+    Type: "space"
+    Count: 1
+    Choice: true
+    Special: "Área de efeito estruturada a partir da ficha da magia; consulte a descrição para exceções."
+
+  AREA:
+    Shape: "sphere"
+    Size: 12
+    Units: "m"
+    Count: n/a
+    Width: n/a
+    Height: n/a
+    Contiguous: n/a
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Esferas de fogo incandescentes atingem o solo em quatro pontos diferentes que você possa ver, dentro do alcance. Cada criatura numa esfera de 12 metros de raio, centrada em cada ponto escolhido por você, deve realizar um teste de resistência de Destreza. A esfera se espalha, dobrando esquinas. Uma criatura sofre 20d6 de dano de fogo e 20d6 de dano de concussão se falhar na resistência ou metade desse dano se obtiver sucesso. Uma criatura na área de mais de uma explosão de chamas é afetada apenas uma vez.</p>
+      <p>A magia causa dano aos objetos na área e incendeia objetos inflamáveis que não estejam sendo vestidos ou carregados.</p>
+      <hr><p><small><strong>Fonte:</strong> Livro do Jogador — D&amp;D 5e 2014, p. 227.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Ampliar Plantas"
+    Level: 3
+    School: "trs"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "special"
+    Value: 1
+    Condition: "1 ação ou 8 horas"
+
+  RANGE:
+    Units: "m"
+    Value: 45
+
+  DURATION:
+    Units: "inst"
+    Value: n/a
+    Concentration: false
+  TARGETS:
+    Type: "space"
+    Count: 1
+    Choice: true
+    Special: "Área de efeito estruturada a partir da ficha da magia; consulte a descrição para exceções."
+
+  AREA:
+    Shape: "radius"
+    Size: 30
+    Units: "m"
+    Count: n/a
+    Width: n/a
+    Height: n/a
+    Contiguous: n/a
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Essa magia canaliza vitalidade nas plantas dentro de uma área especifica. Existem dois usos possíveis para essa magia, concedendo ou benefícios imediatos ou a longo prazo.</p>
+      <p>Se você conjurar essa magia usando 1 ação, escolha um ponto dentro do alcance. Todas as plantas normais num raio de 30 metros centrado no ponto, tornam-se espessas e carregadas. Uma criatura se movendo na área deve gastar 6 metros de movimento para cada 1,5 metro que se mover.</p>
+      <p>Você pode excluir uma ou mais áreas de qualquer tamanho, dentro da área da magia, para não ser afetada.</p>
+      <p>Se você conjurar essa magia ao longo de 8 horas, você fertiliza a terra. Todas as plantas num raio de 800 metros, centrado no ponto dentro do alcance, ficam enriquecidas por 1 ano. As plantas fornecerão o dobro da quantidade normal de comida quando colhidas.</p>
+      <hr><p><small><strong>Fonte:</strong> Livro do Jogador — D&amp;D 5e 2014, p. 217.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Aprisionamento"
+    Level: 9
+    School: "abj"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: true
+
+  MATERIALS:
+    Value: "um pergaminho de representação ou uma estatueta esculpida para se parecer com o alvo e um componente especial, que varia de acordo com a versão da magia que você escolher, valendo, no mínimo, 500 po por Dado de Vida"
+    Cost: 0
+    Supply: 1
+    Consumed: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "minute"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "m"
+    Value: 9
+
+  DURATION:
+    Units: "disp"
+    Value: n/a
+    Concentration: false
+  TARGETS:
+    Type: "creature"
+    Count: 1
+    Choice: true
+    Special: "Quantidade inferida de uma fórmula explícita na descrição."
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Você cria um impedimento mágico para imobilizar uma criatura que você possa ver, dentro do alcance. O alvo deve ser bem sucedido num teste de resistência de Sabedoria ou será vinculado à magia; se ele for bem sucedido, ele será imune a essa magia se você conjura-la novamente. Enquanto estiver sob efeito dessa magia, a criatura não precisará respirar, comer ou beber e não envelhece. Magias de adivinhação não podem localizar ou perceber o alvo.</p>
+      <p>Quando você conjura essa magia, você escolhe uma das seguintes formas de aprisionamento.</p>
+      <p>Enterrar. O alvo é sepultado bem fundo na terra em uma esfera de energia mágica que é grande o suficiente para conter o alvo. Nada pode atravessar a esfera e nenhuma criatura pode se teletransportar ou usar viagem plantar para entrar ou sair dela.</p>
+      <p>O componente especial para essa versão da magia é um pequeno globo de mitral.</p>
+      <p>Acorrentar. Pesadas correntes, firmemente presas ao solo, matem o alvo no lugar. O alvo está impedido até a magia acabar e ele não pode se mover ou ser movido por nenhum meio, até lá.</p>
+      <p>O componente especial para essa versão da magia é uma fina corrente de metal precioso.</p>
+      <p>Prisão Cercada. A magia transporta o alvo para dentro de um pequeno semiplano que é protegido contra teletransporte e viagem planar. O semiplano pode ser um labirinto, uma jaula, uma torre ou qualquer estrutura ou área confinada similar, à sua escolha.</p>
+      <p>O componente material especial para essa versão da magia é uma representação em miniatura da prisão, feita de jade.</p>
+      <p>Contenção Reduzida. O alvo é reduzido até o tamanho de 30 centímetros e é aprisionado dentro de uma gema ou objeto similar. A luz pode passar através da gema normalmente (permitindo que o alvo veja o exterior e outras criaturas vejam o interior), mas nada mais pode atravessa-la, mesmo por meios de teletransporte ou viagem planar. A gema não pode ser partida ou quebrada enquanto a magia estiver efetiva.</p>
+      <p>O componente especial para essa versão da magia é uma gema transparente grande, como um coríndon, diamante ou rubi.</p>
+      <p>Torpor. O alvo cai no sono e não pode ser acordado.</p>
+      <p>O componente especial para essa versão da magia consiste em ervas soporíferas raras.</p>
+      <p>Terminando a Magia. Durante a conjuração da magia, em quaisquer das versões, você pode especificar uma condição que irá fazer a magia terminar e libertará o alvo. A condição pode ser o quão especifica ou elaborada quanto você quiser, mas o Mestre deve concordar que a condição é razoável e tem uma probabilidade de acontecer. As condições podem ser baseadas no nome, identidade ou divindade da criatura mas, no mais, devem ser baseadas em ações ou qualidades observáveis e não em valores intangíveis tais como nível, classe e pontos de vida.</p>
+      <p>A magia dissipar magia pode terminar a magia apenas se for conjurada como uma magia de 9° nível, tendo como alvo ou a prisão ou o componente especial usado para cria-la.</p>
+      <p>Você pode usar um componente especial em particular para criar apenas uma prisão por vez. Se você conjurar essa magia novamente usando o mesmo componente, o alvo da primeira conjuração é, imediatamente, liberado do vínculo.</p>
+      <hr><p><small><strong>Fonte:</strong> Livro do Jogador — D&amp;D 5e 2014, p. 219.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Sono"
+    Level: 1
+    School: "enc"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: true
+
+  MATERIALS:
+    Value: "um punhado de areia fina, pétalas de rosas ou um grilo"
+    Cost: 0
+    Supply: 1
+    Consumed: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "action"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "m"
+    Value: 36
+
+  DURATION:
+    Units: "minute"
+    Value: 1
+    Concentration: false
+  TARGETS:
+    Type: "space"
+    Count: 1
+    Choice: true
+    Special: "Um ponto dentro do alcance."
+
+  AREA:
+    Shape: "sphere"
+    Size: 6
+    Units: "m"
+    Count: 1
+    Width: n/a
+    Height: n/a
+    Contiguous: n/a
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Essa magia põem as criaturas num entorpecimento mágico. Jogue 5d8; o total é a quantidade de pontos de vida de criaturas afetados pela magia. As criaturas numa área de 6 metros de raio, centrada no ponto escolhido, dentro do alcance, são afetadas em ordem ascendente dos pontos de vida atuais delas (ignorando criaturas inconscientes).</p>
+      <p>Começando com as criaturas com menos pontos de vida atuais, cada criatura afetada por essa magia cai inconsciente até a magia acabar, sofrer dano ou alguém usar sua ação para sacudi-la ou esbofeteá-la até acordar. Subtraia os pontos de vida de cada criatura do total antes de seguir para a próxima criatura com menos pontos de vida atuais. Os pontos de vida atuais da criatura devem ser iguais ou menores que o valor restante para que a criatura possa ser afetada.</p>
+      <p>Mortos-vivos e criaturas imunes a serem enfeitiçadas não são afetadas por essa magia.</p>
+      <section class="secret" id="upcast"><p><strong>Em Níveis Superiores.</strong> Quando você conjurar essa magia usando um espaço de magia de 2º nível ou superior, jogue 2d8 adicionais para cada nível do espaço acima do 1°.</p></section>
+      <hr><p><small><strong>Fonte:</strong> Livro do Jogador — D&amp;D 5e 2014, p. 283.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Soneca"
+    Level: 3
+    School: "enc"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: false
+    Somatic: true
+    Material: true
+
+  MATERIALS:
+    Value: "uma pitada de areia"
+    Cost: 0
+    Supply: 1
+    Consumed: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "action"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "m"
+    Value: 9
+
+  DURATION:
+    Units: "minute"
+    Value: 10
+    Concentration: false
+  TARGETS:
+    Type: "creature"
+    Count: 3
+    Choice: true
+    Special: "Quantidade inferida de uma fórmula explícita na descrição."
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Você faz um gesto acalmante e até três criaturas dispostas a sua escolha que você pode ver dentro do alcance caem inconscientes pela duração da magia. A magia termina em um alvo prematuramente se ele levar dano ou alguém usar uma ação para a acordar a sacudindo ou estapeando. Se o alvo continuar inconsciente pela duração completa, o alvo ganha os benefícios de um descanso curto e não pode ser afetado por esta magia novamente até que termine um descanso longo.</p>
+      <section class="secret" id="upcast"><p><strong>Em Níveis Superiores.</strong> Quando você conjura essa magia usando um espaço de magia de 4º nivel ou superior, você pode adicionar uma criatura disposta extra como alvo a cada nivel do espaço acima do 3º .</p></section>
+      <hr><p><small><strong>Fonte:</strong> Guia de Xanathar para Todas as Coisas — D&amp;D 5e, p. 170.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Santuário Particular"
+    Level: 4
+    School: "abj"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: true
+
+  MATERIALS:
+    Value: "uma fina folha de chumbo, um pedaço de vidro opaco, um chumaço de algodão ou tecido e crisólita em pó"
+    Cost: 0
+    Supply: 1
+    Consumed: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "minute"
+    Value: 10
+    Condition: n/a
+
+  RANGE:
+    Units: "m"
+    Value: 36
+
+  DURATION:
+    Units: "hour"
+    Value: 24
+    Concentration: false
+  TARGETS:
+    Type: "space"
+    Count: 1
+    Choice: true
+    Special: "Uma área cúbica escolhida dentro do alcance, com lados variáveis de 1,5 a 30 metros; a dimensão permanece descrita no texto."
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Você torna magicamente segura uma área dentro do alcance. A área é um cubo com lados entre 1,5 e 30 metros. A magia dura pela duração ou até você usar uma ação para encerrá-la. Ao conjurá-la, escolha qualquer quantidade das propriedades a seguir:<br>• Som não atravessa a barreira nos limites da área protegida.<br>• A barreira parece escura e enevoada, impedindo a visão através dela, inclusive visão no escuro.<br>• Sensores criados por magias de adivinhação não podem surgir dentro da área nem atravessar a barreira.<br>• Criaturas na área não podem ser alvo de magias de adivinhação.<br>• Nada pode se teletransportar para dentro ou para fora da área.<br>• Viagem planar é bloqueada dentro da área.<br>Conjurar esta magia no mesmo local todos os dias durante um ano torna o efeito permanente.</p>
+      <section class="secret" id="upcast"><p><strong>Em Níveis Superiores.</strong> Quando você conjura esta magia usando um espaço de magia de 5º nível ou superior, pode aumentar o lado máximo do cubo em 30 metros para cada nível do espaço acima do 4º. Assim, com um espaço de 5º nível, pode proteger um cubo com até 60 metros de lado.</p></section>
+      <hr><p><small><strong>Fonte:</strong> Lyre&#039;s Guide to Retia — Land of Industry, p. 578.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Uivo da Meia-Noite"
+    Level: 3
+    School: "evo"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: false
+    Material: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "action"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "self"
+    Value: n/a
+
+  DURATION:
+    Units: "inst"
+    Value: n/a
+    Concentration: false
+  TARGETS:
+    Type: "space"
+    Count: 1
+    Choice: false
+    Special: "Todas as outras criaturas dentro de 4,5 metros do conjurador."
+
+  AREA:
+    Shape: "radius"
+    Size: 15
+    Units: "ft"
+    Count: 1
+    Width: n/a
+    Height: n/a
+    Contiguous: n/a
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Você libera um uivo bestial aterrorizante, preenchendo o espaço ao seu redor com ruído ensurdecedor e tormento mental. Cada criatura, exceto você, dentro do alcance da magia deve realizar um teste de resistência de Constituição. Cada alvo que falhar sofre 2d8 de dano trovejante e 2d8 de dano psíquico e fica surdo por 1 minuto. Criaturas ensurdecidas por esta magia repetem o teste de resistência ao final de cada um de seus turnos, encerrando o efeito em caso de sucesso.</p>
+      <p>Se esta magia for conjurada enquanto você estiver em escuridão ou penumbra, causa também 1d8 adicional de dano psíquico e 1d8 adicional de dano necrótico.</p>
+      <section class="secret" id="upcast"><p><strong>Em Níveis Superiores.</strong> Quando você conjura esta magia no 4º nível ou superior, pode escolher um dos efeitos a seguir para cada nível de espaço acima do 3º:
+      • O alcance da magia aumenta em 4,5 metros.
+      • Você pode excluir duas outras criaturas desse efeito.
+      • O dano psíquico e o dano trovejante aumentam em 1d8 cada.
+      • Criaturas que falharem no teste de resistência sofrem metade do dano psíquico e trovejante, mas não ficam surdas.</p></section>
+      <hr><p><small><strong>Fonte:</strong> Somnus Domina — Blade, Bone, &amp; Benefit, p. 160.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Extinção"
+    Level: 9
+    School: "evo"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: true
+
+  MATERIALS:
+    Value: "uma esfera de cristal no valor de pelo menos 10.000 po, consumida pela magia"
+    Cost: 10000
+    Supply: 1
+    Consumed: true
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "minute"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "spec"
+    Value: n/a
+
+  DURATION:
+    Units: "minute"
+    Value: 10
+    Concentration: false
+  TARGETS:
+    Type: "space"
+    Count: 1
+    Choice: true
+    Special: "Um ponto que o conjurador possa ver; a esfera cataclísmica possui raio de aproximadamente 8 km."
+
+  AREA:
+    Shape: "sphere"
+    Size: 8
+    Units: "km"
+    Count: 1
+    Width: n/a
+    Height: n/a
+    Contiguous: n/a
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Você faz um evento cataclísmico ser sonhado para a realidade, rasgando o céu cerca de 8 quilômetros acima do ponto escolhido e produzindo uma ameaça cósmica — como um meteoro do tamanho de uma cidade, uma perturbação gravitacional ou outro instrumento de destruição absoluta. Durante 10 minutos, tudo em uma esfera de aproximadamente 8 quilômetros de raio centrada no ponto fica sujeito aos efeitos abaixo.</p>
+      <p>Arauto do Fim. Como uma ação bônus, escolha um ponto que possa ver dentro da área. Cada criatura em uma esfera de 6 metros de raio centrada nesse ponto sofre os efeitos de Atmosfera Perigosa abaixo, atingida por uma concentração dos fenômenos devastadores. Enquanto você estiver dentro da área, recebe deslocamento de aceleração 0-G igual ao seu deslocamento base e ignora os efeitos da exaustão.</p>
+      <p>Atmosfera Perigosa. Uma criatura exposta ao ambiente aberto, sem cobertura, por mais de 1 minuto deve realizar um teste de resistência de Constituição. Em caso de falha, sofre 5d10 de dano de energia e 1 ponto de Fadiga de Combate. Independentemente do resultado, repete o teste ao fim de cada minuto adicional de exposição. Você é imune a este efeito.</p>
+      <p>Distorção Gravitacional. A área da magia é considerada um ambiente de baixa gravidade durante sua duração.</p>
+      <p>Obliteração. Se a duração terminar sem a magia ter sido encerrada antecipadamente, o cataclismo se resolve. Cada criatura na área realiza um teste de resistência de Constituição, sofrendo 20d10 de dano de energia em caso de falha ou metade em caso de sucesso. Objetos e estruturas sofrem cinco vezes esse dano. Criaturas abrigadas a pelo menos 300 metros abaixo do solo sofrem metade do dano. Exceto por esse abrigo subterrâneo, a magia ignora toda cobertura. Se você estiver na explosão, tem vantagem no teste e sofre metade do dano resultante. O efeito mata a vida selvagem, devasta a maior parte das estruturas e reduz a região atingida a uma cratera fumegante. Criaturas, objetos e itens mágicos destruídos pela Obliteração são reduzidos a pó, a menos que sejam eidólicos por natureza; apenas artefatos carregados por eles permanecem.</p>
+      <p>Imunidade Antimagia. Esta magia não pode ser dissipada enquanto você estiver vivo e dentro do alcance de seus efeitos. Se morrer antes do fim da duração, role 1d100 no início de cada minuto restante; com 20 ou menos, a magia termina sem que a Obliteração ocorra.</p>
+      <p>Queima de Eidomancia Avançada. Ao conjurar esta magia, realize um teste de resistência de Constituição CD 19. Em caso de falha, sofre quatro níveis de exaustão e perde permanentemente a capacidade de conjurá-la. Se a falha elevaria sua exaustão a 6 níveis, ela é definida como 5 e, assim que a magia terminar, seus pontos de vida são reduzidos imediatamente a 0.</p>
+      <hr><p><small><strong>Fonte:</strong> Somnus Domina — Zagalhta’s Exolunar Collection, p. 194.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Onda de Magma"
+    Level: 4
+    School: "con"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: false
+    Somatic: true
+    Material: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "action"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "self"
+    Value: n/a
+
+  DURATION:
+    Units: "inst"
+    Value: n/a
+    Concentration: false
+  TARGETS:
+    Type: "space"
+    Count: 1
+    Choice: false
+    Special: "Linha originada no conjurador. O texto da magia define 12 metros de comprimento por 6 metros de largura."
+
+  AREA:
+    Shape: "line"
+    Size: 12
+    Units: "m"
+    Count: 1
+    Width: 6
+    Height: n/a
+    Contiguous: n/a
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Uma onda de magma parte de você, preenchendo uma linha de 12 metros de comprimento e 6 metros de largura. Cada alvo nessa área deve realizar um teste de resistência de Destreza, sofrendo 6d6 de dano de fogo em caso de falha ou metade em caso de sucesso. O magma permanece nesses espaços por 1 minuto, transformando-os em terreno difícil.</p>
+      <p>Uma criatura que comece o turno em um espaço coberto por magma ou entre em um desses espaços pela primeira vez no turno sofre 1d6 de dano de fogo. Cada espaço é considerado individualmente; uma criatura grande que entre em vários espaços simultaneamente durante o movimento conta apenas um espaço por vez.</p>
+      <p>Um espaço deixa de conter magma se estiver preenchido por um líquido que não seja quente ou inflamável, ou se o espaço sofrer dano de frio.</p>
+      <p>Bônus do Cavaleiro Dracônico. Quando conjurada por um Cavaleiro Dracônico, esta magia é tratada como se tivesse sido conjurada dois níveis acima, até o máximo de 9º nível.</p>
+      <section class="secret" id="upcast"><p><strong>Em Níveis Superiores.</strong> Conforme escrito na fonte: quando você conjura esta magia no 5º nível ou superior, pode escolher um dos efeitos a seguir para cada nível acima do 3º:
+      • O dano inicial aumenta em 1d6.
+      • A onda fica 3 metros mais longa e 1,5 metro mais larga.
+      • Você se torna imune aos efeitos do magma produzido por esta magia durante a duração dele.
+      • O dano dos espaços cobertos de magma aumenta para d8 (1 nível), d10 (2 níveis) ou d12 (3 níveis).</p></section>
+      <hr><p><small><strong>Fonte:</strong> Somnus Domina — Zagalhta’s Exolunar Collection, p. 197.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Pergunta Compelida"
+    Level: 1
+    School: "div"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: false
+    Somatic: true
+    Material: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "action"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "m"
+    Value: 9
+
+  DURATION:
+    Units: "inst"
+    Value: n/a
+    Concentration: false
+  TARGETS:
+    Type: "creature"
+    Count: 1
+    Choice: true
+    Special: "Quantidade inferida de uma fórmula explícita na descrição."
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Você concentra seus poderes telepáticos em uma criatura e faz uma pergunta simples. Ela deve realizar um teste de resistência de Inteligência. Se falhar, forma involuntariamente um pensamento curto ou imagem mental que responde à pergunta da melhor maneira possível, e você percebe essa resposta por telepatia.</p>
+      <p>A criatura recebe +5 no teste de resistência contra esta habilidade para cada vez que ela tiver sido usada sobre a criatura nas últimas 24 horas.</p>
+      <p><small><strong>Compatibilidade Foundry:</strong> a escola original “Psiônica” não existe no Strict Spell Template 13.9.1; esta exportação usa Adivinhação como escola técnica, preservando a escola original nesta descrição.</small></p>
+      <hr><p><small><strong>Fonte:</strong> Kibbles&#039; Casting Compendium v2.1 — p. 58, p. 58.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Geada Divina"
+    Level: 5
+    School: "enc"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: true
+
+  MATERIALS:
+    Value: "um nenúfar preservado ou congelado"
+    Cost: 0
+    Supply: 1
+    Consumed: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "action"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "m"
+    Value: 9
+
+  DURATION:
+    Units: "spec"
+    Value: n/a
+    Concentration: true
+  TARGETS:
+    Type: "creature"
+    Count: 1
+    Choice: true
+    Special: "Quantidade inferida de uma fórmula explícita na descrição."
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Escolha uma criatura dentro do alcance. O corpo e as armas dela ficam cobertos por uma camada radiante de geada que escorre como fumaça. Pela duração da magia, os ataques com armas dessa criatura causam 2d10 de dano de frio adicional, e ela se torna imune a dano de frio e radiante. O alvo não pode ser agarrado nem impedido durante a duração, e qualquer criatura que tente fazê-lo falha automaticamente. Qualquer criatura que termine o turno em contato direto com o alvo durante a duração sofre 2d10 de dano de frio.</p>
+      <section class="secret" id="upcast"><p><strong>Em Níveis Superiores.</strong> Quando você conjura esta magia no 7º nível ou superior, pode escolher uma criatura adicional dentro do alcance para cada dois níveis do espaço acima do 5º.</p></section>
+      <hr><p><small><strong>Fonte:</strong> Lyre&#039;s Guide to Retia — Land of Industry, p. 549.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
+---
+SPELL:
+  ITEM:
+    Name: "Chuva de Flechas de Tamamo"
+    Level: 4
+    School: "con"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "action"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "self"
+    Value: n/a
+
+  DURATION:
+    Units: "spec"
+    Value: n/a
+    Concentration: false
+  TARGETS:
+    Type: "self"
+    Count: 1
+    Choice: false
+    Special: n/a
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Você conjura uma série de projéteis de energia que flutuam ao seu redor em um padrão circular. Como uma ação bônus em cada um de seus turnos, você pode comandar até três grupos desses projéteis para assumirem um tipo específico de energia e dispará-los contra alvos que você possa ver a até 18 metros de você, cada grupo realizando um ataque à distância com magia separado. Vários grupos podem atacar o mesmo alvo no mesmo turno, mas continuam sendo ataques distintos. Cada grupo que atingir causa 2d10 de dano do tipo de energia escolhido. Quando dispara os grupos, você deve escolher um dos seguintes tipos de dano, que todos os projéteis assumem: fogo, elétrico, frio, ácido ou trovejante. Você pode mudar o tipo de dano a cada vez que disparar os grupos.</p>
+      <section class="secret" id="upcast"><p><strong>Em Níveis Superiores.</strong> Quando você conjura esta magia usando um espaço de 5º nível ou superior, pode disparar um grupo adicional a cada turno para cada nível do espaço acima do 4º.</p></section>
+      <hr><p><small><strong>Fonte:</strong> Lyre&#039;s Guide to Retia — Land of Industry, p. 587.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a

@@ -1,0 +1,62 @@
+SPELL:
+  ITEM:
+    Name: "Conjurar Eco de Frame"
+    Level: 5
+    School: "con"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: true
+
+  MATERIALS:
+    Value: "um objeto retirado do corpo de uma unidade frame ou um componente de uma no valor de pelo menos 500 po"
+    Cost: 500
+    Supply: 1
+    Consumed: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "action"
+    Value: 1
+    Condition: n/a
+
+  RANGE:
+    Units: "m"
+    Value: 18
+
+  DURATION:
+    Units: "hour"
+    Value: 1
+    Concentration: true
+  TARGETS:
+    Type: "space"
+    Count: 1
+    Choice: true
+    Special: "Um espaço desocupado dentro do alcance; o conjurador também pode conjurar o eco sobreposto ao próprio espaço para embarcar automaticamente."
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Você invoca um eco mecânico de uma unidade frame na forma de um DGR ou de um frame lunar. Esse constructo artificial surge em um espaço desocupado que você possa ver a até 18 metros, ou você pode conjurá-lo em um espaço sobreposto ao seu para embarcar automaticamente na unidade. A unidade usa o bloco de estatísticas Eco de Unidade Frame, com características determinadas por ter sido conjurada como DGR ou frame lunar. O eco desaparece quando cai a 0 pontos de vida ou quando a magia termina.</p>
+      <p>A unidade frame é aliada sua e de seus companheiros. Em combate, compartilha sua contagem de iniciativa, mas realiza o turno imediatamente depois do seu. Ela obedece aos seus comandos verbais, sem exigir ação sua; se você não der nenhum comando, usa a ação Esquivar e seu deslocamento para evitar perigo.</p>
+      <p>Notas do Eco de Frame. Classe de Armadura: 14 + o nível em que a magia foi conjurada. Pontos de Vida: 10 × o nível em que a magia foi conjurada. Dados de Vida: uma quantidade de dados igual ao nível da magia; d10 enquanto Enorme e d12 enquanto Imenso ou Tremendo. Limiar de Dano: 5 + o nível da magia. Idiomas: entende os idiomas conhecidos pelo conjurador, mas não fala. Multiataque: realiza uma quantidade de ataques com arma igual à metade do nível em que a magia foi conjurada. Tamanho: Enorme; aumenta uma categoria quando conjurada no 7º nível (Imenso) e novamente no 9º nível (Tremendo).</p>
+      <p>Eco de Unidade Frame — constructo Enorme (DGR ou frame lunar). CA 14 + nível da magia; PV 10 × nível da magia; Limiar 5 + nível da magia. Deslocamentos: 9 m, voo (pairar) 18 m, aceleração 0-G 36 m. For 20 (+5), Des 12 (+1), Con 16 (+3), Int 10 (+0), Sab 18 (+4), Car 10 (+0). Imunidades: necrótico e veneno (DGR); dano contundente, perfurante e cortante de ataques não mágicos (frame lunar); às condições enfeitiçado, exausto, amedrontado, envenenado e inconsciente. Sentidos: percepção às cegas 18 m, Percepção passiva 14.</p>
+      <p>Características. Imutável. Liga Metálica (somente DGR): o constructo é resistente a dano causado por criaturas duas ou mais categorias de tamanho menores que ele. Resistência à Magia (somente frame lunar): tem vantagem em testes de resistência contra efeitos mágicos. Pilotagem: o conjurador pode gastar 1,5 m de movimento para entrar no eco como se o pilotasse. Enquanto o faz, possui cobertura total, pode realizar suas ações por meio do corpo da unidade e enxergar através dos sentidos dela; porém, sempre que o eco sofre dano, realiza um teste de concentração como se você tivesse sofrido esse dano.</p>
+      <p>Ações. Multiataque: a unidade realiza uma quantidade de ataques igual à metade do nível do espaço usado para invocá-la e, em seguida, usa Lâmina de Aura ou Barragem de Mísseis. Golpe de Frame: ataque corpo a corpo com arma usando seu modificador de ataque com magia, alcance 3 m, um alvo; em um acerto, causa 1d10 + 5 + nível da magia de dano perfurante ou contundente. Lâmina de Aura (somente frame lunar): atinge cada alvo escolhido dentro de uma distância igual a 1,5 m × o nível da magia; cada alvo realiza um teste de resistência de Destreza contra sua CD de magia, sofrendo 2d8 de dano radiante em caso de falha. Barragem de Mísseis (somente DGR): dispara contra uma quantidade de alvos igual à metade do nível da magia, arredondada para cima, a até 36 m; cada alvo realiza um teste de resistência de Destreza contra sua CD de magia, sofrendo 3d6 de dano de energia em caso de falha. Impulso Mach (somente DGR): o deslocamento do eco dobra até o fim do turno e ele usa a ação Disparada. Teleporte (somente frame lunar): o eco se teleporta, junto do piloto e do que estiver carregando, para um espaço desocupado que possa ver a até 24 m.</p>
+      <section class="secret" id="upcast"><p><strong>Em Níveis Superiores.</strong> Quando você conjura esta magia usando um espaço de 6º nível ou superior, as estatísticas da unidade frame mudam conforme descrito no bloco de estatísticas.</p></section>
+      <hr><p><small><strong>Fonte:</strong> Somnus Domina — Zagalhta’s Exolunar Collection, p. 189.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a

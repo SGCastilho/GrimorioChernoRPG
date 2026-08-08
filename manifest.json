@@ -1,5 +1,5 @@
 {
-  "version": "5.12.0",
+  "version": "5.15.0",
   "classes": 24,
   "subclasses": 377,
   "classNames": [
@@ -54,8 +54,23 @@
     "Artífice": 4,
     "Spellblade": 9
   },
-  "uiRevision": "Ryoko — Magias v5.12",
+  "uiRevision": "Foundry Export — Fase 3 v5.15",
   "improvements": [
+    "Fase 3 da exportação Foundry disponível na interface: pré-validação, copiar YAML, baixar YAML e exportação em lote pelo filtro atual",
+    "Exportação em lote considera todos os resultados filtrados, independentemente da paginação, e omite somente itens bloqueados com diagnóstico explícito",
+    "Perfil Foundry 13.351 / DnD5e 5.3.3 / 5e Item Importer 13.9.1 permanece homologado com 1169 magias exportáveis",
+    "Fase 2 da exportação Foundry concluída após homologação local da Fase 0 no Foundry 13.351 / DnD5e 5.3.3 / 5e Item Importer 13.9.1",
+    "Normalização elevada para 1169 magias exportáveis: 1167 prontas sem alertas, 2 com revisão editorial e 1 bloqueada por ausência do bloco de regras na fonte",
+    "Rituais homologados no ambiente-alvo e removidos da fila de revisão automática",
+    "Alcances decimais preservados por conversão exata de unidade, sem arredondamento",
+    "Ativações alternativas e campos explicitamente Especiais passam a usar os valores Special/spec do Strict Spell Template em vez de perder uma das alternativas",
+    "Áreas, alvos, durações e casos variáveis receberam normalização ampliada e overrides auditáveis",
+    "12 magias de escola Psiônica recebem classificação técnica Foundry individual, preservando Psiônica como escola editorial na descrição exportada",
+    "Investida Santificada permanece bloqueada intencionalmente porque a própria entrada informa que a fonte não apresenta o bloco mecânico necessário",
+    "Criados testes de regressão da Fase 2 e validação de cobertura com bloqueios/revisões esperados explicitamente controlados",
+    "Registro central de exportadores adicionado em js/exporters/registry.js, desacoplado do app.js",
+    "Conversor Strict Spell Template v2/YAML adicionado em js/exporters/foundry-v13.js",
+    "Kit de prova Fase 0 criado com Rajada Mística, Escudo Arcano, Chuva Ácida, Passo pelas Nuvens e Conjurar Eco de Frame",
     "Capítulo 13 — Magias de Ryoko's Guide to the Yokai Realms integrado integralmente em português brasileiro",
     "62 fichas de magia adicionadas ao catálogo; a própria fonte declara 44 magias inéditas e 18 provenientes de outras publicações Loot Tavern",
     "As 62 fichas são novas em relação ao catálogo atual do Grimório; Acid Rain/Chuva Ácida de Ryoko é mantida separada da homônima de Kibbles por possuir nível e mecânicas diferentes",
@@ -503,5 +518,28 @@
     "3": 10,
     "4": 9,
     "5": 10
+  },
+  "foundryExport": {
+    "phase": "3",
+    "publicUiEnabled": true,
+    "profileId": "foundry13-dnd5e533-item-importer1391",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "itemImporterVersion": "13.9.1",
+    "format": "5e-item-importer-strict-spell-v2",
+    "phase0Cases": 5,
+    "singleSpellExport": true,
+    "filteredBatchExport": true,
+    "copyYaml": true,
+    "downloadYaml": true,
+    "preflightValidation": true,
+    "readiness": {
+      "spellCatalogs": 8,
+      "spellsTotal": 1170,
+      "exportable": 1169,
+      "ready": 1167,
+      "reviewRequired": 2,
+      "blocked": 1
+    }
   }
 }

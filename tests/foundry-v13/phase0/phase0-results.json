@@ -1,0 +1,69 @@
+{
+  "profile": {
+    "id": "foundry13-dnd5e533-item-importer1391",
+    "label": "Foundry VTT 13.351 · DnD5e 5.3.3 · 5e Item Importer 13.9.1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "itemImporterVersion": "13.9.1",
+    "format": "5e-item-importer-strict-spell-v2",
+    "mediaType": "text/yaml",
+    "fileExtension": ".yaml",
+    "phase": 2,
+    "compatibility": {
+      "foundry": "verified-local",
+      "dnd5e": "verified-local",
+      "itemImporter": "verified-local",
+      "note": "A prova local da Fase 0 foi aprovada no ambiente-alvo pelo usuário. A Fase 2 normaliza o catálogo mantendo bloqueio explícito quando a fonte não contém dados suficientes."
+    }
+  },
+  "generatedAt": "2026-08-08T13:24:31.858Z",
+  "tests": [
+    {
+      "id": "phb-rajada-mistica",
+      "name": "Rajada Mística",
+      "file": "01-phb-rajada-mistica.yaml",
+      "reviewRequired": false,
+      "errors": [],
+      "warnings": [],
+      "info": []
+    },
+    {
+      "id": "phb-escudo-arcano",
+      "name": "Escudo Arcano",
+      "file": "02-phb-escudo-arcano.yaml",
+      "reviewRequired": false,
+      "errors": [],
+      "warnings": [],
+      "info": []
+    },
+    {
+      "id": "ryoko-acid-rain",
+      "name": "Chuva Ácida",
+      "file": "03-ryoko-acid-rain.yaml",
+      "reviewRequired": false,
+      "errors": [],
+      "warnings": [],
+      "info": []
+    },
+    {
+      "id": "ryoko-cloud-stride",
+      "name": "Passo pelas Nuvens",
+      "file": "04-ryoko-cloud-stride.yaml",
+      "reviewRequired": false,
+      "errors": [],
+      "warnings": [],
+      "info": [
+        "Comportamento de ritual do Strict Spell Template 13.9.1 homologado na prova local da Fase 0 com Foundry 13.351 / dnd5e 5.3.3."
+      ]
+    },
+    {
+      "id": "zagalhta-conjure-frame-echo",
+      "name": "Conjurar Eco de Frame",
+      "file": "05-zagalhta-conjure-frame-echo.yaml",
+      "reviewRequired": false,
+      "errors": [],
+      "warnings": [],
+      "info": []
+    }
+  ]
+}

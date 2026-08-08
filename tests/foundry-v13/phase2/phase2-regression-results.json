@@ -1,0 +1,517 @@
+{
+  "profile": {
+    "id": "foundry13-dnd5e533-item-importer1391",
+    "label": "Foundry VTT 13.351 · DnD5e 5.3.3 · 5e Item Importer 13.9.1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "itemImporterVersion": "13.9.1",
+    "format": "5e-item-importer-strict-spell-v2",
+    "mediaType": "text/yaml",
+    "fileExtension": ".yaml",
+    "phase": 2,
+    "compatibility": {
+      "foundry": "verified-local",
+      "dnd5e": "verified-local",
+      "itemImporter": "verified-local",
+      "note": "A prova local da Fase 0 foi aprovada no ambiente-alvo pelo usuário. A Fase 2 normaliza o catálogo mantendo bloqueio explícito quando a fonte não contém dados suficientes."
+    }
+  },
+  "totalCases": 13,
+  "exportableCases": 12,
+  "results": [
+    {
+      "id": "phb-chuva-de-meteoros",
+      "name": "Chuva de Meteoros",
+      "ok": true,
+      "reviewRequired": false,
+      "warnings": [],
+      "errors": [],
+      "info": [],
+      "normalized": {
+        "school": "evo",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "n/a"
+        },
+        "range": {
+          "value": 1500,
+          "units": "m"
+        },
+        "duration": {
+          "units": "inst",
+          "value": "n/a",
+          "concentration": false
+        },
+        "target": {
+          "type": "space",
+          "count": 1,
+          "choice": true,
+          "special": "Área de efeito estruturada a partir da ficha da magia; consulte a descrição para exceções."
+        },
+        "area": {
+          "shape": "sphere",
+          "size": 12,
+          "units": "m",
+          "count": "n/a",
+          "width": "n/a",
+          "height": "n/a",
+          "contiguous": "n/a"
+        }
+      }
+    },
+    {
+      "id": "phb-ampliar-plantas",
+      "name": "Ampliar Plantas",
+      "ok": true,
+      "reviewRequired": false,
+      "warnings": [],
+      "errors": [],
+      "info": [
+        "Tempo de conjuração alternativo preservado como Special: 1 ação ou 8 horas."
+      ],
+      "normalized": {
+        "school": "trs",
+        "activation": {
+          "type": "special",
+          "value": 1,
+          "condition": "1 ação ou 8 horas"
+        },
+        "range": {
+          "value": 45,
+          "units": "m"
+        },
+        "duration": {
+          "units": "inst",
+          "value": "n/a",
+          "concentration": false
+        },
+        "target": {
+          "type": "space",
+          "count": 1,
+          "choice": true,
+          "special": "Área de efeito estruturada a partir da ficha da magia; consulte a descrição para exceções."
+        },
+        "area": {
+          "shape": "radius",
+          "size": 30,
+          "units": "m",
+          "count": "n/a",
+          "width": "n/a",
+          "height": "n/a",
+          "contiguous": "n/a"
+        }
+      }
+    },
+    {
+      "id": "phb-aprisionamento",
+      "name": "Aprisionamento",
+      "ok": true,
+      "reviewRequired": false,
+      "warnings": [],
+      "errors": [],
+      "info": [],
+      "normalized": {
+        "school": "abj",
+        "activation": {
+          "type": "minute",
+          "value": 1,
+          "condition": "n/a"
+        },
+        "range": {
+          "value": 9,
+          "units": "m"
+        },
+        "duration": {
+          "units": "disp",
+          "value": "n/a",
+          "concentration": false
+        },
+        "target": {
+          "type": "creature",
+          "count": 1,
+          "choice": true,
+          "special": "Quantidade inferida de uma fórmula explícita na descrição."
+        },
+        "area": null
+      }
+    },
+    {
+      "id": "phb-sono",
+      "name": "Sono",
+      "ok": true,
+      "reviewRequired": false,
+      "warnings": [],
+      "errors": [],
+      "info": [],
+      "normalized": {
+        "school": "enc",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "n/a"
+        },
+        "range": {
+          "value": 36,
+          "units": "m"
+        },
+        "duration": {
+          "units": "minute",
+          "value": 1,
+          "concentration": false
+        },
+        "target": {
+          "type": "space",
+          "count": 1,
+          "choice": true,
+          "special": "Um ponto dentro do alcance."
+        },
+        "area": {
+          "shape": "sphere",
+          "size": 6,
+          "units": "m",
+          "count": 1,
+          "width": "n/a",
+          "height": "n/a",
+          "contiguous": "n/a"
+        }
+      }
+    },
+    {
+      "id": "xanathar-soneca",
+      "name": "Soneca",
+      "ok": true,
+      "reviewRequired": false,
+      "warnings": [],
+      "errors": [],
+      "info": [],
+      "normalized": {
+        "school": "enc",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "n/a"
+        },
+        "range": {
+          "value": 9,
+          "units": "m"
+        },
+        "duration": {
+          "units": "minute",
+          "value": 10,
+          "concentration": false
+        },
+        "target": {
+          "type": "creature",
+          "count": 3,
+          "choice": true,
+          "special": "Quantidade inferida de uma fórmula explícita na descrição."
+        },
+        "area": null
+      }
+    },
+    {
+      "id": "lyre-private-sanctum",
+      "name": "Santuário Particular",
+      "ok": true,
+      "reviewRequired": false,
+      "warnings": [],
+      "errors": [],
+      "info": [],
+      "normalized": {
+        "school": "abj",
+        "activation": {
+          "type": "minute",
+          "value": 10,
+          "condition": "n/a"
+        },
+        "range": {
+          "value": 36,
+          "units": "m"
+        },
+        "duration": {
+          "units": "hour",
+          "value": 24,
+          "concentration": false
+        },
+        "target": {
+          "type": "space",
+          "count": 1,
+          "choice": true,
+          "special": "Uma área cúbica escolhida dentro do alcance, com lados variáveis de 1,5 a 30 metros; a dimensão permanece descrita no texto."
+        },
+        "area": null
+      }
+    },
+    {
+      "id": "bbb-midnight-howl",
+      "name": "Uivo da Meia-Noite",
+      "ok": true,
+      "reviewRequired": false,
+      "warnings": [],
+      "errors": [],
+      "info": [],
+      "normalized": {
+        "school": "evo",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "n/a"
+        },
+        "range": {
+          "units": "self",
+          "value": "n/a"
+        },
+        "duration": {
+          "units": "inst",
+          "value": "n/a",
+          "concentration": false
+        },
+        "target": {
+          "type": "space",
+          "count": 1,
+          "choice": false,
+          "special": "Todas as outras criaturas dentro de 4,5 metros do conjurador."
+        },
+        "area": {
+          "shape": "radius",
+          "size": 15,
+          "units": "ft",
+          "count": 1,
+          "width": "n/a",
+          "height": "n/a",
+          "contiguous": "n/a"
+        }
+      }
+    },
+    {
+      "id": "zagalhta-extinction",
+      "name": "Extinção",
+      "ok": true,
+      "reviewRequired": false,
+      "warnings": [],
+      "errors": [],
+      "info": [],
+      "normalized": {
+        "school": "evo",
+        "activation": {
+          "type": "minute",
+          "value": 1,
+          "condition": "n/a"
+        },
+        "range": {
+          "units": "spec",
+          "value": "n/a"
+        },
+        "duration": {
+          "units": "minute",
+          "value": 10,
+          "concentration": false
+        },
+        "target": {
+          "type": "space",
+          "count": 1,
+          "choice": true,
+          "special": "Um ponto que o conjurador possa ver; a esfera cataclísmica possui raio de aproximadamente 8 km."
+        },
+        "area": {
+          "shape": "sphere",
+          "size": 8,
+          "units": "km",
+          "count": 1,
+          "width": "n/a",
+          "height": "n/a",
+          "contiguous": "n/a"
+        }
+      }
+    },
+    {
+      "id": "zagalhta-magma-wave",
+      "name": "Onda de Magma",
+      "ok": true,
+      "reviewRequired": false,
+      "warnings": [],
+      "errors": [],
+      "info": [
+        "A linha da ficha informa alcance de 9 metros, mas o corpo da regra especifica uma linha de 12 metros por 6 metros; a AREA usa as dimensões descritas no efeito e a redação original permanece na descrição."
+      ],
+      "normalized": {
+        "school": "con",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "n/a"
+        },
+        "range": {
+          "units": "self",
+          "value": "n/a"
+        },
+        "duration": {
+          "units": "inst",
+          "value": "n/a",
+          "concentration": false
+        },
+        "target": {
+          "type": "space",
+          "count": 1,
+          "choice": false,
+          "special": "Linha originada no conjurador. O texto da magia define 12 metros de comprimento por 6 metros de largura."
+        },
+        "area": {
+          "shape": "line",
+          "size": 12,
+          "units": "m",
+          "count": 1,
+          "width": 6,
+          "height": "n/a",
+          "contiguous": "n/a"
+        }
+      }
+    },
+    {
+      "id": "spellblade-compelled-query",
+      "name": "Pergunta Compelida",
+      "ok": true,
+      "reviewRequired": false,
+      "warnings": [],
+      "errors": [],
+      "info": [
+        "Escola técnica de exportação: Adivinhação (div); escola editorial preservada: Psiônica."
+      ],
+      "normalized": {
+        "school": "div",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "n/a"
+        },
+        "range": {
+          "value": 9,
+          "units": "m"
+        },
+        "duration": {
+          "units": "inst",
+          "value": "n/a",
+          "concentration": false
+        },
+        "target": {
+          "type": "creature",
+          "count": 1,
+          "choice": true,
+          "special": "Quantidade inferida de uma fórmula explícita na descrição."
+        },
+        "area": null
+      }
+    },
+    {
+      "id": "lyre-divine-frost",
+      "name": "Geada Divina",
+      "ok": true,
+      "reviewRequired": true,
+      "warnings": [
+        "Duração incompleta na fonte e preservada como Especial: \"Concentração, até 1 — unidade não informada no PDF\"."
+      ],
+      "errors": [],
+      "info": [],
+      "normalized": {
+        "school": "enc",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "n/a"
+        },
+        "range": {
+          "value": 9,
+          "units": "m"
+        },
+        "duration": {
+          "units": "spec",
+          "value": "n/a",
+          "concentration": true
+        },
+        "target": {
+          "type": "creature",
+          "count": 1,
+          "choice": true,
+          "special": "Quantidade inferida de uma fórmula explícita na descrição."
+        },
+        "area": null
+      }
+    },
+    {
+      "id": "lyre-tamamos-arrowfall",
+      "name": "Chuva de Flechas de Tamamo",
+      "ok": true,
+      "reviewRequired": true,
+      "warnings": [
+        "Duração incompleta na fonte e preservada como Especial: \"Não informada no PDF\"."
+      ],
+      "errors": [],
+      "info": [],
+      "normalized": {
+        "school": "con",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "n/a"
+        },
+        "range": {
+          "units": "self",
+          "value": "n/a"
+        },
+        "duration": {
+          "units": "spec",
+          "value": "n/a",
+          "concentration": false
+        },
+        "target": {
+          "type": "self",
+          "count": 1,
+          "choice": false,
+          "special": "n/a"
+        },
+        "area": null
+      }
+    },
+    {
+      "id": "spellblade-sanctified-charge",
+      "name": "Investida Santificada",
+      "ok": false,
+      "reviewRequired": true,
+      "warnings": [
+        "Duração incompleta na fonte e preservada como Especial: \"Não informada\".",
+        "Tipo/quantidade de alvo não pôde ser determinado com segurança."
+      ],
+      "errors": [
+        "Fonte incompleta: Investida Santificada é apenas referenciada no compêndio e não possui bloco de regras suficiente para uma exportação fiel.",
+        "Tempo de conjuração ausente na fonte: \"Não informado\".",
+        "Alcance ausente na fonte: \"Não informado\"."
+      ],
+      "info": [],
+      "normalized": {
+        "school": "evo",
+        "activation": {
+          "type": "special",
+          "value": 1,
+          "condition": "Não informado"
+        },
+        "range": {
+          "units": "spec",
+          "value": "n/a"
+        },
+        "duration": {
+          "units": "spec",
+          "value": "n/a",
+          "concentration": false
+        },
+        "target": {
+          "type": "any",
+          "count": "n/a",
+          "choice": true,
+          "special": "Revisar alvo antes da exportação em massa."
+        },
+        "area": null
+      }
+    }
+  ]
+}

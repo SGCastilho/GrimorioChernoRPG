@@ -1,0 +1,50 @@
+SPELL:
+  ITEM:
+    Name: "Escudo Arcano"
+    Level: 1
+    School: "abj"
+    Ability: n/a
+
+  COMPONENTS:
+    Vocal: true
+    Somatic: true
+    Material: false
+  PREPARATION:
+    Method: "spell"
+    Prepared: true
+
+  ACTIVATION:
+    Type: "reaction"
+    Value: 1
+    Condition: "Quando você é atingido por um ataque ou se torna alvo de Mísseis Mágicos."
+
+  RANGE:
+    Units: "self"
+    Value: n/a
+
+  DURATION:
+    Units: "round"
+    Value: 1
+    Concentration: false
+  TARGETS:
+    Type: "self"
+    Count: 1
+    Choice: false
+    Special: n/a
+  USAGE:
+    Uses Spent: 0
+    Uses Max: n/a
+  RECOVERY: []
+
+  DESCRIPTION:
+    Description: |
+      <p>Uma barreira de energia invisível aparece e protege você. Até o início do seu próximo turno, você recebe +5 de bônus na CA, incluindo contra o ataque que desencadeou a magia, e você não sofre dano de mísseis mágicos.</p>
+      <hr><p><small><strong>Fonte:</strong> Livro do Jogador — D&amp;D 5e 2014, p. 243.</small></p>
+
+  UNIDENTIFIED_DESCRIPTION:
+    Unidentified Name: n/a
+    Unidentified Description: |
+      n/a
+  CHAT_FLAVOR:
+    Chat Description: |
+      n/a
