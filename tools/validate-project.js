@@ -223,6 +223,80 @@ for (const spell of zagSpellCatalog?.spells || []) if (zagLegacyNames.has(spell.
 if (!(zagSpellCatalog?.spells || []).find(spell => spell.originalName === 'Summon Belzer')?.ritual) fail('Zagalhta: Invocar Belzer deve estar marcado como ritual.');
 ok(`Zagalhta Capítulo 7: ${zagSpellCatalog?.spells?.length || 0} entradas próprias + 1 reimpressão vinculada = ${zagFilterSpells.length} magias verificadas`);
 
+
+// Integridade de Ryoko's Guide to the Yokai Realms v5.11.
+const ryokoTitle = "Ryoko's Guide to the Yokai Realms";
+const ryokoClasses = classes.filter(item => item?.source?.title === ryokoTitle);
+const ryokoSubclasses = subclasses.filter(item => item?.source?.title === ryokoTitle);
+const ryokoBenderDisciplines = ryokoSubclasses.filter(item => item.classId === 'bender-ryoko');
+const ryokoTamerParadigms = ryokoSubclasses.filter(item => item.classId === 'tamer-ryoko');
+const ryokoStandard = ryokoSubclasses.filter(item => !['bender-ryoko', 'tamer-ryoko'].includes(item.classId));
+const ryokoFeatureTotal = ryokoSubclasses.reduce((total, item) => total + (item.features || []).length, 0);
+const ryokoTableTotal = ryokoSubclasses.reduce((total, item) => total + (item.tables || []).length, 0);
+if (!registry.getSource('ryoko-yokai-realms')) fail("Ryoko: fonte ryoko-yokai-realms ausente do registro central.");
+if (ryokoClasses.length !== 2) fail(`Ryoko: esperado 2 classes integradas (Dobrador e Domador), encontradas ${ryokoClasses.length}.`);
+for (const id of ['bender-ryoko', 'tamer-ryoko']) {
+  const cls = classes.find(item => item.id === id);
+  const progression = progressions.find(item => item?.id === id);
+  if (!cls) fail(`Ryoko: classe ausente: ${id}.`);
+  if (!progression || progression.rows?.length !== 20) fail(`Ryoko: progressão de ${id} deve possuir 20 níveis.`);
+}
+if (ryokoBenderDisciplines.length !== 4) fail(`Ryoko: esperado 4 Disciplinas do Dobrador, encontradas ${ryokoBenderDisciplines.length}.`);
+if (ryokoTamerParadigms.length !== 1 || ryokoTamerParadigms[0]?.originalName !== 'Sensei') fail(`Ryoko: esperado 1 Paradigma de Domador (Sensei), encontrados ${ryokoTamerParadigms.length}.`);
+if (ryokoStandard.length !== 13) fail(`Ryoko: esperado 13 subclasses para classes-base, encontradas ${ryokoStandard.length}.`);
+if (ryokoSubclasses.length !== 18) fail(`Ryoko: esperado total de 18 subclasses/especializações, encontradas ${ryokoSubclasses.length}.`);
+if (ryokoFeatureTotal !== 99) fail(`Ryoko: esperado 99 características de subclasse/especialização, encontradas ${ryokoFeatureTotal}.`);
+if (ryokoTableTotal !== 20) fail(`Ryoko: esperado 20 tabelas estruturadas em subclasses, encontradas ${ryokoTableTotal}.`);
+const expectedRyokoOriginalNames = new Set(['Disciple of Ferocity','Disciple of Fortification','Disciple of Fusion','Disciple of Invigoration','Path of the Kaiju','College of Hanabi','College of Masks','Shrine Warden Domain','Circle of the Yokai','Skeletal Blade','Way of the Eight Gates','Oath of the Yojimbo','Rōnin','Tamaya','Spirit Caller','The Shinigami','Shinobi','Sensei']);
+for (const item of ryokoSubclasses) {
+  expectedRyokoOriginalNames.delete(item.originalName);
+  if (!item.name || !item.originalName) fail(`Ryoko: subclasse sem nome localizado/original em ${item.id}.`);
+  for (const feature of item.features || []) {
+    if (!feature.title || !feature.text) fail(`Ryoko: característica incompleta em ${item.id}.`);
+    const level = Number(feature.level);
+    if (!Number.isFinite(level) || level < 1 || level > 20) fail(`Ryoko: nível inválido em ${item.id}: ${feature.level}`);
+    if (!feature.page) warn(`Ryoko: característica sem página em ${item.id}: ${feature.title || '(sem título)'}`);
+  }
+  for (const tbl of item.tables || []) {
+    if (!tbl.title || !Array.isArray(tbl.columns) || !tbl.columns.length || !Array.isArray(tbl.rows) || !tbl.rows.length) fail(`Ryoko: tabela incompleta em ${item.id}.`);
+  }
+}
+if (expectedRyokoOriginalNames.size) fail(`Ryoko: opções ausentes: ${[...expectedRyokoOriginalNames].join(', ')}.`);
+const benderClass = classes.find(item => item.id === 'bender-ryoko');
+const tamerClass = classes.find(item => item.id === 'tamer-ryoko');
+if ((benderClass?.features || []).length !== 9) fail(`Ryoko: Dobrador deve possuir 9 blocos de características-base, encontrados ${(benderClass?.features || []).length}.`);
+if ((tamerClass?.features || []).length !== 17) fail(`Ryoko: Domador deve possuir 17 blocos de características-base, encontrados ${(tamerClass?.features || []).length}.`);
+if (!(benderClass?.tables || []).some(tbl => tbl.title === 'Avatar Primordial — Ar') || !(benderClass?.tables || []).some(tbl => tbl.title === 'Avatar Primordial — Água')) fail('Ryoko: tabelas de Avatar Primordial do Dobrador estão incompletas.');
+if (!(tamerClass?.tables || []).some(tbl => tbl.title === 'Resumo de Companheiros do Domador')) fail('Ryoko: tabela Resumo de Companheiros do Domador ausente.');
+ok(`Ryoko: 2 classes, ${ryokoBenderDisciplines.length} Disciplinas do Dobrador, ${ryokoTamerParadigms.length} Paradigma de Domador, ${ryokoStandard.length} subclasses-base, ${ryokoFeatureTotal} características e ${ryokoTableTotal} tabelas de subclasses verificados`);
+
+// Integridade do Capítulo 13 — Magias de Ryoko v5.12.
+const ryokoSpellCatalog = catalogs.find(item => item.id === 'ryoko-spells');
+if (!ryokoSpellCatalog) fail('Ryoko: catálogo ryoko-spells ausente.');
+else {
+  if (ryokoSpellCatalog.spells.length !== 62) fail(`Ryoko: esperado 62 entradas no catálogo, encontradas ${ryokoSpellCatalog.spells.length}.`);
+  const expectedRyokoSpellNames = new Set(["Acid Rain", "Bakuryō’s Blessèd Blizzard", "Blinding Radiance", "Bloodweave", "Cage of Frozen Tears", "Calm Air", "Calm Earth", "Calm Flames", "Calm Waters", "Cloud Stride", "Concussion", "Cyclone", "Dash Strike", "Depth Charge", "Earthen Fist", "Earthen Uppercut", "Earthskin", "Endoleech", "Endure", "Eruption", "Extract Shirikodama", "Feverskin", "Flaming Tiger Leap", "Flash", "Flashbang", "Ice Moon", "Iminada’s Umigiri", "Incendiary Strike", "Inner Flame", "Lifesap Aura", "Lion’s Roar", "Magatsuchi’s Lantern", "Mireball", "Mirror of Reflection", "Nomi’s Adamantine Carapace", "Pins & Needles", "Protection", "Raiko’s Rending Rage", "Redirect Lightning", "Reinforce", "Repulsing Palm", "Riptide", "Rock Tomb", "Ryoko’s Revelation", "See Future Death", "Shielding Word", "Slatestorm", "Smokescreen", "Snakebite", "Soften Descent", "Spark", "Steelskin", "Sundering Sky", "Switcheroo", "Tempestuous Transformation", "The Bends", "Wanyūdō’s Fury", "Water Whip", "Water Wyrm", "White Water Wall", "Wind Drake", "Wind Strike"]);
+  for (const spell of ryokoSpellCatalog.spells) {
+    expectedRyokoSpellNames.delete(spell.originalName);
+    if (!spell.originalName || !spell.name) fail(`Ryoko: magia sem nome original/localizado: ${spell.id || '(sem id)'}.`);
+    if (!spell.desc) fail(`Ryoko: magia sem descrição traduzida: ${spell.id || spell.originalName}.`);
+    if (!spell.classes) fail(`Ryoko: magia sem lista de classes: ${spell.id || spell.originalName}.`);
+    if (spell.sourcePage < 276 || spell.sourcePage > 299) fail(`Ryoko: página de origem fora do Capítulo 13 em ${spell.id}: ${spell.sourcePage}.`);
+  }
+  if (expectedRyokoSpellNames.size) fail(`Ryoko: magias do Capítulo 13 ausentes: ${[...expectedRyokoSpellNames].join(', ')}.`);
+  const biomancy = ryokoSpellCatalog.spells.filter(spell => spell.school === 'Biomancia');
+  if (biomancy.length !== 7) fail(`Ryoko: esperado 7 magias de Biomancia, encontradas ${biomancy.length}.`);
+  if (biomancy.some(spell => !(spell.traits || []).some(t => String(t).startsWith('Escola alternativa:')))) fail('Ryoko: alguma magia de Biomancia não preservou sua escola alternativa.');
+  const rituals = ryokoSpellCatalog.spells.filter(spell => spell.ritual);
+  if (rituals.length !== 1 || rituals[0]?.originalName !== 'Cloud Stride') fail(`Ryoko: esperado apenas Cloud Stride como ritual, encontrados ${rituals.map(x=>x.originalName).join(', ')}.`);
+  const acidRain = ryokoSpellCatalog.spells.find(spell => spell.originalName === 'Acid Rain');
+  if (!acidRain || acidRain.level !== 3) fail('Ryoko: Acid Rain/Chuva Ácida deve permanecer como magia própria de 3º nível.');
+}
+const ryokoFilterSpells = catalogs.flatMap(catalog => (catalog.spells || []).map(spell => ({spell,catalog})))
+  .filter(({spell,catalog}) => registry.spellGroupLabels({...spell,_catalogId:catalog.id,_sourceId:catalog.sourceId}).includes("Ryoko's Guide to the Yokai Realms"));
+if (ryokoFilterSpells.length !== 62) fail(`Ryoko: filtro da fonte deve retornar 62 magias, mas retorna ${ryokoFilterSpells.length}.`);
+ok(`Ryoko Capítulo 13: ${ryokoSpellCatalog?.spells?.length || 0} magias, 7 de Biomancia e 1 ritual verificados`);
+
 const sourceEntities = [
   ...classes.map(item => ({ type: 'classe', id: item.id, source: item.source })),
   ...subclasses.map(item => ({ type: 'subclasse', id: item.id, source: item.source }))

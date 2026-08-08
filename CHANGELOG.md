@@ -1,5 +1,40 @@
 # Changelog
 
+## 5.12.0
+
+### Ryoko's Guide to the Yokai Realms — Capítulo 13: Magias
+
+- Integradas e localizadas para PT-BR todas as **62 magias** do Capítulo 13.
+- A própria fonte declara que o capítulo contém **44 magias inéditas e 18 provenientes de outras publicações Loot Tavern**; como essa classificação não é individualizada por ficha, nenhuma origem anterior foi atribuída por inferência.
+- As 62 entradas são novas em relação ao catálogo atual do Grimório. **Acid Rain / Chuva Ácida** é mantida separada da homônima de KibblesTasty porque as duas possuem nível e mecânicas diferentes.
+- Preservadas as listas de classe e as afinidades elementais do Dobrador indicadas nas fichas.
+- Preservada a escola opcional **Biomancia** em 7 magias, com a respectiva escola alternativa registrada quando indicada pela fonte.
+- **Cloud Stride / Passo pelas Nuvens** marcado como ritual.
+- Criado `data/ryoko-spells.js` e registrado o catálogo `ryoko-spells` na fonte `ryoko-yokai-realms`.
+- O catálogo-base passa de **1.108 para 1.170 registros**, e o total de catálogos registrados passa de 7 para **8**.
+- `tools/validate-project.js` recebeu verificações específicas para as 62 magias de Ryoko, cobertura de nomes, Biomancia, ritual e filtro de fonte.
+
+
+
+## 5.11.0
+
+### Ryoko's Guide to the Yokai Realms — Capítulo 9: Classes
+
+- Integrado e localizado para PT-BR o capítulo de classes e subclasses de *Ryoko's Guide to the Yokai Realms*.
+- Adicionada a classe **Dobrador (Bender)**, com progressão do 1º ao 20º nível, escolha de Inteligência/Sabedoria/Carisma para conjuração, quatro Afinidades Elementais, Golpes Elementais, Combo Elemental, Forma Primordial e Avatar Primordial.
+- Estruturadas as listas elementais do Dobrador e as quatro tabelas de benefícios do Avatar Primordial.
+- Integradas as quatro Disciplinas: **Ferocidade, Fortificação, Fusão e Revigoramento**.
+- Adicionada a classe **Domador (Tamer)**, reimpressa no próprio livro para consulta, com sistema de receptáculos, doma, companheiros, melhorias, progressão de ND/tamanho e conjuração.
+- Estruturada integralmente a tabela **Resumo de Companheiros do Domador**, incluindo limites por nível e melhorias/Dados de Vida para ND 1/2 a ND 6.
+- Integrado o paradigma **Sensei**, com Magias de Sensei, Golpes Marciais, nove Técnicas Marciais e aprimoramento de Liberar no 18º nível.
+- Integradas **13 subclasses para classes-base**: Caminho do Kaiju; Colégio de Hanabi; Colégio das Máscaras; Domínio do Guardião do Santuário; Círculo dos Yokai; Lâmina Esquelética; Caminho dos Oito Portões; Juramento do Yojimbo; Rōnin; Tamaya; Invocador de Espíritos; O Shinigami; e Shinobi.
+- Total da fonte nesta etapa: **2 classes**, **18 entradas de subclasse/especialização**, **99 características de subclasse** e **20 tabelas de subclasse**.
+- Regras opcionais de **Ataque Extra Aprimorado** preservadas como referências para Bárbaro, Dobrador, Guerreiro, Monge, Paladino e Patrulheiro, sem sobrescrever automaticamente as regras-base.
+- Fonte registrada em `data/sources.js`; adicionados `data/ryoko-classes.js`, `data/ryoko-subclasses.js` e `data/ryoko-optional-features.js`.
+- `tools/validate-project.js` recebeu verificações específicas para a integração de Ryoko.
+- O projeto passa a possuir **24 classes, 377 subclasses/especializações e 24 progressões estruturadas**; o catálogo de magias permanece em **1.108 registros-base** nesta etapa.
+
+
 ## 5.10.0
 
 ### Zagalhta's Exolunar Collection — Capítulo 7: Magias

@@ -143,6 +143,27 @@
       ]
     },
     {
+      id: 'ryoko-yokai-realms',
+      title: "Ryoko's Guide to the Yokai Realms",
+      shortTitle: "Ryoko's Guide to the Yokai Realms",
+      filterLabel: "Ryoko's Guide to the Yokai Realms",
+      homeLabel: "Ryoko's Guide to the Yokai Realms",
+      catalogLabel: "Ryoko's Guide to the Yokai Realms",
+      order: 58,
+      showOnHome: true,
+      showInAbout: true,
+      aliases: ["Ryoko's Guide to the Yokai Realms", 'Ryoko’s Guide to the Yokai Realms', 'Ryoko Yokai Realms'],
+      matchIncludes: ["Ryoko's Guide to the Yokai Realms", 'Ryoko’s Guide to the Yokai Realms'],
+      about: [
+        'O Capítulo 9 está integrado em PT-BR com a classe inédita Dobrador (Bender), suas quatro Disciplinas, e a classe Domador (Tamer) reimpressa pela própria fonte para referência junto ao Sensei.',
+        'Foram integradas todas as 13 opções de subclasse para classes-base apresentadas no capítulo, além das quatro Disciplinas do Dobrador e do Paradigma Sensei do Domador, totalizando 18 entradas de subclasse/especialização.',
+        'As progressões do Dobrador e do Domador cobrem do 1º ao 20º nível e preservam Afinidades Elementais, Avatar Primordial, sistema de companheiros, treinamento, doma, receptáculos e tabelas próprias.',
+        'As regras opcionais de Ataque Extra Aprimorado foram preservadas como referências opcionais, sem sobrescrever silenciosamente a progressão das classes-base do Livro do Jogador.',
+        'O Capítulo 13 — Magias está integrado integralmente em PT-BR com 62 entradas. A própria fonte declara 44 magias inéditas e 18 provenientes de outras publicações Loot Tavern; como o livro não individualiza essa classificação em cada ficha, não foram inferidas procedências anteriores.',
+        'A escola opcional Biomancia foi preservada em 7 magias, incluindo a escola alternativa indicada pela fonte para campanhas que não utilizem Biomancia.'
+      ]
+    },
+    {
       id: 'kibbles',
       title: 'Conteúdo KibblesTasty',
       shortTitle: 'Spell Compendium',
