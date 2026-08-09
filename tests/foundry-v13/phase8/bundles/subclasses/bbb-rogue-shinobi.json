@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-rogue-shinobi",
+    "identifier": "bbb-rogue-shinobi",
+    "name": "Shinobi",
+    "originalName": "Shinobi",
+    "aliases": [
+      "Shinobi"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "119–120",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 119
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Um mestre do combate desleal que emprega venenos com eficiência mortal.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 119
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-rogue-shinobi.feature.arma-envenenada.l3.1",
+      "name": "ARMA ENVENENADA",
+      "level": 3,
+      "description": "Quando atinge uma criatura com um ataque que qualificaria para Ataque Furtivo, independentemente de usar o dano de Ataque Furtivo, pode injetar um veneno mortal. O alvo faz salvaguarda de Constituição contra uma CD baseada em Destreza ou Constituição. Em falha, fica envenenado por 1 minuto e repete a salvaguarda no fim de cada turno, encerrando em sucesso. Enquanto envenenado dessa forma, sofre no início de cada turno dano de veneno igual a 1d4 × a quantidade de dados de Ataque Furtivo que você possui. Se falhar na salvaguarda mas for imune a envenenado, sofre em vez disso dano ácido igual ao seu dano de Ataque Furtivo. Usos por Descanso Longo iguais ao bônus de proficiência; recupera um uso ao completar Descanso Curto.",
+      "page": 119,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-shinobi.feature.assassinato-versatil.l3.1",
+      "name": "ASSASSINATO VERSÁTIL",
+      "level": 3,
+      "description": "Ataques com qualquer arma corpo a corpo de uma mão podem receber seu dano de Ataque Furtivo como se a arma tivesse as propriedades leve ou acuidade, mesmo se possuir versátil, desde que esteja sendo empunhada com uma mão.",
+      "page": 119,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-shinobi.feature.reversao-sobrenatural.l9.1",
+      "name": "REVERSÃO SOBRENATURAL",
+      "level": 9,
+      "description": "Quando usa Esquiva Sobrenatural para reduzir o dano de um ataque, também pode escolher uma opção: ficar invisível até o início de seu próximo turno; ou realizar um ataque com arma contra a fonte do ataque, se ela estiver ao alcance e você puder vê-la.",
+      "page": 119,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-shinobi.feature.evasao.l13.1",
+      "name": "EVASÃO",
+      "level": 13,
+      "description": "Quando fizer qualquer salvaguarda que normalmente reduza dano à metade, sofre nenhum dano em um sucesso e metade do dano em uma falha.",
+      "page": 119,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-shinobi.feature.substituicao-de-fumaca.l17.1",
+      "name": "SUBSTITUIÇÃO DE FUMAÇA",
+      "level": 17,
+      "description": "Quando sofrer um acerto crítico ou for reduzido a 0 PV por um ataque ou efeito e não estiver incapacitado, role 1d100. Com 20 ou menos, substitui seu corpo por um simulacro que se desfaz em fumaça, fica completamente imune ao ataque ou efeito e seu corpo real teleporta-se para um espaço desocupado à sua escolha a até 9 m. Uma vez por Descanso, pode decidir que essa rolagem de d100 seja automaticamente 1. Você recupera esse uso sempre que rola iniciativa.",
+      "page": 120,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

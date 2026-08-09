@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "scag-cavaleiro-dragao-purpura",
+    "identifier": "scag-cavaleiro-dragao-purpura",
+    "name": "Cavaleiro Dragão Púrpura",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "scag",
+    "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+    "pages": "128",
+    "chapter": "Capítulo 4: Classes",
+    "page": 128
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Cavaleiros Dragões Púrpuras são guerreiros vindos do reino de Cormyr. Comprometidos em proteger a coroa, eles ampliam sua luta contra o mal além das fronteiras do reino. Eles são incumbidos de vagar pela terra como cavaleiros errantes, confiando em seu julgamento, bravura e lealdade ao código de cavalaria, para guiá-los a fim de derrotar os malfeitores.\n\nUm cavaleiro dragão púrpura inspira grandeza em outros por cometer atos de bravura em batalha. A mera presença de um cavaleiro em uma aldeia é suficiente para fazer com que orcs e bandidos prefiram outras presas mais fáceis. Um cavaleiro solitário é um guerreiro habilidoso, mas um cavaleiro liderando um bando de aliados pode transformar mesmo a mais pobremente equipada milícia em um bando de guerra feroz.\n\nRestrição: Fidalgia. Cavaleiros dragão púrpura são ligados a uma ordem específica de cavaleiros Cormyrianos. “Ginete” serve como um nome genérico para este arquétipo se você utilizar esse molde em outra campanha ou como exemplo de senhores de guerra que não Cavaleiros Dragão Púrpura.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 128
+  },
+  "features": [
+    {
+      "key": "subclass.scag-cavaleiro-dragao-purpura.feature.pranto-da-uniao.l3.1",
+      "name": "PRANTO DA UNIÃO",
+      "level": 3,
+      "description": "Quando você escolhe esse arquétipo, no 3º nível você aprende como inspirar seus aliados para a luta, ignorando seus ferimentos.\n\nQuando você usa sua característica de Retomar o Fôlego, você pode escolher até três criaturas a até 18 metros de você que sejam aliadas. Cada uma recupera pontos de vida iguais ao seu nível de guerreiro, desde que a criatura possa ver e ouvir você.",
+      "page": 128,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-cavaleiro-dragao-purpura.feature.enviado-real.l7.1",
+      "name": "ENVIADO REAL",
+      "level": 7,
+      "description": "Um cavaleiro Dragão Púrpura serve como um enviado da coroa Cormyriana. É esperado de cavaleiros de alto posto uma conduta graciosa.\n\nNo 7º nível você ganha proficiência na perícia Persuasão. Se você já for proficiente nisto, você ganha proficiência em um das seguintes perícias à sua escolha: Adestrar Animais, Intuição, Intimidação, ou Atuação.\n\nSeu bônus de proficiência é dobrado para qualquer teste de habilidade que você faça que use Persuasão. Você recebe este benefício independente da proficiência em perícia que você ganha desta característica.",
+      "page": 128,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-cavaleiro-dragao-purpura.feature.onda-inspiradora.l10.1",
+      "name": "ONDA INSPIRADORA",
+      "level": 10,
+      "description": "A partir do 10º nível quando você usa sua característica de Pulso de Ação, você pode escolher uma criatura aliada a até 18 metros de você. Esta criatura pode fazer um ataque corpo a corpo ou à distância como uma reação, desde que ela possa ver e ouvir você.\n\nA partir do nível 17, você pode escolher até dois aliados a 18 metros de você, ao invés de um.",
+      "page": 128,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-cavaleiro-dragao-purpura.feature.bastiao.l15.1",
+      "name": "BASTIÃO",
+      "level": 15,
+      "description": "A partir do 15º nível, você pode ampliar os benefícios de sua característica de Indomado para um aliado. Quando você decide usar o Indomado para jogar novamente um teste de resistência de Sabedoria, Inteligência ou Carisma, e você não está incapacitado, você pode escolher um aliado a até 18 metros de você que também tenha falhado no TR contra este mesmo efeito. Se essa criatura puder ver e ouvir você, ela pode jogar novamente o TR e deve usar o novo resultado.",
+      "page": 128,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

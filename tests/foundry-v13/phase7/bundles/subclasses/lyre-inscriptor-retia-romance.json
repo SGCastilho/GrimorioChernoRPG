@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-romance",
+    "identifier": "lyre-inscriptor-retia-romance",
+    "name": "Romance",
+    "originalName": "Romance",
+    "aliases": [
+      "Romance"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "373",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 373
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Sua obra explora amor, afeto, perda e vínculos capazes de superar obstáculos. Sua magia escrita transforma atenção, cuidado e laços emocionais em proteção e recuperação sobrenatural.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 373,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Curar Ferimentos"
+          },
+          {
+            "level": "3º",
+            "spells": "Acalmar Emoções"
+          },
+          {
+            "level": "5º",
+            "spells": "Fortificação Mental"
+          },
+          {
+            "level": "7º",
+            "spells": "Enamorar Monstro"
+          },
+          {
+            "level": "9º",
+            "spells": "Restauração Maior"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 373
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-romance.feature.galante.l1.1",
+      "name": "GALANTE",
+      "level": 1,
+      "description": "Sempre que fizer um teste ou salvaguarda baseado em Carisma e o d20 mostrar 9 ou menos, trate o resultado do d20 como 10.",
+      "page": 373,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-romance.feature.atencioso.l5.1",
+      "name": "ATENCIOSO",
+      "level": 5,
+      "description": "Se uma criatura aliada a até 9 metros for reduzida a 0 PV ou sofrer um acerto crítico, você pode usar sua reação para conjurar uma magia com tempo de conjuração de 1 ação ou menos, escolhendo como alvo essa criatura ou a criatura que a feriu.",
+      "page": 373,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-romance.feature.amantes-a-inimigos.l8.1",
+      "name": "AMANTES A INIMIGOS",
+      "level": 8,
+      "description": "Como ação, você pode gastar uma Distorção Narrativa para conjurar Enfeitiçar Pessoa em um nível igual ao de seus espaços normais de Magia de Pacto. Enquanto tiver ao menos uma criatura enfeitiçada, pode usar sua ação para sobrecarregar as mentes de todas as criaturas enfeitiçadas por você, tornando-as atordoadas pelo restante da duração do encantamento. Uma criatura atordoada assim faz uma salvaguarda de Inteligência ao final de cada turno, encerrando o efeito em um sucesso.",
+      "page": 373,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-romance.feature.recuperacao-milagrosa.l12.1",
+      "name": "RECUPERAÇÃO MILAGROSA",
+      "level": 12,
+      "description": "Ao escrever sobre a boa saúde de um alvo, você pode gastar um uso de Consulta para conjurar Restauração Maior sem gastar espaço de magia nem componentes materiais.",
+      "page": 373,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-romance.feature.ate-que-a-morte.l20.1",
+      "name": "ATÉ QUE A MORTE",
+      "level": 20,
+      "description": "Uma vez por Descanso Curto ou Longo, você pode passar 1 minuto realizando uma pequena cerimônia para vincular duas criaturas voluntárias que tenham forte afeto entre si. Enquanto estiverem vinculadas e a até 18 metros uma da outra, se pelo menos uma tiver 1 PV ou mais, nenhuma começa a morrer ao chegar a 0 PV, nenhuma pode ser morta instantaneamente por dano ou efeitos e nenhuma pode ser movida para outro plano contra a vontade. Em 0 PV, continuam agindo normalmente sem salvaguardas contra a morte, mas qualquer dano que uma sofrer é causado à parceira como dano psíquico irredutível. Quando ambas chegam a 0 PV, começam a morrer normalmente; todo sucesso ou falha em salvaguarda contra a morte de uma é refletido na outra. Se uma estabilizar, a outra também; se uma iniciar o turno com 1 PV ou mais, a outra recupera 1 PV. O vínculo termina se você realizar a cerimônia novamente ou se ambas terminarem um Descanso Curto ou Longo em estado de raiva ou desconfiança que gere discórdia entre elas.",
+      "page": 373,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

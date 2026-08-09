@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-historian",
+    "identifier": "lyre-inscriptor-retia-historian",
+    "name": "Historiador",
+    "originalName": "Historian",
+    "aliases": [
+      "Historian"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "369",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 369
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Você prefere relatos factuais, arquivos, registros e acontecimentos históricos. Sua magia literária transforma pesquisa em uma ferramenta capaz de revelar estatísticas de criaturas, orientar aliados e até alterar temporariamente a “ficha” da realidade de um alvo.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 369,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Identificação"
+          },
+          {
+            "level": "3º",
+            "spells": "Ver o Invisível"
+          },
+          {
+            "level": "5º",
+            "spells": "Fortificação Mental"
+          },
+          {
+            "level": "7º",
+            "spells": "Ossenheimer’s archive"
+          },
+          {
+            "level": "9º",
+            "spells": "Conhecimento Lendário"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 369
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-historian.feature.pesquisador.l1.1",
+      "name": "PESQUISADOR",
+      "level": 1,
+      "description": "Você recebe proficiência e Especialização em História. Se já tinha proficiência em História, escolha outra perícia para receber proficiência. Ao fazer um teste de História sobre um assunto que não pesquisou formalmente, ainda pode recordar informações que sejam de conhecimento comum em livros ou periódicos acessíveis ao público.",
+      "page": 369,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-historian.feature.pesquisa-invasiva.l5.1",
+      "name": "PESQUISA INVASIVA",
+      "level": 5,
+      "description": "Como ação bônus, gaste uma Distorção Narrativa e escolha três informações sobre uma criatura que você possa ver: pontos de vida restantes, arredondados para o múltiplo de 20 mais próximo; CA atual e CA sem efeitos; proficiências em salvaguardas, sem valores; dois valores de atributo à sua escolha; proficiências em perícias, sem valores; duas entre resistências, vulnerabilidades ou imunidades a dano; imunidades a condições, incluindo limiar de dano; bônus de proficiência; tipo e alinhamento; ou sentidos. Para cada opção escolhida, faça um teste de História com CD igual ao ND do alvo, ou níveis de classe + 8 se construído como personagem jogador. Para cada sucesso, você aprende uma das qualidades escolhidas.",
+      "page": 369,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-historian.feature.relato-informado.l8.1",
+      "name": "RELATO INFORMADO",
+      "level": 8,
+      "description": "Você pode realizar a ação Ajudar como ação bônus, escrevendo sua intenção, e pode usá-la em uma criatura que veja a até 18 metros. Você pode Ajudar em qualquer teste de atributo ou perícia mesmo sem familiaridade com a tarefa. Ao usar Ajudar, pode gastar uma Distorção Narrativa para afetar um número de criaturas igual ao seu bônus de proficiência, ajudando cada uma individualmente.",
+      "page": 369,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-historian.feature.verdade-categorica.l12.1",
+      "name": "VERDADE CATEGÓRICA",
+      "level": 12,
+      "description": "Quando conjura Lendas e Histórias usando um espaço de Magia de Pacto, o tempo de conjuração é 1 ação. Se possuir um tomo vazio e passar 1 hora em transe conjurando-a sem interrupção, pode realizar uma versão exaustiva: as informações obtidas são transcritas no tomo, incluindo registros de outros livros e materiais de referência, além de um apêndice que indica locais gerais de fontes onde mais informações sobre o assunto podem ser encontradas.",
+      "page": 369,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-historian.feature.sabotar-registro.l20.1",
+      "name": "SABOTAR REGISTRO",
+      "level": 20,
+      "description": "Como ação bônus, gaste um uso de Consulta, escolha dois efeitos abaixo e uma criatura que possa ver a até 18 metros. Pode escolher uma opção mais de uma vez, mas efeitos iguais não se acumulam. O alvo faz uma salvaguarda de Inteligência; em uma falha, os efeitos duram 1 minuto, e ele repete a salvaguarda ao final de cada turno, encerrando-os em um sucesso. Opções: perder imunidade ou resistência a um tipo de dano; tornar-se vulnerável a um tipo de dano ao qual não tenha resistência; reduzir a CA em 5; reduzir à metade, arredondando para cima, o bônus de testes de atributo e salvaguardas baseado em um atributo escolhido; reduzir seus deslocamentos à metade; sofrer desvantagem em salvaguardas contra uma condição escolhida; sofrer desvantagem em ataques com armas ou magias; ou perder um sentido especial. Uma criatura pode sofrer no máximo dois desses efeitos ao mesmo tempo. Como ação bônus em seu turno, você pode atualizar o registro e trocar um efeito ativo por outro.",
+      "page": 369,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

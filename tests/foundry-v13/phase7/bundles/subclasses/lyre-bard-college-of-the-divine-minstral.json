@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-bard-college-of-the-divine-minstral",
+    "identifier": "lyre-bard-college-of-the-divine-minstral",
+    "name": "Colégio do Menestrel Divino",
+    "originalName": "College of the Divine Minstral",
+    "aliases": [
+      "College of the Divine Minstral"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "435–436",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 435
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Esses Bardos estudam o legado de T’quinn na Capital Itoniana e incorporam seus mitos e cânticos à própria magia, reproduzindo sua velocidade, duplicidade e poder trovejante. Suas músicas religiosas são remixadas em novas composições, e suas vozes às vezes parecem cantar em harmonia consigo mesmas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 435
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-bard-college-of-the-divine-minstral.feature.sincronia-dividida.l3.1",
+      "name": "SINCRONIA DIVIDIDA",
+      "level": 3,
+      "description": "Você pode conceder Inspiração de Bardo usando uma ação em vez de uma ação bônus. Ao fazê-lo, escolha dois alvos dentro do alcance: ambos recebem sua Inspiração, mas você gasta apenas um uso e reduz o dado da seguinte forma: d6 vira d4; d8 ou d10 vira d6; d12 vira d8. Você não pode conceder Inspiração com ação e ação bônus no mesmo turno.",
+      "page": 435,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-college-of-the-divine-minstral.feature.acorde-celestial.l6.1",
+      "name": "ACORDE CELESTIAL",
+      "level": 6,
+      "description": "Como ação, toque um acorde poderoso com um instrumento, acompanhado brevemente por uma orquestra fantasma. Escolha criaturas a até 9 metros em quantidade igual ao seu bônus de proficiência. Cada uma recebe um uso de Acorde Celestial, que desaparece quando usado ou após 1 minuto, e uma criatura só pode ter um por vez. Enquanto não estiver incapacitada, ela pode gastar o Acorde para: obter vantagem em uma salvaguarda, declarando antes da rolagem; ao acertar um ataque com arma, causar dano trovejante adicional igual a um dado da sua Inspiração de Bardo; ou realizar a ação Disparada como ação bônus. Usos por Descanso Longo iguais à metade do seu nível de Bardo, arredondado para baixo.",
+      "page": 435,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-college-of-the-divine-minstral.feature.golpe-inspirado.l14.1",
+      "name": "GOLPE INSPIRADO",
+      "level": 14,
+      "description": "Quando uma criatura que possui um dos seus dados de Inspiração de Bardo realiza a ação Atacar, ela pode gastar a Inspiração como ação bônus para fazer um ataque com arma adicional, devendo aplicar o dado de Inspiração à jogada desse ataque.",
+      "page": 436,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-college-of-the-divine-minstral.feature.presenca-simpatica.l14.1",
+      "name": "PRESENÇA SIMPÁTICA",
+      "level": 14,
+      "description": "Quando uma criatura atacar você e houver uma criatura aliada a até 1,5 metro de você ou do atacante, sem estar incapacitada, o atacante realiza o ataque com desvantagem.",
+      "page": 436,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

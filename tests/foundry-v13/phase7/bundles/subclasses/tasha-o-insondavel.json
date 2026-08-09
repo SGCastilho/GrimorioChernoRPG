@@ -1,0 +1,164 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-o-insondavel",
+    "identifier": "tasha-o-insondavel",
+    "name": "O Insondável",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "31–33",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 31
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Você mergulhou em um pacto com as profundezas. Uma entidade do oceano, do Plano Elemental da Água, ou de outro mar sobrenatural agora permite que você se utilize de seus poderes talássicos. Ele está somente te usando para aprender sobre os reinos terrestres, ou ele quer que você abra os portões do dilúvio e afogue o mundo? Talvez você tenha nascido em um culto geracional que venera o Insondável e sua prole. Ou você sofreu um naufrágio e estava à beira do afogamento quando o abraço de seu patrono ofereceu a você uma chance de viver. Qualquer que seja a razão do seu pacto, o mar e suas profundezas desconhecidas o chamam. Entidades das profundezas que podem ter empoderado o bruxo incluem krakens, elementais da água ancestrais, alucinações quase divinas sonhadas pelos kuo-toa, semideuses do povo do mar, e laias de megeras do mar.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 31
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-o-insondavel.feature.lista-expandida-de-magias.l1.1",
+      "name": "LISTA EXPANDIDA DE MAGIAS",
+      "level": 1,
+      "description": "Quando você aprende uma magia de bruxo, o Insondável permite a escolha a partir de uma lista expandida de magias. As magias a seguir são adicionadas à sua lista de magias de bruxo. Lista Expandida de Magias do Insondável Círculo da Magia Magias 1º Criar ou Destruir Água, Onda Trovejante 2º Lufada de Vento, Silêncio 3º Nevasca, Relâmpago 4º Controlar Água, Invocar Elemental(apenas água) 5º Cone de Frio, Mão de Bigby (com a aparência de um tentáculo)",
+      "page": 32,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-o-insondavel.feature.tentaculo-das-profundezas.l1.1",
+      "name": "TENTÁCULO DAS PROFUNDEZAS",
+      "level": 1,
+      "description": "Você pode invocar magicamente um tentáculo espectral que golpeia seus inimigos. Com uma ação bônus, você cria um tentáculo de 3m de comprimento em um ponto dentro da sua visão a até 18m de você. O tentáculo dura 1 minuto ou até que você use esssa característica para criar outro tentáculo. Quando você cria um tentáculo, você pode realizar um ataque corpo a corpo com magia contra uma criatura a até 3m dele. Em um acerto, o alvo sofre 1d8 de dano gélido, e o deslocamento dele é reduzido em 3m até o começo do seu próximo turno. Quando você chega ao 10º nível nessa classe, o dano aumenta para 2d8. Com uma ação bônus em seu turno, você pode mover o tentáculo por até 9m e repetir o ataque. Você pode invocar o tentáculo um número de vezes igual ao seu bônus de proficiência, e recupera todos os usos ao terminar um descanso longo.",
+      "page": 32,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-o-insondavel.feature.dom-do-mar.l1.1",
+      "name": "DOM DO MAR",
+      "level": 1,
+      "description": "Você adquire um deslocamento de natação de 12m, e você pode respirar debaixo da água.",
+      "page": 32,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-o-insondavel.feature.alma-oceanica.l6.1",
+      "name": "ALMA OCEÂNICA",
+      "level": 6,
+      "description": "Você se sente ainda mais em casa nas profundezas. Você adquire resistência a dano gélido. Adicionalmente, quando você estiver completamente submerso, qualquer criatura que também estiver na mesma condição pode entender sua fala, e você pode entender a deles.",
+      "page": 32,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-o-insondavel.feature.espiral-guardia.l6.1",
+      "name": "ESPIRAL GUARDIÃ",
+      "level": 6,
+      "description": "Seu tentáculo das profundezas pode defender a você e a outros, se posicionando entre vocês e a ameaça. Quando você ou uma criatura em seu campo de visão toma dano enquanto a até 3m do tentáculo, você pode usar sua reação para escolher uma dessas criaturas e reduzir o tano sofrido por ela em 1d8. Quando você chegar ao 10º nível nessa classe, o dano reduzido aumenta para 2d8.",
+      "page": 32,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-o-insondavel.feature.tentaculos-enredantes.l10.1",
+      "name": "TENTÁCULOS ENREDANTES",
+      "level": 10,
+      "description": "Você aprende a magia Tentáculos Negros de Evard. Ela é considerada uma magia de bruxo para você, mas ela não conta contra o número de magias que você sabe. Você também pode conjurá-la uma vez sem necessitar de um espaço de magia, recuperando essa habilidade após terminar um descanso longo. Sempre que você conjura essa magia, a magia de seu patrono o inunda, fornecendo a você um número de pontos de vida temporários igual ao seu nível de bruxo. Além disso, nenhum dano pode quebrar sua concentração nessa magia.",
+      "page": 32,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-o-insondavel.feature.mergulho-no-insondavel.l14.1",
+      "name": "MERGULHO NO INSONDÁVEL",
+      "level": 14,
+      "description": "Você pode abrir magicamente canais temporários para destinos aquáticos. Como uma ação, você pode se teletransportar e a até cinco outras criaturas dispostas em seu campo de visão que estejam a até 9m de você. Em meio a um turbilhão de tentáculos, todos vocês desaparecem e reaparecem a até 1,5km de distância em um corpo de água que você viu (do tamanho de uma lagoa ou maior) ou a até 9m dele, cada um de vocês aparecendo em um espaço desocupado a até 9m uns dos outros. Assim que usar essa característica, você não poderá usá-lo novamente até terminar um descanso curto ou longo.",
+      "page": 32,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

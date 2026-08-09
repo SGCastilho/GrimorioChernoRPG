@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "scag-juramento-da-coroa",
+    "identifier": "scag-juramento-da-coroa",
+    "name": "Juramento da Coroa",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "scag",
+    "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+    "pages": "132–133",
+    "chapter": "Capítulo 4: Classes",
+    "page": 132
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "O Juramento da Coroa é juramentado aos ideais da civilização, em ser o espírito de uma nação, fiel a uma soberania, ou subserviente a uma divindade de lei e regência. Os paladinos que abraçam este juramento se dedicam a servir a sociedade e, em particular, às leis justas que mantêm a sociedade unida. Esses paladinos são guardiões vigilantes nas muralhas, se impondo contra as marés caóticas do barbarismo que ameaçam por abaixo tudo o que a civilização ergueu, eles são comumente conhecidos como guardiões, exemplares ou sentinelas. Frequentemente paladinos servos desta ordem são membros de uma ordem de fidalgia aos serviços de uma nação ou de um soberano, e submetem seu juramento como parte de sua admissão para sua qualificação junto à ordem.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-da-coroa",
+        "title": "Magias do Juramento da Coroa",
+        "page": null,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Comando; Duelo Compelido"
+          },
+          {
+            "level": "5º",
+            "spells": "Elo de Proteção; Zona da Verdade"
+          },
+          {
+            "level": "9º",
+            "spells": "Aura da Vitalidade; Guardiões Espirituais"
+          },
+          {
+            "level": "13º",
+            "spells": "Banimento; Guardião da Fé"
+          },
+          {
+            "level": "17º",
+            "spells": "Círculo de Poder; Obrigação"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 132
+  },
+  "features": [
+    {
+      "key": "subclass.scag-juramento-da-coroa.feature.dogmas-da-coroa.l3.1",
+      "name": "DOGMAS DA COROA",
+      "level": 3,
+      "description": "Os dogmas do Juramento da Coroa são frequentemente impostos pela soberania a qual se é juramentado, mas geralmente enfatiza os seguintes princípios.\n\nLei. A lei é suprema. É o alicerce que mantêm as pedras da civilização unidas, e como tal deve ser respeitada.\n\nLealdade. Sua palavra é sua obrigação. Sem lealdade, juramentos e leis perdem seu significado.\n\nCoragem. Você deve fazer o que for necessário para manter a ordem. Mesmo em face da maior desvantagem. Se você não tomar uma atitude, quem tomará?\n\nResponsabilidade. Você deve lidar com as consequências de suas ações e você é responsável pela execução de seus deveres e obrigações.",
+      "page": 133,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-juramento-da-coroa.feature.magias-de-juramento.l3.1",
+      "name": "MAGIAS DE JURAMENTO",
+      "level": 3,
+      "description": "Você ganha as magias de juramento de acordo com o nível de paladino da lista.",
+      "page": 133,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-juramento-da-coroa.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Quando você escolhe esse juramento no 3º nível, você recebe as seguintes opções de Canalizar Divindade.\n\nDesafio do Campeão. Você emite um desafio que compele outras criaturas a batalhar com você. Cada criatura à sua escolha que você possa ver a até 9 metros de você deve fazer um TR de Sabedoria. Se falhar, uma criatura não pode, por vontade própria, se mover para além de 9 metros de distância de você. Este efeito se encerra sobre a criatura se você morrer ou ficar incapacitado ou se a criatura de algum modo se mover para além de 9 metros de você.\n\nMudar a Maré. Como uma ação bônus, você pode auxiliar criaturas machucadas com o seu Canalizar Divindade. Cada criatura à sua escolha que possa lhe ouvir a até 9 metros de você, recupera pontos de vida igual a 1d6 + seu modificador de Carisma (mínimo de 1 ponto de vida) caso ele não tenha mais da metade dos pontos de vida.",
+      "page": 133,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-juramento-da-coroa.feature.alianca-divina.l7.1",
+      "name": "ALIANÇA DIVINA",
+      "level": 7,
+      "description": "A partir do nível 7, quando uma criatura a até 1,5m de você recebe dano, você pode usar sua reação para magicamente substituir sua própria saúde para a criatura alvo, fazendo com que a criatura não receba o dano. Ao invés disso, você recebe o dano. Este dano causado em você não pode ser reduzido ou prevenido de nenhuma forma.",
+      "page": 133,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-juramento-da-coroa.feature.espirito-obstinado.l15.1",
+      "name": "ESPÍRITO OBSTINADO",
+      "level": 15,
+      "description": "A partir do nível 15, você possui vantagem nos testes de resistência para evitar ser paralisado ou aturdido.",
+      "page": 133,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-juramento-da-coroa.feature.campeao-exaltado.l20.1",
+      "name": "CAMPEÃO EXALTADO",
+      "level": 20,
+      "description": "No 20º nível, sua presença no campo de batalha é uma inspiração para aqueles dedicados à sua causa. Você pode usar sua ação para ganhar os seguintes benefícios durante 1 hora:\n\n• Você ganha resistência a danos de concussão, cortante e perfurante de armas não mágicas.\n• Seus aliados têm vantagem nos testes de resistência contra morte enquanto estiverem a até 9 metros de você.\n• Você tem vantagem nos testes de resistência de Sabedoria, assim como seus aliados a até 9 metros de você.\n\nEste efeito logo se encerra assim que você morrer ou ficar incapacitado. Uma vez que você usar essa habilidade, ela somente poderá ser usada novamente após um descanso longo.",
+      "page": 133,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

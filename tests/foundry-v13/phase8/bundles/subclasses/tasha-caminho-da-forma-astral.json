@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-caminho-da-forma-astral",
+    "identifier": "tasha-caminho-da-forma-astral",
+    "name": "Caminho da Forma Astral",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "74–76",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 74
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Um monge que segue o Caminho da Forma Astral acredita que seu corpo é uma ilusão. Eles enxergam seu ki como a representação de sua forma verdadeira, sua forma astral. Essa forma astral possui a capacidade de ser uma força da ordem ou da desordem, com alguns monastérios treinando estudantes para usarem seus poderes para proteger os fracos e outros instruindo aspirantes em como manifestar seu eu verdadeiro em serviço do poder.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 74
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-caminho-da-forma-astral.feature.bracos-da-forma-astral.l3.1",
+      "name": "BRAÇOS DA FORMA ASTRAL",
+      "level": 3,
+      "description": "Seu domínio sobre o ki permite que você manifeste uma parte de sua forma astral. Como uma ação bônus, você pode gastar 1 ponto de ki para invocar os braços de sua forma astral. Ao fazê-lo, cada criatura a sua escolha que você possa ver a até 3m de você deve ser bem-sucedida em uma salvaguarda de Destreza ou sofrerá dano de energia equivalentes à rolagem de dois dados de Artes Marciais. Durante 10 minutos, esses braços espectrais pairam perto de seus ombros ou cercam seus braços (conforme desejar). Você determina a aparência desses braços, e eles desaparecem assim que você for incapacitado ou morto. Enquanto os braços espectrais estiverem presentes, você ganha os seguintes benefícios: Você pode utilizar o seu modificador de Sabedoria em vez do modificador de força para testes de habilidade e salvaguardas de Força. Você pode utilizar os braços espectrais para realizar ataques desarmados. Quando realizar um ataque desarmado com esses braços em seu turno, seu alcance para eles é superior em 1,5m ao seu alcance normal. Os ataques desarmados que você faz com os braços espectrais podem utilizar seu modificador de Sabedoria em vez do modificador de Força ou Destreza para as rolagens de ataque e de dano, e seu tipo de dano é de energia.",
+      "page": 74,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-caminho-da-forma-astral.feature.semblante-da-forma-astral.l6.1",
+      "name": "SEMBLANTE DA FORMA ASTRAL",
+      "level": 6,
+      "description": "Você pode invocar o semblante de sua forma astral. Como uma ação bônus, ou como parte da ação bônus utilizada para ativar os Braços da forma Astral, você pode gastar 1 ponto de ki para invocar essa aparência por 10 minutos. Ela desaparece assim que você for incapacitado ou morto. Enquanto esse semblante espectral estiver presente, você adquire os seguintes benefícios. Visão Astral. Você pode enxergar normalmente na escuridão, tanto mágica quanto não-mágica, a uma distância de até 36m. Sabedoria espiritual. Você possui vantagem nos testes de Sabedoria (Intuição) e Carisma (Intimidação). Palavra espiritual. Quando você fala, você pode direcionar as suas palavras a uma criatura a sua escolha que você possa ver a até 18m de você, fazendo com que apenas essa criatura possa ouvi-lo. Alternativamente, você pode amplificar sua voz de forma que todas as criaturas a até 180m possam escutá-lo.",
+      "page": 74,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-caminho-da-forma-astral.feature.corpo-astral.l11.1",
+      "name": "CORPO ASTRAL",
+      "level": 11,
+      "description": "Quando você tiver tanto seus braços quanto seu semblante da forma astral ativos, você pode fazer com que o corpo de sua forma astral apareça (nenhuma ação é necessária). Esse corpo espectral recobre sua forma física como uma armadura, conectando seus braços e seu semblante. Você determina sua aparência. Enquanto o corpo astral está ativo, você ganha os seguintes benefícios. Defletir energia. Quando você sofre dano ácido, gélido, ígneo, elétrico, trovejante ou de energia, você pode usar sua reação para defletir isso. Ao fazê-lo, o dano que você sofreria é reduzido em 1d10 + seu modificador de Sabedoria (com a redução mínima de 1 ponto). Braços aprimorados. Uma vez em cada um dos seus turnos, quando você acertar um alvo com os Braços da Forma Astral, você pode provocar dano extra ao alvo equivalente ao valor de seu dado de Artes Marciais.",
+      "page": 74,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-caminho-da-forma-astral.feature.forma-astral-desperta.l17.1",
+      "name": "FORMA ASTRAL DESPERTA",
+      "level": 17,
+      "description": "Sua conexão com sua forma astral está completa, permitindo que você libere todo o seu potencial. Como uma ação bônus, você pode gastar 5 pontos de ki para invocar os braços, o semblante e o corpo de sua forma astral e despertálas por 10 minutos. Essa forma desaparece se você for incapacitado ou morto. Enquanto sua forma astral estiver desperta, você ganha os seguintes benefícios: Armadura espiritual. Você ganha +2 de bônus em sua CA. Barreira astral. Sempre que usar a característica de ataque extra para atacar duas vezes, você poderá atacar uma terceira vez se todos os seus ataques forem realizados com os braços da forma astral.\n\nAparência da sua Forma Astral A forma astral é uma personificação translúcida da alma do monge. Como resultado, uma forma astral pode refletir aspectos dos antecedentes, ideais, vínculos e defeitos do monge, e a forma astral não necessariamente se parece de alguma forma com ele. Por exemplo, a forma astral de um humano esguio pode lembrar um minotauro - a força que o monge sente que tem dentro de si. De maneira semelhante, um monge orc pode manifestar braços diáfanos e um semblante delicado, representando a beleza gentil da alma do orc. Cada forma astral é única, e alguns dos monges dessa tradição monástica são mais conhecidos pela aparência de sua forma astral do que por sua aparência física real. Ao escolher esse caminho, considere os pontos que definem seu monge. Ele é obcecado com algo? Ele é guiado pela justiça ou por um desejo egoísta? Alguma dessas motivações poderia se manifestar na aparência de sua forma astral.",
+      "page": 74,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

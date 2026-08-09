@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-favored-soul-setanta",
+    "identifier": "zagalhta-favored-soul-setanta",
+    "name": "Fardo de Setanta",
+    "originalName": "Burden of Setanta",
+    "aliases": [
+      "Burden of Setanta"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "152",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 152
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "A essência de Setanta concede capacidade de rejeitar o senso comum e ultrapassar limites, acompanhada de uma urgência em quebrar a realidade presente para aproximá-la do que deveria ser.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 152
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-favored-soul-setanta.feature.artes-cosmicas.l1.1",
+      "name": "ARTES CÓSMICAS",
+      "level": 1,
+      "description": "Magias da lista do Cavaleiro Dracônico e do grupo Astromancia contam como magias de Alma Favorecida. Para efeitos de Bônus do Cavaleiro Dracônico, você conta como Cavaleiro Dracônico e seu tipo de dano de Encarnação é força.",
+      "page": 152,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-setanta.feature.permanencia-eidolica.l1.1",
+      "name": "PERMANÊNCIA EIDÓLICA",
+      "level": 1,
+      "description": "Você tem vantagem em Verificações de Queima de Eidomancia e todos os seus ataques são simultaneamente mágicos e eidólicos.",
+      "page": 152,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-setanta.feature.fortuna-eterna.l6.1",
+      "name": "FORTUNA ETERNA",
+      "level": 6,
+      "description": "Sempre que rolar com desvantagem por efeito ou condição fora de seu controle, pode usar o maior dos dois resultados de d20 em vez do menor.",
+      "page": 152,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-setanta.feature.acao-exaltada.l10.1",
+      "name": "AÇÃO EXALTADA",
+      "level": 10,
+      "description": "No seu turno, gaste Purificação para receber uma ação e ação bônus extras naquele turno. Rolagens de ataque, testes e salvaguardas feitas por essas ações tratam o d20 como igual ao seu nível de Alma Favorecida se o resultado fosse menor (não gera crítico); magias conjuradas por elas contam como dois níveis acima, máximo 9º; e o dano causado como resultado dessas ações não pode ser reduzido nem resistido.",
+      "page": 152,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-setanta.feature.aprimoramento-de-ataque-extra.l13.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 13,
+      "description": "Quando realiza a ação Atacar ou conjura uma magia de Alma Favorecida, pode fazer um ataque de arma adicional como parte da mesma ação.",
+      "page": 152,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

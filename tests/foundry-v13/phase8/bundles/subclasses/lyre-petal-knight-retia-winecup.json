@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-winecup",
+    "identifier": "lyre-petal-knight-retia-winecup",
+    "name": "Taça-de-Vinho",
+    "originalName": "Winecup",
+    "aliases": [
+      "Winecup"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "400",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 400
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "O epíteto Taça-de-Vinho marca indivíduos de coração essencialmente puro, mas inclinados a subterfúgio. Seu cavaleiro usa venenos, mobilidade tática e invisibilidade para agir nos bastidores.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 400
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-winecup.feature.manto-aberto.l2.1",
+      "name": "MANTO ABERTO",
+      "level": 2,
+      "description": "Como ação bônus, encante por 1 minuto uma arma que esteja segurando; flores da Taça-de-Vinho brotam nela. A primeira vez a cada turno que ela acerta uma criatura causa +1d6 de dano venenoso; aumenta para 1d8 no 8º nível, 1d10 no 12º, e no 17º esse dano adicional se aplica a todo acerto. Uma vez por turno, ao acertar, pode obrigar o alvo a fazer salvaguarda de Constituição; em falha, fica envenenado até o início do seu próximo turno. Você pode encerrar o encantamento antes do tempo para criar gás tóxico: escolha a até 9 metros um número de criaturas igual ao número de turnos que faltavam para expirar; cada uma faz salvaguarda de Constituição e, em falha, sofre 1d10 + metade de seu nível de Cavaleiro das Pétalas, arredondado para baixo, de dano venenoso. Usos por Descanso Longo iguais à metade de seu bônus de proficiência, arredondado para baixo.",
+      "page": 400,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-winecup.feature.resistencia-a-veneno.l6.1",
+      "name": "RESISTÊNCIA A VENENO",
+      "level": 6,
+      "description": "Você não pode ficar envenenado e tem resistência a dano venenoso. Se outra característica ou efeito também lhe conceder resistência a veneno, você se torna imune em vez disso.",
+      "page": 400,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-winecup.feature.ramos-da-taca-de-vinho.l6.1",
+      "name": "RAMOS DA TAÇA-DE-VINHO",
+      "level": 6,
+      "description": "Você recebe três Ramos Virtuosos. APRIMORAMENTO DE ANTICORPOS: por 1 minuto, criaturas beneficiadas por sua magia têm vantagem em salvaguardas contra envenenado, cego e surdo. VOO ABERTO: na próxima vez em até 1 minuto que um ataque com arma acertá-lo, pode usar reação para sofrer metade do dano e mover até seu deslocamento sem provocar ataques de oportunidade. VANTAGEM TÁTICA: escolha uma criatura alvo da magia; por 1 minuto, sempre que usar a ação Atacar com ataques com arma contra ela, pode fazer um ataque com arma adicional contra o mesmo alvo.",
+      "page": 400,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-winecup.feature.petala-fechada.l11.1",
+      "name": "PÉTALA FECHADA",
+      "level": 11,
+      "description": "Como ação bônus, gaste um uso de Flora Virtuosa para ficar invisível por 1 minuto, desfazendo-se visualmente em pétalas. A invisibilidade termina se conjurar magia, fizer ataque com arma ou realizar ação que obrigue outra criatura a fazer salvaguarda.",
+      "page": 400,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-winecup.feature.sempre-atento.l15.1",
+      "name": "SEMPRE ATENTO",
+      "level": 15,
+      "description": "Enquanto não estiver incapacitado, criaturas que o escolham como alvo não podem se beneficiar de características ou efeitos que exijam vantagem em ataques contra você ou que exijam que você esteja cercado por outras criaturas. Além disso, se estiver adjacente a mais de uma criatura hostil, tem vantagem no primeiro ataque que fizer contra cada criatura diferente que escolher como alvo a cada turno.",
+      "page": 400,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

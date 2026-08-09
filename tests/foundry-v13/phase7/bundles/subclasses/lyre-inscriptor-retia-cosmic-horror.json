@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-cosmic-horror",
+    "identifier": "lyre-inscriptor-retia-cosmic-horror",
+    "name": "Horror Cósmico",
+    "originalName": "Cosmic Horror",
+    "aliases": [
+      "Cosmic Horror"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "366",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 366
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Você pesquisa aberrações, entidades exteriores e aquilo que existe além do universo conhecido. Em vez de recuar diante de suas visões, tenta compreendê-las — embora nunca seja totalmente claro se os horrores que escreve são fruto de sua imaginação ou se alguma presença maior conduz sua pena.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 366,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Sangue Sobrecarregado"
+          },
+          {
+            "level": "3º",
+            "spells": "Vórtice Faminto"
+          },
+          {
+            "level": "5º",
+            "spells": "Medo"
+          },
+          {
+            "level": "7º",
+            "spells": "Tentáculos Negros de Evard"
+          },
+          {
+            "level": "9º",
+            "spells": "Surto de Pavor"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 366
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-cosmic-horror.feature.olhos-diabolicos.l1.1",
+      "name": "OLHOS DIABÓLICOS",
+      "level": 1,
+      "description": "Você recebe visão diabólica até 18 metros. Uma vez por Descanso Longo, como ação bônus, pode conceder visão diabólica de 9 metros por 10 minutos a um número de criaturas a até 9 metros igual ao seu bônus de proficiência.",
+      "page": 366,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-cosmic-horror.feature.horror-conjurado.l5.1",
+      "name": "HORROR CONJURADO",
+      "level": 5,
+      "description": "Uma vez por Descanso Longo, como ação, você pode invocar uma aberração em um espaço desocupado a até 4,5 metros, sofrendo 2d12 de dano psíquico irredutível. A aberração é leal a você, age em seu interesse e permanece por 1 hora, obedecendo às seguintes regras: se puder conjurar magias, uma magia de 1º a 3º nível custa uma Distorção Narrativa; uma magia de 5º nível ou inferior custa um de seus espaços de Magia de Pacto; e uma magia de até 9º nível custa um uso de Consulta. Ela não pode usar Multiataque. Não pode realizar ações que não sejam ataques com armas, a menos que você gaste uma Distorção Narrativa para permitir. Seu ND deve ser igual ou inferior ao seu nível de Inscritor. Ela desaparece se ficar inconsciente, chegar a 0 pontos de vida ou morrer. Age na sua iniciativa; pode se mover conforme suas ordens, mas qualquer ação exige sua ação bônus. Sem ordens, protege-se da melhor forma possível. Você deve manter concentração como em uma magia, mas pode manter esta concentração simultaneamente com outro efeito; se perder a concentração, ela desaparece. Quando desaparece, você fica atordoado por 1 minuto pelo esforço e, no início de cada turno, faz uma salvaguarda de Carisma com CD 8 + o ND da aberração, recuperando-se em um sucesso. A aberração pode usar Ações Lendárias, mas cada uso exige de você um número de Distorções Narrativas igual ao número de Ações Lendárias que ele consumiria.",
+      "page": 366,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-cosmic-horror.feature.seu-pior-pesadelo.l8.1",
+      "name": "SEU PIOR PESADELO",
+      "level": 8,
+      "description": "Uma vez por Descanso Curto ou Longo, como ação, escolha uma criatura a até 18 metros. Ela e todas as criaturas a até 4,5 metros dela devem realizar uma salvaguarda de Inteligência. Em uma falha, sofrem dano psíquico igual a 1d10 × seu bônus de proficiência; em um sucesso, sofrem metade. Quem falhar também fica amedrontado por você por 1 minuto e repete a salvaguarda ao final de cada turno. Um sucesso encerra o efeito; uma nova falha causa mais 1d10 de dano psíquico.",
+      "page": 366,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-cosmic-horror.feature.terror-subito.l12.1",
+      "name": "TERROR SÚBITO",
+      "level": 12,
+      "description": "Como ação bônus, você pode gastar uma Distorção Narrativa para escrever rapidamente a chegada de um horror sobrenatural. Uma aberração de ND igual ou inferior ao seu nível de Inscritor surge em um espaço desocupado a até 18 metros, executa uma ação que seja capaz de realizar, sob sua direção, e desaparece. Essa ação não está sujeita às limitações de Horror Conjurado.",
+      "page": 366,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-cosmic-horror.feature.condutor-de-um-poder-maior.l20.1",
+      "name": "CONDUTOR DE UM PODER MAIOR",
+      "level": 20,
+      "description": "Você recebe a bênção de uma entidade exterior de poder deífico. Torna-se imune às condições enfeitiçado, amedrontado e atordoado, e recebe deslocamento de voo (pairar) igual ao seu deslocamento básico. Além disso, como ação, você conjura apêndices de outro mundo para atingir até quatro criaturas a até 9 metros. Faça um ataque corpo a corpo com magia para cada alvo; em um acerto, causa 2d12 + seu modificador de Inteligência de dano psíquico. Se vários tentáculos atingirem a mesma criatura, eles são resolvidos coletivamente como um único ataque corpo a corpo com magia, mas causam +1d12 de dano psíquico por tentáculo depois do primeiro.",
+      "page": 366,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

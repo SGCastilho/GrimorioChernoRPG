@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-circulo-do-fogo-selvagem",
+    "identifier": "tasha-circulo-do-fogo-selvagem",
+    "name": "Círculo do Fogo Selvagem",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "44–46",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 44
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Druidas dentro do Círculo do Fogo Selvagem compreendem que a destruição às vezes é precursora da criação, tal como quando um fogo florestal promove o crescimento posterior. Esses druidas se ligam a um espírito primitivo que carrega tanto a destruição quanto o poder criativo, permitindo aos druidas criarem chamas controladas que queimam uma coisa para dar vida a outra.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 44
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-circulo-do-fogo-selvagem.feature.magias-de-circulo.l2.1",
+      "name": "MAGIAS DE CÍRCULO",
+      "level": 2,
+      "description": "Você criou um vínculo com um espírito de fogo selvagem, uma criatura primitiva de criação e destruição. Sua ligação com esse espírito fornece a você acesso a algumas magias quando você alcança certos níveis nessa classe, conforme mostrado na tabela de Magias do Círculo do Fogo Selvagem. Assim que você ganha acesso a essas magias, elas sempre serão consideradas como preparadas por você, e não contam dentro do número de magias que você pode preparar por dia. Se através disso você adquirir uma magia que não esteja na lista de magias de druida, agora ela passa a ser considerada uma magia de druida para você. Magias do Círculo do Fogo Selvagem Nível de Druida Magias 2° Mãos Flamejantes, Curar Ferimentos 3º Esfera Flamejante, Raio Ardente 5º Crescimento de Plantas, Revivificar 7º Aura de Devoção, Escudo Ardente 9º Coluna de Chamas, Curar Ferimentos em Massa",
+      "page": 44,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-do-fogo-selvagem.feature.invocar-espirito-do-fogo-selvagem.l2.1",
+      "name": "INVOCAR ESPÍRITO DO FOGO SELVAGEM",
+      "level": 2,
+      "description": "Você pode invocar o espírito primitivo conectado a sua alma. Como uma ação, você pode gastar um uso de sua Forma Selvagem para invocar seu espírito do fogo selvagem, em vez de assumir a forma de uma fera. O espírito aparece em um espaço desocupado a sua escolha que você possa ver a até 9m de você. Quando o espírito aparece, cada criatura a até 3m dele (exceto você) deve se bem-sucedido em uma salvaguarda de Destreza contra sua CD de magia ou sofre 2d6 de dano ígneo. O espírito é amigável a você e seus companheiros e obedece aos seus comandos. Veja as estatísticas de jogo dessa criatura no bloco de estatísticas do Espírito do Fogo Selvagem, que usa seu bônus de proficiência (BP) em várias coisas. Você determina a aparência do seu espírito. Alguns espíritos assumem uma forma humanóide feita de galhos retorcidos envolvidos em chamas, enquanto outros parecem como feras feitas de chamas. Em combate, o espírito compartilha sua contagem de iniciativa, mas ela executa seu turno logo após o seu. A única ação que ele faz em seu turno é a ação de Esquiva, a menos que você o comande com sua ação bônus em seu turno para que ele realize outra ação. Essa ação pode ser uma do seu bloco de estatísticas ou qualquer outra. Se você estiver incapacitado, o espírito pode executar qualquer ação a sua escolha, não apenas a de Esquiva. O espírito manifesta-se por 1 hora, até ser reduzido a 0 pontos de vida, até que você utilize essa característica para invocar o espírito novamente, ou até que você morra.",
+      "page": 45,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-do-fogo-selvagem.feature.vinculo-aprimorado.l6.1",
+      "name": "VÍNCULO APRIMORADO",
+      "level": 6,
+      "description": "O vínculo com seu espírito do fogo selvagem aprimora suas magias de restauração e destruição. Sempre que você conjurar uma magia que provoca dano de fogo, ou que restaure pontos de vida enquanto seu espírito do fogo selvagem estiver invocado, jogue 1d8, e você ganha um bônus igual ao número rolado para uma jogada de dano ou de cura dessa magia. Em adição, quando você conjura uma magia com um alcance que não seja pessoal, a magia pode se originar do seu espírito do fogo selvagem.",
+      "page": 45,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-do-fogo-selvagem.feature.cauterizar-chamas.l10.1",
+      "name": "CAUTERIZAR CHAMAS",
+      "level": 10,
+      "description": "Você ganha a habilidade de transformar a morte em chamas mágicas que podem curar ou incinerar. Quando uma criatura Pequena ou maior morre a até 9m de você ou de seu espírito do fogo selvagem, uma chama espectral inofensiva brota do espaço da criatura morta e brilha ali por 1 minuto. Quando uma criatura que você possa ver entra nesse espaço, você pode usar sua reação para extinguir a chama espectral ali e curar ou dar dano de fogo nessa criatura. O valor dessa cura ou dano é igual 2d10 + seu modificador de Sabedoria. Você pode usar essa reação um número de vezes igual ao seu bônus de proficiência,, e você recupera todos os seus usos em quando você termina um descanso longo.",
+      "page": 45,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-do-fogo-selvagem.feature.renovacao-ardente.l14.1",
+      "name": "RENOVAÇÃO ARDENTE",
+      "level": 14,
+      "description": "O vínculo com seu espírito do fogo selvagem pode salvar você da morte. Se o espírito estiver a até 36m de você quando você for reduzido a 0 pontos de vida e cair inconsciente, você pode fazer com que o espírito caia a 0 pontos de vida. Você então recupera metade dos seus pontos de vida e imediatamente se levanta. Assim que usar essa característica, você não pode utilizá-la novamente até terminar um descanso longo. Espírito do Fogo Selvagem Elemental Pequeno Classe de Armadura 13 (armadura natural) Pontos de Vida 5 + cinco vezes seu nível de druida Deslocamento 9m, Voo 9m (levitação). FOR DES CON INT SAB CAR 10 (+0) 14 (+2) 14 (+2) 13 (+1) 15 (+2) 15 (+2) Imunidade a dano Ígneo. Imunidade a condições enfeitiçado, amedrontado, agarrado, caído, impedido. Sentidos Visão no Escuro 18m, Percepção passiva 12. Idiomas Compreende os idiomas que você fala. Nível de Desafio — Bônus de Proficiência (BP) Igual ao seu. Semente de fogo. Ataque com arma à distância: seu modificador de ataque com magia para acertar, alcance de 18m, um alvo que você possa ver. Acerto 1d6 + BP de dano de fogo. Teletransporte feérico. O espírito e cada criatura voluntária a sua escolha a até 1,5m dele se teletransporta a até 4,5m para um espaço desocupado que você possa ver. Então cada criatura a até 1,5m do espaço que o espírito deixou deve ser bem sucedida em uma salvaguarda de Destreza contra sua CD de magia ou sofre 1d6 + BP de dano de fogo.",
+      "page": 45,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

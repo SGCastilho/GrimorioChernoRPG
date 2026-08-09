@@ -1,0 +1,189 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-cleric-ages-domain",
+    "identifier": "lyre-cleric-ages-domain",
+    "name": "Domínio das Eras",
+    "originalName": "Ages Domain",
+    "aliases": [
+      "Ages Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "440",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 440
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "O Domínio das Eras preserva e aplica o conhecimento acumulado por gerações, separando fato de ficção e encontrando padrões úteis em cura, ofício e combate. Magias de Domínio — 1º: Compreender Idiomas, Magia de Vínculo; 3º: Tela de Nuvens, Mensagem Embutida; 5º: Falar com os Mortos, Mandado Forense; 7º: Adivinhação, Santuário Privado; 9º: Vidência, Conceder Especialização.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-dominio",
+        "title": "Magias de Domínio",
+        "page": 440,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Compreender Idiomas; Magia de Vínculo"
+          },
+          {
+            "level": "3º",
+            "spells": "Tela de Nuvens; Mensagem Embutida"
+          },
+          {
+            "level": "5º",
+            "spells": "Falar com os Mortos; Mandado Forense"
+          },
+          {
+            "level": "7º",
+            "spells": "Adivinhação; Santuário Privado"
+          },
+          {
+            "level": "9º",
+            "spells": "Vidência; Conceder Especialização"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 440
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-cleric-ages-domain.feature.proficiencias-adicionais.l1.1",
+      "name": "PROFICIÊNCIAS ADICIONAIS",
+      "level": 1,
+      "description": "Você ganha proficiência em História e Investigação.",
+      "page": 440,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-ages-domain.feature.marcador-mental.l1.1",
+      "name": "MARCADOR MENTAL",
+      "level": 1,
+      "description": "Você estudou uma enorme variedade de assuntos. Quando realiza um teste de perícia, pode recorrer a conhecimento pertinente, rolar um novo d20 e escolher qual resultado usar. Usos por Descanso Longo iguais à metade do seu nível de Clérigo, arredondado para cima.",
+      "page": 440,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-ages-domain.feature.canalizar-divindade-relato-regressivo.l2.1",
+      "name": "CANALIZAR DIVINDADE: RELATO REGRESSIVO",
+      "level": 2,
+      "description": "Quando uma magia ou efeito com duração originado de você estiver prestes a terminar — por dissipação, fim da duração ou perda de concentração — use sua reação e Canalizar Divindade para renovar sua duração e continuar o efeito, inclusive retomando concentração se necessário. Se a duração original for maior que 10 minutos, a nova duração é 10 minutos.",
+      "page": 440,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-ages-domain.feature.explorar-padroes.l6.1",
+      "name": "EXPLORAR PADRÕES",
+      "level": 6,
+      "description": "Quando uma criatura que acertou ou causou dano a você desde o fim do seu último turno escolher você como alvo de um ataque com arma ou obrigá-lo a fazer uma salvaguarda, use sua reação para impor desvantagem a todos os ataques dela contra você, inclusive o desencadeador, e ganhar vantagem em todas as salvaguardas contra ela até o início do seu próximo turno.",
+      "page": 440,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-ages-domain.feature.conjuracao-proficiente.l8.1",
+      "name": "CONJURAÇÃO PROFICIENTE",
+      "level": 8,
+      "description": "Você soma seu modificador de Sabedoria ao dano em dados causado por suas magias de Clérigo.",
+      "page": 440,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-ages-domain.feature.canalizar-divindade-recontar-o-total.l17.1",
+      "name": "CANALIZAR DIVINDADE: RECONTAR O TOTAL",
+      "level": 17,
+      "description": "Quando uma criatura a até 9 metros rola qualquer quantidade de dados para dano ou cura, use Canalizar Divindade para alterar o resultado. Role metade dos dados da rolagem desencadeadora, arredondado para cima, e aumente ou reduza o total final pelo valor obtido.",
+      "page": 440,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

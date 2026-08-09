@@ -1,0 +1,973 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas",
+    "originalName": "Petal Knight",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "382–401",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 384
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Cavaleiros cuja verdadeira natureza é avaliada pelo mundo e se manifesta como um Epíteto floral, combinando duelo marcial, proteção e Magia de Pacto de origem divina.",
+    "hitDice": {
+      "raw": "d10",
+      "mode": "standard",
+      "number": 1,
+      "faces": 10
+    },
+    "primaryAbility": {
+      "raw": "Sabedoria; Destreza ou Força",
+      "abilityKeys": [
+        "str",
+        "dex",
+        "wis"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Destreza, Carisma",
+        "abilityKeys": [
+          "dex",
+          "cha"
+        ]
+      },
+      "armor": "Armaduras leves e médias",
+      "weapons": "Armas simples e marciais, exceto armas corpo a corpo pesadas ou de duas mãos",
+      "tools": "Um instrumento musical, ferramentas de cartógrafo e outra ferramenta de artesão",
+      "skills": "Escolha três: Adestrar Animais, Atletismo, História, Investigação, Natureza, Percepção, Persuasão, Religião ou Sobrevivência"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "text": "PONTOS DE VIDA\n\nDado de Vida: 1d10 por nível de Cavaleiro das Pétalas.\n\nPontos de Vida no 1º nível: 10 + seu modificador de Constituição.\n\nPontos de Vida em níveis superiores: 1d10 (ou 6) + Constituição por nível após o 1º.\n\nPROFICIÊNCIAS\n\nArmaduras: Armaduras leves e médias.\n\nArmas: Armas simples e marciais, exceto armas corpo a corpo com as propriedades pesada ou duas mãos.\n\nFerramentas: Um instrumento musical, ferramentas de cartógrafo e outra ferramenta de artesão.\n\nSalvaguardas: Destreza e Carisma.\n\nPerícias: Escolha três entre Adestrar Animais, Atletismo, História, Investigação, Natureza, Percepção, Persuasão, Religião e Sobrevivência.\n\nEQUIPAMENTO\n\nRapieira, espada longa ou qualquer arma leve ou de acuidade; pacote de diplomata ou explorador; foco arcano ou bolsa de 5 po; armadura de couro e três adagas. Alternativamente, 5d4 × 10 po."
+    },
+    "overview": [
+      {
+        "title": "CAVALEIRO DAS PÉTALAS",
+        "page": 382,
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "text": "O Cavaleiro das Pétalas manifesta uma essência floral que representa seu coração e sua alma. Sua magia é de origem divina: o “mundo” que responde a ele é a vontade misteriosa de um domínio divino ou conjunto de domínios. Como campeão de ordem e equilíbrio, esse cavaleiro frequentemente busca conter abuso de poder, corrupção, devastação ambiental e ameaças sobrenaturais. Quando seu poder amadurece, sua verdadeira natureza recebe forma através de um Epíteto, simbolizado por uma flor."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM CAVALEIRO DAS PÉTALAS",
+        "page": 383,
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "text": "Considere os valores centrais, metas e visão de ordem do personagem, pois seu Epíteto deve refletir sua verdadeira natureza. A fonte sugere envolver o Mestre na escolha do Epíteto. Para uma construção rápida, priorize Sabedoria e Destreza se pretende lutar com armas leves; use Força apenas se preferir armas de uma mão como espada longa. Herói do Povo ou Forasteiro são antecedentes sugeridos. A classe é pensada para atuar na linha intermediária, combinando suporte mágico e combate."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.lacuna-na-tabela-16-nivel",
+        "title": "LACUNA NA TABELA — 16º NÍVEL",
+        "page": 384,
+        "text": "Na tabela impressa da fonte, a célula de Espaços de Magia do 16º nível aparece vazia, embora o nível do espaço permaneça 5º. O Grimório preserva essa ausência como ‘—’ e não infere um valor.",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry"
+      },
+      {
+        "key": "reference.2.multiclasse-5-19-cavaleiro-das-petalas",
+        "title": "MULTICLASSE 5.19 — CAVALEIRO DAS PÉTALAS",
+        "page": 339,
+        "text": "Pré-requisitos: Sabedoria 15 e Força ou Destreza 13. Ao entrar por multiclasse, a fonte concede proficiência com armaduras leves e médias, armas simples e uma perícia entre História, Natureza ou Persuasão.",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "petal-knight",
+      "color": "#d8779d"
+    }
+  },
+  "features": [
+    {
+      "key": "class.petal-knight-retia.feature.estilo-de-luta.l1.1",
+      "name": "ESTILO DE LUTA",
+      "level": 1,
+      "description": "Escolha um Estilo de Luta: Florescedor Arcano, Arquearia, Luta às Cegas, Defesa, Duelo, Interceptação, Combate com Armas Arremessadas, Combate com Duas Armas ou Combate Desarmado. Você não pode escolher a mesma opção mais de uma vez.",
+      "page": 384,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.magia-de-pacto.l1.1",
+      "name": "MAGIA DE PACTO",
+      "level": 1,
+      "description": "Seu poder semeado pelo mundo lhe concede uma conexão mágica que funciona como um sexto sentido. A tabela mostra seus espaços de pacto e o nível deles. Você recupera todos os espaços gastos ao terminar um Descanso Curto ou Longo.\n\nNo 1º nível, você conhece duas magias de 1º nível da lista do Cavaleiro das Pétalas. Aprende novas magias conforme a tabela; uma escolha não pode superar o nível de seus espaços de pacto. Ao subir de nível, pode substituir uma magia conhecida por outra elegível. Sabedoria é seu atributo de conjuração e, salvo indicação contrária, também define as CDs e ataques das características da classe.\n\nVocê pode usar um foco arcano. Alternativamente, pode usar uma flor ou réplica de flor correspondente ao emblema de seu Epíteto como substituto do componente material; nesse caso, a flor ou réplica é destruída. Flores naturais que correspondem ao seu Epíteto nunca morrem ou murcham por causas naturais enquanto estiverem em sua posse.\n\nVERSATILIDADE PRETENDIDA. Muitas características exigem arma de uma mão ou sem a propriedade duas mãos. Uma arma versátil conta como de duas mãos se o último ataque feito com ela no turno usou o dado maior; se uma característica exigir que seja usada com uma mão, ela não pode ser empunhada com duas mãos pelo restante daquele turno.",
+      "page": 384,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.epiteto.l2.1",
+      "name": "EPÍTETO",
+      "level": 2,
+      "description": "Escolha um Epíteto e seu emblema floral correspondente. O Epíteto representa a verdadeira natureza do Cavaleiro, avaliada pelo mundo e manifestada como poder. Você recebe as características de 2º nível desse Epíteto e as demais nos níveis indicados. Os Epítetos específicos estão disponíveis na seção de subclasses do Cavaleiro das Pétalas.",
+      "page": 384,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.ramos-virtuosos.l3.1",
+      "name": "RAMOS VIRTUOSOS",
+      "level": 3,
+      "description": "Sempre que conjura uma magia usando um espaço de pacto, você pode invocar um dos efeitos abaixo como parte da ação de conjuração. Cada opção pode ser usada no máximo uma vez por turno.\n\nPASSO FLORESCENTE. Se a magia tiver uma criatura visível como alvo, você pode se teleportar para um espaço desocupado adjacente a ela, desde que a magia tenha acertado o alvo com um ataque ou ele tenha falhado em uma salvaguarda. Se a magia afetar o espaço para o qual você se move, você não é afetado por ela naquele turno. A distância máxima do alvo é 15 metros × o nível do espaço de pacto usado.\n\nFORTIFICAR. Até o fim de seu próximo turno, sempre que fizer um ataque com arma ou magia, role 1d4 e some ao resultado.\n\nPROTEÇÃO GRACIOSA. Você e até três criaturas à sua escolha a até 9 metros recebem, na próxima salvaguarda feita dentro de 10 minutos, bônus igual à metade de seu bônus de proficiência, arredondado para baixo.\n\nVARREDURA. Você pode usar Disparada como ação bônus. Criaturas afetadas pela magia que acionou esta opção têm desvantagem em ataques de oportunidade contra você neste turno.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.aumento-no-valor-de-atributo.l4.1",
+      "name": "AUMENTO NO VALOR DE ATRIBUTO",
+      "level": 4,
+      "description": "No 4º nível e novamente nos níveis 8, 12, 16 e 19, você pode escolher um talento cujos requisitos cumpra, aumentar um atributo em 2 ou aumentar dois atributos em 1. Como normal, não pode elevar um atributo acima de 20 com esta característica.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "Quando realiza a ação Atacar, você pode atacar duas vezes em vez de uma.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.caracteristica-de-epiteto-6-nivel.l6.1",
+      "name": "CARACTERÍSTICA DE EPÍTETO (6º NÍVEL)",
+      "level": 6,
+      "description": "Seu Epíteto concede uma nova característica no 6º nível. Consulte o Epíteto escolhido na seção de subclasses.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.flora-virtuosa.l7.1",
+      "name": "FLORA VIRTUOSA",
+      "level": 7,
+      "description": "Como ação bônus, você acessa brevemente seu Epíteto e pétalas etéreas surgem ao seu redor. Você pode usar Flora Virtuosa um número de vezes igual à metade de seu bônus de proficiência, arredondado para baixo, + 1, recuperando todos os usos após um Descanso Curto ou Longo. Escolha um dos benefícios: \n\nATAQUE. Faça um ataque com uma arma de uma mão.\n\nALMA ENCANTADORA. Você recebe vantagem em testes e salvaguardas de Carisma por 1 minuto.\n\nFLORESCER. Receba vantagem em ataques até o fim do turno; apenas ataques com armas de uma mão se beneficiam.\n\nMANTO. Receba resistência a um tipo de dano à sua escolha até o início de seu próximo turno.\n\nGOLPE DIVINO. Seu próximo ataque com arma neste turno causa dano adicional do tipo da arma igual a 1d10 + metade de seu nível de Cavaleiro das Pétalas, arredondado para baixo.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.magia-florescente.l10.1",
+      "name": "MAGIA FLORESCENTE",
+      "level": 10,
+      "description": "Ao realizar a ação Atacar, você pode abrir mão de um de seus ataques com arma para conjurar, em seu lugar, uma magia usando um espaço de pacto cujo tempo de conjuração seja 1 ação. Só pode fazer isso se um ataque anterior da mesma ação tiver atingido uma criatura, e a magia deve ser centrada em você ou na criatura atingida. Se a magia envolver ataques à distância com magia, você pode realizá-los como ataques corpo a corpo com magia. Se a magia afetar uma área ao redor do ponto, espaço ou criatura-alvo, você pode excluir a si mesmo ou seu alvo dos efeitos.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.caracteristica-de-epiteto-11-nivel.l11.1",
+      "name": "CARACTERÍSTICA DE EPÍTETO (11º NÍVEL)",
+      "level": 11,
+      "description": "Seu Epíteto concede uma nova característica no 11º nível. Consulte o Epíteto escolhido na seção de subclasses.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.aura-de-dignidade.l13.1",
+      "name": "AURA DE DIGNIDADE",
+      "level": 13,
+      "description": "Você projeta uma aura protetora invisível em um raio de 4,5 metros. Aliados dentro dela, incluindo você, têm vantagem em salvaguardas contra morte e contra as condições amedrontado e enfeitiçado enquanto você não estiver inconsciente. Quando uma criatura na aura falha em uma salvaguarda, você pode usar sua reação para fazê-la obter sucesso em vez disso. Você pode usar essa reação um número de vezes igual à metade de seu bônus de proficiência, arredondado para baixo, recuperando todos os usos após um Descanso Longo.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.caracteristica-de-epiteto-15-nivel.l15.1",
+      "name": "CARACTERÍSTICA DE EPÍTETO (15º NÍVEL)",
+      "level": 15,
+      "description": "Seu Epíteto concede uma nova característica no 15º nível. Consulte o Epíteto escolhido na seção de subclasses.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.resplandecencia.l17.1",
+      "name": "RESPLANDECÊNCIA",
+      "level": 17,
+      "description": "Você absorve energia natural para reabastecer suas reservas. Passe 1 minuto concentrado em sua ligação com o Epíteto enquanto toca a flor correspondente e está em uma área rica em flora natural. Ao fim do minuto, a flor se dissolve em energia mágica e você recupera todos os espaços de pacto gastos. Depois de usar esta característica, precisa concluir um Descanso Longo para usá-la novamente.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.petal-knight-retia.feature.paragao-da-protecao.l20.1",
+      "name": "PARAGÃO DA PROTEÇÃO",
+      "level": 20,
+      "description": "O raio de sua Aura de Dignidade aumenta para 9 metros. Quando você usa a reação da Aura para transformar uma falha em salvaguarda em sucesso, todas as outras criaturas dentro da aura que tenham falhado contra o mesmo efeito também obtêm sucesso.\n\nVocê recebe 10 pontos de vida temporários + 5 para cada falha transformada em sucesso desta forma; esses pontos desaparecem no próximo Descanso Longo. Enquanto possuir esses pontos de vida temporários, sempre que realizar a ação Atacar você faz um ataque com arma adicional, e pode escolher um de seus ataques por turno para ter vantagem.",
+      "page": 385,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Cavaleiro das Pétalas",
+    "sourceTitle": "",
+    "sourcePage": 384,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "known",
+        "label": "Magias Conhecidas"
+      },
+      {
+        "key": "slots",
+        "label": "Espaços de Pacto"
+      },
+      {
+        "key": "slotLevel",
+        "label": "Nível do Espaço"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.estilo-de-luta.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Magia de Pacto",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.magia-de-pacto.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 2,
+        "slots": 1,
+        "slotLevel": "1º"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Epíteto",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.epiteto.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 3,
+        "slots": 2,
+        "slotLevel": "1º"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Ramos Virtuosos",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.ramos-virtuosos.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 4,
+        "slots": 2,
+        "slotLevel": "2º"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 5,
+        "slots": 2,
+        "slotLevel": "2º"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Ataque Extra",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.ataque-extra.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 6,
+        "slots": 2,
+        "slotLevel": "3º"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Epíteto (6º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.caracteristica-de-epiteto-6-nivel.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 7,
+        "slots": 2,
+        "slotLevel": "3º"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Flora Virtuosa",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.flora-virtuosa.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 8,
+        "slots": 2,
+        "slotLevel": "4º"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 9,
+        "slots": 2,
+        "slotLevel": "4º"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [],
+        "known": 10,
+        "slots": 2,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Magia Florescente",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.magia-florescente.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 10,
+        "slots": 2,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Epíteto (11º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.caracteristica-de-epiteto-11-nivel.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 11,
+        "slots": 2,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 11,
+        "slots": 3,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Aura de Dignidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.aura-de-dignidade.l13.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 12,
+        "slots": 3,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [],
+        "known": 12,
+        "slots": 3,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Epíteto (15º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.caracteristica-de-epiteto-15-nivel.l15.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 13,
+        "slots": 3,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 13,
+        "slots": "—",
+        "slotLevel": "5º"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Resplandecência",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.resplandecencia.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 14,
+        "slots": 4,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [],
+        "known": 14,
+        "slots": 4,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 15,
+        "slots": 4,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Paragão da Proteção",
+            "kind": "feature",
+            "featureRefs": [
+              "class.petal-knight-retia.feature.paragao-da-protecao.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "known": 15,
+        "slots": 4,
+        "slotLevel": "5º"
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 2,
+    "homogeneous": true,
+    "observedLevels": {
+      "2": 19
+    },
+    "options": [
+      {
+        "grimorioId": "lyre-petal-knight-retia-camellia",
+        "identifier": "lyre-petal-knight-retia-camellia",
+        "name": "Camélia",
+        "originalName": "Camellia",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "388",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 388
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-foxglove",
+        "identifier": "lyre-petal-knight-retia-foxglove",
+        "name": "Dedaleira",
+        "originalName": "Foxglove",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "392",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 392
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-dahlia",
+        "identifier": "lyre-petal-knight-retia-dahlia",
+        "name": "Dália",
+        "originalName": "Dahlia",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "390",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 390
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-gardenia",
+        "identifier": "lyre-petal-knight-retia-gardenia",
+        "name": "Gardênia",
+        "originalName": "Gardenia",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "393",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 393
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-morning-glory",
+        "identifier": "lyre-petal-knight-retia-morning-glory",
+        "name": "Glória-da-Manhã",
+        "originalName": "Morning Glory",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "395",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 395
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-hydrangea",
+        "identifier": "lyre-petal-knight-retia-hydrangea",
+        "name": "Hortênsia",
+        "originalName": "Hydrangea",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "394",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 394
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-red-spider-lily",
+        "identifier": "lyre-petal-knight-retia-red-spider-lily",
+        "name": "Lírio-Aranha-Vermelho",
+        "originalName": "Red Spider Lily",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "398",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 398
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-osmanthus",
+        "identifier": "lyre-petal-knight-retia-osmanthus",
+        "name": "Osmanthus",
+        "originalName": "Osmanthus",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "396",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 396
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-fox-e-cub",
+        "identifier": "lyre-petal-knight-retia-fox-e-cub",
+        "name": "Raposa e Filhote",
+        "originalName": "Fox & Cub",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "391",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 391
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-pink-rose",
+        "identifier": "lyre-petal-knight-retia-pink-rose",
+        "name": "Rosa Cor-de-Rosa",
+        "originalName": "Pink Rose",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "397",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 397
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-coral-rose",
+        "identifier": "lyre-petal-knight-retia-coral-rose",
+        "name": "Rosa Coral",
+        "originalName": "Coral Rose",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "389",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 389
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-black-rose",
+        "identifier": "lyre-petal-knight-retia-black-rose",
+        "name": "Rosa Negra",
+        "originalName": "Black Rose",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "387",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 387
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-sakura",
+        "identifier": "lyre-petal-knight-retia-sakura",
+        "name": "Sakura",
+        "originalName": "Sakura",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "399",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 399
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-petal-knight-retia-winecup",
+        "identifier": "lyre-petal-knight-retia-winecup",
+        "name": "Taça-de-Vinho",
+        "originalName": "Winecup",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "400",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 400
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "zagalhta-petal-knight-astrophytum",
+        "identifier": "zagalhta-petal-knight-astrophytum",
+        "name": "Astrophytum",
+        "originalName": "Astrophytum",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "163",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 163
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "zagalhta-petal-knight-zinnia",
+        "identifier": "zagalhta-petal-knight-zinnia",
+        "name": "Zínia",
+        "originalName": "Zinnia",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "163–164",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 163
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "bbb-petal-knight-retia-azalea",
+        "identifier": "bbb-petal-knight-retia-azalea",
+        "name": "Azaleia",
+        "originalName": "Azalea",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "115–116",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 115
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "bbb-petal-knight-retia-cosmos",
+        "identifier": "bbb-petal-knight-retia-cosmos",
+        "name": "Cosmos",
+        "originalName": "Cosmos",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "116",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 116
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "bbb-petal-knight-retia-marigold",
+        "identifier": "bbb-petal-knight-retia-marigold",
+        "name": "Calêndula",
+        "originalName": "Marigold",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "116–117",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 116
+        },
+        "firstFeatureLevel": 2
+      }
+    ]
+  }
+}

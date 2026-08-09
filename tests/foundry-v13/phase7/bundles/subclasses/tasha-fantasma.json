@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-fantasma",
+    "identifier": "tasha-fantasma",
+    "name": "Fantasma",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "64–66",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 64
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Muitos ladinos caminham por uma linha tênue entre a vida e a morte, arriscando suas próprias vidas e tirando a vida de outros. Enquanto se aventurando nessa linha, alguns ladinos descobrem uma conexão mística com a própria morte. Esses ladinos tomam conhecimento da morte e tornam-se imersos em energia negativa, eventualmente transformando-se em algo próximo a fantasmas. Guildas de ladrões valorizam esses ladinos altamente eficientes como coletores de informação e espiões. Muitos Shadar-Kai do Sombral são mestres destas técnicas macabras, e alguns estão dispostos a ensinar esse caminho. Em lugares como Thay, nos Reinos Esquecidos, e Karrnath, em Eberron, aonde muitos necromantes praticam seus ofícios, um Fantasma pode se tornar o confidente e mão direita de um mago. Nos templos de deuses da morte, o Fantasma pode servir como um agente para rastrear aqueles que tentam enganar a morte e para recuperar o conhecimento que de outra forma poderia ser perdido para o túmulo. Como você descobriu esse poder macabro? Você dormiu em um cemitério e acordou com suas novas habilidades? Ou você os cultivou em um templo ou guida de ladrões dedicado a uma divindade da morte?",
+    "tables": [],
+    "references": [],
+    "sourcePage": 64
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-fantasma.feature.sussurros-da-morte.l3.1",
+      "name": "SUSSURROS DA MORTE",
+      "level": 3,
+      "description": "Ecos daqueles que morreram se prendem a você. Sempre que você termina um descanso curto ou longo, você pode escolher uma proficiência com ferramenta ou perícia que você não possua e adquirir isso, conforme uma presença fantasma compartilha seu conhecimento com você. Você perde essa proficiência quando utilizar essa característica para escolher outra proficiência que não possua.",
+      "page": 65,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-fantasma.feature.lamentos-da-sepultura.l3.1",
+      "name": "LAMENTOS DA SEPULTURA",
+      "level": 3,
+      "description": "Conforme você empurra alguém para próximo do túmulo, você pode canalizar o poder da morte para ferir a alguma outra pessoa. Imediatamente após causar dano com seu Ataque Furtivo a uma criatura em seu turno, você pode focar uma segunda criatura que você possa ver a até 9m de distância da primeira criatura. Jogue metade do número de dados de Ataque Furtivo (arredondado para cima), e a segunda criatura recebe dano necrótico igual ao valor total da jogada, conforme os lamentos da sepultura soam ao seu redor por um momento. Você pode usar essa característica um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos ao finalizar um descanso longo.",
+      "page": 65,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-fantasma.feature.simbolos-dos-mortos.l9.1",
+      "name": "SÍMBOLOS DOS MORTOS",
+      "level": 9,
+      "description": "Quando uma vida se encerra em sua presença, você é capaz de arrebatar um símbolo da alma partida, um fragmento de sua essência vital que toma uma forma física: como uma reação, quando uma criatura que você possa ver morre a até 9m de você, você pode abrir sua mão livre e fazer com que uma bugiganga minúscula apareça nela, um berloque da alma. O Mestre determina a forma do berloque ou joga na tabela de Bugigangas no Livro do Jogador para gerá-lo. Você pode ter um número máximo de berloques da alma igual ao seu bônus de proficiência, e você não pode criar um enquanto estiver nesse limite. Você pode usar berloques da alma da seguinte forma: Enquanto estiver com um berloque da alma, você tem vantagem em salvaguardas de Constituição e testes de morte, uma vez que sua vitalidade é aprimorada pela essência da vida nesses objetos. Quando você provoca dano pelo Ataque Furtivo em seu turno, você pode destruir um de seus berloques da alma que esteja em sua posse e então imediatamente provocar dano com o seu Lamentos da Sepultura, sem gastar um uso dessa característica. Com uma ação, você pode destruir um de seus berloques da alma, independente de onde ele se encontre. Quando você faz isso, você pode perguntar uma questão ao espírito associado a esse item. O espírito aparece para você e responde em um idioma que conhecia em vida. Ele não tem a obrigação de ser confiável, e sua resposta é o mais curta possível, ansiando por ser livre. O espírito sabe apenas o que conhecia em vida, conforme determinado pelo Mestre.",
+      "page": 65,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-fantasma.feature.passo-fantasma.l13.1",
+      "name": "PASSO FANTASMA",
+      "level": 13,
+      "description": "Você pode passar parcialmente para o reino dos mortos, transformando-se em uma espécie de fantasma. Como uma ação bônus, você assume uma forma espectral. Enquanto nesse forma, você tem um deslocamento de voo de 3m, você pode planar, e jogadas de ataque possuem desvantagem contra você. Você também pode se mover através de criaturas e objetos como se eles fossem terreno difícil, mas você sofre 1d10 de dano de energia se terminar seu turno dentro deles. Você permanece nessa forma por 10 minutos ou até que a encerre como uma ação bônus. Para usar essa característica novamente, você deve finalizar um descanso longo ou destruir um de seus berloques da alma como parte da ação bônus utilizada para ativar o Passo Fantasma.",
+      "page": 65,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-fantasma.feature.amigo-da-morte.l17.1",
+      "name": "AMIGO DA MORTE",
+      "level": 17,
+      "description": "Sua associação com a morte se tornou tão próxima que você adquire os seguintes benefícios. Quando você utiliza o seu Lamentos da Sepultura, você pode provocar o dano necrótico tanto na primeira quanto na segunda criatura. No final de um descanso longo, um berloque da alma aparece em sua mão se você não tiver nenhum desses itens, conforme os espíritos dos mortos são atraídos para você.",
+      "page": 66,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

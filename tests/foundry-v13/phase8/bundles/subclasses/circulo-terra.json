@@ -1,0 +1,283 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "circulo-terra",
+    "identifier": "circulo-terra",
+    "name": "Círculo da Terra",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 75
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "O Círculo da Terra é constituído por místicos e sábios que salvaguardam conhecimento e ritos antigos através de uma vasta tradição oral. Esses druidas se encontram em círculos sagrados de árvores ou monólitos para sussurrar segredos primordiais em Druídico. Os membros mais sábios do círculo presidem como os sacerdotes-dirigentes de comunidades que creem na Crença Antiga, e servem como conselheiros para os governantes desses povos. Como membro desse círculo, sua magia é influenciada pela terra onde você é iniciado nos ritos misteriosos do círculo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 75
+  },
+  "features": [
+    {
+      "key": "subclass.circulo-terra.feature.truque-adicional.l2.1",
+      "name": "TRUQUE ADICIONAL",
+      "level": 2,
+      "description": "Quando você escolhe esse círculo no 2° nível, você aprende um truque de druida adicional, à sua escolha.",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.recuperacao-natural.l2.1",
+      "name": "RECUPERAÇÃO NATURAL",
+      "level": 2,
+      "description": "A partir do 2° nível, você pode recuperar parte da sua energia mágica parando para fazer uma meditação e comunhão com a natureza. Durante um descanso curto, você escolhe espaços de magia gastos para recuperar. O espaço de magia pode ter um nível combinado igual ou menor que metade do seu nível de druida (arredondado para baixo) e, nenhum dos espaços pode ser de uma magia de 6° nível ou superior. Você não pode usar essa característica novamente até terminar um descanso longo.\n\nPor exemplo, quando você for um druida de 4° nível, você pode recuperar até dois níveis em espaços de magia. Você pode recuperar, tanto uma magia de 2° nível, quanto duas magias de 1° nível.",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.magias-de-circulo.l3.1",
+      "name": "MAGIAS DE CÍRCULO",
+      "level": 3,
+      "description": "Sua conexão mística com a terra infunde você com a habilidade de conjurar certas magias. No 3°, 5°, 7° e 9° nível, você ganha acesso a magias de círculo ligadas ao terreno em que você se tornou druida. Escolha o terreno – ártico, costa, deserto, floresta, montanha, pântano, planície ou subterrâneo – e consulte a lista de magias associada.\n\nUma vez que você tenha acesso a uma magia de círculo, você sempre poderá prepará-la e ela não conta no número de magias que você pode preparar a cada dia. Se você tiver acesso a uma magia que não aparece na lista de magias de druida, a magia, no entanto, será uma magia de druida para você.",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.artico.l2.1",
+      "name": "ÁRTICO",
+      "level": 2,
+      "description": "Nível de Druida Magias de Círculo\n\n3° imobilizar pessoa, crescer espinho 5° nevasca, lentidão 7° movimentação livre, tempestade de gelo 9° comunhão com a natureza, cone de frio",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.costa.l2.1",
+      "name": "COSTA",
+      "level": 2,
+      "description": "Nível de Druida Magias\n\n3° passo nebuloso, reflexos 5° andar na água, respirar água 7° movimentação livre, controlar água 9° vidência, conjurar elemental",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.deserto.l9.1",
+      "name": "DESERTO",
+      "level": 9,
+      "description": "Nível de Druida Magias\n\n3° nublar, silêncio 5° criar alimentos, proteção contra energia 7° praga, terreno alucinógeno 9° muralha de pedra, praga de insetos",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.floresta.l2.1",
+      "name": "FLORESTA",
+      "level": 2,
+      "description": "Nível de Druida Magias\n\n3° patas de aranha, pele de árvore 5° convocar relâmpagos, crescer plantas 7° adivinhação, movimentação livre 9° comunhão com a natureza, passo de árvore",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.montanha.l2.1",
+      "name": "MONTANHA",
+      "level": 2,
+      "description": "Nível de Druida Magias\n\n3° crescer espinho, patas de aranha 5° mesclar-se às rochas, relâmpago 7° moldar rochas, pele de pedra 9° criar passagem, muralha de pedra",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.pantano.l2.1",
+      "name": "PÂNTANO",
+      "level": 2,
+      "description": "Nível de Druida Magias\n\n3° escuridão, flecha ácida 5° andar na água, névoa fétida 7° localizar criatura, movimentação livre 9° vidência, praga de insetos",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.planicie.l2.1",
+      "name": "PLANÍCIE",
+      "level": 2,
+      "description": "Nível de Druida Magias\n\n3° invisibilidade, passos sem pegadas 5° luz do dia, velocidade 7° adivinhação, movimentação livre 9° praga de insetos, sonho",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.subterraneo.l2.1",
+      "name": "SUBTERRÂNEO",
+      "level": 2,
+      "description": "Nível de Druida Magias\n\n3° patas de aranha, teia 5° forma gasosa, névoa fétida 7° invisibilidade maior, moldar rochas 9° praga de insetos, névoa mortal",
+      "page": 75,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.caminho-da-floresta.l6.1",
+      "name": "CAMINHO DA FLORESTA",
+      "level": 6,
+      "description": "A partir do 6° nível, mover-se através de terreno difícil não-mágico não te custará nenhum movimento extra. Você também pode passar através de plantas não-mágicas sem ser atrasado por elas e sem sofrer dano delas se elas tiverem espinhos, espinhas ou perigos similares.\n\nAlém disso, você tem vantagem em testes de resistência contra plantas criadas magicamente ou manipuladas para impedir movimentação, como as criadas pela magia constrição.",
+      "page": 76,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.protecao-natural.l2.1",
+      "name": "PROTEÇÃO NATURAL",
+      "level": 2,
+      "description": "Quando você atingir o 10° nível, você não pode ser enfeitiçado ou amedrontado por elementais ou fadas e você se torna imune a venenos e doenças.",
+      "page": 76,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.circulo-terra.feature.santuario-natural.l14.1",
+      "name": "SANTUÁRIO NATURAL",
+      "level": 14,
+      "description": "A partir do 14° nível, as criaturas do mundo natural sentem sua ligação com a natureza e hesitarão em atacar você. Quando uma besta ou plantar atacar você, essa criatura deverá fazer um teste de resistência de Sabedoria contra uma CD igual a das suas magias de druida. Em uma falha, a criatura deve escolher um alvo diferente ou o ataque erra automaticamente. Em um sucesso, a criatura se torna imune a esse efeito por 24 horas.\n\nA criatura está ciente deste efeito antes de resolver atacar você.",
+      "page": 76,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

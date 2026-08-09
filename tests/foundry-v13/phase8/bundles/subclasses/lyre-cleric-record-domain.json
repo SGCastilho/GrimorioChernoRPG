@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-cleric-record-domain",
+    "identifier": "lyre-cleric-record-domain",
+    "name": "Domínio do Registro",
+    "originalName": "Record Domain",
+    "aliases": [
+      "Record Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "447",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 447
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Também associado ao tempo e à história, o Domínio do Registro observa cada segundo e as correntes da causalidade. Seus Clérigos enxergam passado e futuro de forma limitada, evitando abusar da previsão para não cristalizar possibilidades em certezas. Magias de Domínio — 1º: Retirada Acelerada, Mandado de Marcador; 3º: Aceleração, Projetar Imagem; 5º: Velocidade, Caminho para a Vitória; 7º: Movimentação Livre, Localizar Criatura; 9º: Conhecimento Lendário, Reencarnação.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-dominio",
+        "title": "Magias de Domínio",
+        "page": 447,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Retirada Acelerada; Mandado de Marcador"
+          },
+          {
+            "level": "3º",
+            "spells": "Aceleração; Projetar Imagem"
+          },
+          {
+            "level": "5º",
+            "spells": "Velocidade; Caminho para a Vitória"
+          },
+          {
+            "level": "7º",
+            "spells": "Movimentação Livre; Localizar Criatura"
+          },
+          {
+            "level": "9º",
+            "spells": "Conhecimento Lendário; Reencarnação"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 447
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-cleric-record-domain.feature.olho-do-tempo.l1.1",
+      "name": "OLHO DO TEMPO",
+      "level": 1,
+      "description": "Você não pode ser surpreendido em combate, tem vantagem em iniciativa e não sofre os efeitos negativos posteriores da magia Velocidade.",
+      "page": 447,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-record-domain.feature.canalizar-divindade-instintos-cronais.l2.1",
+      "name": "CANALIZAR DIVINDADE: INSTINTOS CRONAIS",
+      "level": 2,
+      "description": "Quando falha em uma salvaguarda de Destreza ou é atingido por um ataque, use Canalizar Divindade e sua reação para entrar por 1 minuto em estado temporal deslocado. Enquanto estiver nele, tem vantagem em salvaguardas de Destreza, inclusive contra o efeito desencadeador. Se for atingido por ataque, pode usar reação para somar seu bônus de proficiência à CA até o fim daquele turno, inclusive contra o ataque desencadeador e o ataque que iniciou o estado. Se ainda for atingido depois dessa reação, o estado termina.",
+      "page": 447,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-record-domain.feature.troca-preciosa.l6.1",
+      "name": "TROCA PRECIOSA",
+      "level": 6,
+      "description": "Quando conjura uma magia que consumiria um componente, pode puxar uma aproximação desse componente de um eco seu em outro momento e ignorar a necessidade. O componente pode valer no máximo 100 po × seu nível de Clérigo. Se não for usado imediatamente, permanece por 1 minuto e desaparece. Uma vez por Descanso Curto ou Longo.",
+      "page": 447,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-record-domain.feature.golpe-radiante.l8.1",
+      "name": "GOLPE RADIANTE",
+      "level": 8,
+      "description": "Uma vez em cada um de seus turnos, ao acertar com ataque de arma, cause 1d8 de dano radiante adicional. No 14º nível, aumenta para 2d8.",
+      "page": 447,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-record-domain.feature.canalizar-divindade-visao-alem-do-tempo.l17.1",
+      "name": "CANALIZAR DIVINDADE: VISÃO ALÉM DO TEMPO",
+      "level": 17,
+      "description": "Ao fim do seu turno, use Canalizar Divindade e escolha duas criaturas com contagens de iniciativa diferentes. Em cada uma dessas contagens, depois do turno da criatura e de eventuais Ações Lendárias, você recebe um turno adicional. Se for impedido de usar um desses turnos, ele é perdido. Efeitos que normalmente ocorrem no início ou fim do seu turno, como dano contínuo e salvaguardas recorrentes, não se repetem nesses turnos; efeitos dependentes de uma salvaguarda mantêm seu último resultado. Uma vez por Descanso Longo.",
+      "page": 447,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-harros",
+    "identifier": "lyre-favored-soul-retia-burden-of-harros",
+    "name": "Fardo de Harros",
+    "originalName": "Burden of Harros",
+    "aliases": [
+      "Burden of Harros"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "350",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 350
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): alabarda, machado ou machado grande. Os favorecidos do deus dos cavaleiros carregam profundo senso de responsabilidade, desafiam governantes abusivos e buscam justiça. Como favorecidos de um Eidolon, são carregados de energia eidomântica.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 350
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-harros.feature.favorecido-dos-eidolons.l1.1",
+      "name": "FAVORECIDO DOS EIDOLONS",
+      "level": 1,
+      "description": "Você tem vantagem em testes de Queima Eidomântica e todos os seus ataques contam como mágicos e eidólicos.",
+      "page": 350,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-harros.feature.proficiencias-do-cavaleiro-lendario.l1.1",
+      "name": "PROFICIÊNCIAS DO CAVALEIRO LENDÁRIO",
+      "level": 1,
+      "description": "Você ganha proficiência com armaduras pesadas e escudos. Magias de Paladino e do grupo Legado de Ouro contam como magias da Alma Favorecida para você.",
+      "page": 350,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-harros.feature.vontade-do-paragao.l6.1",
+      "name": "VONTADE DO PARAGÃO",
+      "level": 6,
+      "description": "Quando falha em salvaguarda ou teste de atributo, use reação para somar metade do seu nível de Alma Favorecida, arredondado para baixo, possivelmente alterando o resultado. Usos por Descanso Curto ou Longo iguais à metade do bônus de proficiência, arredondado para baixo.",
+      "page": 350,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-harros.feature.meteoro-espiral-carmesim.l10.1",
+      "name": "METEORO ESPIRAL CARMESIM",
+      "level": 10,
+      "description": "Como ação, gaste Purificação, envolva-se em aura radiante espiralada e lance-se contra criatura visível a até 18 metros, explodindo ao chegar. O alvo e criaturas exceto você a até 6 metros dele fazem salvaguarda de Destreza. Todos sofrem 1d12 × nível do espaço de pacto de dano radiante em falha ou metade em sucesso; o alvo principal sofre ainda a mesma quantidade de dano perfurante. Você termina em um espaço desocupado dentro da área.",
+      "page": 350,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-harros.feature.pele-de-adamantina.l13.1",
+      "name": "PELE DE ADAMANTINA",
+      "level": 13,
+      "description": "Dano perfurante, cortante ou contundente sofrido é reduzido em 5. Quando sofre um acerto crítico, pode usar reação para transformá-lo em acerto normal.",
+      "page": 350,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

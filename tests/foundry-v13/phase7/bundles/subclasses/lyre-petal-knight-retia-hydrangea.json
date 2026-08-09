@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-hydrangea",
+    "identifier": "lyre-petal-knight-retia-hydrangea",
+    "name": "Hortênsia",
+    "originalName": "Hydrangea",
+    "aliases": [
+      "Hydrangea"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "394",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 394
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "A Hortênsia nasce de almas frias, reprimidas ou carregadas por dívidas e tristeza. Seu epíteto concede magia de gelo, reflexão de dano e controle rigoroso do movimento inimigo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 394
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-hydrangea.feature.conhecimento-convocante.l2.1",
+      "name": "CONHECIMENTO CONVOCANTE",
+      "level": 2,
+      "description": "Ao aprender uma nova magia de Cavaleiro das Pétalas, pode escolher uma magia da lista de Bruxo e tratá-la como magia de Cavaleiro das Pétalas, desde que seja de nível que seus espaços possam conjurar. Ao receber esta característica, pode trocar a magia desse nível e uma outra magia conhecida por magias de Bruxo.",
+      "page": 394,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-hydrangea.feature.reflexo-frenetico.l2.1",
+      "name": "REFLEXO FRENÉTICO",
+      "level": 2,
+      "description": "Quando uma criatura que você possa ver a até 9 metros sofre dano de um ataque ou por falhar em uma salvaguarda, pode usar reação para refletir metade do dano contra outra criatura a até 9 metros. As duas criaturas sofrem apenas metade do dano original. Usos por Descanso Longo iguais ao seu bônus de proficiência.",
+      "page": 394,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-hydrangea.feature.carma-gracioso.l6.1",
+      "name": "CARMA GRACIOSO",
+      "level": 6,
+      "description": "Quando outra criatura usa ação ou reação para restaurar seus PV, ou você recebe cura originada de outra criatura, pode usar reação para conceder a ela PV temporários iguais à metade do que você recuperou, arredondado para baixo. Se ela restaurou mais de 10 PV e você usou esta característica, a próxima jogada de ataque, salvaguarda ou teste de atributo dela tem vantagem.",
+      "page": 394,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-hydrangea.feature.epiteto-congelado.l11.1",
+      "name": "EPÍTETO CONGELADO",
+      "level": 11,
+      "description": "Seus ataques com arma causam +1d8 de dano gélido; você tem resistência a dano gélido; ignora efeitos negativos de frio perigoso; e seu deslocamento não é reduzido por terreno difícil causado por neve, gelo ou temperaturas congelantes.",
+      "page": 394,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-hydrangea.feature.jardim-de-gelo.l15.1",
+      "name": "JARDIM DE GELO",
+      "level": 15,
+      "description": "Uma vez por turno, no lugar de um ataque com arma, você pode atingir o chão ou a água ao redor de uma criatura dentro do alcance da arma, desde que o alvo esteja no chão ou submerso. Ela faz salvaguarda de Destreza contra sua CD de magia. Em falha, fica restringida por hortênsias de gelo e só pode escapar usando ação para fazer teste de Força contra sua CD. No início de cada turno em que continuar restringida, sofre 1d10 + metade de seu nível de Cavaleiro das Pétalas, arredondado para baixo, de dano gélido. Se ela morrer por esse dano ou por você enquanto estiver presa, pode usar reação para fazê-la florescer: névoa congelante explode numa esfera de 9 metros, aplicando este efeito a todas as criaturas exceto você. A área fica coberta por névoa espessa por 1 hora, como Nuvem de Névoa, mas você enxerga normalmente através dela.",
+      "page": 394,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

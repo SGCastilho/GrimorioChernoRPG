@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "escola-adivinhacao",
+    "identifier": "escola-adivinhacao",
+    "name": "Escola de Adivinhação",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 98
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Os conselhos de um adivinho são procurados tanto pela realeza quanto pelos plebeus comuns, por todos que buscam uma compreensão mais clara do passado, presente e futuro. Como um adivinho, você se esforça para separar os véus do espaço, tempo e da consciência, de modo que você possa ver claramente. Você trabalha para dominar magias de discernimento, visão remota, conhecimento sobrenatural e previsão.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 98
+  },
+  "features": [
+    {
+      "key": "subclass.escola-adivinhacao.feature.adivinhacao-instruida.l2.1",
+      "name": "ADIVINHAÇÃO INSTRUÍDA",
+      "level": 2,
+      "description": "Quando você escolhe essa escola no 2º nível, o ouro e o tempo que você precisa gastar para copiar uma magia da escola de adivinhação em seu grimório é reduzido à metade.",
+      "page": 98,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.escola-adivinhacao.feature.prodigio.l2.1",
+      "name": "PRODÍGIO",
+      "level": 2,
+      "description": "Começando no 2° nível, quando você escolhe essa escola, vislumbres do futuro começam a aparecer em sua consciência. Quando você termina um descanso longo, role dois d20s e anote os números rolados. Você pode substituir qualquer jogada de ataque, teste de resistência ou teste de habilidade feito por você ou por outra criatura que você possa ver por uma das rolagens de premunição. Você deve escolher fazer isso antes da rolagem e você pode substituir uma rolagem dessa forma apenas uma vez por rodada.\n\nCada rolagem de premonição pode ser usada apenas uma vez. Quando você termina um descanso longo, você perde qualquer rolagem de premonição que não tenha sido usada.",
+      "page": 98,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.escola-adivinhacao.feature.especialista-em-adivinhacao.l6.1",
+      "name": "ESPECIALISTA EM ADIVINHAÇÃO",
+      "level": 6,
+      "description": "A partir do 6° nível, conjurar magias de adivinhação se tornou tão fácil pra você que isso requer apenas uma fração do seu esforço de conjuração. Quando você conjura uma magia de adivinhação de 2° nível ou superior usando um espaço de magia, você recupera um espaço de magia gasto. O espaço de magia que você recupera deve ser de um nível inferior ao da magia conjurada e não pode ser maior que 5° nível.",
+      "page": 98,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.escola-adivinhacao.feature.o-terceiro-olho.l10.1",
+      "name": "O TERCEIRO OLHO",
+      "level": 10,
+      "description": "A partir do 10° nível, você pode usar sua ação para aumentar seus poderes de percepção. Quando o fizer, escolha um dos benefícios a seguir, que dura até você ficar incapacitado ou realizar um descanso curto ou longo. Você não pode usar essa característica novamente até ter terminado um descanso longo.\n\nVisão no Escuro. Você adquire visão no escuro com alcance de 18 metros, como descrito no capítulo 8.\n\nVisão Etérea. Você pode ver no Plano Etéreo com alcance de 18 metros.\n\nCompreensão Maior. Você pode ler qualquer idioma. Ver Invisibilidade. Você pode ver criaturas e objetos invisíveis a até 3 metros de você aos quais você tenha linha de visão.",
+      "page": 98,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.escola-adivinhacao.feature.prodigio-maior.l14.1",
+      "name": "PRODÍGIO MAIOR",
+      "level": 14,
+      "description": "A partir do 14° nível, as visões em seus sonhos se intensificam e pintam um quadro mais preciso na sua mente do que está para acontecer. Você rola três d20s para a sua característica Prodígio, ao invés de dois.",
+      "page": 98,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -15,8 +15,9 @@ const index = read('index.html');
 const uiSource = read('js/exporters/foundry-export-ui.js');
 const css = read('css/styles.css');
 
-if (!config.includes("const APP_VERSION='5.15.0';")) errors.push('APP_VERSION não está em 5.15.0.');
-if (manifest.version !== '5.15.0') errors.push(`manifest.version inválida: ${manifest.version}.`);
+const versionMatch = config.match(/const APP_VERSION='([^']+)';/);
+if (!versionMatch) errors.push('APP_VERSION não foi encontrado em js/config.js.');
+else if (versionMatch[1] !== manifest.version) errors.push(`APP_VERSION (${versionMatch[1]}) diverge do manifest.version (${manifest.version}).`);
 
 const dynamicPos = index.indexOf('js/dynamic-consultation.js');
 const uiPos = index.indexOf('js/exporters/foundry-export-ui.js');

@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-sword-saint-retia-way-of-the-butterfly",
+    "identifier": "bbb-sword-saint-retia-way-of-the-butterfly",
+    "name": "Caminho da Borboleta",
+    "originalName": "Way of the Butterfly",
+    "aliases": [
+      "Way of the Butterfly"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "127",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 127
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Herdeiros das técnicas de uma antiga ordem de espadachins que se tornaram fantasmas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 127
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-butterfly.feature.estilo-de-luta-manejador-de-arte.l3.1",
+      "name": "ESTILO DE LUTA: MANEJADOR DE ARTE",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Manejador de Arte.",
+      "page": 127,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-butterfly.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "Você recebe as técnicas abaixo. Quando outros Caminhos de Devoção permitirem escolher técnicas de outros Caminhos, estas técnicas não podem ser escolhidas.\n\nFONTE SOMBRIA. Ao atingir uma criatura com ataque de arma, gaste 1 Foco para forçá-la a salvaguarda de Constituição. Em falha, seus olhos são cortados e ela fica cega até o fim de seu próximo turno.\n\nBORBOLETA PLANADORA. Como ação bônus, gaste 2 Foco para ganhar por 1 minuto deslocamento de voo laborioso (pairar) igual ao deslocamento base; a mesma ação bônus pode ativar esse voo.\n\nTONS MUTÁVEIS. Como ação bônus, gaste 1 Foco para produzir em si os efeitos de invisibilidade.",
+      "page": 127,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-butterfly.feature.movimento-fantasmagorico.l6.1",
+      "name": "MOVIMENTO FANTASMAGÓRICO",
+      "level": 6,
+      "description": "Enquanto se move, seu corpo torna-se etéreo e fantasmagórico. Você atravessa espaços de outras criaturas sem custo adicional e ataques de oportunidade contra você têm desvantagem. Se entrar no espaço ocupado de outra criatura e isso normalmente provocaria um ataque de oportunidade, a presença física daquela criatura impede que o ataque seja realizado.",
+      "page": 127,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-butterfly.feature.nulificacao-magica.l11.1",
+      "name": "NULIFICAÇÃO MÁGICA",
+      "level": 11,
+      "description": "Você tem vantagem em salvaguardas contra efeitos mágicos. Se obtiver sucesso, é completamente ignorado pelos efeitos: não sofre dano nem efeitos resultantes, exceto alterações do ambiente, como as criadas por emaranhar.",
+      "page": 127,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-butterfly.feature.arma-caida.l14.1",
+      "name": "ARMA CAÍDA",
+      "level": 14,
+      "description": "Na primeira vez em cada turno que sua Arma Santa sintonizada atingir um determinado alvo, causa dano necrótico adicional igual a 1d8 + metade de seu nível de Santo da Espada.",
+      "page": 127,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-butterfly.feature.passos-do-espirito.l17.1",
+      "name": "PASSOS DO ESPÍRITO",
+      "level": 17,
+      "description": "Você recebe deslocamento de teleporte igual ao seu deslocamento base e não produz som ao se mover, independentemente do tipo de movimento. Além disso, seu deslocamento de voo laborioso (pairar) dobra.",
+      "page": 127,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-warlock-astral-traveler",
+    "identifier": "zagalhta-warlock-astral-traveler",
+    "name": "O Viajante Astral",
+    "originalName": "The Astral Traveler",
+    "aliases": [
+      "The Astral Traveler"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "177–178",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 177
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Bruxo pactuado com um ser ligado às estrelas ou ao vazio exolunar, capaz de manipular radiação, calor, gravidade e movimento relativo, além de obter invocações cósmicas exclusivas.",
+    "tables": [
+      {
+        "key": "table.1.invocacoes-misticas-viajante-astral",
+        "title": "Invocações Místicas — Viajante Astral",
+        "page": 178,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Invocação"
+          },
+          {
+            "key": "prereq",
+            "label": "Pré-requisito"
+          },
+          {
+            "key": "effect",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Clarão Místico",
+            "prereq": "truque rajada mística",
+            "effect": "No primeiro acerto de rajada mística no turno, alvo faz Constituição ou fica cego até o fim do próximo turno. Pode fazer rajada mística causar radiante em vez de força."
+          },
+          {
+            "name": "Cicatrizes Exolunares",
+            "prereq": "Bruxo 12º",
+            "effect": "Sem armadura, CA +2; você se torna imune a radiante."
+          },
+          {
+            "name": "Passo de Gravidade Total",
+            "prereq": "Bruxo 9º",
+            "effect": "Recebe voo (pairado) igual ao deslocamento base, substituindo o voo laborioso de Adaptação Exolunar."
+          },
+          {
+            "name": "Fúria das Estrelas",
+            "prereq": "Bruxo 15º",
+            "effect": "Uma vez por Descanso Longo, produz meteoro galáctico sem Espaço; não é Eidomancia, não exige Verificação de Queima e recebe Bônus de Astromancia independentemente do ambiente."
+          },
+          {
+            "name": "Bomba de Radiação",
+            "prereq": "—",
+            "effect": "Ao causar dano a uma criatura com ataque de arma ou de magia, gaste até proficiência em Cargas; cause +1d10 radiante por carga."
+          },
+          {
+            "name": "Arma de Consequência Cósmica",
+            "prereq": "Bruxo 7º",
+            "effect": "Uma vez por Descanso, produza arma astral sem Espaço como se usasse um de seus Espaços de Pacto."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 177
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-warlock-astral-traveler.feature.lista-de-magias-astrais.l1.1",
+      "name": "LISTA DE MAGIAS ASTRAIS",
+      "level": 1,
+      "description": "Ao escolher novas magias de Bruxo, trate todas as magias do grupo Astromancia como se estivessem na lista do Bruxo.",
+      "page": 177,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-warlock-astral-traveler.feature.poco-de-radiacao.l1.1",
+      "name": "POÇO DE RADIAÇÃO",
+      "level": 1,
+      "description": "Você possui Cargas de Radiação iguais ao nível de Bruxo, recuperadas em qualquer Descanso. Como ação bônus, gaste ao menos 1 e escolha até 2 + cargas gastas criaturas a até 18 m; cada uma faz Destreza contra sua CD. Em falha, fica presa em esfera de radiação, restrita e sofre no início de seus turnos dano radiante igual a 1d6 × nível de seu Espaço de Pacto. Como ação, pode fazer Força para escapar. O efeito também termina quando você usa ação bônus para encerrá-lo ou após 1 minuto.",
+      "page": 177,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-warlock-astral-traveler.feature.adaptacao-exolunar.l6.1",
+      "name": "ADAPTAÇÃO EXOLUNAR",
+      "level": 6,
+      "description": "Levitação Astral: voo laborioso igual ao deslocamento base que produz voo pairado, além de aceleração 0-G igual ao dobro. Resistência Cósmica: resistência a radiante. Traços Exolunares: não precisa de ar para sobreviver no vácuo.",
+      "page": 177,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-warlock-astral-traveler.feature.deslize-de-relatividade.l10.1",
+      "name": "DESLIZE DE RELATIVIDADE",
+      "level": 10,
+      "description": "Como reação a uma criatura mover-se a até 36 m, gaste 1 Carga de Radiação para alterar o movimento relativo dela até o início do próximo turno da criatura: mover-se para mais longe de você custa metade do movimento, enquanto mover-se em sua direção custa o dobro.",
+      "page": 177,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-warlock-astral-traveler.feature.bomba-solar.l14.1",
+      "name": "BOMBA SOLAR",
+      "level": 14,
+      "description": "Como ação, crie uma explosão estelar de 9 m de raio em ponto visível a até 18 m. Criaturas fazem Constituição; em falha, sofrem 1d12 × metade do nível de Bruxo, arredondado para cima, de dano radiante; metade em sucesso. Falha também deixa cego, repetindo Constituição ao fim dos turnos. Um uso por Descanso; pode usar novamente gastando 6 Cargas de Radiação.",
+      "page": 177,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

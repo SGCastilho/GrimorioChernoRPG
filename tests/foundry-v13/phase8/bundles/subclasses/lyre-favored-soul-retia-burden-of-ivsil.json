@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-ivsil",
+    "identifier": "lyre-favored-soul-retia-burden-of-ivsil",
+    "name": "Fardo de Ivsil",
+    "originalName": "Burden of Ivsil",
+    "aliases": [
+      "Burden of Ivsil"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "352–353",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 352
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): cimitarra. O Vento Sangrento deixa seus favorecidos inquietos e deslocados, levando-os a abandonar raízes, fugir de amarras e rebelar-se contra tudo que tente prendê-los.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 352
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-ivsil.feature.essencia-tempestuosa.l1.1",
+      "name": "ESSÊNCIA TEMPESTUOSA",
+      "level": 1,
+      "description": "Manto Ondulante de Ivsil (Radiância Essencial): uma vez por Descanso Curto ou Longo, conjure Véu de Ilsrabae sem espaço em nível do pacto; ele manifesta penas e vento caótico, concede imunidade a trovejante em vez de resistência a frio, causa trovejante em vez de frio e dá desvantagem a ataques à distância contra você. Golpe do Furacão (Armamento): pode causar trovejante e sempre causa dano trovejante adicional igual ao bônus de proficiência. Asas da Tempestade (Voo): o deslocamento de voo aumenta em 1,5 metro × bônus de proficiência.",
+      "page": 352,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-ivsil.feature.resistencia-trovejante.l1.1",
+      "name": "RESISTÊNCIA TROVEJANTE",
+      "level": 1,
+      "description": "Você tem resistência a dano trovejante.",
+      "page": 353,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-ivsil.feature.desvio-de-redemoinho.l6.1",
+      "name": "DESVIO DE REDEMOINHO",
+      "level": 6,
+      "description": "Como ação, gere vento em cone de 4,5 metros originado em você ou cubo de 4,5 metros centrado em você. Todas as criaturas na área, exceto você, fazem salvaguarda de Força; em falha, são empurradas 1,5 metro para longe e caem.",
+      "page": 353,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-ivsil.feature.trovao-do-ar-imovel.l10.1",
+      "name": "TROVÃO DO AR IMÓVEL",
+      "level": 10,
+      "description": "Como ação, gaste Purificação para conjurar Inverter Gravidade sem espaço. Você pode escolher não ser afetado.",
+      "page": 353,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-ivsil.feature.surto-de-iniciativa.l13.1",
+      "name": "SURTO DE INICIATIVA",
+      "level": 13,
+      "description": "Você não pode ser surpreendido, tem vantagem em iniciativa e ataques contra você têm desvantagem até você realizar seu primeiro turno no combate.",
+      "page": 353,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

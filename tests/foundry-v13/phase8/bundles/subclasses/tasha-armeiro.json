@@ -1,0 +1,204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-armeiro",
+    "identifier": "tasha-armeiro",
+    "name": "Armeiro",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "14–16",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 14
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "artificer",
+    "identifier": "artificer",
+    "name": "Artífice"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "artificer",
+    "selectionLevel": 3,
+    "description": "Um artífice que se especializou como um Armeiro modifica sua armadura para funcionar quase como uma segunda pele. A armadura é aprimorada para aguçar a magia do artífice, desencadear ataques potentes e gerar uma defesa formidável. O artífice se liga a esta armadura, tornando-se uno com ela mesmo enquanto a testa e refina suas capacidades mágicas.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-armeiro",
+        "title": "Magias de Armeiro",
+        "page": 15,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Artífice"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Mísseis Mágicos; Onda Trovejante"
+          },
+          {
+            "level": "5º",
+            "spells": "Reflexos; Despedaçar"
+          },
+          {
+            "level": "9º",
+            "spells": "Padrão Hipnótico; Relâmpago"
+          },
+          {
+            "level": "13º",
+            "spells": "Escudo Ardente; Invisibilidade Maior"
+          },
+          {
+            "level": "17º",
+            "spells": "Criar Passagem; Muralha de Energia"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 14
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-armeiro.feature.ferramentas-ideais.l3.1",
+      "name": "FERRAMENTAS IDEAIS",
+      "level": 3,
+      "description": "Você ganha proficiência com armaduras pesadas. Você também ganha proficiência com ferramentas de ferreiro. Se você já tem proficiência com essa ferramenta, você ganha proficiência com outro tipo de ferramenta de artesão a sua escolha.",
+      "page": 15,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-armeiro.feature.magias-de-armeiro.l3.1",
+      "name": "MAGIAS DE ARMEIRO",
+      "level": 3,
+      "description": "Você sempre tem certas magias preparadas depois de alcançar alguns níveis específicos nesta classe, conforme mostrado na tabela Magias de Armeiro. Essas magias contam como magias de artífice para você, mas elas não são consideradas entre o número de magia de artífice que você pode preparar. Magias de Armeiro Nível de Artífice Magias 3º Mísseis Mágicos, Onda Trovejante 5º Reflexos, Despedaçar 9º Padrão Hipnótico, Relâmpago 13º Escudo Ardente, Invisibilidade Maior 17º Criar Passagem, Muralha de Energia",
+      "page": 15,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-armeiro.feature.armadura-arcana.l3.1",
+      "name": "ARMADURA ARCANA",
+      "level": 3,
+      "description": "Suas explorações metalúrgicas levaram você a fazer de sua armadura um canal para sua magia. Usando uma ação, você pode transformar uma armadura que esteja vestindo em uma Armadura Arcana, desde que você tenha ferramentas de ferreiro em mãos. Você ganha os seguintes benefícios ao usar esta armadura: Se a armadura normalmente tem um requisito de Força, a Armadura Arcana não tem esse requisito para você. Você pode usar a Armadura Arcana como um foco de conjuração para suas magias de artífice. A armadura se prende a você e não pode ser removida contra sua vontade. Ela também se expande para cobrir todo o seu corpo, embora você possa retrair ou implantar o elmo como uma ação bônus. A armadura substitui qualquer membro ausente, funcionando de forma idêntica ao membro que ela substitui. Você pode tirar ou vestir a armadura como uma ação. A armadura continua a ser uma Armadura Arcana até você vestir outra armadura ou morrer.",
+      "page": 15,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-armeiro.feature.modelo-de-armadura.l3.1",
+      "name": "MODELO DE ARMADURA",
+      "level": 3,
+      "description": "Você pode personalizar sua Armadura Arcana. Quando você faz isso, escolha um dos seguintes modelos de armadura:Guardião ou Infiltrador. O modelo que você escolhe fornece benefícios especiais enquanto você o usa. Cada modelo inclui uma arma especial. Quando você ataca com essa arma, você pode adicionar seu modificador de inteligência, em vez do de Força ou Destreza, para as jogadas de ataque e dano. Você pode trocar o modelo da armadura sempre que terminar um descanso curto ou longo, desde que você tenha ferramentas de ferreiro em mãos. Guardião. Você projeta sua armadura para estar na linha de frente do conflito. Ela possui os seguintes recursos: Manoplas Trovejantes. Cada uma das manoplas da armadura conta como uma arma simples corpo a corpo, enquanto você não estiver segurando nada com ela, e ela provoca ld8 de dano trovejante em um acerto. Uma criatura atingida pela manopla tem desvantagem nas jogadas de ataque contra outros alvos exceto você até o início de seu próximo turno, uma vez que a armadura emite magicamente um pulso de distração quando a criatura ataca outra pessoa. Campo Defensivo. Com uma ação bônus, você pode ganhar pontos de vida temporários iguais ao seu nível nesta classe, substituindo quaisquer pontos de vida temporários que você já tenha. Você perde esses pontos de vida temporários se tirar a armadura. Você pode usar esta ação bônus um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos gastos quando terminar um descanso longo. Infiltrador. Você personaliza sua armadura para ações mais sutis. Ela possui os seguintes recursos: Lança-Relâmpagos. Um nódulo semelhante a uma gema aparece em um de seus punhos armadurados ou em seu peito (a sua escolha). Ele conta como uma arma simples de ataque à distância, com um alcance normal de 27 metros e um alcance longo de 90 metros, e provoca 1d6 de dano elétrico em um acerto. Uma vez em cada um de seus turnos, ao acertar uma criatura com essa arma, você pode causar ld6 de dano elétrico extra a esse alvo. Passos Energizados. Seu deslocamento aumenta em 1,5m. Campo de Amortecimento. Você tem vantagem em testes de Destreza (Furtividade). Se a armadura normalmente impõe desvantagem em tais testes, a vantagem e desvantagem cancelam uma a outra, como ocorre normalmente.",
+      "page": 15,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-armeiro.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "Você pode atacar duas vezes em vez de uma sempre que você executa a ação de Ataque no seu turno.",
+      "page": 15,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-armeiro.feature.modificacoes-da-armadura.l9.1",
+      "name": "MODIFICAÇÕES DA ARMADURA",
+      "level": 9,
+      "description": "Você aprende como utilizar suas infusões de artífice especificamente para modificar sua Armadura Arcana. Essa armadura agora conta como itens separados para os propósitos de sua característica Infundir Itens: armadura (a peça do peito), botas, elmo e a arma especial da armadura. Cada um desses itens pode conter uma de suas infusões, e as infusões são transferidas se você modificar o modelo da armadura através da característica Modelo de Armadura. Adicionalmente, o número máximo de itens que você pode ter infuso por vez aumenta em 2, mas esses itens extras devem ser parte de sua Armadura Arcana.",
+      "page": 15,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-armeiro.feature.armadura-perfeita.l15.1",
+      "name": "ARMADURA PERFEITA",
+      "level": 15,
+      "description": "Sua Armadura Arcana adquire benefícios adicionais com base em seu modelo, conforme listado abaixo. Guardião. Quando uma criatura Enorme ou menor dentro do seu campo de visão termina o turno a até 9 metros de você, você pode usar sua reação para magicamente obrigar a criatura a realizar uma salvaguarda de Força contra sua CD para magias, puxando a criatura por até 9 metros em direção a você para um espaço desocupado. Se você puxar o alvo para um espaço a menos de 1,5 metros de você, você poderá fazer um ataque corpo a corpo com arma contra ele como parte dessa reação. Você pode usar esta reação um número de vezes igual ao seu bônus de proficiência, e recupera todos os usos quando terminar um descanso longo. Infiltrador. Qualquer criatura que sofrer dano elétrico de seu Lança-Relâmpago brilha com luz mágica até o início de seu próximo turno. A criatura cintilante emite meia-luz em um raio de 1,5 metros, e tem desvantagem nas jogadas de ataque contra você, uma vez que a eletricidade o sacode se ele o atacar. Adicionalmente, a próxima jogada de ataque contra a criatura tem vantagem, e se esse ataque acertar, ela recebe ld6 de dano elétrico extra.",
+      "page": 15,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

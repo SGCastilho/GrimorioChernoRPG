@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-rogue-deadshot",
+    "identifier": "lyre-rogue-deadshot",
+    "name": "Tiro Certeiro",
+    "originalName": "Deadshot",
+    "aliases": [
+      "Deadshot"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "476",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 476
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Especialistas no uso de armas de fogo, estes Ladinos são atiradores de elite que treinam técnicas engenhosas para encurralar, desorientar e redirecionar seus alvos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 476
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-rogue-deadshot.feature.tatico-de-armas-de-fogo.l3.1",
+      "name": "TÁTICO DE ARMAS DE FOGO",
+      "level": 3,
+      "description": "Você ganha proficiência com armas de fogo simples e marciais. O primeiro ataque que fizer em cada turno com uma arma de fogo pode atingir até o alcance longo dela sem sofrer a penalidade normal de alcance longo.",
+      "page": 476,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-deadshot.feature.mestre-das-armas-de-fogo.l9.1",
+      "name": "MESTRE DAS ARMAS DE FOGO",
+      "level": 9,
+      "description": "Você recebe o Estilo de Luta Especialista em Armas de Fogo. Se já o possuir, ele avança em vez disso. Ao alcançar o 17º nível de Ladino, ele avança novamente, se houver um estágio disponível.",
+      "page": 476,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-deadshot.feature.disparo-preparado.l9.1",
+      "name": "DISPARO PREPARADO",
+      "level": 9,
+      "description": "Enquanto empunha uma arma de fogo, você pode usar uma ação bônus e gastar uma munição para executar uma das opções a seguir. Tiro de Cobertura: um alvo dentro do alcance da arma faz uma salvaguarda de Destreza usando sua CD baseada em Destreza; em falha, fica temporariamente ferido e subtrai 1d4 de cada ataque com arma que fizer até o início do seu próximo turno. Tiro Extra: faça um ataque com a arma de fogo. Tiro de Preparação: um alvo dentro do alcance normal faz salvaguarda de Sabedoria contra sua CD baseada em Destreza; em falha, você tem vantagem em todos os ataques contra ele neste turno. Tiro de Lentidão: faça um ataque com arma à distância; em um acerto, o deslocamento do alvo é reduzido em 4,5 metros até o fim do próximo turno dele.",
+      "page": 476,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-deadshot.feature.fogo-de-cobertura-superior.l13.1",
+      "name": "FOGO DE COBERTURA SUPERIOR",
+      "level": 13,
+      "description": "Quando uma criatura entra no alcance normal de sua arma de fogo, você pode realizar um ataque de oportunidade contra ela usando essa arma.",
+      "page": 476,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-deadshot.feature.saque-veloz.l17.1",
+      "name": "SAQUE VELOZ",
+      "level": 17,
+      "description": "No seu turno, se ainda não tiver atacado com uma arma de fogo, você pode usar sua ação bônus para fazer rapidamente dois ataques com uma.",
+      "page": 476,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ladrao",
+    "identifier": "ladrao",
+    "name": "Ladrão",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 92
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Você aprimorou suas habilidades na arte do furto de pequenos itens. Gatunos, bandidos, batedores de carteira e outros criminosos geralmente seguem esse arquétipo, mas também aqueles ladinos que preferem se ver como caçadores de tesouro profissionais, exploradores de masmorras e investigadores. Além de aprimorar sua agilidade e furtividade, você aprende perícias úteis para desbravar ruínas antigas, ler idiomas incomuns e usar itens mágicos que normalmente não poderia.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 92
+  },
+  "features": [
+    {
+      "key": "subclass.ladrao.feature.maos-rapidas.l3.1",
+      "name": "MÃOS RÁPIDAS",
+      "level": 3,
+      "description": "A partir do 3º nível, você pode usar a sua ação bônus concedida pela Ação Ardilosa para fazer um teste de Destreza (Prestidigitação), usar suas ferramentas de ladrão para desarmar uma armadilha ou abrir uma fechadura, ou realizar a ação de Usar um Objeto.",
+      "page": 92,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ladrao.feature.andarilho-de-telhados.l3.1",
+      "name": "ANDARILHO DE TELHADOS",
+      "level": 3,
+      "description": "No 3º nível, você adquire a habilidade de escalar mais rápido que o normal. Escalar agora não possui custo adicional de movimento para você.\n\nAlém disso, quando você fizer um salto com corrida, o alcance que pode saltar aumenta um número de metros igual a 0,3 vezes o seu modificador de Destreza.",
+      "page": 92,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ladrao.feature.furtividade-suprema.l9.1",
+      "name": "FURTIVIDADE SUPREMA",
+      "level": 9,
+      "description": "A partir do 9º nível, você tem vantagem no teste de Destreza (Furtividade) se você não mover-se mais do que a metade de seu deslocamento em um turno.",
+      "page": 92,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ladrao.feature.usar-instrumento-magico.l13.1",
+      "name": "USAR INSTRUMENTO MÁGICO",
+      "level": 13,
+      "description": "No 13º nível, você aprende o suficiente sobre como a magia funciona e pode improvisar o uso de itens que nem mesmo foram destinados a você. Você ignora todos os requisitos de classes, raças e níveis para uso de qualquer item mágico.",
+      "page": 92,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ladrao.feature.reflexos-de-ladrao.l3.1",
+      "name": "REFLEXOS DE LADRÃO",
+      "level": 3,
+      "description": "Quando atinge o 17º nível, você se torna adepto em fazer emboscadas e fugas rápidas de situações perigosas. Você pode realizar dois turnos durante o primeiro turno de cada combate. Você realiza seu primeiro turno na sua iniciativa e o segundo na ordem de sua iniciativa menos 10.\n\nVocê não pode usar essa característica quando está surpreso.",
+      "page": 92,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

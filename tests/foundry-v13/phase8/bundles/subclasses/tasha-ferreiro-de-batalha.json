@@ -1,0 +1,204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-ferreiro-de-batalha",
+    "identifier": "tasha-ferreiro-de-batalha",
+    "name": "Ferreiro de Batalha",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "17–19",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 17
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "artificer",
+    "identifier": "artificer",
+    "name": "Artífice"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "artificer",
+    "selectionLevel": 3,
+    "description": "Os exércitos exigem proteção e alguém tem que consertar as coisas se as defesas falharem. Uma combinação de protetor e médico, um ferreiro de batalha é um especialista em defender os outros e em consertar material e pessoal. Para ajudar em seu trabalho, ferreiros de batalha são acompanhados por um defensor de aço, um companheiro protetor de sua própria criação. Muitos soldados contam histórias de quase morte antes de serem salvos por um ferreiro de batalha e seu defensor de aço.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-ferreiro-de-batalha",
+        "title": "Magias de Ferreiro de Batalha",
+        "page": 17,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Artífice"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Escudo; Heroísmo"
+          },
+          {
+            "level": "5º",
+            "spells": "Marca da Punição; Vínculo de Proteção"
+          },
+          {
+            "level": "9º",
+            "spells": "Aura de Vitalidade; Invocar Barragem"
+          },
+          {
+            "level": "13º",
+            "spells": "Aura de Pureza; Escudo de Fogo"
+          },
+          {
+            "level": "17º",
+            "spells": "Banimento Destruidor; Curar Ferimentos em Massa"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 17
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-ferreiro-de-batalha.feature.proficiencia-com-ferramentas.l3.1",
+      "name": "PROFICIÊNCIA COM FERRAMENTAS",
+      "level": 3,
+      "description": "Você adquire proficiência com ferramentas de ferreiro. Se você já tem essa proficiência, você ganha proficiência com outro tipo de ferramentas de artesão a sua escolha.",
+      "page": 17,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-ferreiro-de-batalha.feature.magias-de-ferreiro-de-batalha.l3.1",
+      "name": "MAGIAS DE FERREIRO DE BATALHA",
+      "level": 3,
+      "description": "Você sempre tem certas magias preparadas depois de atingir níveis específicos nesta classe, conforme mostrado na tabela de Magias do Ferreiro de Batalha. Essas magias contam como magias de artífice para você, mas eles não contam para o número de magias de artífice que você prepara. Magias de Ferreiro de Batalha Nível de Artífice Magias 3º Escudo, Heroísmo 5º Marca da Punição, Vínculo de Proteção 9º Aura de Vitalidade, Invocar Barragem 13º Aura de Pureza, Escudo de Fogo 17º Banimento Destruidor, Curar Ferimentos em Massa",
+      "page": 17,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-ferreiro-de-batalha.feature.pronto-para-a-batalha.l3.1",
+      "name": "PRONTO PARA A BATALHA",
+      "level": 3,
+      "description": "Seu treinamento de combate e seus experimentos com magia valeram a pena de duas maneiras: Você ganha proficiência com armas marciais. Quando você ataca com uma arma mágica, você pode usar seu modificador de Inteligência, em vez do Modificador de Força ou Destreza, para jogadas de ataque e de dano.",
+      "page": 17,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-ferreiro-de-batalha.feature.defensor-de-aco.l3.1",
+      "name": "DEFENSOR DE AÇO",
+      "level": 3,
+      "description": "Sua engenharia lhe trouxe um companheiro, um defensor de aço. Ele é amigável com você e seus companheiros, e obedece aos seus comandos. Veja as estatísticas de jogo dele no bloco de estatísticas Defensor de Aço, que usa seu bônus de proficiência (BP) em vários lugares. Você determina a aparência da criatura e se ele tem duas ou quatro pernas; sua escolha não tem efeito sobre as estatísticas de jogo. Em combate, o defensor compartilha sua contagem de iniciativa, mas o turno dele é imediatamente após o seu. Ele pode se mover e usar sua reação por conta própria, mas a única ação que realiza em seu turno é a ação de Esquiva, a menos que você utilize sua ação bônus para comandá-lo a realizar outra ação. Essa ação pode ser uma em seu bloco de estatísticas ou qualquer outra. Se você estiver incapacitado, o defensor pode realizar qualquer ação a sua escolha, não apenas a Esquiva. Se a magia Reparar for conjurada no defensor, ele recupera 2d6 pontos de vida. Se ele morreu dentro da última hora, você pode usar ferramentas de ferreiro como uma ação para revivê-lo, desde que você esteja a menos de 1,5 metros dele e gaste um espaço de magia de 1° círculo ou superior. O defensor retorna à vida após 1 minuto com todos os seus pontos de vida restaurados. No final de um descanso longo, você pode criar um novo defensor de aço se você tiver ferramentas de ferreiro com você. Se você já tiver um defensor de aço através dessa característica, o primeiro perece imediatamente. O defensor também perece se você morrer.",
+      "page": 17,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-ferreiro-de-batalha.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "Você pode atacar duas vezes em vez de uma sempre que você executa a ação de Ataque no seu turno.",
+      "page": 18,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-ferreiro-de-batalha.feature.pulso-arcano.l9.1",
+      "name": "PULSO ARCANO",
+      "level": 9,
+      "description": "Você aprendeu novas formas de canalizar energia arcana para ferir ou curar. Quando você atinge um alvo com um ataque com arma mágica ou seu defensor de aço atinge um alvo, você pode canalizar energia mágica através do ataque para criar um dos seguintes efeitos: Defensor de Aço Construto Médio Classe de Armadura 15 (Armadura Natural) Pontos de Vida 2 + seu modificador de inteligência + 5 vezes seu nível de artífice (o defensor tem um número de dados de vida, [d8s] igual ao seu nível nesta classe) Deslocamento 12m. FOR DES CON INT SAB CAR 14 (+2) 12 (+1) 14 (+2) 4 (-3) 10 (+0) 6 (-2) Salvaguardas DES 1 + BP, CON 2 + BP Perícias Atletismo 2 + BP, Percepção 0 + BP x 2 Imunidade a Dano Venenoso Imunidade a Condições Enfeitiçado, Exausto, Envenenado Sentidos Visão no escuro 18 m, Percepção Passiva 10 + (BP x 2) Idiomas Entende os idiomas que você fala Nível de Desafio — Bônus de Proficiência [BP] Igual ao seu bônus Vigilante O defensor não pode ser surpreso. Ações Laceração de Energia. Ataque com Arma Corpo a Corpo: seu modificador de ataques com magia para acertar, alcance 1,5 m, um alvo que você possa ver. Acerto: 1d8 + BP de dano de energia Reparar (3/dia). Os mecanismos mágicos dentro do defensor restauram 2d8 + BP pontos de vida para ele mesmo ou para um construto ou objeto a até 1,5m dele. Reações Defletir Ataque. O defensor impõe desvantagem na jogada de ataque de uma criatura a até 1,5m de distância que ele possa ver, desde que a jogada de ataque seja contra outra criatura que não o defensor. O alvo sofre 2d6 de dano extra de energia. Escolha uma criatura ou objeto que você possa ver a até de 9 metros do alvo. A energia de cura flui para o destinatário escolhido, restaurando 2d6 pontos de vida dele. Você pode usar essa energia um número de vezes igual ao seu modificador de Inteligência (mínimo de uma vez), mas você não pode fazer isso mais do que uma vez por turno. Você recupera todos os usos quando termina um descanso longo.",
+      "page": 18,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-ferreiro-de-batalha.feature.defensor-aprimorado.l15.1",
+      "name": "DEFENSOR APRIMORADO",
+      "level": 15,
+      "description": "Seu Pulso Arcano e seu Defensor de Aço tornam-se mais poderosos: O dano extra e a cura do seu Pulso Arcano aumentam para 4d6. Seu defensor de aço ganha um bônus de +2 na CA. Sempre que seu defensor de aço usa seu Defletir Ataque, o atacante recebe dano de energia igual a ld4 + seu modificador de Inteligência.",
+      "page": 19,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-bard-college-of-the-old-world",
+    "identifier": "lyre-bard-college-of-the-old-world",
+    "name": "Colégio do Velho Mundo",
+    "originalName": "College of the Old World",
+    "aliases": [
+      "College of the Old World"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "436",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 436
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Bardos que mergulham na história perdida da Era da Cisão tornam sua arte um reflexo da tragédia, da bravura e da ferocidade daquele período em que a humanidade quase foi extinta e os antigos deuses foram destruídos. Essas histórias impregnam suas canções com força psíquica.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 436
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-bard-college-of-the-old-world.feature.cancao-da-coragem.l3.1",
+      "name": "CANÇÃO DA CORAGEM",
+      "level": 3,
+      "description": "Uma criatura que possua sua Inspiração de Bardo pode rolar o dado e somá-lo a qualquer salvaguarda para evitar ficar enfeitiçada ou amedrontada. Usar a Inspiração dessa forma não a gasta.",
+      "page": 436,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-college-of-the-old-world.feature.influencia-tragica.l3.1",
+      "name": "INFLUÊNCIA TRÁGICA",
+      "level": 3,
+      "description": "Quando causar dano a uma criatura com uma magia, você pode converter brevemente o efeito em uma recriação ilusória de um evento da Era da Cisão. O dano torna-se psíquico e você soma seu nível de Bardo ao dano. Se a magia causar dano várias vezes, o benefício vale apenas para uma ocorrência contra um alvo; o restante da magia funciona normalmente. Usos por Descanso Curto ou Longo iguais à metade do seu bônus de proficiência, arredondado para baixo.",
+      "page": 436,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-college-of-the-old-world.feature.cancao-da-liberdade.l6.1",
+      "name": "CANÇÃO DA LIBERDADE",
+      "level": 6,
+      "description": "Uma criatura que possua sua Inspiração de Bardo pode usar uma ação bônus para realizar Desengajar ou libertar-se de um efeito que a esteja agarrando ou restringindo.",
+      "page": 436,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-college-of-the-old-world.feature.cancao-da-aniquilacao-cosmica.l14.1",
+      "name": "CANÇÃO DA ANIQUILAÇÃO CÓSMICA",
+      "level": 14,
+      "description": "Como ação, execute uma canção de devastação. Criaturas à sua escolha a até 9 metros realizam uma salvaguarda de Carisma. Em uma falha, por 1 minuto sofrem, no início de cada turno, dano psíquico igual a uma rolagem do seu dado de Inspiração de Bardo. Podem repetir a salvaguarda ao fim de cada turno, encerrando o efeito em um sucesso. Se uma criatura afetada estiver a até 9 metros, você pode usar uma ação bônus para intensificar suas visões; ela realiza uma salvaguarda de Sabedoria ou fica atordoada até o fim do próximo turno dela. Uma vez por Descanso Curto ou Longo.",
+      "page": 436,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

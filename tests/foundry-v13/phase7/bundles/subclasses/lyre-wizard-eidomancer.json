@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-wizard-eidomancer",
+    "identifier": "lyre-wizard-eidomancer",
+    "name": "Eidomante",
+    "originalName": "Eidomancer",
+    "aliases": [
+      "Eidomancer"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "507–508",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 507
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Eidomancia é a canalização da radiação que inundou o mundo durante a Era da Ruptura. Sem as salvaguardas da teia eidomântica, essa arte é perigosa e pode voltar-se contra o conjurador, mas permite resultados superiores. Eidomantes estudam essa forma antiga de magia, aprendendo a controlar sua radiação apesar do risco.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 507
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-wizard-eidomancer.feature.resiliencia-a-queima-eidolica.l2.1",
+      "name": "RESILIÊNCIA À QUEIMA EIDÓLICA",
+      "level": 2,
+      "description": "Quando realiza um teste de Queima Eidomântica, você pode somar seu modificador de Inteligência ao resultado.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-eidomancer.feature.prodigio-em-eidomancia.l2.1",
+      "name": "PRODÍGIO EM EIDOMANCIA",
+      "level": 2,
+      "description": "Ao aprender novas magias de Mago, inclusive no nível em que recebe esta característica, você pode escolher magias do grupo Eidomancia e tratá-las como magias de Mago. O Mestre pode exigir orientação para magias pertencentes a múltiplos grupos, como testemunhá-las ou encontrar um professor. O ouro e o tempo necessários para copiar uma magia de Eidomancia para seu grimório são reduzidos à metade.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-eidomancer.feature.arcana-ilimitada.l6.1",
+      "name": "ARCANA ILIMITADA",
+      "level": 6,
+      "description": "Quando conjura com um espaço uma magia que não seja de Eidomancia, pode tratá-la como uma magia de Eidomancia e aumentar em 1 o nível no qual ela é conjurada, como se o espaço fosse um nível maior, gastando apenas o espaço original. O nível final não pode ultrapassar o 9º. No 14º nível de Mago, você pode aumentar em 2 níveis em vez disso. A magia se torna Eidomancia e você deve fazer um teste de Queima Eidomântica com CD 10 + o nível final da magia, seguindo as demais regras de Queima Eidomântica. Usos por Descanso Longo iguais ao seu bônus de proficiência.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-eidomancer.feature.saturacao-eidolica.l10.1",
+      "name": "SATURAÇÃO EIDÓLICA",
+      "level": 10,
+      "description": "Todo dano causado por suas magias é considerado eidólico para superar resistências. Além disso, criaturas que tenham vantagem em salvaguardas contra magias e efeitos mágicos, mas não explicitamente contra efeitos eidólicos, não recebem essa vantagem contra suas magias. Divindades e criaturas que causem dano eidólico por uma característica ignoram este benefício.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-eidomancer.feature.preparacao-radiante.l10.1",
+      "name": "PREPARAÇÃO RADIANTE",
+      "level": 10,
+      "description": "Depois de terminar um Descanso Longo, ao preparar magias, você pode preparar um número adicional igual ao seu bônus de proficiência. Essas magias adicionais devem ser magias de Eidomancia.",
+      "page": 508,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-eidomancer.feature.mestre-eidomante.l14.1",
+      "name": "MESTRE EIDOMANTE",
+      "level": 14,
+      "description": "Ao realizar um teste de Queima Eidomântica, a CD não aumenta de acordo com o número de rodadas em que você manteve concentração na magia. Além disso, falhar em um teste de Queima Eidomântica não causa exaustão; em vez disso, você sofre 1 ponto de Fadiga de Combate.",
+      "page": 508,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

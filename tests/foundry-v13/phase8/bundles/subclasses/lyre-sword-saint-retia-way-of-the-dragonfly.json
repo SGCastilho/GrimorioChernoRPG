@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-the-dragonfly",
+    "identifier": "lyre-sword-saint-retia-way-of-the-dragonfly",
+    "name": "Caminho da Libélula",
+    "originalName": "Way of the Dragonfly",
+    "aliases": [
+      "Way of the Dragonfly"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "419",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 419
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Tengokukiri. Inspirado em um general lendário que atravessou inúmeras batalhas sem receber ferimentos, este Caminho prioriza armas pesadas, apoio aos aliados e presença dominante no centro do combate.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 419
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-dragonfly.feature.estilo-de-luta-combate-com-arma-grande.l3.1",
+      "name": "ESTILO DE LUTA: COMBATE COM ARMA GRANDE",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Combate com Arma Grande.",
+      "page": 419,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-dragonfly.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "LANÇA EXPLOSIVA: ao fazer ataque corpo a corpo com arma perfurante, gaste 2 Foco para não fazer a jogada; em vez disso, todas as criaturas em uma linha de 9 metros por 1,5 metro fazem salvaguarda de Destreza, sofrendo o dano da arma em falha. MAJESTOSO: como ação bônus, gaste 2 Foco para impor desvantagem a todos os ataques contra você até o início do próximo turno. JUSTA TROVEJANTE: depois de mover pelo menos 3 metros em linha reta em direção a uma criatura, gaste 1 Foco para ter vantagem no próximo ataque com arma contra ela nesse turno; se acertar e ela for no máximo uma categoria de tamanho maior, deve passar em salvaguarda de Força ou cair.",
+      "page": 419,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-dragonfly.feature.reunir-e-conquistar.l6.1",
+      "name": "REUNIR E CONQUISTAR",
+      "level": 6,
+      "description": "Ao acertar uma criatura com ataque corpo a corpo com arma, você a desequilibra até o início de seu próximo turno. Enquanto ela permanecer no alcance dessa arma e você não estiver incapacitado nem cego, aliados rolam 1d4 e somam às jogadas de ataque contra ela.",
+      "page": 419,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-dragonfly.feature.baluarte-duradouro.l11.1",
+      "name": "BALUARTE DURADOURO",
+      "level": 11,
+      "description": "Uma vez por Descanso Curto ou Longo, quando dano o reduziria a 0 PV, pode gastar 1 ou mais Foco para ficar com 1 PV. Recebe 1d10 PV temporários por ponto de Foco gasto; no início de cada turno, perde 1d8 desses PV temporários.",
+      "page": 419,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-dragonfly.feature.libelula-ascendente.l14.1",
+      "name": "LIBÉLULA ASCENDENTE",
+      "level": 14,
+      "description": "Uma vez por turno, um ataque com sua Arma Santa pode tratá-la como se tivesse arremesso (15/45 m), transformando-a temporariamente em forma de lança sem alterar propriedades, dados, tipos de dano ou efeitos mágicos. Ao usar Surto do Dragão, pode fazer um ataque adicional dessa forma como ação bônus. Em acerto, causa +1d12 de dano e a arma retorna. Pode realizar ataques adicionais assim no mesmo turno gastando 1 Foco por ataque. Toda criatura atingida faz salvaguarda de Constituição; em falha, sua CA é reduzida em 1d4 + 1 até o início do seu próximo turno. A redução não acumula.",
+      "page": 419,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-dragonfly.feature.imatavel.l17.1",
+      "name": "IMATÁVEL",
+      "level": 17,
+      "description": "Enquanto não estiver incapacitado, reduza em 10 todo dano contundente, cortante ou perfurante que sofrer. Essa redução não acumula com efeitos semelhantes. Você também recebe proficiência em salvaguardas de Constituição.",
+      "page": 419,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

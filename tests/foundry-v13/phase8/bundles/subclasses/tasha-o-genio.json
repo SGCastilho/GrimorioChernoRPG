@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-o-genio",
+    "identifier": "tasha-o-genio",
+    "name": "O Gênio",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "33–36",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 33
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Você fez uma pacto com um dos mais raros tipos de gênios, um nobre. Tais entidades comandam vastos territórios nos Planos Elementais e possuem grande influência sobre gênios menores e criaturas elementais. Gênios nobres são diversos em suas motivações, mas a maioria é arrogande e detêm poderes que rivalizam com divindades menores. Eles se deleitam em virar o jogo contra os humanos, que às vezes vinculam os gênios em servidão, e rapidamente entram em pactos que expandem sua atuação. Você escolhe o tipo do seu patrono ou determina isso aleatoriamente, usando a tabela de Tipo de Gênio. Tipo de Gênio d4 Tipo de Gênio Elemento Dao Terra Djinni Ar Ifriti Fogo Marid Água",
+    "tables": [],
+    "references": [],
+    "sourcePage": 33
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-o-genio.feature.receptaculo-do-genio.l1.1",
+      "name": "RECEPTÁCULO DO GÊNIO",
+      "level": 1,
+      "description": "Seu patrono o presenteia com um receptáculo mágico que lhe dá uma parcela do poder do gênio. O receptáculo é um objeto Minúsculo, e você pode usar isso como um foco de conjuração para suas magias de grupo. Você decide o que o objeto é, ou você pode determinar isso aleatoriamente jogando na tabela de Receptáculo do Gênio. Receptáculo do Gênio d6 Receptáculo Lâmpada de óleo Urna Anel com compartimento Garrafa com rolha Estatueta oca Lanterna ornamentada Enquanto estiver tocando o receptáculo, você pode usá-lo das seguintes maneiras: Descanso Engarrafado. Com uma ação, você pode desaparecer magicamente e entrar em seu receptáculo, que permanece no espaço que você deixou. O interior do receptáculo é um espaço extradimensional na forma de um cilindro de 6m de raio e 6m de altura, e lembra o objeto. O interior é mobiliado com almofadas e mesas baixas e fica em uma temperatura confortável. Enquanto dentro, você pode ouvir a área ao redor do receptáculo como se estivesse em seu espaço. Você pode permanecer dentro do receptáculo por uma quantia de horas igual a duas vezes seu bônus de proficiência. Você pode sair do receptáculo antes desse tempo se usar uma ação bônus para isso, se você morrer, ou se o receptáculo for destruído. Quando você sai desse receptáculo, você aparece no espaço desocupado mais próximo dele. Qualquer objeto deixado no receptáculo permanece lá até ser carregado para fora, e se o receptáculo for destruído, todo objeto contido por ele reaparece sem danos nos espaços desocupados mais próximos à antiga localização do receptáculo. Uma vez que entre no receptáculo, você não pode fazer isso novamente até terminar um descanso longo.\n\nIra do Gênio. Uma vez por turnno, quando você acerta uma rolagem de ataque, você pode causar dano extra ao alvo igual ao seu bônus de proficiência. O tipo desse dano é determinado por seu patrono: contundente (dao), trovejante (djinni), ígneo (ifriti), ou gélido (marid). A CA do receptáculo é igual à sua CD de magia. Ele tem pontos de vida igual ao seu nível de bruxo mais seu bônus de proficiência, e ele é imune a dano venenoso e psíquico. Se o receptáculo for destruído, você pode realizar uma cerimônia de 1 hora para receber um substituto de seu patrono. Essa cerimônia pode ser realizada durante um descanso curto ou longo, e o receptáculo anterior é destruído caso ainda exista. O receptáculo desaparece em um clarão de poder elemental quando você morre.",
+      "page": 33,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-o-genio.feature.lista-expandida-de-magias.l1.1",
+      "name": "LISTA EXPANDIDA DE MAGIAS",
+      "level": 1,
+      "description": "O Gênio permite que você escolha a partir de uma lista expandida de magias quando você aprende uma magia de bruxo. A tabela de Lista Expandida de Magias do Gênio mostra as magias que são adicionadas à lista de magia de bruxo para você, bem como as magias associadas ao seu tipo de patrono: dao, djinni, ifrit ou marid. Lista de Magias Expandidas de Gênio Círculo de Magias Magias de Gênio Magias de Dao Magias de Djinni Magias de Ifriti Magias de Marid 1º Detectar Bem e Mal Santuário Onda Trovejante Mãos Flamejantes Névoa Obscurecente 2º Força Espectral Crescer Espinhos Lufada de Vento Raio Ardente Turvar 3º Criar Comida e Água Mesclar-se às Rochas Muralha de Vento Bola de Fogo Nevasca 4º Assassino Fantasmagórico Moldar Rochas Invisibilidade Maior Escudo Ardente Controlar Água 5º Criação Muralha de Pedra Similaridade Coluna de Chamas Cone de Frio 9º Desejo — — — —",
+      "page": 33,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-o-genio.feature.dom-elemental.l6.1",
+      "name": "DOM ELEMENTAL",
+      "level": 6,
+      "description": "Você começa a desenvolver características do seu tipo de patrono. Você agora tem resistência a um tipo de dano determinado por seu tipo de patrono: contundente (dao), trovejante (djinni), ígneo (ifriti), ou gélido (marid). Adicionalmente, com uma ação bônus, você pode conceder a si mesmo um deslocamento de voo de 9m com duração de 10 minutos, durante os quais você pode planar. Você pode usar essa ação bônus uma quantia de vezes igual ao seu bônus de proficiência, e você recupera todos os usos quando termina um descanso longo.",
+      "page": 34,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-o-genio.feature.receptaculo-protetor.l10.1",
+      "name": "RECEPTÁCULO PROTETOR",
+      "level": 10,
+      "description": "A partir de agora, quando você entra em seu Receptáculo do Gênio usando a habilidade do Descanso Engarrafado, você pode levar até 5 criaturas voluntárias que você pode escolher dentro do seu campo de visão, desde que estejam a até 9m de você, para que entrem no receptáculo junto com você. Com uma ação bônus, você pode ejetar qualquer número de criaturas do receptáculo, e todos são ejetados se você sair ou morrer, ou se o item for destruído. Em adição, qualquer um (incluindo você) que se mantenha dentro do receptáculo por pelo menos 10 minutos adquire os mesmos benefícios de se terminar um descanso curto, e qualquer um pode adicionar seu bônus de proficiência ao número de pontos de vida que eles recuperam ao gastar qualquer Dado de Vida como parte de um descanso curto ali.",
+      "page": 34,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-o-genio.feature.desejo-restrito.l14.1",
+      "name": "DESEJO RESTRITO",
+      "level": 14,
+      "description": "Você roga a seu patrono para que lhe forneça um pequeno desejo. Com uma ação, você pode formular seu desejo para o seu Receptáculo do Gênio, solicitando o efeito de uma magia que seja de 6º círculo ou menor e que tenha um tempo de conjuração de 1 ação. A magia pode ser de qualquer lista de classe, e você não precisa atingir os requerimentos dessa magia, incluindo o custo de componentes; a magia simplesmente faz efeito como parte dessa ação. Assim que usa essa característica, você não pode fazer isso novamente até que finalize 1d4 descansos longos.",
+      "page": 35,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

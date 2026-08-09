@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-wizard-specialist",
+    "identifier": "lyre-wizard-specialist",
+    "name": "Especialista",
+    "originalName": "Specialist",
+    "aliases": [
+      "Specialist"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "509",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 509
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Especialistas aprofundam-se na história e nas técnicas de um grupo específico de magias, estudando criadores, rituais e fundamentos até compreender o tema a ponto de conjurar suas magias de memória ou simplificá-las. O Mestre pode criar ou expandir grupos de magia apropriados, inclusive usando listas expandidas de subclasses como base.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 509
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-wizard-specialist.feature.proficiencias-adicionais.l2.1",
+      "name": "PROFICIÊNCIAS ADICIONAIS",
+      "level": 2,
+      "description": "Você ganha proficiência em História e Investigação. Se já possuía proficiência em uma delas, recebe Especialização naquela perícia em vez disso.",
+      "page": 509,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-specialist.feature.especializacao.l2.1",
+      "name": "ESPECIALIZAÇÃO",
+      "level": 2,
+      "description": "Escolha um grupo de magias apropriado com aprovação do Mestre. Você se torna especialista nele e, ao aprender novas magias de Mago, pode escolher magias desse grupo e tratá-las como magias de Mago mesmo que normalmente não sejam. Copiar uma magia desse grupo para seu grimório custa metade do tempo e do ouro normais.",
+      "page": 509,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-specialist.feature.assuntos-favoritos.l6.1",
+      "name": "ASSUNTOS FAVORITOS",
+      "level": 6,
+      "description": "Escolha em seu grimório uma quantidade de magias do grupo no qual é especialista igual à metade do seu bônus de proficiência, arredondado para baixo. Elas ficam sempre preparadas e não contam no limite normal. Sempre que ganha um nível de Mago, pode substituir uma escolha e, se a quantidade escolhida estiver abaixo da metade do seu bônus de proficiência, seleciona magias adicionais até atingir o total.",
+      "page": 509,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-specialist.feature.recordacao-talentosa.l10.1",
+      "name": "RECORDAÇÃO TALENTOSA",
+      "level": 10,
+      "description": "Uma vez por Descanso Longo, você pode conjurar Lucubração Arcana sem gastar espaço, em um nível igual ao seu bônus de proficiência.",
+      "page": 509,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-specialist.feature.frutos-do-meu-trabalho.l14.1",
+      "name": "FRUTOS DO MEU TRABALHO",
+      "level": 14,
+      "description": "Quando conjura uma magia pertencente ao grupo em que é especialista, escolha um benefício: a magia é conjurada como se usasse um espaço de 3º nível, independentemente do espaço realmente gasto; ou é tratada como se o espaço gasto fosse 1 nível maior, máximo 9º. Depois de conjurar uma magia de 8º nível ou inferior beneficiada desta forma, role 1d100. Se o resultado for igual ou inferior a 20 menos o nível da magia, você recebe um espaço de Mago de nível igual à metade do nível do espaço que gastou, arredondado para baixo. Esse espaço desaparece ao terminar um Descanso Longo.",
+      "page": 509,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

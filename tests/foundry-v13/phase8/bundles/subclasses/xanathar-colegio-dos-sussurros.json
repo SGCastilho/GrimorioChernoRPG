@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-colegio-dos-sussurros",
+    "identifier": "xanathar-colegio-dos-sussurros",
+    "name": "Colégio dos Sussurros",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "16",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 16
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "A maioria das pessoas está feliz em receber um bardo em seu meio. Bardos do Colégio dos sussurros usam isso como vantagem. Eles parecem ser como outros bardos, compartilhando notícias, cantando músicas e contando histórias ao público que eles reúnem. Em verdade, o Colégio dos sussurros ensina seus estudantes que eles são lobos entre ovelhas. Esses bardos usam seus conhecimentos e magias para descobrir segredos e usa-los contra outros através de extorsão e ameaças. Muitos outros bardos odeiam o Colégio dos sussurros, o vendo como um parasita que usa a reputação de um bardo para adquirir riqueza e poder. Por esse motivo, os membros deste colégio raramente revelam sua verdadeira natureza. Eles normalmente afirmam seguir outro colégio, ou eles mantem em segredo suas vocações verdadeiras para se infiltrar e explorar cortes reais e outras configurações de poder.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 16
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-colegio-dos-sussurros.feature.laminas-psiquicas.l3.1",
+      "name": "LÂMINAS PSÍQUICAS",
+      "level": 3,
+      "description": "Quando você entra no Colégio dos Sussurros no 3° nível, você ganha a habilidade de tomar seus ataques de armas magicamente tóxicos para a mente de uma criatura. Quando você ataca uma criatura com um ataque de arma, você pode gastar uma Inspiração de Bardo para causar um dano extra psíquico de 2d6 no alvo. Você pode fazer isso somente uma vez por turno. 0 dano psíquico aumenta quando você alcança certos níveis de bardo, aumentando para 3d6 no 5° nível, 5d6 no 10° nível e 8d6 no 1 5° nível.",
+      "page": 16,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-colegio-dos-sussurros.feature.palavras-de-terror.l3.1",
+      "name": "PALAVRAS DE TERROR",
+      "level": 3,
+      "description": "No 3º nível, você aprende a infundir palavras de aparência inocente com uma magia traiçoeira que pode inspirar terror. Se você fala com um humanoide sozinho por pelo menos 1 minuto, você pode tentar semear a paranoia em sua mente. No fim da conversa, o alvo deve ser bem-sucedido em um teste de resistência de Sabedoria contra o CD da magia ou ficará com medo de você ou outra criatura que escolher. O alvo ficará assustado dessa maneira por 1 hora, até que seja atacado ou ferido ou. até testemunhar seus aliados sendo atacados ou feridos. Se o alvo for bem-sucedido em seu teste de resistência, ele tem nenhum indício de que você tentou assustá-lo. Depois de usar essa característica, você não pode novamente até terminar um descanso curto ou longo.",
+      "page": 16,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-colegio-dos-sussurros.feature.manto-dos-sussurros.l6.1",
+      "name": "MANTO DOS SUSSURROS",
+      "level": 6,
+      "description": "No 6° nível, você ganha a habilidade de adotar a personalidade de um humanoide. Quando um humanoide morre a 9 metros de sua localização, você pode capturar magicamente sua sombra usando sua reação. Você mantém essa sombra até que a use ou termine um descanso longo. Você pode usar a sombra como uma ação. Quando faz isso, ela desaparece, transformando-se magicamente em um disfarce que aparece em você. Agora se parece com a pessoa morta, mas saudável e viva. Este disfarce dura uma hora ou até você terminar com uma ação bônus. Enquanto está no disfarce, você ganha acesso a todas as informações que o humanoide compartilharia livremente com um conhecido casual. Essas informações incluem detalhes gerais sobre seus antecedentes e vida pessoal, mas não incluem segredos. A informação é suficiente para que você possa se passar como a pessoa, inspirando-se em suas memórias. Outra criatura pode velo através do disfarce se for sucedida em um teste de Sabedoria (Percepção) contra o seu teste de Carisma (Enganação). Você ganha um bônus de +5 no seu teste. Depois de capturar uma sombra com esta característica, você não pode capturar outra até terminar um descanso curto ou longo.",
+      "page": 16,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-colegio-dos-sussurros.feature.conhecimento-das-sombras.l14.1",
+      "name": "CONHECIMENTO DAS SOMBRAS",
+      "level": 14,
+      "description": "No 14° nível, você ganha a habilidade de tecer a magia negra em suas palavras e aproveitar os medos mais profundos de uma criatura. Como uma ação, você sussurra magicamente uma frase que apenas uma criatura de sua escolha dentro de 9 metros pode ouvir. O alvo deve fazer um teste de resistência de sabedoria contra o CD da magia. Ele é bem-sucedido automaticamente se ele não falar a mesma língua sua ou não poder escuta-lo. Em um teste bem-sucedido, seu sussurro soa como murmúrios incompreensíveis e não tem efeito. Em um teste de resistência falho, o alvo é encantado por você para as próximas 8 horas ou até que você ou um de seus aliados atacá-lo, danificá-lo ou forçá­ lo a fazer um teste de resistência. Ele interpreta os sussurros como uma descrição de seu segredo mais mortificante. Você não conhece esse segredo, mas o alvo está convencido de que você sabe. A criatura encantada obedece a seus comandos por medo de que você o revele. Ela não arriscará a sua vida ou lutar por você, a menos que já esteja inclinada a fazer. Isso lhe concede favores e presentes que ofereceria a um amigo próximo. Quando o efeito acaba, a criatura não compreende o porquê isso o dominou. Depois de usar esta característica, você não pode usá-la novamente até terminar um descanso longo.",
+      "page": 16,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

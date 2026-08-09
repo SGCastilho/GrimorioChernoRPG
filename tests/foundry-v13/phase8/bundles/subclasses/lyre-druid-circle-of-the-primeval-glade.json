@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-druid-circle-of-the-primeval-glade",
+    "identifier": "lyre-druid-circle-of-the-primeval-glade",
+    "name": "Círculo da Clareira Primeva",
+    "originalName": "Circle of the Primeval Glade",
+    "aliases": [
+      "Circle of the Primeval Glade"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "454",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 454
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Druidas da Clareira Primeva estão ligados aos espíritos de dinossauros ancestrais e carregam dentro de si a ferocidade das maiores feras da natureza. Eles defendem ecossistemas em que predadores e presas mantêm um equilíbrio funcional e frequentemente veneram os deuses kaijou Kilngresh e Echobliss.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 454
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-druid-circle-of-the-primeval-glade.feature.toque-de-ferocidade.l2.1",
+      "name": "TOQUE DE FEROCIDADE",
+      "level": 2,
+      "description": "Como ação, toque uma criatura voluntária e conceda Ferocidade por 1 minuto. Na primeira vez em cada turno que ela fizer um ataque com arma, rola 1d6 e soma ao resultado da jogada de ataque. Todos os ataques feitos durante a Ferocidade são mágicos. Ao concedê-la, a criatura também recebe pontos de vida temporários iguais à metade do seu nível de Druida, arredondado para baixo, mínimo 1. Usos por Descanso Longo iguais ao seu bônus de proficiência.",
+      "page": 454,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-the-primeval-glade.feature.chamado-primevo.l6.1",
+      "name": "CHAMADO PRIMEVO",
+      "level": 6,
+      "description": "Uma vez por Descanso Longo, você pode conjurar Eco Bestial de forma especial, criando um espírito com aparência de dinossauro. Escolha normalmente o tipo de eco. A magia é tratada como conjurada com um espaço de nível igual à metade do seu nível de Druida, arredondado para baixo, máximo 9º. Ao invocá-lo, escolha um número de benefícios igual à metade do nível em que a magia foi conjurada, arredondado para baixo: o eco recebe seu Toque de Ferocidade; torna-se Grande, ou Enorme se escolher esta opção duas vezes, com dados de dano d10 quando Grande e d12 quando Enorme; seus ataques causam um dado adicional de dano; você e o eco não podem ser amedrontados enquanto ele existir; o deslocamento dele aumenta em 3 metros; ele ganha resistência a dano perfurante, cortante e contundente de armas não mágicas; recebe pontos de vida temporários iguais ao seu nível de Druida; ou ganha uma característica de outro tipo de espírito de Eco Bestial — Táticas de Matilha, Respiração Aquática ou Sobrevoo — juntamente com os deslocamentos daquele tipo.",
+      "page": 454,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-the-primeval-glade.feature.furia-selvagem.l6.1",
+      "name": "FÚRIA SELVAGEM",
+      "level": 6,
+      "description": "Enquanto estiver transformado por Forma Selvagem, você recebe automaticamente os benefícios do seu próprio Toque de Ferocidade.",
+      "page": 454,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-the-primeval-glade.feature.ferocidade-maior.l10.1",
+      "name": "FEROCIDADE MAIOR",
+      "level": 10,
+      "description": "Seu Toque de Ferocidade passa a alcançar criaturas a até 9 metros. Além disso, criaturas beneficiadas somam seu modificador de Sabedoria às rolagens de dano de ataques com arma enquanto a Ferocidade durar.",
+      "page": 454,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-the-primeval-glade.feature.rei-das-feras.l14.1",
+      "name": "REI DAS FERAS",
+      "level": 14,
+      "description": "Se um efeito fosse reduzi-lo a 0 pontos de vida ou matá-lo instantaneamente, você pode se transformar imediatamente em qualquer fera cujo nome contenha “-saurus”, à sua escolha. A transformação segue Forma Selvagem, ignorando as limitações sobre a criatura escolhida. O dano ou efeito desencadeador passa a atingir sua nova forma. Retornar exige 1 minuto de concentração ou que a forma seja reduzida a 0 pontos de vida. Uma vez por Descanso Longo. O Mestre pode permitir outras feras de temática dinossáurica mesmo sem “-saurus” no nome.",
+      "page": 454,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

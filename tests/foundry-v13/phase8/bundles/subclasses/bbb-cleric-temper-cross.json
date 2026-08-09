@@ -1,0 +1,206 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-cleric-temper-cross",
+    "identifier": "bbb-cleric-temper-cross",
+    "name": "Cruz da Temperança",
+    "originalName": "Temper Cross",
+    "aliases": [
+      "Temper Cross"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "93",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 93
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Um mestre da lâmina que canaliza o poder de domínios ligados à temperança e à técnica.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-da-cruz-da-temperanca",
+        "title": "Magias do Domínio da Cruz da Temperança",
+        "page": 93,
+        "description": "Magias de domínio sempre preparadas. No PDF, “Hastened Quiver” aparece grafado como “Heastened quiver” nesta tabela; a entrada abaixo usa o nome já catalogado no Grimório.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Resposta Instintiva; Palavra de Proteção"
+          },
+          {
+            "level": "3º",
+            "spells": "Golpe da Harpia; Imobilizar Pessoa"
+          },
+          {
+            "level": "5º",
+            "spells": "Alvo Mortal; Caminho para a Vitória"
+          },
+          {
+            "level": "7º",
+            "spells": "Movimentação Livre; Chuva de Flechas de Tamamo"
+          },
+          {
+            "level": "9º",
+            "spells": "Aljava Acelerada; Palavra de Poder: Resposta"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 93
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-cleric-temper-cross.feature.lamina-dos-ritos-de-selamento.l1.1",
+      "name": "LÂMINA DOS RITOS DE SELAMENTO",
+      "level": 1,
+      "description": "Como ação bônus, escolha uma arma corpo a corpo que esteja empunhando e uma magia que normalmente tenha como alvo uma criatura, espaço ou ponto e possua tempo de conjuração de 1 ação ou 1 ação bônus. Gaste o espaço, recursos e componentes da magia; por 1 minuto ela fica imbuída na arma. Cada vez que a arma acertar um alvo durante esse período, você pode liberar a magia como se a tivesse conjurado tendo como alvo a criatura, o espaço dela ou um ponto em um canto do espaço, conforme os requisitos da magia. Pode excluir a si mesmo dos efeitos. A CD da magia aumenta pelo bônus de aprimoramento da arma; se exigiria ataque mágico, esse ataque acerta automaticamente. Após ser liberada, a magia é gasta independentemente do resultado. Se não for usada em 1 minuto, é perdida.",
+      "page": 93,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-temper-cross.feature.treinamento-diligente.l1.1",
+      "name": "TREINAMENTO DILIGENTE",
+      "level": 1,
+      "description": "Você ganha proficiência com armaduras pesadas e todas as armas marciais. Magias e itens cujos efeitos exijam um Santo da Espada, ou cuja sintonização seja restrita a ele, tratam seus níveis de clérigo como níveis de Santo da Espada.",
+      "page": 93,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-temper-cross.feature.canalizar-divindade-tsujigiri.l2.1",
+      "name": "CANALIZAR DIVINDADE: TSUJIGIRI",
+      "level": 2,
+      "description": "Como ação, faça três ataques com uma arma corpo a corpo com a qual seja proficiente. Esses ataques contam como mágicos. Se pelo menos um deles acertar, os três são tratados como acertos mesmo se suas jogadas falhariam. Se as três jogadas de ataque acertariam por seus próprios resultados, o último acerto torna-se automaticamente um acerto crítico.",
+      "page": 93,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-temper-cross.feature.ataque-de-foco-extra.l6.1",
+      "name": "ATAQUE DE FOCO EXTRA",
+      "level": 6,
+      "description": "Quando realiza a ação Atacar, pode fazer dois ataques em vez de um, ou fazer um ataque e conjurar uma magia com tempo de conjuração de 1 ação.",
+      "page": 93,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-temper-cross.feature.reposicao-focal.l6.1",
+      "name": "REPOSIÇÃO FOCAL",
+      "level": 6,
+      "description": "Uma vez por Descanso Longo, ao completar um Descanso Curto, pode recuperar PV iguais a duas vezes seu nível de clérigo e recuperar todos os seus espaços de magia de 1º nível.",
+      "page": 93,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-temper-cross.feature.ritos-estendidos.l8.1",
+      "name": "RITOS ESTENDIDOS",
+      "level": 8,
+      "description": "Uma magia imbuída numa arma por Lâmina dos Ritos de Selamento pode permanecer nela por até 1 hora ou até você completar um Descanso. Além disso, quando a magia exigir uma CD de salvaguarda, você pode substituir sua CD normal pelo resultado do d20 do ataque, se ele for maior, adicionando o bônus de aprimoramento da arma depois.",
+      "page": 93,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-temper-cross.feature.ataque-de-foco-supremo.l17.1",
+      "name": "ATAQUE DE FOCO SUPREMO",
+      "level": 17,
+      "description": "Quando realiza a ação Atacar, pode fazer três ataques em vez de um, ou fazer dois ataques e conjurar uma magia com tempo de conjuração de 1 ação.",
+      "page": 93,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

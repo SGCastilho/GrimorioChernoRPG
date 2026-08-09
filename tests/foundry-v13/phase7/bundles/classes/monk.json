@@ -1,0 +1,1204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+    "pages": "102–107",
+    "chapter": "Capítulo 3: Classes",
+    "page": 103
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Seus punhos criam um borrão enquanto defletem uma revoada de flechas que vem vindo, uma meio-elfa corre sobre uma barricada e se arremessa nas maciças fileiras de hobgoblins do outro lado. Ela gira entre eles, distribuindo seus golpes e enviando-os para o chão, até que, finalmente, apenas ela está de pé.\n\nRespirando profundamente, um humano coberto por tatuagens toma uma postura de batalha. Quando os primeiro orcs em investida alcançam-no, ele exala e uma rajada de fogo é expelida de sua boca, engolfando seus oponentes.\n\nMovendo-se com o silêncio da noite, uma halfling com vestes negras pisa em uma sombra embaixo de um arco e emerge de outra mancha sombria numa sacada a poucos passos de distância. Ela desliza sua lâmina para fora da bainha de panos enrolados e se esgueira através da janela aberto em direção ao príncipe tirano, tão vulnerável no abraço do sono.\n\nQualquer que seja suas disciplinas, os monges partilha de sua habilidade de aproveitar magicamente da energia que flui em seus corpos. Se canalizada como um exibição impressionante de maestria do combate, ou como um foco mais sutil de habilidade defensiva e velocidade, essa energia infunde tudo que um monge faz.\n\nMonges fazem estudos cuidadosos da energia mágica que a maioria das tradições monásticas chama de chi. Essa energia é um elemento da mágica que inunda o multiverso – especificamente, os elementos que fluem através dos corpos vivos. Os monges atrelam esse poder dentro de si mesmos para criar efeitos mágicos e exceder a capacidade física de seus corpos, e alguns dos seus ataques especiais podem bloquear o fluxo de chi nos seus oponentes. Usando essa energia, os monges canalizam velocidade e força incríveis em seus ataques desarmados. À medida que eles ganham experiência, seu treinamento marcial e sua maestria do chi lhe confere mais poder sobre seus corpos e sobre os corpos dos seus adversários.\n\nPequenos mosteiros murados se espalham pelas paisagens dos mundos de D&D, minúsculos refúgios do fluxo da vida comum, onde o tempo parece parar. Os monges que vivem ai, buscam pelo auto aperfeiçoamento através de contemplação e treino rigoroso. Muitos entram no monastério ainda crianças, enviados para viver lá quando seus pais morrem, quando não se pode encontrar comida para mantê-los ou em troca de alguma gentileza realizada pelos monges a suas famílias.\n\nAlguns monges vivem totalmente a parte da população ao seu redor, isolados de qualquer coisa que possa impedir o seu progresso espiritual. Outros fazem um\n\njuramento de isolação, surgindo apenas para servir como espiões ou assassinos ao comando de seus líderes, um nobre patrono ou outro poder mortal ou divino.\n\nA maioria dos monges não se afasta de sua vizinhança, fazendo visitas frequentes a cidades ou vilas vizinhas e trocando seus serviços por comida e outros bens. Como versáteis guerreiros, os monges, muitas vezes, acabam por proteger seus vizinho de monstros e tiranos.\n\nPara um monge, se tornar um aventureiro significa abandonar um estilo de vida estruturado e comunal para se tornar um viajante. Essa transição pode ser dura e os monges não a tomam de forma agradável. Aqueles que abandonam seus mosteiros levam seus trabalhos a sério, conduzindo suas aventuras como testes pessoais de seu crescimento físico e espiritual. Como uma regra, os monges pouco se importam com riqueza material e são guiados por um desejo de cumprir uma missão maior, ao invés de meramente matar monstros e saquear seu tesouro.",
+    "hitDice": {
+      "raw": "d8",
+      "mode": "standard",
+      "number": 1,
+      "faces": 8
+    },
+    "primaryAbility": {
+      "raw": "Destreza e Sabedoria",
+      "abilityKeys": [
+        "dex",
+        "wis"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Força, Destreza",
+        "abilityKeys": [
+          "str",
+          "dex"
+        ]
+      },
+      "armor": "Nenhuma",
+      "weapons": "Armas simples e espadas curtas",
+      "tools": "Um tipo de ferramenta de artesão ou um instrumento musical",
+      "skills": "Escolha duas: Acrobacia, Atletismo, Furtividade, História, Intuição ou Religião"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 103,
+      "text": "Como um monge, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d8 por nível de monge Pontos de Vida no 1° Nível: 8 + seu modificador de\n\nConstituição Pontos de Vida nos Níveis Seguintes: 1d8 (ou 5) + seu\n\nmodificador de Constituição por nível de monge após o 1° PROFICIÊNCIAS Armaduras: Nenhuma Armas: Armas simples, espadas curtas Ferramentas: Escolha um tipo de ferramenta de artesão\n\nou um instrumento musical\n\nTestes de Resistência: Força, Destreza Perícias: Escolha duas dentre Acrobacia, Atletismo,\n\nFurtividade, História, Intuição e Religião EQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) uma espada curta ou (b) qualquer arma simples\n• (a) um pacote de explorador ou (b) um pacote de\n\naventureiro\n• 10 dardos"
+    },
+    "overview": [
+      {
+        "title": "MONGE",
+        "page": 102,
+        "text": "Seus punhos criam um borrão enquanto defletem uma revoada de flechas que vem vindo, uma meio-elfa corre sobre uma barricada e se arremessa nas maciças fileiras de hobgoblins do outro lado. Ela gira entre eles, distribuindo seus golpes e enviando-os para o chão, até que, finalmente, apenas ela está de pé.\n\nRespirando profundamente, um humano coberto por tatuagens toma uma postura de batalha. Quando os primeiro orcs em investida alcançam-no, ele exala e uma rajada de fogo é expelida de sua boca, engolfando seus oponentes.\n\nMovendo-se com o silêncio da noite, uma halfling com vestes negras pisa em uma sombra embaixo de um arco e emerge de outra mancha sombria numa sacada a poucos passos de distância. Ela desliza sua lâmina para fora da bainha de panos enrolados e se esgueira através da janela aberto em direção ao príncipe tirano, tão vulnerável no abraço do sono.\n\nQualquer que seja suas disciplinas, os monges partilha de sua habilidade de aproveitar magicamente da energia que flui em seus corpos. Se canalizada como um exibição impressionante de maestria do combate, ou como um foco mais sutil de habilidade defensiva e velocidade, essa energia infunde tudo que um monge faz."
+      },
+      {
+        "title": "A MAGIA DO CHI",
+        "page": 102,
+        "text": "Monges fazem estudos cuidadosos da energia mágica que a maioria das tradições monásticas chama de chi. Essa energia é um elemento da mágica que inunda o multiverso – especificamente, os elementos que fluem através dos corpos vivos. Os monges atrelam esse poder dentro de si mesmos para criar efeitos mágicos e exceder a capacidade física de seus corpos, e alguns dos seus ataques especiais podem bloquear o fluxo de chi nos seus oponentes. Usando essa energia, os monges canalizam velocidade e força incríveis em seus ataques desarmados. À medida que eles ganham experiência, seu treinamento marcial e sua maestria do chi lhe confere mais poder sobre seus corpos e sobre os corpos dos seus adversários."
+      },
+      {
+        "title": "TREINAMENTO E ASCETICISMO",
+        "page": 102,
+        "text": "Pequenos mosteiros murados se espalham pelas paisagens dos mundos de D&D, minúsculos refúgios do fluxo da vida comum, onde o tempo parece parar. Os monges que vivem ai, buscam pelo auto aperfeiçoamento através de contemplação e treino rigoroso. Muitos entram no monastério ainda crianças, enviados para viver lá quando seus pais morrem, quando não se pode encontrar comida para mantê-los ou em troca de alguma gentileza realizada pelos monges a suas famílias.\n\nAlguns monges vivem totalmente a parte da população ao seu redor, isolados de qualquer coisa que possa impedir o seu progresso espiritual. Outros fazem um\n\njuramento de isolação, surgindo apenas para servir como espiões ou assassinos ao comando de seus líderes, um nobre patrono ou outro poder mortal ou divino.\n\nA maioria dos monges não se afasta de sua vizinhança, fazendo visitas frequentes a cidades ou vilas vizinhas e trocando seus serviços por comida e outros bens. Como versáteis guerreiros, os monges, muitas vezes, acabam por proteger seus vizinho de monstros e tiranos.\n\nPara um monge, se tornar um aventureiro significa abandonar um estilo de vida estruturado e comunal para se tornar um viajante. Essa transição pode ser dura e os monges não a tomam de forma agradável. Aqueles que abandonam seus mosteiros levam seus trabalhos a sério, conduzindo suas aventuras como testes pessoais de seu crescimento físico e espiritual. Como uma regra, os monges pouco se importam com riqueza material e são guiados por um desejo de cumprir uma missão maior, ao invés de meramente matar monstros e saquear seu tesouro."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM MONGE",
+        "page": 103,
+        "text": "À medida que você criar seu personagem monge, pense sobre suas conexões com o monastério onde você aprendeu suas perícias e passou os seus anos de formação. Você era um órfão ou uma criança deixada na entrada do monastério? Seus pais prometeram você para o monastério como forma de gratidão por serviços prestados pelos monges? Você ingressou nessa vida reclusa para se esconder de um crime que cometeu? Ou você escolheu a vida monástica por vontade própria?\n\nConsidere o porquê de você partir. O líder do seu monastério escolheu você para uma missão particularmente importante além do mosteiro? Talvez você tenha sido expulso por violar algum das regras da comunidade. Você ficou devastado ao partir, ou ficou feliz ao sair? Havia algo que você esperava concluir fora do monastério? Você estava ansioso para voltar pra sua casa?\n\nComo resultado da vida estruturada de uma comunidade monástica e a disciplina necessária para dominar o chi, os monges, quase sempre, tem um alinhamento leal."
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 103,
+        "text": "Você pode construir um monge rapidamente seguindo essas sugestões. Primeiro, coloque seu valor de habilidade mais alto em Destreza, seguido de Sabedoria. Segundo, escolha o antecedente eremita."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.tradicoes-monasticas",
+        "title": "TRADIÇÕES MONÁSTICAS",
+        "page": 105,
+        "text": "Três tradições de busca monástica são comuns nos monastérios espalhados pelo multiverso. A maioria dos monastérios pratica exclusivamente uma tradição, mas alguns poucos honram as três tradições e instruem cada monge, de acordo com suas aptidões e interesses. Todas as três tradições compartilha as mesmas técnicas básicas, divergindo à medida que o estudante se torna mais adepto. Portanto, um monge precisa escolher uma tradição apenas quando alcançar o 3° nível.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.2.ordens-monasticas",
+        "title": "ORDENS MONÁSTICAS",
+        "page": 107,
+        "text": "Os mundos de D&D contém uma multidão de monastérios e tradições monásticas. Em terras com um toque de cultura asiática, como em Shou Lung no oriente dos Reinos Esquecidos, esses monastérios são associados a tradições filosóficas e a pratica de artes marciais. A Escola da Mão de Ferro, a Escola das Cinco Estrelas, a Escola do Punho Setentrional e a Escola da Estrela do Sul de Shou Lung, ensinam diferentes abordagens das disciplinas física, mental e espiritual do monge. Alguns desses monastérios se espalharam para terras ocidentais de Faerûn, especialmente para terras com grandes comunidades de imigrantes de Shou, como em Thesk e Portão Ocidental.\n\nOutras tradições monásticas são associadas com divindades que ensinam o valor do aperfeiçoamento físico e disciplina mental. Nos Reinos Esquecidos, a ordem da Lua Negra é formada por monges dedicados a Shar (deusa das sombras), que mantem comunidades secretas em colinas remotas, atrás dos aliados, e em esconderijos subterrâneos. Monastérios de Ilmater (deus dos flagelados) recebem nomes de flores e suas ordens carregam nomes de grandes heróis da crença; os Discípulos de Santo Sollars, o Duas Vezes Martirizado, residem no Monastério da Rosa Amarela perto de Damara. Os monastérios de Eberron combinam os estudos de artes marciais com uma vida de estudos. A maioria é devoto das divindades do Soberano Anfitrião. No mundo de Dragonlance, a maioria dos monges são devotados a Majere, deus da meditação e pensamento. Em Greyhawk, muitos monastérios são dedicados a Xan Yae, a deusa do crepúsculo e da superioridade da mente sobre matéria, ou a Zuoken, deus da maestria mental e física.\n\nOs monges malignos da Irmandade Escarlate no mundo de Greyhawk derivam seu fanatismo não de devoção a um deus, mas de dedicação a princípios de sua nação e raça – a crença de que a vertente Suel da humanidade é destinada a dominar o mundo.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.3.ataque-extra-aprimorado-monge",
+        "title": "ATAQUE EXTRA APRIMORADO: MONGE",
+        "page": 149,
+        "text": "Esta regra opcional substitui Ataque Extra. A partir do 7º nível, ao fim do seu turno, ganhe 3 PV temporários por ataque de arma que você acertou naquele turno contra criatura que não seja Constructo.",
+        "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "monk",
+      "color": "#5fa5a7"
+    }
+  },
+  "features": [
+    {
+      "key": "class.monk.feature.defesa-sem-armadura.l1.1",
+      "name": "DEFESA SEM ARMADURA",
+      "level": 1,
+      "description": "A partir do 1° nível, quando você não estiver vestindo nenhuma armadura nem empunhando um escudo, sua Classe de Armadura será 10 + seu modificador de Destreza + seu modificador de Sabedoria.",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.artes-marciais.l1.1",
+      "name": "ARTES MARCIAIS",
+      "level": 1,
+      "description": "No 1° nível, sua prática nas artes marciais concede a você maestria nos estilos de combate que utilizam golpes desarmados e armas de monge, que são as espadas curtas e quaisquer armas simples corpo-a-corpo que não tenham a propriedade duas mãos ou pesada.\n\nVocê ganha os seguintes benefícios enquanto estiver desarmado ou empunhando uma arma de monge e não estiver vestindo nenhuma armadura ou empunhando um escudo:\n\n• Você pode usar Destreza ao invés de Força para as\n\njogadas de ataque e dano dos seus golpes desarmados e de suas armas de monge.\n• Você pode rolar um d4 no lugar do dano normal dos\n\nseus golpes desarmados e armas de monge. Esse dado muda à medida que você adquire níveis de monge, como mostrado na coluna Artes Marciais na tabela O Monge.\n• Quando você usa a ação de Ataque com um golpe\n\ndesarmado ou uma arma de monge no seu turno, você pode realizar um golpe desarmado com uma ação bônus. Por exemplo, se você realizar a ação de Ataque com um bordão, você também poderá realizar um golpe desarmado com uma ação bônus, assumindo que você ainda não realizou uma ação bônus nesse turno.\n\nDeterminados monastérios usam formas especializadas de armas de monge. Por exemplo, você pode usar uma clava feita por dois pedaços de madeira conectados por uma pequena corrente (chamado de nunchaku) ou uma foice com uma estranha lâmina fina (chamada de kama). Qualquer que seja o nome que você use para uma arma de monge, você pode usar as estatísticas de jogo mostradas para as armas no capítulo 5.",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.chi.l2.1",
+      "name": "CHI",
+      "level": 2,
+      "description": "A partir do 2° nível, seu treinamento permitiu que você controlasse a energia mística do chi. Seu acesso a essa energia é representado por um número de pontos de chi. Seu nível de monge determina o número de pontos que você tem, como mostrado na coluna Pontos de Chi da tabela O Monge.\n\nVocê pode gastar esses pontos para abastecer várias características de chi. Você começa conhecendo três dessas características: Rajada de Golpes, Defesa Paciente e Passo do Vento. Você aprende mais características de chi à medida que adquire níveis nessa classe.\n\nQuando você gasta um ponto de chi, ele se torna indisponível até você terminar um descanso curto ou longo, no fim deste, todos os pontos de chi gastos volta para você. Você deve gastar, pelo menos, 30 minutos do descanso meditando para recuperar seus pontos de chi.\n\nAlgumas das características de chi requerem que seu alvo realize um teste de resistência para resistir ao efeito da característica. A CD do teste de resistência é calculada a segui:\n\nCD de resistência de Chi = 8 + bônus de proficiência +\n\nseu modificador de Sabedoria",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.rajada-de-golpes.l0.1",
+      "name": "RAJADA DE GOLPES",
+      "level": null,
+      "description": "Imediatamente após você realizar a ação de Ataque no seu turno, você pode gastar 1 ponto de chi para realizar dois golpes desarmados com uma ação bônus.",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.defesa-paciente.l0.1",
+      "name": "DEFESA PACIENTE",
+      "level": null,
+      "description": "Você pode gastar 1 ponto de chi para realizar a ação de Esquivar, com uma ação bônus, no seu turno.",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.passo-do-vento.l0.1",
+      "name": "PASSO DO VENTO",
+      "level": null,
+      "description": "Você pode gastar 1 ponto de chi para realizar a Ação de Desengajar ou Disparada, com uma ação bônus, no seu turno, e sua distância de salto é dobrada nesse turno.",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.movimento-sem-armadura.l2.1",
+      "name": "MOVIMENTO SEM ARMADURA",
+      "level": 2,
+      "description": "A partir do 2° nível, seu deslocamento aumenta em 3 metros enquanto você não estiver usando armadura nem empunhando um escudo. Esse bônus aumenta quando você alcança determinados níveis, como mostrado na tabela O Monge.\n\nNo 9° nível, você ganha a habilidade de se mover através de superfícies verticais e sobre líquidos, no seu turno, sem cair durante o movimento.",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.tradicao-monastica.l3.1",
+      "name": "TRADIÇÃO MONÁSTICA",
+      "level": 3,
+      "description": "Quando você alcança o 3° nível, você ingressa numa tradição monástica: o Caminho da Mão Aberta, o Caminho Sombrio e o Caminho dos Quatro Elementos, todas detalhadas no final da descrição dessa classe. Sua tradição concede a você características no 3° nível e novamente no 6°, 11° e 17° nível.",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.defletir-projeteis.l3.1",
+      "name": "DEFLETIR PROJÉTEIS",
+      "level": 3,
+      "description": "A partir do 3° nível, você pode usar sua reação para defletir ou apanhar o projétil quando você é atingido por um ataque de arma à distância. Quando o fizer, o dano que você sofrer do ataque é reduzido em 1d10 + seu modificador de Destreza + seu nível de monge.\n\nSe o dano for reduzido a 0, você pode apanhar o projétil se ele for pequeno o suficiente para ser segurando em uma mão e você tenha, pelo menos, uma mão livre. Se você apanhar um projétil dessa forma, você pode gastar 1 ponto de chi para realizar uma ataque à distância com a arma ou munição que você acabou de pegar, como parte da mesma reação. Você realiza esse ataque com proficiência, independentemente das armas em que você é proficiente, e o projétil conta como uma arma de monge para o ataque. A distância do ataque do monge é de 6/18 metros.",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.queda-lenta.l4.1",
+      "name": "QUEDA LENTA",
+      "level": 4,
+      "description": "Começando no 4° nível, você pode usar sua reação, quando você cai, para reduzir o dano de queda sofrido por um valor igual a cinco vezes seu nível de monge.",
+      "page": 104,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "A partir do 5° nível, você pode atacar duas vezes, ao invés de uma, sempre que você realizar a ação de Ataque no seu turno.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.ataque-atordoante.l5.1",
+      "name": "ATAQUE ATORDOANTE",
+      "level": 5,
+      "description": "A partir do 5° nível, você pode interferir no fluxo de chi do corpo de um oponente. Quando você atingir outra criatura com um ataque corpo-a-corpo com arma, você pode gastar 1 ponto de chi para tentar um ataque atordoante. O alvo deve ser bem sucedido num teste de resistência de Constituição ou ficará atordoado até o final do seu próximo turno.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.golpes-de-chi.l6.1",
+      "name": "GOLPES DE CHI",
+      "level": 6,
+      "description": "A partir do 6° nível, seus golpes desarmados contam como armas mágicas com o propósito de ultrapassar a resistência ou imunidade a ataques e danos não-mágicos.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.evasao.l7.1",
+      "name": "EVASÃO",
+      "level": 7,
+      "description": "A partir do 7º nível, você pode esquivar-se agilmente de certos efeitos em área, como o sopro elétrico de um dragão azul ou uma magia bola de fogo. Quando você for alvo de um efeito que exige um teste de resistência de Destreza para sofrer metade do dano, você não sofre dano algum se passar, e somente metade do dano se falhar.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.mente-tranquila.l7.1",
+      "name": "MENTE TRANQUILA",
+      "level": 7,
+      "description": "A partir do 7° nível, você pode usar sua ação para terminar um efeito em si mesmo, que esteja lhe enfeitiçando ou amedrontando.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.pureza-corporal.l10.1",
+      "name": "PUREZA CORPORAL",
+      "level": 10,
+      "description": "No 10° nível, sua maestria do chi flui através de você, tornando-o imune a doenças e venenos.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.idiomas-do-sol-e-da-lua.l13.1",
+      "name": "IDIOMAS DO SOL E DA LUA",
+      "level": 13,
+      "description": "A partir do 13° nível, você aprende a tocar o chi de outras mentes fazendo com que você compreenda todos os idiomas falados. Além do mais, qualquer criatura que possa entender um idioma poderá entender o que você fala.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.alma-de-diamante.l14.1",
+      "name": "ALMA DE DIAMANTE",
+      "level": 14,
+      "description": "A partir do 14° nível, sua maestria do chi concede a você proficiência em todos os testes de resistência.\n\nAlém disso, toda vez que você realizar um teste de resistência e falha, você pode gastar 1 ponto de chi para jogar novamente e ficar com o segundo resultado.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.corpo-atemporal.l15.1",
+      "name": "CORPO ATEMPORAL",
+      "level": 15,
+      "description": "No 15° nível, seu chi sustenta você tanto que você não sofre os efeitos da velhice e não pode envelhecer magicamente. Você ainda morrerá de velhice, no entanto. Além disso, você não precisa mais de comida ou água.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.corpo-vazio.l18.1",
+      "name": "CORPO VAZIO",
+      "level": 18,
+      "description": "A partir do 18° nível, você pode usar sua ação para gastar 4 pontos de chi e ficar invisível por 1 minuto. Durante esse tempo, você também adquire resistência a todos os danos, exceto dano de energia.\n\nAlém disso, você pode gastar 8 pontos de chi para conjurar a magia projeção astral, sem precisar de componentes materiais. Quando o fizer, você não pode levar qualquer outra criatura com você.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.monk.feature.auto-aperfeicoamento.l20.1",
+      "name": "AUTO APERFEIÇOAMENTO",
+      "level": 20,
+      "description": "No 20° nível, quando você rolar iniciativa e não tiver nenhum ponto de chi restante, você recupera 4 pontos de chi.",
+      "page": 105,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Monge",
+    "sourceTitle": "",
+    "sourcePage": 103,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "martialArts",
+        "label": "Artes Marciais"
+      },
+      {
+        "key": "kiPoints",
+        "label": "Pontos de Chi"
+      },
+      {
+        "key": "unarmoredMove",
+        "label": "Deslocamento sem Armadura"
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Defesa sem Armadura",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.defesa-sem-armadura.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Artes Marciais",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.artes-marciais.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d4",
+        "kiPoints": "—",
+        "unarmoredMove": "—"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Chi",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.chi.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Movimento sem Armadura",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.movimento-sem-armadura.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d4",
+        "kiPoints": 2,
+        "unarmoredMove": "+3 m"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Tradição Monástica",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.tradicao-monastica.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Defletir Projéteis",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.defletir-projeteis.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d4",
+        "kiPoints": 3,
+        "unarmoredMove": "+3 m"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Queda Lenta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.queda-lenta.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d4",
+        "kiPoints": 4,
+        "unarmoredMove": "+3 m"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Ataque Extra",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.ataque-extra.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Ataque Atordoante",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.ataque-atordoante.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d6",
+        "kiPoints": 5,
+        "unarmoredMove": "+3 m"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Golpes de Chi",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.golpes-de-chi.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Característica de Tradição Monástica",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.monk.feature.tradicao-monastica.l3.1"
+            ]
+          }
+        ],
+        "martialArts": "1d6",
+        "kiPoints": 6,
+        "unarmoredMove": "+4,5 m"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Evasão",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.evasao.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Mente Tranquila",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.mente-tranquila.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d6",
+        "kiPoints": 7,
+        "unarmoredMove": "+4,5 m"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d6",
+        "kiPoints": 8,
+        "unarmoredMove": "+4,5 m"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Aprimoramento de Movimento sem Armadura",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.monk.feature.movimento-sem-armadura.l2.1"
+            ]
+          }
+        ],
+        "martialArts": "1d6",
+        "kiPoints": 9,
+        "unarmoredMove": "+4,5 m"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Pureza Corporal",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.pureza-corporal.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d6",
+        "kiPoints": 10,
+        "unarmoredMove": "+6 m"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Tradição Monástica",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.monk.feature.tradicao-monastica.l3.1"
+            ]
+          }
+        ],
+        "martialArts": "1d8",
+        "kiPoints": 11,
+        "unarmoredMove": "+6 m"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d8",
+        "kiPoints": 12,
+        "unarmoredMove": "+6 m"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Idiomas do Sol e da Lua",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.idiomas-do-sol-e-da-lua.l13.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d8",
+        "kiPoints": 13,
+        "unarmoredMove": "+6 m"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Alma de Diamante",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.alma-de-diamante.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d8",
+        "kiPoints": 14,
+        "unarmoredMove": "+7,5 m"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Corpo Atemporal",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.corpo-atemporal.l15.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d8",
+        "kiPoints": 15,
+        "unarmoredMove": "+7,5 m"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d8",
+        "kiPoints": 16,
+        "unarmoredMove": "+7,5 m"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Característica de Tradição Monástica",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.monk.feature.tradicao-monastica.l3.1"
+            ]
+          }
+        ],
+        "martialArts": "1d10",
+        "kiPoints": 17,
+        "unarmoredMove": "+7,5 m"
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Corpo Vazio",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.corpo-vazio.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d10",
+        "kiPoints": 18,
+        "unarmoredMove": "+9 m"
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d10",
+        "kiPoints": 19,
+        "unarmoredMove": "+9 m"
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Auto Aperfeiçoamento",
+            "kind": "feature",
+            "featureRefs": [
+              "class.monk.feature.auto-aperfeicoamento.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "martialArts": "1d10",
+        "kiPoints": 20,
+        "unarmoredMove": "+9 m"
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 19
+    },
+    "options": [
+      {
+        "grimorioId": "mao-aberta",
+        "identifier": "mao-aberta",
+        "name": "Caminho da Mão Aberta",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 105
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "caminho-sombra",
+        "identifier": "caminho-sombra",
+        "name": "Caminho da Sombra",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 106
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "quatro-elementos",
+        "identifier": "quatro-elementos",
+        "name": "Caminho dos Quatro Elementos",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 106
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-monk-convergent-soul",
+        "identifier": "lyre-monk-convergent-soul",
+        "name": "Alma Convergente",
+        "originalName": "Convergent Soul",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "464–465",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 464
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-monk-way-of-the-freezing-soul",
+        "identifier": "lyre-monk-way-of-the-freezing-soul",
+        "name": "Caminho da Alma Congelante",
+        "originalName": "Way of the Freezing Soul",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "467",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 467
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-monk-way-of-the-broken-chain",
+        "identifier": "lyre-monk-way-of-the-broken-chain",
+        "name": "Caminho da Corrente Quebrada",
+        "originalName": "Way of the Broken Chain",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "465",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 465
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-monk-way-of-the-deep",
+        "identifier": "lyre-monk-way-of-the-deep",
+        "name": "Caminho das Profundezas",
+        "originalName": "Way of the Deep",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "466",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 466
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-monk-beloved-tribute",
+        "identifier": "lyre-monk-beloved-tribute",
+        "name": "Tributo Amado",
+        "originalName": "Beloved Tribute",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "463–464",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 463
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-monk-outer-path",
+        "identifier": "zagalhta-monk-outer-path",
+        "name": "Caminho da Via Exterior",
+        "originalName": "Way of the Outer Path",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "160",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 160
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-monk-way-of-fair-intent",
+        "identifier": "bbb-monk-way-of-fair-intent",
+        "name": "Caminho da Intenção Justa",
+        "originalName": "Way of Fair Intent",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "109–110",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 109
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-monk-way-of-the-morphic-bone",
+        "identifier": "bbb-monk-way-of-the-morphic-bone",
+        "name": "Caminho do Osso Mórfico",
+        "originalName": "Way of the Morphic Bone",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "110–111",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 110
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-monk-way-of-the-soldier",
+        "identifier": "bbb-monk-way-of-the-soldier",
+        "name": "Caminho do Soldado",
+        "originalName": "Way of the Soldier",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "111",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 111
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "ryoko-monk-eight-gates",
+        "identifier": "ryoko-monk-eight-gates",
+        "name": "Caminho dos Oito Portões",
+        "originalName": "Way of the Eight Gates",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "180",
+          "chapter": "Capítulo 9: Classes",
+          "page": 180
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-estilo-do-mestre-bebado",
+        "identifier": "xanathar-estilo-do-mestre-bebado",
+        "name": "Estilo do Mestre Bêbado",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "50–51",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 50
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-estilo-do-kensei",
+        "identifier": "xanathar-estilo-do-kensei",
+        "name": "Estilo do Kensei",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "51–52",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 51
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-estilo-da-alma-solar",
+        "identifier": "xanathar-estilo-da-alma-solar",
+        "name": "Estilo da Alma Solar",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "52",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 52
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-caminho-da-misericordia",
+        "identifier": "tasha-caminho-da-misericordia",
+        "name": "Caminho da Misericórdia",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "72–74",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 72
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-caminho-da-forma-astral",
+        "identifier": "tasha-caminho-da-forma-astral",
+        "name": "Caminho da Forma Astral",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "74–76",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 74
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "scag-caminho-da-morte-extensa",
+        "identifier": "scag-caminho-da-morte-extensa",
+        "name": "Caminho da Morte Extensa",
+        "originalName": "",
+        "source": {
+          "sourceId": "scag",
+          "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+          "pages": "130–131",
+          "chapter": "Capítulo 4: Classes",
+          "page": 130
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

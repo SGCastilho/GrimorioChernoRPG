@@ -1,0 +1,1046 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+    "pages": "71–76",
+    "chapter": "Capítulo 3: Classes",
+    "page": 72
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Erguendo um cajado retorcido envolto em azevinho, uma elfa invoca a fúria da tempestade e convoca raios explosivos de eletricidade para destruir os orcs carregando tochas que ameaçam sua floresta.\n\nSe esgueirando, fora da vista, no alto da copa das árvores na forma de um leopardo, um humano espreita para fora da selva, em direção da estranha construção de um Templo do Elemental do Ar Maligno, mantendo os olhos fixos nas atividades dos cultistas.\n\nBrandindo uma lâmina feita de puro fogo, um meioelfo investe em direção a uma massa de soldados esqueléticos, destruindo a magia sobrenatural que deu as tolas criaturas o semblante falso de vida.\n\nQuer seja convocando as forças elementais da natureza, ou emulando as criaturas do mundo animal, os druidas são encarnações da resistência, astúcia e fúria da natureza. Eles não se consideram donos da natureza. Ao invés disso, eles se veem como extensões da vontade indomável da natureza.\n\nOs druidas reverenciam a natureza acima de tudo, adquirindo suas magias e outros poderes mágicos, ou da força da natureza per si ou de uma divindade da natureza. Muitos druidas buscam uma espiritualidade mística de união transcendental com a natureza ao invés de se devotarem a uma entidade divina, enquanto outros servem deuses da natureza selvagem, animais ou forças elementais. As antigas tradições druídicas, algumas vezes são chamadas de Crença Antiga, contrastando com a adoração de deuses em templos ou santuários.\n\nAs magias de druida são orientadas para a natureza e para os animais – o poder da presa e garra, do sol e da lua, do fogo e da tormenta. Os druidas também adquirem a habilidade de transformarem em animais e alguns druidas fazem estudos pessoais dessa pratica, chegando até mesmo ao ponto de preferirem formas animais a suas formas naturais.\n\nPara os druidas, a natureza existe em um equilíbrio precário. Os quatro elementos que fizeram o mundo – água, ar, fogo e terra – devem permanecer em equilíbrio. Se um elemento começar a ganhar mais poder que os outros, o mundo pode ser destruído, se transformando em um dos planos elementais e se despedaçando em seus componentes elementais. Por tanto, os druidas se opõem a cultos de Elementais Malignos e outros que promovem um elemento, excluindo os outros.\n\nOs druidas também estão preocupados com o delicado equilíbrio ecológico que sustenta a vida animal e vegetal e a necessidade do povo civilizado de viver em harmonia com a natureza, não em oposição a ela. Os druidas aceitam a crueldade da natureza, mas odeiam o que não é natural, incluindo aberrações (como observadores e devoradores de mentes) e mortos-vivos (como zumbis e vampiros). Os druidas, as vezes, lideram incursões contra tais criaturas, especialmente quando os monstros invadem o território do druida.\n\nDruidas, as vezes, são encontrados guardando locais sagrados ou vigiando regiões de natureza intocada. Porém, quando um perigo significante surge, ameaçando o equilíbrio da natureza ou as terras que eles protegem, os druidas tomam papeis mais ativos em combate contra as ameaças, como aventureiros.",
+    "hitDice": {
+      "raw": "d8",
+      "mode": "standard",
+      "number": 1,
+      "faces": 8
+    },
+    "primaryAbility": {
+      "raw": "Sabedoria",
+      "abilityKeys": [
+        "wis"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Inteligência, Sabedoria",
+        "abilityKeys": [
+          "int",
+          "wis"
+        ]
+      },
+      "armor": "Armaduras leves, armaduras médias e escudos; druidas evitam metal",
+      "weapons": "Adagas, azagaias, bordões, cimitarras, clavas, foices, fundas, lanças, maças e dardos",
+      "tools": "Kit de herbalismo",
+      "skills": "Escolha duas: Adestrar Animais, Arcanismo, Intuição, Medicina, Natureza, Percepção, Religião ou Sobrevivência"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 72,
+      "text": "Como um druida, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d8 por nível de druida Pontos de Vida no 1° Nível: 8 + seu modificador de\n\nConstituição Pontos de Vida nos Níveis Seguintes: 1d8 (ou 5) + seu\n\nmodificador de Constituição por nível de druida após o 1° PROFICIÊNCIAS Armaduras: Armaduras leves, armaduras médias,\n\nescudos (druidas não irão vestir armaduras ou usar escudos feitos de metal) Armas: Clavas, adagas, dardos, azagaias, maças,\n\nbordões, cimitarras, foices, fundas e lanças. Ferramentas: Kit de herbalismo\n\nTestes de Resistência: Inteligência, Sabedoria Perícias: Escolha duas dentre Arcanismo, Adestrar\n\nAnimais, Intuição, Medicina, Natureza, Percepção, Religião e Sobrevivência EQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) um escudo de madeira ou (b) qualquer arma\n\nsimples (a) uma cimitarra ou (b) qualquer arma corpo-a-corpo simples (a) um pacote de estudioso ou (b) um pacote de explorador\n• Armadura de couro, um pacote de aventureiro e um\n\nfoco druídico"
+    },
+    "overview": [
+      {
+        "title": "DRUIDA",
+        "page": 71,
+        "text": "Erguendo um cajado retorcido envolto em azevinho, uma elfa invoca a fúria da tempestade e convoca raios explosivos de eletricidade para destruir os orcs carregando tochas que ameaçam sua floresta.\n\nSe esgueirando, fora da vista, no alto da copa das árvores na forma de um leopardo, um humano espreita para fora da selva, em direção da estranha construção de um Templo do Elemental do Ar Maligno, mantendo os olhos fixos nas atividades dos cultistas.\n\nBrandindo uma lâmina feita de puro fogo, um meioelfo investe em direção a uma massa de soldados esqueléticos, destruindo a magia sobrenatural que deu as tolas criaturas o semblante falso de vida.\n\nQuer seja convocando as forças elementais da natureza, ou emulando as criaturas do mundo animal, os druidas são encarnações da resistência, astúcia e fúria da natureza. Eles não se consideram donos da natureza. Ao invés disso, eles se veem como extensões da vontade indomável da natureza."
+      },
+      {
+        "title": "FORÇA DA NATUREZA",
+        "page": 71,
+        "text": "Os druidas reverenciam a natureza acima de tudo, adquirindo suas magias e outros poderes mágicos, ou da força da natureza per si ou de uma divindade da natureza. Muitos druidas buscam uma espiritualidade mística de união transcendental com a natureza ao invés de se devotarem a uma entidade divina, enquanto outros servem deuses da natureza selvagem, animais ou forças elementais. As antigas tradições druídicas, algumas vezes são chamadas de Crença Antiga, contrastando com a adoração de deuses em templos ou santuários.\n\nAs magias de druida são orientadas para a natureza e para os animais – o poder da presa e garra, do sol e da lua, do fogo e da tormenta. Os druidas também adquirem a habilidade de transformarem em animais e alguns druidas fazem estudos pessoais dessa pratica, chegando até mesmo ao ponto de preferirem formas animais a suas formas naturais."
+      },
+      {
+        "title": "PRESERVAÇÃO DO EQUILÍBRIO",
+        "page": 72,
+        "text": "Para os druidas, a natureza existe em um equilíbrio precário. Os quatro elementos que fizeram o mundo – água, ar, fogo e terra – devem permanecer em equilíbrio. Se um elemento começar a ganhar mais poder que os outros, o mundo pode ser destruído, se transformando em um dos planos elementais e se despedaçando em seus componentes elementais. Por tanto, os druidas se opõem a cultos de Elementais Malignos e outros que promovem um elemento, excluindo os outros.\n\nOs druidas também estão preocupados com o delicado equilíbrio ecológico que sustenta a vida animal e vegetal e a necessidade do povo civilizado de viver em harmonia com a natureza, não em oposição a ela. Os druidas aceitam a crueldade da natureza, mas odeiam o que não é natural, incluindo aberrações (como observadores e devoradores de mentes) e mortos-vivos (como zumbis e vampiros). Os druidas, as vezes, lideram incursões contra tais criaturas, especialmente quando os monstros invadem o território do druida.\n\nDruidas, as vezes, são encontrados guardando locais sagrados ou vigiando regiões de natureza intocada. Porém, quando um perigo significante surge, ameaçando o equilíbrio da natureza ou as terras que eles protegem, os druidas tomam papeis mais ativos em combate contra as ameaças, como aventureiros."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM DRUIDA",
+        "page": 72,
+        "text": "Quando estiver fazendo um druida, considere o motivo de seu personagem ter um elo tão próximo com a natureza. Talvez, seu personagem vivesse em uma sociedade em que a Crença Antiga ainda prospera, ou foi criado por um druida após ser abandonado nas profundezas de uma floresta. Talvez, seu personagem teve um encontro dramático com um espirito da natureza, ficando face-aface com uma águia gigante ou um lobo atroz e sobreviveu a experiência. Ou ainda, seu personagem nasceu durante\n\numa tempestade ou erupção vulcânica épica, que foi interpretada como um sinal que, se tornar um druida era parte do destino do seu personagem.\n\nVocê sempre foi um aventureiro como parte do seu chamado druídico ou você primeiro gastou um tempo como um cuidador de um bosque ou fonte sagrados? Talvez, sua terra natal tenha sido manchada pelo mal e você ingressou na vida de aventuras com esperança de encontrar uma nova casa ou proposito."
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 72,
+        "text": "Você pode construir um druida rapidamente seguindo essas sugestões. Primeiro, coloque seu valor de habilidade mais alto em Sabedoria, seguido de Constituição. Segundo, escolha o antecedente eremita."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.circulos-druidicos",
+        "title": "CÍRCULOS DRUÍDICOS",
+        "page": 75,
+        "text": "Apesar de suas organizações serem invisíveis para a maioria dos forasteiros, os druidas fazem parte de uma sociedade que se espalham pela terra, ignorando barreiras políticas. Todos os druidas são nominalmente membros de uma sociedade druídica, apesar de alguns indivíduos serem tão isolados que eles nunca chegaram a ver membros de alta patente da sociedade ou participaram de encontros druídicos. Os druidas consideram-se irmãos e irmãs. Como criaturas na natureza, no entanto, os druidas, as vezes, competem, ou mesmo caçam uns aos outros.\n\nEm uma escala local, os druidas são organizados em círculos que partilham de certas perspectivas de natureza, equilíbrio e modos de um druida.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.2.plantas-e-florestas-sagradas",
+        "title": "PLANTAS E FLORESTAS SAGRADAS",
+        "page": 73,
+        "text": "O druida tem certas plantas como sagradas, em particular o amieiro, freixo, bétula, elder, avelã, azevinho, zimbro, visco, carvalho, sorva, salgueiro e teixo. Druidas, muitas vezes, usam essas plantas como parte de seu foco de conjuração, incorporando lascas de carvalho ou teixo ou ramos de visco branco.\n\nDa mesma forma, um druida usa tais madeiras para fazer outros objetos, com armas e escudos. O teixo está associado a morte e renascimento, então, empunhaduras de cimitarras ou foices seriam feitas com esse material. O freixo está associado com a vida e o carvalho com a força. Essas madeiras fazem excelentes cabos ou armas inteiras, como clavas ou bordões, assim como escudos. O amieiro é associado ao ar e seria usado para armas de arremesso, como dardos e azagaias.\n\nOs druidas de regiões que não possuem as plantas descritas aqui, tem que escolher outras plantas para usos similares. Por exemplo, um druida de uma região desértica valorizaria a árvore da iúca e as plantas de cacto.\n\nVocê prepara a lista de magias disponíveis selecionando-as da lista de magias de Druida. Você seleciona um número de magias igual ao seu modificador de Sabedoria + seu nível de druida (mínimo de uma magia). Essas magias devem ser de níveis que você possua espaços de magia.\n\nPor exemplo, se você é um druida de 3º nível, você possui quatro espaços de magia de 1º nível e dois de 2º nível. Com Sabedoria 16, sua lista de magias preparadas pode incluir 6 magias, combinando as de 1º e 2º nível em qualquer ordem. Se você preparar a magia de 1º nível curar ferimentos, você pode conjurá-la com um espaço de magia de 1º ou de 2º nível. Ao conjurar a magia, você não a retira de sua lista de magias preparadas, podendo conjurá-la de novo se tiver espaços de magia disponíveis.\n\nVocê pode modificar a sua lista de magias preparadas quando termina um descanso longo. Preparar uma nova lista de magias de druida requer tempo gasto em preces e meditação: no mínimo 1 minuto por nível de magia para cada magia preparada.\n\nHABILIDADE DE CONJURAÇÃO Sabedoria é a sua habilidade para você conjurar suas magias de druida, já que sua magia vem da sua devoção e sintonia com a natureza. Você usa sua Sabedoria sempre que alguma magia se referir a sua habilidade de conjurar magias. Além disso, você usa o seu modificador de Sabedoria para definir a CD dos testes de resistência para as magias de druida que você conjura e quando você realiza uma jogada de ataque com uma magia.\n\nCD para suas magias = 8 + bônus de proficiência +\n\nseu modificador de Sabedoria\n\nModificador de ataque de magia = seu bônus de proficiência +\n\nseu modificador de Sabedoria\n\nCONJURAÇÃO DE RITUAL Você pode conjurar qualquer magia de druida que você conheça como um ritual se ela possuir o descritor ritual.\n\nFOCO DE CONJURAÇÃO Você pode usar um foco druídico (encontrado no capítulo 5) como foco de conjuração das suas magias de druida.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.3.formas-de-besta",
+        "title": "FORMAS DE BESTA",
+        "page": 73,
+        "text": "Nível ND Máx. Limitações Exemplo 2° 1/4 Sem deslocamento de voo ou natação\n\nLobo\n\n4° 1/2 Sem deslocamento de voo Crocodilo 8° 1\n– Águia gigante Você pode continuar na forma de besta por um número de horas igual à metade do seu nível de druida (arredondado para baixo). Então, você volta a sua forma original, a não ser que você gaste outro uso dessa característica. Você pode reverter a sua forma normal\n\nprematuramente usando uma ação bônus no seu turno. Você reverte automaticamente se cair inconsciente, cair a 0 pontos de vida ou morrer.\n\nEnquanto estiver transformado, as seguintes regras se aplicam:\n\n• Suas estatísticas de jogo são substituídas pelas\n\nestatísticas da besta, mas você mantem sua tendência, personalidade e valores de Inteligência, Sabedoria e Carisma. Você também mantem suas proficiências em todas as suas perícias e testes de resistência, além de receber as proficiências da criatura. Se a criatura possuir a mesma proficiência que você e o bônus no bloco de estatística dela for maior que o seu, você usará o bônus da criatura no lugar do seu. Se a criatura possuir qualquer ação lendária ou de covil, você não pode usá-las.\n• Quando você se transforma, você assume os pontos de\n\nvida e Dados de Vida da criatura. Quando você reverte a sua forma normal, você retorna ao número de pontos de vida que tinha antes de se transformar. Porém, se você reverter como resultado de ter caído a 0 pontos de vida, todo o dano excedente será transferido para a sua forma normal. Por exemplo, se você sofrer 10 pontos de dano em forma animal e tiver apenas 1 ponto de vida restante, você reverte e sofre 9 de dano. Contanto que o dano excedente não reduza você a 0 pontos de vida, você não cairá inconsciente.\n• Você não pode conjurar magias e sua capacidade de\n\nfala ou de realizar qualquer ação que requeira mãos são limitadas pelas capacidades da forma da besta que você assumiu. Transformar-se não interrompe sua concentração em uma magia que você já tenha conjurado, no entanto, nem previne você de realizar ações que são parte da conjuração, como convocar relâmpagos que você já tenha conjurado.\n• Você mantem os benefícios de todas as características\n\nde classe, raça ou outras fontes, e pode usá-las caso a nova forma seja fisicamente capaz de fazê-lo. No entanto, você não pode usar qualquer dos seus sentidos especiais, como visão no escuro, a não ser que a sua nova forma também tenha esse sentido.\n• Você pode escolher se o seu equipamento cai no chão\n\nno seu espaço, é assimilado a sua nova forma ou é usado por ela. Equipamentos vestidos e carregados funcionam normalmente, mas o Mestre decide qual equipamento é viável para a nova forma vestir ou usar, baseado na forma e tamanho da criatura. O seu equipamento não muda de forma ou tamanho para se adaptar à nova forma e, qualquer equipamento que a nova forma não possa vestir deve, ou cair no chão ou ser assimilado por ela. Equipamentos assimilados não terão efeito até você deixar a forma.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.4.o-druida-e-os-deuses",
+        "title": "O DRUIDA E OS DEUSES",
+        "page": 76,
+        "text": "Alguns druidas veneram as próprias forças da natureza, mas, a maioria dos druidas são devotados de uma das muitas divindades da natureza adoradas no multiverso (a lista de deuses encontrada no apêndice B inclui muitos desses deuses). A adoração desses deuses é, muitas vezes, considerada uma tradição mais antiga que as crenças de clérigos e pessoas urbanizadas. De fato, no mundo de Greyhawk, a doutrina druídica é chamada de Crença Antiga, e ela reivindica muitos adoradores dentre os agricultores, silvicultores, pescadores e outros que vivem perto da natureza. Essa tradição inclui a adoração da Natureza como força primordial acima de personificação, mas também engloba a adoração de Beory, a Mãe Oerth, assim como a devoção a Obad-Hai, Ehlonna e Ulaa.\n\nNos mundos de Greyhawk e dos Reinos Esquecidos, os círculos druídicos não estão normalmente conectados a fé de uma única divindade da natureza. Cada círculo dos Reinos Esquecidos, por exemplo, pode incluir druidas que reverenciam Silvanus, Mielikki, Eldath, Chauntea ou, até mesmo os ferozes Deuses da Fúria: Talos, Malar, Auril e Umberlee. Esses deuses da natureza são, muitas vezes, chamados de Primeiro Círculo, o primeiro entre os druidas, e muitos druidas consideram todos (até os mais violentos) como merecedores de veneração.\n\nOs druidas de Eberron possuem crenças animistas, completamente desconectados do Soberano Anfitrião, dos Seis Sombrios ou de qualquer outra religião do mundo. Eles acreditam que cada coisa viva e cada fenômeno natural – sol, lua, vento, fogo e o próprio mundo – tem um espirito. Suas magias, portanto, são um meio de se comunicar e de comandar esses espíritos. Diferentes seitas druídicas, no entanto, possuem diferentes filosofias sobre o relacionamento mais adequado com esses espíritos entre si e com as forças da civilização. O Ashbound, por exemplo, acredita que a magia arcana é uma abominação contra a natureza, as Crianças do Inverno veneram as forças da morte e os Guardiões do Portal preservam tradições antigas destinadas a proteger o mundo da incursão de aberrações.",
+        "sourceTitle": ""
+      }
+    ],
+    "presentation": {
+      "sigilKey": "druid",
+      "color": "#6fa25d"
+    }
+  },
+  "features": [
+    {
+      "key": "class.druid.feature.druidico.l1.1",
+      "name": "DRUÍDICO",
+      "level": 1,
+      "description": "Você conhece o Druídico, o idioma secreto dos druidas. Você pode falar esse idioma e usá-lo para deixar mensagens escondidas. Você e outros que conheçam esse idioma automaticamente veem tais mensagens. Outros perceberão a presença da mensagem se passarem num teste de Sabedoria (Percepção) CD 15, mas não conseguirão decifrá-lo sem magia.",
+      "page": 73,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.druid.feature.conjuracao.l1.1",
+      "name": "CONJURAÇÃO",
+      "level": 1,
+      "description": "Baseado na essência divina da própria natureza, você pode conjurar magias para moldar sua essência a sua vontade. Veja o capítulo 10 para as regras gerais de conjuração e o capítulo 11 para a lista de magias de druida.\n\nTRUQUES Você conhece dois truques, à sua escolha, da lista de magias de druida. Você aprende truques de druida adicionais, à sua escolha, em níveis mais altos, como mostrado na coluna Truques Conhecidos da tabela O Druida.\n\nPREPARANDO E CONJURANDO MAGIAS A tabela O Druida mostra quantos espaços de magia você têm para conjurar suas magias de 1º nível e superiores. Para conjurar uma dessas magias, você precisa gastar um espaço do nível da magia ou superior. Você recupera todos os espaços gastos quando termina um descanso longo.",
+      "page": 73,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.druid.feature.forma-selvagem.l2.1",
+      "name": "FORMA SELVAGEM",
+      "level": 2,
+      "description": "A partir do 2° nível, você pode usar sua ação para assumir magicamente a forma de uma besta que você já tenha visto antes. Você pode usar essa característica duas vezes. Você recupera os usos quando termina um descanso curto ou longo.\n\nSeu nível de druida determina as bestas em que você pode se transformar, como mostrado na tabela Formas de Besta. No 2° nível, por exemplo, você pode se transformar em qualquer besta que possui nível de desafio 1/4 ou inferior que não possua deslocamento de voo ou natação.",
+      "page": 73,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.druid.feature.circulo-druidico.l2.1",
+      "name": "CÍRCULO DRUÍDICO",
+      "level": 2,
+      "description": "No 2° nível, você escolhe se identificar com um círculo de druidas: o Círculo da Terra ou o Círculo da Lua, ambos detalhados no final da descrição da classe. Sua escolha lhe concede características no 2° nível e novamente no 6°, 10° e 14° nível.",
+      "page": 74,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.druid.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não\n\npode elevar um valor de habilidade acima de 20 com essa característica.",
+      "page": 74,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.druid.feature.corpo-atemporal.l18.1",
+      "name": "CORPO ATEMPORAL",
+      "level": 18,
+      "description": "Começando no 18° nível, a magia primordial que você controla faz com que você envelheça mais lentamente. Para cada 10 anos que passarem, seu corpo envelhece apenas 1.",
+      "page": 74,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.druid.feature.magias-da-besta.l18.1",
+      "name": "MAGIAS DA BESTA",
+      "level": 18,
+      "description": "A partir do 18° nível, você pode conjurar muitas das suas magias em qualquer forma que assumir usando a Forma Selvagem. Você pode realizar os componentes somáticos e verbais de uma magia de druida na forma de besta, mas você não é capaz de prover os componentes materiais.",
+      "page": 74,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.druid.feature.arquidruida.l20.1",
+      "name": "ARQUIDRUIDA",
+      "level": 20,
+      "description": "No 20° nível, você pode usar sua Forma Selvagem um número ilimitado de vezes.\n\nAlém disso, você pode ignorar os componentes verbais e somáticos das suas magias de druida, assim como qualquer componente material que não tenha custo e não seja consumido pela magia. Você recebe esse benefício tanto na sua forma normal, quanto na forma de besta da sua Forma Selvagem.",
+      "page": 74,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Druida",
+    "sourceTitle": "",
+    "sourcePage": 72,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "cantrips",
+        "label": "Truques Conhecidos",
+        "shortLabel": "Truques"
+      },
+      {
+        "key": "slot1",
+        "label": "1º",
+        "title": "Espaços de magia de 1º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot2",
+        "label": "2º",
+        "title": "Espaços de magia de 2º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot3",
+        "label": "3º",
+        "title": "Espaços de magia de 3º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot4",
+        "label": "4º",
+        "title": "Espaços de magia de 4º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot5",
+        "label": "5º",
+        "title": "Espaços de magia de 5º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot6",
+        "label": "6º",
+        "title": "Espaços de magia de 6º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot7",
+        "label": "7º",
+        "title": "Espaços de magia de 7º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot8",
+        "label": "8º",
+        "title": "Espaços de magia de 8º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot9",
+        "label": "9º",
+        "title": "Espaços de magia de 9º nível",
+        "group": "Espaços de Magia"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Druídico",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.druidico.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Conjuração",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.conjuracao.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 2,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 2
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Círculo Druídico",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.circulo-druidico.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Forma Selvagem",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.forma-selvagem.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 2
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [],
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 2
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Aprimoramento de Forma Selvagem",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.druid.feature.forma-selvagem.l2.1"
+            ]
+          },
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Círculo Druídico",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.druid.feature.druidico.l1.1",
+              "class.druid.feature.circulo-druidico.l2.1"
+            ]
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Aprimoramento de Forma Selvagem",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.druid.feature.forma-selvagem.l2.1"
+            ]
+          },
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Círculo Druídico",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.druid.feature.druidico.l1.1",
+              "class.druid.feature.circulo-druidico.l2.1"
+            ]
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 4
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 4
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 4
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 4
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Círculo Druídico",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.druid.feature.druidico.l1.1",
+              "class.druid.feature.circulo-druidico.l2.1"
+            ]
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 4
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": "—",
+        "cantrips": 4
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": "—",
+        "cantrips": 4
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": 1,
+        "cantrips": 4
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Corpo Atemporal",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.corpo-atemporal.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Magias da Besta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.magias-da-besta.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 3,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": 1,
+        "cantrips": 4
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 3,
+        "slot6": 2,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": 1,
+        "cantrips": 4
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Arquidruida",
+            "kind": "feature",
+            "featureRefs": [
+              "class.druid.feature.arquidruida.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 3,
+        "slot6": 2,
+        "slot7": 2,
+        "slot8": 1,
+        "slot9": 1,
+        "cantrips": 4
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 2,
+    "homogeneous": true,
+    "observedLevels": {
+      "2": 17
+    },
+    "options": [
+      {
+        "grimorioId": "circulo-terra",
+        "identifier": "circulo-terra",
+        "name": "Círculo da Terra",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 75
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "circulo-lua",
+        "identifier": "circulo-lua",
+        "name": "Círculo da Lua",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 76
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-druid-circle-of-the-primeval-glade",
+        "identifier": "lyre-druid-circle-of-the-primeval-glade",
+        "name": "Círculo da Clareira Primeva",
+        "originalName": "Circle of the Primeval Glade",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "454",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 454
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-druid-circle-of-deadwood",
+        "identifier": "lyre-druid-circle-of-deadwood",
+        "name": "Círculo da Madeira Morta",
+        "originalName": "Circle of Deadwood",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "451",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 451
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-druid-circle-of-radiation",
+        "identifier": "lyre-druid-circle-of-radiation",
+        "name": "Círculo da Radiação",
+        "originalName": "Circle of Radiation",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "452",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 452
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "lyre-druid-circle-of-shadows",
+        "identifier": "lyre-druid-circle-of-shadows",
+        "name": "Círculo das Sombras",
+        "originalName": "Circle of Shadows",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "453",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 453
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "zagalhta-druid-entropy",
+        "identifier": "zagalhta-druid-entropy",
+        "name": "Entropia",
+        "originalName": "Entropy",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "147",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 147
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "zagalhta-druid-teardrop-admissive",
+        "identifier": "zagalhta-druid-teardrop-admissive",
+        "name": "Admissivo de Teardrop",
+        "originalName": "Teardrop’s Admissive",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "147–148",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 147
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "bbb-druid-circle-of-ancestors",
+        "identifier": "bbb-druid-circle-of-ancestors",
+        "name": "Círculo dos Ancestrais",
+        "originalName": "Circle of Ancestors",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "97",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 97
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "bbb-druid-circle-of-the-caregiver",
+        "identifier": "bbb-druid-circle-of-the-caregiver",
+        "name": "Círculo do Cuidador",
+        "originalName": "Circle of the Caregiver",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "97–98",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 97
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "bbb-druid-circle-of-social-currency",
+        "identifier": "bbb-druid-circle-of-social-currency",
+        "name": "Círculo da Moeda Social",
+        "originalName": "Circle of Social Currency",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "98–99",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 98
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "ryoko-druid-circle-yokai",
+        "identifier": "ryoko-druid-circle-yokai",
+        "name": "Círculo dos Yokai",
+        "originalName": "Circle of the Yokai",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "176–177",
+          "chapter": "Capítulo 9: Classes",
+          "page": 176
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "xanathar-circulo-dos-sonhos",
+        "identifier": "xanathar-circulo-dos-sonhos",
+        "name": "Círculo dos Sonhos",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "27–28",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 27
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "xanathar-circulo-do-pastor",
+        "identifier": "xanathar-circulo-do-pastor",
+        "name": "Círculo do Pastor",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "28–29",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 28
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "tasha-circulo-dos-esporos",
+        "identifier": "tasha-circulo-dos-esporos",
+        "name": "Círculo dos Esporos",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "41–43",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 41
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "tasha-circulo-das-estrelas",
+        "identifier": "tasha-circulo-das-estrelas",
+        "name": "Círculo das Estrelas",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "43–45",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 43
+        },
+        "firstFeatureLevel": 2
+      },
+      {
+        "grimorioId": "tasha-circulo-do-fogo-selvagem",
+        "identifier": "tasha-circulo-do-fogo-selvagem",
+        "name": "Círculo do Fogo Selvagem",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "44–46",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 44
+        },
+        "firstFeatureLevel": 2
+      }
+    ]
+  }
+}

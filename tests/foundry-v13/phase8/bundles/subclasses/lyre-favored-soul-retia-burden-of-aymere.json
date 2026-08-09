@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-aymere",
+    "identifier": "lyre-favored-soul-retia-burden-of-aymere",
+    "name": "Fardo de Aymere",
+    "originalName": "Burden of Aymere",
+    "aliases": [
+      "Burden of Aymere"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "346–347",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 346
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): foice de combate ou grande foice. Os favorecidos de Aymere sentem a paciência, ira e misericórdia da natureza e são compelidos a proteger os ciclos da vida. Como favorecidos de um Eidolon, também suportam melhor a radiação eidólica.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 346
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-aymere.feature.favorecido-dos-eidolons.l1.1",
+      "name": "FAVORECIDO DOS EIDOLONS",
+      "level": 1,
+      "description": "Você tem vantagem em testes de Queima Eidomântica, e todos os seus ataques contam como mágicos e eidólicos.",
+      "page": 346,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-aymere.feature.toque-da-floresta.l1.1",
+      "name": "TOQUE DA FLORESTA",
+      "level": 1,
+      "description": "Magias da lista de Druida e do grupo Tomo da Floresta Sussurrante contam como magias da Alma Favorecida para você, podendo ser aprendidas e conjuradas.",
+      "page": 346,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-aymere.feature.manto-de-miasma.l6.1",
+      "name": "MANTO DE MIASMA",
+      "level": 6,
+      "description": "Quando causa dano com uma magia, pode transformar esse dano em veneno. Além disso, o primeiro ataque com arma que acertar em cada turno causa dano de veneno adicional igual à metade do seu nível de Alma Favorecida, arredondado para baixo.",
+      "page": 346,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-aymere.feature.revitalizacao-rapida.l10.1",
+      "name": "REVITALIZAÇÃO RÁPIDA",
+      "level": 10,
+      "description": "Como ação, toque uma criatura, inclusive você, e gaste Purificação. O alvo recupera 1d8 × o nível do seu espaço de pacto em PV, é curado de qualquer efeito que o deixe envenenado ou paralisado e, por 1 minuto, recupera no início de cada turno PV iguais à metade do seu nível de Alma Favorecida.",
+      "page": 347,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-aymere.feature.pele-de-madeira-de-aco.l13.1",
+      "name": "PELE DE MADEIRA DE AÇO",
+      "level": 13,
+      "description": "Todo dano perfurante, cortante e contundente que você sofre é reduzido em uma quantidade igual à metade do seu nível de Alma Favorecida, arredondado para baixo.",
+      "page": 347,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

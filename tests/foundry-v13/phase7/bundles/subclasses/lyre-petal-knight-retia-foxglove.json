@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-foxglove",
+    "identifier": "lyre-petal-knight-retia-foxglove",
+    "name": "Dedaleira",
+    "originalName": "Foxglove",
+    "aliases": [
+      "Foxglove"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "392",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 392
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "A Dedaleira se manifesta em exploradores solitários e resistentes ao perigo natural. Seu portador compreende toxinas, transforma veneno em cura e usa a própria toxicidade como arma.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 392
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-foxglove.feature.proficiencias-bonus.l2.1",
+      "name": "PROFICIÊNCIAS BÔNUS",
+      "level": 2,
+      "description": "Você recebe proficiência em Sobrevivência e com kit de envenenador.",
+      "page": 392,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-foxglove.feature.destruicao-toxica.l2.1",
+      "name": "DESTRUIÇÃO TÓXICA",
+      "level": 2,
+      "description": "Esta característica não pode beneficiar o mesmo ataque que outra característica de classe com “Destruição” no nome. Ao acertar com uma arma corpo a corpo de uma mão, pode gastar um espaço de Magia de Pacto para causar +1d8 de dano venenoso por nível do espaço. Esse dano ignora resistência a veneno e trata imunidade como resistência. O alvo faz salvaguarda de Constituição; em falha, fica envenenado por 1 minuto e repete a salvaguarda ao fim de cada turno, encerrando em sucesso. Cada nova falha enquanto estiver afetado causa 1d8 de dano venenoso.",
+      "page": 392,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-foxglove.feature.milagre-toxicologico.l6.1",
+      "name": "MILAGRE TOXICOLÓGICO",
+      "level": 6,
+      "description": "Quando você ou uma criatura a até 9 metros sofreria dano venenoso, pode usar reação para alterar o efeito. O alvo não sofre esse dano e recupera PV iguais ao dano que sofreria. Se o dano veio de efeito contínuo com duração menor que 1 hora, o efeito termina; se durar 1 hora ou mais, fica suprimido por 1 hora. Usos por Descanso Longo iguais à metade de seu bônus de proficiência, arredondado para baixo.",
+      "page": 392,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-foxglove.feature.epiteto-venenoso.l11.1",
+      "name": "EPÍTETO VENENOSO",
+      "level": 11,
+      "description": "Seus ataques com arma causam +1d8 de dano venenoso; você tem resistência a dano venenoso; é imune à condição envenenado; e é imune aos efeitos de qualquer substância que respire.",
+      "page": 392,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-foxglove.feature.morte-rastejante.l15.1",
+      "name": "MORTE RASTEJANTE",
+      "level": 15,
+      "description": "Ao acertar com uma arma corpo a corpo de uma mão uma criatura envenenada, pode gastar um uso de Flora Virtuosa para forçá-la a fazer salvaguarda de Constituição. Em falha, o veneno se espalha e a reduz a 0 PV. Em sucesso, ela sofre 6d10 de dano venenoso.",
+      "page": 392,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

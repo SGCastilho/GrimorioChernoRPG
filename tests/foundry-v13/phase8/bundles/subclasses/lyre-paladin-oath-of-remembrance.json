@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-paladin-oath-of-remembrance",
+    "identifier": "lyre-paladin-oath-of-remembrance",
+    "name": "Juramento da Rememoração",
+    "originalName": "Oath of Remembrance",
+    "aliases": [
+      "Oath of Remembrance"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "470–471",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 470
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Paladinos do Coro dos Ídolos juram levar consigo memórias de inimigos, lugares e pessoas, protegendo a história e recuperando conhecimentos perdidos para que o passado sustente um futuro melhor. Magias de Juramento — 3º: Alarme, Rito Cerimonial; 5º: Raio Lunar, Projetar Imagem; 9º: Salto Trovejante, Talento Gêmeo; 13º: Santuário Privado, Donzelas do Escudo; 17º: Arma Ressonante, Vento Cortante. Dogmas — Cuidado com o Passado: quem esquece os erros do passado está condenado a repeti-los. Nunca Esqueça: nomes, identidades e experiências têm valor e devem ser preservados. Proteja o Progresso: mantenha o desejo de construir um futuro maior e mais brilhante e não impeça a evolução de pessoas, ideias ou culturas.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-juramento",
+        "title": "Magias de Juramento",
+        "page": 470,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Alarme; Rito Cerimonial"
+          },
+          {
+            "level": "5º",
+            "spells": "Raio Lunar; Projetar Imagem"
+          },
+          {
+            "level": "9º",
+            "spells": "Salto Trovejante; Talento Gêmeo"
+          },
+          {
+            "level": "13º",
+            "spells": "Santuário Privado; Donzelas do Escudo"
+          },
+          {
+            "level": "17º",
+            "spells": "Arma Ressonante; Vento Cortante"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 470
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-paladin-oath-of-remembrance.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Você recebe duas opções. Sacramento da Recordação: como ação bônus, escolha um número de magias de Paladino igual ao seu bônus de proficiência que não estejam preparadas e para as quais possua espaços adequados; elas ficam preparadas até seu próximo Descanso Longo ou até usar esta opção novamente. Fragmento de Rememoração: quando uma criatura a até 9 metros usa uma ação, use Canalizar Divindade como reação para criar por 1 hora uma memória divina daquela ação. Depois, usando o mesmo tipo de ação originalmente exigido, você pode reproduzi-la. Só pode copiar ação ou ação bônus; efeitos que criam uma ação extra, como Surto de Ação, só podem ser copiados se você for capaz de usar as ações geradas. Se for magia, deve ser de nível para o qual você possua espaço, mas não gasta espaço. Se não for magia, a ação precisa ser ilimitada, ter Recarga 4–6 ou melhor, ou recarregar em Descanso Curto, não Longo. Não pode vir de item mágico ou artefato. Ao reproduzir magia, ela usa o menor valor entre o nível original e seu maior espaço disponível, usa seu ataque e CD de magia de Paladino, e qualquer duração maior é reduzida a 1 minuto. Se a ação original consumia um recurso, você é considerado como tendo gasto o mesmo recurso.",
+      "page": 470,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-remembrance.feature.memoria-do-guardiao.l3.1",
+      "name": "MEMÓRIA DO GUARDIÃO",
+      "level": 3,
+      "description": "Você sempre consegue recordar nomes, detalhes finos, códigos, padrões e outras informações que tenha aprendido ao tentar lembrá-las. Além disso, tem vantagem em salvaguardas contra efeitos que alterem sua memória ou seus valores de Inteligência ou Sabedoria.",
+      "page": 471,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-remembrance.feature.aura-de-diligencia.l7.1",
+      "name": "AURA DE DILIGÊNCIA",
+      "level": 7,
+      "description": "Criaturas beneficiadas por sua Aura de Proteção recebem em testes deliberados de Sabedoria (Percepção) um bônus igual ao bônus que sua Aura concede às salvaguardas. Isso não se aplica à Percepção passiva.",
+      "page": 471,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-remembrance.feature.lamina-sonica.l15.1",
+      "name": "LÂMINA SÔNICA",
+      "level": 15,
+      "description": "Quando acertar uma criatura com uma arma com a qual seja proficiente, o ataque causa dano trovejante adicional igual ao seu bônus de proficiência.",
+      "page": 471,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-remembrance.feature.melodia-heroica.l20.1",
+      "name": "MELODIA HEROICA",
+      "level": 20,
+      "description": "Como ação bônus, gere uma canção de cura e proteção que afeta criaturas a até 9 metros. Aliados à sua escolha recebem 2d12 + 5 pontos de vida temporários; se estiverem com 0 pontos de vida, recuperam 1. Hostis à sua escolha fazem salvaguarda de Constituição, sofrendo 5d12 de dano trovejante em uma falha ou metade em um sucesso. Uma vez por Descanso Longo; depois, só pode usar novamente gastando Canalizar Divindade.",
+      "page": 471,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-sorcerer-wishwoken",
+    "identifier": "zagalhta-sorcerer-wishwoken",
+    "name": "Desperto pelo Desejo",
+    "originalName": "Wishwoken",
+    "aliases": [
+      "Wishwoken"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "171–172",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 171
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Feiticeiro influenciado por gênios e por magia de desejos, capaz de declarar pequenos desejos para alterar probabilidades, aprender magia ilusória/conjuratória e criar um reino onírico próprio.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 171
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-sorcerer-wishwoken.feature.pequenos-desejos.l1.1",
+      "name": "PEQUENOS DESEJOS",
+      "level": 1,
+      "description": "Você possui dois Pequenos Desejos, recuperados em qualquer Descanso. Ao fazer ataque, teste ou salvaguarda, gaste um uso e verbalize seu sucesso como uma afirmação (“eu desejo”, “eu posso” ou “eu vou”). Para a ação e todas as rolagens que fazem parte dela: desvantagem é anulada; se não adicionava proficiência, passa a adicioná-la; e um resultado natural 1 no d20 torna-se 20. Você recebe um Pequeno Desejo adicional por Descanso nos níveis 5, 9, 13 e 17.",
+      "page": 171,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sorcerer-wishwoken.feature.admiracoes-dos-genios.l6.1",
+      "name": "ADMIRAÇÕES DOS GÊNIOS",
+      "level": 6,
+      "description": "Atributos Disfarçados: pode conjurar disfarçar-se à vontade, sem Espaço ou componentes. Resistência Elemental: escolha ácido, frio, fogo ou elétrico; fica resistente, ou imune se já era resistente. Mestre da Manipulação: ao aprender magias de Feiticeiro, pode escolher quaisquer magias de Conjuração e/ou Ilusão como se estivessem na lista do Feiticeiro.",
+      "page": 171,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sorcerer-wishwoken.feature.concessor-de-desejos.l14.1",
+      "name": "CONCESSOR DE DESEJOS",
+      "level": 14,
+      "description": "Uma vez por Descanso Longo, conjure desejo limitado sem Espaço nem componentes próprios, exceto os exigidos pelos efeitos produzidos, com vantagem na Verificação de Queima de Eidomancia. Se falhar nessa verificação, não sofre redução de Atributos, mas perde a capacidade de conjurá-lo por 7 dias. Você também aprende desejo limitado sem contar no limite de magias conhecidas.",
+      "page": 171,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sorcerer-wishwoken.feature.reino-dos-sonhos.l18.1",
+      "name": "REINO DOS SONHOS",
+      "level": 18,
+      "description": "Você cria uma realidade moldada, construída conforme mansão magnífica, ligada a um pequeno objeto em sua posse. O objeto é recriado ou infundido a cada Descanso Longo, e uma nova criação rompe a ligação da anterior. O reino é um semiplano com regras especiais descritas abaixo.",
+      "page": 171,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sorcerer-wishwoken.feature.campo-de-batalha-onirico.l18.1",
+      "name": "CAMPO DE BATALHA ONÍRICO",
+      "level": 18,
+      "description": "Como ação, gaste 3 Pontos de Feitiçaria para forçar uma criatura a até 18 m a fazer salvaguarda de Carisma; em falha, ambos são transportados ao Reino dos Sonhos a até 18 m um do outro. Para cada 1 Ponto adicional, pode incluir dois alvos extras; alvos voluntários podem falhar. Durante esse uso, seus ataques, testes e salvaguardas recebem automaticamente os benefícios de Pequenos Desejos, sua CD de Feiticeiro aumenta em 2 e você soma seu atributo de conjuração à CA. Um pilar de luz fica no mundo exterior e permite entrada. Você pode expulsar criaturas conforme as regras da característica e recebe deslocamento de teleporte igual ao deslocamento base dentro do reino.",
+      "page": 172,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

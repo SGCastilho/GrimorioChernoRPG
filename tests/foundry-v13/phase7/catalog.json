@@ -1,0 +1,3178 @@
+{
+  "schema": "grimorio-foundry-phase7-catalog",
+  "version": 1,
+  "profile": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+  "generatedFor": {
+    "foundry": "13.351",
+    "dnd5e": "5.3.3",
+    "importer": "0.3.0"
+  },
+  "summary": {
+    "classes": 19,
+    "subclasses": 347,
+    "reviewClasses": 5,
+    "blockedSubclasses": 30,
+    "classFeatures": 267,
+    "subclassFeatures": 1870
+  },
+  "classes": [
+    {
+      "grimorioId": "barbarian",
+      "identifier": "barbarian",
+      "name": "Bárbaro",
+      "file": "bundles/classes/barbarian.json",
+      "featureCount": 14,
+      "subclassCount": 17
+    },
+    {
+      "grimorioId": "bard",
+      "identifier": "bard",
+      "name": "Bardo",
+      "file": "bundles/classes/bard.json",
+      "featureCount": 11,
+      "subclassCount": 19
+    },
+    {
+      "grimorioId": "warlock",
+      "identifier": "warlock",
+      "name": "Bruxo",
+      "file": "bundles/classes/warlock.json",
+      "featureCount": 10,
+      "subclassCount": 22
+    },
+    {
+      "grimorioId": "cleric",
+      "identifier": "cleric",
+      "name": "Clérigo",
+      "file": "bundles/classes/cleric.json",
+      "featureCount": 8,
+      "subclassCount": 31
+    },
+    {
+      "grimorioId": "druid",
+      "identifier": "druid",
+      "name": "Druida",
+      "file": "bundles/classes/druid.json",
+      "featureCount": 8,
+      "subclassCount": 17
+    },
+    {
+      "grimorioId": "sorcerer",
+      "identifier": "sorcerer",
+      "name": "Feiticeiro",
+      "file": "bundles/classes/sorcerer.json",
+      "featureCount": 17,
+      "subclassCount": 19
+    },
+    {
+      "grimorioId": "fighter",
+      "identifier": "fighter",
+      "name": "Guerreiro",
+      "file": "bundles/classes/fighter.json",
+      "featureCount": 13,
+      "subclassCount": 20
+    },
+    {
+      "grimorioId": "rogue",
+      "identifier": "rogue",
+      "name": "Ladino",
+      "file": "bundles/classes/rogue.json",
+      "featureCount": 13,
+      "subclassCount": 21
+    },
+    {
+      "grimorioId": "wizard",
+      "identifier": "wizard",
+      "name": "Mago",
+      "file": "bundles/classes/wizard.json",
+      "featureCount": 6,
+      "subclassCount": 22
+    },
+    {
+      "grimorioId": "monk",
+      "identifier": "monk",
+      "name": "Monge",
+      "file": "bundles/classes/monk.json",
+      "featureCount": 22,
+      "subclassCount": 19
+    },
+    {
+      "grimorioId": "paladin",
+      "identifier": "paladin",
+      "name": "Paladino",
+      "file": "bundles/classes/paladin.json",
+      "featureCount": 19,
+      "subclassCount": 20
+    },
+    {
+      "grimorioId": "ranger",
+      "identifier": "ranger",
+      "name": "Patrulheiro",
+      "file": "bundles/classes/ranger.json",
+      "featureCount": 17,
+      "subclassCount": 21
+    },
+    {
+      "grimorioId": "artificer",
+      "identifier": "artificer",
+      "name": "Artífice",
+      "file": "bundles/classes/artificer.json",
+      "featureCount": 13,
+      "subclassCount": 4
+    },
+    {
+      "grimorioId": "favored-soul-retia",
+      "identifier": "favored-soul",
+      "name": "Alma Favorecida",
+      "file": "bundles/classes/favored-soul.json",
+      "featureCount": 16,
+      "subclassCount": 30
+    },
+    {
+      "grimorioId": "inscriptor-retia",
+      "identifier": "inscriptor",
+      "name": "Inscritor",
+      "file": "bundles/classes/inscriptor.json",
+      "featureCount": 13,
+      "subclassCount": 17
+    },
+    {
+      "grimorioId": "petal-knight-retia",
+      "identifier": "petal-knight",
+      "name": "Cavaleiro das Pétalas",
+      "file": "bundles/classes/petal-knight.json",
+      "featureCount": 14,
+      "subclassCount": 19
+    },
+    {
+      "grimorioId": "sword-saint-retia",
+      "identifier": "sword-saint",
+      "name": "Santo da Espada",
+      "file": "bundles/classes/sword-saint.json",
+      "featureCount": 14,
+      "subclassCount": 19
+    },
+    {
+      "grimorioId": "spiritual-emissary",
+      "identifier": "spiritual-emissary",
+      "name": "Emissário Espiritual",
+      "file": "bundles/classes/spiritual-emissary.json",
+      "featureCount": 18,
+      "subclassCount": 1
+    },
+    {
+      "grimorioId": "spellblade",
+      "identifier": "spellblade",
+      "name": "Spellblade",
+      "file": "bundles/classes/spellblade.json",
+      "featureCount": 21,
+      "subclassCount": 9
+    }
+  ],
+  "subclasses": [
+    {
+      "grimorioId": "furioso",
+      "identifier": "furioso",
+      "name": "Caminho do Furioso",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/furioso.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "guerreiro-totemico",
+      "identifier": "guerreiro-totemico",
+      "name": "Caminho do Guerreiro Totêmico",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/guerreiro-totemico.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "colegio-conhecimento",
+      "identifier": "colegio-conhecimento",
+      "name": "Colégio do Conhecimento",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/colegio-conhecimento.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "colegio-bravura",
+      "identifier": "colegio-bravura",
+      "name": "Colégio da Bravura",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/colegio-bravura.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "arquifada",
+      "identifier": "arquifada",
+      "name": "A Arquifada",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/arquifada.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "corruptor",
+      "identifier": "corruptor",
+      "name": "O Corruptor",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/corruptor.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "grande-antigo",
+      "identifier": "grande-antigo",
+      "name": "O Grande Antigo",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/grande-antigo.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "dominio-conhecimento",
+      "identifier": "dominio-conhecimento",
+      "name": "Domínio do Conhecimento",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/dominio-conhecimento.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "dominio-enganacao",
+      "identifier": "dominio-enganacao",
+      "name": "Domínio da Enganação",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/dominio-enganacao.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "dominio-guerra",
+      "identifier": "dominio-guerra",
+      "name": "Domínio da Guerra",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/dominio-guerra.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "dominio-luz",
+      "identifier": "dominio-luz",
+      "name": "Domínio da Luz",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/dominio-luz.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "dominio-natureza",
+      "identifier": "dominio-natureza",
+      "name": "Domínio da Natureza",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/dominio-natureza.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "dominio-tempestade",
+      "identifier": "dominio-tempestade",
+      "name": "Domínio da Tempestade",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/dominio-tempestade.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "dominio-vida",
+      "identifier": "dominio-vida",
+      "name": "Domínio da Vida",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/dominio-vida.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "circulo-terra",
+      "identifier": "circulo-terra",
+      "name": "Círculo da Terra",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/circulo-terra.json",
+      "featureCount": 14
+    },
+    {
+      "grimorioId": "circulo-lua",
+      "identifier": "circulo-lua",
+      "name": "Círculo da Lua",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/circulo-lua.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "linhagem-draconica",
+      "identifier": "linhagem-draconica",
+      "name": "Linhagem Dracônica",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/linhagem-draconica.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "magia-selvagem",
+      "identifier": "magia-selvagem",
+      "name": "Magia Selvagem",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/magia-selvagem.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "campeao",
+      "identifier": "campeao",
+      "name": "Campeão",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/campeao.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "cavaleiro-arcano",
+      "identifier": "cavaleiro-arcano",
+      "name": "Cavaleiro Arcano",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/cavaleiro-arcano.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "mestre-batalha",
+      "identifier": "mestre-batalha",
+      "name": "Mestre de Batalha",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/mestre-batalha.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "assassino",
+      "identifier": "assassino",
+      "name": "Assassino",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/assassino.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "ladrao",
+      "identifier": "ladrao",
+      "name": "Ladrão",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/ladrao.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "trapaceiro-arcano",
+      "identifier": "trapaceiro-arcano",
+      "name": "Trapaceiro Arcano",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/trapaceiro-arcano.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "escola-abjuracao",
+      "identifier": "escola-abjuracao",
+      "name": "Escola de Abjuração",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/escola-abjuracao.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "escola-adivinhacao",
+      "identifier": "escola-adivinhacao",
+      "name": "Escola de Adivinhação",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/escola-adivinhacao.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "escola-conjuracao",
+      "identifier": "escola-conjuracao",
+      "name": "Escola de Conjuração",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/escola-conjuracao.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "escola-encantamento",
+      "identifier": "escola-encantamento",
+      "name": "Escola de Encantamento",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/escola-encantamento.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "escola-evocacao",
+      "identifier": "escola-evocacao",
+      "name": "Escola de Evocação",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/escola-evocacao.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "escola-ilusao",
+      "identifier": "escola-ilusao",
+      "name": "Escola de Ilusão",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/escola-ilusao.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "escola-necromancia",
+      "identifier": "escola-necromancia",
+      "name": "Escola de Necromancia",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/escola-necromancia.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "escola-transmutacao",
+      "identifier": "escola-transmutacao",
+      "name": "Escola de Transmutação",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/escola-transmutacao.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "mao-aberta",
+      "identifier": "mao-aberta",
+      "name": "Caminho da Mão Aberta",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/mao-aberta.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "caminho-sombra",
+      "identifier": "caminho-sombra",
+      "name": "Caminho da Sombra",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/caminho-sombra.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "quatro-elementos",
+      "identifier": "quatro-elementos",
+      "name": "Caminho dos Quatro Elementos",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/quatro-elementos.json",
+      "featureCount": 3
+    },
+    {
+      "grimorioId": "juramento-devocao",
+      "identifier": "juramento-devocao",
+      "name": "Juramento de Devoção",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/juramento-devocao.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "juramento-ancioes",
+      "identifier": "juramento-ancioes",
+      "name": "Juramento dos Anciões",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/juramento-ancioes.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "juramento-vinganca",
+      "identifier": "juramento-vinganca",
+      "name": "Juramento de Vingança",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/juramento-vinganca.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "conclave-besta",
+      "identifier": "conclave-besta",
+      "name": "Conclave da Besta",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/conclave-besta.json",
+      "featureCount": 9
+    },
+    {
+      "grimorioId": "conclave-cacador",
+      "identifier": "conclave-cacador",
+      "name": "Conclave do Caçador",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/conclave-cacador.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "rastreador-subterraneo",
+      "identifier": "rastreador-subterraneo",
+      "name": "Conclave do Rastreador Subterrâneo",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/rastreador-subterraneo.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-agris",
+      "identifier": "lyre-favored-soul-retia-burden-of-agris",
+      "name": "Fardo de Agris",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-agris.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-apophemia",
+      "identifier": "lyre-favored-soul-retia-burden-of-apophemia",
+      "name": "Fardo de Apophemia",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-apophemia.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-aymere",
+      "identifier": "lyre-favored-soul-retia-burden-of-aymere",
+      "name": "Fardo de Aymere",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-aymere.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-burtromet",
+      "identifier": "lyre-favored-soul-retia-burden-of-burtromet",
+      "name": "Fardo de Burtromet",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-burtromet.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-chan-karegosh",
+      "identifier": "lyre-favored-soul-retia-burden-of-chan-karegosh",
+      "name": "Fardo de Chan Karegosh",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-chan-karegosh.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-echobliss",
+      "identifier": "lyre-favored-soul-retia-burden-of-echobliss",
+      "name": "Fardo de Echobliss",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-echobliss.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-gotham",
+      "identifier": "lyre-favored-soul-retia-burden-of-gotham",
+      "name": "Fardo de Gotham",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-gotham.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-harros",
+      "identifier": "lyre-favored-soul-retia-burden-of-harros",
+      "name": "Fardo de Harros",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-harros.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-ilsrabae",
+      "identifier": "lyre-favored-soul-retia-burden-of-ilsrabae",
+      "name": "Fardo de Ilsrabae",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-ilsrabae.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-invidiva",
+      "identifier": "lyre-favored-soul-retia-burden-of-invidiva",
+      "name": "Fardo de Invidiva",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-invidiva.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-ivsil",
+      "identifier": "lyre-favored-soul-retia-burden-of-ivsil",
+      "name": "Fardo de Ivsil",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-ivsil.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-lussuria",
+      "identifier": "lyre-favored-soul-retia-burden-of-lussuria",
+      "name": "Fardo de Lussuria",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-lussuria.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-mortuous",
+      "identifier": "lyre-favored-soul-retia-burden-of-mortuous",
+      "name": "Fardo de Mortuous",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-mortuous.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-nyphlamour",
+      "identifier": "lyre-favored-soul-retia-burden-of-nyphlamour",
+      "name": "Fardo de Nyphlamour",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-nyphlamour.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-saanjeck",
+      "identifier": "lyre-favored-soul-retia-burden-of-saanjeck",
+      "name": "Fardo de Saanjeck",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-saanjeck.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-scorn",
+      "identifier": "lyre-favored-soul-retia-burden-of-scorn",
+      "name": "Fardo de Scorn",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-scorn.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-tithiss",
+      "identifier": "lyre-favored-soul-retia-burden-of-tithiss",
+      "name": "Fardo de Tithiss",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-tithiss.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-tquinn",
+      "identifier": "lyre-favored-soul-retia-burden-of-tquinn",
+      "name": "Fardo de T’quinn",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-tquinn.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-favored-soul-retia-burden-of-vestias",
+      "identifier": "lyre-favored-soul-retia-burden-of-vestias",
+      "name": "Fardo de Vestias",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/lyre-favored-soul-retia-burden-of-vestias.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-adventure",
+      "identifier": "lyre-inscriptor-retia-adventure",
+      "name": "Aventura",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-adventure.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-comedian",
+      "identifier": "lyre-inscriptor-retia-comedian",
+      "name": "Comediante",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-comedian.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-playwright",
+      "identifier": "lyre-inscriptor-retia-playwright",
+      "name": "Dramaturgo",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-playwright.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-vestias-scribe",
+      "identifier": "lyre-inscriptor-retia-vestias-scribe",
+      "name": "Escriba de Vestias",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-vestias-scribe.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-fantasy",
+      "identifier": "lyre-inscriptor-retia-fantasy",
+      "name": "Fantasia",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-fantasy.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-historian",
+      "identifier": "lyre-inscriptor-retia-historian",
+      "name": "Historiador",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-historian.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-cosmic-horror",
+      "identifier": "lyre-inscriptor-retia-cosmic-horror",
+      "name": "Horror Cósmico",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-cosmic-horror.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-forbiddance",
+      "identifier": "lyre-inscriptor-retia-forbiddance",
+      "name": "Interdição",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-forbiddance.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-mystery",
+      "identifier": "lyre-inscriptor-retia-mystery",
+      "name": "Mistério",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-mystery.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-mythology",
+      "identifier": "lyre-inscriptor-retia-mythology",
+      "name": "Mitologia",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-mythology.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-romance",
+      "identifier": "lyre-inscriptor-retia-romance",
+      "name": "Romance",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-romance.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-inscriptor-retia-wakefield",
+      "identifier": "lyre-inscriptor-retia-wakefield",
+      "name": "Wakefield",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/lyre-inscriptor-retia-wakefield.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-camellia",
+      "identifier": "lyre-petal-knight-retia-camellia",
+      "name": "Camélia",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-camellia.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-foxglove",
+      "identifier": "lyre-petal-knight-retia-foxglove",
+      "name": "Dedaleira",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-foxglove.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-dahlia",
+      "identifier": "lyre-petal-knight-retia-dahlia",
+      "name": "Dália",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-dahlia.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-gardenia",
+      "identifier": "lyre-petal-knight-retia-gardenia",
+      "name": "Gardênia",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-gardenia.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-morning-glory",
+      "identifier": "lyre-petal-knight-retia-morning-glory",
+      "name": "Glória-da-Manhã",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-morning-glory.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-hydrangea",
+      "identifier": "lyre-petal-knight-retia-hydrangea",
+      "name": "Hortênsia",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-hydrangea.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-red-spider-lily",
+      "identifier": "lyre-petal-knight-retia-red-spider-lily",
+      "name": "Lírio-Aranha-Vermelho",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-red-spider-lily.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-osmanthus",
+      "identifier": "lyre-petal-knight-retia-osmanthus",
+      "name": "Osmanthus",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-osmanthus.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-fox-e-cub",
+      "identifier": "lyre-petal-knight-retia-fox-e-cub",
+      "name": "Raposa e Filhote",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-fox-e-cub.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-pink-rose",
+      "identifier": "lyre-petal-knight-retia-pink-rose",
+      "name": "Rosa Cor-de-Rosa",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-pink-rose.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-coral-rose",
+      "identifier": "lyre-petal-knight-retia-coral-rose",
+      "name": "Rosa Coral",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-coral-rose.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-black-rose",
+      "identifier": "lyre-petal-knight-retia-black-rose",
+      "name": "Rosa Negra",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-black-rose.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-sakura",
+      "identifier": "lyre-petal-knight-retia-sakura",
+      "name": "Sakura",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-sakura.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-petal-knight-retia-winecup",
+      "identifier": "lyre-petal-knight-retia-winecup",
+      "name": "Taça-de-Vinho",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/lyre-petal-knight-retia-winecup.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-ranger-radiant-archer",
+      "identifier": "lyre-ranger-radiant-archer",
+      "name": "Arqueiro Radiante",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/lyre-ranger-radiant-archer.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-ranger-beast-rider",
+      "identifier": "lyre-ranger-beast-rider",
+      "name": "Cavaleiro de Fera",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/lyre-ranger-beast-rider.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-ranger-dunestalker",
+      "identifier": "lyre-ranger-dunestalker",
+      "name": "Espreitador das Dunas",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/lyre-ranger-dunestalker.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-ranger-grey-arrow",
+      "identifier": "lyre-ranger-grey-arrow",
+      "name": "Flecha Cinzenta",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/lyre-ranger-grey-arrow.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-ranger-gun-dweller",
+      "identifier": "lyre-ranger-gun-dweller",
+      "name": "Habitante das Armas",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/lyre-ranger-gun-dweller.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-ranger-sea-dog",
+      "identifier": "lyre-ranger-sea-dog",
+      "name": "Lobo do Mar",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/lyre-ranger-sea-dog.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-ranger-technoscope",
+      "identifier": "lyre-ranger-technoscope",
+      "name": "Tecnoscópio",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/lyre-ranger-technoscope.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-gadabout",
+      "identifier": "lyre-sword-saint-retia-gadabout",
+      "name": "Andarilho",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-gadabout.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-the-dragonfly",
+      "identifier": "lyre-sword-saint-retia-way-of-the-dragonfly",
+      "name": "Caminho da Libélula",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-the-dragonfly.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-the-snow-white-sleeve",
+      "identifier": "lyre-sword-saint-retia-way-of-the-snow-white-sleeve",
+      "name": "Caminho da Manga Branca de Neve",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-the-snow-white-sleeve.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-kojiro",
+      "identifier": "lyre-sword-saint-retia-way-of-kojiro",
+      "name": "Caminho de Kojirō",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-kojiro.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-kyuubi",
+      "identifier": "lyre-sword-saint-retia-way-of-kyuubi",
+      "name": "Caminho de Kyuubi",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-kyuubi.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-muramasa",
+      "identifier": "lyre-sword-saint-retia-way-of-muramasa",
+      "name": "Caminho de Muramasa",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-muramasa.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-musashi",
+      "identifier": "lyre-sword-saint-retia-way-of-musashi",
+      "name": "Caminho de Musashi",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-musashi.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-pendragon",
+      "identifier": "lyre-sword-saint-retia-way-of-pendragon",
+      "name": "Caminho de Pendragon",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-pendragon.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-tomoe",
+      "identifier": "lyre-sword-saint-retia-way-of-tomoe",
+      "name": "Caminho de Tomoe",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-tomoe.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-the-eroded-lord",
+      "identifier": "lyre-sword-saint-retia-way-of-the-eroded-lord",
+      "name": "Caminho do Lorde Erodido",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-the-eroded-lord.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-blue-metal",
+      "identifier": "lyre-sword-saint-retia-way-of-blue-metal",
+      "name": "Caminho do Metal Azul",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-blue-metal.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-sword-saint-retia-way-of-the-heavenbreaker",
+      "identifier": "lyre-sword-saint-retia-way-of-the-heavenbreaker",
+      "name": "Caminho do Rompe-Céus",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/lyre-sword-saint-retia-way-of-the-heavenbreaker.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "lyre-barbarian-champion-of-mortuous",
+      "identifier": "lyre-barbarian-champion-of-mortuous",
+      "name": "Campeão de Mortuous",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/lyre-barbarian-champion-of-mortuous.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-barbarian-grandstander",
+      "identifier": "lyre-barbarian-grandstander",
+      "name": "Exibicionista",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/lyre-barbarian-grandstander.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-barbarian-gladiator",
+      "identifier": "lyre-barbarian-gladiator",
+      "name": "Gladiador",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/lyre-barbarian-gladiator.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-barbarian-sacred-obsidian",
+      "identifier": "lyre-barbarian-sacred-obsidian",
+      "name": "Obsidiana Sagrada",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/lyre-barbarian-sacred-obsidian.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-bard-gambler",
+      "identifier": "lyre-bard-gambler",
+      "name": "Apostador",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/lyre-bard-gambler.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-bard-college-of-terpsichore",
+      "identifier": "lyre-bard-college-of-terpsichore",
+      "name": "Colégio de Terpsícore",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/lyre-bard-college-of-terpsichore.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-bard-college-of-the-divine-minstral",
+      "identifier": "lyre-bard-college-of-the-divine-minstral",
+      "name": "Colégio do Menestrel Divino",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/lyre-bard-college-of-the-divine-minstral.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-bard-college-of-the-old-world",
+      "identifier": "lyre-bard-college-of-the-old-world",
+      "name": "Colégio do Velho Mundo",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/lyre-bard-college-of-the-old-world.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-bard-wild-erudite",
+      "identifier": "lyre-bard-wild-erudite",
+      "name": "Erudito Selvagem",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/lyre-bard-wild-erudite.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-cleric-bard-beloved",
+      "identifier": "lyre-cleric-bard-beloved",
+      "name": "Amado do Bardo",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/lyre-cleric-bard-beloved.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-cleric-sorcery-domain",
+      "identifier": "lyre-cleric-sorcery-domain",
+      "name": "Domínio da Feitiçaria",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/lyre-cleric-sorcery-domain.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-cleric-honor-domain",
+      "identifier": "lyre-cleric-honor-domain",
+      "name": "Domínio da Honra",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/lyre-cleric-honor-domain.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-cleric-music-domain",
+      "identifier": "lyre-cleric-music-domain",
+      "name": "Domínio da Música",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/lyre-cleric-music-domain.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-cleric-forbiddance-domain",
+      "identifier": "lyre-cleric-forbiddance-domain",
+      "name": "Domínio da Proibição",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/lyre-cleric-forbiddance-domain.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-cleric-ages-domain",
+      "identifier": "lyre-cleric-ages-domain",
+      "name": "Domínio das Eras",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/lyre-cleric-ages-domain.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-cleric-chaos-domain",
+      "identifier": "lyre-cleric-chaos-domain",
+      "name": "Domínio do Caos",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/lyre-cleric-chaos-domain.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-cleric-record-domain",
+      "identifier": "lyre-cleric-record-domain",
+      "name": "Domínio do Registro",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/lyre-cleric-record-domain.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-cleric-resplendent",
+      "identifier": "lyre-cleric-resplendent",
+      "name": "Resplandecente",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/lyre-cleric-resplendent.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-cleric-dawnwatcher",
+      "identifier": "lyre-cleric-dawnwatcher",
+      "name": "Vigia da Alvorada",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/lyre-cleric-dawnwatcher.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-druid-circle-of-the-primeval-glade",
+      "identifier": "lyre-druid-circle-of-the-primeval-glade",
+      "name": "Círculo da Clareira Primeva",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/lyre-druid-circle-of-the-primeval-glade.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-druid-circle-of-deadwood",
+      "identifier": "lyre-druid-circle-of-deadwood",
+      "name": "Círculo da Madeira Morta",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/lyre-druid-circle-of-deadwood.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-druid-circle-of-radiation",
+      "identifier": "lyre-druid-circle-of-radiation",
+      "name": "Círculo da Radiação",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/lyre-druid-circle-of-radiation.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-druid-circle-of-shadows",
+      "identifier": "lyre-druid-circle-of-shadows",
+      "name": "Círculo das Sombras",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/lyre-druid-circle-of-shadows.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-fighter-academy-agent",
+      "identifier": "lyre-fighter-academy-agent",
+      "name": "Agente da Academia",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/lyre-fighter-academy-agent.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-fighter-brawler",
+      "identifier": "lyre-fighter-brawler",
+      "name": "Brigão",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/lyre-fighter-brawler.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-fighter-red-lion-knight",
+      "identifier": "lyre-fighter-red-lion-knight",
+      "name": "Cavaleiro do Leão Vermelho",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/lyre-fighter-red-lion-knight.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "lyre-fighter-guardian",
+      "identifier": "lyre-fighter-guardian",
+      "name": "Guardião",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/lyre-fighter-guardian.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-fighter-chaos-blade",
+      "identifier": "lyre-fighter-chaos-blade",
+      "name": "Lâmina do Caos",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/lyre-fighter-chaos-blade.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-monk-convergent-soul",
+      "identifier": "lyre-monk-convergent-soul",
+      "name": "Alma Convergente",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/lyre-monk-convergent-soul.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-monk-way-of-the-freezing-soul",
+      "identifier": "lyre-monk-way-of-the-freezing-soul",
+      "name": "Caminho da Alma Congelante",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/lyre-monk-way-of-the-freezing-soul.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-monk-way-of-the-broken-chain",
+      "identifier": "lyre-monk-way-of-the-broken-chain",
+      "name": "Caminho da Corrente Quebrada",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/lyre-monk-way-of-the-broken-chain.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-monk-way-of-the-deep",
+      "identifier": "lyre-monk-way-of-the-deep",
+      "name": "Caminho das Profundezas",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/lyre-monk-way-of-the-deep.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-monk-beloved-tribute",
+      "identifier": "lyre-monk-beloved-tribute",
+      "name": "Tributo Amado",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/lyre-monk-beloved-tribute.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-paladin-oath-of-the-dawn",
+      "identifier": "lyre-paladin-oath-of-the-dawn",
+      "name": "Juramento da Alvorada",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/lyre-paladin-oath-of-the-dawn.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-paladin-oath-of-sorcery",
+      "identifier": "lyre-paladin-oath-of-sorcery",
+      "name": "Juramento da Feitiçaria",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/lyre-paladin-oath-of-sorcery.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-paladin-oath-of-preservation",
+      "identifier": "lyre-paladin-oath-of-preservation",
+      "name": "Juramento da Preservação",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/lyre-paladin-oath-of-preservation.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-paladin-oath-of-remembrance",
+      "identifier": "lyre-paladin-oath-of-remembrance",
+      "name": "Juramento da Rememoração",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/lyre-paladin-oath-of-remembrance.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-paladin-oath-of-sacrifice",
+      "identifier": "lyre-paladin-oath-of-sacrifice",
+      "name": "Juramento do Sacrifício",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/lyre-paladin-oath-of-sacrifice.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-rogue-dreg-letter",
+      "identifier": "lyre-rogue-dreg-letter",
+      "name": "Carta de Escória",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/lyre-rogue-dreg-letter.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-rogue-potential-chainer",
+      "identifier": "lyre-rogue-potential-chainer",
+      "name": "Encadeador de Potencial",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/lyre-rogue-potential-chainer.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-rogue-versatile-beast",
+      "identifier": "lyre-rogue-versatile-beast",
+      "name": "Fera Versátil",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/lyre-rogue-versatile-beast.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-rogue-academy-duller",
+      "identifier": "lyre-rogue-academy-duller",
+      "name": "Silenciador da Academia",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/lyre-rogue-academy-duller.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-rogue-deadshot",
+      "identifier": "lyre-rogue-deadshot",
+      "name": "Tiro Certeiro",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/lyre-rogue-deadshot.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-rogue-vigilante",
+      "identifier": "lyre-rogue-vigilante",
+      "name": "Vigilante",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/lyre-rogue-vigilante.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "lyre-sorcerer-phantom-soul",
+      "identifier": "lyre-sorcerer-phantom-soul",
+      "name": "Alma Fantasma",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/lyre-sorcerer-phantom-soul.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-sorcerer-witchcraft",
+      "identifier": "lyre-sorcerer-witchcraft",
+      "name": "Bruxaria",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/lyre-sorcerer-witchcraft.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-sorcerer-eidolic-cosmologus",
+      "identifier": "lyre-sorcerer-eidolic-cosmologus",
+      "name": "Cosmólogo Eidólico",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/lyre-sorcerer-eidolic-cosmologus.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-sorcerer-vestian-inheritor",
+      "identifier": "lyre-sorcerer-vestian-inheritor",
+      "name": "Herdeiro Vestiano",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/lyre-sorcerer-vestian-inheritor.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-sorcerer-crystal-bearer",
+      "identifier": "lyre-sorcerer-crystal-bearer",
+      "name": "Portador do Cristal",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/lyre-sorcerer-crystal-bearer.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-sorcerer-freezing-torment",
+      "identifier": "lyre-sorcerer-freezing-torment",
+      "name": "Tormento Congelante",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/lyre-sorcerer-freezing-torment.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-warlock-feathered-dragon",
+      "identifier": "lyre-warlock-feathered-dragon",
+      "name": "Dragão Emplumado",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/lyre-warlock-feathered-dragon.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-warlock-damocles",
+      "identifier": "lyre-warlock-damocles",
+      "name": "Dâmocles",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/lyre-warlock-damocles.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-warlock-false-god",
+      "identifier": "lyre-warlock-false-god",
+      "name": "Falso Deus",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/lyre-warlock-false-god.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-warlock-gun-ghuth",
+      "identifier": "lyre-warlock-gun-ghuth",
+      "name": "Gun Ghuth",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/lyre-warlock-gun-ghuth.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-warlock-gorgon",
+      "identifier": "lyre-warlock-gorgon",
+      "name": "Górgona",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/lyre-warlock-gorgon.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-warlock-pale-shadow",
+      "identifier": "lyre-warlock-pale-shadow",
+      "name": "Sombra Pálida",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/lyre-warlock-pale-shadow.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-warlock-temptation",
+      "identifier": "lyre-warlock-temptation",
+      "name": "Tentação",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/lyre-warlock-temptation.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "lyre-warlock-valkyrie",
+      "identifier": "lyre-warlock-valkyrie",
+      "name": "Valquíria",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/lyre-warlock-valkyrie.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-wizard-vestian-advocate",
+      "identifier": "lyre-wizard-vestian-advocate",
+      "name": "Advogado Vestiano",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/lyre-wizard-vestian-advocate.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-wizard-armed-arcanist",
+      "identifier": "lyre-wizard-armed-arcanist",
+      "name": "Arcanista Armado",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/lyre-wizard-armed-arcanist.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "lyre-wizard-ghuthian-associate",
+      "identifier": "lyre-wizard-ghuthian-associate",
+      "name": "Associado Ghuthiano",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/lyre-wizard-ghuthian-associate.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "lyre-wizard-eidomancer",
+      "identifier": "lyre-wizard-eidomancer",
+      "name": "Eidomante",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/lyre-wizard-eidomancer.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "lyre-wizard-specialist",
+      "identifier": "lyre-wizard-specialist",
+      "name": "Especialista",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/lyre-wizard-specialist.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-barbarian-cosmic-madness",
+      "identifier": "zagalhta-barbarian-cosmic-madness",
+      "name": "Caminho da Loucura Cósmica",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/zagalhta-barbarian-cosmic-madness.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-bard-simulation-savant",
+      "identifier": "zagalhta-bard-simulation-savant",
+      "name": "Prodígio da Simulação",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/zagalhta-bard-simulation-savant.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-bard-stellar-idol",
+      "identifier": "zagalhta-bard-stellar-idol",
+      "name": "Ídolo Estelar",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/zagalhta-bard-stellar-idol.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "zagalhta-cleric-cosmos-domain",
+      "identifier": "zagalhta-cleric-cosmos-domain",
+      "name": "Domínio do Cosmos",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/zagalhta-cleric-cosmos-domain.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-cleric-impossibility-domain",
+      "identifier": "zagalhta-cleric-impossibility-domain",
+      "name": "Domínio da Impossibilidade",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/zagalhta-cleric-impossibility-domain.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-cleric-technology-domain",
+      "identifier": "zagalhta-cleric-technology-domain",
+      "name": "Domínio da Tecnologia",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/zagalhta-cleric-technology-domain.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-druid-entropy",
+      "identifier": "zagalhta-druid-entropy",
+      "name": "Entropia",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/zagalhta-druid-entropy.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "zagalhta-druid-teardrop-admissive",
+      "identifier": "zagalhta-druid-teardrop-admissive",
+      "name": "Admissivo de Teardrop",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/zagalhta-druid-teardrop-admissive.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-favored-soul-destimus",
+      "identifier": "zagalhta-favored-soul-destimus",
+      "name": "Fardo de Destimus",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/zagalhta-favored-soul-destimus.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-favored-soul-jalasaor",
+      "identifier": "zagalhta-favored-soul-jalasaor",
+      "name": "Fardo de Jalasaor",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/zagalhta-favored-soul-jalasaor.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-favored-soul-ombra",
+      "identifier": "zagalhta-favored-soul-ombra",
+      "name": "Fardo de Ombra",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/zagalhta-favored-soul-ombra.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-favored-soul-setanta",
+      "identifier": "zagalhta-favored-soul-setanta",
+      "name": "Fardo de Setanta",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/zagalhta-favored-soul-setanta.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-favored-soul-sihlu",
+      "identifier": "zagalhta-favored-soul-sihlu",
+      "name": "Fardo de Sihlu",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/zagalhta-favored-soul-sihlu.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "zagalhta-favored-soul-zega",
+      "identifier": "zagalhta-favored-soul-zega",
+      "name": "Fardo de Zega",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/zagalhta-favored-soul-zega.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "zagalhta-fighter-astral-knight",
+      "identifier": "zagalhta-fighter-astral-knight",
+      "name": "Cavaleiro Astral",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/zagalhta-fighter-astral-knight.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-fighter-lunar-synergist",
+      "identifier": "zagalhta-fighter-lunar-synergist",
+      "name": "Sinergista Lunar",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/zagalhta-fighter-lunar-synergist.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-inscriptor-astronomy",
+      "identifier": "zagalhta-inscriptor-astronomy",
+      "name": "Astronomia",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/zagalhta-inscriptor-astronomy.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-inscriptor-space-opera",
+      "identifier": "zagalhta-inscriptor-space-opera",
+      "name": "Ópera Espacial",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/zagalhta-inscriptor-space-opera.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-monk-outer-path",
+      "identifier": "zagalhta-monk-outer-path",
+      "name": "Caminho da Via Exterior",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/zagalhta-monk-outer-path.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-paladin-oath-convergence",
+      "identifier": "zagalhta-paladin-oath-convergence",
+      "name": "Juramento da Convergência",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/zagalhta-paladin-oath-convergence.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-paladin-oath-vanquisher",
+      "identifier": "zagalhta-paladin-oath-vanquisher",
+      "name": "Juramento do Subjugador",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/zagalhta-paladin-oath-vanquisher.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "zagalhta-petal-knight-astrophytum",
+      "identifier": "zagalhta-petal-knight-astrophytum",
+      "name": "Astrophytum",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/zagalhta-petal-knight-astrophytum.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-petal-knight-zinnia",
+      "identifier": "zagalhta-petal-knight-zinnia",
+      "name": "Zínia",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/zagalhta-petal-knight-zinnia.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-ranger-velvet-knight",
+      "identifier": "zagalhta-ranger-velvet-knight",
+      "name": "Cavaleiro do Veludo",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/zagalhta-ranger-velvet-knight.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-ranger-xenofactor",
+      "identifier": "zagalhta-ranger-xenofactor",
+      "name": "Xenofator",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/zagalhta-ranger-xenofactor.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-rogue-drone-operator",
+      "identifier": "zagalhta-rogue-drone-operator",
+      "name": "Operador de Drone",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/zagalhta-rogue-drone-operator.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-rogue-majur-plant",
+      "identifier": "zagalhta-rogue-majur-plant",
+      "name": "Agente Infiltrado Majur",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/zagalhta-rogue-majur-plant.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-sorcerer-luminal-sacrifice",
+      "identifier": "zagalhta-sorcerer-luminal-sacrifice",
+      "name": "Sacrifício Luminal",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/zagalhta-sorcerer-luminal-sacrifice.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "zagalhta-sorcerer-wishwoken",
+      "identifier": "zagalhta-sorcerer-wishwoken",
+      "name": "Desperto pelo Desejo",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/zagalhta-sorcerer-wishwoken.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-sword-saint-empyreal-order",
+      "identifier": "zagalhta-sword-saint-empyreal-order",
+      "name": "Caminho da Ordem Empírea",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/zagalhta-sword-saint-empyreal-order.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-sword-saint-grim-passenger",
+      "identifier": "zagalhta-sword-saint-grim-passenger",
+      "name": "Caminho do Passageiro Sombrio",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/zagalhta-sword-saint-grim-passenger.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-sword-saint-progenitor",
+      "identifier": "zagalhta-sword-saint-progenitor",
+      "name": "Caminho do Progenitor",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/zagalhta-sword-saint-progenitor.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "zagalhta-warlock-astral-traveler",
+      "identifier": "zagalhta-warlock-astral-traveler",
+      "name": "O Viajante Astral",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/zagalhta-warlock-astral-traveler.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-warlock-spear-hound",
+      "identifier": "zagalhta-warlock-spear-hound",
+      "name": "O Cão da Lança",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/zagalhta-warlock-spear-hound.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "zagalhta-wizard-astromancer",
+      "identifier": "zagalhta-wizard-astromancer",
+      "name": "Astromante",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/zagalhta-wizard-astromancer.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "zagalhta-wizard-leash-arcanist",
+      "identifier": "zagalhta-wizard-leash-arcanist",
+      "name": "Arcanista da Rédea",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/zagalhta-wizard-leash-arcanist.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-barbarian-path-of-the-bloodpainted",
+      "identifier": "bbb-barbarian-path-of-the-bloodpainted",
+      "name": "Caminho do Pintado de Sangue",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/bbb-barbarian-path-of-the-bloodpainted.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-barbarian-path-of-the-oni",
+      "identifier": "bbb-barbarian-path-of-the-oni",
+      "name": "Caminho do Oni",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/bbb-barbarian-path-of-the-oni.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-barbarian-swelling-heart",
+      "identifier": "bbb-barbarian-swelling-heart",
+      "name": "Coração Transbordante",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/bbb-barbarian-swelling-heart.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-bard-college-of-likeness",
+      "identifier": "bbb-bard-college-of-likeness",
+      "name": "Colégio da Semelhança",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/bbb-bard-college-of-likeness.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "bbb-bard-college-of-quiet-dignity",
+      "identifier": "bbb-bard-college-of-quiet-dignity",
+      "name": "Colégio da Dignidade Serena",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/bbb-bard-college-of-quiet-dignity.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-bard-elegiac-artist",
+      "identifier": "bbb-bard-elegiac-artist",
+      "name": "Artista Elegíaco",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/bbb-bard-elegiac-artist.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "bbb-cleric-fortune-domain",
+      "identifier": "bbb-cleric-fortune-domain",
+      "name": "Domínio da Fortuna",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/bbb-cleric-fortune-domain.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-cleric-greed-domain",
+      "identifier": "bbb-cleric-greed-domain",
+      "name": "Domínio da Ganância",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/bbb-cleric-greed-domain.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-cleric-love-domain",
+      "identifier": "bbb-cleric-love-domain",
+      "name": "Domínio do Amor",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/bbb-cleric-love-domain.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-cleric-temper-cross",
+      "identifier": "bbb-cleric-temper-cross",
+      "name": "Cruz da Temperança",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/bbb-cleric-temper-cross.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "bbb-druid-circle-of-ancestors",
+      "identifier": "bbb-druid-circle-of-ancestors",
+      "name": "Círculo dos Ancestrais",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/bbb-druid-circle-of-ancestors.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-druid-circle-of-the-caregiver",
+      "identifier": "bbb-druid-circle-of-the-caregiver",
+      "name": "Círculo do Cuidador",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/bbb-druid-circle-of-the-caregiver.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "bbb-druid-circle-of-social-currency",
+      "identifier": "bbb-druid-circle-of-social-currency",
+      "name": "Círculo da Moeda Social",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/bbb-druid-circle-of-social-currency.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-favored-soul-retia-burden-of-gotham",
+      "identifier": "bbb-favored-soul-retia-burden-of-gotham",
+      "name": "Fardo de Gotham",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/bbb-favored-soul-retia-burden-of-gotham.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-favored-soul-retia-burden-of-hightrankul",
+      "identifier": "bbb-favored-soul-retia-burden-of-hightrankul",
+      "name": "Fardo de Hightrankul",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/bbb-favored-soul-retia-burden-of-hightrankul.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-favored-soul-retia-burden-of-lana",
+      "identifier": "bbb-favored-soul-retia-burden-of-lana",
+      "name": "Fardo de Lana",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/bbb-favored-soul-retia-burden-of-lana.json",
+      "featureCount": 8
+    },
+    {
+      "grimorioId": "bbb-favored-soul-retia-burden-of-meirlach",
+      "identifier": "bbb-favored-soul-retia-burden-of-meirlach",
+      "name": "Fardo de Meirlach",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/bbb-favored-soul-retia-burden-of-meirlach.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-favored-soul-retia-burden-of-scorn",
+      "identifier": "bbb-favored-soul-retia-burden-of-scorn",
+      "name": "Fardo de Scorn",
+      "parentIdentifier": "favored-soul",
+      "file": "bundles/subclasses/bbb-favored-soul-retia-burden-of-scorn.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-fighter-heart-of-focus",
+      "identifier": "bbb-fighter-heart-of-focus",
+      "name": "Coração do Foco",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/bbb-fighter-heart-of-focus.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "bbb-fighter-knight-demonist",
+      "identifier": "bbb-fighter-knight-demonist",
+      "name": "Cavaleiro Demonista",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/bbb-fighter-knight-demonist.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-fighter-sohei",
+      "identifier": "bbb-fighter-sohei",
+      "name": "Sōhei",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/bbb-fighter-sohei.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-inscriptor-retia-grim-fable",
+      "identifier": "bbb-inscriptor-retia-grim-fable",
+      "name": "Fábula Sombria",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/bbb-inscriptor-retia-grim-fable.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-inscriptor-retia-private-fiction",
+      "identifier": "bbb-inscriptor-retia-private-fiction",
+      "name": "Ficção Privada",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/bbb-inscriptor-retia-private-fiction.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-inscriptor-retia-shuji-ink",
+      "identifier": "bbb-inscriptor-retia-shuji-ink",
+      "name": "Tinta Shūji",
+      "parentIdentifier": "inscriptor",
+      "file": "bundles/subclasses/bbb-inscriptor-retia-shuji-ink.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-monk-way-of-fair-intent",
+      "identifier": "bbb-monk-way-of-fair-intent",
+      "name": "Caminho da Intenção Justa",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/bbb-monk-way-of-fair-intent.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-monk-way-of-the-morphic-bone",
+      "identifier": "bbb-monk-way-of-the-morphic-bone",
+      "name": "Caminho do Osso Mórfico",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/bbb-monk-way-of-the-morphic-bone.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-monk-way-of-the-soldier",
+      "identifier": "bbb-monk-way-of-the-soldier",
+      "name": "Caminho do Soldado",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/bbb-monk-way-of-the-soldier.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-paladin-oath-of-bound-fate",
+      "identifier": "bbb-paladin-oath-of-bound-fate",
+      "name": "Juramento do Destino Vinculado",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/bbb-paladin-oath-of-bound-fate.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "bbb-paladin-oath-of-loyalty",
+      "identifier": "bbb-paladin-oath-of-loyalty",
+      "name": "Juramento da Lealdade",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/bbb-paladin-oath-of-loyalty.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "bbb-paladin-oath-of-secrecy",
+      "identifier": "bbb-paladin-oath-of-secrecy",
+      "name": "Juramento do Sigilo",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/bbb-paladin-oath-of-secrecy.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "bbb-petal-knight-retia-azalea",
+      "identifier": "bbb-petal-knight-retia-azalea",
+      "name": "Azaleia",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/bbb-petal-knight-retia-azalea.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-petal-knight-retia-cosmos",
+      "identifier": "bbb-petal-knight-retia-cosmos",
+      "name": "Cosmos",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/bbb-petal-knight-retia-cosmos.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-petal-knight-retia-marigold",
+      "identifier": "bbb-petal-knight-retia-marigold",
+      "name": "Calêndula",
+      "parentIdentifier": "petal-knight",
+      "file": "bundles/subclasses/bbb-petal-knight-retia-marigold.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-ranger-due-collector",
+      "identifier": "bbb-ranger-due-collector",
+      "name": "Cobrador de Dívidas",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/bbb-ranger-due-collector.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-ranger-kyujutsu",
+      "identifier": "bbb-ranger-kyujutsu",
+      "name": "Kyūjutsu",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/bbb-ranger-kyujutsu.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-ranger-night-slayer",
+      "identifier": "bbb-ranger-night-slayer",
+      "name": "Matador Noturno",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/bbb-ranger-night-slayer.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "bbb-rogue-shinobi",
+      "identifier": "bbb-rogue-shinobi",
+      "name": "Shinobi",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/bbb-rogue-shinobi.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-rogue-whimchaser",
+      "identifier": "bbb-rogue-whimchaser",
+      "name": "Caçador de Caprichos",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/bbb-rogue-whimchaser.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-rogue-wordless-knife",
+      "identifier": "bbb-rogue-wordless-knife",
+      "name": "Lâmina Sem Palavras",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/bbb-rogue-wordless-knife.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-sorcerer-graveblood",
+      "identifier": "bbb-sorcerer-graveblood",
+      "name": "Sangue Sepulcral",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/bbb-sorcerer-graveblood.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-sorcerer-lustblooded",
+      "identifier": "bbb-sorcerer-lustblooded",
+      "name": "Sangue da Luxúria",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/bbb-sorcerer-lustblooded.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-sorcerer-wittica",
+      "identifier": "bbb-sorcerer-wittica",
+      "name": "Wittica",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/bbb-sorcerer-wittica.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-sword-saint-retia-way-of-the-beast-slayer",
+      "identifier": "bbb-sword-saint-retia-way-of-the-beast-slayer",
+      "name": "Caminho do Matador de Bestas",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/bbb-sword-saint-retia-way-of-the-beast-slayer.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-sword-saint-retia-way-of-besheth",
+      "identifier": "bbb-sword-saint-retia-way-of-besheth",
+      "name": "Caminho de Besheth",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/bbb-sword-saint-retia-way-of-besheth.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "bbb-sword-saint-retia-way-of-the-butterfly",
+      "identifier": "bbb-sword-saint-retia-way-of-the-butterfly",
+      "name": "Caminho da Borboleta",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/bbb-sword-saint-retia-way-of-the-butterfly.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-sword-saint-retia-way-of-rust",
+      "identifier": "bbb-sword-saint-retia-way-of-rust",
+      "name": "Caminho da Ferrugem",
+      "parentIdentifier": "sword-saint",
+      "file": "bundles/subclasses/bbb-sword-saint-retia-way-of-rust.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "bbb-warlock-the-all-seeing",
+      "identifier": "bbb-warlock-the-all-seeing",
+      "name": "O Onividente",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/bbb-warlock-the-all-seeing.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "bbb-warlock-the-phantasmal",
+      "identifier": "bbb-warlock-the-phantasmal",
+      "name": "O Fantasmagórico",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/bbb-warlock-the-phantasmal.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "bbb-warlock-the-saint-spirit",
+      "identifier": "bbb-warlock-the-saint-spirit",
+      "name": "O Espírito do Santo",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/bbb-warlock-the-saint-spirit.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-wizard-imbuer",
+      "identifier": "bbb-wizard-imbuer",
+      "name": "Imbuidor",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/bbb-wizard-imbuer.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-wizard-sign-seeker",
+      "identifier": "bbb-wizard-sign-seeker",
+      "name": "Buscador de Sinais",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/bbb-wizard-sign-seeker.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "bbb-wizard-sin-sect-magus",
+      "identifier": "bbb-wizard-sin-sect-magus",
+      "name": "Mago da Seita do Pecado",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/bbb-wizard-sin-sect-magus.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "ryoko-barbarian-path-kaiju",
+      "identifier": "ryoko-barbarian-path-kaiju",
+      "name": "Caminho do Kaiju",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/ryoko-barbarian-path-kaiju.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "ryoko-bard-hanabi",
+      "identifier": "ryoko-bard-hanabi",
+      "name": "Colégio de Hanabi",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/ryoko-bard-hanabi.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "ryoko-bard-masks",
+      "identifier": "ryoko-bard-masks",
+      "name": "Colégio das Máscaras",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/ryoko-bard-masks.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "ryoko-cleric-shrine-warden",
+      "identifier": "ryoko-cleric-shrine-warden",
+      "name": "Domínio do Guardião do Santuário",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/ryoko-cleric-shrine-warden.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "ryoko-druid-circle-yokai",
+      "identifier": "ryoko-druid-circle-yokai",
+      "name": "Círculo dos Yokai",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/ryoko-druid-circle-yokai.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "ryoko-fighter-skeletal-blade",
+      "identifier": "ryoko-fighter-skeletal-blade",
+      "name": "Lâmina Esquelética",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/ryoko-fighter-skeletal-blade.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "ryoko-monk-eight-gates",
+      "identifier": "ryoko-monk-eight-gates",
+      "name": "Caminho dos Oito Portões",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/ryoko-monk-eight-gates.json",
+      "featureCount": 8
+    },
+    {
+      "grimorioId": "ryoko-paladin-yojimbo",
+      "identifier": "ryoko-paladin-yojimbo",
+      "name": "Juramento do Yojimbo",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/ryoko-paladin-yojimbo.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "ryoko-ranger-ronin",
+      "identifier": "ryoko-ranger-ronin",
+      "name": "Rōnin",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/ryoko-ranger-ronin.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "ryoko-rogue-tamaya",
+      "identifier": "ryoko-rogue-tamaya",
+      "name": "Tamaya",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/ryoko-rogue-tamaya.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "ryoko-sorcerer-spirit-caller",
+      "identifier": "ryoko-sorcerer-spirit-caller",
+      "name": "Invocador de Espíritos",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/ryoko-sorcerer-spirit-caller.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "ryoko-warlock-shinigami",
+      "identifier": "ryoko-warlock-shinigami",
+      "name": "O Shinigami",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/ryoko-warlock-shinigami.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "ryoko-wizard-shinobi",
+      "identifier": "ryoko-wizard-shinobi",
+      "name": "Shinobi",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/ryoko-wizard-shinobi.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "path-sanctuary",
+      "identifier": "path-sanctuary",
+      "name": "Caminho do Santuário",
+      "parentIdentifier": "spiritual-emissary",
+      "file": "bundles/subclasses/path-sanctuary.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-caminho-do-guardiao-ancestral",
+      "identifier": "xanathar-caminho-do-guardiao-ancestral",
+      "name": "Caminho do Guardião Ancestral",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/xanathar-caminho-do-guardiao-ancestral.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "xanathar-caminho-do-arauto-da-tempestade",
+      "identifier": "xanathar-caminho-do-arauto-da-tempestade",
+      "name": "Caminho do Arauto da Tempestade",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/xanathar-caminho-do-arauto-da-tempestade.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "xanathar-caminho-do-fanatico",
+      "identifier": "xanathar-caminho-do-fanatico",
+      "name": "Caminho do Fanático",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/xanathar-caminho-do-fanatico.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "xanathar-colegio-do-glamour",
+      "identifier": "xanathar-colegio-do-glamour",
+      "name": "Colégio do Glamour",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/xanathar-colegio-do-glamour.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "xanathar-colegio-das-espadas",
+      "identifier": "xanathar-colegio-das-espadas",
+      "name": "Colégio das Espadas",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/xanathar-colegio-das-espadas.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "xanathar-colegio-dos-sussurros",
+      "identifier": "xanathar-colegio-dos-sussurros",
+      "name": "Colégio dos Sussurros",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/xanathar-colegio-dos-sussurros.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "xanathar-o-celestial",
+      "identifier": "xanathar-o-celestial",
+      "name": "O Celestial",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/xanathar-o-celestial.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-a-lamina-maldita",
+      "identifier": "xanathar-a-lamina-maldita",
+      "name": "A Lâmina Maldita",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/xanathar-a-lamina-maldita.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-dominio-da-forja",
+      "identifier": "xanathar-dominio-da-forja",
+      "name": "Domínio da Forja",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/xanathar-dominio-da-forja.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "xanathar-dominio-da-sepultura",
+      "identifier": "xanathar-dominio-da-sepultura",
+      "name": "Domínio da Sepultura",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/xanathar-dominio-da-sepultura.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "xanathar-circulo-dos-sonhos",
+      "identifier": "xanathar-circulo-dos-sonhos",
+      "name": "Círculo dos Sonhos",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/xanathar-circulo-dos-sonhos.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "xanathar-circulo-do-pastor",
+      "identifier": "xanathar-circulo-do-pastor",
+      "name": "Círculo do Pastor",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/xanathar-circulo-do-pastor.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "xanathar-alma-favorecida",
+      "identifier": "xanathar-alma-favorecida",
+      "name": "Alma Favorecida",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/xanathar-alma-favorecida.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "xanathar-adepto-das-sombras",
+      "identifier": "xanathar-adepto-das-sombras",
+      "name": "Adepto das Sombras",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/xanathar-adepto-das-sombras.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "xanathar-feiticeiro-da-tempestade",
+      "identifier": "xanathar-feiticeiro-da-tempestade",
+      "name": "Feiticeiro da Tempestade",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/xanathar-feiticeiro-da-tempestade.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-arqueiro-arcano",
+      "identifier": "xanathar-arqueiro-arcano",
+      "name": "Arqueiro Arcano",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/xanathar-arqueiro-arcano.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-cavaleiro",
+      "identifier": "xanathar-cavaleiro",
+      "name": "Cavaleiro",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/xanathar-cavaleiro.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "xanathar-samurai",
+      "identifier": "xanathar-samurai",
+      "name": "Samurai",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/xanathar-samurai.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-inquiridor",
+      "identifier": "xanathar-inquiridor",
+      "name": "Inquiridor",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/xanathar-inquiridor.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-mentor",
+      "identifier": "xanathar-mentor",
+      "name": "Mentor",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/xanathar-mentor.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "xanathar-batedor",
+      "identifier": "xanathar-batedor",
+      "name": "Batedor",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/xanathar-batedor.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "xanathar-espadachim",
+      "identifier": "xanathar-espadachim",
+      "name": "Espadachim",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/xanathar-espadachim.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "xanathar-mago-de-guerra",
+      "identifier": "xanathar-mago-de-guerra",
+      "name": "Mago de Guerra",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/xanathar-mago-de-guerra.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "xanathar-estilo-do-mestre-bebado",
+      "identifier": "xanathar-estilo-do-mestre-bebado",
+      "name": "Estilo do Mestre Bêbado",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/xanathar-estilo-do-mestre-bebado.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "xanathar-estilo-do-kensei",
+      "identifier": "xanathar-estilo-do-kensei",
+      "name": "Estilo do Kensei",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/xanathar-estilo-do-kensei.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "xanathar-estilo-da-alma-solar",
+      "identifier": "xanathar-estilo-da-alma-solar",
+      "name": "Estilo da Alma Solar",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/xanathar-estilo-da-alma-solar.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "xanathar-juramento-da-conquista",
+      "identifier": "xanathar-juramento-da-conquista",
+      "name": "Juramento da Conquista",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/xanathar-juramento-da-conquista.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-juramento-da-redencao",
+      "identifier": "xanathar-juramento-da-redencao",
+      "name": "Juramento da Redenção",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/xanathar-juramento-da-redencao.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-perseguidor-obscuro",
+      "identifier": "xanathar-perseguidor-obscuro",
+      "name": "Perseguidor Obscuro",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/xanathar-perseguidor-obscuro.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-andarilho-do-horizonte",
+      "identifier": "xanathar-andarilho-do-horizonte",
+      "name": "Andarilho do Horizonte",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/xanathar-andarilho-do-horizonte.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "xanathar-exterminador-de-monstros",
+      "identifier": "xanathar-exterminador-de-monstros",
+      "name": "Exterminador de Monstros",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/xanathar-exterminador-de-monstros.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "tasha-alquimista",
+      "identifier": "tasha-alquimista",
+      "name": "Alquimista",
+      "parentIdentifier": "artificer",
+      "file": "bundles/subclasses/tasha-alquimista.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "tasha-armeiro",
+      "identifier": "tasha-armeiro",
+      "name": "Armeiro",
+      "parentIdentifier": "artificer",
+      "file": "bundles/subclasses/tasha-armeiro.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "tasha-atirador",
+      "identifier": "tasha-atirador",
+      "name": "Atirador",
+      "parentIdentifier": "artificer",
+      "file": "bundles/subclasses/tasha-atirador.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "tasha-ferreiro-de-batalha",
+      "identifier": "tasha-ferreiro-de-batalha",
+      "name": "Ferreiro de Batalha",
+      "parentIdentifier": "artificer",
+      "file": "bundles/subclasses/tasha-ferreiro-de-batalha.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "tasha-trilha-da-besta",
+      "identifier": "tasha-trilha-da-besta",
+      "name": "Trilha da Besta",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/tasha-trilha-da-besta.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "tasha-trilha-da-magia-selvagem",
+      "identifier": "tasha-trilha-da-magia-selvagem",
+      "name": "Trilha da Magia Selvagem",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/tasha-trilha-da-magia-selvagem.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-colegio-da-criacao",
+      "identifier": "tasha-colegio-da-criacao",
+      "name": "Colégio da Criação",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/tasha-colegio-da-criacao.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "tasha-colegio-da-eloquencia",
+      "identifier": "tasha-colegio-da-eloquencia",
+      "name": "Colégio da Eloquência",
+      "parentIdentifier": "bard",
+      "file": "bundles/subclasses/tasha-colegio-da-eloquencia.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-o-insondavel",
+      "identifier": "tasha-o-insondavel",
+      "name": "O Insondável",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/tasha-o-insondavel.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "tasha-o-genio",
+      "identifier": "tasha-o-genio",
+      "name": "O Gênio",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/tasha-o-genio.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-dominio-da-ordem",
+      "identifier": "tasha-dominio-da-ordem",
+      "name": "Domínio da Ordem",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/tasha-dominio-da-ordem.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "tasha-dominio-da-paz",
+      "identifier": "tasha-dominio-da-paz",
+      "name": "Domínio da Paz",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/tasha-dominio-da-paz.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "tasha-dominio-do-crepusculo",
+      "identifier": "tasha-dominio-do-crepusculo",
+      "name": "Domínio do Crepúsculo",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/tasha-dominio-do-crepusculo.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "tasha-circulo-dos-esporos",
+      "identifier": "tasha-circulo-dos-esporos",
+      "name": "Círculo dos Esporos",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/tasha-circulo-dos-esporos.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "tasha-circulo-das-estrelas",
+      "identifier": "tasha-circulo-das-estrelas",
+      "name": "Círculo das Estrelas",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/tasha-circulo-das-estrelas.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-circulo-do-fogo-selvagem",
+      "identifier": "tasha-circulo-do-fogo-selvagem",
+      "name": "Círculo do Fogo Selvagem",
+      "parentIdentifier": "druid",
+      "file": "bundles/subclasses/tasha-circulo-do-fogo-selvagem.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-mente-aberrante",
+      "identifier": "tasha-mente-aberrante",
+      "name": "Mente Aberrante",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/tasha-mente-aberrante.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "tasha-alma-cronometrica",
+      "identifier": "tasha-alma-cronometrica",
+      "name": "Alma Cronométrica",
+      "parentIdentifier": "sorcerer",
+      "file": "bundles/subclasses/tasha-alma-cronometrica.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-andarilho-feerico",
+      "identifier": "tasha-andarilho-feerico",
+      "name": "Andarilho Feérico",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/tasha-andarilho-feerico.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "tasha-portador-do-enxame",
+      "identifier": "tasha-portador-do-enxame",
+      "name": "Portador do Enxame",
+      "parentIdentifier": "ranger",
+      "file": "bundles/subclasses/tasha-portador-do-enxame.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-guerreiro-psionico",
+      "identifier": "tasha-guerreiro-psionico",
+      "name": "Guerreiro Psiônico",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/tasha-guerreiro-psionico.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-cavaleiro-runico",
+      "identifier": "tasha-cavaleiro-runico",
+      "name": "Cavaleiro Rúnico",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/tasha-cavaleiro-runico.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "tasha-fantasma",
+      "identifier": "tasha-fantasma",
+      "name": "Fantasma",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/tasha-fantasma.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-alma-laminada",
+      "identifier": "tasha-alma-laminada",
+      "name": "Alma Laminada",
+      "parentIdentifier": "rogue",
+      "file": "bundles/subclasses/tasha-alma-laminada.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-lamina-cantante",
+      "identifier": "tasha-lamina-cantante",
+      "name": "Lâmina Cantante",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/tasha-lamina-cantante.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-ordem-dos-escribas",
+      "identifier": "tasha-ordem-dos-escribas",
+      "name": "Ordem dos Escribas",
+      "parentIdentifier": "wizard",
+      "file": "bundles/subclasses/tasha-ordem-dos-escribas.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-caminho-da-misericordia",
+      "identifier": "tasha-caminho-da-misericordia",
+      "name": "Caminho da Misericórdia",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/tasha-caminho-da-misericordia.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "tasha-caminho-da-forma-astral",
+      "identifier": "tasha-caminho-da-forma-astral",
+      "name": "Caminho da Forma Astral",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/tasha-caminho-da-forma-astral.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "tasha-juramento-da-gloria",
+      "identifier": "tasha-juramento-da-gloria",
+      "name": "Juramento da Glória",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/tasha-juramento-da-gloria.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "tasha-juramento-da-vigilancia",
+      "identifier": "tasha-juramento-da-vigilancia",
+      "name": "Juramento da Vigilância",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/tasha-juramento-da-vigilancia.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "scag-caminho-da-furia-da-batalha",
+      "identifier": "scag-caminho-da-furia-da-batalha",
+      "name": "Caminho da Fúria da Batalha",
+      "parentIdentifier": "barbarian",
+      "file": "bundles/subclasses/scag-caminho-da-furia-da-batalha.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "scag-dominio-arcano",
+      "identifier": "scag-dominio-arcano",
+      "name": "Domínio Arcano",
+      "parentIdentifier": "cleric",
+      "file": "bundles/subclasses/scag-dominio-arcano.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "scag-cavaleiro-dragao-purpura",
+      "identifier": "scag-cavaleiro-dragao-purpura",
+      "name": "Cavaleiro Dragão Púrpura",
+      "parentIdentifier": "fighter",
+      "file": "bundles/subclasses/scag-cavaleiro-dragao-purpura.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "scag-caminho-da-morte-extensa",
+      "identifier": "scag-caminho-da-morte-extensa",
+      "name": "Caminho da Morte Extensa",
+      "parentIdentifier": "monk",
+      "file": "bundles/subclasses/scag-caminho-da-morte-extensa.json",
+      "featureCount": 4
+    },
+    {
+      "grimorioId": "scag-juramento-da-coroa",
+      "identifier": "scag-juramento-da-coroa",
+      "name": "Juramento da Coroa",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/scag-juramento-da-coroa.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "scag-o-eterno",
+      "identifier": "scag-o-eterno",
+      "name": "O Eterno",
+      "parentIdentifier": "warlock",
+      "file": "bundles/subclasses/scag-o-eterno.json",
+      "featureCount": 5
+    },
+    {
+      "grimorioId": "juramento-lamina-bahamut",
+      "identifier": "juramento-lamina-bahamut",
+      "name": "Juramento da Lâmina de Bahamut",
+      "parentIdentifier": "paladin",
+      "file": "bundles/subclasses/juramento-lamina-bahamut.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "spellblade-battlemage",
+      "identifier": "spellblade-battlemage",
+      "name": "Mago de Batalha",
+      "parentIdentifier": "spellblade",
+      "file": "bundles/subclasses/spellblade-battlemage.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "spellblade-aether-blade",
+      "identifier": "spellblade-aether-blade",
+      "name": "Lâmina de Éter",
+      "parentIdentifier": "spellblade",
+      "file": "bundles/subclasses/spellblade-aether-blade.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "spellblade-guardian",
+      "identifier": "spellblade-guardian",
+      "name": "Guardião",
+      "parentIdentifier": "spellblade",
+      "file": "bundles/subclasses/spellblade-guardian.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "spellblade-swiftblade",
+      "identifier": "spellblade-swiftblade",
+      "name": "Lâmina Veloz",
+      "parentIdentifier": "spellblade",
+      "file": "bundles/subclasses/spellblade-swiftblade.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "spellblade-mage-hunter",
+      "identifier": "spellblade-mage-hunter",
+      "name": "Caçador de Magos",
+      "parentIdentifier": "spellblade",
+      "file": "bundles/subclasses/spellblade-mage-hunter.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "spellblade-spellshot",
+      "identifier": "spellblade-spellshot",
+      "name": "Atirador Arcano",
+      "parentIdentifier": "spellblade",
+      "file": "bundles/subclasses/spellblade-spellshot.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "spellblade-rimeblade",
+      "identifier": "spellblade-rimeblade",
+      "name": "Lâmina de Geada",
+      "parentIdentifier": "spellblade",
+      "file": "bundles/subclasses/spellblade-rimeblade.json",
+      "featureCount": 7
+    },
+    {
+      "grimorioId": "spellblade-flying-sword",
+      "identifier": "spellblade-flying-sword",
+      "name": "Espada Voadora",
+      "parentIdentifier": "spellblade",
+      "file": "bundles/subclasses/spellblade-flying-sword.json",
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "spellblade-spellfist",
+      "identifier": "spellblade-spellfist",
+      "name": "Punho Mágico",
+      "parentIdentifier": "spellblade",
+      "file": "bundles/subclasses/spellblade-spellfist.json",
+      "featureCount": 6
+    }
+  ],
+  "reserved": {
+    "classes": [
+      {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico",
+        "warnings": [
+          "Dados de Vida, salvaguardas e proficiências variam conforme o Conceito Central; a Fase 5 deverá materializar essas escolhas de forma condicional.",
+          "Dado de Vida não padrão para o Item de classe vanilla: Varia por Conceito Central (d6–d12)."
+        ]
+      },
+      {
+        "grimorioId": "frame-pilot",
+        "identifier": "frame-pilot",
+        "name": "Piloto de Frame",
+        "warnings": [
+          "As proficiências de salvaguarda do Piloto de Frame são escolhas variáveis; a Fase 5 deverá usar uma escolha de Trait/Advancement ou rotina equivalente."
+        ]
+      },
+      {
+        "grimorioId": "bender-ryoko",
+        "identifier": "bender",
+        "name": "Dobrador",
+        "warnings": [
+          "A habilidade de conjuração do Dobrador é escolhida entre Inteligência, Sabedoria ou Carisma no 1º nível; a Fase 5 deverá preservar essa escolha."
+        ]
+      },
+      {
+        "grimorioId": "tamer-ryoko",
+        "identifier": "tamer",
+        "name": "Domador",
+        "warnings": [
+          "A habilidade de conjuração do Domador é escolhida entre Inteligência, Sabedoria ou Carisma; a Fase 5 deverá preservar essa escolha."
+        ]
+      },
+      {
+        "grimorioId": "blood-minister-somnus",
+        "identifier": "blood-minister",
+        "name": "Ministro de Sangue",
+        "warnings": [
+          "O Ministro de Sangue usa 2d4 Dados de Vida por nível, enquanto o Item de classe padrão do dnd5e trabalha com um único dado-base; a Fase 5 exigirá tratamento customizado.",
+          "Dado de Vida não padrão para o Item de classe vanilla: 2d4."
+        ]
+      }
+    ],
+    "subclasses": [
+      {
+        "grimorioId": "zagalhta-dragoneer-auraphage",
+        "identifier": "zagalhta-dragoneer-auraphage",
+        "name": "Aurófago",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "zagalhta-dragoneer-bloodweaver",
+        "identifier": "zagalhta-dragoneer-bloodweaver",
+        "name": "Tecelão de Sangue",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "zagalhta-dragoneer-breaking-dynamo",
+        "identifier": "zagalhta-dragoneer-breaking-dynamo",
+        "name": "Dínamo Rompedor",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "zagalhta-dragoneer-child-of-fate",
+        "identifier": "zagalhta-dragoneer-child-of-fate",
+        "name": "Filho do Destino",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "zagalhta-dragoneer-demon-dancer",
+        "identifier": "zagalhta-dragoneer-demon-dancer",
+        "name": "Dançarino Demoníaco",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "zagalhta-dragoneer-echoing-voice",
+        "identifier": "zagalhta-dragoneer-echoing-voice",
+        "name": "Voz Ecoante",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "zagalhta-dragoneer-piercing-hand",
+        "identifier": "zagalhta-dragoneer-piercing-hand",
+        "name": "Mão Perfurante",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "zagalhta-dragoneer-raging-titan",
+        "identifier": "zagalhta-dragoneer-raging-titan",
+        "name": "Titã Furioso",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "zagalhta-dragoneer-royal-sweeper",
+        "identifier": "zagalhta-dragoneer-royal-sweeper",
+        "name": "Varredor Real",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "zagalhta-frame-pilot-coordinator",
+        "identifier": "zagalhta-frame-pilot-coordinator",
+        "name": "Coordenador",
+        "parentIdentifier": "frame-pilot"
+      },
+      {
+        "grimorioId": "zagalhta-frame-pilot-skirmisher",
+        "identifier": "zagalhta-frame-pilot-skirmisher",
+        "name": "Escaramuçador",
+        "parentIdentifier": "frame-pilot"
+      },
+      {
+        "grimorioId": "zagalhta-frame-pilot-strike-soldier",
+        "identifier": "zagalhta-frame-pilot-strike-soldier",
+        "name": "Soldado de Assalto",
+        "parentIdentifier": "frame-pilot"
+      },
+      {
+        "grimorioId": "zagalhta-frame-pilot-technoloader",
+        "identifier": "zagalhta-frame-pilot-technoloader",
+        "name": "Tecnocarregador",
+        "parentIdentifier": "frame-pilot"
+      },
+      {
+        "grimorioId": "zagalhta-frame-pilot-vortex-manipulator",
+        "identifier": "zagalhta-frame-pilot-vortex-manipulator",
+        "name": "Manipulador de Vórtice",
+        "parentIdentifier": "frame-pilot"
+      },
+      {
+        "grimorioId": "bbb-blood-minister-somnus-bloodpact-medic",
+        "identifier": "bbb-blood-minister-somnus-bloodpact-medic",
+        "name": "Médico do Pacto de Sangue",
+        "parentIdentifier": "blood-minister"
+      },
+      {
+        "grimorioId": "bbb-blood-minister-somnus-cursetinged-maverick",
+        "identifier": "bbb-blood-minister-somnus-cursetinged-maverick",
+        "name": "Dissidente Maculado pela Maldição",
+        "parentIdentifier": "blood-minister"
+      },
+      {
+        "grimorioId": "bbb-blood-minister-somnus-fateblooded",
+        "identifier": "bbb-blood-minister-somnus-fateblooded",
+        "name": "Sangue do Destino",
+        "parentIdentifier": "blood-minister"
+      },
+      {
+        "grimorioId": "bbb-blood-minister-somnus-grim-hunter",
+        "identifier": "bbb-blood-minister-somnus-grim-hunter",
+        "name": "Caçador Sombrio",
+        "parentIdentifier": "blood-minister"
+      },
+      {
+        "grimorioId": "bbb-blood-minister-somnus-hemomancer",
+        "identifier": "bbb-blood-minister-somnus-hemomancer",
+        "name": "Hemomante",
+        "parentIdentifier": "blood-minister"
+      },
+      {
+        "grimorioId": "bbb-blood-minister-somnus-inoculator",
+        "identifier": "bbb-blood-minister-somnus-inoculator",
+        "name": "Inoculador",
+        "parentIdentifier": "blood-minister"
+      },
+      {
+        "grimorioId": "bbb-blood-minister-somnus-mutagenic",
+        "identifier": "bbb-blood-minister-somnus-mutagenic",
+        "name": "Mutagênico",
+        "parentIdentifier": "blood-minister"
+      },
+      {
+        "grimorioId": "bbb-blood-minister-somnus-sanguine-knight",
+        "identifier": "bbb-blood-minister-somnus-sanguine-knight",
+        "name": "Cavaleiro Sanguíneo",
+        "parentIdentifier": "blood-minister"
+      },
+      {
+        "grimorioId": "bbb-dragoneer-darkstriker",
+        "identifier": "bbb-dragoneer-darkstriker",
+        "name": "Golpeador Sombrio",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "bbb-dragoneer-fortune-veil",
+        "identifier": "bbb-dragoneer-fortune-veil",
+        "name": "Véu da Fortuna",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "bbb-dragoneer-phasescale-knight",
+        "identifier": "bbb-dragoneer-phasescale-knight",
+        "name": "Cavaleiro da Escama Fásica",
+        "parentIdentifier": "dragoneer"
+      },
+      {
+        "grimorioId": "ryoko-bender-ferocity",
+        "identifier": "ryoko-bender-ferocity",
+        "name": "Discípulo da Ferocidade",
+        "parentIdentifier": "bender"
+      },
+      {
+        "grimorioId": "ryoko-bender-fortification",
+        "identifier": "ryoko-bender-fortification",
+        "name": "Discípulo da Fortificação",
+        "parentIdentifier": "bender"
+      },
+      {
+        "grimorioId": "ryoko-bender-fusion",
+        "identifier": "ryoko-bender-fusion",
+        "name": "Discípulo da Fusão",
+        "parentIdentifier": "bender"
+      },
+      {
+        "grimorioId": "ryoko-bender-invigoration",
+        "identifier": "ryoko-bender-invigoration",
+        "name": "Discípulo do Revigoramento",
+        "parentIdentifier": "bender"
+      },
+      {
+        "grimorioId": "ryoko-tamer-sensei",
+        "identifier": "ryoko-tamer-sensei",
+        "name": "Sensei",
+        "parentIdentifier": "tamer"
+      }
+    ]
+  }
+}

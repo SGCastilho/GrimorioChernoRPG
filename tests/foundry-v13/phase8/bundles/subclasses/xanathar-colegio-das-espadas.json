@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-colegio-das-espadas",
+    "identifier": "xanathar-colegio-das-espadas",
+    "name": "Colégio das Espadas",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "15–16",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 15
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Bardos do colégio das espadas são chamados Lâminas e eles entretêm através de façanhas ousadas com a proeza nas armas. Os Lâminas executam acrobacias como engolir a espada, atirar facas e fazer malabarismo e combates simulados. Embora eles usem suas armas para entreter, eles também são altamente treinados e habilidosos guerreiros natos. Seus talentos com armas inspiram muitos Lâminas a levarem uma vida dupla. Um Lâmina pode usar uma trupe de circo como cobertura de ações nefastas, como assassinato, roubo e chantagem. Outros Lâminas atacam os ímpios, trazendo justiça contra os cruéis e poderosos. As maiorias dos grupos ficam felizes em aceitar o talento de um Lâmina para acrescentar emoção para as performances, mas poucos artistas confiam plenamente neles. Lâminas que abandonam suas vidas como artistas sempre se deparam com problemas que tornam impossível com que mantenham suas vidas secretas. Um Lâmina pego roubando ou se envolvendo com a justiça é uma responsabilidade muito grande para a maioria das trupes. Com suas habilidades em armas e magias, esses Lâminas trabalham como responsáveis por guildas de ladrões ou atacam por conta própria como aventureiros.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 15
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-colegio-das-espadas.feature.proficiencia-bonus.l3.1",
+      "name": "PROFICIÊNCIA BÔNUS",
+      "level": 3,
+      "description": "Quando você entra no Colégio das Espadas no 3° nível, você ganha proficiência com armadura media e cimitarras. Se você é proficiente com uma arma simples ou marcial, você pode usar como foco de feitiço para os seus feitiços difíceis.",
+      "page": 15,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-colegio-das-espadas.feature.estilo-de-luta.l3.1",
+      "name": "ESTILO DE LUTA",
+      "level": 3,
+      "description": "No 3° nível, você adota um estilo de luta como sua especialidade. Escolha uma das seguintes opções. Você não pode escolher um estilo uma opção mais de uma vez mesmo que algo no jogo lhe permita. Duelo. Quando você está empunhando uma arma corpo a corpo em uma mão e nenhuma outra, você ganha um bônus de +2 nas rolagens de ataque com essa arma. Combate com Duas Armas. Quando você se empenha em duas armas, você pode adicionar o modificador de habilidade ao dano do segundo ataque.",
+      "page": 15,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-colegio-das-espadas.feature.floreio-de-laminas.l3.1",
+      "name": "FLOREIO DE LÂMINAS",
+      "level": 3,
+      "description": "No 3° nível, você aprende a realizar exibições impressionantes de proeza e velocidade marcial. Sempre que você toma a ação de Ataque no seu turno, sua velocidade de caminhada aumenta 3 metros até o finaldo turno, e se um ataque de arma que você faz como parte desta ação atinge uma criatura, você pode usar uma das seguintes opções de Floreios de Lâmina de sua escolha. Você pode usar apenas uma opção por turno. Floreio Defensivo. Você pode gastar uma Inspiração de Bardo para causar dano extra ao alvo que acerta. 0 dano é igual ao número que você rola no dado de inspiração de bardo. Você também adiciona o número rolado a sua CA até o início de seu próximo turno. Floreio Cortante. Você pode gastar uma de suas Inspirações de Bardo para causar dano extra ao alvo que acerta e a qualquer outra criatura de sua escolha que você possa a 1,5 metros de você. 0 dano é igual ao número que você rola no dado de inspiração de bardo. Floreio Móvel. Você pode gastar uma de suas Inspirações de Bardo para causar dano extra ao alvo que acerta. 0 dano é igual ao número que você rola no dado de inspiração de bardo. Você também pode empurrar o alvo até 1,5 metros de distância de você, além de um valor de 30 centímetros a cada número que você rola naquele dado. Você pode então usar instantaneamente sua reação para se deslocar até um espaço desocupado dentro de 1,5 metros do alvo.",
+      "page": 15,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-colegio-das-espadas.feature.ataque-extra.l6.1",
+      "name": "ATAQUE EXTRA",
+      "level": 6,
+      "description": "No 6° nível, você pode atacar duas vezes ao invés de uma, sempre que você toma a ação Atacar em seu turno. CAPITULO l I OPÇÕES DE PERSONALIZAÇAO",
+      "page": 15,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-colegio-das-espadas.feature.floreio-do-mestre.l14.1",
+      "name": "FLOREIO DO MESTRE",
+      "level": 14,
+      "description": "No 14° nível, sempre que você usa o Floreio de Lâminas, você pode rolar um d6 e usar ao invés de gastar um dado de Inspiração do Bardo.",
+      "page": 16,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

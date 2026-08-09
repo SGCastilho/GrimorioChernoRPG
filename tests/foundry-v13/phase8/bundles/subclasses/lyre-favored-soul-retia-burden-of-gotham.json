@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-gotham",
+    "identifier": "lyre-favored-soul-retia-burden-of-gotham",
+    "name": "Fardo de Gotham",
+    "originalName": "Burden of Gotham",
+    "aliases": [
+      "Burden of Gotham"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "349–350",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 349
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): grande foice. Um favorecido de Gotham é seu verdadeiro representante no Plano Material, potencial líder da Corte da Decadência e portador do fardo de espalhar a não vida, quer deseje esse caminho ou não.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 349
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-gotham.feature.mestre-da-necromancia.l1.1",
+      "name": "MESTRE DA NECROMANCIA",
+      "level": 1,
+      "description": "Todas as magias de Necromancia contam como magias da Alma Favorecida para você. Você também recebe um espaço de pacto adicional do mesmo nível dos demais, mas esse espaço especial só pode conjurar magias de Necromancia.",
+      "page": 349,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-gotham.feature.corpo-sobrenatural.l1.1",
+      "name": "CORPO SOBRENATURAL",
+      "level": 1,
+      "description": "Você ganha proficiência em salvaguardas de Constituição e resistência a dano necrótico.",
+      "page": 349,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-gotham.feature.fortitude-mortal.l6.1",
+      "name": "FORTITUDE MORTAL",
+      "level": 6,
+      "description": "Quando dano o reduziria a 0 PV, faça salvaguarda de Constituição CD 5 + dano sofrido, exceto se o dano for radiante ou vier de crítico. Em sucesso, fica com 1 PV. Cada vez que evita cair a 0 assim, a CD aumenta em 2 até um Descanso Curto ou Longo.",
+      "page": 349,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-gotham.feature.inflicao-glutona.l10.1",
+      "name": "INFLIÇÃO GLUTONA",
+      "level": 10,
+      "description": "No lugar de um ataque com arma, gaste Purificação para conjurar Infligir Ferimentos sem espaço como se usasse um de seus espaços de pacto, mesmo sem conhecer ou preparar a magia. Em acerto, escolha recuperar PV iguais ao dano causado ou ganhar a mesma quantidade em PV temporários. Se errar, recupera o uso de Purificação no fim do turno.",
+      "page": 350,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-gotham.feature.animar-servos.l13.1",
+      "name": "ANIMAR SERVOS",
+      "level": 13,
+      "description": "Uma vez por Descanso Longo, conjure 1d4+2 Servos em Decadência em espaços desocupados a até 9 metros por 10 minutos. Eles compartilham iniciativa e um único reservatório de PV igual a 15 × o número convocado; se um morrer por dano, todos morrem, e não podem recuperar PV. Eles usam seu bônus de proficiência nas salvaguardas, sua CD de magia para Visagem de Pesadelo e seu ataque de magia para os ataques Rasgar. Obedecem comandos; se começarem turno a mais de 9 metros de você, precisam tentar voltar ao alcance e, se não conseguirem, usam Esquivar. Sem comandos, procuram permanecer a até 9 metros, defender-se e atacar criaturas hostis a você.",
+      "page": 350,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

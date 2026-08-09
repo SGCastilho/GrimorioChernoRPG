@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-bard-stellar-idol",
+    "identifier": "zagalhta-bard-stellar-idol",
+    "name": "Ídolo Estelar",
+    "originalName": "Stellar Idol",
+    "aliases": [
+      "Stellar Idol"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "142",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 142
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Artista pop criado para viajar e se apresentar entre as estrelas. Sua música ressoa especialmente com unidades frame e converte Inspiração de Bardo em sincronia, comando e poder mecânico.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 142
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-bard-stellar-idol.feature.performance-em-camadas.l3.1",
+      "name": "PERFORMANCE EM CAMADAS",
+      "level": 3,
+      "description": "Ao conceder Inspiração de Bardo, pode conjurar como parte da mesma ação uma magia de 1 ação ou 1 ação bônus, tendo somente aquela criatura como alvo, mesmo fora do alcance normal. Se exigir concentração, você não pode perdê-la enquanto o alvo carregar sua Inspiração e pode mantê-la junto de outros efeitos de concentração.",
+      "page": 142,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-bard-stellar-idol.feature.voz-das-estrelas.l3.1",
+      "name": "VOZ DAS ESTRELAS",
+      "level": 3,
+      "description": "Magias de Astromancia contam como magias de Bardo para você. Enquanto puder falar, sua própria voz cantada pode servir como instrumento para performance e magia de Bardo.",
+      "page": 142,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-bard-stellar-idol.feature.estreia-estelar.l6.1",
+      "name": "ESTREIA ESTELAR",
+      "level": 6,
+      "description": "Uma vez por Descanso, produz conjurar eco de frame sem espaço, como usando seu maior Espaço de Bardo mesmo que abaixo do nível-base. Pode imediatamente conceder Inspiração ao eco; enquanto ele a carregar, você não perde concentração na magia. O eco recebe PV temporários iguais ao dobro do nível de Bardo.",
+      "page": 142,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-bard-stellar-idol.feature.medley-de-comando.l14.1",
+      "name": "MEDLEY DE COMANDO",
+      "level": 14,
+      "description": "No seu turno, como ação bônus, ordene uma unidade frame conjurada por Estreia Estelar a realizar qualquer ação, inclusive Multiataque, e mover até metade do deslocamento antes ou depois. Pode fazer o mesmo com unidades frame reais e voluntárias dentro do alcance de sua Inspiração.",
+      "page": 142,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-trilha-da-besta",
+    "identifier": "tasha-trilha-da-besta",
+    "name": "Trilha da Besta",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "23–24",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 23
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Bárbaros que caminham pela Trilha da Besta tiram sua fúria de uma centelha bestial que queima em suas almas. Essa besta irrompe no auge da fúria, transformando fisicamente o bárbaro. Tais bárbaros podem ser possuídos por um espírito primitivo ou serem descendentes de metamorfos. Você pode escolher a origem de seu poder feral ou determinar isso rolando na tabela de Origem da Besta. Origem da besta d4 Origem 1 Um de seus pais é um licantropo, e você herdou parte de sua maldição. 2 Você é descendente de um arquidruida e herdou a habilidade de mudar de forma parcialmente. 3 Um espírito feérico o presentou com a habilidade de adotar diferentes aspectos bestiais. 4 O espírito de um animal ancestral vive dentro de você, permitindo que trilhe esse caminho.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 23
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-trilha-da-besta.feature.forma-da-besta.l3.1",
+      "name": "FORMA DA BESTA",
+      "level": 3,
+      "description": "Quando você entra em fúria, você pode se transformar, revelando o poder bestial que há dentro de você. Até que a fúria se encerre, você manifesta uma arma natural. Ela conta como uma arma simples de ataque corpo a corpo para você, e você adiciona seu modificador de Força às rolagens de ataque e dano quando ataca com ela, como normalmente. Você escolhe a forma da arma cada vez que entra em fúria: Mordida. Sua boca se transforma em um focinho bestial ou em grandes mandíbulas (a sua escolha). Isso provoca 1d8 de dano perfurante em um acerto. Uma vez por turno, quando você causa dano em uma criatura com essa mordida, você recupera uma quantia de pontos de vida igual ao seu modificador de proficiência, desde que você esteja com metade ou menos de seus pontos de vida totais no momento do acerto. Garras. Cada uma de suas mãos se transforma em uma pata com garras que você pode utilizar como arma caso suas mãos estejam livres. Isso provoca 1d6 de dano cortante em caso de acerto. Uma vez por turno, quando você atacar com suas garras usando a ação de Ataque, você pode realizar um ataque de garra adicional como parte da mesma ação. Cauda. Cresce uma cauda chicoteante e espinhosa em você, que causa 1d8 de dano perfurante em um acerto e que possui a propriedade de alcance. Se uma criatura a até 3m de você e que esteja em seu campo de visão o acerta com uma jogada de ataque, você pode utilizar a sua reação para golpear com sua cauda e rolar um d8, aplicando um bônus em sua CA equivalente ao valor rolado e fazendo com que o ataque potencialmente o erre.",
+      "page": 23,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-trilha-da-besta.feature.alma-bestial.l6.1",
+      "name": "ALMA BESTIAL",
+      "level": 6,
+      "description": "O poder feral dentro de você aumenta, fazendo com que a arma natural da sua Forma Bestial conte como mágica para o propósito de superar resistências e imunidades a ataques e danos não-mágicos. Você também pode alterar sua forma para se adaptar aos seus arredores. Quando você finalizar um descanso curto ou longo, escolha um dos seguintes benefícios, que durará até que você termine seu próximo descanso, seja ele curto ou longo: Você adquire deslocamento de natação igual ao seu deslocamento terrestre, e você pode respirar debaixo da água Você ganha deslocamento de escalada igual ao seu deslocamento terrestre e você pode escalar superfícies difíceis, incluindo ficar de cabeça para baixo em tetos, sem a necessidade de realizar testes de habilidade. Quando você salta, você pode realizar um teste de Força (Atletismo) e ampliar seu salto por uma quantia de metros igual a um terço do resultado total. Você pode realizar esse teste especial apenas uma vez por turno",
+      "page": 24,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-trilha-da-besta.feature.furia-contagiosa.l10.1",
+      "name": "FÚRIA CONTAGIOSA",
+      "level": 10,
+      "description": "Quando você acerta uma criatura com suas armas naturais enquanto em fúria, a besta dentro de você pode amaldiçoar seu alvo com uma raiva descontrolada. O alvo deve ser bemsucedido em uma salvaguarda de Sabedoria (CD igual a 8 + seu modificador de Constituição + seu bônus de proficiência) ou sofrer um dos seguintes efeitos (a sua escolha): O alvo deve usar sua reação para realizar um ataque corpo a corpo contra outra criatura a sua escolha que você possa ver. O alvo recebe 2d12 de dano psíquico. Você pode usar essa característica um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos quando você terminar um descanso longo.",
+      "page": 24,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-trilha-da-besta.feature.chamado-de-caca.l14.1",
+      "name": "CHAMADO DE CAÇA",
+      "level": 14,
+      "description": "A besta dentro de você torna-se tão poderosa que você pode espalhar sua ferocidade para os outros e adquirir resiliência através daqueles que se juntarem a sua caçada. Quando você entrar em fúria, você pode escolher uma quantia de outras criaturas voluntárias dentro da sua visão a até 9m de você igual ao seu modificador de Constituição (mínimo de uma criatura). Você ganha 5 pontos de vida temporários para cada criatura que aceitar essa característica. Até que a fúria se encerre, cada uma das criaturas escolhidas pode utilizar o seguinte benefício uma vez em cada um dos seus turnos: Quando a criatura acertar um alvo com uma jogada de ataque e provocar dano nele, a criatura pode rolar um d6 e ganhar um bônus no dado igual ao valor rolado. Você pode usar essa característica um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos ao terminar um descanso longo.",
+      "page": 24,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

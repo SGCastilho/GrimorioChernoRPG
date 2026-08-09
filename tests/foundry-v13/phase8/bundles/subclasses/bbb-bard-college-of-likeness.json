@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-bard-college-of-likeness",
+    "identifier": "bbb-bard-college-of-likeness",
+    "name": "Colégio da Semelhança",
+    "originalName": "College of Likeness",
+    "aliases": [
+      "College of Likeness"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "85–87",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 85
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Um artista que assume diferentes traços ao adornar a si mesmo e aos outros com máscaras.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 85
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-bard-college-of-likeness.feature.mascaras-anamcohla.l3.1",
+      "name": "MÁSCARAS ANAMCOHLA",
+      "level": 3,
+      "description": "Você cria máscaras especiais infundidas com o poder de diferentes criaturas. Ao receber esta característica, escolha três das opções abaixo. Você pode colocar ou trocar uma máscara como ação bônus, só pode usar uma por vez e, enquanto a usa, recebe seu efeito e conta como o tipo de criatura indicado entre parênteses. Ao terminar um Descanso Longo, pode substituir até metade das máscaras escolhidas, arredondado para baixo. Nos níveis 5, 9, 13 e 17 de bardo, o número de máscaras que pode preparar aumenta em 1.\n\nALQUIMISTA (LIMO). Pode atravessar espaços de até 2,5 cm de largura ao liquefazer o corpo. Como ação, restaura a si ou a uma criatura tocada em 1d8 + metade do seu nível de bardo (arredondado para cima) PV. Após três usos, só pode usar novamente após Descanso Longo.\n\nBRUTALISTA (GIGANTE). Aumenta uma categoria de tamanho; sua capacidade de carga conta como se tivesse uma categoria além dessa.\n\nCANALIZADOR (ELEMENTAL). Escolha ácido, elétrico, fogo ou frio. Uma vez por turno, quando causar dano a uma criatura com ataque de arma, ataque mágico ou ação que force salvaguarda, causa dano extra do tipo escolhido igual à metade do seu nível de bardo.\n\nMENTE SOMBRIA (ABERRAÇÃO). Telepatia a 18 m. A mensagem usa sua voz; se vencer um teste de Enganação contra Intuição do alvo, pode fazê-la soar como outra voz ou mistura de vozes. O alvo não responde telepaticamente sem meio próprio.\n\nHUMILDE (HUMANOIDE). O primeiro teste de atributo ou perícia de cada turno recebe bônus igual à metade do seu bônus de proficiência.\n\nCAÇADOR (BESTA). Seu deslocamento aumenta em 3 m e você ganha escalada igual ao deslocamento base.\n\nMECHANUS (CONSTRUTO). A máscara tem PV temporários iguais à metade do seu nível de bardo × seu bônus de proficiência. Enquanto a usa, ela sofre o dano em seu lugar. Ao chegar a 0, deixa de absorver dano até recuperar seus PV ao completar um Descanso. Uma cópia concedida por Inspiração Bárdica conta como máscara nova a cada vez.\n\nMUTANTE (MONSTRUOSIDADE). Você tem vantagem em três testes ou salvaguardas de Força enquanto usar a máscara e pode adicionar seu bônus de proficiência mesmo que já o adicionasse. Após três dessas rolagens, o usuário não pode se beneficiar dela de novo até Descanso Longo.\n\nCAVALEIRO POSSUÍDO (ÍNFERO). Manifesta asas infernais e ganha voo laborioso igual ao deslocamento base.\n\nPUCK (FEÉRICO). Imune a enfeitiçado. Como ação bônus, fica invisível até o fim do próximo turno, até atacar ou realizar ação que force salvaguarda. Após três invisibilidades, não pode usar novamente até um Descanso.\n\nCONDE RESSURGIDO (MORTO-VIVO). Resistência a dano necrótico. Se for reduzido a 0 PV por dano ou morto instantaneamente, pode quebrar a máscara para ignorar completamente o dano ou efeito; não pode se beneficiar dela novamente até Descanso Longo.\n\nSANTO (ESPÍRITO). Recebe a qualidade Etéreo, podendo atravessar espaços de outras criaturas sem provocar ataques de oportunidade ou gastar movimento adicional; não pode terminar o movimento no espaço de outra criatura.\n\nSALVADOR (CELESTIAL). Vantagem em testes e salvaguardas de Carisma. Como ação bônus, pode conjurar chama sagrada usando sua CD de magia; após três conjurações por um usuário, ele precisa de Descanso Longo para repetir.\n\nESCAMADO (DRAGÃO). Ao vestir, escolha ácido, frio, fogo, elétrico, veneno ou necrótico. Ao sofrer esse tipo de dano, reduza-o em metade do seu nível de bardo + seu bônus de proficiência.\n\nENTE (PLANTA). O alcance de seu toque e de suas armas corpo a corpo dobra, pois seus membros se estendem.",
+      "page": 85,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-bard-college-of-likeness.feature.anamcohla-compartilhada.l6.1",
+      "name": "ANAMCOHLA COMPARTILHADA",
+      "level": 6,
+      "description": "Quando concede Inspiração Bárdica a uma criatura, pode escolher uma Máscara Anamcohla preparada. Ela recebe uma cópia espectral da máscara, que aparece em seu corpo ou rosto e concede os benefícios enquanto ela mantiver aquela Inspiração Bárdica sem gastar. Os efeitos são sempre calculados usando seus níveis e estatísticas, mesmo quando outra criatura usa a máscara.",
+      "page": 86,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-bard-college-of-likeness.feature.semelhancas-avancadas.l14.1",
+      "name": "SEMELHANÇAS AVANÇADAS",
+      "level": 14,
+      "description": "Você ganha acesso às máscaras avançadas abaixo, escolhidas como as demais; no máximo metade das máscaras preparadas pode vir desta lista. Quem usa uma delas conta como possuindo níveis na classe indicada iguais ao seu nível total para requisitos de itens mágicos e efeitos de características.\n\nBÁRBARO. Pode usar Ataque Imprudente também em ataques mágicos ou ataques corpo a corpo com qualquer atributo.\nBARDO. No início de cada turno, ganha uma Inspiração Bárdica especial d6, acumulável com uma normal, se ainda não tiver uma dessas especiais. Pode ganhar no máximo três dessa forma antes de precisar de Descanso Longo.\nMINISTRO DE SANGUE. Cura recebida de fonte não contínua sempre usa o valor máximo permitido.\nCLÉRIGO. Vantagem em salvaguardas contra ínferos e mortos-vivos.\nDRAGONEER. Voo (pairar) igual ao deslocamento base.\nDRUIDA. Fala e compreende bestas como sob falar com animais.\nALMA FAVORECIDA. Uma vez enquanto usar a máscara, ao falhar em uma salvaguarda pode escolher ter sucesso; recarrega em Descanso Longo.\nGUERREIRO. Como ação bônus, faz um ataque com arma com vantagem.\nPILOTO DE FRAME. Ganha Limiar de Dano igual à metade do seu nível de bardo + 5.\nINSCRITOR. Escolha três perícias ou uma salvaguarda; torna-se proficiente enquanto usa a máscara.\nMONGE. Como ação bônus, faz dois ataques desarmados que causam 1d8 trovão cada e usam seu atributo de conjuração de bardo para ataque e dano.\nPALADINO. Bônus em salvaguardas igual ao bônus de proficiência.\nCAVALEIRO DAS PÉTALAS. Ao realizar Atacar usando apenas armas de uma mão, faz um ataque adicional na mesma ação.\nPATRULHEIRO. Escolha um tipo de criatura correspondente a outra máscara preparada; ele conta como Inimigo Favorito. Seu Dado de Favor é d6 e seu Bônus de Favor é +2.\nLADINO. Pode usar Ação Ardilosa.\nFEITICEIRO. Ganha uma Metamagia acessível sem subclasse e Pontos de Feitiçaria iguais ao bônus de proficiência; os pontos só são restaurados em Descanso Longo e só podem ser usados com a máscara.\nSANTO DA ESPADA. Ataques de magia e arma e seus danos recebem +2; os ataques contam como mágicos.\nBRUXO. Ganha visão diabólica a 9 m ou aumenta a existente em 9 m.\nMAGO. Escolha uma magia de 1º nível que possa conjurar. Pode conjurá-la três vezes sem espaço nem componentes; se a máscara vier de Inspiração Bárdica, o bardo escolhe uma magia de sua lista e são usados o ataque e CD dele. Após três conjurações, exige Descanso Longo.",
+      "page": 86,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-bard-college-of-likeness.feature.mascara-dupla.l14.1",
+      "name": "MÁSCARA DUPLA",
+      "level": 14,
+      "description": "Você, mas não criaturas que carregam sua Inspiração Bárdica, pode usar uma segunda Máscara Anamcohla. Ela pode ser vestida em outra parte do corpo ou fundir-se com a primeira, formando uma aparência dividida ou combinada. Cada ação bônus ainda troca apenas uma máscara, mas você pode usar sua ação para trocar ambas imediatamente.",
+      "page": 87,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

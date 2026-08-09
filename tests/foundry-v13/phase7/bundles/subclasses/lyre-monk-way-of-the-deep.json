@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-monk-way-of-the-deep",
+    "identifier": "lyre-monk-way-of-the-deep",
+    "name": "Caminho das Profundezas",
+    "originalName": "Way of the Deep",
+    "aliases": [
+      "Way of the Deep"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "466",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 466
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Monges das Profundezas treinam em grandes massas de água, normalmente no oceano, fortalecendo cada músculo para suportar ambientes severos. Aprendem a nadar com agilidade, canalizar água com o Chi e até extrair efeitos mágicos do mar, enxergando a si mesmos como gotas individuais dentro de uma onda muito maior.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 466
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-monk-way-of-the-deep.feature.proficiencias-bonus.l3.1",
+      "name": "PROFICIÊNCIAS BÔNUS",
+      "level": 3,
+      "description": "Você ganha proficiência em Atletismo, deslocamento de natação igual ao seu deslocamento base, ignora penalidades de combate subaquático com suas armas de Monge e pode prender a respiração por 5 minutos adicionais.",
+      "page": 466,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-deep.feature.trama-da-enguia.l3.1",
+      "name": "TRAMA DA ENGUIA",
+      "level": 3,
+      "description": "Você pode realizar Desengajar como ação bônus sem gastar Chi. Mover-se pelo espaço de aliados não custa movimento adicional nem conta como terreno difícil, e você pode atravessar o espaço de inimigos como terreno difícil.",
+      "page": 466,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-deep.feature.alcance-do-kraken.l6.1",
+      "name": "ALCANCE DO KRAKEN",
+      "level": 6,
+      "description": "Seu Chi cria extensões de água semelhantes a tentáculos. Seus ataques desarmados e com armas de Monge passam a ter alcance de 3 metros. Você pode realizar ataques de oportunidade tanto quando uma criatura sai do alcance normal da arma quanto quando sai desse alcance estendido.",
+      "page": 466,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-deep.feature.dadiva-do-oceano.l11.1",
+      "name": "DÁDIVA DO OCEANO",
+      "level": 11,
+      "description": "Você pode conjurar as seguintes magias sem espaços, gastando Chi; elas usam sua CD de Chi e Sabedoria como atributo de conjuração: Onda de Afogamento, 2 pontos; Jaula Hidráulica, 3; Muralha Hidráulica, 2; Caminhar sobre as Águas, 1.",
+      "page": 466,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-deep.feature.prisao-aquatica.l17.1",
+      "name": "PRISÃO AQUÁTICA",
+      "level": 17,
+      "description": "Como ação, gaste 1 ou mais pontos de Chi para criar uma membrana de água de 1,5 metro de diâmetro, aumentando o diâmetro em 1,5 metro para cada ponto além do primeiro. Ela dura 1 minuto, até você ficar incapacitado ou encerrá-la como ação bônus; só uma pode existir por vez. Membrana Obscurecedora: criaturas dentro têm três quartos de cobertura contra ataques externos, e criaturas internas são imunes a dano de fogo e elétrico originado do lado de fora; o mesmo vale para ataques e dano do interior para o exterior; atravessar a membrana é terreno difícil. Pulso Sônico: como ação bônus, faça todas as criaturas dentro dela, se voltada para dentro, ou a até 3 metros da membrana, se voltada para fora, realizarem salvaguarda de Constituição; em uma falha sofrem 2d12 trovejante. Corrente Fluida: ao criar, escolha corrente para dentro ou para fora e criaturas imunes ao fluxo. Para dentro: quem tentar cruzar a membrana faz salvaguarda de Força ou é empurrado para dentro e fica com deslocamento 0; se não houver espaço, atravessa e é ejetado para um espaço externo desocupado à sua escolha, caído e com deslocamento 0. Para fora: quem tentar cruzar faz salvaguarda de Força ou é empurrado para o espaço externo desocupado mais próximo e fica caído; quando a membrana surge, criaturas já dentro também fazem essa salvaguarda ou são expulsas.",
+      "page": 466,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

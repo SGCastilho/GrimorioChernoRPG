@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-mago-de-guerra",
+    "identifier": "xanathar-mago-de-guerra",
+    "name": "Mago de Guerra",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "47–48",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 47
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Uma variedade de escolas de magia se especializa em treinar magos para guerras. A tradição do Mago de Guerra combina os princípios de evocação e abjuração, em vez de se especializar em apenas uma delas. Ela ensina técnicas que qualificam as magias do conjurador, enquanto provê métodos para que magos reforcem suas defesas. Seguidores desta tradição são conhecidos como magos de guerra. Eles enxergam sua magia, tanto como arma, como armadura, um recurso superior a qualquer peça de aço. Magos de guerra agem rápido na batalha, usando suas magias para obterem um controle tático sobre a situação. As suas magias atingem com força, enquanto suas habilidades defensivas repelem as tentativas de seus oponentes de contra-atacar. Os magos de guerra também são adeptos a transformar a energia mágica de outro conjuradores contra eles mesmos. MAGO OE GUERRA Em grandes confrontos, um mago de guerra pode se juntar ã evocadores, abjuradores e outros tipos de magos. Evocadores em particular, ãs vezes provocam os magos de guerra por dividir sua atenção entre defesa e ataque. Um mago de guerra normalmente responderia a isso com algo como: \"Qual o lado bom de poder conjurar uma poderosa bola de fogo, se eu morrer antes de conseguir conjurá-la?\"",
+    "tables": [],
+    "references": [],
+    "sourcePage": 47
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-mago-de-guerra.feature.deflexao-arcana.l2.1",
+      "name": "DEFLEXÃO ARCANA",
+      "level": 2,
+      "description": "No 2º nível, você aprendeu a moldar sua magia para se fortificar contra danos. Quando for atingido por um ataque ou falhar num teste de resistência, pode usar sua reação para ganhar +2 na CA contra aquele ataque ou um bônus de +4 naquele teste de resistência. Quando utilizar essa característica, não pode conjurar magias que não sejam truques até o finaldo próximo turno.",
+      "page": 47,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-mago-de-guerra.feature.astucia-tatica.l2.1",
+      "name": "ASTÚCIA TÁTICA",
+      "level": 2,
+      "description": "A partir do 2º nível, sua aguda capacidade de avaliar situações táticas lhe permite agir rapidamente em batalha. Você pode se dar um bônus aos seus testes de iniciativa igual ao seu modificador de Inteligência.",
+      "page": 48,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-mago-de-guerra.feature.surto-de-poder.l6.1",
+      "name": "SURTO DE PODER",
+      "level": 6,
+      "description": "A partir do 6º nível, você pode armazenar energia mágica dentro de si mesmo para fortalecer suas magias ofensivas posteriormente. Em sua forma armazenada, esta energia é chamada de Surto de Poder.\n\nVocê pode armazenar um número máximo de surtos de poder igual ao seu modificador de Inteligência (mínimo de um). Sempre que terminar um descanso longo, seu número de surtos de poder é reiniciado para um. Sempre que terminar com sucesso uma magia dissipar magia ou contramágica, ganha um surto de poder, como se roubasse a mágica da magia que evitou. Se terminar um descanso longo sem surtos de poder, ganha um surto de poder.\n\nUma vez por turno, quando causar dano a uma criatura ou objeto com uma magia de mago, pode gastar um surto de poder para causar dano de energia adicional a esse alvo. O dano adicional causado é igual à metade do seu nível de mago.",
+      "page": 48,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-mago-de-guerra.feature.magia-duradoura.l10.1",
+      "name": "MAGIA DURADOURA",
+      "level": 10,
+      "description": "A partir do 10° nível, a magia que você canaliza ajuda a evitar danos. Enquanto mantiver a concentração em uma magia, você tem um bônus de +2 na CA e todos os testes de resistência.",
+      "page": 48,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-mago-de-guerra.feature.blindagem-defletora.l14.1",
+      "name": "BLINDAGEM DEFLETORA",
+      "level": 14,
+      "description": "No 14º nível, sua Deflexão Arcana se infunde com uma magia mortal. Quando utilizar sua característica Deflexão Arcana, pode gerar energia mágica sobre si mesmo. Até três criaturas de sua escolha que possa ver dentro do alcance de 18 metros entre cada uma recebem dano de energia igual à metade do seu nível de mago.",
+      "page": 48,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

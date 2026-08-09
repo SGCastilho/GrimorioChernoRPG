@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-tithiss",
+    "identifier": "lyre-favored-soul-retia-burden-of-tithiss",
+    "name": "Fardo de Tithiss",
+    "originalName": "Burden of Tithiss",
+    "aliases": [
+      "Burden of Tithiss"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "357",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 357
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): clava ou bordão. Sintonizados às forças vitais, os favorecidos de Tithiss anseiam aliviar a dor de toda forma de vida e espalhar alívio por onde passam.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 357
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-tithiss.feature.resistencia-acida.l1.1",
+      "name": "RESISTÊNCIA ÁCIDA",
+      "level": 1,
+      "description": "Você tem resistência a dano ácido.",
+      "page": 357,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-tithiss.feature.essencia-de-carvalho.l1.1",
+      "name": "ESSÊNCIA DE CARVALHO",
+      "level": 1,
+      "description": "Golpe de Sangue de Seiva (Armamento): pode causar ácido no lugar do dano normal e sempre causa ácido adicional igual ao bônus de proficiência. Casca de Tithiss (Radiância): uma vez por Descanso Curto ou Longo, conjure Véu de Ilsrabae sem espaço em nível do pacto; sua pele vira madeira, concedendo imunidade a ácido em vez de resistência a frio, causando ácido em vez de frio e reduzindo dano perfurante/cortante/contundente sofrido em metade do seu nível de Alma Favorecida. Caminhante das Árvores (Voo): no início do turno, gaste 4,5 m de movimento para desfazer-se em terra/pedra e surgir de uma árvore visível a distância de 3 m × bônus de proficiência, desde que ela seja pelo menos do seu tamanho.",
+      "page": 357,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-tithiss.feature.arcanista-nutridor.l6.1",
+      "name": "ARCANISTA NUTRIDOR",
+      "level": 6,
+      "description": "Quando conjura com espaço uma magia que escolhe um único aliado, ele recupera PV iguais à metade do seu nível de Alma Favorecida. Se a magia escolher vários aliados de uma só vez, cada um recupera PV iguais ao nível do espaço de pacto usado.",
+      "page": 357,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-tithiss.feature.florestamento-emergente.l10.1",
+      "name": "FLORESTAMENTO EMERGENTE",
+      "level": 10,
+      "description": "Como ação, gaste Purificação e preencha esfera de 9 metros de raio centrada em você com vegetação e três árvores Grandes de 9 metros de altura em posições escolhidas. Você recupera 1d8 × nível do espaço de pacto em PV. Para outros, a área é terreno difícil; quem terminar o turno nela faz salvaguarda de Força ou fica restringido por vinhas. Restrito sofre 2d6 ácido no início do turno e pode usar ação para teste de Força contra sua CD, ou romper as vinhas causando 10+ dano num turno; as vinhas têm CA igual à sua CD, vulnerabilidade a fogo/cortante e resistência aos demais danos. Dura até 1 minuto com concentração como magia.",
+      "page": 357,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-tithiss.feature.luz-vital.l13.1",
+      "name": "LUZ VITAL",
+      "level": 13,
+      "description": "Como ação, gaste um espaço de pacto e toque criatura. Ela recupera 2d6 × nível do espaço em PV e é curada de qualquer efeito que Restauração Menor removeria.",
+      "page": 357,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

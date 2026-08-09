@@ -1,0 +1,153 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "scag-caminho-da-furia-da-batalha",
+    "identifier": "scag-caminho-da-furia-da-batalha",
+    "name": "Caminho da Fúria da Batalha",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "scag",
+    "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+    "pages": "121",
+    "chapter": "Capítulo 4: Classes",
+    "page": 121
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Conhecidos como Kuldjarg (literalmente “o machado idiota”) em Anão, furiosos de batalha são anões seguidores do deus da guerra e trilham o Caminho da Fúria. Eles se especializam em vestir armaduras com espinhos maciças e se lançar em combates, golpeando com seu próprio corpo e aterrorizando seus inimigos com a fúria da batalha.\n\nRestrição: Apenas Anões. Apenas anões podem seguir o Caminho da Fúria da Batalha. A Fúria da Batalha preenche um nicho pessoal da sociedade e cultura anã. O Mestre pode permitir esta restrição para melhor se adequar à campanha; ela existe para os Reinos Esquecidos e pode não se aplicar a outro cenário.",
+    "tables": [
+      {
+        "key": "table.1.armadura-com-espinhos",
+        "title": "Armadura com Espinhos",
+        "page": null,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "item",
+            "label": "Item"
+          },
+          {
+            "key": "value",
+            "label": "Valor"
+          }
+        ],
+        "rows": [
+          {
+            "item": "Tipo",
+            "value": "Armadura média rara de fabricação anã"
+          },
+          {
+            "item": "Custo",
+            "value": "75 po"
+          },
+          {
+            "item": "CA",
+            "value": "14 + modificador de Destreza (máx. +2)"
+          },
+          {
+            "item": "Furtividade",
+            "value": "Desvantagem"
+          },
+          {
+            "item": "Peso",
+            "value": "20 kg"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 121
+  },
+  "features": [
+    {
+      "key": "subclass.scag-caminho-da-furia-da-batalha.feature.furia-com-armadura.l3.1",
+      "name": "FÚRIA COM ARMADURA",
+      "level": 3,
+      "description": "Quando você escolhe esse caminho no 3º nível, você recebe a habilidade de usar a armadura com espinhos (veja a coluna lateral “Armadura com Espinhos”) como uma arma.\n\nEnquanto estiver usando esta armadura com espinhos e estiver em fúria, você pode usar sua ação bônus para fazer um ataque corpo a corpo usando sua armadura de espinhos em um alvo a até 1,5m de você. Se o ataque acertar, os espinhos causam 1d4 de dano perfurante. Use seu modificador de Força para as jogadas de ataque e de dano. Adicionalmente, quando você usa a ação Atacar para agarrar uma criatura, o alvo recebe 3 pontos de dano se o seu agarrão tiver sucesso.",
+      "page": 121,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-caminho-da-furia-da-batalha.feature.entrega-imprudente.l6.1",
+      "name": "ENTREGA IMPRUDENTE",
+      "level": 6,
+      "description": "Começando no 6º nível, quando você usa Entrega Imprudente enquanto estiver em fúria, você também recebe pontos de vida temporários igual ao seu modificador de Constituição (mínimo de 1). Eles somem se qualquer um deles restar quando a fúria terminar.",
+      "page": 121,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-caminho-da-furia-da-batalha.feature.investida-furiosa.l10.1",
+      "name": "INVESTIDA FURIOSA",
+      "level": 10,
+      "description": "A partir do 10º nível, você pode fazer uma ação de Corrida como uma ação bônus enquanto estiver em Fúria.",
+      "page": 121,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-caminho-da-furia-da-batalha.feature.retribuicao-farpada.l14.1",
+      "name": "RETRIBUIÇÃO FARPADA",
+      "level": 14,
+      "description": "Começando no 14º nível, quando uma criatura a até 1,5m de você o acerta com um golpe corpo a corpo, esse atacante recebe 3 pontos de dano caso você esteja em fúria, não esteja inconsciente e esteja usando uma armadura com espinhos.",
+      "page": 121,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

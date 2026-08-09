@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-paladin-oath-of-loyalty",
+    "identifier": "bbb-paladin-oath-of-loyalty",
+    "name": "Juramento da Lealdade",
+    "originalName": "Oath of Loyalty",
+    "aliases": [
+      "Oath of Loyalty"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "113",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 113
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Um guerreiro justo que honra as promessas e juramentos feitos por si e pelos outros.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-de-lealdade",
+        "title": "Magias do Juramento de Lealdade",
+        "page": 113,
+        "description": "Magias concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Heroísmo; Onda de Reversão"
+          },
+          {
+            "level": "5º",
+            "spells": "Repouso Tranquilo; Escudo de Lâminas"
+          },
+          {
+            "level": "9º",
+            "spells": "Criar Alimentos; Consagração do Santo"
+          },
+          {
+            "level": "13º",
+            "spells": "Assalto de Correntes; Guardião da Fé"
+          },
+          {
+            "level": "17º",
+            "spells": "Palavra de Poder: Resposta; Vínculo Telepático"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 113
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-paladin-oath-of-loyalty.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Você recebe duas opções de Canalizar Divindade.\n\nORIENTAÇÃO DO CLÃ. Quando uma criatura a até 9 m for atingida por um ataque com arma, use sua reação e Canalizar Divindade para fazer esse ataque errar. Depois, por 1 minuto, ataques contra essa criatura têm desvantagem.\n\nESPELHO DE MAGIA. Como ação, use Canalizar Divindade para obter vantagem em salvaguardas contra efeitos mágicos por 1 minuto; criaturas dentro de sua Aura de Proteção também recebem esse benefício. Uma criatura sob essa proteção que tiver sucesso numa salvaguarda contra um efeito mágico ignora completamente o dano e os efeitos daquele efeito mágico, exceto alterações no ambiente, como terreno difícil.",
+      "page": 113,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-paladin-oath-of-loyalty.feature.aura-da-guarda-firme.l7.1",
+      "name": "AURA DA GUARDA FIRME",
+      "level": 7,
+      "description": "Aliados dentro de sua Aura de Proteção, incluindo você, que não estejam empunhando um escudo recebem bônus na CA igual à metade de seu bônus de proficiência.",
+      "page": 113,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-paladin-oath-of-loyalty.feature.correr-para-defender.l15.1",
+      "name": "CORRER PARA DEFENDER",
+      "level": 15,
+      "description": "Quando ataca com arma uma criatura que tenha causado dano a um de seus aliados desde o início de seu último turno, causa dano adicional igual ao seu modificador de Carisma. Também pode fazer contra ela um ataque com arma adicional como parte da mesma ação; esse ataque adicional não pode ter desvantagem. Só pode usar este benefício uma vez por turno.",
+      "page": 113,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-paladin-oath-of-loyalty.feature.mao-direita-absoluta.l20.1",
+      "name": "MÃO DIREITA ABSOLUTA",
+      "level": 20,
+      "description": "Como ação bônus, assuma por 1 minuto uma forma pesadamente armadurada. Durante esse tempo: você e todas as criaturas dentro de sua Aura de Proteção têm resistência a todo dano; quando ataca uma criatura que esteja no alcance corpo a corpo de outro aliado seu não incapacitado, o acerto causa um dado de dano da arma adicional; suas jogadas de ataque com arma recebem +1 para cada aliado em sua Aura de Proteção, máximo +5; e, como ação bônus, inclusive ao ativar esta característica, pode teleportar-se até 18 m para um espaço desocupado adjacente a um aliado. Depois de usar esse teleporte, só pode fazê-lo novamente após um Descanso.",
+      "page": 113,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

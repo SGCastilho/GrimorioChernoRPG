@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-monk-way-of-the-broken-chain",
+    "identifier": "lyre-monk-way-of-the-broken-chain",
+    "name": "Caminho da Corrente Quebrada",
+    "originalName": "Way of the Broken Chain",
+    "aliases": [
+      "Way of the Broken Chain"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "465",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 465
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Esse caminho ensina a romper o vínculo com as consequências da carne e tratar o próprio corpo como uma arma feita para sangrar e matar. Seus praticantes convidam os golpes dos adversários e contra-atacam nas brechas criadas por essa conduta deliberadamente imprudente.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 465
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-monk-way-of-the-broken-chain.feature.punho-imprudente.l3.1",
+      "name": "PUNHO IMPRUDENTE",
+      "level": 3,
+      "description": "Uma vez em cada um dos seus turnos, quando errar uma criatura com arma de Monge ou ataque desarmado, você pode entrar em fervor violento: o ataque que errou e todos os ataques do mesmo tipo contra esse alvo até o início do seu próximo turno têm vantagem. Durante o mesmo período, todos os ataques contra você também têm vantagem.",
+      "page": 465,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-broken-chain.feature.tecnicas-adversariais.l6.1",
+      "name": "TÉCNICAS ADVERSARIAIS",
+      "level": 6,
+      "description": "Você aprende duas técnicas. Mão Ceifadora: ao reduzir uma criatura a 0 pontos de vida com ataque corpo a corpo ou ataque desarmado, faça imediatamente outro ataque contra uma criatura ao alcance. Em um acerto, qualquer dano que tenha excedido os pontos de vida do primeiro alvo é causado também ao segundo; se Punho Imprudente estava ativo, o novo alvo passa a ser o alvo inicial da característica. Contra a Ponta da Lança: quando uma criatura fizer um ataque com arma contra você, você pode conceder vantagem a esse ataque e ganhar resistência ao dano dele. Se ainda assim errar, e você não estiver incapacitado, pode realizar um ataque desarmado ou com arma de Monge contra a fonte, se estiver ao alcance.",
+      "page": 465,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-broken-chain.feature.golpes-devastadores.l11.1",
+      "name": "GOLPES DEVASTADORES",
+      "level": 11,
+      "description": "Quando acertar uma criatura com um ataque beneficiado por Punho Imprudente, o ataque causa um dado adicional de Artes Marciais de dano.",
+      "page": 465,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-broken-chain.feature.medidas-desesperadas.l17.1",
+      "name": "MEDIDAS DESESPERADAS",
+      "level": 17,
+      "description": "Enquanto estiver abaixo da metade dos pontos de vida máximos: ao realizar Atacar, Disparada ou Rajada de Golpes, você pode fazer um ataque adicional com arma de Monge ou ataque desarmado; sua CA calculada por Defesa sem Armadura recebe +2; e, se iniciar o turno com pelo menos 1 ponto de vida, recebe pontos de vida temporários iguais à metade do seu nível de Monge, arredondado para baixo.",
+      "page": 465,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

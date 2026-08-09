@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-wizard-astromancer",
+    "identifier": "zagalhta-wizard-astromancer",
+    "name": "Astromante",
+    "originalName": "Astromancer",
+    "aliases": [
+      "Astromancer"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "181",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 181
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Mago que estuda estrelas, gravidade e os mecanismos ocultos que movem corpos celestes, convertendo princípios astronômicos em mobilidade, manipulação de projéteis e previsão do futuro.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 181
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-wizard-astromancer.feature.propulsao-astral.l2.1",
+      "name": "PROPULSÃO ASTRAL",
+      "level": 2,
+      "description": "Ao conjurar uma magia de 1º nível ou superior, recebe voo (pairado) igual ao deslocamento base e aceleração 0-G igual ao triplo desse valor até o fim do próximo turno.",
+      "page": 181,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-wizard-astromancer.feature.sabio-da-astromancia.l2.1",
+      "name": "SÁBIO DA ASTROMANCIA",
+      "level": 2,
+      "description": "Ao aprender magias de Mago, trate todas as Astromancias como se estivessem na lista do Mago. Ouro e tempo para copiar Astromancias no grimório são reduzidos pela metade. Além de suas magias conhecidas, conhece zona antigravidade; ela não conta no limite e não pode ser substituída.",
+      "page": 181,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-wizard-astromancer.feature.raio-espacial.l6.1",
+      "name": "RAIO ESPACIAL",
+      "level": 6,
+      "description": "Você aprende o truque rajada mística. Quando estiver em gravidade zero ou tiver ao menos um alvo que esteja, pode conjurar rajada mística como ação bônus.",
+      "page": 181,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-wizard-astromancer.feature.carrossel-gravitacional.l10.1",
+      "name": "CARROSSEL GRAVITACIONAL",
+      "level": 10,
+      "description": "Quando um ataque à distância errar você, use reação para manipular o projétil e lançá-lo contra criatura a até 18 m como ataque de magia à distância. Em acerto, o alvo é tratado como se tivesse sido atingido pelo ataque original. Se já respondeu ao ataque com magia/característica defensiva que exigiu reação, como escudo, pode usar esta característica como parte da mesma reação.",
+      "page": 181,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-wizard-astromancer.feature.predicado-taquionico.l14.1",
+      "name": "PREDICADO TAQUIÔNICO",
+      "level": 14,
+      "description": "Uma vez por Descanso Longo, como ação, produza previsão sem Espaço ou materiais. Quando produzida assim, a magia termina quando o alvo completa um Descanso Curto ou Longo.",
+      "page": 181,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

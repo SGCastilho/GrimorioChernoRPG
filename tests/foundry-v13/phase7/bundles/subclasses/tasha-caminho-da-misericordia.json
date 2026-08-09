@@ -1,0 +1,147 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-caminho-da-misericordia",
+    "identifier": "tasha-caminho-da-misericordia",
+    "name": "Caminho da Misericórdia",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "72–74",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 72
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Monges do Caminho da Misericórdia aprendem a manipular a força vital dos outros para auxiliar aqueles em necessidade. Eles são médicos ambulantes para os pobres e feridos. Contudo, para aqueles além de sua ajuda, eles trazem um fim rápido, como um ato de misericórdia. Aqueles que seguem o Caminho da Misericórdia podem ser membros de uma ordem religiosa, administrada a favor dos necessitados e fazendo escolhas amargas baseadas na realidade em vez de no idealismo. Alguns podem ser curadores de fala mansa, amados por seus companheiros, enquanto outros podem ser mascarados portadores de uma macabra misericórdia. Os caminhantes desta senda normalmente vestem mantos com capuzes pesados, e frequentemente escondem seus rostos com uma máscara, apresentando a si mesmos como portadores sem face da vida e da morte.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 72
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-caminho-da-misericordia.feature.implementos-da-misericordia.l3.1",
+      "name": "IMPLEMENTOS DA MISERICÓRDIA",
+      "level": 3,
+      "description": "Você adquire proficiência nas perícias de Intuição e Medicina, além de ganhar proficiência com o kit de herbalismo. Você também recebe uma máscara especial, que você frequentemente veste quando está utilizando as características dessa subclasse. Você determina sua aparência, ou a gera aleatoriamente jogando na tabela de Máscara Misericordiosa. Máscara Misericordiosa d6 Aparência da Máscara Corvo Preta e Branca Rosto Chorando Rosto Gargalhando Caveira Borboleta",
+      "page": 73,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-caminho-da-misericordia.feature.maos-curativas.l3.1",
+      "name": "MÃOS CURATIVAS",
+      "level": 3,
+      "description": "Seu toque místico pode curar ferimentos. Como uma ação, você pode gastar 1 ponto de ki para tocar uma criatura e restaurar uma quantia de pontos de vida igual ao resultado da jogada de um dado de Artes Marciais + seu modificador de Sabedoria. Quando você utilizar sua torrente de golpes,você pode substituir um dos ataques desarmados por um uso dessa característica sem gastar um ponto de ki pela cura.",
+      "page": 73,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-caminho-da-misericordia.feature.maos-da-injuria.l3.1",
+      "name": "MÃOS DA INJÚRIA",
+      "level": 3,
+      "description": "Você pode usar o seu ki para causar ferimentos. Qundo você acerta uma criatura com um ataque desarmado, você pode gastar 1 ponto de ki para causar dano necrótico extra igual a uma jogada do seu dado de Artes Marciais+ seu modificador de Sabedoria. Você pode utilizar essa característica apenas uma vez por turno.",
+      "page": 73,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-caminho-da-misericordia.feature.toque-do-curandeiro.l6.1",
+      "name": "TOQUE DO CURANDEIRO",
+      "level": 6,
+      "description": "Você pode administrar até mesmo grandes curas com seu toque e, se achar necessário, você pode usar seu conhecimento para causar dano. Quando você utilizar suas Mãos curativas em uma criatura, você também pode remover uma doença ou uma das seguintes condições que esteja afetando a criatura: atordoado, cego, ensurdecido, envenenado ou paralisado. Quando você utilizar suas Mãos da injúria em uma criatura, você pode sujeitar o alvo à condição de envenenado até o final do seu próximo turno.",
+      "page": 73,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-caminho-da-misericordia.feature.torrente-de-cura-e-dor.l11.1",
+      "name": "TORRENTE DE CURA E DOR",
+      "level": 11,
+      "description": "Você agora pode propagar uma torrente de cura e dor. Quando você usar sua Torrente de golpes, você agora pode substituir cada um de seus ataques desarmados por um uso de suas mãos curativas sem gastar pontos de ki para curar. Adicionalmente, quando você realizar um ataque desarmado com a Torrente de golpes, você pode utilizar a característica Mãos da injúria com esse golpes sem gastar o ponto de ki por ela. Você ainda pode utilizar a Mãos da injúria apenas uma vez por turno.",
+      "page": 73,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-caminho-da-misericordia.feature.mao-da-misericordia-final.l17.1",
+      "name": "MÃO DA MISERICÓRDIA FINAL",
+      "level": 17,
+      "description": "Seu domínio sobre a energia da vital abriu a porta para a misericórdia final. Como uma ação, você pode tocar o corpo de uma criatura que morreu dentro das últimas 24 horas e gastar 5 pontos de ki. A criatura então retorna à vida, recuperando uma quantia de pontos de vida igual a 4d10 + seu modificador de Sabedoria. Se a criatura morreu enquanto sob o efeito de uma dessas condições, ela a terá removida ao ser trazida de volta: cega, ensurdecida, paralisada, envenenada ou atordoada. Uma vez que use essa característica, você não poderá fazêlo novamente até que termine um descanso longo.",
+      "page": 73,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

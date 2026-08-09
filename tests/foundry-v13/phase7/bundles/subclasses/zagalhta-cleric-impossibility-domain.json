@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-cleric-impossibility-domain",
+    "identifier": "zagalhta-cleric-impossibility-domain",
+    "name": "Domínio da Impossibilidade",
+    "originalName": "Impossibility Domain",
+    "aliases": [
+      "Impossibility Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "144",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 144
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Clérigos ligados sobretudo a Setanta, capazes de realizar proezas ilógicas e improváveis pela força bruta da vontade, muitas vezes antes mesmo de compreenderem a origem divina de seus poderes.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-da-impossibilidade",
+        "title": "Magias do Domínio da Impossibilidade",
+        "page": 144,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "cleric",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "cleric": "1º",
+            "spells": "Favor Divino; Sorte do Chacal"
+          },
+          {
+            "cleric": "3º",
+            "spells": "Resiliência Cármica; Marte Estridente"
+          },
+          {
+            "cleric": "5º",
+            "spells": "Arma Eidomântica; Caminho para a Vitória"
+          },
+          {
+            "cleric": "7º",
+            "spells": "Gigaexplosão; Ira da Valquíria"
+          },
+          {
+            "cleric": "9º",
+            "spells": "Conjurar Eco de Frame; Reencarnação"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 144
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-cleric-impossibility-domain.feature.reversao-do-pior-caso.l1.1",
+      "name": "REVERSÃO DO PIOR CASO",
+      "level": 1,
+      "description": "Ao rolar 1 no d20, trate o resultado como 10. Se era ataque e o novo resultado acerta, o ataque é considerado crítico.",
+      "page": 144,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-impossibility-domain.feature.canalizar-divindade-vontade-pura.l2.1",
+      "name": "CANALIZAR DIVINDADE: VONTADE PURA",
+      "level": 2,
+      "description": "Gaste Canalizar Divindade para conjurar qualquer magia como se fosse uma magia de Clérigo preparada. Ainda precisa gastar espaço apropriado e componentes materiais com custo, mas o Espaço usado é tratado como um nível acima, máximo 9º.",
+      "page": 144,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-impossibility-domain.feature.canalizar-divindade-impulso-ascendente.l6.1",
+      "name": "CANALIZAR DIVINDADE: IMPULSO ASCENDENTE",
+      "level": 6,
+      "description": "Ao fazer ataque, teste ou salvaguarda, gaste Canalizar Divindade para somar sua proficiência ao resultado; ou role novos d20 até obter um resultado maior que todos os d20 já rolados e use esse novo resultado.",
+      "page": 144,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-impossibility-domain.feature.arma-de-exploracao.l8.1",
+      "name": "ARMA DE EXPLORAÇÃO",
+      "level": 8,
+      "description": "Na primeira vez que acerta ataque de arma em cada turno, causa +1d8 de força; no 14º nível o dano extra se aplica a todos os seus ataques de arma. Se já viu o alvo sofrer um tipo de dano ao qual é vulnerável, o dano extra desta característica pode se tornar esse tipo naquele ataque.",
+      "page": 144,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-impossibility-domain.feature.improvisacao-sagrada.l17.1",
+      "name": "IMPROVISAÇÃO SAGRADA",
+      "level": 17,
+      "description": "Se sua Intervenção Divina falhar, pode em vez disso conjurar uma magia de Clérigo preparada com tempo de 1 ação como se usasse espaço de 9º nível, sem gastar espaço nem componentes; isso conta como intervenção bem-sucedida e impede novo uso por sete amanheceres. Além disso, Vontade Pura pode conjurar qualquer magia, não só magias de Clérigo preparadas.",
+      "page": 144,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-barbarian-path-of-the-bloodpainted",
+    "identifier": "bbb-barbarian-path-of-the-bloodpainted",
+    "name": "Caminho do Pintado de Sangue",
+    "originalName": "Path of the Bloodpainted",
+    "aliases": [
+      "Path of the Bloodpainted"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "83–84",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 83
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Um bárbaro que abriga um espírito bestial capaz de deformar e transformar sua carne.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 83
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.frenesi-sanguineo.l3.1",
+      "name": "FRENESI SANGUÍNEO",
+      "level": 3,
+      "description": "A visão de sangue e violência o lança em frenesi. Se, desde o início de seu último turno, você sofreu dano de um ataque ou atingiu outra criatura com um ataque, pode realizar um ataque adicional como parte de qualquer ação Atacar que fizer. Além disso, uma vez por turno, se obtiver um acerto crítico em um ataque com arma, pode usar uma ação bônus para realizar dois ataques adicionais com a mesma arma. Esse benefício só se aplica se o crítico resultar de uma rolagem de dado, não de um acerto crítico automático causado por uma condição como paralisado.",
+      "page": 83,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.descarga-de-adrenalina.l6.1",
+      "name": "DESCARGA DE ADRENALINA",
+      "level": 6,
+      "description": "Ao entrar em Fúria, você pode encerrar qualquer efeito que esteja fazendo com que fique restringido, paralisado, atordoado, envenenado, amedrontado ou enfeitiçado. Se a condição vier de uma doença ou de um efeito contínuo que duraria mais de 10 minutos, ela apenas fica suprimida enquanto sua Fúria durar. Se começar seu turno incapaz de realizar ações por uma dessas condições, como paralisado ou atordoado, ainda pode entrar em Fúria, sem exigir ação.",
+      "page": 83,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.golpe-explosivo.l6.1",
+      "name": "GOLPE EXPLOSIVO",
+      "level": 6,
+      "description": "Mesmo fora de Fúria, sangue e violência despertam a influência monstruosa em você. Uma vez para cada dado de dano, quando fizer um ataque com arma baseado em Força e obtiver o resultado máximo em um dado de dano (como 6 em d6 ou 8 em d8), pode rolar esse dado novamente e somar o novo resultado ao dano. Isso só se aplica a dados efetivamente rolados como parte do dano; resultados fixados automaticamente no máximo por regras, características, traços ou efeitos não ativam esta característica.",
+      "page": 83,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.besta-de-sangue.l10.1",
+      "name": "BESTA DE SANGUE",
+      "level": 10,
+      "description": "Uma vez por Descanso, quando entrar em Fúria, você pode transformar-se em uma aterradora besta híbrida da noite em vez de entrar em Fúria normalmente. Você recebe os benefícios normais de Fúria, com as seguintes alterações:\n\n• Sua Fúria não termina antes do tempo, a menos que você fique inconsciente ou escolha encerrá-la em seu turno.\n• Você aumenta uma categoria de tamanho e seu alcance com ataques corpo a corpo aumenta em 1,5 m.\n• Some seu bônus de Dano de Fúria à CA e às salvaguardas de Força, Destreza e Constituição realizadas durante a transformação.\n• Em cada turno, pode usar sua ação bônus para fazer um ataque desarmado baseado em Força que causa dano igual a 1d6 × seu bônus de proficiência. Se usar a ação bônus para os ataques extras de Frenesi Sanguíneo, ambos podem ser esses ataques desarmados.\n• No início de cada um de seus turnos transformado, você perde seu maior Dado de Vida restante.\n\nA transformação dura até 1 minuto ou até sua Fúria terminar.",
+      "page": 83,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.besta-faminta-por-sangue.l14.1",
+      "name": "BESTA FAMINTA POR SANGUE",
+      "level": 14,
+      "description": "Quando perder um Dado de Vida no início de seu turno enquanto estiver transformado em Besta de Sangue, você pode rolar esse dado, sem adicionar seu modificador de Constituição, e recuperar pontos de vida iguais ao resultado. Se o resultado for menor que seu modificador de Constituição, use o modificador de Constituição em seu lugar.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.critico-aprimorado.l14.1",
+      "name": "CRÍTICO APRIMORADO",
+      "level": 14,
+      "description": "Você obtém um acerto crítico com um resultado 19 ou 20 no d20.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

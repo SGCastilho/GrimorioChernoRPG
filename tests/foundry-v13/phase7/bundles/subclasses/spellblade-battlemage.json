@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spellblade-battlemage",
+    "identifier": "spellblade-battlemage",
+    "name": "Mago de Batalha",
+    "originalName": "Battlemage",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "kibbles",
+    "title": "Spellblade v1.3 — KibblesTasty — Mago de Batalha",
+    "pages": "6",
+    "chapter": "Técnicas de Spellblade",
+    "page": 6
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "spellblade",
+    "identifier": "spellblade",
+    "name": "Spellblade"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "spellblade",
+    "selectionLevel": 3,
+    "description": "No mundo versátil dos Spellblades, o Mago de Batalha é o paradigma do equilíbrio, dominando tanto a proeza marcial quanto a arte arcana. No ponto de encontro entre força e magia, ele representa a síntese perfeita dessas duas disciplinas antigas e adapta-se constantemente a qualquer situação.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-mago-de-batalha",
+        "title": "Magias de Mago de Batalha",
+        "page": 6,
+        "description": "Estas magias contam como magias de Spellblade para você e não contam no limite de magias conhecidas.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Spellblade"
+          },
+          {
+            "key": "magias",
+            "label": "Magias aprendidas"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Mãos Flamejantes"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Reflexos"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Relâmpago"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Porta Dimensional"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Imobilizar Monstro"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 6
+  },
+  "features": [
+    {
+      "key": "subclass.spellblade-battlemage.feature.magias-do-mago-de-batalha.l3.1",
+      "name": "MAGIAS DO MAGO DE BATALHA",
+      "level": 3,
+      "description": "Você aprende as magias apresentadas na tabela da subclasse. Elas são magias de Spellblade para você e não contam no número de magias que conhece.",
+      "page": 6,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Mago de Batalha",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-battlemage.feature.guerreiro-arcano.l3.1",
+      "name": "GUERREIRO ARCANO",
+      "level": 3,
+      "description": "Ao escolher esta técnica no 3º nível, sempre que terminar um descanso longo, você pode tocar uma arma com a qual seja proficiente e que não possua a propriedade Duas Mãos. Ao atacar com essa arma, você pode usar seu modificador de Inteligência, em vez de Força ou Destreza, nas jogadas de ataque e dano. O benefício dura até você terminar um descanso longo.",
+      "page": 6,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Mago de Batalha",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-battlemage.feature.surto-acelerador.l3.1",
+      "name": "SURTO ACELERADOR",
+      "level": 3,
+      "description": "Você ganha uma nova opção para Surto Arcano: pode conjurar como ação bônus uma magia de Spellblade com tempo de conjuração de 1 ação.",
+      "page": 6,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Mago de Batalha",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-battlemage.feature.surto-duplo.l7.1",
+      "name": "SURTO DUPLO",
+      "level": 7,
+      "description": "No 7º nível, quando usa Surto Arcano, você pode escolher duas das opções disponíveis.",
+      "page": 6,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Mago de Batalha",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-battlemage.feature.maestria-do-surto.l15.1",
+      "name": "MAESTRIA DO SURTO",
+      "level": 15,
+      "description": "A partir do 15º nível, suas opções de Surto Arcano recebem resultados aprimorados:\n\n• Visão Arcana: ao conjurar Detectar Magia com Surto Arcano, você também recebe os efeitos de Visão no Escuro e Ver o Invisível.\n\n• Precisão Arcana: ao obter vantagem em um ataque por meio do Surto Arcano, você pode repetir uma vez um dos dados da jogada de ataque.\n\n• Proeza Arcana: ao adicionar Inteligência a um teste de Força ou Destreza, você também recebe vantagem no teste.\n\n• Teleporte Estendido: a distância de seu teleporte aumenta em 3 metros.",
+      "page": 6,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Mago de Batalha",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-battlemage.feature.surtos-ilimitados.l20.1",
+      "name": "SURTOS ILIMITADOS",
+      "level": 20,
+      "description": "No 20º nível, você pode entrar em um estado de ressonância arcana perfeita por 1 minuto, sem exigir uma ação. Durante esse estado, usar Surto Arcano não consome usos, embora você ainda só possa usá-lo uma vez por turno. Após usar esta característica, você não pode usá-la novamente até concluir um descanso longo.",
+      "page": 6,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Mago de Batalha",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

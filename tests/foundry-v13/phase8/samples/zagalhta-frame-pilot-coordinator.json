@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-frame-pilot-coordinator",
+    "identifier": "zagalhta-frame-pilot-coordinator",
+    "name": "Coordenador",
+    "originalName": "Coordinator",
+    "aliases": [
+      "Coordinator"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "134",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 134
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "frame-pilot",
+    "identifier": "frame-pilot",
+    "name": "Piloto de Frame"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "frame-pilot",
+    "selectionLevel": 3,
+    "description": "Um piloto de talento intuitivo que confia num sexto sentido para extrair ações extras, neutralizar limitações de tamanho, purgar falhas de sistema e contra-atacar no instante em que o inimigo erra.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 134
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-frame-pilot-coordinator.feature.calculos-avancados.l3.1",
+      "name": "CÁLCULOS AVANÇADOS",
+      "level": 3,
+      "description": "No seu turno ou no turno da unidade frame, faça a unidade realizar uma segunda Ação depois da primeira. Se usar em seu próprio turno enquanto a pilota, essa segunda ação pode ser o Multiataque da unidade. Uma vez por Descanso.",
+      "page": 134,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-coordinator.feature.macrorredirecionamento.l3.1",
+      "name": "MACRORREDIRECIONAMENTO",
+      "level": 3,
+      "description": "Quando você ou a unidade pilotada sofrer desvantagem de uma regra por causa do tamanho, é considerado um número de categorias de tamanho maior igual à metade de sua proficiência para aquela regra. Não se aplica a agarrões recebidos ou realizados.",
+      "page": 134,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-coordinator.feature.sistema-de-purga.l7.1",
+      "name": "SISTEMA DE PURGA",
+      "level": 7,
+      "description": "Como ação, encerre um efeito na unidade frame que esteja causando lento, incapacitado, incendiado, enfeitiçado, amedrontado, impedido, agarrado ou atordoado.",
+      "page": 134,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-coordinator.feature.intuicao-tipo-zero.l11.1",
+      "name": "INTUIÇÃO TIPO ZERO",
+      "level": 11,
+      "description": "Quando você ou sua unidade frame fizer uma salvaguarda para sofrer metade do dano, não sofre dano em sucesso e sofre metade em falha.",
+      "page": 134,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-coordinator.feature.contra-ataque-total.l16.1",
+      "name": "CONTRA-ATAQUE TOTAL",
+      "level": 16,
+      "description": "Quando uma criatura errar um ataque contra você ou a unidade pilotada, use reação para fazer um ataque de arma contra ela se estiver ao alcance. Se acertar, além do dano normal, o atacante tem desvantagem em ataques contra você até o início de seu próximo turno.",
+      "page": 134,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 16,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-favored-soul-retia-burden-of-lana",
+    "identifier": "bbb-favored-soul-retia-burden-of-lana",
+    "name": "Fardo de Lana",
+    "originalName": "Burden of Lana",
+    "aliases": [
+      "Burden of Lana"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "102–103",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 102
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Um guerreiro vinculado à sorte que carrega o poder da deusa Lana.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 102
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-lana.feature.leitura-equivocada-da-finta.l1.1",
+      "name": "LEITURA EQUIVOCADA DA FINTA",
+      "level": 1,
+      "description": "Ao obter 20 natural em qualquer teste de atributo ou salvaguarda, você obtém sucesso independentemente da CD ou vence a disputa. Inversamente, 1 natural sempre falha. Se alguma característica ampliar seu intervalo de crítico em ataques, os mesmos resultados no d20 também contam como sucesso automático para esta característica. Para Levar o Destino Adiante, um sucesso assim conta como acerto crítico.",
+      "page": 102,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-lana.feature.mao-da-fortuna.l1.1",
+      "name": "MÃO DA FORTUNA",
+      "level": 1,
+      "description": "No início de cada turno, você, como jogador, pode deixar o destino do personagem à sorte. Role 2d6: o menor resultado é o dado de oscilação da fortuna e o maior é o modificador da fortuna. Até o início do próximo turno, o modificador da fortuna é aplicado a todas as suas jogadas de ataque, testes de atributo e salvaguardas. Se o dado de oscilação for ímpar, o modificador é uma penalidade; se for par, é um bônus. Se ambos forem pares, não importa qual dado é considerado cada um.",
+      "page": 102,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-lana.feature.arcanismo-de-lana.l1.1",
+      "name": "ARCANISMO DE LANA",
+      "level": 1,
+      "description": "Magias do grupo Artes do Valor contam como estando na lista da Alma Favorecida para você.",
+      "page": 102,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-lana.feature.evasao.l6.1",
+      "name": "EVASÃO",
+      "level": 6,
+      "description": "Quando realiza uma salvaguarda que normalmente reduziria o dano à metade, sofre nenhum dano em um sucesso e metade do dano em uma falha.",
+      "page": 102,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-lana.feature.ritual-de-equilibrio.l6.1",
+      "name": "RITUAL DE EQUILÍBRIO",
+      "level": 6,
+      "description": "Ao rolar os dois d6 de Mão da Fortuna, pode escolher rerrolar o maior resultado e deve manter o novo resultado.",
+      "page": 103,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-lana.feature.levar-o-destino-adiante.l10.1",
+      "name": "LEVAR O DESTINO ADIANTE",
+      "level": 10,
+      "description": "Cada vez que fizer uma jogada de ataque contra uma criatura hostil e errar com um resultado 10 ou menor no d20, seu intervalo de crítico aumenta em 1. Ele volta ao normal quando você obtiver um acerto crítico ou passar mais de 1 minuto sem realizar ataques contra criaturas hostis.",
+      "page": 103,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-lana.feature.conveccao-fatidica.l10.1",
+      "name": "CONVECÇÃO FATÍDICA",
+      "level": 10,
+      "description": "Como ação, gaste um uso de Purificação e escolha afetar todos os hostis ou todos os aliados a até 9 m com uma onda de destino. Role os 2d6 de Mão da Fortuna e aplique seu modificador, seja bônus ou penalidade, a todos os alvos por 1 minuto, mas não imediatamente a si mesmo. No início de cada turno, pode usar Mão da Fortuna normalmente; se o fizer, o modificador de todos os alvos muda para o novo resultado. Enquanto o efeito durar, você não pode usar Mão da Fortuna sem aplicar o resultado a todos os alvos, embora em você o efeito continue terminando no início do turno seguinte.",
+      "page": 103,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-lana.feature.dux-machina.l13.1",
+      "name": "DUX MACHINA",
+      "level": 13,
+      "description": "Quando obtiver 5 ou menos em um d20, pode rerrolá-lo e deve manter o novo resultado. Se fizer isso, o novo resultado não pode produzir um acerto crítico.",
+      "page": 103,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

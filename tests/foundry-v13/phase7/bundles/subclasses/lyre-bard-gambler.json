@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-bard-gambler",
+    "identifier": "lyre-bard-gambler",
+    "name": "Apostador",
+    "originalName": "Gambler",
+    "aliases": [
+      "Gambler"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "437",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 437
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "A emoção de jogos de azar e decisões arriscadas atrai estes Bardos. Eles manipulam a própria sorte com palavras e performances, buscando resultados favoráveis sem eliminar o drama e a tensão da disputa. O Apostador é um estrategista que investe sorte sobrenatural em suas decisões, para o bem ou para o mal.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 437
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-bard-gambler.feature.mestre-dos-jogos.l3.1",
+      "name": "MESTRE DOS JOGOS",
+      "level": 3,
+      "description": "Ao participar de um jogo de azar, astúcia ou estratégia, adicione seu bônus de proficiência aos testes relevantes se ele ainda não estiver sendo aplicado. Depois de observar uma partida de qualquer jogo uma vez, você compreende suas regras.",
+      "page": 437,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-gambler.feature.probabilidades-selvagens.l3.1",
+      "name": "PROBABILIDADES SELVAGENS",
+      "level": 3,
+      "description": "Quando uma criatura a até 18 metros aplicar sua Inspiração de Bardo a uma rolagem, você pode rolar 1d100 + seu nível de Bardo. Com 55 ou mais, o dado de Inspiração é tratado como tendo obtido seu resultado máximo; com resultado menor, a Inspiração é anulada completamente. Você deve decidir usar esta característica antes de ser declarado o sucesso da rolagem e não pode usá-la enquanto estiver incapacitado.",
+      "page": 437,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-gambler.feature.o-que-vai-volta.l6.1",
+      "name": "O QUE VAI, VOLTA",
+      "level": 6,
+      "description": "Sempre que o d20 de um ataque, teste de atributo ou salvaguarda mostrar 5 ou menos, seus d20 posteriores desses tipos passam a tratar o resultado como 1 ponto maior, até o máximo de 20. Se o resultado for 1, o bônus aumenta em 2 em vez de 1. O bônus acumulado pode chegar à metade do seu nível de Bardo, arredondado para baixo. Ele é perdido ao obter 20, ajustado ou natural, em uma dessas rolagens, ao obter um acerto crítico ou ao concluir um Descanso Curto ou Longo.",
+      "page": 437,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-gambler.feature.manipular-o-sistema.l14.1",
+      "name": "MANIPULAR O SISTEMA",
+      "level": 14,
+      "description": "Enquanto uma criatura possuir uma Inspiração de Bardo sua ainda não gasta, ela nunca realiza ataques, testes de atributo ou salvaguardas com desvantagem. Se a rolagem normalmente teria desvantagem, ela também não pode receber vantagem nela.",
+      "page": 437,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

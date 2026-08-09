@@ -1,0 +1,173 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-bender-ferocity",
+    "identifier": "ryoko-bender-ferocity",
+    "name": "Discípulo da Ferocidade",
+    "originalName": "Disciple of Ferocity",
+    "aliases": [
+      "Disciple of Ferocity",
+      "Discípulo da Ferocidade"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "166–167",
+    "chapter": "Capítulo 9: Classes",
+    "page": 166
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bender-ryoko",
+    "identifier": "bender",
+    "name": "Dobrador"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bender",
+    "selectionLevel": 3,
+    "description": "Um Dobrador ofensivo que transforma os elementos em armas, domina armaduras e armas marciais e converte espaços de magia em explosões de dano elemental.",
+    "tables": [
+      {
+        "key": "table.1.magias-bonus-da-ferocidade",
+        "title": "Magias Bônus da Ferocidade",
+        "page": 167,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Dobrador"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Mísseis Mágicos (dano passa a um tipo de Afinidade)"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Arma Mágica"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Piscar (Plano Elemental de Fronteira da Afinidade)"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Guardião da Fé (dano passa a um tipo de Afinidade)"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Mão Arcana (dano passa a um tipo de Afinidade)"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 166
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-bender-ferocity.feature.proficiencias-marciais.l3.1",
+      "name": "PROFICIÊNCIAS MARCIAIS",
+      "level": 3,
+      "description": "Você ganha proficiência com armaduras médias, escudos e armas marciais e pode usar qualquer arma com a qual seja proficiente como foco de conjuração de Dobrador.",
+      "page": 167,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-ferocity.feature.conduto-elemental.l3.1",
+      "name": "CONDUTO ELEMENTAL",
+      "level": 3,
+      "description": "Você pode usar sua habilidade de conjuração de Dobrador no lugar de Força ou Destreza nas jogadas de ataque e dano com armas.",
+      "page": 167,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-ferocity.feature.natureza-destrutiva.l7.1",
+      "name": "NATUREZA DESTRUTIVA",
+      "level": 7,
+      "description": "Uma vez por turno, ao acertar uma criatura com um ataque, gaste um espaço de magia para causar dano adicional de um tipo ligado a uma Afinidade Elemental: 2d8 com espaço de 1º nível + 1d8 por nível acima do 1º, máximo 6d8.",
+      "page": 167,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-ferocity.feature.ferocidade-elemental.l15.1",
+      "name": "FEROCIDADE ELEMENTAL",
+      "level": 15,
+      "description": "O dano de seu Combo Elemental passa a 5d4.",
+      "page": 167,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-ferocity.feature.bateria-primordial.l20.1",
+      "name": "BATERIA PRIMORDIAL",
+      "level": 20,
+      "description": "Você pode atacar três vezes sempre que realiza a ação Atacar.",
+      "page": 167,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

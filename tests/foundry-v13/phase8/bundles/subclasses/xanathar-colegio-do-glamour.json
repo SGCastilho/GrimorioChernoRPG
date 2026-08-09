@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-colegio-do-glamour",
+    "identifier": "xanathar-colegio-do-glamour",
+    "name": "Colégio do Glamour",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "14–15",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 14
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "O Colégio do Glamour é a casa dos bardos que dominaram seus oficias no vibrante reino de Agrestia das Fadas ou sob a tutela de alguém que morava lá. Treinados por sátiros, eladrins e outros seres feéricos, esses bardos aprendem a usar sua mágica para deleitar e cativar outros. Os bardos desse colégio são dotados de uma mistura de admiração e medo. Suas apresentações são materiais para lendas. Esses bardos são tão eloquentes que um discurso ou uma música que executem pode fazer com que seus sequestradores o libertem ileso e pode acalmar um dragão furioso. A mesma mágica que lhes permitem dominar bestas, também pode dobrar a mentes. Bardos vilões desse colégio podem aproveitar-se de uma comunidade por semanas, abusando de sua magia para transformar seus habitantes em escravos. Os bardos heróis, em vez disso, usam esse poder para alegrar os oprimidos e prejudicar os opressores.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 14
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-colegio-do-glamour.feature.manto-da-inspiracao.l3.1",
+      "name": "MANTO DA INSPIRAÇÃO",
+      "level": 3,
+      "description": "Quando se unir ao colégio do Glamour no 3° rúvel, você ganha a habilidade de entonar uma canção de magia feérica que imerge seus aliados com vigor e velocidade. Com uma ação bônus, você pode gastar uma de suas Inspirações de Bardo para se conceder uma aparência maravilhosa. Quando fizer isso, escolha um número de criaturas que você possa ver e que possam vê-lo a uma distãncia de 18 metros de você, até um número de escolhidos igual ao seu modificador de Carisma (mínimo de um). Cada um ganha 5 pontos de vida temporários. Quando uma criatura ganha esses pontos de vida temporários, ela pode usar imediatamente sua reação se deslocar até seu limite sem provocar ataques de oportunidade. O número de pontos de vida temporários aumenta quando se atinge determinados níveis nesta classe, aumentando para 8 no 5° rúvel e 14 no 1 5° rúvel.",
+      "page": 14,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-colegio-do-glamour.feature.performance-deslumbrante.l3.1",
+      "name": "PERFORMANCE DESLUMBRANTE",
+      "level": 3,
+      "description": "A partir o 3<> rúvel, você pode carregar sua performance com magia sedutora e feérica. Se você fizer isto, por pelo menos 1 minuto, você pode tentar inspirar admiração em sua plateia, cantando, recitando um poema ou dançando. No finalde sua atuação, escolha um número de humanoides a 18 metros de você que assistiram e escutaram tudo, até um número igual ao seu modificador de Carisma (mínimo de um). Cada alvo deve ser bem-sucedido em um teste de resistência de Sabedoria contra a CD de conjuração de magia ou ficará encantado por você. Enquanto encantado dessa maneira, o alvo o idolatrará, dirá maravilhas ao seu respeito a qualquer um que fale com ele sobre, e impede qualquer um se oponha a você, evitando violência, a menos que sejam inclinados para lutas em seus interesses. O efeito no alvo se encerra após 1 hora, se ele tomar qualquer dano, ou se testemunhar seus ataques ou danos causados a qualquer um de seus aliados. Se o alvo obtiver sucesso no teste de resistência, ele não terá noção que tentou encanta-lo. Depois de usar essa característica, não pode usá-la novamente até terminar um descanso curto ou longo.",
+      "page": 14,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-colegio-do-glamour.feature.manto-da-majestade.l6.1",
+      "name": "MANTO DA MAJESTADE",
+      "level": 6,
+      "description": "No 6° nível, você ganha a habilidade de se cobrir com uma magia feérica que faz com que os outros queiram servi-lo. Como uma ação bônus, você conjura comando, sem gastar um espaço de magia, e adquire uma aparência de beleza sobrenatural por 1 minuto ou até que sua concentração acabe (como se estivesse concentrando em uma magia). Durante este tempo, você pode conjurar comando como uma ação bônus em qualquer um de seus turnos, sem gastar um espaço de magia. Qualquer criatura encantada por uma conjuração utilizando essa característica automaticamente falha em testes de resistências contra a magia comando. Uma vez usado esta característica, só poderá usá-la novamente após terminar um descanso longo.",
+      "page": 14,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-colegio-do-glamour.feature.majestade-inquebravel.l14.1",
+      "name": "MAJESTADE INQUEBRÁVEL",
+      "level": 14,
+      "description": "No 14º rúvel, sua aparência ganha traços permanentes que faz com que um aspecto de outro mundo, parecendo mais adorável e feroz. Além disso, como uma ação de bônus, você pode assumir uma presença magicamente majestosa por 1 minuto ou até que esteja incapacitado. Durante a duração, sempre que qualquer criatura tenta atacá-lo pela primeira vez em um turno, o atacante deve fazer um teste de resistência de Carisma contra o CD de resistência à magia. Se falhar, não poderá ataca-lo neste turno e deverá escolher um novo alvo ou o ataque é cancelado. Em caso de um teste bem sucedido, a criatura poderá ataca-lo neste turno, mas terá desvantagem em qualquer teste de resistência contra suas magias no próximo turno. Uma vez que assuma essa presença majestosa, não poderá fazê-lo novamente até terminar um descanso longo ou curto.",
+      "page": 14,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

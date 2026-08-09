@@ -1,0 +1,256 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-barbarian-cosmic-madness",
+    "identifier": "zagalhta-barbarian-cosmic-madness",
+    "name": "Caminho da Loucura Cósmica",
+    "originalName": "Path of Cosmic Madness",
+    "aliases": [
+      "Path of Cosmic Madness"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "139–140",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 139
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Bárbaros que encararam o vazio e foram marcados pela força das estrelas. A Fúria dobra o espaço ao redor e produz efeitos cósmicos imprevisíveis que se tornam cada vez mais extremos.",
+    "tables": [
+      {
+        "key": "table.1.efeitos-do-frenesi-cosmico",
+        "title": "Efeitos do Frenesi Cósmico",
+        "page": 139,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "result",
+            "label": "Resultado"
+          },
+          {
+            "key": "name",
+            "label": "Efeito"
+          },
+          {
+            "key": "effect",
+            "label": "Regra"
+          }
+        ],
+        "rows": [
+          {
+            "result": 1,
+            "name": "Corte dos Céus",
+            "effect": "Cada criatura que você escolher e puder ver a até 9 m recebe voo laborioso igual ao deslocamento base, funcionando como voo pairado quando usado. O efeito termina para cada criatura no fim do primeiro turno dela após sua Fúria terminar."
+          },
+          {
+            "result": 2,
+            "name": "Arma Cósmica",
+            "effect": "Durante a Fúria, seus ataques contam como mágicos e causam um dado de dano de arma adicional."
+          },
+          {
+            "result": 3,
+            "name": "Puxão de Portal",
+            "effect": "Durante a Fúria, como ação bônus a cada turno, escolha criatura visível a até 4,5 m × proficiência. Ela faz salvaguarda de Carisma; em falha é teleportada para espaço adjacente que comporte seu tamanho, ou para o espaço disponível mais próximo."
+          },
+          {
+            "result": 4,
+            "name": "Frenesi Cósmico Indomado",
+            "effect": "Durante a Fúria você também fica enfurecido e considera todas as criaturas hostis. No início de cada turno faça salvaguarda de Sabedoria; em sucesso o efeito termina e role outro efeito para substituí-lo."
+          },
+          {
+            "result": 5,
+            "name": "Teleporte Relâmpago",
+            "effect": "No início de cada turno em Fúria, se não estiver incapacitado, teleporte até 9 m para espaço visível e desocupado. Pode chegar caído ou em pé e isso não consome movimento."
+          },
+          {
+            "result": 6,
+            "name": "Bomba de Radiação",
+            "effect": "Explosão atinge criaturas escolhidas a até 6 m. Cada alvo faz salvaguarda de Constituição; em falha sofre uma quantidade de d6 de dano radiante igual à metade do seu nível de Bárbaro e fica cego até o fim de seu próximo turno."
+          },
+          {
+            "result": 7,
+            "name": "Pele de Cristal",
+            "effect": "Até a Fúria terminar, sua CA aumenta pelo bônus à CD do Frenesi Cósmico: +1 no 6º, +2 no 10º e +3 no 14º nível."
+          },
+          {
+            "result": 8,
+            "name": "Frequência da Violência",
+            "effect": "Criatura que inicia o turno a até 3 m de você sofre 2d6 de dano de força."
+          },
+          {
+            "result": 9,
+            "name": "Fúria Maior",
+            "effect": "Durante a Fúria, sempre que realiza a ação Atacar faz um ataque de arma adicional além do normal; esse ataque tem vantagem."
+          },
+          {
+            "result": 10,
+            "name": "Escala Cósmica",
+            "effect": "Durante a Fúria, você é aumentado como pelo efeito Aumentar de aumentar/reduzir, tratado como conjurado num nível igual à metade do nível de Bárbaro, máximo 9º."
+          },
+          {
+            "result": 11,
+            "name": "Campo Estelar",
+            "effect": "Luz estelar e névoa arco-íris ocupam uma área de 6 m ao seu redor. Você não é afetado; outras criaturas dentro dela, ou mirando através dela, são tratadas como cegas. Termina com a Fúria."
+          },
+          {
+            "result": 12,
+            "name": "Arsenal Galáctico",
+            "effect": "Durante a Fúria pode empunhar armas de Duas Mãos ou Versáteis em uma mão mantendo os benefícios de duas mãos. Como ação bônus cria cópia astral de uma arma que possui, com Arremesso 9/27 m e dano apenas de força; deve atacá-la imediatamente e ela desaparece depois."
+          },
+          {
+            "result": 13,
+            "name": "Mudança de Gravidade Zero",
+            "effect": "Esfera de 15 m de raio centrada em você torna-se ambiente de gravidade zero; você recebe aceleração 0-G igual ao deslocamento base. A esfera acompanha você e dura até a Fúria terminar."
+          },
+          {
+            "result": 14,
+            "name": "Escudo de Gravidade Invertida",
+            "effect": "Até a Fúria terminar, você tem resistência a todo dano."
+          },
+          {
+            "result": 15,
+            "name": "Fúria dos Titãs Celestiais",
+            "effect": "Durante a Fúria, Agarra, Empurra e causa dano como se fosse quatro categorias de tamanho maior. O primeiro ataque que acertar em cada turno causa dano de força adicional igual ao nível de Bárbaro."
+          },
+          {
+            "result": 16,
+            "name": "Mão do Julgamento",
+            "effect": "Produz os efeitos de mão suprema sem concentração enquanto durar sua Fúria, como se conjurada num nível igual à metade do seu nível de Bárbaro, máximo 9º."
+          },
+          {
+            "result": 17,
+            "name": "Arremesso Meteórico",
+            "effect": "Como ação em Fúria, abra portal e lance meteoro num ponto visível a até 18 m. Criaturas em esfera de 9 m fazem salvaguarda de Destreza; falha: 6d6 + nível de Bárbaro de fogo; sucesso: metade. Conta como atacar para sustentar Fúria se houver ao menos uma criatura na área."
+          },
+          {
+            "result": 18,
+            "name": "Guardião Cósmico",
+            "effect": "Ser alienígena espectral cerca você durante a Fúria. Ataques contra você não podem ter vantagem, você recebe visão verdadeira a 9 m e, quando é atingido, pode usar reação para o espectro causar 10 de dano psíquico ao atacante."
+          },
+          {
+            "result": 19,
+            "name": "Loucura do Reino",
+            "effect": "Receba PV temporários iguais ao dobro de seu nível total. Sua Fúria só termina se você permitir, mesmo após a duração normal. No início de cada turno, enquanto restar ao menos 1 desses PV, eles aumentam em 10. Desaparecem ao fim da Fúria ou ao rolar novamente na tabela."
+          },
+          {
+            "result": 20,
+            "name": "Intervenção Cósmica",
+            "effect": "O primeiro ataque que acertar durante a Fúria é automaticamente crítico e concede PV temporários iguais ao dano causado. O dano ignora resistências e imunidades, mas não Limiares ou reduções. Os PV desaparecem ao terminar a Fúria ou rolar novamente na tabela."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 139
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-barbarian-cosmic-madness.feature.oportunidade-astral.l3.1",
+      "name": "OPORTUNIDADE ASTRAL",
+      "level": 3,
+      "description": "Ao obter 20 natural em ataque ou salvaguarda, pode rolar imediatamente na tabela de Efeitos do Frenesi Cósmico como se tivesse entrado em Fúria. O efeito dura 1 minuto ou até você entrar em Fúria; durante esse tempo exige concentração.",
+      "page": 139,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-barbarian-cosmic-madness.feature.frenesi-cosmico.l3.1",
+      "name": "FRENESI CÓSMICO",
+      "level": 3,
+      "description": "Sempre que entra em Fúria, role 1d4 na tabela de Efeitos do Frenesi Cósmico. A CD de qualquer efeito é 8 + Constituição + proficiência. O dado passa a d8 no 6º nível, d12 no 10º e d20 no 14º; a CD também aumenta em +1 em cada um desses níveis.",
+      "page": 139,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-barbarian-cosmic-madness.feature.dobra-cortante.l6.1",
+      "name": "DOBRA CORTANTE",
+      "level": 6,
+      "description": "Pode fazer um ataque corpo a corpo contra alvo a até 6 m × proficiência. Para isso, gaste 1 Carga Arcana, teleporte para espaço desocupado adjacente antes do ataque e some 1d10 tanto ao ataque quanto ao dano.",
+      "page": 139,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-barbarian-cosmic-madness.feature.impulso-cosmico-focado.l10.1",
+      "name": "IMPULSO CÓSMICO FOCADO",
+      "level": 10,
+      "description": "Ao rolar na tabela, role dois dados e escolha o resultado. Se os dois forem iguais, ignore-os e escolha qualquer efeito da tabela.",
+      "page": 139,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-barbarian-cosmic-madness.feature.frenesi-concussivo.l14.1",
+      "name": "FRENESI CONCUSSIVO",
+      "level": 14,
+      "description": "Enquanto estiver em Fúria, no início de cada turno pode rolar novamente na tabela e substituir o efeito atual pelo novo. Esta rolagem específica não usa dois dados.",
+      "page": 139,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

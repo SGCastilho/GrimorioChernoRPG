@@ -1,0 +1,1250 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+    "pages": "108–114",
+    "chapter": "Capítulo 3: Classes",
+    "page": 109
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Vestido em uma armadura de placas que reluz a luz do sol, a despeito da poeira e sujeira de uma longa viagem, um humano larga sua espada e escudo e coloca suas mãos em um homem fatalmente ferido. Radiação divina brilha de suas mãos, o ferimento do homem se fecha e seus olhos se arregalam com espanto.\n\nUm anão se esgueira por detrás de um afloramento, seu manto negro o torna praticamente invisível durante a noite, e observa uma banda de guerra orc celebrando sua recente vitória. Silenciosamente, ele espreita em meio a eles e sussurra seu juramento e dois orcs morrem antes mesmo de perceberem que ele estava ali.\n\nCom um cabelo prateado que brilha com um raio de luz que parece iluminar apenas ele, um elfo gargalha com exultação. Sua lança golpeia num piscar, como o dos seus olhos, perfurando de novo e de novo em um gigante contorcendo-se, até que finalmente sua luz supera a escuridão dele.\n\nSeja lá quais forem suas origens e suas missões, paladinos são unidos pelos seus juramentos de se imporem contra as forças do mal. Quer seja jurado ante o altar de um deus com um sacerdote como testemunha, quer seja em um clareira sagrada diante dos espíritos da natureza e seres feéricos, ou em um momento de desespero e aflição com os mortos como únicas testemunhas, o juramento de um paladino é um laço poderoso. Ele é uma fonte de poder que transforma um guerreiro devotado em um campeão abençoado.\n\nUm paladino jura defender a justiça e integridade, se manter com as coisas boas do mundo contra a invasão das trevas e caçar as forças do mal onde quer que ela se esconda. Diferentes paladinos se focam em vários aspectos da causa da justiça, mas todos estão sujeitos aos juramentos que lhes concede poder para fazer seu trabalho sagrado. Embora, muitos paladinos serem devotos de deuses do bem, o poder de um paladino vem tanto do comprometimento com a justiça per si, quanto de um deus.\n\nOs paladinos treinam por anos para aprender as perícias de combate, dominando uma variedade de armas e armaduras. Mesmo assim, suas perícias marciais são secundárias ao poder mágico que ele empunha: o poder de curar os doentes e feridos, de destruir os cruéis e os mortos-vivos e de proteger os inocentes e aqueles que se unirem a eles na luta pela justiça.\n\nPraticamente por definição, a vida de um paladino é uma vida de aventura. A menos que um ferimento permanente o tenha impedido de se aventurar por um tempo, cada paladino vive nas linhas de frente da batalha cósmica contra o mal. Guerreiros são raros o suficiente nas fileiras\n\nde milícias e exércitos do mundo, mas ainda menos pessoas podem reivindicar a verdadeira vocação de um paladino. Quando eles recebem o chamado, esses guerreiros deixa suas antigas ocupações e se armam para lutar contra o mal. Algumas vezes, seus juramentos os levam a servir à coroa como líderes de grupos de elite de cavaleiros, mas até entre esses, sua lealdade primária é com a causa da justiça, não com a coroa ou país.\n\nPaladinos aventureiros levam seus trabalhos a sério. A investigação de uma ruina antiga ou de uma cripta empoeirada pode ser uma missão guiada por um proposito maior que a aquisição de tesouro. O mal espreita nas masmorras e florestas primitivas e, até mesmo, a menor vitória contra ele pode inclinar a balança cósmica para longe do esquecimento.",
+    "hitDice": {
+      "raw": "d10",
+      "mode": "standard",
+      "number": 1,
+      "faces": 10
+    },
+    "primaryAbility": {
+      "raw": "Força e Carisma",
+      "abilityKeys": [
+        "str",
+        "cha"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Sabedoria, Carisma",
+        "abilityKeys": [
+          "wis",
+          "cha"
+        ]
+      },
+      "armor": "Todas as armaduras e escudos",
+      "weapons": "Armas simples e marciais",
+      "tools": "Nenhuma",
+      "skills": "Escolha duas: Atletismo, Intimidação, Intuição, Medicina, Persuasão ou Religião"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 109,
+      "text": "Como um paladino, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d10 por nível de paladino Pontos de Vida no 1° Nível: 10 + seu modificador de\n\nConstituição Pontos de Vida nos Níveis Seguintes: 1d10 (ou 6) +\n\nseu modificador de Constituição por nível de paladino após o 1°\n\nPROFICIÊNCIAS Armaduras: Todas as armaduras, escudos Armas: Armas simples, armas marciais Ferramentas: Nenhum\n\nTestes de Resistência: Sabedoria, Carisma Perícias: Escolha duas dentre Atletismo, Intuição, Intimidação, Medicina, Persuasão e Religião EQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) uma arma marcial e um escudo ou (b) duas armas marciais\n• (a) cinco azagaias ou (b) qualquer arma simples corpoa-corpo\n• (a) um pacote de sacerdote ou (b) um pacote de aventureiro\n• Cota de malha e um símbolo sagrado"
+    },
+    "overview": [
+      {
+        "title": "PALADINO",
+        "page": 108,
+        "text": "Vestido em uma armadura de placas que reluz a luz do sol, a despeito da poeira e sujeira de uma longa viagem, um humano larga sua espada e escudo e coloca suas mãos em um homem fatalmente ferido. Radiação divina brilha de suas mãos, o ferimento do homem se fecha e seus olhos se arregalam com espanto.\n\nUm anão se esgueira por detrás de um afloramento, seu manto negro o torna praticamente invisível durante a noite, e observa uma banda de guerra orc celebrando sua recente vitória. Silenciosamente, ele espreita em meio a eles e sussurra seu juramento e dois orcs morrem antes mesmo de perceberem que ele estava ali.\n\nCom um cabelo prateado que brilha com um raio de luz que parece iluminar apenas ele, um elfo gargalha com exultação. Sua lança golpeia num piscar, como o dos seus olhos, perfurando de novo e de novo em um gigante contorcendo-se, até que finalmente sua luz supera a escuridão dele.\n\nSeja lá quais forem suas origens e suas missões, paladinos são unidos pelos seus juramentos de se imporem contra as forças do mal. Quer seja jurado ante o altar de um deus com um sacerdote como testemunha, quer seja em um clareira sagrada diante dos espíritos da natureza e seres feéricos, ou em um momento de desespero e aflição com os mortos como únicas testemunhas, o juramento de um paladino é um laço poderoso. Ele é uma fonte de poder que transforma um guerreiro devotado em um campeão abençoado."
+      },
+      {
+        "title": "A CAUSA DA JUSTIÇA",
+        "page": 108,
+        "text": "Um paladino jura defender a justiça e integridade, se manter com as coisas boas do mundo contra a invasão das trevas e caçar as forças do mal onde quer que ela se esconda. Diferentes paladinos se focam em vários aspectos da causa da justiça, mas todos estão sujeitos aos juramentos que lhes concede poder para fazer seu trabalho sagrado. Embora, muitos paladinos serem devotos de deuses do bem, o poder de um paladino vem tanto do comprometimento com a justiça per si, quanto de um deus.\n\nOs paladinos treinam por anos para aprender as perícias de combate, dominando uma variedade de armas e armaduras. Mesmo assim, suas perícias marciais são secundárias ao poder mágico que ele empunha: o poder de curar os doentes e feridos, de destruir os cruéis e os mortos-vivos e de proteger os inocentes e aqueles que se unirem a eles na luta pela justiça."
+      },
+      {
+        "title": "ALÉM DA VIDA MUNDANA",
+        "page": 108,
+        "text": "Praticamente por definição, a vida de um paladino é uma vida de aventura. A menos que um ferimento permanente o tenha impedido de se aventurar por um tempo, cada paladino vive nas linhas de frente da batalha cósmica contra o mal. Guerreiros são raros o suficiente nas fileiras\n\nde milícias e exércitos do mundo, mas ainda menos pessoas podem reivindicar a verdadeira vocação de um paladino. Quando eles recebem o chamado, esses guerreiros deixa suas antigas ocupações e se armam para lutar contra o mal. Algumas vezes, seus juramentos os levam a servir à coroa como líderes de grupos de elite de cavaleiros, mas até entre esses, sua lealdade primária é com a causa da justiça, não com a coroa ou país.\n\nPaladinos aventureiros levam seus trabalhos a sério. A investigação de uma ruina antiga ou de uma cripta empoeirada pode ser uma missão guiada por um proposito maior que a aquisição de tesouro. O mal espreita nas masmorras e florestas primitivas e, até mesmo, a menor vitória contra ele pode inclinar a balança cósmica para longe do esquecimento."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM PALADINO",
+        "page": 109,
+        "text": "O aspecto mais importante de um personagem paladino é a natureza da sua busca sagrada. Apesar da característica de classe relacionada ao seu juramento não aparecer até você chegar ao 3° nível, planeje a escolha ao ler a descrição dos juramentos no final da classe. Você é um servo devotado do bem, leal aos deuses da justiça e honra, um cavaleiro sagrado em uma armadura brilhante aventurando-se para destruir o mal? Você é um glorioso campeão da luz, acalentando todas as belezas que se opõem contra as sombras, um cavaleiro cujo juramento descende de tradições mais antigas que muitos deuses? Ou você é amargurado solitário que jurou se vingar contra aqueles que fizeram grande mal, enviado como um anjo da morte pelos deuses ou guiado pela sua própria vingança? O apêndice B tem uma lista de muitos deuses adorados por paladinos através do multiverso, como Torm, Tyr, Heironeous, Paladine, Kiri-Jolith, Dol Arrah, o Chama Prateada, Bahamut, Athena, Re-Horakhty e Heimdall.\n\nComo você vivenciou o seu chamado para servir como paladino? Você ouviu um sussurro de um deus ou anjo oculto enquanto você rezava? Outro paladino sentiu o\n\npotencial dentro de você e decidiu treina-o como um escudeiro? Ou algum terrível evento – a destruição da sua casa, talvez – o levou às suas buscas? Talvez você tenha tropeçado em um bosque sagrado ou num enclave élfico escondido e se encontrou compelido a proteger todos esses refugiados da bondade e beleza. Ou você pode ter recobrado de suas memorias mais antigas que a vida de paladino era sua vocação, praticamente como se você tivesse sido enviado para o mundo com esse propósito estampado em sua alma.\n\nComo guardiões contra as forças das trevas, paladinos raramente detém qualquer alinhamento maligno. A maioria deles trilham o caminho da caridade e justiça. Considere como a cor da sua tendência irá influenciar na sua busca sagrada e a maneira como ela conduzirá você diante dos deuses e dos mortais. Seu juramento e tendência devem ser harmônicos ou seu juramento deve representar padrões de comportamento que você ainda não tenha alcançado."
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 109,
+        "text": "Você pode construir um paladino rapidamente seguindo essas sugestões. Primeiro, Força deve ser seu valor de habilidade mais alto, seguido por Carisma. Segundo, escolha o antecedente nobre."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.juramentos-sagrados",
+        "title": "JURAMENTOS SAGRADOS",
+        "page": 111,
+        "text": "Se tornar um paladino envolve fazer votos que vinculam o paladino a causa da justiça, um caminho ativo na luta contra o mal. O juramento final, feito quando ele alcança o 3° nível, é a culminação de todo o treinamento do paladino. Alguns personagens com essa classe não se consideram paladinos de fato até chegarem ao 3° nível e fazerem esse juramento. Para outros, a tomada de posse do juramento é uma formalidade, o carimbo oficial do que sempre foi real no coração do paladino.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.2.quebrando-seu-juramento",
+        "title": "QUEBRANDO SEU JURAMENTO",
+        "page": 112,
+        "text": "Um paladino tenta se manter nos mais altos padrões de conduta, mas, até mesmo o mais virtuoso paladino é falível. Algumas vezes, o caminho certo se mostra muito exigente, algumas vezes, uma situação requer o menor dentre dois males e, as vezes, o calor da emoção faz com que um paladino transgrida seu juramento.\n\nUm paladino que tenha quebrado um voto, geralmente buscará absolvição de um clérigo que partilhe sua crença ou de outro paladino da mesma ordem. O paladino deveria gastar toda uma noite em vigília, orando, como sinal de penitência, ou realizar um ato rápido similar de abnegação. Depois de um rito de confissão e perdão, o paladino se sente renovado.\n\nSe um paladino, por vontade própria, violar seu juramento e não demonstrar sinal de arrependimento, as consequências podem ser mais severas. A critério do Mestre, um paladino impenitente deveria ser forçado a abandonar essa classe e adotar outra, ou ainda pegar a opção Paladino Quebrador de Juramento, que aparece no Guia do Mestre.\n\nExpulsar o Profano. Com uma ação, você apresenta seu símbolo sagrado e faz uma oração censurando corruptores e mortos-vivos, usando seu Canalizar Divindade. Cada corruptor ou morto-vivo que puder ver ou ouvir você e esteja a até 9 metros, deve realizar um teste de resistência de Sabedoria. Se a criatura falhar no teste de resistência, ela será expulsa por 1 minuto ou até sofrer dano.\n\nUma criatura expulsa deve gastar seu turno tentando se mover para longe de você da melhor forma possível e não pode, voluntariamente, se mover para um espaço a menos de 9 metros de você. Ela também não pode realizar reações. Nas ações delas, elas só poderão realizar a ação de Disparada ou tentar escapar de um efeito que as impeça de se mover. Se não houver lugar para se mover, a criatura pode usar a ação de Esquivar.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.3.ataque-extra-aprimorado-paladino",
+        "title": "ATAQUE EXTRA APRIMORADO: PALADINO",
+        "page": 149,
+        "text": "Esta regra opcional substitui Ataque Extra. A partir do 7º nível, quando acertar dois ataques durante a ação Atacar, pode usar ação bônus para bradar, escolhendo aliado ou inimigo a 9 m. Inimigo que veja/ouça faz Sabedoria (CD 8 + proficiência + Carisma) ou fica amedrontado até fim do próximo turno; em aliado, encerra a condição amedrontado. Uma vez por turno.",
+        "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "paladin",
+      "color": "#d3b66d"
+    }
+  },
+  "features": [
+    {
+      "key": "class.paladin.feature.sentido-divino.l1.1",
+      "name": "SENTIDO DIVINO",
+      "level": 1,
+      "description": "A presença de um mal poderoso é registrada nos seus sentidos como um odor nocivo e o bem poderoso badala como música celestial nos seus ouvidos. Com uma ação, você pode expandir sua consciência para detectar tais forças. Até o final do seu próximo turno, você sabe a localização de qualquer celestial, corruptor ou morto-vivo a 18 metros de você que não esteja com cobertura total. Você sabe o tipo (celestial, corruptor ou morto-vivo) de qualquer ser cuja presença você sentiu, mas não sua identidade (o vampiro Conde Strahd von Zarovish, por exemplo). Dentro do mesmo raio, você também detecta a presença de qualquer lugar ou objeto que tenha sido consagrado ou conspurcado, como pela magia consagrar.\n\nVocê pode usar essa característica um número de vezes igual a 1 + seu modificador de Carisma. Quando você concluir um descanso longo, você recupera todos os usos gastos.",
+      "page": 110,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.cura-pelas-maos.l1.1",
+      "name": "CURA PELAS MÃOS",
+      "level": 1,
+      "description": "Seu toque abençoado pode curar ferimentos. Você tem uma reserva de poder curativo que se enche quando você realiza um descanso longo. Com essa reserva, você pode restaurar um número total de pontos de vida igual ao seu nível de paladino x 5.\n\nCom uma ação, você pode tocar uma criatura e sugar poder da sua reserva para restaurar um número de pontos de vida da criatura, até o máximo de pontos restantes na reserva.\n\nAlternativamente, você pode gastar 5 pontos de cura da sua reserva de cura para curar o alvo de uma doença ou neutralizar um veneno que o esteja afetando. Você pode curar múltiplas doenças e neutralizar múltiplos venenos com um único uso de Cura pelas Mãos, gastando pontos de vida separadamente para cada um.\n\nEssa característica não gera nenhum efeito em mortos-vivos e constructos.",
+      "page": 110,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.estilo-de-luta.l2.1",
+      "name": "ESTILO DE LUTA",
+      "level": 2,
+      "description": "No 2° nível, você adota um estilo de combate particular que será sua especialidade. Escolha uma das opções a seguir. Você não pode escolher o mesmo Estilo de Combate mais de uma vez, mesmo se puder escolher de novo.",
+      "page": 110,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.combate-com-armas-grandes.l0.1",
+      "name": "COMBATE COM ARMAS GRANDES",
+      "level": null,
+      "description": "Quando você rolar um 1 ou um 2 num dado de dano de um ataque com arma corpo-a-corpo que você esteja empunhando com duas mãos, você pode rolar o dado novamente e usar a nova rolagem, mesmo que resulte em 1 ou 2. A arma deve ter a propriedade duas mãos ou versátil para ganhar esse benefício.",
+      "page": 110,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.defesa.l0.1",
+      "name": "DEFESA",
+      "level": null,
+      "description": "Enquanto estiver usando armadura, você ganha +1 de bônus em sua CA.",
+      "page": 110,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.duelismo.l0.1",
+      "name": "DUELISMO",
+      "level": null,
+      "description": "Quando você empunhar uma arma de ataque corpo-acorpo em uma mão e nenhuma outra arma, você ganha +2 de bônus nas jogadas de dano com essa arma.",
+      "page": 110,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.protecao.l0.1",
+      "name": "PROTEÇÃO",
+      "level": null,
+      "description": "Quando uma criatura que você possa ver atacar um alvo que esteja a até 1,5 metro de você, você pode usar sua reação para impor desvantagem nas jogadas de ataque da criatura. Você deve estar empunhando um escudo.",
+      "page": 110,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.conjuracao.l2.1",
+      "name": "CONJURAÇÃO",
+      "level": 2,
+      "description": "No 2° nível, você aprende a extrair magia divina através de meditação e oração para conjurar magias, como um clérigo faz. Veja o capítulo 10 para as regras gerais de conjuração e o capítulo 11 para a lista de magias de paladino.\n\nPREPARANDO E CONJURANDO MAGIAS A tabela O Paladino mostra quantos espaços de magia você têm para conjurar suas magias de 1º nível e superiores. Para conjurar uma dessas magias, você precisa gastar um espaço do nível da magia ou superior. Você recupera todos os espaços gastos quando termina um descanso longo.\n\nVocê prepara a lista de magias disponíveis selecionando-as da lista de magias de paladino. Você seleciona um número de magias igual ao seu modificador de Carisma + metade do seu nível de paladino, arredondado para baixo (mínimo de uma magia). Essas magias devem ser de níveis que você possua espaços de magia.\n\nPor exemplo, se você é um paladino de 5º nível, você possui quatro espaços de magia de 1º nível e dois de 2º nível. Com Carisma de 14, sua lista de magias preparadas pode incluir quatro magias, combinando as de 1º e 2º nível em qualquer ordem. Se você preparar a magia de 1º nível curar ferimentos, você pode conjurá-la com um espaço de magia de 1º ou de 2º nível. Ao conjurar a magia, você não a retira de sua lista de magias preparadas, podendo conjurá-la de novo se tiver espaços de magia disponíveis.\n\nVocê pode modificar a sua lista de magias preparadas quando termina um descanso longo. Preparar uma nova lista de magias de paladino requer tempo gasto em preces e meditação: no mínimo 1 minuto por nível de magia para cada magia preparada.\n\nHABILIDADE DE CONJURAÇÃO Carisma é a sua habilidade para você conjurar suas magias de paladino, já que seu poder deriva da força das suas convicções. Você usa seu Carisma sempre que alguma magia se referir a sua habilidade de conjurar\n\nmagias. Além disso, você usa o seu modificador de Carisma para definir a CD dos testes de resistência para as magias de paladino que você conjura e quando você realiza uma jogada de ataque com uma magia.\n\nCD para suas magias = 8 + bônus de proficiência +\n\nseu modificador de Carisma\n\nModificador de ataque de magia = seu bônus de proficiência +\n\nseu modificador de Carisma FOCO DE CONJURAÇÃO Você pode usar um símbolo sagrado (encontrado no capítulo 5) como foco de conjuração das suas magias de paladino.",
+      "page": 110,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.destruicao-divina.l2.1",
+      "name": "DESTRUIÇÃO DIVINA",
+      "level": 2,
+      "description": "A partir do 2° nível, quando você atingir uma criatura com um ataque corpo-a-corpo com arma, você pode gastar um espaço de magia de qualquer classe para causar dano radiante no alvo, além do dano normal da arma. O dano extra é de 2d8 para um espaço de magia de 1° nível, mais 1d8 para cada espaço de magia acima do 1°, até o máximo de 5d8. O dano aumenta em 1d8 se o alvo for um corruptor ou um morto-vivo.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.saude-divina.l3.1",
+      "name": "SAÚDE DIVINA",
+      "level": 3,
+      "description": "No 3° nível, a magia divina flui através de você tornando você imune a doenças.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.juramento-sagrado.l3.1",
+      "name": "JURAMENTO SAGRADO",
+      "level": 3,
+      "description": "Quando você alcança o 3° nível, você faz um juramento que torna-o um paladino para sempre. Até então, você estava em um estágio preparatório, guiado pelo caminho, mas ainda não jurado a ele. Agora você escolhe o Juramento de Devoção, o Juramento dos Anciões ou o Juramento de Vingança, todos detalhados no final da descrição da classe.\n\nSua escolha lhe confere características no 3° nível e novamente no 7°, 15° e 20° nível. Tais características incluem as magias de juramento e a característica Canalizar Divindade.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.magias-de-juramento.l3.1",
+      "name": "MAGIAS DE JURAMENTO",
+      "level": 3,
+      "description": "Cada juramento possui uma lista de magias associada a ele. Você ganha acesso a essas magias nos níveis especificados na descrição do juramento. Uma vez que você tenha ganhado acesso a uma magia de juramento, você sempre a terá preparada. Magias de juramento não contam no número de magias que você pode preparar a cada dia.\n\nSe você ganhar uma magia de juramento que não apareça na lista de magias de paladino, a magia será, no entanto, uma magia de paladino para você.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Seu juramento permite que você canalize energia divina para abastecer efeitos mágicos. Cada opção de Canalizar Divindade concedida por um juramento explica como usála.\n\nQuando você usa o seu Canalizar Divindade, você escolhe qual opção usar. Você deve terminar um descanso curto ou longo para pode usar seu Canalizar Divindade novamente.\n\nAlguns efeitos de Canalizar Divindade requerem um teste de resistência. Quando você usar tais efeitos dessa classe, a CD será igual a CD das suas magias de paladino.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "A partir do 5° nível, você pode atacar duas vezes, ao invés de uma, sempre que você realizar a ação de Ataque no seu turno.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.aura-de-protecao.l6.1",
+      "name": "AURA DE PROTEÇÃO",
+      "level": 6,
+      "description": "A partir do 6° nível, sempre que você ou uma criatura amigável a até 3 metros de você tiver que fazer um teste de resistência, aquela criatura ganha um bônus no seu teste de proteção igual a seu modificador de Carisma (com um bônus mínimo de +1). Você deve estar consciente para garantir esse bônus.\n\nNo 18° nível, o alcance dessa aura aumenta para 9 metros.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.aura-de-coragem.l10.1",
+      "name": "AURA DE CORAGEM",
+      "level": 10,
+      "description": "Começando no 10° nível, você e as criaturas amigáveis dentro de um raio de 3 metros de você não podem ser amedrontadas enquanto você estiver consciente.\n\nNo 18° nível, o alcance dessa aura aumenta para 9 metros.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.destruicao-divina-aprimorada.l11.1",
+      "name": "DESTRUIÇÃO DIVINA APRIMORADA",
+      "level": 11,
+      "description": "No 11° nível, você fica tão infundido com o poder da justiça que todos os seus ataques corpo-a-corpo com arma carregam poder divino neles. Sempre que você atingir uma criatura com um ataque corpo-a-corpo, a criatura sofre 1d8 de dano radiante extra. Se você também usar sua Destruição Divina em um ataque, você adiciona esse dano ao dano extra da sua Destruição Divina.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.paladin.feature.toque-purificador.l14.1",
+      "name": "TOQUE PURIFICADOR",
+      "level": 14,
+      "description": "A partir do 14° nível, você pode usar sua ação para terminar uma magia em si mesmo ou em uma criatura voluntária que você tocar.\n\nVocê pode usar essa característica um número de vezes igual a seu modificador de Carisma (mínimo uma vez). Você recupera os usos gastos quando termina um descanso longo.",
+      "page": 111,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Paladino",
+    "sourceTitle": "",
+    "sourcePage": 109,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "slot1",
+        "label": "1º",
+        "title": "Espaços de magia de 1º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot2",
+        "label": "2º",
+        "title": "Espaços de magia de 2º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot3",
+        "label": "3º",
+        "title": "Espaços de magia de 3º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot4",
+        "label": "4º",
+        "title": "Espaços de magia de 4º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot5",
+        "label": "5º",
+        "title": "Espaços de magia de 5º nível",
+        "group": "Espaços de Magia"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Sentido Divino",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.sentido-divino.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Cura pelas Mãos",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.cura-pelas-maos.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": "—",
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.estilo-de-luta.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Conjuração",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.conjuracao.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Destruição Divina",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.destruicao-divina.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 2,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Saúde Divina",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.saude-divina.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Juramento Sagrado",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.juramento-sagrado.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Ataque Extra",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.ataque-extra.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Aura de Proteção",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.aura-de-protecao.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Juramento Sagrado",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.paladin.feature.juramento-sagrado.l3.1"
+            ]
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Aura da Coragem",
+            "kind": "progression-note",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Destruição Divina Aprimorada",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.destruicao-divina-aprimorada.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Toque Purificador",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.toque-purificador.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Juramento Sagrado",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.paladin.feature.juramento-sagrado.l3.1"
+            ]
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Aprimoramentos de Aura",
+            "kind": "progression-note",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.paladin.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Característica de Juramento Sagrado",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.paladin.feature.juramento-sagrado.l3.1"
+            ]
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 20
+    },
+    "options": [
+      {
+        "grimorioId": "juramento-devocao",
+        "identifier": "juramento-devocao",
+        "name": "Juramento de Devoção",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 112
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "juramento-ancioes",
+        "identifier": "juramento-ancioes",
+        "name": "Juramento dos Anciões",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 112
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "juramento-vinganca",
+        "identifier": "juramento-vinganca",
+        "name": "Juramento de Vingança",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 114
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-paladin-oath-of-the-dawn",
+        "identifier": "lyre-paladin-oath-of-the-dawn",
+        "name": "Juramento da Alvorada",
+        "originalName": "Oath of the Dawn",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "474",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 474
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-paladin-oath-of-sorcery",
+        "identifier": "lyre-paladin-oath-of-sorcery",
+        "name": "Juramento da Feitiçaria",
+        "originalName": "Oath of Sorcery",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "472–473",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 472
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-paladin-oath-of-preservation",
+        "identifier": "lyre-paladin-oath-of-preservation",
+        "name": "Juramento da Preservação",
+        "originalName": "Oath of Preservation",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "469–470",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 469
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-paladin-oath-of-remembrance",
+        "identifier": "lyre-paladin-oath-of-remembrance",
+        "name": "Juramento da Rememoração",
+        "originalName": "Oath of Remembrance",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "470–471",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 470
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-paladin-oath-of-sacrifice",
+        "identifier": "lyre-paladin-oath-of-sacrifice",
+        "name": "Juramento do Sacrifício",
+        "originalName": "Oath of Sacrifice",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "471–472",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 471
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-paladin-oath-convergence",
+        "identifier": "zagalhta-paladin-oath-convergence",
+        "name": "Juramento da Convergência",
+        "originalName": "Oath of Convergence",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "161",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 161
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-paladin-oath-vanquisher",
+        "identifier": "zagalhta-paladin-oath-vanquisher",
+        "name": "Juramento do Subjugador",
+        "originalName": "Oath of the Vanquisher",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "162",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 162
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-paladin-oath-of-bound-fate",
+        "identifier": "bbb-paladin-oath-of-bound-fate",
+        "name": "Juramento do Destino Vinculado",
+        "originalName": "Oath of Bound Fate",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "112",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 112
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-paladin-oath-of-loyalty",
+        "identifier": "bbb-paladin-oath-of-loyalty",
+        "name": "Juramento da Lealdade",
+        "originalName": "Oath of Loyalty",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "113",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 113
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-paladin-oath-of-secrecy",
+        "identifier": "bbb-paladin-oath-of-secrecy",
+        "name": "Juramento do Sigilo",
+        "originalName": "Oath of Secrecy",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "113–115",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 113
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "ryoko-paladin-yojimbo",
+        "identifier": "ryoko-paladin-yojimbo",
+        "name": "Juramento do Yojimbo",
+        "originalName": "Oath of the Yojimbo",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "182–183",
+          "chapter": "Capítulo 9: Classes",
+          "page": 182
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-juramento-da-conquista",
+        "identifier": "xanathar-juramento-da-conquista",
+        "name": "Juramento da Conquista",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "54–55",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 54
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-juramento-da-redencao",
+        "identifier": "xanathar-juramento-da-redencao",
+        "name": "Juramento da Redenção",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "55–56",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 55
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-juramento-da-gloria",
+        "identifier": "tasha-juramento-da-gloria",
+        "name": "Juramento da Glória",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "77–79",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 77
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-juramento-da-vigilancia",
+        "identifier": "tasha-juramento-da-vigilancia",
+        "name": "Juramento da Vigilância",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "78–80",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 78
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "scag-juramento-da-coroa",
+        "identifier": "scag-juramento-da-coroa",
+        "name": "Juramento da Coroa",
+        "originalName": "",
+        "source": {
+          "sourceId": "scag",
+          "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+          "pages": "132–133",
+          "chapter": "Capítulo 4: Classes",
+          "page": 132
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "juramento-lamina-bahamut",
+        "identifier": "juramento-lamina-bahamut",
+        "name": "Juramento da Lâmina de Bahamut",
+        "originalName": "",
+        "source": {
+          "sourceId": "bahamut-homebrew",
+          "title": "Os Lâminas de Bahamut — Homebrew Original",
+          "pages": "2",
+          "chapter": "Juramento da Lâmina de Bahamut",
+          "page": 2
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

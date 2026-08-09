@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-blood-minister-somnus-fateblooded",
+    "identifier": "bbb-blood-minister-somnus-fateblooded",
+    "name": "Sangue do Destino",
+    "originalName": "Fateblooded",
+    "aliases": [
+      "Fateblooded"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "72",
+    "chapter": "Capítulo IX: O Ministro de Sangue",
+    "page": 72
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "blood-minister-somnus",
+    "identifier": "blood-minister",
+    "name": "Ministro de Sangue"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "blood-minister",
+    "selectionLevel": 3,
+    "description": "O Sangue do Destino carrega uma centelha imprevisível que não pode ser comandada deliberadamente. Ao se entregar ao acaso e agir sem saber exatamente o que virá, seu poder emerge tão naturalmente quanto o próprio batimento cardíaco.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 72
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-blood-minister-somnus-fateblooded.feature.critico-aprimorado.l3.1",
+      "name": "Crítico Aprimorado",
+      "level": 3,
+      "description": "Você obtém um acerto crítico com um resultado 19 ou 20 no d20.",
+      "page": 72,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-fateblooded.feature.ministracao-economica.l3.1",
+      "name": "Ministração Econômica",
+      "level": 3,
+      "description": "Quando gasta um Dado de Vida para Ministração Sanguínea e o resultado é menor que metade do valor máximo possível desse dado — 1 ou 2 num d4; 1, 2 ou 3 num d6, e assim por diante — o Dado de Vida não é consumido, embora você ainda receba normalmente o benefício da Ministração Sanguínea.",
+      "page": 72,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-fateblooded.feature.aposta-de-sangue.l7.1",
+      "name": "Aposta de Sangue",
+      "level": 7,
+      "description": "Quando causa dano com um ataque de arma e pelo menos um dos dados de dano iniciais apresenta seu valor máximo, você pode rolar dados adicionais daquele mesmo tipo em quantidade igual ao seu bônus de proficiência e somá-los ao dano. Essa regra se aplica apenas aos dados iniciais do ataque; os dados adicionais não são duplicados por acertos críticos.",
+      "page": 72,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-fateblooded.feature.acao-arterial.l11.1",
+      "name": "Ação Arterial",
+      "level": 11,
+      "description": "Uma vez por turno, você pode gastar 1 Dado de Vida para realizar uma segunda ação bônus, ou 2 Dados de Vida para realizar uma segunda ação. Você não pode obter ambos no mesmo turno.",
+      "page": 72,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-fateblooded.feature.evasao-instintiva.l15.1",
+      "name": "Evasão Instintiva",
+      "level": 15,
+      "description": "Quando realiza uma salvaguarda para sofrer metade do dano de um efeito, você não sofre dano em um sucesso e sofre metade em uma falha.",
+      "page": 72,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

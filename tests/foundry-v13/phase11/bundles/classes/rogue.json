@@ -1,0 +1,976 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+    "pages": "89–93",
+    "chapter": "Capítulo 3: Classes",
+    "page": 90
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Sinalizando para seus companheiros esperarem, uma halfling esgueira-se à frente pelo corredor da masmorra. Ela encosta seus ouvidos na porta, puxa suas ferramentas e abre a fechadura em um piscar de olhos. Ela então desaparece nas sombras, ao mesmo tempo em que seu companheiro guerreiro se move para abrir a porta com um chute.\n\nUma humana espreita nas sombras de um beco, enquanto seu cúmplice se prepara para a parte dele na emboscada. Quando seu alvo – um notório traficante de escravos – passa pelo beco, seu cúmplice grita, o traficante de escravos vem investigar e a lâmina da assassina corta sua garganta antes mesmo dele ser capaz de emitir qualquer som.\n\nDisfarçando uma risadinha, uma gnoma agita seus dedos e magicamente surrupia o molho de chaves do cinto do guarda. No momento seguinte, as chaves estão em suas mãos, a porta da cela está aberta e ela e seus companheiros estão livres para escapar.\n\nLadinos contam com sua perícia, furtividade e as vulnerabilidades de seus inimigos para obter vantagem em qualquer situação. Eles possuem uma habilidade especial para encontrar a solução para praticamente qualquer problema, demonstrando desenvoltura e versatilidade, a chave de qualquer grupo aventureiro de sucesso.\n\nLadinos dedicam muito de seus recursos para se tornarem mestres em várias perícias, bem como aperfeiçoar suas habilidades em combate, adquirindo uma vasta experiência que poucos personagens podem alcançar. Muitos ladinos focam na furtividade e trapaça, enquanto outros refinam suas perícias para ajudá-los nas masmorras, como escalada, encontrar e desarmar armadilhas, e abrir fechaduras.\n\nEm combate, ladinos priorizam astúcia em vez de força bruta. O ladino sempre prefere desferir um ataque preciso, bem naquele lugar que mais machuca, do que derrubar um oponente com uma série de ataques. Ladinos possuem uma habilidade quase sobrenatural de evitar o perigo, e alguns poucos aprendem truques de magia para incrementar suas outras habilidades.\n\nCada cidade, cada distrito tem sua parcela de ladinos. A maioria deles vive o pior estereótipo da classe, levando a vida como assaltantes, assassinos, ladrões de rua ou vigaristas. Geralmente, esses canalhas são organizados em guildas de ladrões ou famílias criminosas. A maior parte dos ladinos opera independentemente, mas às vezes recrutam aprendizes para ajudá-los em seus golpes e\n\nassaltos. Uma pequena parcela dos ladinos vive honestamente como chaveiros, investigadores ou exterminadores, o que pode ser um trabalho perigoso em um mundo que ratos atrozes – e homens-rato – assombram os esgotos.\n\nComo aventureiros, os ladinos pendem para ambos os lados da lei. Alguns são criminosos calejados que decidiram procurar sua fortuna em montes de tesouros, enquanto outros levam uma vida de aventura para escapar da lei. Alguns aprenderam e aperfeiçoaram suas perícias com o propósito explícito de se infiltrar em ruínas antigas e criptas escondidas na busca de tesouros.",
+    "hitDice": {
+      "raw": "d8",
+      "mode": "standard",
+      "number": 1,
+      "faces": 8
+    },
+    "primaryAbility": {
+      "raw": "Destreza",
+      "abilityKeys": [
+        "dex"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Destreza, Inteligência",
+        "abilityKeys": [
+          "dex",
+          "int"
+        ]
+      },
+      "armor": "Armaduras leves",
+      "weapons": "Armas simples, bestas de mão, espadas longas, rapieiras e espadas curtas",
+      "tools": "Ferramentas de ladrão",
+      "skills": "Escolha quatro: Acrobacia, Atletismo, Atuação, Enganação, Furtividade, Intimidação, Intuição, Investigação, Percepção, Persuasão ou Prestidigitação"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 90,
+      "text": "Como um ladino, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d8 por nível de ladino Pontos de Vida no 1° Nível: 8 + seu modificador de\n\nConstituição Pontos de Vida nos Níveis Seguintes: 1d8 (ou 5) + seu\n\nmodificador de Constituição por nível de ladino após o 1° PROFICIÊNCIAS Armaduras: Armaduras leves Armas: Armas simples, bestas de mão, espadas longas,\n\nrapieiras, espadas curtas Ferramentas: Ferramentas de ladrão\n\nTestes de Resistência: Destreza, Inteligência Perícias: Escolha quatro dentre Acrobacia, Atletismo,\n\nAtuação, Enganação, Furtividade, Intimidação, Intuição, Investigação, Percepção, Persuasão e Prestidigitação\n\nEQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) uma rapieira ou (b) uma espada longa\n• (a) um arco curto e uma aljava com 20 flechas ou (b)\n\numa espada curta\n• (a) um pacote de assaltante ou (b) um pacote de\n\naventureiro ou (c) um pacote de explorador\n• Armadura de couro, duas adagas e ferramentas de\n\nladrão"
+    },
+    "overview": [
+      {
+        "title": "LADINO",
+        "page": 89,
+        "text": "Sinalizando para seus companheiros esperarem, uma halfling esgueira-se à frente pelo corredor da masmorra. Ela encosta seus ouvidos na porta, puxa suas ferramentas e abre a fechadura em um piscar de olhos. Ela então desaparece nas sombras, ao mesmo tempo em que seu companheiro guerreiro se move para abrir a porta com um chute.\n\nUma humana espreita nas sombras de um beco, enquanto seu cúmplice se prepara para a parte dele na emboscada. Quando seu alvo – um notório traficante de escravos – passa pelo beco, seu cúmplice grita, o traficante de escravos vem investigar e a lâmina da assassina corta sua garganta antes mesmo dele ser capaz de emitir qualquer som.\n\nDisfarçando uma risadinha, uma gnoma agita seus dedos e magicamente surrupia o molho de chaves do cinto do guarda. No momento seguinte, as chaves estão em suas mãos, a porta da cela está aberta e ela e seus companheiros estão livres para escapar.\n\nLadinos contam com sua perícia, furtividade e as vulnerabilidades de seus inimigos para obter vantagem em qualquer situação. Eles possuem uma habilidade especial para encontrar a solução para praticamente qualquer problema, demonstrando desenvoltura e versatilidade, a chave de qualquer grupo aventureiro de sucesso."
+      },
+      {
+        "title": "PERÍCIA E PRECISÃO",
+        "page": 89,
+        "text": "Ladinos dedicam muito de seus recursos para se tornarem mestres em várias perícias, bem como aperfeiçoar suas habilidades em combate, adquirindo uma vasta experiência que poucos personagens podem alcançar. Muitos ladinos focam na furtividade e trapaça, enquanto outros refinam suas perícias para ajudá-los nas masmorras, como escalada, encontrar e desarmar armadilhas, e abrir fechaduras.\n\nEm combate, ladinos priorizam astúcia em vez de força bruta. O ladino sempre prefere desferir um ataque preciso, bem naquele lugar que mais machuca, do que derrubar um oponente com uma série de ataques. Ladinos possuem uma habilidade quase sobrenatural de evitar o perigo, e alguns poucos aprendem truques de magia para incrementar suas outras habilidades."
+      },
+      {
+        "title": "VIVENDO ÀS SOMBRAS",
+        "page": 89,
+        "text": "Cada cidade, cada distrito tem sua parcela de ladinos. A maioria deles vive o pior estereótipo da classe, levando a vida como assaltantes, assassinos, ladrões de rua ou vigaristas. Geralmente, esses canalhas são organizados em guildas de ladrões ou famílias criminosas. A maior parte dos ladinos opera independentemente, mas às vezes recrutam aprendizes para ajudá-los em seus golpes e\n\nassaltos. Uma pequena parcela dos ladinos vive honestamente como chaveiros, investigadores ou exterminadores, o que pode ser um trabalho perigoso em um mundo que ratos atrozes – e homens-rato – assombram os esgotos.\n\nComo aventureiros, os ladinos pendem para ambos os lados da lei. Alguns são criminosos calejados que decidiram procurar sua fortuna em montes de tesouros, enquanto outros levam uma vida de aventura para escapar da lei. Alguns aprenderam e aperfeiçoaram suas perícias com o propósito explícito de se infiltrar em ruínas antigas e criptas escondidas na busca de tesouros."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM LADINO",
+        "page": 90,
+        "text": "Conforme você cria o seu ladino, considere a relação do seu personagem com a lei. Você tem um passado – ou presente – criminoso? Está fugindo da lei ou da fúria do mestre de sua guilda de ladrões? Ou você deixou sua guilda em busca de mais riscos e maiores recompensas? É a ambição que o direciona em suas aventuras ou algum outro desejo ou ideal?\n\nQual foi o gatilho que tirou você de sua vida pregressa? Foi um grande golpe ou um roubo terrivelmente errado que fez você reavaliar sua carreira? Talvez você teve sorte em um roubo bem sucedido e conseguiu dinheiro suficiente para escapar da sua vida miserável. Será que a sede pela estrada finalmente chamou você para longe de seu lar? Talvez você encontrou-se subitamente separado de sua família ou mentor, e precisou encontrar uma nova forma de sustento. Ou talvez tenha feito um novo amigo – outro membro de seu grupo de aventureiros – que o mostrou novas possibilidades de ganhar a vida e empregar seus talentos particulares."
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 90,
+        "text": "Você pode fazer um ladino rapidamente ao seguir estas sugestões. Primeiro, coloque seu valor de habilidade mais alto em Destreza. Depois, faça Inteligência seu segundo mais alto se quiser se sobressair em Investigação ou planeja adquirir o arquétipo de Trapaceiro Arcano. Escolha Carisma, no entanto, se planeja enfatizar enganação e interação social. Segundo, escolha o antecedente charlatão."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.arquetipos-de-ladino",
+        "title": "ARQUÉTIPOS DE LADINO",
+        "page": 92,
+        "text": "Ladinos possuem muitas características em comum, incluindo a ênfase no aperfeiçoamento de suas perícias, na precisão e aproximação mortal em combate, e nos seus reflexos cada vez mais rápidos. Mas, diferentes ladinos orientam seus talentos em direções variadas, personificadas pelos vários arquétipos de ladino. Seu arquétipo escolhido reflete o seu foco – não necessariamente a indicação de sua profissão, mas a descrição de suas técnicas preferidas.",
+        "sourceTitle": ""
+      }
+    ],
+    "presentation": {
+      "sigilKey": "rogue",
+      "color": "#4f9c82"
+    }
+  },
+  "features": [
+    {
+      "key": "class.rogue.feature.especializacao.l1.1",
+      "name": "ESPECIALIZAÇÃO",
+      "level": 1,
+      "description": "No 1º nível, você escolhe duas de suas perícias que seja proficiente, ou uma perícia que seja proficiente e ferramentas de ladrão. Seu bônus de proficiência é dobrado em qualquer teste de habilidade que fizer com elas.\n\nNo 6º nível, você pode escolher outras duas de suas proficiências (em perícias ou ferramentas de ladrão) para ganhar esse benefício.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.ataque-furtivo.l1.1",
+      "name": "ATAQUE FURTIVO",
+      "level": 1,
+      "description": "A partir do 1º nível, você sabe como atacar sutilmente e explorar a distração de seus inimigos. Uma vez por turno, você pode adicionar 1d6 nas jogadas de dano contra qualquer criatura que acertar, desde que tenha vantagem nas jogadas de ataque. O ataque deve ser com uma arma de acuidade ou à distância.\n\nVocê não precisa ter vantagem nas jogadas de ataque se outro inimigo do seu alvo estiver a 1,5 metro de distância dele, desde que este inimigo não esteja incapacitado e você não tenha desvantagem nas jogadas de ataque.\n\nA quantidade de dano extra aumenta conforme você ganha níveis nessa classe, como mostrado na coluna Ataque Furtivo da tabela O Ladino.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.giria-de-ladrao.l1.1",
+      "name": "GÍRIA DE LADRÃO",
+      "level": 1,
+      "description": "Durante seu treinamento você aprendeu as gírias de ladrão, um misto de dialeto, jargão e códigos secretos que permitem você passar mensagens secretas durante uma conversa aparentemente normal. Somente outra criatura que conheça essas gírias de ladrão entende as mensagens. Leva-se quatro vezes mais tempo para transmitir essa mensagem do que falar a mesma ideia claramente.\n\nAlém disso, você entende um conjunto de sinais secretos e símbolos usados para transmitir mensagens curtas e simples, como saber se uma área é perigosa ou se é território de uma guilda de ladrões, se o saque está\n\npróximo, se as pessoas na área são alvos fáceis ou até mesmo indicar lugares seguros para ladinos se esconderem.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.acao-ardilosa.l2.1",
+      "name": "AÇÃO ARDILOSA",
+      "level": 2,
+      "description": "A partir do 2º nível, seu pensamento rápido e agilidade faz você se mover e agir rapidamente. Você pode usar uma ação bônus durante cada um de seus turnos em combate. Esta ação pode ser usada somente para Disparada, Desengajar ou Esconder.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.arquetipo-de-ladino.l3.1",
+      "name": "ARQUÉTIPO DE LADINO",
+      "level": 3,
+      "description": "No 3º nível, você escolhe um arquétipo que se esforçará para se equiparar através de exercícios de suas habilidades de ladino: Assassino, Ladrão ou Trapaceiro Arcano, todos detalhados no final da descrição da classe. Sua escolha garante a você características no 3º nível e de novo no 9º, 13º e 17º nível.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4° nível e novamente no 8°, 10°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.esquiva-sobrenatural.l5.1",
+      "name": "ESQUIVA SOBRENATURAL",
+      "level": 5,
+      "description": "A partir do 5º nível, quando um inimigo que você possa ver o acerta com um ataque, você pode usar sua reação para reduzir pela metade o dano sofrido.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.evasao.l7.1",
+      "name": "EVASÃO",
+      "level": 7,
+      "description": "A partir do 7º nível, você pode esquivar-se agilmente de certos efeitos em área, como o sopro flamejante de um dragão vermelho ou uma magia tempestade de gelo. Quando você for alvo de um efeito que exige um teste de resistência de Destreza para sofrer metade do dano, você não sofre dano algum se passar, e somente metade do dano se falhar.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.talento-confiavel.l11.1",
+      "name": "TALENTO CONFIÁVEL",
+      "level": 11,
+      "description": "No 11º nível, você refinou suas perícias beirando à perfeição. Toda vez que você fizer um teste de habilidade no qual possa adicionar seu bônus de proficiência, você trata um resultado no d20 de 9 ou menor como um 10.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.sentido-cego.l14.1",
+      "name": "SENTIDO CEGO",
+      "level": 14,
+      "description": "No 14º nível, se você for capaz de ouvir, você está ciente da localização de qualquer criatura escondida ou invisível a até 3 metros de você.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.mente-escorregadia.l15.1",
+      "name": "MENTE ESCORREGADIA",
+      "level": 15,
+      "description": "No 15º nível, você adquire uma grande força de vontade, adquirindo proficiência nos testes de resistência de Sabedoria.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.elusivo.l18.1",
+      "name": "ELUSIVO",
+      "level": 18,
+      "description": "A partir do 18º nível, você se torna tão sagaz que raramente alguém encosta a mão em você. Nenhuma jogada de ataque tem vantagem contra você, desde que você não esteja incapacitado.",
+      "page": 91,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.rogue.feature.golpe-de-sorte.l20.1",
+      "name": "GOLPE DE SORTE",
+      "level": 20,
+      "description": "No 20º nível, você adquire um dom incrível para ter sucesso nos momentos em que mais precisa. Se um ataque seu falhar contra um alvo ao seu alcance, você pode transformar essa falha em um acerto. Ou se falhar em um teste qualquer, você pode tratar a jogada desse mesmo teste como 20 natural.\n\nUma vez que você use essa característica, você não pode fazê-lo de novo até terminar um descanso curto ou longo.",
+      "page": 92,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Ladino",
+    "sourceTitle": "",
+    "sourcePage": 90,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "sneakAttack",
+        "label": "Ataque Furtivo"
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Especialização",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.especializacao.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Ataque Furtivo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.ataque-furtivo.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Gíria de Ladrão",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.giria-de-ladrao.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "1d6"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Ação Ardilosa",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.acao-ardilosa.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "1d6"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Arquétipo de Ladino",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.arquetipo-de-ladino.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "2d6"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "2d6"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Esquiva Sobrenatural",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.esquiva-sobrenatural.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "3d6"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Especialização",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.especializacao.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "3d6"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Evasão",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.evasao.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "4d6"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "4d6"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Arquétipo de Ladino",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.rogue.feature.arquetipo-de-ladino.l3.1"
+            ]
+          }
+        ],
+        "sneakAttack": "5d6"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "5d6"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Talento Confiável",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.talento-confiavel.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "6d6"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "6d6"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Arquétipo de Ladino",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.rogue.feature.arquetipo-de-ladino.l3.1"
+            ]
+          }
+        ],
+        "sneakAttack": "7d6"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Sentido Cego",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.sentido-cego.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "7d6"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Mente Escorregadia",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.mente-escorregadia.l15.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "8d6"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "8d6"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Característica de Arquétipo de Ladino",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.rogue.feature.arquetipo-de-ladino.l3.1"
+            ]
+          }
+        ],
+        "sneakAttack": "9d6"
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Elusivo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.elusivo.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "9d6"
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "10d6"
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Golpe de Sorte",
+            "kind": "feature",
+            "featureRefs": [
+              "class.rogue.feature.golpe-de-sorte.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "sneakAttack": "10d6"
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 21
+    },
+    "options": [
+      {
+        "grimorioId": "assassino",
+        "identifier": "assassino",
+        "name": "Assassino",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 92
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "ladrao",
+        "identifier": "ladrao",
+        "name": "Ladrão",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 92
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "trapaceiro-arcano",
+        "identifier": "trapaceiro-arcano",
+        "name": "Trapaceiro Arcano",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 92
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-rogue-dreg-letter",
+        "identifier": "lyre-rogue-dreg-letter",
+        "name": "Carta de Escória",
+        "originalName": "Dreg Letter",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "477",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 477
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-rogue-potential-chainer",
+        "identifier": "lyre-rogue-potential-chainer",
+        "name": "Encadeador de Potencial",
+        "originalName": "Potential Chainer",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "477–478",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 477
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-rogue-versatile-beast",
+        "identifier": "lyre-rogue-versatile-beast",
+        "name": "Fera Versátil",
+        "originalName": "Versatile Beast",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "478",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 478
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-rogue-academy-duller",
+        "identifier": "lyre-rogue-academy-duller",
+        "name": "Silenciador da Academia",
+        "originalName": "Academy Duller",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "476",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 476
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-rogue-deadshot",
+        "identifier": "lyre-rogue-deadshot",
+        "name": "Tiro Certeiro",
+        "originalName": "Deadshot",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "476",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 476
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-rogue-vigilante",
+        "identifier": "lyre-rogue-vigilante",
+        "name": "Vigilante",
+        "originalName": "Vigilante",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "478–479",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 478
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-rogue-drone-operator",
+        "identifier": "zagalhta-rogue-drone-operator",
+        "name": "Operador de Drone",
+        "originalName": "Drone Operator",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "167–168",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 167
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-rogue-majur-plant",
+        "identifier": "zagalhta-rogue-majur-plant",
+        "name": "Agente Infiltrado Majur",
+        "originalName": "Majur Plant",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "169",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 169
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-rogue-shinobi",
+        "identifier": "bbb-rogue-shinobi",
+        "name": "Shinobi",
+        "originalName": "Shinobi",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "119–120",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 119
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-rogue-whimchaser",
+        "identifier": "bbb-rogue-whimchaser",
+        "name": "Caçador de Caprichos",
+        "originalName": "Whimchaser",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "120–121",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 120
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-rogue-wordless-knife",
+        "identifier": "bbb-rogue-wordless-knife",
+        "name": "Lâmina Sem Palavras",
+        "originalName": "Wordless Knife",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "121",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 121
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "ryoko-rogue-tamaya",
+        "identifier": "ryoko-rogue-tamaya",
+        "name": "Tamaya",
+        "originalName": "Tamaya",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "186–187",
+          "chapter": "Capítulo 9: Classes",
+          "page": 186
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-inquiridor",
+        "identifier": "xanathar-inquiridor",
+        "name": "Inquiridor",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "43–44",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 43
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-mentor",
+        "identifier": "xanathar-mentor",
+        "name": "Mentor",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "44",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 44
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-batedor",
+        "identifier": "xanathar-batedor",
+        "name": "Batedor",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "45",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 45
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-espadachim",
+        "identifier": "xanathar-espadachim",
+        "name": "Espadachim",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "45",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 45
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-fantasma",
+        "identifier": "tasha-fantasma",
+        "name": "Fantasma",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "64–66",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 64
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-alma-laminada",
+        "identifier": "tasha-alma-laminada",
+        "name": "Alma Laminada",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "66–68",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 66
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

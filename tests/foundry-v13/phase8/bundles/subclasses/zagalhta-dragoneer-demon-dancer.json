@@ -1,0 +1,193 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-dragoneer-demon-dancer",
+    "identifier": "zagalhta-dragoneer-demon-dancer",
+    "name": "Dançarino Demoníaco",
+    "originalName": "Demon Dancer",
+    "aliases": [
+      "Demon Dancer"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "124",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 124
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Um duelista refinado que transforma os impulsos violentos do espírito dracônico em golpes cirúrgicos, visão demoníaca e uma mortalha de escuridão protetora.",
+    "tables": [
+      {
+        "key": "table.1.parametros-da-especializacao",
+        "title": "Parâmetros da Especialização",
+        "page": 124,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "hit",
+            "label": "Dado de Vida"
+          },
+          {
+            "key": "saves",
+            "label": "Salvaguardas"
+          },
+          {
+            "key": "weapons",
+            "label": "Armas"
+          },
+          {
+            "key": "armor",
+            "label": "Armaduras"
+          },
+          {
+            "key": "skills",
+            "label": "Perícias"
+          },
+          {
+            "key": "casting",
+            "label": "Conjuração"
+          }
+        ],
+        "rows": [
+          {
+            "hit": "d8",
+            "saves": "Destreza, Sabedoria",
+            "weapons": "Todas as armas simples, Leves e de Acuidade",
+            "armor": "Leves e médias",
+            "skills": "Acrobacia; escolha outras quatro perícias",
+            "casting": "Um-Terço de Conjurador (lista do Bruxo)"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 124
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.dardo-faminto.l1.1",
+      "name": "DARDO FAMINTO",
+      "level": 1,
+      "description": "Na primeira vez que acertar uma criatura com ataque corpo a corpo em cada turno, recebe PV temporários iguais à metade do dano causado. Se for crítico, recupera esse valor como PV; qualquer cura excedente vira PV temporários.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.visao-diabolica.l3.1",
+      "name": "VISÃO DIABÓLICA",
+      "level": 3,
+      "description": "Você enxerga em escuridão mágica e não mágica como luz plena a 4,5 m × sua proficiência. Se outra fonte conceder visão diabólica maior, aumente o alcance daquela fonte em metade do alcance desta característica.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.golpe-matador.l7.1",
+      "name": "GOLPE MATADOR",
+      "level": 7,
+      "description": "Ao fazer um ataque de arma, pode gastar um Espaço de Magia de Cavaleiro Dracônico: adicione o nível do Espaço ao ataque e, se acertar, cause +1d6 de dano de Encarnação por nível do Espaço.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.golpe-terrivel.l13.1",
+      "name": "GOLPE TERRÍVEL",
+      "level": 13,
+      "description": "Como ação bônus, faça dois ataques de arma com uma arma Leve ou de Acuidade.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.veu-da-besta-negra.l13.1",
+      "name": "VÉU DA BESTA NEGRA",
+      "level": 13,
+      "description": "Como ação bônus, crie por 1 minuto uma mortalha de escuridão. Ataques contra você têm desvantagem; no início de cada turno seu voo laborioso é convertido automaticamente em voo normal; você tem vantagem em Furtividade e Intimidação; em escuridão total é considerado invisível. Usos por Descanso Longo iguais à metade da proficiência.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.dardo-voraz.l17.1",
+      "name": "DARDO VORAZ",
+      "level": 17,
+      "description": "Dardo Faminto passa a conceder PV/PV temporários iguais ao dano total causado, em vez de metade.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

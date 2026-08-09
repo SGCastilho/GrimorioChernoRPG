@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-osmanthus",
+    "identifier": "lyre-petal-knight-retia-osmanthus",
+    "name": "Osmanthus",
+    "originalName": "Osmanthus",
+    "aliases": [
+      "Osmanthus"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "396",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 396
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "O Osmanthus representa verdade, nobreza e disposição para suportar o perigo em nome dos demais. Seu portador vê através de enganos, confronta inimigos de frente e torna-se uma fortaleza viva.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 396
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-osmanthus.feature.juramento-de-nobreza.l2.1",
+      "name": "JURAMENTO DE NOBREZA",
+      "level": 2,
+      "description": "Ao aprender uma nova magia de Cavaleiro das Pétalas, pode escolher uma magia da lista de Paladino e tratá-la como magia de Cavaleiro das Pétalas, desde que seja de nível que seus espaços possam conjurar. Ao receber esta característica, pode trocar a magia desse nível e uma outra magia conhecida por magias de Paladino.",
+      "page": 396,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-osmanthus.feature.proficiencia-veraz.l2.1",
+      "name": "PROFICIÊNCIA VERAZ",
+      "level": 2,
+      "description": "Você recebe proficiência em Intuição; se já a tinha, adiciona seu bônus de proficiência uma segunda vez aos testes de Intuição, salvo se outra característica já fizer isso. Também recebe proficiência com todas as armas marciais e escudos. Características de Cavaleiro das Pétalas que exigem arma de uma mão podem ser usadas com qualquer arma sem a propriedade pesada.",
+      "page": 396,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-osmanthus.feature.face-a-face.l6.1",
+      "name": "FACE A FACE",
+      "level": 6,
+      "description": "Ataques à distância com arma contra você têm desvantagem enquanto você não estiver incapacitado. Além disso, enquanto estiver sob os efeitos da ação Esquivar, quando uma criatura errar um ataque com arma contra você, pode fazer um ataque corpo a corpo com arma contra ela. Máximo de um desses ataques por turno.",
+      "page": 396,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-osmanthus.feature.visao-verdadeira.l11.1",
+      "name": "VISÃO VERDADEIRA",
+      "level": 11,
+      "description": "Como ação bônus, você recebe visão verdadeira até 36 metros por 1 minuto. Usos por Descanso Longo iguais à metade de seu bônus de proficiência, arredondado para baixo.",
+      "page": 396,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-osmanthus.feature.fortaleza-de-um.l15.1",
+      "name": "FORTALEZA DE UM",
+      "level": 15,
+      "description": "Uma vez por Descanso Curto ou Longo, como ação, reforce-se por 1 minuto: recebe resistência a dano contundente, cortante e perfurante; no início de cada turno, ganha PV temporários iguais ao seu nível de Cavaleiro das Pétalas; e sempre que usa a ação Atacar, pode fazer um ataque com arma adicional.",
+      "page": 396,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

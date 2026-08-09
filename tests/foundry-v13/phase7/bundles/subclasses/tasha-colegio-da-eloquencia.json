@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-colegio-da-eloquencia",
+    "identifier": "tasha-colegio-da-eloquencia",
+    "name": "Colégio da Eloquência",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "28–30",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 28
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Adeptos do Colégio da Eloquência dominam a arte da oratória. Esses bardos usam uma mistura de lógica e jogos de palavras teatrais, conquistando céticos e detratores com argumentos lógicos e dedilhando as cordas do coração para apelar às emoções do público.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 28
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-colegio-da-eloquencia.feature.lingua-prateada.l3.1",
+      "name": "LÍNGUA PRATEADA",
+      "level": 3,
+      "description": "Você é o mestre em dizer a coisa certa no momento certo. Quando você realiza um teste de Carisma (Persuasão) ou Carisma (Enganação), você pode tratar um resultado de 9 ou menos no d20 como um 10.",
+      "page": 29,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-colegio-da-eloquencia.feature.palavras-desconcertantes.l3.1",
+      "name": "PALAVRAS DESCONCERTANTES",
+      "level": 3,
+      "description": "Você pode tecer palavras emaranhadas com magia que desconcertam uma criatura e faz com que duvide de si mesma. Como uma ação bônus, você pode gastar o uso de uma Inspiração de Bardo e escolher uma criatura a até 18m de você que você possa ver. Role o dado de Inspiração de Bardo. A criatura deve subtrair o valor dessa rolagem na próxima salvaguarda que fizer antes do começo do próximo turno do bardo.",
+      "page": 29,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-colegio-da-eloquencia.feature.inspiracao-infalivel.l6.1",
+      "name": "INSPIRAÇÃO INFALÍVEL",
+      "level": 6,
+      "description": "Suas palavras inspiradoras são tão persuasivas que os outros se sentem compelidos ao sucesso. Quando uma criatura adiciona seu dado de Inspiração de Bardo em um teste de habilidade, jogada de ataque ou salvaguarda, e a rolagem falha, a criatura pode manter o dado de Inspiração.",
+      "page": 29,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-colegio-da-eloquencia.feature.lingua-universal.l6.1",
+      "name": "LÍNGUA UNIVERSAL",
+      "level": 6,
+      "description": "Você adquire a capacidade de fazer com que seu discurso seja compreensível para qualquer criatura. Como uma ação, escolha uma ou mais criaturas a até 18m de você, em uma quantia até o seu modificador de Carisma (mínimo de uma criatura). As criaturas escolhidas podem compreendê-lo magicamente, independente do idioma que você falar, por 1 hora. Uma vez que use essa característica, você não pode utilizála novamente até que termine um descanso longo, a menos que gaste um espaço de magia de qualquer círculo para ativála novamente.",
+      "page": 29,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-colegio-da-eloquencia.feature.inspiracao-contagiante.l14.1",
+      "name": "INSPIRAÇÃO CONTAGIANTE",
+      "level": 14,
+      "description": "Quando você for bem-sucedido em inspirar alguém, o poder da sua eloquência agora pode se espalhar para outras pessoas. Quando uma criatura a até 18m de você adiciona um de seus dados de Inspiração de Bardo a um de seus testes de habilidade, jogada de ataque, ou salvaguarda e a rolagem é bem-sucedida, você pode usar sua reação para encorajar uma criatura diferente (que não seja você mesmo), que possa ouvi-lo e esteja a até 18m de você, dando um dado de inspiração de Bardo a ela sem gastar nenhum uso de sua característica de Inspiração de Bardo. Você pode usar essa reação um número de vezes igual ao seu modificador de Carisma (mínimo de um), e você recupera todos os usos dessa habilidade quando termina um descanso longo.",
+      "page": 29,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

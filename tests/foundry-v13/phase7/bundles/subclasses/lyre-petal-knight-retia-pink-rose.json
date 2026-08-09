@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-pink-rose",
+    "identifier": "lyre-petal-knight-retia-pink-rose",
+    "name": "Rosa Cor-de-Rosa",
+    "originalName": "Pink Rose",
+    "aliases": [
+      "Pink Rose"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "397",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 397
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "A Rosa Cor-de-Rosa esconde precisão e perigo sob aparência graciosa. Seu cavaleiro cura aliados, atinge pontos de pressão e manifesta correntes etéreas que estendem dramaticamente o alcance de suas armas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 397
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-pink-rose.feature.tratamento-gentil.l2.1",
+      "name": "TRATAMENTO GENTIL",
+      "level": 2,
+      "description": "Você possui uma reserva de d10s em quantidade igual ao seu bônus de proficiência + 4. Como ação bônus, escolha uma criatura que veja a até 9 metros e gaste dados da reserva, até no máximo seu bônus de proficiência por uso; ela recupera PV iguais ao total rolado. Você recupera todos os dados gastos após um Descanso Longo.",
+      "page": 397,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-pink-rose.feature.critico-aprimorado-corpo-a-corpo.l2.1",
+      "name": "CRÍTICO APRIMORADO (CORPO A CORPO)",
+      "level": 2,
+      "description": "Seus ataques corpo a corpo com arma obtêm crítico em resultado 19 ou 20 no d20.",
+      "page": 397,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-pink-rose.feature.investida-atordoante.l6.1",
+      "name": "INVESTIDA ATORDOANTE",
+      "level": 6,
+      "description": "Ao acertar uma criatura com uma arma de uma mão, pode gastar um dado de Tratamento Gentil e forçá-la a fazer salvaguarda de Constituição contra sua CD de magia. Em falha, fica atordoada até o fim do seu próximo turno. Ao obter acerto crítico, pode usar esta característica sem gastar dado.",
+      "page": 397,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-pink-rose.feature.alcance-gracioso.l11.1",
+      "name": "ALCANCE GRACIOSO",
+      "level": 11,
+      "description": "Você manifesta correntes etéreas cor-de-rosa que substituem os cabos das armas corpo a corpo de uma mão que estiver segurando. Elas impedem que você seja desarmado e aumentam o alcance dessas armas para 6 metros; os ataques continuam sendo corpo a corpo. Para ataques de oportunidade, seu alcance continua sendo o alcance normal da arma. Você também pode tentar agarrar a 6 metros; em sucesso, o alvo é puxado para um espaço adjacente a você, ou o espaço desocupado mais próximo, e você assume o agarrão normalmente.",
+      "page": 397,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-pink-rose.feature.extensao-elegante.l15.1",
+      "name": "EXTENSÃO ELEGANTE",
+      "level": 15,
+      "description": "Você recebe dois efeitos. ALCANCE EXPLOSIVO: ao atacar com arma beneficiada por Alcance Gracioso, pode aumentar seu alcance para 18 metros até o fim do turno; o primeiro ataque com ela nesse turno tem vantagem. Usos por Descanso Curto ou Longo iguais à metade de seu bônus de proficiência, arredondado para baixo. ASSALTO IMORTAL: como ação, faça um ataque com arma contra cada criatura escolhida a até 6 metros usando uma arma sob Alcance Gracioso; trate-os como ataques independentes, mas use a mesma jogada de ataque e de dano. Efeitos limitados a determinados alvos devem ter esses alvos declarados; danos adicionais individuais são rolados separadamente. Usos por Descanso Longo iguais à metade de seu bônus de proficiência, arredondado para baixo.",
+      "page": 397,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-pink-rose.feature.critico-superior-corpo-a-corpo.l15.1",
+      "name": "CRÍTICO SUPERIOR (CORPO A CORPO)",
+      "level": 15,
+      "description": "Seus ataques corpo a corpo com arma obtêm crítico em resultado 18, 19 ou 20 no d20.",
+      "page": 397,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

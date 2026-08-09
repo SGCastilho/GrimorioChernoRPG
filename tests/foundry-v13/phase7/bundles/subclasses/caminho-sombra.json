@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "caminho-sombra",
+    "identifier": "caminho-sombra",
+    "name": "Caminho da Sombra",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 106
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Monges do Caminho da Sombra seguem uma tradição que valoriza furtividade e subterfugio. Esses monges devem ser chamados de ninjas ou dançarinos das sombras e eles servem como espiões e assassinos. Às vezes, os membros de um monastério ninja são membros da mesma família, formando um clã que jurou sigilo sobre suas artes e missões. Outros monastérios parecem mais com guildas de ladrões, oferecendo seus serviços a nobres, mercadores ricos ou qualquer um que possa pagar suas taxas. Independente dos seus métodos, os líderes desses monastérios esperam obediência inquestionável de seus estudantes.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 106
+  },
+  "features": [
+    {
+      "key": "subclass.caminho-sombra.feature.artes-sombrias.l3.1",
+      "name": "ARTES SOMBRIAS",
+      "level": 3,
+      "description": "Começando quando você escolhe essa tradição, no 3° nível, você pode usar seu chi para simular o efeito de certas magias. Com uma ação, você pode gastar 2 pontos de chi para conjurar escuridão, visão no escuro, passos sem pegadas ou silêncio, sem precisar de componentes materiais. Além disso, você ganha o truque ilusão menor, se você ainda não o conhecia.",
+      "page": 106,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.caminho-sombra.feature.passo-das-sombras.l6.1",
+      "name": "PASSO DAS SOMBRAS",
+      "level": 6,
+      "description": "No 6° nível, você ganha a habilidade de entrar em uma sombra e sair em outra. Quando você estiver sob penumbra ou na escuridão, com uma ação bônus, você pode se teletransportar a até 18 metros para um espaço desocupado que você possa ver que também esteja sob penumbra ou escuridão. Você, então, terá vantagem no primeiro ataque corpo-a-corpo que você fizer antes do final do seu turno.",
+      "page": 106,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.caminho-sombra.feature.manto-de-sombras.l11.1",
+      "name": "MANTO DE SOMBRAS",
+      "level": 11,
+      "description": "No 11° nível, você aprendeu a se tornar uno com as sombras. Quando você estiver em uma área de penumbra ou escuridão, você pode usar sua ação para se tornar invisível. Você permanece invisível até realizar um ataque, conjurar uma magia ou se for para uma área de luz plena.",
+      "page": 106,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.caminho-sombra.feature.oportunista.l17.1",
+      "name": "OPORTUNISTA",
+      "level": 17,
+      "description": "No 17° nível, você pode explorar um momento de distração de uma criatura quando ela é atingida por um ataque. Toda vez que uma criatura a até 1,5 metro de você for atingida por um ataque realizar por outra criatura diferente de você, você pode usar sua reação para realizar um ataque corpo-a-corpo contra essa criatura.",
+      "page": 106,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

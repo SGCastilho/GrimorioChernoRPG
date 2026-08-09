@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-juramento-da-conquista",
+    "identifier": "xanathar-juramento-da-conquista",
+    "name": "Juramento da Conquista",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "54–55",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 54
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "O Juramento da Conquista chama os paladinos que buscam a glória na batalha e a subjugação de seus inimigos. Eles devem esmaga as forças do caos. Às vezes, chamados de cavaleiros tiranos ou monges de ferro, aqueles que seguem a este juramento, se reúnem em ordens sombrias que servem deuses ou filosofias de guerra e a um grande poder ordenado. Alguns desses paladinos chegam a conspirar com os poderes dos Nove Infernos, valorizando o domínio da lei sobre o bálsamo da misericórdia. O Arquidiabo Bel, senhor da guerra de Avernus, conta muitos desses paladinos - chamados cavaleiros do inferno - como seus mais fervorosos adeptos. Os cavaleiros do inferno cobrem suas armaduras com troféus tirados de inimigos caídos, um aviso sombrio para quem se atreve a se opor a eles e aos decretos de seus senhores. Esses cavaleiros são muitas vezes resgatados por outros paladinos desse juramento, que acreditam que os cavaleiros do inferno vagaram muito para a escuridão.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-da-conquista",
+        "title": "Magias do Juramento da Conquista",
+        "page": 54,
+        "description": "Magias adicionais concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Armadura de Agathys; Comando"
+          },
+          {
+            "level": "5º",
+            "spells": "Imobilizar Pessoa; Arma Espiritual"
+          },
+          {
+            "level": "9º",
+            "spells": "Rogar Maldição; Medo"
+          },
+          {
+            "level": "13º",
+            "spells": "Dominar Besta; Pele Rochosa"
+          },
+          {
+            "level": "17º",
+            "spells": "Névoa Mortal; Dominar Pessoa"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 54
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-juramento-da-conquista.feature.dogmas-da-conquista.l3.1",
+      "name": "DOGMAS DA CONQUISTA",
+      "level": 3,
+      "description": "Um paladino que toma este juramento tem os princípios da conquista queimados no braço. Apagar a Chama da Esperança. Não basta apenas derr otar um inimigo na batalha. Sua vitória deve ser tão esmagadora que a vontade de seus inimigos de lutar é quebrada para sempre. Uma lâmina pode acabar com uma vida. O medo pode acabar com um império. Regra com Punho de Ferro. Uma vez que você conquistou, não tolere nenhuma dissidência. Sua palavra é lei. Aqueles que obedecerem serão favorecidos. Aqueles que o desafiam, serão punidos como um exemplo para todos os que o seguem. Força Acima de Tudo. Você deve governar até surgir alguém mais forte. Então você deve ficar mais forte e enfrentar o desafio, ou cair em sua própria ruína. CARACTERÍSTICAS DO JURAMENTO DA CONQUISTA Nívelde Paladino 3!! 7!! 15!! 18!! 20!! Características Magias de Juramento, Canalizar Divindade Aura da Conquista (3 m) Repreensão Arrogante Aura da Conquista (9 m) Conquistador Invencível",
+      "page": 54,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-juramento-da-conquista.feature.magias-de-juramento.l3.1",
+      "name": "MAGIAS DE JURAMENTO",
+      "level": 3,
+      "description": "Você ganha magias de juramento nos níveis de paladino listados na tabela de Juramento da Conquista. Veja as caractéristicas da classe de Juramento Sagrado para saber como as magias do juramento funcionam.",
+      "page": 55,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-juramento-da-conquista.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Quando você segue este juramento, no 3° nível, você ganha as duas opções de Canalizar Divindade a seguir. Veja a característica da classe do Juramento Sagrado sobre como funciona a Canalização Divina. Presença Conquistadora. Você pode usar sua Canalização Divina para exalar uma presença aterrorizante. Com uma ação, você pode forçar cada criatura de sua escolha que você possa ver, dentro de um raio de 9 metros de você para fazer um teste resistência de sabedoria. Em uma falha, uma criatura fica com medo de você por 1 minuto. A criatura assustada pode repetir o teste no finalde cada um de seus turnos, terminando o efeito sobre si mesmo em um sucesso. Ataque Gui.ado. Você pode usar sua Canalização Divina para atacar com precisão sobrenatural. Quando você faz uma rolagem de ataque, você pode usar sua Canalização Divina para ganhar um bônus de + 10 na rolagem. Você pode fazer essa escolha depois de ver Q resultado? mas antes que o mestre diga e 0 ataque aecrtou ou ro.",
+      "page": 55,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-juramento-da-conquista.feature.aura-da-conquista.l7.1",
+      "name": "AURA DA CONQUISTA",
+      "level": 7,
+      "description": "A partir do 7° nível, você emana constantemente uma aura ameaçadora enquanto você não estiver incapacitado. A aura se estende a 3 metros de você em todas as direções, mas não através de cobertura total. Se uma criatura tem medo de você, sua velocidade é reduzida para O metros dentro da aura, e essa criatura toma dano psíquico igual à metade do seu nível de paladino se ela começar seu turno dentro dela. No 18° nível, o alcance dessa aura aumenta a 9 metros.",
+      "page": 55,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-juramento-da-conquista.feature.repreensao-arrogante.l15.1",
+      "name": "REPREENSÃO ARROGANTE",
+      "level": 15,
+      "description": "A partir do 15º nível, aqueles que se atrevem a atacar você, são psíquicamente punidos por sua audácia. Sempre que uma criatura atinge você com um ataque, essa criatura toma dano psíquico igual ao seu modificador de Carisma (mínimo de 1) se você não estiver incapacitado.",
+      "page": 55,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-juramento-da-conquista.feature.conquistador-invencivel.l20.1",
+      "name": "CONQUISTADOR INVENCÍVEL",
+      "level": 20,
+      "description": "No 20° nível, você ganha a capacidade de aproveitar uma extraordinária proeza marcial. Com uma ação, você pode tornar-se magicamente um avatar da conquista, ganhando os seguintes benefícios por 1 minuto: • Você ganha resistência a todo tipo de dano; • Quando você faz aum ação de ataque em seu turno, você pode fazer um ataque adicional como parte dessa ação; • Seus ataques de armas corpo-a-corpo são golpes críticos em uma rolagem de 19 ou 20 no d20. Depois de usar essa característica, você não pode usá­ la novamente até terminar um descanso longo.",
+      "page": 55,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

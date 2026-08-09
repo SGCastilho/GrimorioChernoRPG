@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spellblade-mage-hunter",
+    "identifier": "spellblade-mage-hunter",
+    "name": "Caçador de Magos",
+    "originalName": "Mage Hunter",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "kibbles",
+    "title": "Spellblade v1.3 — KibblesTasty — Caçador de Magos",
+    "pages": "10",
+    "chapter": "Técnicas de Spellblade",
+    "page": 10
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "spellblade",
+    "identifier": "spellblade",
+    "name": "Spellblade"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "spellblade",
+    "selectionLevel": 3,
+    "description": "Alguns Spellblades refinam seus poderes para combater outros conjuradores. Eles se tornam a antítese dos usuários de magia, enfrentando fogo com fogo e usando suas próprias técnicas arcanas para limitar e negar o poder mágico alheio.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-cacador-de-magos",
+        "title": "Magias de Caçador de Magos",
+        "page": 10,
+        "description": "Estas magias contam como magias de Spellblade para você e não contam no limite de magias conhecidas.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Spellblade"
+          },
+          {
+            "key": "magias",
+            "label": "Magias aprendidas"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Repreensão Elemental de Aldricor"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Silêncio"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Contramágica"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Sufocar"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Dissipar o Bem e o Mal"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 10
+  },
+  "features": [
+    {
+      "key": "subclass.spellblade-mage-hunter.feature.magias-do-cacador-de-magos.l3.1",
+      "name": "MAGIAS DO CAÇADOR DE MAGOS",
+      "level": 3,
+      "description": "Você aprende as magias apresentadas na tabela da subclasse. Elas são magias de Spellblade para você e não contam no número de magias conhecidas.",
+      "page": 10,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Caçador de Magos",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-mage-hunter.feature.golpes-disruptivos.l3.1",
+      "name": "GOLPES DISRUPTIVOS",
+      "level": 3,
+      "description": "A partir do 3º nível, uma vez por turno, quando atinge um alvo com uma arma corpo a corpo, causa dano de força adicional igual ao seu bônus de proficiência. Esse bônus é dobrado até o fim do turno quando você conjura uma magia de Abjuração ou uma magia do Caçador de Magos.\n\nAlém disso, suas jogadas de ataque com arma ignoram os efeitos de magias de 1º nível, como Armadura Arcana, Escudo ou Santuário.",
+      "page": 10,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Caçador de Magos",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-mage-hunter.feature.surto-purificador.l3.1",
+      "name": "SURTO PURIFICADOR",
+      "level": 3,
+      "description": "Você ganha uma nova opção para Surto Arcano: em seu turno, gaste um uso para encerrar em si mesmo um efeito mágico ou uma condição sobrenatural, como Enfeitiçado ou Amedrontado, sem exigir uma ação. Se a magia possuir nível superior à metade do seu nível de Spellblade, arredondado para cima, você deve passar em um teste de resistência de Inteligência com CD 10 + o nível da magia. Você não pode usar esta característica se estiver incapacitado.",
+      "page": 10,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Caçador de Magos",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-mage-hunter.feature.surto-anulador.l7.1",
+      "name": "SURTO ANULADOR",
+      "level": 7,
+      "description": "No 7º nível, você pode usar Surto Purificador mesmo estando incapacitado. Além disso, pode projetar o poder purificador para fora, gastando dois usos de Surto Arcano para conjurar Contramágica ou Dissipar Magia sem gastar um espaço de magia.",
+      "page": 10,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Caçador de Magos",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-mage-hunter.feature.abjuracao-especialista.l15.1",
+      "name": "ABJURAÇÃO ESPECIALISTA",
+      "level": 15,
+      "description": "No 15º nível, quando precisa fazer um teste com sua habilidade de conjuração para dissipar ou contrariar um efeito mágico usando Surto Purificador ou Surto Anulador, você pode adicionar seu bônus de proficiência à jogada.",
+      "page": 10,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Caçador de Magos",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-mage-hunter.feature.vazio-de-mana.l20.1",
+      "name": "VAZIO DE MANA",
+      "level": 20,
+      "description": "No 20º nível, você pode transformar-se em um vazio mágico que devora e anula magia ao redor. Por 1 minuto, sem exigir uma ação, projeta o efeito de Campo Antimagia em um raio de 1,5 metro centrado em você. Você ainda pode conjurar dentro do campo, mas fica limitado a magias de Abjuração e truques. O campo não afeta nem remove seus efeitos de Égide.\n\nUma vez por turno durante a duração, quando contrariar ou encerrar o efeito de uma magia, você recupera um uso de Surto Arcano.\n\nO efeito termina se você ficar inconsciente ou quando decidir encerrá-lo, sem exigir uma ação. Depois de usar esta característica, você não pode usá-la novamente até concluir um descanso longo.",
+      "page": 10,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Caçador de Magos",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

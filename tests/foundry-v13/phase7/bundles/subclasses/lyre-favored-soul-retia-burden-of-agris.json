@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-agris",
+    "identifier": "lyre-favored-soul-retia-burden-of-agris",
+    "name": "Fardo de Agris",
+    "originalName": "Burden of Agris",
+    "aliases": [
+      "Burden of Agris"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "345",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 345
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): espada larga. Aqueles agraciados por Agris carregam o peso da justiça, enxergam com facilidade as intenções dos outros e resistem à tentação e coerção sobrenatural. São cavaleiros, juízes e executores encarregados de eliminar a corrupção em nome de Agris.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 345
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-agris.feature.avatar-do-absoluto.l1.1",
+      "name": "AVATAR DO ABSOLUTO",
+      "level": 1,
+      "description": "Você é imune à condição enfeitiçado e a efeitos que o forcem a realizar ações ou reações contra sua vontade. Também ganha proficiência em Intuição e com armaduras pesadas.",
+      "page": 345,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-agris.feature.lamina-do-juiz-vinculado.l6.1",
+      "name": "LÂMINA DO JUIZ VINCULADO",
+      "level": 6,
+      "description": "Se ainda não possuir Armamento de Essência, você recebe essa opção de Essência Divergente. Se já a possuir, pode escolher antecipadamente uma opção de Armamento de Essência de 9º nível; essa opção não poderá ser escolhida novamente depois.",
+      "page": 345,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-agris.feature.julgamento-perfeito.l10.1",
+      "name": "JULGAMENTO PERFEITO",
+      "level": 10,
+      "description": "Você ganha Especialização em Intuição.",
+      "page": 345,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-agris.feature.selo-das-correntes-de-prata.l10.1",
+      "name": "SELO DAS CORRENTES DE PRATA",
+      "level": 10,
+      "description": "Gaste um uso de Purificação e escolha um ponto visível a até 9 metros. Criaturas à sua escolha numa esfera de 3 metros de raio fazem salvaguarda de Força; em falha, ficam restringidas por correntes prateadas por 1 minuto. Como ação, uma criatura presa pode realizar teste de Força contra sua CD de magia e, em sucesso, quebrar as correntes. Você deve manter concentração neste efeito como se fosse uma magia.",
+      "page": 345,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-agris.feature.intervencao-vinculante.l13.1",
+      "name": "INTERVENÇÃO VINCULANTE",
+      "level": 13,
+      "description": "Quando uma criatura a até 9 metros seria atingida por um ataque, use reação para conjurar uma espada celestial que o desvia. Role um novo d20 e pode substituir o d20 do ataque, possivelmente alterando o resultado. Depois, faça um ataque com uma arma que esteja empunhando contra o atacante, mesmo se estiver fora do alcance normal, tratando-o como se estivesse ao alcance; esse ataque é resolvido depois do ataque original. Usos por Descanso Curto iguais à metade do bônus de proficiência, arredondado para baixo, +1.",
+      "page": 345,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

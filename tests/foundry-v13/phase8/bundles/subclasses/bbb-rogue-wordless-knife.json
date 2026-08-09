@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-rogue-wordless-knife",
+    "identifier": "bbb-rogue-wordless-knife",
+    "name": "Lâmina Sem Palavras",
+    "originalName": "Wordless Knife",
+    "aliases": [
+      "Wordless Knife"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "121",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 121
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Um usuário de adagas psíquicas silenciosas que causa dano explosivo e subversivo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 121
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-rogue-wordless-knife.feature.sabio-da-observacao.l3.1",
+      "name": "SÁBIO DA OBSERVAÇÃO",
+      "level": 3,
+      "description": "Você ganha proficiência em Percepção e Intuição e Especialização em uma delas. Se já possuir Especialização em ambas, ganha proficiência em outra perícia à sua escolha.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-wordless-knife.feature.adagas-do-pensamento.l3.1",
+      "name": "ADAGAS DO PENSAMENTO",
+      "level": 3,
+      "description": "Quando realiza a ação Atacar, pode manifestar um par de adagas de energia psíquica quase invisíveis e atacar com elas. Elas funcionam como armas simples corpo a corpo com as propriedades leve e arremesso, alcance normal de 18 m e sem alcance longo. Em acerto, causam 1d6 + seu modificador de Destreza de dano psíquico; o dado aumenta para d8 no 8º nível de ladino e d10 no 14º. Depois de atacar com elas como parte da ação Atacar, pode usar ação bônus para fazer ataques adicionais com essas adagas, em quantidade máxima igual à metade de seu bônus de proficiência. Qualquer característica que exija adaga ou espada curta pode usar estas adagas para satisfazer o requisito.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-wordless-knife.feature.critico-exponencial.l9.1",
+      "name": "CRÍTICO EXPONENCIAL",
+      "level": 9,
+      "description": "A cada vez que atingir o mesmo alvo em seu turno, o menor resultado necessário no d20 para obter crítico contra ele diminui em 1: de 20 para 19, depois 18 e assim por diante. O intervalo volta ao normal no fim de qualquer turno em que não o atingir novamente, quando atingir uma nova criatura ou quando obtiver um crítico. Se obtiver crítico com um resultado 15 ou menor no d20, não pode aplicar Ataque Furtivo naquele ataque.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-wordless-knife.feature.pensamentos-refinados.l13.1",
+      "name": "PENSAMENTOS REFINADOS",
+      "level": 13,
+      "description": "Suas Adagas do Pensamento ganham alcance longo de arremesso de 36 m e bônus de aprimoramento igual à metade de seu bônus de proficiência, arredondado para baixo.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-wordless-knife.feature.critico-de-ampla-faixa.l17.1",
+      "name": "CRÍTICO DE AMPLA FAIXA",
+      "level": 17,
+      "description": "A ampliação do intervalo de crítico de Crítico Exponencial passa a ser cumulativa entre todos os alvos e não se perde ao atingir uma nova criatura; ela vale contra todas as criaturas que você acertar. Ataque Furtivo também pode ser usado em qualquer acerto crítico, mesmo se o resultado do d20 for 15 ou menor.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-wordless-knife.feature.duplo-completo.l17.1",
+      "name": "DUPLO COMPLETO",
+      "level": 17,
+      "description": "Quando um alvo estiver dentro do alcance normal de suas Adagas do Pensamento, você pode projetar junto dele uma duplicata sombria e quase translúcida de seu corpo inteiro para realizar em seu lugar ataques corpo a corpo com as adagas, desaparecendo depois. Se usar a duplicata para atacar criaturas enquanto você próprio estiver adjacente a elas, conta como seu próprio aliado para satisfazer Ataque Furtivo. A duplicata não pode ativar itens não passivos e só pode atacar com Adagas do Pensamento.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

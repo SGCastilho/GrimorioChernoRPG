@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-cleric-chaos-domain",
+    "identifier": "lyre-cleric-chaos-domain",
+    "name": "Domínio do Caos",
+    "originalName": "Chaos Domain",
+    "aliases": [
+      "Chaos Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "442",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 442
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Clérigos do Caos canalizam explosões imprevisíveis de magia e, paradoxalmente, costumam estudar essa força para mantê-la sob controle no mundo. Magias de Domínio — 1º: Absorver Energia, Repreensão Infernal; 3º: Arma Bumerangue, Voo Laborioso; 5º: Padrão Hipnótico, Imagem Maior; 7º: Confusão, Lança Psíquica; 9º: Reencarnação, Vínculo Telepático.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-dominio",
+        "title": "Magias de Domínio",
+        "page": 442,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Absorver Energia; Repreensão Infernal"
+          },
+          {
+            "level": "3º",
+            "spells": "Arma Bumerangue; Voo Laborioso"
+          },
+          {
+            "level": "5º",
+            "spells": "Padrão Hipnótico; Imagem Maior"
+          },
+          {
+            "level": "7º",
+            "spells": "Confusão; Lança Psíquica"
+          },
+          {
+            "level": "9º",
+            "spells": "Reencarnação; Vínculo Telepático"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 442
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-cleric-chaos-domain.feature.caos-celestial.l1.1",
+      "name": "CAOS CELESTIAL",
+      "level": 1,
+      "description": "Como ação bônus, invoque uma oração caótica e role na Tabela de Caos Celestial, sendo obrigado a aplicar o resultado. Você pode fazê-lo um número de vezes por Descanso Longo igual ao seu bônus de proficiência. Role d8 no 1º nível, d12 a partir do 8º e d20 a partir do 14º. Quando obtém 1 ou 20 natural em uma jogada de ataque ou salvaguarda usando d20, pode rolar na tabela sem gastar uso. Teste de Sustentação do Caos: quando um resultado pedir esse teste, role 1d100 menos seu nível de Clérigo; com 51 ou mais, o efeito termina. Tabela d20 — 1: ganha por 1 minuto um espaço extra de nível igual ao bônus de proficiência e então rola novamente, ignorando 1/20; 2: por 1 minuto, ao usar Atacar, faz um ataque com arma adicional por um duplo angelical; 3: por 1 minuto um guardião dá desvantagem aos ataques contra uma criatura a até 9 m, com teste de sustentação no início dos seus turnos; 4: todas as outras criaturas em raio de 1,5 m × seu bônus de proficiência fazem salvaguarda de Destreza e sofrem 2d8 + metade do nível de Clérigo de dano radiante em falha; 5: ganha voo com pairar igual ao deslocamento base por 1 minuto, fazendo teste de sustentação sempre que sofre dano; 6: torna-se por 1 minuto um arconte-lanterna com 30 PV, mantendo personalidade e usando todas as estatísticas dele, retornando ao chegar a 0 PV ou morrer; 7: até o início do próximo turno emite luz intensa em 9 m e fica cego; quem o atacar deve desviar o olhar ou ficar cego até o efeito terminar, e quem desvia trata você como se estivesse invisível para ele; 8: escolha criaturas a até 9 m em quantidade igual ao bônus de proficiência; no próximo ataque que cada uma fizer em até 1 minuto, role 1d10 e some a esse e a todos os demais ataques dela naquele turno; 9: no próximo dano que causar em até 1 minuto por ataque ou efeito com salvaguarda, some uma quantidade de d8 igual à metade do nível de Clérigo; 10: por 1 minuto fica imune ao próximo tipo de dano que sofrer, escolhendo o tipo de maior dano se houver vários; 11: por 10 minutos perde a capacidade de compreender idiomas ou comunicação física, embora ainda fale; Restauração Menor, Restauração Maior ou efeito que encerre enfeitiçado termina isso; 12: conjura sem espaço qualquer magia de Clérigo preparada de ação ou ação bônus, como se usasse espaço de nível igual ao bônus de proficiência, salvo se o nível base for maior; 13: fica vulnerável a todo dano do próximo ataque ou efeito que o danificar; 14: fica resistente a todo dano, com teste de sustentação no início de cada turno; 15: uma criatura a até 18 m faz salvaguarda de Carisma e, em falha, fica enfeitiçada ou atordoada por você por 1 minuto, à sua escolha, repetindo a salvaguarda ao fim dos turnos; 16: desaparece em semiplano inofensivo contido em uma bola de cristal portátil que cai em seu espaço; a bola tem CA 20, 10 PV, resistência a perfurante/cortante e imunidade a necrótico/psíquico; ao quebrar você retorna ao espaço desocupado mais próximo, e enquanto preso rola 1d6 no início do turno, quebrando-a com 6; 17: até o fim do próximo turno ganha deslocamento de teleporte igual ao base e realiza Disparada imediatamente; 18: fica imune a todo dano do próximo ataque que acertar ou efeito com salvaguarda que causar dano, por no máximo 1 minuto; 19: por 1 minuto recupera 2d6 PV no início do turno, inclusive se inconsciente, e nesse caso deixa de morrer e o efeito termina; faz teste de sustentação no fim dos turnos; 20: ganha por 1 minuto um uso extra de Canalizar Divindade que deve ser gasto primeiro e então rola novamente ignorando 1/20.",
+      "page": 442,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-chaos-domain.feature.sifao-de-probabilidade.l2.1",
+      "name": "SIFÃO DE PROBABILIDADE",
+      "level": 2,
+      "description": "Sempre que invoca um resultado da Tabela de Caos Celestial, você também ganha pontos de vida temporários iguais ao número obtido na tabela.",
+      "page": 442,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-chaos-domain.feature.canalizar-divindade-alinhamento-do-caos.l6.1",
+      "name": "CANALIZAR DIVINDADE: ALINHAMENTO DO CAOS",
+      "level": 6,
+      "description": "Como ação, use Canalizar Divindade para rolar três vezes na Tabela de Caos Celestial, repetindo resultados 1 ou 20 até obter outro, e escolha um dos três efeitos para ocorrer.",
+      "page": 442,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-chaos-domain.feature.golpe-do-caos.l8.1",
+      "name": "GOLPE DO CAOS",
+      "level": 8,
+      "description": "Quando acerta com uma arma ainda não afetada por esta característica, pode imbuí-la por 1 minuto com energia caótica. Enquanto você a empunhar, ela causa 1d8 de dano adicional, aumentando para 2d8 no 14º nível. Role 1d10 para o tipo: 1 ácido; 2 frio; 3 fogo; 4 energia; 5 elétrico; 6 necrótico; 7 veneno; 8 psíquico; 9 radiante; 10 trovejante.",
+      "page": 442,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-chaos-domain.feature.caos-persistente.l17.1",
+      "name": "CAOS PERSISTENTE",
+      "level": 17,
+      "description": "Sempre que rola iniciativa sem possuir usos de Caos Celestial, recupera um uso.",
+      "page": 442,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

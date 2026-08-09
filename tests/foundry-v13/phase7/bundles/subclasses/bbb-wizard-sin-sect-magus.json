@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-wizard-sin-sect-magus",
+    "identifier": "bbb-wizard-sin-sect-magus",
+    "name": "Mago da Seita do Pecado",
+    "originalName": "Sin Sect Magus",
+    "aliases": [
+      "Sin Sect Magus"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "136",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 136
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Um arcanista necromântico auxiliado por um servo morto-vivo fortalecido.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 136
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-wizard-sin-sect-magus.feature.leitor-do-codice.l2.1",
+      "name": "LEITOR DO CÓDICE",
+      "level": 2,
+      "description": "Escolha Valores Sangrentos, Palavras Seladas ou Moralismos Desvinculados. As magias do grupo escolhido e do Códice Pecaminoso contam como estando na lista de mago para você, permitindo lê-las, aprendê-las e conjurá-las. Além disso, pode preparar um número adicional de magias desses dois grupos igual ao seu bônus de proficiência.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-sin-sect-magus.feature.servo-morto-vivo-eterno.l2.1",
+      "name": "SERVO MORTO-VIVO ETERNO",
+      "level": 2,
+      "description": "Uma vez por Descanso, produza os efeitos de conjurar assistente morto-vivo sem concentração, espaço ou materiais, como se fosse conjurado em um nível igual ao seu bônus de proficiência. Ao fazê-lo, pode escolher uma característica adicional de Níveis Superiores além da quantidade normalmente permitida.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-sin-sect-magus.feature.elementos-da-nao-morte.l6.1",
+      "name": "ELEMENTOS DA NÃO-MORTE",
+      "level": 6,
+      "description": "Você tem resistência a dano necrótico e seus PV máximos não podem ser reduzidos por efeitos produzidos por criaturas ou magias.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-sin-sect-magus.feature.distribuicao-cruel.l10.1",
+      "name": "DISTRIBUIÇÃO CRUEL",
+      "level": 10,
+      "description": "Enquanto tiver ao menos um Assistente Morto-Vivo invocado por conjurar assistente morto-vivo, quando sofrer dano pode transferir qualquer parte dele para um de seus assistentes. Você não sofre o dano transferido; o assistente também não o sofre como dano, mas seus PV atuais são simplesmente reduzidos pela quantidade transferida. Não pode transferir para um assistente mais dano do que os PV que ele ainda possui.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-sin-sect-magus.feature.assistente-secundario.l10.1",
+      "name": "ASSISTENTE SECUNDÁRIO",
+      "level": 10,
+      "description": "Quando produzir os efeitos de conjurar assistente morto-vivo por Servo Morto-Vivo Eterno, ou conjurá-la normalmente, pode gastar um espaço de magia de nível igual ou superior ao nível em que o efeito foi produzido para criar, como parte da mesma magia, um segundo assistente idêntico ao primeiro.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-sin-sect-magus.feature.catalogo-de-desejos-mortos.l14.1",
+      "name": "CATÁLOGO DE DESEJOS MORTOS",
+      "level": 14,
+      "description": "Uma vez por Descanso, pode conjurar qualquer magia de Necromancia para a qual possua o espaço e os materiais necessários, mesmo sem conhecê-la ou prepará-la. Quando faz isso, a magia passa a ser tratada como preparada até seu próximo Descanso. Ela também é conjurada como se estivesse dois níveis acima do espaço usado, até no máximo 9º nível.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-bard-elegiac-artist",
+    "identifier": "bbb-bard-elegiac-artist",
+    "name": "Artista Elegíaco",
+    "originalName": "Elegiac Artist",
+    "aliases": [
+      "Elegiac Artist"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "88–89",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 88
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Um poeta que empunha o poder de nomes, palavras e mantos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 88
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-bard-elegiac-artist.feature.epiteto-implicito.l3.1",
+      "name": "EPÍTETO IMPLÍCITO",
+      "level": 3,
+      "description": "Quando concede uma Inspiração Bárdica a uma criatura, também pode dar a ela um título temporário que permanece enquanto ela conservar essa Inspiração. Escolha um dos títulos abaixo:\n\nGUERREIRO AUDAZ. A criatura pode usar sua ação bônus para fazer um ataque com arma. Quando gastar a Inspiração Bárdica em um ataque com arma, pode imediatamente fazer outro ataque com arma contra o mesmo alvo.\n\nTRIBUTO RESISTENTE. A criatura recebe +2 na CA. Se gastar a Inspiração Bárdica em uma salvaguarda que normalmente reduziria dano à metade, sofre metade do dano em uma falha e nenhum dano em um sucesso.\n\nGRANDE DEFENSOR. A criatura recebe PV temporários iguais à metade do seu nível de bardo + 5 e recupera essa mesma quantidade no início de cada turno. Ao gastar a Inspiração Bárdica, também recebe esses PV temporários.\n\nCAMINHANTE DO VENTO IMPETUOSO. O deslocamento da criatura aumenta em 3 m. Ao usar a Inspiração Bárdica, ela pode usar sua reação para mover-se até seu deslocamento.\n\nDRAGÃO VIGILANTE. A criatura recebe +5 em testes de Percepção e percepção às cegas a 3 m. Se gastar a Inspiração Bárdica em um teste de Percepção, aplica esse bônus duas vezes ao teste.",
+      "page": 88,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-bard-elegiac-artist.feature.as-palavras-guardam-nuances.l3.1",
+      "name": "AS PALAVRAS GUARDAM NUANCES",
+      "level": 3,
+      "description": "Sua conjuração compreende o poder que emerge das palavras e de seu uso, em vez de depender das harmonias e da prosa evocativa de um bardo. Magias de Inscritor contam como magias de bardo para você, permitindo que as aprenda, leia e conjure. Ao receber esta característica, pode substituir até três de suas magias de bardo por magias de Inscritor de níveis que possa conjurar; uma dessas trocas pode substituir um truque por outro truque.",
+      "page": 89,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-bard-elegiac-artist.feature.proferimentos-libertos.l6.1",
+      "name": "PROFERIMENTOS LIBERTOS",
+      "level": 6,
+      "description": "Você produz com facilidade os efeitos de magias Palavra de Poder. Aprende todas as magias Palavra de Poder; elas contam como magias de bardo para você e não contam no limite de magias conhecidas.",
+      "page": 89,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-bard-elegiac-artist.feature.manto-roubado.l14.1",
+      "name": "MANTO ROUBADO",
+      "level": 14,
+      "description": "Quando uma criatura a até 27 m de você, incluindo você mesmo, for diretamente escolhida como alvo de um ataque ou efeito, pode usar sua reação para trocar brevemente o nome dela pelo de outra criatura dentro desse alcance e tentar redirecionar para o novo alvo o dano e os efeitos. O novo alvo não pode ser a origem do efeito. O ataque passa a ser comparado à CA do novo alvo ou ele realiza a salvaguarda inicial exigida pelo efeito, como se fosse o alvo original; o alvo original é completamente ignorado pelo ataque ou efeito. Você pode usar esta característica um número de vezes por Descanso Longo igual ao seu bônus de proficiência.",
+      "page": 89,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

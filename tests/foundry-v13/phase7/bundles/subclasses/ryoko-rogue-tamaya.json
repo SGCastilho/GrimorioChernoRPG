@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-rogue-tamaya",
+    "identifier": "ryoko-rogue-tamaya",
+    "name": "Tamaya",
+    "originalName": "Tamaya",
+    "aliases": [
+      "Tamaya",
+      "Tamaya"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "186–187",
+    "chapter": "Capítulo 9: Classes",
+    "page": 186
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Um ladino pirotécnico que converte fórmulas de hanabi em bombas mecânicas capazes de reproduzir efeitos de magia e preparar armadilhas devastadoras.",
+    "tables": [
+      {
+        "key": "table.1.bombas-magicas-tamaya",
+        "title": "Bombas Mágicas Tamaya",
+        "page": 186,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Ladino"
+          },
+          {
+            "key": "custo",
+            "label": "Custo em Hanabi"
+          },
+          {
+            "key": "magias",
+            "label": "Efeitos disponíveis"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "custo": "0",
+            "magias": "Prestidigitação, Cortina de Fumaça, Taumaturgia"
+          },
+          {
+            "nivel": "3º",
+            "custo": "1",
+            "magias": "Constrição, Fogo das Fadas, Névoa, Graxa, Sono"
+          },
+          {
+            "nivel": "5º",
+            "custo": "3",
+            "magias": "Acalmar Emoções, Escuridão, Despedaçar, Silêncio, Crescer Espinhos, Teia"
+          },
+          {
+            "nivel": "9º",
+            "custo": "5",
+            "magias": "Padrão Hipnótico, Granada de Luz, Bola de Lodo, Névoa Fétida"
+          },
+          {
+            "nivel": "13º",
+            "custo": "7",
+            "magias": "Radiância Cegante, Confusão, Tempestade de Gelo, Muralha de Fogo (somente anel)"
+          },
+          {
+            "nivel": "17º",
+            "custo": "9",
+            "magias": "Névoa Mortal, Erupção, Praga de Insetos, Curar Ferimentos em Massa"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 186
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-rogue-tamaya.feature.pirotecnico.l3.1",
+      "name": "PIROTÉCNICO",
+      "level": 3,
+      "description": "Você ganha proficiência com armas de fogo magitec e com dois conjuntos de ferramentas de artesão à sua escolha.",
+      "page": 186,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-rogue-tamaya.feature.bombas-magicas.l3.1",
+      "name": "BOMBAS MÁGICAS",
+      "level": 3,
+      "description": "Você possui Pontos de Hanabi iguais ao nível de Ladino, recuperados em Descanso Longo. Em 10 minutos, escolha magia da tabela e gaste os pontos indicados para armazenar o efeito em bomba não mágica de 0,25 kg, que se desfaz quando você termina Descanso Longo. Criatura pode arremessá-la a 18 m como ação bônus; você pode usar reação a qualquer momento para detonar bomba sua a até 18 m. A magia ocorre centrada na bomba; se normalmente exigir concentração, dura sua duração completa ou até ser dissipada. Inteligência é a habilidade das bombas; CD = 8 + proficiência + Inteligência.",
+      "page": 186,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-rogue-tamaya.feature.mudanca-de-iniciativa.l9.1",
+      "name": "MUDANÇA DE INICIATIVA",
+      "level": 9,
+      "description": "Ao rolar iniciativa, use reação para lançar clarões e fumaça em ponto a 18 m. Criaturas escolhidas em esfera de 6 m fazem salvaguarda de Sabedoria contra a CD das Bombas Mágicas; em falha, sofrem -10 na iniciativa.",
+      "page": 186,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-rogue-tamaya.feature.adepto-das-bombas-magicas.l13.1",
+      "name": "ADEPTO DAS BOMBAS MÁGICAS",
+      "level": 13,
+      "description": "Você é imune ao dano de suas próprias Bombas Mágicas e tem sucesso automático em salvaguardas contra seus efeitos. Além disso, como ação, pode detonar uma bomba sua a até 300 m.",
+      "page": 187,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-rogue-tamaya.feature.primer-de-hanabi.l17.1",
+      "name": "PRIMER DE HANABI",
+      "level": 17,
+      "description": "Como ação, gaste 3 Pontos de Hanabi para instalar e esconder explosivo especial em superfície ou objeto fechável. Encontrá-lo exige Investigação CD 8 + proficiência + Destreza. Defina gatilho e condições físicas, tipo/espécie ou alinhamento; pode designar criaturas iguais à proficiência para não ativá-lo. Ao disparar, esfera de 6 m; Destreza contra sua CD: falha sofre 6d6 trovão + 6d6 de ácido, fogo, elétrico ou veneno escolhido; sucesso metade. Criar novo primer desfaz o anterior. Uma vez por Descanso Longo.",
+      "page": 187,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

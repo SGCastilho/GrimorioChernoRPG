@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-warlock-damocles",
+    "identifier": "lyre-warlock-damocles",
+    "name": "Dâmocles",
+    "originalName": "Damocles",
+    "aliases": [
+      "Damocles"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "489–490",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 489
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Seu patrono é a fonte alienígena de conhecimento que inspirou as unidades DGR. O pacto manifesta uma unidade companheira chamada D.G.ANCHOR, uma âncora mecânica que cresce e adquire novos sistemas conforme seu Bruxo avança.",
+    "tables": [
+      {
+        "key": "table.1.lista-expandida-de-magias",
+        "title": "Lista Expandida de Magias",
+        "page": 489,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível da Magia"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Mísseis Mágicos; Escudo do Verão"
+          },
+          {
+            "level": "2º",
+            "spells": "Tela de Nuvens; Ver o Invisível"
+          },
+          {
+            "level": "3º",
+            "spells": "Arma Eidomântica; Aljava de Vórtice"
+          },
+          {
+            "level": "4º",
+            "spells": "Míssil de Energia; Invisibilidade Maior"
+          },
+          {
+            "level": "5º",
+            "spells": "Onda de Choque; Mão Suprema"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 489
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-warlock-damocles.feature.d-g-anchor.l1.1",
+      "name": "D.G.ANCHOR",
+      "level": 1,
+      "description": "Como ação, invoque sua D.G.ANCHOR em um espaço desocupado a até 9 metros. Ela compartilha sua iniciativa e permanece por 10 minutos ou até chegar a 0 PV; depois disso, só pode ser invocada novamente após Descanso Curto ou Longo. Ela pode mover-se conforme suas ordens e usar a própria reação; sem comando, sua única ação é Esquivar. Como ação bônus, você pode ordenar que use outra ação e/ou ação bônus de seu bloco. Se estiver incapacitado, ela pode agir livremente. Como ação, você também pode fazê-la teleportar para espaço desocupado a até 9 metros. Seu bônus de proficiência é igual ao seu.\n\nD.G.ANCHOR — constructo Médio (DGR), sem alinhamento. CA 11 + Destreza + bônus de proficiência; PV 5 + 5 × seu nível de Bruxo; deslocamento 9 m, aceleração 0-G 27 m. For 16, Des 14, Con 16, Int 8, Sab 14, Car 10. Compartilha suas proficiências em perícias baseadas em Força e Destreza. Resistência a veneno; imunidades: exaustão, envenenado, inconsciente. Percepção às cegas 9 m; Percepção passiva 10 + modificador de Percepção. Entende seus idiomas, mas não fala. PLACAS REFORÇADAS: ao sofrer dano, reduza-o em seu bônus de proficiência. MULTIATAQUE: no mínimo dois ataques no 6º nível e três no 14º, usando Pancada, Armamento DGR ou Blaster DGR. PANCADA: ataque corpo a corpo, For ou Des + proficiência, alcance 1,5 m, 1d8 + atributo de dano contundente. ARMAMENTO DGR (6º): ataque corpo a corpo, For +1 + proficiência; 1d12 +1 + For de dano elétrico. BLASTER DGR (6º): ataque à distância, Des +1 + proficiência, alcance 36/108 m; 1d10 +1 + Des de dano radiante. POD DE MÍSSEIS (10º): escolha alvos visíveis a até 18 m em quantidade igual à metade de seu nível de Bruxo; cada um faz salvaguarda de Destreza contra sua CD de Bruxo, sofrendo Xd10 de dano energético, onde X é seu bônus de proficiência, ou metade em sucesso. Pode concentrar vários mísseis no mesmo alvo; cada alvo adicional convertido acrescenta 1d10 ao dano daquele alvo. Depois de usar, só recupera o Pod na próxima invocação, a menos que você gaste um espaço de pacto. REATOR EXCEL opcional, ação bônus: Disparada; ou +1d8 em cada ataque do turno; ou resistência a todo dano até o início do próximo turno. Usos por Descanso Longo iguais à metade do bônus de proficiência da unidade, arredondado para cima.",
+      "page": 490,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-damocles.feature.d-g-anchor-maior.l6.1",
+      "name": "D.G.ANCHOR MAIOR",
+      "level": 6,
+      "description": "Sua D.G.ANCHOR recebe: +2 em um atributo e +1 em outro; proficiência em uma salvaguarda à sua escolha; pode ser invocada como Grande; Pancada causa +1d8; acesso a Armamento DGR e Blaster DGR; e ataques mágicos. Escolha também um aprimoramento: deslocamento básico +3 m e aceleração 0-G +9 m; voo (pairar) igual ao deslocamento básico; percepção às cegas 18 m e +5 em Percepção passiva; ou acesso ao Reator Excel.",
+      "page": 490,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-damocles.feature.d-g-anchor-avancada.l10.1",
+      "name": "D.G.ANCHOR AVANÇADA",
+      "level": 10,
+      "description": "Sua D.G.ANCHOR recebe novamente +2 em um atributo e +1 em outro; acesso ao Pod de Mísseis; nova proficiência em salvaguarda; resistência a dano contundente, cortante e perfurante; e o bônus +1 de Armamento/Blaster torna-se +2. Escolha outro aprimoramento anterior ou um novo: imunidade a um entre contundente, cortante ou perfurante; todos os deslocamentos +3 m e aceleração 0-G +9 m; CA 15 + Des + proficiência; ou Armamento e Blaster causam respectivamente +1d12 e +1d10. Não pode escolher a mesma opção duas vezes.",
+      "page": 490,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-damocles.feature.d-g-anchor-principal.l14.1",
+      "name": "D.G.ANCHOR PRINCIPAL",
+      "level": 14,
+      "description": "Sua D.G.ANCHOR recebe novamente +2 em um atributo e +1 em outro; nova proficiência em salvaguarda; pode ser invocada como Enorme e, nesse tamanho, Armamento DGR tem alcance de 3 m; bônus de Armamento/Blaster torna-se +3. A partir do 14º nível, se invocada ao menos uma categoria maior que você, pode surgir sobre seu espaço para ser pilotada; entrar ou sair depois custa 1,5 m de movimento e ação bônus. Pilotando: você tem cobertura total e efeitos que o escolhem atingem a unidade; pode atacar através dela com cópias de suas armas, consumindo munição/cargas normais; se usar ação bônus apenas para comandá-la, pode usar ação para fazer três ataques com suas armas através dela; usa os sentidos dela e os seus; conjura magias de Bruxo através dela, inclusive alcance Pessoal; se ela morrer, você é ejetado ao espaço livre mais próximo e ela absorve o dano excedente.\n\nINVOCAÇÕES DE DÂMOCLES. ARMADURA DO AVATAR (6º): sem armadura nem escudo, calcule sua CA como a D.G.ANCHOR. SALVAGUARDA DINÂMICA (14º): ao cair a 0 PV, use reação para invocá-la em seu espaço e pilotá-la; ela recebe 40 PV temporários e se torna alvo do dano/efeito; se estava destruída, retorna com 1 PV; uma vez por Descanso Longo e apenas se houver espaço. IMPULSO DE ATRIBUTO EXTRA (10º): dois atributos da unidade aumentam em 2. MANOBRAS EVASIVAS (6º): a unidade recebe Evasão; se você estiver a 1,5 m dela, compartilha esse benefício. SENTINELA GUARDIÃ: se você estiver dentro do deslocamento da unidade e for alvo de ataque com arma, use reação para fazê-la mover-se até você ou trocar de lugar, tornando-se alvo desse e dos demais ataques contra você no turno. UNIDADE MACROESCALA: pode invocá-la uma categoria maior que o máximo normal; alcance corpo a corpo dela e de seus ataques pilotando aumenta em 1,5 m. MICROMANIFESTAÇÃO: se não estiver invocada, ação bônus conjura parte dela para fazer um de seus ataques de arma a partir de você. AUMENTO OPCIONAL (6º): escolha mais um aprimoramento ainda não escolhido. UNIDADE DE ESCUDO: reação da unidade concede +5 CA contra um ataque visível. MOVIMENTO ASSINATURA (10º): ao cair a 0 PV, reação usa Pod de Mísseis contra um único alvo antes de desaparecer, mesmo se já o usou. AVANÇO TECNOLÓGICO DE ARMAS (6º): Armamento/Blaster obtêm crítico 19–20; Armamento pode causar contundente/cortante/perfurante em vez de elétrico e Blaster pode causar energético ou elétrico em vez de radiante, escolhendo no primeiro ataque de cada arma por turno.",
+      "page": 490,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

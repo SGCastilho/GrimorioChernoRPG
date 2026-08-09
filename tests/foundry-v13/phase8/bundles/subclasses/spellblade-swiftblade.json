@@ -1,0 +1,204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spellblade-swiftblade",
+    "identifier": "spellblade-swiftblade",
+    "name": "Lâmina Veloz",
+    "originalName": "Swiftblade",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "kibbles",
+    "title": "Spellblade v1.3 — KibblesTasty — Lâmina Veloz",
+    "pages": "9",
+    "chapter": "Técnicas de Spellblade",
+    "page": 9
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "spellblade",
+    "identifier": "spellblade",
+    "name": "Spellblade"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "spellblade",
+    "selectionLevel": 3,
+    "description": "Os mais rápidos e letais entre os Spellblades, as Lâminas Velozes especializam-se em mobilidade, atacando das sombras e recuando tão rapidamente quanto surgiram. Preferem armas leves e sequências de golpes que abatem o alvo antes que ele possa reagir.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-lamina-veloz",
+        "title": "Magias de Lâmina Veloz",
+        "page": 9,
+        "description": "Estas magias contam como magias de Spellblade para você e não contam no limite de magias conhecidas.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Spellblade"
+          },
+          {
+            "key": "magias",
+            "label": "Magias aprendidas"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Infligir Ferimentos"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Dardo Venenoso"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Picada de Aranha"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Definhar"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Despistar"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 9
+  },
+  "features": [
+    {
+      "key": "subclass.spellblade-swiftblade.feature.magias-da-lamina-veloz.l3.1",
+      "name": "MAGIAS DA LÂMINA VELOZ",
+      "level": 3,
+      "description": "Você aprende as magias apresentadas na tabela da subclasse. Elas são magias de Spellblade para você e não contam no número de magias conhecidas.",
+      "page": 9,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina Veloz",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-swiftblade.feature.estilo-de-luta-combate-com-duas-armas.l3.1",
+      "name": "ESTILO DE LUTA: COMBATE COM DUAS ARMAS",
+      "level": 3,
+      "description": "Ao escolher esta técnica no 3º nível, você recebe o Estilo de Luta Combate com Duas Armas. Quando luta com duas armas, pode adicionar seu modificador de habilidade ao dano do segundo ataque.",
+      "page": 9,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina Veloz",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-swiftblade.feature.conjuracao-veloz.l3.1",
+      "name": "CONJURAÇÃO VELOZ",
+      "level": 3,
+      "description": "A partir do 3º nível, você pode usar Golpe Mágico como parte da ação de Ataque, antes de realizar um ataque corpo a corpo. Você não pode usar Golpe Mágico mais de uma vez por turno.\n\nAlém disso, pode usar uma arma corpo a corpo como foco arcano e realizar componentes somáticos com a mão que segura o foco, mesmo em magias sem componente material.",
+      "page": 9,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina Veloz",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-swiftblade.feature.surto-rapido.l3.1",
+      "name": "SURTO RÁPIDO",
+      "level": 3,
+      "description": "Você ganha uma nova opção para Surto Arcano: gaste um uso para realizar um único ataque com arma, sem exigir uma ação.",
+      "page": 9,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina Veloz",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-swiftblade.feature.golpe-magico-implacavel.l7.1",
+      "name": "GOLPE MÁGICO IMPLACÁVEL",
+      "level": 7,
+      "description": "No 7º nível, se errar um ataque potencializado por Golpe Mágico, você pode escolher não ativar a magia. Se fizer isso, seu próximo ataque antes do fim do turno ativa o efeito.",
+      "page": 9,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina Veloz",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-swiftblade.feature.surto-desvanecente.l15.1",
+      "name": "SURTO DESVANECENTE",
+      "level": 15,
+      "description": "No 15º nível, sempre que gastar um uso de Surto Arcano, você fica invisível até o início do seu próximo turno.",
+      "page": 9,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina Veloz",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-swiftblade.feature.golpes-infinitos.l20.1",
+      "name": "GOLPES INFINITOS",
+      "level": 20,
+      "description": "No 20º nível, você usa magia para acelerar-se a uma velocidade ofuscante por 1 minuto, sem exigir uma ação. Sempre que realizar um ataque com arma usando uma ação ou ação bônus, pode realizar imediatamente outro ataque com a mesma arma. Depois de usar esta característica, você não pode usá-la novamente até concluir um descanso longo.",
+      "page": 9,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina Veloz",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

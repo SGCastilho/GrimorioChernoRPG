@@ -1,0 +1,189 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-cleric-resplendent",
+    "identifier": "lyre-cleric-resplendent",
+    "name": "Resplandecente",
+    "originalName": "Resplendent",
+    "aliases": [
+      "Resplendent"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "448",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 448
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Os Resplandecentes são os membros considerados mais “toleráveis” do Clero Nascido da Magia de Vestias. Temem a magia tanto quanto a reverenciam e costumam retirar segredos arcanos das mãos daqueles que os abusariam. Magias de Domínio — 1º: Zona Antigravidade, Infligir Ferimentos; 3º: Arma Mágica, Ver o Invisível; 5º: Relâmpago, Corcel Fantasmagórico; 7º: Santuário Privado, Esfera Resiliente; 9º: Ira da Guardiã dos Céus, Contato Extraplanar.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-dominio",
+        "title": "Magias de Domínio",
+        "page": 448,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Zona Antigravidade; Infligir Ferimentos"
+          },
+          {
+            "level": "3º",
+            "spells": "Arma Mágica; Ver o Invisível"
+          },
+          {
+            "level": "5º",
+            "spells": "Relâmpago; Corcel Fantasmagórico"
+          },
+          {
+            "level": "7º",
+            "spells": "Santuário Privado; Esfera Resiliente"
+          },
+          {
+            "level": "9º",
+            "spells": "Ira da Guardiã dos Céus; Contato Extraplanar"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 448
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-cleric-resplendent.feature.barreira-estrutural.l1.1",
+      "name": "BARREIRA ESTRUTURAL",
+      "level": 1,
+      "description": "Como reação quando você ou uma criatura a até 9 metros é alvo de um ataque ou obrigada a fazer salvaguarda, projete uma barreira. O alvo recebe bônus na CA ou salvaguarda igual ao seu modificador de Sabedoria até o fim do turno. Usos por Descanso Longo iguais ao bônus de proficiência.",
+      "page": 448,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-resplendent.feature.canalizar-divindade-encantamento-apressado.l2.1",
+      "name": "CANALIZAR DIVINDADE: ENCANTAMENTO APRESSADO",
+      "level": 2,
+      "description": "No seu turno, use Canalizar Divindade para conjurar uma magia adicional que exija ação ou ação bônus, separadamente de sua ação/ação bônus habitual. Pode fazê-lo apenas uma vez por turno.",
+      "page": 448,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-resplendent.feature.visao-diabolica.l6.1",
+      "name": "VISÃO DIABÓLICA",
+      "level": 6,
+      "description": "Você possui visão diabólica a uma distância em metros igual a 3 × seu bônus de proficiência. Dentro dela, vê em escuridão mágica e não mágica como se fosse luz intensa.",
+      "page": 448,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-resplendent.feature.canalizar-divindade-contramagica.l8.1",
+      "name": "CANALIZAR DIVINDADE: CONTRAMÁGICA",
+      "level": 8,
+      "description": "Use Canalizar Divindade para produzir os efeitos de Dissipar Magia, Contramágica ou Aniquilar Magia. Isso não conta como conjurar uma magia e exige a mesma ação que a magia normalmente exigiria. Sabedoria é seu atributo de conjuração para o efeito, tratado como se fosse realizado com espaço de nível igual a 1 + seu bônus de proficiência.",
+      "page": 448,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-resplendent.feature.conjuracao-proficiente.l8.1",
+      "name": "CONJURAÇÃO PROFICIENTE",
+      "level": 8,
+      "description": "Você soma seu modificador de Sabedoria ao dano em dados causado por suas magias de Clérigo.",
+      "page": 448,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-resplendent.feature.excecao-vestiana.l17.1",
+      "name": "EXCEÇÃO VESTIANA",
+      "level": 17,
+      "description": "Suas magias deixam de contar como efeitos mágicos e passam a ser canalizadas como milagres divinos. Elas ignoram características que reagem ou protegem especificamente contra magias ou efeitos mágicos, como Resistência Mágica, Imunidade Mágica Limitada e Contramágica.",
+      "page": 448,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

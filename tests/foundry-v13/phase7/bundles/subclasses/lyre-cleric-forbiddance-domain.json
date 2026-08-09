@@ -1,0 +1,189 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-cleric-forbiddance-domain",
+    "identifier": "lyre-cleric-forbiddance-domain",
+    "name": "Domínio da Proibição",
+    "originalName": "Forbiddance Domain",
+    "aliases": [
+      "Forbiddance Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "445",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 445
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Guardiões de segredos e conhecimento proibido, estes Clérigos policiam a fronteira entre saber útil e poder perigoso. São comuns entre o Clero Vinculado à Magia de Vestias e entre seguidores de Correfonts. Magias de Domínio — 1º: Infligir Terror, Escudo; 3º: Invisibilidade, Sugestão; 5º: Dissipar Magia, Indetectabilidade; 7º: Invisibilidade Maior, Silêncio Perfeito; 9º: Animar Objetos, Modificar Memória.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-dominio",
+        "title": "Magias de Domínio",
+        "page": 445,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Infligir Terror; Escudo"
+          },
+          {
+            "level": "3º",
+            "spells": "Invisibilidade; Sugestão"
+          },
+          {
+            "level": "5º",
+            "spells": "Dissipar Magia; Indetectabilidade"
+          },
+          {
+            "level": "7º",
+            "spells": "Invisibilidade Maior; Silêncio Perfeito"
+          },
+          {
+            "level": "9º",
+            "spells": "Animar Objetos; Modificar Memória"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 445
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-cleric-forbiddance-domain.feature.proficiencias-adicionais.l1.1",
+      "name": "PROFICIÊNCIAS ADICIONAIS",
+      "level": 1,
+      "description": "Você ganha proficiência em Enganação e Furtividade.",
+      "page": 445,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-forbiddance-domain.feature.palavras-sobrepostas.l1.1",
+      "name": "PALAVRAS SOBREPOSTAS",
+      "level": 1,
+      "description": "Ao falar, você pode sobrepor duas mensagens e decidir quem ouve cada uma. Um conjunto de ouvintes escuta a primeira mensagem enquanto todos os demais ouvem a segunda, sem perceber a outra. Se as mensagens tiverem discrepâncias perceptíveis de duração ou alguém observar atentamente seus lábios e notar incompatibilidade, a criatura pode realizar Intuição contra sua Enganação passiva para perceber que algo está errado.",
+      "page": 445,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-forbiddance-domain.feature.canalizar-divindade-dominacao-barata.l2.1",
+      "name": "CANALIZAR DIVINDADE: DOMINAÇÃO BARATA",
+      "level": 2,
+      "description": "Quando uma criatura entra em um espaço a até 9 metros, use sua reação e Canalizar Divindade para forçá-la a realizar salvaguarda de Sabedoria. Em falha, fica atordoada por 1 minuto, repetindo a salvaguarda no fim de cada turno e sempre que sofre dano. Quando ela fosse obter sucesso por causa de dano, você pode usar sua reação para fazê-la falhar em vez disso.",
+      "page": 445,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-forbiddance-domain.feature.mente-trancada.l6.1",
+      "name": "MENTE TRANCADA",
+      "level": 6,
+      "description": "Você ganha proficiência em salvaguardas de Inteligência. Uma vez por Descanso Curto ou Longo, quando falha em salvaguarda de Sabedoria ou Carisma, use sua reação para somar seu modificador de Inteligência ao resultado, possivelmente alterando-o.",
+      "page": 445,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-forbiddance-domain.feature.golpe-divino-eletrico.l8.1",
+      "name": "GOLPE DIVINO (ELÉTRICO)",
+      "level": 8,
+      "description": "Uma vez em cada um de seus turnos, ao acertar com ataque de arma, cause 1d8 de dano elétrico adicional. No 14º nível, aumenta para 2d8.",
+      "page": 445,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-forbiddance-domain.feature.pegada-teleportadora.l17.1",
+      "name": "PEGADA TELEPORTADORA",
+      "level": 17,
+      "description": "Você ganha deslocamento de teleporte igual ao seu deslocamento base.",
+      "page": 445,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

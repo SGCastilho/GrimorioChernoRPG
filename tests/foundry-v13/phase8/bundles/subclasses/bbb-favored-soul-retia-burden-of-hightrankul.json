@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-favored-soul-retia-burden-of-hightrankul",
+    "identifier": "bbb-favored-soul-retia-burden-of-hightrankul",
+    "name": "Fardo de Hightrankul",
+    "originalName": "Burden of Hightrankul",
+    "aliases": [
+      "Burden of Hightrankul"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "101–102",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 101
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Uma alma vinculada aos poderes do deus da extorsão e do sigilo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 101
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-hightrankul.feature.maos-dos-vinculados.l1.1",
+      "name": "MÃOS DOS VINCULADOS",
+      "level": 1,
+      "description": "Você invoca doze braços fantasmagóricos que flutuam ao seu redor, representando almas vinculadas à fonte de seu poder. Seu alcance, inclusive com armas corpo a corpo e magias de toque, aumenta em 1,5 m × seu bônus de proficiência. Seus ataques desarmados podem usar Carisma para ataque e dano e causam 1d8 de dano psíquico, salvo se outra característica elevar o dado. Você pode tocar e manipular até doze objetos de mão simultaneamente. Para agarrar criaturas acima de seu limite normal de tamanho, são necessárias duas mãos para uma categoria acima, dobrando o número de mãos para cada categoria adicional; pode manter esses agarrões sem usar as mãos ou o corpo físicos enquanto o alvo permanecer ao alcance dos braços.",
+      "page": 101,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-hightrankul.feature.arcanismo-de-selamento.l1.1",
+      "name": "ARCANISMO DE SELAMENTO",
+      "level": 1,
+      "description": "Magias do grupo Palavras Seladas contam como estando na lista da Alma Favorecida para você.",
+      "page": 101,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-hightrankul.feature.comando-silencioso.l6.1",
+      "name": "COMANDO SILENCIOSO",
+      "level": 6,
+      "description": "Como ação bônus, pode produzir os efeitos de comando sem espaço nem componentes, como se fosse conjurado em um nível igual à metade de seu nível de Alma Favorecida. O efeito é sobrenatural, não mágico, e não conta como magia. Você não precisa pronunciar a ordem: basta pensá-la e os alvos recebem silenciosamente sua intenção. Usos por Descanso Longo iguais ao seu bônus de proficiência; recupera um uso ao completar um Descanso Curto.",
+      "page": 101,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-hightrankul.feature.tudo-exposto.l10.1",
+      "name": "TUDO EXPOSTO",
+      "level": 10,
+      "description": "Como ação, gaste um uso de Purificação para expor mistérios e segredos arcanos a até 18 m. Você aprende a natureza de cada efeito mágico na área conforme descrito pelo Mestre, incluindo efeitos atuais sobre estatísticas, bônus, penalidades e condições. Pode encerrar imediatamente quaisquer desses efeitos com duração de 1 hora ou menos; os de duração maior são suspensos por 10 minutos. Detecta imediatamente a localização de todas as criaturas na área, mesmo ocultas ou invisíveis, e mantém essa percepção por 10 minutos. Por fim, pode escolher qualquer número de criaturas na área e encerrar nelas todos os efeitos que causem enfeitiçado, enfurecido ou amedrontado; quando aplicável, elas contam como tendo obtido sucesso na salvaguarda para encerrar o efeito.",
+      "page": 102,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-hightrankul.feature.espoliacao-da-sanidade.l13.1",
+      "name": "ESPOLIAÇÃO DA SANIDADE",
+      "level": 13,
+      "description": "Como ação, manifeste os maiores medos das criaturas à sua escolha num cone de 18 m. Cada alvo faz salvaguarda de Inteligência; em falha, fica amedrontado por você por 1 minuto. No fim de cada turno, repete a salvaguarda: em falha, sofre dano psíquico igual a 1d12 × seu bônus de proficiência; em sucesso, sofre metade e o efeito termina. Se você souber previamente algo que possa ser considerado o maior medo ou insegurança do alvo, ele tem desvantagem nessas salvaguardas. Pode usar uma vez por Descanso; usos adicionais exigem um uso de Purificação cada.",
+      "page": 102,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-kyuubi",
+    "identifier": "lyre-sword-saint-retia-way-of-kyuubi",
+    "name": "Caminho de Kyuubi",
+    "originalName": "Way of Kyuubi",
+    "aliases": [
+      "Way of Kyuubi"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "424",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 424
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Loose Number. Kyuubi, primeira entre os Santos da Espada, refinou as técnicas fundamentais e aprendia com mestres apenas observando. Seu Caminho privilegia equilíbrio, moderação e versatilidade extrema.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 424
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kyuubi.feature.pau-para-toda-obra.l3.1",
+      "name": "PAU PARA TODA OBRA",
+      "level": 3,
+      "description": "Quando fizer um teste de atributo ao qual ainda não some seu bônus de proficiência, some metade de seu bônus de proficiência, arredondado para baixo.",
+      "page": 424,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kyuubi.feature.tecnicas-de-foco-refinadas.l3.1",
+      "name": "TÉCNICAS DE FOCO REFINADAS",
+      "level": 3,
+      "description": "Suas técnicas básicas são aprimoradas. MOMENTO DE ADEPTO pode acrescentar o bônus a qualquer teste, independentemente de proficiência. VERTICAL ASTUTA deixa de custar Foco e pode ser usada livremente como ação bônus. DEFLEXÃO DA ASA DO FALCÃO custa apenas 1 Foco. PASSO FUGAZ dobra o movimento adicional. AVANÇO AVASSALADOR trata um novo d20 abaixo de 10 como 10.",
+      "page": 424,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kyuubi.feature.roubo-de-tecnica.l6.1",
+      "name": "ROUBO DE TÉCNICA",
+      "level": 6,
+      "description": "Escolha Técnicas de Foco de outros Caminhos, exceto as que envolvam conjuração, em quantidade igual ao seu bônus de proficiência. Você as aprende. Sempre que seu bônus de proficiência aumentar acima do número de técnicas aprendidas assim, aprenda técnicas adicionais até igualá-lo.",
+      "page": 424,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kyuubi.feature.discipulo-de-luxus.l11.1",
+      "name": "DISCÍPULO DE LUXUS",
+      "level": 11,
+      "description": "Ao rolar iniciativa, se tiver menos de 3 Foco restantes, recupera imediatamente até ficar com 3.",
+      "page": 424,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kyuubi.feature.lamina-do-caminho-dividido.l14.1",
+      "name": "LÂMINA DO CAMINHO DIVIDIDO",
+      "level": 14,
+      "description": "Enquanto empunhar sua Arma Santa sintonizada, você tem vantagem em todas as salvaguardas.",
+      "page": 424,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kyuubi.feature.ars-magnus.l17.1",
+      "name": "ARS MAGNUS",
+      "level": 17,
+      "description": "A cada descanso, escolha uma Técnica de Foco para meditar e treinar. Até meditar sobre outra, a primeira vez em cada turno que usar a técnica escolhida não exige gastar Foco.",
+      "page": 424,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

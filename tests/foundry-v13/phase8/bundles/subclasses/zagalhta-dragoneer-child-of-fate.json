@@ -1,0 +1,176 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-dragoneer-child-of-fate",
+    "identifier": "zagalhta-dragoneer-child-of-fate",
+    "name": "Filho do Destino",
+    "originalName": "Child of Fate",
+    "aliases": [
+      "Child of Fate"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "123–124",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 123
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Marcado por profecia ou destino predeterminado, é protegido pela própria casualidade e converte essa bênção em luz restauradora para manter a si e aos aliados no caminho previsto.",
+    "tables": [
+      {
+        "key": "table.1.parametros-da-especializacao",
+        "title": "Parâmetros da Especialização",
+        "page": 123,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "hit",
+            "label": "Dado de Vida"
+          },
+          {
+            "key": "saves",
+            "label": "Salvaguardas"
+          },
+          {
+            "key": "weapons",
+            "label": "Armas"
+          },
+          {
+            "key": "armor",
+            "label": "Armaduras"
+          },
+          {
+            "key": "skills",
+            "label": "Perícias"
+          },
+          {
+            "key": "casting",
+            "label": "Conjuração"
+          }
+        ],
+        "rows": [
+          {
+            "hit": "d6",
+            "saves": "Sabedoria, Carisma",
+            "weapons": "Todas as armas simples",
+            "armor": "Leves e médias",
+            "skills": "Medicina; escolha uma entre História, Intuição, Persuasão e Religião",
+            "casting": "Conjurador Pleno (lista do Clérigo)"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 123
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-dragoneer-child-of-fate.feature.alivio-sagrado.l1.1",
+      "name": "ALÍVIO SAGRADO",
+      "level": 1,
+      "description": "Uma vez por Descanso, como ação bônus, toque uma criatura e cure Xd6, onde X é seu nível de Cavaleiro Dracônico. Antes de rolar, pode remover um ou mais d6; para cada dado removido, escolha um efeito no mesmo alvo: remover 1 Fadiga de Combate; se estiver Morrendo, encerrar a condição e restaurar 1 PV; encerrar um efeito que cause cego, surdo, envenenado ou paralisado; ou conceder 1d6 PV temporários.",
+      "page": 123,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-child-of-fate.feature.ordenacao-do-destino.l3.1",
+      "name": "ORDENAÇÃO DO DESTINO",
+      "level": 3,
+      "description": "Quando o resultado natural de um d20 em ataque, teste ou salvaguarda for menor que sua proficiência, role um novo d20 e use obrigatoriamente o novo resultado.",
+      "page": 123,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-child-of-fate.feature.conjuracao-aprimorada.l7.1",
+      "name": "CONJURAÇÃO APRIMORADA",
+      "level": 7,
+      "description": "Sempre que rolar dano de uma magia de Cavaleiro Dracônico, adicione metade de seu nível de Cavaleiro Dracônico ao dano.",
+      "page": 123,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-child-of-fate.feature.protecao-do-dragao.l13.1",
+      "name": "PROTEÇÃO DO DRAGÃO",
+      "level": 13,
+      "description": "Uma vez por Descanso Longo, quando for reduzido a 0 PV, use sua reação e role duas vezes uma quantidade de d6 igual à metade do nível de Cavaleiro Dracônico. Em vez de cair a 0, recupere o primeiro total como PV e receba o segundo total como PV temporários.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-child-of-fate.feature.evasao.l17.1",
+      "name": "EVASÃO",
+      "level": 17,
+      "description": "Quando fizer uma salvaguarda para sofrer metade do dano, não sofre dano em sucesso e sofre metade em falha.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

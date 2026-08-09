@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-blood-minister-somnus-sanguine-knight",
+    "identifier": "bbb-blood-minister-somnus-sanguine-knight",
+    "name": "Cavaleiro Sanguíneo",
+    "originalName": "Sanguine Knight",
+    "aliases": [
+      "Sanguine Knight"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "77",
+    "chapter": "Capítulo IX: O Ministro de Sangue",
+    "page": 77
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "blood-minister-somnus",
+    "identifier": "blood-minister",
+    "name": "Ministro de Sangue"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "blood-minister",
+    "selectionLevel": 3,
+    "description": "O Cavaleiro Sanguíneo leva armas pesadas contra os monstros da noite e luta com ferocidade incessante. Mais protegido que seus companheiros, normalmente sai do combate coberto tanto pelo próprio sangue quanto pelo de seus inimigos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 77
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.blindado-pesadamente.l3.1",
+      "name": "Blindado Pesadamente",
+      "level": 3,
+      "description": "Você ganha proficiência com armaduras pesadas e proficiência em salvaguardas de Sabedoria.",
+      "page": 77,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.explosao-sanguinea.l3.1",
+      "name": "Explosão Sanguínea",
+      "level": 3,
+      "description": "Quando usa Ministração Sanguínea para conceder bônus a um ataque feito com uma arma Pesada ou de Duas Mãos, o bônus obtido do Dado de Vida é dobrado, desde que um Dado de Vida tenha sido realmente gasto.",
+      "page": 77,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.sede-exsanguinante.l7.1",
+      "name": "Sede Exsanguinante",
+      "level": 7,
+      "description": "Uma vez por Descanso, no lugar de um de seus ataques com arma, você pode produzir os efeitos de Infligir Ferimentos sem espaço de magia, em nível igual ao seu bônus de proficiência. Se acertar, recebe PV temporários iguais ao dano causado. O uso só é consumido se o ataque acertar, e você só pode tentar usar esta característica uma vez por turno.",
+      "page": 77,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.protecao-sombria.l11.1",
+      "name": "Proteção Sombria",
+      "level": 11,
+      "description": "Quando gasta um Dado de Vida com Ministração Sanguínea, todo dano que sofrer até o início de seu próximo turno é reduzido pelo bônus obtido nesse dado. Se rolar vários Dados de Vida desse modo, use apenas o maior bônus.",
+      "page": 77,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.maestria-em-ataque-extra.l15.1",
+      "name": "Maestria em Ataque Extra",
+      "level": 15,
+      "description": "Quando realiza a ação Atacar, pode realizar quatro ataques em vez de um.",
+      "page": 77,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.sede-maior.l15.1",
+      "name": "Sede Maior",
+      "level": 15,
+      "description": "Você pode usar Sede Exsanguinante uma vez adicional por Descanso e pode tentar usá-la uma vez adicional no mesmo turno, mas apenas se a primeira tentativa errar.",
+      "page": 77,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-blood-minister-somnus-cursetinged-maverick",
+    "identifier": "bbb-blood-minister-somnus-cursetinged-maverick",
+    "name": "Dissidente Maculado pela Maldição",
+    "originalName": "Cursetinged Maverick",
+    "aliases": [
+      "Cursetinged Maverick"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "71–72",
+    "chapter": "Capítulo IX: O Ministro de Sangue",
+    "page": 71
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "blood-minister-somnus",
+    "identifier": "blood-minister",
+    "name": "Ministro de Sangue"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "blood-minister",
+    "selectionLevel": 3,
+    "description": "O Dissidente Maculado pela Maldição despertou um segredo sombrio no próprio sangue. O poder começa como uma capacidade de amaldiçoar inimigos e evolui para domínio das sombras, da escuridão e para explosões de força sempre que seu sangue é usado contra outros.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 71
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-blood-minister-somnus-cursetinged-maverick.feature.cacada-amaldicoada.l3.1",
+      "name": "Caçada Amaldiçoada",
+      "level": 3,
+      "description": "Uma vez por Descanso, como ação bônus, você produz os efeitos da magia Maldição sem gastar espaço de magia, sem componentes e sem concentração. O efeito é produzido em um nível igual ao seu bônus de proficiência.",
+      "page": 72,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-cursetinged-maverick.feature.ataque-de-cano-negro.l7.1",
+      "name": "Ataque de Cano Negro",
+      "level": 7,
+      "description": "Quando realiza a ação Atacar, você pode usar sua ação bônus para atacar com uma arma de fogo na mão secundária. Esse disparo pode atingir criaturas em alcance corpo a corpo ou até o alcance longo da arma sem penalidade ou desvantagem por distância ou proximidade. Se a arma precisar ser recarregada, você pode recarregá-la como parte desse ataque.",
+      "page": 72,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-cursetinged-maverick.feature.surto-de-adrenalina.l11.1",
+      "name": "Surto de Adrenalina",
+      "level": 11,
+      "description": "Quando usa Ministração Sanguínea e rola um de seus Dados de Vida, o resultado também é adicionado à sua Classe de Armadura até o início de seu próximo turno. Se rolar vários Dados de Vida dessa forma, use apenas o maior bônus obtido para a CA.",
+      "page": 72,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-cursetinged-maverick.feature.envolto-em-sombras.l15.1",
+      "name": "Envolto em Sombras",
+      "level": 15,
+      "description": "Enquanto estiver sob luz fraca ou escuridão, você é considerado sob os efeitos da magia Nublar.",
+      "page": 72,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

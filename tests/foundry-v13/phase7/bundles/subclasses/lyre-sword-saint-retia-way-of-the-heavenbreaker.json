@@ -1,0 +1,166 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-the-heavenbreaker",
+    "identifier": "lyre-sword-saint-retia-way-of-the-heavenbreaker",
+    "name": "Caminho do Rompe-Céus",
+    "originalName": "Way of the Heavenbreaker",
+    "aliases": [
+      "Way of the Heavenbreaker"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "421–422",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 421
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Lord Spiral. O Rompe-Céus emula um herói rebelde de espírito dominador e confiança inabalável. É um caminho de sorte absurda, ousadia e avanço direto que transforma tenacidade em poder.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 421
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-heavenbreaker.feature.defesa-ostentosa.l3.1",
+      "name": "DEFESA OSTENTOSA",
+      "level": 3,
+      "description": "Enquanto não estiver usando armadura, sua CA pode ser 10 + seu modificador de Destreza + seu modificador de Carisma.",
+      "page": 421,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-heavenbreaker.feature.estilo-de-luta-lutador-imprudente.l3.1",
+      "name": "ESTILO DE LUTA: LUTADOR IMPRUDENTE",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Lutador Imprudente.",
+      "page": 421,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-heavenbreaker.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "ROMPER A ABÓBADA: ao errar ataque corpo a corpo com arma, gaste 1 Foco para rolar 1d4 e somar à jogada, podendo repetir no mesmo ataque até seu bônus de proficiência vezes. ABRIR O PRÓPRIO CAMINHO: com menos da metade dos PV máximos, como ação bônus gaste 3 Foco para somar metade de seu bônus de proficiência a ataques, salvaguardas e testes por 1 minuto; o bônus fica suspenso enquanto estiver acima da metade dos PV e volta se cair abaixo durante a duração. CERRE OS DENTES: como ação, se aliados a até 9 metros estiverem atordoados, amedrontados ou enfeitiçados por falha em salvaguarda, gaste 2 Foco para permitir que repitam a salvaguarda com vantagem; se puder tocá-los, também somam seu modificador de Carisma.",
+      "page": 421,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-heavenbreaker.feature.sorte-estupida.l6.1",
+      "name": "SORTE ESTÚPIDA",
+      "level": 6,
+      "description": "Um 1 natural em jogada de ataque, teste de atributo ou salvaguarda é tratado como 10.",
+      "page": 422,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-heavenbreaker.feature.tornar-o-impossivel-possivel.l11.1",
+      "name": "TORNAR O IMPOSSÍVEL POSSÍVEL",
+      "level": 11,
+      "description": "Sempre que for obrigado a rolar vários d20 em um ataque, teste ou salvaguarda, como por desvantagem, pode gastar 2 Foco para escolher qualquer um dos resultados e usá-lo.",
+      "page": 422,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-heavenbreaker.feature.passagem-helicoidal.l14.1",
+      "name": "PASSAGEM HELICOIDAL",
+      "level": 14,
+      "description": "Enquanto estiver sintonizado com sua Arma Santa, pode atacar com ela criaturas dentro de uma distância igual ao seu movimento restante, mesmo fora do alcance normal. Se o alvo estiver fora do alcance, uma explosão em forma de broca o leva ao espaço desocupado mais próximo adjacente ao alvo; a distância é descontada do movimento, não provoca ataques de oportunidade e ignora terreno difícil. No primeiro acerto contra uma criatura em seu turno, sua Arma Santa causa dano energético adicional igual à metade de seu nível de Santo da Espada.",
+      "page": 422,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-heavenbreaker.feature.helice-giga.l17.1",
+      "name": "HÉLICE GIGA",
+      "level": 17,
+      "description": "Ao obter 20 natural em ataque, pode gastar 2 Foco para causar +8d12 de dano energético; até o início do próximo turno, não pode usar esta característica novamente e todos os ataques contra você têm desvantagem. Alternativamente, em um acerto comum, pode gastar 5 Foco para aplicar o mesmo dano. Esse dano adicional não é multiplicado por acerto crítico.",
+      "page": 422,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

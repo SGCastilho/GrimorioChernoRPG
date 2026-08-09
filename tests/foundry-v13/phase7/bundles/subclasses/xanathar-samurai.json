@@ -1,0 +1,147 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-samurai",
+    "identifier": "xanathar-samurai",
+    "name": "Samurai",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "41",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 41
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "O Samurai é um lutador que se baseia em um implacável espírito de luta para vencer inimigos. A determinação do samurai é quase indestrntível, e os inimigos no caminho do Samurai tem duas escolhas: render-se ou Morrer lutando.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 41
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-samurai.feature.bonus-de-proficiencia.l3.1",
+      "name": "BÔNUS DE PROFICIÊNCIA",
+      "level": 3,
+      "description": "Quando você escolhe esse arquétipo no 3° nível, você ganha proficiência em uma das seguintes perícias de sua escolha: História, Intuição, Atuar ou Persuasão. Alternativamente, você aprende um idioma de sua escolha.",
+      "page": 41,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-samurai.feature.espirito-guerreiro.l3.1",
+      "name": "ESPÍRITO GUERREIRO",
+      "level": 3,
+      "description": "A partir do 3° nível, seu ímpeto em batalha pode o resguardar e ajudá-lo a atingir o êxito. Como uma ação bônus em seu turno, pode se dar vantagem em jogadas de ataque usando armas até o finaldo seu turno. Quando fizer isso, também ganhará 5 pontos de vida temporários. O número de pontos de vida temporário aumenta quando atingir determinados níveis nessa classe, incrementado para 10 no 10° nível nível. Você pode usar essa característica três vezes, e recupera todas as utilizações quando terminar um descanso longo.",
+      "page": 41,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-samurai.feature.cortesao-elegante.l7.1",
+      "name": "CORTESÃO ELEGANTE",
+      "level": 7,
+      "description": "A partir do 7º nível, sua disciplina e atenção a detalhes permite que se destaque em situações sociais. Sempre que fizer um teste de Carisma (Persuasão), ganha um bônus para o teste igual ao seu modificador Sabedoria.\n\nSeu autocontrole também o faz ganhar proficiência em teste de resistência de Sabedoria. Caso já possua essa proficiência, em vez disso, ganhe proficiência em teste de resistência de Inteligência ou de Carisma (sua escolha).",
+      "page": 41,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-samurai.feature.espirito-incansavel.l10.1",
+      "name": "ESPÍRITO INCANSÁVEL",
+      "level": 10,
+      "description": "A partir do 10º nível, quando rolar iniciativa e não tiver nenhuma utilização de Espirita da Batalha restante, recupera uma utilização.",
+      "page": 41,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-samurai.feature.golpe-rapido.l15.1",
+      "name": "GOLPE RÁPIDO",
+      "level": 15,
+      "description": "A partir do 15° nível, você aprende a trocar a precisão dos seus ataques por um golpe veloz. Se escolher fazer uma ação de Ataque no seu turno e tiver vantagem em um ataque contra um dos alvos, pode renunciar à vantagem desse rolamento para fazer um ataque armado adicional contra esse alvo. Você pode fazer isso somente uma vez por turno.",
+      "page": 41,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-samurai.feature.forca-diante-da-morte.l18.1",
+      "name": "FORÇA DIANTE DA MORTE",
+      "level": 18,
+      "description": "A partir do 18° nível, seu espírito guerreiro pode atrasar o abraço da morte. Se receber um dano que o reduz a 0 pontos de vida e não te matar por definitivo, poderá usar sua reação para atrasar o efeito de cair inconsciente, e pode imediatamente realizar mais um turno extra, interrompendo o turno atual. Enquanto tiver 0 pontos de vida durante o turno extra, sofrer ferimentos provoca fracasso no teste de resistência contra a morte, o que normalmente acontece, e três fracassos no teste de resistência contra a morte ainda podem mata-lo. Quando o turno extra se encerrar, você cai inconsciente se ainda estiver com 0 pontos de vida. Depois que utilizar essa característica, não poderá utilizar novamente até que termine um descanso longo.",
+      "page": 41,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

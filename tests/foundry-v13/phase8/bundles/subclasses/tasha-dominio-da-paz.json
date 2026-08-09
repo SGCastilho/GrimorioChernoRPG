@@ -1,0 +1,204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-dominio-da-paz",
+    "identifier": "tasha-dominio-da-paz",
+    "name": "Domínio da Paz",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "38–40",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 38
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "O bálsamo da paz nasce no coração de comunidades saudáveis, entre nações amigas e nas almas dos de coração gentil. Os deuses da paz inspiram pessoas de todos os tipos para resolver conflitos e para se posicionarem contra aquelas forças que tentam impedir a paz de florescer. Veja a tabela de Divindades da Paz para uma lista de alguns deuses associados a esse domínio. Clérigos do Domínio da Paz atuam na assinatura de tratados e são freqüentemente solicitados a arbitrar em disputas. As bênçãos desses clérigos unem as pessoas e as ajudam a carregar os fardos umas das outras, e a magia dos clérigos ajuda aqueles que são levados a lutar pelo caminho da paz. Divindades da Paz Exemplo de Divindade Panteão Angharradh Élfico Berronar Prata-Verdadeira Anão Boldrei Eberron Cyrrollalee Pequenino Eldath Reinos Esquecidos Gaerdal Mão-de-Ferro Gnômico Paladine Dragonlance Rao Greyhawk",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-da-paz",
+        "title": "Magias do Domínio da Paz",
+        "page": 38,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Heroísmo; Santuário"
+          },
+          {
+            "level": "3º",
+            "spells": "Auxílio; Vínculo de Proteção"
+          },
+          {
+            "level": "5º",
+            "spells": "Remeter; Sinal de Esperança"
+          },
+          {
+            "level": "7º",
+            "spells": "Aura de Pureza; Esfera Resiliente de Otiluke"
+          },
+          {
+            "level": "9º",
+            "spells": "Restauração Maior; Ligação Telepática de Rary"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 38
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-dominio-da-paz.feature.magias-de-dominio.l1.1",
+      "name": "MAGIAS DE DOMÍNIO",
+      "level": 1,
+      "description": "magias de domínio nos níveis de clérigo listados na tabela de Magias do Domínio da Paz. Consulte as características do Domínio Divino no Livro do Jogador para ver como as magias de domínio funcionam. Magias do Domínio da Paz Nível de Clérigo Magias 1º Heroísmo, Santuário 3º Auxílio, Vínculo de Proteção 5º Remeter, Sinal de Esperança 7º Aura de Pureza, Esfera Resiliente de Otiluke 9º Restauração Maior, Ligação Telepática De Rary",
+      "page": 38,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-paz.feature.implemento-da-paz.l1.1",
+      "name": "IMPLEMENTO DA PAZ",
+      "level": 1,
+      "description": "Você ganha proficiência na perícia de Atuação, Intuição ou Persuasão (a sua escolha).",
+      "page": 38,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-paz.feature.vinculo-encorajador.l1.1",
+      "name": "VÍNCULO ENCORAJADOR",
+      "level": 1,
+      "description": "Você pode criar uma ligação energética entre pessoas que estão em paz entre si. Como uma ação, você escolhe um número de criaturas voluntárias igual ao seu bônus de proficiência (podendo incluir você mesmo). Essas criaturas devem estar a até 9m de você. Você cria um vínculo mágico entre elas que dura por 10 minutos ou até que você use essa característica novamente. Enquanto qualquer criatura vinculada estiver a até 9m de outra criatura do vínculo, ela pode jogar um d4 e adicionar o resultado em uma rolagem de ataque, teste de habilidade ou salvaguarda que fizer. Cada criatura vinculada pode adicionar o d4 não mais do que uma vez por turno.",
+      "page": 38,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-paz.feature.canalizar-divindade-balsamo-da-paz.l2.1",
+      "name": "CANALIZAR DIVINDADE: BÁLSAMO DA PAZ",
+      "level": 2,
+      "description": "oo seu Canalizar Divindade para tornar a sua presença um bálsamo calmante. Como uma ação, você pode se mover até o seu deslocamento, sem provocar ataques de oportunidade, e quando você se mover a até 1,5m de qualquer criatura durante essa ação, você pode restaurar um número de pontos de vida dessa criatura igual a 2d¨+ seu modificador de Sabedoria (mínimo de 1 ponto de vida). Uma criatura pode receber essa cura apenas uma vez sempre que você realiza essa ação.",
+      "page": 38,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-paz.feature.vinculo-de-protecao.l6.1",
+      "name": "VÍNCULO DE PROTEÇÃO",
+      "level": 6,
+      "description": "O vínculo que você cria entre as pessoas auxilia elas a protegerem-se umas às outras. Quando uma criatura afetada por seu Vínculo encorajador estiver prestes a receber dano, uma segunda criatura vinculada que esteja a até 9m da primeira criatura pode usar sua reação para se teleportar para um espaço desocupado a até 1,5m da primeira criatura. A segunda criatura então recebe todo o dano em seu lugar.",
+      "page": 38,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-paz.feature.conjuracao-poderosa.l8.1",
+      "name": "CONJURAÇÃO PODEROSA",
+      "level": 8,
+      "description": "Você adiciona o seu modificador de Sabedoria ao dano que você causa com qualquer truque de clérigo.",
+      "page": 39,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-paz.feature.vinculo-expandido.l17.1",
+      "name": "VÍNCULO EXPANDIDO",
+      "level": 17,
+      "description": "Os benefícios do seu Vúnculo encorajador e do seu Vínculo de proteção agora funcionam quando as criaturas estiverem a até 18m umas das outras. Além disso, quando uma criatura utilizar o Vínculo de proteção para receber dano no lugar de outra pessoa, a criatura ganhará resistência a esse dano.",
+      "page": 39,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

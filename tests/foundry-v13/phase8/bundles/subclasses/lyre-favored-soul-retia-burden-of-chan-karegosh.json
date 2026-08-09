@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-chan-karegosh",
+    "identifier": "lyre-favored-soul-retia-burden-of-chan-karegosh",
+    "name": "Fardo de Chan Karegosh",
+    "originalName": "Burden of Chan Karegosh",
+    "aliases": [
+      "Burden of Chan Karegosh"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "348",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 348
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): foice de combate. O abraço de Chan Karegosh guia quem se perdeu na escuridão. Seus favorecidos são compelidos a proteger os desamparados, manifestando luar calmante, olhos que atravessam trevas e a capacidade de desaparecer como a lua nova.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 348
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-chan-karegosh.feature.familiar-coelho-lunar.l1.1",
+      "name": "FAMILIAR COELHO LUNAR",
+      "level": 1,
+      "description": "Uma vez por Descanso Longo, conjure Encontrar Familiar sem espaço em nível igual ao seu espaço de pacto para convocar um Coelho Lunar. Ele segue as regras normais de familiar, mas pode usar Míssil de Luar em seu turno e soma o nível do espaço usado à convocação em todas as salvaguardas.",
+      "page": 348,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-chan-karegosh.feature.pressa-do-coelho.l1.1",
+      "name": "PRESSA DO COELHO",
+      "level": 1,
+      "description": "Você pode realizar Disparada como ação bônus. Seus Saltos em Altura e Distância aumentam em 3 metros quando feitos com corrida prévia, ou 1,5 metro sem ela.",
+      "page": 348,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-chan-karegosh.feature.olhos-brilhantes-na-escuridao.l6.1",
+      "name": "OLHOS BRILHANTES NA ESCURIDÃO",
+      "level": 6,
+      "description": "Você enxerga normalmente em escuridão e meia-luz, mágicas ou não, a uma distância de 6 metros × seu bônus de proficiência. Também ganha Especialização em Percepção.",
+      "page": 348,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-chan-karegosh.feature.circulo-de-luar-radiante.l10.1",
+      "name": "CÍRCULO DE LUAR RADIANTE",
+      "level": 10,
+      "description": "Como ação, gaste Purificação e crie por 1 minuto uma esfera de luar intenso de 12 metros de raio centrada em você, que se move consigo e dissipa completamente escuridão mágica dentro dela. Quando surge, criaturas à sua escolha na área fazem salvaguarda de Constituição, sofrendo 1d10 × o nível do seu espaço de pacto de dano radiante em falha ou metade em sucesso. Nos turnos seguintes, como ação bônus, pode escolher uma criatura na esfera para repetir a mesma salvaguarda e dano; quando escolhe apenas uma, ela fica cega até o início do seu próximo turno se falhar.",
+      "page": 348,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-chan-karegosh.feature.sombra-da-lua-nova.l13.1",
+      "name": "SOMBRA DA LUA NOVA",
+      "level": 13,
+      "description": "Enquanto estiver em escuridão ou meia-luz, use ação bônus para ficar invisível até o fim do turno ou até entrar em luz intensa. Além disso, uma vez por Descanso Curto ou Longo, produza os efeitos de Invisibilidade Maior sem espaço; isso não conta como magia nem efeito mágico. Coelho Lunar: celestial Minúsculo, leal e bom; CA igual à sua CD de magia; PV 5 + 5 × nível do espaço de convocação; deslocamento 9 m e escalada 9 m; For 10, Des 16, Con 10, Int 7, Sab 14, Car 10; visão no escuro 18 m, Percepção passiva 12; entende seus idiomas, não fala. Resistência Mágica: vantagem em salvaguardas contra efeitos mágicos. Vínculo Protetor: criatura no mesmo espaço compartilha Resistência Mágica. Carona: entra no espaço de criatura voluntária Média ou maior a até 1,5 m, passa a ocupar seu espaço, não pode ser alvo e move-se com ela até gastar 1,5 m para sair. Míssil de Luar: ataque de magia à distância usando seu bônus, alcance 3 m, dano radiante 1d8 + nível do espaço de convocação. Ação bônus Disparada. Escudo de Luar Cristalino: reação quando criatura a até 6 m é alvo de ataque de arma; teleporta-se para junto dela e aumenta sua CA pelo nível do espaço usado na convocação até o fim do turno, inclusive contra o ataque desencadeador; se um ataque ainda acertar, a membrana se desfaz.",
+      "page": 348,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-vestias-scribe",
+    "identifier": "lyre-inscriptor-retia-vestias-scribe",
+    "name": "Escriba de Vestias",
+    "originalName": "Vestias’ Scribe",
+    "aliases": [
+      "Vestias’ Scribe"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "374",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 374
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Esta Intenção Autoral serve diretamente à deusa da magia, Vestias — ou uma divindade equivalente. O Escriba recebe compreensão excepcional da Trama e se aproxima mais da magia arcana tradicional do que outros Inscritores.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 374,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Detectar Magia"
+          },
+          {
+            "level": "3º",
+            "spells": "Arma Mágica"
+          },
+          {
+            "level": "5º",
+            "spells": "Contramágica"
+          },
+          {
+            "level": "7º",
+            "spells": "Esfera Resiliente"
+          },
+          {
+            "level": "9º",
+            "spells": "Vidência"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 374
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-vestias-scribe.feature.fonte-arcana.l1.1",
+      "name": "FONTE ARCANA",
+      "level": 1,
+      "description": "Escolha Patrulheiro, Feiticeiro, Bruxo ou Mago. Ao ganhar níveis de Inscritor, você pode aprender magias da lista da classe escolhida como se fossem magias de Inscritor. Em vez de uma classe, pode escolher uma escola de magia; nesse caso, pode aprender magias dessa escola.",
+      "page": 374,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-vestias-scribe.feature.sabio-arcano.l5.1",
+      "name": "SÁBIO ARCANO",
+      "level": 5,
+      "description": "Você pode sintonizar-se com o grimório de um Mago como se fosse um item mágico, consumindo um espaço de sintonia. Enquanto sintonizado, ao terminar um Descanso Longo, prepare a partir do grimório um número de magias igual ao seu modificador de Inteligência, desde que seus espaços de pacto possam conjurá-las. Você pode conjurá-las com espaços de Magia de Pacto como magias de Inscritor até preparar uma nova seleção ou perder a sintonia. Além disso, um número de vezes por Descanso Curto ou Longo igual à metade de seu bônus de proficiência, arredondado para baixo, pode conjurar uma dessas magias preparadas sem gastar espaço; quando conjurada assim, ela usa seu nível base.",
+      "page": 374,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-vestias-scribe.feature.consulta-deifica.l8.1",
+      "name": "CONSULTA DEÍFICA",
+      "level": 8,
+      "description": "Quando usa Consulta para criar um espaço de Magia de Pacto, esse espaço sempre tem no mínimo o mesmo nível dos seus espaços normais de pacto, independentemente de seu bônus de proficiência.",
+      "page": 374,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-vestias-scribe.feature.resistencia-magica.l12.1",
+      "name": "RESISTÊNCIA MÁGICA",
+      "level": 12,
+      "description": "Você tem vantagem em salvaguardas contra magias e efeitos mágicos e resistência ao dano causado por eles.",
+      "page": 374,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-vestias-scribe.feature.pena-da-deusa-da-trama.l20.1",
+      "name": "PENA DA DEUSA DA TRAMA",
+      "level": 20,
+      "description": "Uma vez por Descanso Longo, como ação, você se torna um condutor da influência de Vestias por 1 minuto. Durante esse período, recebe deslocamento de voo (pairar) de 18 metros. No início de cada turno, escolha criar um espaço de pacto de 3º nível, chamado espaço divino, ou aumentar em 1 o nível de um espaço divino existente, até o máximo de 9º. Uma vez em cada um de seus turnos, pode gastar um espaço divino para conjurar sem ação uma magia cujo tempo de conjuração seja 1 ação ou 1 ação bônus. Quando o efeito termina, você perde todos os espaços divinos e recebe 1d10 PV temporários para cada espaço perdido.",
+      "page": 374,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spellblade-spellshot",
+    "identifier": "spellblade-spellshot",
+    "name": "Atirador Arcano",
+    "originalName": "Spellshot",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "kibbles",
+    "title": "Spellblade v1.3 — KibblesTasty — Atirador Arcano",
+    "pages": "11–12",
+    "chapter": "Técnicas de Spellblade",
+    "page": 11
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "spellblade",
+    "identifier": "spellblade",
+    "name": "Spellblade"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "spellblade",
+    "selectionLevel": 3,
+    "description": "Atiradores Arcanos preferem manter o Golpe Mágico a uma distância segura, lançando morte de longe. De arqueiros arcanos a pistoleiros mágicos, todos infundem magias em munições e aproveitam a liberdade de movimento para buscar o alinhamento perfeito.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-atirador-arcano",
+        "title": "Magias de Atirador Arcano",
+        "page": 11,
+        "description": "Estas magias contam como magias de Spellblade para você e não contam no limite de magias conhecidas.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Spellblade"
+          },
+          {
+            "key": "magias",
+            "label": "Magias aprendidas"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Disparo Múltiplo"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Barragem Elemental"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Relâmpago"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Invisibilidade Maior"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Cortador de Pressão"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 11
+  },
+  "features": [
+    {
+      "key": "subclass.spellblade-spellshot.feature.magias-do-atirador-arcano.l3.1",
+      "name": "MAGIAS DO ATIRADOR ARCANO",
+      "level": 3,
+      "description": "Você aprende as magias apresentadas na tabela da subclasse. Elas são magias de Spellblade para você e não contam no número de magias conhecidas.",
+      "page": 11,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Atirador Arcano",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellshot.feature.golpe-magico-a-distancia.l3.1",
+      "name": "GOLPE MÁGICO À DISTÂNCIA",
+      "level": 3,
+      "description": "Ao escolher esta técnica no 3º nível, você pode aplicar Golpe Mágico a peças de munição, além de armas corpo a corpo, e ativar a magia com um ataque de arma à distância feito usando a munição infundida.\n\nA magia afeta o alvo do ataque, mas seu alcance fica limitado ao menor valor entre o alcance da magia e o alcance normal da arma. Se atacar além desse limite, a magia falha e é perdida. Para magias que criam cones ou linhas, o efeito se origina de você normalmente.",
+      "page": 11,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Atirador Arcano",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellshot.feature.surto-distante.l3.1",
+      "name": "SURTO DISTANTE",
+      "level": 3,
+      "description": "Você ganha uma nova opção para Surto Arcano — Golpe Distante: ao infundir em uma munição uma magia que tenha como alvo uma criatura ou produza uma linha, gaste um uso de Surto Arcano para aumentar o alcance da magia até o alcance da arma usada e remover a desvantagem por disparar no alcance máximo.",
+      "page": 11,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Atirador Arcano",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellshot.feature.municao-transmutada.l7.1",
+      "name": "MUNIÇÃO TRANSMUTADA",
+      "level": 7,
+      "description": "No 7º nível, quando infunde uma magia que cria uma linha, você pode transmutar sua munição no efeito da magia, liberando-a em uma linha a partir de você como se tivesse conjurado normalmente. Use Força ou Destreza, à sua escolha, no lugar de Inteligência para calcular a CD da magia. Ao fazer isso, adicione o dano da arma, incluindo o modificador, à jogada de dano da magia.",
+      "page": 11,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Atirador Arcano",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellshot.feature.surtos-perseguidores.l15.1",
+      "name": "SURTOS PERSEGUIDORES",
+      "level": 15,
+      "description": "No 15º nível, quando gasta um uso de Surto Arcano, você pode adicionar seu modificador de Inteligência à sua próxima jogada de ataque.",
+      "page": 11,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Atirador Arcano",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellshot.feature.projeteis-arcanos.l15.1",
+      "name": "PROJÉTEIS ARCANOS",
+      "level": 15,
+      "description": "Também no 15º nível, você sempre pode gerar munição de energia de força arcana ao disparar uma arma à distância. Você não consome munição ao usar uma arma com a propriedade Munição, e o dano da arma torna-se dano de força.",
+      "page": 11,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Atirador Arcano",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellshot.feature.controle-completo.l20.1",
+      "name": "CONTROLE COMPLETO",
+      "level": 20,
+      "description": "No 20º nível, você pode entrar em um estado de concentração perfeita por 1 minuto, permitindo curvar e guiar seus disparos. Seus ataques com armas à distância ignoram cobertura, inclusive cobertura total, desde que exista um caminho que o projétil possa percorrer até o alvo.\n\nDurante o estado, você pode usar Surto Distante sem gastar Surto Arcano. Uma vez por ataque, se errar uma criatura com um ataque à distância, pode redirecionar o ataque para outra criatura ao alcance, fazendo uma nova jogada. Ao redirecionar um ataque com Golpe Mágico que exige teste de resistência, escolha entre descarregar a magia contra o alvo original, caso ela tenha efeito em um erro, ou redirecioná-la ao novo alvo.\n\nDepois de usar esta característica, você não pode usá-la novamente até concluir um descanso longo.",
+      "page": 12,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Atirador Arcano",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

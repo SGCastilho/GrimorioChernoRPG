@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-caminho-do-arauto-da-tempestade",
+    "identifier": "xanathar-caminho-do-arauto-da-tempestade",
+    "name": "Caminho do Arauto da Tempestade",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "10–11",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 10
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Todos os bárbaros abrigam uma fúria interior. Sua fúria lhes garante superioridade em força, durabilidade e velocidade. Bárbaros que seguem o Caminho do Arauto da Tempestade aprendem a transformar essa fúria em um manto de magia primai, que permeia envolta dele. Quando em fúria um bárbaro desse caminho toca as forças da natureza para criar poderosos efeitos mágicos. Arautos da tempestade são típicos campeões de elite que treinam junto a druidas, patrulheiros, e quaisquer outros que jurem proteger a natureza. Outros arautos da tempestade aprimoram suas capacidades em cabanas destruídas por tempestades, em picos congelados nos confins do mundo, ou nos mais profundos desertos escaldantes.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 10
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-caminho-do-arauto-da-tempestade.feature.aura-da-tempestade.l3.1",
+      "name": "AURA DA TEMPESTADE",
+      "level": 3,
+      "description": "Começando no 3º nível, você emana uma aura tempestuosa e mágica enquanto você se enfurece. A aura se estende a 3 metros de você em todas as direções, mas não através da cobertura total.\n\nSua aura tem um efeito que se ativa quando você entra na sua fúria, e você pode ativar o efeito novamente em cada um dos seus turnos como uma ação bônus. Escolha entre deserto, mar ou tundra. O efeito da aura depende do ambiente escolhido, conforme detalhado abaixo. Você pode alterar sua escolha de ambiente sempre que você ganha um nível nesta classe.\n\nSe os efeitos da sua aura exigirem um teste de resistência, a CD é igual a 8 + seu bônus de proficiência + seu modificador de Constituição.\n\nDeserto. Quando este efeito é ativado, todas as outras criaturas em sua aura recebem 2 de dano por fogo cada. O dano aumenta quando você alcança certos níveis nesta classe, aumentando para 3 no 5º nível, 4 no 10º nível, 5 no 15º nível e 6 no 20º nível.\n\nMar. Quando este efeito é ativado, você pode escolher uma outra criatura que possa ver em sua aura. O alvo deve fazer um teste de resistência de Destreza. O alvo recebe 1d6 de dano elétrico em caso de falha, ou metade de dano se bem-sucedido. O dano aumenta quando você alcança certos níveis nesta classe, aumentando para 2d6 no 10º nível, 3d6 no 15º nível e 4d6 no 20º nível.\n\nTundra. Quando este efeito é ativado, cada criatura a sua escolha em sua aura ganha 2 pontos de vida temporários, já que os espíritos se acostumam ao sofrimento. Os pontos de vida temporários aumentam quando você atinge certos níveis nesta classe, aumentando para 3 no 5º nível, 4 no 10º nível, 5 no 15º nível e 6 no 20º nível.",
+      "page": 10,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-caminho-do-arauto-da-tempestade.feature.alma-da-tempestade.l6.1",
+      "name": "ALMA DA TEMPESTADE",
+      "level": 6,
+      "description": "No 6º nível, a tempestade lhe concede benefícios mesmo quando sua aura não está ativa. Os benefícios são baseados no ambiente que você escolheu para sua Aura da Tempestade.\n\nDeserto. Você ganha resistência ao dano de fogo, e não sofre os efeitos do calor extremo, conforme descrito no Guia do Mestre. Além disso, como uma ação, pode tocar em um objeto inflamável que não esteja sendo usado ou transportado por ninguém e incendiá-lo.\n\nMar. Você ganha resistência ao dano elétrico, e pode respirar debaixo d'água. Você também ganha um deslocamento de natação de 9 metros.\n\nTundra. Você ganha resistência ao frio, e não sofre os efeitos do frio extremo, conforme descrito no Guia do Mestre. Além disso, como uma ação, pode tocar a água e transformar um cubo de 1,5 metros em gelo, que derrete após 1 minuto. Esta ação falha se uma criatura estiver no cubo.",
+      "page": 10,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-caminho-do-arauto-da-tempestade.feature.tempestade-protetora.l10.1",
+      "name": "TEMPESTADE PROTETORA",
+      "level": 10,
+      "description": "No 1 0º nível, você aprende a usar seu domínio da tempestade para proteger os outros. Cada criatura a sua escolha tem a resistência a dano que você ganhou com o recurso Alma da Tempestade enquanto a criatura esteja em sua Aura da Tempestade.",
+      "page": 10,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-caminho-do-arauto-da-tempestade.feature.tempestade-furiosa.l14.1",
+      "name": "TEMPESTADE FURIOSA",
+      "level": 14,
+      "description": "No 14° nível, o poder da tempestade que você canaliza cresce mais forte, atacando seus inimigos. O efeito é baseado no ambiente que você escolheu para a Aura de Tempestade. Deserto. Imediatamente depois que uma criatura em sua aura acerta um ataque conta você, pode usar sua reação para forçar essa criatura a fazer um de teste de resistência de Destreza. Em caso de falha, a criatura recebe dano de fogo igual à metade do seu nível bárbaro. Mar. Quando você atinge uma criatura em sua aura com um ataque, pode usar sua reação para forçar essa criatura a fazer um de teste de resistência de Força. Em caso de falha, a criatura é derrubada, como se tivesse sido atingido por uma onda. Tundra. Sempre que o efeito de sua Aura da Tempestade estiver ativado, pode escolher uma criatura que possa ver na aura. Essa criatura deve ter sucesso em um teste de resistência de Força, ou seu deslocamento é reduzido para 0 até o início do seu próximo turno, pois uma geada mágica o encobre.",
+      "page": 11,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

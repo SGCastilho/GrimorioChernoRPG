@@ -1,0 +1,189 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-cleric-fortune-domain",
+    "identifier": "bbb-cleric-fortune-domain",
+    "name": "Domínio da Fortuna",
+    "originalName": "Fortune Domain",
+    "aliases": [
+      "Fortune Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "89–90",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 89
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Clérigos que extraem poder dos domínios da sorte e do acaso.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-da-fortuna",
+        "title": "Magias do Domínio da Fortuna",
+        "page": 89,
+        "description": "Magias concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Evasão Milagrosa; Escrito de Recordação"
+          },
+          {
+            "level": "3º",
+            "spells": "Canção da Inspiração; Arma da Fortuna"
+          },
+          {
+            "level": "5º",
+            "spells": "Confluência Banal; Caminho para a Vitória"
+          },
+          {
+            "level": "7º",
+            "spells": "Glamour do Deva; Santuário Particular"
+          },
+          {
+            "level": "9º",
+            "spells": "Aljava Acelerada; Palavra de Poder: Quebrar"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 89
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-cleric-fortune-domain.feature.disputa-justa.l1.1",
+      "name": "DISPUTA JUSTA",
+      "level": 1,
+      "description": "Uma vez por Descanso, use uma ação ou ação bônus para declarar uma Disputa Justa contra uma criatura a até 18 m que possa ver ou ouvir você. Por 1 hora, escolha vantagem, desvantagem ou nenhuma das duas: todas as rolagens que vocês fizerem um contra o outro durante esse período usam a circunstância escolhida, ignorando outras fontes de vantagem ou desvantagem.",
+      "page": 89,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-fortune-domain.feature.rolagem-viciada.l1.1",
+      "name": "ROLAGEM VICIADA",
+      "level": 1,
+      "description": "Um número de vezes por Descanso igual ao seu bônus de proficiência, quando rolar vários d20 para a mesma jogada de ataque, teste de atributo ou salvaguarda, você pode escolher qual dos resultados será usado, mesmo que outro efeito normalmente determinasse qual deveria valer.",
+      "page": 89,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-fortune-domain.feature.canalizar-divindade-oportunidade-dourada.l2.1",
+      "name": "CANALIZAR DIVINDADE: OPORTUNIDADE DOURADA",
+      "level": 2,
+      "description": "Quando realiza uma ação para atacar uma criatura ou forçá-la a fazer uma salvaguarda, pode gastar Canalizar Divindade para abençoar-se com fortuna contra ela. Escolha um dos efeitos abaixo por 1 minuto contra esse alvo:\n\n• Você adiciona novamente seu bônus de proficiência a todas as jogadas de ataque e dano contra ele.\n• Todo dano que causar a ele ignora Limiares de Dano e resistências, mas não imunidades.\n• O alvo tem desvantagem em todas as salvaguardas contra você.\n\nAlém disso, se a ação que ativou esta característica foi um ataque, recebe +10 para acertar; se foi uma ação que forçou salvaguarda, o alvo sofre -5 no resultado.",
+      "page": 89,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-fortune-domain.feature.apostar-no-ouro.l6.1",
+      "name": "APOSTAR NO OURO",
+      "level": 6,
+      "description": "Quando tiver vantagem em uma rolagem, pode optar antes de rolar por não usar a vantagem e, em vez disso, rolar 1d6 e somar ao resultado. Quando tiver desvantagem, pode optar por não usá-la e rolar 1d6, subtraindo o resultado. No 10º nível, o dado torna-se d8; no 14º, d10.",
+      "page": 89,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-fortune-domain.feature.resultado-explosivo.l8.1",
+      "name": "RESULTADO EXPLOSIVO",
+      "level": 8,
+      "description": "Quando rolar dados de dano ou cura e obtiver o resultado máximo em qualquer dado, pode rolar esse dado novamente e adicionar o novo resultado. Se o dado rerrolado também mostrar seu máximo, pode repetir o processo.",
+      "page": 90,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-fortune-domain.feature.aposta-equivalente.l17.1",
+      "name": "APOSTA EQUIVALENTE",
+      "level": 17,
+      "description": "Quando uma criatura hostil a até 18 m fizer uma das ações abaixo, role 1d10 e recupere um espaço de magia gasto do nível obtido. Se rolar 10, role novamente duas vezes e recupere dois espaços, nos níveis obtidos. Ativa quando a criatura: usa uma Resistência Lendária; obtém um acerto crítico; passa por um Despertar Mítico; acerta três ou mais ataques contra o mesmo alvo em um único turno; ou conjura/produz os efeitos de uma magia de 7º nível ou superior.",
+      "page": 90,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

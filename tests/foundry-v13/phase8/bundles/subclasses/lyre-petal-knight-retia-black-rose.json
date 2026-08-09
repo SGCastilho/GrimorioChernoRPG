@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-black-rose",
+    "identifier": "lyre-petal-knight-retia-black-rose",
+    "name": "Rosa Negra",
+    "originalName": "Black Rose",
+    "aliases": [
+      "Black Rose"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "387",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 387
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "A Rosa Negra se manifesta em quem busca poder e rejeita a ideia de uma natureza inteiramente pura. Seus cavaleiros rompem tradições, empunham armas pesadas e caçam adversários marcados como presas, sem abandonar um código de honra.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 387
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-black-rose.feature.armas-divergentes.l2.1",
+      "name": "ARMAS DIVERGENTES",
+      "level": 2,
+      "description": "Você recebe proficiência com armaduras pesadas e com todas as armas simples e marciais. Características de Cavaleiro das Pétalas que normalmente exigem uma arma de uma mão podem ser usadas com qualquer arma com a qual você seja proficiente.",
+      "page": 387,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-black-rose.feature.critico-aprimorado-corpo-a-corpo.l6.1",
+      "name": "CRÍTICO APRIMORADO (CORPO A CORPO)",
+      "level": 6,
+      "description": "Você obtém um acerto crítico com ataques corpo a corpo com arma ou ataques corpo a corpo com magia quando o d20 mostra 19 ou 20.",
+      "page": 387,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-black-rose.feature.presa-nobre.l6.1",
+      "name": "PRESA NOBRE",
+      "level": 6,
+      "description": "Uma vez por turno, como ação bônus, você pode declarar uma criatura visível como sua Presa Nobre por 1 hora ou até ela morrer. Contra ela: você não pode ter desvantagem em salvaguardas; ela precisa de cobertura total para se Esconder de você; você recebe uma reação adicional por turno contra cada Presa Nobre, usada antes de sua reação normal; quando a Presa Nobre fizer um ataque contra você, pode usar uma reação para impor desvantagem; e o primeiro ataque que você fizer contra cada Presa Nobre a cada turno tem vantagem. Você pode declarar Presa Nobre um número de vezes por Descanso Longo igual ao seu bônus de proficiência.",
+      "page": 387,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-black-rose.feature.ramos-da-rosa-negra.l11.1",
+      "name": "RAMOS DA ROSA NEGRA",
+      "level": 11,
+      "description": "Você recebe três opções de Ramos Virtuosos. BALUARTE ONDULANTE: até o início do seu próximo turno, ataques à distância contra você têm desvantagem. MARCA NOBRE: uma criatura atingida por você, ou que falhe em uma salvaguarda contra sua magia, pode ser declarada Presa Nobre sem gastar uso da característica. REPULSÃO: criaturas que falharem em uma salvaguarda contra a magia ou forem atingidas por um ataque feito como parte dela podem ser empurradas 9 metros para longe do ponto de origem; se colidirem com objeto sólido e forem impedidas de percorrer pelo menos 3 metros dessa distância, ficam caídas.",
+      "page": 387,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-black-rose.feature.raizes-manchadas.l15.1",
+      "name": "RAÍZES MANCHADAS",
+      "level": 15,
+      "description": "Quando obtiver um acerto crítico com um ataque corpo a corpo contra uma criatura que não seja elemental, morto-vivo nem constructo, você recupera PV iguais ao dano causado. Se estiver com todos os PV, recebe em vez disso PV temporários iguais à metade do dano.",
+      "page": 387,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

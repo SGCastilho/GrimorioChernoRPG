@@ -1,0 +1,204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-dominio-do-crepusculo",
+    "identifier": "tasha-dominio-do-crepusculo",
+    "name": "Domínio do Crepúsculo",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "39–41",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 39
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "A transição crepuscular da luz para a escuridão muitas vezes traz calma e até alegria, conforme o dia de trabalho se encerra e as horas de descanso começam. A escuridão também pode trazer terrores, mas os deuses do crepúsculo protegem contra os horrores da noite. Clérigos que servem a essas divindades - exemplificadas na tabela Divindades do Crepúsculo - trazem conforto para aqueles que buscam descanso e protegê-los aventurando-se na escuridão invasora para garantir que a escuridão seja um conforto, não um terror. Divindades do Crepúsculo Exemplo de Divindade Panteão Boldrei Eberron Celestian Greyhawk Dol Arrah Eberron Helm Reinos Esquecidos Ilmater Reinos Esquecidos Mishakal Dragonlance Sêlune Reinos Esquecidos Yondalla Pequenino",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-do-crepusculo",
+        "title": "Magias do Domínio do Crepúsculo",
+        "page": 39,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Fogo das Fadas; Sono"
+          },
+          {
+            "level": "3º",
+            "spells": "Raio Lunar; Ver o Invisível"
+          },
+          {
+            "level": "5º",
+            "spells": "Aura de Vitalidade; Pequena Cabana de Leomund"
+          },
+          {
+            "level": "7º",
+            "spells": "Aura de Devoção; Invisibilidade Maior"
+          },
+          {
+            "level": "9º",
+            "spells": "Círculo do Poder; Despistar"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 39
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-dominio-do-crepusculo.feature.magias-de-dominio.l1.1",
+      "name": "MAGIAS DE DOMÍNIO",
+      "level": 1,
+      "description": "Você ganha magias de domínio nos níveis de clérigo listados na tabela de Magias do Domínio do Crepúsculo. Consulte as características do Domínio Divino no Livro do Jogador para ver como as magias de domínio funcionam. Magias do Domínio do Crepúsculo Nível de Clérigo Magias 1° Fogo das Fadas, Sono 3º Raio Lunar, Ver o Invisível 5º Aura de Vitalidade, Pequena Cabana De Leomund 7º Aura de Devoção, Invisibilidade Maior 9º Círculo do Poder, Despistar",
+      "page": 39,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-do-crepusculo.feature.proficiencia-bonus.l1.1",
+      "name": "PROFICIÊNCIA BÔNUS",
+      "level": 1,
+      "description": "Você adquire proficiência com armas marciais e armaduras pesadas.",
+      "page": 39,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-do-crepusculo.feature.olhos-da-noite.l1.1",
+      "name": "OLHOS DA NOITE",
+      "level": 1,
+      "description": "Você pode ver através da escuridão mais profunda. Você tem visão no escuro a um alcance de 90m. Nesse raio, você pode ver na penumbra como se estivesse em luz plena e na escuridão como se estivesse na penumbra. Com uma ação, você pode compartilhar magicamente a visão no escuro desta característica com criaturas voluntárias que você possa ver a até 3 metros de você, até um número de criaturas igual ao seu modificador de Sabedoria (mínimo de uma criatura). A visão no escuro compartilhada dura 1 hora. Depois de compartilhá-la, você não pode fazê-lo novamente até terminar um descanso longo, a menos que gaste um espaço de magia de qualquer círculo para compartilhá-lo novamente.",
+      "page": 40,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-do-crepusculo.feature.bencao-da-vigilancia.l1.1",
+      "name": "BENÇÃO DA VIGILÂNCIA",
+      "level": 1,
+      "description": "A noite ensinou você a ser vigilante. Como uma ação, você dá vantagem a uma criatura em que tocar (podendo escolher a si mesmo) na próxima jogada de iniciativa que a criatura fizer. Este benefício termina imediatamente após a jogada ou se você usar essa característica novamente.",
+      "page": 40,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-do-crepusculo.feature.canalizar-divindade-santuario-crepuscular.l2.1",
+      "name": "CANALIZAR DIVINDADE: SANTUÁRIO CREPUSCULAR",
+      "level": 2,
+      "description": "Você pode utilizar a sua característica de Canalizar Divindade para revigorar os seus aliados com um crepúsculo calmante. Como uma ação, você exibe seu símbolo sagrado, e uma esfera de crepúsculo emana a partir de você. A esfera é centrada em você, possui 9m de raio, e é preenchida com iluminação de penumbra. A esfera move-se com você, a dura por 1 minuto ou até que você fique incapacitado ou morra. Sempre que uma criatura (incluindo você) encerra seu turno dentro da esfera, você pode fornecer a essa criatura um desses benefícios: Você fornece a essa criatura uma quantia de pontos de vida temporários equivalente a 1d6 mais seu nível de clérigo. Você encerra um efeito sobre o alvo que estivesse deixando-o amedrontado ou enfeitiçado.",
+      "page": 40,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-do-crepusculo.feature.passos-da-noite.l6.1",
+      "name": "PASSOS DA NOITE",
+      "level": 6,
+      "description": "Você pode se valer do poder místico da noite para elevar-se no ar. Como uma ação bônus, quando você estiver em um local com iluminação de penumbra ou escuridão, você pode magicamente conceder a si mesmo um deslocamento de voo igual ao seu deslocamento terrestre por 1 minuto. Você pode usar essa ação bônus um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos ao final de um descanso longo.",
+      "page": 40,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-do-crepusculo.feature.golpe-divino.l8.1",
+      "name": "GOLPE DIVINO",
+      "level": 8,
+      "description": "Você ganha a habilidade de infundir os golpes da sua arma com energia divina. Uma vez por turno, sempre que atingir uma criatura com um ataque armado, o seu ataque causa ld8 pontos de dano radiante adicional. Ao alcançar o 14° nível, o dano adicional aumenta para 2d8.",
+      "page": 40,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

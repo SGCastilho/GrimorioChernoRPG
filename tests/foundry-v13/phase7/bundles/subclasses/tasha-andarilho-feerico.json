@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-andarilho-feerico",
+    "identifier": "tasha-andarilho-feerico",
+    "name": "Andarilho Feérico",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "53–55",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 53
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Um misticismo feérico o cerca, graças às dádivas de uma arquifada, de uma fruta brilhante que você comeu, proveniente de uma árvore que falava, do córrego mágico em que você nadou, ou de algum outro evento auspicioso. Independente de como adquiriu sua magia feérica, você agora é um Andarilho Feérico, um guardião que representa tanto o reino mortal quanto o reino das fadas. Conforme você vaga pelo multiverso, sua risada contagiante alegra os corações dos oprimidos, e seu poder marcial provoca terror em seus oponentes, pois grande e o júbilo das fadas, e aterrorizante a sua fúria.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-andarilho-feerico",
+        "title": "Magias do Andarilho Feérico",
+        "page": 53,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Patrulheiro"
+          },
+          {
+            "key": "spells",
+            "label": "Magia"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Enfeitiçar Pessoa"
+          },
+          {
+            "level": "5º",
+            "spells": "Passo Nebuloso"
+          },
+          {
+            "level": "9º",
+            "spells": "Dissipar Magia"
+          },
+          {
+            "level": "13º",
+            "spells": "Porta Dimensional"
+          },
+          {
+            "level": "17º",
+            "spells": "Despistar"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 53
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-andarilho-feerico.feature.golpes-aterrorizantes.l3.1",
+      "name": "GOLPES ATERRORIZANTES",
+      "level": 3,
+      "description": "Você pode ampliar os golpes de suas armas com uma magia assustadora, provinda das profundezas melancólicas de Faéria. Quando você acerta uma criatura com uma arma, você pode provocar um dano psíquico extra de 1d4 ao alvo, que pode ser afetado por esse dano adicional apenas uma vez por turno. O dano extra aumenta para 1d6 quando você chega ao 11° nível desta classe.",
+      "page": 53,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-andarilho-feerico.feature.magia-do-andarilho-feerico.l3.1",
+      "name": "MAGIA DO ANDARILHO FEÉRICO",
+      "level": 3,
+      "description": "Você aprende uma magia adicional ao alcançar certos níveis nesta classe, como mostrado na tabela de Magias de Andarilho Feérico. Essas magias são consideradas magias de guardião para você, mas não contam contra o número de magias de guardião que você conhece. Magias do Andarilho Feérico Nível de Guardião Magia 3º Enfeitiçar Pessoa 5º Passo Nebuloso 9º Dissipar Magia 13º Porta Dimensional 17º Despistar Você também possui uma benção sobrenatural adquirida através de um local ou aliado feérico. escolha sua benção da tabela Dons de Faéria ou determino isso aleatoriamente. Dons de Faéria d6 Dom Borboletas ilusórias adejam ao seu redor enquanto você realiza um descanso curto ou longo. 2 Flores sazonais frescas brotam de seus cabelos a cada amanhecer. Você possui um aroma leve de canela, lavanda, noz moscada ou de outra erva ou tempero reconfortante Sua sombra dança quando ninguém estiver olhando diretamente para ela. Chifres ou antenas nascem em sua cabeça. 6 Sua pele e cabelo mudam de cor para combinar com o clima a cada amanhecer.",
+      "page": 53,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-andarilho-feerico.feature.glamour-sobrenatural.l3.1",
+      "name": "GLAMOUR SOBRENATURAL",
+      "level": 3,
+      "description": "Suas qualidades feéricas dão a você um charme sobrenatural. Como resultado, sempre que realiza um teste de Carisma, você ganha um bônus igual ao seu modificador de Sabedoria (mínimo de +1). Adicionalmente, você ganha proficiência em uma das seguintes perícias a sua escolha: Atuação, Enganação, ou Persuasão.",
+      "page": 53,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-andarilho-feerico.feature.distorcer-engodo.l7.1",
+      "name": "DISTORCER ENGODO",
+      "level": 7,
+      "description": "A magia feérica protege sua mente. Você possui vantagem em salvaguardas contra ser amedrontado ou enfeitiçado. Além disso, sempre que você ou uma criatura que você possa ver a até 36m de você for bem-sucedida em uma salvaguarda contra ser amedrontada ou enfeitiçada, você pode usar sua reação para obrigar uma criatura diferente dentro dessa mesma distância de visão a realizar uma salvaguarda de Sabedoria contra sua CD de magia. Se falhar, o alvo ficará amedrontado ou enfeitiçado por você (a sua escolha) por 1 minuto. O alvo pode repetir a salvaguarda no final de cada um dos turnos dele, encerrando o efeito em caso de sucesso.",
+      "page": 53,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-andarilho-feerico.feature.reforco-feerico.l11.1",
+      "name": "REFORÇO FEÉRICO",
+      "level": 11,
+      "description": "As cortes reais de Faéria o abençoaram com o auxílio de seres feéricos: você conhece a magia Invocar Fada (uma magia do capítulo 3). Ela não conta contra o número de magias de guardião que você conhece, e você pode conjurá-la sem um componente material. Você também pode conjurá-la uma vez sem gastar um espaço de magia, e recupera a habilidade de fazer isso assim que finalizar um descanso longo. Sempre que começar a conjurar essa magia, você pode modificá-la para que não exija concentração. Caso o faça, a duração da magia passa a ser de 1 minuto para essa conjuração.",
+      "page": 53,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-andarilho-feerico.feature.andarilho-da-nevoa.l15.1",
+      "name": "ANDARILHO DA NÉVOA",
+      "level": 15,
+      "description": "Você pode saltar para dentro e para fora de Faéria para se mover em um piscar de olhos: você pode conjurar Passo Nebuloso sem gastar um espaço de magia. Você pode fazer isso um número de vezes igual ao seu Modificador de Sabedoria (mínimo de 1 vez), e recupera todos os usos quando termina um descanso longo. Adicionalmente, sempre que conjurar Passo Nebuloso, você pode levar consigo uma criatura que você possa ver a até 1,5m de você. Essa criatura se teletransporta para um espaço desocupado a sua escolha a até 1,5m do seu espaço de destino.",
+      "page": 53,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

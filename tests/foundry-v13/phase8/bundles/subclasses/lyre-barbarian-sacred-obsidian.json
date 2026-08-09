@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-barbarian-sacred-obsidian",
+    "identifier": "lyre-barbarian-sacred-obsidian",
+    "name": "Obsidiana Sagrada",
+    "originalName": "Sacred Obsidian",
+    "aliases": [
+      "Sacred Obsidian"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "433",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 433
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Ao cobrir a pele com tatuagens e símbolos arcanos feitos com a tinta especial expoentrum, alguns guerreiros transformam o próprio corpo em um escudo poderoso. A tinta incorporada ao corpo move-se intuitivamente para gerar transmutação temporária, convertendo a pele em uma substância carbonizada tão dura quanto aço. Essa arte pode ser usada ofensiva ou defensivamente, e seu domínio completo cria uma proteção quase autônoma.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 433
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-barbarian-sacred-obsidian.feature.golpeamento-furioso.l3.1",
+      "name": "GOLPEAMENTO FURIOSO",
+      "level": 3,
+      "description": "Quando realiza a ação Atacar enquanto está em Fúria, você pode usar uma ação bônus para realizar dois ataques desarmados. Além disso, durante a Fúria, seus ataques desarmados causam 1d8 + seu modificador de Força de dano contundente.",
+      "page": 433,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-sacred-obsidian.feature.escudo-de-carbono.l6.1",
+      "name": "ESCUDO DE CARBONO",
+      "level": 6,
+      "description": "Quando for atingido por um ataque, você pode usar sua reação para endurecer a pele no ponto de impacto, recebendo um bônus na Classe de Armadura igual ao seu bônus de proficiência. O bônus é aplicado inclusive contra o ataque desencadeador e permanece até o fim do turno. Você pode usar esta característica um número de vezes por Descanso Longo igual à metade do seu nível de Bárbaro, arredondado para baixo.",
+      "page": 433,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-sacred-obsidian.feature.resiliencia-de-aco.l10.1",
+      "name": "RESILIÊNCIA DE AÇO",
+      "level": 10,
+      "description": "Uma vez por Descanso Curto ou Longo, quando entrar em Fúria, você recebe pontos de vida temporários iguais ao dobro do seu nível de Bárbaro. Eles desaparecem após 1 minuto ou quando sua Fúria terminar.",
+      "page": 433,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-sacred-obsidian.feature.evasao-feral.l14.1",
+      "name": "EVASÃO FERAL",
+      "level": 14,
+      "description": "Os encantamentos que protegem seu corpo tornam-se rápidos e autônomos o bastante para reagir a qualquer ameaça previsível. Sempre que realizar uma salvaguarda que permita sofrer metade do dano, você não sofre dano em caso de sucesso e sofre apenas metade em caso de falha.",
+      "page": 433,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

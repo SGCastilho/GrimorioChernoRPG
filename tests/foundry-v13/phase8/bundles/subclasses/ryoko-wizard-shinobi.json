@@ -1,0 +1,133 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-wizard-shinobi",
+    "identifier": "ryoko-wizard-shinobi",
+    "name": "Shinobi",
+    "originalName": "Shinobi",
+    "aliases": [
+      "Shinobi",
+      "Shinobi"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "205–206",
+    "chapter": "Capítulo 9: Classes",
+    "page": 205
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Um mago infiltrador que sincroniza armas, ilusões e sombras, transformando espaços de magia em técnicas de ataque e desaparecimento.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 205
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-wizard-shinobi.feature.treinamento-shinobi.l2.1",
+      "name": "TREINAMENTO SHINOBI",
+      "level": 2,
+      "description": "Você ganha proficiência com armaduras leves, bestas de mão, armas de Arremesso e armas de Acuidade; proficiência em Furtividade; pode usar arma proficiente como foco; e ganha visão no escuro 18 m ou aumenta a existente em 9 m.",
+      "page": 205,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-wizard-shinobi.feature.atacante-das-sombras.l2.1",
+      "name": "ATACANTE DAS SOMBRAS",
+      "level": 2,
+      "description": "Imediatamente após acertar criatura com ataque de arma em seu turno, use ação bônus e gaste espaço de magia para causar +1d8 por nível do espaço. Depois, escolha uma técnica: Nuvem de Sombra — seu espaço fica sob escuridão mágica muito obscurecida por 1 min, terminando se ficar inconsciente; visão no escuro não a atravessa e luz não mágica não ilumina. Toque Enervante — alvo faz Constituição contra sua CD ou sofre +1d8 veneno e fica envenenado até fim do próximo turno. Desaparecimento Sombrio — gaste 3 m de movimento para teleportar a área de penumbra/escuridão visível a 9 m. Proteção Sombria — escolha dano exceto força/radiante e ganhe resistência até início do próximo turno.",
+      "page": 205,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-wizard-shinobi.feature.ataque-extra.l6.1",
+      "name": "ATAQUE EXTRA",
+      "level": 6,
+      "description": "Pode atacar duas vezes ao realizar a ação Atacar. Além disso, escuridão mágica não impede sua visão.",
+      "page": 206,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-wizard-shinobi.feature.atacante-umbral.l10.1",
+      "name": "ATACANTE UMBRAL",
+      "level": 10,
+      "description": "Quando usa Atacante das Sombras com espaço de 3º nível ou maior, também pode escolher: Golpe Duplicado — +1d8 psíquico e alvo vê duplicatas até fim do próximo turno; ao atacar você, rola d4 e em 1–3 acerta duplicata e erra. Golpes Rápidos — faça um ataque de arma adicional; em acerto, +2d8 força. Sumir — ganhe 2d8 PV temporários e invisibilidade até fim do próximo turno; enquanto invisível assim, suas magias não exigem componentes verbais ou somáticos.",
+      "page": 206,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-wizard-shinobi.feature.sabio-das-sombras.l14.1",
+      "name": "SÁBIO DAS SOMBRAS",
+      "level": 14,
+      "description": "Quando outra criatura visível entra ou começa turno em área muito obscurecida criada magicamente por você, force salvaguarda de Força contra sua CD de Mago, sem ação. Em falha, fica restringida até início do próximo turno. Uma criatura só pode ser forçada a essa salvaguarda uma vez por turno.",
+      "page": 206,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

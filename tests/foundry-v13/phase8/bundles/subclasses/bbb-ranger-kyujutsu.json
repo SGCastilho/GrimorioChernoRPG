@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-ranger-kyujutsu",
+    "identifier": "bbb-ranger-kyujutsu",
+    "name": "Kyūjutsu",
+    "originalName": "Kyujutsu",
+    "aliases": [
+      "Kyujutsu"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "118",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 118
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Um arqueiro que também maneja o arco em combate próximo e pratica técnicas focadas e refinadas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 118
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-ranger-kyujutsu.feature.flechas-como-espadas.l3.1",
+      "name": "FLECHAS COMO ESPADAS",
+      "level": 3,
+      "description": "Você aprimora o uso de armas à distância em combate próximo e aprende artes mágicas de maior versatilidade. Pode fazer ataques corpo a corpo usando uma arma à distância contra criaturas ao seu alcance corpo a corpo, usando Destreza para ataque e dano. Se a arma for leve, o dado de dano é 1d6; se pesada, 1d10; caso contrário, 1d8. Todo esse dano é contundente e a arma conta como corpo a corpo nesse uso. Além disso, magias do grupo Zanjen contam como magias de Patrulheiro para aprender, ler e conjurar; ao conjurar uma magia Zanjen, recebe seu Bônus de Santo da Espada como se fosse um Santo da Espada.",
+      "page": 118,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-kyujutsu.feature.golpes-rastreadores.l3.1",
+      "name": "GOLPES RASTREADORES",
+      "level": 3,
+      "description": "Quando atinge com arma um alvo que ainda não seja seu Inimigo Favorito e ao menos um dos dados de dano da arma obtiver o resultado máximo, o alvo passa a ser considerado seu Inimigo Favorito por 1 minuto, mas apenas para ataques feitos com aquela mesma arma.",
+      "page": 118,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-kyujutsu.feature.multifoco.l7.1",
+      "name": "MULTIFOCO",
+      "level": 7,
+      "description": "Você pode se concentrar simultaneamente em duas magias à distância como se fossem uma só. Sempre que precisar realizar um teste de concentração, faz apenas uma rolagem para ambas, e ambas têm sucesso ou falham juntas.",
+      "page": 118,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-kyujutsu.feature.mira-de-aguia.l11.1",
+      "name": "MIRA DE ÁGUIA",
+      "level": 11,
+      "description": "Na primeira vez em cada turno que errar um ataque à distância, pode rolar um novo d20 e substituir o resultado original. Além disso, armas à distância e de arremesso podem ser usadas até seu alcance longo como se esse fosse o alcance normal.",
+      "page": 118,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-kyujutsu.feature.critico-supremo-do-cacador.l15.1",
+      "name": "CRÍTICO SUPREMO DO CAÇADOR",
+      "level": 15,
+      "description": "Você obtém acerto crítico com 18, 19 ou 20 no d20. Quando isso ocorrer, pode adicionar um Dado de Favor adicional ao dano, além do primeiro concedido por Crítico do Caçador.",
+      "page": 118,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

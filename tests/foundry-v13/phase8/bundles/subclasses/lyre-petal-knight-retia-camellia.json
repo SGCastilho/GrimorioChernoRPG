@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-camellia",
+    "identifier": "lyre-petal-knight-retia-camellia",
+    "name": "Camélia",
+    "originalName": "Camellia",
+    "aliases": [
+      "Camellia"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "388",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 388
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "A Camélia representa confiança e vínculos profundos. Seu portador forma uma ligação sobrenatural com um aliado, permitindo que ambos se protejam, coordenem ataques, compartilhem sentidos e canalizem efeitos através um do outro.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 388
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-camellia.feature.vinculo-de-wylam.l2.1",
+      "name": "VÍNCULO DE WYLAM",
+      "level": 2,
+      "description": "Como ação bônus, abençoe uma criatura que você toque; uma camélia etérea aparece nela por 1 minuto ou até um dos dois encerrar o vínculo. Você e o alvo podem usar reação para fazer um ataque contra o outro errar, mesmo sem vê-lo; a decisão deve ser tomada antes de o Mestre revelar o resultado. Quem usar a reação faz um teste de Carisma com CD igual à metade da jogada de ataque, arredondada para cima. Em uma falha, o ataque ainda erra, mas o vínculo termina. Depois de criar um vínculo, deve terminar um Descanso Curto ou Longo para fazê-lo novamente. No 11º nível, pode criar dois vínculos por Descanso Curto ou Longo, mas cada criatura só pode estar vinculada a uma outra por vez.",
+      "page": 388,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-camellia.feature.radiancia-dupla.l6.1",
+      "name": "RADIÂNCIA DUPLA",
+      "level": 6,
+      "description": "Quando você ou a criatura vinculada atacar uma criatura que o outro tenha atingido desde o último turno do atacante, o primeiro ataque contra esse alvo a cada turno é feito com vantagem.",
+      "page": 388,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-camellia.feature.virtude-da-suavidade.l6.1",
+      "name": "VIRTUDE DA SUAVIDADE",
+      "level": 6,
+      "description": "Como ação bônus, gaste um uso de Vínculo de Wylam para receber 1d10 + seu nível total em PV temporários, que desaparecem no próximo Descanso Curto ou Longo. Enquanto os possuir, ataques contra você têm desvantagem.",
+      "page": 388,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-camellia.feature.acao-florescente.l11.1",
+      "name": "AÇÃO FLORESCENTE",
+      "level": 11,
+      "description": "No turno de uma criatura beneficiada por Vínculo de Wylam, você pode usar sua reação para encerrar o vínculo e conceder a ela uma ação adicional naquele turno, desde que ela ainda não tenha realizado mais de uma ação. Nesse turno ela não pode se beneficiar de Surto de Ação, Surto do Dragão ou outra característica que conceda ação adicional, exceto ações extras de uso limitado como a de Aceleração.",
+      "page": 388,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-camellia.feature.vinculo-de-confianca.l11.1",
+      "name": "VÍNCULO DE CONFIANÇA",
+      "level": 11,
+      "description": "Você e a criatura vinculada podem usar ação bônus para fazer o outro realizar um ataque com arma, desde que não esteja incapacitado. Vocês também enxergam e ouvem através dos sentidos um do outro, embora sentidos especiais não sejam transferidos aos próprios olhos ou ouvidos.",
+      "page": 388,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-camellia.feature.sonho-de-poeira-estelar.l15.1",
+      "name": "SONHO DE POEIRA ESTELAR",
+      "level": 15,
+      "description": "Quando você ou o parceiro vinculado conjurar uma magia, a magia pode se originar do outro, com consentimento, ou escolher um ponto que você enxergue pelos sentidos dele como se estivesse no lugar dele. Além disso, vocês podem escolher um ao outro como alvo de efeitos que exijam toque independentemente da distância entre vocês.",
+      "page": 388,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

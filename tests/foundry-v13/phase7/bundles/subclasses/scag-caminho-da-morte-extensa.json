@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "scag-caminho-da-morte-extensa",
+    "identifier": "scag-caminho-da-morte-extensa",
+    "name": "Caminho da Morte Extensa",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "scag",
+    "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+    "pages": "130–131",
+    "chapter": "Capítulo 4: Classes",
+    "page": 130
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Monges do Caminho da Morte Extensa são obcecados com os meios e mecanismos da morte. Eles capturam criaturas e preparam elaborados experimentos para coletar, registrar e entender o momento do passamento. Então eles usam esse conhecimento para guiar sua compreensão das artes marciais, moldando um estilo de luta mortal.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 130
+  },
+  "features": [
+    {
+      "key": "subclass.scag-caminho-da-morte-extensa.feature.toque-da-morte.l3.1",
+      "name": "TOQUE DA MORTE",
+      "level": 3,
+      "description": "Quando você escolhe essa tradição, a partir do 3º nível seus estudos da morte lhe permitem extrair vitalidade de uma outra criatura que esteja próxima do passamento. Quando você reduz uma criatura a 1,5m de você a 0 pontos de vida, você ganha pontos de vida temporários igual ao seu modificador de Sabedoria + seu nível de monge (mínimo de 1 ponto de vida temporário).",
+      "page": 130,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-caminho-da-morte-extensa.feature.hora-da-colheita.l6.1",
+      "name": "HORA DA COLHEITA",
+      "level": 6,
+      "description": "No 6º nível, você ganha a habilidade de abalar ou amedrontar aqueles à sua volta como uma ação, pois sua alma tem sido tocada pela sombra da morte. Quando você usa essa ação, toda criatura a 9 metros de você que lhe possa ver, deve ter sucesso em um TR de Sabedoria ou ficará amedrontada até o final do próximo turno do monge.",
+      "page": 130,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-caminho-da-morte-extensa.feature.controle-da-morte.l11.1",
+      "name": "CONTROLE DA MORTE",
+      "level": 11,
+      "description": "A partir do 11º nível você usa de sua familiaridade com a morte para escapar de suas garras. Quando você é reduzido a 0 pontos de vida, você pode gastar 1 ponto de ki (nenhuma ação é requerida) para retornar a 1 ponto de vida.",
+      "page": 131,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-caminho-da-morte-extensa.feature.toque-da-morte-extensa.l17.1",
+      "name": "TOQUE DA MORTE EXTENSA",
+      "level": 17,
+      "description": "A partir do 17º nível seu toque pode canalizar a energia da morte em uma criatura. Como uma ação, você toca uma criatura a até 1,5m de você, e você gasta de 1 a 10 pontos de ki. O alvo deve fazer um TR de Constituição, e recebe 2d10 de dano necrótico por ponto de ki gasto se falhar no teste, ou metade se tiver sucesso.",
+      "page": 131,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

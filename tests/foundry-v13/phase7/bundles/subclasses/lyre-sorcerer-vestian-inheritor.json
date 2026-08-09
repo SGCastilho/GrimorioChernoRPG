@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sorcerer-vestian-inheritor",
+    "identifier": "lyre-sorcerer-vestian-inheritor",
+    "name": "Herdeiro Vestiano",
+    "originalName": "Vestian Inheritor",
+    "aliases": [
+      "Vestian Inheritor"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "484",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 484
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Alguns Feiticeiros procuram a bênção de Vestias para ampliar seus poderes; outros apenas despertam a magia que já corria em suas veias. Essa herança se manifesta sobretudo em relâmpagos, usados tanto para agredir quanto para defender.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 484
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sorcerer-vestian-inheritor.feature.punicao-de-choque.l1.1",
+      "name": "PUNIÇÃO DE CHOQUE",
+      "level": 1,
+      "description": "Quando uma criatura a até 6 metros acerta você com um ataque, use sua reação e gaste 1 Ponto de Feitiçaria para forçá-la a fazer uma salvaguarda de Destreza. Em falha, sofre uma quantidade de d6 de dano elétrico igual à metade do seu nível de Feiticeiro, arredondado para baixo, mínimo 1; em sucesso, sofre metade.",
+      "page": 484,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-vestian-inheritor.feature.ensinamentos-da-guardia-dos-ceus.l1.1",
+      "name": "ENSINAMENTOS DA GUARDIÃ DOS CÉUS",
+      "level": 1,
+      "description": "Enquanto usar armadura leve ou nenhuma armadura, pode somar seu modificador de Carisma à CA. Você ganha resistência a dano elétrico. Ao aprender novas magias de Feiticeiro, pode escolher magias do grupo de magias Arcana da Guardiã dos Céus. Além disso, tem vantagem em testes eidomânticos feitos para magias de Feiticeiro.",
+      "page": 484,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-vestian-inheritor.feature.passo-cintilante.l6.1",
+      "name": "PASSO CINTILANTE",
+      "level": 6,
+      "description": "No seu turno, a qualquer momento, gaste 1 Ponto de Feitiçaria para ganhar até o fim do turno deslocamento de teleporte igual ao seu deslocamento base. No 10º nível de Feiticeiro, esse deslocamento é dobrado e, se usar uma ação bônus para ativá-lo, não precisa gastar o Ponto de Feitiçaria.",
+      "page": 484,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-vestian-inheritor.feature.explosao-eletrica.l14.1",
+      "name": "EXPLOSÃO ELÉTRICA",
+      "level": 14,
+      "description": "Como ação bônus, lance uma explosão em um ponto visível a até 36 metros. Você pode gastar até 3 Pontos de Feitiçaria ao fazê-lo. Ela explode em uma esfera de 3 metros de raio; cada alvo na área faz salvaguarda de Destreza. Em falha sofre 2d10 de dano elétrico + 1d10 adicional por Ponto de Feitiçaria gasto; em sucesso, metade. Três usos por Descanso Curto ou Longo.",
+      "page": 484,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-vestian-inheritor.feature.aspecto-do-cosmos.l18.1",
+      "name": "ASPECTO DO COSMOS",
+      "level": 18,
+      "description": "Como ação, assuma por 1 minuto uma poderosa forma infernal semelhante a um emissário subcósmico, com asas douradas e pele como uma tapeçaria galáctica. Durante a forma: você é imune a dano elétrico; pode gastar 1 Ponto de Feitiçaria para conjurar como ação bônus uma magia cujo tempo seja 1 ação; tem resistência a dano de magias e efeitos mágicos; ganha voo com pairar de 18 metros; pode usar reação para conjurar Contramágica mesmo sem conhecê-la, sem gastar espaço; e, se cair a 0 pontos de vida ou morrer instantaneamente, a forma termina, o dano desencadeador é reduzido a 0 e você não morre. Uma vez por Descanso Longo; usos adicionais custam 6 Pontos de Feitiçaria.",
+      "page": 484,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-cleric-greed-domain",
+    "identifier": "bbb-cleric-greed-domain",
+    "name": "Domínio da Ganância",
+    "originalName": "Greed Domain",
+    "aliases": [
+      "Greed Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "91",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 91
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Um servo egoísta do divino que protege e fortalece a si mesmo antes dos demais.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-da-ganancia",
+        "title": "Magias do Domínio da Ganância",
+        "page": 91,
+        "description": "Magias concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Santuário; Escudo da Fé"
+          },
+          {
+            "level": "3º",
+            "spells": "Imobilizar Pessoa; Marca de Corte"
+          },
+          {
+            "level": "5º",
+            "spells": "Piscar; Caminho para a Vitória"
+          },
+          {
+            "level": "7º",
+            "spells": "Invisibilidade Maior; Esfera Resiliente"
+          },
+          {
+            "level": "9º",
+            "spells": "Inverbalismo; Valsa de Cadáveres"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 91
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-cleric-greed-domain.feature.desperdicio-escandaloso.l1.1",
+      "name": "DESPERDÍCIO ESCANDALOSO",
+      "level": 1,
+      "description": "Quando fizer qualquer rolagem com desvantagem durante combate ou em resposta a um efeito hostil, pode registrar o maior dos resultados. Você pode manter um número de resultados registrados igual ao seu bônus de proficiência, perdendo-os ao completar um Descanso; se estiver no limite, deve remover um resultado antigo para registrar outro. Sempre que fizer uma rolagem sem vantagem nem desvantagem e o resultado do d20 for menor que um de seus resultados registrados, pode substituí-lo por esse resultado antes de o sucesso ou falha ser confirmado.",
+      "page": 91,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-greed-domain.feature.canalizar-divindade-fortalecido-pela-ganancia.l2.1",
+      "name": "CANALIZAR DIVINDADE: FORTALECIDO PELA GANÂNCIA",
+      "level": 2,
+      "description": "Quando conjura uma magia que tenha apenas você como alvo, ou um aliado conjura em você uma magia que tenha somente você como alvo, pode gastar Canalizar Divindade para tratar a magia como se tivesse sido conjurada em um nível maior: nível original + metade do seu bônus de proficiência, arredondado para cima, no máximo 9º. Se a magia oferecer opções adicionais ao ser conjurada em níveis maiores, você escolhe as opções correspondentes aos níveis extras, mesmo se não tiver sido o conjurador.",
+      "page": 91,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-greed-domain.feature.partilhar-juntos.l6.1",
+      "name": "PARTILHAR JUNTOS",
+      "level": 6,
+      "description": "Quando uma criatura a até 18 m recuperar PV ou escolher a si mesma como alvo de um efeito benéfico, pode usar sua reação para replicar esse efeito em si ou recuperar a mesma quantidade de PV. Falha automaticamente se o efeito exigir uma alteração física incompatível com sua anatomia. Se vier de uma magia, faça um teste de atributo de conjuração com CD 10 + o nível em que a magia foi conjurada; em falha, não copia o efeito. Se exigir concentração, você deve se concentrar nele. Após usar a característica com sucesso, o alvo original faz uma salvaguarda de Carisma; em falha, ele deixa de se beneficiar do efeito que a ativou. Você pode usar esta característica três vezes por Descanso Longo.",
+      "page": 91,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-greed-domain.feature.conjuracao-potente.l8.1",
+      "name": "CONJURAÇÃO POTENTE",
+      "level": 8,
+      "description": "Você adiciona seu modificador de Sabedoria ao dano causado por qualquer truque de clérigo.",
+      "page": 91,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-greed-domain.feature.dissolucao-da-intencao.l17.1",
+      "name": "DISSOLUÇÃO DA INTENÇÃO",
+      "level": 17,
+      "description": "Como ação bônus, você absorve a intenção maliciosa dirigida contra você e recebe PV temporários iguais a 5 × o número de ataques, magias e efeitos hostis que o escolheram como alvo desde o fim do seu último turno.",
+      "page": 91,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

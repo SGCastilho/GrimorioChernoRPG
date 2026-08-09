@@ -1,0 +1,166 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-wizard-armed-arcanist",
+    "identifier": "lyre-wizard-armed-arcanist",
+    "name": "Arcanista Armado",
+    "originalName": "Armed Arcanist",
+    "aliases": [
+      "Armed Arcanist"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "507",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 507
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Um mago de batalha que toma a espada junto de suas magias. Embora não tenha a maestria de um combatente dedicado, consegue acompanhar duelistas, espadachins e arqueiros e deixa de ser apenas um alvo acadêmico no campo de batalha.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 507
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-wizard-armed-arcanist.feature.proficiencias-do-espadachim-arcano.l2.1",
+      "name": "PROFICIÊNCIAS DO ESPADACHIM ARCANO",
+      "level": 2,
+      "description": "Você ganha proficiência com armaduras leves, armaduras médias e todas as armas simples e marciais. Seu máximo de pontos de vida aumenta imediatamente em 2 e aumenta em mais 1 sempre que você ganha um nível nesta classe.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-armed-arcanist.feature.magia-tempestuosa.l2.1",
+      "name": "MAGIA TEMPESTUOSA",
+      "level": 2,
+      "description": "Quando realiza a ação Atacar, pode usar sua ação bônus para conjurar uma magia de Mago com tempo de conjuração de 1 ação. Se o alcance da arma usada na ação Atacar for maior que o alcance da magia, você pode usar o alcance normal da arma como alcance da magia. Isso não altera o tamanho de cones, cubos, cilindros ou raios, mas pode aumentar a distância na qual essas áreas são centradas.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-armed-arcanist.feature.foco-habil.l6.1",
+      "name": "FOCO HÁBIL",
+      "level": 6,
+      "description": "Se falhar em um teste de concentração para um efeito que esteja escolhendo ou afetando você como alvo, pode usar sua reação para obter sucesso em vez disso.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-armed-arcanist.feature.metalurgia-rica.l6.1",
+      "name": "METALURGIA RICA",
+      "level": 6,
+      "description": "Seus ataques com arma são sempre considerados mágicos. Além disso, uma vez por turno, quando acerta com uma arma na qual é proficiente, pode gastar um espaço de magia, rolar uma quantidade de d8 igual ao nível do espaço e somar o total ao dano como dano de energia. Não pode usar esta característica no mesmo ataque em que utilize outra característica ou magia com “destruição/smite” no nome, ou outro efeito semelhante que gaste um espaço para adicionar dados de dano.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-armed-arcanist.feature.proficiencia-adicional-em-salvaguarda.l10.1",
+      "name": "PROFICIÊNCIA ADICIONAL EM SALVAGUARDA",
+      "level": 10,
+      "description": "Você ganha proficiência à sua escolha em salvaguardas de Força, Destreza ou Constituição.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-armed-arcanist.feature.ataque-extra.l10.1",
+      "name": "ATAQUE EXTRA",
+      "level": 10,
+      "description": "Ao realizar a ação Atacar, pode atacar duas vezes em vez de uma.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-armed-arcanist.feature.armadura-mental.l14.1",
+      "name": "ARMADURA MENTAL",
+      "level": 14,
+      "description": "Enquanto não estiver incapacitado nem usando armadura pesada, você pode somar seu modificador de Inteligência à sua Classe de Armadura.",
+      "page": 507,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

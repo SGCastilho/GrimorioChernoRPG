@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-estilo-do-mestre-bebado",
+    "identifier": "xanathar-estilo-do-mestre-bebado",
+    "name": "Estilo do Mestre Bêbado",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "50–51",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 50
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "O Estilo do Mestre Bêbado ensina seus alunos a se moverem ridiculamente, com movimentos imprevisíveis de um bêbado. Um mestre bêbado balança, cambaleante em seus passos desequilibrados, apresentando o que parece ser um incompetente combatente que está insatisfeito em lutar. Os movimentos erráticos do mestre bêbado escondem uma dança cuidadosamente executada repleta de bloqueios, esquivas, avanços, ataques e recuos. Um mestre bêbado muitas vezes gosta de bancar o idiota para trazer alegria aos desanimados ou demonstrar humildade para o arrogante, mas quando entra em batalha, o mestre bêbado pode ser um inimigo magistral.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 50
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-estilo-do-mestre-bebado.feature.proficiencias-bonus.l3.1",
+      "name": "PROFICIÊNCIAS BÔNUS",
+      "level": 3,
+      "description": "Quando você escolhe essa tradição no 3º nível, você recebe proficiência na perícia atuação se você não tiver. Suas técnicas de artes marciais misturam treinamento em combate com a precisão de um dançarino e a excentricidade de um palhaço, Você também ganha proficiência para usar suprimento do cervejeiro se você não tiver.",
+      "page": 51,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-estilo-do-mestre-bebado.feature.tecnica-bebada.l3.1",
+      "name": "TÉCNICA BÊBADA",
+      "level": 3,
+      "description": "No 3º nível você aprende como girar e desviar rapidamente como parte da sua Rajada de Golpes. Quando usar sua Rajada de Golpes, você ganha o benefício da ação Desengajar e seu deslocamento é aumentado em 3 metros até o finaldo turno.",
+      "page": 51,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-estilo-do-mestre-bebado.feature.balanco-bebado.l6.1",
+      "name": "BALANÇO BÊBADO",
+      "level": 6,
+      "description": "No 6º nível você pode, repentinamente, mover-se de forma cambaleante. Você ganha os seguintes benefícios. Levantar do Chão. Quando você estiver caído poderá levantar-se usando 3 metros de seu deslocamento, no lugar de usar metade do deslocamento. Redirecionar Ataque. Quando uma criatura errar um ataque corpo-a-corpo contra você, você poderá gastar 1 ponto de ki como reação para fazer com que esse ataque acerte outra criatura à sua escolha, desde que você possa ver essa criatura e ela esteja a 1,5 metros de você",
+      "page": 51,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-estilo-do-mestre-bebado.feature.sorte-do-bebado.l11.1",
+      "name": "SORTE DO BÊBADO",
+      "level": 11,
+      "description": "A partir do 11º nível, você parece ter uma maré de sorte no momento certo. Quando fizer um teste de habilidade, um ataque ou um teste de resistência e tiver desvantagem nas jogadas, você pode usar 2 pontos de ki para cancelar a desvantagem na jogada.",
+      "page": 51,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-estilo-do-mestre-bebado.feature.frenesi-do-bebado.l17.1",
+      "name": "FRENESI DO BÊBADO",
+      "level": 17,
+      "description": "No 17º nível você ganha a habilidade de fazer um número de ataques esmagadores contra um grupo de inimigos. Quando usar sua Rajada de Golpes, você pode fazer até três ataques adicionais (totalizando cinco ataques da Rajada de Golpes), desde que cada ataque da Rajada de Golpes atinja uma criatura diferente nesse turno.",
+      "page": 51,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

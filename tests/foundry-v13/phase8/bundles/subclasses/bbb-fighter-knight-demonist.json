@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-fighter-knight-demonist",
+    "identifier": "bbb-fighter-knight-demonist",
+    "name": "Cavaleiro Demonista",
+    "originalName": "Knight Demonist",
+    "aliases": [
+      "Knight Demonist"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "105–106",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 105
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Um guerreiro de sangue demoníaco que fortalece e muta o próprio corpo de maneiras grotescas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 105
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-fighter-knight-demonist.feature.corpo-de-maus-pressagios.l3.1",
+      "name": "CORPO DE MAUS PRESSÁGIOS",
+      "level": 3,
+      "description": "Enquanto não usar armadura pesada, pode usar Constituição no lugar de Destreza para determinar sua CA, sem sofrer as limitações que normalmente restringiriam o bônus de Destreza. Todo dano que você sofrer é reduzido pela metade do seu nível de guerreiro. Além disso, pode usar Constituição no lugar de Força em ataques com arma se a arma tiver as propriedades pesada ou duas mãos, resultar de sua característica Mutationismo ou for um ataque desarmado.",
+      "page": 105,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-knight-demonist.feature.golpes-aprimorados.l3.1",
+      "name": "GOLPES APRIMORADOS",
+      "level": 3,
+      "description": "Seus ataques desarmados causam 1d8 + seu modificador de Força ou Constituição de dano cortante ou contundente, à sua escolha em cada ataque, e contam como mágicos para superar resistências. O dado torna-se 1d10 no 8º nível de guerreiro e 2d8 no 16º.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-knight-demonist.feature.critico-sombrio.l7.1",
+      "name": "CRÍTICO SOMBRIO",
+      "level": 7,
+      "description": "Você obtém acerto crítico com 19 ou 20 no d20. Quando obtiver um crítico com ataque corpo a corpo, o alvo faz uma salvaguarda de Sabedoria contra uma CD baseada em Força ou Constituição, à sua escolha. Em falha, fica amedrontado por você até o fim de seu próximo turno; em sucesso, não fica amedrontado e torna-se imune a esse efeito até o início de seu próximo turno. Você tem vantagem em ataques contra criaturas amedrontadas.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-knight-demonist.feature.mutacionismo.l10.1",
+      "name": "MUTACIONISMO",
+      "level": 10,
+      "description": "Gaste 1 ponto de Maestria de Combate para produzir os efeitos de transmogrificação sombria sem espaço de magia; o ponto só é consumido se você conseguir copiar o corpo do alvo. Seu atributo de conjuração para esse efeito é Força ou Constituição, à sua escolha.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-knight-demonist.feature.critico-sombrio-superior.l15.1",
+      "name": "CRÍTICO SOMBRIO SUPERIOR",
+      "level": 15,
+      "description": "Você obtém acerto crítico com 18, 19 ou 20 no d20. Quando acerta uma criatura amedrontada por você com um ataque corpo a corpo, causa um dado de dano da arma adicional.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-knight-demonist.feature.separacao-do-coracao-infernal.l18.1",
+      "name": "SEPARAÇÃO DO CORAÇÃO INFERNAL",
+      "level": 18,
+      "description": "Uma vez por ação Atacar, no lugar de um ataque com arma, você pode lançar uma torrente de energia sombria contra um alvo a até 9 m. Seus PV atuais são reduzidos em 2d10, ignorando PV temporários e sem possibilidade de redução. O alvo faz salvaguarda de Constituição contra uma CD baseada em Força ou Constituição; em falha, sofre 6d12 + seu modificador de Constituição de dano necrótico, ou metade em sucesso. Se gastar 1 ponto de Maestria de Combate, o efeito explode e também atinge cada criatura a até 4,5 m do alvo, exceto você, com a mesma salvaguarda e dano; nesse caso, você recebe PV temporários iguais à metade do dano total causado. Criaturas amedrontadas por você têm desvantagem nessa salvaguarda.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

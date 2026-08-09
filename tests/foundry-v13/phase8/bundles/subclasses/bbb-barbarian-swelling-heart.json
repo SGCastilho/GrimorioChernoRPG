@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-barbarian-swelling-heart",
+    "identifier": "bbb-barbarian-swelling-heart",
+    "name": "Coração Transbordante",
+    "originalName": "Swelling Heart",
+    "aliases": [
+      "Swelling Heart"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "84–85",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 84
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Um guerreiro enfurecido cuja força cresce quando protege aqueles ao seu redor.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 84
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-barbarian-swelling-heart.feature.amizade-incessante.l3.1",
+      "name": "AMIZADE INCESSANTE",
+      "level": 3,
+      "description": "Quando um de seus aliados a até 18 m sofre dano ou é atacado, isso conta como se você tivesse sofrido dano para fins de manter sua Fúria.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-swelling-heart.feature.interferencia-furiosa.l3.1",
+      "name": "INTERFERÊNCIA FURIOSA",
+      "level": 3,
+      "description": "Enquanto estiver em Fúria, quando criaturas dentro do alcance de sua arma corpo a corpo sofrerem dano perfurante, cortante ou contundente, reduza esse dano pelo seu bônus de Dano de Fúria.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-swelling-heart.feature.perda-erratica-de-um-companheiro.l6.1",
+      "name": "PERDA ERRÁTICA DE UM COMPANHEIRO",
+      "level": 6,
+      "description": "Se uma criatura aliada a até 9 m for reduzida a 0 pontos de vida ou sofrer um acerto crítico, você recupera um uso gasto de Fúria. Como reação ao evento, pode entrar em Fúria e/ou mover-se até seu deslocamento em direção à fonte do dano e, imediatamente, realizar uma ação Atacar contra ela. Todos os ataques dessa ação devem ter como alvo essa mesma criatura.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-swelling-heart.feature.dor-dilacerante.l10.1",
+      "name": "DOR DILACERANTE",
+      "level": 10,
+      "description": "Quando atingir uma criatura com um ataque com arma enquanto um aliado próximo estiver morrendo ou tiver morrido recentemente a até 18 m de você, o ataque causa dano adicional igual a um dado de dano da arma. O efeito se acumula para cada aliado que se enquadre nessa condição dentro do alcance, até um máximo igual ao seu bônus de proficiência.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-swelling-heart.feature.lacos-nada-sutis.l10.1",
+      "name": "LAÇOS NADA SUTIS",
+      "level": 10,
+      "description": "Enquanto uma criatura morrendo puder ver ou ouvir você a até 9 m e você estiver em Fúria, ela tem vantagem em salvaguardas contra a morte. Se obtiver o terceiro sucesso em uma salvaguarda contra a morte enquanto tiver essa vantagem, recupera imediatamente 1 ponto de vida. Da mesma forma, você tem vantagem em suas salvaguardas contra a morte e recupera 1 ponto de vida no terceiro sucesso se houver um aliado a até 9 m.",
+      "page": 85,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-swelling-heart.feature.ataque-circunstancial.l14.1",
+      "name": "ATAQUE CIRCUNSTANCIAL",
+      "level": 14,
+      "description": "Quando realiza a ação Atacar, você pode fazer um ataque adicional, desde que ele seja contra um alvo que esteja no alcance corpo a corpo de um de seus aliados. Esse ataque especial ocorre depois de todos os outros ataques da ação. Se obtiver 9 ou menos no d20 desse ataque, pode tratar o resultado como 10.",
+      "page": 85,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-batedor",
+    "identifier": "xanathar-batedor",
+    "name": "Batedor",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "45",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 45
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Você é hábil em furtividade e sobrevivência longe das ruas de uma cidade, permitindo que alcance à frente de seus companheiros durante as expedições. Os ladinos que abraçam este arquétipo sentem-se em casa no deserto e entre os bárbaros e os patrulheiros, e muitos batedores servem como olhos e ouvidos. Emboscadores, espiões, caçadores de recompensas - estes são apenas alguns dos papéis que os batedores assumem à medida que vagam pelo mundo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 45
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-batedor.feature.escaramuca.l3.1",
+      "name": "ESCARAMUÇA",
+      "level": 3,
+      "description": "A partir do 3º nível, você é difícilde encontrar durante uma luta. Você pode mover-se até a metade do seu deslocamento com uma reação quando um inimigo termina seu turno dentro de 1,5 metros de alcance. Este movimento não provoca ataques de oportunidade.",
+      "page": 45,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-batedor.feature.sobrevivente.l3.1",
+      "name": "SOBREVIVENTE",
+      "level": 3,
+      "description": "Quando você escolhe este arquétipo no 3º nível, você ganha proficiência nas perícias Natureza e Sobrevivência. Seu bônus de proficiência é duplicado para qualquer teste de perícia que faça que use qualquer uma dessas proficiências.",
+      "page": 45,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-batedor.feature.mobilidade-superior.l9.1",
+      "name": "MOBILIDADE SUPERIOR",
+      "level": 9,
+      "description": "No 9º nível, seu deslocamento de caminhada aumenta em 3 metros. Se você possui um deslocamento de escalada ou natação, este aumento aplica-se a esse deslocamento também.",
+      "page": 45,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-batedor.feature.mestre-de-emboscada.l13.1",
+      "name": "MESTRE DE EMBOSCADA",
+      "level": 13,
+      "description": "A partir do 13º nível, você se destaca nas principais emboscadas. Você tem vantagem em testes de iniciativa. Além disso, a primeira criatura que atingiu durante a primeira rodada de um combate torna-se mais fácil para você e outros atacarem. As ações de ataque contra esse alvo têm vantagem até o início do seu próximo turno.",
+      "page": 45,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-batedor.feature.golpe-subito.l17.1",
+      "name": "GOLPE SÚBITO",
+      "level": 17,
+      "description": "Começando no 17º nível, você pode atacar com velocidade mortal. Se você tomar a ação Ataque em seu turno, pode fazer um ataque adicional como uma ação bônus. Este ataque pode se beneficiar do seu Ataque Furtivo mesmo se você já o usou neste turno, mas somente se o ataque for o único que fizer contra este alvo neste turno.",
+      "page": 45,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

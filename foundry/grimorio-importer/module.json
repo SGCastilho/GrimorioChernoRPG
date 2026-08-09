@@ -1,0 +1,95 @@
+{
+  "id": "grimorio-importer",
+  "title": "Grimório Importer",
+  "description": "Importador de classes e subclasses do Grimório para compêndios nativos DnD5e, com Advancements portáveis, pacotes JSON, automação mecânica conservadora e organização hierárquica das características por classe/subclasse. Fase 12.1 para Foundry VTT 13.351.",
+  "version": "0.9.1",
+  "authors": [
+    {
+      "name": "Projeto Grimório D&D 5e PT-BR"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351",
+    "maximum": "13"
+  },
+  "system": [
+    "dnd5e"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.3.3",
+          "verified": "5.3.3",
+          "maximum": "5.3.3"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/grimorio-importer.css"
+  ],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "grimorio-classes",
+      "label": "Grimório — Classes",
+      "system": "dnd5e",
+      "path": "./packs/grimorio-classes",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "TRUSTED": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "grimorio-subclasses",
+      "label": "Grimório — Subclasses",
+      "system": "dnd5e",
+      "path": "./packs/grimorio-subclasses",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "TRUSTED": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "grimorio-features",
+      "label": "Grimório — Características",
+      "system": "dnd5e",
+      "path": "./packs/grimorio-features",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "TRUSTED": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Grimório Importer",
+      "sorting": "a",
+      "packs": [
+        "grimorio-classes",
+        "grimorio-subclasses",
+        "grimorio-features"
+      ]
+    }
+  ],
+  "readme": "README.md"
+}

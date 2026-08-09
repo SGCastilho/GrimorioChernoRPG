@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-circulo-das-estrelas",
+    "identifier": "tasha-circulo-das-estrelas",
+    "name": "Círculo das Estrelas",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "43–45",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 43
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "O Círculo das Estrelas permite que os druidas retirem seus poderes da luz estelar. Estes druidas tem rastreado padrões celestiais desde tempos imemoriais, descobrindo segredos escondidos entre as constelações. Ao revelar e entender esses segredos, o Círculo das Estrelas procura controlar o poder do Cosmo. Muitos druidas deste círculo mantém registros das constelações e dos efeitos das estrelas no mundo. Alguns grupos documentam essas observações em zonas megalíticas que servem como bibliotecas enigmáticas de conhecimento. Estes receptáculos podem tomar a forma de círculos de pedra, pirâmides, petróglifos, e templos subterrâneos - qualquer construção durável o suficiente para proteger os conhecimentos sagrados do círculo até mesmo de um grande cataclisma.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 43
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-circulo-das-estrelas.feature.mapa-estelar.l2.1",
+      "name": "MAPA ESTELAR",
+      "level": 2,
+      "description": "Você criou uma carta estelar como parte de seus estudos celestiais. Ela é um objeto minúsculo e pode servir como foco de conjuração para suas magias de druida. Você determina a forma desse item rolando na tabela de Mapa Estelar ou escolhendo uma. Enquanto segurando esse mapa, você tem os seguintes benefícios: Você conhece o truque Orientação. Você tem a magia Raio Guia preparada. Ela é considerada uma magia de druida para você, e não conta no número de magias que você pode preparar. Você pode conjurar Raio Guia sem gastar um espaço de magia. Você pode fazer isso um número de vezes igual ao seu modificador de proficiência, e recupera os usos ao terminar um descanso longo. Se você perder o mapa, você pode realizar uma cerimônia mágica com duração de 1 hora para criar um substituto. Essa cerimônia pode ser realizada durante um descanso curto ou longo, e destrói o mapa anterior.\n\nMapa Estelar d6 Forma do Mapa Um pergaminho coberto de representações de constelações. 2 Uma placa de pedra com pequenos buracos perfurados nela. Uma pele de urso-coruja entalhada com marcas em relevo. Uma coleção de mapas encadernada em uma capa de ébano. Um cristal que projeta padrões estelares quando posicionado diante da luz. Discos de vidro que representam constelações.",
+      "page": 43,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-das-estrelas.feature.forma-estelar.l2.1",
+      "name": "FORMA ESTELAR",
+      "level": 2,
+      "description": "Com uma ação bônus, você pode gastar um uso da sua Forma Selvagem para assumir uma forma estelar em vez de se transformar em uma besta. Enquanto em sua forma estelar, você mantém as suas estatísticas de jogo, mas seu corpo se torna luminoso; suas juntas cintilam como estrelas, e linhas brilhantes as conectam como em uma carta estelar. Essa forma emite luz plena em um raio de 3m e penumbra por mais 3m adicionais. A forma dura 10 minutos. Ela se encerra antecipadamente se você dissipá-la (nenhuma ação é necessária), fica incapacitado, morrer ou utilizar essa habilidade novamente. Sempre que você assume a sua forma estelar, escolha qual das constelações a seguir brilham em seu corpo; sua escolha fornece a você certos benefícios enquanto nessa forma. Arqueiro. Uma constelação de um arqueiro aparece em você. Quando ativa essa forma, e como uma ação bônus em cada um de seus turnos subsequentes enquanto ela durar, você pode realizar um ataque com magia à distância, atirando uma flecha luminosa que tenha como alvo uma criatura a té 18m de você. Em um acerto, o ataque provoca dano radiante igual a 1d8 + seu modificador de Sabedoria. Cálice. Uma constelação de um cálice doador de vida aparece em você. Sempre que gastar um espaço de magia para conjurar uma magia que restaure pontos de vida de uma criautra, você ou outra criatura a até 9m de você pode recuperar pontos de vida em uma quantia igual a 1d8 + seu modificador de Sabedoria. Dragão. Uma constelação de um dragão sagaz aparece em você. Quando você realizar um teste de Inteligência ou de Sabedoria ou uma salvaguarda de Constituição para manter a concentração em uma magia, você pode considerar um resultado de 9 ou menos no d20 como um 10.",
+      "page": 43,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-das-estrelas.feature.pressagio-cosmico.l6.1",
+      "name": "PRESSÁGIO CÓSMICO",
+      "level": 6,
+      "description": "Sempre que encerrar um descanso longo, você pode consultar seu Mapa Estelar por presságios. Quando fizer isso, jogue um dado. Até o fim do seu próximo descanso longo, você ganha acesso a uma reação especial baseada se você tirou um número par ou ímpar no dado. Prosperidade (Par). Sempre que uma criatura a até 9m de você que você possa ver estiver prestes a fazer uma jogada de ataque, salvaguarda ou teste de habilidade, você pode usar sua reação para rolar um d6 e adicionar o número rolado ao total. Infortúnio (Ímpar). Sempre que uma criatura a até 9m de você que você possa ver estiver prestes a fazer uma jogada de ataque, salvaguarda ou teste de habilidade, você pode usar sua reação para rolar um d6 e subtrair o número rolado do total. Você pode usar esta reação um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos ao final de um descanso longo.",
+      "page": 44,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-das-estrelas.feature.constelacoes-cintilantes.l10.1",
+      "name": "CONSTELAÇÕES CINTILANTES",
+      "level": 10,
+      "description": "A constelação de sua Forma Estelar é aprimorada. O 1d8 da constelação do Arqueiro e do Cálice se tornam 2d8, e enquanto a constelação do Dragão estiver ativa, você adquire um deslocamento de voo de 6m e pode flutuar. Além disso, no começo de cada um de seus turnos enquanto estiver na Forma estelar, você poderá trocar qual constelação brilhará em seu corpo.",
+      "page": 44,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-das-estrelas.feature.totalmente-estrelado.l14.1",
+      "name": "TOTALMENTE ESTRELADO",
+      "level": 14,
+      "description": "Enquanto em sua Forma Estelar você se torna parcialmente incorpóreo, ganhando resistência a dano contundente, cortante e perfurante.",
+      "page": 44,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

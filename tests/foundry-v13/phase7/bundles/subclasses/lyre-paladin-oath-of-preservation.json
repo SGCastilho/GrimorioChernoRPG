@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-paladin-oath-of-preservation",
+    "identifier": "lyre-paladin-oath-of-preservation",
+    "name": "Juramento da Preservação",
+    "originalName": "Oath of Preservation",
+    "aliases": [
+      "Oath of Preservation"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "469–470",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 469
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Paladinos da Preservação valorizam o momento, a paciência e a proteção daquilo que seria perdido sem intervenção, seja vida ou conhecimento. Magias de Juramento — 3º: Maldição, Limpeza do Sistema; 5º: Acalmar Emoções, Imobilizar Pessoa; 9º: Arcana Abjurativa, Círculo Mágico; 13º: Esfera Resiliente, Ira da Valquíria; 17º: Cúpula Antivida, Muralha de Energia. Dogmas — Nunca Perdido: enquanto perseverar e se levantar, você não foi derrotado; avance sem cessar. Paciência Acima de Tudo: o mundo muda lentamente, portanto leve seus empreendimentos até o fim. Sentinela dos Fracos: seja a primeira linha de defesa quando aqueles ao seu redor estiverem em perigo.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-juramento",
+        "title": "Magias de Juramento",
+        "page": 469,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Maldição; Limpeza do Sistema"
+          },
+          {
+            "level": "5º",
+            "spells": "Acalmar Emoções; Imobilizar Pessoa"
+          },
+          {
+            "level": "9º",
+            "spells": "Arcana Abjurativa; Círculo Mágico"
+          },
+          {
+            "level": "13º",
+            "spells": "Esfera Resiliente; Ira da Valquíria"
+          },
+          {
+            "level": "17º",
+            "spells": "Cúpula Antivida; Muralha de Energia"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 469
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-paladin-oath-of-preservation.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Você recebe duas opções. Fuga Fantasma: como reação quando você ou uma criatura aliada a até 9 metros for alvo de um ataque ou efeito, use Canalizar Divindade para transportar o alvo e outras criaturas voluntárias no mesmo alcance, em quantidade igual à metade do seu nível de Paladino, para um semiplano inofensivo, fazendo o ataque ou efeito errar. Elas retornam no início do próximo turno ao espaço anterior ou ao desocupado mais próximo. Tração Zero: como reação quando outra criatura entra em um espaço a até 9 metros, use Canalizar Divindade para exigir salvaguarda de Sabedoria. Em uma falha, ela fica atordoada por 1 minuto e repete a salvaguarda no fim de cada turno; em um sucesso, perde todo o deslocamento restante até o início do próximo turno.",
+      "page": 469,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-preservation.feature.aura-de-reflexos-embotados.l7.1",
+      "name": "AURA DE REFLEXOS EMBOTADOS",
+      "level": 7,
+      "description": "Criaturas hostis dentro da sua Aura de Proteção realizam salvaguardas de Destreza com desvantagem.",
+      "page": 469,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-preservation.feature.encantamento-protetor.l15.1",
+      "name": "ENCANTAMENTO PROTETOR",
+      "level": 15,
+      "description": "Criaturas aliadas dentro da sua Aura de Proteção, incluindo você, têm vantagem em testes de concentração e em salvaguardas recorrentes realizadas no fim de seus turnos para encerrar efeitos.",
+      "page": 470,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-preservation.feature.selado-no-tempo.l20.1",
+      "name": "SELADO NO TEMPO",
+      "level": 20,
+      "description": "Uma vez cada por Descanso Longo, você pode conjurar Palavra de Poder: Imobilidade e Parar o Tempo como magias de Paladino sem gastar espaço nem componentes materiais. Ao conjurar Parar o Tempo dessa forma, você pode realizar um ataque com arma contra cada criatura ao alcance sem encerrar a magia; um segundo ataque contra a mesma criatura encerra o efeito. O dano desses ataques só é aplicado quando Parar o Tempo termina.",
+      "page": 470,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-fantasy",
+    "identifier": "lyre-inscriptor-retia-fantasy",
+    "name": "Fantasia",
+    "originalName": "Fantasy",
+    "aliases": [
+      "Fantasy"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "367",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 367
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Sua obra é povoada por seres que ultrapassam limites mortais, heróis extraordinários e energias capazes de desafiar deuses. Por meio da escrita, você descreve a si mesmo e seus aliados como protagonistas capazes de superar o impossível.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 367,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Golpe da Valquíria"
+          },
+          {
+            "level": "3º",
+            "spells": "Aumentar/Reduzir"
+          },
+          {
+            "level": "5º",
+            "spells": "Voo"
+          },
+          {
+            "level": "7º",
+            "spells": "Avatar de Gaius"
+          },
+          {
+            "level": "9º",
+            "spells": "Reencarnação"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 367
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-fantasy.feature.arco-de-treinamento.l1.1",
+      "name": "ARCO DE TREINAMENTO",
+      "level": 1,
+      "description": "Escolha um dos benefícios a seguir; no 10º nível de Inscritor, escolha mais um: seu deslocamento básico aumenta em 3 metros; você recebe percepção às cegas até 3 metros × seu bônus de proficiência; recebe proficiência em um tipo de salvaguarda à sua escolha, exceto salvaguardas contra a morte; recebe proficiência com três armas à sua escolha, podendo também escolher escudos ou armaduras médias, inclusive armas de fogo mesmo sem atender normalmente seus requisitos; recebe proficiência em três perícias ou ferramentas à sua escolha; ou recebe Especialização em duas perícias à sua escolha.",
+      "page": 367,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-fantasy.feature.tecnica-nomeada.l5.1",
+      "name": "TÉCNICA NOMEADA",
+      "level": 5,
+      "description": "Quando conjura uma magia que causa dano a um ou mais alvos, você pode gastar uma Distorção Narrativa para acrescentar ao primeiro dano da magia 1d6 × seu bônus de proficiência do mesmo tipo de dano da magia. Se a magia causar vários tipos, escolha qual deles recebe o dano adicional.",
+      "page": 367,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-fantasy.feature.retorno-da-beira-do-abismo.l8.1",
+      "name": "RETORNO DA BEIRA DO ABISMO",
+      "level": 8,
+      "description": "Quando for reduzido a 0 pontos de vida ou morto instantaneamente, pode usar sua reação e gastar um uso de Consulta para retornar com metade de seus pontos de vida máximos, arredondado para cima, sem sofrer Fadiga de Combate. Você tem vantagem em todas as salvaguardas até o início do seu próximo turno.",
+      "page": 367,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-fantasy.feature.impulso-supremo.l12.1",
+      "name": "IMPULSO SUPREMO",
+      "level": 12,
+      "description": "Você recebe um espaço adicional de Magia de Pacto de Inscritor. Recebe outro no 15º nível e outro no 18º nível. Eles funcionam como seus espaços normais de Magia de Pacto.",
+      "page": 367,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-fantasy.feature.alem-do-alem.l20.1",
+      "name": "ALÉM DO ALÉM",
+      "level": 20,
+      "description": "Como ação, escolha uma criatura voluntária que você possa ver a até 18 metros e comece a escrever sobre ela transcendendo os próprios limites. Enquanto você se concentrar, por até 1 minuto, o alvo recebe um bônus igual à metade de seu bônus de proficiência, arredondado para baixo, em todas as jogadas de ataque, salvaguardas, testes de atributo e na CA; também adquire resistência a todo dano, e dobra suas distâncias de salto em altura, salto em distância e capacidade de carga. Se o alvo permitir, você pode dirigir suas ações em seu turno: use sua ação para fazê-lo executar uma ação que seja capaz de realizar, use seu próprio movimento para movê-lo ou conjure uma magia como se ela se originasse dele usando suas estatísticas. Você vê e ouve através dele sem perder seus próprios sentidos. Depois de usar esta característica, só pode usá-la novamente após um Descanso Longo, a menos que gaste um uso de Consulta ao ativá-la.",
+      "page": 367,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

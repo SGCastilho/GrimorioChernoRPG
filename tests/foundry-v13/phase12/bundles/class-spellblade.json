@@ -1,0 +1,1457 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spellblade",
+    "identifier": "spellblade",
+    "name": "Spellblade",
+    "originalName": "Spellblade",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "kibbles",
+    "title": "Spellblade v1.3 — KibblesTasty",
+    "pages": "1–19",
+    "chapter": "Classe Spellblade, Técnicas e Égide",
+    "page": 2
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Um Spellblade combina magia e talento marcial em uma fusão perfeita, unindo ambos em uma única arte. Em vez de ser apenas um mago habilidoso com uma espada ou um guerreiro que conhece algumas magias, ele é definido pela capacidade de fundir magia e combate em um único ataque: o Golpe Mágico.",
+    "hitDice": {
+      "raw": "d8",
+      "mode": "standard",
+      "number": 1,
+      "faces": 8
+    },
+    "primaryAbility": {
+      "raw": "Inteligência",
+      "abilityKeys": [
+        "int"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Constituição, Inteligência",
+        "abilityKeys": [
+          "con",
+          "int"
+        ]
+      },
+      "armor": "Armaduras leves e médias",
+      "weapons": "Armas simples e marciais",
+      "tools": "Não especificadas no PDF",
+      "skills": "Escolha duas: Acrobacia, Arcanismo, Atletismo, História, Investigação, Medicina, Natureza, Percepção, Religião, Prestidigitação ou Furtividade"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 2,
+      "text": "Como um Spellblade, você adquire as seguintes características de classe.\n\nPONTOS DE VIDA\n\nDado de Vida: 1d8 por nível de Spellblade\n\nPontos de Vida no 1º Nível: 8 + seu modificador de Constituição\n\nPontos de Vida nos Níveis Seguintes: 1d8 (ou 5) + seu modificador de Constituição por nível de Spellblade após o 1º\n\nPROFICIÊNCIAS\n\nArmaduras: armaduras leves e médias\n\nArmas: armas simples e marciais\n\nTestes de Resistência: Constituição e Inteligência\n\nPerícias: escolha duas entre Acrobacia, Arcanismo, Atletismo, História, Investigação, Medicina, Natureza, Percepção, Religião, Prestidigitação e Furtividade\n\nO PDF não apresenta uma linha de proficiência em ferramentas.\n\nEQUIPAMENTO\n\nVocê começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) uma arma marcial.\n\n• (a) uma besta leve e uma aljava com 20 virotes ou (b) duas armas simples quaisquer.\n\n• (a) brunea ou (b) armadura de couro.\n\n• (a) um pacote de aventureiro ou (b) um pacote de explorador.\n\n• Um foco arcano.\n\nAlternativamente, você pode começar com 5d4 × 10 po para comprar seu próprio equipamento.",
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty"
+    },
+    "overview": [
+      {
+        "title": "SPELLBLADE",
+        "page": 1,
+        "text": "Uma humana passa a mão por sua lâmina, traçando padrões esotéricos que se acendem ao toque. Chamas ganham vida em seu rastro, lançando uma luz súbita sobre a caverna sombria enquanto as criaturas da escuridão recuam diante do fogo. Os olhos de um gnomo começam a brilhar quando uma enorme espada larga de energia se condensa em sua mão, formando uma lâmina de poder puro, duas vezes maior que ele e ainda assim sem peso. Um elfo de aparência sombria desaparece, teletransporta-se para trás do inimigo, murmura algo de forma enigmática e o derruba com um golpe.\n\nUm Spellblade combina magia e talento marcial em uma fusão perfeita, capaz de unir ambos em uma única arte. Em vez de ser um Mago que por acaso sabe usar uma espada ou um Guerreiro que conhece alguma magia, um Spellblade é definido pela capacidade de mesclar feitiços e técnicas marciais em um único ataque: o Golpe Mágico.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty"
+      },
+      {
+        "title": "BUSCA PELA MAESTRIA",
+        "page": 1,
+        "text": "Tornar-se um Spellblade não acontece por acaso. É um caminho difícil, que exige concentração e condicionamento intensos para conjurar com fluidez em meio à tempestade da batalha e sincronizar perfeitamente magia e ataques. Por isso, Spellblades quase sempre são movidos por uma motivação que os leva a perseguir esse estilo singular de perfeição. Alguns o veem como uma arte ou tradição importante, outros como a arma definitiva para superar um grande obstáculo, e há aqueles que seguem o caminho pelo próprio desafio, buscando provar seu valor.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty"
+      },
+      {
+        "title": "TALENTO RARO",
+        "page": 1,
+        "text": "Spellblades são incomuns, pois dominar suas artes exige um grau de talento fora do normal em comparação com aqueles que se especializam em apenas um de seus dois campos desafiadores. Aventureiros já são raros, mas Spellblades são ainda mais, e frequentemente desafiam expectativas. Um Spellblade estudioso e gentil pode ser surpreendentemente ágil ou forte, enquanto alguém que parece apenas um brutamontes pode revelar grande erudição.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty"
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM SPELLBLADE",
+        "page": 1,
+        "text": "O ponto mais importante ao criar um Spellblade é compreender o que atraiu seu personagem para esse caminho difícil e raro. As habilidades de um Spellblade possuem pouca utilidade mundana: ele não é necessariamente um estudioso, e suas técnicas servem principalmente às artes da aventura. O que levou seu personagem a dominá-las? Existe uma intencionalidade no caminho do Spellblade semelhante à encontrada em um Paladino.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty"
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 2,
+        "text": "Para seguir as técnicas Lâmina de Éter, Mago de Batalha ou Espada Voadora, coloque seu maior valor em Inteligência, seguido de Destreza e Constituição.\n\nPara seguir Guardião ou Punho Mágico, coloque seu maior valor em Força, seguido de Constituição e Inteligência.\n\nPara seguir Caçador de Magos, Lâmina de Geada, Atirador Arcano ou Lâmina Veloz, coloque seu maior valor em Destreza, seguido de Inteligência e Constituição.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty"
+      }
+    ],
+    "tables": [
+      {
+        "key": "table.1.efeitos-da-egide",
+        "title": "Efeitos da Égide",
+        "page": 16,
+        "description": "O nível indica o espaço de magia sacrificado para manter o efeito até o próximo descanso longo.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível do espaço"
+          },
+          {
+            "key": "nome",
+            "label": "Efeito"
+          },
+          {
+            "key": "requisito",
+            "label": "Pré-requisito"
+          },
+          {
+            "key": "efeito",
+            "label": "Benefício"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "1º",
+            "nome": "Agilidade Arcana",
+            "requisito": "—",
+            "efeito": "Você permanece sob o efeito da magia Salto."
+          },
+          {
+            "nivel": "1º",
+            "nome": "Armadura Arcana",
+            "requisito": "—",
+            "efeito": "Você permanece sob o efeito da magia Armadura Arcana."
+          },
+          {
+            "nivel": "1º",
+            "nome": "Punho Arcano",
+            "requisito": "Punho Mágico",
+            "efeito": "O dano de seu ataque desarmado aumenta para 1d10. Se gastar um espaço de 3º nível neste efeito, aumenta para 1d12."
+          },
+          {
+            "nivel": "1º",
+            "nome": "Rapidez Arcana",
+            "requisito": "—",
+            "efeito": "Seu deslocamento aumenta em 1,5 metro."
+          },
+          {
+            "nivel": "1º",
+            "nome": "Encantamento Elemental",
+            "requisito": "—",
+            "efeito": "Você toca uma arma e converte o dano dela em fogo, frio ou elétrico enquanto a empunhar."
+          },
+          {
+            "nivel": "1º",
+            "nome": "Escudo Encantado",
+            "requisito": "—",
+            "efeito": "Você toca um escudo e ganha proficiência com ele durante o efeito."
+          },
+          {
+            "nivel": "1º",
+            "nome": "Salvaguardas do Surto",
+            "requisito": "—",
+            "efeito": "Você pode gastar Surto Arcano para adicionar Inteligência a testes de resistência de Força ou Destreza, além dos testes de habilidade."
+          },
+          {
+            "nivel": "1º",
+            "nome": "Barreira Protetora",
+            "requisito": "—",
+            "efeito": "Reduza em 1 todo dano que sofrer."
+          },
+          {
+            "nivel": "1º",
+            "nome": "Foco em Arma",
+            "requisito": "—",
+            "efeito": "Transforme sua arma em um foco arcano para suas magias de Spellblade."
+          },
+          {
+            "nivel": "2º",
+            "nome": "Olhos Arcanos",
+            "requisito": "—",
+            "efeito": "Você ganha visão no escuro com alcance de 18 metros."
+          },
+          {
+            "nivel": "2º",
+            "nome": "Estilo Arcano",
+            "requisito": "—",
+            "efeito": "Você ganha um Estilo de Luta da classe Guerreiro. Se já possuir um estilo, escolha um diferente."
+          },
+          {
+            "nivel": "2º",
+            "nome": "Perícia Arcana",
+            "requisito": "—",
+            "efeito": "Você ganha proficiência em uma perícia à sua escolha."
+          },
+          {
+            "nivel": "2º",
+            "nome": "Canal da Lâmina",
+            "requisito": "—",
+            "efeito": "Ao usar Golpe Mágico, você pode usar o modificador empregado no ataque com a arma em vez de Inteligência como modificador de conjuração."
+          },
+          {
+            "nivel": "2º",
+            "nome": "Aliado Ilusório",
+            "requisito": "—",
+            "efeito": "Ao rolar iniciativa, crie uma duplicata como na magia Reflexos. Você só pode ter uma duplicata deste efeito por vez; se conjurar Reflexos, esta duplicata é destruída antes das demais."
+          },
+          {
+            "nivel": "2º",
+            "nome": "Arma Leal",
+            "requisito": "—",
+            "efeito": "Uma arma tocada ao escolher esta Égide fica sob o efeito de Arma Retornante."
+          },
+          {
+            "nivel": "2º",
+            "nome": "Movimento Acelerado",
+            "requisito": "—",
+            "efeito": "Seu deslocamento aumenta em 1,5 metro."
+          },
+          {
+            "nivel": "3º",
+            "nome": "Barreira de Éter",
+            "requisito": "Lâmina de Éter",
+            "efeito": "Ao causar dano com sua Lâmina de Éter, você ganha pontos de vida temporários iguais ao seu modificador de Inteligência."
+          },
+          {
+            "nivel": "3º",
+            "nome": "Transbordamento Arcano",
+            "requisito": "—",
+            "efeito": "Você ganha um uso adicional de Surto Arcano."
+          },
+          {
+            "nivel": "3º",
+            "nome": "Escudo Arcano",
+            "requisito": "—",
+            "efeito": "Você cria um escudo de poder arcano e recebe +2 na CA. Ele conta como escudo equipado, não ocupa uma mão e não se acumula com outro escudo."
+          },
+          {
+            "nivel": "3º",
+            "nome": "Onda Explosiva",
+            "requisito": "—",
+            "efeito": "Sempre que se teletransportar usando Surto Arcano ou uma magia de 1º nível ou superior, criaturas à sua escolha a até 1,5 metro do destino devem passar em um teste de Força contra sua CD de magia ou ficam Caídas."
+          },
+          {
+            "nivel": "3º",
+            "nome": "Égide Camaleônica",
+            "requisito": "—",
+            "efeito": "Você pode se esconder sem cobertura e não é imediatamente revelado ao entrar na linha de visão. Se mover-se enquanto uma criatura o observa, faça um novo teste de Destreza (Furtividade) para permanecer escondido."
+          },
+          {
+            "nivel": "3º",
+            "nome": "Piscar Contingente",
+            "requisito": "—",
+            "efeito": "Na primeira vez que cairia a 0 PV por dano, fica com 1 PV e desaparece para o Plano Etéreo. No início do seu turno, retorna a um espaço desocupado a até 3 metros do ponto de onde desapareceu. Uma vez ativado, só pode ocorrer novamente após um descanso longo."
+          },
+          {
+            "nivel": "3º",
+            "nome": "Égide Reflexiva",
+            "requisito": "—",
+            "efeito": "Você tem vantagem em testes contra magias em linha. Ao passar em um teste contra uma magia que causa dano, o conjurador sofre metade do dano que você receberia caso falhasse."
+          },
+          {
+            "nivel": "4º",
+            "nome": "Resistência Arcana",
+            "requisito": "—",
+            "efeito": "Escolha ácido, frio, fogo, elétrico, veneno ou trovejante; você ganha resistência ao tipo escolhido. Pode escolher outro tipo ao selecionar novamente este efeito."
+          },
+          {
+            "nivel": "4º",
+            "nome": "Contingência de Combate",
+            "requisito": "—",
+            "efeito": "Ao rolar iniciativa, como reação, você pode conjurar uma magia de 3º nível ou inferior que afete apenas você e tenha tempo de conjuração de 1 ação."
+          },
+          {
+            "nivel": "4º",
+            "nome": "Caminhos Dimensionais",
+            "requisito": "—",
+            "efeito": "Ao usar Surto Arcano para se teletransportar, você pode levar uma criatura voluntária Média ou menor a até 1,5 metro, fazendo-a aparecer a até 1,5 metro do destino."
+          },
+          {
+            "nivel": "4º",
+            "nome": "Égide Fantasma",
+            "requisito": "—",
+            "efeito": "Você pode atravessar os espaços de outras criaturas sem penalidade e passar por objetos ou barreiras não mágicas com até 2,5 centímetros de espessura."
+          },
+          {
+            "nivel": "4º",
+            "nome": "Força Rúnica",
+            "requisito": "—",
+            "efeito": "Seu valor de Força torna-se igual ao seu valor de Inteligência."
+          },
+          {
+            "nivel": "5º",
+            "nome": "Voo Arcano",
+            "requisito": "—",
+            "efeito": "Você ganha deslocamento de voo de 9 metros."
+          },
+          {
+            "nivel": "5º",
+            "nome": "Alacridade Arcana",
+            "requisito": "—",
+            "efeito": "Ao realizar a ação de Ataque, você pode atacar duas vezes em vez de uma."
+          },
+          {
+            "nivel": "5º",
+            "nome": "Égide Resiliente",
+            "requisito": "—",
+            "efeito": "Você ganha proficiência em um teste de resistência à sua escolha."
+          },
+          {
+            "nivel": "5º",
+            "nome": "Égide de Pedra",
+            "requisito": "—",
+            "efeito": "Reduza em 5 todo dano que sofrer."
+          }
+        ]
+      },
+      {
+        "key": "table.2.lista-de-magias-do-spellblade",
+        "title": "Lista de Magias do Spellblade",
+        "page": 18,
+        "description": "Lista de magias apresentada no PDF da classe, com os nomes localizados para PT-BR.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Círculo"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "Truques",
+            "magias": "Espirro Ácido, Toque Arrepiante, Globos de Luz, Toque Decompositor, Arco Elétrico, Raio de Fogo, Dardo de Força, Congelar, Dardo Ilusório, Luz, Mãos Mágicas, Mensagem, Ilusão Menor, Rajada de Veneno, Preservação, Prestidigitação, Produzir Chamas, Raio de Gelo, Resistência, Toque Chocante, Ataque Certeiro, Projétil de Água"
+          },
+          {
+            "nivel": "1º nível",
+            "magias": "Bolha Ácida, Alarme, Repreensão Elemental de Aldricor, Ablação Arcana, Arma Arcana, Sopro Ártico, Sangue Ruim, Perdição, Mãos Flamejantes, Miragem de Lâmina, Onda Devastadora, Agonia Debilitante, Eletrificar, Orbe Elemental, Sepultar, Olhos da Imolação, Fogo das Fadas, Queda Suave, Nuvem de Névoa, Dardo de Vendaval, Área Escorregadia, Agarre dos Mortos, Infligir Ferimentos, Flecha de Gelo, Tentáculo de Relâmpago, Passos Longos, Armadura Arcana, Mísseis Mágicos, Glóbulo Derretente, Clarão Prismático, Escudo, Vínculo Sombrio, Riso Histérico de Tasha, Soco Trovejante, Onda Trovejante, Momento Tranquilo, Servo Invisível, Corrente Ascendente Violenta, Explosão de Água"
+          },
+          {
+            "nivel": "2º nível",
+            "magias": "Alacridade, Tornar-se Fogo, Tornar-se Pedra, Tornar-se Água, Tornar-se Vento, Cegueira/Surdez, Nublar, Ferver Sangue, Golpe Ardente, Toque de Argila, Onda de Frio, Crepitar, Corte Crescente de Vento, Desorientar, Escuridão, Visão no Escuro, Ímpeto Dracônico, Ondulação da Terra, Exalação Elemental, Aprimorar Habilidade, Aumentar/Reduzir, Imolação Etérea, Arremessar, Ímpeto Gravitacional, Imobilizar Pessoa, Corte do Furacão, Grilhões Infernais, Contramedida Instantânea, Invisibilidade, Golpe do Vento de Ferro, Reflexos, Passo Nebuloso, Dardo Venenoso, Golpe de Pseudópode, Raio do Enfraquecimento, Ver o Invisível, Despedaçar, Escudo Estilhaçante, Patas de Aranha, Poeira Estelar, Salto Temporal, Armadilha Temporal, Atração do Vácuo, Teia, Cortador de Vento"
+          },
+          {
+            "nivel": "3º nível",
+            "magias": "Poço Ácido, Lança de Éter, Aura Ártica, Piscar, Contramágica, Singularidade Esmagadora, Dissipar Magia, Eletrocutar, Erodir, Bola de Fogo, Ciclone de Fogo, Congelamento Súbito, Voo, Passo Fantasma, Velocidade, Vazio Faminto, Relâmpago, Salto Meteórico, Onda Sísmica, Nevasca, Picada de Aranha, Campo Estático, Nuvem Fétida, Idiomas, Toque Vampírico, Explosão de Vórtice, Respirar na Água, Canhão de Água, Caminhar na Água, Definhar"
+          },
+          {
+            "nivel": "4º nível",
+            "magias": "Barragem Aérea, Olho Arcano, Banimento, Raio de Bile, Tentáculos Negros de Evard, Definhar, Confusão, Devorar Sombra, Cortador Dimensional, Porta Dimensional, Lança Ecoante, Escudo de Fogo, Lâmina de Força, Movimentação Livre, Gêiser, Invisibilidade Maior, Espinho de Gelo, Tempestade de Gelo, Jardim de Ferro, Descarga Saltitante, Pedras Orbitais, Assassino Fantasmagórico, Pilar de Fogo, Nuvem de Veneno, Passos de Mercúrio, Pele de Pedra, Sufocar, Muralha de Fogo"
+          },
+          {
+            "nivel": "5º nível",
+            "magias": "Chuva Ácida, Tempestade de Éter, Queda de Bigorna, Onda Explosiva, Barragem Sepulcral, Nuvem Mortal, Cone de Frio, Esfolar Criatura, Escuridão Devoradora, Fissura, Golpes Cintilantes, Imobilizar Monstro, Despistar, Criar Passagem, Cortador de Pressão, Lança Piroclástica, Vidência, Explosão Celeste, Guincho Sônico, Telecinésia, Tornado"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "key": "reference.1.licenca-e-atribuicao",
+        "title": "LICENÇA E ATRIBUIÇÃO",
+        "page": 19,
+        "text": "O texto de classes, subclasses, magias e demais regras do documento é disponibilizado sob a Licença Creative Commons Atribuição 4.0 Internacional. A atribuição indicada pelo documento é: “Includes content from Kibbles’ Compendium of Legends and Legacies by KibblesTasty Homebrew LLC and available at https://www.kthomebrew.com/krd.” As artes do PDF não fazem parte dessa licença e não foram incluídas no projeto.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "spellblade",
+      "color": "#6f8fd6"
+    }
+  },
+  "features": [
+    {
+      "key": "class.spellblade.feature.surto-arcano.l1.1",
+      "name": "SURTO ARCANO",
+      "level": 1,
+      "description": "Sua afinidade com a magia concede a você uma reserva de Surtos Arcanos. Uma vez durante seu turno, você pode gastar um uso de Surto Arcano para realizar uma das opções a seguir:\n\n• Detectar Magia: conjure Detectar Magia sem gastar um espaço de magia.\n\n• Vantagem: obtenha vantagem em uma jogada de ataque, sem exigir uma ação.\n\n• Aprimorar Habilidade: adicione seu modificador de Inteligência a um teste de habilidade de Força ou Destreza, sem exigir uma ação.\n\n• Teleporte: teletransporte-se até 1,5 metro para um espaço desocupado que possa ver, sem exigir uma ação. A distância aumenta em 1,5 metro no 5º nível (3 metros), 9º nível (4,5 metros), 13º nível (6 metros) e 17º nível (7,5 metros).\n\nVocê pode usar esta característica um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao concluir um descanso curto ou longo. Conforme avança de nível, a tabela da classe apresenta usos adicionais, mas você continua podendo gastar apenas um uso por turno.",
+      "page": 3,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.truque-magico.l1.1",
+      "name": "TRUQUE MÁGICO",
+      "level": 1,
+      "description": "Também no 1º nível, você aprende um truque à sua escolha da lista de magias de Spellblade. Inteligência é sua habilidade de conjuração para esse truque.",
+      "page": 3,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.conjuracao.l2.1",
+      "name": "CONJURAÇÃO",
+      "level": 2,
+      "description": "Como parte de seus estudos mágicos, você adquire a capacidade de conjurar magias no 2º nível. As magias que aprende possuem escopo limitado, concentrando-se principalmente em aprimorar suas capacidades e devastar seus inimigos.\n\nTRUQUES\n\nNo 2º nível, você aprende dois truques adicionais à sua escolha da lista de magias de Spellblade. Você aprende truques adicionais em níveis mais altos, conforme indicado na coluna Truques Conhecidos da tabela do Spellblade. Essa coluna já inclui os truques adicionais obtidos por características da classe, como Golpe Potencializado.\n\nESPAÇOS DE MAGIA\n\nA tabela do Spellblade mostra quantos espaços de magia você possui para conjurar suas magias de 1º nível ou superior. Para conjurar uma dessas magias, você deve gastar um espaço do nível da magia ou superior. Você recupera todos os espaços gastos ao terminar um descanso longo.\n\nMAGIAS CONHECIDAS DE 1º NÍVEL OU SUPERIOR\n\nVocê conhece três magias de 1º nível à sua escolha da lista de magias de Spellblade. A coluna Magias Conhecidas da tabela mostra quando você aprende mais magias da classe.\n\nCada magia escolhida deve ser de um nível para o qual você possua espaços de magia. Por exemplo, ao alcançar o 5º nível nesta classe, você pode aprender uma nova magia de 1º ou 2º nível.\n\nAlém disso, sempre que ganha um nível nesta classe, você pode substituir uma magia de Spellblade que conheça por outra magia da lista, que também deve ser de um nível para o qual você possua espaços.\n\nHABILIDADE DE CONJURAÇÃO\n\nInteligência é sua habilidade de conjuração para as magias de Spellblade. Sua magia deriva do conhecimento prático do arcano e de seu treinamento. Você usa Inteligência sempre que uma magia se referir à sua habilidade de conjuração.\n\nCD para suas magias = 8 + seu bônus de proficiência + seu modificador de Inteligência\n\nModificador de ataque mágico = seu bônus de proficiência + seu modificador de Inteligência\n\nFOCO DE CONJURAÇÃO\n\nVocê pode usar um foco arcano como foco de conjuração para suas magias de Spellblade.",
+      "page": 3,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.deflexao-arcana.l2.1",
+      "name": "DEFLEXÃO ARCANA",
+      "level": 2,
+      "description": "No 2º nível, você aprende a magia Escudo, incorporando-a à sua Égide. Ela não conta no número de magias que você conhece. Você pode conjurá-la uma vez sem gastar um espaço de magia; depois disso, precisa gastar espaços normalmente até concluir um descanso curto ou longo.",
+      "page": 4,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.golpe-magico.l2.1",
+      "name": "GOLPE MÁGICO",
+      "level": 2,
+      "description": "A partir do 2º nível, você pode infundir magias em sua arma. Como uma ação bônus, você pode conjurar de maneira especial uma magia de Spellblade de 1º nível ou superior que tenha tempo de conjuração de 1 ação, infundindo-a em uma arma corpo a corpo em vez de produzir seu efeito imediatamente.\n\nNa próxima vez que realizar um ataque corpo a corpo com essa arma antes do fim do seu turno, a magia é conjurada contra o alvo do ataque. A magia se dissipa e falha caso você conjure outra magia antes de atacar.\n\nA interação do Golpe Mágico com as mecânicas da magia depende do efeito da magia:\n\n• Jogadas de Ataque: se a magia exigir uma jogada de ataque, corpo a corpo ou à distância, ela atinge automaticamente o alvo se o ataque com arma acertar e erra se o ataque com arma errar.\n\n• Testes de Resistência: se a magia exigir um teste de resistência, ao acertar ela causa dano como se o alvo tivesse falhado nesse teste. Se a magia possuir efeitos além de causar dano, o alvo realiza normalmente o teste contra esses efeitos, independentemente de o ataque acertar ou errar. Se a magia causar metade do dano em um sucesso, o alvo sofre metade do dano quando o ataque errar, como se tivesse passado no teste. Se a magia sempre acertar, como Mísseis Mágicos, ela atinge independentemente do resultado do ataque.\n\n• Área de Efeito: se a magia possuir uma área de efeito, essa área deve incluir o espaço ocupado pelo alvo do Golpe Mágico. A área deve ser posicionada de modo que uma de suas bordas esteja dentro do alcance da arma e, nos demais aspectos, segue as regras normais da magia para posicionamento e alcance. Outras criaturas na área resolvem a magia como se ela tivesse sido conjurada normalmente. O alvo do ataque não é afetado uma segunda vez pela área, pois o efeito contra ele já foi resolvido como parte do ataque.\n\n• Múltiplas Jogadas de Ataque: para magias com várias jogadas de ataque, como Raio Ardente ou Crepitar, apenas o resultado da primeira jogada fica vinculado ao ataque com arma. Resolva as jogadas seguintes normalmente, mas você pode ignorar a desvantagem em ataques mágicos à distância causada por estar a até 1,5 metro de criaturas hostis.\n\nVocê só pode usar Golpe Mágico com magias presentes na lista da classe Spellblade e apenas em um nível que poderia conjurar como Spellblade, embora possa usar qualquer espaço de magia que tenha disponível.\n\nESCLARECIMENTOS ADICIONAIS\n\n• Acertos Críticos: se o ataque com arma for um acerto crítico, uma magia que use uma jogada de ataque também se torna um acerto crítico. Uma magia baseada em teste de resistência apenas resolve como um acerto normal. Assim, Infligir Ferimentos poderia causar um crítico, mas Bola de Fogo não.\n\n• Sequência das Condições: efeitos que exigem que o alvo falhe em um teste de resistência acontecem depois do ataque. Por exemplo, ao usar Golpe Mágico com Imobilizar Pessoa, o teste contra a condição Paralisado é realizado após a conclusão do ataque.\n\n• Área de Efeito: uma borda da área deve estar dentro do alcance da arma, mas o ponto central não precisa estar. Ao usar Golpe Mágico com Bola de Fogo, por exemplo, você não precisa incluir a si mesmo; basta que uma borda esteja ao alcance da arma e que o alvo esteja dentro da área.",
+      "page": 3,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.egide.l2.1",
+      "name": "ÉGIDE",
+      "level": 2,
+      "description": "Também no 2º nível, você começa a formar uma Égide mágica que combina aprimoramentos físicos e poder arcano. Escolha um efeito de Égide de espaço de 1º nível, apresentado na aba Tabelas, e receba seus benefícios.\n\nAo concluir um descanso longo, você pode trocar o efeito gratuito de 1º nível escolhido ou fortalecer ainda mais sua Égide sacrificando espaços de magia. Para isso, escolha efeitos adicionais da lista e gaste um espaço do nível indicado. Esses aprimoramentos duram até o fim do seu próximo descanso longo.\n\nA soma dos níveis dos espaços sacrificados não pode exceder seu nível de Spellblade dividido por quatro, arredondado para cima. Por exemplo, no 5º nível você pode sacrificar um total de 2 níveis de espaços; no 9º nível, um total de 3 níveis.\n\nA seção de Égide no fim do documento também esclarece que você só pode sacrificar espaços obtidos pela classe Spellblade e que o limite total acompanha o maior nível de espaço de magia que a classe concede. Espaços sacrificados não podem ser recuperados até o efeito ser removido durante um descanso longo. Efeitos de Égide não são magias e não podem ser dissipados como tais.",
+      "page": 4,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.tecnica-de-spellblade.l3.1",
+      "name": "TÉCNICA DE SPELLBLADE",
+      "level": 3,
+      "description": "Ao alcançar o 3º nível, você escolhe uma especialização para seus poderes. O texto desta característica cita Mago de Batalha, Lâmina de Éter, Guardião, Caçador de Magos, Lâmina Veloz e Atirador Arcano. As páginas seguintes do mesmo PDF também apresentam Lâmina de Geada, Espada Voadora e Punho Mágico.\n\nSua escolha concede características no 3º nível e novamente nos níveis 7, 15 e 20.",
+      "page": 4,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4º nível e novamente no 8º, 12º, 16º e 19º nível, pode aumentar um valor de habilidade à sua escolha em 2, ou aumentar dois valores de habilidade à sua escolha em 1. Como normal, você não pode elevar um valor de habilidade acima de 20 usando esta característica.",
+      "page": 4,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.golpe-potencializado.l5.1",
+      "name": "GOLPE POTENCIALIZADO",
+      "level": 5,
+      "description": "A partir do 5º nível, você pode usar truques presentes na lista da classe Spellblade com sua característica Golpe Mágico.\n\nVocê aprende dois truques adicionais à sua escolha da lista de Spellblade e aprende mais um truque nos níveis 9, 13 e 17. Esses truques adicionais já estão incluídos na coluna Truques Conhecidos da tabela da classe.",
+      "page": 5,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.protecao-magica.l6.1",
+      "name": "PROTEÇÃO MÁGICA",
+      "level": 6,
+      "description": "Também no 6º nível, você ganha proficiência em testes de resistência de Sabedoria ou Carisma, à sua escolha. Além disso, você obtém sucesso automático em testes de resistência contra suas próprias magias.",
+      "page": 5,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.recuperacao-arcana.l6.1",
+      "name": "RECUPERAÇÃO ARCANA",
+      "level": 6,
+      "description": "A partir do 6º nível, você pode recuperar parte de sua energia mágica por meio de uma meditação rápida e concentrada. Ao terminar um descanso curto, recupere espaços de magia gastos cuja soma dos níveis seja igual ou inferior a um terço do seu nível de Spellblade, arredondado para baixo. Depois de usar esta característica, você não pode usá-la novamente até terminar um descanso longo.\n\nAlém disso, a qualquer momento, como uma ação bônus, você pode gastar um espaço de magia para recuperar uma quantidade de usos de Surto Arcano igual ao nível do espaço gasto.",
+      "page": 5,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.caracteristica-de-especializacao.l7.1",
+      "name": "CARACTERÍSTICA DE ESPECIALIZAÇÃO",
+      "level": 7,
+      "description": "No 7º nível, sua Técnica de Spellblade concede a característica de 7º nível descrita na subclasse escolhida.",
+      "page": 2,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.magia-arquetipica.l10.1",
+      "name": "MAGIA ARQUETÍPICA",
+      "level": 10,
+      "description": "No 10º nível, você pode conjurar uma vez cada uma das magias concedidas por sua Técnica de Spellblade sem gastar um espaço de magia. Depois de conjurar uma magia dessa forma, você não pode conjurá-la novamente dessa maneira até concluir um descanso longo.",
+      "page": 5,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.egide-expandida.l10.1",
+      "name": "ÉGIDE EXPANDIDA",
+      "level": 10,
+      "description": "A partir do 10º nível, ao terminar um descanso longo, você pode escolher um efeito adicional de Égide de 1º nível e receber seus benefícios sem gastar um espaço de magia. O efeito dura até o próximo descanso longo, quando você pode escolher outro.\n\nNo 14º nível, você também pode escolher gratuitamente um efeito de Égide de 2º nível; no 18º nível, pode escolher gratuitamente um efeito de 3º nível.\n\nObservação editorial: a tabela de progressão chama esta característica de “Égide Inata”, enquanto o texto da característica usa “Égide Expandida”. O Grimório preserva a regra descrita no texto.",
+      "page": 5,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.dano-colateral.l11.1",
+      "name": "DANO COLATERAL",
+      "level": 11,
+      "description": "A partir do 11º nível, quando você acerta uma criatura com Golpe Mágico, o alvo e as criaturas à sua escolha a até 1,5 metro dele que seriam atingidas pela mesma jogada de ataque sofrem 1d8 de dano de força adicional.\n\nEm caso de erro, o alvo sofre metade desse dano, e as criaturas próximas não sofrem dano, mesmo que a jogada de ataque fosse suficiente para atingi-las.",
+      "page": 5,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.imunidade-a-zona-de-explosao.l11.1",
+      "name": "IMUNIDADE À ZONA DE EXPLOSÃO",
+      "level": 11,
+      "description": "A partir do 11º nível, você é imune às áreas de efeito de suas próprias magias. Você não sofre dano delas e ignora todos os outros efeitos, a menos que escolha ser afetado.",
+      "page": 5,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.foco-do-surto.l14.1",
+      "name": "FOCO DO SURTO",
+      "level": 14,
+      "description": "A partir do 14º nível, se falhar em um teste de resistência de Constituição para manter a concentração em uma magia, você pode gastar um uso de Surto Arcano para obter sucesso no teste.",
+      "page": 5,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.sensibilidade-magica.l14.1",
+      "name": "SENSIBILIDADE MÁGICA",
+      "level": 14,
+      "description": "Também no 14º nível, você aprende a magia Detectar Magia, que não conta no número de magias conhecidas. Para você, Detectar Magia não exige mais concentração.\n\nEnquanto Detectar Magia estiver ativa, você ganha proficiência na perícia Arcanismo. Se já for proficiente, ganha especialização durante a magia, dobrando seu bônus de proficiência em testes de Arcanismo.",
+      "page": 6,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.caracteristica-de-especializacao.l15.1",
+      "name": "CARACTERÍSTICA DE ESPECIALIZAÇÃO",
+      "level": 15,
+      "description": "No 15º nível, sua Técnica de Spellblade concede a característica de 15º nível descrita na subclasse escolhida.",
+      "page": 2,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.controle-da-zona-de-explosao.l18.1",
+      "name": "CONTROLE DA ZONA DE EXPLOSÃO",
+      "level": 18,
+      "description": "No 18º nível, quando usa Golpe Mágico para conjurar uma magia que afeta uma área, você pode gastar um uso de Surto Arcano para estender sua Imunidade à Zona de Explosão a um número de aliados igual ao seu modificador de Inteligência.\n\nEssa proteção dura somente até o início do seu próximo turno. Depois disso, os aliados voltam a ser afetados por quaisquer efeitos contínuos da magia.",
+      "page": 6,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spellblade.feature.caracteristica-de-especializacao.l20.1",
+      "name": "CARACTERÍSTICA DE ESPECIALIZAÇÃO",
+      "level": 20,
+      "description": "No 20º nível, sua Técnica de Spellblade concede a característica de 20º nível descrita na subclasse escolhida.",
+      "page": 2,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Spellblade",
+    "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+    "sourcePage": 2,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "cantrips",
+        "label": "Truques Conhecidos",
+        "shortLabel": "Truques"
+      },
+      {
+        "key": "spellsKnown",
+        "label": "Magias Conhecidas"
+      },
+      {
+        "key": "slot1",
+        "label": "1º",
+        "shortLabel": "1º",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot2",
+        "label": "2º",
+        "shortLabel": "2º",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot3",
+        "label": "3º",
+        "shortLabel": "3º",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot4",
+        "label": "4º",
+        "shortLabel": "4º",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot5",
+        "label": "5º",
+        "shortLabel": "5º",
+        "group": "Espaços de Magia"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Surto Arcano (2 usos)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.spellblade.feature.surto-arcano.l1.1"
+            ]
+          },
+          {
+            "label": "Truque Mágico",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.truque-magico.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 1,
+        "spellsKnown": "—",
+        "slot1": "—",
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Conjuração",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.conjuracao.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Golpe Mágico",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.golpe-magico.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Égide",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.egide.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Deflexão Arcana",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.deflexao-arcana.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "spellsKnown": 3,
+        "slot1": 2,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Técnica de Spellblade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.tecnica-de-spellblade.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "spellsKnown": 4,
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "spellsKnown": 4,
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Golpe Potencializado",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.golpe-potencializado.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Surto Arcano (3 usos)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.spellblade.feature.surto-arcano.l1.1"
+            ]
+          }
+        ],
+        "cantrips": 5,
+        "spellsKnown": 5,
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Recuperação Arcana",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.recuperacao-arcana.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Proteção Mágica",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.protecao-magica.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 5,
+        "spellsKnown": 5,
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Especialização",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.caracteristica-de-especializacao.l7.1",
+              "class.spellblade.feature.caracteristica-de-especializacao.l15.1",
+              "class.spellblade.feature.caracteristica-de-especializacao.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 5,
+        "spellsKnown": 6,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 5,
+        "spellsKnown": 6,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Surto Arcano (4 usos)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.spellblade.feature.surto-arcano.l1.1"
+            ]
+          }
+        ],
+        "cantrips": 6,
+        "spellsKnown": 7,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Magia Arquetípica",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.magia-arquetipica.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Égide Expandida (1º nível)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.spellblade.feature.egide.l2.1",
+              "class.spellblade.feature.egide-expandida.l10.1"
+            ]
+          }
+        ],
+        "cantrips": 6,
+        "spellsKnown": 7,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Dano Colateral",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.dano-colateral.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Imunidade à Zona de Explosão",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.imunidade-a-zona-de-explosao.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 6,
+        "spellsKnown": 8,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 6,
+        "spellsKnown": 8,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Surto Arcano (5 usos)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.spellblade.feature.surto-arcano.l1.1"
+            ]
+          }
+        ],
+        "cantrips": 7,
+        "spellsKnown": 9,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Foco do Surto",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.foco-do-surto.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Sensibilidade Mágica",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.sensibilidade-magica.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Égide Expandida (2º nível)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.spellblade.feature.egide.l2.1",
+              "class.spellblade.feature.egide-expandida.l10.1"
+            ]
+          }
+        ],
+        "cantrips": 7,
+        "spellsKnown": 9,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Especialização",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.caracteristica-de-especializacao.l7.1",
+              "class.spellblade.feature.caracteristica-de-especializacao.l15.1",
+              "class.spellblade.feature.caracteristica-de-especializacao.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 7,
+        "spellsKnown": 10,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 7,
+        "spellsKnown": 10,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Surto Arcano (6 usos)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.spellblade.feature.surto-arcano.l1.1"
+            ]
+          }
+        ],
+        "cantrips": 8,
+        "spellsKnown": 11,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Dano Colateral",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.dano-colateral.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Égide Expandida (3º nível)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.spellblade.feature.egide.l2.1",
+              "class.spellblade.feature.egide-expandida.l10.1"
+            ]
+          },
+          {
+            "label": "Controle da Zona de Explosão",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.controle-da-zona-de-explosao.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 8,
+        "spellsKnown": 11,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 8,
+        "spellsKnown": 12,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Característica de Especialização",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spellblade.feature.caracteristica-de-especializacao.l7.1",
+              "class.spellblade.feature.caracteristica-de-especializacao.l15.1",
+              "class.spellblade.feature.caracteristica-de-especializacao.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 8,
+        "spellsKnown": 12,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 9
+    },
+    "options": [
+      {
+        "grimorioId": "spellblade-battlemage",
+        "identifier": "spellblade-battlemage",
+        "name": "Mago de Batalha",
+        "originalName": "Battlemage",
+        "source": {
+          "sourceId": "kibbles",
+          "title": "Spellblade v1.3 — KibblesTasty — Mago de Batalha",
+          "pages": "6",
+          "chapter": "Técnicas de Spellblade",
+          "page": 6
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "spellblade-aether-blade",
+        "identifier": "spellblade-aether-blade",
+        "name": "Lâmina de Éter",
+        "originalName": "Aether Blade",
+        "source": {
+          "sourceId": "kibbles",
+          "title": "Spellblade v1.3 — KibblesTasty — Lâmina de Éter",
+          "pages": "7–8",
+          "chapter": "Técnicas de Spellblade",
+          "page": 7
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "spellblade-guardian",
+        "identifier": "spellblade-guardian",
+        "name": "Guardião",
+        "originalName": "Guardian",
+        "source": {
+          "sourceId": "kibbles",
+          "title": "Spellblade v1.3 — KibblesTasty — Guardião",
+          "pages": "8",
+          "chapter": "Técnicas de Spellblade",
+          "page": 8
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "spellblade-swiftblade",
+        "identifier": "spellblade-swiftblade",
+        "name": "Lâmina Veloz",
+        "originalName": "Swiftblade",
+        "source": {
+          "sourceId": "kibbles",
+          "title": "Spellblade v1.3 — KibblesTasty — Lâmina Veloz",
+          "pages": "9",
+          "chapter": "Técnicas de Spellblade",
+          "page": 9
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "spellblade-mage-hunter",
+        "identifier": "spellblade-mage-hunter",
+        "name": "Caçador de Magos",
+        "originalName": "Mage Hunter",
+        "source": {
+          "sourceId": "kibbles",
+          "title": "Spellblade v1.3 — KibblesTasty — Caçador de Magos",
+          "pages": "10",
+          "chapter": "Técnicas de Spellblade",
+          "page": 10
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "spellblade-spellshot",
+        "identifier": "spellblade-spellshot",
+        "name": "Atirador Arcano",
+        "originalName": "Spellshot",
+        "source": {
+          "sourceId": "kibbles",
+          "title": "Spellblade v1.3 — KibblesTasty — Atirador Arcano",
+          "pages": "11–12",
+          "chapter": "Técnicas de Spellblade",
+          "page": 11
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "spellblade-rimeblade",
+        "identifier": "spellblade-rimeblade",
+        "name": "Lâmina de Geada",
+        "originalName": "Rimeblade",
+        "source": {
+          "sourceId": "kibbles",
+          "title": "Spellblade v1.3 — KibblesTasty — Lâmina de Geada",
+          "pages": "12–13",
+          "chapter": "Técnicas de Spellblade",
+          "page": 12
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "spellblade-flying-sword",
+        "identifier": "spellblade-flying-sword",
+        "name": "Espada Voadora",
+        "originalName": "Flying Sword",
+        "source": {
+          "sourceId": "kibbles",
+          "title": "Spellblade v1.3 — KibblesTasty — Espada Voadora",
+          "pages": "13–14",
+          "chapter": "Técnicas de Spellblade",
+          "page": 13
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "spellblade-spellfist",
+        "identifier": "spellblade-spellfist",
+        "name": "Punho Mágico",
+        "originalName": "Spellfist",
+        "source": {
+          "sourceId": "kibbles",
+          "title": "Spellblade v1.3 — KibblesTasty — Punho Mágico",
+          "pages": "15–16",
+          "chapter": "Técnicas de Spellblade",
+          "page": 15
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

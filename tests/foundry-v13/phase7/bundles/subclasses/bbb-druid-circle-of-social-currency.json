@@ -1,0 +1,168 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-druid-circle-of-social-currency",
+    "identifier": "bbb-druid-circle-of-social-currency",
+    "name": "Círculo da Moeda Social",
+    "originalName": "Circle of Social Currency",
+    "aliases": [
+      "Circle of Social Currency"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "98–99",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 98
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Um druida que trata ruas e cidades modernas como sua floresta e se adapta à vida urbana.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-circulo-da-moeda-social",
+        "title": "Magias do Círculo da Moeda Social",
+        "page": 98,
+        "description": "Magias do círculo sempre preparadas, sem contar no limite normal de magias preparadas.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Acalmar Emoções; Sugestão"
+          },
+          {
+            "level": "5º",
+            "spells": "Prado Livre; Conter Atacante"
+          },
+          {
+            "level": "7º",
+            "spells": "Porta Dimensional; Localizar Criatura"
+          },
+          {
+            "level": "9º",
+            "spells": "Despertar; Criar Passagem"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 98
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-druid-circle-of-social-currency.feature.magias-do-circulo.l2.1",
+      "name": "MAGIAS DO CÍRCULO",
+      "level": 2,
+      "description": "Sua ligação com a terra e com as comunidades concede as magias abaixo. Elas contam como magias de druida para você, estão sempre preparadas e não contam no limite normal de magias preparadas.\n\n3º nível: acalmar emoções, sugestão.\n5º nível: prado livre, deter atacante.\n7º nível: porta dimensional, localizar criatura.\n9º nível: despertar, passagem invisível.",
+      "page": 98,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-social-currency.feature.ferramentas-de-conexao.l2.1",
+      "name": "FERRAMENTAS DE CONEXÃO",
+      "level": 2,
+      "description": "Você ganha proficiência em Persuasão e Enganação e pode usar Sabedoria, em vez de Carisma, para determinar seus bônus nessas perícias. Enquanto estiver em qualquer agrupamento de pessoas que possa ser considerado uma comunidade, você compreende e fala os idiomas comuns utilizados por aquela comunidade.",
+      "page": 98,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-social-currency.feature.forma-selvagem-impressa.l6.1",
+      "name": "FORMA SELVAGEM IMPRESSA",
+      "level": 6,
+      "description": "Depois de observar por ao menos 1 minuto uma criatura humanoide que não seja mais de uma categoria de tamanho maior ou menor que você e de ouvi-la falar, você memoriza seus maneirismos, voz e hábitos. Pode gastar um uso de Forma Selvagem para transformar-se por 1 hora numa aproximação física dessa criatura, ou voltar ao normal como ação. Você mantém suas estatísticas, exceto pelas alterações abaixo, que não seguem as regras normais de Forma Selvagem salvo quando indicado:\n\n• Ganha os sentidos do alvo e mantém os seus; sentidos iguais se sobrepõem.\n• Seu tamanho e tipo(s) de criatura tornam-se os do alvo.\n• Força, Destreza e Constituição são substituídas pelos valores do alvo. Se a Constituição dele for maior, ganha 5 PV temporários por ponto de diferença, mantidos até a transformação terminar ou serem perdidos.\n• Se o bônus de proficiência do alvo for maior, usa o dele.\n• Não pode usar Ações de Covil nem Ações Lendárias do alvo.\n• Pode falar e compreender seus próprios idiomas e os do alvo, imitando quase perfeitamente sua fala e maneirismos.\n• Pode conservar equipamento que ainda consiga usar; o restante cai ao chão ou se funde a você conforme Forma Selvagem.\n\nSe o ND ou nível do alvo for maior que seu nível, faça um teste de atributo de conjuração com CD 10 + o ND/nível dele. Em falha, a transformação não ocorre e o uso de Forma Selvagem é perdido.",
+      "page": 98,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-social-currency.feature.guardiao-de-detritos.l10.1",
+      "name": "GUARDIÃO DE DETRITOS",
+      "level": 10,
+      "description": "Você sempre tem animar objetos preparado como magia de druida, sem contar em suas magias preparadas. Uma vez por Descanso Longo, pode conjurá-la sem espaço nem componentes.\n\nCONJURAÇÃO SUPERIOR SUTIL. Esse uso gratuito é tratado como conjurado usando o maior espaço de magia de druida a que você tenha acesso, e as criaturas resultantes contam como feéricas em vez de construtos. Independentemente do tamanho, seus objetos animados têm CA igual ao seu atributo de conjuração se essa CA seria maior, e seus ataques usam seu modificador de ataque mágico se ele for maior.\n\nOBJETOS COMBINADOS. Ao conjurar, pode fundir objetos menores: cada dois objetos combinados tornam-se um objeto uma categoria de tamanho maior; amalgamações podem ser combinadas novamente. Eles assumem a forma de criaturas naturais feitas de objetos e detritos e surgem centrados no espaço de um dos componentes.\n\nHABITAR OBJETO. Se criar um objeto combinado maior que você e estiver adjacente a ele, pode usar ação bônus e gastar 1,5 m de movimento para abrigar-se dentro dele. Você recebe cobertura total contra tudo fora dele e enxerga para fora com seus sentidos. Enquanto estiver dentro, não pode se mover e pode usar sua ação para fazê-lo realizar dois ataques contra um alvo escolhido. Também pode conjurar magias de toque através dele.",
+      "page": 99,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-social-currency.feature.misturar-se-a-multidao.l14.1",
+      "name": "MISTURAR-SE À MULTIDÃO",
+      "level": 14,
+      "description": "Se houver ao menos três outras criaturas não hostis a até 3 m — bestas, feéricos, humanoides ou criaturas que compartilhem um tipo de criatura com você —, você tem vantagem em jogadas de ataque e salvaguardas, pois se mistura à multidão e torna suas ações difíceis de identificar.",
+      "page": 99,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

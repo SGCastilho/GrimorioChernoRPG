@@ -1,0 +1,1237 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+    "pages": "77–82",
+    "chapter": "Capítulo 3: Classes",
+    "page": 78
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Com olhos brilhando dourado, uma humana estica suas mãos e libera o fogo dracônico que queima em suas veias. A medida que um inferno consome seus oponentes, asas de couro surgem nas suas costas e ela ergue-se no ar.\n\nOs longos cabelos balançam com a conjuração do vento, um meio elfo abre seus braços totalmente e joga a cabeça para trás. Erguendo-o momentaneamente do chão, uma onda de magia surge sobre ele, por meio dele e, fora dele, uma poderosa explosão de relâmpago.\n\nEsgueirando-se atrás de uma estalagmite, uma halfling aponta seu dedo em um troglodita em investida. Uma explosão de chamas é liberada através do seu dedo e atinge a criatura. Ela toma cobertura atrás da formação rochosa com um sorriso, sem saber que sua magia selvagem deixou sua pele com um brilho azulado.\n\nOs feiticeiros carregam um patrimônio mágico conferido a eles por uma linhagem exótica, alguma influência de outro mundo ou exposição a forças cósmicas desconhecidas. Não é possível estudar feitiçaria como se aprende um idioma, assim como não se aprende a viver uma vida lendária. Ninguém escolhe a feitiçaria: os poderes escolhem o feiticeiro.\n\nA magia é parte de todo feiticeiro, inundando corpo, mente e espirito com um poder latente que espera para ser dominado. Alguns feiticeiro carregam magia que emerge de uma antiga linhagem infundida com a magia dos dragões. Outros carregam uma magia bruta, incontrolável dentro de si, uma tormenta caótica que se manifesta de formas inexplicáveis.\n\nA aparência dos poderes de feitiçaria são vastamente imprevisíveis. Algumas linhagens dracônicas produzem apenas um feiticeiro por geração, porém, em outras linhas de descendência, todos os indivíduos serão feiticeiros. A maior parte do tempo, os talentos de feitiçaria aparecem aparentemente ao acaso. Alguns feiticeiros não conseguem determinar a origem do seu poder, enquanto outros o relacionam com estranhos eventos de suas vidas. O toque de um corruptor, a bênção de uma dríade no nascimento de um bebê ou experimentar a água de uma fonte misteriosa podem conceder o dom da feitiçaria. Também é possível adquirir esse dom de uma divindade da magia, da exposição as forças elementais dos Planos Interiores ou do caos alucinante do Limbo ou ao vislumbrar o funcionamento interno da realidade.\n\nOs feiticeiros não veem serventia em grimórios ou antigos tomos de conhecimento místico buscados pelos magos, nem buscam um patrono para conceder-lhes suas magias, como um bruxo faz. Ao aprender a explorar e canalizar sua própria magia inata, eles descobrem novas e incríveis formas de liberar esse poder.\n\nOs feiticeiros são raros no mundo e é incomum encontrar um feiticeiro que não esteja envolvido na vida de aventuras de alguma forma. Pessoas com poder mágico fluindo em suas veias descobrem cedo que o poder não gosta de ficar quieto. A magia de um feiticeiro gosta de ser exercida e tem uma tendência de fluir de maneiras imprevisíveis se não for chamada.\n\nMuitas vezes, os feiticeiros tem motivações obscuras ou quixotescas que os leva a aventuras. Alguns buscam uma maior compreensão da força mágica que os infunde ou a resposta do mistério de sua origem. Outros, esperam encontrar uma forma de se livrar dele ou de liberar seu potencial máximo. Independente dos seus objetivos, os feiticeiros são tão uteis para um grupo de aventureiros quanto os magos, compensando a falta de variedade de conhecimento mágico com uma enorme flexibilidade no uso das magias que eles conhecem.",
+    "hitDice": {
+      "raw": "d6",
+      "mode": "standard",
+      "number": 1,
+      "faces": 6
+    },
+    "primaryAbility": {
+      "raw": "Carisma",
+      "abilityKeys": [
+        "cha"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Constituição, Carisma",
+        "abilityKeys": [
+          "con",
+          "cha"
+        ]
+      },
+      "armor": "Nenhuma",
+      "weapons": "Adagas, dardos, fundas, bordões e bestas leves",
+      "tools": "Nenhuma",
+      "skills": "Escolha duas: Arcanismo, Enganação, Intuição, Intimidação, Persuasão ou Religião"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 78,
+      "text": "Como um feiticeiro, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d6 por nível de feiticeiro Pontos de Vida no 1° Nível: 6 + seu modificador de\n\nConstituição Pontos de Vida nos Níveis Seguintes: 1d6 (ou 4) + seu\n\nmodificador de Constituição por nível de feiticeiro após o 1° PROFICIÊNCIAS Armaduras: Nenhuma Armas: Adagas, dardos, fundas, bordões e bestas leves Ferramentas: Nenhuma Testes de Resistência: Constituição, Carisma Perícias: Escolha duas dentre Arcanismo, Enganação,\n\nIntuição, Intimidação, Persuasão e Religião EQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) uma besta leve e 20 virotes ou (b) qualquer arma\n\nsimples\n• (a) uma bolsa de componentes ou (b) um foco arcano\n• (a) um pacote de explorador ou (b) um pacote de\n\naventureiro"
+    },
+    "overview": [
+      {
+        "title": "FEITICEIRO",
+        "page": 77,
+        "text": "Com olhos brilhando dourado, uma humana estica suas mãos e libera o fogo dracônico que queima em suas veias. A medida que um inferno consome seus oponentes, asas de couro surgem nas suas costas e ela ergue-se no ar.\n\nOs longos cabelos balançam com a conjuração do vento, um meio elfo abre seus braços totalmente e joga a cabeça para trás. Erguendo-o momentaneamente do chão, uma onda de magia surge sobre ele, por meio dele e, fora dele, uma poderosa explosão de relâmpago.\n\nEsgueirando-se atrás de uma estalagmite, uma halfling aponta seu dedo em um troglodita em investida. Uma explosão de chamas é liberada através do seu dedo e atinge a criatura. Ela toma cobertura atrás da formação rochosa com um sorriso, sem saber que sua magia selvagem deixou sua pele com um brilho azulado.\n\nOs feiticeiros carregam um patrimônio mágico conferido a eles por uma linhagem exótica, alguma influência de outro mundo ou exposição a forças cósmicas desconhecidas. Não é possível estudar feitiçaria como se aprende um idioma, assim como não se aprende a viver uma vida lendária. Ninguém escolhe a feitiçaria: os poderes escolhem o feiticeiro."
+      },
+      {
+        "title": "MAGIA BRUTA",
+        "page": 77,
+        "text": "A magia é parte de todo feiticeiro, inundando corpo, mente e espirito com um poder latente que espera para ser dominado. Alguns feiticeiro carregam magia que emerge de uma antiga linhagem infundida com a magia dos dragões. Outros carregam uma magia bruta, incontrolável dentro de si, uma tormenta caótica que se manifesta de formas inexplicáveis.\n\nA aparência dos poderes de feitiçaria são vastamente imprevisíveis. Algumas linhagens dracônicas produzem apenas um feiticeiro por geração, porém, em outras linhas de descendência, todos os indivíduos serão feiticeiros. A maior parte do tempo, os talentos de feitiçaria aparecem aparentemente ao acaso. Alguns feiticeiros não conseguem determinar a origem do seu poder, enquanto outros o relacionam com estranhos eventos de suas vidas. O toque de um corruptor, a bênção de uma dríade no nascimento de um bebê ou experimentar a água de uma fonte misteriosa podem conceder o dom da feitiçaria. Também é possível adquirir esse dom de uma divindade da magia, da exposição as forças elementais dos Planos Interiores ou do caos alucinante do Limbo ou ao vislumbrar o funcionamento interno da realidade.\n\nOs feiticeiros não veem serventia em grimórios ou antigos tomos de conhecimento místico buscados pelos magos, nem buscam um patrono para conceder-lhes suas magias, como um bruxo faz. Ao aprender a explorar e canalizar sua própria magia inata, eles descobrem novas e incríveis formas de liberar esse poder."
+      },
+      {
+        "title": "PODERES INEXPLICÁVEIS",
+        "page": 77,
+        "text": "Os feiticeiros são raros no mundo e é incomum encontrar um feiticeiro que não esteja envolvido na vida de aventuras de alguma forma. Pessoas com poder mágico fluindo em suas veias descobrem cedo que o poder não gosta de ficar quieto. A magia de um feiticeiro gosta de ser exercida e tem uma tendência de fluir de maneiras imprevisíveis se não for chamada.\n\nMuitas vezes, os feiticeiros tem motivações obscuras ou quixotescas que os leva a aventuras. Alguns buscam uma maior compreensão da força mágica que os infunde ou a resposta do mistério de sua origem. Outros, esperam encontrar uma forma de se livrar dele ou de liberar seu potencial máximo. Independente dos seus objetivos, os feiticeiros são tão uteis para um grupo de aventureiros quanto os magos, compensando a falta de variedade de conhecimento mágico com uma enorme flexibilidade no uso das magias que eles conhecem."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM FEITICEIRO",
+        "page": 78,
+        "text": "A pergunta mais importante a se considerar quando estiver criando seu feiticeiro é a origem do seu poder. Quando começar o seu personagem, você irá escolher uma origem que o vincula a uma linhagem dracônica ou a influência da magia selvagem, mas a fonte exata do seu poder cabe a você decidir. É uma maldição de família, passada a você de um ancestral distante? Ou algum evento extraordinário não apenas abençoou você com magia inerente mas também deixou uma cicatriz?\n\nComo você se sente em relação ao poder mágico que corre através de você? Você o abraçou, tentando dominá-lo ou deleita-se com sua natureza imprevisível? Ele é uma bênção ou uma maldição? Você o buscava ou foi ele que te encontrou? Você teve a opção de recusá-lo ou você queria ter tido? O que você pretende fazer com ele? Talvez você creia que esse poder lhe foi dado para algum propósito maior. Ou você pode decidir que esse poder lhe dá o direito de fazer o que quiser, de tomar o que você quer daqueles que não possuem tal poder. Talvez seu poder ligue você a um poderoso individuo no mundo – a criatura feérica que abençoou você no nascimento, o dragão que colocou uma gota de seu sangue em suas veias, o lich que criou você através de um experimento ou a divindade que escolheu você para carregar seu poder."
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 78,
+        "text": "Você pode construir um feiticeiro rapidamente seguindo essas sugestões. Primeiro, coloque seu valor de habilidade mais alto em Carisma, seguido de Constituição. Segundo, escolha o antecedente eremita. Terceiro, escolha os truques luz, prestidigitação, raio de gelo e toque chocante, além das seguintes magias de 1° nível: escudo arcano e misseis mágicos."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.origens-de-feiticaria",
+        "title": "ORIGENS DE FEITIÇARIA",
+        "page": 80,
+        "text": "Diferentes feiticeiros possuem diferentes origens para sua magia inata. Apesar de muitas variações existirem, a maioria dessas origens caem em duas categorias: uma linhagem dracônica e magia selvagem.",
+        "sourceTitle": ""
+      }
+    ],
+    "presentation": {
+      "sigilKey": "sorcerer",
+      "color": "#b75a6d"
+    }
+  },
+  "features": [
+    {
+      "key": "class.sorcerer.feature.conjuracao.l1.1",
+      "name": "CONJURAÇÃO",
+      "level": 1,
+      "description": "Um evento do seu passado ou na vida de um parente ou ancestral, deixou uma marca indelével em você, infundindo você com magia arcana. A fonte desse poder, independente da sua origem, flui em suas magias. Veja o capítulo 10 para as regras gerais de conjuração e o capítulo 11 para a lista de magias de feiticeiro.\n\nTRUQUES Você conhece quatro truques, à sua escolha, da lista de magias de feiticeiro. Você aprende truques de feiticeiro adicionais, à sua escolha, em níveis mais altos, como mostrado na coluna Truques Conhecidos da tabela O Feiticeiro.\n\nESPAÇOS DE MAGIA A tabela O Feiticeiro mostra quantos espaços de magia de 1° nível e superiores você possui disponíveis para conjuração. Para conjurar uma dessas magias, você deve gastar uma espaço de magia do nível da magia ou superior. Você recobra todos os espaços de magia gastos quando você completa um descanso longo.\n\nPor exemplo, se você quiser conjurar a magia de 1° nível mãos flamejantes e você tiver um espaço de magia de 1° nível e um de 2° nível disponíveis, você poderá conjurar mãos flamejantes usando qualquer dos dois espaços.\n\nMAGIAS CONHECIDAS DE 1° NÍVEL E SUPERIORES Você conhece duas magias de 1° nível, à sua escolha, da lista de magias de feiticeiro.\n\nA coluna Magias Conhecidas na tabela O Feiticeiro mostra quando você aprende mais magias de feiticeiro, à sua escolha. Cada uma dessas magias deve ser de um nível a que você tenha acesso, como mostrado na tabela. Por exemplo, quando você alcança o 3° nível da classe, você pode aprender uma nova magia de 1° ou 2° nível.\n\nAlém disso, quando você adquire um nível nessa classe, você pode escolher uma magia de feiticeiro que você conheça e substituí-la por outra magia da lista de magias de feiticeiro, que também deve ser de um nível ao qual você tenha espaços de magia.\n\nHABILIDADE DE CONJURAÇÃO Carisma é a sua habilidade de conjuração para suas magias de feiticeiro, já que o poder da sua magia depende da sua capacidade de projetar sua vontade no mundo. Use seu Carisma sempre que alguma magia se referir à sua habilidade de conjurar magias. Além disso, você usa o seu modificador de Carisma para definir a CD dos testes de resistência para as magias de feiticeiro que você conjura e quando você realiza uma jogada de ataque com uma magia.\n\nCD para suas magias = 8 + bônus de proficiência +\n\nseu modificador de Carisma\n\nModificador de ataque de magia = seu bônus de proficiência +\n\nseu modificador de Carisma FOCO DE CONJURAÇÃO Você pode usar um foco arcano (encontrado no capítulo 5) como foco de conjuração das suas magias de feiticeiro.",
+      "page": 79,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.origem-de-feiticaria.l1.1",
+      "name": "ORIGEM DE FEITIÇARIA",
+      "level": 1,
+      "description": "Escolha uma origem de feitiçaria, que descreve a fonte do seu poder mágico inato: Linhagem Dracônica ou Magia Selvagem, ambos detalhados no final da descrição da classe.\n\nSua escolha lhe confere características quando você a escolhe, no 1° nível e novamente no 6°, 14° e 18° nível.",
+      "page": 79,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.fonte-de-magia.l2.1",
+      "name": "FONTE DE MAGIA",
+      "level": 2,
+      "description": "No 2° nível, você alcança uma profunda fonte de magia dentro de você. Essa fonte é representada pelos pontos de feitiçaria, que permitem que você crie uma variedade de efeitos mágicos.",
+      "page": 79,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.pontos-de-feiticaria.l2.1",
+      "name": "PONTOS DE FEITIÇARIA",
+      "level": 2,
+      "description": "Você tem 2 pontos de feitiçaria e ganha mais a medida que alcança níveis elevados, como mostrado na coluna Pontos de Feitiçaria da tabela O Feiticeiro. Você nunca poderá ter mais pontos de feitiçaria que os mostrados na tabela para o seu nível. Você recupera todos os pontos de feitiçaria gastos quando termina um descanso longo.",
+      "page": 79,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.conjuracao-flexivel.l2.1",
+      "name": "CONJURAÇÃO FLEXÍVEL",
+      "level": 2,
+      "description": "Você pode usar seus pontos de feitiçaria para ganhar novos espaços de magia ou sacrificar espaços de magia para ganhar pontos de magia adicionais. Você aprende novas formas de usar seus pontos de feitiçaria quando alcança níveis elevados. Os espaços de magia criados desaparecem ao final de um descanso longo.\n\nCriando Espaços de Magia. Você pode transformar pontos de fetiçaria disponíveis em um espaço de magia, com uma ação bônus, no seu turno. A tabela Criando Espaços de Magia mostra o custo para criar um espaço de magia de determinado nível. Você não pode criar espaços de magia acima do 5° nível.",
+      "page": 79,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.criando-espacos-de-magia.l0.1",
+      "name": "CRIANDO ESPAÇOS DE MAGIA",
+      "level": null,
+      "description": "Nível de Espaço de Magia Custo de Pontos de Feitiçaria 1° 2 2° 3 3° 5 4° 6 5° 7\n\nConvertendo um Espaço de Magia em Pontos de Feitiçaria. Com uma ação bônus, no seu turno, você pode gastar um espaço de magia disponível e ganhar uma quantidade de pontos de feitiçaria igual ao nível do espaço.",
+      "page": 79,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.metamagica.l3.1",
+      "name": "METAMÁGICA",
+      "level": 3,
+      "description": "No 3° nível, você adquire a habilidade de distorcer suas magias para se adequarem às suas necessidades. Você ganha duas das seguintes opções de Metamágica, à sua escolha. Você adquire outra no 10° e 17° nível.\n\nVocê pode usar apenas uma opção de Metamágica em uma magia quando a conjura, a não ser que esteja descrito o contrário.",
+      "page": 79,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.magia-acelerada.l0.1",
+      "name": "MAGIA ACELERADA",
+      "level": null,
+      "description": "Quando você conjurar uma magia que tenha um tempo de conjuração de 1 ação, você pode gastar 2 pontos de feitiçaria para mudar o tempo de conjuração para 1 ação bônus para essa magia.",
+      "page": 79,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.magia-aumentada.l0.1",
+      "name": "MAGIA AUMENTADA",
+      "level": null,
+      "description": "Quando você conjura uma magia que obriga uma criatura a realizar um teste de resistência contra o seu efeito, você\n\npode gastar 3 pontos de feitiçaria para dar desvantagem a um alvo da magia no primeiro teste de resistência feito contra ela.",
+      "page": 79,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.magia-cuidadosa.l0.1",
+      "name": "MAGIA CUIDADOSA",
+      "level": null,
+      "description": "Quando você conjurar uma magia que obriga outras criaturas a realizarem um teste de resistência, você pode proteger algumas dessas criaturas da força total da magia. Para tanto, você gasta 1 ponto de feitiçaria e escolhe um número dessas criaturas até o seu modificador de Carisma (mínimo de uma criatura). Uma criatura escolhida passa automaticamente no teste de resistência contra a magia.",
+      "page": 80,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.magia-distante.l0.1",
+      "name": "MAGIA DISTANTE",
+      "level": null,
+      "description": "Quando você conjurar uma magia que tenha distância de 1,5 metro ou maior, você pode gastar 1 ponto de feitiçaria para dobrar o alcance da magia.\n\nQuando você conjura uma magia com alcance de toque, você pode gastar 1 ponto de feitiçaria para mudar o alcance da magia para 9 metros.",
+      "page": 80,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.magia-duplicada.l0.1",
+      "name": "MAGIA DUPLICADA",
+      "level": null,
+      "description": "Quando você conjurar uma magia que seja incapaz de ter mais de uma criatura como alvo no nível atual dela e não possua alcance pessoal, você pode gastar um número de pontos de feitiçaria igual ao nível da magia para ter uma segunda criatura, no alcance da magia, como alvo (1 ponto de feitiçaria se a magia for um truque).",
+      "page": 80,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.magia-estendida.l0.1",
+      "name": "MAGIA ESTENDIDA",
+      "level": null,
+      "description": "Quando você conjurar uma magia que tenha duração de 1 minuto ou maior, você pode gastar 1 ponto de feitiçaria para dobrar sua duração, até uma duração máxima de 24 horas.",
+      "page": 80,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.magia-potencializada.l0.1",
+      "name": "MAGIA POTENCIALIZADA",
+      "level": null,
+      "description": "Quando você rola o dano de uma magia, você pode gastar 1 ponto de feitiçaria para jogar novamente um número de dados de dano, até seu modificador de Carisma (mínimo de um). Você deve usar a nova rolagem.\n\nVocê pode usar Magia Potencializada mesmo que você já tenha usado uma opção diferente de Metamágica durante a conjuração da magia.",
+      "page": 80,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.magia-sutil.l0.1",
+      "name": "MAGIA SUTIL",
+      "level": null,
+      "description": "Quando você conjurar uma magia, você pode gastar 1 ponto de feitiçaria para fazê-lo sem qualquer componente somático ou verbal.",
+      "page": 80,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.",
+      "page": 80,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sorcerer.feature.restauracao-mistica.l20.1",
+      "name": "RESTAURAÇÃO MÍSTICA",
+      "level": 20,
+      "description": "No 20° nível, você recupera 4 pontos de feitiçaria gastos sempre que você terminar um descanso curto.",
+      "page": 80,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Feiticeiro",
+    "sourceTitle": "",
+    "sourcePage": 78,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "sorceryPoints",
+        "label": "Pontos de Feitiçaria"
+      },
+      {
+        "key": "cantrips",
+        "label": "Truques Conhecidos",
+        "shortLabel": "Truques"
+      },
+      {
+        "key": "spellsKnown",
+        "label": "Magias Conhecidas"
+      },
+      {
+        "key": "slot1",
+        "label": "1º",
+        "title": "Espaços de magia de 1º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot2",
+        "label": "2º",
+        "title": "Espaços de magia de 2º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot3",
+        "label": "3º",
+        "title": "Espaços de magia de 3º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot4",
+        "label": "4º",
+        "title": "Espaços de magia de 4º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot5",
+        "label": "5º",
+        "title": "Espaços de magia de 5º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot6",
+        "label": "6º",
+        "title": "Espaços de magia de 6º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot7",
+        "label": "7º",
+        "title": "Espaços de magia de 7º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot8",
+        "label": "8º",
+        "title": "Espaços de magia de 8º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot9",
+        "label": "9º",
+        "title": "Espaços de magia de 9º nível",
+        "group": "Espaços de Magia"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Conjuração",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.conjuracao.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Origem de Feitiçaria",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.origem-de-feiticaria.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 2,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": "—",
+        "cantrips": 4,
+        "spellsKnown": 2
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Fonte de Magia",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.fonte-de-magia.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 2,
+        "cantrips": 4,
+        "spellsKnown": 3
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Metamágica",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.metamagica.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 3,
+        "cantrips": 4,
+        "spellsKnown": 4
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 4,
+        "cantrips": 5,
+        "spellsKnown": 5
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 5,
+        "cantrips": 5,
+        "spellsKnown": 6
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Origem de Feitiçaria",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.sorcerer.feature.origem-de-feiticaria.l1.1"
+            ]
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 6,
+        "cantrips": 5,
+        "spellsKnown": 7
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 7,
+        "cantrips": 5,
+        "spellsKnown": 8
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 8,
+        "cantrips": 5,
+        "spellsKnown": 9
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 9,
+        "cantrips": 5,
+        "spellsKnown": 10
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Metamágica",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.metamagica.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 10,
+        "cantrips": 6,
+        "spellsKnown": 11
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 11,
+        "cantrips": 6,
+        "spellsKnown": 12
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 12,
+        "cantrips": 6,
+        "spellsKnown": 12
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 13,
+        "cantrips": 6,
+        "spellsKnown": 13
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Origem de Feitiçaria",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.sorcerer.feature.origem-de-feiticaria.l1.1"
+            ]
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": "—",
+        "slot9": "—",
+        "sorceryPoints": 14,
+        "cantrips": 6,
+        "spellsKnown": 13
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": "—",
+        "sorceryPoints": 15,
+        "cantrips": 6,
+        "spellsKnown": 14
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": "—",
+        "sorceryPoints": 16,
+        "cantrips": 6,
+        "spellsKnown": 14
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Metamágica",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.metamagica.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": 1,
+        "sorceryPoints": 17,
+        "cantrips": 6,
+        "spellsKnown": 15
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Característica de Origem de Feitiçaria",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.sorcerer.feature.origem-de-feiticaria.l1.1"
+            ]
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 3,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": 1,
+        "sorceryPoints": 18,
+        "cantrips": 6,
+        "spellsKnown": 15
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 3,
+        "slot6": 2,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": 1,
+        "sorceryPoints": 19,
+        "cantrips": 6,
+        "spellsKnown": 15
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Restauração Mística",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sorcerer.feature.restauracao-mistica.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 3,
+        "slot6": 2,
+        "slot7": 2,
+        "slot8": 1,
+        "slot9": 1,
+        "sorceryPoints": 20,
+        "cantrips": 6,
+        "spellsKnown": 15
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 1,
+    "homogeneous": true,
+    "observedLevels": {
+      "1": 19
+    },
+    "options": [
+      {
+        "grimorioId": "linhagem-draconica",
+        "identifier": "linhagem-draconica",
+        "name": "Linhagem Dracônica",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 80
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "magia-selvagem",
+        "identifier": "magia-selvagem",
+        "name": "Magia Selvagem",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 81
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-sorcerer-phantom-soul",
+        "identifier": "lyre-sorcerer-phantom-soul",
+        "name": "Alma Fantasma",
+        "originalName": "Phantom Soul",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "483–484",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 483
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-sorcerer-witchcraft",
+        "identifier": "lyre-sorcerer-witchcraft",
+        "name": "Bruxaria",
+        "originalName": "Witchcraft",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "485–486",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 485
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-sorcerer-eidolic-cosmologus",
+        "identifier": "lyre-sorcerer-eidolic-cosmologus",
+        "name": "Cosmólogo Eidólico",
+        "originalName": "Eidolic Cosmologus",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "481–482",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 481
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-sorcerer-vestian-inheritor",
+        "identifier": "lyre-sorcerer-vestian-inheritor",
+        "name": "Herdeiro Vestiano",
+        "originalName": "Vestian Inheritor",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "484",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 484
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-sorcerer-crystal-bearer",
+        "identifier": "lyre-sorcerer-crystal-bearer",
+        "name": "Portador do Cristal",
+        "originalName": "Crystal Bearer",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "481",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 481
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-sorcerer-freezing-torment",
+        "identifier": "lyre-sorcerer-freezing-torment",
+        "name": "Tormento Congelante",
+        "originalName": "Freezing Torment",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "483",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 483
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-sorcerer-luminal-sacrifice",
+        "identifier": "zagalhta-sorcerer-luminal-sacrifice",
+        "name": "Sacrifício Luminal",
+        "originalName": "Luminal Sacrifice",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "170–171",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 170
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-sorcerer-wishwoken",
+        "identifier": "zagalhta-sorcerer-wishwoken",
+        "name": "Desperto pelo Desejo",
+        "originalName": "Wishwoken",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "171–172",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 171
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-sorcerer-graveblood",
+        "identifier": "bbb-sorcerer-graveblood",
+        "name": "Sangue Sepulcral",
+        "originalName": "Graveblood",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "122",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 122
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-sorcerer-lustblooded",
+        "identifier": "bbb-sorcerer-lustblooded",
+        "name": "Sangue da Luxúria",
+        "originalName": "Lustblooded",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "122–123",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 122
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-sorcerer-wittica",
+        "identifier": "bbb-sorcerer-wittica",
+        "name": "Wittica",
+        "originalName": "Wittica",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "124",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 124
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "ryoko-sorcerer-spirit-caller",
+        "identifier": "ryoko-sorcerer-spirit-caller",
+        "name": "Invocador de Espíritos",
+        "originalName": "Spirit Caller",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "188–190",
+          "chapter": "Capítulo 9: Classes",
+          "page": 188
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "xanathar-alma-favorecida",
+        "identifier": "xanathar-alma-favorecida",
+        "name": "Alma Favorecida",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "34",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 34
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "xanathar-adepto-das-sombras",
+        "identifier": "xanathar-adepto-das-sombras",
+        "name": "Adepto das Sombras",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "34–35",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 34
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "xanathar-feiticeiro-da-tempestade",
+        "identifier": "xanathar-feiticeiro-da-tempestade",
+        "name": "Feiticeiro da Tempestade",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "35–36",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 35
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "tasha-mente-aberrante",
+        "identifier": "tasha-mente-aberrante",
+        "name": "Mente Aberrante",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "46–49",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 46
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "tasha-alma-cronometrica",
+        "identifier": "tasha-alma-cronometrica",
+        "name": "Alma Cronométrica",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "49–51",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 49
+        },
+        "firstFeatureLevel": 1
+      }
+    ]
+  }
+}

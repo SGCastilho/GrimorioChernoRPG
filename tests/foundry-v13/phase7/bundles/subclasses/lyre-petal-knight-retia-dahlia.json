@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-dahlia",
+    "identifier": "lyre-petal-knight-retia-dahlia",
+    "name": "Dália",
+    "originalName": "Dahlia",
+    "aliases": [
+      "Dahlia"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "390",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 390
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "A Dália representa espíritos intensos e diretos que encaram o perigo de frente. Seu portador envolve o corpo em brasas e transforma impulso, calor e mudança em ofensiva explosiva.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 390
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-dahlia.feature.chamas-da-paixao.l2.1",
+      "name": "CHAMAS DA PAIXÃO",
+      "level": 2,
+      "description": "Como ação bônus, entre em Chamas da Paixão por 1 minuto. Enquanto estiver assim: o primeiro ataque com arma em cada turno causa +1d6 de dano ígneo; você tem resistência a fogo; pode usar Disparada como ação bônus; e obtém crítico com 19 ou 20 no d20. Você deve manter concentração como se fosse magia, mas pode concentrar-se simultaneamente em outro efeito; qualquer teste de concentração é uma única jogada aplicada a ambos. No 11º nível, o dano torna-se 1d10 e você fica imune a fogo enquanto o efeito durar. Usos por Descanso Curto ou Longo: metade de seu bônus de proficiência, arredondado para baixo.",
+      "page": 390,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-dahlia.feature.represalia-infernal.l6.1",
+      "name": "REPRESÁLIA INFERNAL",
+      "level": 6,
+      "description": "Quando uma criatura entrar ou sair de seu alcance de ataque, você pode usar reação para obrigá-la a fazer salvaguarda de Destreza contra sua CD de magia. Em uma falha, sofre dano ígneo igual à metade de seu nível total, arredondado para baixo, e pega fogo. Enquanto estiver em chamas, sofre novamente esse dano no início de cada turno e não pode se beneficiar de vantagem em ataques. Pode apagar as chamas como ação. Usos por Descanso Longo iguais ao seu bônus de proficiência.",
+      "page": 390,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-dahlia.feature.aprimoramento-de-ataque-extra.l11.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 11,
+      "description": "Quando realiza a ação Atacar, pode fazer três ataques em vez de um. Nenhum desses ataques pode ser feito com arma pesada ou de duas mãos.",
+      "page": 390,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-dahlia.feature.duque-das-chamas.l15.1",
+      "name": "DUQUE DAS CHAMAS",
+      "level": 15,
+      "description": "Durante Chamas da Paixão, todos os seus ataques recebem o dano ígneo adicional, não apenas o primeiro. Enquanto o efeito durar, uma criatura que acertá-lo com ataque corpo a corpo a até 1,5 metro sofre 1d8 de dano ígneo. Quando Chamas da Paixão terminar, você pode explodir em fogo: todas as criaturas, exceto você, em uma esfera de 4,5 metros fazem salvaguarda de Destreza contra sua CD de magia, sofrendo 6d8 de dano ígneo em falha ou metade em sucesso.",
+      "page": 390,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-inscriptor-retia-private-fiction",
+    "identifier": "bbb-inscriptor-retia-private-fiction",
+    "name": "Ficção Privada",
+    "originalName": "Private Fiction",
+    "aliases": [
+      "Private Fiction"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "108",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 108
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Um arcanista da palavra escrita que idealiza os outros e os reescreve na narrativa.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo-ficcao-privada",
+        "title": "Magias de Capítulo — Ficção Privada",
+        "page": 108,
+        "description": "Magias conhecidas automaticamente como magias de Inscritor, sem contar no limite de magias conhecidas.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Comando; Estrelas da Afeição"
+          },
+          {
+            "level": "3º",
+            "spells": "Tela de Nuvens; Elo Mental"
+          },
+          {
+            "level": "5º",
+            "spells": "Voo; Imagem Maior"
+          },
+          {
+            "level": "7º",
+            "spells": "Portal de Eros; Donzelas do Escudo"
+          },
+          {
+            "level": "9º",
+            "spells": "Rogar Maldição; Sonho"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 108
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-inscriptor-retia-private-fiction.feature.agir-como-o-personagem.l1.1",
+      "name": "AGIR COMO O PERSONAGEM",
+      "level": 1,
+      "description": "Quando você for alvo de um ataque com arma que possa ver, pode usar sua reação para escrever rapidamente que um aliado voluntário a até 18 m se lança à frente do golpe. Uma versão espectral e idealizada dele aparece diante de você, e sua CA é substituída pela CA atual do aliado até o fim do turno. Da mesma forma, em seu turno pode usar uma ação bônus para fazer um ataque com arma: escreve que um aliado voluntário a até 18 m investe para atacar por você, e uma versão espectral dele faz o ataque com sua arma, usando as proficiências, bônus de ataque e modificadores de atributo do aliado. Para todos os demais fins, o ataque origina-se de você.",
+      "page": 108,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-private-fiction.feature.fio-descartado.l5.1",
+      "name": "FIO DESCARTADO",
+      "level": 5,
+      "description": "Quando uma criatura a até 18 m estiver enfeitiçada, enfurecida ou amedrontada, pode gastar uma Reviravolta Narrativa como ação bônus para abortar o efeito que causa a condição. Essa criatura e todas as demais afetadas pelo mesmo efeito se recuperam imediatamente, como se tivessem passado nas salvaguardas ou cumprido os critérios para encerrá-lo.",
+      "page": 108,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-private-fiction.feature.escrever-para-fora.l8.1",
+      "name": "ESCREVER PARA FORA",
+      "level": 8,
+      "description": "Quando uma criatura tentar usar uma ação que force outra a realizar uma salvaguarda, pode gastar uma Reviravolta Narrativa como reação para forçá-la a fazer uma salvaguarda de Carisma. Em falha, a ação não produz efeito e é desperdiçada, mas os recursos gastos para usá-la não são devolvidos. No fim de cada turno, a criatura repete a salvaguarda e não pode usar novamente aquela ação até obter sucesso, encerrando o efeito.",
+      "page": 108,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-private-fiction.feature.o-que-voce-faria.l12.1",
+      "name": "O QUE VOCÊ FARIA?",
+      "level": 12,
+      "description": "Como ação bônus, gaste um uso de Consulta e escolha uma criatura que veja a até 18 m. Conceda a ela um dos efeitos abaixo, deixando-a decidir como aproveitar a oportunidade: dobrar seu deslocamento no próximo turno; realizar uma ação adicional no próximo turno; realizar uma ação bônus adicional no próximo turno; ou receber uma reação adicional por turno até o fim de seu próximo turno.",
+      "page": 108,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-private-fiction.feature.transformacao-climatica-repentina.l20.1",
+      "name": "TRANSFORMAÇÃO CLIMÁTICA REPENTINA",
+      "level": 20,
+      "description": "Uma vez por Descanso Longo, pode realizar uma reescrita extensa de uma criatura voluntária que veja a até 9 m e produzir nela os efeitos de mudar de forma, sem gastar espaço de magia nem componente material. Você não pode escolher a si mesmo como alvo.",
+      "page": 108,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

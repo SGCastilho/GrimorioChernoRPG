@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-tquinn",
+    "identifier": "lyre-favored-soul-retia-burden-of-tquinn",
+    "name": "Fardo de T’quinn",
+    "originalName": "Burden of T’quinn",
+    "aliases": [
+      "Burden of T’quinn"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "356",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 356
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): espada grande, espada curta ou adaga. O favorecido de T’quinn sente os sentidos divididos como se sempre houvesse outra versão de si ao lado. Um eco cuida dele e estende sua percepção, enquanto o fardo o impele a proteger a alegria e a história dos outros.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 356
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-tquinn.feature.favorecido-dos-eidolons.l1.1",
+      "name": "FAVORECIDO DOS EIDOLONS",
+      "level": 1,
+      "description": "Você tem vantagem em testes de Queima Eidomântica e todos os seus ataques são mágicos e eidólicos.",
+      "page": 356,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-tquinn.feature.encantamento-das-musas.l1.1",
+      "name": "ENCANTAMENTO DAS MUSAS",
+      "level": 1,
+      "description": "Todas as magias de Bardo e do grupo Épico da Dualidade contam como magias da Alma Favorecida para você. Você também ganha Especialização em Atuação e proficiência em um instrumento.",
+      "page": 356,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-tquinn.feature.segundo-eco.l6.1",
+      "name": "SEGUNDO ECO",
+      "level": 6,
+      "description": "Um duplicado ilusório e invisível vigia você. Você não pode ser surpreendido; durante o sono não sofre penalidade em Percepção passiva por estar inconsciente ou distraído; pode usar os sentidos do eco e fica imune a cegueira. O duplicado também pode realizar tarefas como um Servo Invisível.",
+      "page": 356,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-tquinn.feature.duplicata-harmoniosa.l10.1",
+      "name": "DUPLICATA HARMONIOSA",
+      "level": 10,
+      "description": "Como ação, gaste Purificação e crie duplicata ilusória em espaço desocupado a até 9 metros por 1 minuto. No momento da criação e no início de cada turno, escolha qual dos dois é real; o outro vira ilusão, e o real assume todas as suas condições e efeitos, exceto os dependentes da posição física, como agarrado/restringido. Ambos podem mover-se separadamente usando seu deslocamento; você vê pelos dois e fala pela ilusão. A duplicata atravessa criaturas, mas não termina no mesmo espaço, e não atravessa barreiras com mais de 10 cm de espessura. Objetos pegos pelo real são espelhados e permanecem com o real após trocas; criaturas vivas e objetos maiores que você não podem ser transportados. Quando é alvo de ataque ou magia que percebe, use reação para trocar posições. Depois role 1d100; se o resultado for maior que 2 × seu nível de Alma Favorecida, a duplicata desaparece. Também termina se acabar o turno a mais de 36 metros de você.",
+      "page": 356,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-tquinn.feature.lamina-ecoante.l13.1",
+      "name": "LÂMINA ECOANTE",
+      "level": 13,
+      "description": "Uma vez em cada turno, se não estiver incapacitado, faça um ataque com arma através da Duplicata Harmoniosa; conta como vindo de você em tudo exceto a origem física. Contra criaturas que enxergam ilusões ou têm visão verdadeira, o ataque tem desvantagem. Criaturas também provocam ataques de oportunidade ao sair do alcance da duplicata, feitos da mesma maneira.",
+      "page": 356,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

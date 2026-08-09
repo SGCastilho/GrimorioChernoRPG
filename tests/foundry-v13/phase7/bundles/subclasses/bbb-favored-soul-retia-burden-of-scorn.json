@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-favored-soul-retia-burden-of-scorn",
+    "identifier": "bbb-favored-soul-retia-burden-of-scorn",
+    "name": "Fardo de Scorn",
+    "originalName": "Burden of Scorn",
+    "aliases": [
+      "Burden of Scorn"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "104",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 104
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Um herdeiro destrutivo da ferocidade de Scorn.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 104
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-scorn.feature.garras-bestiais.l1.1",
+      "name": "GARRAS BESTIAIS",
+      "level": 1,
+      "description": "Você recebe imediatamente a opção Armamento de Essência de sua característica de 2º nível; ao alcançá-lo, essa opção conta como sua escolha. O armamento pode ser a arma favorecida de Scorn ou uma transformação bestial menor que torna seus membros garras horrendas. As garras contam como sua arma favorecida e como arma marcial para características e efeitos, podem usar Força ou seu atributo de conjuração nas jogadas de ataque e dano e causam 1d8 de dano cortante ou necrótico, à sua escolha. Você também pode “arremessá-las” como se tivessem arremesso 6/18 m, rasgando o ar com energia necrótica. Sempre que realizar um ataque com essa arma, pode usar sua ação bônus para fazer outro ataque com ela.",
+      "page": 104,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-scorn.feature.critico-obsceno.l1.1",
+      "name": "CRÍTICO OBSCENO",
+      "level": 1,
+      "description": "Você obtém acerto crítico com 19 ou 20 no d20. Quando obtiver um crítico usando uma arma, recupera PV iguais à metade do dano causado, arredondado para baixo. Esses benefícios não se aplicam contra mortos-vivos, construtos ou alvos sem sangue.",
+      "page": 104,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-scorn.feature.arcanismo-de-scorn.l1.1",
+      "name": "ARCANISMO DE SCORN",
+      "level": 1,
+      "description": "Magias do grupo Valores Sangrentos contam como estando na lista da Alma Favorecida para você.",
+      "page": 104,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-scorn.feature.retorno-da-morte.l6.1",
+      "name": "RETORNO DA MORTE",
+      "level": 6,
+      "description": "Em salvaguardas contra a morte, você recupera PV com resultados 19 ou 20 no d20, em vez de apenas 20. Quando isso ocorrer, recupera PV iguais a um Dado de Vida de Alma Favorecida + seu modificador de Constituição.",
+      "page": 104,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-scorn.feature.fantasia-sangrenta.l10.1",
+      "name": "FANTASIA SANGRENTA",
+      "level": 10,
+      "description": "Como ação bônus, gaste um uso de Purificação para desaparecer num clarão vermelho-sangue e teleportar-se para um espaço adjacente a uma criatura que veja a até 9 m. Em seguida, imediatamente realiza uma ação Atacar contra ela sem gastar ação.",
+      "page": 104,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-scorn.feature.reconstituicao-implacavel.l13.1",
+      "name": "RECONSTITUIÇÃO IMPLACÁVEL",
+      "level": 13,
+      "description": "No início de cada turno, se estiver com 1 ou mais PV, mas abaixo de metade de seu máximo, recupera PV iguais à metade de seu nível de Alma Favorecida, arredondado para baixo.",
+      "page": 104,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

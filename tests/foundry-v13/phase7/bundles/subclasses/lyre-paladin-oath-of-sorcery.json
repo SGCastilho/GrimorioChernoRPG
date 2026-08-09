@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-paladin-oath-of-sorcery",
+    "identifier": "lyre-paladin-oath-of-sorcery",
+    "name": "Juramento da Feitiçaria",
+    "originalName": "Oath of Sorcery",
+    "aliases": [
+      "Oath of Sorcery"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "472–473",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 472
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Ligados a Vestias e ao Clero Nascido da Magia, estes Paladinos reverenciam as artes arcanas e acreditam que magia deve ser tratada com cuidado, não medo. Eles tentam conter os piores conjuradores e apoiar os melhores. Magias de Juramento — 3º: Detectar Magia, Escudo; 5º: Imobilizar Pessoa, Raio do Enfraquecimento; 9º: Contramágica, Salto Trovejante; 13º: Malogro, Retorno Eidomântico; 17º: Descombobulação, Muralha de Radiância. Dogmas — Virtude Ancestral: conhecimento antigo deve ser tratado com respeito e não abusado. Extremos Ampla­mente: magia não é inerentemente boa nem má; importa como é usada. Veja Além: a realidade possui muitas camadas cósmicas, e ninguém pode compreender tudo; respeite o desconhecido.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-juramento",
+        "title": "Magias de Juramento",
+        "page": 472,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Detectar Magia; Escudo"
+          },
+          {
+            "level": "5º",
+            "spells": "Imobilizar Pessoa; Raio do Enfraquecimento"
+          },
+          {
+            "level": "9º",
+            "spells": "Contramágica; Salto Trovejante"
+          },
+          {
+            "level": "13º",
+            "spells": "Malogro; Retorno Eidomântico"
+          },
+          {
+            "level": "17º",
+            "spells": "Descombobulação; Muralha de Radiância"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 472
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-paladin-oath-of-sorcery.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Você recebe duas opções. Milagre Arcano: use Canalizar Divindade para conjurar qualquer magia que conheça ou qualquer magia de Paladino, mesmo não preparada, sem gastar espaço. Ela é conjurada no nível do maior espaço de Paladino ao qual você tem acesso, que também é o maior nível de magia permitido. Manto do Santo: como ação bônus, use Canalizar Divindade para obter por 1 minuto vantagem em salvaguardas contra efeitos mágicos e testes de concentração. Durante esse período, você pode usar sua reação para estender temporariamente o benefício a uma criatura dentro da Aura de Proteção, dando-lhe vantagem nessas rolagens até o início do seu próximo turno, mesmo se ela sair da aura.",
+      "page": 472,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-sorcery.feature.feiticaria.l7.1",
+      "name": "FEITIÇARIA",
+      "level": 7,
+      "description": "Ao preparar magias após um Descanso Longo, você pode preparar da lista de Feiticeiro um número de magias igual ao seu bônus de proficiência. Elas contam como magias de Paladino enquanto estiverem preparadas e contam no seu limite normal de magias preparadas.",
+      "page": 473,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-sorcery.feature.resistencia-magica.l15.1",
+      "name": "RESISTÊNCIA MÁGICA",
+      "level": 15,
+      "description": "Você tem vantagem em salvaguardas contra efeitos mágicos. Enquanto Manto do Santo estiver ativo, ataques de magia e testes de concentração de criaturas aliadas dentro da sua aura também têm vantagem.",
+      "page": 473,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-sorcery.feature.ritual-perfeito.l20.1",
+      "name": "RITUAL PERFEITO",
+      "level": 20,
+      "description": "Você pode tratar usos não gastos de Canalizar Divindade como espaços de magia de 9º nível e gastá-los para conjurar magias; Milagre Arcano não os considera espaços reais. Ao preparar magias de Paladino depois de um Descanso Longo, você também pode preparar uma magia adicional de 9º nível ou inferior da lista de Feiticeiro, que conta como magia de Paladino enquanto preparada.",
+      "page": 473,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

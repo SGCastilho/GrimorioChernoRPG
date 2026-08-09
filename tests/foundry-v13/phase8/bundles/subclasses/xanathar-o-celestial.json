@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-o-celestial",
+    "identifier": "xanathar-o-celestial",
+    "name": "O Celestial",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "18–19",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 18
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Seu patrono é um poderoso ser dos Planos Superiores. Você se conectou a um ancião empírico, solar, ki-rin, unicórnio ou outra entidade que reside nos planos das bênçãos eternas. Seu pacto com esse ser permite que você experimente o toque mais alto da luz sagrada que ilumina o multiverso. Estar conectado a tal poder pode causar mudanças em seu comportamento e crenças. Você pode se encontrar sendo guiado a aniquilar os mortos-vivos, vencer os demônios e proteger os inocentes. Às vezes, seu coração também pode se encher com um desejo profundo pelo reino celestial de seu patrono e uma vontade de vagar por esse paraíso para o resto dos seus dias. Mas você sabe que sua missão, por enquanto, está entre os mortais e que seu pacto obriga você a trazer luz para os lugares escuros do mundo.",
+    "tables": [
+      {
+        "key": "table.1.magias-expandidas-do-celestial",
+        "title": "Magias Expandidas do Celestial",
+        "page": 18,
+        "description": "Magias adicionais concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Curar Ferimentos; Raio Guiador"
+          },
+          {
+            "level": "2º",
+            "spells": "Esfera Flamejante; Restauração Menor"
+          },
+          {
+            "level": "3º",
+            "spells": "Luz do Dia; Revivificar"
+          },
+          {
+            "level": "4º",
+            "spells": "Guardião da Fé; Muralha de Fogo"
+          },
+          {
+            "level": "5º",
+            "spells": "Coluna de Chamas; Restauração Maior"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 18
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-o-celestial.feature.lista-de-magias-expandida.l1.1",
+      "name": "LISTA DE MAGIAS EXPANDIDA",
+      "level": 1,
+      "description": "O Celestial permite que você escolha uma lista expandida de magias quando aprende uma magia de bruxo. As seguintes magias são adicionadas à sua lista de magias de bruxo.",
+      "page": 18,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-o-celestial.feature.truques-adicionais.l1.1",
+      "name": "TRUQUES ADICIONAIS",
+      "level": 1,
+      "description": "No 1 ° nível, você aprende os truques luz e chama sagrada. Eles contam como truques de bruxo para você, mas eles não contam para o seu número de truques conhecidos.",
+      "page": 18,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-o-celestial.feature.iluminacao-curativa.l1.1",
+      "name": "ILUMINAÇÃO CURATIVA",
+      "level": 1,
+      "description": "No 1 ° nível, você ganha a capacidade de canalizar energia celestial para curar ferimentos. Você tem um conjunto de d6s que você gasta para alimentar essa cura. O número de dados reserva é igual a 1 + seu nível de bruxo. Como uma ação bônus, você pode curar uma criatura que possa ver a 18 metros de alcance gastando dados dessa reserva. O número máximo de dados que pode gastar ao mesmo tempo é igual ao seu modificador Carisma (mínimo de um dado). Role os dados que gastou, some-os e restaure a quantidade somada em pontos de vida. Sua reserva recupera todos os dados gastos quando você terminar um descanso longo.",
+      "page": 18,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-o-celestial.feature.alma-radiante.l6.1",
+      "name": "ALMA RADIANTE",
+      "level": 6,
+      "description": "A partir do 6° nível, sua conexão com o Celestial permite que você sirva como um canal para a energia radiante. Você tem resistência ao dano radiante e quando conjurar uma magia que cause dano radiante ou de fogo, pode adicionar seu modificador de Carisma aos testes de dano radiante ou de dano de fogo dessa magia contra um dos alvos.",
+      "page": 19,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-o-celestial.feature.resiliencia-celestial.l10.1",
+      "name": "RESILIÊNCIA CELESTIAL",
+      "level": 10,
+      "description": "A partir do 10° nível, você ganha pontos de vida temporários sempre que terminar um descanso curto ou longo. Esses pontos de vida temporários equivalem ao seu nível bruxo + seu modificador Carisma. Além disso, escolha até cinco criaturas que possa ver no final deste descanso. Essas criaturas ganham, cada uma, pontos de vida temporários iguais a metade do seu nível de bruxo + seu modificador Carisma.",
+      "page": 19,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-o-celestial.feature.vinganca-ardente.l14.1",
+      "name": "VINGANÇA ARDENTE",
+      "level": 14,
+      "description": "A partir do 14º nível, a energia radiante que você canaliza o permite que resista à morte. Quando tiver que realizar um teste de resistência contra a morte a morte no início do seu turno, pode, em vez disso, se levantar com uma explosão de energia radiante. Você recupera pontos de vida iguais à metade do seu ponto de vida máximo, e então se levanta se assim o desejar. Cada criatura de sua escolha que esteja dentro do alcance de 9 metros recebe dano radiante igual a 2d8 + seu modificador Carisma, e está cego até o finaldo turno atual. Depois de usar esta característica, não pode usá-la novamente até terminar um descanso longo.",
+      "page": 19,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

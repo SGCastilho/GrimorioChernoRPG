@@ -1,0 +1,191 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-favored-soul-zega",
+    "identifier": "zagalhta-favored-soul-zega",
+    "name": "Fardo de Zega",
+    "originalName": "Burden of Zega",
+    "aliases": [
+      "Burden of Zega"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "153–154",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 153
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Portador da autoridade neutra e absoluta do juiz dos deuses. Sua voz impõe leis compulsórias ao espaço ao redor, mas as regras criadas também obrigam o próprio portador.",
+    "tables": [
+      {
+        "key": "table.1.regras-vinculantes",
+        "title": "Regras Vinculantes",
+        "page": 153,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Regra"
+          },
+          {
+            "key": "effect",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Todos Punidos",
+            "effect": "Ataques e salvaguardas feitos dentro da zona têm desvantagem."
+          },
+          {
+            "name": "Todos Elevados",
+            "effect": "Ataques e salvaguardas dentro da zona têm vantagem."
+          },
+          {
+            "name": "Cegueira",
+            "effect": "Criaturas na zona não podem ver nem ouvir por qualquer sentido, incluindo visão verdadeira."
+          },
+          {
+            "name": "Limites Vinculados",
+            "effect": "Magias não recebem efeitos de Níveis Superiores, mesmo quando conjuradas com espaços maiores."
+          },
+          {
+            "name": "Cessar-Fogo",
+            "effect": "Criaturas têm resistência a todo dano."
+          },
+          {
+            "name": "Discrição",
+            "effect": "Criaturas podem usar ação bônus para ataque de arma, mas não podem fazer mais de um ataque por turno; ataques de magia acima do limite são gastos sem ocorrer."
+          },
+          {
+            "name": "Exposição",
+            "effect": "Dano ignora resistências das criaturas dentro da zona."
+          },
+          {
+            "name": "Equilíbrio",
+            "effect": "Qualquer d20 de ataque ou salvaguarda dentro da zona é tratado como resultado 10."
+          },
+          {
+            "name": "Proibido",
+            "effect": "Criaturas fora da zona erram automaticamente ataques contra criaturas dentro dela e vice-versa."
+          },
+          {
+            "name": "Sanção de Recuperação",
+            "effect": "Criaturas não podem recuperar PV, inclusive por regeneração."
+          },
+          {
+            "name": "Silêncio",
+            "effect": "Criaturas não podem falar nem produzir componentes verbais."
+          },
+          {
+            "name": "Sem-Mente",
+            "effect": "Criaturas não podem usar reações em resposta a ações tomadas na zona."
+          },
+          {
+            "name": "Manter Padrões",
+            "effect": "Escolha um tipo de salvaguarda; criaturas na zona obtêm sucesso automático nesse tipo."
+          },
+          {
+            "name": "Continuidade Zero",
+            "effect": "Criatura que termina o turno na zona concentrando-se em efeito perde a concentração."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 153
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-favored-soul-zega.feature.ordem-do-juiz.l1.1",
+      "name": "ORDEM DO JUIZ",
+      "level": 1,
+      "description": "Usos por Descanso iguais à proficiência. Como ação bônus, gaste: 1 uso para comando; 1 para sugestão; 2 para santuário; ou 4 para comando em massa, produzindo os efeitos da magia correspondente.",
+      "page": 153,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-zega.feature.moderado-perfeito.l6.1",
+      "name": "MODERADO PERFEITO",
+      "level": 6,
+      "description": "Ao fazer teste de perícia ou salvaguarda em que seja proficiente, se o d20 for 9 ou menos, trate-o como 10.",
+      "page": 153,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-zega.feature.regra-vinculante.l10.1",
+      "name": "REGRA VINCULANTE",
+      "level": 10,
+      "description": "Como ação bônus, gaste Purificação para criar por 1 minuto esfera de 9 m centrada em você que o acompanha. Escolha uma Regra Vinculante da tabela, aplicada a todas as criaturas na zona, incluindo você. Pode encerrar como ação bônus e várias zonas podem coexistir. Em vez da tabela, pode escolher qualquer efeito que poderia ser produzido por maldição mordente; nesse caso ele afeta todos na zona exceto você.",
+      "page": 153,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-zega.feature.postura-de-soberania.l13.1",
+      "name": "POSTURA DE SOBERANIA",
+      "level": 13,
+      "description": "Criaturas não podem obter críticos contra você, nem automaticamente. Na primeira vez em cada turno que uma fonte de dano o reduziria a 0 PV ou mataria instantaneamente, ela o reduz a 1 PV em vez disso.",
+      "page": 153,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

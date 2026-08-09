@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-fighter-lunar-synergist",
+    "identifier": "zagalhta-fighter-lunar-synergist",
+    "name": "Sinergista Lunar",
+    "originalName": "Lunar Synergist",
+    "aliases": [
+      "Lunar Synergist"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "156",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 156
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Guerreiro contemplativo sintonizado com uma corrente universal, capaz de fechar os olhos para sentir o campo, converter ataques em força psíquica e manipular o espaço por telecinese.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 156
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-fighter-lunar-synergist.feature.fio-psiquico.l3.1",
+      "name": "FIO PSÍQUICO",
+      "level": 3,
+      "description": "Você recebe: Foco de Visão às Cegas — visão às cegas de 4,5 m × proficiência enquanto fecha os olhos, ficando efetivamente cego além desse alcance até o início do próximo turno; Corte Pontual — em crítico de arma, +1 dado de dano da arma como psíquico; Força Psíquica — pode converter todo o dano da arma para psíquico.",
+      "page": 156,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-fighter-lunar-synergist.feature.aprimoramento-do-critico-cego.l7.1",
+      "name": "APRIMORAMENTO DO CRÍTICO CEGO",
+      "level": 7,
+      "description": "Enquanto usa Foco de Visão às Cegas, obtém crítico em 19–20 e o primeiro ataque que faz em cada turno tem vantagem.",
+      "page": 156,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-fighter-lunar-synergist.feature.passos-espaciais.l7.1",
+      "name": "PASSOS ESPACIAIS",
+      "level": 7,
+      "description": "Ignora dano dos primeiros 60 m de qualquer queda e recebe aceleração 0-G igual ao dobro do deslocamento base.",
+      "page": 156,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-fighter-lunar-synergist.feature.forca-da-ordem.l10.1",
+      "name": "FORÇA DA ORDEM",
+      "level": 10,
+      "description": "Como ação, gaste 1 Maestria de Combate para produzir telecinese. Exige concentração, não conta como magia e usa Força como atributo de conjuração. Pode produzir/manter os efeitos em lugar de um ataque quando realiza a ação Atacar, substituindo um de seus ataques.",
+      "page": 156,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-fighter-lunar-synergist.feature.aprimoramento-de-critico-superior.l15.1",
+      "name": "APRIMORAMENTO DE CRÍTICO SUPERIOR",
+      "level": 15,
+      "description": "Você obtém crítico em 19–20; enquanto se cega voluntariamente para Foco de Visão às Cegas, obtém crítico em 18–20.",
+      "page": 156,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-fighter-lunar-synergist.feature.maestria-da-ordem.l18.1",
+      "name": "MAESTRIA DA ORDEM",
+      "level": 18,
+      "description": "Força da Ordem não exige mais Maestria de Combate. Pode produzir seus efeitos como ação bônus ou em lugar de uma ação para usá-los. Ao fim de seu turno, se criatura/objeto estiver sendo segurado ou impedido pela telecinese, pode causar 3d6 de dano psíquico a ele.",
+      "page": 156,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

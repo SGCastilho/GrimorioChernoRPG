@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-mythology",
+    "identifier": "lyre-inscriptor-retia-mythology",
+    "name": "Mitologia",
+    "originalName": "Mythology",
+    "aliases": [
+      "Mythology"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "371",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 371
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Você estuda bestiários e histórias sobre feras lendárias, aprendendo a reproduzir suas defesas, frustrar seus movimentos e, por fim, dar forma real a uma criatura de lenda.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 371,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Falar com Animais"
+          },
+          {
+            "level": "3º",
+            "spells": "Wyrm’s breath"
+          },
+          {
+            "level": "5º",
+            "spells": "Espíritos Guardiões"
+          },
+          {
+            "level": "7º",
+            "spells": "Conjurar Montaria Maior"
+          },
+          {
+            "level": "9º",
+            "spells": "Conjurar Eco Dracônico"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 371
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-mythology.feature.encantamento-de-couraca.l1.1",
+      "name": "ENCANTAMENTO DE COURAÇA",
+      "level": 1,
+      "description": "Enquanto não estiver usando armadura, sua CA pode ser calculada como 10 + seu modificador de Destreza + seu modificador de Inteligência, descrevendo em sua escrita qualidades de peles, escamas ou couraças de criaturas míticas.",
+      "page": 371,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-mythology.feature.cacador-de-feras-subversivo.l5.1",
+      "name": "CAÇADOR DE FERAS SUBVERSIVO",
+      "level": 5,
+      "description": "Quando falhar em uma salvaguarda ou teste de atributo contra uma monstruosidade, dragão ou fera, pode gastar uma Distorção Narrativa para rolar 1d10 e somá-lo ao resultado, possivelmente transformando a falha em sucesso. Se fizer isso, você ganha resistência ao tipo de dano que teria sofrido como consequência dessa falha por 1 minuto.",
+      "page": 371,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-mythology.feature.aterramento.l8.1",
+      "name": "ATERRAMENTO",
+      "level": 8,
+      "description": "Como ação bônus, você pode gastar um uso de Consulta e escolher uma criatura a até 72 metros. Ela realiza uma salvaguarda de Inteligência. Em uma falha, perde todos os tipos de deslocamento, exceto seu deslocamento básico, por 1 hora. Como ação, pode fazer um teste de Inteligência contra sua CD de magia, encerrando o efeito em um sucesso.",
+      "page": 371,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-mythology.feature.invocar-fantasma.l12.1",
+      "name": "INVOCAR FANTASMA",
+      "level": 12,
+      "description": "Enquanto não estiver incapacitado, você é proficiente em todas as salvaguardas. Ao fazer uma salvaguarda, escreve rapidamente uma linha de texto arcano que lhe concede por um instante a resistência ou versatilidade de uma criatura lendária capaz de suportar melhor aquele efeito.",
+      "page": 371,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-mythology.feature.invocar-lenda.l20.1",
+      "name": "INVOCAR LENDA",
+      "level": 20,
+      "description": "Uma vez por Descanso Longo, você pode conjurar uma criatura fictícia usando o bloco de estatísticas de uma fera, dragão, monstruosidade ou celestial de ND 20 ou inferior. Ela surge em um espaço desocupado grande o bastante a até 9 metros e permanece até 10 minutos ou até você dispensá-la como ação bônus. Se estiver livre e o espaço permitir, pode montá-la imediatamente. Ela é favorável a você e obedece às seguintes restrições: não usa Ações Lendárias nem Ações de Covil; seus PV máximos tornam-se o dobro dos seus; magias de 1º a 5º nível usam seus espaços de Magia de Pacto, e magias de 6º nível ou superior exigem um uso de Consulta; se conjurar sem espaços, cada magia exige uma Distorção Narrativa ou um de seus espaços. Ações, ações bônus e reações da criatura consomem as suas; sem ordens, ela usa Esquivar. Se for Grande ou maior, você pode montá-la, não pode ser desmontado contra sua vontade, ignora efeitos decorrentes de estar próximo ou em contato com ela se desejar, e ataques ou efeitos que o tenham como alvo podem ser redirecionados para ela. Ela desaparece se morrer, for para outro plano ou iniciar o turno com 0 PV ou inconsciente. Age na sua iniciativa e move-se conforme suas ordens. Você deve manter concentração como em uma magia. A criatura pode ser uma entidade fictícia criada por você ou uma criatura real que tenha aceitado previamente ser invocada; nesse último caso o corpo é falso, mas a mente é real. Ao desaparecer, a mente retorna ao corpo e sofre dano igual ao número de ferimentos que possuía; se isso a mataria, em vez disso cai a 0 PV estabilizada.",
+      "page": 371,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

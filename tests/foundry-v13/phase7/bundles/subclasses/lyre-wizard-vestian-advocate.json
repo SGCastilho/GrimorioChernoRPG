@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-wizard-vestian-advocate",
+    "identifier": "lyre-wizard-vestian-advocate",
+    "name": "Advogado Vestiano",
+    "originalName": "Vestian Advocate",
+    "aliases": [
+      "Vestian Advocate"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "509–510",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 509
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "O Advogado Vestiano estuda a magia proibida de Vestias para compreender e imitar a potência inata dos Feiticeiros. Ao enriquecer a energia mágica latente no próprio sangue e aproveitar poder que a conjuração formulaica desperdiçaria, esses Magos borram deliberadamente a fronteira entre estudo e feitiçaria.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 509
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-wizard-vestian-advocate.feature.sangue-magico-potencializado.l2.1",
+      "name": "SANGUE MÁGICO POTENCIALIZADO",
+      "level": 2,
+      "description": "Quando conjura uma magia de Mago e causa dano a uma criatura pela primeira vez com ela, pode somar seu modificador de Carisma ao dano. Se a magia causar dano a várias criaturas simultaneamente, escolha antes da rolagem uma quantidade delas igual ao seu bônus de proficiência para receber esse dano adicional.",
+      "page": 509,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-vestian-advocate.feature.prodigio-em-feiticaria.l2.1",
+      "name": "PRODÍGIO EM FEITIÇARIA",
+      "level": 2,
+      "description": "Sempre que ganha um nível e aprende novas magias de Mago para adicionar ao grimório, pode escolher uma delas da lista de Feiticeiro e tratá-la como magia de Mago. Também pode copiar para o grimório magias de Feiticeiro encontradas em pergaminhos, gastando metade do ouro e do tempo normais.",
+      "page": 509,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-vestian-advocate.feature.protecao-da-guardia-dos-ceus.l6.1",
+      "name": "PROTEÇÃO DA GUARDIÃ DOS CÉUS",
+      "level": 6,
+      "description": "Uma vez por Descanso Longo, como ação, crie ao seu redor uma proteção representada por pontos de vida temporários iguais a 5 × seu nível de Mago. Enquanto esses pontos existirem, você recebe bônus em salvaguardas e na CA igual à metade do bônus de proficiência, arredondado para baixo. Antes que uma criatura a até 3 metros cause dano a você com um ataque, pode usar reação para reduzir pela metade seus pontos de vida temporários restantes, arredondado para baixo; o atacante sofre dano elétrico igual à quantidade que você possuía antes da redução.",
+      "page": 510,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-vestian-advocate.feature.passo-por-portais.l10.1",
+      "name": "PASSO POR PORTAIS",
+      "level": 10,
+      "description": "Quando conjura uma magia de 5º nível ou superior, pode transformar energia mágica desperdiçada em deslocamento de teleporte igual ao seu deslocamento base até o início do seu próximo turno.",
+      "page": 510,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-vestian-advocate.feature.protecao-potencializada.l14.1",
+      "name": "PROTEÇÃO POTENCIALIZADA",
+      "level": 14,
+      "description": "Usar sua Proteção da Guardiã dos Céus como reação não reduz mais seus pontos de vida temporários pela metade. Como ação bônus, você pode gastar um espaço de Mago para restaurar à proteção pontos de vida temporários iguais a 5 × o nível do espaço, sem exceder o valor original da proteção.",
+      "page": 510,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

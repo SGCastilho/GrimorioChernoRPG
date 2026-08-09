@@ -1,0 +1,166 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-ranger-night-slayer",
+    "identifier": "bbb-ranger-night-slayer",
+    "name": "Matador Noturno",
+    "originalName": "Night Slayer",
+    "aliases": [
+      "Night Slayer"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "118–119",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 118
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Um caçador das trevas e das criaturas que nelas encontram seu habitat.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 118
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-ranger-night-slayer.feature.emboscada-sombria.l3.1",
+      "name": "EMBOSCADA SOMBRIA",
+      "level": 3,
+      "description": "Enquanto não estiver surpreso em combate, pode emboscar inimigos desprevenidos. Adicione seu Dado de Favor à iniciativa. Em seu primeiro turno, seu deslocamento aumenta em 1,5 m × seu bônus de proficiência e seu movimento não provoca ataques de oportunidade. Se realizar a ação Atacar, faz um ataque adicional como parte dela, e esse ataque causa um dado de dano da arma adicional.",
+      "page": 118,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-night-slayer.feature.matador-do-crepusculo.l3.1",
+      "name": "MATADOR DO CREPÚSCULO",
+      "level": 3,
+      "description": "Escolha monstruosidades, espíritos ou mortos-vivos; o tipo escolhido torna-se automaticamente um Inimigo Favorito adicional. Você também recebe visão no escuro a 18 m. Se já possuir visão no escuro, seu alcance aumenta em 18 m ou passa a 36 m, o que resultar maior.",
+      "page": 119,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-night-slayer.feature.flecha-terrivel.l7.1",
+      "name": "FLECHA TERRÍVEL",
+      "level": 7,
+      "description": "Quando atingir com arma uma criatura que seja um de seus Inimigos Favoritos permanentes, pode gastar um espaço de magia de Patrulheiro para fazer o ataque ignorar Limiares de Dano e causar dano adicional igual a 1d12 × o nível do espaço gasto.",
+      "page": 119,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-night-slayer.feature.sempre-alerta.l7.1",
+      "name": "SEMPRE ALERTA",
+      "level": 7,
+      "description": "Escolha Inteligência, Sabedoria ou Carisma. Você ganha proficiência na salvaguarda escolhida.",
+      "page": 119,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-night-slayer.feature.compensacao.l11.1",
+      "name": "COMPENSAÇÃO",
+      "level": 11,
+      "description": "Quando errar um ataque com arma contra um alvo, pode usar sua ação bônus para realizar um ataque adicional contra ele. Esse ataque adiciona seu Bônus de Favor à jogada de ataque.",
+      "page": 119,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-night-slayer.feature.evasao-sombria.l11.1",
+      "name": "EVASÃO SOMBRIA",
+      "level": 11,
+      "description": "Quando for atingido por um ataque com arma de uma fonte que possa ver, use sua reação e gaste um uso de Véu da Natureza para fazê-lo errar. Você então fica invisível até o início de seu próximo turno. Se usar esta característica ou Véu da Natureza enquanto estiver em escuridão ou meia-luz, pode também teleportar-se como parte da mesma ação para um espaço a até 9 m que esteja em escuridão ou meia-luz.",
+      "page": 119,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-night-slayer.feature.besta-nas-sombras.l15.1",
+      "name": "BESTA NAS SOMBRAS",
+      "level": 15,
+      "description": "Você pode tratar como Inimigo Favorito qualquer criatura que esteja em escuridão, ou que esteja em meia-luz e não possua visão no escuro.",
+      "page": 119,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

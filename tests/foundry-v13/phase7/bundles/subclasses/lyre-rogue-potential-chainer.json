@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-rogue-potential-chainer",
+    "identifier": "lyre-rogue-potential-chainer",
+    "name": "Encadeador de Potencial",
+    "originalName": "Potential Chainer",
+    "aliases": [
+      "Potential Chainer"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "477–478",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 477
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Guiado por instintos sobre-humanos, o Encadeador age sobre oportunidades assim que elas aparecem, confiando mais em seu senso imediato de ação que no pensamento consciente. Essa abordagem direta lhe permite reagir mais rápido que combatentes com grau semelhante de treinamento.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 477
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-rogue-potential-chainer.feature.reacao-feroz.l3.1",
+      "name": "REAÇÃO FEROZ",
+      "level": 3,
+      "description": "Sempre que você realiza uma reação desencadeada por uma criatura, pode fazer um ataque contra a criatura que a desencadeou usando uma arma que esteja segurando, desde que ela esteja ao alcance. Esse ataque reativo é resolvido depois da ação da criatura e somente ocorre se você ainda for capaz de realizar ações.",
+      "page": 477,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-potential-chainer.feature.golpe-do-fardo-perdido.l3.1",
+      "name": "GOLPE DO FARDO PERDIDO",
+      "level": 3,
+      "description": "Quando erra um ataque com arma que qualificaria para Ataque Furtivo, você pode usar sua reação para conceder ao ataque um bônus igual ao número de dados do seu Ataque Furtivo. Se isso transformar o erro em acerto, role metade dos dados do seu Ataque Furtivo, arredondado para baixo, e adicione o resultado ao dano. Usar esta característica conta como usar seu Ataque Furtivo e não pode ser feito se você já o tiver usado neste turno.",
+      "page": 477,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-potential-chainer.feature.rebote.l9.1",
+      "name": "REBOTE",
+      "level": 9,
+      "description": "Na primeira vez em cada turno que você obtiver um 1 natural em uma jogada de ataque, teste de atributo ou salvaguarda, pode tratar o resultado do d20 como 10.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-potential-chainer.feature.ataque-extra.l13.1",
+      "name": "ATAQUE EXTRA",
+      "level": 13,
+      "description": "Ao realizar a ação Atacar, você pode atacar duas vezes em vez de uma, desde que os dois ataques sejam feitos com a mesma arma: uma arma corpo a corpo leve ou com acuidade, ou uma arma à distância.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-potential-chainer.feature.ator-eficiente.l17.1",
+      "name": "ATOR EFICIENTE",
+      "level": 17,
+      "description": "Você pode tratar sua ação como uma ação bônus ou sua ação bônus como uma ação, permitindo que use duas ações ou duas ações bônus no mesmo turno.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

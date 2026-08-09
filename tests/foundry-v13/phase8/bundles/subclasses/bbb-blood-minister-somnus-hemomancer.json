@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-blood-minister-somnus-hemomancer",
+    "identifier": "bbb-blood-minister-somnus-hemomancer",
+    "name": "Hemomante",
+    "originalName": "Hemomancer",
+    "aliases": [
+      "Hemomancer"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "73–74",
+    "chapter": "Capítulo IX: O Ministro de Sangue",
+    "page": 73
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "blood-minister-somnus",
+    "identifier": "blood-minister",
+    "name": "Ministro de Sangue"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "blood-minister",
+    "selectionLevel": 3,
+    "description": "O Hemomante exerce controle sobrenatural sobre o próprio sangue, podendo manipulá-lo, transformá-lo e até alcançar o sangue no corpo de outras criaturas para influenciá-las.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 73
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-blood-minister-somnus-hemomancer.feature.sincronia-interna.l3.1",
+      "name": "Sincronia Interna",
+      "level": 3,
+      "description": "Você pode usar Constituição no lugar de Força ou Destreza para jogadas de ataque com armas e testes de habilidade. Também pode usar Constituição no lugar de Destreza para determinar sua Classe de Armadura, obedecendo às mesmas limitações que normalmente se aplicariam à Destreza, como o limite imposto por certas armaduras.",
+      "page": 73,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-hemomancer.feature.reabsorcao.l3.1",
+      "name": "Reabsorção",
+      "level": 3,
+      "description": "Quando sofre dano perfurante, cortante ou contundente, pode usar sua reação para reabsorver o sangue perdido e recuperar PV iguais à metade do dano sofrido; isso não pode ser feito se o dano reduzir você a 0 PV. Ao usar a reação, pode reduzir a cura em qualquer múltiplo de 4 para recuperar 1 Dado de Vida de Ministro de Sangue a cada 4 PV removidos da cura. Usos por Descanso Longo: metade de seu nível de Ministro de Sangue.",
+      "page": 73,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-hemomancer.feature.ignicao-de-cinza-sanguinea.l7.1",
+      "name": "Ignição de Cinza Sanguínea",
+      "level": 7,
+      "description": "Como ação bônus, espalhe seu sangue sobre uma arma e gaste de 1 até uma quantidade de Dados de Vida igual ao seu bônus de proficiência para produzir os efeitos de Arma Infundida num nível igual ao número de dados gastos. Você só pode escolher fogo ou necrótico; não precisa se concentrar; o efeito funciona apenas quando você empunha a arma; ela é tratada como mágica; e o efeito dura 1 minuto. Uma vez por Descanso, pode usar a característica gratuitamente como se tivesse gasto 3 Dados de Vida e ainda pode acrescentar dados adicionais até seu limite normal para elevar o nível.",
+      "page": 73,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-hemomancer.feature.construir-sangue-dobrar-sangue.l11.1",
+      "name": "Construir Sangue/Dobrar Sangue",
+      "level": 11,
+      "description": "Como ação bônus, gaste 2 Dados de Vida para produzir os efeitos de Aprimorar Habilidade ou Comando. O efeito é produzido em um nível igual ao seu bônus de proficiência e usa Constituição como atributo de conjuração. Você só pode escolher como alvo criaturas que possuam sangue ou equivalente em seu corpo.",
+      "page": 73,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-hemomancer.feature.fluxo-sanguineo-cristalino.l15.1",
+      "name": "Fluxo Sanguíneo Cristalino",
+      "level": 15,
+      "description": "Ao restringir e fortificar seu sangue, ele assume uma qualidade cristalina diante de traumas. Toda instância de dano que você sofre é reduzida em uma quantidade igual à metade de seu nível de Ministro de Sangue.",
+      "page": 74,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

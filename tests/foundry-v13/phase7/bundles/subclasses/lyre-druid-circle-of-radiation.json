@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-druid-circle-of-radiation",
+    "identifier": "lyre-druid-circle-of-radiation",
+    "name": "Círculo da Radiação",
+    "originalName": "Circle of Radiation",
+    "aliases": [
+      "Circle of Radiation"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "452",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 452
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Estes Druidas canalizam a radiação eidomântica — o poder invisível ligado à Verdade que permanece no mundo desde a Era da Cisão. Eles não compreendem plenamente essa força, mas aprendem a manipular seus efeitos capazes de alterar a realidade e a lidar com sua natureza perigosa e instável.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 452
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-druid-circle-of-radiation.feature.proficiencia-eidomantica.l2.1",
+      "name": "PROFICIÊNCIA EIDOMÂNTICA",
+      "level": 2,
+      "description": "Escolha 2 magias de eidomancia de nível que você possa conjurar. Elas contam como magias de Druida para você e ficam sempre preparadas sem contar no seu limite. A cada nível de Druida, você pode substituir uma por outra válida; sempre que seu bônus de proficiência aumentar devido a um nível de Druida, aprende mais uma dessa forma. Você tem vantagem em testes de eidomancia e, se a salvaguarda do teste ainda não incluir seu bônus de proficiência, pode adicioná-lo.",
+      "page": 452,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-radiation.feature.malha-de-foco-primevo.l2.1",
+      "name": "MALHA DE FOCO PRIMEVO",
+      "level": 2,
+      "description": "Quando precisar realizar um teste de concentração para manter uma magia, você pode escolher obter sucesso automaticamente, antes de rolar. Pode fazê-lo um número de vezes por Descanso Curto ou Longo igual à metade do seu bônus de proficiência, arredondado para baixo.",
+      "page": 452,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-radiation.feature.genes-radiantes.l6.1",
+      "name": "GENES RADIANTES",
+      "level": 6,
+      "description": "Uma vez por Descanso Curto ou Longo, como ação, escolha uma criatura voluntária a até 18 metros e faça uma onda de radiação eidomântica percorrer seu corpo por 1 minuto, ou até você ou ela encerrar com uma ação. No início de cada turno, ela sofre 1d6 de dano irredutível, que não pode reduzi-la abaixo de 1 ponto de vida e não ocorre se ela estiver com 0. Ela soma seu bônus de proficiência a todas as rolagens de dano e salvaguardas. Enquanto estiver nesse estado, quando obtiver sucesso em uma salvaguarda ou acertar um ataque, pode usar a reação para, respectivamente, evitar completamente o dano e os efeitos que a atingiriam ou fazer todos os dados de dano daquele ataque obterem o resultado máximo. Após usar uma dessas reações, o estado termina.",
+      "page": 452,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-radiation.feature.resistencia-magica.l10.1",
+      "name": "RESISTÊNCIA MÁGICA",
+      "level": 10,
+      "description": "Você tem vantagem em salvaguardas contra efeitos mágicos e magias. O benefício se mantém em qualquer forma em que esteja transformado.",
+      "page": 452,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-radiation.feature.circulo-da-influencia-da-verdade.l14.1",
+      "name": "CÍRCULO DA INFLUÊNCIA DA VERDADE",
+      "level": 14,
+      "description": "Como ação, escolha um ponto a até 36 metros e crie uma esfera cintilante de 6 metros de raio por 1 minuto, salvo a opção Esgotamento. Você pode centralizá-la em si para que se mova com você e pode excluir a si mesmo dos efeitos. Escolha um efeito ao criá-la. Esgotamento: cada criatura na esfera faz salvaguarda de Inteligência, sofrendo um número de d6 de dano de energia igual ao seu nível de Druida em uma falha, metade em um sucesso. Golpes Verdadeiros: criaturas aliadas dentro da esfera têm vantagem em ataques e salvaguardas mesmo que normalmente tivessem desvantagem. Mudança Lógica: escolha enfeitiçado, enfurecido, cego, paralisado, atordoado, surdo ou invisível; essa condição não produz efeito dentro da esfera. Barreira: quem tentar entrar ou sair faz salvaguarda de Carisma; em uma falha é empurrado 3 metros para trás; ataques à distância através da barreira falham automaticamente e criaturas em lados opostos não podem usar efeitos que exijam salvaguarda umas contra as outras. Restauração: cada criatura não hostil que iniciar o turno na esfera recupera 1d6 pontos de vida e recebe pontos de vida temporários iguais à metade do seu nível de Druida. Uma vez por Descanso Longo.",
+      "page": 452,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-radiation.feature.axioma-evolutivo.l14.1",
+      "name": "AXIOMA EVOLUTIVO",
+      "level": 14,
+      "description": "Todo dano que você causa é considerado eidólico e mágico.",
+      "page": 452,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

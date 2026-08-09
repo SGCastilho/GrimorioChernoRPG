@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-warlock-gorgon",
+    "identifier": "lyre-warlock-gorgon",
+    "name": "Górgona",
+    "originalName": "Gorgon",
+    "aliases": [
+      "Gorgon"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "496–497",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 496
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Seu patrono é uma górgona imortal, entidade antiga que oferece domínio sobre petrificação. Seus agentes endurecem a própria pele, cristalizam armas e aprisionam adversários em pedra.",
+    "tables": [
+      {
+        "key": "table.1.lista-expandida-de-magias",
+        "title": "Lista Expandida de Magias",
+        "page": 496,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível da Magia"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Erupção Terrestre; Escudo do Verão"
+          },
+          {
+            "level": "2º",
+            "spells": "Cegueira/Surdez; Passos sem Pegadas"
+          },
+          {
+            "level": "3º",
+            "spells": "Criar Alimentos; Glifo de Vigilância"
+          },
+          {
+            "level": "4º",
+            "spells": "Moldar Rochas; Pele de Pedra"
+          },
+          {
+            "level": "5º",
+            "spells": "Mão Suprema; Criar Passagem"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 496
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-warlock-gorgon.feature.dadivas-da-gorgona.l1.1",
+      "name": "DÁDIVAS DA GÓRGONA",
+      "level": 1,
+      "description": "Você recebe percepção às cegas em alcance de 3 metros × seu bônus de proficiência e proficiência em Furtividade. Se já for proficiente em Furtividade, escolha outra perícia baseada em Destreza ou Carisma.",
+      "page": 496,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-gorgon.feature.escudo-de-mascara-de-pedra.l1.1",
+      "name": "ESCUDO DE MÁSCARA DE PEDRA",
+      "level": 1,
+      "description": "Quando sofrer dano de ataque ou efeito, use reação para reduzi-lo em 1d10 + seu nível de Bruxo. Usos por Descanso Longo iguais ao bônus de proficiência.",
+      "page": 496,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-gorgon.feature.caminho-do-endurecimento.l6.1",
+      "name": "CAMINHO DO ENDURECIMENTO",
+      "level": 6,
+      "description": "Escolha permanentemente uma opção. ENCANTAMENTO CRISTALOCINÉTICO: como ação bônus, petrifique arma ou munição em quartzo até o fim do turno; ataques podem usar seu atributo de conjuração para ataque/dano, são mágicos e recebem bônus na jogada de ataque igual à metade do bônus de proficiência. Dois usos por Descanso Curto ou Longo, três no 10º nível e quatro no 15º. PELE DE PADRÃO CRISTALINO: sem armadura, CA 10 + Des + Con e reduz todo dano contundente, cortante e perfurante em metade de seu nível de Bruxo. RESISTÊNCIA DE QUARTZO: uma vez por Descanso Longo, ao cair a 0 PV, em vez disso fica com PV iguais à metade de seu nível de Bruxo e recebe bônus na CA igual ao atributo de conjuração até o início do próximo turno.",
+      "page": 496,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-gorgon.feature.maldicao-da-petrificacao.l10.1",
+      "name": "MALDIÇÃO DA PETRIFICAÇÃO",
+      "level": 10,
+      "description": "Uma vez por Descanso Longo, como ação, escolha até seu bônus de proficiência em criaturas a até 18 metros que possam vê-lo. Cada uma faz salvaguarda de Constituição. Em falha, deslocamento -3 m e sem reações; em seus turnos, pode usar ação ou ação bônus, não ambas, e ataques após o primeiro no turno têm desvantagem. Ao fim de cada turno, repete a salvaguarda: sucesso encerra; falha reduz deslocamento em mais 3 m. Após três falhas e deslocamento 0, fica petrificada. Um 1 natural conta como duas falhas.",
+      "page": 497,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-gorgon.feature.armadilha-de-fibra-de-pedra.l14.1",
+      "name": "ARMADILHA DE FIBRA DE PEDRA",
+      "level": 14,
+      "description": "Quando criatura a 1,5 m o acertar com ataque corpo a corpo, use reação; ela faz salvaguarda de Força. Em falha, a arma ou meio de ataque fica preso em seu corpo. Enquanto mantiver o vínculo, o alvo fica restringido e não pode usar aquela arma. Pode soltá-la voluntariamente; caso contrário, usa ação e teste de Força contra sua CD para libertá-la. Enquanto pretende mantê-la presa, você não pode se afastar do alvo salvo se puder movê-lo consigo, mas pode mover mantendo-se adjacente. Pode encerrar à vontade.\n\nINVOCAÇÕES DA GÓRGONA. OLHAR DE INFLUÊNCIA: ação bônus, alvo a até 18 m que o veja faz salvaguarda de Constituição; falha: -2 CA e sem reações até o início do próximo turno; usos por Descanso Curto ou Longo iguais ao bônus de proficiência. POSTURA ATERRADA: reação evita ser derrubado ou movido contra a vontade. SAÚDE LENDÁRIA (15º): PV máximos + seu nível de Bruxo, depois +1 por novo nível. CAMINHO DIVIDIDO DO ENDURECIMENTO (7º): escolha uma segunda opção de Caminho do Endurecimento. CÉLULAS DE PEDRA (12º): proficiência em salvaguardas de Constituição, inclusive concentração. SENTIDO SÍSMICO (9º): sentido sísmico em alcance de 3 metros × bônus de proficiência.",
+      "page": 497,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

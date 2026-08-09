@@ -1,0 +1,204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spellblade-aether-blade",
+    "identifier": "spellblade-aether-blade",
+    "name": "Lâmina de Éter",
+    "originalName": "Aether Blade",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "kibbles",
+    "title": "Spellblade v1.3 — KibblesTasty — Lâmina de Éter",
+    "pages": "7–8",
+    "chapter": "Técnicas de Spellblade",
+    "page": 7
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "spellblade",
+    "identifier": "spellblade",
+    "name": "Spellblade"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "spellblade",
+    "selectionLevel": 3,
+    "description": "Os Spellblades da Lâmina de Éter usam suas técnicas mágicas para criar uma arma de puro poder arcano. A maior parte de suas capacidades gira em torno de dominar essa arma.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-lamina-de-eter",
+        "title": "Magias de Lâmina de Éter",
+        "page": 7,
+        "description": "Estas magias contam como magias de Spellblade para você e não contam no limite de magias conhecidas.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Spellblade"
+          },
+          {
+            "key": "magias",
+            "label": "Magias aprendidas"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Mísseis Mágicos"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Poeira Estelar"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Lança de Éter"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Cortador Dimensional"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Tempestade de Éter"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 7
+  },
+  "features": [
+    {
+      "key": "subclass.spellblade-aether-blade.feature.magias-da-lamina-de-eter.l3.1",
+      "name": "MAGIAS DA LÂMINA DE ÉTER",
+      "level": 3,
+      "description": "Você aprende as magias apresentadas na tabela da subclasse. Elas são magias de Spellblade para você e não contam no número de magias conhecidas.",
+      "page": 7,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Éter",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-aether-blade.feature.lamina-de-eter.l3.1",
+      "name": "LÂMINA DE ÉTER",
+      "level": 3,
+      "description": "Ao escolher esta técnica no 3º nível, quando rola iniciativa ou como uma ação bônus, você pode manifestar uma arma corpo a corpo descomunal feita de energia de força pura. Ela pode assumir a forma de qualquer arma corpo a corpo com lâmina, mas é uma arma de uma mão que causa 1d10 de dano de força e possui alcance de 1,5 metro, independentemente da forma.\n\nAo atacar com essa arma, você pode usar Inteligência no lugar de Força nas jogadas de ataque e dano. A arma dura até você soltá-la, ficar incapacitado ou dispensá-la como ação bônus.\n\nEmbora temporária e mágica, ela conta como um objeto no valor de 1 peça de prata para ser usada como componente material de magias.",
+      "page": 7,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Éter",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-aether-blade.feature.aprimoramento-de-eter.l3.1",
+      "name": "APRIMORAMENTO DE ÉTER",
+      "level": 3,
+      "description": "Em um ritual de 1 hora, você pode absorver o poder de uma arma mágica que conceda bônus às jogadas de ataque e dano. A característica não pode afetar artefatos, armas sencientes ou itens amaldiçoados. A critério do Mestre, pode não funcionar com outras armas dependendo da origem e do tipo. O processo drena o poder da arma, tornando-a mundana, e sua Lâmina de Éter recebe o bônus que a arma possuía.",
+      "page": 7,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Éter",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-aether-blade.feature.surto-potencializador.l3.1",
+      "name": "SURTO POTENCIALIZADOR",
+      "level": 3,
+      "description": "Você ganha uma nova opção para Surto Arcano: sem exigir uma ação, potencialize sua Lâmina de Éter para que ela cause um dado adicional de dano até o fim do seu próximo turno. Durante o efeito, você pode repetir uma vez qualquer dado de dano da arma, mas deve usar o novo resultado.",
+      "page": 7,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Éter",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-aether-blade.feature.grande-arma-de-eter.l7.1",
+      "name": "GRANDE ARMA DE ÉTER",
+      "level": 7,
+      "description": "No 7º nível, a arma de éter torna-se maior e mais poderosa. Seu dano aumenta para 1d12 e ela recebe a propriedade Alcance.",
+      "page": 7,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Éter",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-aether-blade.feature.poder-canalizado.l15.1",
+      "name": "PODER CANALIZADO",
+      "level": 15,
+      "description": "No 15º nível, você recebe os efeitos de Surto Potencializador sempre que usa qualquer opção de Surto Arcano.",
+      "page": 7,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Éter",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-aether-blade.feature.lamina-massiva.l20.1",
+      "name": "LÂMINA MASSIVA",
+      "level": 20,
+      "description": "No 20º nível, você pode sobrecarregar sua Lâmina de Éter por 1 minuto, sem exigir uma ação. Durante esse período, ao atacar com ela, você ignora armaduras e defesas não mágicas, tratando a CA do alvo como 10 + o modificador de Destreza dele para aquele ataque. Defesas mágicas, como Armadura Arcana ou Escudo, não são ignoradas.\n\nSeus ataques podem ter como alvo até duas criaturas, desde que estejam a até 3 metros uma da outra. Se o ataque ativar uma magia por Golpe Mágico, a magia não afeta o segundo alvo a menos que possa atingir várias criaturas.\n\nDepois de usar esta característica, você não pode usá-la novamente até concluir um descanso longo.",
+      "page": 8,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Éter",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1407 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tamer-ryoko",
+    "identifier": "tamer",
+    "name": "Domador",
+    "originalName": "Tamer",
+    "aliases": [
+      "Tamer",
+      "Domador"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "191–200",
+    "chapter": "Capítulo 9: Classes — Domador (reimpresso para referência)",
+    "page": 192
+  },
+  "nativeMapping": {
+    "status": "review",
+    "warnings": [
+      "A habilidade de conjuração do Domador é escolhida entre Inteligência, Sabedoria ou Carisma; a Fase 5 deverá preservar essa escolha."
+    ]
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Um treinador de monstros que luta através de companheiros capturados em receptáculos mágicos, aprimorando-os, comandando-os e reforçando-os com magia de suporte.",
+    "hitDice": {
+      "raw": "d8",
+      "mode": "standard",
+      "number": 1,
+      "faces": 8
+    },
+    "primaryAbility": {
+      "raw": "Inteligência, Sabedoria ou Carisma (escolha para conjuração)",
+      "abilityKeys": [
+        "int",
+        "wis",
+        "cha"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Constituição, Carisma",
+        "abilityKeys": [
+          "con",
+          "cha"
+        ]
+      },
+      "armor": "Armaduras leves e médias, escudos",
+      "weapons": "Armas simples, redes",
+      "tools": "Um tipo de ferramenta de artesão ou instrumento musical",
+      "skills": "Escolha duas entre Adestrar Animais, Intuição, Medicina, Natureza, Percepção e Persuasão"
+    },
+    "basics": {
+      "title": "Fundamentos do Domador",
+      "page": 192,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "text": "Dado de Vida: 1d8 por nível. PV no 1º nível: 8 + Constituição. PV em níveis superiores: 1d8 (ou 5) + Constituição. Armaduras: leves, médias e escudos. Armas: simples e redes. Ferramentas: um tipo de ferramenta de artesão ou instrumento musical. Salvaguardas: Constituição e Carisma. Perícias: escolha duas entre Adestrar Animais, Intuição, Medicina, Natureza, Percepção e Persuasão. Equipamento: cota de escamas ou couro; arma simples corpo a corpo, rede e escudo; besta leve e 20 virotes; pacote de aventureiro ou explorador; ou 5d4 × 10 po. Multiclasse: 13 em Inteligência, Sabedoria ou Carisma — o atributo escolhido deve ser sua habilidade de conjuração de Domador; ganha armadura leve, escudos, armas simples e redes; conta metade dos níveis, arredondada para baixo, para espaços multiclasse."
+    },
+    "overview": [
+      {
+        "title": "O DOMADOR",
+        "text": "A classe Domador é reproduzida em Ryoko’s Guide para facilitar a referência de sua subclasse Sensei. Seu núcleo é a criação de vínculos com companheiros, que utilizam seu bônus de proficiência e recebem melhorias à medida que você avança."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIAÇÃO RÁPIDA",
+        "text": "Escolha Sabedoria, Inteligência ou Carisma como seu atributo mais alto e Constituição em seguida."
+      }
+    ],
+    "tables": [
+      {
+        "key": "table.1.treinamento-de-melhorias-do-companheiro",
+        "title": "Treinamento de Melhorias do Companheiro",
+        "page": 194,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "melhoria",
+            "label": "Melhoria"
+          },
+          {
+            "key": "efeito",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "melhoria": "Treino de Velocidade",
+            "efeito": "Aumente um deslocamento existente em 4,5 m, até no máximo 150% do deslocamento-base, arredondando para incremento de 1,5 m."
+          },
+          {
+            "melhoria": "Endurecer",
+            "efeito": "O companheiro ganha 1 Dado de Vida adicional; aumente o máximo de PV rolando-o e somando Constituição (mín. 0)."
+          },
+          {
+            "melhoria": "Aprimorar Atributo",
+            "efeito": "Aumente um atributo do companheiro em 1, até 20."
+          },
+          {
+            "melhoria": "Ir à Garganta",
+            "efeito": "+1 em ataques e danos de armas naturais ou golpes desarmados. Pode ser escolhida uma vez; duas a partir do 5º nível e três a partir do 9º."
+          },
+          {
+            "melhoria": "Instintos de Sobrevivência",
+            "efeito": "Proficiência em uma salvaguarda."
+          },
+          {
+            "melhoria": "Treino de Guerra",
+            "efeito": "Proficiência em um tipo de armadura ou em duas armas; armaduras médias/pesadas exigem proficiências anteriores adequadas."
+          }
+        ]
+      },
+      {
+        "key": "table.2.resumo-de-companheiros-do-domador",
+        "title": "Resumo de Companheiros do Domador",
+        "page": 195,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível"
+          },
+          {
+            "key": "vinculados",
+            "label": "Máx. vinculados"
+          },
+          {
+            "key": "tamanho",
+            "label": "Tamanho máx."
+          },
+          {
+            "key": "cr",
+            "label": "ND máx."
+          },
+          {
+            "key": "cr05",
+            "label": "ND 1/2-"
+          },
+          {
+            "key": "cr1",
+            "label": "ND 1"
+          },
+          {
+            "key": "cr2",
+            "label": "ND 2"
+          },
+          {
+            "key": "cr3",
+            "label": "ND 3"
+          },
+          {
+            "key": "cr4",
+            "label": "ND 4"
+          },
+          {
+            "key": "cr5",
+            "label": "ND 5"
+          },
+          {
+            "key": "cr6",
+            "label": "ND 6"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": 1,
+            "vinculados": 1,
+            "tamanho": "Pequeno",
+            "cr": "1/2",
+            "cr05": "0/0",
+            "cr1": "—",
+            "cr2": "—",
+            "cr3": "—",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 2,
+            "vinculados": 1,
+            "tamanho": "Pequeno",
+            "cr": "1/2",
+            "cr05": "1/0",
+            "cr1": "—",
+            "cr2": "—",
+            "cr3": "—",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 3,
+            "vinculados": 2,
+            "tamanho": "Pequeno",
+            "cr": "1/2",
+            "cr05": "2/0",
+            "cr1": "—",
+            "cr2": "—",
+            "cr3": "—",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 4,
+            "vinculados": 2,
+            "tamanho": "Pequeno",
+            "cr": "1",
+            "cr05": "3/1",
+            "cr1": "0/0",
+            "cr2": "—",
+            "cr3": "—",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 5,
+            "vinculados": 2,
+            "tamanho": "Médio",
+            "cr": "1",
+            "cr05": "4/1",
+            "cr1": "1/0",
+            "cr2": "—",
+            "cr3": "—",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 6,
+            "vinculados": 2,
+            "tamanho": "Médio",
+            "cr": "1",
+            "cr05": "5/1",
+            "cr1": "2/0",
+            "cr2": "—",
+            "cr3": "—",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 7,
+            "vinculados": 3,
+            "tamanho": "Médio",
+            "cr": "2",
+            "cr05": "6/1",
+            "cr1": "3/0",
+            "cr2": "0/0",
+            "cr3": "—",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 8,
+            "vinculados": 3,
+            "tamanho": "Médio",
+            "cr": "2",
+            "cr05": "7/2",
+            "cr1": "4/1",
+            "cr2": "1/1",
+            "cr3": "—",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 9,
+            "vinculados": 3,
+            "tamanho": "Médio",
+            "cr": "2",
+            "cr05": "8/2",
+            "cr1": "5/1",
+            "cr2": "2/1",
+            "cr3": "—",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 10,
+            "vinculados": 3,
+            "tamanho": "Médio",
+            "cr": "3",
+            "cr05": "9/2",
+            "cr1": "6/1",
+            "cr2": "3/1",
+            "cr3": "0/0",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 11,
+            "vinculados": 4,
+            "tamanho": "Grande",
+            "cr": "3",
+            "cr05": "10/2",
+            "cr1": "7/1",
+            "cr2": "4/1",
+            "cr3": "1/0",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 12,
+            "vinculados": 4,
+            "tamanho": "Grande",
+            "cr": "3",
+            "cr05": "11/3",
+            "cr1": "8/2",
+            "cr2": "5/2",
+            "cr3": "2/1",
+            "cr4": "—",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 13,
+            "vinculados": 4,
+            "tamanho": "Grande",
+            "cr": "4",
+            "cr05": "12/3",
+            "cr1": "9/2",
+            "cr2": "6/2",
+            "cr3": "3/1",
+            "cr4": "0/0",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 14,
+            "vinculados": 4,
+            "tamanho": "Grande",
+            "cr": "4",
+            "cr05": "13/3",
+            "cr1": "10/2",
+            "cr2": "7/2",
+            "cr3": "4/1",
+            "cr4": "1/0",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 15,
+            "vinculados": 5,
+            "tamanho": "Grande",
+            "cr": "4",
+            "cr05": "14/3",
+            "cr1": "11/2",
+            "cr2": "8/2",
+            "cr3": "5/1",
+            "cr4": "2/0",
+            "cr5": "—",
+            "cr6": "—"
+          },
+          {
+            "nivel": 16,
+            "vinculados": 5,
+            "tamanho": "Grande",
+            "cr": "5",
+            "cr05": "15/4",
+            "cr1": "12/3",
+            "cr2": "9/3",
+            "cr3": "6/2",
+            "cr4": "3/1",
+            "cr5": "0/0",
+            "cr6": "—"
+          },
+          {
+            "nivel": 17,
+            "vinculados": 5,
+            "tamanho": "Enorme",
+            "cr": "5",
+            "cr05": "16/4",
+            "cr1": "13/3",
+            "cr2": "10/3",
+            "cr3": "7/2",
+            "cr4": "4/1",
+            "cr5": "1/0",
+            "cr6": "—"
+          },
+          {
+            "nivel": 18,
+            "vinculados": 5,
+            "tamanho": "Enorme",
+            "cr": "5",
+            "cr05": "17/4",
+            "cr1": "14/3",
+            "cr2": "11/3",
+            "cr3": "8/2",
+            "cr4": "5/1",
+            "cr5": "2/0",
+            "cr6": "—"
+          },
+          {
+            "nivel": 19,
+            "vinculados": 6,
+            "tamanho": "Enorme",
+            "cr": "6",
+            "cr05": "18/5",
+            "cr1": "15/4",
+            "cr2": "12/4",
+            "cr3": "9/3",
+            "cr4": "6/2",
+            "cr5": "3/1",
+            "cr6": "0/0"
+          },
+          {
+            "nivel": 20,
+            "vinculados": 6,
+            "tamanho": "Enorme",
+            "cr": "6",
+            "cr05": "19/5",
+            "cr1": "16/4",
+            "cr2": "13/4",
+            "cr3": "10/3",
+            "cr4": "7/2",
+            "cr5": "4/1",
+            "cr6": "1/0"
+          }
+        ]
+      },
+      {
+        "key": "table.3.lista-de-magias-do-domador",
+        "title": "Lista de Magias do Domador",
+        "page": 198,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "Truques",
+            "magias": "Não Pode Tropeçar; Golpe Feroz; Orientação; Uivo; Luz; Faro Primordial; Reforçar; Resistência; Cortina de Fumaça; Amortecer Queda; Poupar os Moribundos; Olho do Perseguidor; Zombaria Viciosa"
+          },
+          {
+            "nivel": "1º",
+            "magias": "Amizade Animal; Pele Camaleônica; Curar Ferimentos; Detectar Magia; Retirada Acelerada; Fogo das Fadas; Vida Falsa; Queda Suave; Clarão; Forma de Nadadeira; Graxa; Palavra Curativa; Heroísmo; Identificação; Iniciativa; Chama Interior; Salto; Passos Longos; Placa de Hortelã; Proteção contra o Bem e Mal; Purificar Alimentos e Bebidas; Santuário; Escudo da Fé; Imagem Silenciosa; Sono; Falar com Animais"
+          },
+          {
+            "nivel": "2º",
+            "magias": "Ajuda; Alterar-se; Mensageiro Animal; Pele de Árvore; Nublar; Acalmar Emoções; Visão no Escuro; Detectar Pensamentos; Pele Terrestre; Pele de Enguia; Aprimorar Habilidade; Aumentar/Reduzir; Desigualdade; Invisibilidade; Restauração Menor; Levitação; Localizar Animais ou Plantas; Localizar Objeto; Espelho da Reflexão; Passos sem Pegadas; Preservar; Proteção; Proteção contra Veneno; Ver o Invisível; Palavra de Proteção; Silêncio; Escalada de Aranha; Explosão de Açúcar; Vínculo Protetor"
+          },
+          {
+            "nivel": "3º",
+            "magias": "Piscar; Criar Alimentos e Água; Luz do Dia; Dissipar Magia; Medo; Voo; Coma Alimentar; Velocidade; Sanguessuga em Massa; Indetectável; Proteção contra Energia; Remover Maldição; Troca-Troca; Idiomas; Respirar na Água; Andar na Água"
+          },
+          {
+            "nivel": "4º",
+            "magias": "Aura de Impureza; Controlar Água; Passo pelas Nuvens; Proteção contra a Morte; Porta Dimensional; Dominar Besta; Escudo de Fogo; Liberdade de Movimento; Pele de Sapo; Invisibilidade Maior; Localizar Criatura; Esfera Resiliente; Pele de Aço; Pele de Pedra"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Cúpula Antivida; Despertar; Dissipar o Bem e Mal; Dominar Pessoa; Resistir; Pele Febril; Missão; Restauração Maior; Incorporeidade; Lendas e Histórias; Despistar; Carapaça Adamantina de Nomi; Vínculo Telepático; Vidência"
+          }
+        ]
+      },
+      {
+        "key": "table.4.custo-de-barda-para-companheiros",
+        "title": "Custo de Barda para Companheiros",
+        "page": 194,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "tamanho",
+            "label": "Tamanho"
+          },
+          {
+            "key": "humanoide",
+            "label": "Forma humanoide"
+          },
+          {
+            "key": "abstrata",
+            "label": "Forma abstrata"
+          }
+        ],
+        "rows": [
+          {
+            "tamanho": "Miúdo",
+            "humanoide": "0,5×",
+            "abstrata": "1×"
+          },
+          {
+            "tamanho": "Pequeno",
+            "humanoide": "1×",
+            "abstrata": "2×"
+          },
+          {
+            "tamanho": "Médio",
+            "humanoide": "1×",
+            "abstrata": "2×"
+          },
+          {
+            "tamanho": "Grande",
+            "humanoide": "2×",
+            "abstrata": "4×"
+          },
+          {
+            "tamanho": "Enorme",
+            "humanoide": "4×",
+            "abstrata": "8×"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "key": "reference.1.reimpressao-da-classe",
+        "title": "REIMPRESSÃO DA CLASSE",
+        "page": 191,
+        "text": "Ryoko’s Guide informa que inclui as regras-base do Domador, originalmente apresentado em Heliana’s Guide to Monster Hunting, para facilitar a consulta junto à subclasse Sensei.",
+        "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+      },
+      {
+        "key": "reference.2.receptaculos-e-custo",
+        "title": "RECEPTÁCULOS E CUSTO",
+        "page": 196,
+        "text": "O receptáculo exige 8 horas e componentes em po iguais a pelo menos 100 × o ND do alvo. Exemplo da fonte: ND 1/2 exige receptáculo de 50 po e ND 1 exige 100 po. Componentes de receptáculos antigos podem ser reaproveitados.",
+        "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+      },
+      {
+        "key": "reference.3.regra-opcional-doma-nao-combativa",
+        "title": "REGRA OPCIONAL — DOMA NÃO COMBATIVA",
+        "page": 196,
+        "text": "Se uma criatura se tornar voluntariamente companheira por narrativa — por exemplo, devido a um ato nobre ou criação desde um ovo — o GM pode ignorar a salvaguarda normal de doma.",
+        "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "tamer-ryoko",
+      "color": "#9b6b43"
+    }
+  },
+  "features": [
+    {
+      "key": "class.tamer-ryoko.feature.familiar-de-bolso.l1.1",
+      "name": "FAMILIAR DE BOLSO",
+      "level": 1,
+      "description": "Você se vincula a uma criatura Pequena ou menor, ND 1/2 ou menos, que não seja Humanoide, Gigante ou enxame. Ela se torna seu companheiro, usa o máximo médio de seus Dados de Vida e não conjura magias. Fora de campo, permanece em estase dentro de um receptáculo mágico. Como ação, segurando o receptáculo, invoque-a em espaço visível a 9 m ou a 1,5 m; como ação ou ação bônus, recolha um companheiro a até 9 m. Apenas um pode estar invocado de cada vez. Em combate ele compartilha sua iniciativa, age logo depois de você e, salvo comando por ação ou ação bônus, usa Esquivar-se; a partir do 5º nível pode usar Multiataque. O companheiro obtém Descanso Longo com você, pode usar equipamento compatível e vincular-se a até três objetos para levá-los ao receptáculo.",
+      "page": 193,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.vinculo-da-alma.l1.1",
+      "name": "VÍNCULO DA ALMA",
+      "level": 1,
+      "description": "Companheiros fazem salvaguardas contra a morte como personagens. Um companheiro estabilizado fica inconsciente até recuperar PV ou você terminar um Descanso Longo; se estiver estável com 0 PV ao fim desse descanso, recupera metade do máximo. Você possui uma reserva de cura igual a 5 × seu nível de Domador, restaurada em Descanso Longo. Ao terminar um Descanso Curto, distribua pontos restantes dessa reserva entre seus companheiros para curá-los.",
+      "page": 194,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.treinador-de-monstros.l1.1",
+      "name": "TREINADOR DE MONSTROS",
+      "level": 1,
+      "description": "Seus companheiros usam seu bônus de proficiência no lugar do próprio. Ao receber um Aprimoramento no Valor de Habilidade nesta classe, cada companheiro ganha 1 Dado de Vida adicional e aumenta o máximo de PV pelo resultado + Constituição (mín. 0). A cada nível de Domador após o 1º, cada companheiro ganha uma Melhoria de Companheiro; novos companheiros recebem retroativamente Dados de Vida e melhorias conforme seu nível e ND.",
+      "page": 194,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.domar-criatura.l1.1",
+      "name": "DOMAR CRIATURA",
+      "level": 1,
+      "description": "Prepare um receptáculo durante 8 horas, usando materiais com valor em po de pelo menos 100 × o ND do alvo. Como ação, arremesse um receptáculo vazio contra uma criatura visível a 9 m; ela faz salvaguarda de Carisma contra sua CD de magia. O alvo tem sucesso automático se for Humanoide, Gigante ou enxame, exceder seu tamanho/ND máximo, exceder a capacidade do receptáculo ou possuir mais da metade dos PV. Se for elegível e tiver menos de 10 PV ou até um quarto do máximo, falha automaticamente. Em falha, fica aprisionado e torna-se companheiro ao fim do seu próximo Descanso Longo. Ao tornar-se companheiro, perde conjuração, ações de invocação/criação, Regeneração, Rejuvenescimento, Resistência Lendária, cura ilimitada, ações lendárias/míticas e efeitos de covil/região, conforme a lista da fonte.",
+      "page": 196,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.conjuracao.l2.1",
+      "name": "CONJURAÇÃO",
+      "level": 2,
+      "description": "Você aprende truques e magias de Domador conforme a progressão. Magias conhecidas podem ser trocadas ao ganhar nível. Ao receber seu primeiro nível de conjuração na classe, escolha Inteligência, Sabedoria ou Carisma como habilidade de conjuração. Recupera espaços em Descanso Longo e pode usar o receptáculo de um companheiro como foco.",
+      "page": 197,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.reforcar.l2.1",
+      "name": "REFORÇAR",
+      "level": 2,
+      "description": "Enquanto seu companheiro estiver a até 30 m e você segurar o receptáculo dele — ou enquanto estiver dentro do receptáculo que você segura — use uma ação e gaste um espaço de magia. O companheiro recupera PV iguais ao seu modificador de conjuração (mín. 1) + 2d4 por nível do espaço gasto.",
+      "page": 198,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.vinculo-psiquico.l2.1",
+      "name": "VÍNCULO PSÍQUICO",
+      "level": 2,
+      "description": "Enquanto um companheiro estiver a até 30 m, você pode comunicar-se telepaticamente com ele. Como ação, veja e ouça por seus sentidos até o início do seu próximo turno, ficando cego e surdo pelos próprios sentidos. Troca de Magia: se o companheiro estiver invocado a até 30 m e você segurar seu receptáculo, as magias conhecidas por ele entram em suas magias conhecidas; além disso, magias de alcance pessoal ou toque podem ter o companheiro como alvo.",
+      "page": 198,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.familia-de-bolso.l3.1",
+      "name": "FAMÍLIA DE BOLSO",
+      "level": 3,
+      "description": "O número de companheiros vinculados aumenta para 2 no 3º nível, 3 no 7º, 4 no 11º, 5 no 15º e 6 no 19º. O tamanho máximo passa a Médio no 5º nível, Grande no 11º e Enorme no 17º. Ao exceder o limite, libere um companheiro. Novos companheiros recebem melhorias e Dados de Vida conforme a tabela Resumo de Companheiros.",
+      "page": 198,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.paradigma-de-treinamento.l3.1",
+      "name": "PARADIGMA DE TREINAMENTO",
+      "level": 3,
+      "description": "Escolha um Paradigma de Treinamento. Ele concede características no 3º, 7º, 10º e 14º níveis; no 18º nível, sua característica de 7º nível é aprimorada.",
+      "page": 198,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1",
+      "name": "APRIMORAMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "No 4º, 8º, 12º, 16º e 19º níveis, aumente um atributo em 2 ou dois em 1, sem ultrapassar 20.",
+      "page": 199,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.multiataque.l5.1",
+      "name": "MULTIATAQUE",
+      "level": 5,
+      "description": "Ao usar uma ação ou ação bônus para comandar seu companheiro, você pode ordenar que ele use a ação Multiataque, caso possua.",
+      "page": 199,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.presenca-maleavel.l5.1",
+      "name": "PRESENÇA MALEÁVEL",
+      "level": 5,
+      "description": "Ao comandar um companheiro a até 30 m, escolha criatura visível e comportamento Agressivo ou Cauteloso. Por 1 minuto, no início dos turnos do alvo, se estiver a até 9 m do companheiro e puder vê-lo, ele faz salvaguarda de Sabedoria. Em falha: Agressivo impõe desvantagem em ataques contra criaturas que não sejam o companheiro; Cauteloso impõe desvantagem em ataques contra o companheiro se houver outra criatura hostil ao atacante a 1,5 m dele. Uma vez por Descanso Curto ou Longo.",
+      "page": 199,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.ataque-alfa.l6.1",
+      "name": "ATAQUE ALFA",
+      "level": 6,
+      "description": "Como parte da ação usada para invocar um companheiro, você pode comandá-lo a realizar uma ação de sua ficha ou outra ação em seu turno. Usos iguais ao modificador de conjuração de Domador (mín. 1), recuperados em Descanso Longo.",
+      "page": 199,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.golpes-determinados.l6.1",
+      "name": "GOLPES DETERMINADOS",
+      "level": 6,
+      "description": "Os ataques de seus companheiros contam como mágicos para superar resistência e imunidade a ataques e danos não mágicos.",
+      "page": 199,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.troca-troca.l13.1",
+      "name": "TROCA-TROCA",
+      "level": 13,
+      "description": "Enquanto você e um companheiro estiverem a até 30 m um do outro, use ação bônus ou reação quando um dos dois for alvo de um ataque de atacante visível para trocar magicamente de lugar. Se usado como reação, quem chega ao espaço torna-se o novo alvo. Usos iguais ao modificador de conjuração (mín. 1) por Descanso Longo.",
+      "page": 199,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.presenca-magnifica.l17.1",
+      "name": "PRESENÇA MAGNÍFICA",
+      "level": 17,
+      "description": "Ao comandar um companheiro a até 30 m, escolha por 1 minuto: Pose Provocadora — criaturas hostis que o vejam a até 4,5 m têm desvantagem para atacar qualquer outra criatura; ou Violeta Tímida — criaturas hostis têm desvantagem para atacar o companheiro se houver outra criatura hostil ao atacante a até 4,5 m dele. Uma vez por Descanso Longo.",
+      "page": 200,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.tamer-ryoko.feature.invocar-a-horda.l20.1",
+      "name": "INVOCAR A HORDA",
+      "level": 20,
+      "description": "Como ação, invoque companheiros adicionais por 1 minuto, mantendo no máximo três simultaneamente devido a esta característica. Em turnos seguintes, use uma ação para emitir comandos mentais a todos eles de uma vez, escolhendo a ordem em que agem. Ao fim do minuto, todos menos um retornam aos receptáculos e você não pode mover-se nem realizar ações até o fim do seu próximo turno. Uma vez por Descanso Longo.",
+      "page": 200,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Domador",
+    "sourceTitle": "",
+    "sourcePage": null,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível"
+      },
+      {
+        "key": "proficiency",
+        "label": "Proficiência"
+      },
+      {
+        "key": "features",
+        "label": "Características"
+      },
+      {
+        "key": "cantrips",
+        "label": "Truques"
+      },
+      {
+        "key": "known",
+        "label": "Magias Conhecidas"
+      },
+      {
+        "key": "slot1",
+        "label": "1º"
+      },
+      {
+        "key": "slot2",
+        "label": "2º"
+      },
+      {
+        "key": "slot3",
+        "label": "3º"
+      },
+      {
+        "key": "slot4",
+        "label": "4º"
+      },
+      {
+        "key": "slot5",
+        "label": "5º"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Familiar de Bolso",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.familiar-de-bolso.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Treinador de Monstros",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.treinador-de-monstros.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Vínculo da Alma",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.vinculo-da-alma.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Domar Criatura",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.domar-criatura.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": "—",
+        "known": "—",
+        "slot1": "—",
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Reforçar",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.reforcar.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Vínculo Psíquico",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.vinculo-psiquico.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Conjuração",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.conjuracao.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "known": 2,
+        "slot1": 2,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Família de Bolso",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.familia-de-bolso.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Paradigma de Treinamento",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.paradigma-de-treinamento.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "known": 3,
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Aprimoramento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "known": 3,
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Multiataque",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.multiataque.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Presença Maleável",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.presenca-maleavel.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "known": 4,
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Ataque Alfa",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.ataque-alfa.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Golpes Determinados",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.golpes-determinados.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "known": 4,
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Família de Bolso (2)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.tamer-ryoko.feature.familia-de-bolso.l3.1"
+            ]
+          },
+          {
+            "label": "Característica de Paradigma (7º Nível)",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "known": 5,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Aprimoramento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "known": 5,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [],
+        "cantrips": 2,
+        "known": 6,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Paradigma (10º Nível)",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "known": 6,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Família de Bolso (3)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.tamer-ryoko.feature.familia-de-bolso.l3.1"
+            ]
+          }
+        ],
+        "cantrips": 3,
+        "known": 7,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Aprimoramento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "known": 7,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Troca-Troca",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.troca-troca.l13.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "known": 8,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Paradigma (14º Nível)",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 8,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Família de Bolso (4)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.tamer-ryoko.feature.familia-de-bolso.l3.1"
+            ]
+          }
+        ],
+        "cantrips": 4,
+        "known": 9,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Aprimoramento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 9,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Presença Magnífica",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.presenca-magnifica.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 10,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Aprimoramento da Característica de Paradigma (7º Nível)",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 10,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Aprimoramento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Família de Bolso (5)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.tamer-ryoko.feature.familia-de-bolso.l3.1"
+            ]
+          }
+        ],
+        "cantrips": 4,
+        "known": 11,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Invocar a Horda",
+            "kind": "feature",
+            "featureRefs": [
+              "class.tamer-ryoko.feature.invocar-a-horda.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 11,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 1
+    },
+    "options": [
+      {
+        "grimorioId": "ryoko-tamer-sensei",
+        "identifier": "ryoko-tamer-sensei",
+        "name": "Sensei",
+        "originalName": "Sensei",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "201–202",
+          "chapter": "Capítulo 9: Classes",
+          "page": 201
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

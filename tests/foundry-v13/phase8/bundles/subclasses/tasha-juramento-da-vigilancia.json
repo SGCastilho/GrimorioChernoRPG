@@ -1,0 +1,170 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-juramento-da-vigilancia",
+    "identifier": "tasha-juramento-da-vigilancia",
+    "name": "Juramento da Vigilância",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "78–80",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 78
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "O Juramento da Vigilância compromete um paladino a proteger os reinos mortais da predação de criaturas extraplanares, muitas das quais podem acabar com soldados mortais. Por conta disso, esses paladinos estão sempre vigilantes para captar a presença de forças extraplanares, frequentemente estabelecendo uma rede de espiões e informantes para reunir informações de cultos suspeitos. Para um Vigilante, manter a prontidão e uma suspeita saudável sobre aqueles ao seu redor é tão natural quanto vestir uma armadura em combate. Princípios da Vigilância Um paladino que assuma o Juramento da Vigilância jura proteger o reino mortal de ameaças de outros mundos. Vigilância. As ameaças que você enfrenta são sagazes, poderosas, e subversivas. Esteja sempre alerta para sua corrupção. Lealdade. Nunca aceite presentes ou favores de corruptores ou daqueles negociam com eles. Seja verdadeiro com a sua ordem, seus companheiros, e seu dever. Disciplina. Você é o escudo contra os terrores infinitos que se encontram além das estrelas. Sua lâmina deve estar sempre afiada e sua mente aguçada para sobreviver ao que jaz além.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-da-vigilancia",
+        "title": "Magias do Juramento da Vigilância",
+        "page": 79,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Alarme; Detectar Magia"
+          },
+          {
+            "level": "5º",
+            "spells": "Raio Lunar; Ver o Invisível"
+          },
+          {
+            "level": "9º",
+            "spells": "Contramagia; Indetectável"
+          },
+          {
+            "level": "13º",
+            "spells": "Aura de Pureza; Banimento"
+          },
+          {
+            "level": "17º",
+            "spells": "Imobilizar Monstro; Vidência"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 78
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-juramento-da-vigilancia.feature.magias-de-juramento.l3.1",
+      "name": "MAGIAS DE JURAMENTO",
+      "level": 3,
+      "description": "Você adquire magias de juramento nos níveis de paladino listados na tabela de Magias do Juramento da Vigilância. Veja a característica de Juramento Sagrado para ver como as magias funcionam. Magias do Juramento da VigiLância Nível de Paladino Magias 3º Alarme, Detectar Magia 5º Raio Lunar, Ver o Invisível 9º Contramagia, Indetectável 13º Aura de Pureza, Banimento 17º Imobilizar monstro, Vidência",
+      "page": 78,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-juramento-da-vigilancia.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Você adquire as duas opções a seguir de Canalizar Divindade. Veja a característica do Juramento Sagrado sobre como o Canalizar Divindade funciona. Vontade do Vigilante. Você pode usar o seu Canalizar Divindade para investir sua presença com a força protetora de sua fé. Como uma ação, você pode escolher um número de criaturas que você possa ver a até 9m de você, até um número equivalente ao seu modificador de Carisma (mínimo de 1 criatura). Por 1 minuto, você e as criaturas escolhidas possuem vantagem na salvaguarda de Inteligência, Sabedoria e Carisma. Expulsar extraplanares. Você pode utilizar o seu Canalizar Divindade para punir seres de outros mundos. Como uma ação, você exibe o seu símbolo sagrado e cada aberração, celestial, elemental, fada ou corruptor a até 9m de você que possa ouvi-lo deve fazer uma salvaguarda de Sabedoria. Em caso de falha, a criatura é expulsa por 1 minuto ou até que receba dano. Uma criatura expulsa deve gastar seus turnos tentando se distanciar o máximo possível de você, não podendo se aproximar a menos de 9 metros por vontade própria. Ela também não pode usar reações, sendo capaz apenas de usar a ação Correr, ou tentar escapar de um efeito que a impeça de se mover. Caso não possa se mover, a criatura ainda pode usar a ação Esquivar.",
+      "page": 78,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-juramento-da-vigilancia.feature.aura-do-sentinela.l7.1",
+      "name": "AURA DO SENTINELA",
+      "level": 7,
+      "description": "Você emite uma aura de prontidão enquanto não estiver incapacitado. Quando você ou qualquer criatura a sua escolha a até 3m de você joga a iniciativa, todos vocês ganham um bônus na iniciativa igual ao seu bônus de proficiência. No 18° nível a distância dessa aura é ampliada para 9m.",
+      "page": 79,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-juramento-da-vigilancia.feature.repreensao-do-vigilante.l15.1",
+      "name": "REPREENSÃO DO VIGILANTE",
+      "level": 15,
+      "description": "Você aprendeu como punir qualquer um que ouse utilizar de engodos contra você e seus seguidores. Sempre que você ou uma criatura que você possa ver a até 9m de distância forem bem sucedidos em uma salvaguarda de Inteligência, Sabedoria ou Carisma você pode usar sua reação para causar 2d8 + seu modificador de Carisma em dano de energia na criatura que provocou a salvaguarda.",
+      "page": 79,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-juramento-da-vigilancia.feature.baluarte-mortal.l20.1",
+      "name": "BALUARTE MORTAL",
+      "level": 20,
+      "description": "Você manifesta uma centelha do poder divino em defesa dos reinos mortais. Como uma ação bônus, você adquire os seguintes benefícios por 1 minuto: Você ganha visão verdadeira com um alcance de 36m. Você tem vantagem nas jogadas de ataque contra aberrações, celestiais, elementais, fadas e corruptores. Quando você acerta uma criatura e provoca dano a ela, você também pode obrigá-la a realizar uma salvaguarda de Carisma contra sua CD de magia. Em caso de falha, a criatura é magicamente banida para seu plano de existência nativa se não estiver atualmente lá. Em caso de sucesso, a criatura não pode ser banida por esta característica por 24h. Assim que utilizar essa ação bônus você não poderá usá-la novamente até que termine um descanso longo, a menos que gaste um espaço de magia de 5° círculo para isso.",
+      "page": 79,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

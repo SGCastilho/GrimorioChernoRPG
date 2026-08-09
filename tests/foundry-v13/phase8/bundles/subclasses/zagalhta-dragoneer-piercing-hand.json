@@ -1,0 +1,176 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-dragoneer-piercing-hand",
+    "identifier": "zagalhta-dragoneer-piercing-hand",
+    "name": "Mão Perfurante",
+    "originalName": "Piercing Hand",
+    "aliases": [
+      "Piercing Hand"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "125",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 125
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Arqueiro de olho dracônico que transforma vantagem tática em precisão absoluta, ataca como um assassino e culmina na visão verdadeira de um dragão.",
+    "tables": [
+      {
+        "key": "table.1.parametros-da-especializacao",
+        "title": "Parâmetros da Especialização",
+        "page": 125,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "hit",
+            "label": "Dado de Vida"
+          },
+          {
+            "key": "saves",
+            "label": "Salvaguardas"
+          },
+          {
+            "key": "weapons",
+            "label": "Armas"
+          },
+          {
+            "key": "armor",
+            "label": "Armaduras"
+          },
+          {
+            "key": "skills",
+            "label": "Perícias"
+          },
+          {
+            "key": "casting",
+            "label": "Conjuração"
+          }
+        ],
+        "rows": [
+          {
+            "hit": "d10",
+            "saves": "Destreza, Sabedoria",
+            "weapons": "Todas as armas simples e armas à distância",
+            "armor": "Leves e médias",
+            "skills": "Percepção; escolha duas entre Adestrar Animais, Atletismo, Intuição, Investigação, Natureza, Furtividade e Sobrevivência",
+            "casting": "Meio Conjurador (lista do Patrulheiro)"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 125
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-dragoneer-piercing-hand.feature.converter-vantagem.l1.1",
+      "name": "CONVERTER VANTAGEM",
+      "level": 1,
+      "description": "Quando tiver vantagem em uma jogada de ataque, pode abrir mão da vantagem e receber +5 na jogada em vez disso.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-piercing-hand.feature.golpe-de-matilha.l3.1",
+      "name": "GOLPE DE MATILHA",
+      "level": 3,
+      "description": "Se o alvo estiver ao alcance corpo a corpo de um de seus aliados, seus ataques contra ele têm vantagem.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-piercing-hand.feature.sentenca-do-adjudicador.l7.1",
+      "name": "SENTENÇA DO ADJUDICADOR",
+      "level": 7,
+      "description": "Uma vez por turno, quando abrir mão da vantagem usando Converter Vantagem e acertar, cause +2d8 de dano de Encarnação. O dano aumenta em +1d8 no 13º nível e +1d8 no 17º.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-piercing-hand.feature.ampliar-preparacoes.l13.1",
+      "name": "AMPLIAR PREPARAÇÕES",
+      "level": 13,
+      "description": "Escolha uma salvaguarda na qual ainda não seja proficiente; você se torna proficiente nela.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-piercing-hand.feature.olho-do-dragao.l17.1",
+      "name": "OLHO DO DRAGÃO",
+      "level": 17,
+      "description": "Você recebe visão verdadeira a 18 m. Ao atacar criatura invisível dentro do alcance normal da arma, trata-a como claramente visível. Seus ataques ignoram qualquer cobertura que não seja cobertura total.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

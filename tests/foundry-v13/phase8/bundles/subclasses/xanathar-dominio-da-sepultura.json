@@ -1,0 +1,204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-dominio-da-sepultura",
+    "identifier": "xanathar-dominio-da-sepultura",
+    "name": "Domínio da Sepultura",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "24–25",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 24
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Deuses da sepultura guardam a linha entre a vida e a morte. Para estas divindades, a morte e a vida após a morte são uma parte fundamentaldo multiverso. Profanar a paz dos mortos é uma abominação. As divindades da sepultura incluem Kelemvor, Wee Jas, os Espíritos Ancestrais da Corte Divina, Hades, Anubis e Osiris. Os seguidores dessas divindades procuram colocar os espíritos errantes para descansar, destruir os mortos-vivos e aliviar o sofrimento dos moribundos. Sua magia também permite que eles adiem a morte por um tempo. Particularmente para uma pessoa que ainda tem um grande trabalho para realizar no mundo. Este é um atraso da morte, não uma negação, pois a morte acabará por ser entregue.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-da-sepultura",
+        "title": "Magias do Domínio da Sepultura",
+        "page": 24,
+        "description": "Magias adicionais concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Falsa Vitalidade; Perdição"
+          },
+          {
+            "level": "3º",
+            "spells": "Raio do Enfraquecimento; Repouso Tranquilo"
+          },
+          {
+            "level": "5º",
+            "spells": "Revivificar; Toque Vampírico"
+          },
+          {
+            "level": "7º",
+            "spells": "Malogro; Proteção contra a Morte"
+          },
+          {
+            "level": "9º",
+            "spells": "Cúpula Antivida; Reviver os Mortos"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 24
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-dominio-da-sepultura.feature.magias-de-dominio.l1.1",
+      "name": "MAGIAS DE DOMÍNIO",
+      "level": 1,
+      "description": "Você ganha magias de domínio nos níveis de clérigo listados na tabela de Magias do Domínio da Sepultura. Veja a característica de classe Domínio Divino para ver como as magias de domínio funcionam.",
+      "page": 25,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-sepultura.feature.circulo-da-mortalidade.l1.1",
+      "name": "CÍRCULO DA MORTALIDADE",
+      "level": 1,
+      "description": "No 1 ° Nível, você ganha a habilidade de manipular a linha entre vida e morte. Quando você normalmente rolaria um ou mais dados parar restaurar os pontos de vida de uma criatura a 0 pontos de vida com uma magia, pode usar os maiores valores possíveis de cada dado. Em adição, você aprende o truque estabilizar, cujo não conta no número de truques de clérigo que conhece. Para você, ela tem 9 metros de alcance, e pode conjurá-la como uma ação bônus.",
+      "page": 25,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-sepultura.feature.olhos-da-sepultura.l1.1",
+      "name": "OLHOS DA SEPULTURA",
+      "level": 1,
+      "description": "No 1 ° Nível, você ganha a habilidade de ocasionalmente sentir a presença de dos mortos­ vivos, cuja existência é um insulto ao ciclo naturalda vida. Como uma ação, pode abrir sua consciência para detectar magicamente os mortos-vivos. Até o finalda sua próxima rodada, conhece a localização de qualquer morto-vivo dentro de 18 metros que não esteja atrás de cobertura total e que não esteja protegido contra magias de adivinhação. Esse sentido não diz nada sobre as capacidades ou a identidade de uma criatura. Você pode usar essa característica um número de vezes igual ao seu modificador de Sabedoria (mínimo de uma vez). Você recupera todos os usos gastos quando termina um descanso longo.",
+      "page": 25,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-sepultura.feature.canalizar-divindade-caminho-da-sepultura.l2.1",
+      "name": "CANALIZAR DIVINDADE: CAMINHO DA SEPULTURA",
+      "level": 2,
+      "description": "Começando no 2º Nível, você pode usar seu Canalizar Divindade para marcar a terminação da vida de outra criatura. Como uma ação, você escolhe uma criatura que possa ver dentro de 9 metros, amaldiçoando-a até o finalda próxima rodada. Da próxima vez que você ou um aliado atingir a criatura amaldiçoada com um ataque, a criatura tem vulnerabilidade a todos os danos desse ataque, e então a maldição termina.",
+      "page": 25,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-sepultura.feature.sentinela-na-porta-da-morte.l6.1",
+      "name": "SENTINELA NA PORTA DA MORTE",
+      "level": 6,
+      "description": "No 6° Nível, você ganha a habilidade de impedir o progresso da morte. Como uma reação quando você ou uma criatura que possa ver dentro de 9 metros sofrem um acerto crítico, você pode transformar esse acerto em um acerto normal. Todos os efeitos desencadeados por um acerto critico são cancelados. Você pode usar essa característica um número de vezes igual ao seu modificador de Sabedoria (mínimo de uma vez). Você recupera todos os usos gastos quando você termina um descanso longo.",
+      "page": 25,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-sepultura.feature.conjuracao-potente.l8.1",
+      "name": "CONJURAÇÃO POTENTE",
+      "level": 8,
+      "description": "Começando no 8° Nível, você adiciona seu modificador de Sabedoria ao dano causado com qualquer truque.",
+      "page": 25,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-sepultura.feature.guardiao-das-almas.l17.1",
+      "name": "GUARDIÃO DAS ALMAS",
+      "level": 17,
+      "description": "A partir do 17° nivel. Você pode aproveitar um vestígio de vitalidade de uma alma em despedida e usá-la para curar os vivos. Quando um inimigo que possa ver morre a menos de 18 metros, você ou uma criatura da sua escolha que esteja a menos de 18 metros de você recupera pontos de vida iguais ao número de dados de vida do inimigo. Você pode usar essa característica somente se você não estiver irJ.capacitado. Depois de usá-lo, não pode fazê-lo novamente até o início do seu próximo turno.",
+      "page": 25,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

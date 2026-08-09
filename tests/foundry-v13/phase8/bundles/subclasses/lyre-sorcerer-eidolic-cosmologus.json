@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sorcerer-eidolic-cosmologus",
+    "identifier": "lyre-sorcerer-eidolic-cosmologus",
+    "name": "Cosmólogo Eidólico",
+    "originalName": "Eidolic Cosmologus",
+    "aliases": [
+      "Eidolic Cosmologus"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "481–482",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 481
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Feiticeiros cuja magia inata se ancora nas antigas potências dos Eidolons. Seu vínculo cosmológico molda o tipo de energia que resistem, as magias que recebem e a maneira como convertem caos e dano em combustível arcano.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 481
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sorcerer-eidolic-cosmologus.feature.fragmento-cosmologico.l1.1",
+      "name": "FRAGMENTO COSMOLÓGICO",
+      "level": 1,
+      "description": "Escolha um Eidolon na tabela: Aymere — veneno e a magia Enredar; Harros — energia e Heroísmo; T’quinn — trovejante e Onda Trovejante; Vestias — elétrico e Raio Imobilizador. Você ganha resistência ao tipo de dano correspondente e aprende a magia indicada; ela não conta em suas magias conhecidas e é uma magia de Feiticeiro para você. Uma vez por Descanso Curto ou Longo, você pode conjurá-la sem gastar espaço.",
+      "page": 481,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-eidolic-cosmologus.feature.dados-de-desastre.l1.1",
+      "name": "DADOS DE DESASTRE",
+      "level": 1,
+      "description": "Você absorve energia do caos. Sempre que conjura uma magia que causa o tipo de dano ao qual seu Fragmento Cosmológico concede resistência, sofre dano desse tipo ou sofre 5 ou mais pontos de dano, ganha um Dado de Desastre d6. Você pode manter uma quantidade igual ao seu bônus de proficiência e perde todos ao terminar um Descanso Longo. Pode gastá-los assim: Aprimorar Magia — em uma magia com jogadas de ataque, gaste um ou mais dados em cada ataque, role-os e some o resultado à jogada; Aura Protetora — quando for alvo de um ataque, use reação e gaste um dado para aumentar sua CA pelo resultado até o início do próximo turno; Poder Restaurador — ao terminar um Descanso Curto e gastar Dados de Vida, gaste um ou mais Dados de Desastre para rolá-los e recuperar pontos de vida iguais ao resultado.",
+      "page": 482,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-eidolic-cosmologus.feature.matriz-de-criacao.l6.1",
+      "name": "MATRIZ DE CRIAÇÃO",
+      "level": 6,
+      "description": "Quando gasta Pontos de Feitiçaria em uma opção de Metamagia, pode gastar e rolar um Dado de Desastre para criar Pontos de Feitiçaria temporários iguais ao resultado. Eles são gastos antes dos seus pontos normais e desaparecem no fim do turno. Você não pode ganhar Dados de Desastre de uma magia conjurada em consequência de uma Metamagia alimentada por esses pontos temporários.",
+      "page": 482,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-eidolic-cosmologus.feature.capacidade-maior.l14.1",
+      "name": "CAPACIDADE MAIOR",
+      "level": 14,
+      "description": "Seus Dados de Desastre tornam-se d8. Além disso, receba o benefício ligado ao Eidolon escolhido. Sobrecarga (Vestias): você ganha 1d4 Dados de Desastre ao terminar um Descanso Curto. Canção de Distorção (T’quinn): quando uma criatura realiza salvaguarda contra uma de suas magias, gaste 1 Ponto de Feitiçaria, role 1d8 e subtraia o resultado da salvaguarda. Força do Sol (Harros): seu máximo de pontos de vida aumenta em seu nível de Feiticeiro e cresce em mais 1 a cada novo nível de Feiticeiro. Toque de Restauração (Aymere): pode conjurar Restauração Menor ou Restauração Maior, sem espaço, gastando respectivamente 1 ou 2 Pontos de Feitiçaria.",
+      "page": 482,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-eidolic-cosmologus.feature.retorno-a-forma.l14.1",
+      "name": "RETORNO À FORMA",
+      "level": 14,
+      "description": "Quando seus pontos de vida forem reduzidos a 0, você pode gastar todos os Dados de Desastre que possua, exceto os obtidos da própria fonte desse dano, rolá-los e receber o total como pontos de vida temporários. Se o dano não reduzir esses pontos temporários a 0, você fica com 1 ponto de vida em vez de cair a 0.",
+      "page": 482,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-eidolic-cosmologus.feature.vortice-obliterador.l18.1",
+      "name": "VÓRTICE OBLITERADOR",
+      "level": 18,
+      "description": "Como ação, crie em um ponto visível a até 18 metros um vórtice por 1 minuto, até dispensá-lo como ação bônus ou até ficar incapacitado. Ele é um cilindro de 9 metros de altura e 3 metros de raio. Criaturas que iniciarem o turno nele ou entrarem pela primeira vez no turno fazem salvaguarda de Destreza; em falha sofrem 3d12 de dano do tipo do seu Fragmento Cosmológico e ficam com deslocamento 0 até o início do próximo turno; em sucesso sofrem metade. O espaço é terreno difícil. Quando uma criatura sofre dano do vórtice, recebe ainda uma quantidade de d8 igual aos Dados de Desastre que você possui naquele momento. No início de cada um de seus turnos enquanto o vórtice existir, você perde 1 Dado de Desastre. Se não possuir nenhum, deve manter concentração como se fosse uma magia. Uma vez por Descanso Curto ou Longo; usos adicionais custam 4 Pontos de Feitiçaria.",
+      "page": 482,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

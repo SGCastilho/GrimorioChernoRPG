@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-dragoneer-phasescale-knight",
+    "identifier": "bbb-dragoneer-phasescale-knight",
+    "name": "Cavaleiro da Escama Fásica",
+    "originalName": "Phasescale Knight",
+    "aliases": [
+      "Phasescale Knight"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "96",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 96
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Um duelista de alma dracônica que se move e ataca com velocidade e domínio ilusório.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 96
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-dragoneer-phasescale-knight.feature.repertorio-da-lamina-draconica.l1.1",
+      "name": "REPERTÓRIO DA LÂMINA DRACÔNICA",
+      "level": 1,
+      "description": "Magias do grupo Zanjen contam como estando na lista de Cavaleiro Dracônico para você, permitindo aprendê-las, prepará-las e conjurá-las. Ao conjurar uma magia Zanjen, pode receber seus efeitos de Bônus de Santo da Espada tratando seus níveis de Cavaleiro Dracônico como níveis de Santo da Espada. Quando uma magia Zanjen causaria dano contundente, perfurante ou cortante, pode substituir esses tipos pelo dano de sua Encarnação.",
+      "page": 96,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-dragoneer-phasescale-knight.feature.critico-aprimorado.l1.1",
+      "name": "CRÍTICO APRIMORADO",
+      "level": 1,
+      "description": "Você obtém acerto crítico com 19 ou 20 no d20.",
+      "page": 96,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-dragoneer-phasescale-knight.feature.desafio-fasico.l3.1",
+      "name": "DESAFIO FÁSICO",
+      "level": 3,
+      "description": "Quando sofre dano de um ataque com arma, pode usar sua reação para transformar brevemente o corpo em uma duplicata ilusória e evitar completamente o ataque, fazendo-o errar. Em seguida, torna-se semi-etéreo até o fim do turno; ataques subsequentes contra você nesse período têm desvantagem. Usos por Descanso iguais ao nível do maior espaço de magia de Cavaleiro Dracônico que possua.",
+      "page": 96,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-dragoneer-phasescale-knight.feature.nevoa-de-staccato.l7.1",
+      "name": "NÉVOA DE STACCATO",
+      "level": 7,
+      "description": "Quando estiver morrendo, paralisado, atordoado ou incapacitado por algo que não seja inconsciência, no início de cada um de seus turnos pode projetar uma réplica semi-etérea em um espaço a até 9 m. A réplica pode mover-se e realizar as ações que você normalmente poderia, inclusive gastar seus recursos, espaços de magia e cargas de itens, sem sofrer as condições ou efeitos que afetam você, exceto os originados por itens mágicos em sua posse. Ela usa seu deslocamento base, características, armas, salvaguardas, testes de atributo e CA; não possui suas resistências ou imunidades a dano e é imune a condições. Ela desaparece naquele turno se sofrer dano ou depois de mover-se ou realizar qualquer ação, e sempre desaparece no fim de seu turno.",
+      "page": 96,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-dragoneer-phasescale-knight.feature.autoprojecao.l13.1",
+      "name": "AUTOPROJEÇÃO",
+      "level": 13,
+      "description": "Quando usar sua característica Ação Encadeada para fazer um ou mais ataques com arma, pode teleportar-se para um espaço desocupado a até 9 m antes de realizá-los.",
+      "page": 96,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-dragoneer-phasescale-knight.feature.corpo-de-nevoa-afortunada.l17.1",
+      "name": "CORPO DE NÉVOA AFORTUNADA",
+      "level": 17,
+      "description": "Sempre que um ataque ou efeito fosse reduzir você a 0 PV, matá-lo instantaneamente ou causar dano enquanto estiver a 0 PV, role 1d100. Se o resultado for igual ou inferior a duas vezes seu nível de Cavaleiro Dracônico, o ataque ou efeito não tem efeito sobre você, pois atinge uma ilusão enevoada em seu lugar.\n\nTIPOS DE ENCARNAÇÃO ADICIONAIS DE DRAGONEER. Esta subclasse também apresenta duas opções de Encarnação. DRAGÃO DE SANGUE: energia encarnada necrótica (salvaguarda de Destreza), movimento de escalada; quando uma criatura a até 3 m o acerta com ataque corpo a corpo, pode usar reação para forçá-la a uma salvaguarda de Destreza, sofrendo 1d10 + metade do seu nível de Cavaleiro Dracônico (arredondado para cima) de dano de fogo ou necrótico, à sua escolha, em falha. SERPENTE DO LAGO: energia encarnada ácida (salvaguarda de Constituição), movimento de natação; você respira ar e água e pode usar Disparada como ação bônus enquanto estiver totalmente submerso em líquido.",
+      "page": 96,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

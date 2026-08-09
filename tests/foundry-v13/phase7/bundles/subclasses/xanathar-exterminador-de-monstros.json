@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-exterminador-de-monstros",
+    "identifier": "xanathar-exterminador-de-monstros",
+    "name": "Exterminador de Monstros",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "60",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 60
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Você se dedicou a caçar criaturas da noite e praticantes de magia sombria. Um Exterminador de Monstros procura vampiros, dragões, feéricos malignos, demônios e outras ameaças mágicas. Treinados em técnicas sobrenaturais para superar esses monstros, os exterminadores são especialistas em desenterrar e derrotar inimigos poderosos e místicos.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-exterminador-de-monstros",
+        "title": "Magias do Exterminador de Monstros",
+        "page": 60,
+        "description": "Magias adicionais concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Proteção contra o Bem e Mal"
+          },
+          {
+            "level": "5º",
+            "spells": "Zona da Verdade"
+          },
+          {
+            "level": "9º",
+            "spells": "Círculo Mágico"
+          },
+          {
+            "level": "13º",
+            "spells": "Banimento"
+          },
+          {
+            "level": "17º",
+            "spells": "Imobilizar Monstro"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 60
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-exterminador-de-monstros.feature.magia-do-exterminador-de-monstros.l3.1",
+      "name": "MAGIA DO EXTERMINADOR DE MONSTROS",
+      "level": 3,
+      "description": "A partir do 3° nível, você aprende magias adicionais quando alcança certos níveis nesta classe, conforme mostrado na tabela de Magias do Exterminador de Monstros. A magia conta como uma magia de patrulheiro para você, mas não conta para o número de magias conhecidas de patrulheiro.",
+      "page": 60,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-exterminador-de-monstros.feature.sentido-do-cacador.l3.1",
+      "name": "SENTIDO DO CAÇADOR",
+      "level": 3,
+      "description": "No 3° nível, você ganha a habilidade de se igualar a uma criatura e discernir magicamente a melhor maneira de machucá-la. Como uma ação, escolha uma criatura que possa ver dentro de 18 metros de alcance. Você imediatamente aprende se a criatura tem imunidades, resistências ou vulnerabilidades de dano e quais são. Se a criatura estiver escondida de adivinhação magica, você sente que não tem imunidades, resistências ou vulnerabilidades de dano. Você pode usar essa característica um número de vezes igual ao seu modificador de Sabedoria (mínimo de uma vez). Você recupera todas as utilizações gastos quando terminar um descanso longo.",
+      "page": 60,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-exterminador-de-monstros.feature.exterminador-de-presas.l3.1",
+      "name": "EXTERMINADOR DE PRESAS",
+      "level": 3,
+      "description": "A partir do 3° nível, você pode concentrar sua ira em um inimigo, aumentando o dano que inflige. Como uma ação bônus, você escolhe uma criatura que possa ver dentro de 18 metros de alcance como o alvo dessa característica. A primeira vez em cada turno que você atingir esse alvo com um ataque de arma, causa um dano adicional de 1d6 da arma. Este benefício dura até que você termine um descanso curto ou longo. O efeito se encerra caso designe uma criatura diferente.",
+      "page": 60,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-exterminador-de-monstros.feature.defesa-sobrenatural.l7.1",
+      "name": "DEFESA SOBRENATURAL",
+      "level": 7,
+      "description": "No 7° nível, você ganha resiliência adicional contra os ataques de sua presa em sua mente e corpo. Sempre que o alvo do Exterminador de Presas forçá-lo a fazer um teste de resistência e sempre que você fizer um teste de habilidade para escapar dos alvos, adicione 1d6 a sua rolagem.",
+      "page": 60,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-exterminador-de-monstros.feature.nemeses-do-conjurador.l11.1",
+      "name": "NÊMESES DO CONJURADOR",
+      "level": 11,
+      "description": "No 11\" nível você ganha a habilidade de frustrar a magia de outra pessoa. Quando ver uma criatura conjurando uma magia ou se teleportando a até 18 metros de alcance, pode usar sua reação para tentar fazê-la fracassar. Esta criatura deve ser bem-sucedida em teste de resistência de Sabedoria contra seu nível de CD de magias, ou sua magia ou teleporte são desperdiçados. Após usar essa característica, só pode usá-la novamente apôs terminar um descanso curto ou longo.",
+      "page": 60,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-exterminador-de-monstros.feature.contra-ataque-do-exterminador.l15.1",
+      "name": "CONTRA-ATAQUE DO EXTERMINADOR",
+      "level": 15,
+      "description": "No 15° nível, você ganha a habilidade de contra­ atacar quando sua presa tenta sabota-lo. Se o alvo do Exterminador de Presas forçá-lo a fazer um teste de resistência, pode usar sua reação para fazer um ataque de arma contra a presa. Você faz esse ataque imediatamente antes de fazer o teste de resistência. Se o seu ataque atingir, o seu teste automaticamente tem sucesso, além dos efeitos normais do ataque.",
+      "page": 60,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-bard-college-of-quiet-dignity",
+    "identifier": "bbb-bard-college-of-quiet-dignity",
+    "name": "Colégio da Dignidade Serena",
+    "originalName": "College of Quiet Dignity",
+    "aliases": [
+      "College of Quiet Dignity"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "87–88",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 87
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Um combatente refinado que se porta com graça e dignidade.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 87
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-bard-college-of-quiet-dignity.feature.preparos-de-cavalheiro.l3.1",
+      "name": "PREPAROS DE CAVALHEIRO",
+      "level": 3,
+      "description": "Você é proficiente com todas as armas que possuam as propriedades acuidade ou leve, incluindo armas de fogo aplicáveis, e pode usar Carisma nas jogadas de ataque e dano com essas armas e com todas as armas simples, em vez de Força ou Destreza. Também ganha proficiência com armaduras médias.",
+      "page": 87,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-bard-college-of-quiet-dignity.feature.toque-leve.l3.1",
+      "name": "TOQUE LEVE",
+      "level": 3,
+      "description": "Na primeira vez em cada turno que acertar uma criatura com ataque de arma ou ataque mágico, pode rolar um dado igual ao seu dado de Inspiração Bárdica e somá-lo ao dano. Se o mesmo efeito atingir várias criaturas, escolha apenas uma delas para receber esse dano extra.",
+      "page": 88,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-bard-college-of-quiet-dignity.feature.critico-eloquente.l6.1",
+      "name": "CRÍTICO ELOQUENTE",
+      "level": 6,
+      "description": "Seus ataques de arma e magia obtêm acerto crítico com 19 ou 20 no d20. Quando isso ocorrer, adicione um dado de Inspiração Bárdica ao dano, separadamente de Toque Leve.",
+      "page": 88,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-bard-college-of-quiet-dignity.feature.ataque-extra-gentil.l6.1",
+      "name": "ATAQUE EXTRA (GENTIL)",
+      "level": 6,
+      "description": "Quando realiza a ação Atacar, pode atacar duas vezes em vez de uma, desde que ambos os ataques sejam feitos com armas simples ou armas contempladas por Preparos de Cavalheiro.",
+      "page": 88,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-bard-college-of-quiet-dignity.feature.sagacidade-afiada-lamina-mais-afiada.l14.1",
+      "name": "SAGACIDADE AFIADA, LÂMINA MAIS AFIADA",
+      "level": 14,
+      "description": "Conforme Crítico Eloquente, você obtém acerto crítico com 18, 19 ou 20 no d20 e, quando isso acontece, adiciona mais um dado de Inspiração Bárdica ao dano. Além disso, se o crítico vier de um resultado 20, pode realizar um ataque adicional com a mesma arma que produziu o crítico. Só pode fazer isso uma vez por turno.",
+      "page": 88,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

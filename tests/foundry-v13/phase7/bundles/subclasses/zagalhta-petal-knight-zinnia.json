@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-petal-knight-zinnia",
+    "identifier": "zagalhta-petal-knight-zinnia",
+    "name": "Zínia",
+    "originalName": "Zinnia",
+    "aliases": [
+      "Zinnia"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "163–164",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 163
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "Epíteto de flores que brotam onde dragões antiquíssimos morrem. A Zínia permite ao Cavaleiro das Pétalas imitar resistências, magia, asas e lamentos destrutivos da espécie dracônica.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 163
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-petal-knight-zinnia.feature.petalas-da-sepultura-draconica.l2.1",
+      "name": "PÉTALAS DA SEPULTURA DRACÔNICA",
+      "level": 2,
+      "description": "Magias de Cavaleiro Dracônico contam como magias de Cavaleiro das Pétalas, e você é tratado como Cavaleiro Dracônico para efeitos de Bônus do Cavaleiro Dracônico.",
+      "page": 164,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-petal-knight-zinnia.feature.escamas-e-cobertura.l2.1",
+      "name": "ESCAMAS E COBERTURA",
+      "level": 2,
+      "description": "Escolha ácido, frio, fogo, elétrico, necrótico, veneno, radiante ou trovão. Você recebe resistência ao tipo escolhido; ao conjurar magia de Cavaleiro Dracônico, esse tipo conta como seu tipo de Encarnação.",
+      "page": 164,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-petal-knight-zinnia.feature.asas-de-flor-dragao.l6.1",
+      "name": "ASAS DE FLOR-DRAGÃO",
+      "level": 6,
+      "description": "Ao conjurar magia de Cavaleiro das Pétalas, pode usar opção de Ramos Virtuosos para manifestar asas de zínia até o início do próximo turno, com voo igual ao deslocamento base. Pode concentrar-se nelas por até 1 minuto. No 11º nível, pode manifestá-las à vontade, sem magia nem limite de tempo.",
+      "page": 164,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-petal-knight-zinnia.feature.flora-de-troca.l6.1",
+      "name": "FLORA DE TROCA",
+      "level": 6,
+      "description": "Como ação, tente trocar de lugar com criatura da mesma categoria a até 18 m. Alvo involuntário faz salvaguarda de Carisma. Em falha, vocês trocam espaços; agarrões/impedimentos físicos continuam afetando a criatura originalmente presa salvo se a fonte mover junto. Após a troca, pode fazer um ataque de arma com vantagem antes do fim do turno.",
+      "page": 164,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-petal-knight-zinnia.feature.brasas-do-wyrm.l11.1",
+      "name": "BRASAS DO WYRM",
+      "level": 11,
+      "description": "Ao acertar ataque de arma, causa um dado de dano adicional da arma do tipo escolhido em Escamas e Cobertura. Esse dano conta como dano de Encarnação para magias de Cavaleiro Dracônico.",
+      "page": 164,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-petal-knight-zinnia.feature.lamento-do-arcidragao.l15.1",
+      "name": "LAMENTO DO ARCIDRAGÃO",
+      "level": 15,
+      "description": "Uma vez por Descanso, produza meteoro galáctico sem Espaço e sem Verificação de Eidomancia. Ao fazê-lo, pode usar Ramos Virtuosos como se tivesse conjurado a magia usando Espaço de Pacto.",
+      "page": 164,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

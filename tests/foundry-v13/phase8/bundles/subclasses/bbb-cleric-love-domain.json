@@ -1,0 +1,189 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-cleric-love-domain",
+    "identifier": "bbb-cleric-love-domain",
+    "name": "Domínio do Amor",
+    "originalName": "Love Domain",
+    "aliases": [
+      "Love Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "91–92",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 91
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Um clérigo ligado aos poderes do amor, do afeto e da amizade.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-do-amor",
+        "title": "Magias do Domínio do Amor",
+        "page": 91,
+        "description": "Magias concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Escudo da Fé; Estrelas da Afeição"
+          },
+          {
+            "level": "3º",
+            "spells": "Canção da Inspiração; Vínculo Protetor"
+          },
+          {
+            "level": "5º",
+            "spells": "Caminho para a Vitória; Equilíbrio de Vitalidade"
+          },
+          {
+            "level": "7º",
+            "spells": "Dominar Besta; Portal de Eros"
+          },
+          {
+            "level": "9º",
+            "spells": "Conceder Especialização; Restauração Maior"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 91
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-cleric-love-domain.feature.forca-do-afeto.l1.1",
+      "name": "FORÇA DO AFETO",
+      "level": 1,
+      "description": "Seu domínio transforma amor e determinação em força. Você pode usar Carisma no lugar de Força ou Destreza nas jogadas de ataque e dano com armas e pode usar Carisma como seu atributo de conjuração.",
+      "page": 91,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-love-domain.feature.proficiencias-do-amor.l1.1",
+      "name": "PROFICIÊNCIAS DO AMOR",
+      "level": 1,
+      "description": "Você ganha proficiência em Intuição e Persuasão e é imune às condições enfeitiçado e enfurecido.",
+      "page": 91,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-love-domain.feature.canalizar-divindade-os-fios-nos-unem.l2.1",
+      "name": "CANALIZAR DIVINDADE: OS FIOS NOS UNEM",
+      "level": 2,
+      "description": "Como ação, use Canalizar Divindade para conceder um benefício protetor por 1 minuto a um número de criaturas à sua escolha a até 9 m igual ao seu bônus de proficiência. Sempre que uma delas sofrer dano, uma das opções ocorre:\n\n• Outro alvo deste benefício, ou você, que possa vê-la usa a reação para conceder a ela PV temporários iguais ao seu nível de clérigo.\n• Você encerra o benefício naquela criatura para reduzir o dano sofrido a 0.",
+      "page": 92,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-love-domain.feature.defesa-dourada.l6.1",
+      "name": "DEFESA DOURADA",
+      "level": 6,
+      "description": "Quando uma criatura a até 9 m for alvo de um ataque ou efeito, pode usar sua reação para projetar magicamente sobre ela suas próprias defesas e bênçãos apenas contra esse efeito. Ela recebe os bônus de CA concedidos por seu escudo e pelos bônus de aprimoramento de seu equipamento; suas resistências e imunidades; e os efeitos de magias, efeitos mágicos e itens mágicos que estejam afetando você, exceto os que exigem ações. Todos esses benefícios terminam após a resolução do efeito que ativou a característica ou no fim do turno atual, o que ocorrer primeiro.",
+      "page": 92,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-love-domain.feature.dinamica-emotiva.l8.1",
+      "name": "DINÂMICA EMOTIVA",
+      "level": 8,
+      "description": "Quando atinge uma criatura com ataque de arma ou magia enquanto ela estiver a até 3 m de um de seus aliados, o ataque causa um dado de dano da arma adicional como dano radiante. Se o alvo estiver enfeitiçado por você ou por um desses aliados, o ataque também tem vantagem.",
+      "page": 92,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-cleric-love-domain.feature.paixao-dos-deuses.l17.1",
+      "name": "PAIXÃO DOS DEUSES",
+      "level": 17,
+      "description": "Como ação, manifeste a natureza de seu domínio e assuma por 1 minuto uma forma sedutora e tempestuosa. Pode fazê-lo uma vez por Descanso Longo; estes efeitos não podem ser projetados por Defesa Dourada.\n\nAURA DE COMPANHEIRISMO. Outras criaturas a até 3 m podem adicionar seu modificador de Carisma à própria CA.\n\nAFEIÇÃO MAIOR. Seu modificador de Carisma, mínimo +1, é adicionado ao dano de suas armas, à sua CA e às suas salvaguardas; se já fosse adicionado, pode ser somado novamente.\n\nPASSO DO AMOR. Uma vez em cada turno, como ação bônus, teleporte-se até 18 m para um espaço desocupado adjacente a um aliado e então faça um ataque com arma com vantagem. Se desejar, pode imediatamente voltar ao espaço de onde saiu.\n\nCORPO SANTIFICADO. Na primeira vez em cada turno que uma criatura atacar você, ela deve fazer uma salvaguarda de Sabedoria; em falha, deve escolher outro alvo ou perder a ação.",
+      "page": 92,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

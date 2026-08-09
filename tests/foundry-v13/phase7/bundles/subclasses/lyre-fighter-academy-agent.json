@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-fighter-academy-agent",
+    "identifier": "lyre-fighter-academy-agent",
+    "name": "Agente da Academia",
+    "originalName": "Academy Agent",
+    "aliases": [
+      "Academy Agent"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "457",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 457
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Treinados para caçar e eliminar magos, os guerreiros da Academia usam técnicas que voltam a energia dos conjuradores contra eles e protegem a própria mente contra interferência externa.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 457
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-fighter-academy-agent.feature.olhos-encantados.l10.1",
+      "name": "OLHOS ENCANTADOS",
+      "level": 10,
+      "description": "Uma criatura fica perfeitamente visível para você se estiver concentrando em uma magia ou efeito mágico, ou se tiver conjurado uma magia desde o fim do seu último turno. Isso permite vê-la em escuridão mágica ou comum, quando invisível, no Plano Etéreo e até enquanto você estiver cego, mas não permite enxergar através de matéria sólida.",
+      "page": 457,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-academy-agent.feature.mente-desimpedida.l15.1",
+      "name": "MENTE DESIMPEDIDA",
+      "level": 15,
+      "description": "Você ganha proficiência em salvaguardas de Inteligência.",
+      "page": 457,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-academy-agent.feature.lamina-dilacerante.l18.1",
+      "name": "LÂMINA DILACERANTE",
+      "level": 18,
+      "description": "Ao atacar uma criatura que esteja concentrando em uma magia ou tenha conjurado uma desde o fim do seu último turno, some seu modificador de Inteligência ao dano. Se você a obrigar a fazer um teste de concentração, a CD desse teste torna-se 8 + seu bônus de proficiência + seu modificador de Inteligência, salvo se já fosse maior.",
+      "page": 457,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-academy-agent.feature.amortecedor-arcano.l3.1",
+      "name": "AMORTECEDOR ARCANO",
+      "level": 3,
+      "description": "Quando falhar em uma salvaguarda contra magia ou efeito mágico e escolher usar Indomável para repeti-la, você obtém sucesso automaticamente.",
+      "page": 457,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-academy-agent.feature.golpe-anulador.l3.1",
+      "name": "GOLPE ANULADOR",
+      "level": 3,
+      "description": "Quando acertar uma criatura com um ataque de arma, você pode abrir mão de todo o dano para produzir os efeitos de Dissipar Magia sobre todos os efeitos mágicos nela de uma vez, usando o maior nível de magia entre eles para determinar a CD. Seu atributo de conjuração para esse teste é o atributo usado no ataque ou Inteligência, à sua escolha. Você pode usar esta característica duas vezes por Descanso Curto ou Longo; depois disso, só pode usá-la novamente gastando 1 ponto de Maestria de Combate.",
+      "page": 457,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-academy-agent.feature.resistencia-magica.l7.1",
+      "name": "RESISTÊNCIA MÁGICA",
+      "level": 7,
+      "description": "Você tem vantagem em salvaguardas contra magias e efeitos mágicos.",
+      "page": 457,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

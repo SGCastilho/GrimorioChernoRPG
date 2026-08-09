@@ -1,0 +1,1212 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida",
+    "originalName": "Favored Soul",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "339–358",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 341
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Arautos divinos que recebem um fragmento de poder de uma entidade e passam a carregá-lo como algo verdadeiramente seu, combinando combate marcial e Magia de Pacto.",
+    "hitDice": {
+      "raw": "d10",
+      "mode": "standard",
+      "number": 1,
+      "faces": 10
+    },
+    "primaryAbility": {
+      "raw": "Carisma",
+      "abilityKeys": [
+        "cha"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Força, Carisma",
+        "abilityKeys": [
+          "str",
+          "cha"
+        ]
+      },
+      "armor": "Armaduras leves e médias",
+      "weapons": "Armas simples e marciais",
+      "tools": "Nenhuma",
+      "skills": "Escolha duas: Arcanismo, História, Intimidação, Medicina, Persuasão, Religião ou Montaria"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "text": "PONTOS DE VIDA\n\nDado de Vida: 1d10 por nível de Alma Favorecida.\n\nPontos de Vida no 1º nível: 10 + seu modificador de Constituição.\n\nPontos de Vida em níveis superiores: 1d10 (ou 6) + Constituição por nível após o 1º.\n\nPROFICIÊNCIAS\n\nArmaduras: Armaduras leves e médias.\n\nArmas: Armas simples e marciais.\n\nFerramentas: Nenhuma.\n\nSalvaguardas: Força e Carisma.\n\nPerícias: Escolha duas entre Arcanismo, História, Intimidação, Medicina, Persuasão, Religião e Montaria.\n\nEQUIPAMENTO\n\nDuas armas marciais, sendo uma corpo a corpo e uma à distância; cinco azagaias ou qualquer arma simples corpo a corpo; pacote de sacerdote ou de explorador; camisa de malha e mochila. Alternativamente, a fonte indica 5d4 × 10 po."
+    },
+    "overview": [
+      {
+        "title": "ALMA FAVORECIDA",
+        "page": 339,
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "text": "Uma Alma Favorecida recebe grande poder por profecia, destino ou circunstância. Dentro desses arautos divinos repousam a autoridade e as expectativas de uma divindade que lhes concedeu um fragmento de sua força. Diferentemente de quem firma contratos ou suplica por poder, uma Alma Favorecida não deve obediência automática à fonte de sua dádiva: uma vez recebido, esse poder é seu. O Fardo Cósmico, porém, costuma carregar uma compulsão ligada ao portfólio da entidade, moldando o destino do personagem sem impedir seu crescimento caso ele resista a essa vocação."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UMA ALMA FAVORECIDA",
+        "page": 340,
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "text": "Defina primeiro de onde veio sua dádiva divina e o que a entidade que a concedeu pretende. Depois decida se o personagem se apoia mais na força marcial ou em seus poderes mágicos. Para uma construção rápida, use Carisma como maior atributo e Constituição como o seguinte; os antecedentes Acólito ou Herói do Povo são sugestões da fonte. A classe pode se orientar para combate, suporte ou magia através de suas escolhas de Essência."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.multiclasse-5-19-alma-favorecida",
+        "title": "MULTICLASSE 5.19 — ALMA FAVORECIDA",
+        "page": 339,
+        "text": "Pré-requisito indicado pela tabela de multiclasse: Carisma 15. Ao entrar na classe por multiclasse, a fonte concede proficiência com armaduras leves e médias, armas simples e marciais e uma perícia entre Arcanismo, História ou Religião. As regras 5.19 também trazem duas formas opcionais de combinar espaços de Magia de Pacto entre múltiplas classes de pacto: Convergente ou Exclusiva.",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "favored-soul",
+      "color": "#d9b66f"
+    }
+  },
+  "features": [
+    {
+      "key": "class.favored-soul-retia.feature.fardo-cosmico.l1.1",
+      "name": "FARDO CÓSMICO",
+      "level": 1,
+      "description": "Você recebe poder da fonte de sua força divina, conhecida como seu Fardo Cósmico. Escolha um Fardo durante a criação do personagem. Você recebe as características de 1º nível desse Fardo e, depois, suas demais características nos níveis indicados pela classe. O Fardo representa uma ligação direta com uma entidade divina ou deífica; a dádiva, uma vez concedida, pertence à Alma Favorecida. As opções específicas de Fardo Cósmico estão disponíveis na seção de subclasses da Alma Favorecida.",
+      "page": 341,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.magia-de-pacto.l1.1",
+      "name": "MAGIA DE PACTO",
+      "level": 1,
+      "description": "Sua alma e seu sangue são impregnados pelo poder de uma entidade além da compreensão mortal. A tabela da Alma Favorecida indica quantos espaços de Magia de Pacto você possui, bem como o nível desses espaços. Todos os seus espaços de pacto têm o mesmo nível e são recuperados ao terminar um Descanso Curto ou Longo.\n\nNo 1º nível, você conhece quatro magias de 1º nível da lista da Alma Favorecida. Ao subir de nível, aprende novas magias conforme a tabela; uma magia aprendida deve ser de um nível que seus espaços de pacto possam conjurar. Sempre que ganha um nível nesta classe, pode substituir uma magia conhecida por outra elegível da lista.\n\nApós cada Descanso Longo, prepare dentre as magias que conhece a quantidade indicada na coluna Magias Preparadas da tabela. Apenas essas magias preparadas podem ser conjuradas com seus espaços de pacto até a próxima preparação. Se optar por não preparar uma nova seleção, conserva a anterior.\n\nCarisma é seu atributo de conjuração para as magias e CDs da Alma Favorecida. CD de magia = 8 + seu bônus de proficiência + seu modificador de Carisma. Modificador de ataque com magia = seu bônus de proficiência + seu modificador de Carisma. Você pode usar um foco divino ou uma arma com a qual seja proficiente como foco de conjuração.",
+      "page": 341,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.essencia-divergente.l2.1",
+      "name": "ESSÊNCIA DIVERGENTE",
+      "level": 2,
+      "description": "O poder de seu Fardo pode ser concentrado em uma forma tangível. Escolha uma das opções a seguir; você a recebe imediatamente.\n\nARMAMENTO DE ESSÊNCIA. Como ação bônus, você conjura a arma favorecida da divindade de seu Fardo, feita de poder divino. Você também pode dissipá-la como ação bônus. Ela desaparece se outra criatura tentar atacar com ela ou se ficar a mais de 30 metros de você — ou além de duas vezes seu alcance longo, se for uma arma de arremesso. Se estiver fora de suas mãos, você pode usar sua reação para dissipá-la ou fazê-la retornar à sua mão. A arma é mágica, e você pode usar Carisma em suas jogadas de ataque e dano com ela. Se usar munição, ela cria munição mundana porém mágica, ainda obedecendo às regras normais de recarga.\n\nVOO DE ESSÊNCIA. Você manifesta asas ou uma representação abstrata delas, ganhando deslocamento de voo igual a 3 metros × seu bônus de proficiência. Se já possuir voo, esse deslocamento aumenta em 3 metros × metade de seu bônus de proficiência, arredondado para baixo. Se ficar caído enquanto voa, pode usar sua reação para se recompor imediatamente, sem cair.\n\nRADIÂNCIA ESSENCIAL. Você recebe um espaço adicional de Magia de Pacto, que funciona como os demais. Além disso, aprende truques da lista de Clérigo em quantidade igual ao nível de seus espaços de pacto; eles contam como truques da Alma Favorecida. Quando esse número aumentar, você aprende o novo truque, e sempre que subir de nível na classe pode trocar um desses truques por outro da lista de Clérigo.",
+      "page": 342,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.purificacao.l2.1",
+      "name": "PURIFICAÇÃO",
+      "level": 2,
+      "description": "Um número de vezes por Descanso Longo igual à metade de seu bônus de proficiência, arredondado para baixo, você pode usar uma ação para produzir um dos efeitos abaixo. O efeito escolhido deve corresponder a uma parte de seu alinhamento.\n\nRESTAURAÇÃO (BEM). Uma criatura visível a até 9 metros recupera pontos de vida iguais a 10 × o nível de seus espaços de pacto.\n\nDESTRUIÇÃO (MAL). Uma criatura visível a até 9 metros realiza uma salvaguarda de Constituição. Em uma falha, sofre dano necrótico igual a 2d8 × o nível de seus espaços de pacto. O Mestre pode permitir outro tipo de dano apropriado à origem de seu Fardo.\n\nDECLARAÇÃO JUSTA (ORDEM). Escolha criaturas visíveis a até 18 metros em quantidade igual à metade de seu nível de Alma Favorecida, arredondado para baixo. Cada uma realiza uma salvaguarda de Sabedoria; quem falhar deve seguir seu comando conforme as regras da magia Comando.\n\nVONTADE DO VAZIO (CAOS). Uma criatura visível a até 18 metros realiza uma salvaguarda de Carisma. Em uma falha, fica atordoada por 1 minuto. Ela repete a salvaguarda sempre que sofre dano e ao final de cada turno, encerrando o efeito em um sucesso.\n\nSANTUÁRIO SAGRADO (NEUTRO). Você é banhado por luz divina por 1 minuto. Sempre que uma criatura tentar escolher você como alvo de um ataque ou efeito nocivo, ela deve passar em uma salvaguarda de Carisma; em uma falha, não pode escolher você como alvo e a ação é gasta. Em um sucesso, fica imune a esta proteção pelo restante do turno. O efeito termina se você ficar inconsciente ou incapacitado. Se você for neutro verdadeiro, um sucesso não concede essa imunidade durante o turno.",
+      "page": 342,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.estilo-de-luta.l3.1",
+      "name": "ESTILO DE LUTA",
+      "level": 3,
+      "description": "Escolha um Estilo de Luta entre: Arquearia, Guerreiro Abençoado, Duelo, Combate com Arma Grande, Interceptação, Proteção ou Técnica Superior. Você não pode escolher a mesma opção mais de uma vez, mesmo que uma característica posterior lhe permita escolher novamente.",
+      "page": 343,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.aumento-no-valor-de-atributo.l4.1",
+      "name": "AUMENTO NO VALOR DE ATRIBUTO",
+      "level": 4,
+      "description": "No 4º nível e novamente nos níveis 8, 12, 16 e 19, você pode escolher um talento cujos requisitos cumpra, aumentar um atributo em 2 ou aumentar dois atributos em 1. Como normal, esta característica não pode elevar um atributo acima de 20.",
+      "page": 343,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "Quando realiza a ação Atacar, você pode atacar duas vezes em vez de uma.",
+      "page": 343,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.caracteristica-de-fardo-cosmico-6-nivel.l6.1",
+      "name": "CARACTERÍSTICA DE FARDO CÓSMICO (6º NÍVEL)",
+      "level": 6,
+      "description": "Seu Fardo Cósmico concede uma nova característica no 6º nível. Consulte a progressão e as regras do Fardo escolhido na seção de subclasses.",
+      "page": 344,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.aprimoramento-de-estilo-de-luta.l7.1",
+      "name": "APRIMORAMENTO DE ESTILO DE LUTA",
+      "level": 7,
+      "description": "No 7º nível, e novamente nos níveis 11 e 15, você aprimora um de seus Estilos de Luta. Se não possuir um Estilo que possa ser aprimorado, pode escolher um novo entre as opções apresentadas no 3º nível.",
+      "page": 343,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.foco-de-essencia.l9.1",
+      "name": "FOCO DE ESSÊNCIA",
+      "level": 9,
+      "description": "Você recebe uma segunda opção de Essência Divergente e escolhe um aprimoramento de Foco de Essência para uma opção que já possuía. Quando características posteriores concederem novas escolhas, não pode selecionar o mesmo aprimoramento duas vezes.\n\nARMAMENTO DE ESSÊNCIA — Crítico Devoto: seus ataques com o Armamento obtêm acerto crítico em 19 ou 20. Surto de Energia: o Armamento causa um dado adicional de dano; o tipo é radiante ou necrótico, escolhido ao receber a característica, ou outro tipo aprovado pelo Mestre de acordo com seu Fardo. Lâmina da Alma: o Armamento recebe bônus de aprimoramento igual à metade de seu bônus de proficiência, arredondado para baixo; quando você ataca com ele como parte da ação Atacar, pode fazer um ataque com ele como ação bônus. Essência Versátil: seu Armamento pode assumir a forma de qualquer arma com a qual você seja proficiente; alterá-lo depois de conjurado exige uma ação bônus.\n\nVOO DE ESSÊNCIA — Aura da Pessoa Protegida: sem armadura, sua CA pode ser 10 + Destreza + Carisma; além disso, você pode conjurar Escudo sem gastar espaço um número de vezes por Descanso Longo igual à metade de seu bônus de proficiência. Investida Aérea: pode usar Disparada como ação bônus, mas move apenas até metade de seu deslocamento de voo. Visão Desimpedida: você vê criaturas invisíveis normalmente e enxerga entre o Plano Material e o Etéreo a uma distância de 3 metros × seu bônus de proficiência.\n\nRADIÂNCIA ESSENCIAL — Corpo dos Planos: seu máximo de pontos de vida aumenta em 1 por nível de Alma Favorecida e aumenta em mais 1 a cada novo nível da classe. Conjurador Providencial: em testes de atributo de conjuração de suas magias, adicione metade de seu bônus de proficiência; além disso, adicione Carisma ao dano de seus truques de Alma Favorecida. Magia de Alma Dividida: ao conjurar uma magia com espaço de pacto, você pode dividi-lo em dois espaços menores, cada um de nível igual à metade de seu bônus de proficiência, arredondado para cima. Um deles é usado imediatamente para a magia desencadeadora; o outro permanece até ser usado ou até um Descanso Curto ou Longo. A magia deve poder ser conjurada pelo nível dos espaços menores, e um espaço menor não pode ser dividido novamente.",
+      "page": 343,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.caracteristica-de-fardo-cosmico-10-nivel.l10.1",
+      "name": "CARACTERÍSTICA DE FARDO CÓSMICO (10º NÍVEL)",
+      "level": 10,
+      "description": "Seu Fardo Cósmico concede uma nova característica no 10º nível. Consulte a progressão e as regras do Fardo escolhido na seção de subclasses.",
+      "page": 344,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.caracteristica-de-fardo-cosmico-13-nivel.l13.1",
+      "name": "CARACTERÍSTICA DE FARDO CÓSMICO (13º NÍVEL)",
+      "level": 13,
+      "description": "Seu Fardo Cósmico concede sua característica de 13º nível. Consulte a progressão e as regras do Fardo escolhido na seção de subclasses.",
+      "page": 344,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.expansao-da-essencia.l14.1",
+      "name": "EXPANSÃO DA ESSÊNCIA",
+      "level": 14,
+      "description": "Cada opção de Essência que você possui recebe o benefício correspondente abaixo, e você escolhe um Foco de Essência para cada uma delas.\n\nARMAMENTO DE ESSÊNCIA — ARMA POSSUÍDA. Como ação bônus, você pode fundir seu Armamento de Essência com uma arma normal. Se uma delas possuir as propriedades leve ou acuidade, a outra não pode possuir pesada ou duas mãos, e vice-versa; ambas devem ser corpo a corpo ou ambas à distância; e você deve ser proficiente com ambas. Enquanto fundidas, usa-se o maior dado de dano entre elas, mas você escolhe as propriedades de qual arma permanecem. O conjunto conserva os efeitos da arma física e os benefícios do Armamento. A fusão termina se você dissipar o Armamento ou concluir um Descanso Curto ou Longo. Se a arma física for a arma favorecida de sua divindade, o primeiro ataque realizado com ela em cada turno tem vantagem.\n\nVOO DE ESSÊNCIA — ESCARAMUÇADOR DIVINO. Você não provoca ataques de oportunidade de uma criatura se, no mesmo turno, entrou e saiu do alcance dela.\n\nRADIÂNCIA ESSENCIAL — PACTO POTENCIALIZADO. Duas vezes por Descanso Longo, ao conjurar uma magia usando um espaço de pacto, você pode tratá-lo como se seu nível fosse igual à metade de seu nível de Alma Favorecida, arredondado para baixo, até o máximo de 9º nível.",
+      "page": 343,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.coroa-do-esplendor.l17.1",
+      "name": "COROA DO ESPLENDOR",
+      "level": 17,
+      "description": "Você ganha proficiência em uma salvaguarda à sua escolha na qual ainda não seja proficiente.",
+      "page": 344,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.maestria-da-essencia.l18.1",
+      "name": "MAESTRIA DA ESSÊNCIA",
+      "level": 18,
+      "description": "Você recebe a opção de Essência Divergente que ainda não possuía e pode escolher um Foco de Essência adicional para cada opção de Essência que já possui.",
+      "page": 344,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.favored-soul-retia.feature.verdadeiro-manto-divino.l20.1",
+      "name": "VERDADEIRO MANTO DIVINO",
+      "level": 20,
+      "description": "O poder divino em você ultrapassa a fronteira entre mortais e divindade. Você recebe todos os benefícios a seguir:\n\n• Ao realizar a ação Atacar, pode atacar três vezes em vez de uma.\n• Ao ser reduzido a 0 pontos de vida e começar a morrer, você não sofre penalidades de deslocamento, não cai, ainda pode manter concentração e pode realizar uma ação OU uma ação bônus no turno, mas não ambas.\n• Em testes de atributo e salvaguardas nos quais seu bônus de proficiência não seria adicionado, você pode adicionar metade dele, arredondado para baixo.\n• Você recebe um espaço adicional de Magia de Pacto de 9º nível. Ele funciona como seus outros espaços de pacto, mas só é recuperado em um Descanso Longo. Características que calculam efeitos pelo nível de seus espaços de pacto tratam esse espaço como o de maior nível.",
+      "page": 344,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "A Alma Favorecida",
+    "sourceTitle": "",
+    "sourcePage": 341,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Prof.",
+        "title": "Bônus de Proficiência"
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "prepared",
+        "label": "Preparadas"
+      },
+      {
+        "key": "known",
+        "label": "Conhecidas"
+      },
+      {
+        "key": "slots",
+        "label": "Espaços"
+      },
+      {
+        "key": "slotLevel",
+        "label": "Nível do Espaço"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Fardo Cósmico",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.fardo-cosmico.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Magia de Pacto",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.magia-de-pacto.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 2,
+        "known": 4,
+        "slots": 1,
+        "slotLevel": "1º"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Essência Divergente",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.essencia-divergente.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Purificação",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.purificacao.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 2,
+        "known": 5,
+        "slots": 2,
+        "slotLevel": "1º"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.estilo-de-luta.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 3,
+        "known": 7,
+        "slots": 2,
+        "slotLevel": "2º"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 3,
+        "known": 8,
+        "slots": 2,
+        "slotLevel": "2º"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Ataque Extra",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.ataque-extra.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 4,
+        "known": 9,
+        "slots": 2,
+        "slotLevel": "3º"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Fardo Cósmico (6º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.caracteristica-de-fardo-cosmico-6-nivel.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 4,
+        "known": 10,
+        "slots": 2,
+        "slotLevel": "3º"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Aprimoramento de Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.aprimoramento-de-estilo-de-luta.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 5,
+        "known": 11,
+        "slots": 2,
+        "slotLevel": "4º"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 5,
+        "known": 12,
+        "slots": 2,
+        "slotLevel": "4º"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Foco de Essência",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.foco-de-essencia.l9.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 5,
+        "known": 14,
+        "slots": 2,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Fardo Cósmico (10º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.caracteristica-de-fardo-cosmico-10-nivel.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 6,
+        "known": 15,
+        "slots": 2,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Aprimoramento de Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.aprimoramento-de-estilo-de-luta.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 6,
+        "known": 17,
+        "slots": 3,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 6,
+        "known": 18,
+        "slots": 3,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Fardo Cósmico (13º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.caracteristica-de-fardo-cosmico-13-nivel.l13.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 7,
+        "known": 19,
+        "slots": 3,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Expansão da Essência",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.expansao-da-essencia.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 7,
+        "known": 20,
+        "slots": 3,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Aprimoramento de Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.aprimoramento-de-estilo-de-luta.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 7,
+        "known": 21,
+        "slots": 3,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 7,
+        "known": 22,
+        "slots": 3,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Coroa do Esplendor",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.coroa-do-esplendor.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 8,
+        "known": 23,
+        "slots": 4,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Maestria da Essência",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.maestria-da-essencia.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 8,
+        "known": 24,
+        "slots": 4,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 8,
+        "known": 25,
+        "slots": 4,
+        "slotLevel": "5º"
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Verdadeiro Manto Divino",
+            "kind": "feature",
+            "featureRefs": [
+              "class.favored-soul-retia.feature.verdadeiro-manto-divino.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "prepared": 8,
+        "known": 26,
+        "slots": 4,
+        "slotLevel": "5º"
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 1,
+    "homogeneous": true,
+    "observedLevels": {
+      "1": 30
+    },
+    "options": [
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-agris",
+        "identifier": "lyre-favored-soul-retia-burden-of-agris",
+        "name": "Fardo de Agris",
+        "originalName": "Burden of Agris",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "345",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 345
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-apophemia",
+        "identifier": "lyre-favored-soul-retia-burden-of-apophemia",
+        "name": "Fardo de Apophemia",
+        "originalName": "Burden of Apophemia",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "346",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 346
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-aymere",
+        "identifier": "lyre-favored-soul-retia-burden-of-aymere",
+        "name": "Fardo de Aymere",
+        "originalName": "Burden of Aymere",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "346–347",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 346
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-burtromet",
+        "identifier": "lyre-favored-soul-retia-burden-of-burtromet",
+        "name": "Fardo de Burtromet",
+        "originalName": "Burden of Burtromet",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "347",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 347
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-chan-karegosh",
+        "identifier": "lyre-favored-soul-retia-burden-of-chan-karegosh",
+        "name": "Fardo de Chan Karegosh",
+        "originalName": "Burden of Chan Karegosh",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "348",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 348
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-echobliss",
+        "identifier": "lyre-favored-soul-retia-burden-of-echobliss",
+        "name": "Fardo de Echobliss",
+        "originalName": "Burden of Echobliss",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "349",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 349
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-gotham",
+        "identifier": "lyre-favored-soul-retia-burden-of-gotham",
+        "name": "Fardo de Gotham",
+        "originalName": "Burden of Gotham",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "349–350",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 349
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-harros",
+        "identifier": "lyre-favored-soul-retia-burden-of-harros",
+        "name": "Fardo de Harros",
+        "originalName": "Burden of Harros",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "350",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 350
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-ilsrabae",
+        "identifier": "lyre-favored-soul-retia-burden-of-ilsrabae",
+        "name": "Fardo de Ilsrabae",
+        "originalName": "Burden of Ilsrabae",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "351",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 351
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-invidiva",
+        "identifier": "lyre-favored-soul-retia-burden-of-invidiva",
+        "name": "Fardo de Invidiva",
+        "originalName": "Burden of Invidiva",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "352",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 352
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-ivsil",
+        "identifier": "lyre-favored-soul-retia-burden-of-ivsil",
+        "name": "Fardo de Ivsil",
+        "originalName": "Burden of Ivsil",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "352–353",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 352
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-lussuria",
+        "identifier": "lyre-favored-soul-retia-burden-of-lussuria",
+        "name": "Fardo de Lussuria",
+        "originalName": "Burden of Lussuria",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "353",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 353
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-mortuous",
+        "identifier": "lyre-favored-soul-retia-burden-of-mortuous",
+        "name": "Fardo de Mortuous",
+        "originalName": "Burden of Mortuous",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "354",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 354
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-nyphlamour",
+        "identifier": "lyre-favored-soul-retia-burden-of-nyphlamour",
+        "name": "Fardo de Nyphlamour",
+        "originalName": "Burden of Nyphlamour",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "354",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 354
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-saanjeck",
+        "identifier": "lyre-favored-soul-retia-burden-of-saanjeck",
+        "name": "Fardo de Saanjeck",
+        "originalName": "Burden of Saanjeck",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "355",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 355
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-scorn",
+        "identifier": "lyre-favored-soul-retia-burden-of-scorn",
+        "name": "Fardo de Scorn",
+        "originalName": "Burden of Scorn",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "355–356",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 355
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-tithiss",
+        "identifier": "lyre-favored-soul-retia-burden-of-tithiss",
+        "name": "Fardo de Tithiss",
+        "originalName": "Burden of Tithiss",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "357",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 357
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-tquinn",
+        "identifier": "lyre-favored-soul-retia-burden-of-tquinn",
+        "name": "Fardo de T’quinn",
+        "originalName": "Burden of T’quinn",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "356",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 356
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-favored-soul-retia-burden-of-vestias",
+        "identifier": "lyre-favored-soul-retia-burden-of-vestias",
+        "name": "Fardo de Vestias",
+        "originalName": "Burden of Vestias",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "358",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 358
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-favored-soul-destimus",
+        "identifier": "zagalhta-favored-soul-destimus",
+        "name": "Fardo de Destimus",
+        "originalName": "Burden of Destimus",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "149",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 149
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-favored-soul-jalasaor",
+        "identifier": "zagalhta-favored-soul-jalasaor",
+        "name": "Fardo de Jalasaor",
+        "originalName": "Burden of Jalasaor",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "150",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 150
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-favored-soul-ombra",
+        "identifier": "zagalhta-favored-soul-ombra",
+        "name": "Fardo de Ombra",
+        "originalName": "Burden of Ombra",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "151",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 151
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-favored-soul-setanta",
+        "identifier": "zagalhta-favored-soul-setanta",
+        "name": "Fardo de Setanta",
+        "originalName": "Burden of Setanta",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "152",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 152
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-favored-soul-sihlu",
+        "identifier": "zagalhta-favored-soul-sihlu",
+        "name": "Fardo de Sihlu",
+        "originalName": "Burden of Sihlu",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "152",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 152
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-favored-soul-zega",
+        "identifier": "zagalhta-favored-soul-zega",
+        "name": "Fardo de Zega",
+        "originalName": "Burden of Zega",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "153–154",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 153
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-favored-soul-retia-burden-of-gotham",
+        "identifier": "bbb-favored-soul-retia-burden-of-gotham",
+        "name": "Fardo de Gotham",
+        "originalName": "Burden of Gotham",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "99–100",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 99
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-favored-soul-retia-burden-of-hightrankul",
+        "identifier": "bbb-favored-soul-retia-burden-of-hightrankul",
+        "name": "Fardo de Hightrankul",
+        "originalName": "Burden of Hightrankul",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "101–102",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 101
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-favored-soul-retia-burden-of-lana",
+        "identifier": "bbb-favored-soul-retia-burden-of-lana",
+        "name": "Fardo de Lana",
+        "originalName": "Burden of Lana",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "102–103",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 102
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-favored-soul-retia-burden-of-meirlach",
+        "identifier": "bbb-favored-soul-retia-burden-of-meirlach",
+        "name": "Fardo de Meirlach",
+        "originalName": "Burden of Meirlach",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "103",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 103
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-favored-soul-retia-burden-of-scorn",
+        "identifier": "bbb-favored-soul-retia-burden-of-scorn",
+        "name": "Fardo de Scorn",
+        "originalName": "Burden of Scorn",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "104",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 104
+        },
+        "firstFeatureLevel": 1
+      }
+    ]
+  }
+}

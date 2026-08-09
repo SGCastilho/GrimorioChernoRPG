@@ -1,0 +1,976 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+    "pages": "46–50",
+    "chapter": "Capítulo 3: Classes",
+    "page": 47
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Um humano alto membro de alguma tribo caminha em meio a uma nevasca, coberto por peles e empunhando seu machado. Ele gargalha à medida que avança em direção do gigante do gelo que ousou caçar os alces que o seu povo arrebanhava.\n\nUma meio-orc rosna para o último que ousou desafiar sua autoridade sobre a tribo selvagem, pronta para quebrar seu pescoço com suas mãos nuas da mesma forma que ela fez com os outros seis rivais anteriores.\n\nEspumando pela boca, um anão bate com seu elmo na cara de um inimigo drow, depois dirige seu cotovelo armadurado na direção do estomago de outro.\n\nEsses bárbaros, diferentes da forma que conseguem, são definidos por sua fúria: desenfreada, inextinguível e irracional fúria. Mais que uma mera emoção, sua raiva é a ferocidade de um predador acuado, o assalto implacável de uma tempestade, a turbulência agitada do mar.\n\nPara alguns, suas fúrias emerge da comunhão com ferozes espíritos animais. Outras provem de um reservatório turvo de raiva de um mundo cheio de dor. Para cada bárbaro, a fúria é um poder que preenche não apenas o frenesi de batalha, mas também reflexos, resiliência e proezas de força incríveis.\n\nAs pessoas das cidades e vilas costumam se vangloriar de como seus meios civilizados os diferencia dos animais, como se renegar sua própria natureza fosse um indicio de superioridade. Para um bárbaro, no entanto, a civilização não é nenhuma virtude, mas um sinal de fraqueza. Os fortes abraçam a sua natureza selvagem – instintos aguçados, fisicalidade primitiva e fúria voraz. Bárbaros ficam desconfortáveis quando estão cercados por muralhas e multidões. Eles crescem na natureza selvagem de suas terras natais: a tundra, selva ou pradarias onde suas tribos vivem e caçam.\n\nOs bárbaros se sentem mais vivos em meio ao caos do combate. Eles podem entrar num estado de furor quando sua fúria toma controle, concedendo-lhes força e resiliência sobre-humanas. Um bárbaro pode consumir desse reservatório de fúria apenas algumas vezes antes de descansar, mas essas poucas fúrias geralmente são suficientes para derrotar seja lá o que está ameaçando o seu caminho.\n\nNem todos os membros de uma tribo ditos como “bárbaros” por descendentes de sociedades civilizadas pertencem a classe bárbaro. Um bárbaro de verdade dentre essas pessoas é tão incomum quanto um guerreiro bem treinado em uma cidade, e ele possui um papel similar como protetor do povo e líder em tempos de\n\nguerra. A vida na natureza selvagem do mundo é cheia de perigos: tribos rivais, clima mortal e monstros terríveis. Bárbaros investem em direção ao perigo de cabeça para que o seu povo não precise fazê-lo.\n\nSua coragem em frente ao perigo torna os bárbaros perfeitos para se aventurarem. Peregrinar é, muitas vezes, um meio de vida para tribos nativas e a vida desenraizada de um aventureiro é um empecilho pequeno para um bárbaro. Alguns bárbaros sentem falta das estruturas familiares bem forjadas de suas tribos, mas, eventualmente, encontram uma forma de substituí-las por laços formados entre os membros dos seus grupos de aventura.",
+    "hitDice": {
+      "raw": "d12",
+      "mode": "standard",
+      "number": 1,
+      "faces": 12
+    },
+    "primaryAbility": {
+      "raw": "Força",
+      "abilityKeys": [
+        "str"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Força, Constituição",
+        "abilityKeys": [
+          "str",
+          "con"
+        ]
+      },
+      "armor": "Armaduras leves, armaduras médias e escudos",
+      "weapons": "Armas simples e marciais",
+      "tools": "Nenhuma",
+      "skills": "Escolha duas: Adestrar Animais, Atletismo, Intimidação, Natureza, Percepção ou Sobrevivência"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 47,
+      "text": "Como um bárbaro, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d12 por nível de bárbaro Pontos de Vida no 1° Nível: 12 + seu modificador de\n\nConstituição Pontos de Vida nos Níveis Seguintes: 1d12 (ou 7) +\n\nseu modificador de Constituição por nível de bárbaro após o 1° PROFICIÊNCIAS Armaduras: Armaduras leves, armaduras médias e\n\nescudos Armas: Armas simples, armas marciais Ferramentas: Nenhuma\n\nTestes de Resistência: Força, Constituição Perícias: Escolha duas dentre Adestrar Animais,\n\nAtletismo, Intimidação, Natureza, Percepção e Sobrevivência\n\nEQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) um machado grande ou (b) qualquer arma marcial\n\ncorpo-a-corpo\n• (a) dois machados de mão ou (b) qualquer arma\n\nsimples\n• Um pacote de aventureiro e quatro azagaias"
+    },
+    "overview": [
+      {
+        "title": "BÁRBARO",
+        "page": 46,
+        "text": "Um humano alto membro de alguma tribo caminha em meio a uma nevasca, coberto por peles e empunhando seu machado. Ele gargalha à medida que avança em direção do gigante do gelo que ousou caçar os alces que o seu povo arrebanhava.\n\nUma meio-orc rosna para o último que ousou desafiar sua autoridade sobre a tribo selvagem, pronta para quebrar seu pescoço com suas mãos nuas da mesma forma que ela fez com os outros seis rivais anteriores.\n\nEspumando pela boca, um anão bate com seu elmo na cara de um inimigo drow, depois dirige seu cotovelo armadurado na direção do estomago de outro.\n\nEsses bárbaros, diferentes da forma que conseguem, são definidos por sua fúria: desenfreada, inextinguível e irracional fúria. Mais que uma mera emoção, sua raiva é a ferocidade de um predador acuado, o assalto implacável de uma tempestade, a turbulência agitada do mar.\n\nPara alguns, suas fúrias emerge da comunhão com ferozes espíritos animais. Outras provem de um reservatório turvo de raiva de um mundo cheio de dor. Para cada bárbaro, a fúria é um poder que preenche não apenas o frenesi de batalha, mas também reflexos, resiliência e proezas de força incríveis."
+      },
+      {
+        "title": "INSTINTO PRIMITIVO",
+        "page": 46,
+        "text": "As pessoas das cidades e vilas costumam se vangloriar de como seus meios civilizados os diferencia dos animais, como se renegar sua própria natureza fosse um indicio de superioridade. Para um bárbaro, no entanto, a civilização não é nenhuma virtude, mas um sinal de fraqueza. Os fortes abraçam a sua natureza selvagem – instintos aguçados, fisicalidade primitiva e fúria voraz. Bárbaros ficam desconfortáveis quando estão cercados por muralhas e multidões. Eles crescem na natureza selvagem de suas terras natais: a tundra, selva ou pradarias onde suas tribos vivem e caçam.\n\nOs bárbaros se sentem mais vivos em meio ao caos do combate. Eles podem entrar num estado de furor quando sua fúria toma controle, concedendo-lhes força e resiliência sobre-humanas. Um bárbaro pode consumir desse reservatório de fúria apenas algumas vezes antes de descansar, mas essas poucas fúrias geralmente são suficientes para derrotar seja lá o que está ameaçando o seu caminho."
+      },
+      {
+        "title": "UMA VIDA DE PERIGO",
+        "page": 46,
+        "text": "Nem todos os membros de uma tribo ditos como “bárbaros” por descendentes de sociedades civilizadas pertencem a classe bárbaro. Um bárbaro de verdade dentre essas pessoas é tão incomum quanto um guerreiro bem treinado em uma cidade, e ele possui um papel similar como protetor do povo e líder em tempos de\n\nguerra. A vida na natureza selvagem do mundo é cheia de perigos: tribos rivais, clima mortal e monstros terríveis. Bárbaros investem em direção ao perigo de cabeça para que o seu povo não precise fazê-lo.\n\nSua coragem em frente ao perigo torna os bárbaros perfeitos para se aventurarem. Peregrinar é, muitas vezes, um meio de vida para tribos nativas e a vida desenraizada de um aventureiro é um empecilho pequeno para um bárbaro. Alguns bárbaros sentem falta das estruturas familiares bem forjadas de suas tribos, mas, eventualmente, encontram uma forma de substituí-las por laços formados entre os membros dos seus grupos de aventura."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM BÁRBARO",
+        "page": 47,
+        "text": "Quando for criar um personagem bárbaro, pense em de onde o seu personagem veio e sobre o seu lugar no mundo. Fale com o Mestre sobre uma origem apropriada para o seu bárbaro. Você ter vindo de uma terra distante fará de você um forasteiro na área da campanha? Ou a campanha é centrada numa fronteira áspera de onde os bárbaros são comuns?\n\nO que fez você seguir a vida de aventureiro? Você foi atraído às terras civilizadas pelas promessas de riqueza? Você uniu forças com os soldados dessas terras para\n\nenfrentar uma ameaça em comum? Monstros ou uma horda invasora fizeram você abandonar sua terra natal, tornando você um refugiado sem origem? Talvez você seja um prisioneiro de guerra, trazido acorrentado para as terras “civilizadas” e só agora foi capaz de ganhar sua liberdade. Ou você teve que abandonar seu povo por causa de um crime que cometeu, um tabu que você violou ou um golpe que depôs você de uma posição de autoridade."
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 47,
+        "text": "Você pode construir um bárbaro rapidamente seguindo essas sugestões. Primeiro, coloque seu valor de habilidade mais alto em Força, seguido de Constituição. Segundo, escolha o antecedente forasteiro."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.caminho-primitivo",
+        "title": "CAMINHO PRIMITIVO",
+        "page": 49,
+        "text": "A fúria queima no coração de cada bárbaro, uma queimação que leva-os a grandeza. Bárbaros diferentes, no entanto, atribuem suas fúrias a fontes diferentes. Para alguns, é um reservatório interno onde a dor, aflição e raiva são forjados numa fúria dura como aço. Outros veem-na como uma bênção espiritual, uma dadiva de um totem animal.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.2.ataque-extra-aprimorado-barbaro",
+        "title": "ATAQUE EXTRA APRIMORADO: BÁRBARO",
+        "page": 148,
+        "text": "Esta regra opcional substitui Ataque Extra. Você continua atacando duas vezes. A partir do 7º nível, quando fizer um ataque com vantagem durante a ação Atacar e ambos os d20 acertariam, force salvaguarda de Força (CD 8 + proficiência + atributo de ataque); em falha, derrube o alvo ou empurre-o 1,5 m. Criaturas mais de um tamanho maiores têm sucesso automático. Uma vez por turno.",
+        "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "barbarian",
+      "color": "#c7664d"
+    }
+  },
+  "features": [
+    {
+      "key": "class.barbarian.feature.furia.l1.1",
+      "name": "FÚRIA",
+      "level": 1,
+      "description": "Em batalha, você luta com uma ferocidade primitiva. No seu turno, você pode entrar em fúria com uma ação bônus.\n\nEnquanto estiver em fúria, você recebe os seguintes benefícios se você não estiver vestindo uma armadura pesada:\n\n• Você tem vantagem em testes de Força e testes de\n\nresistência de Força.\n• Quando você desferir um ataque com arma corpo-a-\n\ncorpo usando Força, você recebe um bônus nas jogadas de dano que aumenta à medida que você adquire níveis de bárbaro, como mostrado na coluna Dano de Fúria na tabela O Bárbaro.\n• Você possui resistência contra dano de concussão,\n\ncortante e perfurante.\n\nSe você for capaz de conjurar magias, você não poderá conjurá-las ou se concentrar nelas enquanto estiver em fúria.\n\nSua fúria dura por 1 minuto. Ela termina prematuramente se você cair inconsciente ou se seu turno acabar e você não tiver atacado nenhuma criatura hostil desde seu último turno ou não tiver sofrido dano nesse período. Você também pode terminar sua fúria no seu turno com uma ação bônus.\n\nQuando você tiver usado a quantidade de fúrias mostrada para o seu nível de bárbaro na coluna Fúrias da tabela O Bárbaro, você precisará terminar um descanso longo antes de poder entrar em fúria novamente.",
+      "page": 48,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.defesa-sem-armadura.l1.1",
+      "name": "DEFESA SEM ARMADURA",
+      "level": 1,
+      "description": "Quando você não estiver vestindo qualquer armadura, sua Classe de Armadura será 10 + seu modificador de Destreza + seu modificador de Constituição. Você pode usar um escudo e continuar a receber esse benefício.",
+      "page": 48,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.ataque-descuidado.l2.1",
+      "name": "ATAQUE DESCUIDADO",
+      "level": 2,
+      "description": "A partir do 2° nível, você pode desistir de toda preocupação com sua defesa para atacar com um desespero feroz. Quando você fizer o seu primeiro ataque no turno, você pode decidir atacar descuidadamente. Fazer isso lhe concede vantagem nas jogadas de ataque com armas corpo-a-corpo usando Força durante seu turno, porém, as jogadas de ataques feitas contra você possuem vantagem até o início do seu próximo turno.",
+      "page": 48,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.sentido-de-perigo.l2.1",
+      "name": "SENTIDO DE PERIGO",
+      "level": 2,
+      "description": "No 2° nível, você adquire um sentido sobrenatural de quando as coisas próximas não estão como deveriam, concedendo a você uma chance maior quando estiver evitando perigos.\n\nVocê possui vantagem em testes de resistência de Destreza contra efeitos que você possa ver, como armadilhas e magias. Para receber esse benefício você não pode estar cego, surdo ou incapacitado.",
+      "page": 48,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.caminho-primitivo.l3.1",
+      "name": "CAMINHO PRIMITIVO",
+      "level": 3,
+      "description": "No 3° nível, você escolhe um caminho que molda a natureza da sua fúria. Escolha o Caminho do Furioso ou o Caminho do Guerreiro Totêmico, ambos detalhados no final da descrição de classe. Sua escolha lhe concederá características no 3° nível e novamente no 6°, 10° e 14° níveis.",
+      "page": 48,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.",
+      "page": 49,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "A partir do 5° nível, você pode atacar duas vezes, ao invés de uma, sempre que você realizar a ação de Ataque no seu turno.",
+      "page": 49,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.movimento-rapido.l5.1",
+      "name": "MOVIMENTO RÁPIDO",
+      "level": 5,
+      "description": "Começando no 5° nível, seu deslocamento aumenta em 3 metros enquanto você não estiver vestindo uma armadura pesada.",
+      "page": 49,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.instinto-selvagem.l7.1",
+      "name": "INSTINTO SELVAGEM",
+      "level": 7,
+      "description": "No 7° nível, seu instinto está tão apurado que você recebe vantagem nas jogadas de iniciativa.\n\nAlém disso, se você estiver surpreso no começo de um combate e não estiver incapacitado, você pode agir normalmente no seu primeiro turno, mas apenas se você entrar em fúria antes de realizar qualquer outra coisa neste turno.",
+      "page": 49,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.critico-brutal.l9.1",
+      "name": "CRÍTICO BRUTAL",
+      "level": 9,
+      "description": "A partir do 9° nível, você pode rolar um dado de dano de arma adicional quando estiver determinando o dano extra de um acerto crítico com uma arma corpo-a-corpo.\n\nIsso aumenta para dois dados adicionais no 13° nível e três dados adicionais no 17° nível.",
+      "page": 49,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.furia-implacavel.l11.1",
+      "name": "FÚRIA IMPLACÁVEL",
+      "level": 11,
+      "description": "A partir do 11° nível, sua fúria pode manter você lutando independente da gravidade dos seus ferimentos. Se você cair para 0 pontos de vida enquanto estiver em fúria e não morrer, você pode realizar um teste de resistência de Constituição CD 10. Se você for bem sucedido, você volta para 1 ponto de vida ao invés disso.\n\nCada vez que você utilizar essa característica após a primeira, a CD aumenta em 5. Assim que você terminar um descanso curto ou longo a CD volta para 10.",
+      "page": 49,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.furia-persistente.l15.1",
+      "name": "FÚRIA PERSISTENTE",
+      "level": 15,
+      "description": "A partir do 15° nível, sua fúria é tão brutal que ela só termina prematuramente se você cair inconsciente ou se você decidir terminá-la.",
+      "page": 49,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.forca-indomavel.l18.1",
+      "name": "FORÇA INDOMÁVEL",
+      "level": 18,
+      "description": "A partir do 18° nível, se o total de um teste de Força seu for menor que o seu valor de Força, você pode usar esse valor no lugar do resultado.",
+      "page": 49,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.barbarian.feature.campeao-primitivo.l20.1",
+      "name": "CAMPEÃO PRIMITIVO",
+      "level": 20,
+      "description": "No 20° nível, você incorpora os poderes da natureza. Seus valores de Força e Constituição aumentam em 4. Seu máximo para esses valores agora é 24.",
+      "page": 49,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Bárbaro",
+    "sourceTitle": "",
+    "sourcePage": 47,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "rages",
+        "label": "Fúrias"
+      },
+      {
+        "key": "rageDamage",
+        "label": "Dano de Fúria"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Fúria",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.furia.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Defesa sem Armadura",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.defesa-sem-armadura.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 2,
+        "rageDamage": "+2"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Ataque Descuidado",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.ataque-descuidado.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Sentido de Perigo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.sentido-de-perigo.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 2,
+        "rageDamage": "+2"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Caminho Primitivo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.caminho-primitivo.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 3,
+        "rageDamage": "+2"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 3,
+        "rageDamage": "+2"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Ataque Extra",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.ataque-extra.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Movimento Rápido",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.movimento-rapido.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 3,
+        "rageDamage": "+2"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Caminho Primitivo",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.barbarian.feature.caminho-primitivo.l3.1"
+            ]
+          }
+        ],
+        "rages": 4,
+        "rageDamage": "+2"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Instinto Selvagem",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.instinto-selvagem.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 4,
+        "rageDamage": "+2"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 4,
+        "rageDamage": "+2"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Crítico Brutal (+1 dado)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.barbarian.feature.critico-brutal.l9.1"
+            ]
+          }
+        ],
+        "rages": 4,
+        "rageDamage": "+3"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Caminho Primitivo",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.barbarian.feature.caminho-primitivo.l3.1"
+            ]
+          }
+        ],
+        "rages": 4,
+        "rageDamage": "+3"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Fúria Implacável",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.furia-implacavel.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 4,
+        "rageDamage": "+3"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 5,
+        "rageDamage": "+3"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Crítico Brutal (+2 dados)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.barbarian.feature.critico-brutal.l9.1"
+            ]
+          }
+        ],
+        "rages": 5,
+        "rageDamage": "+3"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Caminho Primitivo",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.barbarian.feature.caminho-primitivo.l3.1"
+            ]
+          }
+        ],
+        "rages": 5,
+        "rageDamage": "+3"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Fúria Persistente",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.furia-persistente.l15.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 5,
+        "rageDamage": "+3"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 5,
+        "rageDamage": "+4"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Crítico Brutal (+3 dados)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.barbarian.feature.critico-brutal.l9.1"
+            ]
+          }
+        ],
+        "rages": 6,
+        "rageDamage": "+4"
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Força Indomável",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.forca-indomavel.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 6,
+        "rageDamage": "+4"
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": 6,
+        "rageDamage": "+4"
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Campeão Primitivo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.barbarian.feature.campeao-primitivo.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "rages": "Ilimitado",
+        "rageDamage": "+4"
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 17
+    },
+    "options": [
+      {
+        "grimorioId": "furioso",
+        "identifier": "furioso",
+        "name": "Caminho do Furioso",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 49
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "guerreiro-totemico",
+        "identifier": "guerreiro-totemico",
+        "name": "Caminho do Guerreiro Totêmico",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 50
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-barbarian-champion-of-mortuous",
+        "identifier": "lyre-barbarian-champion-of-mortuous",
+        "name": "Campeão de Mortuous",
+        "originalName": "Champion of Mortuous",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "431–432",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 431
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-barbarian-grandstander",
+        "identifier": "lyre-barbarian-grandstander",
+        "name": "Exibicionista",
+        "originalName": "Grandstander",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "433",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 433
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-barbarian-gladiator",
+        "identifier": "lyre-barbarian-gladiator",
+        "name": "Gladiador",
+        "originalName": "Gladiator",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "432",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 432
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-barbarian-sacred-obsidian",
+        "identifier": "lyre-barbarian-sacred-obsidian",
+        "name": "Obsidiana Sagrada",
+        "originalName": "Sacred Obsidian",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "433",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 433
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-barbarian-cosmic-madness",
+        "identifier": "zagalhta-barbarian-cosmic-madness",
+        "name": "Caminho da Loucura Cósmica",
+        "originalName": "Path of Cosmic Madness",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "139–140",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 139
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-barbarian-path-of-the-bloodpainted",
+        "identifier": "bbb-barbarian-path-of-the-bloodpainted",
+        "name": "Caminho do Pintado de Sangue",
+        "originalName": "Path of the Bloodpainted",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "83–84",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 83
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-barbarian-path-of-the-oni",
+        "identifier": "bbb-barbarian-path-of-the-oni",
+        "name": "Caminho do Oni",
+        "originalName": "Path of the Oni",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "84",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 84
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-barbarian-swelling-heart",
+        "identifier": "bbb-barbarian-swelling-heart",
+        "name": "Coração Transbordante",
+        "originalName": "Swelling Heart",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "84–85",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 84
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "ryoko-barbarian-path-kaiju",
+        "identifier": "ryoko-barbarian-path-kaiju",
+        "name": "Caminho do Kaiju",
+        "originalName": "Path of the Kaiju",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "150–151",
+          "chapter": "Capítulo 9: Classes",
+          "page": 150
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-caminho-do-guardiao-ancestral",
+        "identifier": "xanathar-caminho-do-guardiao-ancestral",
+        "name": "Caminho do Guardião Ancestral",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "9–10",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 9
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-caminho-do-arauto-da-tempestade",
+        "identifier": "xanathar-caminho-do-arauto-da-tempestade",
+        "name": "Caminho do Arauto da Tempestade",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "10–11",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 10
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-caminho-do-fanatico",
+        "identifier": "xanathar-caminho-do-fanatico",
+        "name": "Caminho do Fanático",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "11",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 11
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-trilha-da-besta",
+        "identifier": "tasha-trilha-da-besta",
+        "name": "Trilha da Besta",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "23–24",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 23
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-trilha-da-magia-selvagem",
+        "identifier": "tasha-trilha-da-magia-selvagem",
+        "name": "Trilha da Magia Selvagem",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "24–26",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 24
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "scag-caminho-da-furia-da-batalha",
+        "identifier": "scag-caminho-da-furia-da-batalha",
+        "name": "Caminho da Fúria da Batalha",
+        "originalName": "",
+        "source": {
+          "sourceId": "scag",
+          "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+          "pages": "121",
+          "chapter": "Capítulo 4: Classes",
+          "page": 121
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

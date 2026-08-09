@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-muramasa",
+    "identifier": "lyre-sword-saint-retia-way-of-muramasa",
+    "name": "Caminho de Muramasa",
+    "originalName": "Way of Muramasa",
+    "aliases": [
+      "Way of Muramasa"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "425",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 425
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Pesadelo de Sengo. Em vez de seguir um único mestre, este Caminho reúne técnicas de portadores das lâminas amaldiçoadas de Muramasa, armas sedentas por sangue que transformavam seus usuários em combatentes implacáveis.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 425
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-muramasa.feature.critico-sangrento.l3.1",
+      "name": "CRÍTICO SANGRENTO",
+      "level": 3,
+      "description": "Você obtém crítico com 19 ou 20 no d20. Ao obter crítico, causa dano necrótico adicional igual a 1d10 × metade de seu bônus de proficiência, arredondado para baixo; se o d20 foi 20, o dano é 1d10 × seu bônus de proficiência. Esse dano só pode ocorrer uma vez por ação Atacar ou em ataques de oportunidade.",
+      "page": 425,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-muramasa.feature.atacante-imprudente.l3.1",
+      "name": "ATACANTE IMPRUDENTE",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Atacante Imprudente. Se já o possui, pode avançá-lo em vez disso.",
+      "page": 425,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-muramasa.feature.sede-de-sangue.l6.1",
+      "name": "SEDE DE SANGUE",
+      "level": 6,
+      "description": "Ao obter acerto crítico contra uma criatura, pode fazer um ataque com vantagem contra outro inimigo ao alcance. Máximo de ataques extras por turno igual à metade de seu bônus de proficiência, arredondado para baixo. Esses ataques extras não geram outros ataques por esta característica.",
+      "page": 425,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-muramasa.feature.bebedor-de-sangue.l11.1",
+      "name": "BEBEDOR DE SANGUE",
+      "level": 11,
+      "description": "Ao acertar com arma uma criatura que não seja morto-vivo nem constructo, pode gastar 2 Foco, após ver o dano, para receber PV temporários iguais ao dano causado.",
+      "page": 425,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-muramasa.feature.critico-sangrento-superior.l14.1",
+      "name": "CRÍTICO SANGRENTO SUPERIOR",
+      "level": 14,
+      "description": "Os dados de dano necrótico de Crítico Sangrento tornam-se d12. Com sua Arma Santa sintonizada, obtém crítico em 18, 19 ou 20 no d20.",
+      "page": 425,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-muramasa.feature.brasao-de-sangue.l17.1",
+      "name": "BRASÃO DE SANGUE",
+      "level": 17,
+      "description": "Na primeira vez em seu turno que acertar uma criatura com ataque com arma, force salvaguarda de Constituição; em falha, ela recebe uma maldição e um selo demoníaco. Pode tentar novamente em acertos posteriores no mesmo turno gastando 1 Foco cada. Ataques contra criatura amaldiçoada causam +1d8 de dano necrótico, independentemente do número de maldições. Depois de fazer uma jogada de ataque e ver o resultado, pode remover uma maldição para rolar outro d20 e escolher qual usar; se acertar, o ataque causa um dado de dano de arma adicional. Se o alvo tiver cinco ou mais maldições, pode remover cinco de uma vez para transformar um acerto comum em resultado natural 20.",
+      "page": 425,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

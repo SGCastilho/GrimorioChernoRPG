@@ -1,0 +1,164 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "juramento-devocao",
+    "identifier": "juramento-devocao",
+    "name": "Juramento de Devoção",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 112
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "O Juramento de Devoção vincula um paladino aos mais sublimes ideias de justiça, virtude e ordem. Algumas vezes chamados de campeões, cavaleiros brancos ou guerreiros sagrados, esses paladinos atendem o ideal do cavaleiro na armadura brilhante, agindo com honra em busca de justiça e do bem maior. Eles se agarram aos mais altos padrões de conduta, e alguns, para o melhor ou para o pior, consideram que o resto do mundo deve ter os mesmos padrões. Muitos dos que fazem esse juramento são devotados aos deuses da lei e do bem e usam os dogmas de seus deuses como medida de sua devoção. Eles consideram os anjos – os perfeitos servos do bem – como seus ideais e incorporam imagens de asas angelicais em seus elmos ou brasões.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 112
+  },
+  "features": [
+    {
+      "key": "subclass.juramento-devocao.feature.dogmas-de-devocao.l3.1",
+      "name": "DOGMAS DE DEVOÇÃO",
+      "level": 3,
+      "description": "Embora as palavras exatas e restrições do Juramento de Devoção variem, os paladinos que fazem esse juramento partilha desses dogmas.\n\nHonestidade. Não minta nem trapaceie. Deixe sua palavra ser sua garantia.\n\nCoragem. Nunca tenha medo de agir, apesar de a cautela ser sensata.\n\nCompaixão. Ajude os outros, proteja os fracos, puna aqueles que os ameaçarem. Mostre misericórdia aos seus adversários, mas tempere isso com sabedoria.\n\nHonra. Trate os outros com equidade e deixe seus feitos honoráveis serem exemplos para eles. Faça o máximo de bem possível causando a menor quantidade de mazelas.\n\nDever. Seja responsável pelos seus atos e por suas consequências, proteja aqueles confiados aos vossos cuidados e obedeça aqueles que tiverem autoridade sobre você.",
+      "page": 112,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-devocao.feature.magias-de-juramento.l3.1",
+      "name": "MAGIAS DE JURAMENTO",
+      "level": 3,
+      "description": "Você ganha magias de juramento nos níveis de paladino descritos.",
+      "page": 112,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-devocao.feature.magias-de-juramento-de-devocao.l3.1",
+      "name": "MAGIAS DE JURAMENTO DE DEVOÇÃO",
+      "level": 3,
+      "description": "Nível de Paladino Magias\n\n3° proteção contra o bem e mal, santuário 5° restauração menor, zona da verdade 9° sinal de esperança, dissipar magia 13° movimentação livre, guardião da fé 17° comunhão, coluna de chamas",
+      "page": 112,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-devocao.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Quando você faz esse juramento, no 3° nível, você ganha as duas opções seguintes de Canalizar Divindade.\n\nArma Sagrada. Com uma ação, você pode imbuir uma arma que você esteja empunhando com energia positiva, usando seu Canalizar Divindade. Por 1 minuto, você adiciona seu modificador de Carisma as jogadas de ataque feitas com essa arma (bônus mínimo de +1). A arma também emite luz plena num raio de 6 metros e penumbra mais 6 metros além. Se a arma ainda não for mágica, ela se torna mágica por essa duração.\n\nVocê pode terminar o efeito no seu turno, como parte de qualquer ação. Se você não estiver mais segurando ou portando a arma, ou estiver inconsciente, esse efeito termina.",
+      "page": 112,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-devocao.feature.aura-de-devocao.l7.1",
+      "name": "AURA DE DEVOÇÃO",
+      "level": 7,
+      "description": "A partir do 7° nível, você e as criaturas amistosas a até 3 metros não podem ser enfeitiçadas enquanto você estiver consciente.\n\nNo 18° nível, o alcance dessa aura aumenta para 9 metros.",
+      "page": 112,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-devocao.feature.pureza-de-espirito.l15.1",
+      "name": "PUREZA DE ESPÍRITO",
+      "level": 15,
+      "description": "A partir do 15° nível, você estará sempre sob efeito da magia proteção contra o bem e mal.",
+      "page": 112,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-devocao.feature.halo-sagrado.l20.1",
+      "name": "HALO SAGRADO",
+      "level": 20,
+      "description": "No 20° nível, com uma ação, você pode emanar uma aura de luz solar. Por 1 minuto, luz plena emana de você num raio de 9 metros, penumbra brilha mais 9 metros além.\n\nSempre que uma criatura inimiga começar seu turno na luz plena, a criatura sofrerá 10 de dano radiante.\n\nAlém disso, por essa duração, você tem vantagem em testes de resistência contra magias conjuradas por corruptores ou mortos-vivos.\n\nUma vez que você use essa característica, não poderá fazê-lo novamente até ter terminado um descanso longo.",
+      "page": 112,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

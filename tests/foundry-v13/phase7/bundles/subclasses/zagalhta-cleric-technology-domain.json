@@ -1,0 +1,236 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-cleric-technology-domain",
+    "identifier": "zagalhta-cleric-technology-domain",
+    "name": "Domínio da Tecnologia",
+    "originalName": "Technology Domain",
+    "aliases": [
+      "Technology Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "145–146",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 145
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Clérigo que canaliza o avanço tecnológico coletivo como manifestação divina, usando armaduras, equipamentos e armas de estética futurista para proteger o progresso e impedir seu abuso desproporcional.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-da-tecnologia",
+        "title": "Magias do Domínio da Tecnologia",
+        "page": 145,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "cleric",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "cleric": "1º",
+            "spells": "Inimigo Dedicado; Arma Momentosa"
+          },
+          {
+            "cleric": "3º",
+            "spells": "Lucubração Arcana; Esquentar Metal"
+          },
+          {
+            "cleric": "5º",
+            "spells": "Voo; Lentidão"
+          },
+          {
+            "cleric": "7º",
+            "spells": "Arco Elétrico; Portal Simpático"
+          },
+          {
+            "cleric": "9º",
+            "spells": "Passa-Parede; Canhão Escrito"
+          }
+        ]
+      },
+      {
+        "key": "table.2.exoaprimoramentos",
+        "title": "Exoaprimoramentos",
+        "page": 146,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Exoaprimoramento"
+          },
+          {
+            "key": "effect",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Sensores de Drone",
+            "effect": "Percepção passiva +5 e visão às cegas a 9 m."
+          },
+          {
+            "name": "Casco Aprimorado",
+            "effect": "Uma vez por uso de Exoarmadura, recebe 10d10 PV temporários."
+          },
+          {
+            "name": "Propulsores Aprimorados",
+            "effect": "Voo igual a 2× deslocamento base e aceleração 0-G igual a 3× deslocamento base."
+          },
+          {
+            "name": "Ataques Guiados",
+            "effect": "Ao realizar a ação Atacar, pode atacar três vezes em vez de uma."
+          },
+          {
+            "name": "Escudo de Fase",
+            "effect": "Sofre metade do dano do primeiro ataque que o atinge em cada turno."
+          },
+          {
+            "name": "Canhão Radiante",
+            "effect": "Pode substituir ataques da ação Atacar por ataques de magia à distância a 18 m que causam 3d8 radiante; também pode fazer um desses ataques como ação bônus."
+          },
+          {
+            "name": "Surto do Reator",
+            "effect": "Ataques, testes e CD das magias de Clérigo recebem +2."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 145
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-cleric-technology-domain.feature.proficiencias-de-tecnologista.l1.1",
+      "name": "PROFICIÊNCIAS DE TECNOLOGISTA",
+      "level": 1,
+      "description": "Você é proficiente com Ferramentas de Funileiro e Ferramentas de Reparo. Conhece designar constructos, sempre a tem preparada e ela não conta contra o número de magias preparadas.",
+      "page": 145,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-technology-domain.feature.canalizar-divindade-milagre-metalurgico.l2.1",
+      "name": "CANALIZAR DIVINDADE: MILAGRE METALÚRGICO",
+      "level": 2,
+      "description": "Como ação bônus, escolha criaturas a até 9 m em quantidade igual à proficiência. Por 1 minuto cada uma recebe 2d6 PV temporários e o mesmo aprimoramento escolhido: Propulsor (+3 m aos deslocamentos); Aprimoramento (+1d4 em ataques/testes de Força ou Destreza); Núcleo de Energia (uma vez, role segundo d20 e use o maior; enquanto não usado, ataques contam como mágicos); ou Blindagem (+2 CA se não usa escudo). Termina se você cair a 0 PV.",
+      "page": 145,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-technology-domain.feature.exoarmadura.l6.1",
+      "name": "EXOARMADURA",
+      "level": 6,
+      "description": "Como ação, crie por 10 minutos uma armadura tecnológica, uma vez por Descanso ou novamente gastando Canalizar Divindade. Pode substituir sua CA por 10 + Destreza ou Constituição + Sabedoria, preservando efeitos da armadura original; ao atacar pode gastar espaço para somar seu nível ao ataque e causar +1d6 por nível se acertar; respira normalmente em ambientes nocivos; reduz cada dano contundente/perfurante/cortante pela proficiência; recebe Limiar de Dano igual à metade do nível de Clérigo; voo laborioso igual ao deslocamento base e aceleração 0-G igual ao dobro.",
+      "page": 145,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-technology-domain.feature.ataque-de-recuperacao.l8.1",
+      "name": "ATAQUE DE RECUPERAÇÃO",
+      "level": 8,
+      "description": "O primeiro ataque de cada turno pode tratar a arma como Arremesso 9/27 m; se arremessada, ela retorna imediatamente salvo impedimento. Esse ataque causa +1d8 de fogo, aumentando para +2d8 no 14º nível.",
+      "page": 145,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-technology-domain.feature.exoaprimoramento.l17.1",
+      "name": "EXOAPRIMORAMENTO",
+      "level": 17,
+      "description": "Ao criar Exoarmadura, escolha um Exoaprimoramento da tabela. Como ação bônus, pode gastar espaço de 3º nível ou maior para acrescentar outro imediatamente.",
+      "page": 145,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-technology-domain.feature.sintonia-extra.l17.1",
+      "name": "SINTONIA EXTRA",
+      "level": 17,
+      "description": "Você pode sintonizar-se com um quarto item mágico.",
+      "page": 146,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

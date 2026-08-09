@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-wizard-imbuer",
+    "identifier": "bbb-wizard-imbuer",
+    "name": "Imbuidor",
+    "originalName": "Imbuer",
+    "aliases": [
+      "Imbuer"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "135",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 135
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Um mago que usa magia para reproduzir as técnicas de combatentes marciais da lâmina.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 135
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-wizard-imbuer.feature.manejador-iluminado.l2.1",
+      "name": "MANEJADOR ILUMINADO",
+      "level": 2,
+      "description": "Você ganha proficiência com armaduras leves, médias e todas as armas marciais. Aprende o truque cabo cruzado, que não conta no limite de truques de mago conhecidos. Além disso, quando conjura uma magia de mago, até o início de seu próximo turno o dano que sofre de cada ataque com arma é reduzido por seu modificador de Inteligência + a soma dos níveis de todos os espaços de magia que gastar nesse intervalo, incluindo o espaço da magia que ativou a característica.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-imbuer.feature.formula-da-espada.l2.1",
+      "name": "FÓRMULA DA ESPADA",
+      "level": 2,
+      "description": "Todas as magias do grupo Zanjen contam como estando na lista de mago, permitindo aprendê-las e conjurá-las como magias de mago.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-imbuer.feature.tecnica-de-autoaprimoramento.l6.1",
+      "name": "TÉCNICA DE AUTOAPRIMORAMENTO",
+      "level": 6,
+      "description": "Uma vez por turno, quando conjura uma magia que exija espaço de magia, pode realizar um ataque com arma usando uma arma com a qual seja proficiente. Esse ataque recebe bônus na jogada de ataque e de dano igual ao nível do espaço gasto e conta como mágico.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-imbuer.feature.tecelao-zanjen-especialista.l10.1",
+      "name": "TECELÃO ZANJEN ESPECIALISTA",
+      "level": 10,
+      "description": "Quando conjura uma magia Zanjen com efeito de Bônus de Santo da Espada, você qualifica para esse bônus como se fosse um Santo da Espada.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-imbuer.feature.golpe-da-natureza-da-espada.l14.1",
+      "name": "GOLPE DA NATUREZA DA ESPADA",
+      "level": 14,
+      "description": "Você pode conjurar cabo cruzado como ação bônus, mas não pode conjurá-lo também como ação no mesmo turno.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

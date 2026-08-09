@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-inscriptor-retia-grim-fable",
+    "identifier": "bbb-inscriptor-retia-grim-fable",
+    "name": "Fábula Sombria",
+    "originalName": "Grim Fable",
+    "aliases": [
+      "Grim Fable"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "107–108",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 107
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Um escritor amaldiçoado que inflige infortúnio e melancolia aos outros.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 107
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-inscriptor-retia-grim-fable.feature.mais-que-um-erro.l1.1",
+      "name": "MAIS QUE UM ERRO",
+      "level": 1,
+      "description": "Quando conjura uma magia que imponha uma condição à qual o alvo seja imune, pode ignorar a imunidade e fazê-lo rolar normalmente. Se conseguir impor o efeito, em vez da condição original ele fica amaldiçoado, e a maldição reproduz exatamente os efeitos daquela condição pelo mesmo tempo; para outros efeitos, como ataques que causam dano extra contra amedrontados, ela conta como a condição original. Efeitos que não removam maldições não podem removê-la. Você só pode manter um conjunto de efeitos convertido em maldição por vez; criar outro faz a maldição anterior retornar à condição original, possivelmente encerrando-a em alvos imunes. Mesmo contra um alvo não imune, pode optar por transformar uma condição aplicada em maldição.",
+      "page": 107,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-grim-fable.feature.capitulo-aberto-licoes-mortais.l1.1",
+      "name": "CAPÍTULO ABERTO: LIÇÕES MORTAIS",
+      "level": 1,
+      "description": "Em vez de Magias de Capítulo, escolha um grupo entre Valores Sangrentos, Palavras Seladas ou Moralismos Desvinculados. Magias desse grupo e do Códice Pecaminoso contam como magias de Inscritor para você. Além disso, escolha um número de magias desses dois grupos igual ao seu bônus de proficiência que possa conjurar com espaços de pacto. Você as conhece automaticamente e elas não contam no limite de magias conhecidas. A cada nível de Inscritor, pode refazer essas escolhas.",
+      "page": 107,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-grim-fable.feature.reviravolta-sombria.l5.1",
+      "name": "REVIRAVOLTA SOMBRIA",
+      "level": 5,
+      "description": "Quando uma criatura que você veja obtiver sucesso em um teste de atributo, ataque ou salvaguarda feito com vantagem, pode gastar uma Reviravolta Narrativa para obrigá-la a usar o d20 descartado como resultado, possivelmente mudando o desfecho. Até o início de seu próximo turno, toda rolagem que ela fizer com vantagem também deve usar o d20 que seria descartado.",
+      "page": 107,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-grim-fable.feature.dispositivo-do-incolor.l8.1",
+      "name": "DISPOSITIVO DO INCOLOR",
+      "level": 8,
+      "description": "Uma vez por Descanso, pode produzir os efeitos de arma infundida sem gastar espaço, como se a conjurasse com um de seus espaços de pacto. Pode gastar uma Consulta para aumentar o nível efetivo da magia pela metade de seu bônus de proficiência, arredondado para baixo, até no máximo 9º nível. Conjurada assim, tanto o dano extra quanto o dano normal da arma não possuem tipo; portanto, ignoram imunidades, resistências e vulnerabilidades baseadas em tipo de dano, mas não defesas baseadas no material da arma, como resistência a armas não eidólicas.",
+      "page": 107,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-grim-fable.feature.amaldicoado-ao-fracasso.l12.1",
+      "name": "AMALDIÇOADO AO FRACASSO",
+      "level": 12,
+      "description": "Você aprende rajada mística se ainda não a conhece. Quando causar dano a uma criatura com uma magia de Inscritor, ou ela falhar na salvaguarda inicial contra uma, ela faz salvaguarda de Carisma. Em sucesso, nada além da magia acontece e ela passa automaticamente nessas salvaguardas até o início do próximo turno. Em falha, fica amaldiçoada por 1 minuto. Enquanto amaldiçoada, sofre 1d4 de dano irredutível sempre que realizar uma ação, não incluindo ação bônus ou reação, ou mover-se mais de 3 m num turno. Repete a salvaguarda no fim de cada turno, encerrando em sucesso. O efeito pode acumular: se falhar novamente contra esta característica em turno posterior devido a outra de suas magias, a duração reinicia e acrescenta mais 1d4 ao dano de cada ativação da maldição.",
+      "page": 107,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-grim-fable.feature.destino-vazio.l20.1",
+      "name": "DESTINO VAZIO",
+      "level": 20,
+      "description": "Gaste uma Consulta para atingir todas as criaturas amaldiçoadas à sua escolha a até 18 m com uma onda de infortúnio. Cada maldição que as afete passa a ter duração indefinida e se desvincula das condições normais que a encerrariam. A maldição também ganha estes efeitos: o alvo não pode obter vantagem em ataques, testes de atributo ou salvaguardas; se tiver vantagem e desvantagem ao mesmo tempo, rola com desvantagem; não pode recuperar PV; durante 1 minuto, no fim de cada turno, pode repetir uma salvaguarda de Carisma e, se acumular três sucessos nesse minuto, a maldição termina. Após o minuto, ela não pode mais ser encerrada dessa forma.",
+      "page": 108,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

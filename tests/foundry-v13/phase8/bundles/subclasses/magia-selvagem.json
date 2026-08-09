@@ -1,0 +1,147 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "magia-selvagem",
+    "identifier": "magia-selvagem",
+    "name": "Magia Selvagem",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 81
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Sua magia inata vem das forças selvagens do caos que constituem a base da ordem da criação. Você deve ter sido exposto a algum tipo de magia bruta, talvez de um portal planar que levava ao Limbo, a Planos Elementais ou ao misterioso Reino Distante. Talvez você tenha sido abençoado por uma poderosa criatura feérica ou marcado por um corruptor. Ou sua magia pode ser uma casualidade do seu nascimento, sem qualquer razão aparente. No entanto, ela existe, essa magia caótica fervilha dentro de você, esperando por qualquer brecha.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 81
+  },
+  "features": [
+    {
+      "key": "subclass.magia-selvagem.feature.surto-de-magia-selvagem.l1.1",
+      "name": "SURTO DE MAGIA SELVAGEM",
+      "level": 1,
+      "description": "A partir do momento que você escolhe essa origem, no 1° nível, sua conjuração pode liberar surtos de magia selvagem. Imediatamente após você conjurar uma magia de feiticeiro de 1° nível ou superior, o Mestre pode solicitar que você role um d20. Se você rolar um 1, role na tabela Surto de Magia Selvagem para criar um efeito mágico aleatório. Um surto só pode ocorrer uma vez por turno. Se o efeito de um surto for uma magia, ela é muito selvagem para ser afetada por Metamagia. Se ela normalmente exige concentração, nesse caso não será necessário; a magia permanece por sua duração total.",
+      "page": 81,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.magia-selvagem.feature.mares-de-caos.l1.1",
+      "name": "MARÉS DE CAOS",
+      "level": 1,
+      "description": "A partir do 1° nível, você pode manipular as forças do acaso e do caos para ganhar vantagem em uma jogada de ataque, teste de habilidade ou teste de resistência. Quando o fizer, você deve finalizar um descanso longo antes de poder usar essa característica novamente.\n\nA qualquer momento, antes de recuperar o uso dessa característica, o Mestre pode rolar na tabela Surto de Magia Selvagem, imediatamente após você conjurar uma magia de feiticeiro de 1° nível ou superior. Após isso, você recupera o uso dessa característica.",
+      "page": 81,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.magia-selvagem.feature.dobrar-a-sorte.l6.1",
+      "name": "DOBRAR A SORTE",
+      "level": 6,
+      "description": "A partir do 6° nível, você adquire a habilidade de mudar o destino usando sua magia selvagem. Quando outra criatura que você possa ver realizar uma jogada de ataque, um teste de habilidade ou um teste de resistência, você pode usar sua reação para gastar 2 pontos de feitiçaria para rolar 1d4 e aplicar o número rolado como um bônus ou uma penalidade (à sua escolha) na jogada da criatura. Você pode fazer isso depois da criatura fazer a jogada, mas antes do efeito ocorrer.",
+      "page": 81,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.magia-selvagem.feature.caos-controlado.l14.1",
+      "name": "CAOS CONTROLADO",
+      "level": 14,
+      "description": "No 14° nível, você ganha um controle modico sobre seus surtos de magia selvagem. Sempre que você rolar a tabela Surto de Magia Selvagem, você pode rolar duas vezes e usar qualquer resultado.",
+      "page": 81,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.magia-selvagem.feature.bombardeio-de-magia.l18.1",
+      "name": "BOMBARDEIO DE MAGIA",
+      "level": 18,
+      "description": "A partir do 18° nível, a energia nociva das suas magias se intensifica. Quando você rolar o dano de uma magia e rolar o maior dano possível em qualquer dado, escolha um desses dados, role ele novamente e adicione o valor rolado ao dano. Você pode usar essa característica apenas uma vez por rodada.",
+      "page": 81,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.magia-selvagem.feature.surto-de-magia-selvagem.l1.2",
+      "name": "SURTO DE MAGIA SELVAGEM",
+      "level": 1,
+      "description": "d100 Efeito 01–02 Role nessa tabela, no começo de cada um dos seus\n\nturnos pelo próximo minuto, ignorando esse resultado em rolagens subsequentes. 03–04 Pelo próximo minuto, você pode ver qualquer criatura\n\ninvisível, se você tiver linha de visão 05–06 Um modron, escolhido e controlado pelo Mestre,\n\naparece em um espaço desocupado a 1,5 metro de você, depois desaparece após 1 minuto. 07–08 Você conjura bola de fogo, como uma magia de 3°\n\nnível, centrada em você. 09–10 Você conjura misseis mágicos como uma magia de 5°\n\nnível. 11–12 Role um d10. Sua altura muda em um valor igual a 3\n\ncm x o resultado da rolagem. Se o valor for ímpar, você reduz. Se for par, você cresce. 13–14 Você conjura confusão, centrada em você. 15–16 Pelo próximo minuto, você recupera 5 pontos de vida\n\nno começo de cada um dos seus turnos. 17–18 Uma longa barba feita de penas cresce em você, ela\n\ndura até você espirrar, no momento que as penas explodirão para fora do seu rosto. 19–20 Você conjura área escorregadia, centrada em você. 21–22 Criaturas tem desvantagem em testes de resistência\n\ncontra a próxima magia que você conjurar no próximo minuto, que possua um teste de resistência. 23–24 Sua pele adquire um tom vibrante de azul. A magia\n\nremover maldição pode acabar com esse efeito. 25–26 Um olho aparece na sua nuca no próximo minuto.\n\nDurante esse tempo, você tem vantagem em testes de Sabedoria (Percepção) relacionados à visão. 27–28 Pelo próximo minuto, todas as suas magias com\n\ntempo de conjuração de 1 ação podem ser conjuradas com 1 ação bônus 29–30 Você se teletransporte a até 18 metros para um local\n\ndesocupado, à sua escolha, que você possa ver. 31–32 Você é transportado para o Plano Astral até o fim do\n\nseu próximo turno, após esse tempo, você volta para o espaço que estava anteriormente ou para o espaço desocupado mais próximo, se o espaço estiver ocupado. 33–34 Maximize o dano da próxima magia que causar dano\n\nque você conjurar no próximo minuto. 35–36 Role um d10. Sua idade muda em um valor igual ao\n\nresultado da rolagem. Se o valor for ímpar, você fica mais jovem (mínimo 1 ano). Se for par, você fica mais velho. 37–38 1d6 flumphs, controlados pelo Mestre, aparecem em\n\nespaços desocupados a até 18 metros de você e estarão com medo de você. Eles desaparecem após 1 minuto. 39–40 Você recupera 2d10 pontos de vida. 41–42 Você se transforma numa planta num vaso até o início\n\ndo seu próximo turno. Enquanto for uma planta, você estará incapacitado e terá vulnerabilidade a todos os danos. Se você cair a 0 pontos e vida, seu vaso quebra e sua forma é revertida. 43–44 Pelo próximo minuto, você pode se teletransportar\n\naté 6 metros, com uma ação bônus, em cada um dos seus turnos.\n\nd100 Efeito 45–46 Você conjura levitação em si mesmo. 47–48 Um unicórnio, controlado pelo Mestre, aparece em um\n\nespaço a 1,5 metro de você e desaparece 1 minuto depois. 49–50 Você não consegue falar pelo próximo minuto. Sempre\n\nque você tentar, bolhas rosas sairão da sua boca. 51–52 Um escudo espectral flutua próximo a você pelo\n\npróximo minuto, concedendo +2 de bônus na sua CA e imunidade a misseis mágicos. 53–54 Você é imune a intoxicação por álcool pelos próximos\n\n5d6 dias. 55–56 Seu cabelo cai, mas volta a crescer dentro de 24 horas. 57–58 Pelo próximo minuto, qualquer objeto inflamável que\n\nvocê tocar, que não esteja sendo segurado ou carregado por outra criatura, entra em combustão. 59–60 Você recupera o seu espaço de magia de menor nível. 61–62 Pelo próximo minuto, você deve gritar quando for falar. 63–64 Você conjura névoa obscurecente, centrada em você. 65–66 Até três criaturas, à sua escolha, a até 9 metros de você,\n\nsofrem 4d10 de dano elétrico. 67–68 Você fica com medo da criatura mais próxima até o fim\n\ndo seu próximo turno. 69–70 Cada criatura a 9 metros de você, fica invisível pelo\n\npróximo minuto. A invisibilidade termina em uma criatura quando ela ataca ou conjura uma magia. 71–72 Você ganha resistência a todos os danos pelo próximo\n\nminuto. 73–74 Uma criatura aleatória, a até 9 metros de você, fica\n\nenvenenada por 1d4 horas. 75–76 Você brilha com luz plena num raio de 9 metros pelo\n\npróximo minuto. Qualquer criatura que terminar seu turno a 1,5 metro de você, ficará cega até o fim do próximo turno. 77–78 Você conjura metamorfose em você. Se você falhar no\n\nteste de resistência, você se torna uma ovelha pela duração da magia. 79–80 Borboletas e pétalas de flores ilusórias flutuam no ar a\n\naté de 3 metros de você pelo próximo minuto. 81–82 Você pode realizar uma ação adicional imediatamente. 83–84 Cada criatura a até 9 metros de você, sofre 1d10 de\n\ndano necrótico. Você recupera uma quantidade de pontos de vida igual a soma do dano necrótico causado. 85–86 Você conjura reflexos. 87–88 Você conjura voo numa criatura aleatória a até 18\n\nmetros. 89–90 Você fica invisível pelo próximo minuto. Durante esse\n\nperíodo, outras criaturas não podem ouvi-lo. A invisibilidade termina quando você atacar ou conjurar uma magia. 91–92 Se você morrer no próximo minuto, você volta\n\nimediatamente a vida através da magia reencarnação. 93–94 Seu tamanho aumenta em uma categoria pelo próximo\n\nminuto. 95–96 Você e todas as criaturas a até 9 metros, ganham\n\nvulnerabilidade a dano perfurante pelo próximo minuto. 97–98 Você é envolto por uma suave, música etérea pelo\n\npróximo minuto. 99–00 Você recupera todos os pontos de feitiçaria gastos.",
+      "page": 82,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

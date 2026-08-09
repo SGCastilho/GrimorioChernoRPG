@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-warlock-false-god",
+    "identifier": "lyre-warlock-false-god",
+    "name": "Falso Deus",
+    "originalName": "False God",
+    "aliases": [
+      "False God"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "492",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 492
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Seu patrono é um falso Eidolon — frequentemente um yokai que se apresenta como divindade. O pacto imita poder clerical, alimenta-se de sofrimento e concede um domínio sombrio semelhante ao de um culto fraudulento.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 492
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-warlock-false-god.feature.bencao-falsa.l1.1",
+      "name": "BÊNÇÃO FALSA",
+      "level": 1,
+      "description": "Ao aprender magias de Bruxo, inclusive no 1º nível, e ao escolher seus Arcanos Místicos, você pode escolher magias da lista de Clérigo como se fossem magias de Bruxo.",
+      "page": 492,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-false-god.feature.dreno-infernal.l1.1",
+      "name": "DRENO INFERNAL",
+      "level": 1,
+      "description": "Quando reduzir uma criatura a 0 PV, recebe PV temporários iguais ao dano que excedeu os PV restantes dela. Quando obtiver acerto crítico, recebe PV temporários iguais à metade do dano total causado, arredondado para baixo. Esses PV temporários duram 1 minuto.",
+      "page": 492,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-false-god.feature.olhos-de-yokai.l6.1",
+      "name": "OLHOS DE YOKAI",
+      "level": 6,
+      "description": "Você recebe visão diabólica em alcance de 3 metros × seu nível de Bruxo. Se já possuir visão diabólica, pode somar metade desse alcance ao alcance existente ou usar este alcance isoladamente, o que for maior.",
+      "page": 492,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-false-god.feature.intervencao-sombria.l10.1",
+      "name": "INTERVENÇÃO SOMBRIA",
+      "level": 10,
+      "description": "Uma vez por Descanso Longo, como ação, role 1d100. Se o resultado for igual ou inferior ao dobro de seu nível de Bruxo, o patrono responde e você recebe imediatamente os benefícios de um Descanso Curto; isso não conta contra o limite de Descansos Curtos por Descanso Longo. O uso é gasto mesmo em falha.",
+      "page": 492,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-false-god.feature.mandamento-do-falso-senhor.l14.1",
+      "name": "MANDAMENTO DO FALSO SENHOR",
+      "level": 14,
+      "description": "Sempre que conjurar uma magia usando um Arcano Místico, você fica imune a todo dano até o fim do seu próximo turno, exceto dano causado pelo próprio Arcano Místico, e recupera um espaço de Magia de Pacto gasto.\n\nINVOCAÇÕES DO FALSO DEUS. FLAGELADOR DE CELESTIAIS (7º): vantagem em salvaguardas contra efeitos originados por celestiais. VOZ DOMINANTE (5º): conjure Comando ou Sugestão sem espaço um número de vezes por Descanso Longo igual ao bônus de proficiência. ARMA EIDÓLICA (6º): uma vez por Descanso Longo, conjure Arma Eidomântica sem espaço e sem teste eidomântico ao terminar, no nível de seus espaços de pacto. MAGIAS EIDÓLICAS EXPANDIDAS: ao aprender magias ou Arcanos Místicos, pode escolher do grupo de magias que corresponda à identidade fingida do patrono. RESILIÊNCIA DO PATRONO: resistência a dano psíquico e a um tipo associado à identidade do patrono — veneno para Aymere, energético para Harros, trovejante para T’quinn, elétrico para Vestias. MENTE DE RELATO FALSO (5º): vantagem em salvaguardas contra enfeitiçar, obrigar a dizer verdade ou ler mente; em sucesso, pode fazer a origem acreditar que venceu e, se sondar pensamentos, percebe o que ela procurou e fornece informação falsa. REGENERAÇÃO SOBRENATURAL (15º): no início do turno, se estiver acima de 1 PV e abaixo da metade do máximo, recupera PV iguais ao seu modificador de Constituição, mínimo 1.",
+      "page": 492,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

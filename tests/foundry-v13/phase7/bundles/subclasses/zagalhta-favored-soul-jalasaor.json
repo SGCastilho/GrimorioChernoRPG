@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-favored-soul-jalasaor",
+    "identifier": "zagalhta-favored-soul-jalasaor",
+    "name": "Fardo de Jalasaor",
+    "originalName": "Burden of Jalasaor",
+    "aliases": [
+      "Burden of Jalasaor"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "150",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 150
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "A luz abrasadora da Serpente de Cristal se manifesta como poder radiante semelhante ao de paladinos e uma necessidade quase impossível de ignorar de impor justiça contra as forças das trevas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 150
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-favored-soul-jalasaor.feature.dragao-de-luz.l1.1",
+      "name": "DRAGÃO DE LUZ",
+      "level": 1,
+      "description": "Magias de Paladino contam como estando na lista da Alma Favorecida para você.",
+      "page": 150,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-jalasaor.feature.lamina-da-explosao-solar.l1.1",
+      "name": "LÂMINA DA EXPLOSÃO SOLAR",
+      "level": 1,
+      "description": "Ao obter crítico, cause dano radiante adicional igual a 1d8 × nível de seus Espaços de Pacto de Alma Favorecida. Pode usar seu atributo de conjuração em vez de Força ou Destreza nos ataques e danos com armas.",
+      "page": 150,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-jalasaor.feature.grande-empunhadura.l6.1",
+      "name": "GRANDE EMPUNHADURA",
+      "level": 6,
+      "description": "Pode empunhar armas corpo a corpo Pesadas, Versáteis e de Duas Mãos com uma mão, mantendo benefícios de duas mãos. Pode empunhar outra dessas na mão secundária e fazer ataque bônus por combate com duas armas como se fosse Leve.",
+      "page": 150,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-jalasaor.feature.gigaflare-celestial.l10.1",
+      "name": "GIGAFLARE CELESTIAL",
+      "level": 10,
+      "description": "Como ação, gaste Purificação e lance esfera a ponto a até 36 m, explodindo em raio de 6 m. Salvaguarda de Constituição: falha causa 1d10 radiante × nível de Alma Favorecida; sucesso metade. Falhar por 5 ou mais também deixa cego por 1 minuto, repetindo a salvaguarda ao fim dos turnos. Se gastar Espaço de Pacto ou segunda Purificação, pode excluir alvos em quantidade igual à metade de seu nível.",
+      "page": 150,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-jalasaor.feature.resiliencia-do-dragao.l13.1",
+      "name": "RESILIÊNCIA DO DRAGÃO",
+      "level": 13,
+      "description": "Quando falhar numa salvaguarda, pode escolher ter sucesso. Usos por Descanso Longo iguais à metade da proficiência; recupera 1 uso em cada Descanso Curto.",
+      "page": 150,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

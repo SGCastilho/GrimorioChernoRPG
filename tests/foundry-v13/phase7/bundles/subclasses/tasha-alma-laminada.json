@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-alma-laminada",
+    "identifier": "tasha-alma-laminada",
+    "name": "Alma Laminada",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "66–68",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 66
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Muitos assassinos golpeiam com armas físicas, e muitos invasores e espiões utilizam ferramentas de ladrão para se infiltrarem em locais seguros. Contrastando com eles, uma Alma Laminada golpeia e se infiltra com a mente, cortando através de barreiras tanto físicas quanto psíquicas. Esses ladinos descobriram o poder psiônico dentro de si mesmos e canalizam isso em seu serviço ladinesco. Eles encontram uma aplicação fácil como membros de guildas de ladrões, ainda que sejam frequentemente tratados com suspeita por ladinos desconfiados de qualquer um utilizando estranhos poderes mentais para conduzir seus negócios. Muitos governos também ficariam bem felizes em empregar um Alma Laminada como espião. Por entre as árvores ancestrais do Plano Material e em Faéria, alguns elfos das florestas trilham o caminho do Alma Laminada, agindo como guardiões silenciosos e letais das suas florestas. Na guerra infinita entre os gith, um githzerai é encorajado a se tornar um Alma Laminada quando a furtividade é exigida contra os inimigos githyanki. Como um Alma Laminada, suas habilidades psiônicas podem tê-lo assombrado desde a infância, apenas revelando seu verdadeiro potencial conforme você vivenciava a adrenalina da aventura. Ou você pode ter procurado uma ordem reclusa de adeptos psíquicos e passou anos aprendendo como manifestar o seu poder.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 66
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-alma-laminada.feature.poder-psiquico.l3.1",
+      "name": "PODER PSÍQUICO",
+      "level": 3,
+      "description": "Você abriga uma fonte de energia psíquica dentro de você. Essa energia é representada por seus dados de Energia Psíquica, que são d6. Você possui um número de dados de Energia Psíquica equivalente ao dobro de seu bônus de proficiência, e eles alimentam vários de seus poderes psiônicos, que são detalhados abaixo. Alguns de seus poderes gastam os dados de Energia Psíquica que eles utilizam, conforme especificado em sua descrição, e você não pode utilizar um poder se ele exigir que você use um dado, mas você não tiver nenhum disponível. Você recupera todos os dados de Energia Psíquica gastos quando termina um descanso longo. Adicionalmente, como uma ação bônus, você pode recuperar um dado de Energia Psíquica gasto, mas só poderá fazer isso novamente após um descanso curto ou longo. Quando você alcança certos níveis nessa classe, o valor do seu dado de Energia Psiônica aumenta: no 5º nível (d8), no 11º nível (d10), e no 17º nível (d12). Os poderes abaixo utilizam o seu dado de Energia Psíquica. Auxílio Psíônico. Quando seu treinamento não psiônico falha, sua energia psíquica pode ajudar: se você falhar em um teste de habilidade utilizando uma perícia ou ferramenta na qual seja proficiente, você pode jogar um dado de Energia Psíquica e adicionar o seu resultado ao valor do teste, potencialmente transformando uma falha em sucesso. Você gasta o dado apenas se a rolagem for bem sucedida. Sussurros psíquicos. Você pode estabelecer uma comunicação telepática entre si mesmo e os outros - perfeito para uma infiltração silenciosa. Usando uma ação, escolha uma ou mais criaturas em seu campo de visão, até um número máximo igual o seu bônus de proficiência, e então jogue o dado de Energia Psíquica. Pelo número de horas igual ao resultado desse dado, as criaturas escolhidas podem falar telepaticamente com você, e você com elas. Para enviar ou receber uma mensagem (não consome ações), você e a outra criatura devem estar a até 1,5km um do outro. Uma criatura não pode utilizar essa telepatia se não souber falar nenhum idioma, e uma criatura pode encerrar a conexão telepática a qualquer momento, sem o gasto de ações. Você e a criatura não precisam falar o mesmo idioma para se entenderem. A primeira vez que utiliza esse poder após um descanso longo, você não gasta dados de Energia psíquica. Todas as outras vezes que utilizar o poder, você gastará um dado no momento de sua ativação.",
+      "page": 66,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alma-laminada.feature.laminas-psiquicas.l3.1",
+      "name": "LÂMINAS PSÍQUICAS",
+      "level": 3,
+      "description": "Você pode manifestar seu poder psiônico como lâminas cintilantes de energia psíquica. Sempre que realizar a ação de Ataque, você pode manifestar uma lâmina psíquica em uma mão livre e realizar o ataque com ela. Ela lâmina mágica é uma arma de combate corpo a corpo simples, com as propriedades de Acuidade e Arremesso. Seu alcance normal atributo utilizado que você utilizou no ataque. A lâmina desaparece imediatamente após o ataque, tendo acertado ou errado o alvo, e não deixa nenhuma marca no alvo caso tenha provocado dano.Após você atacar com a lâmina, você pode realizar um ataque com arma corpo a corpo ou à distãncia com uma segunda lâmina psíquica com uma ação bônus no mesmo turno, desde que a outra mão esteja livre para criar a lâmina. O dado de dano para esse segundo ataque é um d4, em vez do d6.",
+      "page": 67,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alma-laminada.feature.laminas-da-alma.l9.1",
+      "name": "LÂMINAS DA ALMA",
+      "level": 9,
+      "description": "Suas Lâminas Psíquicas são agora uma expressão de sua alma infusa em energia psiônica, concedendo a você as seguintes habilidades que utilizam os seus dados de Energia psíquica: Golpe Teleguiado. Se você realizar uma jogada de ataque com suas Lâminas psíquicas e errar, você pode jogar um dado de Energia Psíquica e adicionar o número rolado ao resultado de seu ataque. Se isso fizer o ataque acertar, você gasta esse dado de Energia psíquica. Teletransporte Psíquico. Com uma ação bônus, você manifesta uma de suas Lâminas Psíquicas, gastando e rolando um dado de Energia Psíquica. Você atira essa Lâmina em um espaço desocupado que você possa ver a até uma quantia em metros equivalente a 3 vezes o resultado do dado. Você pode se teletransportar para esse espaço, e a Lâmina desaparece.",
+      "page": 67,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alma-laminada.feature.veu-psiquico.l13.1",
+      "name": "VÉU PSÍQUICO",
+      "level": 13,
+      "description": "Você pode utilizar um véu de energia energia psíquica para mascarar a si mesmo. Com uma ação, você pode magicamente ficar invisível, junto com qualquer coisa que esteja vestindo ou carregando, por 1 hora ou até você dissipar o efeito (sem o gasto de ações para tal). Essa invisibilidade acaba antes caso você cause dano a uma criatura ou a obrigue a realizar uma salvaguarda. Assim que utilizar esta habilidade, você não poderá fazer isso novamente até que termine um descanso longo, a menos que gaste um dado de Energia Psíquica para ativá-la novamente.",
+      "page": 67,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alma-laminada.feature.mente-pura.l17.1",
+      "name": "MENTE PURA",
+      "level": 17,
+      "description": "Você pode direcionar as suas Lâminas Psíquicas diretamente para a mente de uma criatura. Quando você utiliza as suas Lâminas Psíquicas para dar dano de Ataque Furtivo em uma criatura, você pode forçar o alvo a realizar uma salvaguarda de Sabedoria (CD igual a 8 + seu bônus de proficiência + seu modificador de Destreza). Se falhar, o alvo fica atordoado por 1 minuto. O alvo atordoado pode repetir a salvaguarda no final de cada um de seus turnos, encerrando o efeito sobre si em caso de sucesso. Assim que utilizar esta habilidade, você não poderá fazer isso novamente até que termine um descanso longo, a menos que gaste um dado de Energia Psíquica para ativá-la novamente.",
+      "page": 67,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

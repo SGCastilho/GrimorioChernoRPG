@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sorcerer-phantom-soul",
+    "identifier": "lyre-sorcerer-phantom-soul",
+    "name": "Alma Fantasma",
+    "originalName": "Phantom Soul",
+    "aliases": [
+      "Phantom Soul"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "483–484",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 483
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "A alma deste Feiticeiro está desconectada dos vivos, talvez por possessão, maldição de morto-vivo, experiência de quase morte ou trauma extracorpóreo. Ao canalizar magia nessa condição, ele se aproxima da forma de um espírito, desaparece da vista, enxerga almas e pode possuir outros corpos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 483
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sorcerer-phantom-soul.feature.forma-transparente.l1.1",
+      "name": "FORMA TRANSPARENTE",
+      "level": 1,
+      "description": "Você pode conjurar Invisibilidade e Invisibilidade Maior sem gastar espaço, pagando respectivamente 1 e 3 Pontos de Feitiçaria. Em ambos os casos, só pode escolher a si mesmo como alvo.",
+      "page": 483,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-phantom-soul.feature.mente-incognoscivel.l1.1",
+      "name": "MENTE INCOGNOSCÍVEL",
+      "level": 1,
+      "description": "Você tem resistência a dano psíquico e vantagem em salvaguardas para resistir às condições amedrontado e enfeitiçado.",
+      "page": 483,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-phantom-soul.feature.olhos-espirituais.l6.1",
+      "name": "OLHOS ESPIRITUAIS",
+      "level": 6,
+      "description": "Você vê e interage com criaturas etéreas ou invisíveis como se estivessem claramente visíveis. Também consegue identificar se criaturas que vê a até 3 metros são mortos-vivos ou constructos, observando sinais de vida ou de uma alma.",
+      "page": 484,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-phantom-soul.feature.corpo-sem-peso.l14.1",
+      "name": "CORPO SEM PESO",
+      "level": 14,
+      "description": "Você deixa de estar preso à gravidade e ganha deslocamento de voo com pairar igual ao seu deslocamento base. Como consequência de sua ausência de peso, tem vantagem em testes de Furtividade.",
+      "page": 484,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-phantom-soul.feature.possessao-completa.l18.1",
+      "name": "POSSESSÃO COMPLETA",
+      "level": 18,
+      "description": "Como ação, gaste 5 Pontos de Feitiçaria para conjurar Dominar Monstro sem espaço contra uma criatura que possa tocar. Seu corpo físico e pertences desaparecem e entram no alvo em forma espiritual. Enquanto o possui, pode falar com sua voz ou a dele, enxergar usando seus sentidos ou os dele e usar qualquer deslocamento e tipo de movimento que qualquer um possua. Você controla a criatura conforme Dominar Monstro e, no seu turno, pode controlar diretamente o corpo para realizar tantas ações quanto você próprio poderia, escolhendo ações suas ou da criatura, desde que a anatomia permita. Condições e efeitos que afetam você também afetam o hospedeiro e vice-versa. Como ação bônus, pode materializar um item mágico seu nas posses do hospedeiro; ele permanece até ser largado, a possessão terminar ou você recolhê-lo como ação bônus. O hospedeiro pode se beneficiar dele se você estiver sintonizado ou se o item não exigir sintonia. Quando o efeito termina, você surge em forma física em um espaço desocupado adjacente. Se terminou porque perdeu concentração, você fica atordoado até o fim do próximo turno.",
+      "page": 484,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-the-snow-white-sleeve",
+    "identifier": "lyre-sword-saint-retia-way-of-the-snow-white-sleeve",
+    "name": "Caminho da Manga Branca de Neve",
+    "originalName": "Way of the Snow White Sleeve",
+    "aliases": [
+      "Way of the Snow White Sleeve"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "428",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 428
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Snow Sleeve. Este Caminho imita um guerreiro sobrenatural que misturava dança e gelo. Seus praticantes criam neve, auras congelantes e golpes que desaceleram ou debilitam inimigos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 428
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-snow-white-sleeve.feature.frio-na-morte.l3.1",
+      "name": "FRIO NA MORTE",
+      "level": 3,
+      "description": "Ao reduzir criatura hostil a 0 PV ou obter crítico, converta parte da força vital em uma película de gelo. O dano do próximo ataque que o acertar dentro de 1 minuto é reduzido em valor igual ao seu nível de Santo da Espada.",
+      "page": 428,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-snow-white-sleeve.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "FLOCOS DE NEVE DANÇANTES: ao acertar ataque de oportunidade, gaste 1 Foco para reduzir o deslocamento do alvo em 1,5 metro × seu bônus de proficiência até o início do próximo turno. MANTER FIRME: quando ataque com arma o acertar, gaste 2 Foco para reduzir o dano em 1d8 + Constituição; pode usar várias vezes na mesma fonte antes de sofrer o dano. SEPARAÇÃO: ao acertar ataque corpo a corpo, gaste 2 Foco para forçar salvaguarda de Constituição; em falha, o alvo tem desvantagem em todos os ataques por 1 minuto ou até recuperar, de um único efeito, PV iguais ou superiores ao seu nível de Santo da Espada; repete a salvaguarda ao fim de cada turno.",
+      "page": 428,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-snow-white-sleeve.feature.danca-da-lua-branca.l6.1",
+      "name": "DANÇA DA LUA BRANCA",
+      "level": 6,
+      "description": "Como ação bônus, crie por 1 minuto uma aura de luz lunar plena em raio de 4,5 metros, com mais 4,5 metros de penumbra. A área de luz plena congela e é terreno difícil para todos exceto você. Outra criatura que iniciar turno nela ou entrar pela primeira vez faz salvaguarda de Constituição, sofrendo 1d8 de dano gélido em falha ou metade em sucesso; o dado torna-se d10 no 10º nível e d12 no 16º. Uma vez por Descanso Longo, ou gaste 2 Foco para usar novamente.",
+      "page": 428,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-snow-white-sleeve.feature.danca-do-lago-congelante.l11.1",
+      "name": "DANÇA DO LAGO CONGELANTE",
+      "level": 11,
+      "description": "Como ação bônus, encha uma esfera de 6 metros ao redor com neve e gelo. Todas as criaturas fazem salvaguarda de Constituição; em falha, deslocamento 0 e sem reações até o início do seu próximo turno. Criaturas líquidas/gelatinosas e criaturas submersas têm desvantagem. Usos por Descanso Longo iguais à metade de seu bônus de proficiência, arredondado para baixo.",
+      "page": 428,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-snow-white-sleeve.feature.nevoa-branca.l14.1",
+      "name": "NÉVOA BRANCA",
+      "level": 14,
+      "description": "Sua Arma Santa fica congelada. Na primeira vez em cada turno que acertar uma criatura com ela, causa dano gélido adicional igual a 1d8 + metade de seu nível de Santo da Espada.",
+      "page": 428,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-snow-white-sleeve.feature.danca-da-lamina-de-gelo.l17.1",
+      "name": "DANÇA DA LÂMINA DE GELO",
+      "level": 17,
+      "description": "Ao acertar ataque com arma, gaste 1 Foco para forçar salvaguarda de Constituição. Em falha, o alvo é afetado como pela magia Lentidão. Repete a salvaguarda ao fim de cada turno, encerrando em sucesso.",
+      "page": 428,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

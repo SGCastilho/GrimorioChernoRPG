@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-ranger-due-collector",
+    "identifier": "bbb-ranger-due-collector",
+    "name": "Cobrador de Dívidas",
+    "originalName": "Due Collector",
+    "aliases": [
+      "Due Collector"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "117–118",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 117
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Um caçador de recompensas que persegue devedores e aqueles marcados por uma recompensa.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 117
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-ranger-due-collector.feature.conheca-sua-marca.l3.1",
+      "name": "CONHEÇA SUA MARCA",
+      "level": 3,
+      "description": "Humanoides tornam-se um de seus Inimigos Favoritos. Mover-se através do espaço de qualquer criatura que seja seu Inimigo Favorito não custa movimento adicional. Além disso, você ganha proficiência em Intimidação.",
+      "page": 117,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-due-collector.feature.tiro-de-causa-tripla.l3.1",
+      "name": "TIRO DE CAUSA TRIPLA",
+      "level": 3,
+      "description": "Quando uma criatura entra num espaço a até 4,5 m de você, pode realizar contra ela um ataque de oportunidade usando uma arma à distância. Para esse ataque, o alvo é tratado como seu Inimigo Favorito.",
+      "page": 117,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-due-collector.feature.cacador-de-recompensas.l7.1",
+      "name": "CAÇADOR DE RECOMPENSAS",
+      "level": 7,
+      "description": "Uma vez por Descanso, pode produzir os efeitos de marca do caçador sem espaço nem componentes, conjurada num nível igual ao maior espaço de magia de Patrulheiro a que tenha acesso. Dessa forma, a magia só pode ter humanoides como alvo.",
+      "page": 118,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-due-collector.feature.abordagem-intimidadora.l11.1",
+      "name": "ABORDAGEM INTIMIDADORA",
+      "level": 11,
+      "description": "Quando ataca um de seus Inimigos Favoritos que esteja a até 18 m e possa ver você, o alvo faz salvaguarda de Sabedoria com CD 8 + seu modificador de Intimidação. Em falha, você tem vantagem em ataques contra ele até o fim do turno; em sucesso, ele fica imune a esta característica até o fim do turno.",
+      "page": 118,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-due-collector.feature.aprimoramento-de-ataque-extra.l15.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 15,
+      "description": "Quando realiza a ação Atacar, pode fazer três ataques com arma em vez de um.",
+      "page": 118,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-ranger-due-collector.feature.critico-superior.l15.1",
+      "name": "CRÍTICO SUPERIOR",
+      "level": 15,
+      "description": "Você obtém acerto crítico com 18, 19 ou 20 no d20.",
+      "page": 118,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

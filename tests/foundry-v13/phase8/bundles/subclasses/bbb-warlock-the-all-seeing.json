@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-warlock-the-all-seeing",
+    "identifier": "bbb-warlock-the-all-seeing",
+    "name": "O Onividente",
+    "originalName": "The All-Seeing",
+    "aliases": [
+      "The All-Seeing"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "130",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 130
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Um agente de uma entidade que procura alterar o destino, como um djinn ou mestre conceitual.",
+    "tables": [
+      {
+        "key": "table.1.lista-de-magias-expandida-o-onividente",
+        "title": "Lista de Magias Expandida — O Onividente",
+        "page": 130,
+        "description": "Ao aprender uma nova magia de Bruxo, estas magias são tratadas como integrantes da lista de Bruxo para você.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Bênção; Sorte do Chacal"
+          },
+          {
+            "level": "2º",
+            "spells": "Augúrio; Arma da Fortuna"
+          },
+          {
+            "level": "3º",
+            "spells": "Confluência Banal; Palavra de Poder: Infortúnio"
+          },
+          {
+            "level": "4º",
+            "spells": "Glamour do Deva; Invisibilidade Maior"
+          },
+          {
+            "level": "5º",
+            "spells": "Modificar Memória; Reencarnação"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 130
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-warlock-the-all-seeing.feature.a-fortuna-favorece.l1.1",
+      "name": "A FORTUNA FAVORECE",
+      "level": 1,
+      "description": "Quando fizer uma jogada de ataque, teste de atributo ou salvaguarda e o resultado do d20 for igual ou inferior ao seu bônus de proficiência, pode rerrolar o d20 e deve manter o novo resultado.",
+      "page": 130,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-warlock-the-all-seeing.feature.negacao.l6.1",
+      "name": "NEGAÇÃO",
+      "level": 6,
+      "description": "Você possui usos de Negação representados por uma quantidade de d4 igual à metade de seu nível de bruxo, arredondado para cima. Quando uma criatura a até 9 m fizer uma jogada de ataque, teste de atributo ou salvaguarda, pode gastar um ou mais usos, rolar os dados e somar ou subtrair o total da rolagem. Se uma criatura no alcance rolar 1 ou 20 natural, também pode gastar um uso para forçá-la a rerrolar e manter o novo resultado. Você recupera todos os usos no Descanso Longo.",
+      "page": 130,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-warlock-the-all-seeing.feature.negacao-maior.l10.1",
+      "name": "NEGAÇÃO MAIOR",
+      "level": 10,
+      "description": "Seus dados de Negação passam de d4 para d6, e você recupera metade dos usos gastos sempre que completa um Descanso Curto.",
+      "page": 130,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-warlock-the-all-seeing.feature.visao-verdadeira.l14.1",
+      "name": "VISÃO VERDADEIRA",
+      "level": 14,
+      "description": "Você recebe visão verdadeira a 9 m.\n\nINVOCAÇÕES MÍSTICAS EXCLUSIVAS DO ONIVIDENTE.\n\nALTERAR DESTINO (pré-requisito: bruxo 12º nível). Uma vez por Descanso Longo, pode gastar um espaço de Magia de Pacto para produzir os efeitos de fortuna/falha como se o espaço fosse de 7º nível, sem componentes materiais.\n\nNEGAR FRACASSO (pré-requisito: bruxo 9º nível). Em vez do uso normal, pode gastar uma Negação para conceder vantagem a uma de suas próprias jogadas de ataque, testes ou salvaguardas.\n\nCRÍTICO MÁGICO. Seus ataques mágicos obtêm crítico com 19 ou 20 no d20 e, em críticos, causam um dado de dano adicional.\n\nCRÍTICO MÁGICO SUPERIOR (pré-requisitos: bruxo 18º nível e Crítico Mágico). Seus ataques mágicos obtêm crítico com 18, 19 ou 20.\n\nNEGAÇÃO SUPREMA (pré-requisito: bruxo 15º nível). Sempre que gastar exatamente um uso de Negação contra uma criatura, esse dado torna-se d10 em vez de d6; se gastar vários usos, continuam d6.\n\nTREINAMENTO DE VALOR (pré-requisito: bruxo 5º nível). Ao aprender novas magias de bruxo, pode escolher qualquer magia do grupo Artes do Valor como se estivesse na lista de bruxo.",
+      "page": 130,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

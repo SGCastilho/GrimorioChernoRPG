@@ -1,0 +1,208 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-warlock-spear-hound",
+    "identifier": "zagalhta-warlock-spear-hound",
+    "name": "O Cão da Lança",
+    "originalName": "The Spear Hound",
+    "aliases": [
+      "The Spear Hound"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "179–180",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 179
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Bruxo escolhido pelas forças de Setanta e pelos Cães da Lança, combinando armaduras e armas marciais com determinação sobrenatural, Magia de Pacto e invocações voltadas a romper limites.",
+    "tables": [
+      {
+        "key": "table.1.lista-de-magias-expandida-cao-da-lanca",
+        "title": "Lista de Magias Expandida — Cão da Lança",
+        "page": 179,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Colisão Astral; Escudo do Verão"
+          },
+          {
+            "level": "2º",
+            "spells": "Aceleração; Encontrar Montaria"
+          },
+          {
+            "level": "3º",
+            "spells": "Bola de Fogo; Caminho para a Vitória"
+          },
+          {
+            "level": "4º",
+            "spells": "Míssil de Força; Donzelas do Escudo"
+          },
+          {
+            "level": "5º",
+            "spells": "Espiral Dourada; Subjugar Magia"
+          }
+        ]
+      },
+      {
+        "key": "table.2.invocacoes-misticas-cao-da-lanca",
+        "title": "Invocações Místicas — Cão da Lança",
+        "page": 180,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Invocação"
+          },
+          {
+            "key": "prereq",
+            "label": "Pré-requisito"
+          },
+          {
+            "key": "effect",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Romper Limites",
+            "prereq": "Bruxo 12º",
+            "effect": "No início do turno, encerre condições indesejadas ou trate salvaguardas contínuas como bem-sucedidas; ganhe PV temporários iguais a 5 × nível de Bruxo. Uma vez por Descanso Longo."
+          },
+          {
+            "name": "Deslize Deva",
+            "prereq": "—",
+            "effect": "Manifeste à vontade uma prancha de energia cósmica, recebendo aceleração 0-G igual ao dobro do deslocamento base; em gravidade zero, vantagem em testes e salvaguardas de Destreza."
+          },
+          {
+            "name": "Experimento Místico",
+            "prereq": "—",
+            "effect": "Uma vez por Descanso Longo, use Espaço de Pacto para conjurar qualquer magia de Bruxo que ele comporte, mesmo sem tê-la aprendido."
+          },
+          {
+            "name": "Implantação de Unidade Pessoal",
+            "prereq": "Bruxo 12º",
+            "effect": "Uma vez por Descanso Longo, conjure conjurar eco de frame sem Espaço, componentes ou concentração, em nível igual ao Espaço de Pacto; também pode usar Arcano Místico e seu nível correspondente."
+          },
+          {
+            "name": "Golpe da Teia de Lança",
+            "prereq": "Bruxo 7º",
+            "effect": "Ao realizar Atacar, também pode conjurar uma magia de Bruxo de tempo 1 ação que exija um Espaço de Pacto."
+          },
+          {
+            "name": "Espíritos Voam Alto",
+            "prereq": "Bruxo 9º",
+            "effect": "Uma vez por Descanso Longo, conjure velocidade sem Espaço nem componentes, apenas em si; quando terminar, não sofre a rodada de efeitos negativos normalmente causada pela magia."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 179
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-warlock-spear-hound.feature.proficiencias-do-iniciado.l1.1",
+      "name": "PROFICIÊNCIAS DO INICIADO",
+      "level": 1,
+      "description": "Você recebe proficiência com armaduras médias e pesadas e todas as armas marciais. Ao usar armadura leve ou média, pode usar Carisma no lugar de Destreza para determinar a CA. Seus PV máximos aumentam em 1, e aumentam em mais 1 a cada nível de Bruxo que ganhar.",
+      "page": 179,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-warlock-spear-hound.feature.espirito-inabalavel.l6.1",
+      "name": "ESPÍRITO INABALÁVEL",
+      "level": 6,
+      "description": "Ao fazer ataque, teste ou salvaguarda, role 1d10 e some ao resultado. Em ataque, some também ao dano; em salvaguarda para evitar dano, reduza o dano pelo dobro do resultado. Um uso, recuperado ao completar qualquer Descanso, obter 20 natural em ataque/salvaguarda/teste ou conjurar magia com Espaço de Pacto.",
+      "page": 179,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-warlock-spear-hound.feature.espirito-defensivo.l10.1",
+      "name": "ESPÍRITO DEFENSIVO",
+      "level": 10,
+      "description": "Enquanto usar armadura leve ou média e Carisma para determinar o bônus de CA, seu modificador de Carisma ignora as limitações de bônus de Destreza da armadura.",
+      "page": 179,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-warlock-spear-hound.feature.vontade-acima-da-arma.l14.1",
+      "name": "VONTADE ACIMA DA ARMA",
+      "level": 14,
+      "description": "Uma vez por Descanso Longo, quando conjura uma magia, manifeste o poder do patrono para tratá-la como se tivesse usado um Espaço de Pacto de 9º nível.",
+      "page": 179,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

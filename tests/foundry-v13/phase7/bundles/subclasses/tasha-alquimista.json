@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-alquimista",
+    "identifier": "tasha-alquimista",
+    "name": "Alquimista",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "13–15",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 13
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "artificer",
+    "identifier": "artificer",
+    "name": "Artífice"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "artificer",
+    "selectionLevel": 3,
+    "description": "Um Alquimista é um especialista em combinar reagentes para produzir efeitos místicos. Alquimistas usam suas criações para dar vida e para drená-la. A alquimia é a mais antiga das tradições do artífice, e sua versatilidade há muito tem sido valorizada em tempos de guerra e de paz.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-alquimista",
+        "title": "Magias de Alquimista",
+        "page": 14,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Artífice"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Palavra Curativa; Raio Nauseante"
+          },
+          {
+            "level": "5º",
+            "spells": "Esfera Flamejante; Flecha Ácida de Melf"
+          },
+          {
+            "level": "9º",
+            "spells": "Forma Gasosa; Palavra Curativa em Massa"
+          },
+          {
+            "level": "13º",
+            "spells": "Malogro; Proteção Contra a Morte"
+          },
+          {
+            "level": "17º",
+            "spells": "Névoa Mortal; Reviver os Mortos"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 13
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-alquimista.feature.proficiencia-com-ferramentas.l3.1",
+      "name": "PROFICIÊNCIA COM FERRAMENTAS",
+      "level": 3,
+      "description": "Você adquire proficiência com suprimentos de alquimista. Se você já tem essa proficiência, você ganha proficiência com outro tipo de ferramentas de artesão a sua escolha.",
+      "page": 13,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alquimista.feature.magias-de-alquimista.l3.1",
+      "name": "MAGIAS DE ALQUIMISTA",
+      "level": 3,
+      "description": "Você sempre tem certas magias preparadas depois de alcançar alguns níveis específicos nesta classe, conforme mostrado na tabela Magias de Alquimista. Essas magias contam como magias de artífice para você, mas elas não são consideradas entre o número de magia de artífice que você prepara. Magias de Alquimista Nível de Artífice Magias 3º Palavra Curativa, Raio Nauseante 5º Esfera Flamejante, Flecha Ácida de Melf 9º Forma Gasosa, Palavra Curativa em Massa 13º Malogro, Proteção Contra a Morte 17º Névoa Mortal, Reviver os Mortos",
+      "page": 14,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alquimista.feature.elixir-experimental.l3.1",
+      "name": "ELIXIR EXPERIMENTAL",
+      "level": 3,
+      "description": "Sempre que terminar um descanso longo, você pode magicamente produzir um elixir experimental em um frasco vazio que você tocar. Role na tabela Elixir Experimental para o efeito do elixir, que é desencadeado quando alguém o bebe. Usando uma ação, uma criatura pode beber o elixir ou administrá-lo a uma criatura incapacitada. Você pode criar elixires experimentais adicionais gastando um espaço de magia de 1º círculo ou superior para cada um. Ao fazer isso, você usa sua ação para criar o elixir em um frasco vazio que você tocar, e você escolhe o efeito do elixir da tabela Elixir Experimental. Criar um elixir experimental requer que você tenha suprimentos de alquimista com você, e qualquer elixir que você cria com este recurso dura até que seja consumido ou até o fim do seu próximo descanso longo. Quando você atinge níveis específicos nesta classe, você pode criar mais elixires no final de um descanso longo: dois no 6º nível e três no 15º nível. Role para cada efeito do elixir separadamente. Cada elixir precisa ter seu próprio frasco. Elixir Experimental D6 Efeito do Elixir 1 Cura. O consumidor recupera pontos de vida igual a 2d4 + o modificador de Inteligência do Artífice. 2 Celeridade. O deslocamento do consumidor é ampliado em 3m por 1 hora. 3 Resiliência. O consumidor ganha + l de CA por 10 minutos. 4 Ousadia. O consumidor pode rolar um d4 e adicionar o número rolado para toda jogada de ataque e salvaguarda que fizer durante o próximo minuto 5 Voo. O consumidor adquire deslocamento de voo de 3 metros por 10 minutos. 6 Transformação. O corpo do consumidor é transformado como se estivesse sob efeito da magia Alterar-se. O usuário determina a transformação causada pela magia, cujos efeitos duram 10 minutos.",
+      "page": 14,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alquimista.feature.sabio-alquimico.l5.1",
+      "name": "SÁBIO ALQUÍMICO",
+      "level": 5,
+      "description": "Você desenvolveu um domínio magistral de substâncias químicas mágicas, aprimorando a cura e o dano que você causa através delas. Sempre que você conjura uma magia usando os suprimentos de alquimista como foco de conjuração, você ganha um bônus em uma rolagem daquela magia. Esta rolagem deve restaurar pontos de vida ou ser uma rolagem que provoca dano ácido, ígneo, necrótico ou venenoso e o bônus é igual ao seu modificador de Inteligência (mínimo de + l).",
+      "page": 14,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alquimista.feature.reagentes-restauradores.l9.1",
+      "name": "REAGENTES RESTAURADORES",
+      "level": 9,
+      "description": "Você pode incorporar reagentes restauradores em alguns de seus trabalhos: Sempre que uma criatura beber um elixir que você criou, a criatura ganha pontos de vida temporários iguais a 2d6 + seu modificador de Inteligência (mínimo de 1 ponto de vida temporário). Você pode conjurar Restauração Menor sem gastar espaços de magia e sem preparar a magia, desde que você use suprimentos de alquimista como o foco de conjuração. Você pode fazer isso uma quantidade de vezes igual ao seu modificador de Inteligência (mínimo de uma vez), e você recupera todos os usos dessa habilidade ao finalizar um descanso longo.",
+      "page": 14,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alquimista.feature.maestria-quimica.l15.1",
+      "name": "MAESTRIA QUÍMICA",
+      "level": 15,
+      "description": "Você foi exposto a tantos produtos químicos que eles representam pouco risco para você, que agora pode utilizá-los para remover certos malefícios rapidamente: Você ganha resistência a dano ácido e venenoso, e você é imune à condição envenenado. Você pode conjurar Restauração Maior e Cura Completa sem gastar um espaço de magia, sem preparar a magia, e sem componentes materiais, desde que você use suprimentos de alquimista como o foco de conjuração. Depois de conjurar qualquer uma das magias com esta característica, você não pode conjurar aquela magia dessa maneira novamente até que você termine um descanso longo",
+      "page": 14,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

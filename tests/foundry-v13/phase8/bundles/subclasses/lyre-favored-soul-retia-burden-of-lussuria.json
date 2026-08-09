@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-lussuria",
+    "identifier": "lyre-favored-soul-retia-burden-of-lussuria",
+    "name": "Fardo de Lussuria",
+    "originalName": "Burden of Lussuria",
+    "aliases": [
+      "Burden of Lussuria"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "353",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 353
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): glaive. Lussuria trata seus favorecidos como troféus e extensões de sua vontade, enchendo-os de impulsos para controlar, seduzir e cercar-se de admiradores capazes.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 353
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-lussuria.feature.encanto-aprisionador.l1.1",
+      "name": "ENCANTO APRISIONADOR",
+      "level": 1,
+      "description": "Uma vez por Descanso Curto ou Longo, conjure Enfeitiçar Pessoa sem espaço em nível igual ao seu espaço de pacto. Se um alvo for imune a enfeitiçado, você percebe isso e pode fazer com que ele fique atordoado pela duração da magia em vez disso. Alvo atordoado repete salvaguarda de Carisma no fim de cada turno e sempre que sofre dano, encerrando em sucesso.",
+      "page": 353,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-lussuria.feature.suplica-maliciosa.l6.1",
+      "name": "SÚPLICA MALICIOSA",
+      "level": 6,
+      "description": "Quando é alvo de ataque de arma que pode ver, use reação para preencher o atacante de culpa. Ele faz salvaguarda de Carisma; em falha, não ataca você e não pode fazê-lo pelo restante do turno.",
+      "page": 353,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-lussuria.feature.onda-de-vontade-subjugadora.l10.1",
+      "name": "ONDA DE VONTADE SUBJUGADORA",
+      "level": 10,
+      "description": "Como ação, gaste Purificação e escolha quaisquer criaturas visíveis a até 9 metros. Cada uma faz salvaguarda de Carisma; em falha sofre 2d6 × nível do espaço de pacto de dano psíquico e deve usar reação para mover-se até seu deslocamento para um espaço desocupado que você escolha. Se o movimento a levaria a terreno obviamente perigoso ou dano evidente, ela trava e fica com deslocamento 0 até o fim do turno.",
+      "page": 353,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-lussuria.feature.fascinio-compelente.l13.1",
+      "name": "FASCÍNIO COMPELENTE",
+      "level": 13,
+      "description": "Quando realiza teste ou salvaguarda baseado em Carisma e o d20 mostra 9 ou menos, pode tratar o resultado como 10.",
+      "page": 353,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

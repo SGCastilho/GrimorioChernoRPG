@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-ranger-xenofactor",
+    "identifier": "zagalhta-ranger-xenofactor",
+    "name": "Xenofator",
+    "originalName": "Xenofactor",
+    "aliases": [
+      "Xenofactor"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "166–167",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 166
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Caçador sintonizado com as correntes do cosmos, especializado em repelir aberrações, alienígenas e ameaças de fora do universo conhecido, usando energia astral, teleporte e táticas adaptativas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 166
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-ranger-xenofactor.feature.investida-de-dobra.l3.1",
+      "name": "INVESTIDA DE DOBRA",
+      "level": 3,
+      "description": "Um número de vezes por Descanso igual ao seu Bônus de Favor, você pode usar sua ação bônus para se teleportar para um espaço desocupado que possa ver a até 18 m e, em seguida, fazer imediatamente um ataque de arma contra um alvo ao alcance.",
+      "page": 166,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-ranger-xenofactor.feature.xenocida.l3.1",
+      "name": "XENOCIDA",
+      "level": 3,
+      "description": "Aberrações e criaturas com o subtipo “alienígena” são Inimigos Favorecidos para você. Você recebe aceleração 0-G igual ao seu deslocamento base e pode tratar magias do grupo Astromancia como se estivessem na lista de magias do Patrulheiro.",
+      "page": 166,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-ranger-xenofactor.feature.xenotaticas.l7.1",
+      "name": "XENOTÁTICAS",
+      "level": 7,
+      "description": "Você pode usar Xenotáticas um número de vezes por Descanso igual à metade do seu nível de Patrulheiro, arredondado para cima. Gaste um uso para uma das opções: Adaptação — quando um efeito o deixaria enfeitiçado, enfurecido, paralisado ou atordoado, encerre imediatamente esse efeito e fique imune ao efeito desencadeador por 1 minuto; Transposição — dano de um ataque ou magia originado de você ignora resistências e Limiares de Dano; Manto de Inferluz — produza invisibilidade sem Espaço de Magia, apenas em si; Golpe Nova — ao acertar ataque de arma, converta seu dano para radiante e adicione dois dados de dano iguais ao seu Dado de Favor; Repulsão — ao sofrer dano de ataque ou efeito que o tenha como alvo, reduza o dano pelo dobro do resultado de um Dado de Favor.",
+      "page": 166,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-ranger-xenofactor.feature.golpe-de-queda-estelar.l11.1",
+      "name": "GOLPE DE QUEDA ESTELAR",
+      "level": 11,
+      "description": "Ao acertar um ataque de arma, você pode gastar um Espaço de Magia para irradiar a arma com energia radiante ou psíquica. O ataque causa dano adicional do tipo escolhido, com quantidade de dados igual ao nível do Espaço gasto; os dados usados são seus Dados de Favor.",
+      "page": 166,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-ranger-xenofactor.feature.olho-do-criador-de-presas.l15.1",
+      "name": "OLHO DO CRIADOR DE PRESAS",
+      "level": 15,
+      "description": "Enquanto estiver invisível ou escondido, trate alvos que não possam vê-lo ou não estejam cientes de você como Inimigos Favorecidos para fins de jogadas de ataque e dano. Além disso, pode gastar dois usos de Xenotáticas para produzir invisibilidade maior sem Espaço de Magia, tendo apenas você como alvo.",
+      "page": 166,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

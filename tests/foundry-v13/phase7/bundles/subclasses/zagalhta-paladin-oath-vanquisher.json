@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-paladin-oath-vanquisher",
+    "identifier": "zagalhta-paladin-oath-vanquisher",
+    "name": "Juramento do Subjugador",
+    "originalName": "Oath of the Vanquisher",
+    "aliases": [
+      "Oath of the Vanquisher"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "162",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 162
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Paladino que jura eliminar uma ameaça declarada não por mera vingança, mas por julgá-la inaceitável para o universo, usando todos os meios necessários até que o inimigo seja vencido.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-do-subjugador",
+        "title": "Magias do Juramento do Subjugador",
+        "page": 162,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Perdição; Arma Momentosa"
+          },
+          {
+            "level": "5º",
+            "spells": "Arma Espiritual; Arma de Dominação"
+          },
+          {
+            "level": "9º",
+            "spells": "Velocidade; Salto Trovejante"
+          },
+          {
+            "level": "13º",
+            "spells": "Bravura Deslacrada; Ira da Valquíria"
+          },
+          {
+            "level": "17º",
+            "spells": "Surto de Pavor; Vento Cortante"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 162
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-paladin-oath-vanquisher.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Inimigo Jurado: ao mirar criatura com ataque/efeito, gaste Canalizar Divindade; por 1 minuto, ataques, dano e efeitos originados de você ignoram resistências, imunidades e Limiares do alvo, e seus ataques contra ele recebem bônus igual ao nível do maior Espaço de Paladino. Extermínio Supremo: use Canalizar Divindade como se fosse um Espaço para Destruição Divina, de nível igual ao dobro do maior Espaço de Paladino, máximo 9º; o teto de dano dessa Destruição torna-se 10d8.",
+      "page": 162,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-paladin-oath-vanquisher.feature.lamina-subjugadora.l7.1",
+      "name": "LÂMINA SUBJUGADORA",
+      "level": 7,
+      "description": "Escolha tipos de criatura em quantidade igual à proficiência; para humanoide escolha uma sub-raça. Pode trocar uma escolha a cada nível de Paladino e adicionar escolhas quando a proficiência aumentar. Contra esses tipos, some proficiência ao dano de ataques de arma e suas características de Paladino tratam-nos como ínferos.",
+      "page": 162,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-paladin-oath-vanquisher.feature.riposta-vingadora.l15.1",
+      "name": "RIPOSTA VINGADORA",
+      "level": 15,
+      "description": "Quando criatura faz ataque de arma contra você, use reação para atacá-la. Se seu resultado for maior que o dela, o ataque inimigo erra; se seu resultado também seria suficiente para acertá-la, seu ataque a atinge.",
+      "page": 162,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-paladin-oath-vanquisher.feature.inimigo-supremo.l20.1",
+      "name": "INIMIGO SUPREMO",
+      "level": 20,
+      "description": "Quando for reduzido a 0 PV ou morto instantaneamente, ou ao iniciar turno morrendo, declare uma criatura como Inimigo Supremo; fica com 1 PV, deixa de morrer e recebe PV temporários iguais à metade dos PV máximos. Até o alvo se render/fugir satisfatoriamente, morrer, você cair novamente a 0, ou encerrar como ação: não pode recuperar PV; é resistente ao dano do Inimigo Supremo; a cada turno recupera um Espaço de Paladino de nível 1d4+1 (esses espaços desaparecem ao fim); e faz um ataque de arma adicional com a ação Atacar. Uma vez por Descanso Longo; ao terminar, recebe o máximo possível de Fadiga de Combate.",
+      "page": 162,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

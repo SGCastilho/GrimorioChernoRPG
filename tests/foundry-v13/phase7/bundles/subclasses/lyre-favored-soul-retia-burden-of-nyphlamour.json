@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-nyphlamour",
+    "identifier": "lyre-favored-soul-retia-burden-of-nyphlamour",
+    "name": "Fardo de Nyphlamour",
+    "originalName": "Burden of Nyphlamour",
+    "aliases": [
+      "Burden of Nyphlamour"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "354",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 354
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): espada longa. O Efficate Celestial tem a missão de conectar pessoas; seus favorecidos são atraídos à cura, compreensão e auxílio mútuo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 354
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-nyphlamour.feature.dom-da-camaradagem.l1.1",
+      "name": "DOM DA CAMARADAGEM",
+      "level": 1,
+      "description": "Você pode realizar Ajudar como ação bônus. Uma criatura que você ajuda recebe pontos de vida temporários iguais a 1d10 + metade do seu nível de Alma Favorecida, arredondado para baixo.",
+      "page": 354,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-nyphlamour.feature.orientacao-da-musa.l1.1",
+      "name": "ORIENTAÇÃO DA MUSA",
+      "level": 1,
+      "description": "Por Nyphlamour ser uma musa celestial, magias de Bardo contam como magias da Alma Favorecida para você.",
+      "page": 354,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-nyphlamour.feature.carregado-por-ventos-gentis.l6.1",
+      "name": "CARREGADO POR VENTOS GENTIS",
+      "level": 6,
+      "description": "Como ação, escolha criatura voluntária visível a até 3 metros × seu bônus de proficiência. Escolha: você e tudo que carrega se teleportam para espaço desocupado adjacente ao alvo, ou o alvo e tudo que carrega se teleportam para espaço desocupado adjacente a você. Se a criatura teleportada estava caída, pode chegar em pé.",
+      "page": 354,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-nyphlamour.feature.magia-comunitaria-de-protecao.l10.1",
+      "name": "MAGIA COMUNITÁRIA DE PROTEÇÃO",
+      "level": 10,
+      "description": "Como ação, gaste Purificação e escolha criaturas a até 9 metros em quantidade igual ao bônus de proficiência, podendo incluir você. Elas ficam resistentes a perfurante, cortante e contundente, além de um tipo adicional à sua escolha. Quando uma delas sofre crítico ou cai a 0 PV, recupera 1d8 × nível do espaço de pacto em PV e o efeito termina para ela. Você mantém concentração como se fosse magia.",
+      "page": 354,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-nyphlamour.feature.fala-conectiva.l13.1",
+      "name": "FALA CONECTIVA",
+      "level": 13,
+      "description": "Você compreende qualquer idioma falado e qualquer criatura que fale um idioma compreende sua fala. Criaturas com Inteligência 3 ou menor captam apenas o tom geral.",
+      "page": 354,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

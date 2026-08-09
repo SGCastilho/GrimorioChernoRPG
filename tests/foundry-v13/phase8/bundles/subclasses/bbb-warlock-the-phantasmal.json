@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-warlock-the-phantasmal",
+    "identifier": "bbb-warlock-the-phantasmal",
+    "name": "O Fantasmagórico",
+    "originalName": "The Phantasmal",
+    "aliases": [
+      "The Phantasmal"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "131",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 131
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Um beneficiário arcano do poder de um fantasma, cuja própria existência torna-se espectral.",
+    "tables": [
+      {
+        "key": "table.1.lista-de-magias-expandida-o-fantasmagorico",
+        "title": "Lista de Magias Expandida — O Fantasmagórico",
+        "page": 131,
+        "description": "Ao aprender uma nova magia de Bruxo, estas magias são tratadas como integrantes da lista de Bruxo para você.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Comando; Raio Guiador"
+          },
+          {
+            "level": "2º",
+            "spells": "Augúrio; Raio Lunar"
+          },
+          {
+            "level": "3º",
+            "spells": "Eviscerar; Sequestrar Persona"
+          },
+          {
+            "level": "4º",
+            "spells": "Conjurar Espírito Fantasma; Invisibilidade Maior"
+          },
+          {
+            "level": "5º",
+            "spells": "Animar Objetos; Mão Suprema"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 131
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-warlock-the-phantasmal.feature.corpo-fantasma.l1.1",
+      "name": "CORPO FANTASMA",
+      "level": 1,
+      "description": "Você adquire propriedades espectrais e pode tornar-se seletivamente intangível. Ao conjurar uma magia usando espaço de Magia de Pacto, fica imune a dano contundente, perfurante e cortante até o início de seu próximo turno. Pode atravessar espaços de outras criaturas sem custo extra, desde que termine o turno num espaço desocupado; caso contrário, é empurrado ao último espaço desocupado. Recebe deslocamento de voo laborioso (pairar) igual ao seu deslocamento base e não precisa comer, beber nem respirar.",
+      "page": 131,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-warlock-the-phantasmal.feature.visagem-inquietante.l6.1",
+      "name": "VISAGEM INQUIETANTE",
+      "level": 6,
+      "description": "Seu patrono projeta uma imagem de si ao seu redor, invisível exceto a criaturas com visão verdadeira ou capazes de ver invisíveis. Na primeira vez em cada turno que uma criatura tentar realizar uma ação hostil que escolha você como alvo estando a uma distância igual a 3 m × metade de seu nível de bruxo, ela faz salvaguarda de Sabedoria contra sua CD de magia. Em falha, fica amedrontada por você até o início do próximo turno e não pode escolhê-lo como alvo de ataques durante esse período.",
+      "page": 131,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-warlock-the-phantasmal.feature.da-minha-propria-carne.l10.1",
+      "name": "DA MINHA PRÓPRIA CARNE",
+      "level": 10,
+      "description": "Você pode sacrificar a própria vitalidade para aprimorar ações. Quando fizer uma jogada de ataque, teste de atributo ou salvaguarda, pode gastar um Dado de Vida de bruxo, rolá-lo sem modificador de Constituição e somá-lo ao resultado. Quando falharia num teste de concentração por dano ou distração, pode gastar um Dado de Vida de bruxo para manter a concentração; depois disso, não pode perdê-la involuntariamente até o início de seu próximo turno.",
+      "page": 131,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-warlock-the-phantasmal.feature.forma-existencial.l14.1",
+      "name": "FORMA EXISTENCIAL",
+      "level": 14,
+      "description": "Seu corpo se torna ainda mais semelhante ao de um espírito. Você recebe resistência a todo dano contundente, perfurante e cortante. Quando usa ação bônus para ativar seu voo laborioso (pairar), recebe também deslocamento de teleporte de igual valor até o fim do uso.\n\nINVOCAÇÕES MÍSTICAS EXCLUSIVAS DO FANTASMAGÓRICO.\n\nSACRIFÍCIO APRIMORADO (pré-requisito: bruxo 12º nível). Ao rolar um Dado de Vida para Da Minha Própria Carne, pode rolar d10 em vez do dado normal e recupera PV iguais a duas vezes seu modificador de Constituição.\n\nGOLPE DO HABITANTE (pré-requisitos: Pacto da Lâmina, bruxo 7º nível). A projeção de Visagem Inquietante pode empunhar uma réplica de sua arma de pacto. Ao realizar Atacar, pode fazer ataques corpo a corpo com a arma contra alvos a até 9 m como se estivesse adjacente. Ao conjurar magia com espaço de pacto, pode também realizar ataques com a arma através da projeção contra criaturas a até 9 m e/ou alvos da magia, em quantidade máxima igual à metade de seu bônus de proficiência; armas corpo a corpo ignoram seu alcance normal.\n\nVISAGEM DE PESADELO (pré-requisito: bruxo 7º nível). Se uma criatura falhar contra Visagem Inquietante mas for imune a amedrontado, tem desvantagem em ataques contra você até o início do próximo turno; quem falha também sofre dano psíquico igual ao seu nível de bruxo.\n\nUM COM A NÉVOA (pré-requisitos: Pacto do Manto, bruxo 9º nível). Enquanto estiver ao menos levemente obscurecido, inclusive em meia-luz, conta como invisível para criaturas que não possam vê-lo claramente.\n\nCORAÇÃO RECOMPOSTO (pré-requisito: bruxo 15º nível). Como ação bônus, uma vez por Descanso Longo, recupera metade de seus PV máximos e um espaço de Magia de Pacto gasto.\n\nDISSONÂNCIA ESPECTRAL (pré-requisito: bruxo 5º nível). Como ação bônus, fica invisível até o início do próximo turno. Usos por Descanso iguais ao bônus de proficiência; pode gastar dois usos para conjurar invisibilidade apenas em si.\n\nMÁSCARA DO TERROR. Quando um efeito seu deveria amedrontar uma criatura imune à condição, ela sofre terror pelo mesmo período: tem desvantagem em ataques, salvaguardas e testes de atributo contra aquilo que a amedrontaria. Salvaguardas subsequentes de Sabedoria para resistir ao medo/terror tornam-se salvaguardas de Inteligência.",
+      "page": 131,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

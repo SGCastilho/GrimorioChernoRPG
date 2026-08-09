@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-sorcerer-lustblooded",
+    "identifier": "bbb-sorcerer-lustblooded",
+    "name": "Sangue da Luxúria",
+    "originalName": "Lustblooded",
+    "aliases": [
+      "Lustblooded"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "122–123",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 122
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Um feiticeiro que controla personalidades, tentação e desejo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 122
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-sorcerer-lustblooded.feature.asas-demoniacas.l1.1",
+      "name": "ASAS DEMONÍACAS",
+      "level": 1,
+      "description": "Embora não possua toda a metamorfose de seus ancestrais, você pode manifestar à vontade suas asas infernais. Você recebe deslocamento de voo laborioso igual ao seu deslocamento base.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-lustblooded.feature.meta-ardil.l1.1",
+      "name": "META-ARDIL",
+      "level": 1,
+      "description": "Você aprende o truque amado miserável, que não conta no limite de truques conhecidos. Quando o conjura contra um alvo que não esteja enfeitiçado e acerta, ele deve passar numa salvaguarda de Sabedoria ou fica enfeitiçado por 1 minuto; enquanto isso, não pode escolher você diretamente como alvo de ataques ou efeitos nocivos. Repete a salvaguarda no fim de cada turno, encerrando em sucesso. Além disso, pode conjurar amado miserável como ação bônus gastando 1 Ponto de Feitiçaria.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-lustblooded.feature.encantador-distraente.l6.1",
+      "name": "ENCANTADOR DISTRAENTE",
+      "level": 6,
+      "description": "Quando você faria uma criatura ficar enfeitiçada, mas ela for imune à condição, em vez disso ela fica lenta. A criatura realiza os mesmos testes e salvaguardas que faria para resistir ou encerrar o enfeitiçamento, com a condição lenta substituindo funcionalmente enfeitiçado. Você não recebe benefícios que dependam especificamente de o alvo estar enfeitiçado, como controlar suas ações com dominar pessoa.",
+      "page": 123,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-lustblooded.feature.sifao-mental.l6.1",
+      "name": "SIFÃO MENTAL",
+      "level": 6,
+      "description": "No início de seu turno, se tiver uma ou mais criaturas enfeitiçadas ou tornadas lentas por Encantador Distraente, pode drenar a energia psíquica de quaisquer delas. Cada criatura escolhida sofre dano psíquico igual à metade de seu nível de feiticeiro, arredondado para cima, e você recebe PV temporários iguais ao dano total causado.",
+      "page": 123,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-lustblooded.feature.escudo-infernal.l14.1",
+      "name": "ESCUDO INFERNAL",
+      "level": 14,
+      "description": "Enquanto não estiver incapacitado, pode manter uma aura semelhante a um escudo que repele ataques. Se ainda não estiver adicionando Carisma à sua CA por outra fonte, pode adicionar seu modificador de Carisma à CA.",
+      "page": 123,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-lustblooded.feature.artes-arcanas-lascivas.l18.1",
+      "name": "ARTES ARCANAS LASCIVAS",
+      "level": 18,
+      "description": "Você recebe as duas técnicas abaixo. Cada uma pode ser usada uma vez por Descanso sem custo; usos adicionais de qualquer uma antes disso custam 4 Pontos de Feitiçaria.\n\nCONSUMAÇÃO MORTAL. Como ação, produza os efeitos do truque amado miserável, mas em vez de um ataque mágico crie uma esfera de 6 m de raio centrada num ponto a até 18 m. Cada criatura à sua escolha na área faz salvaguarda de Carisma; em falha, é tratada como se tivesse sido atingida pelo truque. Dessa forma, o efeito não conta como magia nem efeito mágico, e falhar também conta como falhar na salvaguarda de Sabedoria para ficar enfeitiçado.\n\nVOZ DOMINANTE. Como ação, produza os efeitos de dominar monstro; não conta como efeito mágico. A salvaguarda de Sabedoria é substituída por Carisma. Se o alvo falhar, você pode manter concentração neste efeito ao mesmo tempo que em outras instâncias desta característica e em mais uma magia ou efeito normal que exija concentração.",
+      "page": 123,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

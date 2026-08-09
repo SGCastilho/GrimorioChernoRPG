@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-petal-knight-retia-cosmos",
+    "identifier": "bbb-petal-knight-retia-cosmos",
+    "name": "Cosmos",
+    "originalName": "Cosmos",
+    "aliases": [
+      "Cosmos"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "116",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 116
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "Um guerreiro centrado e harmonioso que maneja suas armas com domínio espiritual.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 116
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-petal-knight-retia-cosmos.feature.manejador-equilibrado.l2.1",
+      "name": "MANEJADOR EQUILIBRADO",
+      "level": 2,
+      "description": "Características de Cavaleiro das Pétalas que exigem armas de uma mão passam a funcionar com qualquer arma com a qual você seja proficiente. Você também pode usar Sabedoria no lugar de Força ou Destreza nas jogadas de ataque e dano com armas.",
+      "page": 116,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-cosmos.feature.harmonia-do-metal.l2.1",
+      "name": "HARMONIA DO METAL",
+      "level": 2,
+      "description": "Magias do grupo Zanjen contam como estando na lista do Cavaleiro das Pétalas para você, permitindo aprendê-las, lê-las e conjurá-las.",
+      "page": 116,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-cosmos.feature.golpes-uniformes.l6.1",
+      "name": "GOLPES UNIFORMES",
+      "level": 6,
+      "description": "Depois de fazer um ataque e ver o(s) resultado(s) de seu d20, pode gastar um uso desta característica para fixar um desses resultados. Até o início de seu próximo turno, não rola ataques: trata cada jogada de ataque como tendo o resultado fixado. O efeito também vale para o ataque que o ativou. Se havia vários d20, como por desvantagem, escolha qual valor copiar. O resultado fixado não pode produzir um acerto crítico, mesmo se o ataque original foi crítico. Usos por Descanso iguais ao seu bônus de proficiência.",
+      "page": 116,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-cosmos.feature.ramos-do-cosmos.l11.1",
+      "name": "RAMOS DO COSMOS",
+      "level": 11,
+      "description": "Você recebe novas opções de Flora Virtuosa.\n\nELIMINAR MALEFÍCIO. Remove de você qualquer condição ou efeito que restauração menor pudesse remover. Pode gastar um uso adicional de Flora Virtuosa para também remover um efeito que restauração maior pudesse remover.\n\nPASSO RÁPIDO. Realize simultaneamente as ações Disparada e Desengajar.\n\nGOLPE ABERTO. Faça um ataque com uma arma corpo a corpo empunhada com duas mãos e aplique o mesmo resultado como se tivesse feito esse ataque separadamente contra cada criatura à sua escolha a até 3 m, resolvendo os acertos na ordem que desejar.",
+      "page": 116,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-cosmos.feature.aprimoramento-de-ataque-extra.l15.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 15,
+      "description": "Quando realiza a ação Atacar, pode atacar três vezes em vez de uma.",
+      "page": 116,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

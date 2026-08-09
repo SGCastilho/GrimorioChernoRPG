@@ -1,0 +1,152 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-bard-hanabi",
+    "identifier": "ryoko-bard-hanabi",
+    "name": "Colégio de Hanabi",
+    "originalName": "College of Hanabi",
+    "aliases": [
+      "College of Hanabi",
+      "Colégio de Hanabi"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "152–153",
+    "chapter": "Capítulo 9: Classes",
+    "page": 152
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Bardos pirotécnicos que convertem fogos de artifício em ferramentas de espetáculo, controle, mobilidade e explosões mágicas.",
+    "tables": [
+      {
+        "key": "table.1.pirotecnias-de-hanabi",
+        "title": "Pirotecnias de Hanabi",
+        "page": 152,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "pirotecnia",
+            "label": "Pirotecnia"
+          },
+          {
+            "key": "efeito",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "pirotecnia": "Vela Kodama",
+            "efeito": "Reação quando criatura visível a 4,5 m o ataca: impõe desvantagem; Constituição ou cego até fim do próximo turno. Sem efeito adicional em quem não depende de visão."
+          },
+          {
+            "pirotecnia": "Nue Gritante",
+            "efeito": "Ação, arremesse a 18 m; por 1 minuto, criaturas além de você a 9 m que vejam/ouçam fazem Sabedoria ou ficam amedrontadas, repetindo ao fim do turno; em sucesso ficam imunes a Nue Gritante por 24 h."
+          },
+          {
+            "pirotecnia": "Ruptura de Raijū",
+            "efeito": "Ação, arremesse a 18 m; explosão audível a 150 m; criaturas a 3 m fazem Destreza: falha = d6s de trovão iguais à proficiência e surdo até fim do próximo turno; sucesso = metade e sem surdez."
+          },
+          {
+            "pirotecnia": "Roda de Wanyūdō",
+            "efeito": "Ação bônus; até o fim do turno, voo de 9 m + 3 m × proficiência e movimento não provoca ataques de oportunidade."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 152
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-bard-hanabi.feature.inventor-promissor.l3.1",
+      "name": "INVENTOR PROMISSOR",
+      "level": 3,
+      "description": "Proficiência com suprimentos de alquimista, um conjunto adicional de ferramentas de artesão e todas as armas de fogo magitec. Pode usar suprimentos de alquimista como foco de Bardo. Em teste com ferramenta proficiente, pode gastar Inspiração de Bardo e adicionar o dado depois de rolar, antes do resultado ser declarado.",
+      "page": 152,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bard-hanabi.feature.pirotecnia.l3.1",
+      "name": "PIROTECNIA",
+      "level": 3,
+      "description": "Durante Descanso Longo, crie pirotecnias mágicas em número igual ao modificador de Carisma (mín. 1). Cada opção gasta uma pirotecnia e no máximo uma pode ser ativada por turno. Salvaguardas usam sua CD de Bardo.",
+      "page": 152,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bard-hanabi.feature.exibicao-de-fogos.l6.1",
+      "name": "EXIBIÇÃO DE FOGOS",
+      "level": 6,
+      "description": "Ao longo de 1 minuto, gaste 10 po em fogos e use sua ação a cada rodada para criar uma história de luz e som audível a 300 m. Ao fim, escolha criaturas que assistiram em número até 2 × Carisma; Sabedoria contra sua CD ou ficam sob uma mensagem por 24 h. Raiva: testes de Enganação contra elas têm vantagem. Medo: Intimidação tem vantagem e, ao ver criatura desconhecida, pode ficar amedrontada até reconhecê-la como inofensiva/sair de vista, repetindo salvaguarda ao fim de turnos. Generosidade: ficam enfeitiçadas por você e ajudam sem grandes riscos até sofrerem dano seu/aliados. Paz: sofrem os efeitos de Acalmar Emoções. Uma vez por Descanso Curto ou Longo.",
+      "page": 153,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bard-hanabi.feature.mestre-das-iluminacoes.l14.1",
+      "name": "MESTRE DAS ILUMINAÇÕES",
+      "level": 14,
+      "description": "Exibição de Fogos afeta até 3 vezes mais criaturas. Pirotecnias melhoram: Vela Kodama alcança 9 m e cria luz brilhante em raio de 9 m até seu próximo turno, impondo desvantagem a todos os ataques contra você; Nue Gritante passa a raio 12 m e causa d8s psíquicos iguais à metade da proficiência em falha (metade em sucesso); Ruptura de Raijū passa a raio 6 m e d8s; Roda de Wanyūdō dura até fim do próximo turno, sem ataques de oportunidade durante todo o período.",
+      "page": 153,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

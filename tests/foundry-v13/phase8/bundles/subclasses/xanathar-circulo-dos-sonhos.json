@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-circulo-dos-sonhos",
+    "identifier": "xanathar-circulo-dos-sonhos",
+    "name": "Círculo dos Sonhos",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "27–28",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 27
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Os dru.idas que são membros do Círculo dos Sonhos são provenientes de regiões que têm fortes laços com a Agrestia das Fadas e seus reinos de sonho. A tutela dos druidas do mundo natural faz com que uma aliança natural entre eles e fadas de bom alinhamento. Esses dru.idas procuram preencher o mundo com uma maravilha sonhadora. Sua magia cura feridas e traz alegria aos corações abatidos, e os reinos que eles protegem são lugares reluzentes e frutíferos, onde os sonhos e a realidade se misturam e onde os cansados podem encontrar o descanso.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 27
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-circulo-dos-sonhos.feature.balsamo-da-corte-de-verao.l2.1",
+      "name": "BÁLSAMO DA CORTE DE VERÃO",
+      "level": 2,
+      "description": "No 2° nível, você fica imbuído das bênçãos da Corte de Verão. Você é uma fonte de energia que oferece um descanso para ferimentos. Você tem uma infusão de energia feérica representada por um número de d6 igual ao seu níveldru.ida. Como uma ação de bônus, você pode escolher uma criatura que possa ver dentro de 36 metros de alcance e gastar uma série desses dados igual à metade do seu níveldruida ou menos. Role os dados gastos e adicione-os. O alvo recupera um número de pontos de vida igual ao total. O alvo também ganha um ponto de vida temporário por dado gasto. Você recupera todos os dados gastos quando terminar um descanso longo.",
+      "page": 27,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-circulo-dos-sonhos.feature.lareira-de-sombra-e-luar.l6.1",
+      "name": "LAREIRA DE SOMBRA E LUAR",
+      "level": 6,
+      "description": "No 6° nível, sua casa pode estar onde quer que esteja. Durante um descanso curto ou longo, você pode invocar o poder sombrio da Corte do Crepúsculo para ajudar a proteger seu descanso. No início do seu descanso, você toca um ponto no espaço, e surge uma esfera de magia invisívelde 9 metros de raio, centrada nesse ponto. A cobertura total bloqueia a esfera. Enquanto estiver dentro da esfera, você e seus aliados ganham um bônus de +5 em Destreza (Furtividade) e Sabedoria (Percepção), e qualquer luz dentro da esfera (uma fogueira, tochas ou similares) não são visíveis de fora dela. A esfera desaparece ao finaldo descanso ou quando saírem da esfera.",
+      "page": 27,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-circulo-dos-sonhos.feature.caminhos-ocultos.l10.1",
+      "name": "CAMINHOS OCULTOS",
+      "level": 10,
+      "description": "A partir do 10° nível, você pode usar os caminhos escondidos e mágicos que algumas fadas usam para atravessar o espaço em um piscar de olhos. Como uma ação de bônus no seu turno, você pode se teleportar até 18 metros para um espaço desocupado que possa ver. Alternativamente, pode usar sua ação para teleportar uma criatura disposta que você toque até 9 metros para um espaço desocupado que possa ver. Pode usar essa característica um número de vezes igual ao seu modificador de Sabedoria (no mínimo uma vez) e recupera todas as utilizações gastas quando terminar um descanso longo.",
+      "page": 27,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-circulo-dos-sonhos.feature.caminhante-dos-sonhos.l14.1",
+      "name": "CAMINHANTE DOS SONHOS",
+      "level": 14,
+      "description": "No 14° nível, a magia da Agrestia das Fadas lhe concede a capacidade de viajar mentalmente ou físicamente através dos países dos sonhos. Quando terminar um pequeno descanso, você pode conjurar uma das seguintes magias, sem gastar um espaço de magia ou exigir componentes materiais: sonho (com você atuando como o mensageiro), vidência ou círculo de teleporte. Este uso do círculo de teleporte é especial. Ao invés de abrir um portal para um círculo de teleporte permanente, ele abre um portal para o último local onde terminou um descanso longo no seu plano de existência atual. Se você não descansou muito no seu plano atual, a magia falhará, mas não será desperdiçada. Depois de usar esta característica, não pode usá-la novamente até terminar um descanso longo.",
+      "page": 28,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-favored-soul-retia-burden-of-meirlach",
+    "identifier": "bbb-favored-soul-retia-burden-of-meirlach",
+    "name": "Fardo de Meirlach",
+    "originalName": "Burden of Meirlach",
+    "aliases": [
+      "Burden of Meirlach"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "103",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 103
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Um herdeiro do poder de Meirlach Musashi, deus dos espadachins.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 103
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-meirlach.feature.armamento-neolamina.l1.1",
+      "name": "ARMAMENTO NEOLÂMINA",
+      "level": 1,
+      "description": "Você recebe imediatamente a opção Armamento de Essência da característica de 2º nível; ao chegar ao 2º nível, ela conta como sua escolha. Seu Armamento de Essência pode assumir simultaneamente a forma de uma espada longa e uma espada curta, invocadas juntas, e ambas recebem todos os benefícios normais de um único Armamento. Sempre que fizer um ataque com a espada longa, pode fazer um ataque com a espada curta como parte da mesma ação. Seus Armamentos de Essência obtêm acerto crítico com 19 ou 20 no d20.",
+      "page": 103,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-meirlach.feature.principios-da-espada.l1.1",
+      "name": "PRINCÍPIOS DA ESPADA",
+      "level": 1,
+      "description": "Magias do grupo Zanjen contam como estando na lista da Alma Favorecida, permitindo prepará-las e conjurá-las. Se uma dessas magias possuir um Bônus de Santo da Espada, você recebe esse bônus como se fosse um Santo da Espada.",
+      "page": 103,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-meirlach.feature.defesa-suprema.l6.1",
+      "name": "DEFESA SUPREMA",
+      "level": 6,
+      "description": "Enquanto estiver empunhando uma arma com a qual seja proficiente, você tem resistência a todo dano contundente, perfurante e cortante.",
+      "page": 103,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-meirlach.feature.iluminacao-dos-dragoes-gemeos.l10.1",
+      "name": "ILUMINAÇÃO DOS DRAGÕES GÊMEOS",
+      "level": 10,
+      "description": "Em seu turno, gaste um uso de Purificação para realizar uma ação Atacar adicional, separada de sua ação normal. Cada ataque dessa ação causa um dado de dano da arma adicional e ignora todas as Resistências a Dano e Limiares de Dano. Depois que os ataques forem resolvidos, você recebe PV temporários iguais ao dano total causado por eles.",
+      "page": 103,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-meirlach.feature.neocritico-supremo.l13.1",
+      "name": "NEOCRÍTICO SUPREMO",
+      "level": 13,
+      "description": "Você obtém acerto crítico com seu Armamento de Essência em resultados 18, 19 ou 20 no d20.",
+      "page": 103,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

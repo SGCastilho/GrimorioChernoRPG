@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-petal-knight-retia-marigold",
+    "identifier": "bbb-petal-knight-retia-marigold",
+    "name": "Calêndula",
+    "originalName": "Marigold",
+    "aliases": [
+      "Marigold"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "116–117",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 116
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "Um duelista voltado à relação entre vida e morte, caminhando na fronteira entre ambas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 116
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-petal-knight-retia-marigold.feature.flores-da-decadencia.l2.1",
+      "name": "FLORES DA DECADÊNCIA",
+      "level": 2,
+      "description": "Escolha um grupo de magia: Valores Sangrentos, Palavras Seladas ou Moralismos Desvinculados. Magias desse grupo e do Códice Pecaminoso contam como magias de Cavaleiro das Pétalas para você, permitindo lê-las, aprendê-las e conjurá-las. Você recebe ainda um espaço adicional de Magia de Pacto de Cavaleiro das Pétalas, que só pode conjurar magias desses dois grupos e funciona normalmente nos demais aspectos.",
+      "page": 116,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-marigold.feature.orientacao-da-alma.l2.1",
+      "name": "ORIENTAÇÃO DA ALMA",
+      "level": 2,
+      "description": "Uma vez por Descanso, pode conjurar falar com os mortos sem espaço nem componentes. Flores de calêndula brotam do cadáver e cobrem seus olhos; se o espírito o considerar hostil ou inimigo, ele o confunde com outra pessoa e passa a considerá-lo amigável. Ao conjurar dessa forma, porém, você só pode fazer uma pergunta.",
+      "page": 116,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-marigold.feature.a-morte-cria-raizes.l6.1",
+      "name": "A MORTE CRIA RAÍZES",
+      "level": 6,
+      "description": "Quando atingir uma criatura com ataque de arma, pode tentar inserir o próprio conceito de morte em seu corpo. O alvo faz salvaguarda de Constituição contra sua CD de magia; em falha, sofre dano sem tipo igual a 2d6 × seu nível de Cavaleiro das Pétalas. Esse dano não pode ser reduzido por resistências ou imunidades a tipos específicos de dano, salvo resistência a dano não eidólico ou não mágico. Pode usar uma vez por turno; depois que uma criatura falhar nessa salvaguarda, você não pode usar esta característica novamente até completar um Descanso.",
+      "page": 117,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-marigold.feature.podridao-e-renascimento.l11.1",
+      "name": "PODRIDÃO E RENASCIMENTO",
+      "level": 11,
+      "description": "Quando você ou outra criatura dentro de sua Aura de Dignidade precisar fazer uma salvaguarda contra a morte, pode fazer com que o resultado do d20 seja automaticamente 20, mesmo se não puder realizar ações. Pode fazê-lo uma vez por Descanso; usos adicionais custam um uso de Flora Virtuosa cada.",
+      "page": 117,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-marigold.feature.jardim-das-raizes-da-morte.l15.1",
+      "name": "JARDIM DAS RAÍZES DA MORTE",
+      "level": 15,
+      "description": "A Morte Cria Raízes é aprimorada: você pode ativá-la ao atingir uma criatura com ataque mágico ou quando ela falhar numa salvaguarda contra uma magia que exija espaço de Magia de Pacto; se estiver sintonizado com uma arma que tenha bônus de aprimoramento, pode somar esse bônus à CD da característica; e pode usar A Morte Cria Raízes sem limite de usos, ainda no máximo uma vez por turno, mas uma criatura que falhar contra ela não pode ser afetada novamente por você até completar um Descanso.",
+      "page": 117,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

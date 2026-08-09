@@ -1,0 +1,198 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "guerreiro-totemico",
+    "identifier": "guerreiro-totemico",
+    "name": "Caminho do Guerreiro Totêmico",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 50
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "O Caminho do Guerreiro Totêmico é uma jornada espiritual, à partir do momento que o bárbaro aceita um espirito animal como seu guia, protetor e inspiração. Em batalha, seu espirito totêmico preenche você com força sobrenatural, adicionando combustível mágico a sua fúria bárbara.\n\nA maioria das tribos bárbaras consideram que um animal totêmico possui parentesco a um clã em particular. Em tais casos, é incomum a um indivíduo possuir mais de um espirito animal totêmico, apesar de existirem exceções.",
+    "tables": [
+      {
+        "key": "table.1.totens-uthgardt",
+        "title": "Totens Uthgardt",
+        "page": null,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "totem",
+            "label": "Totem"
+          },
+          {
+            "key": "spirit",
+            "label": "Espírito"
+          }
+        ],
+        "rows": [
+          {
+            "totem": "Leão Negro",
+            "spirit": "Tigre"
+          },
+          {
+            "totem": "Corvo Negro",
+            "spirit": "Águia"
+          },
+          {
+            "totem": "Urso Azul",
+            "spirit": "Urso"
+          },
+          {
+            "totem": "Lobo Cinzento",
+            "spirit": "Lobo"
+          },
+          {
+            "totem": "Verme Gigante",
+            "spirit": "Lobo"
+          },
+          {
+            "totem": "Griffon",
+            "spirit": "Águia"
+          },
+          {
+            "totem": "Tigre Vermelho",
+            "spirit": "Tigre"
+          },
+          {
+            "totem": "Pônei Alado",
+            "spirit": "Águia, com um aspecto animal de Cervo"
+          },
+          {
+            "totem": "Fera do Trovão",
+            "spirit": "Urso, com uma ligação totêmica com um Tigre"
+          },
+          {
+            "totem": "Árvore dos Espíritos",
+            "spirit": "Urso, com falar com plantas nos rituais normais da característica de Espreitador dos Espíritos"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "key": "reference.1.costa-da-espada-guia-de-aventureiros-d-d-5e",
+        "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+        "page": null,
+        "text": "",
+        "sourceTitle": ""
+      }
+    ],
+    "sourcePage": 50
+  },
+  "features": [
+    {
+      "key": "subclass.guerreiro-totemico.feature.conselheiro-espiritual.l3.1",
+      "name": "CONSELHEIRO ESPIRITUAL",
+      "level": 3,
+      "description": "Seu caminho é buscar a sintonia com o mundo natural, concedendo a você uma afinidade com as bestas. A partir do 3° nível, quando você toma esse caminho, você recebe a habilidade de conjurar as magias sentido bestial e falar com animais, mas apenas na forma de rituais, como descrito no capítulo 10.",
+      "page": 50,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.guerreiro-totemico.feature.totem-espiritual.l3.1",
+      "name": "TOTEM ESPIRITUAL",
+      "level": 3,
+      "description": "A partir do 3° nível, quando você adota esse caminho, você escolhe um totem espiritual e ganha suas características. Você deve fazer ou adquirir um objeto físico como totem – um amuleto ou adorno similar – que incorpora o pelo ou penas, garras, dente ou ossos do animal totêmico. Se você quiser, você também adquire pequenos atributos físicos que o assemelham ao seu totem espiritual. Por exemplo, se você tiver o totem espiritual do urso, você seria incomumente peludo e de pele grossa, ou se o seu totem for a águia, seu olhos teriam um brilho amarelado.\n\nSeu totem animal deve ser um animal relacionado aos listados aqui, mas pode ser um mais apropriado a sua terra natal. Por exemplo, você poderia escolher falcão ou abutre ao invés de águia.\n\nÁguia. Quando estiver em fúria e não estiver vestindo uma armadura pesada, as outras criaturas terão desvantagem nas jogadas de ataque de oportunidade contra você e você pode usar a ação de Disparada como uma ação bônus no seu turno. O espirito da águia torna você um predador que pode vagar pelo meio da briga com facilidade.\n\nLobo. Quando estiver em fúria, seus amigos tem vantagem nas jogadas de ataque corpo-a-corpo realizadas contra qualquer criatura a 1,5 metro de você que seja hostil a você. O espirito do lobo transforma você em um líder de caça.\n\nUrso. Quando em fúria, você adquire resistência a todos os tipos de dano, exceto dano psíquico. O espirito do urso torna você vigoroso o suficiente para permanecer de pé diante de qualquer castigo.\n\nOpções da Costa da Espada:\n\nCervo. Enquanto você está em fúria e não está usando armadura pesada, seu deslocamento aumenta em 4,5m. O espírito do cervo torna você extremamente veloz.\n\nTigre. Enquanto você está em fúria, você pode adicionar 3 metros ao seu salto em distância e 90cm ao seu salto em distância vertical. O espírito do tigre aprimora seu salto.",
+      "page": 50,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.guerreiro-totemico.feature.aspecto-da-besta.l6.1",
+      "name": "ASPECTO DA BESTA",
+      "level": 6,
+      "description": "No 6° nível, você adquire um benefício místico baseado no totem que você escolheu. Você pode escolher o mesmo animal que selecionou no 3° nível ou um diferente.\n\nÁguia. Você ganha a visão aguçada de uma águia. Você pode ver a até 1,6 km sem dificuldade, sendo capaz de discernir até os menores detalhes quando estiver olhando para algo a menos de 30 metros de você. Além disso, penumbra não impõem desvantagem nos seus testes de Sabedoria (Percepção).\n\nLobo. Você ganha a sensibilidade predatória de um lobo. Você pode rastrear outras criaturas quando estiver viajando a passo rápido e você pode se mover furtivamente quando estiver viajando a passo normal (veja o capítulo 8 para as regras de passo de viagem).\n\nUrso. Você ganha a força de um urso. Sua capacidade de carga (incluindo carga máxima e capacidade de erguer) é dobrada e você tem vantagem em testes de Força realizados para empurrar, puxar, erguer ou quebrar objetos.\n\nOpções da Costa da Espada:\n\nCervo. Quando montado ou a pé, sua caminhada de travessia é duplicada, até dez companheiros podem manter este ritmo de caminhada com você desde que não estejam a mais de 18 metros e que você não esteja incapacitado. O espírito do cervo lhe ajuda a vagar mais distante e veloz.\n\nTigre. Você recebe duas proficiências em duas perícias da seguinte lista: Atletismo, Acrobacia, Furtividade e Sobrevivência. O espírito gatuno afia seu senso de sobrevivência.",
+      "page": 50,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.guerreiro-totemico.feature.andarilho-espiritual.l10.1",
+      "name": "ANDARILHO ESPIRITUAL",
+      "level": 10,
+      "description": "No 10° nível, você pode conjurar a magia comunhão com a natureza, mas apenas como um ritual. Quando o fizer, uma versão espiritual de um dos animais que você escolheu como Totem Espiritual ou Aspecto da Besta aparece para você para transmitir a informação que você busca.",
+      "page": 50,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.guerreiro-totemico.feature.sintonia-totemica.l14.1",
+      "name": "SINTONIA TOTÊMICA",
+      "level": 14,
+      "description": "No 14° nível, você ganha um benefício magico baseado em um totem animal, à sua escolha. Você pode escolher o mesmo animal que selecionou anteriormente ou um diferente.\n\nÁguia. Quando estiver em fúria, você adquire um deslocamento de voo igual ao seu deslocamento de caminhada. Esse benefício funciona apenas em pequenos explosões: você cai se terminar seu turno no ar e não tiver nada em que possa se agarrar.\n\nLobo. Quando estiver em fúria, você pode usar uma ação bônus no seu turno para derrubar uma criatura Grande ou menor no chão quando você atingi-la com um ataque corpo-a-corpo com arma.\n\nUrso. Quando estiver em fúria, qualquer criatura a até 1,5 metro de você que for hostil a você terá desvantagem nas jogadas de ataque contra outros alvos além de você ou outro personagem com essa característica. Um inimigo é imune a esse efeito se ele não puder ver ou ouvir você ou caso ele não possa ser amedrontado.\n\nOpções da Costa da Espada:\n\nCervo. Enquanto em fúria, você pode usar uma ação bônus durante seu movimento para passar através do espaço de uma criatura Grande ou menor. Esta criatura precisa ter sucesso em um TR de Força (CD 8 + seu modificador de Força + seu bônus de proficiência) ou será derrubada e receberá dano de concussão equivalente a 1d12 + seu modificador de Força.\n\nTigre. Enquanto você está em fúria, se você se mover ao menos 6 metros em linha reta até um inimigo que seja Grande ou menor em um momento antes de fazer um ataque corpo a corpo contra ele, você pode usar sua ação bônus para fazer um ataque corpo a corpo adicional contra ele.",
+      "page": 50,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

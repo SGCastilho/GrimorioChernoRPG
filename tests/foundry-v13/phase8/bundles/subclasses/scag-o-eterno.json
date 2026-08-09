@@ -1,0 +1,170 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "scag-o-eterno",
+    "identifier": "scag-o-eterno",
+    "name": "O Eterno",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "scag",
+    "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+    "pages": "139–140",
+    "chapter": "Capítulo 4: Classes",
+    "page": 139
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "A foice da morte não ceifa seu patrono, o qual descobriu os segredos da vida eterna, embora com o prêmio — como toda forma de poder — isso veio com um preço. Outrora mortal, o Eterno assiste a vida dos mortais passar como estações, os dias e noites como um estalo. Ele possui os segredos das eras para compartilhar, os segredos da vida e da morte. Patronos deste tipo incluem Vecna, Senhor da Mão e do Olho; o pavor reluzente; a rainha lich Vol; a Eterna Corte de Aerenal; Vlaakith, a rainha lich dos githyankis; e o mago imortal Fistandantalus. Nos Reinos, patronos Eternos incluem Larloch o Rei Sombrio, mestre lendário da Cripta do Bruxo, e Gilgeam, o Deus Rei de Unther.",
+    "tables": [
+      {
+        "key": "table.1.magias-expandidas-do-eterno",
+        "title": "Magias Expandidas do Eterno",
+        "page": null,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Magia"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Falsa Vida; Raio da Doença"
+          },
+          {
+            "level": "2º",
+            "spells": "Cegueira/Surdez; Silêncio"
+          },
+          {
+            "level": "3º",
+            "spells": "Morte Fingida; Falar com os Mortos"
+          },
+          {
+            "level": "4º",
+            "spells": "Aura da Vida; Vigília da Morte"
+          },
+          {
+            "level": "5º",
+            "spells": "Contágio; Conhecimento Lendário"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 139
+  },
+  "features": [
+    {
+      "key": "subclass.scag-o-eterno.feature.lista-de-magia-expandida.l1.1",
+      "name": "LISTA DE MAGIA EXPANDIDA",
+      "level": 1,
+      "description": "O Eterno permite que você escolha de uma lista de magia expandida quando você aprende uma magia de bruxo. As seguintes magias são adicionadas à lista de magias do bruxo para você.",
+      "page": 139,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-o-eterno.feature.entre-os-mortos.l1.1",
+      "name": "ENTRE OS MORTOS",
+      "level": 1,
+      "description": "Começando no 1º nível, você aprende o truque poupar os mortos, o qual conta como um truque de bruxo para você. Você também ganha vantagem nos testes de resistência contra qualquer doença.\n\nAdicionalmente, mortos vivos têm dificuldade em lhe machucar. Se um morto vivo lhe tomar como alvo direto de um ataque ou alvo direto de uma magia, tal criatura precisa fazer um TR de Sabedoria contra sua CD de resistência a magia (um morto vivo não precisa fazer esse teste se você for alvo de um efeito de magia em área, como uma explosão de bola de fogo). Se falhar no teste, a criatura deve escolher um novo alvo ou prevaricar um outro alvo que não você, potencialmente desperdiçando o ataque ou a magia. Em um teste bem sucedido, a criatura fica imune a este efeito por 24 horas. Um morto-vivo também é imune a este efeito por 24 horas se você o fizer alvo de um ataque ou de uma magia nociva.",
+      "page": 139,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-o-eterno.feature.incitando-a-morte.l6.1",
+      "name": "INCITANDO A MORTE",
+      "level": 6,
+      "description": "A partir do 6º nível você pode dar vitalidade a si próprio quando você engana a morte ou quando você ajuda alguém a enganá-la. Você pode recuperar pontos de vida igual a 1d8 + seu modificador de Constituição (mínimo de 1 ponto de vida) quando você tiver sucesso em um TR contra morte ou quando você estabiliza uma criatura com poupar os mortos.\n\nUma vez que você usar esta habilidade, você precisa de um descanso longo para recuperá-la.",
+      "page": 140,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-o-eterno.feature.natureza-imortal.l10.1",
+      "name": "NATUREZA IMORTAL",
+      "level": 10,
+      "description": "A partir do 10º nível, você pode prender o fôlego por tempo indefinido, e você não precisa de comida, água, ou mesmo dormir, embora você ainda precise dormir para reduzir os efeitos da exaustão e se beneficiar de efeitos pós-descansos curtos e longos.\n\nEm suma, você envelhece lentamente. Para cada 10 anos passados, seu corpo envelhece apenas 1 ano, e você fica imune a magias de envelhecimento.",
+      "page": 140,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.scag-o-eterno.feature.vida-indestrutivel.l14.1",
+      "name": "VIDA INDESTRUTÍVEL",
+      "level": 14,
+      "description": "Quando você alcança o 14º nível você partilha de alguns dos verdadeiros segredos do Eterno. No seu turno, você pode usar uma ação bônus para recuperar pontos de vida igual a 1d8 + seu nível de bruxo. Adicionalmente, quando você repõe uma parte partida do seu corpo ao lugar de origem, quando usa esta habilidade, essa parte se une novamente ao seu corpo.\n\nUma vez que tiver usado essa habilidade, você não pode usar novamente até que termine um descanso curto ou longo.",
+      "page": 140,
+      "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

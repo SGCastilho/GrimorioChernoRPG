@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-sorcerer-luminal-sacrifice",
+    "identifier": "zagalhta-sorcerer-luminal-sacrifice",
+    "name": "Sacrifício Luminal",
+    "originalName": "Luminal Sacrifice",
+    "aliases": [
+      "Luminal Sacrifice"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "170–171",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 170
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Feiticeiro cujo sangue foi misturado experimentalmente à essência de Titãs Exteriores, manifestando mente alienígena, punhos radiantes e uma metamorfose colossal.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 170
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-sorcerer-luminal-sacrifice.feature.essencia-luminal.l1.1",
+      "name": "ESSÊNCIA LUMINAL",
+      "level": 1,
+      "description": "Você recebe quatro benefícios. Mente Alienígena: sua mente não pode ser lida por efeitos mágicos/sobrenaturais; percebe tentativas telepáticas e pode bloqueá-las, e sua voz telepática não revela sua identidade. Punho Radiante: ataques desarmados podem usar seu atributo de conjuração e causam dano radiante igual a Xd8, onde X = 1 + 1/4 do nível de Feiticeiro, arredondado para cima. Pele Espessa: sem armadura ou escudo, CA = 10 + Constituição + Destreza. Vontade pela Força: pode usar Constituição como atributo de conjuração de suas magias e características de Feiticeiro.",
+      "page": 170,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sorcerer-luminal-sacrifice.feature.agarre-do-tita.l6.1",
+      "name": "AGARRE DO TITÃ",
+      "level": 6,
+      "description": "Como ação bônus, desde que seus braços estejam livres, crie braços titânicos espectrais e faça ataque de magia corpo a corpo contra alvo a até 18 m. Em um acerto, escolha: atingir como seu Punho Radiante; agarrar o alvo até o início do próximo turno (uma segunda ocorrência no mesmo turno o restringe), respeitando limite de tamanho igual à metade da proficiência; ou empurrar/puxar 3 m, ou 9 m em crítico. Ao usar a ação, pode gastar Pontos de Feitiçaria até metade da proficiência, arredondada para cima, escolhendo por ponto: +1d8 radiante por alvo; um alvo/ataque adicional; +2 categorias ao limite de tamanho de agarrão; ou dobrar cumulativamente o alcance.",
+      "page": 170,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sorcerer-luminal-sacrifice.feature.minalmorfose.l14.1",
+      "name": "MINALMORFOSE",
+      "level": 14,
+      "description": "Uma vez por Descanso, produza o efeito Aumentar de aumentar/reduzir sem Espaço ou componentes, como se conjurado em nível igual à proficiência. Exige concentração, mas você pode se concentrar em outros efeitos junto dela. Criatura aumentada torna-se resistente ao dano de criaturas duas ou mais categorias de tamanho menores e adquire traços físicos de Titã Exterior.",
+      "page": 170,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sorcerer-luminal-sacrifice.feature.reinado-astral.l18.1",
+      "name": "REINADO ASTRAL",
+      "level": 18,
+      "description": "Como ação, detone uma esfera de energia radiante sobre você. Criaturas escolhidas a até 18 m fazem salvaguarda de Destreza; em falha sofrem o dano de seu Punho Radiante, metade em sucesso. Depois, uma esfera de 18 m de raio centrada em você torna-se ambiente de baixa gravidade até o fim do próximo turno; dentro dela você recebe aceleração 0-G igual ao deslocamento base e vantagem em ataques de magia contra criaturas na esfera. Um uso por Descanso; usos adicionais custam 5 Pontos de Feitiçaria.",
+      "page": 170,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-echobliss",
+    "identifier": "lyre-favored-soul-retia-burden-of-echobliss",
+    "name": "Fardo de Echobliss",
+    "originalName": "Burden of Echobliss",
+    "aliases": [
+      "Burden of Echobliss"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "349",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 349
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): mangual. O Duque do Trovão derrama destruição através de seus favorecidos, dando-lhes força brutal e uma compulsão pela ruína. Alguns acabam assumindo formas dracônicas de duas caudas e perdendo o senso de identidade.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 349
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-echobliss.feature.critico-aprimorado.l1.1",
+      "name": "CRÍTICO APRIMORADO",
+      "level": 1,
+      "description": "Você obtém acerto crítico com 19 ou 20 no d20. Se outra característica já conceder o mesmo alcance crítico, seus críticos causam um dado de arma adicional de dano.",
+      "page": 349,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-echobliss.feature.combatente-iracundo.l1.1",
+      "name": "COMBATENTE IRACUNDO",
+      "level": 1,
+      "description": "Você recebe o Estilo de Luta Combatente Imprudente. No 3º nível, quando a Alma Favorecida normalmente escolheria Estilo de Luta, pode avançar este em vez de escolher outro.",
+      "page": 349,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-echobliss.feature.onda-arruinada.l6.1",
+      "name": "ONDA ARRUINADA",
+      "level": 6,
+      "description": "No lugar de um ataque com arma, libere uma onda trovejante em um cubo originado em você. O cubo pode ter de 1,5 metro até 1,5 metro × o nível do seu espaço de pacto de lado. Criaturas na área fazem salvaguarda de Constituição, sofrendo 3d10 de dano trovejante em falha ou metade em sucesso. Pode usar este ataque uma vez por turno e um número de vezes por Descanso Longo igual ao bônus de proficiência.",
+      "page": 349,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-echobliss.feature.forma-atormentada-da-ira.l10.1",
+      "name": "FORMA ATORMENTADA DA IRA",
+      "level": 10,
+      "description": "Como ação, gaste Purificação e transforme-se por 10 minutos ou até cair a 0 PV numa monstruosidade dracônica. Seu tamanho aumenta uma categoria e seus tipos incluem monstruosidade e dragão; alcance corpo a corpo +1,5 m; vantagem em ataques, testes e salvaguardas baseados em Força; todos os ataques contra você têm vantagem; você sofre metade de dano perfurante, cortante e contundente; ataques com arma causam dano adicional igual ao seu nível de Alma Favorecida; você fica Enfurecido, trata todas as criaturas visíveis como hostis e não sofre penalidades de concentração da condição; e recebe uma ação extra por turno que só pode ser usada para Atacar. Sempre que cairia a 0 PV, role 1d100; se o resultado for igual ou menor que seu nível de Alma Favorecida, fica com 1 PV. Esta forma também pode ativar automaticamente dessa maneira sem gastar Purificação, concedendo PV temporários iguais ao dobro do seu nível; se esses PV temporários forem perdidos, a forma termina e você cai a 0 PV sem reativá-la.",
+      "page": 349,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-echobliss.feature.critico-superior.l13.1",
+      "name": "CRÍTICO SUPERIOR",
+      "level": 13,
+      "description": "Você obtém acerto crítico com 18, 19 ou 20 no d20.",
+      "page": 349,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

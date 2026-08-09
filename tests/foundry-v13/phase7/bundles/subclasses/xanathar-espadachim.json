@@ -1,0 +1,140 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-espadachim",
+    "identifier": "xanathar-espadachim",
+    "name": "Espadachim",
+    "originalName": "",
+    "aliases": [
+      "Espadachim"
+    ]
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "45",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 45
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "O foco de seu treinamento sobre a arte da lamina, dividido em velocidade, elegância e em fascínio partes iguais. Enquanto alguns guerreiros são brutos revestidos em armaduras pesadas, seu estilo de luta está muito mais para uma performance. Duelistas e piratas geralmente escolhem este arquétipo. Um espadachim se destaca em combate de uma mão e pode lutar com duas armas enquanto se afasta de seu oponente.",
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.costa-da-espada-guia-de-aventureiros-d-d-5e",
+        "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+        "page": null,
+        "text": "",
+        "sourceTitle": ""
+      }
+    ],
+    "sourcePage": 45
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-espadachim.feature.passo-elegante.l3.1",
+      "name": "PASSO ELEGANTE",
+      "level": 3,
+      "description": "Quando você escolhe esse arquétipo no 3° nível, você aprende como entrar e sair de um terreno ameaçado sem sofrer as consequências disto. Durante este turno após efetuar um ataque corpo-a-corpo contra uma criatura, esta criatura não pode efetuar ataques de oportunidades contra você pelo resto do seu turno.",
+      "page": 45,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-espadachim.feature.audacia-devassa.l3.1",
+      "name": "AUDÁCIA DEVASSA",
+      "level": 3,
+      "description": "A partir do 3º nível sua confiança o impulsiona para batalha. Você pode adicionar um bônus igual a seu modificador de Carisma em sua iniciativa. Você também obtém uma forma adicional para usar seu Ataque Furtivo, você não precisa de vantagem na jogada de ataque se estiver a 1,5 metros do alvo, não tenha outra criatura a 1,5 metros de alcance, e não tenha desvantagem na jogada de ataque. Todas as outras regras ainda são aplicadas a você.",
+      "page": 45,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-espadachim.feature.penachar.l9.1",
+      "name": "PENACHAR",
+      "level": 9,
+      "description": "No 9º nível seu encanto torna-se extraordinariamente sedutor. Como uma ação você pode fazer um teste de Carisma (Persuasão) resistido contra Sabedoria (Intuição) da criatura. Criatura deve estar apta para lhe ouvir e vocês devem compartilhar do mesmo idioma. Se for bem sucedido e a criatura for hostil, ela tem desvantagens nas jogadas de ataque contra alvos que não o tenham como alvo e não pode realizar ataques de oportunidades em alvos que não seja você. Este efeito dura 1 minuto, até que um dos seus companheiros ataque o alvo ou ele seja alvo de magias ou o alvo se afaste mais de 18 metros. Se você for bem sucedido em uma criatura não hostil, ela fica enfeitiçada por você por 1 minuto. Enquanto o encanto durar a ela irá considerá-lo confiável. Este efeito encerra imediatamente se você ou seus companheiros fizerem algo prejudicial a criatura.",
+      "page": 45,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-espadachim.feature.manobra-elegante.l13.1",
+      "name": "MANOBRA ELEGANTE",
+      "level": 13,
+      "description": "Começando no 13º nível, você pode usar sua ação bônus no seu turno para ganhar vantagem no próximo teste de Destreza (Acrobacia) ou Força (Atletismo) feito neste mesmo turno.",
+      "page": 45,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-espadachim.feature.mestre-duelista.l17.1",
+      "name": "MESTRE DUELISTA",
+      "level": 17,
+      "description": "A partir do 1 7º nível, sua maestria pode transformar um erro em um sucesso em combate. Se você errar uma jogada de ataque, pode repetir novamente o teste, desta vez com vantagem. Uma vez que usar esta característica só poderá usar novamente depois de terminar um descanso curto ou longo.",
+      "page": 45,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-fighter-red-lion-knight",
+    "identifier": "lyre-fighter-red-lion-knight",
+    "name": "Cavaleiro do Leão Vermelho",
+    "originalName": "Red Lion Knight",
+    "aliases": [
+      "Red Lion Knight"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "461–462",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 461
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Os Cavaleiros do Leão Vermelho da Terra Distante representam a elite do país, treinados para servir ao Conselho do Leão e proteger seu povo. Colocam a nação em primeiro lugar, o povo em segundo e os próprios interesses em terceiro. São símbolos de honra, diligência e resistência, frequentemente ligados a uma montaria que tratam como companheira inseparável.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 461
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-fighter-red-lion-knight.feature.chamado-a-acao.l3.1",
+      "name": "CHAMADO À AÇÃO",
+      "level": 3,
+      "description": "Como ação, solte um grande chamado para reunir seus aliados. Escolha criaturas a até 18 metros que possam ver ou ouvir você, em quantidade igual à metade do seu nível de Guerreiro, arredondado para baixo. Cada uma pode usar a reação para mover até metade do próprio deslocamento sem provocar ataques de oportunidade. Usos por Descanso Longo iguais ao seu bônus de proficiência.",
+      "page": 461,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-red-lion-knight.feature.critico-aprimorado-corpo-a-corpo.l3.1",
+      "name": "CRÍTICO APRIMORADO (CORPO A CORPO)",
+      "level": 3,
+      "description": "Seus ataques corpo a corpo com arma obtêm acerto crítico com 19 ou 20 no d20.",
+      "page": 461,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-red-lion-knight.feature.especialista-em-combate-montado.l7.1",
+      "name": "ESPECIALISTA EM COMBATE MONTADO",
+      "level": 7,
+      "description": "Uma montaria voluntária a agir como montaria controlada ajusta a iniciativa à sua e age imediatamente antes de você. Ela se move conforme suas ordens e pode usar Disparada ou Esquivar como ação bônus, além de poder realizar Atacar ou outras ações de seu bloco de estatísticas sob seu comando. Em seu turno, você pode usar uma ação bônus para ordenar à montaria que está cavalgando que faça um ataque com arma. Quando sua montaria for alvo de um ataque que você possa ver, use sua reação para somar seu bônus de proficiência à CA dela até o fim do turno.",
+      "page": 461,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-red-lion-knight.feature.enviado-real.l7.1",
+      "name": "ENVIADO REAL",
+      "level": 7,
+      "description": "Você ganha proficiência em Cavalgar e Persuasão. Se já for proficiente em uma ou ambas, para cada proficiência repetida escolha obter Especialização nela ou proficiência em Adestrar Animais, Intuição, Intimidação ou Atuação.",
+      "page": 461,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-red-lion-knight.feature.iniciativa-do-cavaleiro.l10.1",
+      "name": "INICIATIVA DO CAVALEIRO",
+      "level": 10,
+      "description": "Você não pode ser surpreendido enquanto não estiver incapacitado e tem vantagem em testes de Iniciativa. Ao usar Surto de Ação, você também pode produzir os efeitos de Chamado à Ação sem gastar ação nem uso da característica.",
+      "page": 462,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-red-lion-knight.feature.critico-superior-corpo-a-corpo.l15.1",
+      "name": "CRÍTICO SUPERIOR (CORPO A CORPO)",
+      "level": 15,
+      "description": "Seus ataques corpo a corpo com arma obtêm acerto crítico com 18, 19 ou 20 no d20, e seus críticos corpo a corpo causam um dado de dano adicional da arma.",
+      "page": 462,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-red-lion-knight.feature.chamado-do-leao.l18.1",
+      "name": "CHAMADO DO LEÃO",
+      "level": 18,
+      "description": "Ao usar Chamado à Ação, cada criatura que usaria a reação para se mover pode, em vez disso, fazer um ataque com arma com vantagem contra uma criatura ao alcance. Além disso, todas as criaturas que reagirem ao chamado podem se levantar sem custo de deslocamento e recebem imediatamente 2d10 pontos de vida temporários.",
+      "page": 462,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

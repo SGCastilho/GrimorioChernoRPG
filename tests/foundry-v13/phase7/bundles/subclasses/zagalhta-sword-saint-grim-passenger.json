@@ -1,0 +1,181 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-sword-saint-grim-passenger",
+    "identifier": "zagalhta-sword-saint-grim-passenger",
+    "name": "Caminho do Passageiro Sombrio",
+    "originalName": "Way of the Grim Passenger",
+    "aliases": [
+      "Way of the Grim Passenger"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "174",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 174
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Caminho de um médium espiritual que vive próximo da morte, permite que almas perdidas murmurem em seus ouvidos e transforma espíritos vingativos em proteção e poder ofensivo.",
+    "tables": [
+      {
+        "key": "table.1.tecnicas-de-foco-passageiro-sombrio",
+        "title": "Técnicas de Foco — Passageiro Sombrio",
+        "page": 174,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Técnica"
+          },
+          {
+            "key": "effect",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Permanecer na Morte (2 Foco)",
+            "effect": "Quando obtiver sucesso em Salvaguarda contra a Morte, trate automaticamente o d20 como 20."
+          },
+          {
+            "name": "Véu Fantasmagórico (1 Foco)",
+            "effect": "Ação bônus; fique invisível até o início do próximo turno."
+          },
+          {
+            "name": "Passo Espiritual (1 Foco)",
+            "effect": "Ação bônus; por 1 minuto, voo laborioso igual ao deslocamento base, produzindo voo pairado; durante o período também recebe aceleração 0-G igual ao dobro."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 174
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-sword-saint-grim-passenger.feature.estilo-de-luta-matador.l3.1",
+      "name": "ESTILO DE LUTA: MATADOR",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Matador. Se já o possuir, pode avançar outro Estilo de Luta, ou aprender outro disponível ao Santo da Espada se não puder fazer nenhuma dessas opções.",
+      "page": 174,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-grim-passenger.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "Você aprende Permanecer na Morte, Véu Fantasmagórico e Passo Espiritual, descritos na tabela.",
+      "page": 174,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-grim-passenger.feature.passeio-a-deriva.l6.1",
+      "name": "PASSEIO À DERIVA",
+      "level": 6,
+      "description": "Mover-se pelo espaço de outras criaturas não custa movimento extra; pode atravessar espaços de hostis, desde que não pare neles; Ataques de Oportunidade contra você têm desvantagem.",
+      "page": 174,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-grim-passenger.feature.espiritos-vinculados.l11.1",
+      "name": "ESPÍRITOS VINCULADOS",
+      "level": 11,
+      "description": "Uma quantidade de espíritos vingativos igual à metade da proficiência o acompanha. Quando efeito o alvo causar condição ou possuir salvaguarda contínua, pode descarregá-lo em um espírito; você continua fazendo as salvaguardas, mas fica imune às condições/efeitos descarregados. Cada espírito comporta uma única fonte. Pode descarregar toda Fadiga de Combate ou exaustão em um espírito, mas cada uma conta como fonte inteira e você ainda morre se um espírito alcançar seis níveis de exaustão.",
+      "page": 174,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-grim-passenger.feature.recipiente-espiritual-astral.l14.1",
+      "name": "RECIPIENTE ESPIRITUAL ASTRAL",
+      "level": 14,
+      "description": "Enquanto empunha sua Arma Santa sintonizada, ela se torna um Recipiente Espiritual Astral: causa um dado de dano da arma adicional como psíquico; permite ver criaturas invisíveis e seres nos Planos Etéreo e Material; seus ataques podem acertá-los como se visíveis e no mesmo plano.",
+      "page": 174,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-grim-passenger.feature.clivador-espiritual.l17.1",
+      "name": "CLIVADOR ESPIRITUAL",
+      "level": 17,
+      "description": "Dano originado de você, itens sintonizados, suas magias e suas armas ignora resistências e Limiares de Dano. A menos que o alvo seja vulnerável, o dano de sua Arma Santa e de efeitos colocados nela é tratado como dano sem tipo.",
+      "page": 174,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

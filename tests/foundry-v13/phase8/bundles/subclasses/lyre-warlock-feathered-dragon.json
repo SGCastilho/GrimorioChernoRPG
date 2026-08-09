@@ -1,0 +1,189 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-warlock-feathered-dragon",
+    "identifier": "lyre-warlock-feathered-dragon",
+    "name": "Dragão Emplumado",
+    "originalName": "Feathered Dragon",
+    "aliases": [
+      "Feathered Dragon"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "494",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 494
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Seu patrono é um dos raros dragões emplumados que disseminaram a radiação eidomântica. O pacto concede garras espectrais, afinidade com um tipo de energia dracônica e acesso direto à Eidomancia.",
+    "tables": [
+      {
+        "key": "table.1.lista-expandida-de-magias",
+        "title": "Lista Expandida de Magias",
+        "page": 494,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível da Magia"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Flecha Cromática; Escudo da Fé"
+          },
+          {
+            "level": "2º",
+            "spells": "Lâmina Flamejante; Orbes de Interferência Mágica"
+          },
+          {
+            "level": "3º",
+            "spells": "Pele de Dragão; Aljava de Vórtice"
+          },
+          {
+            "level": "4º",
+            "spells": "Conjurar Montaria Maior; Assassino Fantasmagórico"
+          },
+          {
+            "level": "5º",
+            "spells": "Onda de Choque; Subjugar Magia"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 494
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-warlock-feathered-dragon.feature.garras-ancestrais.l1.1",
+      "name": "GARRAS ANCESTRAIS",
+      "level": 1,
+      "description": "Como ação, faça um número de ataques corpo a corpo com magia igual à metade de seu bônus de proficiência, usando seu ataque mágico de Bruxo contra um alvo a até 3 metros. Cada acerto causa 1d10 de dano cortante + dano de Manto igual ao maior entre seu modificador de Carisma e metade de seu nível de Bruxo. O dano é mágico. Como ação bônus, pode fazer um único ataque com as garras. Não pode usar ação e ação bônus para atacar com elas no mesmo turno.",
+      "page": 494,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-feathered-dragon.feature.manto-de-heranca.l1.1",
+      "name": "MANTO DE HERANÇA",
+      "level": 1,
+      "description": "Escolha o tipo de dano de seu patrono: ácido (negro/cobre), gélido (prata/branco), ígneo (latão/ouro/vermelho), energético (ametista), elétrico (azul/bronze), necrótico (crânio/topázio), venenoso (verde), psíquico (esmeralda), radiante (cristal/pedra-da-lua/platina) ou trovejante (safira). Esse é seu tipo de Manto. Você tem resistência a ele e, ao obter crítico em qualquer ataque, causa +1d10 desse tipo. Rajada Mística pode causar o tipo do Manto em vez de energético.",
+      "page": 494,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-feathered-dragon.feature.emanacao-eidolica.l6.1",
+      "name": "EMANAÇÃO EIDÓLICA",
+      "level": 6,
+      "description": "Como ação, libere energia em um cone, linha de 1,5 metro de largura ou esfera centrada em ponto a até 36 metros. Cada dimensão principal tem 1,5 metro × seu nível de Bruxo; você pode reduzi-la em incrementos de 1,5 metro. Criaturas na área fazem salvaguarda de Destreza contra sua CD de Bruxo; em falha, sofrem dano eidólico do tipo do Manto igual a 2d6 × seu bônus de proficiência, ou metade em sucesso. Uma vez por Descanso Curto ou Longo; pode gastar um espaço de magia para usos adicionais.",
+      "page": 494,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-feathered-dragon.feature.pacto-eidolico.l10.1",
+      "name": "PACTO EIDÓLICO",
+      "level": 10,
+      "description": "Ao escolher magias de Bruxo, magias da escola Eidomancia contam como parte de sua lista, embora o Mestre possa restringir magias de grupos raros/incomuns. Você não realiza testes eidomânticos ao conjurá-las com espaços de pacto e tem vantagem em testes ou salvaguardas de testes eidomânticos.",
+      "page": 494,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-feathered-dragon.feature.resistencia-magica.l14.1",
+      "name": "RESISTÊNCIA MÁGICA",
+      "level": 14,
+      "description": "Você tem vantagem em salvaguardas contra magias e efeitos mágicos.",
+      "page": 494,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-feathered-dragon.feature.heranca-sobrenatural.l14.1",
+      "name": "HERANÇA SOBRENATURAL",
+      "level": 14,
+      "description": "HERANÇA SOBRENATURAL: dano de seu tipo de Manto ignora resistência; contra imunidade, causa metade em vez de zero.\n\nINVOCAÇÕES DO DRAGÃO EMPLUMADO. OLHOS DE DRAGÃO (15º): visão verdadeira 9 m. ESCAMAS DA MENTE DRACÔNICA (2º): sem armadura, CA 10 + Des + Carisma, ainda podendo usar escudo. LANÇA DE EMANAÇÃO (7º): Emanação Eidólica ganha opção de projétil em alvo a até 36 m; ataque à distância com magia, ou corpo a corpo a 1,5 m, causando o dano normal +1d6 por ponto de bônus de proficiência. GARRAS APRIMORADAS (7º): Garras Ancestrais obtêm crítico 19–20 e, em crítico, causam dano de Manto adicional igual a 1d10 × metade de seu bônus de proficiência; contam como armas naturais e podem ser Arma de Pacto. MANTO DE IMUNIDADE (12º): imunidade ao tipo do Manto e resistência a um entre contundente, cortante ou perfurante não mágico. FERRAMENTAS DO PATRONO (5º): como ação bônus, manifeste asas ou garras endurecidas para obter voo ou escavação de 18 m até o início do próximo turno; usos por Descanso Curto ou Longo iguais ao bônus de proficiência.",
+      "page": 494,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

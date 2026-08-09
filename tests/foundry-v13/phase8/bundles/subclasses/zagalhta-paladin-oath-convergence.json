@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-paladin-oath-convergence",
+    "identifier": "zagalhta-paladin-oath-convergence",
+    "name": "Juramento da Convergência",
+    "originalName": "Oath of Convergence",
+    "aliases": [
+      "Oath of Convergence"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "161",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 161
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Juramento de quem busca unir povos, construir pontes e encerrar guerras, combatendo qualquer força que alimente o ódio e impeça civilizações de compreender umas às outras.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-da-convergencia",
+        "title": "Magias do Juramento da Convergência",
+        "page": 161,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Rito Cerimonial; Santuário"
+          },
+          {
+            "level": "5º",
+            "spells": "Restauração Menor; Vínculo Protetor"
+          },
+          {
+            "level": "9º",
+            "spells": "Palavra Curativa em Massa; Guardiões Espirituais"
+          },
+          {
+            "level": "13º",
+            "spells": "Guardião da Fé; Localizar Criatura"
+          },
+          {
+            "level": "17º",
+            "spells": "Restauração Maior; Círculo de Teleporte"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 161
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-paladin-oath-convergence.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Abordagem Meteórica: como ação, gaste Canalizar Divindade, salte e aterrisse em espaço visível a até 18 m; criaturas a até 3 m fazem Destreza, sofrendo 1d10 radiante × metade do nível de Paladino (arredondada para cima), ou metade em sucesso. Forças Unificadas: como ação bônus, gaste Canalizar Divindade e conceda a você e até cinco criaturas a 6 m PV temporários iguais ao nível de Paladino + 5; enquanto os tiverem, recebem +2 em ataques e salvaguardas.",
+      "page": 161,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-paladin-oath-convergence.feature.comunicacao-aberta.l3.1",
+      "name": "COMUNICAÇÃO ABERTA",
+      "level": 3,
+      "description": "Você entende e lê qualquer idioma que encontrar, mas não pode escrevê-lo nem falá-lo sem aprender o idioma por completo.",
+      "page": 161,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-paladin-oath-convergence.feature.aura-de-frentes-unidas.l7.1",
+      "name": "AURA DE FRENTES UNIDAS",
+      "level": 7,
+      "description": "Aliados dentro de sua Aura de Proteção recebem bônus de CA igual à metade da proficiência. Hostis na mesma área sofrem esse valor como penalidade nas jogadas de ataque.",
+      "page": 161,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-paladin-oath-convergence.feature.forca-em-numeros.l15.1",
+      "name": "FORÇA EM NÚMEROS",
+      "level": 15,
+      "description": "Quando aliado termina turno em combate dentro de sua Aura de Proteção com menos da metade dos PV, recupera 1d10 PV.",
+      "page": 161,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-paladin-oath-convergence.feature.ser-nexo.l20.1",
+      "name": "SER NEXO",
+      "level": 20,
+      "description": "Você e criaturas a até 18 m podem usar magias/efeitos de Toque em qualquer criatura voluntária dentro desse alcance como se pudessem tocá-la; magias ofensivas de Toque podem originar-se do espaço de outra criatura voluntária. Você recebe telepatia a 36 m. Enquanto houver ao menos uma criatura não hostil a até 1,5 m, você é resistente a todo dano.",
+      "page": 161,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

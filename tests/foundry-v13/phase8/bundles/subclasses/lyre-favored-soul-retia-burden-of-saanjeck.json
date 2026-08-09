@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-saanjeck",
+    "identifier": "lyre-favored-soul-retia-burden-of-saanjeck",
+    "name": "Fardo de Saanjeck",
+    "originalName": "Burden of Saanjeck",
+    "aliases": [
+      "Burden of Saanjeck"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "355",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 355
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): bordão. Saanjeck, força motriz do Colégio de Gun Ghuth, inspira os estudiosos sinceros. Seu favorecido recebe entendimento e amor inatos pelo arcano e é impelido a alcançar alturas mágicas cada vez maiores.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 355
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-saanjeck.feature.licoes-para-o-inquisitivo.l1.1",
+      "name": "LIÇÕES PARA O INQUISITIVO",
+      "level": 1,
+      "description": "Magias de Mago contam como se estivessem na lista da Alma Favorecida para você, permitindo aprendê-las e conjurá-las.",
+      "page": 355,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-saanjeck.feature.olhos-do-crepusculo.l1.1",
+      "name": "OLHOS DO CREPÚSCULO",
+      "level": 1,
+      "description": "Você ganha visão no escuro de 18 metros. Se já possuía visão no escuro, ela passa a 36 metros ou aumenta em 9 metros, o que resultar no maior alcance.",
+      "page": 355,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-saanjeck.feature.forca-crepuscular.l6.1",
+      "name": "FORÇA CREPUSCULAR",
+      "level": 6,
+      "description": "Sempre que realiza a ação Atacar, pode fazer um ataque especial adicional lançando força arcana contra criatura a até 18 metros. É ataque de magia à distância, ou corpo a corpo se a até 1,5 m, e causa 1d8 + modificador de conjuração de dano de energia. O dano aumenta para 2d8 no 9º, 3d8 no 13º e 4d8 no 17º nível de Alma Favorecida.",
+      "page": 355,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-saanjeck.feature.lucubracao-repleta.l10.1",
+      "name": "LUCUBRAÇÃO REPLETA",
+      "level": 10,
+      "description": "Gaste Purificação para conjurar qualquer magia da lista da Alma Favorecida, mesmo não aprendida ou preparada, de nível no máximo metade do seu nível de Alma Favorecida arredondado para baixo menos 1. Ela é conjurada no nível do seu espaço de pacto, salvo se o nível base for maior, e exige ação e componentes normais.",
+      "page": 355,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-saanjeck.feature.resistencia-magica.l13.1",
+      "name": "RESISTÊNCIA MÁGICA",
+      "level": 13,
+      "description": "Você tem vantagem em salvaguardas contra efeitos mágicos.",
+      "page": 355,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

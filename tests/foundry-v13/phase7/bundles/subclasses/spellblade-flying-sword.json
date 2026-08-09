@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spellblade-flying-sword",
+    "identifier": "spellblade-flying-sword",
+    "name": "Espada Voadora",
+    "originalName": "Flying Sword",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "kibbles",
+    "title": "Spellblade v1.3 — KibblesTasty — Espada Voadora",
+    "pages": "13–14",
+    "chapter": "Técnicas de Spellblade",
+    "page": 13
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "spellblade",
+    "identifier": "spellblade",
+    "name": "Spellblade"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "spellblade",
+    "selectionLevel": 3,
+    "description": "Como um Spellblade da Espada Voadora, você domina a arte da lâmina flutuante, separando sua força de vontade do corpo físico. A espada torna-se uma extensão da mente e uma manifestação de sua proeza arcana, combinando telecinese, intelecto e maestria marcial.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-espada-voadora",
+        "title": "Magias de Espada Voadora",
+        "page": 13,
+        "description": "Estas magias contam como magias de Spellblade para você e não contam no limite de magias conhecidas.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Spellblade"
+          },
+          {
+            "key": "magias",
+            "label": "Magias aprendidas"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Salto"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Objeto Dançante"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Voo"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Passos de Mercúrio"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Animar Objetos"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 13
+  },
+  "features": [
+    {
+      "key": "subclass.spellblade-flying-sword.feature.magias-da-espada-voadora.l3.1",
+      "name": "MAGIAS DA ESPADA VOADORA",
+      "level": 3,
+      "description": "Você aprende as magias apresentadas na tabela da subclasse. Elas são magias de Spellblade para você e não contam no número de magias conhecidas.",
+      "page": 13,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Espada Voadora",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-flying-sword.feature.espada-voadora.l3.1",
+      "name": "ESPADA VOADORA",
+      "level": 3,
+      "description": "No 3º nível, durante um descanso longo, você pode tocar uma arma corpo a corpo e infundi-la com poder mágico. Essa Espada Voadora pode ser carregada ou guardada normalmente, ou preparada para flutuar ao seu lado. Enquanto estiver preparada, você pode atacar com ela como parte da ação de Ataque, enviando-a contra um alvo.\n\nOs ataques são considerados ataques corpo a corpo com a arma, mas você pode usar Inteligência no lugar de Força ou Destreza nas jogadas de ataque e dano e atingir alvos a até 9 metros. Se a arma possuir a propriedade Pesada ou Especial, o alcance é reduzido para 4,5 metros; se possuir a propriedade Leve, aumenta para 18 metros.\n\nMagias infundidas na arma afetam o alvo do ataque, mas continuam limitadas ao alcance da magia. Se o alvo estiver além desse alcance, a magia falha e é perdida.",
+      "page": 13,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Espada Voadora",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-flying-sword.feature.surto-das-espadas-fantasmas.l3.1",
+      "name": "SURTO DAS ESPADAS FANTASMAS",
+      "level": 3,
+      "description": "Você ganha uma nova opção para Surto Arcano — Espadas Fantasmas: ao atacar com sua Espada Voadora, gaste um uso para criar duas cópias fantasmagóricas que atacam outros alvos ao alcance. Cada cópia realiza sua própria jogada de ataque. Em um acerto, causa dano de força igual ao dano da Espada Voadora, incluindo o modificador.",
+      "page": 14,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Espada Voadora",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-flying-sword.feature.voo-da-espada.l7.1",
+      "name": "VOO DA ESPADA",
+      "level": 7,
+      "description": "No 7º nível, seu domínio telecinético permite comandar a arma remotamente e usá-la como transporte. Você pode ficar de pé sobre ela e tratá-la como uma Vassoura Voadora, embora somente você possa montá-la; qualquer coisa carregada pela espada cai se você atacar com ela.\n\nAlém disso, o alcance dos ataques da Espada Voadora é dobrado.",
+      "page": 14,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Espada Voadora",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-flying-sword.feature.barragem-de-espadas-fantasmas.l15.1",
+      "name": "BARRAGEM DE ESPADAS FANTASMAS",
+      "level": 15,
+      "description": "No 15º nível, ao usar Surto das Espadas Fantasmas, você pode criar duas cópias adicionais, totalizando quatro, e cada uma pode atacar um alvo diferente ao alcance.\n\nAlém disso, ao usar qualquer outra opção de Surto Arcano, você pode criar uma única cópia fantasmagórica em seu próximo ataque antes do fim do turno.",
+      "page": 14,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Espada Voadora",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-flying-sword.feature.movimento-supremo.l20.1",
+      "name": "MOVIMENTO SUPREMO",
+      "level": 20,
+      "description": "No 20º nível, você domina o movimento supremo de seu estilo e libera um golpe imparável. Como um ataque dentro da ação de Ataque, carregue sua espada com poder místico e envie-a em uma explosão. Todas as criaturas em uma linha de 36 metros de comprimento e 4,5 metros de largura realizam um teste de Destreza. Em uma falha, sofrem 6d6 de dano cortante e 6d6 de dano de força; em um sucesso, sofrem metade. Você pode excluir da área um número de criaturas igual ao seu modificador de Inteligência.\n\nSe a espada estava infundida por Golpe Mágico com uma magia de área, como Bola de Fogo, a área da magia torna-se a área desta característica. Caso contrário, a magia é descarregada contra o primeiro alvo, tratando uma falha no teste como um acerto de Golpe Mágico.\n\nDepois de usar esta característica, você não pode usá-la novamente até concluir um descanso longo.",
+      "page": 14,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Espada Voadora",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

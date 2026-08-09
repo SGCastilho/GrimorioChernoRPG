@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-favored-soul-retia-burden-of-gotham",
+    "identifier": "bbb-favored-soul-retia-burden-of-gotham",
+    "name": "Fardo de Gotham",
+    "originalName": "Burden of Gotham",
+    "aliases": [
+      "Burden of Gotham"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "99–100",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 99
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Um herdeiro que empunha o poder de Gotham, deus da não-morte.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 99
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-gotham.feature.mestre-da-necromancia.l1.1",
+      "name": "MESTRE DA NECROMANCIA",
+      "level": 1,
+      "description": "Todas as magias de Necromancia e as magias do grupo Moralismos Desvinculados contam como estando na lista da Alma Favorecida para você, permitindo aprendê-las e conjurá-las. Você recebe um espaço de Magia de Pacto adicional do mesmo nível dos demais espaços da tabela da Alma Favorecida e que funciona da mesma forma, mas esse espaço especial só pode ser usado para conjurar magias da escola de Necromancia.",
+      "page": 99,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-gotham.feature.corpo-sobrenatural.l1.1",
+      "name": "CORPO SOBRENATURAL",
+      "level": 1,
+      "description": "Você ganha proficiência em salvaguardas de Constituição e resistência a dano necrótico.",
+      "page": 99,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-gotham.feature.fortitude-mortifera.l6.1",
+      "name": "FORTITUDE MORTÍFERA",
+      "level": 6,
+      "description": "Quando dano reduzir você a 0 PV, faça uma salvaguarda de Constituição com CD 5 + o dano sofrido, a menos que o dano seja radiante ou resulte de um acerto crítico. Em sucesso, fica com 1 PV em vez disso. Cada vez que evitar cair a 0 PV dessa forma, a CD aumenta em 2 até você completar um Descanso Curto ou Longo.",
+      "page": 100,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-gotham.feature.inflicao-voraz.l10.1",
+      "name": "INFLIÇÃO VORAZ",
+      "level": 10,
+      "description": "No lugar de um ataque com arma, pode gastar um uso de Purificação para conjurar infligir ferimentos numa criatura ao alcance, sem gastar espaço, como se usasse um de seus espaços de Magia de Pacto. Não precisa conhecer nem preparar a magia. Em um acerto, escolha recuperar PV iguais ao dano causado ou receber a mesma quantidade como PV temporários. Se errar, o uso de Purificação é recuperado no fim do turno.",
+      "page": 100,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-favored-soul-retia-burden-of-gotham.feature.animar-servos.l13.1",
+      "name": "ANIMAR SERVOS",
+      "level": 13,
+      "description": "Uma vez por Descanso Longo, conjure 1d4 + 2 Servos em Decomposição, cada um em um espaço desocupado a até 9 m. Eles rolam iniciativa em conjunto e compartilham uma única reserva de PV igual a 15 × o número de servos; se um morrer por dano, todos morrem, e não podem recuperar PV. Usam seu bônus de proficiência nas salvaguardas, sua CD de magia para Visagem de Pesadelo e seu bônus de ataque mágico nos ataques de Garra. Eles obedecem a seus comandos. Se um iniciar o turno a mais de 9 m de você, deve tentar aproximar-se; se não conseguir, usa Esquivar após fazer o possível. Sem ordens, aproximam-se e se defendem, inclusive atacando hostis. Todos morrem 10 minutos após serem invocados.",
+      "page": 100,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

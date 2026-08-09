@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-blood-minister-somnus-grim-hunter",
+    "identifier": "bbb-blood-minister-somnus-grim-hunter",
+    "name": "Caçador Sombrio",
+    "originalName": "Grim Hunter",
+    "aliases": [
+      "Grim Hunter"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "73",
+    "chapter": "Capítulo IX: O Ministro de Sangue",
+    "page": 73
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "blood-minister-somnus",
+    "identifier": "blood-minister",
+    "name": "Ministro de Sangue"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "blood-minister",
+    "selectionLevel": 3,
+    "description": "Um caçador eficiente e disciplinado que transforma o próprio corpo em campo de experimentação. O Caçador Sombrio leva a aplicação física do sangue ao limite, concentrando-se em manipular o que permanece dentro do corpo sem desperdiçá-lo externamente.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 73
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-blood-minister-somnus-grim-hunter.feature.escudo-arterial.l3.1",
+      "name": "Escudo Arterial",
+      "level": 3,
+      "description": "Manipulando o sangue em suas veias, você reforça o corpo no instante do impacto. Uma quantidade de vezes por Descanso igual ao seu bônus de proficiência, pode conjurar o truque Defletir como ação bônus ou como reação ao ser atingido por um ataque. Depois de gastar todos os usos gratuitos, pode continuar usando a característica gastando 1 Dado de Vida por uso; role esse dado e recupere PV iguais ao resultado. Você também pode optar por gastar o dado mesmo quando ainda possui usos gratuitos.",
+      "page": 73,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-grim-hunter.feature.critico-circulante.l3.1",
+      "name": "Crítico Circulante",
+      "level": 3,
+      "description": "Você obtém acerto crítico com 19 ou 20 no d20. Além disso, em combate, quando obtém um acerto crítico numa jogada de ataque ou tira 20 natural em uma jogada de ataque ou teste de habilidade, recupera 1 Dado de Vida de Ministro de Sangue.",
+      "page": 73,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-grim-hunter.feature.sobrevivencia-sombria.l7.1",
+      "name": "Sobrevivência Sombria",
+      "level": 7,
+      "description": "Você adiciona metade de seu bônus de proficiência às suas salvaguardas, mesmo quando já adicionaria seu bônus de proficiência completo.",
+      "page": 73,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-grim-hunter.feature.aprimoramento-do-estilo-de-luta.l11.1",
+      "name": "Aprimoramento do Estilo de Luta",
+      "level": 11,
+      "description": "O Estilo de Luta escolhido no 2º nível é aprimorado. Se ele não possuir uma forma aprimorada, escolha outro Estilo de Luta disponível ao Ministro de Sangue e obtenha-o.",
+      "page": 73,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-grim-hunter.feature.critico-circulante-perfeito.l15.1",
+      "name": "Crítico Circulante Perfeito",
+      "level": 15,
+      "description": "Você obtém um acerto crítico com um resultado 18, 19 ou 20 no d20.",
+      "page": 73,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-inscriptor-space-opera",
+    "identifier": "zagalhta-inscriptor-space-opera",
+    "name": "Ópera Espacial",
+    "originalName": "Space Opera",
+    "aliases": [
+      "Space Opera"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "158–159",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 158
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Inscritor que transforma explorações, mechas e monstros alienígenas em épicos de perseverança, escrevendo velocidade de dobra, proezas improváveis e fusões de frames como se a aventura fosse uma narrativa inevitável.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo-opera-espacial",
+        "title": "Magias de Capítulo — Ópera Espacial",
+        "page": 158,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spell",
+            "label": "Magia"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spell": "Zona Antigravidade"
+          },
+          {
+            "level": "3º",
+            "spell": "Purga Gravitacional"
+          },
+          {
+            "level": "5º",
+            "spell": "Meteoros Minúsculos"
+          },
+          {
+            "level": "7º",
+            "spell": "Santuário Privado"
+          },
+          {
+            "level": "9º",
+            "spell": "Nova Morta"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 158
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-inscriptor-space-opera.feature.ir-audazmente.l1.1",
+      "name": "IR AUDAZMENTE",
+      "level": 1,
+      "description": "Pode prender a respiração por 10 minutos e não precisa de ar para sobreviver no vácuo; recebe aceleração 0-G igual ao dobro do deslocamento base; e resistência a radiante.",
+      "page": 158,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-inscriptor-space-opera.feature.velocidade-de-dobra.l5.1",
+      "name": "VELOCIDADE DE DOBRA",
+      "level": 5,
+      "description": "Como ação bônus, gaste Reviravolta Narrativa e escolha até metade da proficiência, arredondada para cima, em criaturas visíveis. Durante 1 minuto, cada alvo pode usar o efeito uma vez: como ação bônus recebe teleporte igual ao deslocamento base até o fim do turno e realiza Disparar; ou, ao ser atingido por ataque visível, usa reação para fazê-lo errar automaticamente e teleporta a espaço visível a até 9 m.",
+      "page": 158,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-inscriptor-space-opera.feature.nunca-me-diga-as-chances.l8.1",
+      "name": "NUNCA ME DIGA AS CHANCES",
+      "level": 8,
+      "description": "Em testes de atributo feitos como parte de magia de Inscritor (como dissipar magia ou contra-magia), some a proficiência se ainda não somava. Além disso, quando fizer ataque, salvaguarda ou teste com desvantagem, pode gastar um uso para escolher o maior d20; usos por Descanso iguais à proficiência.",
+      "page": 159,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-inscriptor-space-opera.feature.faca-acontecer.l12.1",
+      "name": "FAÇA ACONTECER",
+      "level": 12,
+      "description": "Quando criatura sob Velocidade de Dobra falhar em ataque, teste ou salvaguarda, pode consumir o efeito para obter sucesso automático. Até o início do próximo turno dela, rolagens do mesmo tipo tratam o d20 como no mínimo metade de seu nível de Inscritor, se o resultado original for menor.",
+      "page": 159,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-inscriptor-space-opera.feature.portal-de-fusao-de-frame.l20.1",
+      "name": "PORTAL DE FUSÃO DE FRAME",
+      "level": 20,
+      "description": "Uma vez por Descanso Longo, produz conjurar eco de frame como magia de 9º nível, sem espaço nem componentes materiais. Ignora as verificações de concentração normalmente causadas por pilotar o eco, e ele recebe simultaneamente as habilidades de sua variante DGR e de frame lunar.",
+      "page": 159,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

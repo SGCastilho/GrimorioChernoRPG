@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sorcerer-witchcraft",
+    "identifier": "lyre-sorcerer-witchcraft",
+    "name": "Bruxaria",
+    "originalName": "Witchcraft",
+    "aliases": [
+      "Witchcraft"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "485–486",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 485
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Bruxas, suas descendentes e aqueles que aprenderam com elas manipulam energia natural e carma por meio da Bruxaria. Essa feitiçaria altera o fluxo de energia no corpo dos outros e chega a influenciar sorte e destino para atender aos desejos do conjurador.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 485
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sorcerer-witchcraft.feature.maldicao-abjurativa.l1.1",
+      "name": "MALDIÇÃO ABJURATIVA",
+      "level": 1,
+      "description": "Quando conjura uma magia de Feiticeiro de 1º nível ou superior e uma criatura falha na salvaguarda contra ela ou é atingida por um ataque da magia, você pode gastar 1 Ponto de Feitiçaria para amaldiçoá-la até o início do seu próximo turno. Enquanto amaldiçoada, sempre que fizer uma jogada de ataque ou salvaguarda, rola 1d4 e subtrai o resultado. No 12º nível de Feiticeiro, passa a subtrair 1d8.",
+      "page": 485,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-witchcraft.feature.maldicao-da-inflicao.l1.1",
+      "name": "MALDIÇÃO DA INFLIÇÃO",
+      "level": 1,
+      "description": "Você conhece Infligir Ferimentos como magia de Feiticeiro, sem contar no limite de magias conhecidas. Ao conjurá-la, pode fazer um ataque de magia à distância contra uma criatura visível a até 18 metros em vez de um ataque de magia corpo a corpo.",
+      "page": 485,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-witchcraft.feature.bruxaria.l6.1",
+      "name": "BRUXARIA",
+      "level": 6,
+      "description": "Você pode gastar Pontos de Feitiçaria nos seguintes efeitos. Coalhar Arcano: quando uma criatura visível a até 36 metros recupera pontos de vida, use reação e gaste 1 ponto para reduzir a cura à metade, arredondado para baixo; depois ela faz salvaguarda de Constituição ou fica envenenada até o fim do seu próximo turno. Sorte Gregária: como ação, gaste 2 pontos e toque uma criatura para dar a ela 1 ponto de sorte até ser usado ou até um Descanso Longo; quando errar um ataque ou falhar uma salvaguarda, ela pode gastar o ponto para rolar um novo d20 e substituir o anterior. Apenas 1 ponto por criatura. Infortúnio Conjunto: como ação, gaste 2 pontos e escolha duas criaturas visíveis a até 18 metros, separadas por no máximo 12 metros. Cada uma faz salvaguarda de Carisma; em falha, fica amaldiçoada por 1 minuto, e qualquer efeito prejudicial que afete uma é tratado como afetando a outra também, incluindo dano contínuo, condições, desvantagem, penalidades de rolagem e redução de deslocamento. Efeitos idênticos não se acumulam. Cada uma repete a salvaguarda no fim do turno, encerrando em sucesso. Panaceia: como ação, gaste pelo menos 1 ponto para conjurar Curar Ferimentos sem espaço em uma criatura ao alcance; o nível da magia é igual ao número de Pontos de Feitiçaria gastos, limitado pelo seu maior espaço de Feiticeiro. Por 1 ponto adicional para cada efeito, também pode remover envenenamento; cegueira ou surdez temporária; uma progressão de petrificação; paralisia; uma maldição causada por magia; ou uma doença não mágica.",
+      "page": 485,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-witchcraft.feature.dancando-no-vento.l14.1",
+      "name": "DANÇANDO NO VENTO",
+      "level": 14,
+      "description": "Você ganha deslocamento de voo com pairar igual ao seu deslocamento base. Se já possuir deslocamento de voo com pairar maior, inclusive temporariamente, seu movimento em voo não provoca ataques de oportunidade. Você pode tocar uma criatura voluntária de no máximo uma categoria de tamanho maior e fazê-la pairar sem peso com você enquanto mantiver uma das mãos dedicada a ela; isso não conta como carregar seu peso, mas soltá-la faz com que caia imediatamente.",
+      "page": 485,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-witchcraft.feature.colher-fortuna.l18.1",
+      "name": "COLHER FORTUNA",
+      "level": 18,
+      "description": "Quando reduz uma criatura hostil a 0 pontos de vida, você extrai dela carma positivo e recupera 1d4 Pontos de Feitiçaria. Depois disso, não pode recuperar novamente desta forma até o início do seu próximo turno.",
+      "page": 486,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

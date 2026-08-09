@@ -1,0 +1,150 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-fighter-skeletal-blade",
+    "identifier": "ryoko-fighter-skeletal-blade",
+    "name": "Lâmina Esquelética",
+    "originalName": "Skeletal Blade",
+    "aliases": [
+      "Skeletal Blade",
+      "Lâmina Esquelética"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "178–179",
+    "chapter": "Capítulo 9: Classes",
+    "page": 178
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Um guerreiro capaz de remodelar o próprio esqueleto em armas, armadura, asas e outras adaptações de combate.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 178
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-fighter-skeletal-blade.feature.fisico-maleavel.l3.1",
+      "name": "FÍSICO MALEÁVEL",
+      "level": 3,
+      "description": "Como ação, altere seu esqueleto e aparência, ficando até 30 cm mais alto/baixo e mudando traços faciais sem mudar disposição de membros nem cor de olhos/cabelo/pele. Inteligência (Investigação) contra CD 8 + Constituição + proficiência detecta o disfarce. Dura até encerrar com ação ou começar Descanso Longo. Usos iguais a Constituição (mín. 1), recuperados em Descanso Curto ou Longo.",
+      "page": 178,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-fighter-skeletal-blade.feature.forma-esqueletica.l3.1",
+      "name": "FORMA ESQUELÉTICA",
+      "level": 3,
+      "description": "Como ação bônus por 1 minuto, projete ossos como armadura e uma lâmina esquelética: arma simples corpo a corpo, Acuidade, opção de Golpe Superior Empalar, mágica, 1d8 perfurante e impossível de desarmar. Escolha um benefício: alcance +1,5 m; caminhada +3 m; escalada = caminhada; +1 CA; ou PV temporários = Constituição (mín.1) no início de cada turno. Ação bônus troca o benefício. Dano da lâmina vira d10 no 10º e d12 no 15º. Usos iguais a Constituição (mín.1) por Descanso Longo.",
+      "page": 178,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-fighter-skeletal-blade.feature.prodigio-osseo.l7.1",
+      "name": "PRODÍGIO ÓSSEO",
+      "level": 7,
+      "description": "Ao entrar na Forma Esquelética, escolha um benefício adicional e acrescente à arma uma combinação de propriedade/Golpe Superior: Impacto + Golpe Recuante; Leve + Tendão Cortado; ou Pesada + Onda de Choque.",
+      "page": 178,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-fighter-skeletal-blade.feature.cavaleiro-esqueletico.l10.1",
+      "name": "CAVALEIRO ESQUELÉTICO",
+      "level": 10,
+      "description": "+1 em ataques e danos com a lâmina esquelética (+2 no 18º). Ao entrar na Forma, escolha um benefício adicional: asas esqueléticas, voo = caminhada e pairar; resistência a frio, elétrico, necrótico e veneno; +1d8 necrótico em ataques corpo a corpo; ou criatura que começa turno agarrada por você sofre 2d12 perfurante.",
+      "page": 179,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-fighter-skeletal-blade.feature.uno-com-o-nada.l15.1",
+      "name": "UNO COM O NADA",
+      "level": 15,
+      "description": "Ao ser reduzido a 0 PV em Forma Esquelética, a forma termina e você fica com 1 PV. Uma vez por Descanso Curto ou Longo.",
+      "page": 179,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-fighter-skeletal-blade.feature.arma-viva.l18.1",
+      "name": "ARMA VIVA",
+      "level": 18,
+      "description": "Ao entrar em Forma Esquelética, receba dois benefícios adicionais à sua escolha entre Forma Esquelética e Cavaleiro Esquelético.",
+      "page": 179,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

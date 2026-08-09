@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-druid-circle-of-shadows",
+    "identifier": "lyre-druid-circle-of-shadows",
+    "name": "Círculo das Sombras",
+    "originalName": "Circle of Shadows",
+    "aliases": [
+      "Circle of Shadows"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "453",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 453
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Ligados às forças que desbotam a paisagem do Reino das Sombras, estes Druidas manipulam escuridão, presságios e formas monstruosas. O uso constante dessa magia costuma conferir a eles um temperamento sombrio e uma familiaridade incomum com criaturas nascidas dos ambientes mais extremos da natureza.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 453
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-druid-circle-of-shadows.feature.como-na-escuridao.l2.1",
+      "name": "COMO NA ESCURIDÃO",
+      "level": 2,
+      "description": "Você pode realizar Esconder-se como ação bônus mesmo estando apenas levemente obscurecido ou em meia-luz/escuridão. Se estiver à vista de outra criatura ao fazê-lo, sua aparência escurece e se mistura ao ambiente até que você seja revelado.",
+      "page": 453,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-shadows.feature.proficiencias-bonus.l2.1",
+      "name": "PROFICIÊNCIAS BÔNUS",
+      "level": 2,
+      "description": "Você ganha proficiência em Furtividade.",
+      "page": 453,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-shadows.feature.forma-monstruosa.l6.1",
+      "name": "FORMA MONSTRUOSA",
+      "level": 6,
+      "description": "Ao usar Forma Selvagem, você pode assumir a forma de monstruosidades que atendam aos demais requisitos. Para monstruosidades, o limite de ND é sempre metade do seu bônus de proficiência, arredondado para baixo. Independentemente dos usos de Forma Selvagem, você só pode transformar-se em monstruosidade dessa maneira uma vez por Descanso Curto ou Longo, salvo se usar Avatar Pessoal.",
+      "page": 453,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-shadows.feature.sombra-predatoria.l6.1",
+      "name": "SOMBRA PREDATÓRIA",
+      "level": 6,
+      "description": "Ao usar Forma Selvagem, você também fica invisível por 1 minuto ou até realizar uma ação que encerraria Invisibilidade. Enquanto estiver em Forma Selvagem, pode usar uma ação bônus para ficar invisível novamente da mesma forma ou teleportar-se até 18 metros para um espaço desocupado em meia-luz ou ao menos parcialmente coberto por sombra. Você pode usar essa ação bônus um número de vezes por Descanso Longo igual à metade do seu nível de Druida, arredondado para baixo.",
+      "page": 453,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-shadows.feature.pressagio-sombrio.l10.1",
+      "name": "PRESSÁGIO SOMBRIO",
+      "level": 10,
+      "description": "Quando conjurar uma magia usando um espaço, escolha você ou uma criatura a até 9 metros para receber uma visão nebulosa de uma tragédia futura. Por 1 minuto, ela recebe um bônus na próxima salvaguarda que realizar igual ao nível do espaço gasto. Usos por Descanso Curto ou Longo iguais ao seu bônus de proficiência.",
+      "page": 453,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-shadows.feature.refugio-de-sombras.l14.1",
+      "name": "REFÚGIO DE SOMBRAS",
+      "level": 14,
+      "description": "Ao iniciar um Descanso Longo, você pode invocar o poder do Reino das Sombras para criar uma parede giratória de escuridão em uma esfera de 6 metros de raio centrada em um ponto escolhido. A barreira leva 10 minutos para se formar e permanece até o descanso ser interrompido ou terminar. Dentro dela, todas as criaturas vivas ficam invisíveis para observadores externos. Se uma criatura Média ou maior que não estava dentro da área quando ela foi criada entrar, as criaturas no interior permanecem invisíveis para ela por 1 minuto ou até que, individualmente, realizem uma ação que encerraria Invisibilidade.",
+      "page": 453,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-bard-wild-erudite",
+    "identifier": "lyre-bard-wild-erudite",
+    "name": "Erudito Selvagem",
+    "originalName": "Wild Erudite",
+    "aliases": [
+      "Wild Erudite"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "437–438",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 437
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "O Erudito Selvagem estuda relatos de monstros, guerreiros lendários e grandes batalhas para descobrir como enfrentá-los. Suas canções transmitem esse conhecimento aos companheiros e transformam pesquisa histórica em vantagem tática.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 437
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-bard-wild-erudite.feature.pesquisa-das-lendas.l3.1",
+      "name": "PESQUISA DAS LENDAS",
+      "level": 3,
+      "description": "Você ganha Especialização em Natureza. Como ação bônus, escolha uma criatura não humanoide que possa ver a até 18 metros e faça um teste de Natureza com CD igual ao ND da criatura + 10. Em um sucesso, role 1d6 um número de vezes igual à metade do seu bônus de proficiência, arredondado para baixo, e obtenha para cada rolagem uma informação correspondente: 1) CA e deslocamentos; 2) salvaguardas em que é proficiente; 3) imunidades, resistências, tipos de dano e limiar de dano; 4) presença de resistência mágica, imunidade mágica, táticas de matilha, evasão, crítico aprimorado, crítico superior ou regeneração; 5) tipo(s) e alinhamento; 6) uma informação tática crítica — por 1 minuto, você e criaturas que possuam sua Inspiração de Bardo têm vantagem na primeira jogada de ataque, teste de atributo ou salvaguarda contra esse inimigo em cada turno. Além disso, quando uma criatura usar sua Inspiração de Bardo para acertar uma criatura dentro desse alcance, você pode rolar 1d6 e aprender automaticamente uma das informações correspondentes.",
+      "page": 437,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-wild-erudite.feature.guerreiro-treinado.l3.1",
+      "name": "GUERREIRO TREINADO",
+      "level": 3,
+      "description": "Você ganha proficiência com armaduras leves, escudos e armas marciais.",
+      "page": 438,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-wild-erudite.feature.golpe-magico.l6.1",
+      "name": "GOLPE MÁGICO",
+      "level": 6,
+      "description": "Quando conjurar uma magia com tempo de conjuração de 1 ação, você pode realizar um ataque com arma como parte da mesma ação.",
+      "page": 438,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-wild-erudite.feature.sabio-situacional.l6.1",
+      "name": "SÁBIO SITUACIONAL",
+      "level": 6,
+      "description": "Se uma criatura que possua sua Inspiração de Bardo realizar um ataque que tenha desvantagem por estar no alcance longo de uma arma, por cobertura ou por uma condição ambiental, como combate subaquático, ela pode, antes do ataque, aplicar sua Inspiração normalmente e também ignorar a desvantagem causada por esses fatores.",
+      "page": 438,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-wild-erudite.feature.certeza-absoluta.l14.1",
+      "name": "CERTEZA ABSOLUTA",
+      "level": 14,
+      "description": "Quando você ou um aliado a até 18 metros acertar uma criatura com um ataque, você pode gastar um uso de Inspiração de Bardo como reação para fazer esse ataque, e todos os demais ataques do mesmo atacante contra esse alvo durante o turno, ignorarem resistências e tratarem imunidades como resistências. Se o aliado já possuir sua Inspiração e aplicá-la ao ataque, ele recebe o mesmo benefício para esse ataque e os demais contra o alvo no turno, sem exigir sua reação.",
+      "page": 438,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

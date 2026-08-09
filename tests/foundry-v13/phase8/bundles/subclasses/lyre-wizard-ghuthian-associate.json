@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-wizard-ghuthian-associate",
+    "identifier": "lyre-wizard-ghuthian-associate",
+    "name": "Associado Ghuthiano",
+    "originalName": "Ghuthian Associate",
+    "aliases": [
+      "Ghuthian Associate"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "508",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 508
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Associados trabalham ao lado dos Mestres Ghuthianos, ajudando em pesquisas, aulas e assuntos particulares. Normalmente aspiram a tornar-se Mestres do colégio e usam essa função para provar sua dedicação. Em troca, recebem treinamento prático e aprendem a conjurar com enorme eficiência.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 508
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-wizard-ghuthian-associate.feature.treinamento-excelente.l2.1",
+      "name": "TREINAMENTO EXCELENTE",
+      "level": 2,
+      "description": "Você aprende um truque adicional que não conta no número de truques de Mago conhecidos. Pode escolhê-lo de qualquer lista de magias, mas ele é tratado como magia de Mago para você.",
+      "page": 508,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-ghuthian-associate.feature.recuperacao-arcana-maior.l2.1",
+      "name": "RECUPERAÇÃO ARCANA MAIOR",
+      "level": 2,
+      "description": "Quando usa Recuperação Arcana para restaurar espaços de magia, o nível combinado de espaços que pode recuperar aumenta em uma quantidade igual à metade do seu bônus de proficiência, arredondado para baixo.",
+      "page": 508,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-ghuthian-associate.feature.aplicacao-fiscal.l6.1",
+      "name": "APLICAÇÃO FISCAL",
+      "level": 6,
+      "description": "Você possui usos de Aplicação Fiscal iguais à metade do seu nível de Mago, arredondado para baixo. Ao conjurar uma magia com componente material de custo em po, pode gastar um número de usos igual ou superior ao custo total dividido por 250; se o fizer, não precisa fornecer o componente material. Você recupera todos os usos ao terminar um Descanso Longo.",
+      "page": 508,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-ghuthian-associate.feature.rede-de-teleporte.l10.1",
+      "name": "REDE DE TELEPORTE",
+      "level": 10,
+      "description": "Você aprende Palavra de Recordação e Círculo de Teleporte; ambas ficam sempre preparadas, contam como magias de Mago e não ocupam seu limite de preparação. Pode conjurar cada uma normalmente com espaços ou uma vez por Descanso Longo sem gastar espaço. Ao conjurar Palavra de Recordação, pode retornar a qualquer círculo de teleporte cuja sequência de sigilos conheça ou a qualquer templo/local de culto de uma divindade que tenha estudos arcanos ou magia em seus domínios ou portfólios. Para tornar permanente um Círculo de Teleporte, basta conjurá-lo uma vez por dia durante uma semana.",
+      "page": 508,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-wizard-ghuthian-associate.feature.espada-espectral-do-mestre.l14.1",
+      "name": "ESPADA ESPECTRAL DO MESTRE",
+      "level": 14,
+      "description": "Você pode conjurar Espada do Arquimago uma vez por Descanso Longo sem gastar espaço nem componentes materiais. A magia fica sempre preparada e não conta no limite de preparação. Quando conjurada desta forma, pode usar sua ação em cada turno para fazê-la realizar ataques adicionais da mesma maneira que normalmente faria com a ação bônus. Se atacar com ela uma criatura a até 1,5 metro de você, pode agarrar fisicamente a espada e fortalecê-la, fazendo cada acerto causar 1d10 de dano adicional.",
+      "page": 508,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

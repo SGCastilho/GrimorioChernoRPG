@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-inscriptor-retia-shuji-ink",
+    "identifier": "bbb-inscriptor-retia-shuji-ink",
+    "name": "Tinta Shūji",
+    "originalName": "Shuji Ink",
+    "aliases": [
+      "Shuji Ink"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "109",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 109
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Um manipulador da própria tinta, capaz de cortar, envenenar e pintar o mundo com ela.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo-tinta-shuji",
+        "title": "Magias de Capítulo — Tinta Shūji",
+        "page": 109,
+        "description": "Magias conhecidas automaticamente como magias de Inscritor, sem contar no limite de magias conhecidas.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Convocar Familiar; Arma Infundida"
+          },
+          {
+            "level": "3º",
+            "spells": "Imobilizar Pessoa; Despedaçar"
+          },
+          {
+            "level": "5º",
+            "spells": "Medo; Muralha de Vento"
+          },
+          {
+            "level": "7º",
+            "spells": "Tentáculos Negros; Escrito de Horror"
+          },
+          {
+            "level": "9º",
+            "spells": "Vazio de Tinta de Chughlihn; Onda de Choque"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 109
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-inscriptor-retia-shuji-ink.feature.lamina-de-tinta.l1.1",
+      "name": "LÂMINA DE TINTA",
+      "level": 1,
+      "description": "Como ação, invoque um corte de tinta negra e faça um ataque mágico à distância contra uma criatura a até 9 m, ou um ataque mágico corpo a corpo se ela estiver a até 1,5 m. Em acerto, causa dano de veneno igual a 1d8 × seu bônus de proficiência. Se o ataque for crítico, o alvo também fica cego por tinta nos olhos por 1 minuto; no fim de cada turno, faz salvaguarda de Constituição, encerrando a cegueira em sucesso.",
+      "page": 109,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-shuji-ink.feature.pena-envenenada.l5.1",
+      "name": "PENA ENVENENADA",
+      "level": 5,
+      "description": "Quando causar dano com uma magia de Inscritor que conjurar, pode converter qualquer dano da magia em dano de veneno. Se fizer isso e a magia exigir concentração, criaturas que falharem numa salvaguarda contra ela ficam envenenadas pela duração da magia.",
+      "page": 109,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-shuji-ink.feature.notacao-em-negrito.l8.1",
+      "name": "NOTAÇÃO EM NEGRITO",
+      "level": 8,
+      "description": "Quando conjura uma magia usando um espaço produzido por Consulta, todas as jogadas de ataque feitas como parte da magia têm vantagem e todas as salvaguardas contra ela são feitas com desvantagem.",
+      "page": 109,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-shuji-ink.feature.animacao-do-poco-negro.l12.1",
+      "name": "ANIMAÇÃO DO POÇO NEGRO",
+      "level": 12,
+      "description": "Ao espalhar tinta sobre objetos, você os imbui de vida. Uma vez por Descanso Longo, pode conjurar animar objetos sem gastar espaço, sempre como se fosse conjurada em um nível igual à metade de seu nível de Inscritor, no máximo 9º.",
+      "page": 109,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-inscriptor-retia-shuji-ink.feature.onda-vanta.l20.1",
+      "name": "ONDA VANTA",
+      "level": 20,
+      "description": "Uma vez por Descanso Longo, como ação, crie uma esfera de tinta de 18 m de raio centrada num ponto que veja a até 36 m. Cada criatura à sua escolha na área faz salvaguarda de Constituição. Em falha, sofre 12d8 de dano de veneno e fica totalmente coberta de tinta, ficando cega enquanto ela permanecer; não pode ver nem ouvir por qualquer sentido, inclusive visão verdadeira. Em sucesso, sofre metade do dano e não é coberta. No início de cada turno de uma criatura coberta, ela sofre 2d8 de dano de veneno e repete a salvaguarda. Em falha, fica restringida até o início do próximo turno; em sucesso, recupera os sentidos e deixa de ficar cega até o início do próximo turno. Após três sucessos totais, o efeito termina para ela.",
+      "page": 109,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

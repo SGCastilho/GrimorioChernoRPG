@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-gardenia",
+    "identifier": "lyre-petal-knight-retia-gardenia",
+    "name": "Gardênia",
+    "originalName": "Gardenia",
+    "aliases": [
+      "Gardenia"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "393",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 393
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "A Gardênia representa pureza, orgulho e estabilidade. Seu portador usa magia de natureza quase celestial, resiste a ser movido, persegue aberrações e monstruosidades e retorna de ferimentos que derrubariam outros.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 393
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-gardenia.feature.pureza-da-natureza.l2.1",
+      "name": "PUREZA DA NATUREZA",
+      "level": 2,
+      "description": "Ao aprender uma nova magia de Cavaleiro das Pétalas, pode escolher uma magia da lista de Clérigo e tratá-la como magia de Cavaleiro das Pétalas, desde que seja de nível que seus espaços possam conjurar. Ao receber esta característica, pode trocar a magia desse nível e uma outra magia conhecida por magias de Clérigo.",
+      "page": 393,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-gardenia.feature.flagelo-do-desconhecido.l6.1",
+      "name": "FLAGELO DO DESCONHECIDO",
+      "level": 6,
+      "description": "Você não pode ser derrubado por efeitos originados de criaturas do mesmo tamanho que você e tem vantagem em jogadas para resistir ou escapar de agarrões, empurrões e efeitos que o deixariam restringido. Pode tentar escapar de um agarrão como ação bônus.",
+      "page": 393,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-gardenia.feature.postura-real.l6.1",
+      "name": "POSTURA REAL",
+      "level": 6,
+      "description": "Ao acertar uma monstruosidade ou aberração com ataque com arma, causa +1d6 de dano radiante; no 14º nível de Cavaleiro das Pétalas, +2d6. Ao acertar uma dessas criaturas, pode também gastar um espaço de Magia de Pacto para obrigá-la e todas as criaturas do mesmo tipo a até 9 metros dela a fazer salvaguarda de Sabedoria. Em falha, ficam expulsas por 1 minuto ou até sofrerem dano: devem tentar se afastar de você, não podem voluntariamente entrar a 9 metros, não podem usar reações e só podem usar Disparada ou tentar escapar de efeitos que as impeçam de se mover; sem lugar para ir, podem usar Esquivar.",
+      "page": 393,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-gardenia.feature.ramos-da-gardenia.l11.1",
+      "name": "RAMOS DA GARDÊNIA",
+      "level": 11,
+      "description": "Você recebe três Ramos Virtuosos. AMORTECEDOR: até o início de seu próximo turno, sempre que sofrer dano reduza-o em metade de seu nível de Cavaleiro das Pétalas. EXPEDIÊNCIA: criaturas escolhidas afetadas pela magia podem usar reação para mover até metade do deslocamento sem provocar ataques de oportunidade. REJUVENESCIMENTO: se a magia restaurou PV de uma criatura, cure também uma das condições envenenado, amedrontado, atordoado ou enfeitiçado.",
+      "page": 393,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-gardenia.feature.coracao-orgulhoso.l15.1",
+      "name": "CORAÇÃO ORGULHOSO",
+      "level": 15,
+      "description": "Quando dano reduzir você a 0 PV, faça uma salvaguarda de Carisma com CD igual ao dano que excedeu seus PV restantes. Em sucesso, em vez disso fica com 1d6 PV. Cada sucesso aumenta cumulativamente a CD em 2 para a próxima vez; a CD reinicia após um Descanso Longo.",
+      "page": 393,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

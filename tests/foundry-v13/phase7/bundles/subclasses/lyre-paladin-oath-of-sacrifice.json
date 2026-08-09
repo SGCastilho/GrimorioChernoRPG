@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-paladin-oath-of-sacrifice",
+    "identifier": "lyre-paladin-oath-of-sacrifice",
+    "name": "Juramento do Sacrifício",
+    "originalName": "Oath of Sacrifice",
+    "aliases": [
+      "Oath of Sacrifice"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "471–472",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 471
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Normalmente agentes de Harros, estes Paladinos colocam aqueles sob sua proteção acima de si mesmos e oferecem a própria segurança para manter outros vivos. Muitos se chamam de Mão Vermelha, em lembrança ao sacrifício de Harros. Magias de Juramento — 3º: Inimigo Dedicado, Santuário; 5º: Nublar, Esfera Flamejante; 9º: Manto Fantasmagórico, Equilíbrio de Vitalidade; 13º: Localizar Criatura, Pele de Pedra; 17º: Dominar Pessoa, Muralha de Pedra. Dogmas — Dê de Si Mesmo: conceda aos outros a proteção que desejaria se seu braço de espada falhasse. Erga o Punho: tolerar o mal, mesmo por propósito diligente, só produz mais sofrimento; revide sem demora. Valorize a Vida Acima de Tudo: respeite aquilo que é perdido em cada sacrifício e não se entregue irrefletidamente.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-juramento",
+        "title": "Magias de Juramento",
+        "page": 471,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Inimigo Dedicado; Santuário"
+          },
+          {
+            "level": "5º",
+            "spells": "Nublar; Esfera Flamejante"
+          },
+          {
+            "level": "9º",
+            "spells": "Manto Fantasmagórico; Equilíbrio de Vitalidade"
+          },
+          {
+            "level": "13º",
+            "spells": "Localizar Criatura; Pele de Pedra"
+          },
+          {
+            "level": "17º",
+            "spells": "Dominar Pessoa; Muralha de Pedra"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 471
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-paladin-oath-of-sacrifice.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Você recebe duas opções. Casca Dourada: como ação, escolha a até 9 metros um número de criaturas igual ao seu bônus de proficiência, sem poder escolher a si mesmo. Cada uma recebe pontos de vida temporários iguais a 1d10 multiplicado pelo maior nível de espaço de Paladino ao qual você tem acesso. Eles duram 1 minuto ou até você ser reduzido a 0 pontos de vida; enquanto possuí-los, a criatura tem resistência a perfurante, cortante e contundente. Selo de Proteção: como ação bônus, escolha uma criatura que possa ver a até 18 metros. Por 1 minuto ou até você cair a 0 pontos de vida, ela tem resistência a perfurante, cortante e contundente. Durante esse minuto, você ou o alvo pode usar uma reação quando sofrer dano para reduzi-lo a 0, encerrando então o efeito.",
+      "page": 472,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-sacrifice.feature.aura-de-escudo.l7.1",
+      "name": "AURA DE ESCUDO",
+      "level": 7,
+      "description": "Quando uma criatura dentro da Aura de Proteção sofrer dano de um ataque ou efeito que a tenha como único alvo, você pode usar sua reação para reduzir esse dano à metade. Se fizer isso, você também sofre a mesma quantidade de dano, que não pode ser reduzida. O dano reduzido dessa forma não pode deixar o alvo inicial abaixo de 1 ponto de vida.",
+      "page": 472,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-sacrifice.feature.sentinela-imprudente.l15.1",
+      "name": "SENTINELA IMPRUDENTE",
+      "level": 15,
+      "description": "Se uma criatura aliada a até 9 metros estiver Morrendo, com 0 pontos de vida ou tiver morrido no último minuto, você tem vantagem em ataques e testes de atributo. Além disso, se estiver a até 1,5 metro de uma criatura com 0 pontos de vida e ela for alvo único de um ataque ou magia, você pode usar sua reação para se tornar o alvo. Pode redirecionar sem gastar reação, desde que não esteja com 0 pontos de vida nem incapacitado; nesse caso, o ataque redirecionado tem vantagem e/ou suas salvaguardas contra o efeito têm desvantagem.",
+      "page": 472,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-sacrifice.feature.ascensao-e-queda.l20.1",
+      "name": "ASCENSÃO E QUEDA",
+      "level": 20,
+      "description": "Ao ser reduzido a 0 pontos de vida, você continua consciente e pode agir normalmente enquanto estiver Morrendo. Sofrer dano não causa falha automática em salvaguarda contra a morte; em vez disso, você deve realizar uma salvaguarda contra a morte com desvantagem. Três falhas ainda o matam, e um acerto crítico contra você causa uma falha automática. Três sucessos ou um 20 natural fazem você recuperar 10 pontos de vida. Cura recebida enquanto estiver a 0, exceto por sucessos nas salvaguardas, primeiro é reduzida em 10 por cada falha acumulada, removendo uma falha para cada 10 pontos; qualquer cura menor que 10 enquanto ainda houver uma falha vira pontos de vida temporários. Você só pode recuperar pontos de vida normalmente depois de não ter mais falhas.",
+      "page": 472,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

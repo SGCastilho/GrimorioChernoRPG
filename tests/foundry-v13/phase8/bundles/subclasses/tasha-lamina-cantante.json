@@ -1,0 +1,140 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-lamina-cantante",
+    "identifier": "tasha-lamina-cantante",
+    "name": "Lâmina Cantante",
+    "originalName": "",
+    "aliases": [
+      "Lâmina Cantante"
+    ]
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "68–70",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 68
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Lâminas Cantantes dominam a tradição da magia que incorpora o manejo das espadas e a dança. Originalmente criada pelos elfos, essa tradição foi adotada por praticantes de outras raças, que honram e expandem os métodos élficos. Em combate, um Lâmina Cantante utiliza uma série de manobras intrincadas e elegantes que repelem danos e permitem a ele canalizar a magia em ataques devastadores e defesas astuciosas. Muitos que já observaram um lâmina cantante em ação lembram-se dessa demonstração como uma das experiências mais bonitas de suas vidas, uma dança gloriosa acompanhada por uma canção laminada.",
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.costa-da-espada-guia-de-aventureiros-d-d-5e",
+        "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+        "page": null,
+        "text": "",
+        "sourceTitle": ""
+      }
+    ],
+    "sourcePage": 68
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-lamina-cantante.feature.treinamento-na-guerra-e-na-musica.l2.1",
+      "name": "TREINAMENTO NA GUERRA E NA MÚSICA",
+      "level": 2,
+      "description": "Você adquire proficiência com armaduras leves, e você ganha proficiência com um tipo de arma de ataque corpo a corpo de uma mão, a sua escolha. Você também ganha proficiência na perícia Atuação, caso ainda não a possua.",
+      "page": 68,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-lamina-cantante.feature.cancao-da-lamina.l2.1",
+      "name": "CANÇÃO DA LÂMINA",
+      "level": 2,
+      "description": "Você pode invocar uma magia élfica secreta chamada de Canção da Lâmina, desde que você não esteja vestindo uma armadura média ou pesada, ou usando um escudo. Essa magia lhe abençoa com uma velocidade, agilidade e foco sobrenaturais. Você pode usar uma ação bônus para iniciar a Canção da Lâmina, que dura por 1 minuto. Ela termina antes se você ficar incapacitado, vestir uma armadura média ou pesada, usar um escudo, ou se você fizer uso das duas mãos para atacar com uma arma. Você também pode dissipar a Canção da Lâmina quando desejar (nenhuma ação é necessária). Enquanto sua Canção da Lâmina estiver ativa, você tem os seguintes benefícios: Você ganha um bônus em sua CA igual ao seu modificador de Inteligência (mínimo de +1). Seu deslocamento aumenta em 3 metros. Você tem vantagem nos testes de Destreza (Acrobacia). Você ganha um bônus em qualquer salvaguarda de Constituição que você fizer para manter sua concentração em uma magia. O bônus é igual ao seu modificador de Inteligência (minimo de +l). Você pode usar essa característica uma quantia de vezes igual ao seu bônus de proficiência, e você recupera todos os usos após terminar um descanso curto ou longo.",
+      "page": 68,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-lamina-cantante.feature.ataque-extra.l6.1",
+      "name": "ATAQUE EXTRA",
+      "level": 6,
+      "description": "Você pode atacar duas vezes, em vez de uma, sempre que você realizar de uma ação de Ataque no seu turno. Além disso, você pode conjurar um de seus truques no lugar de um desses ataques.",
+      "page": 69,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-lamina-cantante.feature.cancao-da-defesa.l10.1",
+      "name": "CANÇÃO DA DEFESA",
+      "level": 10,
+      "description": "Você pode direcionar sua magia para absorver dano enquanto sua Canção da Lâmina estiver ativa. Quando receber dano, você pode usar sua reação para gastar um espaço de magia e reduzir o dano recebido por você em uma quantia igual a cinco vezes o círculo do espaço de magia gasto.",
+      "page": 69,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-lamina-cantante.feature.cancao-da-vitoria.l14.1",
+      "name": "CANÇÃO DA VITÓRIA",
+      "level": 14,
+      "description": "adicionar o seu modificador de Inteligência (mínimo de +1) ao dano dos ataques de sua arma corpo a corpo enquanto sua Canção da Lâmina estiver ativa.",
+      "page": 69,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

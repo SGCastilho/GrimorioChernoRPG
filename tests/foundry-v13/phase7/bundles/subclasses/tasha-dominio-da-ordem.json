@@ -1,0 +1,164 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-dominio-da-ordem",
+    "identifier": "tasha-dominio-da-ordem",
+    "name": "Domínio da Ordem",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "36–38",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 36
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "O Domínio da Ordem representa a disciplina, bem como a devoção às leis que governam a sociedade, a uma instituição ou filosofia. Clérigos da Ordem ponderam sobre a ordem e a justiça enquanto servem seus deuses, alguns dos quais exemplificados na tabela de Divindades da Ordem. Clérigos da Ordem acreditam que leis bem formuladas estabelecem hierarquias legítimas, e aqueles selecionados pela lei para liderar devem ser obedecidos. Aqueles que obedecem devem se esforçar ao máximo, e se aqueles que lideram falharem em proteger a lei, eles devem ser substituídos. Dessa forma, a lei tece uma rede de obrigações que criam ordem e segurança em um multiverso caótico. Divindades da Ordem Exemplo de Divindade Panteão Aureon Eberron Bane Reinos Esquecidos Majere Dragonlance Pholtus Greyhawk Tyr Reinos Esquecidos",
+    "tables": [],
+    "references": [],
+    "sourcePage": 36
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-dominio-da-ordem.feature.magias-de-dominio.l1.1",
+      "name": "MAGIAS DE DOMÍNIO",
+      "level": 1,
+      "description": "Você ganha magias de domínio nos níveis de clérigo listados na tabela de Magias do Domínio da Ordem. Consulte as características do Domínio Divino no Livro do Jogador para ver como as magias de domínio funcionam. Magias do Domínio da Ordem Nível de Clérigo Magias 1º Comando, Heroísmo 3º Imobilizar Pessoa, Zona da Verdade 5º Palavra Curativa em Massa, Lentidão 7º Greyhawk 9º Reinos Esquecidos",
+      "page": 37,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-ordem.feature.proficiencia-bonus.l1.1",
+      "name": "PROFICIÊNCIA BÔNUS",
+      "level": 1,
+      "description": "Você adquire proficiência com armadura pesada. Você também ganha proficiência na perícia de Intimidação ou Persuasão (a sua escolha)",
+      "page": 37,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-ordem.feature.voz-de-autoridade.l1.1",
+      "name": "VOZ DE AUTORIDADE",
+      "level": 1,
+      "description": "Você pode invocar o poder da lei para encorajar um aliado a atacar. Se você conjurar uma magia com um espaço de magia de 1º círculo ou superior e tiver como alvo um aliado, esse aliado pode utilizar sua reação imediatamente depois da magia para realizar um ataque com arma contra uma criatura a sua escolha que você possa ver. Se a magia tiver mais de um aliado como alvo, você escolhe qual aliado pode realizar esse ataque.",
+      "page": 37,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-ordem.feature.canalizar-divindade-demanda-da-ordem.l2.1",
+      "name": "CANALIZAR DIVINDADE: DEMANDA DA ORDEM",
+      "level": 2,
+      "description": "utilizar o seu Canalizar Divindade para exercer uma presença intimidadora sobre os outros. Como uma ação, você exibe seu símbolo sagrado e cada criatura a sua escolha a até 9m que possa ver ou ouvir você deve ser bem-sucedida em uma salvaguarda de Sabedoria ou ficará enfeitiçada por você até o final do seu próximo turno ou até receber dano. Você também pode fazer com que qualquer uma das criaturas enfeitiçadas solte o que estiver segurando quando falhar nessa salvaguarda.",
+      "page": 37,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-ordem.feature.personificacao-da-lei.l6.1",
+      "name": "PERSONIFICAÇÃO DA LEI",
+      "level": 6,
+      "description": "Você se tornou notavelmente hábil em canalizar energia mágica para compelir os outros. Se você conjurar uma magia da escola de encantamento utilizando um espaço de magia de 1º círculo ou superior, você pode mudar o tempo de conjuração dessa magia para 1 ação bônus para essa conjuração, desde que o tempo normal da conjuração da magia seja de 1 ação. Você pode usar essa característica um número de vezes equivalente ao seu modificador de Sabedoria (mínimo de 1 vez), e recupera todos os usos quando termina um descanso longo.",
+      "page": 37,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-ordem.feature.golpe-divino.l8.1",
+      "name": "GOLPE DIVINO",
+      "level": 8,
+      "description": "a habilidade de infundir os golpes da sua arma com energia divina. Uma vez por turno, sempre que atingir uma criatura com um ataque armado, o seu ataque causa ld8 pontos de dano psíquico adicional. Ao alcançar o 14° nível, o dano adicional aumenta para 2d8.",
+      "page": 36,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-dominio-da-ordem.feature.ira-da-ordem.l17.1",
+      "name": "IRA DA ORDEM",
+      "level": 17,
+      "description": "inimigos que você designar para destruição definham perante os esforços combinados de você e seus aliados. Se você causar dano com o seu Golpe Divino a uma criatura em seu turno, você pode amaldiçoar aquela criatura até o início de seu próximo turno. Na próxima vez que um de seus aliados acertar a criatura amaldiçoada com um ataque o alvo também sofrerá 2d8 de dano psíquico e a maldição acaba. Você pode amaldiçoar uma criatura desta forma apenas uma vez por turno.",
+      "page": 38,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

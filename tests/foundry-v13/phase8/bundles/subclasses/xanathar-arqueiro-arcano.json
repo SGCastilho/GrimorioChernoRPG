@@ -1,0 +1,147 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-arqueiro-arcano",
+    "identifier": "xanathar-arqueiro-arcano",
+    "name": "Arqueiro Arcano",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "38–40",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 38
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Um Arqueiro Arcano estuda um método élfico único de arquearia que mistura magia em ataques para produzir efeitos sobrenaturais. Os Arqueiros Arcanos são alguns dos maiores guerreiros de elite entre os elfos. Eles vigiam as fronteiras dos domínios élficos, mantendo um olho afiado para intrusos e usando flechas infundidas com magia para derrotar monstros e invasores antes que eles possam chegar aos povoados. Ao longo dos séculos, os métodos destes elfos arqueiros foram aprendidos por membros de outras raças que também pode equilibrar a aptidão arcana com o arco e flecha.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 38
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-arqueiro-arcano.feature.tradicao-do-arqueiro-arcano.l3.1",
+      "name": "TRADIÇÃO DO ARQUEIRO ARCANO",
+      "level": 3,
+      "description": "No 3° nível, você aprende a teoria mágica de alguns dos segredos da natureza - típicos para praticantes desta tradição marcial élfica. Você escolhe ganhar proficiência entre as perícias Arcanismo ou Natureza, e você escolhe aprender entre os truques prestidigitação ou druidismo.",
+      "page": 38,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-arqueiro-arcano.feature.disparo-arcano.l3.1",
+      "name": "DISPARO ARCANO",
+      "level": 3,
+      "description": "No 3° nível, você aprende a liberar efeitos mágicos especiais com alguns de seus tiros. Quando você ganha essa característica, aprende duas opções de Disparo Arcano da sua escolha (ver \"Opções de Disparo Arcano\" abaixo). Uma vez por turno quando você dispara uma flecha mágica de um arco curto ou arco longo como parte da ação atacar, pode adicionar uma das opções de Disparo Arcano para essa flecha. Você decide usar essa opção quando a flecha acerta uma criatura, a menos que a opção não envolva uma rolagem de ataque. Você tem dois usos dessa característica, e recupera todos os usos quando terminar um descanso curto ou longo. Você ganha urna opção adicional de Disparo Arcano de sua escolha quando alcança certos níveis nesta classe: 7°, 1 0°, 1 5° e 18°. Cada opção também melhora quando se tornar um Guerreiro do 1 8° nível.",
+      "page": 38,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-arqueiro-arcano.feature.flecha-magica.l7.1",
+      "name": "FLECHA MÁGICA",
+      "level": 7,
+      "description": "No 7° nível, você ganha a capacidade de infundir flechas com magia. Sempre que disparar uma flecha não mágica de um arco curto ou arco longo, pode torná-la mágico para o propósito de superar a resistência e a imunidade não mágica para ataques e danos. A magia desaparece da flecha imediatamente após acertar ou errar o alvo.",
+      "page": 38,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-arqueiro-arcano.feature.tiro-curvado.l7.1",
+      "name": "TIRO CURVADO",
+      "level": 7,
+      "description": "No 7° nível, você aprende a direcionar uma flecha sem destino em direção a um novo alvo. Quando realiza um ataque com uma flecha mágica e erra, pode usar uma ação bônus para rolar novamente a jogada de ataque contra um alvo diferente dentro de 18 metros do alvo original.",
+      "page": 38,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-arqueiro-arcano.feature.disparo-sempre-pronto.l15.1",
+      "name": "DISPARO SEMPRE PRONTO",
+      "level": 15,
+      "description": "A partir do 1 5° nível, o seu tiro com arco mágico está disponível sempre que a batalha começar. Se você rolar a iniciativa e não tiver utilizações de Tiro Arcano restantes, recupera uma utilização.",
+      "page": 38,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-arqueiro-arcano.feature.opcoes-de-disparo-arcano.l3.1",
+      "name": "OPÇÕES DE DISPARO ARCANO",
+      "level": 3,
+      "description": "A característica do Disparo Arcano permite que você escolha opções para ela em certos níveis. As opções são apresentadas aqui em ordem alfabética. Todas elas são efeitos mágicos, e cada um está associado a uma das escolas de magia. Se uma opção requer um teste de resistência, o teste do Disparo Arcano é CD igual a 8 + seu bônus de proficiência + seu modificador de Inteligência. C A P Í T U L O l I O P Ç Õ E S D E P E R S O N A U Z A Ç A O EsOUERDA PARA DIREITA: SAMURAI. CAVALEIRO. E ARQUEIRO ARCANO Flecha da Explosão. Você infunde sua flecha com energia extraída da escola de evocação. A energia detona após o ataque. Imediatamente após a flecha atingir a criatura, o alvo e todas as outras criaturas dentro de 3 metros de distância recebe 2d6 de dano de energia cada. 0 dano de energia aumenta para 4d6 quando você alcança 18° nível nesta classe. Flecha da Sedução. Sua magia de encantamento faz com que essa flecha temporariamente seduza seu alvo. A criatura acertada pela flecha recebe dano adicional psíquico de 2d6, e escolha um dos seus aliados dentro de 9 metros do alvo. O alvo deve ter sucesso em um teste de resistência de Sabedoria, ou está encantado pelo aliado escolhido até o início do seu próximo turno. Este efeito acaba se o aliado escolhido atacar o alvo encantado, causar dano a ele, ou força-lo a fazer um teste de resistência. 0 dano psíquico aumenta para 4d6 quando você alcança 18° nível nesta classe. Flecha do Agarrar. Quando esta flecha atinge seu alvo, a magia de conjuração cria uns emaranhados de espinheiros venenosos que agarram e envolve o alvo. A criatura atingida pela flecha recebe 2d6 de dano venenoso adicionais, o deslocamento é reduzido em 3 metros e a primeira vez que o alvo se mover 30 centímetros ou mais em um turno sem teleportar, recebe 2d6 de dano cortante. O alvo ou qualquer criatura que possa alcança-lo pode usar sua ação para remover o espinheiro com um teste de Força (Atletismo) contra a CD do Disparo Arcano. Caso contrário, os espinheiros duram 1 minuto ou até que você use esta opção novamente. 0 dano do veneno e o dano de corte aumentam para 4d6 quando você alcança o 18º nível nesta classe. Flecha do Banimento. Você usa magia de abjuração para tentar temporariamente banir seu alvo para um local inofensivo em Agrestia das Fadas. A criatura atingida pela flecha deve ter sucesso em um teste de resistência de carisma ou deve ser banido. Enquanto banido dessa forma, a velocidade do alvo é O, e está incapacitado. No finaldo próximo turno da criatura, o alvo reaparece no espaço que originalmente estava ou no mais próximo desocupado caso aquele espaço estiver ocupado. Depois de atingir o 18° nível nesta classe, o alvo recebe 2d6 de dano de energia quando a flecha o atinge. Flecha do Enfraquecimento. Você tece uma magia necromante a sua flecha. A criatura atingida pela flecha leva 2d6 de dano necrótico extra. O alvo deve ter sucesso em um teste de resistência de Constituição, ou o dano causado por seus ataques de armas é reduzido para metade até o início do seu próximo turno. 0 dano necrótico aumenta para 4d6 quando você alcança 18° nível nesta classe. Flecha Perfurante. Você usa sua magia de transmutação para dá a sua flecha uma qualidade etérea. Quando você usa essa opção, você não faz uma rolagem de ataque para o ataque. Em vez disso, a flecha dispara em uma linha, possui 30 centímetros de largura e 9 metros de comprimento, antes de desaparecer. A flecha passa inofensivamente pelos objetos, ignorando cobertura. Cada criatura nessa linha deve fazer um teste de resistência de Destreza. Em uma falha, a criatura recebe o dano como tivesse sido acertado por uma flecha mais 1d6 de dano perfurante. Em um sucesso, o alvo recebe metade do dano. 0 dano perfurante aumenta para 2d6 quando você alcança 18° nível nesta classe. Flecha Perseguidora. Usando magia de adivinhação, você concede sua flecha a capacidade de perseguir um alvo. Quando você usa esta opção, você não faz uma jogada de ataque para acertar. Em vez disso, escolha uma criatura que você viu no último minuto. A flecha voa em direção àquela criatura, movendo-se em tomo de cantos e curvas se necessária e ignorando três quartos de cobertura e meia cobertura. Se o alvo estiver dentro do alcance da arma e há um caminho grande o suficiente para que a flecha viaje para o alvo, o alvo deve fazer um teste de resistência de Destreza. Caso contrário, a flecha desaparecerá depois de viajar o máximo que puder. Em uma falha, o alvo recebe o dano como se fosse atingido pela flecha, mais 1d6 de dano de energia, e você aprende a posição atualdo alvo. Em um teste com sucesso, o alvo leva metade do dano, e você não sabe sua localização. 0 dano de energia aumenta para 2d6 quando você alcança 1 8° nível nesta classe. Flecha Sombria. Você entrelaça sua magia de ilusão na sua flecha, fazendo com que cegue a visão do seu inimigo com sombras. A criatura atingida pela flecha recebe 2d6 de dano psíquico extra, e deve ter sucesso em um teste de resistência de sabedoria ou será impedido de ver qualquer coisa além dos seus 1,5 metros de distância, até o seu próximo turno. 0 dano psíquico aumenta para 4d6 quando você alcança 1 8° nível nesta classe.",
+      "page": 38,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-dragoneer-darkstriker",
+    "identifier": "bbb-dragoneer-darkstriker",
+    "name": "Golpeador Sombrio",
+    "originalName": "Darkstriker",
+    "aliases": [
+      "Darkstriker"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "94",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 94
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Um Cavaleiro Dracônico de alma dracônica corrompida que desfere explosões de energia violenta.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 94
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-dragoneer-darkstriker.feature.critico-aprimorado-encarnado.l1.1",
+      "name": "CRÍTICO APRIMORADO (ENCARNADO)",
+      "level": 1,
+      "description": "Você obtém acerto crítico com 19 ou 20 no d20. Ao obter um crítico, pode fazer com que todo o dano da arma seja do tipo de dano de sua Encarnação.",
+      "page": 94,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-dragoneer-darkstriker.feature.olho-do-draco.l1.1",
+      "name": "OLHO DO DRACO",
+      "level": 1,
+      "description": "Quando ataca com uma arma à distância ou de arremesso com a qual seja proficiente, você pode tratar o alcance longo da arma como seu alcance normal.",
+      "page": 94,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-dragoneer-darkstriker.feature.casca-de-dragao.l3.1",
+      "name": "CASCA DE DRAGÃO",
+      "level": 3,
+      "description": "Quando atingir um alvo com ataque de arma e causar dano de arma, pode usar sua ação bônus para criar uma explosão de energia que afeta cada criatura à sua escolha a até 3 m do alvo, incluindo ele. Cada alvo realiza a salvaguarda associada ao tipo de dano de sua Encarnação contra sua CD de magia; em falha, sofre o mesmo dano causado pelo ataque, mas convertido no dano de sua Encarnação. Usos por Descanso iguais à metade do seu bônus de proficiência, arredondado para baixo.",
+      "page": 94,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-dragoneer-darkstriker.feature.rajada-punitiva.l7.1",
+      "name": "RAJADA PUNITIVA",
+      "level": 7,
+      "description": "Uma vez por turno, quando obtiver um acerto crítico por resultado natural no d20 de uma jogada de ataque, causa dano adicional do tipo de sua Encarnação igual a 1d8 × o nível do maior espaço de magia de Cavaleiro Dracônico a que tenha acesso, incluindo espaços já gastos.",
+      "page": 94,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-dragoneer-darkstriker.feature.simpatia-va.l13.1",
+      "name": "SIMPATIA VÃ",
+      "level": 13,
+      "description": "Escolha um segundo Tipo de Encarnação. Você o recebe como uma mutação e ganha sua característica, tipo de movimento, tipo de dano de Encarnação e salvaguarda, como ocorre com sua primeira Encarnação. Sempre que um tipo de dano de Encarnação for exigido, escolha qual usa e aplique a salvaguarda correspondente, e vice-versa.",
+      "page": 94,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-dragoneer-darkstriker.feature.critico-superior-encarnado.l17.1",
+      "name": "CRÍTICO SUPERIOR (ENCARNADO)",
+      "level": 17,
+      "description": "Você obtém acerto crítico com 18, 19 ou 20 no d20.",
+      "page": 94,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

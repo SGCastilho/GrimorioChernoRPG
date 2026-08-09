@@ -1,0 +1,16 @@
+{
+  "GRIMORIO_IMPORTER.Title": "Grimório Importer",
+  "GRIMORIO_IMPORTER.Import": "Importar bundle ou pacote do Grimório",
+  "GRIMORIO_IMPORTER.Packs": "Compêndios do Grimório",
+  "GRIMORIO_IMPORTER.Classes": "Grimório — Classes",
+  "GRIMORIO_IMPORTER.Subclasses": "Grimório — Subclasses",
+  "GRIMORIO_IMPORTER.Features": "Grimório — Características",
+  "GRIMORIO_IMPORTER.SpecialStatus": "Classes especiais do Actor",
+  "GRIMORIO_IMPORTER.ConfigureSpecial": "Configurar classes especiais",
+  "GRIMORIO_IMPORTER.Phase8": "Fase 8 — Classes especiais",
+  "GRIMORIO_IMPORTER.Phase9": "Fase 9 — Pacotes e exportação no site",
+  "GRIMORIO_IMPORTER.Phase10": "Fase 10 — Exportação granular de classes e subclasses",
+  "GRIMORIO_IMPORTER.Phase11": "Fase 11 — Fundação de Activities e Active Effects",
+  "GRIMORIO_IMPORTER.Phase12": "Fase 12 — Expansão e auditoria de automação",
+  "GRIMORIO_IMPORTER.AutomationAudit": "Auditoria de automação"
+}

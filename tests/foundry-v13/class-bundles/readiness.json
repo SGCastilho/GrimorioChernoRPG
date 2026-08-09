@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "profile": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "schema": "grimorio-foundry-class-bundle@1",
+    "classes": 24,
+    "classBundlesReady": 24,
+    "classesNativeReady": 19,
+    "classesNativeReview": 5,
+    "subclasses": 377,
+    "subclassBundlesReady": 377,
+    "classFeatures": 345,
+    "subclassFeatures": 2025,
+    "classTables": 23,
+    "subclassTables": 135,
+    "progressionEvents": 509,
+    "progressionEventKinds": {
+      "feature": 407,
+      "subclass-feature": 48,
+      "feature-scaling": 51,
+      "progression-note": 3
+    }
+  },
+  "nativeReview": [
+    {
+      "id": "dragoneer",
+      "name": "Cavaleiro Dracônico",
+      "warnings": [
+        "Dados de Vida, salvaguardas, proficiências e conjuração variam conforme o Conceito Central; o Grimório Importer aplica o perfil especial ao Actor quando o conceito é escolhido.",
+        "Dado de Vida não padrão para o Item de classe vanilla: Varia por Conceito Central (d6–d12)."
+      ]
+    },
+    {
+      "id": "frame-pilot",
+      "name": "Piloto de Frame",
+      "warnings": [
+        "As proficiências de salvaguarda do Piloto de Frame são escolhas variáveis; o Grimório Importer as materializa em dois pools nativos de Trait Advancement."
+      ]
+    },
+    {
+      "id": "bender-ryoko",
+      "name": "Dobrador",
+      "warnings": [
+        "A habilidade de conjuração do Dobrador é escolhida entre Inteligência, Sabedoria ou Carisma; o runtime do Grimório Importer solicita e aplica essa escolha no Actor."
+      ]
+    },
+    {
+      "id": "tamer-ryoko",
+      "name": "Domador",
+      "warnings": [
+        "A habilidade de conjuração do Domador é escolhida entre Inteligência, Sabedoria ou Carisma; o runtime do Grimório Importer solicita e aplica essa escolha no Actor."
+      ]
+    },
+    {
+      "id": "blood-minister-somnus",
+      "name": "Ministro de Sangue",
+      "warnings": [
+        "O Ministro de Sangue usa 2d4 Dados de Vida por nível; o Grimório Importer trata a rolagem de ganho de PV como 2d4, mas o pool nativo de Dados de Vida de descanso continua exigindo acompanhamento especial.",
+        "Dado de Vida não padrão para o Item de classe vanilla: 2d4."
+      ]
+    }
+  ],
+  "errors": []
+}

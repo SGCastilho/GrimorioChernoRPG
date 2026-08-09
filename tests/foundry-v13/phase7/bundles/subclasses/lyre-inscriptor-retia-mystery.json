@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-mystery",
+    "identifier": "lyre-inscriptor-retia-mystery",
+    "name": "Mistério",
+    "originalName": "Mystery",
+    "aliases": [
+      "Mystery"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "370",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 370
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Você registra investigações, crimes e enigmas. O mesmo talento usado para descobrir a verdade também permite ocultá-la, tornando sua magia uma ferramenta de furtividade, subversão e investigação.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 370,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Infligir Terror"
+          },
+          {
+            "level": "3º",
+            "spells": "Passos sem Pegadas"
+          },
+          {
+            "level": "5º",
+            "spells": "Clarividência"
+          },
+          {
+            "level": "7º",
+            "spells": "Santuário Particular"
+          },
+          {
+            "level": "9º",
+            "spells": "Criar Passagem"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 370
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-mystery.feature.investigador-cuidadoso.l1.1",
+      "name": "INVESTIGADOR CUIDADOSO",
+      "level": 1,
+      "description": "Você recebe proficiência em Furtividade, Intuição e Investigação. Para cada uma dessas perícias em que já seja proficiente, pode escolher outra perícia baseada em Carisma ou Inteligência.",
+      "page": 370,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-mystery.feature.quem-foi.l5.1",
+      "name": "QUEM FOI?",
+      "level": 5,
+      "description": "Se conjurar uma magia enquanto estiver escondido, qualquer alvo do qual esteja escondido ou que não possa vê-lo tem desvantagem na primeira salvaguarda contra a magia. Se falhar nessa salvaguarda, você permanece escondido e não é automaticamente revelado.",
+      "page": 370,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-mystery.feature.detetive-particular.l8.1",
+      "name": "DETETIVE PARTICULAR",
+      "level": 8,
+      "description": "Você recebe visão diabólica até 36 metros.",
+      "page": 370,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-mystery.feature.suspeito-provavel.l12.1",
+      "name": "SUSPEITO PROVÁVEL",
+      "level": 12,
+      "description": "Quando escolher uma criatura como alvo de um efeito que exija salvaguarda e ela passar na primeira salvaguarda, você pode fazer o efeito ignorá-la e escolher outro alvo dentro do alcance original, tratando-o como o alvo inicial. Só pode trocar um alvo uma vez. Efeitos aplicados à salvaguarda do primeiro alvo não se transferem ao segundo. Se a magia tiver vários alvos, pode usar esta característica uma vez por alvo e uma criatura só pode ser escolhida como novo alvo uma vez por magia. A magia deve escolher alvos individualmente; não funciona com criaturas atingidas apenas por uma esfera, cubo, cone ou outra área de efeito.",
+      "page": 370,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-mystery.feature.fuga-impossivel.l20.1",
+      "name": "FUGA IMPOSSÍVEL",
+      "level": 20,
+      "description": "Como ação bônus, você pode se teleportar até uma distância igual ao seu deslocamento e ficar invisível, como pela magia Invisibilidade mas sem concentração, até o início do seu próximo turno. Tudo que estiver carregando vai com você; se estiver agarrado ou preso por restrições não mágicas, pode escapar delas como parte da ação bônus.",
+      "page": 370,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

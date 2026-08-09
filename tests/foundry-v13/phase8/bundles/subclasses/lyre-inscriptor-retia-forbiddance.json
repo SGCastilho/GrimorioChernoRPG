@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-forbiddance",
+    "identifier": "lyre-inscriptor-retia-forbiddance",
+    "name": "Interdição",
+    "originalName": "Forbiddance",
+    "aliases": [
+      "Forbiddance"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "368",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 368
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Você busca tomos antigos e conhecimento esquecido, dedicando-se a registrar, esconder e proteger informações perigosas. Seu domínio da linguagem e de proteções escritas transforma segredos em algo que você pode literalmente trancar no mundo.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 368,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Santuário"
+          },
+          {
+            "level": "3º",
+            "spells": "Silêncio"
+          },
+          {
+            "level": "5º",
+            "spells": "Maldição Mordaz"
+          },
+          {
+            "level": "7º",
+            "spells": "Banimento"
+          },
+          {
+            "level": "9º",
+            "spells": "Modificar Memória"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 368
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-forbiddance.feature.onilingue.l1.1",
+      "name": "ONILÍNGUE",
+      "level": 1,
+      "description": "Você pode compreender e falar qualquer idioma desde que, em algum momento, tenha visto a escrita usada por ele. Além disso, ao ver um efeito armazenado e acionável semelhante a Glifo de Vigilância, você percebe qual magia está contida nele e qual seria seu alvo se fosse ativado.",
+      "page": 368,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-forbiddance.feature.mente-incognoscivel.l5.1",
+      "name": "MENTE INCOGNOSCÍVEL",
+      "level": 5,
+      "description": "Você tem resistência a dano psíquico e vantagem em salvaguardas de Inteligência. Criaturas não podem ler sua mente nem se comunicar telepaticamente com você sem sua permissão, e você percebe quando alguém tenta fazê-lo.",
+      "page": 368,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-forbiddance.feature.fechadura-e-chave.l8.1",
+      "name": "FECHADURA E CHAVE",
+      "level": 8,
+      "description": "Como interação, você pode abrir ou fechar qualquer porta ou recipiente não mágico e destrancado que possa ver a até 18 metros. Além disso, pode conjurar Tranca Arcana e Arrombar um número de vezes igual à metade de seu bônus de proficiência, arredondado para cima, sem gastar espaço de magia nem componentes materiais, recuperando os usos após um Descanso Longo. O alcance de Tranca Arcana passa a 18 metros e Arrombar não produz som. Se o objeto trancado não tinha fechadura, sua CD básica para ser arrombado ou forçado é igual à sua CD de magia de Inscritor. Ao trancar um objeto desta forma, você deve criar um registro escrito das criaturas que podem ultrapassá-lo e da senha que suprime a magia; se o registro for destruído, a magia termina.",
+      "page": 368,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-forbiddance.feature.visao-verdadeira.l12.1",
+      "name": "VISÃO VERDADEIRA",
+      "level": 12,
+      "description": "Você recebe visão verdadeira até 18 metros.",
+      "page": 368,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-forbiddance.feature.palavras-de-poder.l20.1",
+      "name": "PALAVRAS DE PODER",
+      "level": 20,
+      "description": "Ao conjurar uma magia de 5º nível ou inferior cujo nome contenha “escrita” ou “palavra de poder”, você pode gastar um uso de Consulta em vez de um espaço de Magia de Pacto; nesse caso, a magia é conjurada em seu nível base. Se a magia for de 6º, 7º ou 8º nível, você pode conjurá-la usando um espaço de Magia de Pacto de qualquer nível, tratando o espaço como se tivesse o nível base da magia. Ao receber esta característica, aprenda quaisquer duas magias com “escrita” ou “palavra de poder” no nome; elas contam como magias de Inscritor e não contam no limite de magias conhecidas.",
+      "page": 368,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

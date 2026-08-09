@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "conclave-cacador",
+    "identifier": "conclave-cacador",
+    "name": "Conclave do Caçador",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 120
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Alguns patrulheiros buscam dominar armas para proteger melhor a civilização dos terrores do ambiente selvagem. Membros do Conclave do Caçador aprendem técnicas especializadas de luta usadas contra as mais terríveis ameaças, desde ogros enfurecidos e hordas de orcs até enormes gigantes e dragões aterradores.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 120
+  },
+  "features": [
+    {
+      "key": "subclass.conclave-cacador.feature.presa-do-cacador.l3.1",
+      "name": "PRESA DO CAÇADOR",
+      "level": 3,
+      "description": "No 3° nível, você ganha uma das seguintes características, à sua escolha.\n\nAssassino de Colossos. Sua tenacidade pode derrubar os mais poderosos oponentes. Quando você atinge uma criatura com um ataque com arma, a criatura sofre 1d8 de dano extra, se ela estiver abaixo do máximo de pontos de vida dela. Você só pode causar esse dano extra uma vez por turno.\n\nMatador de Gigantes. Quando uma criatura Grande ou maior a até 1,5 metro de você atingir ou errar um ataque contra você, você pode usar sua reação para atacar a criatura, imediatamente após o ataque dela, considerando que você possa ver a criatura.\n\nDestruidor de Hordas. Uma vez em cada um dos seus turnos, quando você fizer um ataque com arma, você pode realizar outro ataque com a mesma arma contra uma criatura diferente que esteja a até 1,5 metro do alvo original e esteja no alcance da sua arma.",
+      "page": 120,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-cacador.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "A partir do 5° nível, você pode atacar duas vezes, ao invés de uma, sempre que você realizar a ação de Ataque no seu turno.",
+      "page": 120,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-cacador.feature.taticas-defensivas.l7.1",
+      "name": "TÁTICAS DEFENSIVAS",
+      "level": 7,
+      "description": "No 7° nível, você ganha uma das seguintes características, à sua escolha.\n\nEscapar da Horda. Ataques de oportunidade contra você são feitos com desvantagem.\n\nDefesa Contra Múltiplos Ataques. Quando uma criatura atinge você com um ataque, você recebe +4 de bônus na CA contra todos os ataques subsequentes feitos por essa criatura no resto do turno.\n\nVontade de Aço. Você tem vantagem em testes de resistência para evitar ser amedrontado.",
+      "page": 120,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-cacador.feature.ataque-multiplo.l11.1",
+      "name": "ATAQUE MÚLTIPLO",
+      "level": 11,
+      "description": "No 11° nível, você ganha uma das seguintes características, à sua escolha.\n\nSaraivada. Você pode usar sua ação para realizar um ataque à distância contra qualquer número de criatura a até 3 metros de um ponto que você possa ver, no alcance da sua arma. Você deve ter munição para cada alvo, como normal, e você realiza uma jogada de ataque separada para cada alvo.\n\nAtaque Giratório. Você pode usar sua ação para realizar um ataque corpo-a-corpo contra qualquer número de criaturas a até 1,5 metro de você, realizando uma jogada de ataque separada para cada alvo.",
+      "page": 121,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-cacador.feature.defesa-de-cacador-superior.l15.1",
+      "name": "DEFESA DE CAÇADOR SUPERIOR",
+      "level": 15,
+      "description": "No 15° nível, você ganha uma das seguintes características, à sua escolha.\n\nEvasão. Você pode esquivar-se agilmente de certos efeitos em área, como o sopro de fogo de um dragão vermelho ou uma magia relâmpago. Quando você for alvo de um efeito que exige um teste de resistência de Destreza para sofrer metade do dano, você não sofre dano algum se passar, e somente metade do dano se falhar.\n\nManter-se Contra a Maré. Quando uma criatura hostil errar você com um ataque corpo-a-corpo, você pode usar sua reação para forçar a criatura a repetir o mesmo ataque contra outra criatura (que não ela mesma), à sua escolha.\n\nEsquiva Sobrenatural. Quando um atacante que você possa ver, atinge você com um ataque, você pode usar sua reação para reduzir o dano causado pelo ataque à metade.",
+      "page": 121,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

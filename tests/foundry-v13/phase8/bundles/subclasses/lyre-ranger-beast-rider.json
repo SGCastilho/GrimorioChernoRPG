@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-ranger-beast-rider",
+    "identifier": "lyre-ranger-beast-rider",
+    "name": "Cavaleiro de Fera",
+    "originalName": "Beast Rider",
+    "aliases": [
+      "Beast Rider"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "405–406",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 405
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Compatibilidade com o Patrulheiro Revisado de Lyre: esta opção foi escrita para a revisão completa da classe apresentada no mesmo capítulo, que preserva a estrutura de arquétipos nos níveis 3, 7, 11 e 15 e admite adaptação de subclasses de Patrulheiro. Cavaleiros de Fera caçam ao lado de um companheiro bestial ligado a eles por magia. O vínculo permite reconjurar a criatura se ela cair e transmitir comandos com gestos mínimos, fazendo da montaria um aliado intuitivo em combate.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 405
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-ranger-beast-rider.feature.companheiro-do-cavaleiro-de-fera.l3.1",
+      "name": "COMPANHEIRO DO CAVALEIRO DE FERA",
+      "level": 3,
+      "description": "Você ganha um companheiro bestial que serve como montaria e aliado. Escolha sua aparência, mas ele deve ser uma criatura que você possa montar e usa o bloco Companheiro do Cavaleiro de Fera. Ele usa seu bônus de proficiência (BP), Bônus de Favor (BF) e Dado de Favor (DF). É amistoso, entende você e compartilha sua iniciativa, agindo logo depois de você. Pode mover-se e usar reação livremente; sem comando, sua única ação é Esquivar. Como ação bônus, você o comanda a realizar outra ação; essa ação e o movimento decorrente podem ocorrer imediatamente, e seu turno posterior é tratado como já tendo usado essa ação. Se você estiver incapacitado, ele age livremente. Ao cair a 0 PV sem morrer instantaneamente, estabiliza automaticamente e recupera 1 PV após 10 minutos se você estiver a até 18 m; se estiver longe, desaparece. Se morrer, desaparecer ou se separar, você pode reconjurá-lo em espaço adjacente após 1 minuto, ou como ação gastando um espaço de 1º nível ou superior. Ao conjurá-lo, escolha tamanho Médio ou Grande; se tiver pelo menos seu tamanho, pode ser montado normalmente.",
+      "page": 405,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-beast-rider.feature.proficiencias-adicionais.l3.1",
+      "name": "PROFICIÊNCIAS ADICIONAIS",
+      "level": 3,
+      "description": "Você ganha proficiência em Montaria e Adestrar Animais.",
+      "page": 405,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-beast-rider.feature.aprimoramento-da-fera.l7.1",
+      "name": "APRIMORAMENTO DA FERA",
+      "level": 7,
+      "description": "Escolha permanentemente dois aprimoramentos diferentes: deslocamento +3 m; deslocamento de escalada ou natação igual ao base; dado do Ataque Natural passa a d8; crítico em 19–20; dois atributos da fera aumentam em 2; ganha Multiataque para fazer um Ataque Natural adicional; ou ganha proficiência em Percepção e Atletismo.",
+      "page": 405,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-beast-rider.feature.sincronia-do-mestre-da-fera.l7.1",
+      "name": "SINCRONIA DO MESTRE DA FERA",
+      "level": 7,
+      "description": "Para suas características de Patrulheiro, Alvo Favorecido, Caçada Acelerada e Véu da Natureza também se aplicam ao seu Companheiro. Véu da Natureza afeta ambos ao mesmo tempo se você estiver montado, e usos limitados são gastos uma única vez para os dois. Quando conjura uma magia em si mesmo, também pode afetar o companheiro se ele estiver a até 9 metros.",
+      "page": 405,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-beast-rider.feature.aprimoramento-maior-da-fera.l11.1",
+      "name": "APRIMORAMENTO MAIOR DA FERA",
+      "level": 11,
+      "description": "A fera recebe dois dos aprimoramentos a seguir e mais uma opção ainda não escolhida de Aprimoramento da Fera, sem repetir opções: Multiataque passa a permitir três Ataques Naturais; dois atributos +2; voo igual ao deslocamento base; deslocamento +6 m; Especialização em uma perícia proficiente; PV máximos adicionais iguais ao seu Bônus de Favor para cada Dado de Vida da fera; CA +2; ou proficiência em duas salvaguardas adicionais.",
+      "page": 405,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-beast-rider.feature.aprimoramento-supremo-da-fera.l15.1",
+      "name": "APRIMORAMENTO SUPREMO DA FERA",
+      "level": 15,
+      "description": "A fera recebe dois aprimoramentos finais e mais uma opção ainda não escolhida dos aprimoramentos anteriores: soma seu Bônus de Favor a todos os ataques, salvo quando ele já seria aplicado; dois atributos +2; deslocamento +9 m; dado do Ataque Natural passa a d8 ou d10 se já era d8; ou proficiência em duas salvaguardas adicionais. Bloco-base do Companheiro: besta Média ou Grande, sem alinhamento; CA 11 + modificador de Destreza + seu Bônus de Favor; PV 5 + 5 × seu nível de Patrulheiro; deslocamento 12 m; For 14, Des 14, Con 12, Int 8, Sab 14, Car 10; proficiente em salvaguardas de Destreza e Constituição e soma seu Bônus de Favor a todas as salvaguardas; visão no escuro 18 m, Percepção passiva 12 + BF; BP igual ao seu. Armas Mágicas: ataques da fera são mágicos. Táticas de Matilha: vantagem nos ataques se um aliado não incapacitado estiver a até 1,5 m do alvo. Especialidade Compartilhada: a fera soma seu BF e DF às mesmas rolagens que você faria contra seu Inimigo Favorecido. Ataque Natural: ataque corpo a corpo baseado em Força + BP, alcance 1,5 m, dano 1d6 + Força contundente, perfurante ou cortante. Devastar: contra criatura caída a até 1,5 m, faz Ataque Natural e, em acerto, causa dados adicionais em quantidade igual ao seu BF. Os Dados de Vida da fera são d10 em quantidade igual ao seu nível de Patrulheiro.",
+      "page": 406,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

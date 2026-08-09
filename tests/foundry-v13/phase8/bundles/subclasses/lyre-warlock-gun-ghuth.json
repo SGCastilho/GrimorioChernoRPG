@@ -1,0 +1,189 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-warlock-gun-ghuth",
+    "identifier": "lyre-warlock-gun-ghuth",
+    "name": "Gun Ghuth",
+    "originalName": "Gun Ghuth",
+    "aliases": [
+      "Gun Ghuth"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "498",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 498
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Este pacto é concedido por Mestres e Associados do Colégio de Gun Ghuth a auxiliares, guardas e agentes. A relação é amplamente transacional e transforma treinamento acadêmico em poder de Bruxo.",
+    "tables": [
+      {
+        "key": "table.1.lista-expandida-de-magias",
+        "title": "Lista Expandida de Magias",
+        "page": 498,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível da Magia"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Perdição; Destruição Silenciadora"
+          },
+          {
+            "level": "2º",
+            "spells": "Arma Mágica; Chicote Mental"
+          },
+          {
+            "level": "3º",
+            "spells": "Dissipar Magia; Enviar Mensagem"
+          },
+          {
+            "level": "4º",
+            "spells": "Conjurar Montaria Maior; Esfera Resiliente"
+          },
+          {
+            "level": "5º",
+            "spells": "Criar Passagem; Subjugar Magia"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 498
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-warlock-gun-ghuth.feature.magia-curricular.l1.1",
+      "name": "MAGIA CURRICULAR",
+      "level": 1,
+      "description": "Uma vez por Descanso Longo, conjure uma magia da lista expandida de Gun Ghuth mesmo sem tê-la aprendido, sem gastar espaço. Você precisa possuir espaços de pacto capazes de conjurá-la, e ela é lançada como se usasse um desses espaços.",
+      "page": 498,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-gun-ghuth.feature.oficio-protegido.l1.1",
+      "name": "OFÍCIO PROTEGIDO",
+      "level": 1,
+      "description": "Quando criatura fizer teste de atributo como parte de magia ou característica para encerrar/dissipar uma de suas magias, como Dissipar Magia, Contramágica ou Aniquilar Magia, ela faz o teste com desvantagem. Se o efeito normalmente obtivesse sucesso automático por nível, sua magia é tratada como sendo de nível alto demais para isso.",
+      "page": 498,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-gun-ghuth.feature.magia-ferina.l6.1",
+      "name": "MAGIA FERINA",
+      "level": 6,
+      "description": "Quando conjurar magia usando espaço de pacto de Bruxo, pode conjurar como ação bônus um truque cujo tempo normal seja 1 ação.",
+      "page": 498,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-gun-ghuth.feature.tutor-mistico.l10.1",
+      "name": "TUTOR MÍSTICO",
+      "level": 10,
+      "description": "Quando conjurar magia usando espaço, pode conceder a você e a até seu bônus de proficiência em criaturas a até 9 metros PV temporários iguais a 1d10 + o nível da magia.",
+      "page": 498,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-gun-ghuth.feature.assinatura-de-mestre.l14.1",
+      "name": "ASSINATURA DE MESTRE",
+      "level": 14,
+      "description": "Escolha Feiticeiro ou Mago. Ao selecionar Arcanos Místicos, pode escolher magias da lista escolhida como se fossem de Bruxo. Ao receber esta característica, pode substituir cada Arcano Místico existente por uma opção do mesmo nível dessa lista.",
+      "page": 498,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-gun-ghuth.feature.hex-neutralizante.l14.1",
+      "name": "HEX NEUTRALIZANTE",
+      "level": 14,
+      "description": "Quando falhar em salvaguarda contra magia ou efeito mágico, use reação para obter sucesso. Se um sucesso normalmente causar metade do dano, ao usar esta característica você não sofre dano; normalmente, em falha, ainda sofreria metade. Dois usos por Descanso Curto ou Longo.\n\nINVOCAÇÕES DE GUN GHUTH. TREINAMENTO DE CRÉDITO EXTRA (7º): um espaço de pacto adicional, sempre de nível igual à metade de seu bônus de proficiência, recuperado com os demais. CONJURADOR GRADUADO (15º): Magia Curricular uma vez por Descanso Curto ou Longo. TREINAMENTO DE GUARDIÃO: proficiência com armaduras médias e três armas simples ou corpo a corpo; com armadura proficiente, pode usar Carisma no lugar de Destreza na CA, com as mesmas limitações. NOTA DE APROVAÇÃO (9º): proficiência em salvaguardas de Inteligência e duas perícias. ESCOLA DE ESPECIALIZAÇÃO: escolha uma escola de magia; ao aprender magias de Bruxo, pode escolher qualquer magia dessa escola que cumpra os critérios normais, e tem vantagem em salvaguardas contra magias dela. MAGIAS DE TESE (12º): quando um Arcano Místico escolher uma ou mais criaturas hostis, a primeira salvaguarda delas contra a magia tem desvantagem.",
+      "page": 498,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

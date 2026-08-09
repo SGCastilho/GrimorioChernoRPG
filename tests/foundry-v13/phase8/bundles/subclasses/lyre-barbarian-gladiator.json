@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-barbarian-gladiator",
+    "identifier": "lyre-barbarian-gladiator",
+    "name": "Gladiador",
+    "originalName": "Gladiator",
+    "aliases": [
+      "Gladiator"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "432",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 432
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "O rugido da multidão impulsiona o Gladiador, que busca entreter e atrair atenção tanto quanto se entrega à própria ira. Ele concentra seus esforços em adversários específicos e transforma o combate direto em espetáculo. Gladiadores são conhecidos por personalidades extravagantes e por uma visão grandiosa de honra e competição física.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 432
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-barbarian-gladiator.feature.ataque-de-derrubada.l3.1",
+      "name": "ATAQUE DE DERRUBADA",
+      "level": 3,
+      "description": "Uma vez em cada um dos seus turnos, quando acertar um ataque corpo a corpo com arma, force o alvo a realizar uma salvaguarda de Força, CD 8 + seu modificador de Força + seu bônus de proficiência. Em caso de falha, além do dano normal, o alvo fica caído, a menos que seja duas ou mais categorias de tamanho maior que você. Se você estiver em Fúria, o alvo realiza essa salvaguarda com desvantagem.",
+      "page": 432,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-gladiator.feature.devastacao-competitiva.l6.1",
+      "name": "DEVASTAÇÃO COMPETITIVA",
+      "level": 6,
+      "description": "Em vez de entrar em uma Fúria comum, use uma ação bônus e gaste um uso de Fúria para entrar em Devastação Competitiva por 1 minuto. Durante ela: recebe 1d10 + seu nível de Bárbaro em pontos de vida temporários, que desaparecem ao fim; seus ataques com armas baseados em Força recebem um bônus igual ao bônus de dano da Fúria; todo dano que sofre é reduzido pelo seu modificador de Carisma; você tem vantagem em testes e salvaguardas de Força e em salvaguardas de Constituição; enquanto estiver Morrendo, ainda pode agir e não cai, e se falhar uma terceira salvaguarda contra a morte, a falha é anulada e a Devastação termina; e você ignora a penalidade da Fadiga de Combate em suas rolagens. Ao iniciar a Devastação, você pode desafiar criaturas que possam ouvi-lo em quantidade igual ao seu bônus de dano da Fúria. Cada uma realiza uma salvaguarda de Sabedoria contra sua Intimidação passiva. Em uma falha, deve aceitar o desafio e tem desvantagem em ataques contra criaturas que não sejam você enquanto a Devastação durar; contra o dano perfurante, cortante e contundente causado a você por essas criaturas desafiadas, você possui resistência. A Devastação termina se você ficar inconsciente, terminar seu turno sem inimigos à vista ou sem ter realizado ataques nem causado dano. Fúria e Devastação Competitiva não podem coexistir: iniciar uma encerra a outra. Você pode usar esta característica um número de vezes por Descanso Longo igual ao seu bônus de proficiência, independentemente dos usos restantes de Fúria. Fúria Persistente também se aplica à Devastação Competitiva.",
+      "page": 432,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-gladiator.feature.retaliacao-estrondosa.l10.1",
+      "name": "RETALIAÇÃO ESTRONDOSA",
+      "level": 10,
+      "description": "Quando for atingido por um ataque que possa ver, use sua reação para reduzir o dano em 1d10 + seu nível de Bárbaro. Em seguida, se a fonte do ataque estiver ao alcance, você pode realizar contra ela um ataque com arma como parte da mesma reação. Depois, faça uma salvaguarda de Carisma CD 10; em caso de falha, recebe 1 ponto de Fadiga de Combate. Se já estiver no máximo de Fadiga, não pode usar esta reação. A CD aumenta em 2 cada vez que você obtém sucesso nessa salvaguarda e volta a 10 quando falhar ou concluir um Descanso Curto ou Longo.",
+      "page": 432,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-gladiator.feature.aprimoramento-de-ataque-extra.l14.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 14,
+      "description": "Quando realiza a ação Atacar em seu turno, você pode fazer três ataques com arma em vez de um.",
+      "page": 432,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

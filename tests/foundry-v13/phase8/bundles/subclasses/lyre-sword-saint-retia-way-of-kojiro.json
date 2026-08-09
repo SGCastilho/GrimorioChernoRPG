@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-kojiro",
+    "identifier": "lyre-sword-saint-retia-way-of-kojiro",
+    "name": "Caminho de Kojirō",
+    "originalName": "Way of Kojirō",
+    "aliases": [
+      "Way of Kojirō"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "423",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 423
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Baseado nas lendas do espadachim associado à enorme “Vara de Lavar”, este Caminho domina armas de duas mãos, contra-ataques e posicionamento defensivo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 423
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kojiro.feature.estilo-de-luta-proficiencia-duas-maos.l3.1",
+      "name": "ESTILO DE LUTA: PROFICIÊNCIA (DUAS MÃOS)",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Proficiência (Duas Mãos).",
+      "page": 423,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kojiro.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "RETROCESSO: ao rolar dano contra criatura no máximo uma categoria maior usando arma pesada ou de duas mãos, se qualquer dado da arma mostrar seu valor máximo, gaste 2 Foco para empurrá-la ou derrubá-la imediatamente. CAÇADOR DE FUGA: ao acertar ataque corpo a corpo, gaste 2 Foco; até o fim do próximo turno do alvo, cada 1,5 metro que ele se mover custa 1,5 metro adicional. BASE FORTIFICADA: no seu turno, se ainda não se moveu nem teleportou, gaste 1 Foco para fixar posição: deslocamento 0, pode usar Esquivar como ação bônus e recebe +2 em ataques corpo a corpo com arma até o início do próximo turno; movimento voluntário encerra o efeito.",
+      "page": 423,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kojiro.feature.interceptar.l6.1",
+      "name": "INTERCEPTAR",
+      "level": 6,
+      "description": "Quando uma criatura amigável adjacente for alvo de ataque com arma ou efeito que só a escolha, use reação para trocar de lugar com ela e tornar-se o alvo, desde que ela seja no máximo uma categoria maior e haja espaço para ambos. Como parte da mesma reação, escolha: +metade de seu bônus de proficiência na CA até o início do próximo turno; +seu bônus de proficiência nas salvaguardas até o início do próximo turno; ou faça imediatamente um ataque com arma contra a origem do efeito se estiver ao alcance, resolvido antes do efeito acionador.",
+      "page": 423,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kojiro.feature.perspectiva-sobre-humana.l11.1",
+      "name": "PERSPECTIVA SOBRE-HUMANA",
+      "level": 11,
+      "description": "Como ação bônus, gaste 2 Foco para conjurar Aprimorar Atributo em si mesmo. Enquanto a magia durar, também tem vantagem nas salvaguardas do atributo cujo teste recebe vantagem pela magia.",
+      "page": 423,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kojiro.feature.tecnica-da-vara-de-lavar.l14.1",
+      "name": "TÉCNICA DA VARA DE LAVAR",
+      "level": 14,
+      "description": "Se sua Arma Santa sintonizada tiver propriedade duas mãos, pode empunhá-la com uma mão. Se tiver versátil, pode usar o dado maior mesmo com uma mão. Se optar por empunhá-la com duas mãos, uma vez por turno role 1d6 e some ao resultado de uma jogada de ataque com ela.",
+      "page": 423,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-kojiro.feature.reversao-do-pardal.l17.1",
+      "name": "REVERSÃO DO PARDAL",
+      "level": 17,
+      "description": "Quando for atingido por ataque ou efeito que exija jogada de ataque e estiver ciente dele, pode contra-atacar para anulá-lo. Faça uma jogada de ataque com arma pesada ou de duas mãos; se seu resultado superar o ataque recebido, o ataque erra ou é defletido. Você pode repetir contra ataques subsequentes da mesma criatura no mesmo turno. Pode usar esta característica duas vezes por Descanso Longo; depois disso, ainda pode usá-la gastando 1 Foco por contra-ataque.",
+      "page": 423,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

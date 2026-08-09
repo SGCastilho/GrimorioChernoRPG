@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spellblade-guardian",
+    "identifier": "spellblade-guardian",
+    "name": "Guardião",
+    "originalName": "Guardian",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "kibbles",
+    "title": "Spellblade v1.3 — KibblesTasty — Guardião",
+    "pages": "8",
+    "chapter": "Técnicas de Spellblade",
+    "page": 8
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "spellblade",
+    "identifier": "spellblade",
+    "name": "Spellblade"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "spellblade",
+    "selectionLevel": 3,
+    "description": "Especializados em defender aliados, os Guardiões empregam amplamente abjuração e magias de aprimoramento pessoal. Eles assumem a linha de frente, mas permanecem uma defesa altamente móvel.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-guardiao",
+        "title": "Magias de Guardião",
+        "page": 8,
+        "description": "Estas magias contam como magias de Spellblade para você e não contam no limite de magias conhecidas.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Spellblade"
+          },
+          {
+            "key": "magias",
+            "label": "Magias aprendidas"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Ablação Arcana"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Vínculo Protetor"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Velocidade"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Esfera Resiliente de Otiluke"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Wall of Stone"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 8
+  },
+  "features": [
+    {
+      "key": "subclass.spellblade-guardian.feature.magias-do-guardiao.l3.1",
+      "name": "MAGIAS DO GUARDIÃO",
+      "level": 3,
+      "description": "Você aprende as magias apresentadas na tabela da subclasse. Elas são magias de Spellblade para você e não contam no número de magias conhecidas.",
+      "page": 8,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Guardião",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-guardian.feature.proficiencia-do-guardiao.l3.1",
+      "name": "PROFICIÊNCIA DO GUARDIÃO",
+      "level": 3,
+      "description": "Ao escolher esta técnica no 3º nível, você ganha proficiência com armaduras pesadas e escudos.\n\nAlém disso, pode usar uma arma corpo a corpo como foco arcano e realizar componentes somáticos com a mão que segura esse foco, mesmo para magias sem componente material.",
+      "page": 8,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Guardião",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-guardian.feature.barreira-projetada.l3.1",
+      "name": "BARREIRA PROJETADA",
+      "level": 3,
+      "description": "Você ganha uma nova opção para Surto Arcano: como reação quando uma criatura aliada a até 9 metros for atingida por um ataque ou se tornar alvo de Mísseis Mágicos, gaste um uso de Surto Arcano para conjurar Escudo sem gastar espaço de magia, concedendo o bônus de CA à criatura em vez de a você.",
+      "page": 8,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Guardião",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-guardian.feature.surto-fortificante.l7.1",
+      "name": "SURTO FORTIFICANTE",
+      "level": 7,
+      "description": "No 7º nível, sempre que gastar um uso de Surto Arcano, você recebe pontos de vida temporários iguais a 1d8 + seu modificador de Inteligência.",
+      "page": 8,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Guardião",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-guardian.feature.surto-de-troca.l15.1",
+      "name": "SURTO DE TROCA",
+      "level": 15,
+      "description": "No 15º nível, ao usar o teleporte de Surto Arcano, você pode trocar de posição com uma criatura voluntária dentro do alcance, aparecendo no espaço dela enquanto ela aparece no seu. Ambos recebem os pontos de vida temporários de Surto Fortificante.",
+      "page": 8,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Guardião",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-guardian.feature.egide-resistente.l20.1",
+      "name": "ÉGIDE RESISTENTE",
+      "level": 20,
+      "description": "No 20º nível, você pode fortalecer-se magicamente por 1 minuto, sem exigir uma ação. Durante esse período, possui resistência a todo tipo de dano. Depois de usar esta característica, você não pode usá-la novamente até concluir um descanso longo.",
+      "page": 8,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Guardião",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

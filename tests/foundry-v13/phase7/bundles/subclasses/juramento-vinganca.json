@@ -1,0 +1,164 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "juramento-vinganca",
+    "identifier": "juramento-vinganca",
+    "name": "Juramento de Vingança",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 114
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "O Juramento de Vingança é um comprometimento solene de punir aqueles que cometeram pecados graves. Quando forças malignas chacinam camponeses indefesos, quando todo um povo se volta contra a vontade dos deuses, quando uma guilda de ladrões cresce e se torna violenta e poderosa, quando um dragão investe através da zona rural – em momentos como esses, paladinos surgem e fazem o Juramento de Vingança para tornar certo o que já foi errado. Para esses paladinos – algumas vezes chamados de vingadores ou de cavaleiros negros – sua própria pureza não é tão importante quando trazer justiça.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 114
+  },
+  "features": [
+    {
+      "key": "subclass.juramento-vinganca.feature.dogmas-de-vinganca.l3.1",
+      "name": "DOGMAS DE VINGANÇA",
+      "level": 3,
+      "description": "Os dogmas do Juramento de Vingança variam de paladino para paladino, mas todos os dogmas giram em torno de punir malfeitores a qualquer custo. Paladinos que defendem esses dogmas estão dispostos a sacrificar, até mesmo sua própria integridade para fazer justiça sobre aqueles que praticaram o mal, de modo que, muitas vezes, os paladinos são neutros ou leais e neutros em alinhamento. Os princípios fundamentais dos dogmas são brutalmente simples.\n\nCombater o Mal Maior. Entre escolher lutar contra meus inimigos jurados ou combater um mal menor. Eu escolho o mal maior.\n\nSem Misericórdia para os Malignos. Inimigos comuns podem ter minha misericórdia, mas meus inimigos jurados não.\n\nA Todo Custo. Meus escrúpulos não podem ficar no caminho do extermínio dos meus inimigos.\n\nRestituição. Se meus inimigos causaram ruina no mundo, é porque eu falhei em detê-los. Devo ajudar aqueles prejudicados pelos delitos.",
+      "page": 114,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-vinganca.feature.magias-de-juramento.l3.1",
+      "name": "MAGIAS DE JURAMENTO",
+      "level": 3,
+      "description": "Você ganha magias de juramento nos níveis de paladino descritos.",
+      "page": 114,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-vinganca.feature.magias-de-juramento-de-vinganca.l3.1",
+      "name": "MAGIAS DE JURAMENTO DE VINGANÇA",
+      "level": 3,
+      "description": "Nível de Paladino Magias\n\n3° perdição, marca do caçador 5° imobilizar pessoa, passo nebuloso 9° velocidade, proteção contra energia 13° banimento, porta dimensional 17° imobilizar monstro, vidência",
+      "page": 114,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-vinganca.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Quando você faz esse juramento, no 3° nível, você ganha as duas opções seguintes de Canalizar Divindade.\n\nAbjurar Inimigo. Com uma ação, você ergue seu símbolo sagrado e faz uma prece de condenação, usando seu Canalizar Divindade. Escolha uma criatura a até 18 metros de você que você possa ver. A criatura deve realizar um teste de resistência de Sabedoria, a não ser que seja imune a ser amedrontada. Corruptores e mortosvivos tem desvantagem nesse teste de resistência.\n\nNum fracasso no teste de resistência, a criatura ficará amedrontada por 1 minuto ou até sofrer qualquer dano. Enquanto estiver amedrontada, o deslocamento da criatura será 0 e ela não pode receber qualquer bônus de deslocamento.\n\nEm um sucesso, o deslocamento da criatura é reduzido à metade por 1 minuto ou até que ela sofra qualquer dano.\n\nVoto de Inimizade. Com uma ação bônus, você pode pronunciar um voto de inimizade contra uma criatura que você possa ver a até 3 metros, usando seu Canalizar Divindade. Você ganha vantagem nas jogadas de ataque contra a criatura por 1 minuto ou até ela cair a 0 pontos de vida ou cair inconsciente.",
+      "page": 114,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-vinganca.feature.vingador-implacavel.l7.1",
+      "name": "VINGADOR IMPLACÁVEL",
+      "level": 7,
+      "description": "No 7° nível, seu foco sobrenatural ajuda você a impedir a fuga de um inimigo. Quando você atinge uma criatura com um ataque de oportunidade, você pode se mover até metade do seu deslocamento, imediatamente depois do ataque e como parte da mesma reação. Esse movimento não provoca ataques de oportunidade.",
+      "page": 114,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-vinganca.feature.alma-de-vinganca.l15.1",
+      "name": "ALMA DE VINGANÇA",
+      "level": 15,
+      "description": "A partir do 15° nível, a autoridade com a qual você fala seu Voto de Inimizade lhe dá maior poder sobre seu inimigo. Quando uma criatura sob efeito do seu Voto de Inimizade realizar um ataque, você pode usar sua reação para realizar um ataque corpo-a-corpo com arma contra essa criatura, se ela estiver ao seu alcance.",
+      "page": 114,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.juramento-vinganca.feature.anjo-vingador.l20.1",
+      "name": "ANJO VINGADOR",
+      "level": 20,
+      "description": "No 20° nível, você pode assumir a forma de um anjo vingador. Usando sua ação, você sofre uma transformação. Por 1 hora, você ganha os seguintes benefícios:\n\n• Asas crescem nas suas costas e lhe concedem\n\ndeslocamento de voo de 18 metros.\n• Você emana uma aura de ameaça num raio de 9\n\nmetros. A primeira vez que qualquer criatura inimiga entrar na aura ou começar seu turno nela, durante uma batalha, a criatura deve ser bem sucedida num teste de resistência de Sabedoria ou ficará amedrontada em relação a você por 1 minuto ou até sofrer qualquer dano. Jogadas de ataque contra a criatura amedrontada tem vantagem.\n\nUma vez que você use essa característica, não poderá fazê-lo novamente até ter terminado um descanso longo.",
+      "page": 114,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-sword-saint-empyreal-order",
+    "identifier": "zagalhta-sword-saint-empyreal-order",
+    "name": "Caminho da Ordem Empírea",
+    "originalName": "Way of the Empyreal Order",
+    "aliases": [
+      "Way of the Empyreal Order"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "173",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 173
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Caminho inspirado em uma antiga ordem secreta de guerreiros que combatia tirania e injustiça usando percepção sobrenatural, telecinese e técnicas defensivas psíquicas.",
+    "tables": [
+      {
+        "key": "table.1.tecnicas-de-foco-ordem-empirea",
+        "title": "Técnicas de Foco — Ordem Empírea",
+        "page": 173,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Técnica"
+          },
+          {
+            "key": "effect",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Deslocamento Empíreo (1 Foco)",
+            "effect": "Ação bônus; até proficiência em criaturas a 3 m fazem Força. Em falha, caem no chão ou são empurradas 3 m. Criaturas 2+ categorias maiores têm vantagem."
+          },
+          {
+            "name": "Agarre da Ordem (1 Foco)",
+            "effect": "No lugar de ataque, imponha sua vontade a alvo a até 18 m como um efeito de telecinese, não mágico. Exige concentração; pode manter no início dos turnos com ação bônus e pode sustentar vários alvos se pagar Foco/ataque para cada um."
+          },
+          {
+            "name": "Psimudança (2 Foco)",
+            "effect": "Ação bônus; escolha criatura a até 4,5 m × proficiência. Alvo voluntário troca de espaço com você. Involuntário faz Carisma; em falha também troca."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 173
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-sword-saint-empyreal-order.feature.olhos-sempre-vigilantes.l3.1",
+      "name": "OLHOS SEMPRE VIGILANTES",
+      "level": 3,
+      "description": "Você não pode ser surpreendido em combate e pode somar sua proficiência à Percepção passiva, salvo se outra característica já permitir isso.",
+      "page": 173,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-empyreal-order.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "Você aprende Deslocamento Empíreo, Agarre da Ordem e Psimudança, descritas na tabela de Técnicas de Foco.",
+      "page": 173,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-empyreal-order.feature.aparada-exaltada.l6.1",
+      "name": "APARADA EXALTADA",
+      "level": 6,
+      "description": "Enquanto não estiver incapacitado, todo dano contundente, perfurante e cortante que sofrer é reduzido pela metade do seu nível de Santo da Espada.",
+      "page": 173,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-empyreal-order.feature.caminhante-da-forca.l11.1",
+      "name": "CAMINHANTE DA FORÇA",
+      "level": 11,
+      "description": "Recebe voo laborioso (pairado) igual ao deslocamento base. Se já possui voo laborioso, ele aumenta em 9 m e passa a ser pairado.",
+      "page": 173,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-empyreal-order.feature.tecnica-do-guardiao.l14.1",
+      "name": "TÉCNICA DO GUARDIÃO",
+      "level": 14,
+      "description": "Ao realizar a ação Atacar e fazer ao menos um ataque com sua Arma Santa sintonizada, faça um ataque de arma adicional com ela. Enquanto estiver sintonizado com a Arma Santa e não usar escudo, some o bônus de aprimoramento dela à CA.",
+      "page": 173,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-empyreal-order.feature.sintonia-empirea.l17.1",
+      "name": "SINTONIA EMPÍREA",
+      "level": 17,
+      "description": "Uma vez por Descanso Longo, produza previsão sem Espaço, apenas em si. Exige concentração, mas pode concentrar-se em outros efeitos ao mesmo tempo. Depois do uso gratuito, pode produzir novamente gastando 5 Pontos de Foco.",
+      "page": 173,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

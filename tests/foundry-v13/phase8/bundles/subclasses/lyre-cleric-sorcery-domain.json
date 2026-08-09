@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-cleric-sorcery-domain",
+    "identifier": "lyre-cleric-sorcery-domain",
+    "name": "Domínio da Feitiçaria",
+    "originalName": "Sorcery Domain",
+    "aliases": [
+      "Sorcery Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "449",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 449
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Clérigos da Feitiçaria moldam energia caótica com auxílio divino, aproximando-se de Feiticeiros. Muitos usam esse domínio para reacender uma linhagem mágica enfraquecida. Seus corpos costumam ser tatuados com expoentrum representando as magias aprendidas. Este domínio não possui Magias de Domínio.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 449
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-cleric-sorcery-domain.feature.feiticaria-divina.l1.1",
+      "name": "FEITIÇARIA DIVINA",
+      "level": 1,
+      "description": "Escolha duas magias de 1º nível e um truque da lista de Feiticeiro. Você os aprende como magias de Clérigo, sempre preparadas e sem exigir preparação, sendo chamadas de suas Magias de Feitiçaria. Sempre que alcança um nível ímpar nesta classe, aprende dessa forma mais uma magia da lista de Feiticeiro para a qual possua espaços. Sempre que ganha em qualquer classe um nível que conceda Aumento no Valor de Atributo, pode substituir duas Magias de Feitiçaria por outras duas que possa aprender.",
+      "page": 449,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-sorcery-domain.feature.sobreposicao-memetica.l1.1",
+      "name": "SOBREPOSIÇÃO MEMÉTICA",
+      "level": 1,
+      "description": "Você ganha proficiência em Arcanismo. Se um item, característica ou efeito exigir ou escolher especificamente Feiticeiros, pode contar como Feiticeiro, tratando seu nível de Clérigo como nível de Feiticeiro para esse fim.",
+      "page": 449,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-sorcery-domain.feature.canalizar-divindade-conjuracao-explosiva.l2.1",
+      "name": "CANALIZAR DIVINDADE: CONJURAÇÃO EXPLOSIVA",
+      "level": 2,
+      "description": "Use Canalizar Divindade para conjurar uma de suas Magias de Feitiçaria sem gastar espaço. Ela é conjurada em nível igual à metade do seu nível de Clérigo, arredondado para baixo, máximo 9º, e não requer componentes verbais ou somáticos. Pela sutileza, não pode ser alvo de Contramágica, exceto por alguém com visão verdadeira usando Contramágica Verdadeira. O tempo de conjuração normal ainda é exigido.",
+      "page": 449,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-sorcery-domain.feature.metamagia-menor.l6.1",
+      "name": "METAMAGIA MENOR",
+      "level": 6,
+      "description": "Escolha duas opções de Metamagia da classe Feiticeiro. Você é considerado como possuindo Pontos de Feitiçaria iguais ao seu bônus de proficiência, recuperados ao terminar um Descanso Longo. Pode usar essas Metamagias em suas magias de Clérigo e Magias de Feitiçaria. Sempre que ganha nível nesta classe, pode trocar uma opção por outra.",
+      "page": 449,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-sorcery-domain.feature.feiticaria-potente.l8.1",
+      "name": "FEITIÇARIA POTENTE",
+      "level": 8,
+      "description": "Você soma seu modificador de Sabedoria ao dano em dados de qualquer truque de Clérigo ou Magia de Feitiçaria que conjure.",
+      "page": 449,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-sorcery-domain.feature.canalizar-divindade-imunidade-magica-limitada.l17.1",
+      "name": "CANALIZAR DIVINDADE: IMUNIDADE MÁGICA LIMITADA",
+      "level": 17,
+      "description": "Como ação, use Canalizar Divindade para envolver-se por 1 minuto em proteção divina. Durante esse período, você não pode ser afetado nem escolhido como alvo por magias de 5º nível ou inferior, a menos que queira. Se ficar inconsciente, passa a ser voluntário para magias que restaurariam seus pontos de vida. Também tem vantagem em salvaguardas contra efeitos mágicos. A proteção não interfere em magias originadas de artefatos, divindades ou entidades semelhantes.",
+      "page": 449,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

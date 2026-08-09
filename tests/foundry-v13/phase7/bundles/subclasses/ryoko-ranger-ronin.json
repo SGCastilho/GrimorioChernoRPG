@@ -1,0 +1,190 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-ranger-ronin",
+    "identifier": "ryoko-ranger-ronin",
+    "name": "Rōnin",
+    "originalName": "Rōnin",
+    "aliases": [
+      "Rōnin",
+      "Rōnin"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "184–185",
+    "chapter": "Capítulo 9: Classes",
+    "page": 184
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Um patrulheiro guerreiro sem mestre, especialista em sacar e guardar múltiplas armas, alternando combate corpo a corpo e à distância em um fluxo veloz.",
+    "tables": [
+      {
+        "key": "table.1.magia-errante",
+        "title": "Magia Errante",
+        "page": 185,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Patrulheiro"
+          },
+          {
+            "key": "magia",
+            "label": "Magia"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magia": "Retirada Acelerada"
+          },
+          {
+            "nivel": "5º",
+            "magia": "Nublar"
+          },
+          {
+            "nivel": "9º",
+            "magia": "Remover Maldição"
+          },
+          {
+            "nivel": "13º",
+            "magia": "Proteção contra a Morte"
+          },
+          {
+            "nivel": "17º",
+            "magia": "Lendas e Histórias"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 184
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-ranger-ronin.feature.magia-errante.l3.1",
+      "name": "MAGIA ERRANTE",
+      "level": 3,
+      "description": "Você aprende magias adicionais nos níveis indicados pela tabela; elas contam como magias de Patrulheiro e não contam em seu limite de magias conhecidas.",
+      "page": 185,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-ranger-ronin.feature.saque-cortante.l3.1",
+      "name": "SAQUE CORTANTE",
+      "level": 3,
+      "description": "A primeira vez em cada turno que acerta um ataque corpo a corpo com arma que sacou naquele turno, causa +1d6 do tipo da arma (+1d10 no 11º nível). Uma vez por turno, pode sacar uma arma como parte de um ataque de oportunidade. Também recebe duas interações de objeto adicionais por turno, mas apenas para sacar ou guardar armas.",
+      "page": 184,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-ranger-ronin.feature.sem-mestre.l3.1",
+      "name": "SEM MESTRE",
+      "level": 3,
+      "description": "Sempre que fizer salvaguarda para evitar ou encerrar a condição enfeitiçado em si, role 1d6 e some ao resultado.",
+      "page": 185,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-ranger-ronin.feature.aparada-cortante.l7.1",
+      "name": "APARADA CORTANTE",
+      "level": 7,
+      "description": "Quando criatura faz ataque de arma contra você enquanto você tem arma corpo a corpo guardada e uma mão livre, use reação para sacar e aparar. Sua CA contra esse ataque aumenta em Destreza ou Força (sua escolha), e você ganha PV temporários = proficiência + Sabedoria (mín.1). Depois do ataque, pode guardar a arma como parte da reação.",
+      "page": 185,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-ranger-ronin.feature.mestria-com-multiplas-armas.l11.1",
+      "name": "MESTRIA COM MÚLTIPLAS ARMAS",
+      "level": 11,
+      "description": "Você tem vantagem no primeiro ataque de arma corpo a corpo e no primeiro ataque de arma à distância que fizer em cada turno. Além disso, estar a 1,5 m de criatura hostil não impõe desvantagem nos ataques à distância.",
+      "page": 185,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-ranger-ronin.feature.investida-implacavel.l15.1",
+      "name": "INVESTIDA IMPLACÁVEL",
+      "level": 15,
+      "description": "Ao realizar a ação Atacar, cada acerto crítico ou redução de criatura a 0 PV durante a ação permite um ataque de arma adicional, até três ataques adicionais por turno.",
+      "page": 185,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

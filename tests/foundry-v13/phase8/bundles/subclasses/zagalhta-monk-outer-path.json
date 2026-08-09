@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-monk-outer-path",
+    "identifier": "zagalhta-monk-outer-path",
+    "name": "Caminho da Via Exterior",
+    "originalName": "Way of the Outer Path",
+    "aliases": [
+      "Way of the Outer Path"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "160",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 160
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Tradição de dissociação meditativa que separa ego e corpo, torna o monge semipermeável ao dano e lhe permite agir simultaneamente sobre os Planos Material e Etéreo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 160
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-monk-outer-path.feature.autossugestao.l3.1",
+      "name": "AUTOSSUGESTÃO",
+      "level": 3,
+      "description": "Ao terminar um Descanso, escolha uma arma que possui; ela é uma arma de Monge com a qual você é proficiente até vincular outra. Qualquer arma com a qual esteja sintonizado também é arma de Monge para você.",
+      "page": 160,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-monk-outer-path.feature.eco-imperviouso.l3.1",
+      "name": "ECO IMPERVIOUSO",
+      "level": 3,
+      "description": "Você recebe resistência a dano psíquico.",
+      "page": 160,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-monk-outer-path.feature.forma-desimpedida.l6.1",
+      "name": "FORMA DESIMPEDIDA",
+      "level": 6,
+      "description": "Como ação bônus, transforme-se por 1 minuto, até cair a 0 PV ou desfazer como ação bônus. Quando for atingido por ataque, role 1d100: resultado ≤ 10 + nível de Monge faz o ataque errar automaticamente; se um ataque ainda acertar, perde essa proteção até o início do próximo turno. Na forma, vê, interage, ataca e afeta criaturas nos Planos Etéreo e Material como se estivesse em ambos. Uma vez por Descanso; usos adicionais custam 2 ki.",
+      "page": 160,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-monk-outer-path.feature.foco-do-fardo.l11.1",
+      "name": "FOCO DO FARDO",
+      "level": 11,
+      "description": "Na Forma Desimpedida, seus ataques são automaticamente aprimorados como por Dotação de Ki e o primeiro ponto de ki que gastar em cada turno não é deduzido.",
+      "page": 160,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-monk-outer-path.feature.apoios-cosmicos.l11.1",
+      "name": "APOIOS CÓSMICOS",
+      "level": 11,
+      "description": "Sem armadura: na Forma Desimpedida, recebe voo pairado igual ao deslocamento; e pode caminhar por superfícies horizontais, verticais ou invertidas sem cair enquanto mantiver contato, criando pontos de apoio gravitacionais.",
+      "page": 160,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-monk-outer-path.feature.tempestade-de-trauma.l17.1",
+      "name": "TEMPESTADE DE TRAUMA",
+      "level": 17,
+      "description": "Cada vez que uma criatura ativa a rolagem d100 de Forma Desimpedida, receba 1 Carga de Trauma; também recebe 1 quando uma criatura causa 10+ de dano com um único ataque. Ao fim de cada turno, 1d4 cargas desaparecem. Ao acertar ataque de arma, gaste qualquer quantidade para adicionar um dado de Artes Marciais por carga ao dano, após acertar e antes do dano; ou gaste cargas como pontos de ki, 1 por 1.",
+      "page": 160,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

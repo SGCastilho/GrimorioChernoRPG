@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-morning-glory",
+    "identifier": "lyre-petal-knight-retia-morning-glory",
+    "name": "Glória-da-Manhã",
+    "originalName": "Morning Glory",
+    "aliases": [
+      "Morning Glory"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "395",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 395
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "A Glória-da-Manhã pertence a almas inquietas que vivem de experiência em experiência. Seus poderes unem corações, criam vínculos de dedicação e manipulam distância entre pessoas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 395
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-morning-glory.feature.sopro-de-unidade.l2.1",
+      "name": "SOPRO DE UNIDADE",
+      "level": 2,
+      "description": "Uma vez por Descanso Longo, você e até cinco criaturas podem descansar por 1 minuto para receber os benefícios de um Descanso Curto adicional. Esse descanso não conta contra o número de Descansos Curtos permitidos por Descanso Longo. Uma criatura só pode receber o benefício de Sopro de Unidade uma vez por Descanso Longo, independentemente da fonte.",
+      "page": 395,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-morning-glory.feature.colar-da-atencao.l6.1",
+      "name": "COLAR DA ATENÇÃO",
+      "level": 6,
+      "description": "Como ação, escolha até seu modificador de Carisma em criaturas visíveis a até 18 metros. Para cada alvo, decida se o efeito é uma Dádiva ou Comando. Usos por Descanso Curto ou Longo: metade de seu bônus de proficiência, arredondado para baixo. DÁDIVA: o alvo pode usar reação para mover até seu deslocamento sem provocar ataques de oportunidade; se atraído, deve terminar mais perto de você; se repelido, mais longe. COMANDO: o alvo faz salvaguarda de Carisma; em falha, deve usar seu deslocamento para se aproximar o máximo possível se atraído ou se afastar o máximo possível se repelido.",
+      "page": 395,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-morning-glory.feature.vinculo-de-dedicacao.l11.1",
+      "name": "VÍNCULO DE DEDICAÇÃO",
+      "level": 11,
+      "description": "Você e outra criatura podem participar de uma cerimônia de 1 hora que cria um vínculo, representado por anéis azuis e roxos; cada criatura só pode manter um vínculo deste tipo. Enquanto estiverem no mesmo plano, conhecem o estado uma da outra, incluindo condições, PV e ferimentos, mas apenas dentro do contexto que ao menos uma conheça; podem falar telepaticamente a qualquer distância e compreendem os idiomas falados pela outra. Quando uma usa item, poção, magia ou característica para curar a outra, a cura usa o resultado máximo. Se uma cair a 0 PV, a outra, se estiver a até 9 metros e com ao menos metade de seus PV, pode usar reação para perder metade de seus PV atuais, arredondado para cima, curando a parceira no mesmo valor. Quando uma fizer ataque ou salvaguarda, a outra pode usar reação antes do resultado ser revelado para adicionar seu próprio bônus de proficiência. Uma delas pode romper o vínculo enquanto consciente; romper unilateralmente causa 1 nível de exaustão e 3d8 de dano psíquico, enquanto ruptura consensual não. Depois de rompido, ambas esperam 1 semana para formar outro. A morte de uma não rompe automaticamente o vínculo, mas permite rompê-lo sem penalidade.",
+      "page": 395,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-morning-glory.feature.despedida-amarga.l15.1",
+      "name": "DESPEDIDA AMARGA",
+      "level": 15,
+      "description": "Quando uma criatura errar um ataque contra você, pode mover imediatamente até seu deslocamento. Esse movimento não provoca ataque de oportunidade da criatura que acionou a característica nem outros efeitos baseados em sair do alcance dela, como Sentinela. Você pode usar esta característica uma vez por rodada e recupera o uso no início do seu turno.",
+      "page": 395,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

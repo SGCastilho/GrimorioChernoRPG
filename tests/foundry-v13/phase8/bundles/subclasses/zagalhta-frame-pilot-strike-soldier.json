@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-frame-pilot-strike-soldier",
+    "identifier": "zagalhta-frame-pilot-strike-soldier",
+    "name": "Soldado de Assalto",
+    "originalName": "Strike Soldier",
+    "aliases": [
+      "Strike Soldier"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "136",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 136
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "frame-pilot",
+    "identifier": "frame-pilot",
+    "name": "Piloto de Frame"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "frame-pilot",
+    "selectionLevel": 3,
+    "description": "Soldado direto e agressivo que extrai a máxima capacidade ofensiva de uma unidade frame, combina ataques pessoais e da máquina e transforma erros em novas tentativas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 136
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-frame-pilot-strike-soldier.feature.ataques-de-frame.l3.1",
+      "name": "ATAQUES DE FRAME",
+      "level": 3,
+      "description": "Você pode usar o Multiataque da unidade frame por meio de sua própria ação. Além disso, como ação bônus, pode fazer a unidade realizar um ataque de arma contra um alvo ao alcance.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-strike-soldier.feature.carga-de-choque.l3.1",
+      "name": "CARGA DE CHOQUE",
+      "level": 3,
+      "description": "Ao falhar numa salvaguarda ou teste, pode gastar uma Carga Arcana para rolar novo d20 e substituir o resultado original. Só uma vez por rolagem.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-strike-soldier.feature.critico-aprimorado-frame.l7.1",
+      "name": "CRÍTICO APRIMORADO (FRAME)",
+      "level": 7,
+      "description": "Você e qualquer unidade frame que pilota obtêm crítico em 19 ou 20. Quando a unidade obtém crítico dessa forma, causa dano adicional igual ao seu nível de Piloto de Frame.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-strike-soldier.feature.aprimoramento-de-ataque-extra.l11.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 11,
+      "description": "Ao realizar a ação Atacar, pode atacar três vezes em vez de uma.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-strike-soldier.feature.compensacao.l16.1",
+      "name": "COMPENSAÇÃO",
+      "level": 16,
+      "description": "Na primeira vez que errar uma jogada de ataque em cada turno, pode tratar o resultado do d20 como 10, possivelmente alterando o resultado.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 16,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1230 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+    "pages": "56–62",
+    "chapter": "Capítulo 3: Classes",
+    "page": 57
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Com um pseudodragão enrolado em seu ombro, um jovem elfo vestindo robes dourados sorri calorosamente, tecendo um charme mágico através de suas doces palavras e dobrando a sentinela do palácio como deseja.\n\nA medida que chamas ganham vida em suas mãos, um mirrado humanos sussurra o nome secreto do seu patrono demoníaco, infundindo sua magia com poder abissal.\n\nOlhando, ora para um tomo surrado, ora para o alinhamento incomum das estrelas acima, um tiefling de olhos selvagens profere o ritual místico que abrirá uma passagem para um mundo distante.\n\nOs bruxos são desbravadores do conhecimento que existe escondido no tecido do multiverso. Através de pactos feitos com seres misteriosos detentores de poder sobrenatural, os bruxos desbloqueiam efeitos mágicos tão sutis quanto espetaculares. Extraindo o conhecimento antigo de seres como nobres fadas, demônios, diabos, bruxas e entidades alienígenas do Reino Distante, os bruxos remontam segredos arcanos para aprimorar seus próprios poderes.\n\nUm bruxo é definido por um pacto com uma entidade transcendental. Às vezes o relacionamento entre um bruxo e seu patrono é como o de um clérigo com sua divindade, apesar de os seres que servem como patronos para os bruxos não serem deuses. Um bruxo poderia liderar um culto dedicado a um príncipe-demônio, um arquidemônio ou uma entidade completamente alienígena\n– seres que, normalmente, não são servidos por clérigos. Muitas vezes, porém, esse arranjo é mais similar ao realizado entre um mestre e seu aprendiz. O bruxo aprende e aumenta seu poder, ao custo de serviços ocasionais realizados em nome do seu patrono.\n\nA magia outorgada ao bruxo varia de pequenas, mas duradouras alterações à pessoa do bruxo (tais como a habilidade de ver no escuro ou de ler qualquer idioma) até o acesso a poderosas magias. Diferente dos magos livrescos, os bruxos suplementam sua magia com facilidade em combate. Eles se sentem confortáveis em armaduras leves e sabem usar armas simples.\n\nOs bruxos são guiados por um insaciável desejo por conhecimento e poder, que os compele aos seus pactos e molda suas vidas. Essa sede leva os bruxos a fazerem seus pactos e também molda suas carreiras.\n\nHistórias de bruxos criando elos com corruptores são vastamente conhecidos. Porém, muitos bruxos servem patronos que não são abissais. Algumas vezes um viajante na floresta chega a uma estranhamente bela torre, conhece seu senhor ou senhora feérico e acaba por fazer um pacto sem ter total ciência disso. E, as vezes,\n\nenquanto vasculha em tomos de conhecimento proibido, a mente brilhante, porem enlouquecida de um estudante é levada a realidades além do mundo material em direção a seres alienígenas habitantes do vazio exterior.\n\nQuando um pacto é selado, a sede de conhecimento e poder do bruxo não pode ser saciada com mero estudo e pesquisa. Ninguém faz um pacto com uma entidade tão poderosa se não deseja usar esse poder atrás de benefícios. Em vez disso, a grande maioria dos bruxos gastam seus dias em uma perseguição desenfreada por seus objetivos, que normalmente os leva a algum tipo de aventura. Além disso, as demandas de seus patronos também leva os bruxos a se aventurar.",
+    "hitDice": {
+      "raw": "d8",
+      "mode": "standard",
+      "number": 1,
+      "faces": 8
+    },
+    "primaryAbility": {
+      "raw": "Carisma",
+      "abilityKeys": [
+        "cha"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Sabedoria, Carisma",
+        "abilityKeys": [
+          "wis",
+          "cha"
+        ]
+      },
+      "armor": "Armaduras leves",
+      "weapons": "Armas simples",
+      "tools": "Nenhuma",
+      "skills": "Escolha duas: Arcanismo, Enganação, História, Intimidação, Investigação, Natureza ou Religião"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 57,
+      "text": "Como um bruxo, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d8 por nível de bruxo Pontos de Vida no 1° Nível: 8 + seu modificador de Constituição\n\nPontos de Vida nos Níveis Seguintes: 1d8 (ou 5) + seu modificador de Constituição por nível de bruxo após o 1° PROFICIÊNCIAS Armaduras: Armaduras leves Armas: Armas simples Ferramentas: Nenhuma Testes de Resistência: Sabedoria, Carisma Perícias: Escolha duas dentre Arcanismo, Enganação, História, Intimidação, Investigação, Natureza e Religião EQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) uma besta leve e 20 virotes ou (b) qualquer arma simples\n• (a) uma bolsa de componentes ou (b) um foco arcano\n• (a) um pacote de estudioso ou (b) um pacote de explorador\n• Armadura de couro, qualquer arma simples e duas adagas"
+    },
+    "overview": [
+      {
+        "title": "BRUXO",
+        "page": 56,
+        "text": "Com um pseudodragão enrolado em seu ombro, um jovem elfo vestindo robes dourados sorri calorosamente, tecendo um charme mágico através de suas doces palavras e dobrando a sentinela do palácio como deseja.\n\nA medida que chamas ganham vida em suas mãos, um mirrado humanos sussurra o nome secreto do seu patrono demoníaco, infundindo sua magia com poder abissal.\n\nOlhando, ora para um tomo surrado, ora para o alinhamento incomum das estrelas acima, um tiefling de olhos selvagens profere o ritual místico que abrirá uma passagem para um mundo distante.\n\nOs bruxos são desbravadores do conhecimento que existe escondido no tecido do multiverso. Através de pactos feitos com seres misteriosos detentores de poder sobrenatural, os bruxos desbloqueiam efeitos mágicos tão sutis quanto espetaculares. Extraindo o conhecimento antigo de seres como nobres fadas, demônios, diabos, bruxas e entidades alienígenas do Reino Distante, os bruxos remontam segredos arcanos para aprimorar seus próprios poderes."
+      },
+      {
+        "title": "JURAMENTO E DÍVIDA",
+        "page": 56,
+        "text": "Um bruxo é definido por um pacto com uma entidade transcendental. Às vezes o relacionamento entre um bruxo e seu patrono é como o de um clérigo com sua divindade, apesar de os seres que servem como patronos para os bruxos não serem deuses. Um bruxo poderia liderar um culto dedicado a um príncipe-demônio, um arquidemônio ou uma entidade completamente alienígena\n– seres que, normalmente, não são servidos por clérigos. Muitas vezes, porém, esse arranjo é mais similar ao realizado entre um mestre e seu aprendiz. O bruxo aprende e aumenta seu poder, ao custo de serviços ocasionais realizados em nome do seu patrono.\n\nA magia outorgada ao bruxo varia de pequenas, mas duradouras alterações à pessoa do bruxo (tais como a habilidade de ver no escuro ou de ler qualquer idioma) até o acesso a poderosas magias. Diferente dos magos livrescos, os bruxos suplementam sua magia com facilidade em combate. Eles se sentem confortáveis em armaduras leves e sabem usar armas simples."
+      },
+      {
+        "title": "ESCAVANDO SEGREDOS",
+        "page": 56,
+        "text": "Os bruxos são guiados por um insaciável desejo por conhecimento e poder, que os compele aos seus pactos e molda suas vidas. Essa sede leva os bruxos a fazerem seus pactos e também molda suas carreiras.\n\nHistórias de bruxos criando elos com corruptores são vastamente conhecidos. Porém, muitos bruxos servem patronos que não são abissais. Algumas vezes um viajante na floresta chega a uma estranhamente bela torre, conhece seu senhor ou senhora feérico e acaba por fazer um pacto sem ter total ciência disso. E, as vezes,\n\nenquanto vasculha em tomos de conhecimento proibido, a mente brilhante, porem enlouquecida de um estudante é levada a realidades além do mundo material em direção a seres alienígenas habitantes do vazio exterior.\n\nQuando um pacto é selado, a sede de conhecimento e poder do bruxo não pode ser saciada com mero estudo e pesquisa. Ninguém faz um pacto com uma entidade tão poderosa se não deseja usar esse poder atrás de benefícios. Em vez disso, a grande maioria dos bruxos gastam seus dias em uma perseguição desenfreada por seus objetivos, que normalmente os leva a algum tipo de aventura. Além disso, as demandas de seus patronos também leva os bruxos a se aventurar."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM BRUXO",
+        "page": 57,
+        "text": "A medida que você cria seu personagem bruxo, gaste algum tempo pensando em seu patrono e as obrigações impostas pelo pacto que você fez. O que levou você a fazer o pacto e, como você fez contato com seu patrono? Você foi seduzido a invocar um diabo ou você estava em busca do ritual que permitia a você fazer contato com um antigo deus alienígena? Foi você que buscou por seu patrono ou foi seu patrono que escolheu você? Você realiza as obrigações do seu pacto a contragosto ou serve alegremente antes mesmo de receber as recompensas prometidas a você?\n\nConverse com seu Mestre para determinar quão influente seu pacto será na carreira de aventureiro do seu personagem. As exigências do seu patrono devem levá-lo a aventuras ou elas devem consistir inteiramente em pequenos favores que você possa fazer entre aventuras.\n\nQue tipo de relacionamento você tem com seu patrono? É amistoso, antagônico, apreensivo ou romântico? O quão importante seu patrono considera que você é? Qual a sua parte nos planos do seu patrono? Você conhece outros servos do seu patrono?\n\nComo seu patrono se comunica com você? Se você tiver um familiar, seu patrono poderia, ocasionalmente, falar através dele. Alguns bruxos encontra mensagens de seus patronos até mesmo em arvores, misturada a folhas secas ou vagando nas nuvens – mensagens que apenas o bruxo consegue ver. Outros bruxos conversam com seus patrono nos sonhos, ou tem visões acordados, ou lidam apenas com intermediários."
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 57,
+        "text": "Você pode construir um bruxo rapidamente seguindo essas sugestões. Primeiro, coloque seu valor de habilidade mais alto em Carisma, seguido de Constituição. Segundo, escolha o antecedente charlatão. Terceiro, escolha os truques rajada mística e toque arrepiante, além das seguintes magias de 1° nível: enfeitiçar pessoa e raio de bruxa."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.patronos-transcendentais",
+        "title": "PATRONOS TRANSCENDENTAIS",
+        "page": 59,
+        "text": "Os seres que servem os bruxos como seus patronos são poderoso habitantes de outros planos de existência – não são deuses, mas tem poderes praticamente divinos. Vários patronos concedem aos seus bruxos acesso a diferentes poderes e invocações, e esperam favores significativos em troca.\n\nAlguns patronos reúnem bruxos, distribuindo conhecimento místico praticamente de graça ou gabam-se de sua habilidade de controlar os mortais a sua vontade. Outros patronos concedem seus poderes apenas a contragosto e farão um pacto apenas com um bruxo. Bruxos que servem o mesmo patrono devem ver um ao outro como aliados, irmãos ou rivais.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.2.sua-dadiva-do-pacto",
+        "title": "SUA DÁDIVA DO PACTO",
+        "page": 59,
+        "text": "Cada opção de Dádiva do Pacto produz uma criatura ou objeto especial que reflete a natureza do seu patrono.\n\nPacto da Corrente. Seu familiar é mais esperto que um familiar típico. Sua forma padrão pode ser reflexo do seu patrono, com sprites e pseudodragões vinculados à Arquifada e diabretes e quasits vinculados ao Corruptor. Devido à natureza inescrutável do Grande Antigo, qualquer familiar é aceitável para ele.\n\nPacto da Lâmina. Se o seu patrono for a Arquifada, sua arma deveria ser uma lâmina fina entalhada com frondosas videiras. Se você serve o Corruptor, sua arma poderia ser um machado feito de metal negro e adornado com chamas decorativas. Se o seu patrono for o Grande Antigo, sua arma deveria ser uma lança de aparência antiga, com gemas encrustadas na sua ponta, esculpida para se parecer com um terrível olho aberto.\n\nPacto do Tomo. Seu Livro das Sombras deveria ser um tomo elegante com adornos em suas pontas e repleto de magias de encantamento e ilusão dado a você nobremente pela Arquifada. Ele poderia ser um tomo pesado costurado com couro de demônio e cravado com ferro, contendo magias de conjuração e rico em conhecimento proibido sobre regiões sinistras do cosmos, um presente do Corruptor. Ou poderia ser um diário esfarrapado de um lunático que enlouqueceu ao contatar o Grande Antigo, contendo restos de magias que apenas sua insanidade crescente permite que você as entenda e conjure.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.3.invocacoes-misticas",
+        "title": "INVOCAÇÕES MÍSTICAS",
+        "page": 61,
+        "text": "Se uma invocação mística tiver pré-requisitos, você deve possuí-los para que possa aprendê-la. Você pode aprender a invocação ao mesmo tempo que adquire os prérequisitos dela. O pré-requisito de nível nas invocações se refere ao nível de bruxo, não ao nível de personagem.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.4.armadura-de-sombras",
+        "title": "ARMADURA DE SOMBRAS",
+        "page": 61,
+        "text": "Você pode conjurar armadura arcana em si mesmo, à vontade, sem precisar gastar um espaço de magia ou componentes materiais.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.5.correntes-de-carceri",
+        "title": "CORRENTES DE CÁRCERI",
+        "page": 61,
+        "text": "Pré-requisito: 15° nível, característica Pacto da Corrente\n\nVocê pode conjurar imobilizar monstro, à vontade – tendo como alvo um celestial, corruptor ou elemental – sem precisar gastar um espaço de magia ou componentes materiais. Você deve terminar um descanso longo antes de poder usar essa invocação na mesma criatura novamente.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.6.encharcar-a-mente",
+        "title": "ENCHARCAR A MENTE",
+        "page": 61,
+        "text": "Pré-requisito: 5° nível\n\nVocê pode conjurar lentidão, uma vez, usando um espaço de magia de bruxo. Você não pode fazer isso novamente até terminar um descanso longo.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.7.escultor-de-carne",
+        "title": "ESCULTOR DE CARNE",
+        "page": 61,
+        "text": "Pré-requisito: 7° nível\n\nVocê pode conjurar metamorfose, uma vez, usando um espaço de magia de bruxo. Você não pode fazer isso novamente até terminar um descanso longo.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.8.explosao-agonizante",
+        "title": "EXPLOSÃO AGONIZANTE",
+        "page": 61,
+        "text": "Pré-requisito: truque rajada mística\n\nQuando você conjura rajada mística, adicione seu modificador de Carisma ao dano causado quando atingir.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.9.explosao-repulsiva",
+        "title": "EXPLOSÃO REPULSIVA",
+        "page": 61,
+        "text": "Pré-requisito: truque rajada mística\n\nQuando você atingir uma criatura com uma rajada mística, você pode empurrar a criatura até 3 metros para longe de você em linha reta.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.10.idioma-bestial",
+        "title": "IDIOMA BESTIAL",
+        "page": 61,
+        "text": "Você pode conjurar falar com animais, à vontade, sem precisar gastar um espaço de magia.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.11.influencia-enganadora",
+        "title": "INFLUÊNCIA ENGANADORA",
+        "page": 61,
+        "text": "Você ganha proficiência nas perícias Enganação e Persuasão.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.12.lacaios-do-caos",
+        "title": "LACAIOS DO CAOS",
+        "page": 61,
+        "text": "Pré-requisito: 9° nível\n\nVocê pode lançar conjurar elemental, uma vez, usando um espaço de magia de bruxo. Você não pode fazer isso novamente até terminar um descanso longo.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.13.lamina-sedenta",
+        "title": "LÂMINA SEDENTA",
+        "page": 61,
+        "text": "Pré-requisito: 5° nível, característica Pacto da Lâmina\n\nVocê pode atacar com sua arma do pacto duas vezes, ao invés de apenas uma, quando você usa a ação de Ataque no seu turno.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.14.lanca-mistica",
+        "title": "LANÇA MÍSTICA",
+        "page": 61,
+        "text": "Pré-requisito: truque rajada mística\n\nQuando você conjura rajada mística, seu alcance será de 90 metros.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.15.larapio-dos-cinco-destinos",
+        "title": "LARÁPIO DOS CINCO DESTINOS",
+        "page": 61,
+        "text": "Você pode conjurar perdição, uma vez, usando um espaço de magia de bruxo. Você não pode fazer isso novamente até terminar um descanso longo.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.16.livro-de-segredos-antigos",
+        "title": "LIVRO DE SEGREDOS ANTIGOS",
+        "page": 61,
+        "text": "Pré-requisito: Característica Pacto do Tomo\n\nVocê pode agora, registrar rituais mágicos no seu Livro das Sombras. Escolha duas magias de 1° nível que\n\npossuam o descritor ritual da lista de magias de qualquer classe. A magia aparece no livro e não conta no número de magias que você conhece. Com o seu Livro das Sombras em mãos, você pode conjurar as magias escolhidas como rituais. Você não pode conjurar essas magias, exceto na forma de rituais, a não ser que você tenha aprendido elas através de outros meios. Você também pode conjurar uma magia de bruxo que você conheça como ritual se ela possuir o descritor ritual. Os rituais não precisam ser da mesma lista de magias.\n\nDurante suas aventuras, você pode adicionar outras magias de ritual ao seu Livro das Sombras. Quando você encontrar tais magias, você pode adicioná-la ao livro se o nível da magia for igual ou inferior à metade do seu nível de bruxo (arredondado para baixo) e se você tiver tempo para gastar transcrevendo a magia. Para cada nível da magia, o processo de transcrição levará 2 horas e custará 50 po, devido às tintas raras necessárias para inscrevê-la.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.17.mascara-das-muitas-faces",
+        "title": "MÁSCARA DAS MUITAS FACES",
+        "page": 62,
+        "text": "Você pode conjurar disfarçar-se, à vontade, sem precisar gastar um espaço de magia.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.18.mestre-das-infindaveis-formas",
+        "title": "MESTRE DAS INFINDÁVEIS FORMAS",
+        "page": 62,
+        "text": "Pré-requisito: 15° nível\n\nVocê pode conjurar alterar-se, à vontade, sem precisar gastar um espaço de magia.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.19.olhar-de-duas-mentes",
+        "title": "OLHAR DE DUAS MENTES",
+        "page": 62,
+        "text": "Você pode usar sua ação para tocar um humanoide voluntário e perceber através do seus sentidos até o final do seu próximo turno. Conquanto que a criatura esteja no mesmo plano de existência que você, você pode usar sua ação nas rodadas subsequentes para manter a conexão, estendendo a duração até o início do seu próximo turno. Enquanto estiver percebendo através dos sentidos de outra criatura, você aproveita os benefícios de todos os sentidos especiais possuídos pela criatura e você fica cego e surdo ao que está a sua volta.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.20.olhos-do-guardiao-das-runas",
+        "title": "OLHOS DO GUARDIÃO DAS RUNAS",
+        "page": 62,
+        "text": "Você pode ler todas as escritas.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.21.palavra-terrivel",
+        "title": "PALAVRA TERRÍVEL",
+        "page": 62,
+        "text": "Pré-requisito: 7° nível\n\nVocê pode conjurar confusão, uma vez, usando um espaço de magia de bruxo. Você não pode fazer isso novamente até terminar um descanso longo.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.22.passo-ascendente",
+        "title": "PASSO ASCENDENTE",
+        "page": 62,
+        "text": "Pré-requisito: 9° nível\n\nVocê pode conjurar levitação em si mesmo, à vontade, sem precisar gastar um espaço de magia ou componentes materiais.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.23.salto-transcendental",
+        "title": "SALTO TRANSCENDENTAL",
+        "page": 62,
+        "text": "Pré-requisito: 9° nível\n\nVocê pode conjurar salto em si mesmo, à vontade, sem precisar gastar um espaço de magia ou componentes materiais.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.24.sinal-de-mau-agouro",
+        "title": "SINAL DE MAU AGOURO",
+        "page": 62,
+        "text": "Pré-requisito: 5° nível\n\nVocê pode conjurar rogar maldição, uma vez, usando um espaço de magia de bruxo. Você não pode fazer isso novamente até terminar um descanso longo.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.25.sorvedor-de-vida",
+        "title": "SORVEDOR DE VIDA",
+        "page": 62,
+        "text": "Pré-requisito: 12° nível, característica Pacto da Lâmina\n\nQuando você atingir uma criatura com sua arma do pacto, a criatura sofre uma quantidade de dano necrótico adicional igual ao seu modificador de Carisma (mínimo 1).",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.26.sussurros-da-sepultura",
+        "title": "SUSSURROS DA SEPULTURA",
+        "page": 62,
+        "text": "Pré-requisito: 9° nível\n\nVocê pode conjurar falar com os mortos, à vontade, sem precisar gastar um espaço de magia.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.27.sussurros-sedutores",
+        "title": "SUSSURROS SEDUTORES",
+        "page": 62,
+        "text": "Pré-requisito: 7° nível\n\nVocê pode conjurar compulsão, uma vez, usando um espaço de magia de bruxo. Você não pode fazer isso novamente até terminar um descanso longo.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.28.uno-com-as-sombras",
+        "title": "UNO COM AS SOMBRAS",
+        "page": 62,
+        "text": "Pré-requisito: 5° nível\n\nQuando você estiver em uma área de penumbra ou escuridão, você pode usar sua ação para ficar invisível até se mover ou realizar uma ação ou reação.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.29.vigor-abissal",
+        "title": "VIGOR ABISSAL",
+        "page": 62,
+        "text": "Você pode conjurar vitalidade falsa em si mesmo, à vontade, como uma magia de 1° nível, sem precisar gastar um espaço de magia ou componentes materiais.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.30.visao-da-bruxa",
+        "title": "VISÃO DA BRUXA",
+        "page": 62,
+        "text": "Pré-requisito: 15° nível\n\nVocê pode ver a verdadeira forma de qualquer metamorfo ou criatura oculta através de magias de ilusão ou transmutação contanto que a criatura esteja a até 9 metros de você e você tenha linha de visão.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.31.visao-diabolica",
+        "title": "VISÃO DIABÓLICA",
+        "page": 62,
+        "text": "Você pode ver normalmente na escuridão, tanto mágica quanto normal, com um alcance de 36 metros.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.32.visao-mistica",
+        "title": "VISÃO MÍSTICA",
+        "page": 62,
+        "text": "Você pode conjurar detectar magia, à vontade, sem precisar gastar um espaço de magia.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.33.visoes-de-reinos-distantes",
+        "title": "VISÕES DE REINOS DISTANTES",
+        "page": 62,
+        "text": "Pré-requisito: 15° nível\n\nVocê pode conjurar olho arcano, à vontade, sem precisar gastar um espaço de magia.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.34.visoes-nas-brumas",
+        "title": "VISÕES NAS BRUMAS",
+        "page": 62,
+        "text": "Você pode conjurar imagem silenciosa, à vontade, sem precisar gastar um espaço de magia ou componentes materiais.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.35.voz-do-mestre-das-correntes",
+        "title": "VOZ DO MESTRE DAS CORRENTES",
+        "page": 62,
+        "text": "Pré-requisito: Característica Pacto da Corrente\n\nVocê pode se comunicar telepaticamente com seu familiar e perceber através dos sentidos do seu familiar enquanto ambos estiverem no mesmo plano de existência. Além disso, enquanto estiver percebendo através dos sentidos do seu familiar, você também poderá falar através dele com a sua voz, mesmo que seu familiar, normalmente, seja incapaz de falar.",
+        "sourceTitle": ""
+      }
+    ],
+    "presentation": {
+      "sigilKey": "warlock",
+      "color": "#7f69a8"
+    }
+  },
+  "features": [
+    {
+      "key": "class.warlock.feature.patrono-transcendental.l1.1",
+      "name": "PATRONO TRANSCENDENTAL",
+      "level": 1,
+      "description": "No 1° nível, você conclui uma barganha com um ser transcendental, à sua escolha: a Arquifada, o Corruptor ou o Grande Antigo, cada um deles é detalhado no final da descrição da classe. Sua escolha lhe confere traços no 1° nível e novamente no6°, 10° e 14° nível.",
+      "page": 58,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.warlock.feature.magia-de-pacto.l1.1",
+      "name": "MAGIA DE PACTO",
+      "level": 1,
+      "description": "Sua pesquisa arcana e a magia outorgada a você por seu patrono, lhe concedem uma gama de magias. Veja o capítulo 10 para as regras gerais de conjuração e o capítulo 11 para a lista de magias de bruxo.\n\nTRUQUES Você conhece dois truques, à sua escolha, da lista de magias de bruxo. Você aprende truques de bruxo adicionais, à sua escolha, em níveis mais altos, como mostrado na coluna Truques Conhecidos da tabela O Bruxo.\n\nESPAÇOS DE MAGIA A tabela O Bruxo mostra quantos espaços de magia você possui. A tabela também mostra qual o nível desses espaços; todos os seus espaços de magia são do mesmo nível. Para conjurar uma magia de bruxo de 1° nível ou superior, você deve gastar uma espaço de magia. Você recobra todos os espaços de magia gastos quando você completa um descanso curto ou longo.\n\nPor exemplo, quando você atingir o 5° nível, você terá dois espaços de magia de 3° nível. Para conjurar a magia de 1° nível raio de bruxa, você deve gastar um desses espaços e você a conjura como uma magia de 3° nível.\n\nMAGIAS CONHECIDAS DE 1° NÍVEL E SUPERIORES No 1° nível, você conhece duas magias de 1° nível, à sua escolha da lista de magias de bruxo.\n\nA coluna Magias Conhecidas na tabela O Bruxo mostra quando você aprende mais magias de bruxo, à sua escolha, de 1° nível ou superior. Cada uma dessas magias deve ser de um nível a que você tenha acesso, como mostrado na tabela na coluna de Nível de Magia para o\n\nseu nível. Quando você alcança o 6° nível, por exemplo, você aprende uma nova magia de bruxo, que pode ser de 1°, 2° ou 3° nível.\n\nAlém disso, quando você adquire um nível nessa classe, você pode escolher uma magia de bruxo que você conheça e substituí-la por outra magia da lista de magias de bruxo, que também deve ser de um nível ao qual você tenha espaços de magia.\n\nHABILIDADE DE CONJURAÇÃO Sua habilidade de conjuração é Carisma para suas magias de bruxo, portanto, você usa seu Carisma sempre que alguma magia se referir à sua habilidade de conjurar magias. Além disso, você usa o seu modificador de Carisma para definir a CD dos testes de resistência para as magias de bruxo que você conjura e quando você realiza uma jogada de ataque com uma magia.\n\nCD para suas magias = 8 + bônus de proficiência +\n\nseu modificador de Carisma\n\nModificador de ataque de magia = seu bônus de proficiência + seu modificador de Carisma FOCO DE CONJURAÇÃO Você pode usar um foco arcano (encontrado no capítulo 5) como foco de conjuração das suas magias de bruxo.",
+      "page": 58,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.warlock.feature.invocacoes-misticas.l2.1",
+      "name": "INVOCAÇÕES MÍSTICAS",
+      "level": 2,
+      "description": "Durante seus estudos sobre conhecimento oculto, você descobriu as invocações místicas, fragmentos de conhecimento proibido que infundiram você com habilidade mágica permanente.\n\nNo 2° nível, você ganha duas invocações místicas, à sua escolha. Suas opções de invocação estão detalhadas no final da descrição dessa classe. Quando você atinge certos nível de bruxo, você adquire novas invocações à sua escolha, como mostrado na coluna Invocações Conhecidas na tabela O Bruxo.\n\nAlém disso, quando você adquire um novo nível nessa classe, você pode escolher uma invocação que você conheça e substituí-la por outra invocação que você possa aprender nesse nível.",
+      "page": 58,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.warlock.feature.dadiva-do-pacto.l3.1",
+      "name": "DÁDIVA DO PACTO",
+      "level": 3,
+      "description": "No 3° nível, seu patrono transcendental lhe confere um dom por seus leais serviços. Você adquire uma das características a seguir, à sua escolha.",
+      "page": 58,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.warlock.feature.pacto-da-corrente.l0.1",
+      "name": "PACTO DA CORRENTE",
+      "level": null,
+      "description": "Você aprende a magia convocar familiar e pode conjurá-la como um ritual. Essa magia não conta no número de magias que você conhece.\n\nQuando você conjura essa magia, você pode escolher uma das formas convencionais para o seu familiar ou uma das seguintes formas especiais: diabrete, pseudodragão, quasit ou sprite.\n\nAlém disso, quando você realiza a ação de Ataque, você pode renunciar s um dos seus ataques para permitir que seu familiar realize um ataque, com a reação dele.",
+      "page": 58,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.warlock.feature.pacto-da-lamina.l0.1",
+      "name": "PACTO DA LÂMINA",
+      "level": null,
+      "description": "Você pode usar sua ação para criar uma arma de pacto em sua mão vazia. Você escolhe a forma que essa arma corpo-a-corpo tem a cada vez que você a cria (veja as opções de arma no capítulo 5). Você é proficiente com ela\n\nenquanto a empunhar. Essa arma conta como sendo mágica com os propósitos de ultrapassar resistência e imunidade a ataques e danos não-mágicos.\n\nSua arma de pacto desaparece se ela estiver a mais de 1,5 metro de você por 1 minuto ou mais. Ela também desaparece se você usar essa característica novamente, se você dissipar a arma (não requer ação) ou se você morrer.\n\nVocê pode transformar uma arma mágica em sua arma de pacto ao realizar um ritual especial enquanto empunha a arma. Você precisa de 1 hora para concluir o ritual, que pode ser realizado durante um descanso curto. Você pode dissipar a arma, guardando-a em um espaço extradimensional, e ela reaparece toda vez que você criar sua arma de pacto. A arma deixa de ser sua arma de pacto se você morrer, se você realizar um ritual de 1 hora com outra arma diferente ou se você realizar um ritual de 1 hora para romper seu elo com ela. A arma aparece aos seus pés se ela estiver no espaço extradimensional quando o elo for quebrado.",
+      "page": 58,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.warlock.feature.pacto-do-tomo.l0.1",
+      "name": "PACTO DO TOMO",
+      "level": null,
+      "description": "Seu patrono lhe deu um grimório chamado Livro das Sombras. Quando você adquire essa característica, escolha três truques da lista de magias de qualquer classe. Enquanto o livro estiver com você, você poderá conjurar esses truques à vontade. Eles não contam no número de truques que você conhece. Esses truques são considerados magias de bruxo para você e não precisam ser da mesma lista de magia.\n\nSe você perder seu Livro das Sombras, você pode realizar uma cerimônia de 1 hora para receber um substituto do seu patrono. Essa cerimônia pode ser realizada durante um descanso curto ou longo e destrói o livro anterior. O livro se torna cinzas quando você morre.",
+      "page": 59,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.warlock.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.",
+      "page": 59,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.warlock.feature.arcana-mistica.l11.1",
+      "name": "ARCANA MÍSTICA",
+      "level": 11,
+      "description": "No 11° nível, seu patrono confere a você um segredo mágico conhecido como arcana. Escolha uma magia de 6° nível da lista de magias de bruxo como sua arcana.\n\nVocê pode conjurar essa magia arcana uma vez sem gastar um espaço de magia. Você deve terminar um descanso longo antes de poder fazer isso novamente.\n\nEm nível altos, você adquire mais magias de bruxo de sua escolha que podem ser conjuradas dessa forma: uma magia de 7° nível no 13° nível, uma magia de 8° nível no 15° nível e uma magia de 9° nível no 17° nível. Você recupera todos os usos de sua Arcana Mística quando você termina um descanso longo.",
+      "page": 59,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.warlock.feature.mestre-mistico.l20.1",
+      "name": "MESTRE MÍSTICO",
+      "level": 20,
+      "description": "No 20° nível, você pode recarregar sua reserva interior de poder místico quando suplicar ao seu patrono para recuperar espaços de magia gastos. Você pode gastar 1 minuto suplicando pela ajuda do seu patrono para recuperar todos os espaços de magia gastos da sua característica Magia de Pacto. Uma vez que você recuperou espaços de magia com essa característica, você deve terminar um descanso longo antes de fazê-lo novamente.",
+      "page": 59,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Bruxo",
+    "sourceTitle": "",
+    "sourcePage": 57,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "cantrips",
+        "label": "Truques Conhecidos",
+        "shortLabel": "Truques"
+      },
+      {
+        "key": "spellsKnown",
+        "label": "Magias Conhecidas"
+      },
+      {
+        "key": "pactSlots",
+        "label": "Espaços de Magia"
+      },
+      {
+        "key": "slotLevel",
+        "label": "Nível de Magia"
+      },
+      {
+        "key": "invocations",
+        "label": "Invocações Conhecidas"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Patrono Transcendental",
+            "kind": "feature",
+            "featureRefs": [
+              "class.warlock.feature.patrono-transcendental.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Magia de Pacto",
+            "kind": "feature",
+            "featureRefs": [
+              "class.warlock.feature.magia-de-pacto.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "spellsKnown": 2,
+        "pactSlots": 1,
+        "slotLevel": "1º",
+        "invocations": "—"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Invocações Místicas",
+            "kind": "feature",
+            "featureRefs": [
+              "class.warlock.feature.invocacoes-misticas.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "spellsKnown": 3,
+        "pactSlots": 2,
+        "slotLevel": "1º",
+        "invocations": 2
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Dádiva do Pacto",
+            "kind": "feature",
+            "featureRefs": [
+              "class.warlock.feature.dadiva-do-pacto.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "spellsKnown": 4,
+        "pactSlots": 2,
+        "slotLevel": "2º",
+        "invocations": 2
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.warlock.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "spellsKnown": 5,
+        "pactSlots": 2,
+        "slotLevel": "2º",
+        "invocations": 2
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [],
+        "cantrips": 3,
+        "spellsKnown": 6,
+        "pactSlots": 2,
+        "slotLevel": "3º",
+        "invocations": 3
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Patrono Transcendental",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.warlock.feature.patrono-transcendental.l1.1"
+            ]
+          }
+        ],
+        "cantrips": 3,
+        "spellsKnown": 7,
+        "pactSlots": 2,
+        "slotLevel": "3º",
+        "invocations": 3
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [],
+        "cantrips": 3,
+        "spellsKnown": 8,
+        "pactSlots": 2,
+        "slotLevel": "4º",
+        "invocations": 4
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.warlock.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "spellsKnown": 9,
+        "pactSlots": 2,
+        "slotLevel": "4º",
+        "invocations": 4
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [],
+        "cantrips": 3,
+        "spellsKnown": 10,
+        "pactSlots": 2,
+        "slotLevel": "5º",
+        "invocations": 5
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Patrono Transcendental",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.warlock.feature.patrono-transcendental.l1.1"
+            ]
+          }
+        ],
+        "cantrips": 4,
+        "spellsKnown": 10,
+        "pactSlots": 2,
+        "slotLevel": "5º",
+        "invocations": 5
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Arcana Mística (6º nível)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.warlock.feature.arcana-mistica.l11.1"
+            ]
+          }
+        ],
+        "cantrips": 4,
+        "spellsKnown": 11,
+        "pactSlots": 3,
+        "slotLevel": "5º",
+        "invocations": 5
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.warlock.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "spellsKnown": 11,
+        "pactSlots": 3,
+        "slotLevel": "5º",
+        "invocations": 6
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Arcana Mística (7º nível)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.warlock.feature.arcana-mistica.l11.1"
+            ]
+          }
+        ],
+        "cantrips": 4,
+        "spellsKnown": 12,
+        "pactSlots": 3,
+        "slotLevel": "5º",
+        "invocations": 6
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Patrono Transcendental",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.warlock.feature.patrono-transcendental.l1.1"
+            ]
+          }
+        ],
+        "cantrips": 4,
+        "spellsKnown": 12,
+        "pactSlots": 3,
+        "slotLevel": "5º",
+        "invocations": 6
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Arcana Mística (8º nível)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.warlock.feature.arcana-mistica.l11.1"
+            ]
+          }
+        ],
+        "cantrips": 4,
+        "spellsKnown": 13,
+        "pactSlots": 3,
+        "slotLevel": "5º",
+        "invocations": 7
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.warlock.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "spellsKnown": 13,
+        "pactSlots": 3,
+        "slotLevel": "5º",
+        "invocations": 7
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Arcana Mística (9º nível)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.warlock.feature.arcana-mistica.l11.1"
+            ]
+          }
+        ],
+        "cantrips": 4,
+        "spellsKnown": 14,
+        "pactSlots": 4,
+        "slotLevel": "5º",
+        "invocations": 7
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [],
+        "cantrips": 4,
+        "spellsKnown": 14,
+        "pactSlots": 4,
+        "slotLevel": "5º",
+        "invocations": 8
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.warlock.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "spellsKnown": 15,
+        "pactSlots": 4,
+        "slotLevel": "5º",
+        "invocations": 8
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Mestre Místico",
+            "kind": "feature",
+            "featureRefs": [
+              "class.warlock.feature.mestre-mistico.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "spellsKnown": 15,
+        "pactSlots": 4,
+        "slotLevel": "5º",
+        "invocations": 8
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 1,
+    "homogeneous": true,
+    "observedLevels": {
+      "1": 22
+    },
+    "options": [
+      {
+        "grimorioId": "arquifada",
+        "identifier": "arquifada",
+        "name": "A Arquifada",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 59
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "corruptor",
+        "identifier": "corruptor",
+        "name": "O Corruptor",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 60
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "grande-antigo",
+        "identifier": "grande-antigo",
+        "name": "O Grande Antigo",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 60
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-warlock-feathered-dragon",
+        "identifier": "lyre-warlock-feathered-dragon",
+        "name": "Dragão Emplumado",
+        "originalName": "Feathered Dragon",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "494",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 494
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-warlock-damocles",
+        "identifier": "lyre-warlock-damocles",
+        "name": "Dâmocles",
+        "originalName": "Damocles",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "489–490",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 489
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-warlock-false-god",
+        "identifier": "lyre-warlock-false-god",
+        "name": "Falso Deus",
+        "originalName": "False God",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "492",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 492
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-warlock-gun-ghuth",
+        "identifier": "lyre-warlock-gun-ghuth",
+        "name": "Gun Ghuth",
+        "originalName": "Gun Ghuth",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "498",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 498
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-warlock-gorgon",
+        "identifier": "lyre-warlock-gorgon",
+        "name": "Górgona",
+        "originalName": "Gorgon",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "496–497",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 496
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-warlock-pale-shadow",
+        "identifier": "lyre-warlock-pale-shadow",
+        "name": "Sombra Pálida",
+        "originalName": "Pale Shadow",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "499–500",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 499
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-warlock-temptation",
+        "identifier": "lyre-warlock-temptation",
+        "name": "Tentação",
+        "originalName": "Temptation",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "501–502",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 501
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-warlock-valkyrie",
+        "identifier": "lyre-warlock-valkyrie",
+        "name": "Valquíria",
+        "originalName": "Valkyrie",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "503–504",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 503
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-warlock-astral-traveler",
+        "identifier": "zagalhta-warlock-astral-traveler",
+        "name": "O Viajante Astral",
+        "originalName": "The Astral Traveler",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "177–178",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 177
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-warlock-spear-hound",
+        "identifier": "zagalhta-warlock-spear-hound",
+        "name": "O Cão da Lança",
+        "originalName": "The Spear Hound",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "179–180",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 179
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-warlock-the-all-seeing",
+        "identifier": "bbb-warlock-the-all-seeing",
+        "name": "O Onividente",
+        "originalName": "The All-Seeing",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "130",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 130
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-warlock-the-phantasmal",
+        "identifier": "bbb-warlock-the-phantasmal",
+        "name": "O Fantasmagórico",
+        "originalName": "The Phantasmal",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "131",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 131
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-warlock-the-saint-spirit",
+        "identifier": "bbb-warlock-the-saint-spirit",
+        "name": "O Espírito do Santo",
+        "originalName": "The Saint Spirit",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "133",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 133
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "ryoko-warlock-shinigami",
+        "identifier": "ryoko-warlock-shinigami",
+        "name": "O Shinigami",
+        "originalName": "The Shinigami",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "203–204",
+          "chapter": "Capítulo 9: Classes",
+          "page": 203
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "xanathar-o-celestial",
+        "identifier": "xanathar-o-celestial",
+        "name": "O Celestial",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "18–19",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 18
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "xanathar-a-lamina-maldita",
+        "identifier": "xanathar-a-lamina-maldita",
+        "name": "A Lâmina Maldita",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "19–20",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 19
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "tasha-o-insondavel",
+        "identifier": "tasha-o-insondavel",
+        "name": "O Insondável",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "31–33",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 31
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "tasha-o-genio",
+        "identifier": "tasha-o-genio",
+        "name": "O Gênio",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "33–36",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 33
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "scag-o-eterno",
+        "identifier": "scag-o-eterno",
+        "name": "O Eterno",
+        "originalName": "",
+        "source": {
+          "sourceId": "scag",
+          "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+          "pages": "139–140",
+          "chapter": "Capítulo 4: Classes",
+          "page": 139
+        },
+        "firstFeatureLevel": 1
+      }
+    ]
+  }
+}

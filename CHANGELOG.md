@@ -1,5 +1,194 @@
+## 5.25.1
+
+- Atualizado o **Grimório Importer para 0.9.1**.
+- Adicionada organização hierárquica nativa ao compêndio **Grimório — Características**: uma pasta por classe e uma subpasta por subclasse/especialização.
+- Características de classe são sincronizadas diretamente na pasta da classe; características de subclasse são sincronizadas na subpasta correspondente.
+- Adicionadas flags estáveis às pastas gerenciadas (`classIdentifier`, `subclassGrimorioId`, `folderRole`) para permitir atualização sem depender do nome visual da pasta.
+- Reimportações migram Items gerenciados existentes para a pasta correta sem recriar documentos e sem alterar UUIDs.
+- Títulos de características originalmente em caixa-alta agora são normalizados para capitalização natural em PT-BR; IDs, `featureKey`, `system.identifier` e matching de automação continuam baseados nos dados estáveis anteriores.
+- Preservados acrônimos de uso comum como **CA**, **CD**, **PV**, **HP**, **XP**, **VTT**, **NPC** e **PC**.
+- Registrada a homologação real da Fase 12 após confirmação do usuário.
+- Criado `tools/validate-foundry-organization-5.25.1.js`, validando 24 pastas de classe, 377 subpastas de subclasse, 2.293 características, migração, reimportação e estabilidade de UUIDs.
+
+## 5.25.0
+
+### Fase 12 — expansão e auditoria da automação
+
+- Atualizado o **Grimório Importer para 0.9.0** e o schema de automação para v3.
+- Expansão para **71 perfis**: 59 de classe e 12 de subclasse, representando todas as 24 famílias de classe.
+- Cobertura declarativa de **86 Activities, 37 recursos/usos e 11 Active Effects**.
+- Matching de subclasse por bundle ID exato para impedir colisões entre características homônimas.
+- Adicionada recuperação parcial por fórmula para recursos, incluindo Canalização de Foco.
+- Implementados recursos compartilhados e Activities adicionais para Bardo, Bruxo, Clérigo, Druida, Feiticeiro, Mago, Artífice e classes homebrew do Grimório.
+- Primeiros perfis dirigidos de subclasses: Arquifada, Corruptor, Guerra, Luz, Lua, Magia Selvagem, Mestre de Batalha, Ladrão, Adivinhação, Mão Aberta, Vingança e Kaiju.
+- Auditoria automática das **2.370 características** com classificação de candidatos para expansão futura.
+- Novo comando `/grimorio-auditoria-automacao`.
+- Registrada a homologação real da Fase 11; Fase 12 permanece pendente de teste real.
+
+## 5.24.0
+
+### Fase 11.2 — Active Effects seguros e expansão da automação
+
+- Atualizado o **Grimório Importer para 0.8.0**.
+- `feature-automation.js` evoluiu para schema 2 e passa a gerar Active Effects com IDs estáveis e flags de gerenciamento.
+- Cobertura ampliada para **25 perfis**, **6 classes representativas**, **23 Activities**, **6 recursos** e **8 Active Effects**.
+- Implementados 6 efeitos passivos/transferíveis e 2 efeitos temporários aplicados por Activities.
+- Fúria: vantagem em testes/salvaguardas de Força e resistência a contundente, perfurante e cortante; dano/restrição de conjuração/término continuam manuais.
+- Defesa Paciente: consumo de Chi preservado, efeito próprio temporário, status `dodging` e vantagem em salvaguardas de Destreza.
+- Instinto Selvagem e Explorador Natural: vantagem passiva em iniciativa.
+- Estilo de Luta — Arquearia: +2 a ataques `rwak` para Guerreiro e Patrulheiro.
+- Pureza Corporal: imunidade a doença, condição Envenenado e dano de veneno; Saúde Divina: imunidade a doença.
+- Patrulheiro: Pés Rápidos e Desaparecer recebem Activities de ação bônus.
+- Destruição Divina Aprimorada recebe Activity manual de 1d8 radiante para evitar bônus global excessivo.
+- Auras de Proteção/Coragem, propagação de efeitos a aliados e efeitos condicionais de ataque continuam fora da automação automática por segurança.
+- Reimportação preserva UUIDs e IDs internos dos Active Effects; nenhum Item de Mundo é criado.
+- Atualizados manifestos, documentação e validação da Fase 11.2.
+
+## 5.23.0
+
+### Fase 11.1 — primeira camada de automação mecânica de características
+
+- Atualizado o **Grimório Importer para 0.7.0**.
+- Adicionado `foundry/grimorio-importer/scripts/feature-automation.js` com perfis de automação auditáveis por característica.
+- Implementados **16 perfis** em cinco classes representativas: Bárbaro, Guerreiro, Ladino, Monge e Paladino.
+- Os perfis geram **20 Activities nativas** e **6 reservas/usos**, usando recuperação e consumo nativos do DnD5e quando seguro.
+- Criados três tiers: `full`, `partial` e `description`; cobertura inicial 3 / 12 / 1.
+- Guerreiro: Retomar o Fôlego com `heal`, Surto de Ação e Indomável com controle de usos.
+- Ladino: Ação Ardilosa com três Activities de ação bônus; Ataque Furtivo e Esquiva Sobrenatural permanecem parciais.
+- Monge: `CHI` como reserva compartilhada e consumo cruzado por `monk-chi` em Rajada de Golpes, Defesa Paciente e Passo do Vento.
+- Paladino: Sentido Divino com usos, Cura pelas Mãos com reserva/escala e Destruição Divina com consumo de espaços e limite mecânico separado.
+- Bárbaro: Fúria e Ataque Descuidado recebem Activities de acionamento/lembrete; Sentido de Perigo permanece somente descrição.
+- **Active Effects não são criados** nesta primeira parte; vantagens, estados, movimento e reduções condicionais continuam manuais.
+- `materializer.js` passa a inicializar `system.activities`/`system.uses` e gravar `flags.grimorio-importer.automation`.
+- Adicionado `/grimorio-automacao` e API `phase11Support()` / `automationCoverage()`.
+- Criado `tools/validate-foundry-phase11-module.js` e regressão self-contained em `tests/foundry-v13/phase11/`.
+- Preservadas as regressões da Fase 9 e Fase 10, incluindo 401 bundles, 24 classes e 377 subclasses.
+- Adicionados `FOUNDRY_IMPORTER_FASE11.md`, `TESTE_FOUNDRY_FASE11.md` e `VALIDACAO_FOUNDRY_AUTOMACAO_5.23.md`.
+
+## 5.22.1
+
+### Hotfix — botões Foundry em classes/subclasses
+
+- Corrigida a regressão real reportada na ficha do Bárbaro: os botões eram gerados em `app.js`, mas desapareciam depois que `ui-enhancements.js` e `dynamic-consultation.js` substituíam `viewClass()`/`viewSubclass()`.
+- `ui-enhancements.js` e `dynamic-consultation.js` agora usam `foundryClassHeaderActions()` no cabeçalho final.
+- Preservados **Exportar Foundry**, **Classe + subclasses** e os controles Editar/Excluir para conteúdo personalizado.
+- Atualizado o validador da Fase 10 para executar a ordem real dos scripts do `index.html`, impedindo que o mesmo bug passe novamente.
+- Versão do site atualizada para 5.22.1; Grimório Importer permanece 0.6.0 e os schemas de bundle/pacote permanecem v1.
+
+## 5.22.0
+
+- Fase 10: corrigida a regressão que fazia os botões individuais de classes/subclasses dependerem do wrapper carregado após o primeiro render.
+- `viewClass()` e `viewSubclass()` agora incluem nativamente os controles **Exportar Foundry**.
+- Classe: exportação individual + **Classe + subclasses**.
+- Subclasse: exportação individual do bundle correspondente.
+- `viewClassList()` mantém a exportação do catálogo completo.
+- Grimório Importer atualizado para **0.6.0**, preservando compatibilidade com os schemas v1.
+- Registrada homologação real da Fase 9.
+- Adicionados documentação, kit e validador específico da Fase 10.
+
 # Changelog
 
+## 5.21.0
+
+### Foundry Classes — Fase 9 / Exportação no site e pacotes JSON
+
+- Atualizado **Grimório Importer** para `0.5.0`.
+- Adicionada exportação Foundry diretamente nas fichas de classe e subclasse.
+- Classes podem gerar bundle individual ou pacote **Classe completa** com todas as subclasses.
+- Catálogo de classes pode ser exportado em um único JSON com **401 bundles** (24 classes + 377 subclasses).
+- Criado `grimorio-foundry-class-package@1`.
+- Importador detecta automaticamente bundles e pacotes; adicionado `/grimorio-import-package`.
+- Pacotes validam individualmente todos os bundles internos antes da materialização.
+- Importação de pacote ordena classes antes das subclasses, usa uma janela única de escrita dos compêndios e emite resumo consolidado.
+- Smoke test materializa o catálogo completo duas vezes: 24 classes, 377 subclasses, 2.293 características, zero duplicações e zero Items de Mundo.
+- Confirmação do usuário da Fase 8 registrada como homologação real das cinco classes especiais.
+
+
+## 5.20.0
+
+### Foundry Classes — Fase 8 / Classes especiais
+
+- Atualizado **Grimório Importer** para `0.4.0`.
+- Materialização habilitada para **24 classes** e **377 subclasses/especializações**.
+- Removida a reserva das cinco classes especiais da Fase 7.
+- Criados perfis dedicados para Cavaleiro Dracônico, Piloto de Frame, Dobrador, Domador e Ministro de Sangue.
+- Adicionados 12 perfis explícitos de Conceito Central do Cavaleiro Dracônico.
+- Conceitos Centrais agora podem conceder Traits próprios e reconfigurar Dado de Vida/progressão de conjuração no Actor.
+- Piloto de Frame recebe dois pools de escolha de salvaguarda e não recebe ASI genérico; Crescimento permanece como característica.
+- Dobrador e Domador recebem escolha dinâmica de INT/WIS/CHA no Item embutido.
+- Ministro de Sangue usa d8 técnico e hook `dnd5e.preRollClassHitPoints` para rolar 2d4 no ganho de PV; limitação do pool de Dados de Vida foi mantida explícita.
+- Adicionados comandos `/grimorio-special` e `/grimorio-configurar`.
+- Catálogo da Fase 8 gerado com todos os **401 bundles**.
+- Smoke test da Fase 8 materializa 24 classes, 377 subclasses e 2.293 características no mock, sem Items de Mundo e com UUIDs estáveis.
+- Confirmação do usuário da Fase 7 registrada como homologação real da generalização convencional.
+
+
+## 5.19.0
+
+### Foundry Classes — Fase 7 / Generalização
+
+- Atualizado **Grimório Importer** para `0.3.0`.
+- Materialização nativa generalizada para **19 classes** e **347 subclasses**.
+- Mantidos em reserva cinco perfis especiais e 30 subclasses dependentes para evitar conversões incorretas.
+- Criado catálogo Fase 7 com todos os bundles suportados.
+- Adicionado suporte a `ItemChoice` para Estilos de Luta, Dádiva do Pacto e Metamágica.
+- Perfis de classe agora definem spellcasting, ASI, traits, opções diretas e avisos manuais.
+- Importação múltipla de bundles JSON disponível no seletor de arquivo.
+- Preservados compêndios portáveis, UUIDs estáveis e atualização sem duplicações.
+- Smoke test materializa todas as 19 classes e 347 subclasses sem criar Items de Mundo.
+- Confirmação do usuário da Fase 6 registrada como homologação real do fluxo em compêndios.
+
+
+
+## 5.18.0
+
+### Foundry VTT — Fase 6: Compêndios portáveis
+
+- Atualizado **Grimório Importer** para `0.2.0`.
+- Declarados três compêndios Item/dnd5e no módulo: `grimorio-classes`, `grimorio-subclasses` e `grimorio-features`.
+- Características passam a ser criadas/atualizadas no compêndio **Grimório — Características**.
+- Classes e subclasses passam a ser criadas nos respectivos compêndios, sem criar Items no Mundo.
+- `ItemGrant` agora usa UUIDs de compêndio, tornando as relações portáveis entre Mundos que compartilham a instalação do módulo.
+- Estado de bloqueio dos packs é restaurado automaticamente após cada importação.
+- Reimportação mantém a identidade dos documentos e evita duplicações.
+- Adicionados diagnósticos `/grimorio-packs` e `/grimorio-world-preview`.
+- Items de Mundo criados pela Fase 5 não são apagados automaticamente.
+- Novo smoke test valida armazenamento, UUIDs, deduplicação, bloqueio e ausência de criação de Items de Mundo.
+
+
+## 5.17.0
+
+### Foundry Classes — Fase 5 / Grimório Importer
+
+- Criado o módulo Foundry `grimorio-importer` v0.1.0 para Foundry 13.351 e DnD5e 5.3.3.
+- Implementada leitura e validação de `Grimório Foundry Class Bundle v1`.
+- Materialização inicial habilitada para Bárbaro e subclasses de Bárbaro.
+- Características são criadas como Items `feat` antes da classe/subclasse para que seus UUIDs possam alimentar `ItemGrant` Advancements.
+- Bárbaro gera 12 feats e 20 Advancements: HitPoints, quatro Trait, nove ItemGrant, cinco AbilityScoreImprovement e um Subclass.
+- `INCREMENTO NO VALOR DE HABILIDADE` e `CAMINHO PRIMITIVO` são convertidos para estruturas nativas e não viram feats duplicados.
+- Caminho do Kaiju gera cinco feats e ItemGrant nos níveis 3, 6, 10 e 14.
+- `system.advancement` é gravado como objeto, conforme a alteração de dados da linha DnD5e 5.3.
+- Flags `grimorio-importer` estabilizam identidade e permitem reimportação por atualização sem duplicatas.
+- Adicionados comandos `/grimorio-status`, `/grimorio-import` e `/grimorio-help`, além de API pública do módulo.
+- Armazenamento inicial permanece em Items de Mundo; compêndios portáveis ficam para a próxima iteração após homologação do Advancement Flow real.
+- Adicionados `FOUNDRY_IMPORTER_FASE5.md`, `TESTE_FOUNDRY_FASE5.md`, `VALIDACAO_FOUNDRY_CLASSES_5.17.md` e `tools/validate-foundry-phase5-module.js`.
+
+## 5.16.0
+
+### Foundry Classes — Fase 4
+
+- Criado o formato `grimorio-foundry-class-bundle@1`, um contrato JSON próprio para transportar classes e subclasses até o futuro módulo Grimório Importer.
+- Adicionado o perfil `foundry13-dnd5e533-grimorio-class-bundle-v1`, separado do exportador YAML de magias.
+- 24/24 classes e 377/377 subclasses/especializações geram bundles válidos.
+- Preservadas 345 características de classe, 2.025 características de subclasse, 23 tabelas de classe e 135 tabelas de subclasse.
+- Os 509 eventos das tabelas de progressão foram classificados em: 407 características diretas, 48 eventos de subclasse, 51 escalonamentos/variações e 3 notas de progressão.
+- 29 opções internas sem nível (Estilos de Luta, Metamagias, Pactos e similares) passam a ser transportadas como `ChooseItemsCandidate`, sem inventar nível.
+- Identificadores de classe foram estabilizados para futura ligação `classIdentifier` das subclasses.
+- Subclasses homônimas de fontes diferentes mantêm identificadores próprios e únicos.
+- 41 subclasses legadas sem metadado de fonte continuam sem fonte inferida; a lacuna original é preservada.
+- 19 classes estão classificadas como prontas para o primeiro mapeamento nativo; Cavaleiro Dracônico, Piloto de Frame, Dobrador, Domador e Ministro de Sangue foram reservados para lógica específica na Fase 5.
+- Adicionados `data/export/foundry-class-overrides.js`, `js/exporters/foundry-class-bundle.js`, `tools/generate-foundry-phase4.js` e `tools/validate-foundry-class-bundle.js`.
+- Criados bundles de referência para Bárbaro, Dobrador, Cavaleiro Dracônico, Caminho do Kaiju e Sensei, além do índice completo das 401 opções de classe/subclasse.
 
 ## 5.15.0
 

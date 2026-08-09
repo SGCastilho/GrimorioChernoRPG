@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spellblade-spellfist",
+    "identifier": "spellblade-spellfist",
+    "name": "Punho Mágico",
+    "originalName": "Spellfist",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "kibbles",
+    "title": "Spellblade v1.3 — KibblesTasty — Punho Mágico",
+    "pages": "15–16",
+    "chapter": "Técnicas de Spellblade",
+    "page": 15
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "spellblade",
+    "identifier": "spellblade",
+    "name": "Spellblade"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "spellblade",
+    "selectionLevel": 3,
+    "description": "Como um Punho Mágico, você personifica poder bruto e energia arcana, canalizando magia em cada soco. Suas mãos são armas e condutores de força mágica, combinando o desafio intelectual da magia com o impacto visceral do combate corpo a corpo.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-punho-magico",
+        "title": "Magias de Punho Mágico",
+        "page": 15,
+        "description": "Estas magias contam como magias de Spellblade para você e não contam no limite de magias conhecidas.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Spellblade"
+          },
+          {
+            "key": "magias",
+            "label": "Magias aprendidas"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Soco Trovejante"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Despedaçar"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Explosão de Vórtice"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Barragem Aérea"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Onda de Choque"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 15
+  },
+  "features": [
+    {
+      "key": "subclass.spellblade-spellfist.feature.magias-do-punho-magico.l3.1",
+      "name": "MAGIAS DO PUNHO MÁGICO",
+      "level": 3,
+      "description": "Você aprende as magias apresentadas na tabela da subclasse. Elas são magias de Spellblade para você e não contam no número de magias conhecidas.",
+      "page": 15,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Punho Mágico",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellfist.feature.magia-cinetica.l3.1",
+      "name": "MAGIA CINÉTICA",
+      "level": 3,
+      "description": "Ao escolher esta técnica no 3º nível, você domina a harmonia entre magia e golpes com os punhos. O dano de seus ataques desarmados feitos com os punhos aumenta para 1d8 de concussão, e eles se tornam alvos válidos para Golpe Mágico. Quando realiza um ataque desarmado infundido, ele é considerado mágico para superar resistência a ataques não mágicos, e você pode converter seu dano de concussão no tipo de dano da magia.\n\nAo infundir em seu punho uma magia de Spellblade que cause dano em área, você pode usar Força no lugar de Inteligência para calcular a CD da magia.",
+      "page": 15,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Punho Mágico",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellfist.feature.magia-impactante.l3.1",
+      "name": "MAGIA IMPACTANTE",
+      "level": 3,
+      "description": "Você ganha duas novas opções para Surto Arcano:\n\n• Impacto Arcano: quando empurrar um alvo para longe, gaste um uso para empurrá-lo mais 3 metros.\n\n• Agarre Arcano: quando atingir com um ataque corpo a corpo, gaste um uso para tentar agarrar ou empurrar o alvo, sem exigir uma ação. Você tem vantagem no teste de habilidade.",
+      "page": 15,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Punho Mágico",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellfist.feature.a-queima-roupa.l7.1",
+      "name": "À QUEIMA-ROUPA",
+      "level": 7,
+      "description": "No 7º nível, ao usar Golpe Mágico enquanto estiver agarrando um alvo, você pode infundir a magia diretamente nele, tratando-a como se o ataque infundido tivesse acertado automaticamente. O alvo ainda realiza testes contra efeitos além do dano, mas os faz com desvantagem.",
+      "page": 15,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Punho Mágico",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellfist.feature.resiliencia-do-brigao.l15.1",
+      "name": "RESILIÊNCIA DO BRIGÃO",
+      "level": 15,
+      "description": "No 15º nível, ao gastar um uso de Surto Arcano, você ganha resistência a todo tipo de dano até o início do seu próximo turno.",
+      "page": 16,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Punho Mágico",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-spellfist.feature.poder-ilimitado.l20.1",
+      "name": "PODER ILIMITADO",
+      "level": 20,
+      "description": "No 20º nível, você pode canalizar magia diretamente nos músculos, fazendo sua força superar os limites comuns por 1 minuto.\n\n• Força Sobrenatural: seu valor de Força e seu máximo de Força aumentam em 2.\n\n• Zona de Explosão: o dano de sua característica Dano Colateral passa a preencher um cone de 9 metros.\n\n• Saltos Impetuosos: a distância de seus saltos torna-se igual ao seu deslocamento.\n\n• Vantagem de Força: você tem vantagem em todos os testes de habilidade e testes de resistência de Força.\n\nDepois de usar esta característica, você não pode usá-la novamente até concluir um descanso longo.",
+      "page": 16,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Punho Mágico",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-ranger-radiant-archer",
+    "identifier": "lyre-ranger-radiant-archer",
+    "name": "Arqueiro Radiante",
+    "originalName": "Radiant Archer",
+    "aliases": [
+      "Radiant Archer"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "410",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 410
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Compatibilidade com o Patrulheiro Revisado de Lyre: esta opção foi escrita para a revisão completa da classe apresentada no mesmo capítulo, que preserva a estrutura de arquétipos nos níveis 3, 7, 11 e 15 e admite adaptação de subclasses de Patrulheiro. Arqueiros Radiantes entalham bênçãos e energia sagrada em sua munição. A fé guia seus riscos, fortalece suas armas e abre acesso à magia divina, tornando-os frequentes guarda-costas de clérigos e agentes das igrejas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 410
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-ranger-radiant-archer.feature.mao-guiada.l3.1",
+      "name": "MÃO GUIADA",
+      "level": 3,
+      "description": "Quando realiza um ataque com arma na qual é proficiente, pode conceder vantagem ao ataque mesmo que ele tivesse desvantagem e, em acerto, adicionar dano radiante igual ao seu Dado de Favor. Usos por Descanso Curto ou Longo iguais ao Bônus de Favor.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-radiant-archer.feature.reservatorio-radiante.l3.1",
+      "name": "RESERVATÓRIO RADIANTE",
+      "level": 3,
+      "description": "Você pode fazer com que o dano do seu Dado de Favor seja radiante. Todos os ínferos e mortos-vivos são considerados seus Inimigos Favorecidos.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-radiant-archer.feature.reserva-de-magia-celestial.l7.1",
+      "name": "RESERVA DE MAGIA CELESTIAL",
+      "level": 7,
+      "description": "Quando ganha ou troca uma magia pela característica Conjuração do Patrulheiro, também pode escolher da lista de Clérigo e tratá-la como magia de Patrulheiro.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-radiant-archer.feature.miras-providenciais.l11.1",
+      "name": "MIRAS PROVIDENCIAIS",
+      "level": 11,
+      "description": "Quando usa Mão Guiada para aprimorar um ataque, trate o alvo como Inimigo Favorecido até o fim do seu próximo turno, e os benefícios de Mão Guiada se aplicam a todos os ataques que fizer contra ele até o fim do turno atual.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-radiant-archer.feature.veu-ascendente.l11.1",
+      "name": "VÉU ASCENDENTE",
+      "level": 11,
+      "description": "Ao usar Véu da Natureza, você também manifesta sigilos angelicais em forma de asas, invisíveis como você, que concedem deslocamento de voo igual ao seu deslocamento base até o início do próximo turno.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-radiant-archer.feature.arqueiro-guardiao.l15.1",
+      "name": "ARQUEIRO GUARDIÃO",
+      "level": 15,
+      "description": "Se uma criatura que você considera Inimigo Favorecido mover-se mais de 1,5 m dentro do seu campo de visão, use reação para fazer um ataque de oportunidade contra ela usando uma arma à distância em cujo alcance normal ela esteja ou uma magia de tempo de conjuração 1 ação, se estiver no alcance. Uma magia usada assim deve poder afetar somente essa criatura.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-mente-aberrante",
+    "identifier": "tasha-mente-aberrante",
+    "name": "Mente Aberrante",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "46–49",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 46
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Uma influência alieníngena envolveu seus tentáculos em sua mente, lhe dando poderes psiônicos. Agora você pode tocar outras mentes com esse poder e alterar o mundo ao seu redor ao utilizar isso para controlar a emergia mágica do multiverso. Esse poder ilumina você como um farol de esperança para os outros? Ou você seria uma fonte de terror para aqueles que sentem as investidas de sua mente e testemunham as estranhas manifestações de seu poder? Como um feiticeiro da Mente Aberrante, você decide como você adquiriu esses poderes. Você nasceu com eles? Ou algum evento posterior em sua vida fez com que você se iluminasse com a prontidão psíquica? Consulte a tabela de Origem Aberrante para a possível origem de seu poder. Origem Aberrante d6 Origem Você foi exposto à influência distorcida dos Reinos Distantes. Você está convencido de que há um tentáculo nascendo em você, mas ninguém mais pode ver isso. Um vento psíquico do Plano Astral carregou energia psiônica até você. Quando utiliza seus poderes, partículas tênues de luz brilham ao seu redor. Você uma vez foi submetido aos poderes de dominação de um abolete, deixando um resíduo psíquico em sua mente. Você foi implantado com um girino devorador de mentes, mas a ceremorfose nunca se completou. E agora o poder psiônico da criatura é seu. Quando você o usa, sua carne brilha com um muco estranho. Quando criança, você tinha um amigo imaginário que se parecia como um flumph ou uma estranha criatura parecida com um ornitorrinco. Um dia, ele o presenteou com seus poderes psiônicos, o que acabou não sendo tão imaginário assim. Seus pesadelos sussurram a verdade a você: seus poderes psiônicos não são realmente seus. Você os drena de seu gêmeo parasita!",
+    "tables": [
+      {
+        "key": "table.1.magias-psionicas",
+        "title": "Magias Psiônicas",
+        "page": 47,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Feiticeiro"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Braços de Hadar; Farpa Mental; Sussurros Dissonantes"
+          },
+          {
+            "level": "3º",
+            "spells": "Acalmar Emoções; Detectar Pensamentos"
+          },
+          {
+            "level": "5º",
+            "spells": "Fome de Hadar; Remeter"
+          },
+          {
+            "level": "7º",
+            "spells": "Invocar Aberração; Tentáculos Negros de Evard"
+          },
+          {
+            "level": "9º",
+            "spells": "Ligação Telepática de Rary; Telecinese"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 46
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-mente-aberrante.feature.magias-psionicas.l1.1",
+      "name": "MAGIAS PSIÔNICAS",
+      "level": 1,
+      "description": "Você aprende uma magia adicional ao alcançar certos níveis nesta classe, como mostrado na tabela de Magias Psiônicas. Essas magias são consideradas magias de feiticeiro para você, mas não contam contra o número de magias de feiticeiro que você conhece. As magias em itálico são apresentadas no capítulo 3 deste livro. Sempre que ganhar um nível de feiticeiro, você pode substituir uma magia adquirida por esta característica por outra magia de mesmo círculo. A nova magia deve ser de adivinhação ou encantamento das listas de bruxo, feiticeiro ou mago. Magias Psiônicas Nível de Feiticeiro Magias 1º Braços de Hadar, Farpa Mental, Sussurros Dissonantes 3º Acalmar Emoções, Detectar Pensamentos 5º Fome de Hadar, Remeter 7º Invocar Aberração, Tentáculos Negros de Evard 9º Ligação Telepática de Rary, Telecinese",
+      "page": 47,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-mente-aberrante.feature.discurso-telepatico.l1.1",
+      "name": "DISCURSO TELEPÁTICO",
+      "level": 1,
+      "description": "Você pode estabelecer uma conexão telepática entre sua mente e a de outra pessoa. Com uma ação bônus, escolha uma criatura a até 9m que você possa ver. Você e a criatura escolhida podem falar telepaticamente enquanto estiverem a uma distância de até 1,5 km x seu modificador de Carisma (mínimo de 1,5 km). Para entenderem um ao outro, ambos devem ser capazes de se comunicar mentalmente em um idioma que o outro compreenda. A conexão telepática dura por um número em minutos igual ao seu nível de feiticeiro. Ela se encerra antes se você for incapacitado ou morto, ou se utilizar essa habilidade para formar uma conexão com uma criatura diferente.",
+      "page": 48,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-mente-aberrante.feature.feiticaria-psionica.l6.1",
+      "name": "FEITIÇARIA PSIÔNICA",
+      "level": 6,
+      "description": "Quando você conjura qualquer magia de 1º círculo ou maior de sua característica de Magias Psiônicas, você pode conjurála gastando um espaço de magia normalmente ou gastando uma quantia de pontos de feitiçaria igual ao círculo da magia. Se você conjurar gastando pontos de feitiçaria, ela não necessitará de componentes verbais ou somáticos, e nem de componentes materiais, a menos que sejam consumidos pela magia.",
+      "page": 48,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-mente-aberrante.feature.defesas-psiquicas.l6.1",
+      "name": "DEFESAS PSÍQUICAS",
+      "level": 6,
+      "description": "Você ganha resistência a dano psíquico, e você possui vantagem em salvaguardas contra ser amedrontado ou enfeitiçado.",
+      "page": 48,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-mente-aberrante.feature.revelacao-na-carne.l14.1",
+      "name": "REVELAÇÃO NA CARNE",
+      "level": 14,
+      "description": "Você pode libertar a verdadeira aberração oculta dentro de si. Com uma ação bônus, você pode gastar 1 ou mais pontos de feitiçaria para transformar seu corpo magicamente por 10 minutos. Para cada ponto de feitiçaria gasto dessa forma, você ganha um dos seguintes benefícios a sua escolha, cujos efeitos duram até que a transformação se encerre. Você pode ver qualquer criatura invisível a até 18m de você, desde que ela não esteja sob cobertura total. Seus olhos também se tornam negros ou transformam-se em gavinhas sensoriais se contorcendo. Você ganha deslocamento de voo igual ao seu deslocamento terrestre, e pode planar. Conforme você voa, sua pele cintila com muco ou brilha com uma luz sobrenatural. Você ganha um deslocamento de natação igual a duas vezes seu deslocamento terrestre, e você pode respiram embaixo da água. Além disso, brânquias surgem de seu pescoço ou se abrem por trás de suas orelhas, seus dedos se tornam palmados ou você desenvolve cílios se contorcendo que se estendem por sua roupa. Seu corpo, junto com qualquer equipamento que esteja vestindo ou carregando se torna viscoso e elástico. Você pode se mover através de qualquer espaço tão estreito quanto 2,5cm sem se espremer, e pode gastar 1,5m de deslocamento para escapar de amarras não mágicas ou de ser agarrado.",
+      "page": 48,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-mente-aberrante.feature.implosao-anomala.l18.1",
+      "name": "IMPLOSÃO ANÔMALA",
+      "level": 18,
+      "description": "Você pode liberar seu poder aberrante como uma anomalia de distorção espacial. Usando uma ação, você pode se teletransportar para um espaço desocupado que possa ver a até 36m de você. Imediatamente após você desaparecer, todas as criaturas a até 9m do espaço que você deixou devem realizar uma salvaguarda de Força. Em caso de falha, uma criatura recebe 3d10 de dano de energia e é puxado diretamente para o espaço que você deixou, acabando em um espaço desocupado tão perto do seu espaço anterior quanto possível. Em caso de sucesso, a criatura recebe metade do dano e não é puxada. Assim que usar essa característica, você não poderá utilizála novamente até terminar um descanso longo, a menos que gaste 5 pontos de feitiçaria para ativá-lo.",
+      "page": 48,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

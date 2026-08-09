@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-fighter-sohei",
+    "identifier": "bbb-fighter-sohei",
+    "name": "Sōhei",
+    "originalName": "Sohei",
+    "aliases": [
+      "Sohei"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "106",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 106
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Um soldado que treina como forma de autoaperfeiçoamento, à maneira de um monge.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 106
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-fighter-sohei.feature.punho-rompedor.l3.1",
+      "name": "PUNHO ROMPEDOR",
+      "level": 3,
+      "description": "Seus ataques desarmados contam como armas com acuidade, causam 1d8 de dano contundente e são mágicos. O dano aumenta para 1d10 no 10º nível de guerreiro e 2d6 no 18º. Todas as características de Sōhei que exijam ou mencionem ataques desarmados também podem ser aplicadas a armas com a propriedade soqueira.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-sohei.feature.sequencia-de-golpes.l3.1",
+      "name": "SEQUÊNCIA DE GOLPES",
+      "level": 3,
+      "description": "Quando usa Surto de Ação e utiliza a nova ação para Atacar, pode realizar dois ataques desarmados adicionais como parte dessa ação.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-sohei.feature.critico-da-palma.l7.1",
+      "name": "CRÍTICO DA PALMA",
+      "level": 7,
+      "description": "Seus ataques desarmados obtêm acerto crítico com 19 ou 20 no d20. Quando obtiver um crítico com eles, role novamente os dados de dano de seu ataque desarmado e some-os ao resultado.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-sohei.feature.acao-rapida.l10.1",
+      "name": "AÇÃO RÁPIDA",
+      "level": 10,
+      "description": "Você adiciona seu bônus de proficiência às jogadas de Iniciativa. No primeiro turno de cada combate, pode usar sua ação bônus para realizar dois ataques desarmados.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-sohei.feature.respiracao-purificadora.l15.1",
+      "name": "RESPIRAÇÃO PURIFICADORA",
+      "level": 15,
+      "description": "Você pode usar Retomar o Fôlego como ação em vez de ação bônus. Se fizer isso, escolha: tratar cada uso de Retomar o Fôlego gasto como se tivesse gasto um uso adicional da característica; ou recuperar o valor máximo de PV em todos os dados de Retomar o Fôlego.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-sohei.feature.critico-superior-da-palma.l18.1",
+      "name": "CRÍTICO SUPERIOR DA PALMA",
+      "level": 18,
+      "description": "Seus ataques desarmados obtêm acerto crítico com 18, 19 ou 20 no d20.",
+      "page": 106,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

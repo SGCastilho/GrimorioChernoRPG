@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-invidiva",
+    "identifier": "lyre-favored-soul-retia-burden-of-invidiva",
+    "name": "Fardo de Invidiva",
+    "originalName": "Burden of Invidiva",
+    "aliases": [
+      "Burden of Invidiva"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "352",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 352
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): corrente laminada. Invidiva, uma das Tentações Gêmeas, inspira seus favorecidos a tomar o que pertence aos outros e os molda como assassinos capazes de transformar as sombras em segunda natureza.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 352
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-invidiva.feature.acao-ardilosa.l1.1",
+      "name": "AÇÃO ARDILOSA",
+      "level": 1,
+      "description": "Como ação bônus, você pode realizar Disparada, Esconder-se ou Desengajar.",
+      "page": 352,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-invidiva.feature.pericias-da-gemea-avida.l1.1",
+      "name": "PERÍCIAS DA GÊMEA ÁVIDA",
+      "level": 1,
+      "description": "Você ganha Especialização em Furtividade. Quando acerta uma criatura com um ataque feito com vantagem usando arma leve ou com acuidade, causa 1d6 de dano ácido adicional por uma seiva corrosiva mágica.",
+      "page": 352,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-invidiva.feature.duelista-especialista.l6.1",
+      "name": "DUELISTA ESPECIALISTA",
+      "level": 6,
+      "description": "Você ganha o Estilo de Luta Duelo. Se já o possui, ele avança.",
+      "page": 352,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-invidiva.feature.golpe-gemeo.l6.1",
+      "name": "GOLPE GÊMEO",
+      "level": 6,
+      "description": "Ao atacar com uma arma que possua a propriedade secundária, pode realizar o ataque secundário como parte da ação Atacar em vez de ação bônus, desde que tenha atacado com a arma ao menos uma vez antes. O ataque secundário pode usar o mesmo atributo válido para o ataque primário.",
+      "page": 352,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-invidiva.feature.eliminacao-total.l10.1",
+      "name": "ELIMINAÇÃO TOTAL",
+      "level": 10,
+      "description": "Como ação, gaste Purificação para ficar invisível por 1 minuto. Você não faz som ao mover-se e não deixa rastros físicos. Enquanto invisível assim e empunhando arma leve ou com acuidade, obtém crítico em 19–20. Ao obter crítico, pode encerrar a invisibilidade para causar 2d10 × nível do espaço de pacto de dano adicional do mesmo tipo da arma; esse dano não é multiplicado pelo crítico.",
+      "page": 352,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-invidiva.feature.agilidade-aumentada.l13.1",
+      "name": "AGILIDADE AUMENTADA",
+      "level": 13,
+      "description": "Seu deslocamento base aumenta em 3 metros.",
+      "page": 352,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

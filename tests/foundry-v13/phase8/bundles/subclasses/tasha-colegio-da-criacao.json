@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-colegio-da-criacao",
+    "identifier": "tasha-colegio-da-criacao",
+    "name": "Colégio da Criação",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "26–28",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 26
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Os bardos acreditam que o cosmos é uma obra de arte – a criação dos primeiros dragões e deuses. Esse trabalho criativo incluiu harmonias que continuam a ressoar pela existência nos dias de hoje, um poder conhecido como Canção da Criação. Os bardos do Colégio da Criação recorrem a essa canção primordial por meio da dança, da música e da poesia, e seus professores compartilham esta lição: “Antes do sol e da lua, havia a Canção, e sua música despertou o primeiro amanhecer. Suas melodias encantaram as pedras e árvores de tal modo que algumas delas ganharam voz própria. E agora elas cantam também. Aprendam a Canção, alunos, e vocês também poderão ensinar as montanhas a cantar e dançar”. Anões e gnomos frequentemente incentivam seus bardos a se tornarem estudantes da Canção da Criação. E entre draconatos, a Canção da Criação é reverenciada, pois as lendas retratam Bahamut e Tiamat – os maiores dos dragões – como dois dos primeiros cantores da música.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 26
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-colegio-da-criacao.feature.particula-de-potencial.l3.1",
+      "name": "PARTÍCULA DE POTENCIAL",
+      "level": 3,
+      "description": "Sempre que você dá uma Inspiração de Bardo para uma criatura, você pode emitir uma nota da Canção da Criação para gerar partícula de potencial minúscula, que orbita a até 1,5m dessa criatura. A partícula é intangível e invulnerável, e dura até que o dado de Inspiração de Bardo seja perdido. Essa partícula se parece com uma nota musical, uma estrela, uma flor, ou outro símbolo de arte ou de vida a sua escolha. Quando a criatura utiliza o dado de Inspiração de Bardo, a partícula fornece um efeito adicional baseando-se se o dado beneficia um teste de habilidade, uma jogada de ataque, ou uma salvaguarda, como detalhado abaixo: Teste de Habilidade. Quando uma criatura rolar o dado de inspiração de Bardo para adicioná-lo a um teste de habilidade, a criatura pode fazer uma segunda rolagem desse dado de inspiração e escolher qual resultado deseja usar, conforme a partícula explode e emite centelhas multicoloridas e inofensivas por um instante. Jogada de Ataque. Imediatamente após a criatura rolar o dado de Inspiração de Bardo para adicioná-lo à sua jogada de ataque contra um alvo, a partícula de rompe estrondosamente. O alvo e cada criatura a até 1,5m dele que o bardo possa ver, a escolha do bardo, devem ser bemsucedidos em uma salvaguarda de Constituição contra a sua CD de magia ou sofrem dano trovejante equivalente ao número rolado no dado de Inspiração de Bardo. Salvaguarda. Imediatamente após a criatura rolar o dado de Inspiração de Bardo e adicioná-lo a sua salvaguarda, a partícula desvanece com o som de uma música suave, fazendo com que a criatura ganhe pontos de vida temporários igual ao número rolado no dado de Inspiração de Bardo, mais o modificador de Carisma do bardo (mínimo de 1 ponto de vida temporários).",
+      "page": 27,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-colegio-da-criacao.feature.execucao-da-criacao.l3.1",
+      "name": "EXECUÇÃO DA CRIAÇÃO",
+      "level": 3,
+      "description": "Como uma ação, você pode canalizar a magia da Música da Criação para criar um item não-mágico de sua escolha em um espaço desocupado a até 3m de você. O item deve surgir sobre uma superfície ou em um líquido capaz de contê-lo. O valor do item em peças de ouro não pode ser superior a 20 vezes o seu nível de bardo, e o item deve ser Médio ou menor. O item cintila suavemente, e uma criatura pode ouvir uma música tênue ao tocá-lo. O item criado desaparece após um número de horas igual ao bônus de proficiência do bardo. Para exemplo de itens que você pode criar, veja o capítulo sobre equipamentos no Livro do Jogador. Uma vez que tenha criado um item utilizando essa característica, você não pode fazer isso novamente até que termine um descanso longo, a menos que gaste um espaço de magia de 2º círculo ou superior para usar essa característica de novo. Você pode ter apenas um item criado por esta característica por vez; se você utilizar essa ação já tendo um item criado por esta habilidade, o primeiro desaparece imediatamente. O tamanho do item que você pode criar com essa característica aumenta em uma categoria de tamanho quando você chega no 6º nível (Grande) e novamente no 14º nível (Enorme).",
+      "page": 27,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-colegio-da-criacao.feature.espetaculo-animado.l6.1",
+      "name": "ESPETÁCULO ANIMADO",
+      "level": 6,
+      "description": "Como uma ação, você pode focar em um item não mágico Grande ou menor que você possa ver a até 9m de distância de você e animá-lo. O item animado utiliza o bloco de estatística do Item Dançante, que utiliza o seu bônus de proficiência (BP). O item é amigável a você e seus companheiros e obedece aos seus comandos. Ele vive por uma hora, até que seja reduzido a 0 pontos de vida, ou até que você morra. Em combate, o item compartilha a sua contagem de iniciativa, mas realiza o turno imediatamente após o seu. Ele pode se mover e usar sua reação por conta própria, mas a única ação que ele realiza em seu turno é a ação de Esquiva, a menos que você utilize a sua ação bônus em seu turno para ordenar que ele faça outra ação. Essa ação pode ser uma em seu bloco de estatísticas ou qualquer outra. Se você estiver incapacitado, o item pode realizar qualquer ação a sua escolha, e não apenas a Esquiva. Quando você utilizar sua característica de Inspiração de Bardo, você pode comandar o item como parte da mesma ação bônus utilizada para ela. Uma vez que tenha animado um item com essa característica, você não pode fazer isso novamente até que termine um descanso longo, a menos que gaste um espaço de magia de 3º círculo ou superior para isso. Você pode te apenas um item animado por esta característica por vez; se você usar essa ação e já tiver um item dançante por esta habilidade, o primeiro imediatamente se torna inanimado.",
+      "page": 27,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-colegio-da-criacao.feature.crescendo-criativo.l14.1",
+      "name": "CRESCENDO CRIATIVO",
+      "level": 14,
+      "description": "Quando você usa a sua característica de Execução da Criação, você pode criar mais de um item por vez. O número de itens é equivalente ao seu modificador de Carisma (mínimo de 2). Se você criar um item que faça esse número ser excedido, você escolhe qual dos itens criados previamente desaparece. Apenas um desses itens pode ser do tamanho máximo que você pode criar; o restante deve ser Pequeno ou Miúdo. Você não fica mais limitado ao valor em ouro ao criar itens com a característica de Execução da Criação.\n\nItem Dançante Construto Grande ou Menor Classe de Armadura 16 (Armadura Natural) Pontos de Vida 10 + 5 vezes seu nível de bardo Deslocamento 9m, Voo 9m (levitação) FOR DES CON INT SAB CAR 18 (+4) 14 (+2) 16 (+3) 4 (-3) 10 (+0) 6 (-2) Imunidade a Dano Venenoso, Psíquico. Imunidade a Condições Amedrontado, Enfeitiçado, Exausto, Envenenado. Sentidos Visão no escuro 18 m, Percepção Passiva Idiomas Entende os idiomas que você fala Nível de Desafio — Bônus de Proficiência [BP] Igual ao seu bônus. Forma Imutável. O item é imune a qualquer magia ou efeito que alteraria sua forma. Dança Irresistível. Quando uma criatura inicia seu turno a até 3m do item, o item pode ampliar ou reduzir (a sua escolha) o deslocamento dessa criatura em 3m até o final do turno, desde que o item não esteja incapacitado. Ações Batida energizada. Ataque corpo a corpo com arma: seu modificador de ataque de magia para acertar, alcance 1,5m, um alvo que você possa ver. Acerto: 1d10 + BP de dano de energia.",
+      "page": 28,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

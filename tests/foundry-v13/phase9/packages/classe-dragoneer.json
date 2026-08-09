@@ -1,0 +1,3991 @@
+{
+  "schema": "grimorio-foundry-class-package",
+  "schemaVersion": 1,
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-package-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "minimumImporterVersion": "0.5.0"
+  },
+  "identity": {
+    "id": "classe-dragoneer",
+    "name": "Cavaleiro Dracônico — classe completa",
+    "scope": "class-with-subclasses",
+    "parentClass": {
+      "grimorioId": "dragoneer",
+      "identifier": "dragoneer",
+      "name": "Cavaleiro Dracônico"
+    }
+  },
+  "summary": {
+    "bundles": 13,
+    "classes": 1,
+    "subclasses": 12,
+    "features": 86,
+    "specialClasses": 1,
+    "specialSubclasses": 12
+  },
+  "ordering": "classes-first",
+  "bundleIdentifiers": [
+    "class:dragoneer",
+    "subclass:zagalhta-dragoneer-auraphage",
+    "subclass:zagalhta-dragoneer-bloodweaver",
+    "subclass:zagalhta-dragoneer-breaking-dynamo",
+    "subclass:zagalhta-dragoneer-child-of-fate",
+    "subclass:zagalhta-dragoneer-demon-dancer",
+    "subclass:zagalhta-dragoneer-echoing-voice",
+    "subclass:zagalhta-dragoneer-piercing-hand",
+    "subclass:zagalhta-dragoneer-raging-titan",
+    "subclass:zagalhta-dragoneer-royal-sweeper",
+    "subclass:bbb-dragoneer-darkstriker",
+    "subclass:bbb-dragoneer-fortune-veil",
+    "subclass:bbb-dragoneer-phasescale-knight"
+  ],
+  "bundles": [
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "class",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico",
+        "originalName": "Dragoneer",
+        "aliases": [
+          "Dragoneer",
+          "Cavaleiro Dracônico"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "116–130",
+        "chapter": "Capítulo 6: Opções de Classe — O Cavaleiro Dracônico",
+        "page": 117
+      },
+      "nativeMapping": {
+        "status": "review",
+        "warnings": [
+          "Dados de Vida, salvaguardas, proficiências e conjuração variam conforme o Conceito Central; o Grimório Importer aplica o perfil especial ao Actor quando o conceito é escolhido.",
+          "Dado de Vida não padrão para o Item de classe vanilla: Varia por Conceito Central (d6–d12)."
+        ]
+      },
+      "class": {
+        "itemType": "class",
+        "description": "Um portador da alma ou essência de um dragão, capaz de manifestar asas, armadura e magia dracônicas. Seu Conceito Central define o papel de combate, Dados de Vida, proficiências e progressão de conjuração, tornando a classe altamente modular.",
+        "hitDice": {
+          "raw": "Varia por Conceito Central (d6–d12)",
+          "mode": "variable",
+          "number": null,
+          "faces": null
+        },
+        "primaryAbility": {
+          "raw": "Sabedoria",
+          "abilityKeys": [
+            "wis"
+          ]
+        },
+        "proficiencies": {
+          "saves": {
+            "raw": "Sabedoria + salvaguarda do Conceito Central",
+            "abilityKeys": [
+              "wis"
+            ]
+          },
+          "armor": "Varia por Conceito Central",
+          "weapons": "Varia por Conceito Central",
+          "tools": "Varia por Conceito Central",
+          "skills": "Varia por Conceito Central"
+        },
+        "basics": {
+          "title": "CARACTERÍSTICAS DE CLASSE",
+          "page": 117,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "text": "PONTOS DE VIDA\n\nSeu Dado de Vida é determinado pelo Conceito Central (d6, d8, d10 ou d12).\n\nPontos de Vida no 1º nível: resultado máximo do Dado de Vida do Conceito Central + seu modificador de Constituição.\n\nPontos de Vida em níveis superiores: um Dado de Vida do tamanho definido pelo Conceito Central (ou 4, 5, 6 ou 7 para d6, d8, d10 e d12) + Constituição por nível após o 1º.\n\nPROFICIÊNCIAS\n\nArmaduras, armas, perícias e a segunda salvaguarda são determinadas pelo Conceito Central; Sabedoria integra a estrutura da classe e é o atributo padrão de conjuração.\n\nEQUIPAMENTO\n\nVocê começa com (a) armadura de couro ou (b) cota de malha; (a) bordão, (b) uma arma marcial ou (c) uma arma corpo a corpo simples; arco curto e 20 flechas; e pacote de explorador. Alternativamente, começa com 5d4 × 10 po (120 po em média)."
+        },
+        "overview": [
+          {
+            "title": "O CAVALEIRO DRACÔNICO",
+            "page": 116,
+            "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+            "text": "Cavaleiros Dracônicos são guerreiros lendários que carregam armas, armaduras e magia nascidas da essência de dragões anteriores. Alguns são escolhidos por dragões; outros canalizam vestígios de almas antigas ou ecos de outras linhas temporais. Sua existência costuma estar ligada a profecias e à necessidade de equilibrar forças que ameaçam povos ou o próprio mundo."
+          },
+          {
+            "title": "A ALMA DO DRAGÃO",
+            "page": 116,
+            "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+            "text": "Todo Cavaleiro Dracônico carrega uma Alma do Dragão, manifestada como pequeno cristal ou relíquia. Ela nem sempre é literalmente a alma completa de um dragão: pode ser essência ou fragmento espiritual. Por meio dela, o personagem manifesta asas e armadura abstratas e produz poderes inerentes à espécie dracônica."
+          },
+          {
+            "title": "CONCEITOS CENTRAIS",
+            "page": 121,
+            "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+            "text": "Os Conceitos Centrais representam a forma básica de combate do Cavaleiro Dracônico e funcionam como sua especialização. Eles aproximam o personagem de papéis como guerreiro, bárbaro, ladino ou conjurador sem substituir essas classes, e alteram Dados de Vida, salvaguardas, proficiências e conjuração."
+          }
+        ],
+        "creation": [
+          {
+            "title": "CONSTRUINDO UM CAVALEIRO DRACÔNICO",
+            "page": 117,
+            "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+            "text": "A classe depende fortemente das características básicas. O Conceito Central define o papel funcional em combate, enquanto a Escolha de Encarnação determina um tipo de dragão, resistência, movimento, dano adicional e um benefício exclusivo. Em jogo, é uma classe de alto dano e mobilidade, com forte consumo de recursos e menor variedade de ferramentas/perícias."
+          }
+        ],
+        "tables": [
+          {
+            "key": "table.1.progressao-de-espacos-conjurador-pleno",
+            "title": "Progressão de Espaços — Conjurador Pleno",
+            "page": 118,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "level",
+                "label": "Nível"
+              },
+              {
+                "key": "s1",
+                "label": "1º"
+              },
+              {
+                "key": "s2",
+                "label": "2º"
+              },
+              {
+                "key": "s3",
+                "label": "3º"
+              },
+              {
+                "key": "s4",
+                "label": "4º"
+              },
+              {
+                "key": "s5",
+                "label": "5º"
+              },
+              {
+                "key": "s6",
+                "label": "6º"
+              },
+              {
+                "key": "s7",
+                "label": "7º"
+              },
+              {
+                "key": "s8",
+                "label": "8º"
+              },
+              {
+                "key": "s9",
+                "label": "9º"
+              }
+            ],
+            "rows": [
+              {
+                "level": 1,
+                "s1": 2,
+                "s2": "—",
+                "s3": "—",
+                "s4": "—",
+                "s5": "—",
+                "s6": "—",
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 2,
+                "s1": 3,
+                "s2": "—",
+                "s3": "—",
+                "s4": "—",
+                "s5": "—",
+                "s6": "—",
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 3,
+                "s1": 4,
+                "s2": 2,
+                "s3": "—",
+                "s4": "—",
+                "s5": "—",
+                "s6": "—",
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 4,
+                "s1": 4,
+                "s2": 3,
+                "s3": "—",
+                "s4": "—",
+                "s5": "—",
+                "s6": "—",
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 5,
+                "s1": 4,
+                "s2": 3,
+                "s3": 2,
+                "s4": "—",
+                "s5": "—",
+                "s6": "—",
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 6,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": "—",
+                "s5": "—",
+                "s6": "—",
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 7,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 1,
+                "s5": "—",
+                "s6": "—",
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 8,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 2,
+                "s5": "—",
+                "s6": "—",
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 9,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 1,
+                "s6": "—",
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 10,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 2,
+                "s6": "—",
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 11,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 2,
+                "s6": 1,
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 12,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 2,
+                "s6": 1,
+                "s7": "—",
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 13,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 2,
+                "s6": 1,
+                "s7": 1,
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 14,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 2,
+                "s6": 1,
+                "s7": 1,
+                "s8": "—",
+                "s9": "—"
+              },
+              {
+                "level": 15,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 2,
+                "s6": 1,
+                "s7": 1,
+                "s8": 1,
+                "s9": "—"
+              },
+              {
+                "level": 16,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 2,
+                "s6": 1,
+                "s7": 1,
+                "s8": 1,
+                "s9": "—"
+              },
+              {
+                "level": 17,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 2,
+                "s6": 1,
+                "s7": 1,
+                "s8": 1,
+                "s9": 1
+              },
+              {
+                "level": 18,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 3,
+                "s6": 1,
+                "s7": 1,
+                "s8": 1,
+                "s9": 1
+              },
+              {
+                "level": 19,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 3,
+                "s6": 1,
+                "s7": 1,
+                "s8": 1,
+                "s9": 1
+              },
+              {
+                "level": 20,
+                "s1": 4,
+                "s2": 3,
+                "s3": 3,
+                "s4": 3,
+                "s5": 3,
+                "s6": 2,
+                "s7": 1,
+                "s8": 1,
+                "s9": 1
+              }
+            ]
+          },
+          {
+            "key": "table.2.progressao-de-espacos-meio-um-terco-e-combustao",
+            "title": "Progressão de Espaços — Meio, Um-Terço e Combustão",
+            "page": 119,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "level",
+                "label": "Nível"
+              },
+              {
+                "key": "h1",
+                "label": "Meio 1º"
+              },
+              {
+                "key": "h2",
+                "label": "Meio 2º"
+              },
+              {
+                "key": "h3",
+                "label": "Meio 3º"
+              },
+              {
+                "key": "h4",
+                "label": "Meio 4º"
+              },
+              {
+                "key": "h5",
+                "label": "Meio 5º"
+              },
+              {
+                "key": "t1",
+                "label": "1/3 1º"
+              },
+              {
+                "key": "t2",
+                "label": "1/3 2º"
+              },
+              {
+                "key": "t3",
+                "label": "1/3 3º"
+              },
+              {
+                "key": "t4",
+                "label": "1/3 4º"
+              },
+              {
+                "key": "burnN",
+                "label": "Combustão: espaços"
+              },
+              {
+                "key": "burnL",
+                "label": "Combustão: nível"
+              }
+            ],
+            "rows": [
+              {
+                "level": 1,
+                "h1": 2,
+                "h2": "—",
+                "h3": "—",
+                "h4": "—",
+                "h5": "—",
+                "t1": 2,
+                "t2": "—",
+                "t3": "—",
+                "t4": "—",
+                "burnN": 1,
+                "burnL": "1º"
+              },
+              {
+                "level": 2,
+                "h1": 2,
+                "h2": "—",
+                "h3": "—",
+                "h4": "—",
+                "h5": "—",
+                "t1": 2,
+                "t2": "—",
+                "t3": "—",
+                "t4": "—",
+                "burnN": 2,
+                "burnL": "1º"
+              },
+              {
+                "level": 3,
+                "h1": 3,
+                "h2": "—",
+                "h3": "—",
+                "h4": "—",
+                "h5": "—",
+                "t1": 2,
+                "t2": "—",
+                "t3": "—",
+                "t4": "—",
+                "burnN": 2,
+                "burnL": "1º"
+              },
+              {
+                "level": 4,
+                "h1": 3,
+                "h2": "—",
+                "h3": "—",
+                "h4": "—",
+                "h5": "—",
+                "t1": 3,
+                "t2": "—",
+                "t3": "—",
+                "t4": "—",
+                "burnN": 2,
+                "burnL": "2º"
+              },
+              {
+                "level": 5,
+                "h1": 4,
+                "h2": 2,
+                "h3": "—",
+                "h4": "—",
+                "h5": "—",
+                "t1": 3,
+                "t2": "—",
+                "t3": "—",
+                "t4": "—",
+                "burnN": 2,
+                "burnL": "2º"
+              },
+              {
+                "level": 6,
+                "h1": 4,
+                "h2": 3,
+                "h3": "—",
+                "h4": "—",
+                "h5": "—",
+                "t1": 3,
+                "t2": "—",
+                "t3": "—",
+                "t4": "—",
+                "burnN": 2,
+                "burnL": "2º"
+              },
+              {
+                "level": 7,
+                "h1": 4,
+                "h2": 3,
+                "h3": "—",
+                "h4": "—",
+                "h5": "—",
+                "t1": 4,
+                "t2": 2,
+                "t3": "—",
+                "t4": "—",
+                "burnN": 2,
+                "burnL": "3º"
+              },
+              {
+                "level": 8,
+                "h1": 4,
+                "h2": 3,
+                "h3": "—",
+                "h4": "—",
+                "h5": "—",
+                "t1": 4,
+                "t2": 2,
+                "t3": "—",
+                "t4": "—",
+                "burnN": 2,
+                "burnL": "3º"
+              },
+              {
+                "level": 9,
+                "h1": 4,
+                "h2": 3,
+                "h3": 2,
+                "h4": "—",
+                "h5": "—",
+                "t1": 4,
+                "t2": 2,
+                "t3": "—",
+                "t4": "—",
+                "burnN": 2,
+                "burnL": "3º"
+              },
+              {
+                "level": 10,
+                "h1": 4,
+                "h2": 3,
+                "h3": 2,
+                "h4": "—",
+                "h5": "—",
+                "t1": 4,
+                "t2": 3,
+                "t3": "—",
+                "t4": "—",
+                "burnN": 2,
+                "burnL": "4º"
+              },
+              {
+                "level": 11,
+                "h1": 4,
+                "h2": 3,
+                "h3": 3,
+                "h4": "—",
+                "h5": "—",
+                "t1": 4,
+                "t2": 3,
+                "t3": "—",
+                "t4": "—",
+                "burnN": 3,
+                "burnL": "4º"
+              },
+              {
+                "level": 12,
+                "h1": 4,
+                "h2": 3,
+                "h3": 3,
+                "h4": "—",
+                "h5": "—",
+                "t1": 4,
+                "t2": 3,
+                "t3": "—",
+                "t4": "—",
+                "burnN": 3,
+                "burnL": "4º"
+              },
+              {
+                "level": 13,
+                "h1": 4,
+                "h2": 3,
+                "h3": 3,
+                "h4": 1,
+                "h5": "—",
+                "t1": 4,
+                "t2": 3,
+                "t3": 2,
+                "t4": "—",
+                "burnN": 3,
+                "burnL": "5º"
+              },
+              {
+                "level": 14,
+                "h1": 4,
+                "h2": 3,
+                "h3": 3,
+                "h4": 1,
+                "h5": "—",
+                "t1": 4,
+                "t2": 3,
+                "t3": 2,
+                "t4": "—",
+                "burnN": 3,
+                "burnL": "5º"
+              },
+              {
+                "level": 15,
+                "h1": 4,
+                "h2": 3,
+                "h3": 3,
+                "h4": 2,
+                "h5": "—",
+                "t1": 4,
+                "t2": 3,
+                "t3": 2,
+                "t4": "—",
+                "burnN": 3,
+                "burnL": "5º"
+              },
+              {
+                "level": 16,
+                "h1": 4,
+                "h2": 3,
+                "h3": 3,
+                "h4": 3,
+                "h5": "—",
+                "t1": 4,
+                "t2": 3,
+                "t3": 3,
+                "t4": "—",
+                "burnN": 3,
+                "burnL": "6º"
+              },
+              {
+                "level": 17,
+                "h1": 4,
+                "h2": 3,
+                "h3": 3,
+                "h4": 3,
+                "h5": 1,
+                "t1": 4,
+                "t2": 3,
+                "t3": 3,
+                "t4": "—",
+                "burnN": 4,
+                "burnL": "6º"
+              },
+              {
+                "level": 18,
+                "h1": 4,
+                "h2": 3,
+                "h3": 3,
+                "h4": 3,
+                "h5": 1,
+                "t1": 4,
+                "t2": 3,
+                "t3": 3,
+                "t4": "—",
+                "burnN": 4,
+                "burnL": "6º"
+              },
+              {
+                "level": 19,
+                "h1": 4,
+                "h2": 3,
+                "h3": 3,
+                "h4": 3,
+                "h5": 2,
+                "t1": 4,
+                "t2": 3,
+                "t3": 3,
+                "t4": 1,
+                "burnN": 4,
+                "burnL": "6º"
+              },
+              {
+                "level": 20,
+                "h1": 4,
+                "h2": 3,
+                "h3": 3,
+                "h4": 3,
+                "h5": 2,
+                "t1": 4,
+                "t2": 3,
+                "t3": 3,
+                "t4": 1,
+                "burnN": 4,
+                "burnL": "6º"
+              }
+            ]
+          },
+          {
+            "key": "table.3.tipos-de-encarnacao",
+            "title": "Tipos de Encarnação",
+            "page": 127,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "name",
+                "label": "Encarnação"
+              },
+              {
+                "key": "energy",
+                "label": "Energia (Salvaguarda)"
+              },
+              {
+                "key": "movement",
+                "label": "Movimento"
+              },
+              {
+                "key": "effect",
+                "label": "Característica"
+              }
+            ],
+            "rows": [
+              {
+                "name": "Dragão Negro",
+                "energy": "Ácido (Destreza)",
+                "movement": "Natação",
+                "effect": "Golpes Ferais: pode manifestar garras dracônicas, tratadas como armas marciais com acuidade. Pode usar Sabedoria no ataque e dano; causam 1d8 cortante mágico. No 10º nível causam +1d8 ácido; no 17º ambos os d8 viram d10."
+              },
+              {
+                "name": "Dragão Azul",
+                "energy": "Elétrico (Destreza)",
+                "movement": "Escavação",
+                "effect": "Carga Galvanizada: como ação bônus, 1d4 é somado a uma jogada de ataque. Usos por Descanso Longo iguais à proficiência; recupera 1 uso em Descanso Curto. O dado vira d6 no 10º e d8 no 17º."
+              },
+              {
+                "name": "Dragão de Latão",
+                "energy": "Fogo (Destreza)",
+                "movement": "Escavação",
+                "effect": "Percepção Elevada: Especialização em Percepção e não pode ser surpreendido em combate."
+              },
+              {
+                "name": "Dragão de Bronze",
+                "energy": "Elétrico (Destreza)",
+                "movement": "Natação",
+                "effect": "Lutador Especialista: proficiência em Atletismo e pode Agarrar ou Empurrar como ação bônus."
+              },
+              {
+                "name": "Dragão de Cobre",
+                "energy": "Ácido (Destreza)",
+                "movement": "Escalada",
+                "effect": "Influência Lenta: uma vez por Descanso, produz lentidão sem espaço de magia ou componentes, no nível base ou no nível do maior espaço de Cavaleiro Dracônico, o que for maior."
+              },
+              {
+                "name": "Dragão de Cristal",
+                "energy": "Radiante (Constituição)",
+                "movement": "Escalada",
+                "effect": "Absorção Psíquica: ao obter um crítico, recebe PV temporários iguais ao dano causado; ao reduzir criatura hostil a 0 PV, recebe PV temporários iguais ao valor de Constituição dela."
+              },
+              {
+                "name": "Dragão Profundo",
+                "energy": "Psíquico (Sabedoria)",
+                "movement": "Escavação",
+                "effect": "Resiliência Lenta: imune a Lento e a efeitos que reduzam deslocamento sem defini-lo automaticamente como 0; imune à magia lentidão."
+              },
+              {
+                "name": "Dragão de Esmeralda",
+                "energy": "Psíquico (Inteligência)",
+                "movement": "Escavação",
+                "effect": "Olho para Ilusões: vantagem em salvaguardas contra ilusões e a CD de efeitos de ilusão contra os quais faz salvaguarda ou teste é reduzida em 5."
+              },
+              {
+                "name": "Dragão Dourado",
+                "energy": "Fogo (Destreza)",
+                "movement": "Natação",
+                "effect": "Natureza Lendária: usos por Descanso iguais à metade da proficiência. Ao falhar em salvaguarda contra efeito mágico, pode repeti-la e somar a proficiência mesmo que já a estivesse somando."
+              },
+              {
+                "name": "Dragão Verde",
+                "energy": "Veneno (Constituição)",
+                "movement": "Natação",
+                "effect": "Inenvenenável: não pode ser envenenado ou intoxicado e consome alimento/água impróprios sem efeitos negativos."
+              },
+              {
+                "name": "Dragão de Pedra Lunar",
+                "energy": "Radiante (Destreza)",
+                "movement": "Base (+3 m)",
+                "effect": "Dança Onírica: uma vez por Descanso, produz sono sem espaço ou componentes, em nível igual à proficiência; adiciona metade da proficiência a cada d8 rolado pela magia."
+              },
+              {
+                "name": "Dragão de Platina",
+                "energy": "Radiante (Destreza)",
+                "movement": "Base (+3 m)",
+                "effect": "Resiliência Lendária: usos por Descanso Longo iguais à metade da proficiência. Pode fazer uma salvaguarda com vantagem; ou gastar 2 usos após falhar para obter sucesso. Recupera 1 uso em Descanso Curto."
+              },
+              {
+                "name": "Dragão Vermelho",
+                "energy": "Fogo (Destreza)",
+                "movement": "Escalada",
+                "effect": "Inferno Voraz: duas vezes por Descanso Longo, ao acertar um ataque causa +1d8 de fogo por ponto de proficiência. Recupera 1 uso em Descanso Curto."
+              },
+              {
+                "name": "Dragão de Safira",
+                "energy": "Trovão (Constituição)",
+                "movement": "Escalada",
+                "effect": "Escalada Aracnídea: pode caminhar e aderir a superfícies verticais e invertidas sem usar todos os membros."
+              },
+              {
+                "name": "Dragão Prateado",
+                "energy": "Frio (Constituição)",
+                "movement": "Base (+3 m)",
+                "effect": "Visão Cega Prateada: visão às cegas de 3 m × proficiência. Se outra fonte já for igual ou maior, aumenta essa outra fonte em metade do alcance desta característica."
+              },
+              {
+                "name": "Dragão Caveira",
+                "energy": "Necrótico (Constituição)",
+                "movement": "Escavação",
+                "effect": "Matador de Mortos-Vivos: vantagem em testes e salvaguardas contra mortos-vivos e +proficiência no dano quando acerta um morto-vivo."
+              },
+              {
+                "name": "Dragão de Topázio",
+                "energy": "Necrótico (Constituição)",
+                "movement": "Natação",
+                "effect": "Raio Debilitante: pode produzir raio do enfraquecimento sem espaço/componentes como ação bônus, usos por Descanso Longo iguais à proficiência."
+              },
+              {
+                "name": "Dragão Branco",
+                "energy": "Frio (Constituição)",
+                "movement": "Escavação",
+                "effect": "Patinador: terreno difícil não mágico não reduz seu movimento e superfícies escorregadias/congeladas não exigem testes ou salvaguardas para manter equilíbrio."
+              },
+              {
+                "name": "Dragão de Buraco de Minhoca",
+                "energy": "Força (Força)",
+                "movement": "Aceleração 0-G (2× base)",
+                "effect": "Passo de Transição: como ação bônus, teleporta-se para espaço desocupado visível dentro do alcance do movimento restante; a distância é subtraída do deslocamento restante."
+              }
+            ]
+          },
+          {
+            "key": "table.4.lista-de-magias-do-cavaleiro-draconico",
+            "title": "Lista de Magias do Cavaleiro Dracônico",
+            "page": 129,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "level",
+                "label": "Nível"
+              },
+              {
+                "key": "spells",
+                "label": "Magias"
+              }
+            ],
+            "rows": [
+              {
+                "level": "1º",
+                "spells": "Flecha Cromática*; Inimigo Dedicado*; Arma Infundida*; Lança Congelante; Sopro Fantasma; Chuva de Luz; Lança Perseguidora; Glaive Varredora; Golpe da Valquíria*"
+              },
+              {
+                "level": "2º",
+                "spells": "Chama Contínua; Aumentar/Reduzir*; Chifre de Força; Mordida Fantasmagórica; Rajada de Vento; Névoas Oclusivas; Passagem de Luz; Ver Invisibilidade; Mortalha de Espinhos; Foice Ascendente; Peso das Asas*; Sopro do Wyrm*"
+              },
+              {
+                "level": "3º",
+                "spells": "Mortalha de Aura; Cauda Explosiva; Lanças do Dragão Amaldiçoado*; Golpe do Dragão; Pele de Dragão*; Medo; Voo; Passo do Grande Wyrm*; Mortalha Fantasmagórica*; Flecha da Mancha Solar; Broca de Vórtice; Investida Alada"
+              },
+              {
+                "level": "4º",
+                "spells": "Luz Morta; Dominar Besta; Gigaexplosão; Onda de Magma; Tornado de Rosas; Donzelas de Escudo*; Bravura Deslacrada*"
+              },
+              {
+                "level": "5º",
+                "spells": "Escudo Catastrófico*; Conjurar Eco Dracônico*; Portão da Morte; Onda de Choque*; Subjugar Magia*"
+              },
+              {
+                "level": "6º",
+                "spells": "Raio de Wyrm Frenético; Ferir; Palavra de Poder: Fúria*; Visão da Verdade"
+              },
+              {
+                "level": "7º",
+                "spells": "Meteoro Galáctico; Mudança de Plano; Regeneração; Inverter Gravidade*; Manto de Queda Estelar*"
+              },
+              {
+                "level": "8º",
+                "spells": "Grande Raio de Luciel*; Palavra de Poder: Rugido; Fim Ruinoso"
+              },
+              {
+                "level": "9º",
+                "spells": "Ar Diamantino; Extinção; Chuva de Meteoros; Muralha Prismática"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "key": "reference.1.magias-marcadas-com-asterisco",
+            "title": "MAGIAS MARCADAS COM ASTERISCO",
+            "page": 129,
+            "text": "Na lista da classe, magias com asterisco foram publicadas em Lyre’s Guide to Retia ou possuem lá uma versão modificada. As magias do Capítulo 7 de Zagalhta estão integradas ao catálogo do Grimório a partir da v5.10; reimpressões equivalentes são vinculadas à entrada já existente quando apropriado.",
+            "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection"
+          }
+        ],
+        "presentation": {
+          "sigilKey": "dragoneer",
+          "color": "#6e5aa8"
+        }
+      },
+      "features": [
+        {
+          "key": "class.dragoneer.feature.asas-do-avatar.l1.1",
+          "name": "ASAS DO AVATAR",
+          "level": 1,
+          "description": "Você conjura asas dracônicas semelhantes a relíquias. Elas concedem deslocamento de voo laborioso igual ao seu deslocamento base mais o bônus da coluna Velocidade das Asas. Se já possuir voo laborioso superior ao deslocamento base, pode somar esse bônus à fonte existente.",
+          "page": 118,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.conceito-central.l1.1",
+          "name": "CONCEITO CENTRAL",
+          "level": 1,
+          "description": "No 1º nível escolha um Conceito Central. Ele define seu Dado de Vida, proficiências, segunda salvaguarda, lista adicional de magias e tipo de progressão conjuradora. Você recebe imediatamente a característica de 1º nível do conceito e as demais nos níveis indicados.",
+          "page": 118,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.conjuracao.l1.1",
+          "name": "CONJURAÇÃO",
+          "level": 1,
+          "description": "Se o Conceito Central conceder conjuração, você aprende duas magias de 1º nível no 1º nível e novas magias conforme a coluna Magias Conhecidas. Sabedoria é seu atributo de conjuração. Além da lista do Cavaleiro Dracônico, o conceito indica uma classe cuja lista pode ser usada. O conceito também determina se você é Conjurador Pleno, Meio Conjurador, Um-Terço de Conjurador ou Conjurador de Combustão. Conjuradores de Combustão recuperam seus Espaços de Pacto em qualquer Descanso; os demais recuperam os espaços em Descanso Longo. Você não recebe truques por esta característica, salvo indicação específica.",
+          "page": 118,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.escolha-de-encarnacao.l2.1",
+          "name": "ESCOLHA DE ENCARNAÇÃO",
+          "level": 2,
+          "description": "Escolha um Tipo de Encarnação dracônica. Você recebe resistência ao tipo de dano listado, um tipo de movimento e uma característica exclusiva. Esse dano é seu dano/tipo de Encarnação. Quando o movimento indicar Base, seu deslocamento base aumenta em 3 m.",
+          "page": 120,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 2,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.estilo-de-luta.l2.1",
+          "name": "ESTILO DE LUTA",
+          "level": 2,
+          "description": "Escolha um Estilo de Luta entre Florescimento Arcano, Arquearia, Guerreiro Abençoado, Combate às Cegas, Duelo, Combate com Armas Grandes, Proficiência (propriedades listadas), Lutador Imprudente, Técnica Superior ou Combate com Duas Armas. Você recebe a versão básica, não aprimorada.",
+          "page": 120,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 2,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.armadura-da-besta.l3.1",
+          "name": "ARMADURA DA BESTA",
+          "level": 3,
+          "description": "Quando não estiver usando armadura nem escudo, pode manifestar uma mortalha metálica. Sua CA pode ser calculada como 10 + modificador de Destreza + modificador de Sabedoria.",
+          "page": 120,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.caracteristica-de-conceito-central-3-nivel.l3.1",
+          "name": "CARACTERÍSTICA DE CONCEITO CENTRAL (3º NÍVEL)",
+          "level": 3,
+          "description": "Você recebe a característica de 3º nível do Conceito Central escolhido.",
+          "page": 120,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.aumento-no-valor-de-atributo.l4.1",
+          "name": "AUMENTO NO VALOR DE ATRIBUTO",
+          "level": 4,
+          "description": "Nos níveis 4, 8, 12, 16 e 19, escolha um talento que cumpra os requisitos, aumente um atributo em 2 ou dois atributos em 1. Esta característica não eleva atributos acima de 20.",
+          "page": 120,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 4,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.acao-encadeada.l5.1",
+          "name": "AÇÃO ENCADEADA",
+          "level": 5,
+          "description": "Ao realizar a ação Atacar, pode atacar duas vezes. Se puder conjurar magias de Cavaleiro Dracônico, pode substituir um desses ataques pela conjuração de uma magia com tempo de conjuração de 1 ação. Regras que interagem com Ataque Extra podem tratar esta característica como Ataque Extra.",
+          "page": 120,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 5,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.aprimoramento-de-estilo-de-luta.l6.1",
+          "name": "APRIMORAMENTO DE ESTILO DE LUTA",
+          "level": 6,
+          "description": "No 6º nível, e novamente no 10º e 15º, aprimore um de seus Estilos de Luta. Se não tiver um estilo que possa ser aprimorado, escolha um novo entre as opções de 2º nível.",
+          "page": 120,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.caracteristica-de-conceito-central-7-nivel.l7.1",
+          "name": "CARACTERÍSTICA DE CONCEITO CENTRAL (7º NÍVEL)",
+          "level": 7,
+          "description": "Você recebe a característica de 7º nível do Conceito Central escolhido.",
+          "page": 120,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.golpe-encarnado.l7.1",
+          "name": "GOLPE ENCARNADO",
+          "level": 7,
+          "description": "Sempre que causar dano a uma criatura com um ataque de arma ou ataque de magia, causa um dado adicional de dano do seu tipo de Encarnação.",
+          "page": 120,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.sopro-do-dragao.l9.1",
+          "name": "SOPRO DO DRAGÃO",
+          "level": 9,
+          "description": "Como ação, escolha cone de 9 m, linha de 18 m por 1,5 m, esfera de 6 m de raio centrada em ponto a até 18 m, ou cubo de 13,5 m centrado em você. Cada criatura na área faz a salvaguarda associada ao seu tipo de Encarnação. Em falha, sofre dano de Encarnação igual a 3d8 × seu bônus de proficiência + seu nível de Cavaleiro Dracônico. Pode usar uma vez por Descanso.",
+          "page": 120,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 9,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.imunidade-encarnada.l9.1",
+          "name": "IMUNIDADE ENCARNADA",
+          "level": 9,
+          "description": "Você se torna imune ao tipo de dano correspondente à sua Encarnação.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 9,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.um-sonho-de-voo.l10.1",
+          "name": "UM SONHO DE VOO",
+          "level": 10,
+          "description": "Além do voo laborioso de Asas do Avatar, você recebe deslocamento de voo normal igual à metade desse deslocamento de voo laborioso; ele não exige ação bônus para ser utilizado.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.voo-de-passagem.l11.1",
+          "name": "VOO DE PASSAGEM",
+          "level": 11,
+          "description": "Ao sair do alcance de uma criatura usando o deslocamento de voo produzido pelo voo laborioso, você não provoca ataques de oportunidade.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.caracteristica-de-conceito-central-13-nivel.l13.1",
+          "name": "CARACTERÍSTICA DE CONCEITO CENTRAL (13º NÍVEL)",
+          "level": 13,
+          "description": "Você recebe a característica de 13º nível do Conceito Central escolhido.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.colisor-de-almas.l14.1",
+          "name": "COLISOR DE ALMAS",
+          "level": 14,
+          "description": "Ao fazer um ataque de arma no seu turno, pode declarar o uso desta característica. Se acertar, causa dano adicional igual ao dano de Sopro do Dragão + 1d8 por ponto de proficiência; esse dano extra não é multiplicado por crítico. O Sopro do Dragão passa a ser considerado usado. Só pode declarar uma vez por turno; se errar, o uso do Sopro não é gasto, mas não pode tentar novamente naquele turno.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.caracteristica-de-conceito-central-17-nivel.l17.1",
+          "name": "CARACTERÍSTICA DE CONCEITO CENTRAL (17º NÍVEL)",
+          "level": 17,
+          "description": "Você recebe a característica de 17º nível do Conceito Central escolhido.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.aprimoramento-do-sopro-do-dragao.l18.1",
+          "name": "APRIMORAMENTO DO SOPRO DO DRAGÃO",
+          "level": 18,
+          "description": "Quando usar Sopro do Dragão, pode excluir qualquer quantidade de alvos que consiga ver dentro da área.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 18,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.dragoneer.feature.encarnacao-ascendida.l20.1",
+          "name": "ENCARNAÇÃO ASCENDIDA",
+          "level": 20,
+          "description": "Uma vez por Descanso Longo, conjure soberania sem espaço de magia, no 5º nível; a CD da Verificação de Queima de Eidomancia é no mínimo 20. Pode gastar um espaço adicional para conjurá-la no nível desse espaço. Durante a transformação, pode usar Sopro do Dragão uma vez sem consumir a utilização normal da característica.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 20,
+            "automation": "phase-5"
+          }
+        }
+      ],
+      "progression": {
+        "title": "O Cavaleiro Dracônico",
+        "sourceTitle": "",
+        "sourcePage": null,
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "proficiency",
+            "label": "Proficiência"
+          },
+          {
+            "key": "features",
+            "label": "Características"
+          },
+          {
+            "key": "wing",
+            "label": "Velocidade das Asas"
+          },
+          {
+            "key": "spellsKnown",
+            "label": "Magias Conhecidas"
+          }
+        ],
+        "levels": [
+          {
+            "level": 1,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Asas do Avatar",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.asas-do-avatar.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Conceito Central",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.conceito-central.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Conjuração",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.conjuracao.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+3 m",
+            "spellsKnown": 2
+          },
+          {
+            "level": 2,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Escolha de Encarnação",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.escolha-de-encarnacao.l2.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Estilo de Luta",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.estilo-de-luta.l2.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+3 m",
+            "spellsKnown": 3
+          },
+          {
+            "level": 3,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Armadura da Besta",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.armadura-da-besta.l3.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Característica de Conceito Central (3º Nível)",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.caracteristica-de-conceito-central-3-nivel.l3.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+3 m",
+            "spellsKnown": 4
+          },
+          {
+            "level": 4,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Aumento no Valor de Atributo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.aumento-no-valor-de-atributo.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+4,5 m",
+            "spellsKnown": 5
+          },
+          {
+            "level": 5,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Ação Encadeada",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.acao-encadeada.l5.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+4,5 m",
+            "spellsKnown": 6
+          },
+          {
+            "level": 6,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Aprimoramento de Estilo de Luta",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.aprimoramento-de-estilo-de-luta.l6.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+6 m",
+            "spellsKnown": 7
+          },
+          {
+            "level": 7,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Característica de Conceito Central (7º Nível)",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.caracteristica-de-conceito-central-7-nivel.l7.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Golpe Encarnado",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.golpe-encarnado.l7.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+6 m",
+            "spellsKnown": 8
+          },
+          {
+            "level": 8,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Aumento no Valor de Atributo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.aumento-no-valor-de-atributo.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+6 m",
+            "spellsKnown": 9
+          },
+          {
+            "level": 9,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Sopro do Dragão",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.sopro-do-dragao.l9.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Imunidade Encarnada",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.imunidade-encarnada.l9.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+9 m",
+            "spellsKnown": 10
+          },
+          {
+            "level": 10,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Um Sonho de Voo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.um-sonho-de-voo.l10.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Aprimoramento de Estilo de Luta",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.aprimoramento-de-estilo-de-luta.l6.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+9 m",
+            "spellsKnown": 11
+          },
+          {
+            "level": 11,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Voo de Passagem",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.voo-de-passagem.l11.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+9 m",
+            "spellsKnown": 12
+          },
+          {
+            "level": 12,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Aumento no Valor de Atributo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.aumento-no-valor-de-atributo.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+12 m",
+            "spellsKnown": 12
+          },
+          {
+            "level": 13,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Característica de Conceito Central (13º Nível)",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.caracteristica-de-conceito-central-13-nivel.l13.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+12 m",
+            "spellsKnown": 13
+          },
+          {
+            "level": 14,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Colisor de Almas",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.colisor-de-almas.l14.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+12 m",
+            "spellsKnown": 13
+          },
+          {
+            "level": 15,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Aprimoramento de Estilo de Luta",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.aprimoramento-de-estilo-de-luta.l6.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+15 m",
+            "spellsKnown": 14
+          },
+          {
+            "level": 16,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Aumento no Valor de Atributo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.aumento-no-valor-de-atributo.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+15 m",
+            "spellsKnown": 14
+          },
+          {
+            "level": 17,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Característica de Conceito Central (17º Nível)",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.caracteristica-de-conceito-central-17-nivel.l17.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+15 m",
+            "spellsKnown": 15
+          },
+          {
+            "level": 18,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Aprimoramento do Sopro do Dragão",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.aprimoramento-do-sopro-do-dragao.l18.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+18 m",
+            "spellsKnown": 15
+          },
+          {
+            "level": 19,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Aumento no Valor de Atributo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.aumento-no-valor-de-atributo.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+18 m",
+            "spellsKnown": 15
+          },
+          {
+            "level": 20,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Encarnação Ascendida",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.dragoneer.feature.encarnacao-ascendida.l20.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "wing": "+18 m",
+            "spellsKnown": 15
+          }
+        ]
+      },
+      "subclassSelection": {
+        "selectionLevel": 1,
+        "homogeneous": true,
+        "observedLevels": {
+          "1": 12
+        },
+        "options": [
+          {
+            "grimorioId": "zagalhta-dragoneer-auraphage",
+            "identifier": "zagalhta-dragoneer-auraphage",
+            "name": "Aurófago",
+            "originalName": "Auraphage",
+            "source": {
+              "sourceId": "zagalhta-exolunar",
+              "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+              "pages": "121–122",
+              "chapter": "Capítulo 6: Opções de Classe",
+              "page": 121
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "zagalhta-dragoneer-bloodweaver",
+            "identifier": "zagalhta-dragoneer-bloodweaver",
+            "name": "Tecelão de Sangue",
+            "originalName": "Bloodweaver",
+            "source": {
+              "sourceId": "zagalhta-exolunar",
+              "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+              "pages": "122",
+              "chapter": "Capítulo 6: Opções de Classe",
+              "page": 122
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "zagalhta-dragoneer-breaking-dynamo",
+            "identifier": "zagalhta-dragoneer-breaking-dynamo",
+            "name": "Dínamo Rompedor",
+            "originalName": "Breaking Dynamo",
+            "source": {
+              "sourceId": "zagalhta-exolunar",
+              "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+              "pages": "122–123",
+              "chapter": "Capítulo 6: Opções de Classe",
+              "page": 122
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "zagalhta-dragoneer-child-of-fate",
+            "identifier": "zagalhta-dragoneer-child-of-fate",
+            "name": "Filho do Destino",
+            "originalName": "Child of Fate",
+            "source": {
+              "sourceId": "zagalhta-exolunar",
+              "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+              "pages": "123–124",
+              "chapter": "Capítulo 6: Opções de Classe",
+              "page": 123
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "zagalhta-dragoneer-demon-dancer",
+            "identifier": "zagalhta-dragoneer-demon-dancer",
+            "name": "Dançarino Demoníaco",
+            "originalName": "Demon Dancer",
+            "source": {
+              "sourceId": "zagalhta-exolunar",
+              "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+              "pages": "124",
+              "chapter": "Capítulo 6: Opções de Classe",
+              "page": 124
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "zagalhta-dragoneer-echoing-voice",
+            "identifier": "zagalhta-dragoneer-echoing-voice",
+            "name": "Voz Ecoante",
+            "originalName": "Echoing Voice",
+            "source": {
+              "sourceId": "zagalhta-exolunar",
+              "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+              "pages": "124–125",
+              "chapter": "Capítulo 6: Opções de Classe",
+              "page": 124
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "zagalhta-dragoneer-piercing-hand",
+            "identifier": "zagalhta-dragoneer-piercing-hand",
+            "name": "Mão Perfurante",
+            "originalName": "Piercing Hand",
+            "source": {
+              "sourceId": "zagalhta-exolunar",
+              "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+              "pages": "125",
+              "chapter": "Capítulo 6: Opções de Classe",
+              "page": 125
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "zagalhta-dragoneer-raging-titan",
+            "identifier": "zagalhta-dragoneer-raging-titan",
+            "name": "Titã Furioso",
+            "originalName": "Raging Titan",
+            "source": {
+              "sourceId": "zagalhta-exolunar",
+              "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+              "pages": "126",
+              "chapter": "Capítulo 6: Opções de Classe",
+              "page": 126
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "zagalhta-dragoneer-royal-sweeper",
+            "identifier": "zagalhta-dragoneer-royal-sweeper",
+            "name": "Varredor Real",
+            "originalName": "Royal Sweeper",
+            "source": {
+              "sourceId": "zagalhta-exolunar",
+              "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+              "pages": "126–127",
+              "chapter": "Capítulo 6: Opções de Classe",
+              "page": 126
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "bbb-dragoneer-darkstriker",
+            "identifier": "bbb-dragoneer-darkstriker",
+            "name": "Golpeador Sombrio",
+            "originalName": "Darkstriker",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "94",
+              "chapter": "Capítulo X: Subclasses",
+              "page": 94
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "bbb-dragoneer-fortune-veil",
+            "identifier": "bbb-dragoneer-fortune-veil",
+            "name": "Véu da Fortuna",
+            "originalName": "Fortune Veil",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "95",
+              "chapter": "Capítulo X: Subclasses",
+              "page": 95
+            },
+            "firstFeatureLevel": 1
+          },
+          {
+            "grimorioId": "bbb-dragoneer-phasescale-knight",
+            "identifier": "bbb-dragoneer-phasescale-knight",
+            "name": "Cavaleiro da Escama Fásica",
+            "originalName": "Phasescale Knight",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "96",
+              "chapter": "Capítulo X: Subclasses",
+              "page": 96
+            },
+            "firstFeatureLevel": 1
+          }
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "zagalhta-dragoneer-auraphage",
+        "identifier": "zagalhta-dragoneer-auraphage",
+        "name": "Aurófago",
+        "originalName": "Auraphage",
+        "aliases": [
+          "Auraphage"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "121–122",
+        "chapter": "Capítulo 6: Opções de Classe",
+        "page": 121
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Um canalizador que oferece corpo e mente como combustível para domar a fornalha arcana de uma alma dracônica, usando Magia de Pacto e forçando a própria magia além dos limites.",
+        "tables": [
+          {
+            "key": "table.1.parametros-da-especializacao",
+            "title": "Parâmetros da Especialização",
+            "page": 121,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "hit",
+                "label": "Dado de Vida"
+              },
+              {
+                "key": "saves",
+                "label": "Salvaguardas"
+              },
+              {
+                "key": "weapons",
+                "label": "Armas"
+              },
+              {
+                "key": "armor",
+                "label": "Armaduras"
+              },
+              {
+                "key": "skills",
+                "label": "Perícias"
+              },
+              {
+                "key": "casting",
+                "label": "Conjuração"
+              }
+            ],
+            "rows": [
+              {
+                "hit": "d8",
+                "saves": "Sabedoria, Carisma",
+                "weapons": "Todas as armas simples",
+                "armor": "Leves e médias",
+                "skills": "Religião; escolha duas entre Arcanismo, Enganação, História, Intimidação, Investigação e Natureza",
+                "casting": "Conjurador de Combustão (lista do Bruxo)"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 121
+      },
+      "features": [
+        {
+          "key": "subclass.zagalhta-dragoneer-auraphage.feature.brasa-e-combustao.l1.1",
+          "name": "BRASA E COMBUSTÃO",
+          "level": 1,
+          "description": "Ao conjurar uma magia usando um Espaço de Magia de Cavaleiro Dracônico, role 1d100. Se o resultado for igual ou menor que seu nível de Cavaleiro Dracônico + 10, o espaço não é consumido.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-auraphage.feature.poder-da-conexao.l3.1",
+          "name": "PODER DA CONEXÃO",
+          "level": 3,
+          "description": "Você pode concentrar-se simultaneamente em uma segunda magia ou efeito. Os dois efeitos compartilham a mesma verificação de concentração: uma única rolagem é feita e ambos têm sucesso ou falham juntos.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-auraphage.feature.explosao-encadeada.l7.1",
+          "name": "EXPLOSÃO ENCADEADA",
+          "level": 7,
+          "description": "Quando substituir um ataque por uma magia através de Ação Encadeada, pode conjurar uma magia de nível igual ou inferior à metade do nível do Espaço usado, tratada como conjurada no nível-base. Se fizer isso, pode substituir um segundo ataque da mesma Ação Encadeada por outra magia de 1 ação sob a mesma regra.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-auraphage.feature.resistencia-magica.l13.1",
+          "name": "RESISTÊNCIA MÁGICA",
+          "level": 13,
+          "description": "Você tem vantagem em salvaguardas contra efeitos mágicos.",
+          "page": 121,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-auraphage.feature.arcana-venenosa.l17.1",
+          "name": "ARCANA VENENOSA",
+          "level": 17,
+          "description": "Quando uma criatura o acerta com um ataque a até 9 m, ela sofre 1d10 de dano de Encarnação. Esse dano ignora Limiares de Dano e resistências, mas não imunidades.",
+          "page": 122,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "zagalhta-dragoneer-bloodweaver",
+        "identifier": "zagalhta-dragoneer-bloodweaver",
+        "name": "Tecelão de Sangue",
+        "originalName": "Bloodweaver",
+        "aliases": [
+          "Bloodweaver"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "122",
+        "chapter": "Capítulo 6: Opções de Classe",
+        "page": 122
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Um conjurador que imita o poder mágico do sangue dracônico, usando cada magia para restaurar o corpo, manipular Metamagia e projetar o espírito do dragão contra os inimigos.",
+        "tables": [
+          {
+            "key": "table.1.parametros-da-especializacao",
+            "title": "Parâmetros da Especialização",
+            "page": 122,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "hit",
+                "label": "Dado de Vida"
+              },
+              {
+                "key": "saves",
+                "label": "Salvaguardas"
+              },
+              {
+                "key": "weapons",
+                "label": "Armas"
+              },
+              {
+                "key": "armor",
+                "label": "Armaduras"
+              },
+              {
+                "key": "skills",
+                "label": "Perícias"
+              },
+              {
+                "key": "casting",
+                "label": "Conjuração"
+              }
+            ],
+            "rows": [
+              {
+                "hit": "d6",
+                "saves": "Constituição, Sabedoria",
+                "weapons": "Todas as armas simples",
+                "armor": "Leves e médias",
+                "skills": "Arcanismo; escolha uma entre Enganação, Intuição, Intimidação, Persuasão e Religião",
+                "casting": "Conjurador Pleno (lista do Feiticeiro)"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 122
+      },
+      "features": [
+        {
+          "key": "subclass.zagalhta-dragoneer-bloodweaver.feature.aura-restauradora-do-espirito.l1.1",
+          "name": "AURA RESTAURADORA DO ESPÍRITO",
+          "level": 1,
+          "description": "Sempre que conjurar uma magia de Cavaleiro Dracônico, recupere PV iguais a duas vezes o nível do Espaço gasto. Se a magia tiver nível mas não gastar espaço, recupere PV iguais ao nível-base dela.",
+          "page": 122,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-bloodweaver.feature.metafeiticaria.l3.1",
+          "name": "METAFEITIÇARIA",
+          "level": 3,
+          "description": "Escolha duas opções de Metamagia de Feiticeiro. Você as aprende e possui Pontos de Feitiçaria iguais ao nível do maior Espaço de Magia de Cavaleiro Dracônico que possui, recuperados em Descanso Longo. Ao ganhar nível de Cavaleiro Dracônico, pode trocar uma opção de Metamagia.",
+          "page": 122,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-bloodweaver.feature.vinculo-draconico.l7.1",
+          "name": "VÍNCULO DRACÔNICO",
+          "level": 7,
+          "description": "Como ação bônus, gaste um Espaço de Magia para manifestar o espírito semicorpóreo de um dragão Imenso. Ele faz um ataque com seu bônus de ataque de magia contra um alvo a até 18 m; se acertar, o alvo fica impedido até o fim do próximo turno dele e sofre 1d8 de dano de Encarnação por nível do Espaço gasto.",
+          "page": 122,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-bloodweaver.feature.bonus-do-cavaleiro-draconico.l13.1",
+          "name": "BÔNUS DO CAVALEIRO DRACÔNICO",
+          "level": 13,
+          "description": "Quando conjurar uma magia de Cavaleiro Dracônico que não possua efeito de Bônus do Cavaleiro Dracônico, ela é tratada como se o Espaço usado fosse um nível superior.",
+          "page": 122,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-bloodweaver.feature.ritual-de-sangria.l17.1",
+          "name": "RITUAL DE SANGRIA",
+          "level": 17,
+          "description": "Ao conjurar uma magia, pode renunciar à cura de Aura Restauradora do Espírito e adicionar esse valor à primeira rolagem de dano que a magia causar a cada alvo. Se a magia tiver um único alvo, use o valor completo; se puder atingir vários, adicione metade a cada um.",
+          "page": 122,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "zagalhta-dragoneer-breaking-dynamo",
+        "identifier": "zagalhta-dragoneer-breaking-dynamo",
+        "name": "Dínamo Rompedor",
+        "originalName": "Breaking Dynamo",
+        "aliases": [
+          "Breaking Dynamo"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "122–123",
+        "chapter": "Capítulo 6: Opções de Classe",
+        "page": 122
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Um guerreiro galante que canaliza o orgulho e a força implacável de um dragão, força confrontos diretos e converte falhas defensivas em ímpeto ofensivo.",
+        "tables": [
+          {
+            "key": "table.1.parametros-da-especializacao",
+            "title": "Parâmetros da Especialização",
+            "page": 122,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "hit",
+                "label": "Dado de Vida"
+              },
+              {
+                "key": "saves",
+                "label": "Salvaguardas"
+              },
+              {
+                "key": "weapons",
+                "label": "Armas"
+              },
+              {
+                "key": "armor",
+                "label": "Armaduras"
+              },
+              {
+                "key": "skills",
+                "label": "Perícias"
+              },
+              {
+                "key": "casting",
+                "label": "Conjuração"
+              }
+            ],
+            "rows": [
+              {
+                "hit": "d10",
+                "saves": "Força, Sabedoria",
+                "weapons": "Todas as armas simples e marciais",
+                "armor": "Leves, médias e escudos",
+                "skills": "Atletismo; escolha uma entre Acrobacia, Adestrar Animais, História, Intuição, Intimidação, Percepção e Sobrevivência",
+                "casting": "Um-Terço de Conjurador"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 122
+      },
+      "features": [
+        {
+          "key": "subclass.zagalhta-dragoneer-breaking-dynamo.feature.critico-aprimorado.l1.1",
+          "name": "CRÍTICO APRIMORADO",
+          "level": 1,
+          "description": "Você obtém acerto crítico com resultado 19 ou 20 no d20.",
+          "page": 122,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-breaking-dynamo.feature.foco-frontal.l3.1",
+          "name": "FOCO FRONTAL",
+          "level": 3,
+          "description": "Quando for atingido por um ataque vindo de mais de 3 m de distância, enquanto não estiver incapacitado sua CA contra esse ataque recebe bônus igual à sua proficiência.",
+          "page": 122,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-breaking-dynamo.feature.carga-iraseda.l7.1",
+          "name": "CARGA IRASEDA",
+          "level": 7,
+          "description": "Ao falhar numa salvaguarda, recebe 1 ponto de Ira por 1 minuto, até o máximo da proficiência. Ao fazer um ataque de arma, pode gastar 1 ponto para somar sua proficiência uma segunda vez à jogada e, se acertar, também ao dano.",
+          "page": 122,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-breaking-dynamo.feature.aprimoramento-do-ataque-encadeado.l13.1",
+          "name": "APRIMORAMENTO DO ATAQUE ENCADEADO",
+          "level": 13,
+          "description": "Ao realizar a ação Atacar, pode atacar três vezes. Um desses ataques pode ser substituído pela conjuração de uma magia de Cavaleiro Dracônico com tempo de 1 ação.",
+          "page": 123,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-breaking-dynamo.feature.ataque-encadeado-encarnado.l17.1",
+          "name": "ATAQUE ENCADEADO ENCARNADO",
+          "level": 17,
+          "description": "Ao realizar a ação Atacar, pode atacar quatro vezes, substituindo um ataque por uma magia de Cavaleiro Dracônico de 1 ação. Além disso, Golpe Encarnado passa a causar um dado adicional de dano de arma.",
+          "page": 123,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "zagalhta-dragoneer-child-of-fate",
+        "identifier": "zagalhta-dragoneer-child-of-fate",
+        "name": "Filho do Destino",
+        "originalName": "Child of Fate",
+        "aliases": [
+          "Child of Fate"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "123–124",
+        "chapter": "Capítulo 6: Opções de Classe",
+        "page": 123
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Marcado por profecia ou destino predeterminado, é protegido pela própria casualidade e converte essa bênção em luz restauradora para manter a si e aos aliados no caminho previsto.",
+        "tables": [
+          {
+            "key": "table.1.parametros-da-especializacao",
+            "title": "Parâmetros da Especialização",
+            "page": 123,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "hit",
+                "label": "Dado de Vida"
+              },
+              {
+                "key": "saves",
+                "label": "Salvaguardas"
+              },
+              {
+                "key": "weapons",
+                "label": "Armas"
+              },
+              {
+                "key": "armor",
+                "label": "Armaduras"
+              },
+              {
+                "key": "skills",
+                "label": "Perícias"
+              },
+              {
+                "key": "casting",
+                "label": "Conjuração"
+              }
+            ],
+            "rows": [
+              {
+                "hit": "d6",
+                "saves": "Sabedoria, Carisma",
+                "weapons": "Todas as armas simples",
+                "armor": "Leves e médias",
+                "skills": "Medicina; escolha uma entre História, Intuição, Persuasão e Religião",
+                "casting": "Conjurador Pleno (lista do Clérigo)"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 123
+      },
+      "features": [
+        {
+          "key": "subclass.zagalhta-dragoneer-child-of-fate.feature.alivio-sagrado.l1.1",
+          "name": "ALÍVIO SAGRADO",
+          "level": 1,
+          "description": "Uma vez por Descanso, como ação bônus, toque uma criatura e cure Xd6, onde X é seu nível de Cavaleiro Dracônico. Antes de rolar, pode remover um ou mais d6; para cada dado removido, escolha um efeito no mesmo alvo: remover 1 Fadiga de Combate; se estiver Morrendo, encerrar a condição e restaurar 1 PV; encerrar um efeito que cause cego, surdo, envenenado ou paralisado; ou conceder 1d6 PV temporários.",
+          "page": 123,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-child-of-fate.feature.ordenacao-do-destino.l3.1",
+          "name": "ORDENAÇÃO DO DESTINO",
+          "level": 3,
+          "description": "Quando o resultado natural de um d20 em ataque, teste ou salvaguarda for menor que sua proficiência, role um novo d20 e use obrigatoriamente o novo resultado.",
+          "page": 123,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-child-of-fate.feature.conjuracao-aprimorada.l7.1",
+          "name": "CONJURAÇÃO APRIMORADA",
+          "level": 7,
+          "description": "Sempre que rolar dano de uma magia de Cavaleiro Dracônico, adicione metade de seu nível de Cavaleiro Dracônico ao dano.",
+          "page": 123,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-child-of-fate.feature.protecao-do-dragao.l13.1",
+          "name": "PROTEÇÃO DO DRAGÃO",
+          "level": 13,
+          "description": "Uma vez por Descanso Longo, quando for reduzido a 0 PV, use sua reação e role duas vezes uma quantidade de d6 igual à metade do nível de Cavaleiro Dracônico. Em vez de cair a 0, recupere o primeiro total como PV e receba o segundo total como PV temporários.",
+          "page": 124,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-child-of-fate.feature.evasao.l17.1",
+          "name": "EVASÃO",
+          "level": 17,
+          "description": "Quando fizer uma salvaguarda para sofrer metade do dano, não sofre dano em sucesso e sofre metade em falha.",
+          "page": 124,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "zagalhta-dragoneer-demon-dancer",
+        "identifier": "zagalhta-dragoneer-demon-dancer",
+        "name": "Dançarino Demoníaco",
+        "originalName": "Demon Dancer",
+        "aliases": [
+          "Demon Dancer"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "124",
+        "chapter": "Capítulo 6: Opções de Classe",
+        "page": 124
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Um duelista refinado que transforma os impulsos violentos do espírito dracônico em golpes cirúrgicos, visão demoníaca e uma mortalha de escuridão protetora.",
+        "tables": [
+          {
+            "key": "table.1.parametros-da-especializacao",
+            "title": "Parâmetros da Especialização",
+            "page": 124,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "hit",
+                "label": "Dado de Vida"
+              },
+              {
+                "key": "saves",
+                "label": "Salvaguardas"
+              },
+              {
+                "key": "weapons",
+                "label": "Armas"
+              },
+              {
+                "key": "armor",
+                "label": "Armaduras"
+              },
+              {
+                "key": "skills",
+                "label": "Perícias"
+              },
+              {
+                "key": "casting",
+                "label": "Conjuração"
+              }
+            ],
+            "rows": [
+              {
+                "hit": "d8",
+                "saves": "Destreza, Sabedoria",
+                "weapons": "Todas as armas simples, Leves e de Acuidade",
+                "armor": "Leves e médias",
+                "skills": "Acrobacia; escolha outras quatro perícias",
+                "casting": "Um-Terço de Conjurador (lista do Bruxo)"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 124
+      },
+      "features": [
+        {
+          "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.dardo-faminto.l1.1",
+          "name": "DARDO FAMINTO",
+          "level": 1,
+          "description": "Na primeira vez que acertar uma criatura com ataque corpo a corpo em cada turno, recebe PV temporários iguais à metade do dano causado. Se for crítico, recupera esse valor como PV; qualquer cura excedente vira PV temporários.",
+          "page": 124,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.visao-diabolica.l3.1",
+          "name": "VISÃO DIABÓLICA",
+          "level": 3,
+          "description": "Você enxerga em escuridão mágica e não mágica como luz plena a 4,5 m × sua proficiência. Se outra fonte conceder visão diabólica maior, aumente o alcance daquela fonte em metade do alcance desta característica.",
+          "page": 124,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.golpe-matador.l7.1",
+          "name": "GOLPE MATADOR",
+          "level": 7,
+          "description": "Ao fazer um ataque de arma, pode gastar um Espaço de Magia de Cavaleiro Dracônico: adicione o nível do Espaço ao ataque e, se acertar, cause +1d6 de dano de Encarnação por nível do Espaço.",
+          "page": 124,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.golpe-terrivel.l13.1",
+          "name": "GOLPE TERRÍVEL",
+          "level": 13,
+          "description": "Como ação bônus, faça dois ataques de arma com uma arma Leve ou de Acuidade.",
+          "page": 124,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.veu-da-besta-negra.l13.1",
+          "name": "VÉU DA BESTA NEGRA",
+          "level": 13,
+          "description": "Como ação bônus, crie por 1 minuto uma mortalha de escuridão. Ataques contra você têm desvantagem; no início de cada turno seu voo laborioso é convertido automaticamente em voo normal; você tem vantagem em Furtividade e Intimidação; em escuridão total é considerado invisível. Usos por Descanso Longo iguais à metade da proficiência.",
+          "page": 124,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-demon-dancer.feature.dardo-voraz.l17.1",
+          "name": "DARDO VORAZ",
+          "level": 17,
+          "description": "Dardo Faminto passa a conceder PV/PV temporários iguais ao dano total causado, em vez de metade.",
+          "page": 124,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "zagalhta-dragoneer-echoing-voice",
+        "identifier": "zagalhta-dragoneer-echoing-voice",
+        "name": "Voz Ecoante",
+        "originalName": "Echoing Voice",
+        "aliases": [
+          "Echoing Voice"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "124–125",
+        "chapter": "Capítulo 6: Opções de Classe",
+        "page": 124
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Um estudioso da potência arcana da alma dracônica que projeta ecos de si, pronuncia nomes dracônicos para ampliar magias e atravessa defesas mágicas por pura autoridade arcana.",
+        "tables": [
+          {
+            "key": "table.1.parametros-da-especializacao",
+            "title": "Parâmetros da Especialização",
+            "page": 124,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "hit",
+                "label": "Dado de Vida"
+              },
+              {
+                "key": "saves",
+                "label": "Salvaguardas"
+              },
+              {
+                "key": "weapons",
+                "label": "Armas"
+              },
+              {
+                "key": "armor",
+                "label": "Armaduras"
+              },
+              {
+                "key": "skills",
+                "label": "Perícias"
+              },
+              {
+                "key": "casting",
+                "label": "Conjuração"
+              }
+            ],
+            "rows": [
+              {
+                "hit": "d8",
+                "saves": "Inteligência, Sabedoria",
+                "weapons": "Todas as armas simples",
+                "armor": "Leves e médias",
+                "skills": "Arcanismo; escolha uma entre História, Intuição, Investigação, Medicina e Religião",
+                "casting": "Meio Conjurador (lista do Mago)"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 124
+      },
+      "features": [
+        {
+          "key": "subclass.zagalhta-dragoneer-echoing-voice.feature.arco-selador.l1.1",
+          "name": "ARCO SELADOR",
+          "level": 1,
+          "description": "Pode produzir os efeitos de escudo sem Espaço de Magia nem componentes, duas vezes por Descanso. Os usos aumentam para três no 7º nível e quatro no 13º.",
+          "page": 124,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-echoing-voice.feature.espirito-eco.l3.1",
+          "name": "ESPÍRITO ECO",
+          "level": 3,
+          "description": "Ao conjurar uma magia de Cavaleiro Dracônico, pode projetar uma cópia de si a até 9 m e fazer a magia se originar do eco. No fim do turno, o eco desaparece; efeitos contínuos com alcance Pessoal voltam a ser centrados em você.",
+          "page": 124,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-echoing-voice.feature.magia-explosiva.l7.1",
+          "name": "MAGIA EXPLOSIVA",
+          "level": 7,
+          "description": "Ao conjurar uma magia acima do nível-base e realizar componentes vocais, você pode tratar a magia como se tivesse opções adicionais de níveis superiores: aumentar a CD da primeira salvaguarda de cada criatura em +1 por 1 nível, +2 por 3 níveis ou +3 por 5 níveis; conceder +1 a ataques feitos pela magia no turno de conjuração; ou converter todo o dano da magia para seu tipo de Encarnação.",
+          "page": 125,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-echoing-voice.feature.arma-de-sangue-de-wyrm.l13.1",
+          "name": "ARMA DE SANGUE DE WYRM",
+          "level": 13,
+          "description": "Uma vez por Descanso, produz espada do arquimago sem gastar Espaço nem componentes materiais. A espada pode causar seu tipo de dano de Encarnação em vez de força.",
+          "page": 125,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-echoing-voice.feature.contorno-draconico.l17.1",
+          "name": "CONTORNO DRACÔNICO",
+          "level": 17,
+          "description": "Suas magias ignoram características que concedam vantagem em salvaguardas contra efeitos mágicos, salvo se a característica negar completamente o efeito ou tornar o alvo automaticamente imune a ele.",
+          "page": 125,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "zagalhta-dragoneer-piercing-hand",
+        "identifier": "zagalhta-dragoneer-piercing-hand",
+        "name": "Mão Perfurante",
+        "originalName": "Piercing Hand",
+        "aliases": [
+          "Piercing Hand"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "125",
+        "chapter": "Capítulo 6: Opções de Classe",
+        "page": 125
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Arqueiro de olho dracônico que transforma vantagem tática em precisão absoluta, ataca como um assassino e culmina na visão verdadeira de um dragão.",
+        "tables": [
+          {
+            "key": "table.1.parametros-da-especializacao",
+            "title": "Parâmetros da Especialização",
+            "page": 125,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "hit",
+                "label": "Dado de Vida"
+              },
+              {
+                "key": "saves",
+                "label": "Salvaguardas"
+              },
+              {
+                "key": "weapons",
+                "label": "Armas"
+              },
+              {
+                "key": "armor",
+                "label": "Armaduras"
+              },
+              {
+                "key": "skills",
+                "label": "Perícias"
+              },
+              {
+                "key": "casting",
+                "label": "Conjuração"
+              }
+            ],
+            "rows": [
+              {
+                "hit": "d10",
+                "saves": "Destreza, Sabedoria",
+                "weapons": "Todas as armas simples e armas à distância",
+                "armor": "Leves e médias",
+                "skills": "Percepção; escolha duas entre Adestrar Animais, Atletismo, Intuição, Investigação, Natureza, Furtividade e Sobrevivência",
+                "casting": "Meio Conjurador (lista do Patrulheiro)"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 125
+      },
+      "features": [
+        {
+          "key": "subclass.zagalhta-dragoneer-piercing-hand.feature.converter-vantagem.l1.1",
+          "name": "CONVERTER VANTAGEM",
+          "level": 1,
+          "description": "Quando tiver vantagem em uma jogada de ataque, pode abrir mão da vantagem e receber +5 na jogada em vez disso.",
+          "page": 125,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-piercing-hand.feature.golpe-de-matilha.l3.1",
+          "name": "GOLPE DE MATILHA",
+          "level": 3,
+          "description": "Se o alvo estiver ao alcance corpo a corpo de um de seus aliados, seus ataques contra ele têm vantagem.",
+          "page": 125,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-piercing-hand.feature.sentenca-do-adjudicador.l7.1",
+          "name": "SENTENÇA DO ADJUDICADOR",
+          "level": 7,
+          "description": "Uma vez por turno, quando abrir mão da vantagem usando Converter Vantagem e acertar, cause +2d8 de dano de Encarnação. O dano aumenta em +1d8 no 13º nível e +1d8 no 17º.",
+          "page": 125,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-piercing-hand.feature.ampliar-preparacoes.l13.1",
+          "name": "AMPLIAR PREPARAÇÕES",
+          "level": 13,
+          "description": "Escolha uma salvaguarda na qual ainda não seja proficiente; você se torna proficiente nela.",
+          "page": 125,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-piercing-hand.feature.olho-do-dragao.l17.1",
+          "name": "OLHO DO DRAGÃO",
+          "level": 17,
+          "description": "Você recebe visão verdadeira a 18 m. Ao atacar criatura invisível dentro do alcance normal da arma, trata-a como claramente visível. Seus ataques ignoram qualquer cobertura que não seja cobertura total.",
+          "page": 125,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "zagalhta-dragoneer-raging-titan",
+        "identifier": "zagalhta-dragoneer-raging-titan",
+        "name": "Titã Furioso",
+        "originalName": "Raging Titan",
+        "aliases": [
+          "Raging Titan"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "126",
+        "chapter": "Capítulo 6: Opções de Classe",
+        "page": 126
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Um Cavaleiro Dracônico que abandona a conjuração em favor da força, resistência e poder destrutivo bruto de um dragão, chegando a sobreviver a golpes que deveriam matá-lo.",
+        "tables": [
+          {
+            "key": "table.1.parametros-da-especializacao",
+            "title": "Parâmetros da Especialização",
+            "page": 126,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "hit",
+                "label": "Dado de Vida"
+              },
+              {
+                "key": "saves",
+                "label": "Salvaguardas"
+              },
+              {
+                "key": "weapons",
+                "label": "Armas"
+              },
+              {
+                "key": "armor",
+                "label": "Armaduras"
+              },
+              {
+                "key": "skills",
+                "label": "Perícias"
+              },
+              {
+                "key": "casting",
+                "label": "Conjuração"
+              }
+            ],
+            "rows": [
+              {
+                "hit": "d12",
+                "saves": "Força, Sabedoria",
+                "weapons": "Todas as armas simples e marciais",
+                "armor": "Leves",
+                "skills": "Atletismo; escolha uma entre Adestrar Animais, Intimidação, Natureza, Percepção e Sobrevivência",
+                "casting": "Nenhuma"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 126
+      },
+      "features": [
+        {
+          "key": "subclass.zagalhta-dragoneer-raging-titan.feature.luta-imprudente.l1.1",
+          "name": "LUTA IMPRUDENTE",
+          "level": 1,
+          "description": "Você recebe o Estilo de Luta Lutador Imprudente. Ele é aprimorado automaticamente uma vez no 7º nível e novamente no 13º; se não puder ser aprimorado, escolha outro Estilo de Luta de Cavaleiro Dracônico.",
+          "page": 126,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-raging-titan.feature.forca-de-tita.l1.1",
+          "name": "FORÇA DE TITÃ",
+          "level": 1,
+          "description": "Seus ataques ignoram resistências causadas por diferença de tamanho; pode Empurrar e Agarrar criaturas maiores que você em uma quantidade de categorias de tamanho igual à proficiência; e sua capacidade de carga é dobrada.",
+          "page": 126,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-raging-titan.feature.robustez-espiritual.l3.1",
+          "name": "ROBUSTEZ ESPIRITUAL",
+          "level": 3,
+          "description": "Quando sofre dano, reduza separadamente cada tipo de dano envolvido por uma quantidade igual à sua proficiência.",
+          "page": 126,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-raging-titan.feature.golpes-grandiosos.l7.1",
+          "name": "GOLPES GRANDIOSOS",
+          "level": 7,
+          "description": "Quando tiver vantagem num ataque com arma corpo a corpo Pesada ou de Duas Mãos, ao acertar cause um dado de dano adicional da arma.",
+          "page": 126,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-raging-titan.feature.ataque-extra-aprimorado.l13.1",
+          "name": "ATAQUE EXTRA APRIMORADO",
+          "level": 13,
+          "description": "Ao realizar a ação Atacar, pode atacar três vezes em vez de uma.",
+          "page": 126,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-raging-titan.feature.impulso-maximo.l17.1",
+          "name": "IMPULSO MÁXIMO",
+          "level": 17,
+          "description": "Uma vez por Descanso Longo, quando for reduzido a 0 PV ou morto instantaneamente, seus PV são definidos para seu nível de Cavaleiro Dracônico e você recebe PV temporários iguais à metade de seus PV máximos.",
+          "page": 126,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "zagalhta-dragoneer-royal-sweeper",
+        "identifier": "zagalhta-dragoneer-royal-sweeper",
+        "name": "Varredor Real",
+        "originalName": "Royal Sweeper",
+        "aliases": [
+          "Royal Sweeper"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "126–127",
+        "chapter": "Capítulo 6: Opções de Classe",
+        "page": 126
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Um símbolo de autoridade que ganha ímpeto derrubando inimigos, inspira aliados e intercepta golpes destinados a eles enquanto avança com postura de comandante.",
+        "tables": [
+          {
+            "key": "table.1.parametros-da-especializacao",
+            "title": "Parâmetros da Especialização",
+            "page": 126,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "hit",
+                "label": "Dado de Vida"
+              },
+              {
+                "key": "saves",
+                "label": "Salvaguardas"
+              },
+              {
+                "key": "weapons",
+                "label": "Armas"
+              },
+              {
+                "key": "armor",
+                "label": "Armaduras"
+              },
+              {
+                "key": "skills",
+                "label": "Perícias"
+              },
+              {
+                "key": "casting",
+                "label": "Conjuração"
+              }
+            ],
+            "rows": [
+              {
+                "hit": "d10",
+                "saves": "Sabedoria, Carisma",
+                "weapons": "Todas as armas simples e marciais",
+                "armor": "Todas as armaduras e escudos",
+                "skills": "Persuasão; escolha uma entre Atletismo, Intuição, Intimidação, Medicina e Religião",
+                "casting": "Meio Conjurador (lista do Paladino)"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 126
+      },
+      "features": [
+        {
+          "key": "subclass.zagalhta-dragoneer-royal-sweeper.feature.danca-encadeada.l1.1",
+          "name": "DANÇA ENCADEADA",
+          "level": 1,
+          "description": "Uma vez por turno, ao reduzir uma criatura a 0 PV como resultado imediato de uma ação sua, escolha: fazer imediatamente um ataque de arma com vantagem contra outro alvo ao alcance; ou, antes do fim do turno, usar ação bônus para fazer dois ataques de arma adicionais contra um único alvo ao alcance.",
+          "page": 126,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-royal-sweeper.feature.grito-de-redemoinho.l3.1",
+          "name": "GRITO DE REDEMOINHO",
+          "level": 3,
+          "description": "Como ação, faça um ataque com a mesma arma contra cada criatura à sua escolha dentro do alcance dela. Usos por Descanso Longo iguais à sua proficiência.",
+          "page": 126,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-royal-sweeper.feature.negar-a-perda.l7.1",
+          "name": "NEGAR A PERDA",
+          "level": 7,
+          "description": "Quando um aliado ao alcance da arma que você empunha seria atingido por um ataque visível, use reação para redirecioná-lo a você; ele acerta automaticamente e o dano é reduzido pela metade de seu nível de Cavaleiro Dracônico. Pode fazer o mesmo sem reação gastando um Espaço de Magia; nesse caso reduza ainda o dano em 1d8 × nível do Espaço.",
+          "page": 126,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-royal-sweeper.feature.aprimoramento-do-ataque-encadeado.l13.1",
+          "name": "APRIMORAMENTO DO ATAQUE ENCADEADO",
+          "level": 13,
+          "description": "Ao realizar a ação Atacar, pode atacar três vezes, substituindo um deles por uma magia de Cavaleiro Dracônico de 1 ação.",
+          "page": 126,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-dragoneer-royal-sweeper.feature.autoridade-do-comandante.l17.1",
+          "name": "AUTORIDADE DO COMANDANTE",
+          "level": 17,
+          "description": "Você e criaturas a até 4,5 m são imunes a amedrontado e enfurecido, mantendo a imunidade até terminar um turno fora da área. Enquanto não estiver incapacitado, você e cada criatura na área recebem +2 no primeiro ataque e na primeira salvaguarda que fizerem em cada turno.",
+          "page": 127,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-dragoneer-darkstriker",
+        "identifier": "bbb-dragoneer-darkstriker",
+        "name": "Golpeador Sombrio",
+        "originalName": "Darkstriker",
+        "aliases": [
+          "Darkstriker"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "94",
+        "chapter": "Capítulo X: Subclasses",
+        "page": 94
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Um Cavaleiro Dracônico de alma dracônica corrompida que desfere explosões de energia violenta.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 94
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-dragoneer-darkstriker.feature.critico-aprimorado-encarnado.l1.1",
+          "name": "CRÍTICO APRIMORADO (ENCARNADO)",
+          "level": 1,
+          "description": "Você obtém acerto crítico com 19 ou 20 no d20. Ao obter um crítico, pode fazer com que todo o dano da arma seja do tipo de dano de sua Encarnação.",
+          "page": 94,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-darkstriker.feature.olho-do-draco.l1.1",
+          "name": "OLHO DO DRACO",
+          "level": 1,
+          "description": "Quando ataca com uma arma à distância ou de arremesso com a qual seja proficiente, você pode tratar o alcance longo da arma como seu alcance normal.",
+          "page": 94,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-darkstriker.feature.casca-de-dragao.l3.1",
+          "name": "CASCA DE DRAGÃO",
+          "level": 3,
+          "description": "Quando atingir um alvo com ataque de arma e causar dano de arma, pode usar sua ação bônus para criar uma explosão de energia que afeta cada criatura à sua escolha a até 3 m do alvo, incluindo ele. Cada alvo realiza a salvaguarda associada ao tipo de dano de sua Encarnação contra sua CD de magia; em falha, sofre o mesmo dano causado pelo ataque, mas convertido no dano de sua Encarnação. Usos por Descanso iguais à metade do seu bônus de proficiência, arredondado para baixo.",
+          "page": 94,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-darkstriker.feature.rajada-punitiva.l7.1",
+          "name": "RAJADA PUNITIVA",
+          "level": 7,
+          "description": "Uma vez por turno, quando obtiver um acerto crítico por resultado natural no d20 de uma jogada de ataque, causa dano adicional do tipo de sua Encarnação igual a 1d8 × o nível do maior espaço de magia de Cavaleiro Dracônico a que tenha acesso, incluindo espaços já gastos.",
+          "page": 94,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-darkstriker.feature.simpatia-va.l13.1",
+          "name": "SIMPATIA VÃ",
+          "level": 13,
+          "description": "Escolha um segundo Tipo de Encarnação. Você o recebe como uma mutação e ganha sua característica, tipo de movimento, tipo de dano de Encarnação e salvaguarda, como ocorre com sua primeira Encarnação. Sempre que um tipo de dano de Encarnação for exigido, escolha qual usa e aplique a salvaguarda correspondente, e vice-versa.",
+          "page": 94,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-darkstriker.feature.critico-superior-encarnado.l17.1",
+          "name": "CRÍTICO SUPERIOR (ENCARNADO)",
+          "level": 17,
+          "description": "Você obtém acerto crítico com 18, 19 ou 20 no d20.",
+          "page": 94,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-dragoneer-fortune-veil",
+        "identifier": "bbb-dragoneer-fortune-veil",
+        "name": "Véu da Fortuna",
+        "originalName": "Fortune Veil",
+        "aliases": [
+          "Fortune Veil"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "95",
+        "chapter": "Capítulo X: Subclasses",
+        "page": 95
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Um duelista que dobra as correntes do destino e do acaso em benefício próprio.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 95
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-dragoneer-fortune-veil.feature.critico-aprimorado.l1.1",
+          "name": "CRÍTICO APRIMORADO",
+          "level": 1,
+          "description": "Você obtém acerto crítico com 19 ou 20 no d20.",
+          "page": 95,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-fortune-veil.feature.golpes-do-coracao-de-wyrm.l1.1",
+          "name": "GOLPES DO CORAÇÃO DE WYRM",
+          "level": 1,
+          "description": "Você pode usar Sabedoria no lugar de Força ou Destreza nas jogadas de ataque e dano com armas. Também pode tratar ataques com arma como ataques mágicos produzidos por uma magia para fins de características e efeitos secundários.",
+          "page": 95,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-fortune-veil.feature.mares-mutaveis.l3.1",
+          "name": "MARÉS MUTÁVEIS",
+          "level": 3,
+          "description": "Sempre que rolar iniciativa, role um número de d20 igual ao seu bônus de proficiência e registre os resultados como Mudanças de Maré. Durante aquele combate, ao rolar um d20, pode gastar uma Mudança de Maré para substituir o resultado pelo valor registrado; a Mudança é então perdida. Pode decidir antes ou depois de rolar, mas não após o Mestre declarar sucesso ou falha.",
+          "page": 95,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-fortune-veil.feature.explosao-da-mare.l7.1",
+          "name": "EXPLOSÃO DA MARÉ",
+          "level": 7,
+          "description": "Ao gastar uma Mudança de Maré para alterar um d20, você pode fazer com que cada resultado de d20 que rolar até o fim daquele turno se torne o mesmo valor. Para cada rolagem subsequente, pode decidir após ver seu resultado normal. Além disso, no início de cada um de seus turnos, pode escolher uma Mudança de Maré restante e rerrolá-la, devendo manter o novo resultado.",
+          "page": 95,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-fortune-veil.feature.critico-superior.l13.1",
+          "name": "CRÍTICO SUPERIOR",
+          "level": 13,
+          "description": "Você obtém acerto crítico com 18, 19 ou 20 no d20.",
+          "page": 95,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-fortune-veil.feature.mudanca-critica.l17.1",
+          "name": "MUDANÇA CRÍTICA",
+          "level": 17,
+          "description": "Quando obtiver um acerto crítico em um ataque, role dois d20 e registre o maior resultado como uma nova Mudança de Maré, que desaparece no fim do combate.",
+          "page": 95,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-dragoneer-phasescale-knight",
+        "identifier": "bbb-dragoneer-phasescale-knight",
+        "name": "Cavaleiro da Escama Fásica",
+        "originalName": "Phasescale Knight",
+        "aliases": [
+          "Phasescale Knight"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "96",
+        "chapter": "Capítulo X: Subclasses",
+        "page": 96
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "dragoneer",
+        "identifier": "dragoneer",
+        "name": "Cavaleiro Dracônico"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "dragoneer",
+        "selectionLevel": 1,
+        "description": "Um duelista de alma dracônica que se move e ataca com velocidade e domínio ilusório.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 96
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-dragoneer-phasescale-knight.feature.repertorio-da-lamina-draconica.l1.1",
+          "name": "REPERTÓRIO DA LÂMINA DRACÔNICA",
+          "level": 1,
+          "description": "Magias do grupo Zanjen contam como estando na lista de Cavaleiro Dracônico para você, permitindo aprendê-las, prepará-las e conjurá-las. Ao conjurar uma magia Zanjen, pode receber seus efeitos de Bônus de Santo da Espada tratando seus níveis de Cavaleiro Dracônico como níveis de Santo da Espada. Quando uma magia Zanjen causaria dano contundente, perfurante ou cortante, pode substituir esses tipos pelo dano de sua Encarnação.",
+          "page": 96,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-phasescale-knight.feature.critico-aprimorado.l1.1",
+          "name": "CRÍTICO APRIMORADO",
+          "level": 1,
+          "description": "Você obtém acerto crítico com 19 ou 20 no d20.",
+          "page": 96,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-phasescale-knight.feature.desafio-fasico.l3.1",
+          "name": "DESAFIO FÁSICO",
+          "level": 3,
+          "description": "Quando sofre dano de um ataque com arma, pode usar sua reação para transformar brevemente o corpo em uma duplicata ilusória e evitar completamente o ataque, fazendo-o errar. Em seguida, torna-se semi-etéreo até o fim do turno; ataques subsequentes contra você nesse período têm desvantagem. Usos por Descanso iguais ao nível do maior espaço de magia de Cavaleiro Dracônico que possua.",
+          "page": 96,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-phasescale-knight.feature.nevoa-de-staccato.l7.1",
+          "name": "NÉVOA DE STACCATO",
+          "level": 7,
+          "description": "Quando estiver morrendo, paralisado, atordoado ou incapacitado por algo que não seja inconsciência, no início de cada um de seus turnos pode projetar uma réplica semi-etérea em um espaço a até 9 m. A réplica pode mover-se e realizar as ações que você normalmente poderia, inclusive gastar seus recursos, espaços de magia e cargas de itens, sem sofrer as condições ou efeitos que afetam você, exceto os originados por itens mágicos em sua posse. Ela usa seu deslocamento base, características, armas, salvaguardas, testes de atributo e CA; não possui suas resistências ou imunidades a dano e é imune a condições. Ela desaparece naquele turno se sofrer dano ou depois de mover-se ou realizar qualquer ação, e sempre desaparece no fim de seu turno.",
+          "page": 96,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-phasescale-knight.feature.autoprojecao.l13.1",
+          "name": "AUTOPROJEÇÃO",
+          "level": 13,
+          "description": "Quando usar sua característica Ação Encadeada para fazer um ou mais ataques com arma, pode teleportar-se para um espaço desocupado a até 9 m antes de realizá-los.",
+          "page": 96,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-dragoneer-phasescale-knight.feature.corpo-de-nevoa-afortunada.l17.1",
+          "name": "CORPO DE NÉVOA AFORTUNADA",
+          "level": 17,
+          "description": "Sempre que um ataque ou efeito fosse reduzir você a 0 PV, matá-lo instantaneamente ou causar dano enquanto estiver a 0 PV, role 1d100. Se o resultado for igual ou inferior a duas vezes seu nível de Cavaleiro Dracônico, o ataque ou efeito não tem efeito sobre você, pois atinge uma ilusão enevoada em seu lugar.\n\nTIPOS DE ENCARNAÇÃO ADICIONAIS DE DRAGONEER. Esta subclasse também apresenta duas opções de Encarnação. DRAGÃO DE SANGUE: energia encarnada necrótica (salvaguarda de Destreza), movimento de escalada; quando uma criatura a até 3 m o acerta com ataque corpo a corpo, pode usar reação para forçá-la a uma salvaguarda de Destreza, sofrendo 1d10 + metade do seu nível de Cavaleiro Dracônico (arredondado para cima) de dano de fogo ou necrótico, à sua escolha, em falha. SERPENTE DO LAGO: energia encarnada ácida (salvaguarda de Constituição), movimento de natação; você respira ar e água e pode usar Disparada como ação bônus enquanto estiver totalmente submerso em líquido.",
+          "page": 96,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    }
+  ]
+}

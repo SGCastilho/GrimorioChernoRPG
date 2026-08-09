@@ -1,0 +1,170 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-portador-do-enxame",
+    "identifier": "tasha-portador-do-enxame",
+    "name": "Portador do Enxame",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "54–57",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 54
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Sentindo uma conexão profunda com o ambiente ao seu redor, alguns guardiões infiltram-se através dessa conexão mágica e vinculam-se com um enxame de espíritos da natureza. Esse enxame torna-se uma força poderosa em batalha, bem como uma companhia útil ao guardião. Alguns Portadores do Enxame são forasteiros ou eremitas, mantendo-se apenas com sua companhia e de seu prestativo enxame em vez de lidar com o desconforto das outras pessoas. Outros alegram-se em construir comunidades vibrantes que funcionam para benefício mútuo de todos aqueles que eles consideram como parte de seus enxames.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-portador-do-enxame",
+        "title": "Magias do Portador do Enxame",
+        "page": 54,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Patrulheiro"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Fogo das Fadas; Mãos Mágicas"
+          },
+          {
+            "level": "5º",
+            "spells": "Teia"
+          },
+          {
+            "level": "9º",
+            "spells": "Forma Gasosa"
+          },
+          {
+            "level": "13º",
+            "spells": "Olho Arcano"
+          },
+          {
+            "level": "17º",
+            "spells": "Praga de Insetos"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 54
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-portador-do-enxame.feature.enxame-reunido.l3.1",
+      "name": "ENXAME REUNIDO",
+      "level": 3,
+      "description": "Um enxame de espíritos da natureza intangíveis se vinculou a você e pode ajudá-lo em batalha. Até que você morra, a enxame permanece em seu espaço, rastejando em você ou voando e adejando ao seu redor dentro do seu espaço. Você determina sua aparência rolando na tabela de Aparência do Enxame. Aparência do Enxame d4 Aparência Enxame de insetos Inço-pragas ramo em miniatura Pássaros esvoaçantes Pixies brincalhonas Uma vez por turno, você pode fazer com que o enxame o auxilie em combate de uma das seguintes maneiras, imediatamente após você acertar uma criatura com um ataque: O alvo do ataque sofre 1d6 de dano perfurante do enxame. O alvo do ataque deve ser bem sucedido em uma salvaguarda de Força contra sua CD de magia ou será movido pelo enxame por até 4,5m horizontalmente em uma direção á sua escolha. Você é movido pelo enxame por 1,5m horizontalmente em uma direção à sua escolha.",
+      "page": 54,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-portador-do-enxame.feature.magia-do-portador-do-enxame.l3.1",
+      "name": "MAGIA DO PORTADOR DO ENXAME",
+      "level": 3,
+      "description": "Você aprende o truque Mãos Mágicas caso ainda não o conheça. Quando o conjura, amão toma a forma do seu enxame de espíritos da natureza. Você também aprende uma magia adicional de 1° círculo ou maior ao alcançar certos níveis nessa classe, conforme mostrado na tabela de Magias de Portador do Enxame. Essas magias são consideradas como magias de guardião para você, mas não contam contra o números de magias de guardião que você pode conhecer. Magias do Portador do Enxame Nível de Guardião Magias 3º Fogo das Fadas, Mãos Mágicas 5º Teia 9º Forma Gasosa 13º Olho Arcano 17º Praga de Insetos É o seu enxame! O enxame e as magias de um portador do Enxame são reflexos do vínculo do personagem com os espíritos da natureza. Aproveite a oportunidade de descrever o enxame e as magias de seu guardião em jogo. Por exemplo, quando seu guardião conjura Forma Gasosa, ele pode aparentar ter se fundido ao enxame, em vez de se transformar em uma forma de névoa, ou o Olho Arcano criado pode ser uma extensão de seu enxame que espiona para ele. Tais descrições não modificam o efeito das magias, mas elas são uma oportunidade animadora para explorar a narrativa do seu personagem através de suas habilidades de classe. Para mais orientações sobre como customizar magias, veja a seção \"Personalizando Magias\" no capítulo 3. Além disso, lembre-se de que a aparência do enxame é sua para que a altere como desejar, e não sinta-se preso a uma aparência única. Talvez o visual dos espíritos mude com o humor do guardião ou por conta das estações. Você decide!",
+      "page": 54,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-portador-do-enxame.feature.mare-ondulante.l7.1",
+      "name": "MARÉ ONDULANTE",
+      "level": 7,
+      "description": "Você pode condensar parte de seu enxame em uma massa focalizada que o levanta. Como uma ação bônus, você adquire deslocamento de vôo de 3m e pode levitar. Esse efeito dura por 1 minuto ou até que você esteja incapacitado. Você pode utilizar essa característica um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos ao final de um descanso longo.",
+      "page": 54,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-portador-do-enxame.feature.enxame-poderoso.l11.1",
+      "name": "ENXAME PODEROSO",
+      "level": 11,
+      "description": "Seu Enxame Reunido torna-se mais forte das seguintes formas: O dano do Enxame Reunido aumenta para 1d8. Se uma criatura falhar em sua salvaguarda para não ser movida pelo Enxame Reunido, você também pode fazer com que o enxame derrube a criatura. Quando você for movido pelo Enxame Reunido, ele lhe fornece meia cobertura até o começo do seu próximo turno.",
+      "page": 55,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-portador-do-enxame.feature.dispersao-do-enxame.l15.1",
+      "name": "DISPERSÃO DO ENXAME",
+      "level": 15,
+      "description": "Você pode se desincorporar dentro de seu enxame, evitando o perigo. Quando você receber dano, você pode usar sua reação para conceder a si mesmo resistência a esse tipo de dano. Você desaparece dentro do seu enxame e então se teletransporta para um espaço desocupado que você possa ver a até 9m de você, onde você reaparece com o enxame. Você pode usar essa característica uma quantia de vezes igual ao seu bônus de proficiência, e recupera todos os usos ao terminar um descanso longo.",
+      "page": 55,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

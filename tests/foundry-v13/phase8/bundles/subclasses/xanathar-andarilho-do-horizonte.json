@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-andarilho-do-horizonte",
+    "identifier": "xanathar-andarilho-do-horizonte",
+    "name": "Andarilho do Horizonte",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "59–60",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 59
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Andarilhos do horizonte guardam o mundo contra ameaças que se originam de outros planos ou que procuram devastar o reino mortal com magia de outro mundo. Eles procuram portais para outros planos e os vigiam, se arriscando aos Planos Internos e Externos conforme necessário para perseguir seus inimigos. Esses patrulheiros também são amigos de qualquer força no multiverso especialmente dragões benevolentes, fadas e elementais, que trabalham para preservar a vida e a ordem dos planos.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-andarilho-do-horizonte",
+        "title": "Magias do Andarilho do Horizonte",
+        "page": 59,
+        "description": "Magias adicionais concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Proteção contra o Bem e Mal"
+          },
+          {
+            "level": "5º",
+            "spells": "Passo Nebuloso"
+          },
+          {
+            "level": "9º",
+            "spells": "Velocidade"
+          },
+          {
+            "level": "13º",
+            "spells": "Banimento"
+          },
+          {
+            "level": "17º",
+            "spells": "Círculo de Teletransporte"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 59
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-andarilho-do-horizonte.feature.magia-do-andarilho-do-horizonte.l3.1",
+      "name": "MAGIA DO ANDARILHO DO HORIZONTE",
+      "level": 3,
+      "description": "A partir do 3° nível, você aprende magias adicionais quando alcança certos níveis nesta classe, conforme mostrado na tabela de Magias do Andarilho do Horizonte. A magia conta como uma magia de patrulheiro para você, mas não conta para o número de magias conhecidas de patrulheiro.",
+      "page": 59,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-andarilho-do-horizonte.feature.detectar-portais.l3.1",
+      "name": "DETECTAR PORTAIS",
+      "level": 3,
+      "description": "No 3° nível, você ganha a habilidade de detectar magicamente a presença de um portalde planos. Como uma ação, você detecta a distância e direção para o portal mais próximo dentro de um quilômetro e meio de distância. Depois de usar essa característica, não pode usá-la novamente até terminar um descanso curto ou longo. Veja a seção \"Viagem Planar\" no capítulo 2 do Guia do Mestre para exemplos de portais planares.",
+      "page": 59,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-andarilho-do-horizonte.feature.guerreiro-planar.l3.1",
+      "name": "GUERREIRO PLANAR",
+      "level": 3,
+      "description": "No 3° nível, você aprende a aproveitar a energia do multiverso para aumentar seus ataques. Como uma ação bônus, escolha uma criatura que possa ver dentro de 9 metros de alcance. Na prôxima vez que atingir essa criatura neste turno com um ataque de arma, todos os danos causados pelo ataque se tornam um dano de energia, e a criatura recebeu .AÇA0 dano de energia adicional de 1d8 do ataque. Quando você atinge o 11° nível nesta classe, o dano adicional aumenta para 2d8.",
+      "page": 59,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-andarilho-do-horizonte.feature.passo-etereo.l7.1",
+      "name": "PASSO ETÉREO",
+      "level": 7,
+      "description": "No 7° nível, você aprende a atravessar o Plano Etéreo. Como uma ação bônus, pode conjurar a magia forma etérea com essa característica, sem gastar um espaço de magia, mas a magia termina no finaldo turno atual. Depois de usar essa característica, não pode usá-la novamente até terminar um descanso curto ou longo.",
+      "page": 60,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-andarilho-do-horizonte.feature.ataque-distante.l11.1",
+      "name": "ATAQUE DISTANTE",
+      "level": 11,
+      "description": "No 11° nível, você ganha a habilidade de passar entre os planos em um piscar de olhos. Quando realiza um ataque, pode se teleportar até 3 metros antes de cada ataque para um espaço desocupado que possa ver. Se você atacar pelo menos duas criaturas diferentes com a ação, você pode fazer um ataque adicional contra uma terceira criatura.",
+      "page": 60,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-andarilho-do-horizonte.feature.defesa-espectral.l15.1",
+      "name": "DEFESA ESPECTRAL",
+      "level": 15,
+      "description": "No 15º nível, sua capacidade de se mover entre os planos o permite que deslize através das bordas dos planos para diminuir os danos causados durante a batalha. Quando receber dano de um ataque, pode usar sua reação para se dar resistência a todos os danos desse ataque neste turno.",
+      "page": 60,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

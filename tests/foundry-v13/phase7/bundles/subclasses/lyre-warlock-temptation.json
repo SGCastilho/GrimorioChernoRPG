@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-warlock-temptation",
+    "identifier": "lyre-warlock-temptation",
+    "name": "Tentação",
+    "originalName": "Temptation",
+    "aliases": [
+      "Temptation"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "501–502",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 501
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Seu patrono é um corruptor infernal que explora desejos mortais. O pacto favorece disfarce, encanto, mobilidade sedutora e manipulação do ego alheio.",
+    "tables": [
+      {
+        "key": "table.1.lista-expandida-de-magias",
+        "title": "Lista Expandida de Magias",
+        "page": 501,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível da Magia"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Infligir Terror; Marca do Caçador"
+          },
+          {
+            "level": "2º",
+            "spells": "Detectar Pensamentos; Vínculo Protetor"
+          },
+          {
+            "level": "3º",
+            "spells": "Talento Gêmeo; Idiomas"
+          },
+          {
+            "level": "4º",
+            "spells": "Invisibilidade Maior; Bravura Deslacrada"
+          },
+          {
+            "level": "5º",
+            "spells": "Modificar Memória; Conceder Especialização"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 501
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-warlock-temptation.feature.tela-mutavel.l1.1",
+      "name": "TELA MUTÁVEL",
+      "level": 1,
+      "description": "Você pode conjurar Alterar-se e Disfarçar-se à vontade, sem gastar espaços de magia nem componentes materiais, como magias de Bruxo.",
+      "page": 501,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-temptation.feature.beijo-da-morte.l6.1",
+      "name": "BEIJO DA MORTE",
+      "level": 6,
+      "description": "Como ação bônus, faça ataque corpo a corpo com magia contra criatura a 1,5 m através de contato. Em acerto, causa dano psíquico igual a 1d10 × seu bônus de proficiência e você recebe PV temporários iguais à metade do dano. Se o alvo estiver enfeitiçado por você, ele faz salvaguarda de Carisma; em falha, não considera esse dano hostil ou antagônico. Dois usos por Descanso Longo, +1 uso no 12º e +1 no 17º nível.",
+      "page": 501,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-temptation.feature.aproximacao-desimpedida.l10.1",
+      "name": "APROXIMAÇÃO DESIMPEDIDA",
+      "level": 10,
+      "description": "Como ação bônus, manifeste asas até o início do próximo turno, recebendo voo igual ao deslocamento básico; pode usar ação bônus em turnos seguintes para mantê-las. Ao sair do alcance de uma criatura enquanto estiver voando assim, não provoca ataque de oportunidade.",
+      "page": 502,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-temptation.feature.ego-galvanizante.l14.1",
+      "name": "EGO GALVANIZANTE",
+      "level": 14,
+      "description": "EGO GALVANIZANTE (14º): quando criatura a até 9 m fizer ataque contra você, antes do resultado use reação; ela faz salvaguarda de Carisma. Em falha, redirecione o ataque a outro alvo a até 9 m de você, teleportando o atacante para espaço desocupado adequado se necessário; ele rola novo d20 para o ataque. Usos por Descanso Longo iguais à metade do bônus de proficiência; depois, pode gastar espaço de pacto para usar novamente.\n\nINVOCAÇÕES DE TENTAÇÃO. AGENTE SEM CONVITE (15º): Etéreo uma vez por Descanso Longo sem espaço/componentes. CEGO PELA ARROGÂNCIA (15º): quem falhar contra Ego Galvanizante não percebe você por nenhum sentido, mesmo Ver Invisibilidade/Visão Verdadeira, até o fim do próximo turno ou você causar dano/forçar salvaguarda. COMPORTAMENTO COMPULSIVO: Enfeitiçar Pessoa à vontade sem espaço; uma vez por Descanso Longo pode conjurá-la em nível igual ao espaço de pacto. DESTRUIDOR DE EGO (9º): se efeito seu tentaria enfeitiçar criatura imune, até o início do próximo turno ela tem desvantagem em ataques e testes de perícia. LINHA DIRETA TELEPÁTICA: fala telepaticamente com criaturas visíveis em alcance de 4,5 m × bônus de proficiência; comunicação exige idioma comum e o alvo pode responder se souber/entender que você é telepata, salvo se bloquear. CHARME INFALÍVEL (5º): teste baseado em Carisma com d20 9 ou menos conta como 10.",
+      "page": 501,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

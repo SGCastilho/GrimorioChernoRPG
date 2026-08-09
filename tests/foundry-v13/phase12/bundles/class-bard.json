@@ -1,0 +1,1195 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+    "pages": "51–55",
+    "chapter": "Capítulo 3: Classes",
+    "page": 53
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Cantarolando enquanto entrelaça os seus dedos em volta de um monumento antigo em uma ruina a muito esquecida, uma meio-elfa vestida em couros gastos encontra o conhecimento que brota de sua mente, conjurado através da magia de sua música – conhecimento do povo que construiu o monumento e a saga mística é descrita.\n\nUm austero guerreiro humano bate sua espada ritmicamente contra sua brunea, ditando o andamento do seu canto de guerra e exortando bravura e heroísmo em seus companheiros. A magia da sua canção os fortalece e encoraja.\n\nGargalhando enquanto entoa sua citara, uma gnoma tece sua sutil magia sobre os nobres reunidos, garantindo que as palavras dos seus companheiros serão bem recebidas.\n\nNão importa se um escolar, escaldo ou malandro, o bardo tece sua magia através de palavras e música para inspirar aliados, desmoralizar oponentes, manipular mentes, criar ilusões e, até mesmo, curar ferimentos.\n\nNo mundo de D&D, palavras e música não são meras vibrações do ar, mas vocalizações com poder próprio. O bardo é um mestre da canção, discurso e a magia contida neles. Os bardos dizem que o multiverso foi criado a partir da palavra, que as palavras dos deuses lhe deram forma, e os ecos dessas Palavras de Criação primordiais ainda ressoam através do cosmos. A música dos bardos é uma tentativa de capitar e aproveitar esses ecos, sutilmente tecidas em suas magias e poderes.\n\nA maior força dos bardos é sua completa versatilidade. Muitos bardos preferem ficar as margens do combate, usando suas magias para inspirar seus aliados e atrapalhar seus oponentes à distância. Porém, os bardos são capazes de se defender em combate corporal, se necessário, usando suas magias para aprimorar suas espadas e armaduras. Suas magias inclinam-se para os encantamentos e ilusões ao invés de magias notavelmente destrutivas. Eles possuem um vasto conhecimento de muitos assuntos e uma aptidão natural que lhes permite fazer praticamente tudo bem. Bardos se tornam mestres dos talentos que eles definem em suas mentes para a perfeição, de performance musical até conhecimento exotérico.\n\nOs verdadeiros bardos não são comuns no mundo. Nem todo menestrel cantando em uma taverna ou bobo saltitando na corte real é um bardo. Descobrir a magia escondida na música requer árduo estudo e um pouco de talento natural que a maioria dos trovadores e malabaristas não tem. No entanto, pode ser difícil perceber a diferença entre esses artistas e bardos verdadeiros. A vida de um bardo é gasta vagando através dos lugares coletando conhecimento, contando histórias e vivendo da gratidão das audiências, muito parecido com qualquer outro artista. Porém, um profundo conhecimento, um nível de perícia musical e um toque de magia diferencia os bardos dos seus companheiros.\n\nCom raridade os bardos se estabelecem em algum lugar por um longo tempo e, seu desejo natural por viagens – para encontrar novos contos para contar, novas perícias para aprender e novas descobertas além do horizonte – tornam a carreira de aventureiro um\n\nchamado natural. Cada aventura é uma oportunidade de aprendizado, de praticar uma variedade de perícias, de entrar em tumbas a muito esquecidas, de descobrir antigos trabalhos místicos, de decifrar tomos ancestrais, de viajar para lugares estranhos ou de encontrar criaturas exóticas. Os bardos adoram acompanhar heróis para testemunhar seus feitos em primeira mão. Um bardo que puder contar uma história incrivelmente inspiradora de feitos pessoais ganhará renome dentre outros bardos. De fato, após contar tantas histórias sobre os poderosos feitos conseguidos por heróis, muitos bardos tomam essa inspiração em seus corações e assumem os papeis heroicos eles mesmos.",
+    "hitDice": {
+      "raw": "d8",
+      "mode": "standard",
+      "number": 1,
+      "faces": 8
+    },
+    "primaryAbility": {
+      "raw": "Carisma",
+      "abilityKeys": [
+        "cha"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Destreza, Carisma",
+        "abilityKeys": [
+          "dex",
+          "cha"
+        ]
+      },
+      "armor": "Armaduras leves",
+      "weapons": "Armas simples, bestas de mão, espadas longas, rapieiras e espadas curtas",
+      "tools": "Três instrumentos musicais à sua escolha",
+      "skills": "Escolha três perícias quaisquer"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 52,
+      "text": "Como um bardo, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d8 por nível de bardo Pontos de Vida no 1° Nível: 8 + seu modificador de\n\nConstituição Pontos de Vida nos Níveis Seguintes: 1d8 (ou 5) + seu\n\nmodificador de Constituição por nível de bardo após o 1° PROFICIÊNCIAS Armaduras: Armaduras leves Armas: Armas simples, bestas de mão, espadas longas,\n\nrapieiras, espadas curtas Ferramentas: Três instrumentos musicais, à sua escolha\n\nTestes de Resistência: Destreza, Carisma Perícias: Escolha três quaisquer EQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) uma rapieira, (b) uma espada longa ou (c) qualquer\n\narma simples\n• (a) um pacote de diplomata ou (b) um pacote de artista\n• (a) um lute ou (b) qualquer outro instrumento musical\n• Armadura de couro e uma adaga"
+    },
+    "overview": [
+      {
+        "title": "BARDO",
+        "page": 51,
+        "text": "Cantarolando enquanto entrelaça os seus dedos em volta de um monumento antigo em uma ruina a muito esquecida, uma meio-elfa vestida em couros gastos encontra o conhecimento que brota de sua mente, conjurado através da magia de sua música – conhecimento do povo que construiu o monumento e a saga mística é descrita.\n\nUm austero guerreiro humano bate sua espada ritmicamente contra sua brunea, ditando o andamento do seu canto de guerra e exortando bravura e heroísmo em seus companheiros. A magia da sua canção os fortalece e encoraja.\n\nGargalhando enquanto entoa sua citara, uma gnoma tece sua sutil magia sobre os nobres reunidos, garantindo que as palavras dos seus companheiros serão bem recebidas.\n\nNão importa se um escolar, escaldo ou malandro, o bardo tece sua magia através de palavras e música para inspirar aliados, desmoralizar oponentes, manipular mentes, criar ilusões e, até mesmo, curar ferimentos."
+      },
+      {
+        "title": "MÚSICA E MAGIA",
+        "page": 51,
+        "text": "No mundo de D&D, palavras e música não são meras vibrações do ar, mas vocalizações com poder próprio. O bardo é um mestre da canção, discurso e a magia contida neles. Os bardos dizem que o multiverso foi criado a partir da palavra, que as palavras dos deuses lhe deram forma, e os ecos dessas Palavras de Criação primordiais ainda ressoam através do cosmos. A música dos bardos é uma tentativa de capitar e aproveitar esses ecos, sutilmente tecidas em suas magias e poderes.\n\nA maior força dos bardos é sua completa versatilidade. Muitos bardos preferem ficar as margens do combate, usando suas magias para inspirar seus aliados e atrapalhar seus oponentes à distância. Porém, os bardos são capazes de se defender em combate corporal, se necessário, usando suas magias para aprimorar suas espadas e armaduras. Suas magias inclinam-se para os encantamentos e ilusões ao invés de magias notavelmente destrutivas. Eles possuem um vasto conhecimento de muitos assuntos e uma aptidão natural que lhes permite fazer praticamente tudo bem. Bardos se tornam mestres dos talentos que eles definem em suas mentes para a perfeição, de performance musical até conhecimento exotérico."
+      },
+      {
+        "title": "APRENDENDO COM A EXPERIÊNCIA",
+        "page": 51,
+        "text": "Os verdadeiros bardos não são comuns no mundo. Nem todo menestrel cantando em uma taverna ou bobo saltitando na corte real é um bardo. Descobrir a magia escondida na música requer árduo estudo e um pouco de talento natural que a maioria dos trovadores e malabaristas não tem. No entanto, pode ser difícil perceber a diferença entre esses artistas e bardos verdadeiros. A vida de um bardo é gasta vagando através dos lugares coletando conhecimento, contando histórias e vivendo da gratidão das audiências, muito parecido com qualquer outro artista. Porém, um profundo conhecimento, um nível de perícia musical e um toque de magia diferencia os bardos dos seus companheiros.\n\nCom raridade os bardos se estabelecem em algum lugar por um longo tempo e, seu desejo natural por viagens – para encontrar novos contos para contar, novas perícias para aprender e novas descobertas além do horizonte – tornam a carreira de aventureiro um\n\nchamado natural. Cada aventura é uma oportunidade de aprendizado, de praticar uma variedade de perícias, de entrar em tumbas a muito esquecidas, de descobrir antigos trabalhos místicos, de decifrar tomos ancestrais, de viajar para lugares estranhos ou de encontrar criaturas exóticas. Os bardos adoram acompanhar heróis para testemunhar seus feitos em primeira mão. Um bardo que puder contar uma história incrivelmente inspiradora de feitos pessoais ganhará renome dentre outros bardos. De fato, após contar tantas histórias sobre os poderosos feitos conseguidos por heróis, muitos bardos tomam essa inspiração em seus corações e assumem os papeis heroicos eles mesmos."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM BARDO",
+        "page": 52,
+        "text": "Bardos são contadores de histórias, não importando se essas histórias são reais ou não. O antecedente e motivações do seu personagem não são mais importantes que as histórias que eles contam sobre si mesmo. No entanto, você, seguramente, teve uma infância mundana. Não existe uma história interessante sobre isso, então você deveria inventar que foi um órfão que foi criado por uma bruxa em um pântano sombrio. Ou sua infância pode render uma boa história. Alguns bardos adquirem sua música mágica através de meios extraordinários, incluindo a inspiração de fadas ou outras criaturas sobrenaturais.\n\nVocê serviu como aprendiz, estudando com um mestre, seguindo o mais experiente bardo até que você fosse capaz de seguir o seu próprio caminho? Ou você ingressou em uma faculdade onde você estudou o conhecimento de bardo e praticou sua magia musical? Talvez você tenha sido um jovem fugitivo ou órfão, que adquiriu a amizade de um bardo andarilho que se tornou seu mentor. Ou você pode ter sido o filho mimado de um nobre tutelado por um mestre. Talvez você tenha caído nas garras de uma bruxa, feito uma barganha por um dom musical, além de sua vida e liberdade, mas por que preço?"
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 52,
+        "text": "Você pode construir um bardo rapidamente seguindo essas sugestões. Primeiro, coloque seu valor de habilidade mais alto em Carisma, seguido de Destreza. Segundo, escolha o antecedente artista. Terceiro, escolha os truques globos de luz e zombaria viciosa, além das seguintes magias de 1° nível: enfeitiçar pessoa, detectar magia, palavra curativa e onda trovejante."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.colegios-de-bardo",
+        "title": "COLÉGIOS DE BARDO",
+        "page": 54,
+        "text": "O caminho de um bardo é gregário. Bardos buscam uns aos outros para trocar canções e histórias, gabando-se de suas realizações e partilhando seus conhecimentos. Bardos formam associações esporádicas, que eles chamam de colégios, para facilitar sua coleta e preservar suas tradições.",
+        "sourceTitle": ""
+      }
+    ],
+    "presentation": {
+      "sigilKey": "bard",
+      "color": "#b867a7"
+    }
+  },
+  "features": [
+    {
+      "key": "class.bard.feature.conjuracao.l1.1",
+      "name": "CONJURAÇÃO",
+      "level": 1,
+      "description": "Você aprendeu a desembaraçar e remodelar o decido da realidade em harmonia com os seus desejos e música. Suas magias são parte do seu vasto repertório, magia que você pode entoar em diferentes situações. Veja o capítulo 10 para as regras gerais de conjuração e o capítulo 11 para a lista de magias de bardo.\n\nTRUQUES Você conhece dois truques, à sua escolha da lista de magias de bardo. Você aprende truques de bardo adicionais, à sua escolha em níveis mais altos, como mostrado na coluna Truques Conhecidos da tabela O Bardo.\n\nESPAÇOS DE MAGIA A tabela O Bardo mostra quantos espaços de magia de 1° nível e superiores você possui disponíveis para conjuração. Para conjurar uma dessas magias, você deve gastar uma espaço de magia do nível da magia ou superior. Você recobra todos os espaços de magia gastos quando você completa um descanso longo.\n\nPor exemplo, se você quiser conjurar a magia de 1° nível curar ferimentos e você tiver um espaço de magia de 1° nível e um de 2° nível disponíveis, você poderá conjurar curar ferimentos usando qualquer dos dois espaços.\n\nMAGIAS CONHECIDAS DE 1° NÍVEL E SUPERIORES Você conhece quatro magias de 1° nível, à sua escolha, da lista de magias de bardo.\n\nA coluna Magias Conhecidas na tabela O Bardo mostra quando você aprende mais magias de bardo, à sua escolha. Cada uma dessas magias deve ser de um nível a que você tenha acesso, como mostrado na tabela. Por exemplo, quando você alcança o 3° nível da classe, você pode aprender uma nova magia de 1° ou 2° nível.\n\nAlém disso, quando você adquire um nível nessa classe, você pode escolher uma magia de bardo que você conheça e substituí-la por outra magia da lista de magias de bardo, que também deve ser de um nível ao qual você tenha espaços de magia.\n\nHABILIDADE DE CONJURAÇÃO Sua habilidade de conjuração é Carisma para suas magias de bardo, portanto, você usa seu Carisma sempre que alguma magia se referir à sua habilidade de conjurar magias. Além disso, você usa o seu modificador de Carisma para definir a CD dos testes de resistência para\n\nas magias de bardo que você conjura e quando você realiza uma jogada de ataque com uma magia.\n\nCD para suas magias = 8 + bônus de proficiência +\n\nseu modificador de Carisma\n\nModificador de ataque de magia = seu bônus de proficiência +\n\nseu modificador de Carisma CONJURAÇÃO DE RITUAL Você pode conjurar qualquer magia de bardo que você conheça como um ritual se ela possuir o descritor ritual.\n\nFOCO DE CONJURAÇÃO Você pode usar um instrumento musical (encontrado no capítulo 5) como foco de conjuração das suas magias de bardo.",
+      "page": 52,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.bard.feature.inspiracao-de-bardo.l1.1",
+      "name": "INSPIRAÇÃO DE BARDO",
+      "level": 1,
+      "description": "Você pode inspirar os outros através de palavras animadoras ou música. Para tanto, você usa uma ação bônus no seu turno para escolher uma outra criatura, que não seja você mesmo, a até 18 metros de você que possa ouvi-lo. Essa criatura ganha um dado de Inspiração de Bardo, um d6.\n\nUma vez, nos próximos 10 minutos, a criatura poderá rolar o dado e adicionar o valor rolado a um teste de habilidade, jogada de ataque ou teste de resistência que ela fizer. A criatura pode esperar até rolar o d20 antes de decidir usar o dado de Inspiração de Bardo, mas deve decidir antes do Mestre dizer se a rolagem foi bem ou mal sucedida. Quando o dado de Inspiração de Bardo for rolado, ele é gasto. Uma criatura pode ter apenas um dado de Inspiração de Bardo por vez.\n\nVocê pode usar essa característica um número de vezes igual ao seu modificador de Carisma (no mínimo uma vez). Você recupera todos os usos quando termina um descanso longo.\n\nSeu dado de Inspiração de Bardo muda quando você atinge certos níveis na classe. O dado se torna um d8 no 5° nível, um d10 no 10° nível e um d12 no 15° nível.",
+      "page": 53,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.bard.feature.versatilidade.l2.1",
+      "name": "VERSATILIDADE",
+      "level": 2,
+      "description": "A partir do 2° nível, você pode adicionar metade do seu bônus de proficiência, arredondado para baixo, em qualquer teste de habilidade que você fizer que ainda não possua seu bônus de proficiência.",
+      "page": 54,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.bard.feature.cancao-de-descanso.l2.1",
+      "name": "CANÇÃO DE DESCANSO",
+      "level": 2,
+      "description": "A partir do 2° nível, você pode usar música ou oração calmantes para ajudar a revitalizar seus aliados feridos durante um descanso curto. Se você ou qualquer criatura amigável que puder ouvir sua atuação recuperar pontos de vida no fim do descanso curto ao gastar um ou mais Dados de Vida, cada uma dessas criaturas recupera 1d6 pontos de vida adicionais.\n\nOs pontos de vida adicionais aumentam quando você alcança determinados níveis na classe: para 1d8 no 9° nível, para 1d10 no 13° nível e para 1d12 no 17° nível.",
+      "page": 54,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.bard.feature.colegio-de-bardo.l3.1",
+      "name": "COLÉGIO DE BARDO",
+      "level": 3,
+      "description": "No 3° nível, você investiga as técnicas avançadas de um colégio de bardo, à sua escolha: o Colégio do Conhecimento ou o Colégio da Bravura, ambos detalhados no final da descrição da classe. Sua escolha lhe concede características no 3° nível e novamente no 6° e 14° nível.",
+      "page": 54,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.bard.feature.aptidao.l3.1",
+      "name": "APTIDÃO",
+      "level": 3,
+      "description": "No 3° nível, escolha duas das perícias em que você é proficiente. Seu bônus de proficiência é dobrado em qualquer teste de habilidade que você fizer que utilize qualquer das perícias escolhidas.\n\nNo 10° nível, você escolhe mais duas perícias em que é proficiente para ganhar esse benefício.",
+      "page": 54,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.bard.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.",
+      "page": 54,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.bard.feature.fonte-de-inspiracao.l5.1",
+      "name": "FONTE DE INSPIRAÇÃO",
+      "level": 5,
+      "description": "Começando no momento em que você atinge o 5° nível, você recupera todas as utilizações gastas da sua Inspiração de Bardo quando você termina um descanso curto ou longo.",
+      "page": 54,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.bard.feature.cancao-de-protecao.l6.1",
+      "name": "CANÇÃO DE PROTEÇÃO",
+      "level": 6,
+      "description": "No 6° nível, você adquire a habilidade de usar notas musicais ou palavras de poder para interromper efeito de influência mental. Com uma ação, você pode começar uma atuação que dura até o fim do seu próximo turno. Durante esse tempo, você e qualquer criatura amigável a até 9 metros de você terá vantagem em testes de resistência para não ser amedrontado ou enfeitiçado. Uma criatura deve ser capaz de ouvir você para receber esse benefício. A atuação termina prematuramente se você for incapacitado ou silenciado ou se você terminá-la voluntariamente (não requer ação).",
+      "page": 54,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.bard.feature.segredos-magicos.l10.1",
+      "name": "SEGREDOS MÁGICOS",
+      "level": 10,
+      "description": "No 10° nível, você usurpou conhecimento mágico de um vasto espectro de disciplinas. Escolha duas magias de qualquer classe, incluindo essa. A magia que você escolher deve ser de um nível que você possa conjurar, como mostrado na tabela O Bardo, ou um truque.\n\nAs magias escolhidas contam como magias de bardo para você e já estão incluídas no número da coluna Magias Conhecidas da tabela O Bardo.\n\nVocê aprende duas magias adicionais de qualquer classe no 14° nível e novamente no 18° nível.",
+      "page": 54,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.bard.feature.inspiracao-superior.l20.1",
+      "name": "INSPIRAÇÃO SUPERIOR",
+      "level": 20,
+      "description": "No 20° nível, quando você rolar iniciativa e não tiver nenhum uso restante de Inspiração de Bardo, você recupera um uso.",
+      "page": 54,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Bardo",
+    "sourceTitle": "",
+    "sourcePage": 53,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "cantrips",
+        "label": "Truques Conhecidos",
+        "shortLabel": "Truques"
+      },
+      {
+        "key": "spellsKnown",
+        "label": "Magias Conhecidas"
+      },
+      {
+        "key": "slot1",
+        "label": "1º",
+        "title": "Espaços de magia de 1º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot2",
+        "label": "2º",
+        "title": "Espaços de magia de 2º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot3",
+        "label": "3º",
+        "title": "Espaços de magia de 3º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot4",
+        "label": "4º",
+        "title": "Espaços de magia de 4º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot5",
+        "label": "5º",
+        "title": "Espaços de magia de 5º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot6",
+        "label": "6º",
+        "title": "Espaços de magia de 6º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot7",
+        "label": "7º",
+        "title": "Espaços de magia de 7º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot8",
+        "label": "8º",
+        "title": "Espaços de magia de 8º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot9",
+        "label": "9º",
+        "title": "Espaços de magia de 9º nível",
+        "group": "Espaços de Magia"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Conjuração",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.conjuracao.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Inspiração de Bardo (d6)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.bard.feature.inspiracao-de-bardo.l1.1"
+            ]
+          }
+        ],
+        "slot1": 2,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 2,
+        "spellsKnown": 4
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Versatilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.versatilidade.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Canção do Descanso (d6)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 2,
+        "spellsKnown": 5
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Colégio de Bardo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.colegio-de-bardo.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Aptidão",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.aptidao.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 2,
+        "spellsKnown": 6
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3,
+        "spellsKnown": 7
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Inspiração de Bardo (d8)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.bard.feature.inspiracao-de-bardo.l1.1"
+            ]
+          },
+          {
+            "label": "Fonte de Inspiração",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.fonte-de-inspiracao.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3,
+        "spellsKnown": 8
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Colégio de Bardo",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.bard.feature.colegio-de-bardo.l3.1"
+            ]
+          },
+          {
+            "label": "Canção de Proteção",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.cancao-de-protecao.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3,
+        "spellsKnown": 9
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3,
+        "spellsKnown": 10
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3,
+        "spellsKnown": 11
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Canção do Descanso (d8)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 3,
+        "spellsKnown": 12
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Inspiração de Bardo (d10)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.bard.feature.inspiracao-de-bardo.l1.1"
+            ]
+          },
+          {
+            "label": "Aptidão",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.aptidao.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Segredos Mágicos",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.segredos-magicos.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 4,
+        "spellsKnown": 14
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 4,
+        "spellsKnown": 15
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 4,
+        "spellsKnown": 15
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Canção do Descanso (d10)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 4,
+        "spellsKnown": 16
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Colégio de Bardo",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.bard.feature.colegio-de-bardo.l3.1"
+            ]
+          },
+          {
+            "label": "Segredos Mágicos",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.segredos-magicos.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": "—",
+        "slot9": "—",
+        "cantrips": 4,
+        "spellsKnown": 18
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Inspiração de Bardo (d12)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.bard.feature.inspiracao-de-bardo.l1.1"
+            ]
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": "—",
+        "cantrips": 4,
+        "spellsKnown": 19
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": "—",
+        "cantrips": 4,
+        "spellsKnown": 19
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Canção do Descanso (d12)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": 1,
+        "cantrips": 4,
+        "spellsKnown": 20
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Segredos Mágicos",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.segredos-magicos.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 3,
+        "slot6": 1,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": 1,
+        "cantrips": 4,
+        "spellsKnown": 22
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 3,
+        "slot6": 2,
+        "slot7": 1,
+        "slot8": 1,
+        "slot9": 1,
+        "cantrips": 4,
+        "spellsKnown": 22
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Inspiração Superior",
+            "kind": "feature",
+            "featureRefs": [
+              "class.bard.feature.inspiracao-superior.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 3,
+        "slot6": 2,
+        "slot7": 2,
+        "slot8": 1,
+        "slot9": 1,
+        "cantrips": 4,
+        "spellsKnown": 22
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 19
+    },
+    "options": [
+      {
+        "grimorioId": "colegio-conhecimento",
+        "identifier": "colegio-conhecimento",
+        "name": "Colégio do Conhecimento",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 54
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "colegio-bravura",
+        "identifier": "colegio-bravura",
+        "name": "Colégio da Bravura",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 55
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-bard-gambler",
+        "identifier": "lyre-bard-gambler",
+        "name": "Apostador",
+        "originalName": "Gambler",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "437",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 437
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-bard-college-of-terpsichore",
+        "identifier": "lyre-bard-college-of-terpsichore",
+        "name": "Colégio de Terpsícore",
+        "originalName": "College of Terpsichore",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "434–435",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 434
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-bard-college-of-the-divine-minstral",
+        "identifier": "lyre-bard-college-of-the-divine-minstral",
+        "name": "Colégio do Menestrel Divino",
+        "originalName": "College of the Divine Minstral",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "435–436",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 435
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-bard-college-of-the-old-world",
+        "identifier": "lyre-bard-college-of-the-old-world",
+        "name": "Colégio do Velho Mundo",
+        "originalName": "College of the Old World",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "436",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 436
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-bard-wild-erudite",
+        "identifier": "lyre-bard-wild-erudite",
+        "name": "Erudito Selvagem",
+        "originalName": "Wild Erudite",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "437–438",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 437
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-bard-simulation-savant",
+        "identifier": "zagalhta-bard-simulation-savant",
+        "name": "Prodígio da Simulação",
+        "originalName": "Simulation Savant",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "141",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 141
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-bard-stellar-idol",
+        "identifier": "zagalhta-bard-stellar-idol",
+        "name": "Ídolo Estelar",
+        "originalName": "Stellar Idol",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "142",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 142
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-bard-college-of-likeness",
+        "identifier": "bbb-bard-college-of-likeness",
+        "name": "Colégio da Semelhança",
+        "originalName": "College of Likeness",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "85–87",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 85
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-bard-college-of-quiet-dignity",
+        "identifier": "bbb-bard-college-of-quiet-dignity",
+        "name": "Colégio da Dignidade Serena",
+        "originalName": "College of Quiet Dignity",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "87–88",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 87
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-bard-elegiac-artist",
+        "identifier": "bbb-bard-elegiac-artist",
+        "name": "Artista Elegíaco",
+        "originalName": "Elegiac Artist",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "88–89",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 88
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "ryoko-bard-hanabi",
+        "identifier": "ryoko-bard-hanabi",
+        "name": "Colégio de Hanabi",
+        "originalName": "College of Hanabi",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "152–153",
+          "chapter": "Capítulo 9: Classes",
+          "page": 152
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "ryoko-bard-masks",
+        "identifier": "ryoko-bard-masks",
+        "name": "Colégio das Máscaras",
+        "originalName": "College of Masks",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "154",
+          "chapter": "Capítulo 9: Classes",
+          "page": 154
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-colegio-do-glamour",
+        "identifier": "xanathar-colegio-do-glamour",
+        "name": "Colégio do Glamour",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "14–15",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 14
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-colegio-das-espadas",
+        "identifier": "xanathar-colegio-das-espadas",
+        "name": "Colégio das Espadas",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "15–16",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 15
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-colegio-dos-sussurros",
+        "identifier": "xanathar-colegio-dos-sussurros",
+        "name": "Colégio dos Sussurros",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "16",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 16
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-colegio-da-criacao",
+        "identifier": "tasha-colegio-da-criacao",
+        "name": "Colégio da Criação",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "26–28",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 26
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-colegio-da-eloquencia",
+        "identifier": "tasha-colegio-da-eloquencia",
+        "name": "Colégio da Eloquência",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "28–30",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 28
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

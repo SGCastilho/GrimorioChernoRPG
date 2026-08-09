@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-fighter-guardian",
+    "identifier": "lyre-fighter-guardian",
+    "name": "Guardião",
+    "originalName": "Guardian",
+    "aliases": [
+      "Guardian"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "461",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 461
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Um defensor imóvel que domina o uso do escudo para impedir que o dano alcance a si e aos aliados. O Guardião ataca com o escudo tão naturalmente quanto com a espada, repelindo golpes e esmagando adversários enquanto transforma sua posição em uma muralha no campo de batalha.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 461
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-fighter-guardian.feature.golpe-de-escudo.l3.1",
+      "name": "GOLPE DE ESCUDO",
+      "level": 3,
+      "description": "Ao realizar a ação Atacar enquanto empunha um escudo, você pode atacar com ele como ação bônus. Para esse ataque, o escudo conta como uma arma pesada com a qual você é proficiente, usa Força e soma seu bônus de aprimoramento à jogada de ataque. Em um acerto, escolha: se o alvo não for mais de uma categoria de tamanho maior que você, derrubá-lo ou empurrá-lo 1,5 metro; causar dano contundente igual a 1d4 × o bônus total de CA do escudo + seu modificador de Força; ou dar ao alvo desvantagem no próximo ataque antes do início do seu próximo turno.",
+      "page": 461,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-guardian.feature.estilos-de-luta-do-guardiao.l7.1",
+      "name": "ESTILOS DE LUTA DO GUARDIÃO",
+      "level": 7,
+      "description": "Você ganha os estilos de luta Defesa e Proteção. Se já possuir um ou ambos, os estilos correspondentes avançam em vez disso.",
+      "page": 461,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-guardian.feature.sentinela-imponente.l7.1",
+      "name": "SENTINELA IMPONENTE",
+      "level": 7,
+      "description": "Se você ou uma criatura a até 1,5 metro for reduzida a 0 pontos de vida por dano de uma fonte que possa ver, gaste um uso de Maestria de Combate para reduzir o dano em 1d10 + seu nível de Guerreiro. Se ainda assim o dano a reduziria a 0, ela fica com 1 ponto de vida. Só pode proteger o mesmo alvo dessa forma uma vez por turno.",
+      "page": 461,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-guardian.feature.mestre-excepcional-de-armadura.l10.1",
+      "name": "MESTRE EXCEPCIONAL DE ARMADURA",
+      "level": 10,
+      "description": "Enquanto estiver usando armadura pesada, todo dano perfurante, cortante e contundente que sofrer é reduzido pela metade do seu nível de Guerreiro, arredondado para baixo.",
+      "page": 461,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-guardian.feature.deflexao-total.l15.1",
+      "name": "DEFLEXÃO TOTAL",
+      "level": 15,
+      "description": "Ao ser atingido por um ataque com arma enquanto empunha escudo, use sua reação para rolar 1d10 e somá-lo à CA, possivelmente transformando o acerto em erro. Se o ataque errar por causa disso e o atacante estiver a até 1,5 metro, você pode realizar um Golpe de Escudo contra ele na mesma reação. Duas vezes por Descanso Curto ou Longo; depois disso, só pode repetir gastando 1 ponto de Maestria de Combate.",
+      "page": 461,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-guardian.feature.defesa-suprema.l18.1",
+      "name": "DEFESA SUPREMA",
+      "level": 18,
+      "description": "Uma vez por turno, quando sofrer dano de um efeito que possa ver enquanto usa armadura pesada ou empunha escudo, gaste 1 ponto de Maestria de Combate para reduzir todo o dano daquela fonte em três vezes seu nível de Guerreiro. Depois, você tem resistência a todo dano até o fim do turno atual.",
+      "page": 461,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

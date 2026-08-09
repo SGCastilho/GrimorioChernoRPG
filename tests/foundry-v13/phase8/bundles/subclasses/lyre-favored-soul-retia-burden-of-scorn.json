@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-scorn",
+    "identifier": "lyre-favored-soul-retia-burden-of-scorn",
+    "name": "Fardo de Scorn",
+    "originalName": "Burden of Scorn",
+    "aliases": [
+      "Burden of Scorn"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "355–356",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 355
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): malho. Os favorecidos de Scorn vivem com impulsos sanguinários constantes. Opcionalmente, se um favorecido iniciar o turno ao alcance de movimento de uma criatura com 0 PV, deve passar em salvaguarda de Sabedoria CD 15 ou mover-se até ela e realizar ao menos um ataque de Garra Bestial antes de outras ações.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 355
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-scorn.feature.garra-bestial.l1.1",
+      "name": "GARRA BESTIAL",
+      "level": 1,
+      "description": "Você recebe imediatamente Armamento de Essência; ao chegar ao 2º nível, ele conta como sua escolha. O armamento pode ser a arma favorecida ou uma transformação bestial de seus membros em garras. As garras são sua arma favorecida, usam Força ou atributo de conjuração para ataque/dano, contam como arma marcial e causam 1d8 cortante ou necrótico. Podem ser “arremessadas” com propriedade 6/18 m como talho de energia necrótica. Depois de um ataque com essa arma, pode fazer outro como ação bônus.",
+      "page": 355,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-scorn.feature.critico-obsceno.l1.1",
+      "name": "CRÍTICO OBSCENO",
+      "level": 1,
+      "description": "Você obtém crítico em 19 ou 20. Quando obtém crítico com arma, recupera PV iguais à metade do dano causado, arredondado para baixo. Não recebe esses benefícios contra morto-vivo, constructo ou criatura sem sangue.",
+      "page": 356,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-scorn.feature.retorno-da-morte.l6.1",
+      "name": "RETORNO DA MORTE",
+      "level": 6,
+      "description": "Em salvaguardas contra a morte, resultados 19 ou 20 fazem você recuperar PV, em vez de apenas 20. Ao obter 19 ou 20, recupera um Dado de Vida de Alma Favorecida + seu modificador de Constituição em PV.",
+      "page": 356,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-scorn.feature.fantasia-sangrenta.l10.1",
+      "name": "FANTASIA SANGRENTA",
+      "level": 10,
+      "description": "Como ação bônus, gaste Purificação, desapareça em clarão vermelho e teleporte-se para espaço adjacente a criatura visível a até 9 metros; então realiza imediatamente uma ação Atacar sem gastar ação.",
+      "page": 356,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-scorn.feature.reconstituicao-impiedosa.l13.1",
+      "name": "RECONSTITUIÇÃO IMPIEDOSA",
+      "level": 13,
+      "description": "No início de cada turno, se estiver com ao menos 1 PV mas abaixo de metade do máximo, recupera PV iguais à metade do nível de Alma Favorecida, arredondado para baixo.",
+      "page": 356,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

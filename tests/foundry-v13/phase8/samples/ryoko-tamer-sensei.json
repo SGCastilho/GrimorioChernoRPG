@@ -1,0 +1,262 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-tamer-sensei",
+    "identifier": "ryoko-tamer-sensei",
+    "name": "Sensei",
+    "originalName": "Sensei",
+    "aliases": [
+      "Sensei",
+      "Sensei"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "201–202",
+    "chapter": "Capítulo 9: Classes",
+    "page": 201
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "tamer-ryoko",
+    "identifier": "tamer",
+    "name": "Domador"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "tamer",
+    "selectionLevel": 3,
+    "description": "Um paradigma de Domador que ensina artes marciais aos companheiros, convertendo cada criatura em um pugilista treinado e versátil.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-sensei",
+        "title": "Magias de Sensei",
+        "page": 201,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Domador"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Clarão, Palma Repulsora"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Pele Terrestre, Golpe de Vento"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Criar Alimentos e Água, Velocidade"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Liberdade de Movimento, Pele de Aço"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Resistir, Restauração Maior"
+          }
+        ]
+      },
+      {
+        "key": "table.2.tecnicas-marciais",
+        "title": "Técnicas Marciais",
+        "page": 202,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "tecnica",
+            "label": "Técnica"
+          },
+          {
+            "key": "efeito",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "tecnica": "Evitar",
+            "efeito": "Ação bônus: companheiro usa Esquivar-se."
+          },
+          {
+            "tecnica": "Bloquear",
+            "efeito": "Reação ao ser atacado por criatura visível com dano físico: +PB na CA contra o ataque; se ainda acertar, reduza dano em 1d6+PB."
+          },
+          {
+            "tecnica": "Carga",
+            "efeito": "Ação: movimento adicional igual ao deslocamento e um Golpe Marcial. Se mover 6 m em linha reta e acertar, +1d10 e alvo faz Força CD 8 + Força do companheiro + PB ou cai no chão; criatura >1 categoria maior tem sucesso automático."
+          },
+          {
+            "tecnica": "Pés Dançantes",
+            "efeito": "Ação bônus: Desengajar."
+          },
+          {
+            "tecnica": "Agarrar",
+            "efeito": "Ação bônus: tentativa de agarrar criatura ao alcance."
+          },
+          {
+            "tecnica": "Rasteira",
+            "efeito": "Ação bônus: empurrar para derrubar, usando Força (Atletismo) ou Destreza (Atletismo); criatura >1 categoria maior tem sucesso automático."
+          },
+          {
+            "tecnica": "Arremessar",
+            "efeito": "Uma vez por turno, ao ter criatura agarrada e usar Atacar, substitua ataque por disputa de Força ou Destreza (Atletismo) contra Força (Atletismo) ou Destreza (Acrobacia); em vitória, mova alvo a espaço a 1,5 m, derrube-o e cause dano de concussão igual a duas rolagens do dado de Golpe Marcial."
+          },
+          {
+            "tecnica": "Cotovelo do Povo",
+            "efeito": "Uma vez por turno, substitua ataque contra alvo caído; limiar de crítico reduz em 1 por categoria que companheiro seja maior; em acerto, dano igual a duas rolagens de Golpe Marcial; acertando ou errando, companheiro cai no chão."
+          },
+          {
+            "tecnica": "Uppercut",
+            "efeito": "Uma vez por turno, substitua ataque contra alvo não caído; limiar de crítico reduz em 1 por categoria que companheiro seja menor; em acerto, dano igual a duas rolagens de Golpe Marcial."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 201
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-tamer-sensei.feature.magias-de-sensei.l3.1",
+      "name": "MAGIAS DE SENSEI",
+      "level": 3,
+      "description": "Você aprende as magias da tabela; contam como magias de Domador e não contam no limite de magias conhecidas.",
+      "page": 201,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-tamer-sensei.feature.golpes-marciais.l3.1",
+      "name": "GOLPES MARCIAIS",
+      "level": 3,
+      "description": "Cada companheiro ganha ataque corpo a corpo Golpe Marcial, usando Força ou Destreza para ataque e dano e tipo físico apropriado. Dano: 1d6 no 3º nível, 1d8 no 7º, 1d10 no 10º e 1d12 no 18º. No 5º nível, ao Atacar pode fazer dois Golpes Marciais; no 14º, três.",
+      "page": 201,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-tamer-sensei.feature.tecnicas-marciais.l3.1",
+      "name": "TÉCNICAS MARCIAIS",
+      "level": 3,
+      "description": "Escolha três Técnicas Marciais da tabela; seus companheiros aprendem todas. Ao comandar um companheiro, pode instruí-lo a usar uma ou mais. Aprenda uma técnica adicional no 7º, 10º, 14º e 18º níveis.",
+      "page": 201,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-tamer-sensei.feature.liberar.l7.1",
+      "name": "LIBERAR",
+      "level": 7,
+      "description": "Como ação, seu companheiro move até seu deslocamento sem ataques de oportunidade e realiza até seis Golpes Marciais, cada um contra alvo diferente. Movimento não provoca ataques de oportunidade até fim do turno. Uma vez por Descanso Curto ou Longo; a partir do 18º nível, duas vezes entre descansos.",
+      "page": 201,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-tamer-sensei.feature.sacudir-o-golpe.l10.1",
+      "name": "SACUDIR O GOLPE",
+      "level": 10,
+      "description": "Sempre que companheiro sofrer concussão, perfurante ou cortante, reduza o dano em seu modificador de conjuração de Domador (mín.1). Você não pode usar enquanto incapacitado.",
+      "page": 201,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-tamer-sensei.feature.prodigio-marcial.l14.1",
+      "name": "PRODÍGIO MARCIAL",
+      "level": 14,
+      "description": "Como ação, infunda um companheiro invocado com seu espírito por 1 minuto: ele faz quatro Golpes Marciais na ação Atacar em vez de três, pode realizar duas ações bônus por turno e ganha PV temporários iguais ao seu modificador de conjuração (mín.1) no início dos turnos. Uma vez por Descanso Longo.",
+      "page": 201,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-tamer-sensei.feature.liberar-aprimorado.l18.1",
+      "name": "LIBERAR APRIMORADO",
+      "level": 18,
+      "description": "A partir do 18º nível, cada companheiro pode usar a ação Liberar duas vezes entre seus Descansos Curtos ou Longos, em vez de uma.",
+      "page": 201,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

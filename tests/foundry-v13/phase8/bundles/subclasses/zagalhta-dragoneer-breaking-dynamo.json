@@ -1,0 +1,176 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-dragoneer-breaking-dynamo",
+    "identifier": "zagalhta-dragoneer-breaking-dynamo",
+    "name": "Dínamo Rompedor",
+    "originalName": "Breaking Dynamo",
+    "aliases": [
+      "Breaking Dynamo"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "122–123",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 122
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Um guerreiro galante que canaliza o orgulho e a força implacável de um dragão, força confrontos diretos e converte falhas defensivas em ímpeto ofensivo.",
+    "tables": [
+      {
+        "key": "table.1.parametros-da-especializacao",
+        "title": "Parâmetros da Especialização",
+        "page": 122,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "hit",
+            "label": "Dado de Vida"
+          },
+          {
+            "key": "saves",
+            "label": "Salvaguardas"
+          },
+          {
+            "key": "weapons",
+            "label": "Armas"
+          },
+          {
+            "key": "armor",
+            "label": "Armaduras"
+          },
+          {
+            "key": "skills",
+            "label": "Perícias"
+          },
+          {
+            "key": "casting",
+            "label": "Conjuração"
+          }
+        ],
+        "rows": [
+          {
+            "hit": "d10",
+            "saves": "Força, Sabedoria",
+            "weapons": "Todas as armas simples e marciais",
+            "armor": "Leves, médias e escudos",
+            "skills": "Atletismo; escolha uma entre Acrobacia, Adestrar Animais, História, Intuição, Intimidação, Percepção e Sobrevivência",
+            "casting": "Um-Terço de Conjurador"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 122
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-dragoneer-breaking-dynamo.feature.critico-aprimorado.l1.1",
+      "name": "CRÍTICO APRIMORADO",
+      "level": 1,
+      "description": "Você obtém acerto crítico com resultado 19 ou 20 no d20.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-breaking-dynamo.feature.foco-frontal.l3.1",
+      "name": "FOCO FRONTAL",
+      "level": 3,
+      "description": "Quando for atingido por um ataque vindo de mais de 3 m de distância, enquanto não estiver incapacitado sua CA contra esse ataque recebe bônus igual à sua proficiência.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-breaking-dynamo.feature.carga-iraseda.l7.1",
+      "name": "CARGA IRASEDA",
+      "level": 7,
+      "description": "Ao falhar numa salvaguarda, recebe 1 ponto de Ira por 1 minuto, até o máximo da proficiência. Ao fazer um ataque de arma, pode gastar 1 ponto para somar sua proficiência uma segunda vez à jogada e, se acertar, também ao dano.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-breaking-dynamo.feature.aprimoramento-do-ataque-encadeado.l13.1",
+      "name": "APRIMORAMENTO DO ATAQUE ENCADEADO",
+      "level": 13,
+      "description": "Ao realizar a ação Atacar, pode atacar três vezes. Um desses ataques pode ser substituído pela conjuração de uma magia de Cavaleiro Dracônico com tempo de 1 ação.",
+      "page": 123,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-breaking-dynamo.feature.ataque-encadeado-encarnado.l17.1",
+      "name": "ATAQUE ENCADEADO ENCARNADO",
+      "level": 17,
+      "description": "Ao realizar a ação Atacar, pode atacar quatro vezes, substituindo um ataque por uma magia de Cavaleiro Dracônico de 1 ação. Além disso, Golpe Encarnado passa a causar um dado adicional de dano de arma.",
+      "page": 123,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

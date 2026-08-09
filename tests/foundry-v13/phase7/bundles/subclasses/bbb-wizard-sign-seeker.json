@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-wizard-sign-seeker",
+    "identifier": "bbb-wizard-sign-seeker",
+    "name": "Buscador de Sinais",
+    "originalName": "Sign Seeker",
+    "aliases": [
+      "Sign Seeker"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "135–136",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 135
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Um adivinho e mestre em prever mudanças iminentes do destino.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 135
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-wizard-sign-seeker.feature.fluxo-do-destino.l2.1",
+      "name": "FLUXO DO DESTINO",
+      "level": 2,
+      "description": "Quando um alvo de uma de suas magias de mago teria vantagem nas salvaguardas contra ela, em vez disso faz essas salvaguardas com desvantagem.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-sign-seeker.feature.especialidades-preditivas.l2.1",
+      "name": "ESPECIALIDADES PREDITIVAS",
+      "level": 2,
+      "description": "Ao aprender novas magias de mago, todas as magias de Adivinhação e todas as magias do grupo Artes do Valor contam como estando na lista de mago para você.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-sign-seeker.feature.sorte-cega.l6.1",
+      "name": "SORTE CEGA",
+      "level": 6,
+      "description": "Você não pode ser surpreendido em combate e adiciona seu bônus de proficiência às jogadas de Iniciativa.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-sign-seeker.feature.vidente-dotado.l10.1",
+      "name": "VIDENTE DOTADO",
+      "level": 10,
+      "description": "Quando conjura uma magia de mago do grupo Artes do Valor ou da escola de Adivinhação usando espaço de magia, trate a magia como se fosse conjurada um nível acima do espaço gasto, até no máximo 9º nível.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-wizard-sign-seeker.feature.dobrar-destino-e-fortuna.l14.1",
+      "name": "DOBRAR DESTINO E FORTUNA",
+      "level": 14,
+      "description": "Uma vez por Descanso, pode conjurar fortuna/falha sem espaço nem componentes. Quando conjura essa magia em seu turno, ou qualquer outra magia de Adivinhação ou Artes do Valor, pode imediatamente conjurar como parte da mesma ação um truque com tempo de conjuração de 1 ação.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

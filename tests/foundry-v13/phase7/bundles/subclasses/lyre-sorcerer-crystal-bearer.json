@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sorcerer-crystal-bearer",
+    "identifier": "lyre-sorcerer-crystal-bearer",
+    "name": "Portador do Cristal",
+    "originalName": "Crystal Bearer",
+    "aliases": [
+      "Crystal Bearer"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "481",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 481
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Feiticeiros que condensam seu poder arcano em um pequeno foco de sepherita. O cristal armazena energia ambiente, amplifica a magia e, com treinamento, pode absorver agressões mágicas. Portadores do Cristal costumam ter afinidade incomum com radiação eidomântica ou descender de seres capazes de utilizá-la.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 481
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sorcerer-crystal-bearer.feature.foco-de-cristal.l1.1",
+      "name": "FOCO DE CRISTAL",
+      "level": 1,
+      "description": "Você pode manifestar quando desejar um fragmento de cristal de sepherita do tamanho da mão. Uma vez por Descanso Curto ou Longo, use o fragmento para um dos seguintes efeitos: aplicar gratuitamente uma opção de Metamagia que conheça, sem gastar Pontos de Feitiçaria; conjurar sem espaço uma magia conhecida cujo nível seja igual ou inferior à metade do seu bônus de proficiência, arredondado para baixo; somar a uma jogada de ataque ou salvaguarda um bônus igual à metade do seu nível de Feiticeiro, arredondado para baixo, mínimo 1; ou, como reação ao ser atingido por um ataque, reduzir à metade o dano sofrido. O cristal serve como seu foco de conjuração e pode flutuar durante o uso, deixando suas mãos livres. Se o perder, você cria outro ao terminar um Descanso Curto ou Longo.",
+      "page": 481,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-crystal-bearer.feature.escudo-de-magia-potencializado.l1.1",
+      "name": "ESCUDO DE MAGIA POTENCIALIZADO",
+      "level": 1,
+      "description": "Quando conjura uma magia usando um espaço de Feiticeiro, você pode gastar 1 Ponto de Feitiçaria para rolar uma quantidade de d6 igual ao nível do espaço. Você recebe o total como pontos de vida temporários, que desaparecem ao terminar seu próximo Descanso Curto ou Longo.",
+      "page": 481,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-crystal-bearer.feature.pureza-do-cristal.l6.1",
+      "name": "PUREZA DO CRISTAL",
+      "level": 6,
+      "description": "Você pode produzir os efeitos do Foco de Cristal uma vez adicional por Descanso Longo. Se esse uso adicional tiver sido gasto e você obtiver um 20 em qualquer salvaguarda, recupera imediatamente o uso adicional ao converter o esforço em energia mágica pura.",
+      "page": 481,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-crystal-bearer.feature.conduto-arco-iris.l14.1",
+      "name": "CONDUTO ARCO-ÍRIS",
+      "level": 14,
+      "description": "Você aprende Rajada Prismática, que não conta no limite de magias conhecidas de Feiticeiro. Pode conjurá-la normalmente ou sem espaço gastando 4 Pontos de Feitiçaria. Ao conjurá-la, role o d8 duas vezes para cada alvo atingido e escolha o resultado que preferir.",
+      "page": 481,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-crystal-bearer.feature.malha-da-alma-cristalina.l18.1",
+      "name": "MALHA DA ALMA CRISTALINA",
+      "level": 18,
+      "description": "Seu Foco de Cristal absorve energia nociva de efeitos mágicos. Você fica imune a todo dano produzido por magias e resistente a dano de efeitos mágicos e itens mágicos. Se o efeito de uma magia vier de um artefato, de uma divindade, ou se o dano também for eidólico, você não é imune e possui apenas resistência a esse dano.",
+      "page": 481,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

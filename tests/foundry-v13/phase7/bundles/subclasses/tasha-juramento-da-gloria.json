@@ -1,0 +1,170 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-juramento-da-gloria",
+    "identifier": "tasha-juramento-da-gloria",
+    "name": "Juramento da Glória",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "77–79",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 77
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Paladinos que tomam o Juramento da Glória acreditam que eles e seus companheiros estão destinados a alcançar a glória através de seus atos de heroísmo. Eles treinam diligentemente e encorajam seus companheiros para que todos estejam prontos quando o destino chamar. Princípios da Glória Os princípios do Juramento da Glória direcionam o paladino a executar atos heroicos para um dia figurar nas lendas. Ações antes das palavras. Esforce-se para ser conhecido pelos seus atos gloriosos, não por palavras. Desafios são testes. Enfrente os tempos difíceis com coragem, e encoraje seus aliados a enfrentar isso com você. Aprimore o corpo. Assim como a pedra bruta, seu corpo deve ser trabalhado para desenvolver todo o seu material. Discipline a alma. Você deve empregar a disciplina para superar as falhas internas que ameaçam obscurecer sua glória e a de seus amigos.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-da-gloria",
+        "title": "Magias do Juramento da Glória",
+        "page": 77,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Raio Guia; Heroísmo"
+          },
+          {
+            "level": "5º",
+            "spells": "Aprimorar Atributo; Arma Mágica"
+          },
+          {
+            "level": "9º",
+            "spells": "Celeridade; Proteção Contra Energia"
+          },
+          {
+            "level": "13º",
+            "spells": "Compulsão; Movimentação Livre"
+          },
+          {
+            "level": "17º",
+            "spells": "Comunhão; Coluna de Chamas"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 77
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-juramento-da-gloria.feature.magias-de-juramento.l3.1",
+      "name": "MAGIAS DE JURAMENTO",
+      "level": 3,
+      "description": "Você adquire magias de juramento nos níveis de paladino listados na tabela de Magias do Juramento da Glória. Veja a característica de Juramento Sagrado para ver como as magias funcionam. Magias do Juramento da Glória Nível de Paladino Magias 3º Raio Guia, Heroísmo 5º Aprimorar Atributo, Arma Mágica 9º Celeridade, Proteção Contra Energia 13º Compulsão, Movimentação Livre 17º Comunhão, Coluna de Chamas",
+      "page": 77,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-juramento-da-gloria.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Você adquire as duas opções a seguir de Canalizar Divindade. Veja a característica do Juramento Sagrado sobre como o Canalizar Divindade funciona. Atleta Inigualável. Como uma ação bônus, você pode usar o seu Canalizar Divindade para aprimorar o seu atletismo. Pelos próximos 10 minutos, você adquire vantagem nos testes de Força (Atletismo) e Destreza (Acrobacia); você pode carregar, empurrar, arrastar e levantar o dobro de peso do que o normal, e a distância de seus saltos à distância e em altura aumentam 3m (essa distância extra consome o deslocamento como o normal). Golpe inspirador. Imediatamente após você causar dano a uma criatura com sua Destruição Divina, você pode usar o seu Canalizar Divindade como uma ação bônus e distribuir pontos de vida temporários para criaturas a sua escolha a até 9m de você, o que pode incluir a si mesmo. O número total de pontos de vida temporários é igual a 2d8 + seu nível nessa classe, divididos entre as criaturas escolhidas da forma que você preferir",
+      "page": 77,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-juramento-da-gloria.feature.aura-de-vivacidade.l7.1",
+      "name": "AURA DE VIVACIDADE",
+      "level": 7,
+      "description": "Você emana uma aura que preenche você e seus companheiros com uma velocidade sobrenatural, permitindo que você atravesse rapidamente o campo de batalha em formação. Seu deslocamento aumenta 3m. Adicionalmente, se você não estiver incapacitado, o deslocamento de qualquer aliado que comece o turno a até 1,5m de você também aumenta 3m até o final do turno dele. Quando você alcança o 18º nível, o alcance da aura aumenta para 3m.",
+      "page": 78,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-juramento-da-gloria.feature.defesa-gloriosa.l15.1",
+      "name": "DEFESA GLORIOSA",
+      "level": 15,
+      "description": "Você pode transformar sua defesa em um golpe súbito. Quando você ou outra criatura que você possa ver a até 3m de distância de você for acertada por uma jogada de ataque, você pode usar sua reação para fornecer um bônus para a CA do alvo contra esse ataque, potencialmente fazendo com que ele erre. O bônus é igual ao seu modificador de Carisma (mínimo de +1). Se o ataque errar, você pode realizar um ataque com arma contra o atacante como parte dessa reação, desde que ele esteja dentro do alcance da sua arma. Você pode usar essa característica um número de vezes igual ao seu modificador de Carisma (mínimo de uma vez), e você recupera todos os usos ao terminar um descanso longo.",
+      "page": 78,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-juramento-da-gloria.feature.lenda-viva.l20.1",
+      "name": "LENDA VIVA",
+      "level": 20,
+      "description": "Você pode fortalecer a si mesmo através das lendas – sejam verdadeiras ou exageradas – de seus grandes feitos. Como uma ação bônus, você adquire os seguintes benefícios por 1 minuto: Você é abençoado com uma presença sobrenatural, ganhando vantagens em todos os testes de Carisma. Uma vez por turno, quando você realizar um ataque com arma e errar, você pode definir que o ataque acerte em vez disso. Se você falhar em uma salvaguarda, você pode usar sua reação para jogar novamente. Você deve ficar com o novo resultado. Assim que usar essa ação bônus, você não poderá utilizá-la novamente até que termine um descanso longo, a menos que você gaste um espaço de magia de 5º nível para isso.",
+      "page": 78,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

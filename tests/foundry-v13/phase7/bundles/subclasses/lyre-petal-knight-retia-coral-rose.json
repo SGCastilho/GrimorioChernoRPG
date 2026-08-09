@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-coral-rose",
+    "identifier": "lyre-petal-knight-retia-coral-rose",
+    "name": "Rosa Coral",
+    "originalName": "Coral Rose",
+    "aliases": [
+      "Coral Rose"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "389",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 389
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "A Rosa Coral marca indivíduos persistentes, adaptáveis e astutos. Seus cavaleiros usam ilusões, mobilidade e apropriação de efeitos mágicos para superar obstáculos e perseguir seus objetivos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 389
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-coral-rose.feature.buque-enganoso.l2.1",
+      "name": "BUQUÊ ENGANOSO",
+      "level": 2,
+      "description": "Como ação bônus, crie um clone visual e fique invisível. O clone surge em seu espaço e pode ser a origem aparente de sua fala e gestos. Ao fim de cada um de seus turnos e sempre que usar a ação Atacar ou conjurar uma magia, faça uma salvaguarda de Carisma com CD 8 + o número de rodadas em que permaneceu invisível por este efeito; em uma falha, você fica visível. Ao atacar ou ser atacado, você aparece por um instante no local do impacto e outro clone surge ali enquanto você se move invisivelmente. Os clones também podem simular movimento, fala ou gestos. Ao perder a invisibilidade, eles se desfazem. Você pode usar esta característica por Descanso Curto ou Longo um número de vezes igual à metade de seu bônus de proficiência, arredondado para baixo.",
+      "page": 389,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-coral-rose.feature.sopro-de-tranquilidade.l6.1",
+      "name": "SOPRO DE TRANQUILIDADE",
+      "level": 6,
+      "description": "No início de seu turno, se estiver enfeitiçado, amedrontado, envenenado, atordoado ou paralisado, pode encerrar imediatamente um desses efeitos. Se fizer isso, não pode usar ação nesse turno, mas ainda pode usar ação bônus e movimento.",
+      "page": 389,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-coral-rose.feature.ramos-da-rosa-coral.l11.1",
+      "name": "RAMOS DA ROSA CORAL",
+      "level": 11,
+      "description": "Você recebe três Ramos Virtuosos. AVANÇO: recebe um dado de Avanço por 1 minuto; quando falhar em uma jogada de ataque ou salvaguarda, pode gastá-lo para rolar 1d10 e somar ao resultado. ENTUSIASMO: escolha uma criatura que a magia tenha escolhido como alvo ou que tenha feito salvaguarda contra ela; dentro de 1 minuto, na próxima vez em que você errar um ataque contra ela, acerta em vez disso. LIBERTAÇÃO: escolha uma criatura incluída na magia que esteja sob um efeito mágico conhecido por você; ela faz salvaguarda de Carisma contra sua CD de magia. Em uma falha, você copia integralmente os benefícios do efeito, incluindo CDs, ataques mágicos, alvos e controle compartilhado quando aplicável. O efeito termina em você quando terminar no alvo original, inclusive por dispensa ou dissipação. Você só pode manter um efeito copiado por vez.",
+      "page": 389,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-coral-rose.feature.ritmo-irrefreavel.l15.1",
+      "name": "RITMO IRREFREÁVEL",
+      "level": 15,
+      "description": "Seu deslocamento básico aumenta em 3 metros e criaturas têm desvantagem em ataques de oportunidade contra você. Além disso, como ação bônus, pode receber deslocamento de teleporte igual ao seu deslocamento básico até o fim do turno.",
+      "page": 389,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

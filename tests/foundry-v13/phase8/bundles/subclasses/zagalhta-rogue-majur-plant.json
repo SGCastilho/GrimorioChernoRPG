@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-rogue-majur-plant",
+    "identifier": "zagalhta-rogue-majur-plant",
+    "name": "Agente Infiltrado Majur",
+    "originalName": "Majur Plant",
+    "aliases": [
+      "Majur Plant"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "169",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 169
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Agente da Agência Majur treinado desde cedo para tomar decisões instantâneas com lógica fria, movimentar-se através do caos do campo de batalha e explorar conhecimento técnico para sobreviver.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 169
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-rogue-majur-plant.feature.especialista-em-aplicacao.l3.1",
+      "name": "ESPECIALISTA EM APLICAÇÃO",
+      "level": 3,
+      "description": "Ao fazer teste de perícia/atributo ou salvaguarda baseado em Sabedoria ou Carisma, pode usar Inteligência no lugar do atributo original. Se não tinha proficiência no teste, também adiciona sua proficiência. Usos por Descanso Longo iguais à quantidade de Dados de Ataque Furtivo que possui.",
+      "page": 169,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-rogue-majur-plant.feature.tecer-pelo-caos.l3.1",
+      "name": "TECER PELO CAOS",
+      "level": 3,
+      "description": "Pode mover-se pelo espaço de criaturas do mesmo tamanho ou maiores, inclusive hostis, sem movimento extra. Se terminar em espaço ocupado, é empurrado ao espaço desocupado mais próximo, cai no chão e seu deslocamento vira 0 até o início do próximo turno. Além disso, um número de Ataques de Oportunidade contra você igual à sua proficiência erra automaticamente a cada rodada; esse limite reinicia quando recupera a reação e não funciona se estiver incapaz de usar reações por outro motivo.",
+      "page": 169,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-rogue-majur-plant.feature.considerado-uma-ameaca.l9.1",
+      "name": "CONSIDERADO UMA AMEAÇA",
+      "level": 9,
+      "description": "Ao usar Esquiva Sobrenatural, reduza o dano pelo seu nível de Ladino ou à metade, escolhendo o resultado menor. Se isso reduzir o dano a 0, faça como parte da mesma reação um ataque de arma contra o atacante que desencadeou Esquiva Sobrenatural.",
+      "page": 169,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-rogue-majur-plant.feature.ataque-extra-ladino.l13.1",
+      "name": "ATAQUE EXTRA LADINO",
+      "level": 13,
+      "description": "Ao realizar a ação Atacar, faça dois ataques em vez de um. Se ambos acertarem a mesma criatura e nenhum tiver aplicado Ataque Furtivo, role metade de seus Dados de Ataque Furtivo e some o resultado ao dano do segundo ataque.",
+      "page": 169,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-rogue-majur-plant.feature.no-limite-da-vanguarda.l17.1",
+      "name": "NO LIMITE DA VANGUARDA",
+      "level": 17,
+      "description": "Todos os seus ataques de arma causam dano adicional igual ao modificador de Inteligência. Enquanto não estiver usando armadura média ou pesada nem escudo, também adicione Inteligência à CA.",
+      "page": 169,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

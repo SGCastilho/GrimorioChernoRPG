@@ -1,0 +1,198 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "conclave-besta",
+    "identifier": "conclave-besta",
+    "name": "Conclave da Besta",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 119
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Muitos patrulheiros sentem-se mais a vontade no ambiente selvagem que na civilização, ao ponto de animais consideram-nos como semelhantes. Patrulheiros do Conclave da Besta desenvolvem um vínculo poderoso com uma besta, posteriormente fortalecendo esse vínculo com o uso de magia.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 119
+  },
+  "features": [
+    {
+      "key": "subclass.conclave-besta.feature.companheiro-animal.l3.1",
+      "name": "COMPANHEIRO ANIMAL",
+      "level": 3,
+      "description": "No 3° nível, você aprende a usar sua magia para criar um poderoso vínculo com uma criatura do mundo natural.\n\nCom 8 horas de trabalho e o gasto de 50 po em ervas raras e comida boa, você invoca um animal do ambiente selvagem para servir como um companheiro leal. Você geralmente escolhe seu companheiro dentre os seguintes animais: um arminho gigante, um javali, um gorila, um lobo, uma mula, uma pantera, um texugo gigante ou urso negro. Porém, seu Mestre pode escolher um desses animais para você baseado nos terrenos ao redor e em que tipos de criaturas logicamente poderiam estar presentes na área.\n\nAo final das 8 horas, seu companheiro animal aparece e adquire todos os benefícios da sua habilidade Vínculo com o Companheiro. Você só pode ter um companheiro animal por vez.",
+      "page": 119,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-besta.feature.monitorando-a-proficiencia.l3.1",
+      "name": "MONITORANDO A PROFICIÊNCIA",
+      "level": 3,
+      "description": "Quando você adquire seu companheiro animal no 3° nível, o bônus de proficiência dele se equipara ao seu em +2. Conforme você ganha níveis e aumenta seu bônus de proficiência, lembre-se que o bônus de proficiência do seu companheiro também aumenta e é aplicado às seguintes áreas: Classe de Armadura, perícias, testes de resistência, bônus de ataque e jogadas de dano.\n\nSe o seu companheiro animal for morto, o vínculo mágico que vocês compartilham permite que você o traga de volta à vida. Com 8 horas de trabalho e o gasto de 25 po em ervas raras e comida boa, você pode invocar o espírito do seu companheiro e usar sua mágica para criar um novo corpo para ele. Você pode trazer um companheiro animal de volta à vida dessa forma mesmo que você não possua qualquer parte do corpo dele.\n\nSe você usar essa habilidade para trazer um companheiro animal antigo de volta à vida enquanto você já tiver outro companheiro animal, seu companheiro animal atual abandona você e é substituido pelo companheiro animal ressuscitado.",
+      "page": 119,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-besta.feature.vinculo-com-o-companheiro.l3.1",
+      "name": "VÍNCULO COM O COMPANHEIRO",
+      "level": 3,
+      "description": "Seu companheiro animal ganha uma variedade de benefícios enquanto estiver vinculado a você.\n\nO companheiro animal perde a ação Ataques Múltiplos, caso ele possua.\n\nO companheiro obedece seus comandos da melhor forma possível. Ele rola iniciativa como qualquer outra criatura, mas você determina suas ações, decisões, atitudes e afins. Se você estiver incapacitado ou ausente, seu companheiro age por conta própria.\n\nQuando estiver usando sua característica Explorador Natural, você e seu companheiro animal podem se mover furtivamente com ritmo normal.\n\nSeu companheiro animal tem habilidades e estatísticas de jogo em parte determinadas pelo seu nível. Seu companheiro usa seu bônus de proficiência ao invés do próprio. Além das áreas onde ele normalmente aplicaria o bônus de proficiência dele, um companheiro animal também adiciona o bônus de proficiência a CA e jogadas de dano dele.\n\nSeu companheiro animal ganha proficiência em duas perícias de sua escolha. Ele também se torna proficiente em todos os testes de resistência.\n\nPara cada nível que você adquirir após o 3°, seu companheiro animal ganha um dado de vida adicional e aumenta os pontos de vida dele apropriadamente.",
+      "page": 119,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-besta.feature.ataques-multiplos-por-que-nao.l3.1",
+      "name": "ATAQUES MÚLTIPLOS, POR QUE NÃO?",
+      "level": 3,
+      "description": "Ataques Múltiplos é um ferramenta conceitual útil para manter os monstros simples para o Mestre. Ela fornece um incremento ofensivo, mas esse incremento é pensado para tornar uma besta desafiadora para uma única batalha – uma noção que não se encaixa bem com uma besta que tem pretenções de lutar com o grupo, ao invés de contra ele. Projete os Ataques Múltiplos por uma aventura inteira e um companheiro animal corre o risco de superar os guerreiros e bárbaros do grupo.\n\nPor isso, em termos de história, seu companheiro animal trocou uma parte de sua ferocidade (na forma de Ataques Múltiplos) por consciência apurada e a habilidade de lutar com mais eficiência junto com você.",
+      "page": 119,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-besta.feature.expandindo-as-opcoes-de-companheiro.l6.1",
+      "name": "EXPANDINDO AS OPÇÕES DE COMPANHEIRO",
+      "level": 6,
+      "description": "A depender da natureza da sua campanha, o Mestre pode escolher expandir as opções para o seu companheiro animal. Como uma regra geral, uma besta pode servir como companheiro animal caso ela seja Média ou menor, tenha 15 ou menos pontos de vida e não possa causar mais de 8 pontos de dano num único ataque. Em geral, isso se aplica a criaturas com nível de desafio 1/4 ou menor, mas existem exceções.\n\nSempre que você ganhar a característica de classe Incremento no Valor de Habilidade, as habilidades do seu companheiro também aumentam. Seu companheiro pode aumentar um valor de habilidade de sua escolha em 2, ou ele pode aumentar dois valores de habilidade de sua escolha em 1. Como normalmente, seu companheiro não pode aumentar um valor de habilidade acima de 20 usando essa característica a não ser que sua descrição diga o contrário.\n\nSeu companheiro partilha de sua tendência e possui um traço de personalidade e um defeito das tabelas abaixo. Seu companheiro partilha do seu ideal e o vínculo dele sempre é “O patrulheiro que viaja comigo é um companheiro adorado por quem eu daria minha vida de bom grado.”\n\nSeu companheiro animal ganha os benefícios da sua característica Inimigo Favorito e Inimigo Favorito Maior, quando você ganha essa característica no 6° nível. Ele usa o inimigo favorito escolhido por você para essas características.\n\nd6 Traço 1 Sou resoluto em face do adversário. 2 Mexeu com meus amigos, mexeu comigo. 3 Permaneço alerta para que os outros descancem. 4 As pessoas veem um animal e me subestimam. Eu uso isso para ganhar vantagem. 5 Eu tenho o costume de aparecer no momento certo. 6 Eu coloco as necessidades dos meus amigos na frente das minhas em tudo.\n\nd6 Defeito 1 Se deixarem comida por ai, eu vou comer. 2 Eu rosno para estranhos e todos, exceto meu patrulheiro, são estranhos pra mim. 3 Toda hora é hora para um carinho na barriga. 4 Eu tenho um medo mortal de água. 5 Minha ideia de olá é um monte de lambidas na cara. 6 Eu salto sobre criaturas para dizer-lhes o quanto as amo.",
+      "page": 120,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-besta.feature.ataque-coordenado.l5.1",
+      "name": "ATAQUE COORDENADO",
+      "level": 5,
+      "description": "A partir do 5° nível, você e seu companheiro animal formam um time de luta mais poderoso. Quando você usar a ação de Ataque no seu turno, se o seu companheiro puder ver você, ele pode usar a reação dele para realizar um ataque corpo-a-corpo.",
+      "page": 120,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-besta.feature.defesa-da-besta.l7.1",
+      "name": "DEFESA DA BESTA",
+      "level": 7,
+      "description": "No 7° nível, enquanto seu companheiro puder ver você, ele tem vantagem em todos os testes de resistência.",
+      "page": 120,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-besta.feature.tempestade-de-garras-e-presas.l11.1",
+      "name": "TEMPESTADE DE GARRAS E PRESAS",
+      "level": 11,
+      "description": "A partir do 11° nível, seu companheiro pode usar a ação dele para realizar um ataques corpo-a-corpo contra cada criatura, a escolha dele, a até 1,5 metro dele, com uma jogada de ataque separada para cada alvo.",
+      "page": 120,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.conclave-besta.feature.defesa-da-besta-superior.l15.1",
+      "name": "DEFESA DA BESTA SUPERIOR",
+      "level": 15,
+      "description": "A partir do 15° nível, sempre que um atacante que seu companheiro puder ver atingi-lo com um ataque, ele pode usar a reação dele para reduzir o dano desse ataque à metade.",
+      "page": 120,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1917 @@
+{
+  "schema": "grimorio-foundry-class-package",
+  "schemaVersion": 1,
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-package-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "minimumImporterVersion": "0.5.0"
+  },
+  "identity": {
+    "id": "classe-blood-minister",
+    "name": "Ministro de Sangue — classe completa",
+    "scope": "class-with-subclasses",
+    "parentClass": {
+      "grimorioId": "blood-minister-somnus",
+      "identifier": "blood-minister",
+      "name": "Ministro de Sangue"
+    }
+  },
+  "summary": {
+    "bundles": 9,
+    "classes": 1,
+    "subclasses": 8,
+    "features": 56,
+    "specialClasses": 1,
+    "specialSubclasses": 8
+  },
+  "ordering": "classes-first",
+  "bundleIdentifiers": [
+    "class:blood-minister",
+    "subclass:bbb-blood-minister-somnus-bloodpact-medic",
+    "subclass:bbb-blood-minister-somnus-cursetinged-maverick",
+    "subclass:bbb-blood-minister-somnus-fateblooded",
+    "subclass:bbb-blood-minister-somnus-grim-hunter",
+    "subclass:bbb-blood-minister-somnus-hemomancer",
+    "subclass:bbb-blood-minister-somnus-inoculator",
+    "subclass:bbb-blood-minister-somnus-mutagenic",
+    "subclass:bbb-blood-minister-somnus-sanguine-knight"
+  ],
+  "bundles": [
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "class",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "blood-minister-somnus",
+        "identifier": "blood-minister",
+        "name": "Ministro de Sangue",
+        "originalName": "Blood Minister",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "68–78",
+        "chapter": "Capítulo IX: O Ministro de Sangue",
+        "page": 69
+      },
+      "nativeMapping": {
+        "status": "review",
+        "warnings": [
+          "O Ministro de Sangue usa 2d4 Dados de Vida por nível; o Grimório Importer trata a rolagem de ganho de PV como 2d4, mas o pool nativo de Dados de Vida de descanso continua exigindo acompanhamento especial.",
+          "Dado de Vida não padrão para o Item de classe vanilla: 2d4."
+        ]
+      },
+      "class": {
+        "itemType": "class",
+        "description": "Um caçador de monstros que transforma o próprio sangue — saturado de energia sobrenatural — em combustível para aprimorar o corpo e enfrentar as criaturas da noite sem depender de magia divina.",
+        "hitDice": {
+          "raw": "2d4",
+          "mode": "multiple",
+          "number": 2,
+          "faces": 4
+        },
+        "primaryAbility": {
+          "raw": "Constituição",
+          "abilityKeys": [
+            "con"
+          ]
+        },
+        "proficiencies": {
+          "saves": {
+            "raw": "Força, Constituição",
+            "abilityKeys": [
+              "str",
+              "con"
+            ]
+          },
+          "armor": "Armaduras leves e médias",
+          "weapons": "Armas simples, armas marciais e armas de fogo simples",
+          "tools": "Nenhuma",
+          "skills": "Escolha três: Arcanismo, Intuição, Intimidação, Investigação, Medicina, Furtividade ou Sobrevivência"
+        },
+        "basics": {
+          "title": "CARACTERÍSTICAS DE CLASSE",
+          "page": 69,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "text": "PONTOS DE VIDA\n\nDado de Vida: 2d4 por nível de Ministro de Sangue.\n\nPontos de Vida no 1º nível: 8 + seu modificador de Constituição.\n\nPontos de Vida em níveis superiores: 2d4 (ou 5) + seu modificador de Constituição por nível de Ministro de Sangue após o 1º.\n\nPROFICIÊNCIAS\n\nArmaduras: Armaduras leves e médias.\n\nArmas: Armas simples, armas marciais e armas de fogo simples.\n\nFerramentas: Nenhuma.\n\nSalvaguardas: Força e Constituição.\n\nPerícias: Escolha três entre Arcanismo, Intuição, Intimidação, Investigação, Medicina, Furtividade e Sobrevivência.\n\nEQUIPAMENTO\n\nVocê começa, além do equipamento de antecedente, com: (a) couro acolchoado e duas armas simples, ou (b) cota de escamas; (a) um revólver leve, 24 munições leves e uma espada curta, ou (b) duas armas marciais corpo a corpo; (a) quatro redes, ou (b) uma funda com 30 munições; e (a) pacote de assaltante, ou (b) pacote de explorador. Alternativamente, começa com 4d6 × 10 (150) po. Armas de fogo adquiridas durante a criação custam 40 po a menos cada.\n\nMULTICLASSE\n\nPara entrar nesta classe por multiclasse, o personagem precisa de Constituição 14 e Força ou Destreza 12. Ao fazê-lo, recebe proficiência em uma entre Investigação, Medicina ou Furtividade."
+        },
+        "overview": [
+          {
+            "title": "O MINISTRO DE SANGUE",
+            "page": 68,
+            "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+            "text": "Enquanto clérigos recebem deveres sagrados para proteger os reinos mortais de ínferos e mortos-vivos, Ministros de Sangue assumem por conta própria a tarefa de enfrentar os monstros da noite. O sangue das criaturas — e até os corpos dos mortos-vivos — absorve uma quantidade ambiente de radiação mágica. Um Ministro de Sangue aprende a liberar essa energia em explosões sobrenaturais e a transformar o próprio sangue em uma arma para ampliar suas capacidades físicas."
+          },
+          {
+            "title": "PRÁTICAS DESACREDITADAS",
+            "page": 68,
+            "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+            "text": "Extrair poder do sangue pode ter raízes sobrenaturais ou alquímicas, mas para observadores quase sempre parece magia de sangue. Mesmo quando o Ministro de Sangue age com boas intenções, seu ofício tende a ser visto como vergonhoso ou assustador; a classe precisa conviver com essa percepção e com o fato de que não poderá explicar a cada testemunha os princípios arcanos ou científicos por trás de suas práticas."
+          },
+          {
+            "title": "ORDENS SOMBRIAS",
+            "page": 68,
+            "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+            "text": "A ministração sanguínea é praticada com frequência por cultos, seitas sombrias e estudiosos de curiosidade mórbida sobre corpos vivos. Ministros de Sangue podem integrar — ou até liderar — organizações pouco respeitáveis. Ordens inteiras costumam ter apenas alguns praticantes capazes de realizar verdadeira ministração sanguínea, cercados por seguidores ou aprendizes, e podem se disfarçar como grupos de caçadores de monstros, médicos, sacerdotes ou outras figuras de aparência confiável."
+          }
+        ],
+        "creation": [
+          {
+            "title": "CRIANDO UM MINISTRO DE SANGUE",
+            "page": 68,
+            "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+            "text": "O conceito mais básico de um Ministro de Sangue é o de um caçador de monstros: alguém que deu um passo para dentro do mundo das monstruosidades para poder enfrentá-las em condições semelhantes. Ao criar o personagem, considere esse tema central — ou outro que explique como e por que ele depende do próprio sangue para praticar seu ofício sombrio. Ministros de Sangue costumam combater a curta ou média distância, usando armas pesadas ou armas de fogo. Pergunte o que vale a pena a ponto de transformar a própria força vital em recurso, se existe uma criatura ou inimigo específico contra quem busca vingança, onde aprendeu esse ofício e qual é sua relação atual com essa fonte de conhecimento."
+          },
+          {
+            "title": "CONSTRUÇÃO RÁPIDA",
+            "page": 68,
+            "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+            "text": "Para criar rapidamente um Ministro de Sangue, coloque Constituição como seu atributo mais alto, seguida por Força ou Destreza conforme as armas e armaduras que pretende usar. A fonte sugere pensar no equipamento de forma semelhante a um Guerreiro ou Patrulheiro. Depois escolha o antecedente Acólito, reinterpretando-o como ligação com um culto sombrio ou organização de que fez parte, em vez de um templo ou religião respeitável."
+          }
+        ],
+        "tables": [],
+        "references": [
+          {
+            "key": "reference.1.seitas-geneticas",
+            "title": "SEITAS GENÉTICAS",
+            "page": 71,
+            "text": "Uma Seita Genética representa a natureza do poder do Ministro de Sangue e como ele se manifesta quando invocado através de seu sangue. Ela pode representar uma mutação, um estilo de ministração sanguínea, hábitos de ofício ou outra expressão de como o personagem usa corpo e sangue para lutar. A fonte apresenta oito Seitas Genéticas.",
+            "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit"
+          }
+        ],
+        "presentation": {
+          "sigilKey": "blood-minister",
+          "color": "#9d465b"
+        }
+      },
+      "features": [
+        {
+          "key": "class.blood-minister-somnus.feature.hemogenerativo.l1.1",
+          "name": "HEMOGENERATIVO",
+          "level": 1,
+          "description": "O uso constante do próprio sangue para aprimorar seu desempenho físico lhe concede regeneração natural. Quando completa um Descanso Curto e não gasta nenhum Dado de Vida, recupera pontos de vida iguais a três vezes seu nível de Ministro de Sangue.",
+          "page": 69,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.ministracao-sanguinea.l1.1",
+          "name": "MINISTRAÇÃO SANGUÍNEA",
+          "level": 1,
+          "description": "Uma vez por turno, quando fizer uma jogada de ataque, teste de atributo ou salvaguarda, pode gastar um de seus Dados de Vida, rolá-lo sem adicionar Constituição e somar o resultado à rolagem. Até o fim daquele turno, esse mesmo bônus se aplica ao tipo de rolagem que ativou a característica. Se Ministração Sanguínea for usada numa jogada de ataque, o mesmo bônus também é adicionado à jogada de dano resultante.",
+          "page": 69,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.estilo-de-luta.l2.1",
+          "name": "ESTILO DE LUTA",
+          "level": 2,
+          "description": "Escolha um Estilo de Luta entre Combate às Cegas, Duelo, Especialista em Armas de Fogo, Proficiência, Matador, Técnica Superior ou Combate com Duas Armas.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 2,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.despertar-do-sangue.l3.1",
+          "name": "DESPERTAR DO SANGUE",
+          "level": 3,
+          "description": "O verdadeiro poder de seu sangue desperta por treinamento especializado, orientação ou aptidão física. Escolha uma Seita Genética que represente seus poderes e seu estilo de combate. Você recebe características dessa Seita nos níveis 3, 7, 11 e 15 de Ministro de Sangue.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.aumento-no-valor-de-atributo.l4.1",
+          "name": "AUMENTO NO VALOR DE ATRIBUTO",
+          "level": 4,
+          "description": "Nos níveis 4, 8, 12, 16 e 19, você pode aumentar um atributo em 2 ou dois atributos em 1. Nenhum deles pode ultrapassar 20 por esta característica, salvo se outra regra disser o contrário.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 4,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.ataque-extra.l5.1",
+          "name": "ATAQUE EXTRA",
+          "level": 5,
+          "description": "Quando realiza a ação Atacar, pode atacar duas vezes em vez de uma. No 14º nível de Ministro de Sangue, pode atacar três vezes em vez de uma.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 5,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.ressonancia-vil.l6.1",
+          "name": "RESSONÂNCIA VIL",
+          "level": 6,
+          "description": "Quando usar Ministração Sanguínea para adicionar um bônus a ataques contra uma criatura e acertá-la, pode produzir sobre ela os efeitos de marca do caçador. Dessa forma, não exige concentração, não conta como efeito mágico e não permite trocar o alvo. Pode usar esta característica um número de vezes por Descanso Curto igual ao seu bônus de proficiência.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.caracteristica-de-seita-genetica-7-nivel.l7.1",
+          "name": "CARACTERÍSTICA DE SEITA GENÉTICA (7º NÍVEL)",
+          "level": 7,
+          "description": "Você recebe a característica de 7º nível de sua Seita Genética, conforme determinado por Despertar do Sangue.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.linha-de-visao-sombria.l9.1",
+          "name": "LINHA DE VISÃO SOMBRIA",
+          "level": 9,
+          "description": "Você recebe visão no escuro a 18 m, ou aumenta sua visão no escuro existente em 18 m, usando o maior resultado. Se possuir visão diabólica, ela aumenta para o mesmo alcance.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 9,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.ministracao-eficiente.l10.1",
+          "name": "MINISTRAÇÃO EFICIENTE",
+          "level": 10,
+          "description": "Ao gastar sangue para produzir Ministração Sanguínea, escolha um dos efeitos abaixo até o fim daquele turno: seu deslocamento aumenta em 4,5 m; você tem vantagem na rolagem que ativou a característica; ou recebe PV temporários iguais a duas vezes o resultado do Dado de Vida rolado.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.hemo-quantidade.l10.1",
+          "name": "HEMO-QUANTIDADE",
+          "level": 10,
+          "description": "Ao usar Ministração Sanguínea, depois de ver o resultado do primeiro Dado de Vida e antes de o sucesso ou falha ser declarado, pode gastar um segundo Dado de Vida, rolá-lo e aumentar o bônus pelo novo resultado.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.caracteristica-de-seita-genetica-11-nivel.l11.1",
+          "name": "CARACTERÍSTICA DE SEITA GENÉTICA (11º NÍVEL)",
+          "level": 11,
+          "description": "Você recebe a característica de 11º nível de sua Seita Genética, conforme determinado por Despertar do Sangue.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.reposicao-sanguinea.l13.1",
+          "name": "REPOSIÇÃO SANGUÍNEA",
+          "level": 13,
+          "description": "Quando completa um Descanso Curto sem gastar Dados de Vida, recupera metade de seus Dados de Vida de Ministro de Sangue, arredondado para cima.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.aprimoramento-de-ataque-extra.l14.1",
+          "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+          "level": 14,
+          "description": "Seu Ataque Extra melhora: quando realiza a ação Atacar, pode atacar três vezes em vez de uma.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.caracteristica-de-seita-genetica-15-nivel.l15.1",
+          "name": "CARACTERÍSTICA DE SEITA GENÉTICA (15º NÍVEL)",
+          "level": 15,
+          "description": "Você recebe a característica de 15º nível de sua Seita Genética, conforme determinado por Despertar do Sangue.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.morto-que-caminha.l17.1",
+          "name": "MORTO QUE CAMINHA",
+          "level": 17,
+          "description": "Enquanto estiver a 0 PV, quando faria uma salvaguarda contra a morte ou falharia automaticamente em uma devido a dano, pode gastar um Dado de Vida para negar a falha, se houver; isso não a transforma em sucesso. Até a próxima vez que faria uma salvaguarda contra a morte dessa maneira, você não fica inconsciente nem sofre as penalidades de estar morrendo e pode agir normalmente a 0 PV.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.blood-minister-somnus.feature.hemo-qualidade.l20.1",
+          "name": "HEMO-QUALIDADE",
+          "level": 20,
+          "description": "A cada turno, no lugar do primeiro Dado de Vida que gastaria por Ministração Sanguínea, pode rolar 1d6 como se tivesse gasto um Dado de Vida desse tamanho sem realmente consumi-lo. Dados de Vida adicionais gastos por Ministração Sanguínea no mesmo turno são consumidos normalmente.",
+          "page": 70,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 20,
+            "automation": "phase-5"
+          }
+        }
+      ],
+      "progression": {
+        "title": "O Ministro de Sangue",
+        "sourceTitle": "",
+        "sourcePage": null,
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "proficiency",
+            "label": "Proficiência"
+          },
+          {
+            "key": "features",
+            "label": "Características"
+          }
+        ],
+        "levels": [
+          {
+            "level": 1,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Hemogenerativo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.hemogenerativo.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Ministração Sanguínea",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.ministracao-sanguinea.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Estilo de Luta",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.estilo-de-luta.l2.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Despertar do Sangue",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.despertar-do-sangue.l3.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 4,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Aumento no Valor de Atributo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.aumento-no-valor-de-atributo.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 5,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Ataque Extra",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.ataque-extra.l5.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 6,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Ressonância Vil",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.ressonancia-vil.l6.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 7,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Característica de Seita Genética (7º Nível)",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.caracteristica-de-seita-genetica-7-nivel.l7.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Aumento no Valor de Atributo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.aumento-no-valor-de-atributo.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 9,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Linha de Visão Sombria",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.linha-de-visao-sombria.l9.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 10,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Ministração Eficiente",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.ministracao-eficiente.l10.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Hemo-Quantidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.hemo-quantidade.l10.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 11,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Característica de Seita Genética (11º Nível)",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.caracteristica-de-seita-genetica-11-nivel.l11.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 12,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Aumento no Valor de Atributo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.aumento-no-valor-de-atributo.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 13,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Reposição Sanguínea",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.reposicao-sanguinea.l13.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 14,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Aprimoramento de Ataque Extra",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.aprimoramento-de-ataque-extra.l14.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 15,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Característica de Seita Genética (15º Nível)",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.caracteristica-de-seita-genetica-15-nivel.l15.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 16,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Aumento no Valor de Atributo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.aumento-no-valor-de-atributo.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 17,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Morto que Caminha",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.morto-que-caminha.l17.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 18,
+            "proficiency": "+6",
+            "features": []
+          },
+          {
+            "level": 19,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Aumento no Valor de Atributo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.aumento-no-valor-de-atributo.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          },
+          {
+            "level": 20,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Hemo-Qualidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.blood-minister-somnus.feature.hemo-qualidade.l20.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ]
+          }
+        ]
+      },
+      "subclassSelection": {
+        "selectionLevel": 3,
+        "homogeneous": true,
+        "observedLevels": {
+          "3": 8
+        },
+        "options": [
+          {
+            "grimorioId": "bbb-blood-minister-somnus-bloodpact-medic",
+            "identifier": "bbb-blood-minister-somnus-bloodpact-medic",
+            "name": "Médico do Pacto de Sangue",
+            "originalName": "Bloodpact Medic",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "71",
+              "chapter": "Capítulo IX: O Ministro de Sangue",
+              "page": 71
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "bbb-blood-minister-somnus-cursetinged-maverick",
+            "identifier": "bbb-blood-minister-somnus-cursetinged-maverick",
+            "name": "Dissidente Maculado pela Maldição",
+            "originalName": "Cursetinged Maverick",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "71–72",
+              "chapter": "Capítulo IX: O Ministro de Sangue",
+              "page": 71
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "bbb-blood-minister-somnus-fateblooded",
+            "identifier": "bbb-blood-minister-somnus-fateblooded",
+            "name": "Sangue do Destino",
+            "originalName": "Fateblooded",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "72",
+              "chapter": "Capítulo IX: O Ministro de Sangue",
+              "page": 72
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "bbb-blood-minister-somnus-grim-hunter",
+            "identifier": "bbb-blood-minister-somnus-grim-hunter",
+            "name": "Caçador Sombrio",
+            "originalName": "Grim Hunter",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "73",
+              "chapter": "Capítulo IX: O Ministro de Sangue",
+              "page": 73
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "bbb-blood-minister-somnus-hemomancer",
+            "identifier": "bbb-blood-minister-somnus-hemomancer",
+            "name": "Hemomante",
+            "originalName": "Hemomancer",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "73–74",
+              "chapter": "Capítulo IX: O Ministro de Sangue",
+              "page": 73
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "bbb-blood-minister-somnus-inoculator",
+            "identifier": "bbb-blood-minister-somnus-inoculator",
+            "name": "Inoculador",
+            "originalName": "Inoculator",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "74–75",
+              "chapter": "Capítulo IX: O Ministro de Sangue",
+              "page": 74
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "bbb-blood-minister-somnus-mutagenic",
+            "identifier": "bbb-blood-minister-somnus-mutagenic",
+            "name": "Mutagênico",
+            "originalName": "Mutagenic",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "76–77",
+              "chapter": "Capítulo IX: O Ministro de Sangue",
+              "page": 76
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "bbb-blood-minister-somnus-sanguine-knight",
+            "identifier": "bbb-blood-minister-somnus-sanguine-knight",
+            "name": "Cavaleiro Sanguíneo",
+            "originalName": "Sanguine Knight",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "77",
+              "chapter": "Capítulo IX: O Ministro de Sangue",
+              "page": 77
+            },
+            "firstFeatureLevel": 3
+          }
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-blood-minister-somnus-bloodpact-medic",
+        "identifier": "bbb-blood-minister-somnus-bloodpact-medic",
+        "name": "Médico do Pacto de Sangue",
+        "originalName": "Bloodpact Medic",
+        "aliases": [
+          "Bloodpact Medic"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "71",
+        "chapter": "Capítulo IX: O Ministro de Sangue",
+        "page": 71
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "blood-minister-somnus",
+        "identifier": "blood-minister",
+        "name": "Ministro de Sangue"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "blood-minister",
+        "selectionLevel": 3,
+        "description": "O Médico do Pacto de Sangue possui sangue maleável e carregado de energia curativa, capaz de ser transferido para outros por contato. Seu sangue é aceito por outros organismos e pode restaurar volume e fluxo sanguíneo; se desejar, porém, ele também pode corrompê-lo e transformá-lo em arma.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 71
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-blood-minister-somnus-bloodpact-medic.feature.sangue-puro.l3.1",
+          "name": "Sangue Puro",
+          "level": 3,
+          "description": "Você é imune a dano de veneno e à condição envenenado.",
+          "page": 71,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-bloodpact-medic.feature.infusao-singular.l3.1",
+          "name": "Infusão Singular",
+          "level": 3,
+          "description": "Como ação bônus, toque outra criatura e gaste uma quantidade de Dados de Vida igual ou inferior ao seu bônus de proficiência, rolando todos eles. O alvo recupera pontos de vida iguais ao dobro da soma dos resultados.",
+          "page": 71,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-bloodpact-medic.feature.rajada-de-sangue-vil.l7.1",
+          "name": "Rajada de Sangue Vil",
+          "level": 7,
+          "description": "Como ação, você pode gastar uma quantidade de Dados de Vida igual ou inferior à metade de seu nível de Ministro de Sangue e lançar sangue em um cone de 4,5 m. Cada criatura na área realiza uma salvaguarda de Constituição contra sua CD de Seita Genética, usando Força ou Constituição para a CD conforme indicado pela fonte. Em falha, sofre dano de veneno e dano de ácido, cada um igual a 1d4 × a quantidade de Dados de Vida gastos; em sucesso, sofre metade. Criaturas que receberam pontos de vida de sua Infusão Singular desde o último Descanso são imunes a esse dano.",
+          "page": 71,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-bloodpact-medic.feature.infusao-potencializada.l11.1",
+          "name": "Infusão Potencializada",
+          "level": 11,
+          "description": "Sua Infusão Singular melhora. Todo Dado de Vida gasto nela se torna um d8 caso fosse menor. Além disso, uma criatura curada por ela recebe suas resistências e imunidades a dano e condições por 1 minuto, exceto as obtidas de itens, magias ou efeitos temporários; e qualquer cura que exceda o máximo de PV do alvo torna-se pontos de vida temporários.",
+          "page": 71,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-bloodpact-medic.feature.tratamento-simpatico.l15.1",
+          "name": "Tratamento Simpático",
+          "level": 15,
+          "description": "Sua Infusão Singular recebe quatro aprimoramentos: pode atingir criaturas a até 9 m; cada Dado de Vida gasto é rolado duas vezes e ambos os resultados são somados; após curar outra criatura, a próxima jogada de ataque, teste de habilidade ou salvaguarda que ela fizer no próximo minuto pode somar o maior tipo de Dado de Vida usado na cura, como pela Ministração Sanguínea; e, ao usar a característica em uma criatura que possa tocar, você recebe PV temporários iguais à metade dos PV concedidos, salvo se tiver escolhido a si mesmo como alvo.",
+          "page": 71,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-blood-minister-somnus-cursetinged-maverick",
+        "identifier": "bbb-blood-minister-somnus-cursetinged-maverick",
+        "name": "Dissidente Maculado pela Maldição",
+        "originalName": "Cursetinged Maverick",
+        "aliases": [
+          "Cursetinged Maverick"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "71–72",
+        "chapter": "Capítulo IX: O Ministro de Sangue",
+        "page": 71
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "blood-minister-somnus",
+        "identifier": "blood-minister",
+        "name": "Ministro de Sangue"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "blood-minister",
+        "selectionLevel": 3,
+        "description": "O Dissidente Maculado pela Maldição despertou um segredo sombrio no próprio sangue. O poder começa como uma capacidade de amaldiçoar inimigos e evolui para domínio das sombras, da escuridão e para explosões de força sempre que seu sangue é usado contra outros.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 71
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-blood-minister-somnus-cursetinged-maverick.feature.cacada-amaldicoada.l3.1",
+          "name": "Caçada Amaldiçoada",
+          "level": 3,
+          "description": "Uma vez por Descanso, como ação bônus, você produz os efeitos da magia Maldição sem gastar espaço de magia, sem componentes e sem concentração. O efeito é produzido em um nível igual ao seu bônus de proficiência.",
+          "page": 72,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-cursetinged-maverick.feature.ataque-de-cano-negro.l7.1",
+          "name": "Ataque de Cano Negro",
+          "level": 7,
+          "description": "Quando realiza a ação Atacar, você pode usar sua ação bônus para atacar com uma arma de fogo na mão secundária. Esse disparo pode atingir criaturas em alcance corpo a corpo ou até o alcance longo da arma sem penalidade ou desvantagem por distância ou proximidade. Se a arma precisar ser recarregada, você pode recarregá-la como parte desse ataque.",
+          "page": 72,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-cursetinged-maverick.feature.surto-de-adrenalina.l11.1",
+          "name": "Surto de Adrenalina",
+          "level": 11,
+          "description": "Quando usa Ministração Sanguínea e rola um de seus Dados de Vida, o resultado também é adicionado à sua Classe de Armadura até o início de seu próximo turno. Se rolar vários Dados de Vida dessa forma, use apenas o maior bônus obtido para a CA.",
+          "page": 72,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-cursetinged-maverick.feature.envolto-em-sombras.l15.1",
+          "name": "Envolto em Sombras",
+          "level": 15,
+          "description": "Enquanto estiver sob luz fraca ou escuridão, você é considerado sob os efeitos da magia Nublar.",
+          "page": 72,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-blood-minister-somnus-fateblooded",
+        "identifier": "bbb-blood-minister-somnus-fateblooded",
+        "name": "Sangue do Destino",
+        "originalName": "Fateblooded",
+        "aliases": [
+          "Fateblooded"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "72",
+        "chapter": "Capítulo IX: O Ministro de Sangue",
+        "page": 72
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "blood-minister-somnus",
+        "identifier": "blood-minister",
+        "name": "Ministro de Sangue"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "blood-minister",
+        "selectionLevel": 3,
+        "description": "O Sangue do Destino carrega uma centelha imprevisível que não pode ser comandada deliberadamente. Ao se entregar ao acaso e agir sem saber exatamente o que virá, seu poder emerge tão naturalmente quanto o próprio batimento cardíaco.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 72
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-blood-minister-somnus-fateblooded.feature.critico-aprimorado.l3.1",
+          "name": "Crítico Aprimorado",
+          "level": 3,
+          "description": "Você obtém um acerto crítico com um resultado 19 ou 20 no d20.",
+          "page": 72,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-fateblooded.feature.ministracao-economica.l3.1",
+          "name": "Ministração Econômica",
+          "level": 3,
+          "description": "Quando gasta um Dado de Vida para Ministração Sanguínea e o resultado é menor que metade do valor máximo possível desse dado — 1 ou 2 num d4; 1, 2 ou 3 num d6, e assim por diante — o Dado de Vida não é consumido, embora você ainda receba normalmente o benefício da Ministração Sanguínea.",
+          "page": 72,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-fateblooded.feature.aposta-de-sangue.l7.1",
+          "name": "Aposta de Sangue",
+          "level": 7,
+          "description": "Quando causa dano com um ataque de arma e pelo menos um dos dados de dano iniciais apresenta seu valor máximo, você pode rolar dados adicionais daquele mesmo tipo em quantidade igual ao seu bônus de proficiência e somá-los ao dano. Essa regra se aplica apenas aos dados iniciais do ataque; os dados adicionais não são duplicados por acertos críticos.",
+          "page": 72,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-fateblooded.feature.acao-arterial.l11.1",
+          "name": "Ação Arterial",
+          "level": 11,
+          "description": "Uma vez por turno, você pode gastar 1 Dado de Vida para realizar uma segunda ação bônus, ou 2 Dados de Vida para realizar uma segunda ação. Você não pode obter ambos no mesmo turno.",
+          "page": 72,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-fateblooded.feature.evasao-instintiva.l15.1",
+          "name": "Evasão Instintiva",
+          "level": 15,
+          "description": "Quando realiza uma salvaguarda para sofrer metade do dano de um efeito, você não sofre dano em um sucesso e sofre metade em uma falha.",
+          "page": 72,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-blood-minister-somnus-grim-hunter",
+        "identifier": "bbb-blood-minister-somnus-grim-hunter",
+        "name": "Caçador Sombrio",
+        "originalName": "Grim Hunter",
+        "aliases": [
+          "Grim Hunter"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "73",
+        "chapter": "Capítulo IX: O Ministro de Sangue",
+        "page": 73
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "blood-minister-somnus",
+        "identifier": "blood-minister",
+        "name": "Ministro de Sangue"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "blood-minister",
+        "selectionLevel": 3,
+        "description": "Um caçador eficiente e disciplinado que transforma o próprio corpo em campo de experimentação. O Caçador Sombrio leva a aplicação física do sangue ao limite, concentrando-se em manipular o que permanece dentro do corpo sem desperdiçá-lo externamente.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 73
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-blood-minister-somnus-grim-hunter.feature.escudo-arterial.l3.1",
+          "name": "Escudo Arterial",
+          "level": 3,
+          "description": "Manipulando o sangue em suas veias, você reforça o corpo no instante do impacto. Uma quantidade de vezes por Descanso igual ao seu bônus de proficiência, pode conjurar o truque Defletir como ação bônus ou como reação ao ser atingido por um ataque. Depois de gastar todos os usos gratuitos, pode continuar usando a característica gastando 1 Dado de Vida por uso; role esse dado e recupere PV iguais ao resultado. Você também pode optar por gastar o dado mesmo quando ainda possui usos gratuitos.",
+          "page": 73,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-grim-hunter.feature.critico-circulante.l3.1",
+          "name": "Crítico Circulante",
+          "level": 3,
+          "description": "Você obtém acerto crítico com 19 ou 20 no d20. Além disso, em combate, quando obtém um acerto crítico numa jogada de ataque ou tira 20 natural em uma jogada de ataque ou teste de habilidade, recupera 1 Dado de Vida de Ministro de Sangue.",
+          "page": 73,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-grim-hunter.feature.sobrevivencia-sombria.l7.1",
+          "name": "Sobrevivência Sombria",
+          "level": 7,
+          "description": "Você adiciona metade de seu bônus de proficiência às suas salvaguardas, mesmo quando já adicionaria seu bônus de proficiência completo.",
+          "page": 73,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-grim-hunter.feature.aprimoramento-do-estilo-de-luta.l11.1",
+          "name": "Aprimoramento do Estilo de Luta",
+          "level": 11,
+          "description": "O Estilo de Luta escolhido no 2º nível é aprimorado. Se ele não possuir uma forma aprimorada, escolha outro Estilo de Luta disponível ao Ministro de Sangue e obtenha-o.",
+          "page": 73,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-grim-hunter.feature.critico-circulante-perfeito.l15.1",
+          "name": "Crítico Circulante Perfeito",
+          "level": 15,
+          "description": "Você obtém um acerto crítico com um resultado 18, 19 ou 20 no d20.",
+          "page": 73,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-blood-minister-somnus-hemomancer",
+        "identifier": "bbb-blood-minister-somnus-hemomancer",
+        "name": "Hemomante",
+        "originalName": "Hemomancer",
+        "aliases": [
+          "Hemomancer"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "73–74",
+        "chapter": "Capítulo IX: O Ministro de Sangue",
+        "page": 73
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "blood-minister-somnus",
+        "identifier": "blood-minister",
+        "name": "Ministro de Sangue"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "blood-minister",
+        "selectionLevel": 3,
+        "description": "O Hemomante exerce controle sobrenatural sobre o próprio sangue, podendo manipulá-lo, transformá-lo e até alcançar o sangue no corpo de outras criaturas para influenciá-las.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 73
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-blood-minister-somnus-hemomancer.feature.sincronia-interna.l3.1",
+          "name": "Sincronia Interna",
+          "level": 3,
+          "description": "Você pode usar Constituição no lugar de Força ou Destreza para jogadas de ataque com armas e testes de habilidade. Também pode usar Constituição no lugar de Destreza para determinar sua Classe de Armadura, obedecendo às mesmas limitações que normalmente se aplicariam à Destreza, como o limite imposto por certas armaduras.",
+          "page": 73,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-hemomancer.feature.reabsorcao.l3.1",
+          "name": "Reabsorção",
+          "level": 3,
+          "description": "Quando sofre dano perfurante, cortante ou contundente, pode usar sua reação para reabsorver o sangue perdido e recuperar PV iguais à metade do dano sofrido; isso não pode ser feito se o dano reduzir você a 0 PV. Ao usar a reação, pode reduzir a cura em qualquer múltiplo de 4 para recuperar 1 Dado de Vida de Ministro de Sangue a cada 4 PV removidos da cura. Usos por Descanso Longo: metade de seu nível de Ministro de Sangue.",
+          "page": 73,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-hemomancer.feature.ignicao-de-cinza-sanguinea.l7.1",
+          "name": "Ignição de Cinza Sanguínea",
+          "level": 7,
+          "description": "Como ação bônus, espalhe seu sangue sobre uma arma e gaste de 1 até uma quantidade de Dados de Vida igual ao seu bônus de proficiência para produzir os efeitos de Arma Infundida num nível igual ao número de dados gastos. Você só pode escolher fogo ou necrótico; não precisa se concentrar; o efeito funciona apenas quando você empunha a arma; ela é tratada como mágica; e o efeito dura 1 minuto. Uma vez por Descanso, pode usar a característica gratuitamente como se tivesse gasto 3 Dados de Vida e ainda pode acrescentar dados adicionais até seu limite normal para elevar o nível.",
+          "page": 73,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-hemomancer.feature.construir-sangue-dobrar-sangue.l11.1",
+          "name": "Construir Sangue/Dobrar Sangue",
+          "level": 11,
+          "description": "Como ação bônus, gaste 2 Dados de Vida para produzir os efeitos de Aprimorar Habilidade ou Comando. O efeito é produzido em um nível igual ao seu bônus de proficiência e usa Constituição como atributo de conjuração. Você só pode escolher como alvo criaturas que possuam sangue ou equivalente em seu corpo.",
+          "page": 73,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-hemomancer.feature.fluxo-sanguineo-cristalino.l15.1",
+          "name": "Fluxo Sanguíneo Cristalino",
+          "level": 15,
+          "description": "Ao restringir e fortificar seu sangue, ele assume uma qualidade cristalina diante de traumas. Toda instância de dano que você sofre é reduzida em uma quantidade igual à metade de seu nível de Ministro de Sangue.",
+          "page": 74,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-blood-minister-somnus-inoculator",
+        "identifier": "bbb-blood-minister-somnus-inoculator",
+        "name": "Inoculador",
+        "originalName": "Inoculator",
+        "aliases": [
+          "Inoculator"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "74–75",
+        "chapter": "Capítulo IX: O Ministro de Sangue",
+        "page": 74
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "blood-minister-somnus",
+        "identifier": "blood-minister",
+        "name": "Ministro de Sangue"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "blood-minister",
+        "selectionLevel": 3,
+        "description": "O Inoculador combina a força sobrenatural do sangue com alquimia, produzindo injeções que alteram rapidamente a fisiologia. Seus soros são preparados para reagir de modo diferente em seu próprio corpo e no de outras criaturas.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 74
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-blood-minister-somnus-inoculator.feature.injecoes.l3.1",
+          "name": "Injeções",
+          "level": 3,
+          "description": "Como ação bônus, você pode aplicar um de seus soros em si mesmo ou em outra criatura que possa tocar. No 3º nível, possui 3 usos por Descanso; recebe +1 uso nos níveis 7, 11 e 15. Você conhece os dois Soros Automáticos abaixo e escolhe 2 receitas dentre as Seleções de Soro; aprende mais 1 receita nos níveis 7, 11 e 15 e pode trocar uma seleção ao ganhar um nível de Ministro de Sangue. Sua CD de Injeção é 8 + bônus de proficiência + modificador de Constituição. Quando uma receita diz “salvaguarda se repete”, o alvo repete a salvaguarda ao fim de seus turnos, encerrando o efeito em sucesso.\n\nSOROS AUTOMÁTICOS\n\nImpulsionador. Em você: recebe 2d6 PV temporários e escolhe um atributo, obtendo vantagem nos testes desse atributo enquanto conservar esses PV temporários. Em outro alvo: escolha um atributo exceto Constituição; ele faz salvaguarda de Constituição e, em falha, fica envenenado por 10 minutos e tem desvantagem em salvaguardas do atributo escolhido enquanto estiver envenenado (salvaguarda se repete).\n\nStimpack. Em você: recupera uma quantidade de PV igual a 1d6 × seu bônus de proficiência + seu modificador de Constituição. Em outro alvo: ele faz salvaguarda de Constituição; em falha, sofre dano de veneno igual à cura que o soro concederia a você.\n\nSELEÇÕES DE SORO\n\nGrito de Banshee. Em você: criaturas à sua escolha a até 4,5 m fazem salvaguarda de Sabedoria ou ficam amedrontadas por 1 minuto (salvaguarda se repete). Em outro alvo: salvaguarda de Carisma; em falha, fica amedrontado por 10 minutos, repetindo a salvaguarda, e sofre dano psíquico igual a 1d4 × seu nível de Ministro de Sangue.\n\nLâmina de Sangue. Em vez de injetado, é aplicado a uma arma tocada. Por 1 minuto ela recebe bônus nas jogadas de ataque e dano igual à metade de seu bônus de proficiência e é tratada como mágica, mas apenas enquanto você a empunha.\n\nConfluência de Energia. Em você: resistência por 1 hora a ácido, frio, fogo ou necrótico. Em outro alvo: salvaguarda de Constituição; em falha, perde resistências — não imunidades — a esses tipos por 10 minutos.\n\nEyebrine. Em você: visão no escuro a 18 m até o próximo Descanso Longo; se já possuir, recebe visão diabólica no mesmo alcance. Em outro alvo: salvaguarda de Constituição; em falha, fica cego por 1 hora (salvaguarda se repete).\n\nAceleração. Em você: por 1 minuto, seu deslocamento aumenta em 1,5 m × metade de seu nível de Ministro de Sangue, arredondado para cima, e ataques de oportunidade contra você têm desvantagem. Em outro alvo: salvaguarda de Constituição; em falha, deslocamento reduzido à metade e não pode usar Disparada por 1 minuto (salvaguarda se repete).\n\nOlhos de Caça. Em você ou outro alvo: por 1 hora, bônus em Percepção e Investigação igual ao bônus de proficiência do alvo, e ele não pode ser surpreendido em combate.\n\nRestaurador. Em você ou outro alvo: remove condições e efeitos que Restauração Menor removeria; a partir do 11º nível, também remove aquilo que Restauração Maior removeria.\n\nTouro Sanguíneo. Em você: por 1 minuto, sofre 1d6 de dano irredutível no início de cada turno, salvo se começar com 0 PV, e tem vantagem em ataques com armas. Em outro alvo: salvaguarda de Constituição; em falha, fica lento por 1 minuto (salvaguarda se repete).\n\nAntimagia Sérica. Em você ou outro alvo: durante 1 minuto, sempre que fizer uma salvaguarda contra efeito mágico, rola 1d6 e soma ao resultado. O efeito termina após três salvaguardas bem-sucedidas desse modo.\n\nBanho Definhante. O soro é quebrado na mão, criando uma névoa num cubo de 6 m originado em você. Cada criatura na área faz salvaguarda de Constituição ou fica envenenada por 1 minuto e sofre 2d6 de dano de veneno no início de cada turno enquanto estiver assim (salvaguarda se repete).",
+          "page": 74,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-inoculator.feature.autovacinacao.l3.1",
+          "name": "Autovacinação",
+          "level": 3,
+          "description": "Você é imune a dano de veneno e à condição envenenado.",
+          "page": 75,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-inoculator.feature.transfiguracao.l7.1",
+          "name": "Transfiguração",
+          "level": 7,
+          "description": "Quando não possui usos de Injeção restantes e está em combate ou situação semelhante, pode gastar 2 Dados de Vida para produzir os efeitos de uma de suas Injeções não Supremas, transfigurando à força seu sangue sob o efeito da adrenalina.",
+          "page": 75,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-inoculator.feature.injecao-de-elixir.l11.1",
+          "name": "Injeção de Elixir",
+          "level": 11,
+          "description": "Ao terminar um Descanso Longo, você produz um soro que imita um elixir raro ou de raridade inferior à sua escolha. Como ação bônus, pode aplicá-lo em si mesmo ou em uma criatura tocada; em outra criatura, seus efeitos duram apenas 10 minutos. Ao produzir um novo, elixires de injeção antigos e não usados tornam-se inertes. No 15º nível, pode escolher elixires muito raros. A fonte remete às listas de elixires de Lyre’s Guide to Risk & Reward e outros livros de Somnus Domina.",
+          "page": 75,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-inoculator.feature.injecao-suprema.l15.1",
+          "name": "Injeção Suprema",
+          "level": 15,
+          "description": "Escolha uma opção abaixo. Ela funciona como uma Injeção comum, mas apenas em você e uma vez por Descanso, em uso separado de suas Injeções normais. Sempre que ganhar um nível de Ministro de Sangue, pode trocar a escolha.\n\nVacinação Agressiva. Por 1 hora, você tem vantagem em salvaguardas contra condições indesejadas, mesmo se normalmente tivesse desvantagem.\n\nImpulso Sanguíneo. Por 1 hora, todo Dado de Vida que gastar é tratado como um tamanho de dado maior — d4 vira d6, d8 vira d10 etc. — sem ultrapassar d12.\n\nGrande Estatura. Por 1 minuto, seu tamanho aumenta em uma categoria, seu alcance aumenta em 1,5 m, você tem vantagem em testes de Força e, sempre que fizer um ataque corpo a corpo, rola 1d4 e soma à jogada de ataque.\n\nAprimorador Muscular. Por 1 minuto, quando acerta um ataque com arma, causa um dado de arma adicional de dano.\n\nMutação. Por 10 minutos, seu corpo se adapta livremente ao ambiente: você recebe deslocamentos de voo, escavação, escalada e natação iguais ao deslocamento-base, todos aumentados em 4,5 m, e pode respirar ar e água.\n\nTotem da Vida Sombria. Não é injetado. Quando é reduzido a 0 PV, pode usar reação para receber 8d10 PV temporários; o dano que o reduziu a 0 é primeiro subtraído desses PV temporários antes de afetar seus PV. Enquanto possuir esses PV temporários, tem vantagem em salvaguardas.",
+          "page": 75,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-blood-minister-somnus-mutagenic",
+        "identifier": "bbb-blood-minister-somnus-mutagenic",
+        "name": "Mutagênico",
+        "originalName": "Mutagenic",
+        "aliases": [
+          "Mutagenic"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "76–77",
+        "chapter": "Capítulo IX: O Ministro de Sangue",
+        "page": 76
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "blood-minister-somnus",
+        "identifier": "blood-minister",
+        "name": "Ministro de Sangue"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "blood-minister",
+        "selectionLevel": 3,
+        "description": "O Mutagênico absorve influências genéticas de outras criaturas e passa a emular seres poderosos e monstros que caçadores de sangue normalmente enfrentariam. Seu corpo pode se distorcer violentamente, mas treinamento permite temperar e controlar essas alterações.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 76
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-blood-minister-somnus-mutagenic.feature.mutacao-coagulada.l3.1",
+          "name": "Mutação Coagulada",
+          "level": 3,
+          "description": "Escolha duas raças diferentes da sua e obtenha uma Característica de Legado de cada uma como se fossem suas raças secundárias. Escolha também uma Mutação abaixo e receba permanentemente seus benefícios.\n\nMutação Alienígena. Telepatia a 4,5 m × seu bônus de proficiência; criaturas familiares reconhecem sua voz mental, mas não podem responder sem outro meio.\n\nMutação Bestial. Deslocamentos de natação e escalada iguais ao seu deslocamento-base e capacidade de respirar ar e água.\n\nMutação Celestial. Especialização em Intuição e resistência a dano radiante; seu corpo desenvolve penas e placas metálicas.\n\nMutação Dracônica. Pode produzir asas semelhantes às de morcego, recebendo voo laborioso igual ao deslocamento-base; se já possui voo laborioso, ele aumenta em 9 m.\n\nMutação Infernal. Visão diabólica a 18 m; se já a possui, aumenta em 18 m ou para 36 m, o que for maior. Seu corpo desenvolve pequenos chifres, protuberâncias pétreas e esclera negra.\n\nMutação Monstruosa. Seu tamanho torna-se Grande, salvo se já for maior; recebe Especialização em Atletismo e pode tentar Agarrar ou Empurrar como ação bônus.\n\nMutação Espiritual. Ao usar Desengajar, fica invisível até o fim do turno. Também assume forma semiespectral e pode atravessar espaços de criaturas sem custo adicional nem ser bloqueado por hostis, mas deve terminar o movimento em espaço desocupado que comporte você.",
+          "page": 76,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-mutagenic.feature.mutacao-continua.l7.1",
+          "name": "Mutação Contínua",
+          "level": 7,
+          "description": "Você recebe uma Característica de Legado de mais uma raça diferente das já escolhidas e também uma Mutação adicional dentre as opções de Mutação Coagulada.",
+          "page": 77,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-mutagenic.feature.evasao-sobrenatural.l11.1",
+          "name": "Evasão Sobrenatural",
+          "level": 11,
+          "description": "Quando realiza uma salvaguarda para sofrer metade do dano de um efeito, sofre nenhum dano em sucesso e metade em falha.",
+          "page": 77,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-mutagenic.feature.mutacao-final.l15.1",
+          "name": "Mutação Final",
+          "level": 15,
+          "description": "Você domina suas mutações. Mutação Controlada permite ocultar alterações físicas e fazê-las reaparecer quando usa seus poderes; Regeneração Desesperada faz você recuperar 1d4 + modificador de Constituição PV no início de cada turno em que esteja abaixo da metade de seus PV máximos; Mudança Final concede uma terceira Mutação de Mutação Coagulada; e Rearranjo Genético permite trocar uma de suas Mutações por outra ao terminar qualquer Descanso.",
+          "page": 77,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-blood-minister-somnus-sanguine-knight",
+        "identifier": "bbb-blood-minister-somnus-sanguine-knight",
+        "name": "Cavaleiro Sanguíneo",
+        "originalName": "Sanguine Knight",
+        "aliases": [
+          "Sanguine Knight"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "77",
+        "chapter": "Capítulo IX: O Ministro de Sangue",
+        "page": 77
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "blood-minister-somnus",
+        "identifier": "blood-minister",
+        "name": "Ministro de Sangue"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "blood-minister",
+        "selectionLevel": 3,
+        "description": "O Cavaleiro Sanguíneo leva armas pesadas contra os monstros da noite e luta com ferocidade incessante. Mais protegido que seus companheiros, normalmente sai do combate coberto tanto pelo próprio sangue quanto pelo de seus inimigos.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 77
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.blindado-pesadamente.l3.1",
+          "name": "Blindado Pesadamente",
+          "level": 3,
+          "description": "Você ganha proficiência com armaduras pesadas e proficiência em salvaguardas de Sabedoria.",
+          "page": 77,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.explosao-sanguinea.l3.1",
+          "name": "Explosão Sanguínea",
+          "level": 3,
+          "description": "Quando usa Ministração Sanguínea para conceder bônus a um ataque feito com uma arma Pesada ou de Duas Mãos, o bônus obtido do Dado de Vida é dobrado, desde que um Dado de Vida tenha sido realmente gasto.",
+          "page": 77,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.sede-exsanguinante.l7.1",
+          "name": "Sede Exsanguinante",
+          "level": 7,
+          "description": "Uma vez por Descanso, no lugar de um de seus ataques com arma, você pode produzir os efeitos de Infligir Ferimentos sem espaço de magia, em nível igual ao seu bônus de proficiência. Se acertar, recebe PV temporários iguais ao dano causado. O uso só é consumido se o ataque acertar, e você só pode tentar usar esta característica uma vez por turno.",
+          "page": 77,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.protecao-sombria.l11.1",
+          "name": "Proteção Sombria",
+          "level": 11,
+          "description": "Quando gasta um Dado de Vida com Ministração Sanguínea, todo dano que sofrer até o início de seu próximo turno é reduzido pelo bônus obtido nesse dado. Se rolar vários Dados de Vida desse modo, use apenas o maior bônus.",
+          "page": 77,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.maestria-em-ataque-extra.l15.1",
+          "name": "Maestria em Ataque Extra",
+          "level": 15,
+          "description": "Quando realiza a ação Atacar, pode realizar quatro ataques em vez de um.",
+          "page": 77,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-blood-minister-somnus-sanguine-knight.feature.sede-maior.l15.1",
+          "name": "Sede Maior",
+          "level": 15,
+          "description": "Você pode usar Sede Exsanguinante uma vez adicional por Descanso e pode tentar usá-la uma vez adicional no mesmo turno, mas apenas se a primeira tentativa errar.",
+          "page": 77,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    }
+  ]
+}

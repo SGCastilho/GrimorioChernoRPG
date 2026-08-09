@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-ranger-technoscope",
+    "identifier": "lyre-ranger-technoscope",
+    "name": "Tecnoscópio",
+    "originalName": "Technoscope",
+    "aliases": [
+      "Technoscope"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "411–412",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 411
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Compatibilidade com o Patrulheiro Revisado de Lyre: esta opção foi escrita para a revisão completa da classe apresentada no mesmo capítulo, que preserva a estrutura de arquétipos nos níveis 3, 7, 11 e 15 e admite adaptação de subclasses de Patrulheiro. Tecnoscópios aplicam tecnologia e princípios científicos a problemas imediatos. Seus dispositivos improvisados duram pouco, mas oferecem soluções decisivas; são inventores, engenhoqueiros e mentes incessantemente curiosas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 411
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-ranger-technoscope.feature.foco-mecanico.l3.1",
+      "name": "FOCO MECÂNICO",
+      "level": 3,
+      "description": "Você ganha proficiência com ferramentas de funileiro e recebe um Inimigo Favorecido adicional: constructos. Se já escolheu constructos, escolha outro tipo entre as opções normais.",
+      "page": 411,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-technoscope.feature.reparo-tecnologico.l3.1",
+      "name": "REPARO TECNOLÓGICO",
+      "level": 3,
+      "description": "Quando conjura uma magia que restaura pontos de vida mas declara não poder escolher constructos, ela ainda pode restaurá-los, reconfigurando-os magicamente ou reproduzindo a magia que os criou. Isso não restaura partes corporais destruídas de um constructo.",
+      "page": 411,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-technoscope.feature.tecnologia-de-funileiro.l7.1",
+      "name": "TECNOLOGIA DE FUNILEIRO",
+      "level": 7,
+      "description": "Você possui Pontos de Tecnologia de Funileiro iguais ao seu Bônus de Favor, recuperados em Descanso Curto ou Longo. Enquanto tiver ferramentas de funileiro ou equipamento suficiente, gaste 1 ponto nos efeitos: Impulso de Compressão — ao atacar com arma, acople propulsor e some seu Bônus de Favor ao ataque e seu Dado de Favor ao dano; Projetor Evasivo — reação quando alguém o ataca, projete ilusão e até o fim do turno ou até ser atingido o atacante subtrai seu Bônus de Favor de ataques contra você; Alvo Magnético — depois de acertar com arma, ação bônus para magnetizar o alvo e uma arma corpo a corpo sua por 1 minuto, tratando-o como Inimigo Favorecido para essa arma; o alvo pode substituir um ataque por teste de Destreza contra sua CD de magia para remover o dispositivo; Mira de Ampliação — como ação bônus antes de ataque à distância, crie mira que permite atacar até o alcance longo sem desvantagem por 1 minuto; Granada Trovejante — ação bônus, arremesse a um ponto a até 9 m, criaturas em raio de 1,5 m fazem salvaguarda de Constituição ou são empurradas 1,5 m e caem; Foguete Selvagem — como ação bônus ou no lugar de um ataque, lance dispositivo contra alvo a distância de 4,5 m × seu Bônus de Favor, fazendo ataque à distância com seu ataque de magia; em acerto causa dano contundente, perfurante, cortante ou de fogo igual ao seu Dado de Favor + Bônus de Favor e derruba alvos até uma categoria maiores.",
+      "page": 411,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-technoscope.feature.mina-arcana.l11.1",
+      "name": "MINA ARCANA",
+      "level": 11,
+      "description": "Ao conjurar uma magia normalmente, em vez de produzir o efeito, pode armazená-la numa mina mágica estacionária em superfície tocada. Defina um gatilho como para ação preparada. Pode preparar minas por Descanso Longo iguais ao bônus de proficiência, e não pode manter duas minas com a mesma magia; criar outra torna a anterior inerte. Minas devem ficar a pelo menos 3 m entre si. A magia não pode ter tempo maior que 1 ação nem exigir concentração. O gatilho deve ocorrer a até 3 m da mina ou dentro do alcance da magia, o que for menor; magias Pessoal usam 1,5 m. A mina não pode ser movida: você pode desarmá-la como ação, mas mover mais de 30 cm ou danificá-la detona antecipadamente. Ao detonar, usa seu ataque/CD de magia, nível original e demais regras; se não houver alvo previsto, escolhe a criatura mais próxima; áreas centradas em ponto devem tocar o espaço da mina. Se estiver a até 18 m quando o gatilho ocorrer, pode usar reação para adiar a detonação até o início do próximo turno, quando o gatilho é redefinido. Encontrá-la exige Investigação contra sua CD de magia. Fica inerte após 24 horas ou seu próximo Descanso Longo.",
+      "page": 412,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-technoscope.feature.solucao-de-engenhoca.l15.1",
+      "name": "SOLUÇÃO DE ENGENHOCA",
+      "level": 15,
+      "description": "Quando faria ataque, teste de atributo ou salvaguarda com desvantagem e possui ferramentas de funileiro ou meios para construir um dispositivo adequado, use reação e role 1d100 + seu nível de Patrulheiro. Com 51 ou mais, o dispositivo elimina a desvantagem dessa circunstância até o início do próximo turno, inclusive na rolagem desencadeadora; com 50 ou menos, nada acontece.",
+      "page": 412,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

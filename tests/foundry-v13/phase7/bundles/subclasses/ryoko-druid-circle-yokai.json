@@ -1,0 +1,230 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-druid-circle-yokai",
+    "identifier": "ryoko-druid-circle-yokai",
+    "name": "Círculo dos Yokai",
+    "originalName": "Circle of the Yokai",
+    "aliases": [
+      "Circle of the Yokai",
+      "Círculo dos Yokai"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "176–177",
+    "chapter": "Capítulo 9: Classes",
+    "page": 176
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Druidas ligados aos espíritos yokai, capazes de usar Forma Selvagem em criaturas espirituais muito além de Bestas comuns.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-circulo-dos-yokai",
+        "title": "Magias do Círculo dos Yokai",
+        "page": 176,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Druida"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "2º",
+            "magias": "Uppercut Terrestre, Encontrar Familiar"
+          },
+          {
+            "nivel": "3º",
+            "magias": "Invisibilidade, Fúria de Wanyūdō"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Velocidade, Serpe de Água"
+          },
+          {
+            "nivel": "7º",
+            "magias": "Compulsão, Rugido do Leão"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Dominar Pessoa, Erupção"
+          },
+          {
+            "nivel": "10º",
+            "magias": "Animar Objetos"
+          }
+        ]
+      },
+      {
+        "key": "table.2.formas-selvagens-yokai-limites",
+        "title": "Formas Selvagens Yokai — Limites",
+        "page": 177,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Druida"
+          },
+          {
+            "key": "cr",
+            "label": "ND máximo"
+          },
+          {
+            "key": "limitacao",
+            "label": "Limitação"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "2º",
+            "cr": "1/2",
+            "limitacao": "Sem voo ou natação"
+          },
+          {
+            "nivel": "4º",
+            "cr": "1",
+            "limitacao": "Sem voo"
+          },
+          {
+            "nivel": "8º",
+            "cr": "2",
+            "limitacao": "—"
+          },
+          {
+            "nivel": "12º",
+            "cr": "3",
+            "limitacao": "—"
+          },
+          {
+            "nivel": "16º",
+            "cr": "4",
+            "limitacao": "—"
+          },
+          {
+            "nivel": "20º",
+            "cr": "5",
+            "limitacao": "—"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 176
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-druid-circle-yokai.feature.magias-do-circulo.l2.1",
+      "name": "MAGIAS DO CÍRCULO",
+      "level": 2,
+      "description": "Você recebe as magias da tabela nos níveis indicados. Elas ficam sempre preparadas e contam como magias de Druida para você.",
+      "page": 176,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-druid-circle-yokai.feature.forma-selvagem-yokai.l2.1",
+      "name": "FORMA SELVAGEM YOKAI",
+      "level": 2,
+      "description": "Além de Bestas mundanas, sua Forma Selvagem pode assumir qualquer yokai Besta, Celestial, Constructo, Fey, Corruptor, Monstruosidade ou Planta com ND até o limite da tabela; não recebe ações lendárias. Em qualquer Forma Selvagem, pode falar; tem vantagem em salvaguardas de Constituição para manter concentração; e pode conjurar magias da tabela de Círculo ou da ficha da forma sem componentes materiais/somáticos, usando seus espaços e CD de Druida.",
+      "page": 176,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-druid-circle-yokai.feature.transformacao-potencializada.l6.1",
+      "name": "TRANSFORMAÇÃO POTENCIALIZADA",
+      "level": 6,
+      "description": "Imediatamente após conjurar magia de 1º nível ou maior, pode usar Forma Selvagem como reação; uma vez por Descanso Curto ou Longo. Enquanto estiver transformado e concentrando em uma magia, seus ataques de arma contam como mágicos contra resistência/imunidade a não mágico.",
+      "page": 177,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-druid-circle-yokai.feature.convocar-os-yokai.l10.1",
+      "name": "CONVOCAR OS YOKAI",
+      "level": 10,
+      "description": "Pode conjurar Animar Objetos como ação, sem espaço nem componentes materiais; dura 10 minutos, depois os alvos retornam ao normal. Uma vez por Descanso Longo.",
+      "page": 177,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-druid-circle-yokai.feature.fortificacao-yokai.l14.1",
+      "name": "FORTIFICAÇÃO YOKAI",
+      "level": 14,
+      "description": "Se cair a 0 PV em Forma Selvagem de yokai, use reação para usar Forma Selvagem novamente, gastando uso normalmente; dano excedente passa para a nova forma. Uma vez por Descanso Curto ou Longo. Além disso, enquanto em Forma Selvagem, se usar a ação para conjurar magia, pode fazer um ataque como ação bônus no mesmo turno.",
+      "page": 177,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-the-eroded-lord",
+    "identifier": "lyre-sword-saint-retia-way-of-the-eroded-lord",
+    "name": "Caminho do Lorde Erodido",
+    "originalName": "Way of the Eroded Lord",
+    "aliases": [
+      "Way of the Eroded Lord"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "420–421",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 420
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Confiança de Itonia. Inspirado no misterioso campeão de Halte Itonia, este Caminho combina armadura, feitiçaria e energia espiritual. Seus praticantes convertem espaços de magia em força destrutiva e mesclam ataques com conjuração.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 420
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-eroded-lord.feature.estilo-de-luta-defesa.l3.1",
+      "name": "ESTILO DE LUTA: DEFESA",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Defesa.",
+      "page": 420,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-eroded-lord.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "FARDO DA MENTE: quando perderia concentração em uma magia ou efeito, gaste 2 Foco para mantê-la. ARMADURA ESPIRITUAL: como ação bônus, gaste 1 ou mais Foco para receber PV temporários iguais a 1d10 por ponto gasto + metade de seu nível de Santo da Espada; duram 1 hora e, enquanto os tiver e não usar escudo, sua CA aumenta em metade de seu bônus de proficiência, arredondado para baixo. DIVIDIR ALVO: ao conjurar magia que só possa afetar um alvo, gaste Foco igual ao nível base da magia para escolher um segundo alvo no alcance; truques custam 1 Foco.",
+      "page": 420,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-eroded-lord.feature.conjuracao.l3.1",
+      "name": "CONJURAÇÃO",
+      "level": 3,
+      "description": "Você aprende magia de Feiticeiro como um conjurador de um terço. No 3º nível conhece dois truques e três magias de Feiticeiro de 1º nível; aprende outras conforme a tabela do Lorde Erodido e pode substituir uma magia conhecida ao ganhar nível. Carisma é seu atributo de conjuração. Qualquer item ou efeito que aumente sua CD de Técnica de Foco também aumenta a CD dessas magias. Uma arma com a qual seja proficiente funciona como foco, dispensando outro foco de conjuração. Seus espaços de magia são recuperados após Descanso Longo.",
+      "page": 420,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-eroded-lord.feature.potencia-maxima.l6.1",
+      "name": "POTÊNCIA MÁXIMA",
+      "level": 6,
+      "description": "Ao acertar ataque com arma, pode gastar um espaço de magia de Feiticeiro para causar dano energético adicional igual a 1d10 + 1d10 por nível do espaço gasto; o ataque passa a ser mágico se já não era. Não pode usar esta característica no mesmo ataque que outro efeito que gaste espaços para adicionar dano de forma semelhante, como Destruição Divina.",
+      "page": 420,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-eroded-lord.feature.golpe-arcano.l11.1",
+      "name": "GOLPE ARCANO",
+      "level": 11,
+      "description": "Quando conjurar uma magia de Feiticeiro que exija 1 ação, ou ativar parte do efeito de uma magia que exija sua ação, pode fazer um ataque com arma contra um alvo ao alcance como parte da mesma ação.",
+      "page": 421,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-eroded-lord.feature.condutividade-perfeita.l14.1",
+      "name": "CONDUTIVIDADE PERFEITA",
+      "level": 14,
+      "description": "Ao usar Potência Máxima com sua Arma Santa sintonizada, trate o espaço gasto como 1 nível acima. Além disso, na primeira vez em cada turno que acertar com a Arma Santa, causa dano energético adicional igual à metade de seu nível de Santo da Espada.",
+      "page": 421,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-the-eroded-lord.feature.feiticaria-de-alta-sinergia.l17.1",
+      "name": "FEITIÇARIA DE ALTA SINERGIA",
+      "level": 17,
+      "description": "Quando conjurar uma magia de Feiticeiro usando espaço de magia, pode gastar Foco para aumentar o nível em que ela é conjurada em 1 por ponto gasto, até o máximo de 9º nível.",
+      "page": 421,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

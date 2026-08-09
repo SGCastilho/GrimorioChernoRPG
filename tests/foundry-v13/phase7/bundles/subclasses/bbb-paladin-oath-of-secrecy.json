@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-paladin-oath-of-secrecy",
+    "identifier": "bbb-paladin-oath-of-secrecy",
+    "name": "Juramento do Sigilo",
+    "originalName": "Oath of Secrecy",
+    "aliases": [
+      "Oath of Secrecy"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "113–115",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 113
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Paladinos jurados ao segredo que protegem santuários, informações e conhecimentos ocultos.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-de-sigilo",
+        "title": "Magias do Juramento de Sigilo",
+        "page": 114,
+        "description": "Magias concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Santuário; Golpe Silenciador"
+          },
+          {
+            "level": "5º",
+            "spells": "Cegueira/Surdez; Elo Mental"
+          },
+          {
+            "level": "9º",
+            "spells": "Conter Atacante; Idiomas"
+          },
+          {
+            "level": "13º",
+            "spells": "Cão Fiel; Santuário Particular"
+          },
+          {
+            "level": "17º",
+            "spells": "Consagrar; Modificar Memória"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 113
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-paladin-oath-of-secrecy.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Você recebe duas opções de Canalizar Divindade.\n\nCAPUZ INAUDÍVEL. Como ação bônus, envolva-se num manto silencioso de influência divina que permanece até seu próximo Descanso. Você não sofre desvantagem em testes de Furtividade por armadura, terreno ou outros efeitos; possuir desvantagem não impede que role com vantagem caso também a tenha. Outras criaturas não conseguem ouvir nem perceber seus componentes verbais de magia, e você é imune a dano trovejante.\n\nDOSSEL INVISÍVEL. Como ação, escolha um cubo centrado num ponto ou espaço visível ao alcance, com lado de 1,5 m × seu bônus de proficiência, e afete todas as criaturas nele. Elas ficam invisíveis por até 1 hora enquanto não saírem do cubo. Até o efeito terminar para cada uma, criaturas e objetos carregados que não possam vê-las atravessam-nas inofensivamente ao passar pelo cubo, como se estivessem no Plano Etéreo. Efeitos de área ainda podem atingi-las, e criaturas que já podiam vê-las quando a ação foi usada continuam vendo-as normalmente.",
+      "page": 114,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-paladin-oath-of-secrecy.feature.aura-fantasma.l7.1",
+      "name": "AURA FANTASMA",
+      "level": 7,
+      "description": "Enquanto ao menos um de seus aliados estiver dentro de sua Aura de Proteção, ataques contra você têm desvantagem.",
+      "page": 114,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-paladin-oath-of-secrecy.feature.aproximacao-fantasma.l15.1",
+      "name": "APROXIMAÇÃO FANTASMA",
+      "level": 15,
+      "description": "Como ação bônus, torne-se invisível até o início de seu próximo turno e deixe uma pós-imagem no local onde começou o turno. Enquanto a pós-imagem existir, sua fala e gestos parecem originar-se dela. No início do turno seguinte, pode usar ação bônus para estender o efeito novamente. Pode mantê-lo por até 1 minuto por uso. Usos: duas vezes por Descanso; estender em turnos subsequentes não consome usos adicionais.",
+      "page": 114,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-paladin-oath-of-secrecy.feature.campeao-silencioso.l20.1",
+      "name": "CAMPEÃO SILENCIOSO",
+      "level": 20,
+      "description": "Suas palavras, intenções e ações só são percebidas tarde demais. Criaturas não podem reagir a suas ações, movimento ou componentes de magia, pois só os percebem depois que já ocorreram. Em cada turno, você pode realizar discretamente uma segunda ação bônus. Além disso, em qualquer teste de Furtividade ou Enganação, um resultado no d20 menor que 15 é tratado como 15.",
+      "page": 115,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

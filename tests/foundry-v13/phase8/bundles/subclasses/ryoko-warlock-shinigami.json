@@ -1,0 +1,190 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-warlock-shinigami",
+    "identifier": "ryoko-warlock-shinigami",
+    "name": "O Shinigami",
+    "originalName": "The Shinigami",
+    "aliases": [
+      "The Shinigami",
+      "O Shinigami"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "203–204",
+    "chapter": "Capítulo 9: Classes",
+    "page": 203
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Um bruxo ligado a um espírito da morte, capaz de transformar cadáveres e criaturas inconscientes em marionetes e até continuar lutando como espírito após cair.",
+    "tables": [
+      {
+        "key": "table.1.magias-expandidas-do-shinigami",
+        "title": "Magias Expandidas do Shinigami",
+        "page": 203,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível da Magia"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "1º",
+            "magias": "Ver a Morte Futura, Sono"
+          },
+          {
+            "nivel": "2º",
+            "magias": "Cegueira/Surdez, Aura Suga-Vida"
+          },
+          {
+            "nivel": "3º",
+            "magias": "Animar Mortos, Falar com os Mortos"
+          },
+          {
+            "nivel": "4º",
+            "magias": "Proteção contra a Morte, Invisibilidade Maior"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Animar Objetos, Dominar Pessoa"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 203
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-warlock-shinigami.feature.lista-de-magias-expandida.l1.1",
+      "name": "LISTA DE MAGIAS EXPANDIDA",
+      "level": 1,
+      "description": "As magias da tabela são adicionadas à lista de Bruxo para você escolher ao aprender magias.",
+      "page": 203,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-warlock-shinigami.feature.marionetista-sombrio.l1.1",
+      "name": "MARIONETISTA SOMBRIO",
+      "level": 1,
+      "description": "Como ação bônus, assuma controle por até 10 minutos, ou até perder concentração, de cadáver ou criatura inconsciente visível a 18 m, Grande ou menor, com ND igual ou inferior ao seu nível de Bruxo (ou ND em vida). Limite passa a Enorme no 6º nível e Imenso no 14º. Se cadáver, é tratado como Morto-vivo; não recupera PV nem sai da inconsciência; imune a enfeitiçado/amedrontado; recebe PV temporários = Carisma + 5 × nível de Bruxo; pode usar seu modificador de conjuração em ataques/danos. Quando os PV temporários acabam, o controle termina e aquele alvo não pode ser controlado novamente até Descanso Longo. A marionete age logo após você e só age se você usar ação bônus para comandá-la. Ela não pode conjurar magias, usar reações, ações lendárias/de covil nem criar/invocar criaturas. Usos iguais a Carisma (mín.1) por Descanso Longo; sem usos, pode ativar gastando espaço de Magia de Pacto.",
+      "page": 203,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-warlock-shinigami.feature.visao-do-shinigami.l1.1",
+      "name": "VISÃO DO SHINIGAMI",
+      "level": 1,
+      "description": "Como ação bônus, foque criatura visível a 18 m. Você descobre uma vulnerabilidade a dano dela, se houver, e uma resistência ou imunidade a dano, se houver.",
+      "page": 204,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-warlock-shinigami.feature.dom-do-psicopompo.l6.1",
+      "name": "DOM DO PSICOPOMPO",
+      "level": 6,
+      "description": "Enquanto estiver controlando alvo com Marionetista Sombrio, qualquer magia que você conjurar e que tenha apenas você como alvo também pode ter sua marionete como alvo.",
+      "page": 204,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-warlock-shinigami.feature.dominacao-shinigami.l10.1",
+      "name": "DOMINAÇÃO SHINIGAMI",
+      "level": 10,
+      "description": "Enquanto controla uma marionete, pode ver por seus olhos, ouvir pelo que ela ouve e falar usando a voz dela. O controle pode durar até 1 hora ou até perder concentração. Criatura que interage com a marionete pode usar ação e Intuição (Sabedoria) contra sua CD de Bruxo para perceber algo errado. Marionetes também têm resistência a concussão, perfurante e cortante de ataques não mágicos que não sejam de prata.",
+      "page": 204,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-warlock-shinigami.feature.mestre-da-morte.l14.1",
+      "name": "MESTRE DA MORTE",
+      "level": 14,
+      "description": "Ao ser reduzido a 0 PV, você não fica inconsciente: seu espírito é expulso do corpo e passa a marionetá-lo. Mantém suas estatísticas e capacidades, não pode controlar outra criatura, não faz salvaguardas contra a morte e dano não causa falhas de morte; ganha PV temporários = Carisma + 5 × nível de Bruxo. Se recuperar ao menos 1 PV, o espírito retorna. Você só fica inconsciente quando esses PV temporários se esgotam. Uma vez por Descanso Curto ou Longo.",
+      "page": 204,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

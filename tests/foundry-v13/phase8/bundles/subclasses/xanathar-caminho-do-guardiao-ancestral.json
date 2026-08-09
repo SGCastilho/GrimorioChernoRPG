@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-caminho-do-guardiao-ancestral",
+    "identifier": "xanathar-caminho-do-guardiao-ancestral",
+    "name": "Caminho do Guardião Ancestral",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "9–10",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 9
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Alguns bárbaros saem de culturas que reverenciam seus antepassados. Essas tribos ensinam que os guerreiros do passado permanecem no mundo como espíritos poderosos, que podem guiar e proteger a vida. Quando um bárbaro que segue este caminho se aguda, o bárbaro entra em contato com o mundo espiritual e convida esses espiritos guardiões para ajuda. Os bárbaros que se empenham em seus guardiões ancestrais podem lutar melhor para proteger suas tribos e seus aliados. A fim de consolidar os vínculos com seus guardiões ancestrais, os bárbaros que seguem esse caminho cobrem-se em tatuagens elaboradas que celebram atos de seus antepassados. Essas tatuagens contam sagas de vitórias contra monstros terríveis e outros rivais temíveis.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 9
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-caminho-do-guardiao-ancestral.feature.protetor-ancestral.l3.1",
+      "name": "PROTETOR ANCESTRAL",
+      "level": 3,
+      "description": "Começando quando você escolhe esse caminho no 3º nível, os guerreiros espectrais aparecem quando você entra em fúria. Enquanto você está em fúria, a primeira criatura que você acertou com um ataque no seu turno torna-se o alvo dos guerreiros, o que dificulta seus ataques. Até o início do seu próximo turno, esse alvo tem desvantagem em qualquer jogada de ataque que não seja contra você, e quando o alvo atingir uma criatura diferente de você com um ataque, essa criatura tem resistência ao dano causado pelo ataque. O efeito sobre o alvo acaba mais cedo se sua fúria termina.",
+      "page": 10,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-caminho-do-guardiao-ancestral.feature.escudo-espiritual.l6.1",
+      "name": "ESCUDO ESPIRITUAL",
+      "level": 6,
+      "description": "Começando no 6° nível, os guardiões espirituais que te protegem podem prover uma defesa sobrenatural para aqueles que você defende. Se você estiver em fúria e outra criatura que possa ver a até 9 metros receba dano, você pode usar sua reação para reduzir esse dano em 2d6. Quando você atinge determinados níveis nesta classe, pode reduzir este dano ainda mais: em 3d6 no 10° nível e em 4d6 no 14° nível",
+      "page": 10,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-caminho-do-guardiao-ancestral.feature.consultar-os-espiritos.l10.1",
+      "name": "CONSULTAR OS ESPÍRITOS",
+      "level": 10,
+      "description": "No 10º nível você ganha a habilidade de se consultar com seus espíritos ancestrais. Quando você o faz, pode conjurar as magias augúrio ou clarividência, sem usar espaços de magia ou componentes materiais. Em vez de criar um sensor esférico, esse uso da clarividência invoca invisivelmente um de seus espíritos ancestrais para o local escolhido. Sabedoria é a sua habilidade para conjurar essa magia. Depois de conjurar qualquer magia desta forma, você não pode usar essa característica novamente até terminar um descanso curto ou longo.",
+      "page": 10,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-caminho-do-guardiao-ancestral.feature.ancestrais-vingativos.l14.1",
+      "name": "ANCESTRAIS VINGATIVOS",
+      "level": 14,
+      "description": "No 14º nível, seus espíritos ancestrais aumentam de poder o suficiente e conseguem retaliar. Quando você usa seu escudo espiritual para reduzir o dano de um ataque, o atacante recebe uma quantidade de dano de energia igual ao dano que seu Escudo Espiritual.",
+      "page": 10,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

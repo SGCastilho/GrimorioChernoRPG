@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-ranger-gun-dweller",
+    "identifier": "lyre-ranger-gun-dweller",
+    "name": "Habitante das Armas",
+    "originalName": "Gun Dweller",
+    "aliases": [
+      "Gun Dweller"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "409",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 409
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Compatibilidade com o Patrulheiro Revisado de Lyre: esta opção foi escrita para a revisão completa da classe apresentada no mesmo capítulo, que preserva a estrutura de arquétipos nos níveis 3, 7, 11 e 15 e admite adaptação de subclasses de Patrulheiro. Patrulheiros especialistas em armas de fogo, capazes de recargas elaboradas, disparos acrobáticos e munição arcana. Sua familiaridade supera a proficiência comum e transforma as armas em extensões de sua magia primal.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 409
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-ranger-gun-dweller.feature.proficiencia-em-armas-de-fogo.l3.1",
+      "name": "PROFICIÊNCIA EM ARMAS DE FOGO",
+      "level": 3,
+      "description": "Você ganha proficiência com armas de fogo simples e marciais. Se já possuir ambas, escolha uma arma de fogo com a propriedade avançada e também ganhe proficiência nela.",
+      "page": 409,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-gun-dweller.feature.especialista-em-armas-de-fogo.l3.1",
+      "name": "ESPECIALISTA EM ARMAS DE FOGO",
+      "level": 3,
+      "description": "Escolha uma opção. Atirador de Curta Distância: não sofre desvantagem ao disparar a até 1,5 m de criatura hostil. Descarga Completa: em crítico com arma de fogo, role seu Dado de Favor e some ao dano. Recarga Rápida: recarregue armas com Recarga como ação bônus, ação ou reação; armas com Recarga Pesada/Completa como ação bônus ou ação. Especialista em Gatilho: proficiência com qualquer arma com propriedade Gatilho, pode disparar o Gatilho sem ação secundária quando fizer parte de um ataque corpo a corpo com a arma e pode recarregá-la como ação bônus.",
+      "page": 409,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-gun-dweller.feature.municoes-arcanas.l7.1",
+      "name": "MUNIÇÕES ARCANAS",
+      "level": 7,
+      "description": "Como ação bônus, gaste um espaço para recarregar uma arma de fogo criando munições em quantidade igual à propriedade de recarga. Ataques com essas balas tratam o alvo como Inimigo Favorecido e não têm desvantagem até o alcance longo. Se o alvo já for Inimigo Favorecido, ataque e dano recebem bônus igual à metade do nível do espaço usado, arredondado para cima. As balas desaparecem ao próximo Descanso Curto/Longo ou quando a arma é recarregada.",
+      "page": 409,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-gun-dweller.feature.floreio-de-recarga.l11.1",
+      "name": "FLOREIO DE RECARGA",
+      "level": 11,
+      "description": "Ao empunhar duas armas de fogo, uma em cada mão, pode recarregar ambas com a mesma ação.",
+      "page": 409,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-gun-dweller.feature.tiro-acrobatico.l11.1",
+      "name": "TIRO ACROBÁTICO",
+      "level": 11,
+      "description": "Se atira contra criatura atrás de meia cobertura ou três quartos de cobertura, pode ricochetear a bala para ignorar essa cobertura. Além disso, uma vez por turno, pode declarar Tiro Acrobático antes de um ataque com arma de fogo para obter vantagem. Usos por Descanso Curto ou Longo iguais ao Bônus de Favor.",
+      "page": 409,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-gun-dweller.feature.especialista-avancado-em-armas-de-fogo.l15.1",
+      "name": "ESPECIALISTA AVANÇADO EM ARMAS DE FOGO",
+      "level": 15,
+      "description": "Escolha uma opção. Aprimoramento de Ataque Extra (Armas de Fogo): ao realizar Atacar, pode fazer três ataques em vez de um, desde que pelo menos um seja com arma de fogo. Crítico Superior (Armas de Fogo): ataques com arma de fogo ou arma com Gatilho obtêm crítico em 18, 19 ou 20.",
+      "page": 409,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

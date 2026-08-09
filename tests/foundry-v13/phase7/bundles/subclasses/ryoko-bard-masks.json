@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-bard-masks",
+    "identifier": "ryoko-bard-masks",
+    "name": "Colégio das Máscaras",
+    "originalName": "College of Masks",
+    "aliases": [
+      "College of Masks",
+      "Colégio das Máscaras"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "154",
+    "chapter": "Capítulo 9: Classes",
+    "page": 154
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Um performer que conjura máscaras mágicas e alterna personas de beleza, esperança, solidão e guerra conforme a situação.",
+    "tables": [
+      {
+        "key": "table.1.mascaras-nogaku",
+        "title": "Máscaras Nōgaku",
+        "page": 154,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "mascara",
+            "label": "Máscara"
+          },
+          {
+            "key": "efeito",
+            "label": "Benefício"
+          }
+        ],
+        "rows": [
+          {
+            "mascara": "Beleza",
+            "efeito": "Reação + 1 Inspiração de Bardo para impor desvantagem em salvaguarda contra magia de Encantamento sua, a alvo visível a 9 m."
+          },
+          {
+            "mascara": "Esperança",
+            "efeito": "Reação quando criatura a 18 m que veja/ouça rola Inspiração de Bardo: some Carisma (mín. +1) ao resultado."
+          },
+          {
+            "mascara": "Solidão",
+            "efeito": "Reação ao ser atingido corpo a corpo: 1d8 de força e empurra atacante até 4,5 m."
+          },
+          {
+            "mascara": "Guerra",
+            "efeito": "Uma vez por turno, some Carisma (mín. +1) ao dano de um ataque de arma ou magia de Bardo."
+          }
+        ]
+      },
+      {
+        "key": "table.2.transformacao-grandiosa",
+        "title": "Transformação Grandiosa",
+        "page": 154,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "mascara",
+            "label": "Máscara"
+          },
+          {
+            "key": "efeito",
+            "label": "Benefício adicional"
+          }
+        ],
+        "rows": [
+          {
+            "mascara": "Beleza",
+            "efeito": "Bônus em todas as salvaguardas igual a Carisma (mín. +1)."
+          },
+          {
+            "mascara": "Esperança",
+            "efeito": "Reação + Inspiração quando criatura visível a 27 m cai a 0 PV sem morrer: fica com 1 PV; cada criatura só pode se beneficiar uma vez por Descanso Longo."
+          },
+          {
+            "mascara": "Solidão",
+            "efeito": "Resistência a concussão, perfurante e cortante."
+          },
+          {
+            "mascara": "Guerra",
+            "efeito": "Se usar ação para conjurar magia, pode realizar um ataque de arma como ação bônus no turno."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 154
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-bard-masks.feature.conjuracao-nogaku.l3.1",
+      "name": "CONJURAÇÃO NŌGAKU",
+      "level": 3,
+      "description": "Como ação bônus, conjure uma das quatro máscaras por 1 minuto, até dispensá-la ou conjurar outra. Enquanto presente, concede vantagem em Atuação e funciona como foco de Bardo. A máscara concede o benefício indicado na tabela. Usos iguais a Carisma (mín. 1) por Descanso Longo; sem usos, pode gastar Inspiração de Bardo para criar uma.",
+      "page": 154,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bard-masks.feature.performance-inspiradora.l3.1",
+      "name": "PERFORMANCE INSPIRADORA",
+      "level": 3,
+      "description": "Após atuar por pelo menos 10 minutos, escolha criaturas que assistiram até seu Carisma (mín. 1). Cada uma recebe PV temporários = Carisma + proficiência (mín. 1) e vantagem na próxima iniciativa antes de Descanso Longo. Uma criatura só se beneficia uma vez por Descanso Longo.",
+      "page": 154,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bard-masks.feature.arte-cenica.l6.1",
+      "name": "ARTE CÊNICA",
+      "level": 6,
+      "description": "Enquanto estiver no chão/superfície que sustente você, use ação bônus e escolha criatura até um tamanho maior, a 18 m. Ela faz salvaguarda de Carisma contra sua CD de Bardo (pode falhar voluntariamente); em falha, vocês teleportam trocando de lugar. Usos iguais a Carisma (mín. 1) por Descanso Longo.",
+      "page": 154,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bard-masks.feature.transformacao-grandiosa.l14.1",
+      "name": "TRANSFORMAÇÃO GRANDIOSA",
+      "level": 14,
+      "description": "Suas máscaras recebem benefícios superiores conforme a tabela de Transformação Grandiosa.",
+      "page": 154,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

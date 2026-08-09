@@ -1,0 +1,123 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-estilo-da-alma-solar",
+    "identifier": "xanathar-estilo-da-alma-solar",
+    "name": "Estilo da Alma Solar",
+    "originalName": "",
+    "aliases": [
+      "Caminho da Alma do Sol"
+    ]
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "52",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 52
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Monges do Estilo da Alma Solar aprendem a canalizar sua energia vital em calcinantes raios solares.",
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.costa-da-espada-guia-de-aventureiros-d-d-5e",
+        "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+        "page": null,
+        "text": "",
+        "sourceTitle": ""
+      }
+    ],
+    "sourcePage": 52
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-estilo-da-alma-solar.feature.raio-solar-radiante.l3.1",
+      "name": "RAIO SOLAR RADIANTE",
+      "level": 3,
+      "description": "Quando escolher essa tradição no 3º nível, você pode lançar raios mágicos radiantes. Você ganha uma nova opção de ataque que pode ser usada junto com a ação de Ataque. Esse ataque especial é um ataque a distância com alcance de 9 metros. Você é proficiente com ele e você adiciona seu modificador de Destreza nos testes de ataque e dano. 0 dano é do tipo radiante e o dado de dano é 1d4. Esse dado se altera conforme você ganha níveis de monge, de acordo com a coluna de Artes Marciais da tabela de monge. Quando usar a ação de Ataque no seu turno e utilizar esse ataque especial como parte dele, você pode gastar 1 ponto de Ki para fazer esse ataque especial duas vezes, com uma ação bônus. Quando ganhar a habilidade de ataque extra, esse Ataque Especial pode ser usado em qualquer um dos ataques que você fizer como parte da sua ação de Ataque.",
+      "page": 52,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-estilo-da-alma-solar.feature.golpe-do-arco-abrasador.l6.1",
+      "name": "GOLPE DO ARCO ABRASADOR",
+      "level": 6,
+      "description": "No 6º nível, você ganha a habilidade de canalizar seu ki em abrasadoras ondas de energia. Imediatamente após ter feito a ação de ataque no seu turno, você pode gastar 2 pontos de ki para conjurar a magia mãos flamejantes como ação bônus. Cada ponto adicional de ki gasto aumenta o nívelda magia mãos flamejantes em 1. O número máximo de pontos de Ki (2 mais quaisquer pontos adicionais) que você pode gastar na magia é igual a metade do seu nível de monge.",
+      "page": 52,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-estilo-da-alma-solar.feature.explosao-calcinante.l11.1",
+      "name": "EXPLOSÃO CALCINANTE",
+      "level": 11,
+      "description": "No 11 º nível, você ganha a habilidade de criar um orbe de luz que entra em erupção causando uma explosão devastadora. Com uma ação, você magicamente cria um orbe e o lança em um ponto, a sua escolha dentro de 45 metros, que rompe em uma esfera de luz radiante por um breve, mas mortal momento. Cada criatura em uma esfera de 8 metros de raio deve ser bem sucedida num teste de resistência em constituição, ou sofrerá 2d6 de dano radiante. Uma criatura não precisa fazer o teste caso esteja em cobertura total que seja opaca. Você pode aumentar o dano da esfera gastando pontos de Ki. Cada ponto gasto, até o máximo de 3, aumenta o dano em 2d6.",
+      "page": 52,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-estilo-da-alma-solar.feature.escudo-solar.l17.1",
+      "name": "ESCUDO SOLAR",
+      "level": 17,
+      "description": "No 17º nível, você é rodeado por uma aura mágica luminosa. Você espalha luz plena em um raio de 9 metros e penumbra por mais 9 metros. Você pode extinguir ou restaurar a luz como uma ação bônus. Se uma criatura o atingir quando sua luz brilhar, você pode usar sua reação para causar dano radiante a criatura, o dano radiante é igual a 5 mais seu modificador de Sabedoria.",
+      "page": 52,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

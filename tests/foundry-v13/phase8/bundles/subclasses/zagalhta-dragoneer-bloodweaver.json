@@ -1,0 +1,176 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-dragoneer-bloodweaver",
+    "identifier": "zagalhta-dragoneer-bloodweaver",
+    "name": "Tecelão de Sangue",
+    "originalName": "Bloodweaver",
+    "aliases": [
+      "Bloodweaver"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "122",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 122
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Um conjurador que imita o poder mágico do sangue dracônico, usando cada magia para restaurar o corpo, manipular Metamagia e projetar o espírito do dragão contra os inimigos.",
+    "tables": [
+      {
+        "key": "table.1.parametros-da-especializacao",
+        "title": "Parâmetros da Especialização",
+        "page": 122,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "hit",
+            "label": "Dado de Vida"
+          },
+          {
+            "key": "saves",
+            "label": "Salvaguardas"
+          },
+          {
+            "key": "weapons",
+            "label": "Armas"
+          },
+          {
+            "key": "armor",
+            "label": "Armaduras"
+          },
+          {
+            "key": "skills",
+            "label": "Perícias"
+          },
+          {
+            "key": "casting",
+            "label": "Conjuração"
+          }
+        ],
+        "rows": [
+          {
+            "hit": "d6",
+            "saves": "Constituição, Sabedoria",
+            "weapons": "Todas as armas simples",
+            "armor": "Leves e médias",
+            "skills": "Arcanismo; escolha uma entre Enganação, Intuição, Intimidação, Persuasão e Religião",
+            "casting": "Conjurador Pleno (lista do Feiticeiro)"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 122
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-dragoneer-bloodweaver.feature.aura-restauradora-do-espirito.l1.1",
+      "name": "AURA RESTAURADORA DO ESPÍRITO",
+      "level": 1,
+      "description": "Sempre que conjurar uma magia de Cavaleiro Dracônico, recupere PV iguais a duas vezes o nível do Espaço gasto. Se a magia tiver nível mas não gastar espaço, recupere PV iguais ao nível-base dela.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-bloodweaver.feature.metafeiticaria.l3.1",
+      "name": "METAFEITIÇARIA",
+      "level": 3,
+      "description": "Escolha duas opções de Metamagia de Feiticeiro. Você as aprende e possui Pontos de Feitiçaria iguais ao nível do maior Espaço de Magia de Cavaleiro Dracônico que possui, recuperados em Descanso Longo. Ao ganhar nível de Cavaleiro Dracônico, pode trocar uma opção de Metamagia.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-bloodweaver.feature.vinculo-draconico.l7.1",
+      "name": "VÍNCULO DRACÔNICO",
+      "level": 7,
+      "description": "Como ação bônus, gaste um Espaço de Magia para manifestar o espírito semicorpóreo de um dragão Imenso. Ele faz um ataque com seu bônus de ataque de magia contra um alvo a até 18 m; se acertar, o alvo fica impedido até o fim do próximo turno dele e sofre 1d8 de dano de Encarnação por nível do Espaço gasto.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-bloodweaver.feature.bonus-do-cavaleiro-draconico.l13.1",
+      "name": "BÔNUS DO CAVALEIRO DRACÔNICO",
+      "level": 13,
+      "description": "Quando conjurar uma magia de Cavaleiro Dracônico que não possua efeito de Bônus do Cavaleiro Dracônico, ela é tratada como se o Espaço usado fosse um nível superior.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-bloodweaver.feature.ritual-de-sangria.l17.1",
+      "name": "RITUAL DE SANGRIA",
+      "level": 17,
+      "description": "Ao conjurar uma magia, pode renunciar à cura de Aura Restauradora do Espírito e adicionar esse valor à primeira rolagem de dano que a magia causar a cada alvo. Se a magia tiver um único alvo, use o valor completo; se puder atingir vários, adicione metade a cada um.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

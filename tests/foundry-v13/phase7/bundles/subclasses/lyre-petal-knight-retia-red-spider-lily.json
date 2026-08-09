@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-red-spider-lily",
+    "identifier": "lyre-petal-knight-retia-red-spider-lily",
+    "name": "Lírio-Aranha-Vermelho",
+    "originalName": "Red Spider Lily",
+    "aliases": [
+      "Red Spider Lily"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "398",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 398
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "O Lírio-Aranha-Vermelho surge em quem foi tocado por maldições, sangue demoníaco ou assombrações. Seu cavaleiro transforma essa distância do mundo em poder para atrair, repelir, controlar espaço e canalizar Daemoturgia.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 398
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-red-spider-lily.feature.grau-de-separacao.l2.1",
+      "name": "GRAU DE SEPARAÇÃO",
+      "level": 2,
+      "description": "Como ação bônus, afete até seis criaturas a até 18 metros, escolhendo para cada uma atração ou repulsão e se o efeito é uma Dádiva ou Comando. Usos por Descanso Curto ou Longo iguais à metade de seu bônus de proficiência, arredondado para baixo. DÁDIVA: o alvo pode usar reação para mover até seu deslocamento sem provocar ataques de oportunidade; atraído deve terminar mais perto de você e repelido, mais longe. COMANDO: o alvo faz salvaguarda de Carisma contra sua CD de magia; em falha, usa seu deslocamento para se aproximar o máximo possível se atraído ou se afastar o máximo possível se repelido.",
+      "page": 398,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-red-spider-lily.feature.conhecimento-sussurrado.l2.1",
+      "name": "CONHECIMENTO SUSSURRADO",
+      "level": 2,
+      "description": "Ao aprender uma nova magia de Cavaleiro das Pétalas, pode escolher qualquer magia do grupo de Daemoturgia e tratá-la como magia da classe, desde que seus espaços de pacto possam conjurá-la. Ao receber esta característica, pode trocar a magia que aprenderia nesse nível e uma outra magia conhecida por uma magia de Daemoturgia cada.",
+      "page": 398,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-red-spider-lily.feature.campo-de-destinos-cruzados.l6.1",
+      "name": "CAMPO DE DESTINOS CRUZADOS",
+      "level": 6,
+      "description": "Quando normalmente escolheria um Ramo Virtuoso por conjurar uma magia de Daemoturgia, pode em vez disso criar uma esfera de 9 metros centrada no espaço em que está. Um campo de lírios-aranha aparece por 1 minuto, até você criar outro ou dispensá-lo como ação bônus. Para criaturas que não sejam você, a área é terreno difícil ao se moverem em sua direção, mas não ao se afastarem. Uma criatura que entrar pela primeira vez ou iniciar o turno na área sofre dano psíquico igual ao nível da magia conjurada + metade de seu nível de Cavaleiro das Pétalas, arredondado para baixo.",
+      "page": 398,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-red-spider-lily.feature.virtude-da-perspectiva.l11.1",
+      "name": "VIRTUDE DA PERSPECTIVA",
+      "level": 11,
+      "description": "Você recebe três opções de Flora Virtuosa. OLHAR ATENTO: até o início do próximo turno, enxerga através de todas as ilusões e recebe visão diabólica de 18 metros, ignorando efeitos como Imagem Espelhada e Nublar; no início do próximo turno, pode usar ação bônus para prolongar por mais uma rodada, sem gastar Flora Virtuosa, até o máximo de 1 minuto. PREPARO: recebe 1d10 + metade de seu nível de Cavaleiro das Pétalas em PV temporários; enquanto os possuir, tem vantagem em iniciativa e salvaguardas de Destreza. TOQUE REIVINDICADOR: toque uma criatura e encerre imediatamente todas as magias, venenos e efeitos mágicos nela com duração inferior a 1 hora ou que permitam salvaguarda ao fim de cada turno, como se a duração tivesse expirado.",
+      "page": 398,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-red-spider-lily.feature.daemonologia-florescente.l15.1",
+      "name": "DAEMONOLOGIA FLORESCENTE",
+      "level": 15,
+      "description": "Escolha uma magia de Daemoturgia de 6º nível e uma de 7º. Elas contam como magias de Cavaleiro das Pétalas e cada uma pode ser conjurada uma vez por Descanso Longo sem espaço de magia. Ao conjurá-las, pode usar Ramos Virtuosos como se tivesse gasto um espaço de pacto do nível da magia. No 18º nível, escolha também uma magia de Daemoturgia de 8º nível, que funciona da mesma forma.",
+      "page": 398,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

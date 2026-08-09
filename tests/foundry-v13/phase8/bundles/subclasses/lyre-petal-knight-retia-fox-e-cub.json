@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-fox-e-cub",
+    "identifier": "lyre-petal-knight-retia-fox-e-cub",
+    "name": "Raposa e Filhote",
+    "originalName": "Fox & Cub",
+    "aliases": [
+      "Fox & Cub"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "391",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 391
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "O epíteto Raposa e Filhote conecta o cavaleiro ao sol, à luz e à nutrição. Seu portador é radiante e protetor, usando magia natural e luz dourada para revelar, prender e regenerar.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 391
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-fox-e-cub.feature.sol-dourado.l2.1",
+      "name": "SOL DOURADO",
+      "level": 2,
+      "description": "Dentro de qualquer fonte de escuridão mágica, uma flor de Raposa e Filhote feita de luz laranja surge em sua gola, a menos que você a suprima conscientemente. Ela emite luz como o truque Luz e sua luz plena atravessa qualquer escuridão mágica sobreposta. Você também aprende Luz e pode conjurá-lo como ação bônus ou como reação a estar em escuridão ou penumbra, criando a mesma flor.",
+      "page": 391,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-fox-e-cub.feature.juramento-harmonioso.l2.1",
+      "name": "JURAMENTO HARMONIOSO",
+      "level": 2,
+      "description": "Ao aprender uma nova magia de Cavaleiro das Pétalas, pode escolher uma magia da lista de Druida e tratá-la como magia de Cavaleiro das Pétalas, desde que seja de nível que seus espaços de pacto possam conjurar. Ao receber esta característica, pode trocar a magia que aprenderia nesse nível e uma outra magia conhecida por magias de Druida.",
+      "page": 391,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-fox-e-cub.feature.luz-do-fogo-da-raposa.l6.1",
+      "name": "LUZ DO FOGO DA RAPOSA",
+      "level": 6,
+      "description": "Uma vez por Descanso Longo, ou gastando um espaço de Magia de Pacto para repetir, como ação você se envolve em luz dourada por 1 minuto. Enquanto durar, enxerga criaturas invisíveis a até 9 metros como se estivessem visíveis. Além disso, sempre que causar dano a uma criatura, ela faz salvaguarda de Destreza; em falha, raposas espectrais a perseguem, reduzindo seu deslocamento em 3 metros, revelando sua posição se invisível e concedendo vantagem a todos os ataques contra ela enquanto o efeito durar.",
+      "page": 391,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-fox-e-cub.feature.dadiva-do-sol.l11.1",
+      "name": "DÁDIVA DO SOL",
+      "level": 11,
+      "description": "Você recebe três opções de Flora Virtuosa. DESTRUIÇÃO DOURADA substitui sua opção de destruição: funciona igual, mas o ataque causa dano radiante e, se o alvo estiver invisível, sob cobertura ou obscurecido por escuridão, você não sofre desvantagem e tem vantagem no ataque. APRIMORAMENTO RADIANTE: escolha uma fonte de luz a até 18 metros que produza luz plena e penumbra; a penumbra torna-se luz plena com as mesmas propriedades até a fonte apagar, passarem 8 horas ou você encerrá-la. EXPLOSÃO SOLAR: criaturas a até 6 metros escolhem desviar o olhar ou não; quem desvia é tratado como cego em relação a você até o início do próximo turno; quem não desvia faz salvaguarda de Constituição, ficando cego por 1 minuto em falha e repetindo ao final dos turnos.",
+      "page": 391,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-fox-e-cub.feature.brilho-regenerativo.l15.1",
+      "name": "BRILHO REGENERATIVO",
+      "level": 15,
+      "description": "No início de cada turno, se estiver com metade ou menos dos PV máximos, recupera 5 + seu modificador de Constituição PV. Sob luz solar direta, recebe o benefício independentemente de seus PV atuais. Não funciona enquanto estiver com 0 PV ou envenenado.",
+      "page": 391,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

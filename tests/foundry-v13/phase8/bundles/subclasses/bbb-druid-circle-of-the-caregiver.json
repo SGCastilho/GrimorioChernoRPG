@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-druid-circle-of-the-caregiver",
+    "identifier": "bbb-druid-circle-of-the-caregiver",
+    "name": "Círculo do Cuidador",
+    "originalName": "Circle of the Caregiver",
+    "aliases": [
+      "Circle of the Caregiver"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "97–98",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 97
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Um naturalista afetuoso que protege e cura os demais.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 97
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-druid-circle-of-the-caregiver.feature.pata-cuidadora.l2.1",
+      "name": "PATA CUIDADORA",
+      "level": 2,
+      "description": "Quando conjura uma magia de druida que restaura PV a outra criatura e tem apenas um alvo, como curar ferimentos ou palavra curativa, pode escolher um dos efeitos abaixo, desde que a magia não seja de nível superior ao seu bônus de proficiência:\n\n• A magia pode escolher um alvo adicional a até 9 m, mesmo se normalmente tiver alcance de toque.\n• A magia rola dados adicionais de cura em quantidade igual à metade do seu bônus de proficiência.\n\nEnquanto estiver em Forma Selvagem, pode ignorar os componentes verbais e somáticos de magias que restauram PV a outros.",
+      "page": 97,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-the-caregiver.feature.calor-primal.l6.1",
+      "name": "CALOR PRIMAL",
+      "level": 6,
+      "description": "Quando conjura uma magia de druida usando espaço de magia, libera uma onda protetora. Cada criatura à sua escolha a até 3 m recebe PV temporários iguais a duas vezes o nível em que a magia foi conjurada.",
+      "page": 97,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-the-caregiver.feature.doador-de-forma.l10.1",
+      "name": "DOADOR DE FORMA",
+      "level": 10,
+      "description": "Quando uma criatura a até 9 m for reduzida a 0 PV, use sua reação para suspender sua queda e transformá-la em qualquer forma que você poderia assumir com Forma Selvagem, usando as mesmas regras. A criatura não assume a condição morrendo enquanto transformada, mas ainda realiza salvaguardas contra a morte: falhas são ignoradas e sucessos contam. A nova forma tem apenas 1 PV e é imune a todo dano; sempre que sofreria dano, você faz um teste de concentração com CD igual ao dano que teria sofrido, e em falha a transformação termina. Regeneração e outros efeitos que restaurariam PV no turno da criatura não funcionam nessa forma; cura recebida por outras fontes é aplicada ao total de PV da forma original. Usos por Descanso Longo iguais ao seu bônus de proficiência, recuperando um uso ao completar um Descanso Curto.",
+      "page": 97,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-the-caregiver.feature.uniao-verdadeira.l14.1",
+      "name": "UNIÃO VERDADEIRA",
+      "level": 14,
+      "description": "Uma vez por Descanso Longo, você pode produzir os efeitos de palavra de poder: reforçar sem gastar espaço de magia. Criaturas que participarem de sua reserva coletiva de PV temporários também não podem ser enfeitiçadas ou paralisadas e recebem +1 em suas salvaguardas.",
+      "page": 98,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

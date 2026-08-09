@@ -1,0 +1,157 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-feiticeiro-da-tempestade",
+    "identifier": "xanathar-feiticeiro-da-tempestade",
+    "name": "Feiticeiro da Tempestade",
+    "originalName": "",
+    "aliases": [
+      "Feiticeiro da Tempestade"
+    ]
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "35–36",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 35
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Sua mágica inata vem do poder elementaldo ar. Muitos com este poder podem traçar a origem de sua magia a uma experiência de quase morte causada pela Grande Tormenta, mas talvez você tenha nascido durante um enorme temporal tão poderoso que as pessoas ainda contam histórias sobre isso, ou sua linhagem pode incluir a influência do poderosas criaturas de ar, como um djinni. Seja qual for o caso, a magia da tempestade permeia seu ser. Os feiticeiros da tempestade são membros inestimáveis da tripulação de um navio. Sua magia permite que eles exerçam controle sobre o vento e clima em suas proximidades. Suas habilidades também são úteis para repelir ataques de sahuagin, piratas e outras ameaças aquáticas.",
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.costa-da-espada-guia-de-aventureiros-d-d-5e",
+        "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+        "page": null,
+        "text": "",
+        "sourceTitle": ""
+      }
+    ],
+    "sourcePage": 35
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-feiticeiro-da-tempestade.feature.orador-do-vento.l1.1",
+      "name": "ORADOR DO VENTO",
+      "level": 1,
+      "description": "A magia arcana que você comanda é infundida com o elemento do ar. Você pode falar, ler e escrever Primordial. Conhecer este idioma permite que compreenda e possa ser entendido por aqueles que falam seus dialetos: Aquan, Auran, lgnan e Terran.",
+      "page": 36,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-feiticeiro-da-tempestade.feature.magia-tempestuosa.l1.1",
+      "name": "MAGIA TEMPESTUOSA",
+      "level": 1,
+      "description": "A partir do 1° nível, você pode usar uma ação bônus no seu turno para causar rajadas giratórias de elementalda ar para envolvê-lo brevemente, imediatamente antes ou depois de conjurar uma magia de 1 ° nível ou superior. Ao fazê-lo, pode voar até 3 metros sem provocar ataques de oportunidade.",
+      "page": 36,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-feiticeiro-da-tempestade.feature.coracao-da-tempestade.l6.1",
+      "name": "CORAÇÃO DA TEMPESTADE",
+      "level": 6,
+      "description": "No 6° nível, você ganha resistência a dano elétrico e trovejante. Além disso, sempre que começar a conjurar uma magia de 1 ° nível ou superior que cause dano elétrico ou trovejante, a magia tempestuosa se manifesta de você. Esta manifestação faz com que as criaturas de sua escolha que possa ver dentro de 3 metros de alcance recebam dano elétrico ou trovejante (escolha um tipo de dano cada vez que essa característica se ativa} igual à metade do seu nível de feiticeiro.",
+      "page": 36,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-feiticeiro-da-tempestade.feature.guia-da-tempestade.l6.1",
+      "name": "GUIA DA TEMPESTADE",
+      "level": 6,
+      "description": "No 6° nível, você ganha a habilidade de controlar sutilmente o clima ao seu redor. Se estiver chovendo, pode usar uma ação para que a chuva pare de cair em uma esfera de 6 metros de raio centrada em si mesmo. Você pode encerrar esse efeito como uma ação bônus. Se estiver ventando, pode usar uma ação bônus a cada rodada para escolher a direção que o vento sopra em uma esfera de raio de 30 metros centrada em si mesmo. O vento sopra nessa direção até o finaldo seu próximo turno. Essa característica não altera a velocidade do vento.",
+      "page": 36,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-feiticeiro-da-tempestade.feature.furia-da-tempestade.l14.1",
+      "name": "FÚRIA DA TEMPESTADE",
+      "level": 14,
+      "description": "A partir do 14° nível, quando for atingido por um ataque corpo-a-corpo, pode usar sua reação para causar dano elétrico. 0 dano é igual ao seu nível de feiticeiro. O atacante também deve fazer um teste de resistência de Força contra a CD das suas magias de feiticeiro. Em uma falha, o atacante é empurrado em linha reta até 6 metros de distáncia de você.",
+      "page": 36,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-feiticeiro-da-tempestade.feature.alma-do-vento.l18.1",
+      "name": "ALMA DO VENTO",
+      "level": 18,
+      "description": "No 18° nível, você ganha imunidade a dano elétrico e trovejante. Você também ganha um deslocamento mágico de voo de 18 metros. Como uma ação, pode reduzir seu deslocamento de voo para 9 metros por 1 hora e escolher um número de criaturas dentro de 9 metros de você, igual a 3 + seu modificador de Carisma. As criaturas escolhidas ganham um deslocamento mágico de voo de 9 metros por 1 hora. Uma vez que reduza seu deslocamento de voo desta maneira, não pode fazê-lo novamente até terminar um descanso curto ou longo.",
+      "page": 36,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

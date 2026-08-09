@@ -1,0 +1,19 @@
+{
+  "phase": 10,
+  "appVersion": "5.22.1",
+  "importerVersion": "0.6.0",
+  "classBundles": 24,
+  "subclassBundles": 377,
+  "individualBundles": 401,
+  "samples": [
+    "classe-barbaro-individual.json",
+    "subclasse-caminho-do-kaiju-individual.json",
+    "classe-cavaleiro-draconico-individual.json",
+    "subclasse-tecelao-de-sangue-individual.json",
+    "pacote-barbaro-classe-completa.json"
+  ],
+  "schemas": {
+    "bundle": "grimorio-foundry-class-bundle@1",
+    "package": "grimorio-foundry-class-package@1"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-cleric-dawnwatcher",
+    "identifier": "lyre-cleric-dawnwatcher",
+    "name": "Vigia da Alvorada",
+    "originalName": "Dawnwatcher",
+    "aliases": [
+      "Dawnwatcher"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "442–444",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 442
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Agentes de Harros, o Sol Dourado, que brandem poder radiante contra quem abusa da autoridade. São heróis diretos que atraem a atenção dos inimigos para proteger os demais. Magias de Domínio — 1º: Comando, Heroísmo; 3º: Meteoro Cadente, Arma da Dominação; 5º: Luz do Dia, Manto Fantasmagórico; 7º: Donzelas do Escudo, Bravura Desatada; 9º: Crista da Luz Solar, Muralha de Radiância.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-dominio",
+        "title": "Magias de Domínio",
+        "page": 442,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Comando; Heroísmo"
+          },
+          {
+            "level": "3º",
+            "spells": "Meteoro Cadente; Arma da Dominação"
+          },
+          {
+            "level": "5º",
+            "spells": "Luz do Dia; Manto Fantasmagórico"
+          },
+          {
+            "level": "7º",
+            "spells": "Donzelas do Escudo; Bravura Desatada"
+          },
+          {
+            "level": "9º",
+            "spells": "Crista da Luz Solar; Muralha de Radiância"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 442
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-cleric-dawnwatcher.feature.postura-audaciosa.l1.1",
+      "name": "POSTURA AUDACIOSA",
+      "level": 1,
+      "description": "Você tem vantagem em salvaguardas contra amedrontado e nenhuma magia ou efeito pode forçá-lo a se mover contra sua vontade.",
+      "page": 442,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-dawnwatcher.feature.canalizar-divindade-sol-ardente.l2.1",
+      "name": "CANALIZAR DIVINDADE: SOL ARDENTE",
+      "level": 2,
+      "description": "Como ação, crie em um ponto visível a até 9 metros um globo solar por 1 minuto ou até dispensá-lo com uma ação. Ele emite luz solar intensa em raio de 9 metros e meia-luz por mais 9 metros. Sempre que uma criatura amigável termina o turno na luz intensa, ganha pontos de vida temporários iguais a 1d6 + metade do seu nível de Clérigo, arredondado para baixo, por 1 minuto. Uma criatura hostil que entra na luz intensa pela primeira vez no turno, inicia o turno nela ou ataca uma criatura dentro dela faz salvaguarda de Constituição; em falha fica cega até o início do próximo turno, em sucesso fica imune a esse efeito até o fim do turno. Mortos-vivos que falham também sofrem dano radiante igual aos pontos de vida temporários que um aliado receberia.",
+      "page": 442,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-dawnwatcher.feature.ataque-extra.l6.1",
+      "name": "ATAQUE EXTRA",
+      "level": 6,
+      "description": "Ao realizar a ação Atacar, pode atacar duas vezes em vez de uma.",
+      "page": 444,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-dawnwatcher.feature.golpe-divino-radiante.l8.1",
+      "name": "GOLPE DIVINO (RADIANTE)",
+      "level": 8,
+      "description": "Uma vez em cada um de seus turnos, ao acertar uma criatura com ataque de arma, causa 1d8 de dano radiante adicional. No 14º nível de Clérigo, aumenta para 2d8.",
+      "page": 444,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-dawnwatcher.feature.canalizar-divindade-arma-solar.l17.1",
+      "name": "CANALIZAR DIVINDADE: ARMA SOLAR",
+      "level": 17,
+      "description": "Como ação, toque uma arma corpo a corpo e fortaleça-a por 1 minuto. Você não pode ser desarmado dela; ela emite luz solar intensa em 9 metros e meia-luz por mais 9 metros; ataques com ela causam 1d8 de dano radiante adicional, mais 1d8 se o alvo for ínfero ou morto-vivo. Como ação bônus, pode encerrar o efeito para explodir a luz: criaturas à sua escolha a até 9 metros fazem salvaguarda de Constituição, sofrendo 6d8 de dano radiante e ficando cegas até o fim do seu próximo turno em falha, ou metade do dano em sucesso. Uma vez por Descanso Longo.",
+      "page": 444,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

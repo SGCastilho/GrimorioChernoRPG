@@ -1,0 +1,173 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-paladin-yojimbo",
+    "identifier": "ryoko-paladin-yojimbo",
+    "name": "Juramento do Yojimbo",
+    "originalName": "Oath of the Yojimbo",
+    "aliases": [
+      "Oath of the Yojimbo",
+      "Juramento do Yojimbo"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "182–183",
+    "chapter": "Capítulo 9: Classes",
+    "page": 182
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Paladinos guarda-costas que juram proteger os vulneráveis, interpor-se a ataques e erguer seus protegidos acima do perigo.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-do-yojimbo",
+        "title": "Magias do Juramento do Yojimbo",
+        "page": 183,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Heroísmo, Santuário"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Pele Terrestre, Vínculo Protetor"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Guardiões Espirituais, Troca-Troca"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Proteção contra a Morte, Pele de Aço"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Nevasca Abençoada de Bakuryō, Muralha de Força"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 182
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-paladin-yojimbo.feature.magias-de-juramento.l3.1",
+      "name": "MAGIAS DE JURAMENTO",
+      "level": 3,
+      "description": "Você sempre possui preparadas as magias da tabela de Juramento do Yojimbo nos níveis indicados.",
+      "page": 183,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-paladin-yojimbo.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Recebe duas opções. Protegido Sagrado: ritual de 1 minuto com criatura voluntária a 9 m; ela vira seu protegido por 24 h, até usar novamente ou ela morrer. Enquanto você estiver consciente a até 18 m, o protegido é imune a amedrontado; quando ele acerta inimigo visível com arma a até 18 m, use reação e gaste espaço para +2d8 radiante com espaço de 1º +1d8/nível acima, máx. 5d8. Intervenção do Guardião: reação para reduzir dano de ataque contra criatura visível a 9 m em um número de d10 igual à metade do seu nível de Paladino; se reduzir a 0, o protegido pode usar reação para atacar o agressor.",
+      "page": 183,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-paladin-yojimbo.feature.protetor-audacioso.l7.1",
+      "name": "PROTETOR AUDACIOSO",
+      "level": 7,
+      "description": "Quando aliado a 3 m torna-se alvo de ataque corpo a corpo, use reação para mover até seu deslocamento em direção ao atacante; se terminar a 1,5 m dele, force-o a atacar você em vez do aliado. No 18º nível, o alcance inicial aumenta de 3 m para 9 m.",
+      "page": 183,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-paladin-yojimbo.feature.guardiao-verdadeiro.l15.1",
+      "name": "GUARDIÃO VERDADEIRO",
+      "level": 15,
+      "description": "Pode realizar Ajudar ou usar Imposição das Mãos como ação bônus. Ao Ajudar, a criatura ajudada soma seu Carisma (mín. +1) ao próximo ataque ou teste que fizer dentro de 1 minuto.",
+      "page": 183,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-paladin-yojimbo.feature.protetor-supremo.l20.1",
+      "name": "PROTETOR SUPREMO",
+      "level": 20,
+      "description": "Como ação por 1 minuto ou até ficar incapacitado: criaturas escolhidas além de você a 3 m ganham +3 CA; se seu Protegido Sagrado a 18 m cair a 0 PV, reação o deixa com 1 PV; seus ataques corpo a corpo causam +2d8 radiante enquanto o protegido estiver a 18 m; Intervenção do Guardião não gasta Canalizar Divindade. Uma vez por Descanso Longo, ou gaste espaço de 5º para usar novamente.",
+      "page": 183,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-comedian",
+    "identifier": "lyre-inscriptor-retia-comedian",
+    "name": "Comediante",
+    "originalName": "Comedian",
+    "aliases": [
+      "Comedian"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "365",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 365
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Você escreve histórias sobre a tolice de seus personagens e domina a linha tênue entre tragédia e humor. Sua leitura das motivações, obsessões e fraquezas alheias permite transformar situações absurdas em alterações reais da realidade.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 365,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Riso Histérico de Tasha"
+          },
+          {
+            "level": "3º",
+            "spells": "Enamorar"
+          },
+          {
+            "level": "5º",
+            "spells": "Palavra Curativa em Massa"
+          },
+          {
+            "level": "7º",
+            "spells": "Enamorar Monstro"
+          },
+          {
+            "level": "9º",
+            "spells": "Mão Suprema"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 365
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-comedian.feature.nao-entendi.l1.1",
+      "name": "NÃO ENTENDI",
+      "level": 1,
+      "description": "Você não pode ser enfeitiçado, enfurecido nem amedrontado.",
+      "page": 365,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-comedian.feature.comedia-pastelao.l8.1",
+      "name": "COMÉDIA PASTELÃO",
+      "level": 8,
+      "description": "Quando uma criatura que você possa ver se mover mais de 3 metros sem parar, você pode usar sua reação e gastar uma Distorção Narrativa para forçá-la a realizar uma salvaguarda de Destreza. Em uma falha, ela cai no chão e seu deslocamento é reduzido a 0 até o início do próximo turno dela.",
+      "page": 365,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-comedian.feature.pato-da-morte.l12.1",
+      "name": "PATO DA MORTE",
+      "level": 12,
+      "description": "Como ação bônus, você pode gastar uma Distorção Narrativa para criar uma pequena réplica realista de um animal adorável ou chamativo em um espaço desocupado a até 18 metros. Criaturas que iniciem o turno a até 6 metros da réplica, ou entrem nessa área pela primeira vez no turno, devem passar em uma salvaguarda de Carisma ou ficam enfeitiçadas até o início do próximo turno delas. Enquanto enfeitiçadas assim, ficam incapacitadas, não podem se mover e ficam totalmente fascinadas pela réplica. Uma criatura que passe na salvaguarda fica imune àquela réplica. Uma criatura afetada também pode repetir a salvaguarda sempre que sofrer dano ou for obrigada a realizar uma salvaguarda de Força, Constituição ou Destreza. A réplica desaparece se você iniciar seu turno sem ninguém fascinado por ela ou após 1 minuto.",
+      "page": 365,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-comedian.feature.comedia-de-aderecos.l20.1",
+      "name": "COMÉDIA DE ADEREÇOS",
+      "level": 20,
+      "description": "Uma vez por Descanso Longo, você pode conjurar Dominar Pessoa ou Animar Objetos sem gastar espaço de magia nem componentes materiais. Ao fazê-lo, pode gastar um uso de Consulta para aumentar o nível da magia pelo valor que a Consulta normalmente acrescentaria a um espaço de Magia de Pacto criado por ela. Se gastar Consulta ao conjurar Dominar Pessoa, pode conjurar Dominar Monstro em seu lugar.",
+      "page": 365,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-comedian.feature.comedia-de-erros.l5.1",
+      "name": "COMÉDIA DE ERROS",
+      "level": 5,
+      "description": "Como ação, você começa a escrever uma longa história de arrogância, acaso e infortúnio. O efeito dura até 1 minuto enquanto você usar sua ação bônus em cada turno e se concentrar como se fosse uma magia. Ao final de qualquer turno em que não usar a ação bônus para continuar escrevendo, deve fazer um teste de concentração com CD 10 + o número de testes de concentração já feitos para este uso. Enquanto a farsa durar, todas as criaturas a até 9 metros ficam sob sua influência: em cada turno, o primeiro ataque feito por cada criatura hostil erra automaticamente; todos os ataques delas têm desvantagem e todos os ataques contra elas têm vantagem. Ataques feitos de fora do raio contra alvos dentro dele são tratados como se tivessem se originado dentro da área. Depois de usar esta característica, só pode usá-la novamente após um Descanso Longo, a menos que gaste um uso de Consulta ao ativá-la.",
+      "page": 365,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

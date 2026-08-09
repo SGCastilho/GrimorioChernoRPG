@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-favored-soul-ombra",
+    "identifier": "zagalhta-favored-soul-ombra",
+    "name": "Fardo de Ombra",
+    "originalName": "Burden of Ombra",
+    "aliases": [
+      "Burden of Ombra"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "151",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 151
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Portador da personificação do vazio, cuja presença drena luz e vitalidade e torna o corpo uma sombra sem vida capaz de atravessar trevas e anular a troca de energia.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 151
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-favored-soul-ombra.feature.passo-sombrio.l1.1",
+      "name": "PASSO SOMBRIO",
+      "level": 1,
+      "description": "Você possui deslocamento de teleporte igual ao dobro do deslocamento base, mas o ponto de partida ou de chegada deve estar em escuridão total.",
+      "page": 151,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-ombra.feature.imunidade-cinetica.l1.1",
+      "name": "IMUNIDADE CINÉTICA",
+      "level": 1,
+      "description": "Você é imune a dano de força e resistente a dano contundente.",
+      "page": 151,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-ombra.feature.luz-antivida.l6.1",
+      "name": "LUZ ANTIVIDA",
+      "level": 6,
+      "description": "Como ação bônus, crie esfera que devora luz e acompanhe você enquanto mantiver concentração; uma vez por Descanso, usos adicionais exigem Espaço de Pacto. A 9 m de você há escuridão total que só você enxerga. Outras criaturas que iniciam turno ou entram nela fazem salvaguarda de Constituição; em falha sofrem dano de força igual ao nível de Alma Favorecida. Ao perder concentração, pode arremessar a esfera a ponto a 18 m: criaturas em raio de 6 m fazem Constituição; falha: 1d8 × nível de Alma Favorecida de força, sucesso: metade; então termina.",
+      "page": 151,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-ombra.feature.portal-nulo.l10.1",
+      "name": "PORTAL NULO",
+      "level": 10,
+      "description": "Quando criatura visível realiza ação que causaria dano ou cura a outra, use reação + Purificação para: reduzir todo o dano e cura que aquela criatura causa a 0 até o fim do turno; ou escolher uma criatura afetada a até 18 m, que não pode sofrer dano nem recuperar PV até o início de seu próximo turno.",
+      "page": 151,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-ombra.feature.evasao.l13.1",
+      "name": "EVASÃO",
+      "level": 13,
+      "description": "Quando faz salvaguarda para sofrer metade do dano, sofre metade em falha e nenhum dano em sucesso.",
+      "page": 151,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-blood-minister-somnus-mutagenic",
+    "identifier": "bbb-blood-minister-somnus-mutagenic",
+    "name": "Mutagênico",
+    "originalName": "Mutagenic",
+    "aliases": [
+      "Mutagenic"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "76–77",
+    "chapter": "Capítulo IX: O Ministro de Sangue",
+    "page": 76
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "blood-minister-somnus",
+    "identifier": "blood-minister",
+    "name": "Ministro de Sangue"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "blood-minister",
+    "selectionLevel": 3,
+    "description": "O Mutagênico absorve influências genéticas de outras criaturas e passa a emular seres poderosos e monstros que caçadores de sangue normalmente enfrentariam. Seu corpo pode se distorcer violentamente, mas treinamento permite temperar e controlar essas alterações.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 76
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-blood-minister-somnus-mutagenic.feature.mutacao-coagulada.l3.1",
+      "name": "Mutação Coagulada",
+      "level": 3,
+      "description": "Escolha duas raças diferentes da sua e obtenha uma Característica de Legado de cada uma como se fossem suas raças secundárias. Escolha também uma Mutação abaixo e receba permanentemente seus benefícios.\n\nMutação Alienígena. Telepatia a 4,5 m × seu bônus de proficiência; criaturas familiares reconhecem sua voz mental, mas não podem responder sem outro meio.\n\nMutação Bestial. Deslocamentos de natação e escalada iguais ao seu deslocamento-base e capacidade de respirar ar e água.\n\nMutação Celestial. Especialização em Intuição e resistência a dano radiante; seu corpo desenvolve penas e placas metálicas.\n\nMutação Dracônica. Pode produzir asas semelhantes às de morcego, recebendo voo laborioso igual ao deslocamento-base; se já possui voo laborioso, ele aumenta em 9 m.\n\nMutação Infernal. Visão diabólica a 18 m; se já a possui, aumenta em 18 m ou para 36 m, o que for maior. Seu corpo desenvolve pequenos chifres, protuberâncias pétreas e esclera negra.\n\nMutação Monstruosa. Seu tamanho torna-se Grande, salvo se já for maior; recebe Especialização em Atletismo e pode tentar Agarrar ou Empurrar como ação bônus.\n\nMutação Espiritual. Ao usar Desengajar, fica invisível até o fim do turno. Também assume forma semiespectral e pode atravessar espaços de criaturas sem custo adicional nem ser bloqueado por hostis, mas deve terminar o movimento em espaço desocupado que comporte você.",
+      "page": 76,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-mutagenic.feature.mutacao-continua.l7.1",
+      "name": "Mutação Contínua",
+      "level": 7,
+      "description": "Você recebe uma Característica de Legado de mais uma raça diferente das já escolhidas e também uma Mutação adicional dentre as opções de Mutação Coagulada.",
+      "page": 77,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-mutagenic.feature.evasao-sobrenatural.l11.1",
+      "name": "Evasão Sobrenatural",
+      "level": 11,
+      "description": "Quando realiza uma salvaguarda para sofrer metade do dano de um efeito, sofre nenhum dano em sucesso e metade em falha.",
+      "page": 77,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-mutagenic.feature.mutacao-final.l15.1",
+      "name": "Mutação Final",
+      "level": 15,
+      "description": "Você domina suas mutações. Mutação Controlada permite ocultar alterações físicas e fazê-las reaparecer quando usa seus poderes; Regeneração Desesperada faz você recuperar 1d4 + modificador de Constituição PV no início de cada turno em que esteja abaixo da metade de seus PV máximos; Mudança Final concede uma terceira Mutação de Mutação Coagulada; e Rearranjo Genético permite trocar uma de suas Mutações por outra ao terminar qualquer Descanso.",
+      "page": 77,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

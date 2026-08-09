@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-perseguidor-obscuro",
+    "identifier": "xanathar-perseguidor-obscuro",
+    "name": "Perseguidor Obscuro",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "58–59",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 58
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Perseguidores Obscuros se sentem em casa em ambientes escuros: nas profundezas da terra, becos sombrios, florestas primitivas e qualquer lugar que seja onde a luz seja ínfimas. A maioria das pessoas entra em tais lugares com receio, mas um Perseguidor Obscuro se aventura corajosamente na escuridão, buscando emboscar ameaças antes que essas possam chegar ao mundo externo. Esses patrulheiros são frequentemente encontrados no Subterrâneo, mas eles vão a qualquer lugar onde o mal se esconde nas sombras.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-perseguidor-obscuro",
+        "title": "Magias do Perseguidor Obscuro",
+        "page": 58,
+        "description": "Magias adicionais concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Disfarçar-se"
+          },
+          {
+            "level": "5º",
+            "spells": "Truque de Corda"
+          },
+          {
+            "level": "9º",
+            "spells": "Medo"
+          },
+          {
+            "level": "13º",
+            "spells": "Invisibilidade Maior"
+          },
+          {
+            "level": "17º",
+            "spells": "Similaridade"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 58
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-perseguidor-obscuro.feature.magia-do-perseguidor-obscuro.l3.1",
+      "name": "MAGIA DO PERSEGUIDOR OBSCURO",
+      "level": 3,
+      "description": "A partir do 3º nível, você aprende magias adicionais quando alcança certos níveis nesta classe, conforme mostrado na tabela de Magias do Perseguidor Obscuro. A magia conta como uma magia de patrulheiro para você, mas não conta para o número de magias conhecidas de patrulheiro.",
+      "page": 59,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-perseguidor-obscuro.feature.emboscador-terrivel.l3.1",
+      "name": "EMBOSCADOR TERRÍVEL",
+      "level": 3,
+      "description": "No nível 3, você domina a arte da emboscada. Você recebe um bônus nas suas jogadas de iniciativa igual ao seu modificador de Sabedoria. No primeiro turno de cada combate, seu deslocamento de caminhada aumenta em 3 metros, que dura até o fim desse turno. Se você realizar uma ação de ataque nesse turno, pode realizar um ataque com arma adicional como parte dessa ação. Se esse ataque acertar o alvo recebe um dano adicional de 1d8 do mesmo tipo de dano da arma.",
+      "page": 59,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-perseguidor-obscuro.feature.visao-umbral.l3.1",
+      "name": "VISÃO UMBRAL",
+      "level": 3,
+      "description": "No 3° nível você ganha visão no escuro com alcance de 18 metros. Caso já possua visão escura proveniente de sua raça, ela aumenta em 9 metros. Você também é um adepto de evitar criaturas que dependem da visão no escuro. Enquanto nas trevas, fica invisível a qualquer criatura que dependa de visão no escuro para enxergá-lo nas trevas.",
+      "page": 59,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-perseguidor-obscuro.feature.mente-de-ferro.l7.1",
+      "name": "MENTE DE FERRO",
+      "level": 7,
+      "description": "No 7° nível, você afiou suas habilidades para resistir a poderes de alterações mentais das suas presas. Você ganha proficiência em testes de resistência de Sabedoria. Caso já possua essa proficiência, então ela passa a ser em testes de resistência de Inteligência ou Carisma.",
+      "page": 59,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-perseguidor-obscuro.feature.agitacao-perseguidora.l11.1",
+      "name": "AGITAÇÃO PERSEGUIDORA",
+      "level": 11,
+      "description": "No 11º nível, você aprende a atacar com uma velocidade tão inesperada que pode transformar uma falha em outro ataque. Uma vez em cada um de seus turnos, quando obtiver uma falha com um ataque com arma, pode fazer outro ataque de arma como parte da mesma ação.",
+      "page": 59,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-perseguidor-obscuro.feature.evasiva-sombria.l15.1",
+      "name": "EVASIVA SOMBRIA",
+      "level": 15,
+      "description": "A partir do 15° nível você pode se esquivar de maneiras imprevisíveis com um punhado de sombras sobrenaturais à sua volta. Sempre que uma criatura faz uma jogada de ataque contra você e não possua vantagem na jogada, você pode usar a sua reação para impor desvantagem sobre ela. Você deve usar essa característica antes de conhecer o resultado da jogada de ataque.",
+      "page": 59,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

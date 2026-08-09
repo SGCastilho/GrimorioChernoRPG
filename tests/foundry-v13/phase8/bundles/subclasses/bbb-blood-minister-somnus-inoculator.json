@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-blood-minister-somnus-inoculator",
+    "identifier": "bbb-blood-minister-somnus-inoculator",
+    "name": "Inoculador",
+    "originalName": "Inoculator",
+    "aliases": [
+      "Inoculator"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "74–75",
+    "chapter": "Capítulo IX: O Ministro de Sangue",
+    "page": 74
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "blood-minister-somnus",
+    "identifier": "blood-minister",
+    "name": "Ministro de Sangue"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "blood-minister",
+    "selectionLevel": 3,
+    "description": "O Inoculador combina a força sobrenatural do sangue com alquimia, produzindo injeções que alteram rapidamente a fisiologia. Seus soros são preparados para reagir de modo diferente em seu próprio corpo e no de outras criaturas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 74
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-blood-minister-somnus-inoculator.feature.injecoes.l3.1",
+      "name": "Injeções",
+      "level": 3,
+      "description": "Como ação bônus, você pode aplicar um de seus soros em si mesmo ou em outra criatura que possa tocar. No 3º nível, possui 3 usos por Descanso; recebe +1 uso nos níveis 7, 11 e 15. Você conhece os dois Soros Automáticos abaixo e escolhe 2 receitas dentre as Seleções de Soro; aprende mais 1 receita nos níveis 7, 11 e 15 e pode trocar uma seleção ao ganhar um nível de Ministro de Sangue. Sua CD de Injeção é 8 + bônus de proficiência + modificador de Constituição. Quando uma receita diz “salvaguarda se repete”, o alvo repete a salvaguarda ao fim de seus turnos, encerrando o efeito em sucesso.\n\nSOROS AUTOMÁTICOS\n\nImpulsionador. Em você: recebe 2d6 PV temporários e escolhe um atributo, obtendo vantagem nos testes desse atributo enquanto conservar esses PV temporários. Em outro alvo: escolha um atributo exceto Constituição; ele faz salvaguarda de Constituição e, em falha, fica envenenado por 10 minutos e tem desvantagem em salvaguardas do atributo escolhido enquanto estiver envenenado (salvaguarda se repete).\n\nStimpack. Em você: recupera uma quantidade de PV igual a 1d6 × seu bônus de proficiência + seu modificador de Constituição. Em outro alvo: ele faz salvaguarda de Constituição; em falha, sofre dano de veneno igual à cura que o soro concederia a você.\n\nSELEÇÕES DE SORO\n\nGrito de Banshee. Em você: criaturas à sua escolha a até 4,5 m fazem salvaguarda de Sabedoria ou ficam amedrontadas por 1 minuto (salvaguarda se repete). Em outro alvo: salvaguarda de Carisma; em falha, fica amedrontado por 10 minutos, repetindo a salvaguarda, e sofre dano psíquico igual a 1d4 × seu nível de Ministro de Sangue.\n\nLâmina de Sangue. Em vez de injetado, é aplicado a uma arma tocada. Por 1 minuto ela recebe bônus nas jogadas de ataque e dano igual à metade de seu bônus de proficiência e é tratada como mágica, mas apenas enquanto você a empunha.\n\nConfluência de Energia. Em você: resistência por 1 hora a ácido, frio, fogo ou necrótico. Em outro alvo: salvaguarda de Constituição; em falha, perde resistências — não imunidades — a esses tipos por 10 minutos.\n\nEyebrine. Em você: visão no escuro a 18 m até o próximo Descanso Longo; se já possuir, recebe visão diabólica no mesmo alcance. Em outro alvo: salvaguarda de Constituição; em falha, fica cego por 1 hora (salvaguarda se repete).\n\nAceleração. Em você: por 1 minuto, seu deslocamento aumenta em 1,5 m × metade de seu nível de Ministro de Sangue, arredondado para cima, e ataques de oportunidade contra você têm desvantagem. Em outro alvo: salvaguarda de Constituição; em falha, deslocamento reduzido à metade e não pode usar Disparada por 1 minuto (salvaguarda se repete).\n\nOlhos de Caça. Em você ou outro alvo: por 1 hora, bônus em Percepção e Investigação igual ao bônus de proficiência do alvo, e ele não pode ser surpreendido em combate.\n\nRestaurador. Em você ou outro alvo: remove condições e efeitos que Restauração Menor removeria; a partir do 11º nível, também remove aquilo que Restauração Maior removeria.\n\nTouro Sanguíneo. Em você: por 1 minuto, sofre 1d6 de dano irredutível no início de cada turno, salvo se começar com 0 PV, e tem vantagem em ataques com armas. Em outro alvo: salvaguarda de Constituição; em falha, fica lento por 1 minuto (salvaguarda se repete).\n\nAntimagia Sérica. Em você ou outro alvo: durante 1 minuto, sempre que fizer uma salvaguarda contra efeito mágico, rola 1d6 e soma ao resultado. O efeito termina após três salvaguardas bem-sucedidas desse modo.\n\nBanho Definhante. O soro é quebrado na mão, criando uma névoa num cubo de 6 m originado em você. Cada criatura na área faz salvaguarda de Constituição ou fica envenenada por 1 minuto e sofre 2d6 de dano de veneno no início de cada turno enquanto estiver assim (salvaguarda se repete).",
+      "page": 74,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-inoculator.feature.autovacinacao.l3.1",
+      "name": "Autovacinação",
+      "level": 3,
+      "description": "Você é imune a dano de veneno e à condição envenenado.",
+      "page": 75,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-inoculator.feature.transfiguracao.l7.1",
+      "name": "Transfiguração",
+      "level": 7,
+      "description": "Quando não possui usos de Injeção restantes e está em combate ou situação semelhante, pode gastar 2 Dados de Vida para produzir os efeitos de uma de suas Injeções não Supremas, transfigurando à força seu sangue sob o efeito da adrenalina.",
+      "page": 75,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-inoculator.feature.injecao-de-elixir.l11.1",
+      "name": "Injeção de Elixir",
+      "level": 11,
+      "description": "Ao terminar um Descanso Longo, você produz um soro que imita um elixir raro ou de raridade inferior à sua escolha. Como ação bônus, pode aplicá-lo em si mesmo ou em uma criatura tocada; em outra criatura, seus efeitos duram apenas 10 minutos. Ao produzir um novo, elixires de injeção antigos e não usados tornam-se inertes. No 15º nível, pode escolher elixires muito raros. A fonte remete às listas de elixires de Lyre’s Guide to Risk & Reward e outros livros de Somnus Domina.",
+      "page": 75,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-inoculator.feature.injecao-suprema.l15.1",
+      "name": "Injeção Suprema",
+      "level": 15,
+      "description": "Escolha uma opção abaixo. Ela funciona como uma Injeção comum, mas apenas em você e uma vez por Descanso, em uso separado de suas Injeções normais. Sempre que ganhar um nível de Ministro de Sangue, pode trocar a escolha.\n\nVacinação Agressiva. Por 1 hora, você tem vantagem em salvaguardas contra condições indesejadas, mesmo se normalmente tivesse desvantagem.\n\nImpulso Sanguíneo. Por 1 hora, todo Dado de Vida que gastar é tratado como um tamanho de dado maior — d4 vira d6, d8 vira d10 etc. — sem ultrapassar d12.\n\nGrande Estatura. Por 1 minuto, seu tamanho aumenta em uma categoria, seu alcance aumenta em 1,5 m, você tem vantagem em testes de Força e, sempre que fizer um ataque corpo a corpo, rola 1d4 e soma à jogada de ataque.\n\nAprimorador Muscular. Por 1 minuto, quando acerta um ataque com arma, causa um dado de arma adicional de dano.\n\nMutação. Por 10 minutos, seu corpo se adapta livremente ao ambiente: você recebe deslocamentos de voo, escavação, escalada e natação iguais ao deslocamento-base, todos aumentados em 4,5 m, e pode respirar ar e água.\n\nTotem da Vida Sombria. Não é injetado. Quando é reduzido a 0 PV, pode usar reação para receber 8d10 PV temporários; o dano que o reduziu a 0 é primeiro subtraído desses PV temporários antes de afetar seus PV. Enquanto possuir esses PV temporários, tem vantagem em salvaguardas.",
+      "page": 75,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

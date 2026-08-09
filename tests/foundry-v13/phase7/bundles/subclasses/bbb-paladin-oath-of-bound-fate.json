@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-paladin-oath-of-bound-fate",
+    "identifier": "bbb-paladin-oath-of-bound-fate",
+    "name": "Juramento do Destino Vinculado",
+    "originalName": "Oath of Bound Fate",
+    "aliases": [
+      "Oath of Bound Fate"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "112",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 112
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Um paladino que considera sagrados os vínculos entre as pessoas e os defende sem hesitação.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-do-destino-vinculado",
+        "title": "Magias do Juramento do Destino Vinculado",
+        "page": 112,
+        "description": "Magias concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Rito Cerimonial; Golpe da Valquíria"
+          },
+          {
+            "level": "5º",
+            "spells": "Enamorar; Vínculo Protetor"
+          },
+          {
+            "level": "9º",
+            "spells": "Vínculo Eficaz; Revivificar"
+          },
+          {
+            "level": "13º",
+            "spells": "Santuário Particular; Donzelas do Escudo"
+          },
+          {
+            "level": "17º",
+            "spells": "Recompensa Instantânea de Elstrakin; Proteção Lendária"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 112
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-paladin-oath-of-bound-fate.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Você recebe duas opções de Canalizar Divindade.\n\nJURADO E VINCULADO. Como ação, escolha uma criatura não hostil a até 9 m e jure protegê-la por 10 minutos. Enquanto permanecer a até 9 m dela, faz um ataque adicional sempre que realiza a ação Atacar e sofre, em seu lugar, metade do dano que ela receberia de ataques e efeitos. Se estiver a até 3 m, ataques contra ela têm desvantagem. Você tem vantagem em ataques contra criaturas que tenham causado dano ao protegido desde o início do efeito.\n\nREVIVIFICAÇÃO ZELOSA. Quando uma criatura a até 18 m for reduzida a 0 PV, use sua reação e Canalizar Divindade para restaurá-la imediatamente a PV iguais ao seu nível de paladino + 10. Até o fim do próximo turno dela, não pode ser reduzida abaixo de 1 PV, tem resistência a todo dano e toda cura que receber usa o resultado máximo dos dados.",
+      "page": 112,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-paladin-oath-of-bound-fate.feature.aura-de-poder-combinado.l7.1",
+      "name": "AURA DE PODER COMBINADO",
+      "level": 7,
+      "description": "Quando uma criatura dentro do alcance de sua Aura de Proteção faz uma jogada de ataque, pode adicionar metade de seu bônus de proficiência às jogadas de ataque e de dano resultantes.",
+      "page": 112,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-paladin-oath-of-bound-fate.feature.negacao-do-fim.l15.1",
+      "name": "NEGAÇÃO DO FIM",
+      "level": 15,
+      "description": "Quando um ataque ou efeito reduziria uma ou mais criaturas a até 9 m a 0 PV, pode usar sua reação para impedir que quaisquer delas sejam reduzidas a 0 ou mortas por esse ataque/efeito. Em vez disso, cada uma fica com 1d8 + metade de seu nível de paladino PV. Para cada criatura salva, seus PV máximos são reduzidos em 1d6 até completar um Descanso Longo. Se isso reduzir seus PV máximos a 0, você morre imediatamente. Se o efeito também causar dano a você, esse dano é aplicado depois da resolução desta característica.",
+      "page": 112,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-paladin-oath-of-bound-fate.feature.erga-se-diante-deles.l20.1",
+      "name": "ERGA-SE DIANTE DELES",
+      "level": 20,
+      "description": "Enquanto houver ao menos um aliado a até 36 m, ao ser reduzido a 0 PV você não começa a morrer nem fica inconsciente. Em vez disso, sempre que sofrer dano, seus PV máximos são reduzidos pelo dano que teria sofrido e você continua agindo normalmente. Se seus PV máximos chegarem a 0 dessa forma, ficam em 1 e você imediatamente começa a morrer e fica inconsciente. Descansos não restauram essa redução; é necessário um efeito como restauração maior. Se terminar seu turno sem aliados a até 36 m, o estado especial termina. Se estiver morrendo com mais de 1 PV máximo e, no início do turno, houver um aliado a até 36 m que você possa ver ou ouvir, pode voltar a agir como se não estivesse morrendo. Enquanto permanecer a 0 PV sem morrer, seus ataques com arma causam um dado extra de dano radiante e você recebe 10 PV temporários no início de cada turno.",
+      "page": 112,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

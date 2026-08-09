@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-petal-knight-retia-sakura",
+    "identifier": "lyre-petal-knight-retia-sakura",
+    "name": "Sakura",
+    "originalName": "Sakura",
+    "aliases": [
+      "Sakura"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "399",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 399
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "O Sakura representa elegância, decisão e instinto. Seus cavaleiros assimilam magia de Feiticeiro, acumulam Dados de Valor e convertem o sangue derramado em vigor.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 399
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-petal-knight-retia-sakura.feature.faisca-de-feiticaria.l2.1",
+      "name": "FAÍSCA DE FEITIÇARIA",
+      "level": 2,
+      "description": "Ao aprender uma nova magia de Cavaleiro das Pétalas, pode escolher uma magia da lista de Feiticeiro e tratá-la como magia da classe, desde que seja de nível que seus espaços possam conjurar. Ao receber esta característica, pode trocar a magia que aprenderia nesse nível e uma outra magia conhecida por magias de Feiticeiro.",
+      "page": 399,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-sakura.feature.valor.l2.1",
+      "name": "VALOR",
+      "level": 2,
+      "description": "Você possui Dados de Valor d6 em quantidade igual à metade de seu nível de Cavaleiro das Pétalas, arredondado para baixo, + 2. Recupera-os após Descanso Longo; tornam-se d8 no 6º nível e d10 no 12º. Pode gastá-los assim: ARMADURA: ao ser atingido por ataque visível, use reação, role um dado e some à CA até o início do próximo turno. CONTRA-ATAQUE: ao ser atacado, use reação, gaste e role um dado para subtrair da jogada de ataque; se isso fizer o ataque errar e o atacante estiver ao alcance, faça um ataque com arma contra ele. ATAQUE PODEROSO: ao fazer ataque com arma, gaste e role um dado para somá-lo à jogada de ataque e, se acertar, também ao dano. SAQUE RÁPIDO: quando surpreendido, gaste um dado para agir normalmente e sacar imediatamente arma principal e secundária. FEITIÇARIA DIRECIONADA: ao conjurar magia da classe que exija salvaguarda, gaste e role um dado para subtraí-lo da primeira salvaguarda do alvo contra a magia.",
+      "page": 399,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-sakura.feature.instintos-dourados.l6.1",
+      "name": "INSTINTOS DOURADOS",
+      "level": 6,
+      "description": "Enquanto não usar armadura nem escudo, sua CA pode ser calculada como 10 + Destreza + Sabedoria.",
+      "page": 399,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-sakura.feature.lamina-vampirica.l6.1",
+      "name": "LÂMINA VAMPÍRICA",
+      "level": 6,
+      "description": "Na primeira vez em seu turno que acertar uma criatura com uma arma de uma mão, recebe PV temporários iguais à metade do dano causado.",
+      "page": 399,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-sakura.feature.aprimoramento-de-ataque-extra.l11.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 11,
+      "description": "Quando usa a ação Atacar, pode atacar três vezes em vez de uma, desde que todos os ataques sejam feitos com armas de uma mão.",
+      "page": 399,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-petal-knight-retia-sakura.feature.raizes-de-sangue.l15.1",
+      "name": "RAÍZES DE SANGUE",
+      "level": 15,
+      "description": "Quando Lâmina Vampírica seria acionada, você recupera PV em vez de receber PV temporários. Além disso, qualquer ataque que se beneficie de um de seus efeitos de Valor também pode acionar Lâmina Vampírica.",
+      "page": 399,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

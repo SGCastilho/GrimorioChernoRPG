@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-monk-convergent-soul",
+    "identifier": "lyre-monk-convergent-soul",
+    "name": "Alma Convergente",
+    "originalName": "Convergent Soul",
+    "aliases": [
+      "Convergent Soul"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "464–465",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 464
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "A Alma Convergente contempla futuros possíveis e aprende a desviar o fluxo dos acontecimentos. Sua percepção de caminhos alternativos evolui para verdadeira precognição e para a capacidade de puxar resultados de outras linhas temporais para o presente.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 464
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-monk-convergent-soul.feature.concordancia-do-caos.l3.1",
+      "name": "CONCORDÂNCIA DO CAOS",
+      "level": 3,
+      "description": "Suas características usam Cargas Arcanas conforme as regras de 5.19: você possui quantidade igual ao seu bônus de proficiência e as recupera em um Descanso Longo. Sempre que um efeito exigir uma Carga Arcana, você também pode gastar 2 pontos de Chi no lugar dela. Você pode gastar Cargas para: Porta para o Sucesso — quando o d20 de um ataque mostrar 19, tratá-lo como 20; Salvaguarda Dupla — ao falhar em uma salvaguarda, usar reação para rolar outro d20 e substituir o resultado original; Retirada Relâmpago — ao obter sucesso em uma salvaguarda contra efeito de área, usar reação para teleportar-se para um espaço desocupado adjacente, mas fora da área, ignorando inclusive efeitos que ocorreriam em um sucesso.",
+      "page": 464,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-convergent-soul.feature.punho-dividido.l6.1",
+      "name": "PUNHO DIVIDIDO",
+      "level": 6,
+      "description": "Quando errar um ataque com arma de Monge ou ataque desarmado, gaste uma Carga Arcana e role 1d6. 1–2: nada ocorre. 3: faça imediatamente dois ataques contra o mesmo alvo com a mesma arma. 4: trate o d20 como 20, mas o ataque não é considerado crítico. 5: realize imediatamente Esquivar ou Disparada sem ação e não provoque ataques de oportunidade do alvo nesse turno. 6: receba pontos de vida temporários iguais ao seu nível de Monge até o início do próximo turno; resultados 6 repetidos no mesmo turno se acumulam. Punho Dividido não pode desencadear a si próprio.",
+      "page": 465,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-convergent-soul.feature.golpe-de-movimento-ondulatorio.l11.1",
+      "name": "GOLPE DE MOVIMENTO ONDULATÓRIO",
+      "level": 11,
+      "description": "No seu turno, gaste 1 Carga Arcana para aumentar para 9 metros o alcance de um ataque corpo a corpo com arma de Monge ou ataque desarmado. Antes do ataque, teleporte-se para um espaço desocupado adjacente ao alvo; se não houver espaço, não pode usá-lo. Até o fim do turno, você pode repetir esse teleporte para cada outro ataque válido sem gastar novas Cargas.",
+      "page": 465,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-convergent-soul.feature.desviar-as-correntes-do-destino.l17.1",
+      "name": "DESVIAR AS CORRENTES DO DESTINO",
+      "level": 17,
+      "description": "Uma vez por Descanso Curto ou Longo, como ação bônus, produza em si mesmo os efeitos de Premonição por 10 minutos. Depois desse uso gratuito, você pode usar novamente gastando 5 pontos de Chi.",
+      "page": 465,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-convergent-soul.feature.vontade-estilhacada.l17.1",
+      "name": "VONTADE ESTILHAÇADA",
+      "level": 17,
+      "description": "Uma vez por turno, você pode desencadear Punho Dividido sem gastar Carga Arcana. Além disso, se gastar uma Carga para usá-lo e obtiver 1 ou 2 na tabela, recupera a Carga gasta.",
+      "page": 465,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

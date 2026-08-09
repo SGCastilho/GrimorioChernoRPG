@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-barbarian-grandstander",
+    "identifier": "lyre-barbarian-grandstander",
+    "name": "Exibicionista",
+    "originalName": "Grandstander",
+    "aliases": [
+      "Grandstander"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "433",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 433
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Pronto para atrair todos os olhares e declarar sua vitória antes mesmo do fim da luta, o Exibicionista é um guerreiro indomável que provoca a ira dos adversários em benefício dos aliados. Ele dramatiza o combate e o transforma em um espetáculo sobre si mesmo, enquanto conduz inimigos a distrações e fintas enganosas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 433
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-barbarian-grandstander.feature.grande-distracao.l3.1",
+      "name": "GRANDE DISTRAÇÃO",
+      "level": 3,
+      "description": "Você é uma presença caótica no campo de batalha. Como ação bônus ou como parte de entrar em Fúria, escolha um aliado a até 18 metros que possa ver ou ouvir você. Por 1 minuto, criaturas têm desvantagem em ataques contra esse aliado se você estiver a até 9 metros dele ou dos atacantes. Durante o mesmo período, o aliado tem vantagem no primeiro ataque que realizar em cada turno contra uma criatura a até 6 metros de você. O efeito termina se você ficar incapacitado ou usá-lo novamente. Você pode usá-lo um número de vezes por Descanso Longo igual ao seu bônus de proficiência. A partir do 10º nível de Bárbaro, pode escolher dois aliados em vez de um.",
+      "page": 433,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-grandstander.feature.destemor.l6.1",
+      "name": "DESTEMOR",
+      "level": 6,
+      "description": "Você é imune às condições amedrontado e enfurecido. Além disso, enquanto você não estiver incapacitado, criaturas a até 6 metros de você têm vantagem em salvaguardas contra ficarem amedrontadas.",
+      "page": 433,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-grandstander.feature.surto-de-adrenalina.l6.1",
+      "name": "SURTO DE ADRENALINA",
+      "level": 6,
+      "description": "Sempre que sua Fúria terminar, você recebe um surto de adrenalina: até o fim do seu turno, seu deslocamento aumenta em 3 metros e você tem vantagem em todos os ataques com arma que realizar.",
+      "page": 433,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-grandstander.feature.critico-aprimorado-furia.l10.1",
+      "name": "CRÍTICO APRIMORADO (FÚRIA)",
+      "level": 10,
+      "description": "Enquanto estiver em Fúria, você obtém um acerto crítico com uma jogada de ataque cujo d20 mostre 19 ou 20.",
+      "page": 433,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-grandstander.feature.manto-do-campeao.l14.1",
+      "name": "MANTO DO CAMPEÃO",
+      "level": 14,
+      "description": "Sua confiança demonstra a alma de um verdadeiro campeão. Você recebe os seguintes benefícios: quando acerta um ataque com arma realizado com vantagem, causa 1d6 adicional do tipo de dano da arma; quando obtém um acerto crítico rolando 19 ou 20 no d20, recebe pontos de vida temporários iguais ao dano causado por esse ataque; e ganha proficiência em salvaguardas de Carisma, além de poder adicionar metade do seu bônus de proficiência, arredondado para baixo, a qualquer teste de atributo baseado em Carisma que ainda não inclua esse bônus.",
+      "page": 433,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

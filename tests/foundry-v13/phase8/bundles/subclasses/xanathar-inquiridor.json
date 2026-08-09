@@ -1,0 +1,147 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-inquiridor",
+    "identifier": "xanathar-inquiridor",
+    "name": "Inquiridor",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "43–44",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 43
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Como arquétipo Inquiridor você é notável em desenterrar segredos e mistérios irreparáveis. Você confia em seus olhos afiados para detalhes, mas também em sua habilidade finamente aprimorada para ler palavras e atos de outras criaturas e determinar suas reais intenções. Você se destaca em derrotar as criaturas que se escondem e se alimentam de pessoas comuns, e seu domínio da tradição e suas dúvidas e deduções tornam-se bem equipados para expor e acabar com os males ocultos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 43
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-inquiridor.feature.ouvir-o-enganador.l3.1",
+      "name": "OUVIR O ENGANADOR",
+      "level": 3,
+      "description": "Quando você escolhe esse arquétipo no 3° nível, desenvolve um talento para descobrir mentiras. Sempre que faz um teste de Sabedoria (Intuição) para determinar se uma criatura está mentindo, trate um resultado de 7 ou inferior no d20 como um 8.",
+      "page": 43,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-inquiridor.feature.olhar-do-detalhe.l3.1",
+      "name": "OLHAR DO DETALHE",
+      "level": 3,
+      "description": "Começando no 3º nível, você pode usar sua ação bônus para fazer um teste de Sabedoria (Percepção) para detectar um objeto ou uma criatura, ou fazer um teste de Percepção (Investigação) para descobrir pistas.",
+      "page": 44,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-inquiridor.feature.combatente-perspicaz.l3.1",
+      "name": "COMBATENTE PERSPICAZ",
+      "level": 3,
+      "description": "No 3° nível você obtém a habilidade de decifrar a tática do oponente e desenvolver uma forma de contra­ ataque. Como uma ação bônus você pode realizar um teste de Sabedoria (Intuição) contra o teste de Carisma (Enganação) do alvo que possa ver e que não esteja incapacitado. Se for bem sucedido você pode usar o Ataque Furtivo contra o alvo mesmo se não tiver vantagem no ataque, mas não se possuir desvantagem. Esse benefício dura por 1 minuto ou até você ser bem sucedido usando esta característica em outro alvo.",
+      "page": 44,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-inquiridor.feature.olhar-constante.l9.1",
+      "name": "OLHAR CONSTANTE",
+      "level": 9,
+      "description": "Começando no 9° nível você tem vantagem em qualquer tipo de teste de Sabedoria (Percepção) ou Inteligência (Investigação) caso não tenha se movido mais da metade de seu deslocamento no mesmo turno.",
+      "page": 44,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-inquiridor.feature.olhar-inflexivel.l13.1",
+      "name": "OLHAR INFLEXÍVEL",
+      "level": 13,
+      "description": "A partir do 13º nível seus sentidos são quase impossíveis de serem despistados. Como uma ação, você percebe a presença de ilusões, metamorfos que não estejam em sua forma original e outras magias projetadas para despistar os sentidos em até 9 metros de alcance, caso não esteja cego ou caído. Você sente que algum efeito está tentando enganá-lo, mas não obtém nenhuma visão sobre o que está escondido ou em sua verdadeira natureza.\n\nVocê pode usar essa característica um número de vezes igual ao seu modificador de Sabedoria (mínimo de uma vez) e recupera todas as utilizações gastas quando terminar um descanso longo.",
+      "page": 44,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-inquiridor.feature.olhar-da-fraqueza.l17.1",
+      "name": "OLHAR DA FRAQUEZA",
+      "level": 17,
+      "description": "No 17º nível você aprende a explorar a fraqueza de uma criatura estudando calmamente sua tática e seus movimentos. Enquanto seu olhar de fraqueza estiver sobre o alvo seu Ataque Furtivo é incrementado em 3d6.",
+      "page": 44,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

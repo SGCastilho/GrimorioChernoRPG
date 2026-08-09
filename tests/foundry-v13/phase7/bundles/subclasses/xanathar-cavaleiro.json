@@ -1,0 +1,164 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-cavaleiro",
+    "identifier": "xanathar-cavaleiro",
+    "name": "Cavaleiro",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "40–41",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 40
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "ºarquétipo de Cavaleiro destaca-se no combate montado. Geralmente nascido entre a nobreza e criado na corte, um cavaleiro pode igualmente liderar a cavalaria do reino em uma investida ou trocar réplicas espirituosas em um jantar real. Cavaleiros também sabem como proteger aqueles que estão sob sua responsabilidade do mal, servindo frequentemente como protetores de seus superiores e dos fracos. Comprometidos com os seus deveres ou ganhar prestígio, muitos desses guerreiros deixam suas vidas de conforto para embarcarem em gloriosas aventuras.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 40
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-cavaleiro.feature.bonus-de-proficiencia.l3.1",
+      "name": "BÔNUS DE PROFICIÊNCIA",
+      "level": 3,
+      "description": "Quando você escolhe esse arquétipo no 3° nível, você ganha proficiência em uma das seguintes habilidades de sua escolha: Lidar com Animais, História, Intuição, Atuação ou Persuasão. Alternativamente, você aprende um idioma de sua escolha.",
+      "page": 40,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-cavaleiro.feature.nascido-para-a-sela.l3.1",
+      "name": "NASCIDO PARA A SELA",
+      "level": 3,
+      "description": "A partir do 3º nível, seu domínio como cavaleiro torna-se evidente. Você tem vantagem em testes de resistência para evitar cair da sua montaria. Se você cair de sua montaria e não descer mais do que 3 metros, poderá cair em pé se você não estiver incapacitado. Finalmente, montar ou desmontar uma criatura custa a ti apenas 1,5 metros de deslocamento, em vez de metade do seu deslocamento. CAPÍTU LO l 10PÇÕES DE PUSONA L llAÇAO CAVALEI ROS, SAM U RAI S, E H I STÓRIA Enquanto cavaleiros e samurais existem no mundo real, nossas inspirações para ambos os arquétipos de combate são tiradas da cultura popular (contos populares, filmes e quadrinhos), e não da história. Nossa intenção é capturar o elemento cinematográfico e heróico de ambos os arquétipos no jogo, em vez de criar uma representação histórica precisa.",
+      "page": 40,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-cavaleiro.feature.marca-inabalavel.l3.1",
+      "name": "MARCA INABALÁVEL",
+      "level": 3,
+      "description": "No início do 3º nível, você pode ameaçar seus inimigos, frustrar seus ataques e puni-los por causar dano aos outros. Quando atingir uma criatura com um ataque de arma corpo-a-corpo, pode marcar a criatura até o finaldo seu próximo turno. Este efeito acaba prematuramente se você estiver incapacitado ou caso morra, ou se alguém marcar a criatura. Enquanto estiver dentro de 1,5 metros de alcance, uma criatura marcada por você tem desvantagem em qualquer ataque que não o tenha como alvo. Além disso, se uma criatura marcada por você causar dano a alguém além de ti, você pode fazer um ataque armado especial corpo-a-corpo contra a criatura marcada como uma ação bônus no seu próximo turno. Você tem vantagem no ataque, e se ele atingir, a arma de ataque causa dano extra pro alvo igual metade do seu nível de guerreiro. Independentemente do número de criaturas que você marcar, só poderá fazer esse ataque especial um número de vezes igual a seu modificador de Força (mínimo de uma vez) e recupera suas utilizações quando terminar um descanso longo.",
+      "page": 40,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-cavaleiro.feature.manobra-de-protecao.l7.1",
+      "name": "MANOBRA DE PROTEÇÃO",
+      "level": 7,
+      "description": "No 7° nível, você aprende a afastar os golpes que o sejam direcionado, a sua montaria e a outras criaturas próximas. Se você ou uma criatura que possa ver a 1,5 metros de alcance for atingida por um ataque, poderá rolar 1d8 como uma reação caso esteja empunhando uma arma corpo-a-corpo ou um escudo. Role um dado e adicione o número rolado para a CA do alvo contra esse ataque. E se o ataque ainda atingir, o alvo tem resistência contra o dano do ataque. Você pode usar essa característica um número de vezes igual ao seu modificador de Constituição (mínimo de uma vez), e recupera todas as utilizações gastas quando terminar um descanso longo.",
+      "page": 40,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-cavaleiro.feature.mantenha-a-formacao.l10.1",
+      "name": "MANTENHA A FORMAÇÃO",
+      "level": 10,
+      "description": "No 10º nível, você se torna um mestre em travar seus inimigos. Criaturas provocam um ataque de oportunidade a você quando eles se movem 1,5 metros ou mais, enquanto dentro do seu alcance, e se você atingir uma criatura com um ataque de oportunidade, o deslocamento do alvo é reduzido para 0 até o final do turno atual.",
+      "page": 40,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-cavaleiro.feature.investida-feroz.l15.1",
+      "name": "INVESTIDA FEROZ",
+      "level": 15,
+      "description": "A partir do 15°, você pode controlar seus inimigos mais facilmente, se estiver montado ou não. Caso se desloque pelo menos 3 metros em linha reta antes de atacar uma criatura e acertá-la com o seu ataque, esse alvo deve ser bem-sucedido em um teste de resistência de Força (CD 8 + seu bônus de proficiência + seu modificador de Força) ou será derrnbado ao chão. Você pode usar essa característica apenas uma vez em cada um de seus turnos.",
+      "page": 41,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-cavaleiro.feature.defensor-vigilante.l18.1",
+      "name": "DEFENSOR VIGILANTE",
+      "level": 18,
+      "description": "A partir do 18° nível, você responde ao perigo com extraordinária agilidade. Em combate, obtêm uma reação especial que pode realizar uma vez no turno de cada criatura exceto em seu turno. Você pode usar essa reação especial somente para fazer um ataque de oportunidade, e não pode usá-lo no mesmo turno qual realizou uma reação normal.",
+      "page": 41,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

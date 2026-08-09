@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sorcerer-freezing-torment",
+    "identifier": "lyre-sorcerer-freezing-torment",
+    "name": "Tormento Congelante",
+    "originalName": "Freezing Torment",
+    "aliases": [
+      "Freezing Torment"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "483",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 483
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "A origem Tormento Congelante impregna a própria alma com gelo, seja por influência elemental, peculiaridade de um Plano Elemental ou linhagem amaldiçoada. Quanto mais poderoso o Feiticeiro se torna, mais baixa fica sua temperatura corporal e mais constante é o frio que sente.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 483
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sorcerer-freezing-torment.feature.em-casa-no-gelo.l1.1",
+      "name": "EM CASA NO GELO",
+      "level": 1,
+      "description": "Você tem resistência a dano de frio, vantagem em salvaguardas para suportar condições congelantes e ignora terreno difícil causado por gelo ou neve.",
+      "page": 483,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-freezing-torment.feature.escudo-da-sepultura-de-gelo.l1.1",
+      "name": "ESCUDO DA SEPULTURA DE GELO",
+      "level": 1,
+      "description": "Quando é reduzido a 0 pontos de vida, seu poder latente recobre o corpo com uma proteção de gelo. Você recebe pontos de vida temporários iguais a 1d10 + seu nível de Feiticeiro. Enquanto os possuir, sempre que uma criatura a até 1,5 metro acertá-lo com um ataque, ela sofre 1d10 de dano de frio. Uma vez por Descanso Longo.",
+      "page": 483,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-freezing-torment.feature.rastro-de-gelo.l6.1",
+      "name": "RASTRO DE GELO",
+      "level": 6,
+      "description": "Quando conjura uma magia que causa dano de frio, pode congelar o chão ao redor de você ou de um dos alvos da magia, transformando-o em terreno difícil até descongelar. O efeito cobre todas as superfícies de uma esfera centrada no alvo, com raio em metros equivalente a 1,5 + 1,5 × o nível da magia.",
+      "page": 483,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-freezing-torment.feature.jaula-de-gelo-explosiva.l14.1",
+      "name": "JAULA DE GELO EXPLOSIVA",
+      "level": 14,
+      "description": "Como ação bônus, faça uma estaca de gelo irromper de um ponto visível a até 18 metros, preenchendo todos os espaços adjacentes. Cada criatura na área faz salvaguarda de Destreza; em falha sofre 2d8 de dano de frio e fica restringida pelo gelo. O gelo quebra no início do seu próximo turno, libertando-as; antes disso, uma criatura pode usar a ação para realizar um teste de Força contra sua CD de magia e se libertar em um sucesso. Usos por Descanso Curto ou Longo iguais à metade do bônus de proficiência, arredondado para baixo.",
+      "page": 483,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sorcerer-freezing-torment.feature.nevasca-encarnada.l18.1",
+      "name": "NEVASCA ENCARNADA",
+      "level": 18,
+      "description": "Como ação, crie por 1 minuto uma nevasca centrada em você, em esfera de 3 metros de raio que se move consigo. Você não é afetado; enquanto estiver dentro dela, fica fortemente obscurecido e ataques contra você têm desvantagem. Criaturas que iniciarem o turno na esfera ou entrarem nela no próprio turno fazem salvaguarda de Constituição: em falha sofrem 4d10 de dano de frio e ficam Lentas até o início do próximo turno; em sucesso sofrem metade e não ficam Lentas. Em cada um de seus turnos durante o efeito, use ação bônus para disparar gelo em um cone de 9 metros ou uma linha de 18 metros de comprimento por 3 metros de largura. Criaturas na área fazem salvaguarda de Destreza, sofrendo 4d10 de frio em falha ou metade em sucesso. Uma vez por Descanso Longo; usos adicionais custam 5 Pontos de Feitiçaria.",
+      "page": 483,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

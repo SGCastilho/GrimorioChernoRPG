@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-a-lamina-maldita",
+    "identifier": "xanathar-a-lamina-maldita",
+    "name": "A Lâmina Maldita",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "19–20",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 19
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Você fez o seu pacto com uma entidade misteriosa do Pendor das Sombras - uma força que se manifesta em armas mágicas inteligentes esculpidas da matéria da sombra. A poderosa espada Lâmina Negra é a mais notáveldessas armas, que se espalharam pelo multiverso ao longo dos tempos. A força sombria por trás dessas armas pode oferecer poder para guerreiros que formam pactos com ela. Muitos bruxos da lâmina maldita criam armas que imitam aquelas criadas no Pendor das Sombras. Outros renunciam a tais armas, contentando-se em tecer a magia negra daquele plano ao conjurar suas magias. Como a Rainha Corvo é conhecida por ter forjado a primeira dessas armas, muitos sábios especulam que ela e a força são uma só e que as armas, juntamente com os bruxos da lâmina maldita, são ferramentas que ela usa para manipular eventos no plano material até seus fins inescrutáveis.",
+    "tables": [
+      {
+        "key": "table.1.magias-expandidas-da-lamina-maldita",
+        "title": "Magias Expandidas da Lâmina Maldita",
+        "page": 19,
+        "description": "Magias adicionais concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Escudo Arcano; Destruição Colérica"
+          },
+          {
+            "level": "2º",
+            "spells": "Nublar; Marca da Punição"
+          },
+          {
+            "level": "3º",
+            "spells": "Piscar; Arma Elemental"
+          },
+          {
+            "level": "4º",
+            "spells": "Assassino Fantasmagórico; Destruição Estonteante"
+          },
+          {
+            "level": "5º",
+            "spells": "Destruição Banidora; Cone de Frio"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 19
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-a-lamina-maldita.feature.lista-de-magias-expandida.l1.1",
+      "name": "LISTA DE MAGIAS EXPANDIDA",
+      "level": 1,
+      "description": "A Lâmina Maldita permite que você escolha uma lista expandida de magias quando aprende uma magia de bruxo. As seguintes magias são adicionadas à sua lista de magias de bruxo.",
+      "page": 19,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-a-lamina-maldita.feature.maldicao-da-lamina-maldita.l1.1",
+      "name": "MALDIÇÃO DA LÂMINA MALDITA",
+      "level": 1,
+      "description": "Começando no 1º nível, você ganha a habilidade de colocar uma maldição perniciosa em alguém. Como uma ação bônus, escolha uma criatura que possa ver a até 9 metros de alcance. O alvo é amaldiçoado por 1 minuto. A maldição termina mais cedo se o alvo morrer, você morrer, ou se você estiver incapacitado. Até a maldição terminar, você ganha os seguintes benefícios: • Você ganha um bônus para testes de dano contra o alvo amaldiçoado. O bônus é igual ao seu bônus de proficiência. • Qualquer ataque que faça contra o alvo amaldiçoado é um golpe critico em um resultado • Se o alvo amaldiçoado morrer, você recupera pontos de vida iguais ao seu nível bruxo + seu modificador Carisma (mínimo de 1 ponto de vida). Você não pode usar essa característica novamente até terminar um descanso curto ou longo.",
+      "page": 19,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-a-lamina-maldita.feature.guerreiro-maldito.l1.1",
+      "name": "GUERREIRO MALDITO",
+      "level": 1,
+      "description": "No 1° nível, você adquire o treinamento necessário para se armar efetivamente para a batalha. Você ganha proficiência em armaduras médias, escudos e armas marciais. A influência de seu patrono também permite que canalize sua vontade através de uma arma específica. Sempre que terminar um descanso longo, pode tocar uma arma com a qual seja proficiente e que não possua a propriedade de duas mãos. Quando atacar com essa arma, pode usar seu modificador de Carisma, em vez de Força ou Destreza, para os testes de ataque e danos. Este benefício dura até terminar um descanso longo. Se ganhar mais tarde Bruxo LÂMINA MALDITA a característica Pacto da Lâmina, esse benefício se estende a todas as armas de pacto que conjure com essa característica, independente do tipo da arma.",
+      "page": 19,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-a-lamina-maldita.feature.espectro-amaldicoado.l6.1",
+      "name": "ESPECTRO AMALDIÇOADO",
+      "level": 6,
+      "description": "A partir do 6° nível, você pode amaldiçoar a alma de uma pessoa que mata, vinculando-a temporariamente aos seus serviços. Quando você mata um humanoide, pode fazer com que seu espírito se levante de seu cadáver como um espectro, cujas estatísticas estão no Manual dos Monstros. Quando o espectro aparece, ele ganha pontos de vida temporários iguais à metade do seu nível de bruxo. Role iniciativa para o espectro, que tem seus próprios turnos. Ele obedece aos seus comandos verbais, além disso, ganha um bônus especial em seus testes de ataque iguais ao seu modificador Carisma (mínimo de +O). O espectro permanece aos seus serviços até o finaldo próximo descanso longo, momento em que se anula para a vida após a morte. Depois de vincular um espectro com essa característica, não pode usar a característica novamente até terminar um descanso longo.",
+      "page": 20,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-a-lamina-maldita.feature.armadura-de-maldicoes.l10.1",
+      "name": "ARMADURA DE MALDIÇÕES",
+      "level": 10,
+      "description": "No 10° nível, suas maldições são mais poderosas. Se o alvo amaldiçoado pela Maldição da Lâmina Maldita o atinge com um teste de ataque, pode usar sua reação para rolar um d6. Em um 4 ou superior, o ataque instantaneamente falha sobre você, independentemente do resultado.",
+      "page": 20,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-a-lamina-maldita.feature.mestre-das-maldicoes.l14.1",
+      "name": "MESTRE DAS MALDIÇÕES",
+      "level": 14,
+      "description": "A partir do 14° nível, você pode espalhar sua Maldição da Lâmina Maldita de uma criatura morta para outra criatura. Quando a criatura amaldiçoada pela Maldição da Lâmina Maldita morre, você pode aplicar a maldição a uma criatura diferente que possa ver a até 9 metros de alcance, desde que não esteja incapacitado. Quando aplica a maldição dessa maneira, não recupera pontos de vida da morte da criatura anteriormente amaldiçoada.",
+      "page": 20,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

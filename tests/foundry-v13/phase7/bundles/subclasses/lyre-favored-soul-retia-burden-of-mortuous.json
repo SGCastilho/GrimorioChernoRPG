@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-mortuous",
+    "identifier": "lyre-favored-soul-retia-burden-of-mortuous",
+    "name": "Fardo de Mortuous",
+    "originalName": "Burden of Mortuous",
+    "aliases": [
+      "Burden of Mortuous"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "354",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 354
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): lança de cavalaria ou gunlance. O Desafiante usa seus favorecidos para criar combatentes dignos de entretê-lo, enchendo suas mentes com competição, força e glória. À medida que crescem, escamas da carne dracônica de Mortuous surgem em seus corpos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 354
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-mortuous.feature.combatente-focado.l1.1",
+      "name": "COMBATENTE FOCADO",
+      "level": 1,
+      "description": "Quando uma criatura ao alcance de uma arma corpo a corpo que você empunha ataca alguém que não seja você, pode usar reação para fazer um ataque de oportunidade contra ela. Quando acerta um ataque de oportunidade, role um dado de dano da arma adicional e some ao dano.",
+      "page": 354,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-mortuous.feature.corpo-do-desafiante.l6.1",
+      "name": "CORPO DO DESAFIANTE",
+      "level": 6,
+      "description": "Seu máximo de pontos de vida aumenta em 2 × seu nível de Alma Favorecida e aumenta em mais 2 a cada novo nível de Alma Favorecida.",
+      "page": 354,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-mortuous.feature.campeao-em-surto.l10.1",
+      "name": "CAMPEÃO EM SURTO",
+      "level": 10,
+      "description": "No seu turno, se não estiver incapacitado, gaste Purificação para realizar uma ação Atacar adicional, e todos os ataques dela têm vantagem. No fim do turno, para cada ataque dessa ação extra que errou, role o dano da arma; você ganha a soma como pontos de vida temporários. Apenas uma vez por turno.",
+      "page": 354,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-mortuous.feature.aprimoramento-de-ataque-extra.l13.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 13,
+      "description": "Ao realizar Atacar, pode fazer três ataques. No 20º nível, quatro ataques.",
+      "page": 354,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

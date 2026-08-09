@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-monk-way-of-the-freezing-soul",
+    "identifier": "lyre-monk-way-of-the-freezing-soul",
+    "name": "Caminho da Alma Congelante",
+    "originalName": "Way of the Freezing Soul",
+    "aliases": [
+      "Way of the Freezing Soul"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "467",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 467
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Monges da Alma Congelante temperam corpo e mente nos ermos gelados ao sul de Retia. Depois de aprender a sobreviver naturalmente ao frio, refinam o controle espiritual sobre gelo e neve, manifestando foices congeladas como extensões de si mesmos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 467
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-monk-way-of-the-freezing-soul.feature.ceifador-de-gelo.l3.1",
+      "name": "CEIFADOR DE GELO",
+      "level": 3,
+      "description": "Foices de combate contam como armas de Monge e possuem acuidade para você. Golpe de Colheita: sempre que uma característica permitir ataque desarmado, você pode atacar com foice de combate. Foice de Gelo: como ação bônus, gaste 1 Chi para condensar água em uma foice de gelo que causa dano de frio no lugar de cortante e tem bônus de aprimoramento igual à metade do seu bônus de proficiência, arredondado para baixo; ela desaparece em um Descanso Curto ou Longo. Superafiar: ao atacar com essa foice, você pode obter vantagem; se acertar, adicione ao dano uma quantidade de dados extras igual ao bônus de aprimoramento, e depois a foice se quebra.",
+      "page": 467,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-freezing-soul.feature.nascido-da-tundra.l3.1",
+      "name": "NASCIDO DA TUNDRA",
+      "level": 3,
+      "description": "Você tem resistência a dano de frio, vantagem em salvaguardas contra efeitos negativos de ambientes congelantes e se move normalmente por neve e gelo que seriam terreno difícil.",
+      "page": 467,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-freezing-soul.feature.bandagens-de-neve.l6.1",
+      "name": "BANDAGENS DE NEVE",
+      "level": 6,
+      "description": "Ao concluir um Descanso Curto, role novamente cada Dado de Vida gasto, sem somar Constituição. Você recebe o total como pontos de vida temporários, representando gelo e neve selando suas feridas. A soma desses pontos temporários com seus pontos de vida atuais não pode exceder seus pontos de vida máximos; ao recuperar vida acima desse limite, reduza os pontos temporários conforme necessário.",
+      "page": 467,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-freezing-soul.feature.nevasca-aprisionadora.l11.1",
+      "name": "NEVASCA APRISIONADORA",
+      "level": 11,
+      "description": "Como ação, gaste entre 2 e metade do seu nível de Monge em pontos de Chi, arredondado para baixo, e crie uma onda de gelo em uma forma: esfera de 6 metros de raio centrada em você, escolhendo como alvos 2 + os pontos de Chi gastos criaturas; ou linha de 1,5 metro de largura e comprimento de 3 metros × os pontos de Chi gastos, atingindo tudo nela. Cada alvo faz salvaguarda de Constituição; em uma falha sofre um número de d10 de dano de frio igual ao seu bônus de proficiência e fica com deslocamento 0 até o início do seu próximo turno; em um sucesso sofre metade do dano.",
+      "page": 467,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-monk-way-of-the-freezing-soul.feature.caixao-de-geada.l17.1",
+      "name": "CAIXÃO DE GEADA",
+      "level": 17,
+      "description": "Ao acertar uma criatura em seu turno com arma de Monge ou ataque desarmado, gaste 3 Chi para cobri-la de gelo. Ela faz salvaguarda de Constituição; em uma falha, enquanto estiver presa seu deslocamento é reduzido à metade, pode realizar uma ação ou uma ação bônus no turno, mas não ambas, e sofre no início de cada turno dano de frio igual a um dado de Artes Marciais + seu modificador de Sabedoria. Repete a salvaguarda ao fim de cada turno, encerrando em sucesso; ao sofrer dano de fogo, repete imediatamente com vantagem.",
+      "page": 467,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

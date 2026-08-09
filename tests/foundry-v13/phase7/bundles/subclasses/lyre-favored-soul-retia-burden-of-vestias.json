@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-vestias",
+    "identifier": "lyre-favored-soul-retia-burden-of-vestias",
+    "name": "Fardo de Vestias",
+    "originalName": "Burden of Vestias",
+    "aliases": [
+      "Burden of Vestias"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "358",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 358
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): lança, bordão ou chicote. O fardo de Vestias gira em torno dos perigos da magia. Seus favorecidos resistem a feitiços e radiação eidomântica, produzem mais energia mágica e são compelidos a proteger o uso responsável da magia contra abusadores e repressão.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 358
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-vestias.feature.favorecido-dos-eidolons.l1.1",
+      "name": "FAVORECIDO DOS EIDOLONS",
+      "level": 1,
+      "description": "Você tem vantagem em testes de Queima Eidomântica e todos os seus ataques são mágicos e eidólicos.",
+      "page": 358,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-vestias.feature.alta-feiticaria-da-guardia-dos-ceus.l1.1",
+      "name": "ALTA FEITIÇARIA DA GUARDIÃ DOS CÉUS",
+      "level": 1,
+      "description": "Magias da lista de Feiticeiro e do grupo Arcana da Guardiã dos Céus contam como magias da Alma Favorecida para você.",
+      "page": 358,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-vestias.feature.conjuracao-rapida.l6.1",
+      "name": "CONJURAÇÃO RÁPIDA",
+      "level": 6,
+      "description": "Quando realiza a ação Atacar, pode usar ação bônus para conjurar uma magia de Alma Favorecida cujo tempo normal seja 1 ação. A magia é tratada como conjurada em seu nível base, mesmo se o espaço usado for superior.",
+      "page": 358,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-vestias.feature.egide-antimagia.l10.1",
+      "name": "ÉGIDE ANTIMAGIA",
+      "level": 10,
+      "description": "Como ação, gaste Purificação e crie por 1 minuto barreira que anula magia externa. Você fica imune aos efeitos de magias cujo nível seja igual ou inferior à metade do seu nível de Alma Favorecida, arredondado para baixo, menos 1, salvo se escolher ser afetado. Magias de divindades e artefatos ignoram a imunidade, mas o dano delas ainda é reduzido à metade e você tem vantagem em testes e salvaguardas contra elas.",
+      "page": 358,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-vestias.feature.bencao-do-poder-da-feiticaria.l13.1",
+      "name": "BÊNÇÃO DO PODER DA FEITIÇARIA",
+      "level": 13,
+      "description": "Você recebe um espaço de pacto adicional do mesmo nível indicado na tabela da Alma Favorecida, funcionando exatamente como seus outros espaços.",
+      "page": 358,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

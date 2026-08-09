@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-wizard-leash-arcanist",
+    "identifier": "zagalhta-wizard-leash-arcanist",
+    "name": "Arcanista da Rédea",
+    "originalName": "Leash Arcanist",
+    "aliases": [
+      "Leash Arcanist"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "181–182",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 181
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Mago especializado em criar, vincular e fortalecer um familiar, transformando-o em extensão defensiva e ofensiva de sua própria magia e restaurando-o rapidamente quando destruído.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 181
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-wizard-leash-arcanist.feature.vinculo-do-familiar.l2.1",
+      "name": "VÍNCULO DO FAMILIAR",
+      "level": 2,
+      "description": "Você aprende encontrar familiar, que pode conjurar com Espaços ou como ritual e não conta no limite de magias conhecidas. Como ritual, não exige materiais. Seu familiar tem vantagem em salvaguardas contra efeitos mágicos e soma metade da sua proficiência a ataques, salvaguardas e testes. Ao invocá-lo, pode escolher as mesmas opções de familiar disponíveis a um Bruxo com Pacto da Corrente, mas comportamento e limites de ação continuam conforme encontrar familiar.",
+      "page": 181,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-wizard-leash-arcanist.feature.escudo-do-servo.l2.1",
+      "name": "ESCUDO DO SERVO",
+      "level": 2,
+      "description": "Quando sofrer dano, pode usar reação para redirecioná-lo ao familiar se ele estiver a até 18 m. Se o dano o reduziria a 0 PV, o familiar é tratado como vulnerável a esse dano, independentemente de resistências ou imunidades próprias.",
+      "page": 181,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-wizard-leash-arcanist.feature.compreensao-modificada.l6.1",
+      "name": "COMPREENSÃO MODIFICADA",
+      "level": 6,
+      "description": "Você aprende familiar fortalecido; ele não conta no limite e está sempre preparado. Uma vez por Descanso Longo, pode produzir seus efeitos sem gastar Espaço, em nível igual à sua proficiência.",
+      "page": 182,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-wizard-leash-arcanist.feature.invocacao-relampago.l10.1",
+      "name": "INVOCAÇÃO RELÂMPAGO",
+      "level": 10,
+      "description": "Uma vez por Descanso Longo, conjure encontrar familiar e familiar fortalecido ao mesmo tempo como uma única magia de tempo 1 ação, gastando um Espaço para cada como se fossem conjuradas separadamente. Não exige componentes materiais dessa forma.",
+      "page": 182,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-wizard-leash-arcanist.feature.rito-restaurador.l10.1",
+      "name": "RITO RESTAURADOR",
+      "level": 10,
+      "description": "Quando seu familiar morrer, enquanto estiver morto há menos de 1 minuto, use ação bônus e gaste Espaço de 2º nível ou maior para restaurá-lo em espaço desocupado a até 9 m com metade dos PV máximos. Se ele estava sob efeitos de magia, pode restaurá-los intactos gastando um Espaço adicional; cada efeito de nível igual ou inferior ao desse Espaço retorna (1º nível se não tinha nível), e efeitos de concentração exigem que o conjurador retome a concentração.",
+      "page": 182,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-wizard-leash-arcanist.feature.compreensao-avancada.l14.1",
+      "name": "COMPREENSÃO AVANÇADA",
+      "level": 14,
+      "description": "Ao conjurar familiar fortalecido, pode escolher efeitos adicionais de Níveis Superiores como se a magia tivesse sido conjurada três níveis acima, máximo 12º. Não pode investir mais de sete níveis totais no mesmo efeito. Esses níveis adicionais não contam para os PV máximos do familiar.",
+      "page": 182,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

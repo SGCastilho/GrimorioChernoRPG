@@ -1,0 +1,184 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-monk-eight-gates",
+    "identifier": "ryoko-monk-eight-gates",
+    "name": "Caminho dos Oito Portões",
+    "originalName": "Way of the Eight Gates",
+    "aliases": [
+      "Way of the Eight Gates",
+      "Caminho dos Oito Portões"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "180",
+    "chapter": "Capítulo 9: Classes",
+    "page": 180
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Um monge que abre oito centros internos de ki, alcançando harmonia física, social, espiritual e mental até a apoteose do Portão do Infinito.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 180
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-monk-eight-gates.feature.portao-da-terra.l3.1",
+      "name": "PORTÃO DA TERRA",
+      "level": 3,
+      "description": "Quando usa Defesa Paciente ou Passo do Vento, recupera PV iguais ao modificador de Sabedoria (mín. 1).",
+      "page": 180,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-monk-eight-gates.feature.portao-da-agua.l3.1",
+      "name": "PORTÃO DA ÁGUA",
+      "level": 3,
+      "description": "Seu máximo de pontos de ki aumenta em número igual ao modificador de Sabedoria (mín. 1).",
+      "page": 180,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-monk-eight-gates.feature.portao-do-ar.l3.1",
+      "name": "PORTÃO DO AR",
+      "level": 3,
+      "description": "Ao acertar criatura com ataque corpo a corpo, pode gastar 1 ki para soltar um rugido desafiador; se ela puder ouvi-lo, tem desvantagem em ataques contra criaturas que não sejam você até fim do seu próximo turno.",
+      "page": 180,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-monk-eight-gates.feature.portao-da-chama.l6.1",
+      "name": "PORTÃO DA CHAMA",
+      "level": 6,
+      "description": "Ao usar Rajada de Golpes, faça um golpe desarmado adicional na mesma ação bônus. Usos iguais a Sabedoria (mín.1) por Descanso Longo.",
+      "page": 180,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-monk-eight-gates.feature.portao-da-presenca.l6.1",
+      "name": "PORTÃO DA PRESENÇA",
+      "level": 6,
+      "description": "Sempre que realizar teste de Carisma, recebe bônus igual a Sabedoria (mín. +1).",
+      "page": 180,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-monk-eight-gates.feature.portao-do-espirito.l11.1",
+      "name": "PORTÃO DO ESPÍRITO",
+      "level": 11,
+      "description": "Como ação bônus, toque criatura voluntária e gaste 2 ki. Ela ganha PV temporários = proficiência + Sabedoria (mín.1) e pode usar reação imediatamente para um ataque de arma, Esquivar-se ou mover até seu deslocamento sem ataques de oportunidade.",
+      "page": 180,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-monk-eight-gates.feature.portao-da-mente.l11.1",
+      "name": "PORTÃO DA MENTE",
+      "level": 11,
+      "description": "Pode conjurar Vínculo Telepático sem componentes. Uma vez por Descanso Curto ou Longo.",
+      "page": 180,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-monk-eight-gates.feature.portao-do-infinito.l17.1",
+      "name": "PORTÃO DO INFINITO",
+      "level": 17,
+      "description": "Como ação, gaste 6 ki e transcenda por 1 minuto: caminhada +6 m; +2 CA; ao usar a ação Atacar, faça um golpe desarmado adicional; e some Sabedoria às jogadas de ataque e dano.",
+      "page": 180,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

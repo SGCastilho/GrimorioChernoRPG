@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-wakefield",
+    "identifier": "lyre-inscriptor-retia-wakefield",
+    "name": "Wakefield",
+    "originalName": "Wakefield",
+    "aliases": [
+      "Wakefield"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "375",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 375
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Você não depende de técnica literária refinada, mas de uma imaginação excepcional, sonhos e pesadelos vívidos. O misterioso Correfonte Wakefield transforma essas imagens subconscientes em orientação e poder mágico.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 375,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Maldição"
+          },
+          {
+            "level": "3º",
+            "spells": "Escuridão"
+          },
+          {
+            "level": "5º",
+            "spells": "Palavra de Poder: Infortúnio"
+          },
+          {
+            "level": "7º",
+            "spells": "Chama Sombria"
+          },
+          {
+            "level": "9º",
+            "spells": "Dominar Pessoa"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 375
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-wakefield.feature.guia-do-pesadelo.l1.1",
+      "name": "GUIA DO PESADELO",
+      "level": 1,
+      "description": "Você não aprende magias de Inscritor ao ganhar níveis nesta classe. Em vez disso, ao terminar um Descanso Longo, prepara da lista do Inscritor um número de magias que seus espaços de pacto possam conjurar igual ao seu nível de Inscritor + seu modificador de Inteligência. Elas permanecem preparadas até seu próximo Descanso Longo. Suas Magias de Capítulo e magias aprendidas por características ou Inscrições estão sempre preparadas e não contam nesse limite.",
+      "page": 375,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-wakefield.feature.objeto-de-poder.l5.1",
+      "name": "OBJETO DE PODER",
+      "level": 5,
+      "description": "Ao terminar um Descanso Curto ou Longo, escolha uma arma para ser seu Objeto de Poder até o próximo descanso. Você recebe proficiência com ela e pode usar Inteligência nas jogadas de ataque e dano com essa arma. Se já era proficiente com ela, quando realiza a ação Atacar pode fazer um segundo ataque com arma, desde que seja com o Objeto de Poder.",
+      "page": 375,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-wakefield.feature.manuscrito.l8.1",
+      "name": "MANUSCRITO",
+      "level": 8,
+      "description": "Como ação, gaste um uso de Consulta e escolha um número de criaturas a até 18 metros igual ao seu bônus de proficiência. O Mestre ou jogador que controla cada criatura deve declarar, com o máximo de precisão possível, ações e movimentos que ela pretende realizar até seu próximo turno — onde se moverá, quem perseguirá, qual tipo de ação usará, quais magias e Ações Lendárias pretende usar e os alvos. Sempre que uma dessas criaturas tentar realizar uma ação, reação ou curso de ação não declarado, deve fazer uma salvaguarda de Inteligência. Em uma falha, fica atordoada até o fim do seu próximo turno.",
+      "page": 375,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-wakefield.feature.evasao.l12.1",
+      "name": "EVASÃO",
+      "level": 12,
+      "description": "Quando fizer uma salvaguarda contra um efeito em que um sucesso normalmente cause metade do dano, você não sofre dano em um sucesso e sofre apenas metade em uma falha.",
+      "page": 375,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-wakefield.feature.vislumbre-do-futuro.l20.1",
+      "name": "VISLUMBRE DO FUTURO",
+      "level": 20,
+      "description": "Você pode conjurar Premonição uma vez por Descanso Longo, tendo apenas você como alvo e sem gastar espaço de magia nem componentes.",
+      "page": 375,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

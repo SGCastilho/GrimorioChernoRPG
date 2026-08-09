@@ -1,0 +1,822 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spiritual-emissary",
+    "identifier": "spiritual-emissary",
+    "name": "Emissário Espiritual",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "emissario-homebrew",
+    "title": "Emissário Espiritual — Homebrew Original",
+    "pages": "2–6",
+    "chapter": "Classe e Caminho do Santuário",
+    "page": 2
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Guiados pelos espíritos e pela astúcia da deusa Inari, os Emissários Espirituais atuam como pontes entre os planos. Seus selos canalizam poder divino para proteger, curar e manipular o destino daqueles ao seu redor.",
+    "hitDice": {
+      "raw": "d8",
+      "mode": "standard",
+      "number": 1,
+      "faces": 8
+    },
+    "primaryAbility": {
+      "raw": "Sabedoria (principal) e Destreza",
+      "abilityKeys": [
+        "dex",
+        "wis"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Destreza, Sabedoria",
+        "abilityKeys": [
+          "dex",
+          "wis"
+        ]
+      },
+      "armor": "Roupas comuns",
+      "weapons": "Armas simples, adagas, dardos e kunais",
+      "tools": "Kit de Caligrafia",
+      "skills": "Escolha duas: Acrobacia, Adestrar Animais, História, Intuição, Medicina, Percepção, Persuasão ou Religião"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 2,
+      "text": "Como um Emissário Espiritual, você adquire as seguintes características de classe.\n\nPONTOS DE VIDA\n\nDado de Vida: 1d8 por nível de Emissário Espiritual\n\nPontos de Vida no 1º Nível: 8 + seu modificador de Constituição\n\nPontos de Vida nos Níveis Seguintes: 1d8 (ou 5) + seu modificador de Constituição por nível de Emissário Espiritual após o 1º\n\nPROFICIÊNCIAS\n\nArmaduras: Roupas comuns\n\nArmas: Armas simples, adagas, dardos e kunais\n\nFerramentas: Kit de Caligrafia\n\nTestes de Resistência: Destreza e Sabedoria\n\nPerícias: Escolha duas entre Acrobacia, Adestrar Animais, História, Intuição, Medicina, Percepção, Persuasão e Religião\n\nEQUIPAMENTO\n\nVocê começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• 20 kunais do Emissário.\n\n• (a) um pacote de explorador ou (b) um pacote de estudioso.\n\n• Roupas de Emissário, um kit de caligrafia e 10 ofudas em branco."
+    },
+    "overview": [
+      {
+        "title": "EMISSÁRIO ESPIRITUAL",
+        "page": 2,
+        "text": "Guiados pelos espíritos e pela astúcia da deusa Inari, os Emissários Espirituais atuam como pontes entre os planos. Seus selos canalizam poder divino para proteger, curar e manipular o destino daqueles ao seu redor.",
+        "sourceTitle": "Emissário Espiritual — Homebrew Original"
+      }
+    ],
+    "creation": [],
+    "tables": [
+      {
+        "key": "table.1.a-kunai-do-emissario",
+        "title": "A Kunai do Emissário",
+        "page": 2,
+        "description": "Diferente de uma adaga comum, a kunai desta classe é projetada para precisão e arremessos constantes.",
+        "sourceTitle": "Emissário Espiritual — Homebrew Original",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Nome"
+          },
+          {
+            "key": "damage",
+            "label": "Dano"
+          },
+          {
+            "key": "type",
+            "label": "Tipo"
+          },
+          {
+            "key": "properties",
+            "label": "Propriedades"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Kunai",
+            "damage": "1d6",
+            "type": "Perfurante",
+            "properties": "Acuidade, Leve, Arremesso"
+          }
+        ]
+      },
+      {
+        "key": "table.2.gasto-de-energia-espiritual-por-circulo-de-magia",
+        "title": "Gasto de Energia Espiritual por Círculo de Magia",
+        "page": 2,
+        "description": "Custo em Pontos de Selo para os círculos de magia indicados pelo homebrew.",
+        "sourceTitle": "Emissário Espiritual — Homebrew Original",
+        "columns": [
+          {
+            "key": "circle",
+            "label": "Círculo"
+          },
+          {
+            "key": "cost",
+            "label": "Gasto de Energia Espiritual"
+          }
+        ],
+        "rows": [
+          {
+            "circle": "1º",
+            "cost": 2
+          },
+          {
+            "circle": "2º",
+            "cost": 3
+          },
+          {
+            "circle": "3º",
+            "cost": 5
+          },
+          {
+            "circle": "4º",
+            "cost": 6
+          },
+          {
+            "circle": "5º",
+            "cost": 7
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "key": "reference.1.o-kit-de-caligrafia",
+        "title": "O KIT DE CALIGRAFIA",
+        "page": 2,
+        "text": "Você o utiliza durante seus descansos longos para preparar os papéis que serão infundidos com sua energia.",
+        "sourceTitle": "Emissário Espiritual — Homebrew Original"
+      },
+      {
+        "key": "reference.2.kit-de-criacao-expresso-de-ofudas",
+        "title": "KIT DE CRIAÇÃO EXPRESSO DE OFUDAS",
+        "page": 2,
+        "text": "Enquanto estiver em um descanso curto, você pode rolar 1d4 para descobrir quantos ofudas consegue improvisar com esse kit.",
+        "sourceTitle": "Emissário Espiritual — Homebrew Original"
+      },
+      {
+        "key": "reference.3.nota-de-integracao-do-caminho",
+        "title": "NOTA DE INTEGRAÇÃO DO CAMINHO",
+        "page": 5,
+        "text": "O Caminho do Santuário apresenta características a partir do 3º nível. A linha de 3º nível da tabela principal da classe está vazia no PDF; o Grimório preserva essa linha e disponibiliza a subclasse normalmente a partir do 3º nível.",
+        "sourceTitle": "Emissário Espiritual — Homebrew Original"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "spiritual-emissary",
+      "color": "#d86b5b"
+    }
+  },
+  "features": [
+    {
+      "key": "class.spiritual-emissary.feature.defesa-fluida.l1.1",
+      "name": "DEFESA FLUIDA",
+      "level": 1,
+      "description": "No 1º nível, enquanto não estiver usando armadura, sua Classe de Armadura é igual a 10 + seu modificador de Destreza + seu modificador de Sabedoria.",
+      "page": 3,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.energia-espiritual.l1.1",
+      "name": "ENERGIA ESPIRITUAL",
+      "level": 1,
+      "description": "No 1º nível, você possui uma reserva de energia representada por Pontos de Selo igual a (2 × seu nível de Emissário Espiritual) + seu modificador de Sabedoria + 6. Você recupera todos os pontos após um descanso longo.",
+      "page": 3,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.senda-de-torii.l1.1",
+      "name": "SENDA DE TORII",
+      "level": 1,
+      "description": "No 1º nível, como uma ação bônus, você pode manifestar portais espirituais em uma área de 4,5 × 4,5 metros. Essa área aumenta para 7,5 × 7,5 metros no 3º nível e para 10,5 × 10,5 metros no 10º nível.\n\nEnquanto a Senda de Torii estiver ativa, como uma ação, você pode gastar 1 Ponto de Selo para curar um aliado dentro da área em uma quantidade igual ao seu Dado Curativo + seu modificador de Sabedoria. Em casos de emergência, você pode gastar 3 Pontos de Selo para curar o valor total do seu Dado Curativo + seu modificador de Sabedoria.\n\nA Senda de Torii dura 1 minuto ou até você ficar incapacitado e pode ser reposicionada usando uma ação bônus. No 3º nível, aliados dentro da área, ou que passem por ela, somam seu modificador de Sabedoria — a Bênção da Kitsune — a qualquer cura que receberem. Também no 3º nível, você pode sacrificar sua Senda de Torii para curar todos os aliados dentro dela.",
+      "page": 3,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.fechar-portoes.l1.1",
+      "name": "FECHAR PORTÕES",
+      "level": 1,
+      "description": "Uma vez por descanso curto, como uma ação bônus, você sacrifica sua Senda de Torii para curar todos os aliados dentro dela em uma quantidade igual ao seu Dado Curativo + seu modificador de Sabedoria. A Senda de Torii não pode ser invocada pelas 2 rodadas seguintes.",
+      "page": 3,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.ofudas-de-cura.l2.1",
+      "name": "OFUDAS DE CURA",
+      "level": 2,
+      "description": "No 2º nível, você pode lançar selos de papel que buscam aliados. Como uma ação, você gasta de 1 a 4 Pontos de Selo para curar um alvo a até 18 metros. Para cada ponto gasto, role uma vez seu Dado Curativo e some seu modificador de Sabedoria ao total.",
+      "page": 3,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.incremento-de-habilidade.l4.1",
+      "name": "INCREMENTO DE HABILIDADE",
+      "level": 4,
+      "description": "A tabela da classe concede Incremento de Habilidade neste nível. O PDF do homebrew não repete a regra completa; utilize a regra padrão de Incremento no Valor de Habilidade do D&D 5e 2014.",
+      "page": 2,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.golpes-espirituais.l5.1",
+      "name": "GOLPES ESPIRITUAIS",
+      "level": 5,
+      "description": "A partir do 5º nível, sua conexão com os espíritos flui através de suas armas de arremesso. Você recebe os seguintes benefícios:\n\n• Ataque Extra: você pode atacar duas vezes utilizando kunais, em vez de uma, sempre que usar a ação de Ataque no seu turno.\n\n• Kunais Impregnadas: seus ataques com armas simples e kunais são considerados mágicos para ultrapassar resistência e imunidade a ataques não mágicos.\n\n• Crítico de Precisão: quando obtém um acerto crítico com uma kunai, adaga ou dardo, você pode gastar 1 Ponto de Selo para adicionar um dado extra de dano de arma ao total, equivalente a 1d6.",
+      "page": 3,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.passos-das-sombras.l7.1",
+      "name": "PASSOS DAS SOMBRAS",
+      "level": 7,
+      "description": "No 7º nível, sua agilidade atinge um nível sobrenatural, permitindo que você evite perigos e se reposicione instantaneamente.\n\n• Evasão: quando você é alvo de um efeito que exige um teste de resistência de Destreza para sofrer apenas metade do dano, não sofre dano algum se passar no teste e sofre apenas metade do dano se falhar.\n\n• Passo Espiritual: como uma ação bônus, você pode gastar 1 Ponto de Selo para se teletransportar instantaneamente para um espaço vazio adjacente a um aliado que possa ver a até 12 metros.",
+      "page": 3,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.incremento-de-habilidade.l8.1",
+      "name": "INCREMENTO DE HABILIDADE",
+      "level": 8,
+      "description": "A tabela da classe concede Incremento de Habilidade neste nível. O PDF do homebrew não repete a regra completa; utilize a regra padrão de Incremento no Valor de Habilidade do D&D 5e 2014.",
+      "page": 2,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.olhar-do-espirito-da-raposa.l10.1",
+      "name": "OLHAR DO ESPÍRITO DA RAPOSA",
+      "level": 10,
+      "description": "No 10º nível, sua visão se sintoniza com o plano espiritual, permitindo que você enxergue o que está escondido aos olhos mortais.\n\n• Visão Espiritual: você pode gastar 2 Pontos de Selo para conjurar a magia Ver o Invisível sem componentes materiais. Enquanto a magia estiver ativa, você tem vantagem em testes de Sabedoria (Percepção) e Inteligência (Investigação) para detectar ilusões ou passagens secretas.\n\n• Comunhão de Santuário: durante um descanso curto próximo a um local de importância espiritual, como um templo, uma árvore antiga ou um pequeno altar que você possa montar, você pode entrar em transe para falar com os espíritos locais. Isso funciona como a magia Falar com os Mortos ou Adivinhação, mas voltado para o ambiente ao seu redor.",
+      "page": 3,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.selos-de-retribuicao.l11.1",
+      "name": "SELOS DE RETRIBUIÇÃO",
+      "level": 11,
+      "description": "No 11º nível, sua ofensiva se torna mais punitiva e suas kunais passam a carregar a energia dos seus ofudas.\n\n• Dano Escalado: o dado de dano das suas kunais, adagas e dardos passa a ser 1d8 de dano mágico.\n\n• Marca do Selo: quando você atinge uma criatura com um ataque de arma, pode gastar 2 Pontos de Selo para marcar o alvo com um selo espiritual até o final do seu próximo turno. Enquanto estiver marcado, na próxima vez que um aliado atingir essa criatura, o selo detona, causando 2d8 de dano radiante extra e concedendo ao aliado atacante Pontos de Vida Temporários iguais ao seu modificador de Sabedoria.",
+      "page": 4,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.incremento-de-habilidade.l12.1",
+      "name": "INCREMENTO DE HABILIDADE",
+      "level": 12,
+      "description": "A tabela da classe concede Incremento de Habilidade neste nível. O PDF do homebrew não repete a regra completa; utilize a regra padrão de Incremento no Valor de Habilidade do D&D 5e 2014.",
+      "page": 2,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.corpo-de-purificacao.l14.1",
+      "name": "CORPO DE PURIFICAÇÃO",
+      "level": 14,
+      "description": "No 14º nível, a energia sagrada canalizada pelos portais de Torii fortalece permanentemente sua fisiologia.\n\n• Pureza de Espírito: você se torna imune a doenças e venenos, incluindo dano de veneno e a condição Envenenado.\n\n• Proteção do Limiar: sempre que utilizar Passos das Sombras para se teletransportar até um aliado, você e esse aliado recebem os benefícios da ação Desvencilhar automaticamente até o início do seu próximo turno.",
+      "page": 4,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.chamado-da-guardia.l15.1",
+      "name": "CHAMADO DA GUARDIÃ",
+      "level": 15,
+      "description": "No 15º nível, sua conexão com o espírito da raposa é tão profunda que você pode trazê-la fisicamente para o campo de batalha. Como uma ação, você gasta 5 Pontos de Selo para invocar o Espírito da Kitsune em um espaço vazio a até 9 metros de você. Ela age na sua iniciativa e permanece por 1 hora, até ser reduzida a 0 pontos de vida ou até você dispensá-la.\n\n• Em Combate: a Kitsune é considerada um Espírito. Utilize as estatísticas de um Lobo Atroz, mas o dano dela é Radiante e ela pode atravessar criaturas e objetos como se fossem terreno difícil.\n\n• Sincronia: sempre que usar Passos das Sombras, você pode trocar de lugar com a Kitsune em vez de ir até um aliado, sem custo adicional de pontos.\n\n• Auxílio Divino: se a Kitsune estiver a até 1,5 metro de um inimigo, você e seus aliados têm vantagem nos ataques contra essa criatura.",
+      "page": 4,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.incremento-de-habilidade.l16.1",
+      "name": "INCREMENTO DE HABILIDADE",
+      "level": 16,
+      "description": "A tabela da classe concede Incremento de Habilidade neste nível. O PDF do homebrew não repete a regra completa; utilize a regra padrão de Incremento no Valor de Habilidade do D&D 5e 2014.",
+      "page": 2,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 16,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.laminas-do-destino-entrelacado.l18.1",
+      "name": "LÂMINAS DO DESTINO ENTRELAÇADO",
+      "level": 18,
+      "description": "No 18º nível, suas kunais não apenas ferem o corpo, mas cortam o próprio fio do destino.\n\n• Ataque de Fluxo: quando usa a ação de Ataque, você pode gastar 3 Pontos de Selo para imbuir suas kunais com energia temporal. Seus ataques ignoram qualquer tipo de resistência a dano.\n\n• Vulnerabilidade Exposta: se atingir o mesmo alvo com dois ataques de kunai no mesmo turno, o alvo deve ser bem-sucedido em um teste de resistência de Constituição contra sua CD de classe, igual a 8 + seu bônus de proficiência + seu modificador de Sabedoria. Em caso de falha, ele recebe vulnerabilidade a todos os tipos de dano até receber um ataque, pois sua armadura espiritual foi estilhaçada.",
+      "page": 4,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.incremento-de-habilidade.l19.1",
+      "name": "INCREMENTO DE HABILIDADE",
+      "level": 19,
+      "description": "A tabela da classe concede Incremento de Habilidade neste nível. O PDF do homebrew não repete a regra completa; utilize a regra padrão de Incremento no Valor de Habilidade do D&D 5e 2014.",
+      "page": 2,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 19,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.spiritual-emissary.feature.avatar-do-santuario-eterno.l20.1",
+      "name": "AVATAR DO SANTUÁRIO ETERNO",
+      "level": 20,
+      "description": "No 20º nível, você se torna o próprio portal entre o mundo físico e o espiritual. Sempre que rolar iniciativa e não possuir nenhum Ponto de Selo, você recupera 4 pontos imediatamente. Além disso, desbloqueia a forma de Avatar do Santuário. Como uma ação bônus, você entra em um estado de iluminação que dura 1 minuto. Enquanto estiver nesse estado:\n\n• Presença Onipresente: você pode usar Passos das Sombras sem gastar Pontos de Selo e seu alcance aumenta para 24 metros.\n\n• Cura Transbordante: sempre que curar um aliado com um ofuda, pode escolher um segundo aliado a até 9 metros do primeiro para receber a mesma quantidade de cura, sem gasto extra.\n\n• Proteção dos Antepassados: você e todos os aliados dentro da Senda de Torii recebem os benefícios da magia Santuário. Se um aliado atacar e quebrar o efeito, recupera o benefício no início do próprio turno, desde que ainda esteja dentro dos portais.\n\n• Mestre das Eras: uma vez por turno, se falhar em um teste de resistência ou errar um ataque, você pode gastar 1 Ponto de Selo para refazer a jogada com vantagem, pois a deusa Inari sussurra o futuro em seu ouvido.",
+      "page": 4,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Emissário Espiritual",
+    "sourceTitle": "Emissário Espiritual — Homebrew Original",
+    "sourcePage": 2,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "healingDie",
+        "label": "Dado Curativo"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Energia Espiritual",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.energia-espiritual.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Senda de Torii",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.senda-de-torii.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Defesa Fluida",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.defesa-fluida.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d4"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Ofudas de Cura",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.ofudas-de-cura.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d4"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [],
+        "healingDie": "1d4"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l4.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l8.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l12.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l16.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l19.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d4"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Golpes Espirituais",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.golpes-espirituais.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d6"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [],
+        "healingDie": "1d6"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Passos das Sombras",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.passos-das-sombras.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d6"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l4.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l8.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l12.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l16.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l19.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d6"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [],
+        "healingDie": "1d8"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Olhar do Espírito Raposa",
+            "kind": "progression-note",
+            "featureRefs": [],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d8"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Selos de Retribuição",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.selos-de-retribuicao.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d8"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l4.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l8.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l12.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l16.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l19.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d8"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [],
+        "healingDie": "1d10"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Corpo de Purificação",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.corpo-de-purificacao.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d10"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Chamado da Guardiã",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.chamado-da-guardia.l15.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d10"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l4.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l8.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l12.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l16.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l19.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d10"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [],
+        "healingDie": "1d12"
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Lâminas do Destino Entrelaçado",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.laminas-do-destino-entrelacado.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d12"
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l4.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l8.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l12.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l16.1",
+              "class.spiritual-emissary.feature.incremento-de-habilidade.l19.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d12"
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Avatar do Santuário Eterno",
+            "kind": "feature",
+            "featureRefs": [
+              "class.spiritual-emissary.feature.avatar-do-santuario-eterno.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "healingDie": "1d12"
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 1
+    },
+    "options": [
+      {
+        "grimorioId": "path-sanctuary",
+        "identifier": "path-sanctuary",
+        "name": "Caminho do Santuário",
+        "originalName": "",
+        "source": {
+          "sourceId": "emissario-homebrew",
+          "title": "Emissário Espiritual — Homebrew Original",
+          "pages": "5–6",
+          "chapter": "Caminho do Santuário",
+          "page": 5
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

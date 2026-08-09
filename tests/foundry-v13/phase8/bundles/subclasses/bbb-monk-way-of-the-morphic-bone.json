@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-monk-way-of-the-morphic-bone",
+    "identifier": "bbb-monk-way-of-the-morphic-bone",
+    "name": "Caminho do Osso Mórfico",
+    "originalName": "Way of the Morphic Bone",
+    "aliases": [
+      "Way of the Morphic Bone"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "110–111",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 110
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Um artista marcial cujos ossos e carne se contorcem e remodelam à sua vontade.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 110
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-monk-way-of-the-morphic-bone.feature.carne-contorcida.l3.1",
+      "name": "CARNE CONTORCIDA",
+      "level": 3,
+      "description": "Seu corpo assume transformações perturbadoras. Seu alcance com ataques desarmados e Armas de Monge aumenta em 1,5 m. Você tem vantagem em testes de atributo para resistir a agarrões e pode espremer-se por espaços de ao menos 30 cm. Além disso, como ação bônus pode gastar 1 Ki para produzir do corpo uma arma de osso que funciona como uma de suas Armas de Monge corpo a corpo e realizar um ataque com ela como parte da criação; a arma se desfaz no próximo Descanso.",
+      "page": 110,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-the-morphic-bone.feature.repudiar-a-morte.l6.1",
+      "name": "REPUDIAR A MORTE",
+      "level": 6,
+      "description": "Quando um ataque que você possa ver o reduziria a 0 PV, pode gastar 1 Ki para ficar com 1 PV em vez disso. Sempre que fizer isso, role 1d100; se o resultado for igual ou superior a 50 + duas vezes seu nível de monge, você recebe 1 ponto de Fadiga de Combate.",
+      "page": 110,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-the-morphic-bone.feature.porco-espinho-osseo.l11.1",
+      "name": "PORCO-ESPINHO ÓSSEO",
+      "level": 11,
+      "description": "Quando uma criatura dentro de seu alcance corpo a corpo o acerta com um ataque com arma, use sua reação para fazer ossos afiados irromperem de seu corpo e causar dano perfurante ao atacante igual à metade de seu nível de monge. Até o início de seu próximo turno, o mesmo dano ocorre automaticamente sempre que você for atingido dessa forma. Usos por Descanso Longo iguais ao seu bônus de proficiência; depois disso, pode ativar novamente gastando 2 Ki por uso.",
+      "page": 111,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-the-morphic-bone.feature.evolucao-morfica.l11.1",
+      "name": "EVOLUÇÃO MÓRFICA",
+      "level": 11,
+      "description": "Seu corpo evolui ainda mais: o alcance adicional de ataques desarmados e Armas de Monge passa a 3 m em vez de 1,5 m; pode espremer-se por espaços de até 2,5 cm; e armas criadas por Carne Contorcida causam um dado de dano da arma adicional no turno em que são criadas.",
+      "page": 111,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-the-morphic-bone.feature.reformacao-restauradora.l17.1",
+      "name": "REFORMAÇÃO RESTAURADORA",
+      "level": 17,
+      "description": "Se estiver com mais de 0 PV, porém abaixo de metade de seus PV máximos, recupera no início de cada turno PV iguais à metade de seu nível de monge, arredondado para cima.",
+      "page": 111,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

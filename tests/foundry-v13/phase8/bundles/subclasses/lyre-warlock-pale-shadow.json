@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-warlock-pale-shadow",
+    "identifier": "lyre-warlock-pale-shadow",
+    "name": "Sombra Pálida",
+    "originalName": "Pale Shadow",
+    "aliases": [
+      "Pale Shadow"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "499–500",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 499
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Seu patrono é uma Sombra Branca de Mnemosyne ou uma rede de animações de mecita. O pacto cristaliza memórias extremas, protege a consciência e permite manipular experiências passadas e pensamentos.",
+    "tables": [
+      {
+        "key": "table.1.lista-expandida-de-magias",
+        "title": "Lista Expandida de Magias",
+        "page": 499,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível da Magia"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Sono; Purga do Sistema"
+          },
+          {
+            "level": "2º",
+            "spells": "Cegueira/Surdez; Orbes de Interferência Mágica"
+          },
+          {
+            "level": "3º",
+            "spells": "Indetectabilidade; Escrito Forense"
+          },
+          {
+            "level": "4º",
+            "spells": "Retorno Eidomântico; Escrito de Horror"
+          },
+          {
+            "level": "5º",
+            "spells": "Conhecimento Lendário; Vínculo Telepático"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 499
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-warlock-pale-shadow.feature.recordacao-de-mecita.l1.1",
+      "name": "RECORDAÇÃO DE MECITA",
+      "level": 1,
+      "description": "Sempre que o d20 de ataque, teste ou salvaguarda mostrar 1 ou 20, cristalize o momento numa Recordação de Mecita. Pode manter até seu bônus de proficiência em cristais; eles se tornam inertes no Descanso Longo. Ao fazer ataque, teste ou salvaguarda, pode gastar um cristal para rolar um d20 adicional e escolher substituir o resultado original, antes de sucesso/falha ser declarado.",
+      "page": 499,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-pale-shadow.feature.vigia-dos-sonhos-desperto.l6.1",
+      "name": "VIGIA DOS SONHOS DESPERTO",
+      "level": 6,
+      "description": "Você não pode ser surpreendido e recebe proficiência e Especialização em Percepção e Investigação. Mesmo dormindo, permanece consciente dos arredores como em transe.",
+      "page": 499,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-pale-shadow.feature.oficio-da-memoria.l10.1",
+      "name": "OFÍCIO DA MEMÓRIA",
+      "level": 10,
+      "description": "Escolha uma magia de Bruxo de 5º nível ou inferior, mesmo sem conhecê-la. Uma vez por Descanso Curto ou Longo, pode conjurá-la como se usasse um espaço de pacto, sem gastar espaço. Se multiclasse em outra classe com lista de magia, pode escolher uma magia dessa lista. A cada nível de Bruxo, pode substituir a magia por outra elegível.",
+      "page": 499,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-pale-shadow.feature.pensamento-intrusivo.l14.1",
+      "name": "PENSAMENTO INTRUSIVO",
+      "level": 14,
+      "description": "Como ação, escolha criatura visível a até 18 metros; ela faz salvaguarda de Inteligência. Em falha, fica atordoada por 1 minuto e você implanta um pensamento ou pergunta na mente dela, recebendo do Mestre uma breve visão da resposta mental relacionada. Ao fim de cada turno, repete a salvaguarda e encerra em sucesso. Um uso por Descanso Curto ou Longo; pode usar novamente gastando um espaço de pacto ou 3 Recordações de Mecita.\n\nINVOCAÇÕES DA SOMBRA PÁLIDA. PASSO ONÍRICO (7º): se não estiver incapacitado e deslocamento não for 0, ação bônus teleporta até 9 m para espaço visível. ARMA DE MECITA APRIMORADA (5º, Pacto da Lâmina): ao atacar com Arma de Pacto, faça dois ataques em vez de um; ela causa dano psíquico adicional igual à metade de seu nível de Bruxo. REFERÊNCIA DE EXPERIÊNCIA: escolha classe com Conjuração não-Pacto; aprenda duas magias da lista que seus espaços possam conjurar, tratadas como de Bruxo; pode trocar uma por nível. RECORDAÇÃO INCORPORADA: após Descanso Longo, ganha cristais iguais à metade do bônus de proficiência. ARCANO MEMÉTICO (12º): para cada nível de Arcano Místico, escolha uma segunda magia do mesmo nível; pode conjurar uma ou outra, e usar uma gasta ambas até Descanso Longo. SENTIDO MENTAL (7º): Detectar Pensamentos uma vez por Descanso Curto ou Longo sem espaço e soma Sabedoria à iniciativa. RECORDAÇÃO APERFEIÇOADA (9º): d20 de 5 ou menos também cria Recordação. ARMA DE MECITA SUPREMA (12º, requer Aprimorada): faz três ataques com a Arma de Pacto, o primeiro com vantagem.",
+      "page": 500,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

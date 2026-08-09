@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-sword-saint-retia-way-of-rust",
+    "identifier": "bbb-sword-saint-retia-way-of-rust",
+    "name": "Caminho da Ferrugem",
+    "originalName": "Way of Rust",
+    "aliases": [
+      "Way of Rust"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "128",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 128
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Um espadachim que coexiste com um yokai que se alimenta de metal e ferrugem.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 128
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-rust.feature.gume-da-erosao.l3.1",
+      "name": "GUME DA EROSÃO",
+      "level": 3,
+      "description": "Quando reduzir uma criatura hostil a 0 PV com um ataque com arma ou obtiver um acerto crítico com ela, recebe um bônus cumulativo de +2 nas jogadas de dano subsequentes feitas com a mesma arma até o fim do turno e pode usar sua ação bônus para realizar com ela uma quantidade de ataques igual à metade de seu bônus de proficiência.",
+      "page": 128,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-rust.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "Você aprende as seguintes Técnicas de Foco.\n\nDESINTOXICAR. Em seu turno, gaste 1 Foco para encerrar em si um efeito que restauração menor pudesse remover, ou 4 Foco para um efeito removível por restauração maior. Pode usar mesmo incapacitado, mas não inconsciente.\n\nDEFLEXÃO EXEMPLAR. Como reação quando um ataque com arma visível o acerta, gaste 1 Foco para reduzir à metade o dano do ataque.\n\nSURTO TEMÍVEL. Ao usar Surto do Dragão, pode projetar uma aura de medo que atinge cada criatura a até 6 m que possa ver ou ouvir você. Cada uma faz salvaguarda de Sabedoria ou fica amedrontada por 1 minuto, repetindo a salvaguarda no fim de cada turno. Em sucesso, encerra e torna-se imune ao efeito por 24 horas. Criaturas que o considerem aliado têm vantagem nessas salvaguardas.",
+      "page": 128,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-rust.feature.ferrugem-celular.l6.1",
+      "name": "FERRUGEM CELULAR",
+      "level": 6,
+      "description": "Você tem resistência a dano necrótico e de veneno e vantagem em salvaguardas para resistir a envenenado. Além disso, recebe Especialização em todos os testes de atributo baseados em Força, inclusive testes de Força que não usem perícia.",
+      "page": 128,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-rust.feature.armamento-de-sangue-cobreado.l11.1",
+      "name": "ARMAMENTO DE SANGUE COBREADO",
+      "level": 11,
+      "description": "Você pode realizar ataques com arma como se estivesse usando qualquer arma corpo a corpo metálica mundana escolhida no momento, criando uma cópia de material semelhante a cobre tingido de sangue. A arma tem bônus de aprimoramento igual à metade de seu bônus de proficiência, arredondado para baixo, e é mágica; causa um dado de dano adicional necrótico; e, se for alvo de qualquer magia ou efeito, pode destruí-la imediatamente para fazer o efeito resolver-se sem consequência. A cópia é destruída após cada ataque e, por isso, não mantém o bônus cumulativo de Gume da Erosão.",
+      "page": 128,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-rust.feature.supererodir.l14.1",
+      "name": "SUPERERODIR",
+      "level": 14,
+      "description": "Uma vez por turno para cada opção abaixo, ao fazer um ataque com arma, pode usá-la.\n\nGOLPE DE PODER ERODIDO. Ao atacar com arma metálica não mágica, deixe o yokai consumir parte dela: role 1d6 e some ao ataque e ao dano; depois, a arma sofre penalidade permanente de -1 nas jogadas de dano. Quando a penalidade alcançar metade do resultado máximo de seu maior dado de dano, a arma é destruída. Se nunca a tiver erodido antes, pode destruí-la de uma vez para rolar 2d6 em vez de 1d6. Em armas de adamantina, os d6 tornam-se d8. Não funciona com Armamento de Sangue Cobreado.\n\nDEVORADOR DE AÇO. Se atingir uma criatura usando equipamento metálico não mágico, escolha uma peça e force salvaguarda de Destreza. Em falha, ela recebe -1: armadura reduz seu bônus de CA; arma reduz suas jogadas de dano. Uma arma é destruída conforme Golpe de Poder Erodido; armadura é destruída se seu bônus de CA chegar a 0.",
+      "page": 128,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-rust.feature.metal-infinito.l17.1",
+      "name": "METAL INFINITO",
+      "level": 17,
+      "description": "Uma vez por Descanso Longo, pode produzir os efeitos de domínio zanjen sem espaço de magia. Se falhar num teste de concentração para mantê-lo, pode gastar 1 Foco para obter sucesso em vez disso.",
+      "page": 128,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

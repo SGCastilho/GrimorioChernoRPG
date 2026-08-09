@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-sorcerer-graveblood",
+    "identifier": "bbb-sorcerer-graveblood",
+    "name": "Sangue Sepulcral",
+    "originalName": "Graveblood",
+    "aliases": [
+      "Graveblood"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "122",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 122
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Um arcanista inato que obtém poder de sua ligação com a morte e com os mortos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 122
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-sorcerer-graveblood.feature.feiticaria-necrotica.l1.1",
+      "name": "FEITIÇARIA NECRÓTICA",
+      "level": 1,
+      "description": "Todas as magias de Necromancia contam como estando na lista de Feiticeiro para você ao aprender, ler e conjurar magias. Uma vez por Descanso, pode conjurar sem espaço uma magia de Necromancia que conheça em um nível igual ao seu bônus de proficiência.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-graveblood.feature.resistencia-negativa.l1.1",
+      "name": "RESISTÊNCIA NEGATIVA",
+      "level": 1,
+      "description": "Sempre que sofreria dano necrótico, reduza esse dano em uma quantidade igual ao seu nível de feiticeiro + 5.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-graveblood.feature.conjuracao-blasfema.l6.1",
+      "name": "CONJURAÇÃO BLASFEMA",
+      "level": 6,
+      "description": "Quando conjura qualquer magia que cause dano, pode gastar 1 Ponto de Feitiçaria para converter todo o dano da magia em dano necrótico. A conversão persiste para qualquer dano que a magia causar em turnos futuros.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-graveblood.feature.peso-morto.l6.1",
+      "name": "PESO MORTO",
+      "level": 6,
+      "description": "Enquanto houver um cadáver a até 3 m, ele se anima para protegê-lo. Ataques contra você têm desvantagem e você tem vantagem em salvaguardas contra efeitos hostis.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-graveblood.feature.fortitude-sombria.l14.1",
+      "name": "FORTITUDE SOMBRIA",
+      "level": 14,
+      "description": "Quando for reduzido a 0 PV e sempre que iniciar o turno com 0 PV, role 1d100. Se o resultado for igual ou inferior a 10 + seu nível de feiticeiro, você imediatamente recupera 1 PV em vez de morrer ou deixa de estar morrendo.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-graveblood.feature.cemiterio-ambulante.l18.1",
+      "name": "CEMITÉRIO AMBULANTE",
+      "level": 18,
+      "description": "Você exerce três influências sobre cadáveres.\n\nAGARRÃO DOS MORTOS. Como ação, gaste 3 Pontos de Feitiçaria para animar brevemente todos os cadáveres de que tenha ciência numa esfera de 12 m de raio centrada num ponto que veja a até 18 m. Cada cadáver pode atacar uma criatura dentro de seu alcance corpo a corpo, e uma mesma criatura só pode ser alvo de um desses cadáveres. Faça uma única jogada de ataque mágico corpo a corpo e aplique-a a todos os alvos; cada acerto causa 3d10 + seu modificador de Carisma de dano necrótico e, se o alvo for do mesmo tamanho que o cadáver atacante ou menor, ele fica restringido até o início de seu próximo turno. Ao usar a característica, pode também gastar um espaço de magia para aumentar o dano em 1d10 por nível do espaço.\n\nFONTE DE MAGIA DO SENHOR DOS TÚMULOS. Ao conjurar qualquer magia que normalmente se origine de você, pode fazê-la originar-se de um cadáver que veja a até 36 m.\n\nVIGIAS SOMBRIOS. Como ação bônus, projete seus sentidos em um cadáver cuja existência conheça a até 150 m. Até o início do próximo turno, vê e ouve através dele usando seus próprios sentidos, mas não pode mover nem virar a cabeça do cadáver.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-guerreiro-psionico",
+    "identifier": "tasha-guerreiro-psionico",
+    "name": "Guerreiro Psiônico",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "58–60",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 58
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Desperto para o poder mental dentro de si, um Guerreiro Psiônico é um guerreiro que aumenta seu poder físico com golpes de arma infundidos por energia psíquica, chicotadas telecinéticas e barreiras de força mental. Muitos githyanki treinam para se tornarem tais guerreiros, bem como alguns dos mais disciplinados alto elfos. No mundo de Eberron, muitos jovens kalashtar sonham em se tornarem guerreiros psiônicos. Como um guerreiro psiônico, você pode ter afiado suas habilidades psíquicas através de disciplina solitária, desbloqueado isso sob a tutela de um mestre, ou refinado isso em uma academia dedicada a manejar o poder mental tanto como uma arma quanto como um escudo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 58
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-guerreiro-psionico.feature.poder-psiquico.l3.1",
+      "name": "PODER PSÍQUICO",
+      "level": 3,
+      "description": "Você abriga uma fonte de energia psíquica dentro de você. Essa energia é representada por seu dado de Energia Psíquica, que são d6. Você possui um número de dados de Energia Psíquica equivalente ao dobro de seu bônus de proficiência, e eles alimentam vários de seus poderes psiônicos, que são detalhados abaixo. Alguns de seus poderes gastam os dados de Energia Psíquica que eles utilizam, conforme especificado em sua descrição, e você não pode utilizar um poder se ele exigir que você use um dado, mas você não tiver nenhum disponível. Você recupera todos os dados de Energia Psíquica gastos quando termina um descanso longo. Adicionalmente, como uma ação bônus, você pode recuperar um dado de Energia Psíquica gasto, mas só poderá fazer isso novamente após um descanso curto ou longo. Quando você alcança certos níveis nessa classe, o valor do seu dado de Energia Psiônica aumenta: no 5º nível (d8), no 11º nível (d10), e no 17º nível (d12). Os poderes abaixo utilizam o seu dado de Energia Psíquica. Campo protetor. Quando você ou uma criatura que você possa ver a até 9m de você receber dano, você pode usar sua reação para gastar um dado de Energia Psíquica e reduzir a quantidade de dano sofrido pelo resultado mais o seu modificador de Inteligência (mínimo de 1), conforme você cria um escudo de energia telecinética momentâneo. Golpe Psiônico. Você pode impulsionar suas armas com energia psíquica. Uma vez por turno, imediatamente após você acertar um alvo a até 9m de você com um ataque e provocar dano nele com uma arma, você pode gastar um dado de Energia Psíquica, rolando ele e provocando uma quantidade de dano de energia ao alvo igual ao resultado do dado mais o valor do seu modificador de Inteligência. Movimento Telecinético. Você pode mover um objeto ou uma criatura com sua mente. Como uma ação, você foca em um objeto solto que seja de tamanho Grande ou menor, ou uma criatura voluntária que não seja você mesmo. Se você puder ver o alvo e ele estiver a até 9m de você, você pode movê-lo por até 9m para um espaço desocupado dentro da sua visão. Alternativamente, se for um objeto Minúsculo, você pode movê-lo para ou a parir de sua mão. De qualquer maneira, você pode mover o alvo horizontalmente, verticalmente, ou ambos. Uma vez que realize essa ação, você não pode repetí-la até que termine um descanso curto ou longo, a menos que gaste um dado de Energia Psíquica para isso.",
+      "page": 59,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-guerreiro-psionico.feature.adepto-telecinetico.l7.1",
+      "name": "ADEPTO TELECINÉTICO",
+      "level": 7,
+      "description": "dominou novas formas de usar suas habilidades telecinéticas, descritas abaixo. Salto telecinético. Como uma ação bônus, você pode impulsionar seu corpo com sua mente. Você ganha um deslocamento de vôo igual ao dobro do seu deslocamento terrestre até o final do turno atual. Uma vez que realize essa ação bônus, você não pode repeti-la até que termine um descanso curto ou longo, a menos que gaste um dado de Energia Psíquica para isso. Empurrão telecinético. Quando você provoca dano a um alvo com seu Golpe Psiônico, você pode forçar o alvo a fazer uma salvaguarda de Força com CD igual a 8 + seu bônus de proficiência + seu modificador de Inteligência. Se a salvaguarda falhar, você pode derrubar o alvo, ou movê-lo por até 3m horizontalmente em qualquer direção.",
+      "page": 59,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-guerreiro-psionico.feature.mente-protegida.l10.1",
+      "name": "MENTE PROTEGIDA",
+      "level": 10,
+      "description": "A energia psíquica fluindo através de você reforçou sua mente. Você tem resistência a dano psíquico. Além disso, se você iniciar seu turno amedrontado ou enfeitiçado, você pode gastar um dado de Energia Psíquica e encerrar todo efeito sobre você que se encaixe nessas condições.",
+      "page": 59,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-guerreiro-psionico.feature.baluarte-telecinetico.l15.1",
+      "name": "BALUARTE TELECINÉTICO",
+      "level": 15,
+      "description": "Você pode proteger a si mesmo e aos outros com energia telecinética. Como uma ação bônus, você pode escolher criaturas que você possa ver a até 9m de você (incluindo você), até uma quantia de criaturas igual ao seu modificador de Inteligência (mínimo de uma criatura). Cada uma das criaturas escolhidas é protegida por meia cobertura por 1 minuto ou até que você esteja incapacitado. Uma vez que você realize essa ação bônus, você não pode fazer isso novamente até que você termine um descanso curto ou longo, a menos que gaste um dado de Energia Psíquica para isso.",
+      "page": 59,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-guerreiro-psionico.feature.mestre-telecinetico.l18.1",
+      "name": "MESTRE TELECINÉTICO",
+      "level": 18,
+      "description": "Sua habilidade para mover criaturas e objetos com sua mente é igualada por todos. Você pode conjurar a magia Telecinésia, sem a necessidade de componentes, e seu atributo de conjuração para essa habilidade é Inteligência. Em cada um dos seus turnos enquanto você se concentra na magia, incluindo o turno em que a conjura, você pode realizar um ataque com arma como uma ação bônus. Uma vez que você conjura a magia através dessa característica, você não poderá fazer isso novamente até terminar um descanso longo, a menos que gaste um dado de Energia Psíquica para isso.",
+      "page": 59,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

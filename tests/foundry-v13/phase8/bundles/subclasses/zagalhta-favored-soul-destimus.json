@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-favored-soul-destimus",
+    "identifier": "zagalhta-favored-soul-destimus",
+    "name": "Fardo de Destimus",
+    "originalName": "Burden of Destimus",
+    "aliases": [
+      "Burden of Destimus"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "149",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 149
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "A influência de Destimus concede mente mecânica, compreensão avançada de constructos e frames e capacidade de vincular-se a uma unidade por Junção ou assumir uma forma semelhante a ela.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 149
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-favored-soul-destimus.feature.quebrador-de-golems.l1.1",
+      "name": "QUEBRADOR DE GOLEMS",
+      "level": 1,
+      "description": "Seus ataques e magias ignoram resistências e imunidades de constructos a contundente, perfurante e cortante, além de Resistência Mágica ou características equivalentes que deem vantagem contra efeitos mágicos.",
+      "page": 149,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-destimus.feature.tecnologicamente-solido.l1.1",
+      "name": "TECNOLOGICAMENTE SÓLIDO",
+      "level": 1,
+      "description": "Proficiência com todas as armas de fogo, inclusive Avançadas; pode tratá-las como se tivessem propriedade Energia para gerar munição. Para Expansão de Essência Arma Possuída, qualquer arma de fogo ou arma com Gatilho conta como arma favorecida.",
+      "page": 149,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-destimus.feature.armadura-viva.l6.1",
+      "name": "ARMADURA VIVA",
+      "level": 6,
+      "description": "Armadura viva surge em resposta a ameaças: CA + metade da proficiência; e cada instância de dano contundente, perfurante ou cortante é reduzida pela metade do nível de Alma Favorecida.",
+      "page": 149,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-destimus.feature.chave-do-motor.l10.1",
+      "name": "CHAVE DO MOTOR",
+      "level": 10,
+      "description": "Uma vez por Descanso Longo, como ação, faça uma unidade frame que pilota realizar Junção com você, vinculando-a a seus poderes divinos.",
+      "page": 149,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-destimus.feature.macrobarragem.l10.1",
+      "name": "MACROBARRAGEM",
+      "level": 10,
+      "description": "Como ação bônus, escolha a até 18 m uma quantidade de alvos igual à metade do nível de Alma Favorecida. Cada alvo faz salvaguarda de Destreza; falha: 2d8 fogo + 2d8 força; sucesso: metade. Pode selecionar o mesmo alvo várias vezes; ele faz uma única salvaguarda e cada seleção após a primeira acrescenta 1d8 fogo + 1d8 força ao dano em falha.",
+      "page": 149,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-destimus.feature.transformacao-exoespectral.l13.1",
+      "name": "TRANSFORMAÇÃO EXOESPECTRAL",
+      "level": 13,
+      "description": "Uma vez por Descanso Longo, produza conjurar eco de frame em nível igual à metade do nível de Alma Favorecida, mas você se torna o eco. Seus PV não são substituídos: receba os PV do eco como temporários. Mantém suas características e pode usar ações do eco; ataques do eco contam como Armamentos de Essência e armas favorecidas. Pode criar cópias de equipamento. Não exige concentração. Enquanto restarem os PV temporários, pode alternar entre forma normal e de eco como ação bônus; perder esses PV encerra o efeito.",
+      "page": 149,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

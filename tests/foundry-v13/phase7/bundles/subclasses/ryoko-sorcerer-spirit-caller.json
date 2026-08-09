@@ -1,0 +1,312 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-sorcerer-spirit-caller",
+    "identifier": "ryoko-sorcerer-spirit-caller",
+    "name": "Invocador de Espíritos",
+    "originalName": "Spirit Caller",
+    "aliases": [
+      "Spirit Caller",
+      "Invocador de Espíritos"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "188–190",
+    "chapter": "Capítulo 9: Classes",
+    "page": 188
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Um feiticeiro que manifesta a própria alma como um espírito Fey combatente, personalizando-o com Pontos de Feitiçaria e conjurando através dele.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-invocador-de-espiritos",
+        "title": "Magias do Invocador de Espíritos",
+        "page": 188,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Feiticeiro"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "1º",
+            "magias": "Comando, Armadura Arcana, Ilusão Menor"
+          },
+          {
+            "nivel": "3º",
+            "magias": "Ajuda, Imagem Espelhada"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Crescer Plantas, Corcel Fantasmagórico"
+          },
+          {
+            "nivel": "7º",
+            "magias": "Banimento, Guardião da Fé"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Reencarnação, Similaridade"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Projeção Astral"
+          }
+        ]
+      },
+      {
+        "key": "table.2.espirito-manifestado",
+        "title": "Espírito Manifestado",
+        "page": 188,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "item",
+            "label": "Estatística"
+          },
+          {
+            "key": "valor",
+            "label": "Valor"
+          }
+        ],
+        "rows": [
+          {
+            "item": "Tipo/Tamanho",
+            "valor": "Fey Pequeno ou Miúdo; mesmo alinhamento"
+          },
+          {
+            "item": "CA",
+            "valor": "13 + PB (armadura natural)"
+          },
+          {
+            "item": "PV",
+            "valor": "5 + 5 × nível de Feiticeiro"
+          },
+          {
+            "item": "Deslocamento",
+            "valor": "9 m; voo 6 m (pairar)"
+          },
+          {
+            "item": "Atributos",
+            "valor": "For 14, Des 16, Con 16, Int 9, Sab 15, Car 12"
+          },
+          {
+            "item": "Perícias",
+            "valor": "Intimidação +1+PB, Percepção +2+PB, Furtividade +3+PB"
+          },
+          {
+            "item": "Sentidos",
+            "valor": "Visão no escuro 9 m; Percepção passiva 12+PB"
+          },
+          {
+            "item": "Multiataque",
+            "valor": "Ataques iguais à metade do PB, arredondado para baixo"
+          },
+          {
+            "item": "Agarrão Espiritual",
+            "valor": "Ataque mágico corpo a corpo; 1d8+PB necrótico ou radiante"
+          },
+          {
+            "item": "Rasgo Espiritual",
+            "valor": "Ataque mágico à distância 18 m; 1d6+PB necrótico ou radiante"
+          }
+        ]
+      },
+      {
+        "key": "table.3.bencaos-do-espirito",
+        "title": "Bênçãos do Espírito",
+        "page": 189,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "bencao",
+            "label": "Bênção"
+          },
+          {
+            "key": "efeito",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "bencao": "Resistência",
+            "efeito": "Resistência a um tipo de dano; pode escolher até proficiência vezes."
+          },
+          {
+            "bencao": "Estadia Prolongada",
+            "efeito": "Duração máxima +10 min; pode escolher até proficiência vezes."
+          },
+          {
+            "bencao": "Ampliar",
+            "efeito": "Tamanho +1 categoria, alcance +1,5 m e ataques corpo a corpo +1d8 do mesmo tipo."
+          },
+          {
+            "bencao": "Teletransportador",
+            "efeito": "Ação bônus teleporta até 9 m para espaço visível."
+          },
+          {
+            "bencao": "Frenesi",
+            "efeito": "Vantagem em ataques corpo a corpo, mas ataques contra o espírito têm vantagem."
+          },
+          {
+            "bencao": "Detonador",
+            "efeito": "Ao chegar a 0 PV ou perder concentração, escolhidos a 6 m fazem Destreza contra sua CD ou sofrem 2d10 + nível de Feiticeiro necrótico/radiante."
+          },
+          {
+            "bencao": "Uma Só Mente",
+            "efeito": "Ação bônus para ver/ouvir pelo espírito até próximo turno; você fica cego/surdo pelos próprios sentidos."
+          },
+          {
+            "bencao": "Visão Diabólica",
+            "efeito": "Enxerga em penumbra/escuridão, mágica ou não, a 36 m."
+          },
+          {
+            "bencao": "Agilidade Aprimorada",
+            "efeito": "Deslocamentos dobrados."
+          },
+          {
+            "bencao": "Escudeiro de Campo",
+            "efeito": "Após Ajudar, ação bônus para Desengajar ou Esquivar-se."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 188
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-sorcerer-spirit-caller.feature.magias-do-invocador-de-espiritos.l1.1",
+      "name": "MAGIAS DO INVOCADOR DE ESPÍRITOS",
+      "level": 1,
+      "description": "Aprenda as magias da tabela; contam como magias de Feiticeiro e não contam no limite. Ao ganhar nível de Feiticeiro, pode trocar uma magia desta característica por outra do mesmo nível de Ilusão ou Conjuração das listas de Feiticeiro, Bruxo ou Mago.",
+      "page": 188,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-sorcerer-spirit-caller.feature.conduto-da-alma.l1.1",
+      "name": "CONDUTO DA ALMA",
+      "level": 1,
+      "description": "Como ação, manifeste seu espírito em espaço desocupado a 9 m usando o bloco da tabela. Ele compartilha iniciativa e age logo após você; ação bônus manda Atacar no próximo turno, caso contrário usa Esquivar-se ou Ajudar. Dura 10 minutos, até 0 PV ou perda de concentração; some Carisma às salvaguardas para manter essa concentração. Dois usos, recuperados em Descanso Curto ou Longo.",
+      "page": 188,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-sorcerer-spirit-caller.feature.sincronia-espiritual.l6.1",
+      "name": "SINCRONIA ESPIRITUAL",
+      "level": 6,
+      "description": "Magias suas cujo alcance não seja pessoal podem originar-se de seu espírito manifestado, em vez de você, se ele estiver a até 36 m.",
+      "page": 188,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-sorcerer-spirit-caller.feature.potencializacao-espiritual.l6.1",
+      "name": "POTENCIALIZAÇÃO ESPIRITUAL",
+      "level": 6,
+      "description": "Ao manifestar o espírito, gaste qualquer número de Pontos de Feitiçaria e escolha uma bênção da tabela por ponto; não repita a mesma bênção salvo quando indicado. Elas duram enquanto o espírito permanecer.",
+      "page": 189,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-sorcerer-spirit-caller.feature.emergencia-explosiva.l14.1",
+      "name": "EMERGÊNCIA EXPLOSIVA",
+      "level": 14,
+      "description": "Quando usa ação bônus para comandar o espírito no mesmo turno em que o invocou, ele pode realizar uma ação adicional no primeiro turno. Além disso, enquanto estiver manifestado, você recebe todas as resistências a dano que ele possuir.",
+      "page": 190,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-sorcerer-spirit-caller.feature.manifestacao-da-forma-final.l18.1",
+      "name": "MANIFESTAÇÃO DA FORMA FINAL",
+      "level": 18,
+      "description": "Você não precisa mais manter concentração no espírito e pode dispensá-lo sem ação. Ao manifestá-lo, recebe uma bênção adicional gratuitamente. Pode escolher tamanho-base Médio ou Grande; se Grande, o alcance de Agarrão Espiritual aumenta em 1,5 m.",
+      "page": 190,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

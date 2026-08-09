@@ -1,0 +1,946 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+    "pages": "83–88",
+    "chapter": "Capítulo 3: Classes",
+    "page": 84
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Uma humana em sua armadura de placas empunha seu escudo antes de ir ao encontro de um bando de goblins. Um elfo atrás dela, em seu corselete de couro batido, salpica os goblins com flechas atiradas de seu primoroso arco. O meio-orc próximo, dá ordens visando coordenar os ataques dos dois combatentes para obter a melhor vantagem.\n\nUm anão em sua cota de malha coloca seu escudo entre à clava de um ogro e seu companheiro, direcionando o ataque mortal para o outro lado. Seu companheiro, um meio-elfo em sua brunea, brande suas duas cimitarras em um turbilhão de golpes, rodeando o ogro a procura de um ponto fraco em suas defesas.\n\nUm gladiador luta por esporte em uma arena, um mestre com seu tridente e rede, hábil em prender os inimigos e arrastá-los para delírio da plateia – e sua própria vantagem tática. A espada de seu oponente lampeja com um brilho azul um instante antes de um relâmpago atingi-lo pelas costas.\n\nTodos esses heróis são guerreiros, talvez a mais diversificada classe de personagens nos mundos de DUNGEONS & DRAGONS. Cavaleiros em missões, lordes conquistadores, campeões reais, infantaria de elite, mercenários rígidos e bandidos reis, como guerreiros, eles compartilham de uma maestria com armas e armaduras sem precedentes, bem como um vasto conhecimento e habilidades em combate. E eles estão bem familiarizados com a morte, seja simplesmente conhecendo-a ou desafiando-a cara a cara.\n\nGuerreiros aprendem o básico de todos os estilos de combate. Todo guerreiro sabe brandir um machado, esgrimir com uma rapieira, empunhar uma espada longa ou uma espada grande, usar um arco ou mesmo prender inimigos em uma rede com algum grau de perícia. Da mesma forma, um guerreiro sabe usar escudos e qualquer tipo de armadura. Além do conhecimento básico, cada guerreiro se especializa em certo estilo de combate. Alguns se concentram na arquearia, outros em lutar com duas armas ao mesmo tempo e ainda existem aqueles que aprimoram suas habilidades marciais com magia. Essas combinações de ampla capacidade generalista e uma vasta especialização tornam os guerreiros combatentes superiores nos campos de batalha e masmorras.\n\nNem todo membro da patrulha da cidade, da milícia ou do exército da rainha é um guerreiro. Muitos deles são soldados relativamente treinados somente com o básico do conhecimento de combate. Soldados veteranos, oficiais militares, guarda-costas treinados, cavaleiros dedicados e figuras similares são guerreiros.\n\nAlguns guerreiros são compelidos a usar seu treinamento como aventureiros. Explorar masmorras, matar monstros e outros trabalhos perigosos, comuns a aventureiros, são uma segunda natureza para o guerreiro, não tão diferente da vida que ele ou ela deixou para trás. Talvez existam grandes riscos, mas também grandes recompensas – poucos guerreiros na patrulha da cidade têm a oportunidade de descobrir a espada mágica língua flamejante, por exemplo.",
+    "hitDice": {
+      "raw": "d10",
+      "mode": "standard",
+      "number": 1,
+      "faces": 10
+    },
+    "primaryAbility": {
+      "raw": "Força ou Destreza",
+      "abilityKeys": [
+        "str",
+        "dex"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Força, Constituição",
+        "abilityKeys": [
+          "str",
+          "con"
+        ]
+      },
+      "armor": "Todas as armaduras e escudos",
+      "weapons": "Armas simples e marciais",
+      "tools": "Nenhuma",
+      "skills": "Escolha duas: Acrobacia, Adestrar Animais, Atletismo, História, Intuição, Intimidação, Percepção ou Sobrevivência"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 84,
+      "text": "Como um guerreiro, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d10 por nível de guerreiro Pontos de Vida no 1° Nível: 10 + seu modificador de\n\nConstituição Pontos de Vida nos Níveis Seguintes: 1d10 (ou 6) +\n\nseu modificador de Constituição por nível de guerreiro após o 1° PROFICIÊNCIAS Armaduras: Todas as armaduras, escudos Armas: Armas simples, armas marciais Ferramentas: nenhum\n\nTestes de Resistência: Força, Constituição Perícias: Escolha duas dentre Acrobacia, Adestrar\n\nAnimais, Atletismo, História, Intuição, Intimidação, Percepção e Sobrevivência\n\nEQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n• (a) cota de malha ou (b) gibão de peles, arco longo e 20\n\nflechas\n• (a) uma arma marcial e um escudo ou (b) duas armas\n\nmarciais\n• (a) uma besta leve e 20 virotes ou (b) dois machados de\n\narremesso\n• (a) um pacote de aventureiro ou (b) um pacote de\n\nexplorador"
+    },
+    "overview": [
+      {
+        "title": "GUERREIRO",
+        "page": 83,
+        "text": "Uma humana em sua armadura de placas empunha seu escudo antes de ir ao encontro de um bando de goblins. Um elfo atrás dela, em seu corselete de couro batido, salpica os goblins com flechas atiradas de seu primoroso arco. O meio-orc próximo, dá ordens visando coordenar os ataques dos dois combatentes para obter a melhor vantagem.\n\nUm anão em sua cota de malha coloca seu escudo entre à clava de um ogro e seu companheiro, direcionando o ataque mortal para o outro lado. Seu companheiro, um meio-elfo em sua brunea, brande suas duas cimitarras em um turbilhão de golpes, rodeando o ogro a procura de um ponto fraco em suas defesas.\n\nUm gladiador luta por esporte em uma arena, um mestre com seu tridente e rede, hábil em prender os inimigos e arrastá-los para delírio da plateia – e sua própria vantagem tática. A espada de seu oponente lampeja com um brilho azul um instante antes de um relâmpago atingi-lo pelas costas.\n\nTodos esses heróis são guerreiros, talvez a mais diversificada classe de personagens nos mundos de DUNGEONS & DRAGONS. Cavaleiros em missões, lordes conquistadores, campeões reais, infantaria de elite, mercenários rígidos e bandidos reis, como guerreiros, eles compartilham de uma maestria com armas e armaduras sem precedentes, bem como um vasto conhecimento e habilidades em combate. E eles estão bem familiarizados com a morte, seja simplesmente conhecendo-a ou desafiando-a cara a cara."
+      },
+      {
+        "title": "ESPECIALISTAS BEM-SUPRIDOS",
+        "page": 83,
+        "text": "Guerreiros aprendem o básico de todos os estilos de combate. Todo guerreiro sabe brandir um machado, esgrimir com uma rapieira, empunhar uma espada longa ou uma espada grande, usar um arco ou mesmo prender inimigos em uma rede com algum grau de perícia. Da mesma forma, um guerreiro sabe usar escudos e qualquer tipo de armadura. Além do conhecimento básico, cada guerreiro se especializa em certo estilo de combate. Alguns se concentram na arquearia, outros em lutar com duas armas ao mesmo tempo e ainda existem aqueles que aprimoram suas habilidades marciais com magia. Essas combinações de ampla capacidade generalista e uma vasta especialização tornam os guerreiros combatentes superiores nos campos de batalha e masmorras."
+      },
+      {
+        "title": "TREINADO PARA O PERIGO",
+        "page": 83,
+        "text": "Nem todo membro da patrulha da cidade, da milícia ou do exército da rainha é um guerreiro. Muitos deles são soldados relativamente treinados somente com o básico do conhecimento de combate. Soldados veteranos, oficiais militares, guarda-costas treinados, cavaleiros dedicados e figuras similares são guerreiros.\n\nAlguns guerreiros são compelidos a usar seu treinamento como aventureiros. Explorar masmorras, matar monstros e outros trabalhos perigosos, comuns a aventureiros, são uma segunda natureza para o guerreiro, não tão diferente da vida que ele ou ela deixou para trás. Talvez existam grandes riscos, mas também grandes recompensas – poucos guerreiros na patrulha da cidade têm a oportunidade de descobrir a espada mágica língua flamejante, por exemplo."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM GUERREIRO",
+        "page": 84,
+        "text": "Conforme você constrói o seu guerreiro, é importante pensar em dois elementos relativos à história do seu personagem: onde você conseguiu seu treinamento em combate e o que o diferencia dos outros guerreiros ao seu redor? Você era de alguma forma cruel? Conseguiu uma ajuda extra de um mentor, talvez por sua excepcional dedicação? O que o trouxe para esse tipo de treinamento em primeiro lugar? Uma ameaça à sua terra natal, sede de vingança, uma necessidade de provar a si mesmo, podem ser todos esses motivos.\n\nVocê pode ter aproveitado um treinamento formal no exército real ou em uma milícia local. Talvez você tenha treinado na academia de guerra, aprendendo estratégias, táticas e história militar. Ou ainda pode ter sido um autodidata – rude, mas bem testado. Você escolheu o caminho da espada como uma fuga da vida na fazenda ou para seguir uma orgulhosa tradição familiar? Onde obteve suas armas e armaduras? Elas podem ser de uso militar ou uma herança de família, talvez você economizou por muitos anos para comprá-las. Seus armamentos são agora suas posses mais importantes – as únicas coisas que estão entre você e o abraço da morte."
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 84,
+        "text": "Você pode fazer um guerreiro rapidamente seguindo estas sugestões. Primeiro, coloque seu valor de habilidade mais alto em Força ou Destreza, a depender de se você quer se focar em armas corpo-a-corpo ou em arquearia (ou em armas de acuidade). Seu próximo valor mais alto deveria ser em Constituição ou Inteligência, se você planeja adotar o arquétipo marcial Cavaleiro Arcano. Segundo, escolha o antecedente soldado."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.arquetipos-marciais",
+        "title": "ARQUÉTIPOS MARCIAIS",
+        "page": 85,
+        "text": "Diferentes guerreiros escolhem diferentes caminhos para aperfeiçoar seu poder em combate. O arquétipo marcial que você escolhe seguir reflete essa escolha.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.2.ataque-extra-aprimorado-guerreiro",
+        "title": "ATAQUE EXTRA APRIMORADO: GUERREIRO",
+        "page": 149,
+        "text": "Esta regra opcional substitui Ataque Extra, mantendo três ataques no 11º e quatro no 20º. A partir do 7º nível, ao atacar uma criatura durante a ação Atacar, cada ataque subsequente naquele turno contra ela recebe +1 cumulativo, até +4.",
+        "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "fighter",
+      "color": "#c1543c"
+    }
+  },
+  "features": [
+    {
+      "key": "class.fighter.feature.estilo-de-luta.l1.1",
+      "name": "ESTILO DE LUTA",
+      "level": 1,
+      "description": "Você adota um estilo de combate particular que será sua especialidade. Escolha uma das opções a seguir. Você não pode escolher o mesmo Estilo de Combate mais de uma vez, mesmo se puder escolher de novo.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.arquearia.l0.1",
+      "name": "ARQUEARIA",
+      "level": null,
+      "description": "Você ganha +2 de bônus nas jogadas de ataque realizadas com uma arma de ataque à distância.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.combate-com-armas-grandes.l0.1",
+      "name": "COMBATE COM ARMAS GRANDES",
+      "level": null,
+      "description": "Quando você rolar um 1 ou um 2 num dado de dano de um ataque com arma corpo-a-corpo que você esteja empunhando com duas mãos, você pode rolar o dado novamente e usar a nova rolagem, mesmo que resulte em 1 ou 2. A arma deve ter a propriedade duas mãos ou versátil para ganhar esse benefício.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.combate-com-duas-armas.l0.1",
+      "name": "COMBATE COM DUAS ARMAS",
+      "level": null,
+      "description": "Quando você estiver engajado em uma luta com duas armas, você pode adicionar o seu modificador de habilidade de dano na jogada de dano de seu segundo ataque.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.defesa.l0.1",
+      "name": "DEFESA",
+      "level": null,
+      "description": "Enquanto estiver usando armadura, você ganha +1 de bônus em sua CA.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.duelismo.l0.1",
+      "name": "DUELISMO",
+      "level": null,
+      "description": "Quando você empunhar uma arma de ataque corpo-acorpo em uma mão e nenhuma outra arma, você ganha +2 de bônus nas jogadas de dano com essa arma.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.protecao.l0.1",
+      "name": "PROTEÇÃO",
+      "level": null,
+      "description": "Quando uma criatura que você possa ver atacar um alvo que esteja a até 1,5 metro de você, você pode usar sua reação para impor desvantagem na jogada de ataque da criatura. Você deve estar empunhando um escudo.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.retomar-o-folego.l1.1",
+      "name": "RETOMAR O FÔLEGO",
+      "level": 1,
+      "description": "Você possui uma reserva de estamina e pode usá-la para proteger a si mesmo contra danos. No seu turno, você pode usar uma ação bônus para recuperar pontos de vida igual a 1d10 + seu nível de guerreiro.\n\nUma vez que você use essa característica, você precisa terminar um descanso curto ou longo para usá-la de novo.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.surto-de-acao.l2.1",
+      "name": "SURTO DE AÇÃO",
+      "level": 2,
+      "description": "A partir do 2º nível, você pode forçar o seu limite para além do normal por um momento. Durante o seu turno, você pode realizar uma ação adicional juntamente com sua ação e possível ação bônus.\n\nUma vez que você use essa característica, você precisa terminar um descanso curto ou longo para usá-la de novo. A partir do 17º nível, você pode usá-la duas vezes antes do descanso, porém somente uma vez por turno.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.arquetipo-marcial.l3.1",
+      "name": "ARQUÉTIPO MARCIAL",
+      "level": 3,
+      "description": "No 3º nível, você escolhe um arquétipo o qual se esforçará para seguir as técnicas e estilos de combate dele. Escolha Campeão, Cavaleiro Arcano ou Mestre de Batalha, todos detalhados no final da descrição da classe. O arquétipo confere a você características especiais no 3º nível e de novo no 7º, 10º, 15º e 18º nível.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4° nível e novamente no 6°, 8°, 12°, 14°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "A partir do 5º nível, você pode atacar duas vezes, ao invés de uma, quando usar a ação de Ataque durante seu turno.\n\nO número de ataques aumenta para três quando você alcançar o 11º nível de guerreiro e para quatro quando alcançar o 20º nível de guerreiro.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.fighter.feature.indomavel.l9.1",
+      "name": "INDOMÁVEL",
+      "level": 9,
+      "description": "A partir do 9º nível, você pode jogar de novo um teste de resistência que falhou. Se o fizer, você deve usar o novo valor e não pode usar essa característica de novo antes de terminar um descanso longo.\n\nVocê pode usar esta característica duas vezes entre descansos longos quando chegar no 13º nível e três vezes entre descansos longos quando chegar no 17º nível.",
+      "page": 85,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Guerreiro",
+    "sourceTitle": "",
+    "sourcePage": 84,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.estilo-de-luta.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Retomar o Fôlego",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.retomar-o-folego.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Surto de Ação (um uso)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.surto-de-acao.l2.1"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Arquétipo Marcial",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.arquetipo-marcial.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Ataque Extra",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.ataque-extra.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Arquétipo Marcial",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.arquetipo-marcial.l3.1"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Indomável (um uso)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.indomavel.l9.1"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Arquétipo Marcial",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.arquetipo-marcial.l3.1"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Ataque Extra (2)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.ataque-extra.l5.1"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Indomável (dois usos)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.indomavel.l9.1"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Arquétipo Marcial",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.arquetipo-marcial.l3.1"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Surto de Ação (dois usos)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.surto-de-acao.l2.1"
+            ]
+          },
+          {
+            "label": "Indomável (três usos)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.indomavel.l9.1"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Característica de Arquétipo Marcial",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.arquetipo-marcial.l3.1"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.fighter.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Ataque Extra (3)",
+            "kind": "feature-scaling",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.fighter.feature.ataque-extra.l5.1"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 20
+    },
+    "options": [
+      {
+        "grimorioId": "campeao",
+        "identifier": "campeao",
+        "name": "Campeão",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 85
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "cavaleiro-arcano",
+        "identifier": "cavaleiro-arcano",
+        "name": "Cavaleiro Arcano",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 86
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "mestre-batalha",
+        "identifier": "mestre-batalha",
+        "name": "Mestre de Batalha",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 87
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-fighter-academy-agent",
+        "identifier": "lyre-fighter-academy-agent",
+        "name": "Agente da Academia",
+        "originalName": "Academy Agent",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "457",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 457
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-fighter-brawler",
+        "identifier": "lyre-fighter-brawler",
+        "name": "Brigão",
+        "originalName": "Brawler",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "457–458",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 457
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-fighter-red-lion-knight",
+        "identifier": "lyre-fighter-red-lion-knight",
+        "name": "Cavaleiro do Leão Vermelho",
+        "originalName": "Red Lion Knight",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "461–462",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 461
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-fighter-guardian",
+        "identifier": "lyre-fighter-guardian",
+        "name": "Guardião",
+        "originalName": "Guardian",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "461",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 461
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-fighter-chaos-blade",
+        "identifier": "lyre-fighter-chaos-blade",
+        "name": "Lâmina do Caos",
+        "originalName": "Chaos Blade",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "459",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 459
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-fighter-astral-knight",
+        "identifier": "zagalhta-fighter-astral-knight",
+        "name": "Cavaleiro Astral",
+        "originalName": "Astral Knight",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "155",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 155
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-fighter-lunar-synergist",
+        "identifier": "zagalhta-fighter-lunar-synergist",
+        "name": "Sinergista Lunar",
+        "originalName": "Lunar Synergist",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "156",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 156
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-fighter-heart-of-focus",
+        "identifier": "bbb-fighter-heart-of-focus",
+        "name": "Coração do Foco",
+        "originalName": "Heart of Focus",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "105",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 105
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-fighter-knight-demonist",
+        "identifier": "bbb-fighter-knight-demonist",
+        "name": "Cavaleiro Demonista",
+        "originalName": "Knight Demonist",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "105–106",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 105
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-fighter-sohei",
+        "identifier": "bbb-fighter-sohei",
+        "name": "Sōhei",
+        "originalName": "Sohei",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "106",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 106
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "ryoko-fighter-skeletal-blade",
+        "identifier": "ryoko-fighter-skeletal-blade",
+        "name": "Lâmina Esquelética",
+        "originalName": "Skeletal Blade",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "178–179",
+          "chapter": "Capítulo 9: Classes",
+          "page": 178
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-arqueiro-arcano",
+        "identifier": "xanathar-arqueiro-arcano",
+        "name": "Arqueiro Arcano",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "38–40",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 38
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-cavaleiro",
+        "identifier": "xanathar-cavaleiro",
+        "name": "Cavaleiro",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "40–41",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 40
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-samurai",
+        "identifier": "xanathar-samurai",
+        "name": "Samurai",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "41",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 41
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-guerreiro-psionico",
+        "identifier": "tasha-guerreiro-psionico",
+        "name": "Guerreiro Psiônico",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "58–60",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 58
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-cavaleiro-runico",
+        "identifier": "tasha-cavaleiro-runico",
+        "name": "Cavaleiro Rúnico",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "60–63",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 60
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "scag-cavaleiro-dragao-purpura",
+        "identifier": "scag-cavaleiro-dragao-purpura",
+        "name": "Cavaleiro Dragão Púrpura",
+        "originalName": "",
+        "source": {
+          "sourceId": "scag",
+          "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+          "pages": "128",
+          "chapter": "Capítulo 4: Classes",
+          "page": 128
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-musashi",
+    "identifier": "lyre-sword-saint-retia-way-of-musashi",
+    "name": "Caminho de Musashi",
+    "originalName": "Way of Musashi",
+    "aliases": [
+      "Way of Musashi"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "426",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 426
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Temper & Patience. Musashi foi um mestre irreverente do combate com duas armas. Seu Caminho ensina a não desperdiçar movimentos, convertendo defesa em ofensiva e explorando simultaneamente várias brechas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 426
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-musashi.feature.estilo-de-luta-combate-com-duas-armas.l3.1",
+      "name": "ESTILO DE LUTA: COMBATE COM DUAS ARMAS",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Combate com Duas Armas.",
+      "page": 426,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-musashi.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "DEFLEXÃO EXEMPLAR: como reação a um ataque com arma visível que o acerte, gaste 1 Foco para reduzir o dano à metade. REPOSICIONAR: quando uma criatura errar ataque corpo a corpo contra você, gaste 2 Foco para mover imediatamente até 6 metros sem provocar ataques de oportunidade; não funciona incapacitado ou com deslocamento 0. PÉTALAS DISPERSAS: depois de usar a ação Atacar e a ação bônus para atacar com arma secundária, pode gastar 1 Foco cada vez que fizer outro ataque com a arma principal para fazer outro ataque com a secundária; só pode aplicar esta técnica aos ataques de uma ação Atacar por turno.",
+      "page": 426,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-musashi.feature.ponto-zero.l6.1",
+      "name": "PONTO ZERO",
+      "level": 6,
+      "description": "Quando uma criatura obtiver crítico contra você, pode usar reação para transformá-lo em acerto normal e, como parte da mesma reação, fazer dois ataques com arma contra uma criatura ao alcance, um com a arma principal e outro com a secundária. Além disso, criaturas não podem obter contra você benefícios que exijam cercá-lo, como Ataque Furtivo por aliado adjacente, flanqueamento ou Táticas de Matilha; se a característica tiver outro gatilho, como vantagem para Ataque Furtivo, esse uso ainda funciona.",
+      "page": 426,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-musashi.feature.caminho-das-cinco-almas.l11.1",
+      "name": "CAMINHO DAS CINCO ALMAS",
+      "level": 11,
+      "description": "Você recebe proficiência em todas as salvaguardas.",
+      "page": 426,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-musashi.feature.o-caminho-inegavel.l14.1",
+      "name": "O CAMINHO INEGÁVEL",
+      "level": 14,
+      "description": "Você pode vincular uma segunda arma como Arma Santa. Ambas recebem todos os benefícios; pode sintonizar-se com as duas como se fossem um único item mágico, obtendo os efeitos de ambas mas ocupando apenas um espaço de sintonia.",
+      "page": 426,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-musashi.feature.lamina-celestial-sem-coracao.l17.1",
+      "name": "LÂMINA CELESTIAL SEM CORAÇÃO",
+      "level": 17,
+      "description": "Como ação, gaste 4 Foco para golpear todas as criaturas escolhidas a até 4,5 metros. Faça uma única jogada de ataque com uma de suas Armas Santas e aplique o resultado separadamente a cada alvo; faça uma única jogada de dano e aplique a todos os atingidos. O ataque é feito sem vantagem ou desvantagem e não recebe efeitos que alterem apenas uma jogada de ataque/dano individual, embora efeitos contínuos de turno ou mais possam afetá-lo. Cada criatura atingida faz salvaguarda de Constituição contra sua CD de Técnica de Foco; em falha, sofre +2d12 do tipo de dano da arma e fica atordoada até o fim do seu próximo turno. Não pode usar esta técnica e Surto do Dragão no mesmo turno.",
+      "page": 426,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

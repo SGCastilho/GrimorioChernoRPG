@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-barbarian-path-of-the-oni",
+    "identifier": "bbb-barbarian-path-of-the-oni",
+    "name": "Caminho do Oni",
+    "originalName": "Path of the Oni",
+    "aliases": [
+      "Path of the Oni"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "84",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 84
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Um bárbaro que manifesta a fúria de um oni e seu poder místico.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 84
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-oni.feature.natureza-lavanda.l3.1",
+      "name": "NATUREZA LAVANDA",
+      "level": 3,
+      "description": "Você pode falar, ler e escrever Gigante e Abissal. Além disso, recebe Especialização em Atletismo ou Intimidação, à sua escolha quando recebe esta característica.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-oni.feature.ira-do-tita.l3.1",
+      "name": "IRA DO TITÃ",
+      "level": 3,
+      "description": "Você canaliza o poder do gigante infernal imbuído em seu corpo para crescer a proporções absurdas. Ao entrar em Fúria, pode produzir em si mesmo o efeito de ampliar de ampliar/reduzir, sem concentração nem espaço de magia; o efeito não conta como magia nem efeito mágico. Considere-o produzido como se fosse conjurado em um nível igual à metade de seu nível de bárbaro, arredondado para cima, no máximo 9º, ou em um nível inferior à sua escolha. O efeito termina quando sua Fúria termina. Você pode usá-lo um número de vezes por Descanso Longo igual ao seu bônus de proficiência.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-oni.feature.passos-de-pesadelo.l6.1",
+      "name": "PASSOS DE PESADELO",
+      "level": 6,
+      "description": "Você replica a capacidade de levitação de um oni e recebe deslocamento de voo laborioso (pairar) igual ao seu deslocamento base.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-oni.feature.neobhasmhor.l10.1",
+      "name": "NEOBHÀSMHOR",
+      "level": 10,
+      "description": "Seu corpo recompõe a si mesmo conforme necessário. Quando iniciar seu turno com 1 ou mais pontos de vida, mas com no máximo metade de seus pontos de vida máximos, recupera pontos de vida iguais a 1d6 + seu bônus de proficiência.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-barbarian-path-of-the-oni.feature.frenesi-sombrio.l14.1",
+      "name": "FRENESI SOMBRIO",
+      "level": 14,
+      "description": "Seu domínio da natureza de um gigante voraz aprimora suas características anteriores. Se usar Ira do Titã para ampliar-se e sua Fúria terminar, pode manter o efeito de ampliar/reduzir, passando a concentrar-se nele; ele termina quando sua concentração acabar ou após 1 minuto. Enquanto estiver em Fúria, seu deslocamento de voo laborioso (pairar) torna-se deslocamento normal de voo (pairar). Além disso, quando fizer qualquer ataque com vantagem e acertar, pode rolar um dado de dano adicional da arma e somá-lo ao dano.",
+      "page": 84,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

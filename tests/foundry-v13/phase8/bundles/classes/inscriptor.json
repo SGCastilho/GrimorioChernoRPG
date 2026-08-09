@@ -1,0 +1,1162 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor",
+    "originalName": "Inscriptor",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "359–381",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 360
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Conjuradores literários que escrevem interpretações da realidade com expoentrum, uma tinta arcana alimentada por patronos conhecidos como Correfontes.",
+    "hitDice": {
+      "raw": "d8",
+      "mode": "standard",
+      "number": 1,
+      "faces": 8
+    },
+    "primaryAbility": {
+      "raw": "Inteligência",
+      "abilityKeys": [
+        "int"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Inteligência, Carisma",
+        "abilityKeys": [
+          "int",
+          "cha"
+        ]
+      },
+      "armor": "Armaduras leves",
+      "weapons": "Adagas, dardos, fundas, bordões, bestas de mão, arcos curtos e espadas curtas",
+      "tools": "Implementos de escrita",
+      "skills": "Escolha três: Arcanismo, História, Intuição, Investigação, Percepção, Persuasão ou Religião"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "text": "PONTOS DE VIDA\n\nDado de Vida: 1d8 por nível de Inscritor.\n\nPontos de Vida no 1º nível: 8 + seu modificador de Constituição.\n\nPontos de Vida em níveis superiores: 1d8 (ou 5) + Constituição por nível após o 1º.\n\nPROFICIÊNCIAS\n\nArmaduras: Armaduras leves.\n\nArmas: Adagas, dardos, fundas, bordões, bestas de mão, arcos curtos e espadas curtas.\n\nFerramentas: Implementos de escrita.\n\nSalvaguardas: Inteligência e Carisma.\n\nPerícias: Escolha três entre Arcanismo, História, Intuição, Investigação, Percepção, Persuasão e Religião.\n\nEQUIPAMENTO\n\nVinte dardos e uma espada curta, ou bordão, besta de mão e 10 virotes; pacote de estudioso ou diplomata; armadura de couro, qualquer arma simples, duas adagas e implementos de escrita. Alternativamente, 4d4 × 10 po."
+    },
+    "overview": [
+      {
+        "title": "INSCRITOR",
+        "page": 359,
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "text": "Inscritores usam a palavra escrita para canalizar poder arcano e dobrar o mundo através de seus textos. Essa arte, chamada conjuração literária, nasce da combinação entre imaginação e a capacidade de alterar a realidade através do expoentrum, uma tinta arcana capaz de escrever diretamente sobre a estrutura da Trama. O poder costuma vir de patronos chamados Correfontes, semideuses ligados a registros, histórias, gêneros literários e possibilidades futuras."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM INSCRITOR",
+        "page": 360,
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "text": "Defina primeiro o ofício de escrita do personagem: dramaturgo, romancista, arquivista, poeta, contador ou outro tipo de autor. A forma de escrita influencia como a conjuração literária se manifesta. Depois, determine seu patrono e a natureza desse vínculo. Para uma construção rápida, use Inteligência como maior atributo e Carisma ou Sabedoria como o seguinte; escolha o antecedente Autor. A fonte sugere os truques Mensagem e Apreensão Escrita, e as magias Explosão do Caos e Identificar."
+      }
+    ],
+    "tables": [
+      {
+        "key": "table.1.inscricoes-do-inscritor",
+        "title": "Inscrições do Inscritor",
+        "page": 377,
+        "description": "Opções modulares da característica Inscrições. Os requisitos e efeitos foram traduzidos do catálogo do livro.",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Inscrição"
+          },
+          {
+            "key": "req",
+            "label": "Requisitos"
+          },
+          {
+            "key": "effect",
+            "label": "Efeito",
+            "wide": true
+          }
+        ],
+        "rows": [
+          {
+            "name": "Fantasia Aventureira",
+            "req": "4º nível de Inscritor; 2 Marcas",
+            "effect": "Você ganha proficiência com armaduras médias e armas simples. Seu máximo de pontos de vida aumenta em 1 para cada nível de Inscritor que possui, e todos os seus Dados de Vida de Inscritor, inclusive futuros, tornam-se d10. Você não recalcula os pontos de vida já obtidos por dados anteriores."
+          },
+          {
+            "name": "Fique Parado e em Silêncio",
+            "req": "—",
+            "effect": "Como ação, gaste uma Reviravolta Narrativa para colocar criaturas à sua escolha a até 9 metros sob os efeitos de Invisibilidade, sem exigir concentração. Você pode afetar até seu bônus de proficiência em criaturas."
+          },
+          {
+            "name": "Deus Ex Machina",
+            "req": "12º nível de Inscritor",
+            "effect": "Quando obtém sucesso ou falha em uma salvaguarda, use sua reação e gaste uma Reviravolta Narrativa para refazê-la, escolhendo qual resultado usar. Se a salvaguarda bem-sucedida normalmente causaria metade do dano, você não sofre dano em um sucesso."
+          },
+          {
+            "name": "Euforia de Cafeína",
+            "req": "8º nível; 1 Marca",
+            "effect": "Uma vez por Descanso Curto ou Longo, você pode conjurar Velocidade usando um espaço de pacto, mesmo sem conhecê-la. Enquanto estiver sob sua Velocidade, o alvo pode usar a ação bônus para realizar uma das ações descritas pela ação extra especial da magia."
+          },
+          {
+            "name": "Inveja Evolutiva",
+            "req": "1 Marca",
+            "effect": "Escolha um Traço de Legado de uma raça. Você escreve sobre si mesmo recebendo esse traço e passa a tê-lo. A cada nível de Inscritor, pode trocar o traço. Um Traço de Legado de Sangue Misto exige 3 Marcas em vez de 1."
+          },
+          {
+            "name": "Casaco de Shamwood",
+            "req": "4º nível",
+            "effect": "Você é fácil de ignorar: pode Desengajar como ação bônus, e ataques de oportunidade contra você têm desvantagem."
+          },
+          {
+            "name": "Empunhadura Livre",
+            "req": "8º nível; Intenção Aventura; 2 Marcas",
+            "effect": "Você pode se sintonizar com qualquer arma com a qual seja proficiente, mesmo mundana, como se fosse mágica. Enquanto sintonizada, ela recebe as propriedades de uma Arma Dançante. Ataques realizados por ela fora de suas mãos usam seu bônus de ataque com magia, somando eventual bônus de aprimoramento da arma."
+          },
+          {
+            "name": "Ponto Final",
+            "req": "4º nível; 1 Marca",
+            "effect": "Gaste uma Reviravolta Narrativa para conjurar Imobilizar Pessoa sem gastar espaço de magia nem componentes."
+          },
+          {
+            "name": "Fantasia Heroica",
+            "req": "Fantasia Aventureira; 8º nível; 1 Marca",
+            "effect": "Você ganha proficiência com armaduras pesadas e armas marciais. Seu máximo de pontos de vida aumenta em 1 por nível de Inscritor atual e aumenta em mais 1 a cada novo nível; este aumento se soma ao de Fantasia Aventureira."
+          },
+          {
+            "name": "Linha Direta",
+            "req": "12º nível; 1 Marca",
+            "effect": "Sempre que concluir um Descanso Curto, recupere um uso gasto de Consulta."
+          },
+          {
+            "name": "Ícaro",
+            "req": "8º nível; Intenção Mitologia; 1 Marca",
+            "effect": "Como ação bônus, gaste uma Reviravolta Narrativa para obter deslocamento de voo (pairar) igual ao seu deslocamento-base por 1 minuto. Se cair mais de 9 metros, pode usar sua reação e gastar uma Reviravolta para obter esse voo e interromper a queda imediatamente."
+          },
+          {
+            "name": "Vida Imitando Arte",
+            "req": "8º nível",
+            "effect": "Uma vez por Descanso Curto ou Longo, conjure Imagem Maior sem gastar espaço ou componentes."
+          },
+          {
+            "name": "Lâmpada de Luciel",
+            "req": "8º nível",
+            "effect": "Você pode conjurar Luz do Dia à vontade, sem gastar espaço de magia."
+          },
+          {
+            "name": "Homem contra Homem",
+            "req": "8º nível; 2 Marcas",
+            "effect": "Você tem vantagem em salvaguardas contra magias e efeitos mágicos."
+          },
+          {
+            "name": "Homem contra Natureza",
+            "req": "1 Marca",
+            "effect": "Escolha um tipo de dano que não seja cortante, perfurante ou contundente. Você recebe resistência a esse dano. Se já possuir resistência ao tipo escolhido quando seleciona a Inscrição, recebe imunidade em vez disso."
+          },
+          {
+            "name": "Homem contra Si Mesmo",
+            "req": "4º nível; 1 Marca",
+            "effect": "Você ganha proficiência em uma salvaguarda de atributo na qual ainda não seja proficiente."
+          },
+          {
+            "name": "Homem contra a Sociedade",
+            "req": "4º nível; 2 Marcas",
+            "effect": "Em testes de atributo nos quais você não adicionaria seu bônus de proficiência, nem metade nem o valor completo, adicione metade de seu bônus de proficiência, arredondado para cima."
+          },
+          {
+            "name": "Mímesis",
+            "req": "Intenção Mistério",
+            "effect": "Você pode conjurar Disfarçar-se à vontade, sem gastar espaço de magia."
+          },
+          {
+            "name": "Boa Lembrança de Ossenheimer",
+            "req": "12º nível; Intenção História; 2 Marcas",
+            "effect": "Uma vez por dia, conjure qualquer magia do grupo Memórias de Ossenheimer, mesmo sem conhecê-la, desde que gaste um espaço de pacto de nível apropriado."
+          },
+          {
+            "name": "Poesia em Movimento",
+            "req": "Fantasia Aventureira; 8º nível",
+            "effect": "Ao realizar a ação Atacar e atacar com uma arma com a qual seja proficiente, pode atacar duas vezes com ela em vez de uma."
+          },
+          {
+            "name": "Série de Continuação",
+            "req": "12º nível; 3 Marcas",
+            "effect": "Como ação, gaste um espaço de pacto para conjurar duas magias de sua lista de Inscritor. Ambas devem ter tempo de conjuração de 1 ação ou menor, nenhuma pode ser truque, apenas uma pode exigir concentração, e a soma dos níveis em que são conjuradas não pode superar o nível do espaço de pacto gasto."
+          },
+          {
+            "name": "Cursiva Somática",
+            "req": "—",
+            "effect": "Você não precisa executar componentes verbais de uma magia se ela tiver componentes somáticos; escrever as palavras é suficiente."
+          },
+          {
+            "name": "Comando de Therpientis",
+            "req": "Intenção Dramaturgo; 4º nível",
+            "effect": "Você pode conjurar Comando sem gastar espaço de magia um número de vezes igual ao seu bônus de proficiência, recuperando os usos após Descanso Longo. Ao fazê-lo, pode gastar uma Reviravolta Narrativa para conjurá-la como ação bônus."
+          },
+          {
+            "name": "Teste de Memória",
+            "req": "2 Marcas",
+            "effect": "Ao conjurar uma magia que exija salvaguarda de Sabedoria ou Carisma, você pode fazer o alvo usar Inteligência no lugar da primeira salvaguarda dessa magia."
+          },
+          {
+            "name": "A Perseguição Começa",
+            "req": "—",
+            "effect": "Como ação bônus, gaste uma Reviravolta Narrativa para receber os efeitos de Retirada Acelerada sem concentração."
+          },
+          {
+            "name": "Pontuação de Escrito",
+            "req": "8º nível; Intenção Proibição; 2 Marcas",
+            "effect": "Você pode conjurar como ação bônus qualquer magia cujo tempo normal seja 1 ação e que contenha “Escrito” ou “Palavra de Poder” no nome, desde que não conjure outra magia usando espaço de pacto no mesmo turno."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "key": "reference.1.multiclasse-5-19-inscritor",
+        "title": "MULTICLASSE 5.19 — INSCRITOR",
+        "page": 339,
+        "text": "Pré-requisitos: Inteligência 15 e Carisma ou Sabedoria 13. Ao entrar por multiclasse, a fonte concede proficiência com armaduras leves, implementos de escrita e uma perícia entre História, Intuição ou Percepção.",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "inscriptor",
+      "color": "#a782d8"
+    }
+  },
+  "features": [
+    {
+      "key": "class.inscriptor-retia.feature.intencao-autoral.l1.1",
+      "name": "INTENÇÃO AUTORAL",
+      "level": 1,
+      "description": "Escolha uma Intenção Autoral, expressão de seu estilo e de sua integridade como artista literário e representação de sua ligação com o patrono. A Intenção concede características no 1º nível e novamente nos níveis 5, 8, 12 e 20. As Intenções Autorais específicas estão disponíveis na seção de subclasses do Inscritor.",
+      "page": 360,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.fonte-da-linguagem.l1.1",
+      "name": "FONTE DA LINGUAGEM",
+      "level": 1,
+      "description": "Escolha um número de idiomas igual ao seu bônus de proficiência. Você aprende a ler e escrever esses idiomas, mas não a falá-los. Sempre que seu bônus de proficiência aumentar, aprende mais um idioma desta forma.",
+      "page": 360,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.magia-de-pacto.l1.1",
+      "name": "MAGIA DE PACTO",
+      "level": 1,
+      "description": "Seu patrono alimenta sua imaginação e seus talentos literários, permitindo que você escreva descrições que se tornam realidade através de uma tinta arcana chamada expoentrum. A tabela do Inscritor mostra seus espaços de Magia de Pacto e o nível deles. Você recupera todos os espaços gastos ao concluir um Descanso Curto ou Longo.\n\nNo 1º nível, você conhece duas magias de 1º nível da lista do Inscritor. A tabela indica quando aprende novas magias. Uma magia aprendida não pode ser de nível superior ao de seus espaços de pacto; ao ganhar um nível nesta classe, você pode substituir uma magia conhecida por outra elegível. Inteligência é seu atributo de conjuração e também é usada, salvo indicação contrária, nas CDs de Inscrições, Reviravoltas Narrativas e características de subclasse.\n\nVocê deve usar implementos de escrita como foco de conjuração, escrevendo sobre superfícies ou no ar. Precisa manter uma mão livre para escrever mesmo que outro efeito normalmente permitisse conjurar com as mãos ocupadas. A tinta usada magicamente é arcana e não consome tinta mundana.",
+      "page": 360,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.inscricoes.l2.1",
+      "name": "INSCRIÇÕES",
+      "level": 2,
+      "description": "Você aprende linhas especiais de escrita chamadas Inscrições. Elas ocupam ao menos uma página em um livro que deve permanecer com você e funciona como foco arcano para essas Inscrições. Você conhece 1 Inscrição no 2º nível e aprende mais uma nos níveis 4, 8, 12, 16 e 20. Sempre que sua proficiência aumentar, pode substituir uma Inscrição conhecida por outra. Você deve cumprir os requisitos de uma Inscrição para usá-la.\n\nMARCAS DE INSCRIÇÃO. Você possui Marcas de Inscrição iguais à metade de seu nível de Inscritor, arredondado para baixo. Se uma Inscrição exige Marcas, elas ficam passivamente comprometidas enquanto essa Inscrição for conhecida e não podem ser recuperadas. Marcas não comprometidas contam como usos adicionais de Reviravolta Narrativa. Consulte a aba Tabelas para o catálogo de Inscrições da classe.",
+      "page": 361,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.reviravolta-narrativa.l2.1",
+      "name": "REVIRAVOLTA NARRATIVA",
+      "level": 2,
+      "description": "Você escreve uma narrativa sobre o mundo ao redor e força os acontecimentos a se ajustarem. Usar uma Reviravolta Narrativa exige uma ação bônus, mas também pode ser feito por qualquer ação que lhe permita Usar um Objeto. Você possui usos iguais ao seu modificador de Inteligência + suas Marcas de Inscrição não comprometidas e recupera todos os usos após um Descanso Longo.\n\nHORA MAIS SOMBRIA. Escolha criaturas visíveis em quantidade até seu bônus de proficiência. Elas fazem uma salvaguarda de Inteligência; em falha, têm desvantagem em todos os ataques até o início de seu próximo turno.\n\nARMADURA DE ROTEIRO. Escolha criaturas voluntárias visíveis em quantidade até seu bônus de proficiência. Na próxima vez em que cada uma sofrer dano dentro de 1 minuto, reduza esse dano em metade de seu nível de Inscritor, arredondado para baixo, + seu modificador de Inteligência.\n\nSEGUNDO RASCUNHO. Escolha uma criatura visível. A iniciativa dela muda para um ponto acima da criatura que a precede ou um ponto abaixo da próxima criatura que a seguiria. Uma criatura involuntária pode resistir com uma salvaguarda de Inteligência.",
+      "page": 362,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.aumento-no-valor-de-atributo.l4.1",
+      "name": "AUMENTO NO VALOR DE ATRIBUTO",
+      "level": 4,
+      "description": "No 4º nível e novamente nos níveis 8, 12, 16 e 19, aumente um atributo em 2 ou dois atributos em 1. Como normal, você não pode elevar um atributo acima de 20 com esta característica, salvo se outra regra já tiver elevado esse máximo.",
+      "page": 362,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.caracteristica-de-intencao-autoral-5-nivel.l5.1",
+      "name": "CARACTERÍSTICA DE INTENÇÃO AUTORAL (5º NÍVEL)",
+      "level": 5,
+      "description": "Sua Intenção Autoral concede uma nova característica no 5º nível. Consulte a Intenção escolhida na seção de subclasses.",
+      "page": 363,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.consulta.l6.1",
+      "name": "CONSULTA",
+      "level": 6,
+      "description": "Você pode invocar seu patrono para potencializar sua magia. Como ação bônus, gaste um ou mais usos de Consulta para criar um novo espaço de Magia de Pacto que desaparece após 1 minuto e nunca pode ser superior ao 9º nível. O nível do espaço criado é igual à metade de seu bônus de proficiência, arredondado para baixo, multiplicada pela quantidade de usos de Consulta gastos. Ao criá-lo, você também pode gastar um espaço de pacto existente que não tenha sido criado por Consulta e adicionar o nível desse espaço ao novo espaço.\n\nSe não usar o novo espaço no mesmo turno em que ele foi criado, deve se concentrar nele como se fosse uma magia. Se perder a concentração, o espaço retorna ao nível do espaço de pacto que foi gasto para criá-lo, ou simplesmente desaparece caso nenhum espaço tenha sido gasto. Quando outra característica menciona o nível de seus espaços de pacto normais, os espaços criados por Consulta não são considerados.\n\nVocê pode usar Consulta uma vez por Descanso Longo a partir do 6º nível, duas vezes a partir do 9º, três a partir do 14º e quatro a partir do 18º.",
+      "page": 362,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.caracteristica-de-intencao-autoral-8-nivel.l8.1",
+      "name": "CARACTERÍSTICA DE INTENÇÃO AUTORAL (8º NÍVEL)",
+      "level": 8,
+      "description": "Sua Intenção Autoral concede uma nova característica no 8º nível. Consulte a Intenção escolhida na seção de subclasses.",
+      "page": 363,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.material-de-referencia.l9.1",
+      "name": "MATERIAL DE REFERÊNCIA",
+      "level": 9,
+      "description": "Escolha três magias das listas de Bruxo, Mago ou Feiticeiro, cada uma de um nível que você possa conjurar com seus espaços de pacto. Você aprende essas magias e as conjura como magias de Inscritor. Elas não contam contra seu limite de magias conhecidas de Inscritor.",
+      "page": 362,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.rascunho-de-magia.l10.1",
+      "name": "RASCUNHO DE MAGIA",
+      "level": 10,
+      "description": "Você aprende uma magia de 6º nível da lista do Inscritor. Ela pode ser conjurada quando você obtiver um espaço de pacto de nível apropriado — por exemplo, através de Consulta — e não conta contra seu número de magias conhecidas. Você aprende uma magia adicional desta forma no 13º nível (7º nível), no 15º (8º nível) e no 17º (9º nível).",
+      "page": 362,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.caracteristica-de-intencao-autoral-12-nivel.l12.1",
+      "name": "CARACTERÍSTICA DE INTENÇÃO AUTORAL (12º NÍVEL)",
+      "level": 12,
+      "description": "Sua Intenção Autoral concede uma nova característica no 12º nível. Consulte a Intenção escolhida na seção de subclasses.",
+      "page": 363,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.inscriptor-retia.feature.caracteristica-de-intencao-autoral-20-nivel.l20.1",
+      "name": "CARACTERÍSTICA DE INTENÇÃO AUTORAL (20º NÍVEL)",
+      "level": 20,
+      "description": "Sua Intenção Autoral concede sua característica de 20º nível. Consulte a Intenção escolhida na seção de subclasses.",
+      "page": 363,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Inscritor",
+    "sourceTitle": "",
+    "sourcePage": 360,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "cantrips",
+        "label": "Truques"
+      },
+      {
+        "key": "known",
+        "label": "Magias Conhecidas"
+      },
+      {
+        "key": "slots",
+        "label": "Espaços"
+      },
+      {
+        "key": "slotLevel",
+        "label": "Nível do Espaço"
+      },
+      {
+        "key": "inscriptions",
+        "label": "Inscrições"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Intenção Autoral",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.intencao-autoral.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Fonte da Linguagem",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.fonte-da-linguagem.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Magia de Pacto",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.magia-de-pacto.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "known": 2,
+        "slots": 1,
+        "slotLevel": "1º",
+        "inscriptions": "—"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Inscrições",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.inscricoes.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Reviravolta Narrativa",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.reviravolta-narrativa.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 2,
+        "known": 3,
+        "slots": 2,
+        "slotLevel": "1º",
+        "inscriptions": 1
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [],
+        "cantrips": 2,
+        "known": 4,
+        "slots": 2,
+        "slotLevel": "2º",
+        "inscriptions": 1
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "known": 5,
+        "slots": 2,
+        "slotLevel": "2º",
+        "inscriptions": 2
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Intenção Autoral (5º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.caracteristica-de-intencao-autoral-5-nivel.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "known": 6,
+        "slots": 2,
+        "slotLevel": "3º",
+        "inscriptions": 2
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Consulta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.consulta.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "known": 7,
+        "slots": 2,
+        "slotLevel": "3º",
+        "inscriptions": 2
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [],
+        "cantrips": 3,
+        "known": 8,
+        "slots": 2,
+        "slotLevel": "4º",
+        "inscriptions": 2
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Característica de Intenção Autoral (8º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.caracteristica-de-intencao-autoral-8-nivel.l8.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "known": 9,
+        "slots": 2,
+        "slotLevel": "4º",
+        "inscriptions": 3
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Consulta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.consulta.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Material de Referência",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.material-de-referencia.l9.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "known": 10,
+        "slots": 2,
+        "slotLevel": "5º",
+        "inscriptions": 3
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Rascunho de Magia",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.rascunho-de-magia.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 3,
+        "known": 10,
+        "slots": 2,
+        "slotLevel": "5º",
+        "inscriptions": 3
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [],
+        "cantrips": 4,
+        "known": 11,
+        "slots": 3,
+        "slotLevel": "5º",
+        "inscriptions": 3
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Característica de Intenção Autoral (12º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.caracteristica-de-intencao-autoral-12-nivel.l12.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 11,
+        "slots": 3,
+        "slotLevel": "5º",
+        "inscriptions": 4
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Rascunho de Magia",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.rascunho-de-magia.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 12,
+        "slots": 3,
+        "slotLevel": "5º",
+        "inscriptions": 4
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Consulta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.consulta.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 12,
+        "slots": 3,
+        "slotLevel": "5º",
+        "inscriptions": 4
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Rascunho de Magia",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.rascunho-de-magia.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 13,
+        "slots": 3,
+        "slotLevel": "5º",
+        "inscriptions": 4
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 13,
+        "slots": 3,
+        "slotLevel": "5º",
+        "inscriptions": 5
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Rascunho de Magia",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.rascunho-de-magia.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 14,
+        "slots": 4,
+        "slotLevel": "5º",
+        "inscriptions": 5
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Consulta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.consulta.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 14,
+        "slots": 4,
+        "slotLevel": "5º",
+        "inscriptions": 5
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 15,
+        "slots": 4,
+        "slotLevel": "5º",
+        "inscriptions": 5
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Característica de Intenção Autoral (20º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.inscriptor-retia.feature.caracteristica-de-intencao-autoral-20-nivel.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "cantrips": 4,
+        "known": 15,
+        "slots": 4,
+        "slotLevel": "5º",
+        "inscriptions": 6
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 1,
+    "homogeneous": true,
+    "observedLevels": {
+      "1": 17
+    },
+    "options": [
+      {
+        "grimorioId": "lyre-inscriptor-retia-adventure",
+        "identifier": "lyre-inscriptor-retia-adventure",
+        "name": "Aventura",
+        "originalName": "Adventure",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "364",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 364
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-comedian",
+        "identifier": "lyre-inscriptor-retia-comedian",
+        "name": "Comediante",
+        "originalName": "Comedian",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "365",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 365
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-playwright",
+        "identifier": "lyre-inscriptor-retia-playwright",
+        "name": "Dramaturgo",
+        "originalName": "Playwright",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "372",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 372
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-vestias-scribe",
+        "identifier": "lyre-inscriptor-retia-vestias-scribe",
+        "name": "Escriba de Vestias",
+        "originalName": "Vestias’ Scribe",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "374",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 374
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-fantasy",
+        "identifier": "lyre-inscriptor-retia-fantasy",
+        "name": "Fantasia",
+        "originalName": "Fantasy",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "367",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 367
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-historian",
+        "identifier": "lyre-inscriptor-retia-historian",
+        "name": "Historiador",
+        "originalName": "Historian",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "369",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 369
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-cosmic-horror",
+        "identifier": "lyre-inscriptor-retia-cosmic-horror",
+        "name": "Horror Cósmico",
+        "originalName": "Cosmic Horror",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "366",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 366
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-forbiddance",
+        "identifier": "lyre-inscriptor-retia-forbiddance",
+        "name": "Interdição",
+        "originalName": "Forbiddance",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "368",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 368
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-mystery",
+        "identifier": "lyre-inscriptor-retia-mystery",
+        "name": "Mistério",
+        "originalName": "Mystery",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "370",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 370
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-mythology",
+        "identifier": "lyre-inscriptor-retia-mythology",
+        "name": "Mitologia",
+        "originalName": "Mythology",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "371",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 371
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-romance",
+        "identifier": "lyre-inscriptor-retia-romance",
+        "name": "Romance",
+        "originalName": "Romance",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "373",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 373
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "lyre-inscriptor-retia-wakefield",
+        "identifier": "lyre-inscriptor-retia-wakefield",
+        "name": "Wakefield",
+        "originalName": "Wakefield",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "375",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 375
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-inscriptor-astronomy",
+        "identifier": "zagalhta-inscriptor-astronomy",
+        "name": "Astronomia",
+        "originalName": "Astronomy",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "157–158",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 157
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "zagalhta-inscriptor-space-opera",
+        "identifier": "zagalhta-inscriptor-space-opera",
+        "name": "Ópera Espacial",
+        "originalName": "Space Opera",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "158–159",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 158
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-inscriptor-retia-grim-fable",
+        "identifier": "bbb-inscriptor-retia-grim-fable",
+        "name": "Fábula Sombria",
+        "originalName": "Grim Fable",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "107–108",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 107
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-inscriptor-retia-private-fiction",
+        "identifier": "bbb-inscriptor-retia-private-fiction",
+        "name": "Ficção Privada",
+        "originalName": "Private Fiction",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "108",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 108
+        },
+        "firstFeatureLevel": 1
+      },
+      {
+        "grimorioId": "bbb-inscriptor-retia-shuji-ink",
+        "identifier": "bbb-inscriptor-retia-shuji-ink",
+        "name": "Tinta Shūji",
+        "originalName": "Shuji Ink",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "109",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 109
+        },
+        "firstFeatureLevel": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "profile": {
+    "foundry": "13.351",
+    "dnd5e": "5.3.3",
+    "module": "grimorio-importer@0.1.0"
+  },
+  "barbarian": {
+    "worldFeatureItems": 12,
+    "worldClassItems": 1,
+    "advancement": {
+      "HitPoints": 1,
+      "Trait": 4,
+      "ItemGrant": 9,
+      "AbilityScoreImprovement": 5,
+      "Subclass": 1
+    },
+    "syntheticFeaturesNotDuplicated": [
+      "INCREMENTO NO VALOR DE HABILIDADE",
+      "CAMINHO PRIMITIVO"
+    ]
+  },
+  "pathOfTheKaiju": {
+    "worldFeatureItems": 5,
+    "worldSubclassItems": 1,
+    "itemGrantLevels": [3, 6, 10, 14]
+  },
+  "reimport": "update-without-duplicates"
+}

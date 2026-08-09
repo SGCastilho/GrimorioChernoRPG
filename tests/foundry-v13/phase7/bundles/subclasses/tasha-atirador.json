@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-atirador",
+    "identifier": "tasha-atirador",
+    "name": "Atirador",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "16–18",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 16
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "artificer",
+    "identifier": "artificer",
+    "name": "Artífice"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "artificer",
+    "selectionLevel": 3,
+    "description": "Um atirador é especialista em usar magia para disparar energia, projéteis e explosões em um campo de batalha. Este poder destrutivo é valorizado pelos exércitos em guerras de muitos mundos diferentes. E quando a guerra passa, alguns membros desta especialidade procuram construir um mundo mais pacífico usando seus poderes para lutar contra as retomadas de conflitos. A viajante gnoma artífice Vi já falou claramente sobre fazer as coisas certas: “Já era hora de consertarmos as coisas em vez de explodir tudo para o inferno.”",
+    "tables": [
+      {
+        "key": "table.1.magias-de-atirador",
+        "title": "Magias de Atirador",
+        "page": 16,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Artífice"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Escudo; Onda Trovejante"
+          },
+          {
+            "level": "5º",
+            "spells": "Raio Ardente; Despedaçar"
+          },
+          {
+            "level": "9º",
+            "spells": "Bola de Fogo; Muralha de Vento"
+          },
+          {
+            "level": "13º",
+            "spells": "Tempestade Glacial; Muralha de Fogo"
+          },
+          {
+            "level": "17º",
+            "spells": "Cone de Frio; Muralha de Energia"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 16
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-atirador.feature.proficiencia-com-ferramentas.l3.1",
+      "name": "PROFICIÊNCIA COM FERRAMENTAS",
+      "level": 3,
+      "description": "Você adquire proficiência com ferramentas de carpinteiro. Se você já tem essa proficiência, você ganha proficiência com outro tipo de ferramentas de artesão a sua escolha.",
+      "page": 16,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-atirador.feature.magias-de-atirador.l3.1",
+      "name": "MAGIAS DE ATIRADOR",
+      "level": 3,
+      "description": "Você sempre tem certas magias preparadas depois de alcançar níveis específicos nesta classe, conforme mostrado na tabela de Magias de atirador. Essas magias contam como magias de artífice para você, mas eles não contam para o número de magias de artífice que você prepara. Magias de Atirador Nível de Artífice Magias 3º Escudo, Onda Trovejante 5º Raio Ardente, Despedaçar 9º Bola de Fogo, Muralha de Vento 13º Tempestade Glacial, Muralha de Fogo 17º Cone de Frio, Muralha de Energia",
+      "page": 16,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-atirador.feature.canhao-mistico.l3.1",
+      "name": "CANHÃO MÍSTICO",
+      "level": 3,
+      "description": "Você aprendeu como criar um canhão mágico. Usando ferramentas de carpinteiro ou ferramentas de ferreiro, você pode realizar uma ação para criar magicamente um canhão pequeno ou minúsculo sobrenatural em um espaço desocupado em uma superfície horizontal a menos de 1,5 m de você. Um pequeno canhão sobrenatural ocupa seu espaço, e um minúsculo pode ser segurado em uma das mãos. Depois de criar um canhão, você não pode fazê-lo novamente até terminar um longo descanso ou até gastar um espaço de feitiço para criar um. Você pode ter apenas um canhão por vez e não pode criar um enquanto seu canhão estiver presente. O canhão é um objeto mágico. Independentemente do tamanho, o canhão tem uma CA de 18 e um número de pontos de vida igual a cinco vezes o seu nível de artífice. É imune a danos por veneno e danos psíquicos. Se ele for forçado a fazer um teste de habilidade ou teste de resistência, trate todos os seus valores de habilidade como 10 (+ O). Se o feitiço consertar for lançado sobre ele, ele recupera 2d6 pontos de vida. Ele desaparece se for reduzido a 0 pontos de vida ou após 1 hora. Você pode descartá-lo logo como uma ação. Ao criar o canhão, você determina sua aparência e se ele tem pernas. Você também decide qual é o tipo, escolhendo entre as opções na tabela Canhões Místicos. Em cada um de seus turnos, você pode realizar uma ação bônus para fazer com que o canhão seja ativado se você estiver a menos de 18 metros dele. Como parte da mesma ação bônus, você pode direcionar o canhão para caminhar ou subir até 15 pés para um espaço desocupado, desde que tenha pernas. Canhões Místicos Canhão Ativação LançaChamas O canhão exala fogo em uma área adjacente em Cone de 4,5 metros que você designar. Cada a criatura naquela área deve fazer um teste de resistência de Destreza contra seu teste de magia CD, levando 2d8 de dano de fogo em uma falha ou metade do dano em um teste bemsucedido. O fogo acende qualquer objeto inflamável na área que não esteja sendo usado ou carregado. Força de Balista Faça um ataque mágico de longo alcance, originando-se do canhão, em uma criatura ou objeto a 36 metros dele. Em um acerto, o alvo sofre 2d8 de dano de força e, se o alvo for uma criatura, ele é empurrado a até 1,5 metro de distância do canhão. Protetor O canhão emite uma explosão de energia positiva que concede a si mesma e a cada criatura de sua escolha a 3 metros dele um número de pontos de vida temporários igual a 1d8 + seu modificador de inteligência (mínimo + 1).",
+      "page": 16,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-atirador.feature.arma-de-fogo-arcana.l5.1",
+      "name": "ARMA DE FOGO ARCANA",
+      "level": 5,
+      "description": "Você sabe como transformar uma varinha, cajado ou vara em um arma de fogo arcana, um canal para seus feitiços destrutivos. Quando terminar um descanso longo, você pode usar as ferramentas do carpinteiro para esculpir símbolos especiais em uma varinha, cajado, ou vara e assim transformá-lo em sua arma de fogo arcana. Os símbolos desaparecem do objeto se você mais tarde esculpi-los em um item diferente. Caso não o faça os símbolos duram indefinidamente. Você pode usar sua arma de fogo arcana como um foco de feitiço para seus feitiços de artífice. Quando você lança um feitiço de artífice através da arma de fogo, role 1d8, e você ganhe um bônus igual a uma das jogadas de dano do feitiço para o número rolado.",
+      "page": 17,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-atirador.feature.canhao-explosivo.l9.1",
+      "name": "CANHÃO EXPLOSIVO",
+      "level": 9,
+      "description": "Cada canhão antigo que você cria é agora mais destrutivo: Todas as jogadas de dano do canhão aumentam em 1d8. Como uma ação, você pode comandar o canhão para detonar se você estiver a menos de 18 metros dele. Fazendo assim destrói o canhão e força cada criatura dentro de 20 pés para fazer um teste de resistência de Destreza jogue contra o seu feitiço save CD, sofrendo 3d8 de dano de força em uma falha ou metade do dano em um sucesso.",
+      "page": 17,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-atirador.feature.posicao-fortificada.l15.1",
+      "name": "POSIÇÃO FORTIFICADA",
+      "level": 15,
+      "description": "Você é um mestre em formar posições bem protegidas usando seu Canhão Místico: Você e seus aliados têm meia cobertura enquanto estiverem à 3 metros de um canhão que você cria com Canhão Místico, como resultado de um campo cintilante de magia proteção que o canhão emite. Agora você pode ter dois canhões ao mesmo tempo. Você pode criar dois com a mesma ação (mas não o mesmo slot de magia), e você pode ativar ambos eles com a mesma ação bônus. Você determina se os canhões são idênticos entre si ou diferentes. Você não pode criar um terceiro canhão enquanto você tem dois.",
+      "page": 17,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

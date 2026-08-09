@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-ranger-sea-dog",
+    "identifier": "lyre-ranger-sea-dog",
+    "name": "Lobo do Mar",
+    "originalName": "Sea Dog",
+    "aliases": [
+      "Sea Dog"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "410",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 410
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Compatibilidade com o Patrulheiro Revisado de Lyre: esta opção foi escrita para a revisão completa da classe apresentada no mesmo capítulo, que preserva a estrutura de arquétipos nos níveis 3, 7, 11 e 15 e admite adaptação de subclasses de Patrulheiro. Mestres do oceano aberto, estes Patrulheiros exploram e lutam tanto na superfície quanto sob as ondas. Capitães, piratas e mercenários encharcados costumam ser ainda mais capazes debaixo d’água que em terra.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 410
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-ranger-sea-dog.feature.especialista-oceanico.l3.1",
+      "name": "ESPECIALISTA OCEÂNICO",
+      "level": 3,
+      "description": "Enquanto estiver pelo menos meio submerso em líquido que não esteja causando dano, você soma seu Bônus de Favor a salvaguardas de Força, Destreza e Constituição. Em testes de Sobrevivência para encontrar alimento no mar, explorar/atravessar terreno subaquático ou viajar diretamente por água, role seu Dado de Favor e some ao resultado.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-sea-dog.feature.pernas-do-mar.l3.1",
+      "name": "PERNAS DO MAR",
+      "level": 3,
+      "description": "Você ganha deslocamento de natação igual ao deslocamento base; se já possuía natação, ela aumenta em 1,5 m × seu Bônus de Favor, recalculado sempre que o bônus aumentar. Pode prender a respiração pelo dobro do tempo normal, e usar ar para componentes verbais enquanto prende a respiração ou está submerso reduz o tempo restante em apenas 1 rodada.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-sea-dog.feature.de-maos-dadas.l7.1",
+      "name": "DE MÃOS DADAS",
+      "level": 7,
+      "description": "Se estiver com uma arma corpo a corpo de uma mão em uma mão e uma arma à distância de uma mão na outra, uma vez por turno, quando atacar com uma delas, pode atacar com a outra como parte da mesma ação. Se o ataque adicional for à distância, não sofre desvantagem por criaturas hostis a até 1,5 m.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-sea-dog.feature.vantagem-dos-pes-molhados.l11.1",
+      "name": "VANTAGEM DOS PÉS MOLHADOS",
+      "level": 11,
+      "description": "Você pode tratar qualquer criatura com deslocamento de natação ou que esteja atualmente nadando sob a água como Inimigo Favorecido.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-sea-dog.feature.senhor-do-mar.l15.1",
+      "name": "SENHOR DO MAR",
+      "level": 15,
+      "description": "Você aprende Onda de Afogamento e Controlar Água como magias de Patrulheiro, sem contar em Magias Conhecidas. Pode conjurar cada uma uma vez por Descanso Longo sem gastar espaço e também pode conjurá-las normalmente usando espaços.",
+      "page": 410,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-frame-pilot-skirmisher",
+    "identifier": "zagalhta-frame-pilot-skirmisher",
+    "name": "Escaramuçador",
+    "originalName": "Skirmisher",
+    "aliases": [
+      "Skirmisher"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "135",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 135
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "frame-pilot",
+    "identifier": "frame-pilot",
+    "name": "Piloto de Frame"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "frame-pilot",
+    "selectionLevel": 3,
+    "description": "Especialista em entrar e sair das linhas inimigas, atacar de posições difíceis e tornar até uma unidade frame gigantesca surpreendentemente móvel.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 135
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-frame-pilot-skirmisher.feature.especialista-em-aceleracao.l3.1",
+      "name": "ESPECIALISTA EM ACELERAÇÃO",
+      "level": 3,
+      "description": "Toda unidade frame que você pilota aumenta cada deslocamento em 1,5 m × sua proficiência; aceleração 0-G aumenta pelo dobro disso. Como ação bônus, pode fazer a unidade Desengajar ou Disparar.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-skirmisher.feature.taticas-de-pinca.l7.1",
+      "name": "TÁTICAS DE PINÇA",
+      "level": 7,
+      "description": "Quando a unidade ataca um alvo que esteja ao alcance corpo a corpo de um aliado, pode atacar com vantagem, salvo se o aliado for três ou mais categorias menor que o alvo. Uma vez por turno, ao acertar criatura contra a qual tinha vantagem, pode adicionar uma quantidade de dados de dano ao ataque igual à sua proficiência.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-skirmisher.feature.evasao.l11.1",
+      "name": "EVASÃO",
+      "level": 11,
+      "description": "Quando a unidade frame fizer salvaguarda de Destreza para sofrer metade do dano, sofre 0 em sucesso e metade em falha.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-skirmisher.feature.tecnica-especialista.l11.1",
+      "name": "TÉCNICA ESPECIALISTA",
+      "level": 11,
+      "description": "Quando a unidade que pilota fizer ataque, teste ou salvaguarda, pode adicionar ao resultado a proficiência completa que ainda não estiver sendo aplicada — a sua ou a da unidade. Até o fim do turno, rolagens daquele mesmo tipo mantêm o bônus. Usos por Descanso Longo iguais à sua proficiência.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-skirmisher.feature.fantasma-de-impulso.l16.1",
+      "name": "FANTASMA DE IMPULSO",
+      "level": 16,
+      "description": "Ao usar Impulso de Frame para impedir que a unidade caia a 0 PV, teleporte-a imediatamente para espaço a até 6 m × a Pegada (Footprint) da unidade. Ela chega invisível e permanece assim até o fim de seu próximo turno.",
+      "page": 135,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 16,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

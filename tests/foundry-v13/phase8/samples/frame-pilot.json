@@ -1,0 +1,713 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "frame-pilot",
+    "identifier": "frame-pilot",
+    "name": "Piloto de Frame",
+    "originalName": "Frame Pilot",
+    "aliases": [
+      "Frame Pilot",
+      "Piloto de Frame"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "131–138",
+    "chapter": "Capítulo 6: Opções de Classe — Piloto de Frame",
+    "page": 132
+  },
+  "nativeMapping": {
+    "status": "review",
+    "warnings": [
+      "As proficiências de salvaguarda do Piloto de Frame são escolhas variáveis; a Fase 5 deverá usar uma escolha de Trait/Advancement ou rotina equivalente."
+    ]
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Um especialista em pilotagem de unidades frame que trata a máquina como extensão do próprio corpo, extraindo desempenho acima do limite normal por treinamento, aprimoramentos e Junção.",
+    "hitDice": {
+      "raw": "d8",
+      "mode": "standard",
+      "number": 1,
+      "faces": 8
+    },
+    "primaryAbility": {
+      "raw": "Variável",
+      "abilityKeys": []
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Uma entre Destreza/Constituição/Sabedoria + uma entre Força/Inteligência/Carisma",
+        "abilityKeys": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      },
+      "armor": "Armaduras leves e médias",
+      "weapons": "Armas simples e marciais, incluindo armas de fogo",
+      "tools": "Nenhuma",
+      "skills": "Quaisquer três perícias"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 132,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "text": "PONTOS DE VIDA\n\nDado de Vida: 1d8 por nível de Piloto de Frame.\n\nPontos de Vida no 1º nível: 8 + seu modificador de Constituição.\n\nPontos de Vida em níveis superiores: 1d8 (ou 5) + seu modificador de Constituição por nível após o 1º.\n\nPROFICIÊNCIAS\n\nArmaduras: leves e médias.\n\nArmas: simples e marciais, incluindo armas de fogo.\n\nFerramentas: nenhuma.\n\nSalvaguardas: escolha uma entre Destreza, Constituição ou Sabedoria; e escolha uma entre Força, Inteligência ou Carisma.\n\nPerícias: quaisquer três à sua escolha.\n\nEQUIPAMENTO\n\nVocê começa com 5d8 × 10 po (225 po em média) e compra o equipamento necessário. Durante a criação pode adquirir um traje Drive Grade leve por 120 po ou médio por 200 po."
+    },
+    "overview": [
+      {
+        "title": "PILOTO DE FRAME",
+        "page": 131,
+        "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "text": "Pilotos de Frame têm treinamento moderado em combate pessoal, mas são operadores excepcionais de unidades frame. Seja por formação militar ou instrução de pilotos veteranos, aprendem a tratar a máquina como extensão do corpo e a extrair dela o máximo potencial."
+      },
+      {
+        "title": "JOGO DE AVENTURA MISTA",
+        "page": 131,
+        "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "text": "Em campanhas que alternam entre combate tradicional e unidades frame, a fonte oferece uma regra opcional: a classe pode ser tomada como especialidade no lugar de um talento, ou apenas em 1 nível. O personagem escolhe uma Designação Tecnológica e recebe suas características nos níveis de personagem correspondentes, mas só pode usá-las com unidades frame. Se tiver tomado 1 nível de Piloto de Frame, também recebe Reparo Pessoal no 11º nível total, Impulso Aprimorado no 13º e Junção pela Vontade no 16º."
+      }
+    ],
+    "creation": [],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.aprimoramentos-dgr-e-juncao",
+        "title": "APRIMORAMENTOS DGR E JUNÇÃO",
+        "page": 133,
+        "text": "Aprimoramento Inerente e as características de Junção usam subsistemas de unidades frame apresentados em outras seções do próprio livro. O Grimório preserva as referências mecânicas conforme a fonte sem inventar opções que pertencem a capítulos fora desta integração de classes/subclasses.",
+        "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "frame-pilot",
+      "color": "#7f6d95"
+    }
+  },
+  "features": [
+    {
+      "key": "class.frame-pilot.feature.impulso-de-frame.l1.1",
+      "name": "IMPULSO DE FRAME",
+      "level": 1,
+      "description": "Quando uma unidade frame for reduzida a 0 PV, você pode fazê-la ficar com 1 PV em vez disso e conceder PV temporários iguais aos seus PV atuais. A unidade então recebe 1 ponto de Fadiga de Combate. Uma vez por Descanso Longo.",
+      "page": 132,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.proficiencia-de-frame.l1.1",
+      "name": "PROFICIÊNCIA DE FRAME",
+      "level": 1,
+      "description": "Enquanto pilota uma unidade frame, seu bônus de proficiência, em comparação ao bônus da própria unidade, é considerado 1 ponto maior.",
+      "page": 132,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.crescimento.l2.1",
+      "name": "CRESCIMENTO",
+      "level": 2,
+      "description": "Em cada nível par de Piloto de Frame, um de seus atributos aumenta em 1. Nos níveis 2, 4, 8, 10, 14, 16 e 20, em vez desse benefício você pode receber proficiência em uma perícia ou ferramenta. Nos níveis 6, 12 e 18, pode escolher um talento para o qual cumpra os requisitos em vez do aumento.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.designacao-tecnologica.l3.1",
+      "name": "DESIGNAÇÃO TECNOLÓGICA",
+      "level": 3,
+      "description": "Escolha uma Designação Tecnológica que represente seu conjunto particular de habilidades ao pilotar unidades frame. Você recebe as características de 3º nível da designação e, depois, as demais nos níveis indicados.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.aprimoramento-inerente.l4.1",
+      "name": "APRIMORAMENTO INERENTE",
+      "level": 4,
+      "description": "Escolha um ou mais Aprimoramentos de DGR com custo UP-LOAD combinado de 2 ou menos. Você os disponibiliza em qualquer unidade frame que estiver pilotando sem contar contra o limite de UP-LOAD dela. Usos limitados pertencem a você, não à unidade. A capacidade combinada aumenta em 1 nos níveis 8, 12, 15 e 19; ao ganhar nível, pode trocar as escolhas.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "Quando realiza a ação Atacar, pode atacar duas vezes em vez de uma.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.caracteristica-de-designacao-7-nivel.l7.1",
+      "name": "CARACTERÍSTICA DE DESIGNAÇÃO (7º NÍVEL)",
+      "level": 7,
+      "description": "Você recebe a característica de 7º nível da Designação Tecnológica escolhida.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.reparo-pessoal.l9.1",
+      "name": "REPARO PESSOAL",
+      "level": 9,
+      "description": "Ao completar Descanso Longo, pode gastar automaticamente qualquer quantidade de seus próprios Dados de Vida, sem benefício pessoal, para permitir que uma unidade frame gaste a mesma quantidade dos Dados de Vida dela. Para cada dado, a unidade recupera o resultado + Constituição dela + seu bônus de proficiência.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.impulso-aprimorado.l10.1",
+      "name": "IMPULSO APRIMORADO",
+      "level": 10,
+      "description": "Impulso de Frame passa a poder ser usado uma vez por Descanso em vez de apenas Descanso Longo. Ao usá-lo, os PV temporários concedidos aumentam também em seu nível total.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.caracteristica-de-designacao-11-nivel.l11.1",
+      "name": "CARACTERÍSTICA DE DESIGNAÇÃO (11º NÍVEL)",
+      "level": 11,
+      "description": "Você recebe a característica de 11º nível da Designação Tecnológica escolhida.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.juncao-pela-vontade.l13.1",
+      "name": "JUNÇÃO PELA VONTADE",
+      "level": 13,
+      "description": "Uma vez por Descanso Longo, enquanto pilota uma unidade frame, pode realizar Junção sem armamento eidólico ou restrições habituais por até 1 minuto. Quando termina, você e a unidade recebem um nível de exaustão. As demais regras de Junção continuam valendo.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.caracteristica-de-designacao-16-nivel.l16.1",
+      "name": "CARACTERÍSTICA DE DESIGNAÇÃO (16º NÍVEL)",
+      "level": 16,
+      "description": "Você recebe a característica de 16º nível da Designação Tecnológica escolhida.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 16,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.juncao-suprema.l17.1",
+      "name": "JUNÇÃO SUPREMA",
+      "level": 17,
+      "description": "Junção pela Vontade passa a ser usada uma vez por Descanso. Você não recebe exaustão ao final e pode permanecer em Junção por até 10 minutos. Restauração de Junção só pode beneficiá-lo uma vez por Descanso Longo e as demais regras, incluindo Fadiga de Junção, continuam em vigor.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.frame-pilot.feature.maquina-sem-igual.l20.1",
+      "name": "MÁQUINA SEM IGUAL",
+      "level": 20,
+      "description": "Ao realizar Junção por suas características, pode permanecer em Junção até completar seu próximo Descanso e não sofre Fadiga de Junção.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Piloto de Frame",
+    "sourceTitle": "",
+    "sourcePage": null,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível"
+      },
+      {
+        "key": "proficiency",
+        "label": "Proficiência"
+      },
+      {
+        "key": "features",
+        "label": "Características"
+      },
+      {
+        "key": "enhancement",
+        "label": "Aprimoramento"
+      },
+      {
+        "key": "growth",
+        "label": "Crescimento"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Impulso de Frame",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.impulso-de-frame.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Proficiência de Frame",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.proficiencia-de-frame.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": "—",
+        "growth": "—"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Crescimento",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.crescimento.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": "—",
+        "growth": "Perícia"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Designação Tecnológica",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.designacao-tecnologica.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": "—",
+        "growth": "—"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Aprimoramento Inerente",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.aprimoramento-inerente.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": 2,
+        "growth": "Perícia"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Ataque Extra",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.ataque-extra.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": 2,
+        "growth": "—"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [],
+        "enhancement": 2,
+        "growth": "Talento"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Designação (7º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.caracteristica-de-designacao-7-nivel.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": 2,
+        "growth": "—"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [],
+        "enhancement": 3,
+        "growth": "Perícia"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Reparo Pessoal",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.reparo-pessoal.l9.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": 3,
+        "growth": "—"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Impulso Aprimorado",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.impulso-aprimorado.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": 3,
+        "growth": "Perícia"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Designação (11º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.caracteristica-de-designacao-11-nivel.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": 3,
+        "growth": "—"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [],
+        "enhancement": 4,
+        "growth": "Talento"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Junção pela Vontade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.juncao-pela-vontade.l13.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": 4,
+        "growth": "—"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [],
+        "enhancement": 4,
+        "growth": "Perícia"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [],
+        "enhancement": 5,
+        "growth": "—"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Designação (16º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.caracteristica-de-designacao-16-nivel.l16.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": 5,
+        "growth": "Perícia"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Junção Suprema",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.juncao-suprema.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": 5,
+        "growth": "—"
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [],
+        "enhancement": 5,
+        "growth": "Talento"
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [],
+        "enhancement": 6,
+        "growth": "—"
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Máquina sem Igual",
+            "kind": "feature",
+            "featureRefs": [
+              "class.frame-pilot.feature.maquina-sem-igual.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "enhancement": 6,
+        "growth": "Perícia"
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 5
+    },
+    "options": [
+      {
+        "grimorioId": "zagalhta-frame-pilot-coordinator",
+        "identifier": "zagalhta-frame-pilot-coordinator",
+        "name": "Coordenador",
+        "originalName": "Coordinator",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "134",
+          "chapter": "Capítulo 6: Opções de Classe",
+          "page": 134
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-frame-pilot-skirmisher",
+        "identifier": "zagalhta-frame-pilot-skirmisher",
+        "name": "Escaramuçador",
+        "originalName": "Skirmisher",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "135",
+          "chapter": "Capítulo 6: Opções de Classe",
+          "page": 135
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-frame-pilot-strike-soldier",
+        "identifier": "zagalhta-frame-pilot-strike-soldier",
+        "name": "Soldado de Assalto",
+        "originalName": "Strike Soldier",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "136",
+          "chapter": "Capítulo 6: Opções de Classe",
+          "page": 136
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-frame-pilot-technoloader",
+        "identifier": "zagalhta-frame-pilot-technoloader",
+        "name": "Tecnocarregador",
+        "originalName": "Technoloader",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "136",
+          "chapter": "Capítulo 6: Opções de Classe",
+          "page": 136
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-frame-pilot-vortex-manipulator",
+        "identifier": "zagalhta-frame-pilot-vortex-manipulator",
+        "name": "Manipulador de Vórtice",
+        "originalName": "Vortex Manipulator",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "137",
+          "chapter": "Capítulo 6: Opções de Classe",
+          "page": 137
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

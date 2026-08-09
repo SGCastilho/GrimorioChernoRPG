@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-petal-knight-retia-azalea",
+    "identifier": "bbb-petal-knight-retia-azalea",
+    "name": "Azaleia",
+    "originalName": "Azalea",
+    "aliases": [
+      "Azalea"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "115–116",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 115
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "petal-knight-retia",
+    "identifier": "petal-knight",
+    "name": "Cavaleiro das Pétalas"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "petal-knight",
+    "selectionLevel": 2,
+    "description": "Um guerreiro da natureza vibrante e otimista que transforma esperança em golpes de boa sorte.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 115
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-petal-knight-retia-azalea.feature.critico-aprimorado.l2.1",
+      "name": "CRÍTICO APRIMORADO",
+      "level": 2,
+      "description": "Você obtém acerto crítico com 19 ou 20 no d20.",
+      "page": 115,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-azalea.feature.fotossincratico.l2.1",
+      "name": "FOTOSSINCRÁTICO",
+      "level": 2,
+      "description": "Quando conjura uma magia usando um espaço de Magia de Pacto, role 1d100. Se o resultado for igual ou inferior a 10 + duas vezes seu nível de Cavaleiro das Pétalas, o espaço de pacto não é consumido.",
+      "page": 115,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-azalea.feature.cortador-da-fortuna.l6.1",
+      "name": "CORTADOR DA FORTUNA",
+      "level": 6,
+      "description": "Quando obtiver um acerto crítico com ataque de arma ou magia, causa dano radiante adicional igual a 1d8 × seu bônus de proficiência.",
+      "page": 115,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-azalea.feature.impulso-de-sorte.l11.1",
+      "name": "IMPULSO DE SORTE",
+      "level": 11,
+      "description": "Quando você ou uma criatura a até 9 m obtiver um acerto crítico ou rolar 1 natural em um d20, você recupera um uso gasto de Flora Virtuosa.",
+      "page": 115,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-azalea.feature.renovacao-matinal.l11.1",
+      "name": "RENOVAÇÃO MATINAL",
+      "level": 11,
+      "description": "Se for reduzido a 0 PV e começar a morrer, pode continuar agindo como se não estivesse sob a condição morrendo, embora ainda faça salvaguardas contra a morte. No início de cada turno, se obtiver 18 ou mais numa salvaguarda contra a morte, recupera imediatamente 1 PV e não sofre Fadiga de Combate por voltar dessa forma. Além disso, se morrer e seu corpo permanecer majoritariamente intacto, após 1 minuto volta à vida como pela magia reencarnação, seguindo seus efeitos normais; isso não ocorre se for revivido por outro método antes. Depois de retornar dessa forma, não pode fazê-lo novamente por 7 dias. Quando for alvo de reencarnação, pode rolar duas vezes a raça resultante e escolher qual resultado usar.",
+      "page": 115,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-petal-knight-retia-azalea.feature.critico-superior.l15.1",
+      "name": "CRÍTICO SUPERIOR",
+      "level": 15,
+      "description": "Você obtém acerto crítico com 18, 19 ou 20 no d20.",
+      "page": 116,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

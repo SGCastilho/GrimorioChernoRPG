@@ -1,0 +1,176 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-dragoneer-auraphage",
+    "identifier": "zagalhta-dragoneer-auraphage",
+    "name": "Aurófago",
+    "originalName": "Auraphage",
+    "aliases": [
+      "Auraphage"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "121–122",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 121
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Um canalizador que oferece corpo e mente como combustível para domar a fornalha arcana de uma alma dracônica, usando Magia de Pacto e forçando a própria magia além dos limites.",
+    "tables": [
+      {
+        "key": "table.1.parametros-da-especializacao",
+        "title": "Parâmetros da Especialização",
+        "page": 121,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "hit",
+            "label": "Dado de Vida"
+          },
+          {
+            "key": "saves",
+            "label": "Salvaguardas"
+          },
+          {
+            "key": "weapons",
+            "label": "Armas"
+          },
+          {
+            "key": "armor",
+            "label": "Armaduras"
+          },
+          {
+            "key": "skills",
+            "label": "Perícias"
+          },
+          {
+            "key": "casting",
+            "label": "Conjuração"
+          }
+        ],
+        "rows": [
+          {
+            "hit": "d8",
+            "saves": "Sabedoria, Carisma",
+            "weapons": "Todas as armas simples",
+            "armor": "Leves e médias",
+            "skills": "Religião; escolha duas entre Arcanismo, Enganação, História, Intimidação, Investigação e Natureza",
+            "casting": "Conjurador de Combustão (lista do Bruxo)"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 121
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-dragoneer-auraphage.feature.brasa-e-combustao.l1.1",
+      "name": "BRASA E COMBUSTÃO",
+      "level": 1,
+      "description": "Ao conjurar uma magia usando um Espaço de Magia de Cavaleiro Dracônico, role 1d100. Se o resultado for igual ou menor que seu nível de Cavaleiro Dracônico + 10, o espaço não é consumido.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-auraphage.feature.poder-da-conexao.l3.1",
+      "name": "PODER DA CONEXÃO",
+      "level": 3,
+      "description": "Você pode concentrar-se simultaneamente em uma segunda magia ou efeito. Os dois efeitos compartilham a mesma verificação de concentração: uma única rolagem é feita e ambos têm sucesso ou falham juntos.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-auraphage.feature.explosao-encadeada.l7.1",
+      "name": "EXPLOSÃO ENCADEADA",
+      "level": 7,
+      "description": "Quando substituir um ataque por uma magia através de Ação Encadeada, pode conjurar uma magia de nível igual ou inferior à metade do nível do Espaço usado, tratada como conjurada no nível-base. Se fizer isso, pode substituir um segundo ataque da mesma Ação Encadeada por outra magia de 1 ação sob a mesma regra.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-auraphage.feature.resistencia-magica.l13.1",
+      "name": "RESISTÊNCIA MÁGICA",
+      "level": 13,
+      "description": "Você tem vantagem em salvaguardas contra efeitos mágicos.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-auraphage.feature.arcana-venenosa.l17.1",
+      "name": "ARCANA VENENOSA",
+      "level": 17,
+      "description": "Quando uma criatura o acerta com um ataque a até 9 m, ela sofre 1d10 de dano de Encarnação. Esse dano ignora Limiares de Dano e resistências, mas não imunidades.",
+      "page": 122,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

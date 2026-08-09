@@ -1,0 +1,170 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-alma-cronometrica",
+    "identifier": "tasha-alma-cronometrica",
+    "name": "Alma Cronométrica",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "49–51",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 49
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "A força cósmica da ordem inundou você com magia. Esse poder vem de Mecânos ou um lugar como esse – um plano de existência um plano de existência moldado completamente com uma eficiência cronométrica. Você, ou alguém de sua linhagem, pode ter sido envolvido nas maquinações dos modrons, os seres da ordem que habitam Mecânos. Talvez seus ancestrais tenham até mesmo tomado parte na Grande Marcha Modron. Independente de como isso surgiu dentro de você, o poder da ordem pode parecer estranho aos olhos alheios, mas, para você, é parte de um grande e glorioso sistema.",
+    "tables": [
+      {
+        "key": "table.1.magias-cronometricas",
+        "title": "Magias Cronométricas",
+        "page": 49,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Feiticeiro"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Alarme; Proteção Contra o Bem e o Mal"
+          },
+          {
+            "level": "3º",
+            "spells": "Auxílio; Restauração Menor"
+          },
+          {
+            "level": "5º",
+            "spells": "Dissipar Magia; Proteção Contra Energia"
+          },
+          {
+            "level": "7º",
+            "spells": "Invocar Construto; Movimentação Livre"
+          },
+          {
+            "level": "9º",
+            "spells": "Muralha de Energia; Restauração Maior"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 49
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-alma-cronometrica.feature.magia-cronometrica.l1.1",
+      "name": "MAGIA CRONOMÉTRICA",
+      "level": 1,
+      "description": "Você aprende uma magia adicional ao alcançar certos níveis nesta classe, como mostrado na tabela de Magias Cronométricas. Essas magias são consideradas magias de feiticeiro para você, mas não contam contra o número de magias de feiticeiro que você conhece. As magias com um asterisco são apresentadas no capítulo 3 deste livro. Sempre que ganhar um nível de feiticeiro, você pode substituir uma magia adquirida por esta característica por outra magia de mesmo círculo. A nova magia deve ser de abjuração ou transmutação das listas de bruxo, feiticeiro ou mago. Magias Cronométricas Nível de Feiticeiro Magias 1º Alarme, Proteção Contra o Bem e o Mal 3º Auxílio, Restauração Menor 5º Dissipar Magia, Proteção Contra Energia 7º Invocar Construto , Movimentação Livre 9º Muralha de Energia, Restauração Maior\n\nEm adição, consulte a tabela de Manifestações da Ordem e escolher ou determinar aleatoriamente a forma como sua conexão com a ordem se manifesta enquanto você está conjurando suas magias de feiticeiro. Manifestações da Ordem d6 Manifestação Engrenagens espectrais pairam às suas costas. Os ponteiros de um relógio giram em seus olhos. Sua pele brilha em um tom de bronze metalizado. 4 Equações flutuantes e objetos geométricos recobrem seu corpo. Seu foco de conjuração temporariamente toma a forma de um mecanismo de relojoeiro Minúsculo. O som das engrenagens ou o soar de um relógio podem ser ouvidos por você e por aqueles afetados por sua magia.",
+      "page": 49,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alma-cronometrica.feature.restaurar-o-equilibrio.l1.1",
+      "name": "RESTAURAR O EQUILÍBRIO",
+      "level": 1,
+      "description": "Sua conexão com o plano da ordem absoluta permite que você uniformize os momentos caóticos. Quando uma criatura que você possa ver a até 18m de você estiver prestes a fazer uma rolagem do d20 com vantagem ou desvantagem, você pode usar sua reação para impedir que a jogada seja afetada por essas condições. Você pode usar essa característica uma quantia de vezes igual ao seu bônus de proficiência, e recupera todos os usos ao terminar um descanso longo.",
+      "page": 49,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alma-cronometrica.feature.bastiao-da-ordem.l6.1",
+      "name": "BASTIÃO DA ORDEM",
+      "level": 6,
+      "description": "Você pode acessar a grande equação da existência para imbuir uma criatura com um escudo cintilante da ordem. Com uma ação, você pode gastar de 1 a 5 pontos de feitiçaria para criar uma proteção mágica ao redor de si mesmo ou de outra criatura em seu campo de visão a até 9m de você. A proteção dura até que você termine um descanso longo ou use essa característica novamente. A proteção é representada por uma quantia de d8s igual ao número de pontos de feitiçaria gastos para criá-la. Quando uma criatura protegida sofre dano, ela pode gastar uma quantia desses dados, jogando-os e reduzindo o dano de acordo com o resultado obtido nesses dados.",
+      "page": 50,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alma-cronometrica.feature.arrebatamento-da-ordem.l14.1",
+      "name": "ARREBATAMENTO DA ORDEM",
+      "level": 14,
+      "description": "Você adquire a habilidade de alinhar sua consciência aos infinitos cálculos de Mecânos. COm uma ação bônus, você entra nesse estado de transe por 1 minuto. Durante esse período, jogadas de ataque realizadas contra você não podem se beneficiar de vantagens, e sempre que você fizer uma jogada de ataque, um teste de habilidade ou salvaguarda, você pode considerar qualquer valor abaixo de 9 tirado no d20 como um 10. Assim que usar essa ação bônus, você não pode ativá-la novamente até que termine um descanso longo ou que gaste 5 pontos de feitiçaria para usá-la de novo.",
+      "page": 50,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-alma-cronometrica.feature.marcha-cronometrada.l18.1",
+      "name": "MARCHA CRONOMETRADA",
+      "level": 18,
+      "description": "Você invoca espíritos da ordem para expurgar a desordem ao seu redor. Com uma ação, você invoca os espíritos em um cubo de 9m originando-se a partir de você. Os espíritos assemelhan-se a modrons ou outros construtos a sua escolha. Eles são intangíveis e invulneráveis, e criam os seguintes efeitos dentro do cubo antes de desaparecerem. Os espíritos restauram até 100 pontos de vida, divididos da forma que você escolher entre qualquer número de criaturas dentro do cubo. Quaisquer objetos danificados que fiquem completamente dentro da área do cubo são reparados instantaneamente. Toda magia de 6º círculo ou menor tem seu efeito encerrado em criaturas e objetos a sua escolha dentro do cubo. Assim que usar essa ação, você não pode ativá-la novamente até que termine um descanso longo, a menos que gaste 7 pontos de feitiçaria para isso.",
+      "page": 50,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

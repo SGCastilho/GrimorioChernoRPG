@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-rogue-academy-duller",
+    "identifier": "lyre-rogue-academy-duller",
+    "name": "Silenciador da Academia",
+    "originalName": "Academy Duller",
+    "aliases": [
+      "Academy Duller"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "476",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 476
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Agentes assassinos da Academia especializados em alcançar rapidamente seus alvos e abatê-los. Seus golpes distorcem a magia das vítimas, provocando surtos de dor que tornam mais fácil quebrar sua concentração.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 476
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-rogue-academy-duller.feature.divisor-de-magias.l3.1",
+      "name": "DIVISOR DE MAGIAS",
+      "level": 3,
+      "description": "Quando você aplica seu dano de Ataque Furtivo a um acerto contra uma criatura que esteja se concentrando em um efeito mágico originado de uma magia ou se beneficiando dele, a criatura da qual o efeito se origina deve realizar um teste de concentração adicional, separado daquele provocado pelo dano. Em uma falha, o efeito termina, mesmo que normalmente não exija concentração.",
+      "page": 476,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-academy-duller.feature.perseguicao-cintilante.l9.1",
+      "name": "PERSEGUIÇÃO CINTILANTE",
+      "level": 9,
+      "description": "Como ação bônus, você pode se teleportar para um espaço desocupado adjacente a uma criatura a até 18 metros que, desde o fim do seu último turno, tenha conjurado uma magia, esteja sob um efeito mágico, tenha sofrido dano de um efeito mágico ou tenha realizado uma salvaguarda contra um. Seu primeiro ataque contra ela no mesmo turno é feito com vantagem. Usos por Descanso Curto ou Longo iguais à metade do seu bônus de proficiência, arredondado para baixo.",
+      "page": 476,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-academy-duller.feature.evasao-do-arcanista.l13.1",
+      "name": "EVASÃO DO ARCANISTA",
+      "level": 13,
+      "description": "Quando realiza uma salvaguarda contra um efeito mágico para sofrer metade do dano, você não sofre dano em um sucesso e sofre metade em uma falha. Além disso, quando falha em uma salvaguarda contra um efeito mágico, pode usar sua reação para rolar um d20 e substituir o resultado anterior, possivelmente alterando o desfecho.",
+      "page": 476,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-academy-duller.feature.resistencia-magica.l17.1",
+      "name": "RESISTÊNCIA MÁGICA",
+      "level": 17,
+      "description": "Você tem vantagem em salvaguardas contra efeitos mágicos.",
+      "page": 476,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

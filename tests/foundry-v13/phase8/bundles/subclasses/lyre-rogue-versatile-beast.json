@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-rogue-versatile-beast",
+    "identifier": "lyre-rogue-versatile-beast",
+    "name": "Fera Versátil",
+    "originalName": "Versatile Beast",
+    "aliases": [
+      "Versatile Beast"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "478",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 478
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "A Fera Versátil carrega uma forma incompleta de licantropia, adquirida por contato, herança ou mutação de magia sombria. Presas e unhas afiadas evocam um lobisomem ou outra fera semelhante, e o Ladino incorpora essas armas naturais ao seu estilo de luta.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 478
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-rogue-versatile-beast.feature.visao-no-escuro-da-fera.l3.1",
+      "name": "VISÃO NO ESCURO DA FERA",
+      "level": 3,
+      "description": "Você ganha visão no escuro de 9 metros. Se já possuir visão no escuro, o alcance dela aumenta em 9 metros.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-versatile-beast.feature.dente-e-garra.l3.1",
+      "name": "DENTE E GARRA",
+      "level": 3,
+      "description": "Suas unhas e dentes podem rasgar inimigos. Seus ataques desarmados contam como armas com as propriedades leve e acuidade e causam 1d4 de dano cortante, salvo se outra característica definir dano maior. Você pode realizar um ataque desarmado como ação bônus. O dado aumenta para 1d6 no 9º nível de Ladino e 1d8 no 13º nível.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-versatile-beast.feature.transformacao-parcial.l9.1",
+      "name": "TRANSFORMAÇÃO PARCIAL",
+      "level": 9,
+      "description": "Seu corpo assume traços bestiais. Você ganha deslocamento de escalada igual ao seu deslocamento base; a visão no escuro recebida ou ampliada por Visão no Escuro da Fera passa a 18 metros; seu deslocamento aumenta em 3 metros; e, quando realiza a ação Disparada, pode fazer um ataque desarmado como parte da mesma ação.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-versatile-beast.feature.ferida-amaldicoada.l13.1",
+      "name": "FERIDA AMALDIÇOADA",
+      "level": 13,
+      "description": "Quando acerta uma criatura com um ataque desarmado, pode transmitir parte de sua maldição. O alvo realiza uma salvaguarda de Constituição contra sua CD baseada em Constituição. Em falha, fica amaldiçoado por 1 minuto; no início de cada turno sofre dano necrótico igual ao dado de dano do seu ataque desarmado e fica envenenado. Repete a salvaguarda no fim de cada turno, encerrando o efeito em um sucesso. Usos por Descanso Longo iguais ao seu modificador de Constituição.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-versatile-beast.feature.rajada-primal.l13.1",
+      "name": "RAJADA PRIMAL",
+      "level": 13,
+      "description": "Quando realiza um ataque desarmado usando uma ação bônus, pode fazer dois em vez de um. Seus ataques desarmados contam como mágicos para superar resistências.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-versatile-beast.feature.fator-de-cura.l17.1",
+      "name": "FATOR DE CURA",
+      "level": 17,
+      "description": "Como ação bônus, você pode ativar cura acelerada por 1 minuto. No início de cada um de seus turnos, enquanto tiver ao menos 1 ponto de vida, recupera pontos de vida iguais à metade do seu nível de Ladino, arredondado para baixo. Uma vez por Descanso Curto ou Longo.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

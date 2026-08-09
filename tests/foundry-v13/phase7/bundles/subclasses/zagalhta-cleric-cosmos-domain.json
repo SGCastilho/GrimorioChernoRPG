@@ -1,0 +1,189 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-cleric-cosmos-domain",
+    "identifier": "zagalhta-cleric-cosmos-domain",
+    "name": "Domínio do Cosmos",
+    "originalName": "Cosmos Domain",
+    "aliases": [
+      "Cosmos Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "143–144",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 143
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Guardião, explorador e missionário astral que encontra poder espiritual nos frágeis fios que conectam a vida entre mundos e transforma ambientes de baixa gravidade em território sagrado.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-do-cosmos",
+        "title": "Magias do Domínio do Cosmos",
+        "page": 143,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "cleric",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "cleric": "1º",
+            "spells": "Zona Antigravidade; Mísseis Mágicos"
+          },
+          {
+            "cleric": "3º",
+            "spells": "Loucura Vinculante; Raio Lunar"
+          },
+          {
+            "cleric": "5º",
+            "spells": "Arma Astral; Flecha da Mancha Solar"
+          },
+          {
+            "cleric": "7º",
+            "spells": "Adaptação Arbitrária; Transmissão"
+          },
+          {
+            "cleric": "9º",
+            "spells": "Despertar; Telecinese"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 143
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-cleric-cosmos-domain.feature.proficiencias-da-era-espacial.l1.1",
+      "name": "PROFICIÊNCIAS DA ERA ESPACIAL",
+      "level": 1,
+      "description": "Pode prender a respiração por até 1 hora e falar sem perder oxigênio; recebe aceleração 0-G igual ao dobro do deslocamento base; resistência a radiante; e pode concentrar-se em zona antigravidade junto de outra magia, usando a mesma verificação para ambas.",
+      "page": 143,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-cosmos-domain.feature.canalizar-divindade-bolha-gravitacional.l2.1",
+      "name": "CANALIZAR DIVINDADE: BOLHA GRAVITACIONAL",
+      "level": 2,
+      "description": "Como ação bônus, gaste Canalizar Divindade e crie por 10 minutos uma esfera de atmosfera controlada de 4,5 m centrada em você. Ela neutraliza efeitos nocivos no ar, gera ar respirável e expulsa névoa/partículas. Quedas superiores a 3 m dentro dela tratam o espaço como baixa gravidade. Salvaguardas contra efeitos de área originados fora da esfera são feitas com vantagem.",
+      "page": 143,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-cosmos-domain.feature.ajuste-orbital.l2.1",
+      "name": "AJUSTE ORBITAL",
+      "level": 2,
+      "description": "Ao conjurar magia enquanto você ou o alvo estiver em baixa ou zero gravidade, dobre o alcance, salvo se a magia já possuir um efeito que o amplie nesse ambiente.",
+      "page": 143,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-cosmos-domain.feature.passagem-cosmica.l6.1",
+      "name": "PASSAGEM CÓSMICA",
+      "level": 6,
+      "description": "Ao conjurar magia de Clérigo que gaste espaço, pode teleportar para espaço desocupado visível a até 3 m × nível do espaço, antes ou depois do efeito da magia.",
+      "page": 143,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-cosmos-domain.feature.conjuracao-potente.l8.1",
+      "name": "CONJURAÇÃO POTENTE",
+      "level": 8,
+      "description": "Some seu modificador de Sabedoria ao dano de qualquer truque de Clérigo que conjurar.",
+      "page": 143,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-cleric-cosmos-domain.feature.anjo-astral.l17.1",
+      "name": "ANJO ASTRAL",
+      "level": 17,
+      "description": "Em ambiente de baixa ou zero gravidade, manifesta asas espirituais e recebe: resistência a contundente, perfurante e cortante; dois ataques com a ação Atacar, podendo substituir um por magia de 1 ação; +1d10 radiante em ataques de arma; espaços de 5º nível ou menores contam como um nível acima ao conjurar; aceleração 0-G igual a 3× deslocamento base; e pode sobreviver no vácuo sem ar, embora ainda possa se afogar.",
+      "page": 143,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

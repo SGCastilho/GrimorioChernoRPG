@@ -1,0 +1,113 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-estilo-do-kensei",
+    "identifier": "xanathar-estilo-do-kensei",
+    "name": "Estilo do Kensei",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "51–52",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 51
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Monges do Estilo do Kensei treinam incansavelmente com suas armas, ao ponto em que a arma se torna uma extensão do corpo. Estabelecida em dominar lutas com espadas, a tradição se expandiu, incluindo diferentes armas. Um kensei vê uma arma da mesma forma que um calígrafo ou pintor aprecia a caneta ou o pincel. Não importa a arma, o Kensei a vê como uma ferramenta usada para expressar a beleza e precisão das artes marciais. Esse nivelde domínio faz de um Kensei um inigualável guerreiro, sendo esse o resultado de uma intensa devoção, prática e estudo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 51
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-estilo-do-kensei.feature.caminho-do-kensei.l3.1",
+      "name": "CAMINHO DO KENSEI",
+      "level": 3,
+      "description": "Quando você escolhe essa tradição no 3º nivel, seu treinamento em artes marciais o leva a dominar o uso de certo tipo de armas. Esse caminho também inclui instruções na fina arte da caligrafia ou pintura. Você ganha os seguintes benefícios. Armas Kensei. Escolha dois tipos de armas para serem suas armas Kensei: Uma arma corpo a corpo e outro arma a distância. As armas podem ser armas simples ou armas marciais que não tenham as propriedades pesada e especial. O arco longo é uma escolha válida. Você ganha proficiência com essas armas caso não tenha. As armas escolhidas são armas de monge para você. Muitas características dessa tradição funcionam somente com suas armas Kensei. Quando alcançar os niveis, 6º na classe de monge, você poderá escolher outro tipo de arma, a distância ou corpo a corpo, para ser uma arma Kensei para você, seguindo os critérios acima. Esquiva Rápida. Se você fizer um ataque desarmado, como parte da sua ação de ataque, e estiver segurando uma Arma Kensei, você pode usá-la para se defender (desde que seja uma arma corpo-a­ corpo}. Enquanto a arma estiver em sua mão e você não estiver incapacitado, você ganha um bônus de +2 na CA até o começo do próximo turno. Tiro do Kensei. Você pode usar sua ação bônus, no seu turno, para fazer seus ataques a distância com uma Arma Kensei mais mortais. Quando você usa essa habilidade, qualquer alvo que você atingir usando uma Arma Kensei a distância aplica dano adicional de 1d4 do tipo da arma escolhida. Você mantém esse benefício até o finaldo seu turno atual. Caminho do Pincel. Você ganha proficiência ou com Suprimentos de Caligrafia ou com Ferramentas de Pintor, escolha um.",
+      "page": 51,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-estilo-do-kensei.feature.uno-com-a-lamina.l6.1",
+      "name": "UNO COM A LÂMINA",
+      "level": 6,
+      "description": "No 6º nível você imbui seu Ki para suas Armas Kensei, garantindo os seguintes benefícios.\n\nArmas Kensei Mágicas. Seus ataques com Armas Kensei contam como armas mágicas com o propósito de ultrapassar a resistência ou imunidade a ataques e danos não-mágicos.\n\nGolpe Habilidoso. Quando atingir um alvo com uma Arma Kensei, você pode gastar 1 ponto de Ki para que a arma cause dano extra igual ao seu dado de Artes Marciais. Você pode usar essa característica somente uma vez em cada um dos seus turnos.",
+      "page": 51,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-estilo-do-kensei.feature.agucar-a-lamina.l11.1",
+      "name": "AGUÇAR A LÂMINA",
+      "level": 11,
+      "description": "No 11º nível, você ganha a habilidade de incrementar suas Armas utilizando seu Ki. Com uma ação bônus você pode gastar até 3 pontos de Ki para dar, a uma Arma Kensei que você toque, um bônus nas rolagens de ataque e dano. O bônus é igual ao número de pontos de Ki que você gastou. Esse bónus dura 1 minuto ou até você usar essa característica novamente. Essa característica não tem efeito em Armas Mágicas que já tenham bônus nos testes de ataque e dano.",
+      "page": 52,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-estilo-do-kensei.feature.precisao-infalivel.l17.1",
+      "name": "PRECISÃO INFALÍVEL",
+      "level": 17,
+      "description": "No 1 7º nível seu domínio com armas garante a você uma extraordinária precisão. Quando errar um ataque usando uma arma de monge no seu turno, você pode atacar novamente. Essa característica só poderá ser usada uma vez em cada um dos seus turnos.",
+      "page": 52,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

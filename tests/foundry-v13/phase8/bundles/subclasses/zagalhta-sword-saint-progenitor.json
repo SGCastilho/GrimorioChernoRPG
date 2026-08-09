@@ -1,0 +1,338 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-sword-saint-progenitor",
+    "identifier": "zagalhta-sword-saint-progenitor",
+    "name": "Caminho do Progenitor",
+    "originalName": "Way of the Progenitor",
+    "aliases": [
+      "Way of the Progenitor"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "174–176",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 174
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Santo da Espada que permite a uma entidade espiritual progenitora habitar seu corpo, obtendo Magia de Pacto, técnicas arcanas e uma manifestação espiritual que pode finalmente se fundir ao usuário.",
+    "tables": [
+      {
+        "key": "table.1.conjuracao-do-progenitor",
+        "title": "Conjuração do Progenitor",
+        "page": 175,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "cantrips",
+            "label": "Truques Conhecidos"
+          },
+          {
+            "key": "prepared",
+            "label": "Magias Preparadas"
+          },
+          {
+            "key": "slots",
+            "label": "Espaços de Pacto"
+          },
+          {
+            "key": "slotLevel",
+            "label": "Nível do Espaço"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "cantrips": 2,
+            "prepared": 2,
+            "slots": 2,
+            "slotLevel": "2º"
+          },
+          {
+            "level": "4º",
+            "cantrips": 2,
+            "prepared": 2,
+            "slots": 2,
+            "slotLevel": "2º"
+          },
+          {
+            "level": "5º",
+            "cantrips": 2,
+            "prepared": 3,
+            "slots": 2,
+            "slotLevel": "2º"
+          },
+          {
+            "level": "6º",
+            "cantrips": 2,
+            "prepared": 3,
+            "slots": 2,
+            "slotLevel": "3º"
+          },
+          {
+            "level": "7º",
+            "cantrips": 2,
+            "prepared": 3,
+            "slots": 2,
+            "slotLevel": "3º"
+          },
+          {
+            "level": "8º",
+            "cantrips": 2,
+            "prepared": 3,
+            "slots": 2,
+            "slotLevel": "3º"
+          },
+          {
+            "level": "9º",
+            "cantrips": 2,
+            "prepared": 4,
+            "slots": 2,
+            "slotLevel": "4º"
+          },
+          {
+            "level": "10º",
+            "cantrips": 2,
+            "prepared": 4,
+            "slots": 2,
+            "slotLevel": "4º"
+          },
+          {
+            "level": "11º",
+            "cantrips": 3,
+            "prepared": 4,
+            "slots": 3,
+            "slotLevel": "4º"
+          },
+          {
+            "level": "12º",
+            "cantrips": 3,
+            "prepared": 4,
+            "slots": 3,
+            "slotLevel": "4º"
+          },
+          {
+            "level": "13º",
+            "cantrips": 3,
+            "prepared": 5,
+            "slots": 3,
+            "slotLevel": "5º"
+          },
+          {
+            "level": "14º",
+            "cantrips": 3,
+            "prepared": 5,
+            "slots": 3,
+            "slotLevel": "5º"
+          },
+          {
+            "level": "15º",
+            "cantrips": 3,
+            "prepared": 5,
+            "slots": 3,
+            "slotLevel": "5º"
+          },
+          {
+            "level": "16º",
+            "cantrips": 3,
+            "prepared": 5,
+            "slots": 3,
+            "slotLevel": "5º"
+          },
+          {
+            "level": "17º",
+            "cantrips": 3,
+            "prepared": 6,
+            "slots": 3,
+            "slotLevel": "5º"
+          },
+          {
+            "level": "18º",
+            "cantrips": 3,
+            "prepared": 6,
+            "slots": 3,
+            "slotLevel": "5º"
+          },
+          {
+            "level": "19º",
+            "cantrips": 3,
+            "prepared": 6,
+            "slots": 3,
+            "slotLevel": "5º"
+          },
+          {
+            "level": "20º",
+            "cantrips": 3,
+            "prepared": 6,
+            "slots": 3,
+            "slotLevel": "5º"
+          }
+        ]
+      },
+      {
+        "key": "table.2.tecnicas-de-foco-progenitor",
+        "title": "Técnicas de Foco — Progenitor",
+        "page": 175,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Técnica"
+          },
+          {
+            "key": "effect",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Divisão Cambiante",
+            "effect": "Ao conjurar com Espaço de Pacto uma magia que só pode ter um alvo, gaste Foco igual à metade do nível base da magia, mínimo 1, para atingir um segundo alvo em alcance."
+          },
+          {
+            "name": "Sobrefio Místico (2 Foco)",
+            "effect": "Ao acertar ataque de arma, cause dano de força adicional igual a 1d10 × nível de seus Espaços de Pacto."
+          },
+          {
+            "name": "Motor Mágico (2 Foco)",
+            "effect": "Ao obter 20 natural em salvaguarda, recupere um Espaço de Pacto gasto."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 174
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-sword-saint-progenitor.feature.magia-de-pacto-do-progenitor.l3.1",
+      "name": "MAGIA DE PACTO DO PROGENITOR",
+      "level": 3,
+      "description": "Você recebe Espaços de Magia de Pacto conforme a tabela, todos do mesmo nível, recuperados em qualquer Descanso. Pode preparar magias da lista de Bruxo até o nível de seus Espaços de Pacto; Sabedoria é seu atributo de conjuração. Como exceção, pode produzir magia preparada em seu nível base gastando Pontos de Foco iguais ao nível da magia. Conhece truques conforme a tabela. Itens mágicos o tratam como Bruxo de nível igual ao seu nível de Santo da Espada; efeitos que aumentam a CD de suas Técnicas de Foco também aumentam a CD de Magia de Pacto.",
+      "page": 174,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-progenitor.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "Você aprende Divisão Cambiante, Sobrefio Místico e Motor Mágico, descritos na tabela.",
+      "page": 175,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-progenitor.feature.evocacao-dupla.l6.1",
+      "name": "EVOCAÇÃO DUPLA",
+      "level": 6,
+      "description": "Ao realizar a ação Atacar, pode substituir um dos ataques por conjurar uma magia preparada usando Espaço de Pacto, desde que tenha tempo de conjuração de 1 ação.",
+      "page": 175,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-progenitor.feature.forma-da-alma.l11.1",
+      "name": "FORMA DA ALMA",
+      "level": 11,
+      "description": "Escolha duas magias de qualquer lista cujo nível seja igual ou inferior ao de seus Espaços de Pacto. Você as aprende, sempre as tem preparadas sem contar no limite e pode conjurá-las com Espaços de Pacto. A cada nível de Santo da Espada, pode trocar uma por outra válida.",
+      "page": 175,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-progenitor.feature.alma-dupla.l14.1",
+      "name": "ALMA DUPLA",
+      "level": 14,
+      "description": "Enquanto empunha a Arma Santa sintonizada, o espírito progenitor paira sobre você e concede: Arrastar e Agarrar — se ele agarrar via Projeção, puxa o alvo até 9 m para junto de você e você assume o agarrão; Projeção — ataques com a Arma Santa podem mirar alvos a até 9 m e o espírito se teleporta até eles para executar a técnica, embora você ainda precise realizar fisicamente o ataque; Vigilante — você não pode ser surpreendido.",
+      "page": 175,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-sword-saint-progenitor.feature.unificacao.l17.1",
+      "name": "UNIFICAÇÃO",
+      "level": 17,
+      "description": "Como ação, funda-se ao progenitor por 1 minuto ou até separar-se como ação bônus, perdendo temporariamente Alma Dupla. Durante a fusão: deslocamento +9 m; em ataques com arma sintonizada, role 1d8 e some ao resultado; críticos contra você viram acertos normais; no início dos turnos ganhe 10 PV temporários; faça um ataque adicional com Arma Santa ao usar Atacar; se cair a 0 PV, pode encerrar a fusão e ficar com 10 PV. Um uso por Descanso Longo; usos posteriores custam 5 Foco.",
+      "page": 176,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

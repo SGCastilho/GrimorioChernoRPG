@@ -1,0 +1,173 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-bender-invigoration",
+    "identifier": "ryoko-bender-invigoration",
+    "name": "Discípulo do Revigoramento",
+    "originalName": "Disciple of Invigoration",
+    "aliases": [
+      "Disciple of Invigoration",
+      "Discípulo do Revigoramento"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "172–173",
+    "chapter": "Capítulo 9: Classes",
+    "page": 172
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bender-ryoko",
+    "identifier": "bender",
+    "name": "Dobrador"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bender",
+    "selectionLevel": 3,
+    "description": "Um Dobrador de suporte que usa impulsos elementais para fortalecer aliados, corrigir falhas e desestabilizar as ações dos inimigos.",
+    "tables": [
+      {
+        "key": "table.1.magias-bonus-do-revigoramento",
+        "title": "Magias Bônus do Revigoramento",
+        "page": 172,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Dobrador"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Bênção"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Aprimorar Habilidade"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Velocidade"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Liberdade de Movimento"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Restauração Maior"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 172
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-bender-invigoration.feature.vigor-interior.l3.1",
+      "name": "VIGOR INTERIOR",
+      "level": 3,
+      "description": "Seu máximo de PV aumenta em 3 e aumenta em mais 1 sempre que ganha um nível nesta classe. Além disso, some seu modificador de conjuração de Dobrador aos testes para manter concentração.",
+      "page": 173,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-invigoration.feature.pulso-primordial.l3.1",
+      "name": "PULSO PRIMORDIAL",
+      "level": 3,
+      "description": "Quando criatura voluntária visível a até 9 m falha salvaguarda ou erra ataque, use reação para fazê-la rerrolar com bônus igual ao seu modificador de conjuração, devendo usar o novo resultado. Se o ataque rerrolado acertar, causa dano adicional de um tipo de uma Afinidade igual ao seu modificador. Usos iguais ao modificador de conjuração (mín. 1) por Descanso Longo.",
+      "page": 173,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-invigoration.feature.investida-distrativa.l7.1",
+      "name": "INVESTIDA DISTRATIVA",
+      "level": 7,
+      "description": "Uma vez em seu turno, ao causar dano a criatura com tipo ligado a uma Afinidade, manifeste os elementos de forma distrativa. A próxima jogada de ataque ou salvaguarda do alvo antes do fim do próximo turno dele sofre -1d8. Usos iguais ao modificador de conjuração (mín. 1) por Descanso Longo.",
+      "page": 173,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-invigoration.feature.aprimoramento-elemental.l15.1",
+      "name": "APRIMORAMENTO ELEMENTAL",
+      "level": 15,
+      "description": "Uma vez por turno ao conjurar magia de Dobrador de 1º nível ou maior que tenha um aliado como alvo, escolha um aliado atingido e um benefício: encerrar cego, enfeitiçado, surdo, amedrontado, envenenado ou atordoado; +1d6 no próximo ataque/salvaguarda até fim do próximo turno; usar reação para um ataque de arma; ou usar reação para mover metade do deslocamento sem ataques de oportunidade. Usos iguais ao modificador de conjuração (mín. 1) por Descanso Longo.",
+      "page": 173,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-invigoration.feature.revigoramento-primordial.l20.1",
+      "name": "REVIGORAMENTO PRIMORDIAL",
+      "level": 20,
+      "description": "Ao entrar em Avatar Primordial, conceda a até cinco criaturas voluntárias a 9 m um benefício de nível 1 de uma tabela de Avatar correspondente a uma Afinidade sua. Você escolhe um único benefício para todas; dura até seu Avatar terminar.",
+      "page": 173,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

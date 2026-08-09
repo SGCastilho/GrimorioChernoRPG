@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-monk-way-of-fair-intent",
+    "identifier": "bbb-monk-way-of-fair-intent",
+    "name": "Caminho da Intenção Justa",
+    "originalName": "Way of Fair Intent",
+    "aliases": [
+      "Way of Fair Intent"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "109–110",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 109
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Um praticante marcial que se move de acordo com o fluxo do universo e aposta no acaso.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 109
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-monk-way-of-fair-intent.feature.leitura-serena.l3.1",
+      "name": "LEITURA SERENA",
+      "level": 3,
+      "description": "Sua intuição é maior que sua perícia social. Você compreende os desejos, medos e impulsos dos outros e pode usar Sabedoria no lugar de Carisma em qualquer teste de atributo ou perícia que normalmente exigiria Carisma.",
+      "page": 109,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-fair-intent.feature.punho-de-risco.l3.1",
+      "name": "PUNHO DE RISCO",
+      "level": 3,
+      "description": "Quando fizer um ataque como parte de Rajada de Golpes, pode apostar num golpe imprevisível e rolar 1d8 junto com o ataque. Se o resultado for ímpar, subtraia-o da jogada de ataque e do dano desse ataque; se for par, some-o a ambos.",
+      "page": 109,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-fair-intent.feature.aparo-relaxado.l6.1",
+      "name": "APARO RELAXADO",
+      "level": 6,
+      "description": "Quando seria atingido por um ataque com arma que possa ver, use sua reação para lançar uma moeda e declarar o lado, ou rolar 1d10. Se acertar a moeda ou o d10 resultar em número par, o ataque erra. Se você o fizer errar, todos os ataques contra você até o início de seu próximo turno têm desvantagem; se o ataque ainda acertar, em vez disso todos têm vantagem. Se já tiver usado sua reação, pode realizar esta reação novamente gastando 1 ponto de Ki por uso adicional.",
+      "page": 110,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-fair-intent.feature.adepto-da-casualidade.l11.1",
+      "name": "ADEPTO DA CASUALIDADE",
+      "level": 11,
+      "description": "Quando fizer uma salvaguarda que normalmente reduziria dano à metade, você sofre nenhum dano em um sucesso e metade do dano em uma falha.",
+      "page": 110,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-fair-intent.feature.golpe-que-abala-o-destino.l17.1",
+      "name": "GOLPE QUE ABALA O DESTINO",
+      "level": 17,
+      "description": "Quando atingir uma criatura com ataque desarmado ou Arma de Monge, pode produzir nela os efeitos de fortuna/falha sem espaço, componentes materiais ou ação adicional, usando sua CD de Ki para o efeito. Se o alvo obtiver sucesso em qualquer salvaguarda contra esse efeito que o impeça ou encerre, sofre imediatamente 8d10 de dano de força pelo retorno de energia provocado ao torcer o destino. Você pode usar uma vez por Descanso; usos adicionais custam 4 pontos de Ki cada.",
+      "page": 110,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

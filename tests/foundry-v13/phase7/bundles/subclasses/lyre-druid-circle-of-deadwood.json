@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-druid-circle-of-deadwood",
+    "identifier": "lyre-druid-circle-of-deadwood",
+    "name": "Círculo da Madeira Morta",
+    "originalName": "Circle of Deadwood",
+    "aliases": [
+      "Circle of Deadwood"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "451",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 451
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Das raízes necromânticas de Rott, a Árvore da Decadência, surgem gavinhas capazes de corromper e distorcer a natureza. Druidas deste círculo aprendem a canalizar essa necromancia vegetal, seja em serviço a Rott ou tentando voltar seu poder traiçoeiro para fins benignos. Sua magia contorce a natureza, protege o próprio corpo e, por fim, força carne morta a agir.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 451
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-druid-circle-of-deadwood.feature.bencao-de-rott.l2.1",
+      "name": "BÊNÇÃO DE ROTT",
+      "level": 2,
+      "description": "Você possui resistência a dano necrótico.",
+      "page": 451,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-deadwood.feature.transformacao-de-madeira-sombria.l6.1",
+      "name": "TRANSFORMAÇÃO DE MADEIRA SOMBRIA",
+      "level": 6,
+      "description": "Uma vez por Descanso Curto ou Longo, em vez de assumir uma forma bestial, você pode usar uma ação e gastar um uso de Forma Selvagem para cobrir o corpo com casca infernal por 10 minutos, ou até encerrar como ação bônus. Enquanto durar: seus ataques e rolagens de dano com armas usam seu atributo de conjuração; seu tamanho torna-se Grande; em cada turno, você pode usar uma ação bônus para realizar um número de ataques desarmados igual à metade do seu bônus de proficiência, arredondado para baixo, cada um causando 1d6 + metade do seu nível de Druida de dano necrótico; sua CA torna-se 10 + metade do seu nível de Druida, arredondado para baixo, caso já não seja maior; e você recebe pontos de vida temporários iguais ao dobro do seu nível de Druida.",
+      "page": 451,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-deadwood.feature.casca-de-podridao.l10.1",
+      "name": "CASCA DE PODRIDÃO",
+      "level": 10,
+      "description": "Quando uma criatura iniciar o turno a até 9 metros de você ou entrar nesse alcance pela primeira vez no turno, você pode fazer vinhas e raízes escuras se enrolarem em seus membros. Ela realiza uma salvaguarda de Constituição; em uma falha, seu deslocamento torna-se 0 até o início do próximo turno dela. Usos por Descanso Longo iguais à metade do seu nível de Druida, arredondado para baixo.",
+      "page": 451,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-deadwood.feature.marionetista-de-pele-de-arvore.l14.1",
+      "name": "MARIONETISTA DE PELE DE ÁRVORE",
+      "level": 14,
+      "description": "Como ação bônus, escolha uma criatura a até 18 metros presa por sua Casca de Podridão. Ela realiza uma salvaguarda de Força. Em uma falha, escolha um efeito: movê-la até 9 metros para um espaço desocupado à sua escolha; deixá-la restringida enquanto a Casca de Podridão durar; derrubá-la; ou fazê-la realizar um único ataque com arma contra uma criatura ao alcance escolhida por você. Você não pode obrigá-la a empregar efeitos adicionais ou magias que não queira usar.",
+      "page": 451,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-druid-circle-of-deadwood.feature.alcance-grotesco.l2.1",
+      "name": "ALCANCE GROTESCO",
+      "level": 2,
+      "description": "Quando uma criatura for reduzida a 0 pontos de vida ou morta por dano causado por você ou por um efeito originado de você, uma semente de decadência permanece em seu corpo. Enquanto puder ver o cadáver ou corpo a 0 pontos de vida, você pode tratá-lo como ponto de origem de efeitos ou magias que normalmente se originariam de você. Durante Transformação de Madeira Sombria, você também pode realizar os ataques de ação bônus da forma a partir de qualquer corpo semeado dessa maneira; o alcance é o da criatura, mas usa seu modificador de ataque e sua rolagem de dano.",
+      "page": 451,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-adepto-das-sombras",
+    "identifier": "xanathar-adepto-das-sombras",
+    "name": "Adepto das Sombras",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "34–35",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 34
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Você é uma criatura de sombra, pois sua magia inata vem do próprio Pendor das Sombras. Você pode traçar sua linhagem para uma entidade desse lugar, ou talvez tenha sido exposto ã sua energia caída e transformado por ela. O poder da magia das sombras molda uma aura estranha pálida sobre sua presença física. A centelha da vida que o sustenta está abafada, como se ela lutasse para permanecer viável contra a energia escura que imbui sua alma. Na sua opção, você pode escolher ou rolar na tabela Peculiaridades do Adepto das Sombras para criar uma peculiaridade para o seu personagem.",
+    "tables": [
+      {
+        "key": "table.1.peculiaridades-do-adepto-das-sombras",
+        "title": "Peculiaridades do Adepto das Sombras",
+        "page": 34,
+        "description": "Peculiaridades opcionais apresentadas na seção da subclasse.",
+        "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "columns": [
+          {
+            "key": "roll",
+            "label": "d6"
+          },
+          {
+            "key": "effect",
+            "label": "Peculiaridade"
+          }
+        ],
+        "rows": [
+          {
+            "roll": "1",
+            "effect": "Você está sempre gelado ao toque."
+          },
+          {
+            "roll": "2",
+            "effect": "Quando você está dormindo, você não parece respirar (embora você ainda deva respirar para sobreviver)."
+          },
+          {
+            "roll": "3",
+            "effect": "Você mal sangra, mesmo quando gravemente ferido."
+          },
+          {
+            "roll": "4",
+            "effect": "Seu coração bate uma vez por minuto. Este evento às vezes o surpreende."
+          },
+          {
+            "roll": "5",
+            "effect": "Você tem dificuldade em lembrar que as criaturas vivas e os cadáveres devem ser tratados de maneira diferente."
+          },
+          {
+            "roll": "6",
+            "effect": "Você piscou. Uma vez. Semana passada."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 34
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-adepto-das-sombras.feature.olhos-da-escuridao.l1.1",
+      "name": "OLHOS DA ESCURIDÃO",
+      "level": 1,
+      "description": "A partir do 1 º nível, você tem uma visão no escuro de alcance de 36 metros. Quando você alcança o 3° nível nesta classe, aprende a magia escuridão, que não conta para o seu número de magias conhecidas. Além disso, pode conjura-la, gastando 2 pontos de feitiçaria ou gastando um espaço de magia. Se conjura-la com pontos de feitiçaria, pode ver através da escuridão criada pela magia.",
+      "page": 35,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-adepto-das-sombras.feature.forca-do-tumulo.l1.1",
+      "name": "FORÇA DO TÚMULO",
+      "level": 1,
+      "description": "A partir do 1 ° nível, sua existência em um estado de crepúsculo entre a vida e a morte dificulta a sua derrota. Quando receber dano que o reduz a 0 pontos de vida, pode fazer um teste de resistência de Carisma (CD 5 + o dano recebido). Em um sucesso, em vez disso, cai para 1 ponto de vida. Você não pode usar essa característica se for reduzido a 0 pontos de vida por dano radiante ou por um golpe crítico. Depois de fazer um teste de resistência desse bem-sucedido, não pode usar essa característica novamente até terminar um descanso longo.",
+      "page": 35,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-adepto-das-sombras.feature.cao-do-mal-pressagio.l6.1",
+      "name": "CÃO DO MAL PRESSÁGIO",
+      "level": 6,
+      "description": "No 6° nível, você ganha a habilidade de invocar uma criatura uivante da escuridão para perseguir seus inimigos. Como uma ação bônus, pode gastar 3 pontos de feitiçaria para invocar magicamente um cão do mal presságio para atacar uma criatura que possa ver dentro de 36 metros de alcance. O cão usa as estatísticas do lobo atroz (ver o Manual dos Monstros ou o apêndice C no Livro do Jogador), com as seguintes alterações: • O cão é tamanho médio, não grande, e conta como uma monstruosidade, não uma fera. • Ele aparece com uma quantidade de pontos de vida temporários iguais à metade do seu nível de feiticeiro. • Ele pode se mover através de outras criaturas e objetos como se fosse terreno difícil. O cão leva 5 dano de energia se terminar a sua vez dentro de um objeto. • No início do turno dele, o cão conhece automaticamente a localização do alvo. Se o alvo estava escondido, ele não está mais escondido do cão. O cão aparece em um espaço desocupado de sua escolha dentro de 9 metros do alvo. Role iniciativa para o cão. No turno dele, ele pode se mover apenas em direção ao seu alvo pela rota mais direta, e pode usar sua ação apenas para atacar seu alvo. O cão pode fazer ataques de oportunidade, mas apenas contra o alvo. Além disso, enquanto o cão fica a até 1,5 metros do alvo, o alvo tem desvantagem na em testes de resistência contra qualquer magia que conjurar. O cão desaparece se for reduzido a 0 pontos de vida, se seu alvo for reduzido para 0 pontos de vida ou apôs 5 minutos.",
+      "page": 35,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-adepto-das-sombras.feature.caminhar-nas-sombras.l14.1",
+      "name": "CAMINHAR NAS SOMBRAS",
+      "level": 14,
+      "description": "No 14° nível, você ganha a habilidade de passar de uma sombra para outra. Quando estiver em luz fraca ou escuridão, com uma ação bônus, pode se teleportar magicamente até 36 metros para um espaço desocupado que possa ver que também esteja em luz fraca ou escuridão.",
+      "page": 35,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-adepto-das-sombras.feature.forma-umbral.l18.1",
+      "name": "FORMA UMBRAL",
+      "level": 18,
+      "description": "A partir do 18° nível, pode gastar 6 pontos de feitiçaria com uma ação bônus para se transformar magicamente em uma forma de sombras. Nesta forma, você tem resistência a todos os danos, exceto dano de energia e dano radiante, e pode se mover através de outras criaturas e objetos como se fossem terrenos dificeis. Você recebe 5 dano de energia se terminar seu turno dentro de um objeto. Você permanece nessa forma por 1 minuto. Ela termina caso fique incapacitado, caso morra, ou se a desfizer como uma ação bônus.",
+      "page": 35,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

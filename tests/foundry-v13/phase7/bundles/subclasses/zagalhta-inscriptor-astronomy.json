@@ -1,0 +1,189 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-inscriptor-astronomy",
+    "identifier": "zagalhta-inscriptor-astronomy",
+    "name": "Astronomia",
+    "originalName": "Astronomy",
+    "aliases": [
+      "Astronomy"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "157–158",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 157
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Inscritor fascinado por estrelas e corpos celestes que aplica princípios astronômicos ao próprio corpo, escapa da gravidade, rearranja órbitas e escreve uma singularidade em existência.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo-astronomia",
+        "title": "Magias de Capítulo — Astronomia",
+        "page": 157,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spell",
+            "label": "Magia"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spell": "Fogo das Fadas"
+          },
+          {
+            "level": "3º",
+            "spell": "Passagem de Luz"
+          },
+          {
+            "level": "5º",
+            "spell": "Comunicação Aberta (ou Cortina de Estrelas Cintilantes em jogo sem naves exolunares)"
+          },
+          {
+            "level": "7º",
+            "spell": "Portal de Corrente de Deslizamento"
+          },
+          {
+            "level": "9º",
+            "spell": "Muralha de Radiância"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 157
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-inscriptor-astronomy.feature.olhos-de-resiliencia-estelar.l1.1",
+      "name": "OLHOS DE RESILIÊNCIA ESTELAR",
+      "level": 1,
+      "description": "Você não pode ficar cego, exceto quando fecha os olhos voluntariamente, não consegue ver o alvo por circunstância física ou desvia o olhar; efeitos não podem obrigá-lo a desviar o olhar contra a vontade.",
+      "page": 157,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-inscriptor-astronomy.feature.ausencia-de-peso.l1.1",
+      "name": "AUSÊNCIA DE PESO",
+      "level": 1,
+      "description": "Você recebe voo laborioso igual ao deslocamento base, produzindo voo pairado quando usado; ao calcular dano de queda, ignore 6 m × nível de Inscritor; ao usar esse voo também recebe aceleração 0-G igual ao dobro do deslocamento base pela mesma duração.",
+      "page": 157,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-inscriptor-astronomy.feature.orbita-heliocentrica.l5.1",
+      "name": "ÓRBITA HELIOCÊNTRICA",
+      "level": 5,
+      "description": "Como ação bônus, gaste Reviravolta Narrativa e escolha criaturas em quantidade igual à proficiência, todas a até 18 m de você e a no máximo 18 m umas das outras. Involuntárias fazem salvaguarda de Carisma. Troque livremente os espaços das voluntárias, incapacitadas, inconscientes ou que falharem; se um espaço não comportar o alvo, ele é deslocado para o espaço válido mais próximo.",
+      "page": 157,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-inscriptor-astronomy.feature.visao-no-escuro-verdadeira.l8.1",
+      "name": "VISÃO NO ESCURO VERDADEIRA",
+      "level": 8,
+      "description": "Recebe visão no escuro a 18 m, ou aumenta a existente em 18 m. Dentro desse alcance enxerga escuridão e penumbra como luz plena.",
+      "page": 157,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-inscriptor-astronomy.feature.ausencia-de-peso-maior.l12.1",
+      "name": "AUSÊNCIA DE PESO MAIOR",
+      "level": 12,
+      "description": "Recebe voo pairado igual ao deslocamento base e aceleração 0-G igual ao dobro. Quando ainda sofrer dano de queda após Ausência de Peso, sofre metade.",
+      "page": 157,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-inscriptor-astronomy.feature.singularidade.l20.1",
+      "name": "SINGULARIDADE",
+      "level": 20,
+      "description": "Uma vez por Descanso, ou novamente gastando Espaço de Pacto, crie por 1 minuto e concentração um buraco negro em ponto a até 36 m, com poço de gravidade de 9 m tratado como terreno difícil. Criatura que começa/entra faz Força; falha é puxada 1d4 × 3 m e cai. A até 1,5 m é tragada para subdimensão, fica incapacitada e sofre 4d6 de força ao fim de cada turno. No início do turno, Carisma bem-sucedido permite escapar e emergir a até 3 m. Ao escapar, pode usar reação para lançá-la como Estrela Cadente a até 36 m, causando 2d12 radiante e atingindo outras criaturas no ponto em falha de Destreza. Como ação bônus pode libertar qualquer número de presos disparando-os assim. Ao perder concentração, pode usar reação para disparar todos. Como ação, pode mover a singularidade para ponto a até 18 m dela ou de você.",
+      "page": 158,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

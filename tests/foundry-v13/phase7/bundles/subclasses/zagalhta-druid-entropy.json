@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-druid-entropy",
+    "identifier": "zagalhta-druid-entropy",
+    "name": "Entropia",
+    "originalName": "Entropy",
+    "aliases": [
+      "Entropy"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "147",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 147
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Druida conectado ao vazio e à fragilidade da vida fora de um ecossistema, que drena energia, reduz movimento e redistribui o que absorve para criar um horizonte entropicamente degradado.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 147
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-druid-entropy.feature.fator-congelante.l2.1",
+      "name": "FATOR CONGELANTE",
+      "level": 2,
+      "description": "Você possui Pontos de Fator iguais à proficiência, recuperados em Descanso. Ao acertar ataque enquanto em Forma Selvagem ou causar dano com magia, gaste um ou mais: o primeiro dano torna-se frio e recebe +1d6 de frio por ponto (distribua os dados entre alvos se houver vários); e o alvo não pode usar reações até o início do próximo turno. O dado vira d8 no 6º, d10 no 10º e d12 no 14º.",
+      "page": 147,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-druid-entropy.feature.campo-de-horizonte-degradado.l6.1",
+      "name": "CAMPO DE HORIZONTE DEGRADADO",
+      "level": 6,
+      "description": "Aura invisível de 6 m: criaturas hostis tratam a área como terreno difícil; ataques à distância contra qualquer coisa dentro têm desvantagem. Na primeira vez por turno que isso fizer uma criatura obter 10 ou menos no d20, recupere 1 Ponto de Fator.",
+      "page": 147,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-druid-entropy.feature.estado-de-energia-fechada.l10.1",
+      "name": "ESTADO DE ENERGIA FECHADA",
+      "level": 10,
+      "description": "Quando até metade de seu nível de Druida em criaturas dentro do Campo sofrerem dano, use reação para reduzir pela metade o dano de uma ou mais. Pode ainda gastar Forma Selvagem e rolar 1d10 × proficiência: reduza o dano restante de uma criatura pelo total, ou de todas pelo equivalente à metade do total.",
+      "page": 147,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-druid-entropy.feature.resultados-decrescentes.l14.1",
+      "name": "RESULTADOS DECRESCENTES",
+      "level": 14,
+      "description": "Críticos contra você ou aliado dentro do Campo tornam-se acertos normais. Em Forma Selvagem o alcance do Campo dobra. Além disso, o primeiro ataque corpo a corpo que cada hostil fizer dentro dele em cada turno tem desvantagem.",
+      "page": 147,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

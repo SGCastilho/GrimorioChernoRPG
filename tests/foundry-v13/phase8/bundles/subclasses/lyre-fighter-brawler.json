@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-fighter-brawler",
+    "identifier": "lyre-fighter-brawler",
+    "name": "Brigão",
+    "originalName": "Brawler",
+    "aliases": [
+      "Brawler"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "457–458",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 457
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Brigões vivem pela emoção de uma luta e consideram o próprio corpo a melhor arma para um confronto íntimo. São combatentes resistentes e arriscados que agarram, arremessam e espancam adversários, ficando ainda mais perigosos depois de apanhar o suficiente para entrar no clima.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 457
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-fighter-brawler.feature.punho-contra-punho.l3.1",
+      "name": "PUNHO CONTRA PUNHO",
+      "level": 3,
+      "description": "Seus ataques desarmados causam 1d6 de dano contundente, salvo se outra característica usar dado maior. Você pode tratar um ataque desarmado como arma da mão secundária e, nesse caso, soma seu modificador de atributo ao dano. O dado aumenta para d8 no 6º nível de Guerreiro, d10 no 11º e d12 no 16º. Armas com a propriedade soqueira podem usar o dano de seu ataque desarmado no lugar do próprio.",
+      "page": 457,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-brawler.feature.forca-avassaladora.l7.1",
+      "name": "FORÇA AVASSALADORA",
+      "level": 7,
+      "description": "Seus ataques desarmados contam como mágicos para superar resistência e imunidade. Ao vencer uma disputa para empurrar ou agarrar uma criatura, você pode causar a ela dano contundente igual ao dano do seu ataque desarmado.",
+      "page": 457,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-brawler.feature.estrategia-de-combate-especialista.l10.1",
+      "name": "ESTRATÉGIA DE COMBATE ESPECIALISTA",
+      "level": 10,
+      "description": "Quando acertar uma criatura com um ataque desarmado, gaste 1 ponto de Maestria de Combate ou, se estiver realizando a ação Atacar, abra mão de um ataque ainda não usado dessa ação para aplicar um efeito. Recuo: empurre o alvo 1,5 metro × seu bônus de proficiência; se ele colidir com uma superfície sólida, tanto o alvo quanto a superfície sofrem 1d6 contundente para cada 1,5 metro de deslocamento que ainda restava; para cada categoria de tamanho acima da sua, a distância diminui em 3 metros. Golpe Distrativo: o alvo não pode usar reações até o início do seu próximo turno. Dobrar a Aposta: se o alvo não for mais de uma categoria maior que você, seu deslocamento torna-se 0. Quebrar a Defesa: ataques contra o alvo têm vantagem até o início do seu próximo turno ou até uma criatura acertá-lo.",
+      "page": 458,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-brawler.feature.esquiva-e-golpe.l15.1",
+      "name": "ESQUIVA E GOLPE",
+      "level": 15,
+      "description": "Ao usar Surto de Ação, seu deslocamento aumenta em 3 metros até o fim do turno, e o próximo ataque desarmado que acertar nesse turno é tratado como um acerto crítico, embora não conte como uma rolagem de 20. Se errar, o benefício é perdido.",
+      "page": 458,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-brawler.feature.embriagado-de-pancada.l18.1",
+      "name": "EMBRIAGADO DE PANCADA",
+      "level": 18,
+      "description": "Quando acertar um ataque corpo a corpo com arma enquanto estiver com menos da metade dos seus pontos de vida máximos, você pode somar seu modificador de Constituição ao dano.",
+      "page": 458,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-blue-metal",
+    "identifier": "lyre-sword-saint-retia-way-of-blue-metal",
+    "name": "Caminho do Metal Azul",
+    "originalName": "Way of Blue Metal",
+    "aliases": [
+      "Way of Blue Metal"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "418",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 418
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Tenshisaiga. Tradição de um antigo espadachim élfico voltada à paz interior e ao domínio da energia espiritual. O Caminho do Metal Azul aprende técnicas alheias, recupera Foco em momentos críticos e manifesta a própria essência como energia elemental.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 418
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-blue-metal.feature.maestria-de-foco.l3.1",
+      "name": "MAESTRIA DE FOCO",
+      "level": 3,
+      "description": "Quando o d20 de uma jogada de ataque mostrar 20, você recupera Foco igual ao seu bônus de proficiência. Resultados 20 adicionais no mesmo turno recuperam apenas 1 Foco cada.",
+      "page": 418,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-blue-metal.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "Aprenda duas Técnicas de Foco de outros Caminhos de Devoção. Sempre que ganhar um nível de Santo da Espada, pode substituir uma delas por outra.",
+      "page": 418,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-blue-metal.feature.aura-central.l6.1",
+      "name": "AURA CENTRAL",
+      "level": 6,
+      "description": "Escolha frio, fogo, elétrico ou venenoso. Quando sofreria dano desse tipo, pode usar reação e gastar 2 Foco para negar o dano e receber PV temporários iguais ao dano negado; enquanto mantiver esses PV temporários, também tem resistência ao tipo escolhido. Além disso, como ação, pode gastar 2 Foco para imbuir por 10 minutos uma arma que esteja empunhando com o mesmo elemento; seus ataques com ela causam dano adicional desse tipo igual à metade de seu nível de Santo da Espada, arredondado para baixo.",
+      "page": 418,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-blue-metal.feature.foco-extra.l11.1",
+      "name": "FOCO EXTRA",
+      "level": 11,
+      "description": "Você aprende mais duas Técnicas de Foco conforme sua característica Técnicas de Foco do Metal Azul.",
+      "page": 418,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-blue-metal.feature.pureza-da-forma.l14.1",
+      "name": "PUREZA DA FORMA",
+      "level": 14,
+      "description": "Enquanto estiver sintonizado com sua Arma Santa, todas as Técnicas de Foco custam 1 ponto a menos, mínimo 1. Se a técnica envolver arma ou jogada de ataque, ela deve usar sua Arma Santa para receber essa redução.",
+      "page": 418,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-blue-metal.feature.surto-do-dragao-rugidor.l17.1",
+      "name": "SURTO DO DRAGÃO RUGIDOR",
+      "level": 17,
+      "description": "Usar Surto do Dragão normalmente não aumenta mais o custo de usos seguintes. Sempre que usar Surto do Dragão, pode gastar +1 Foco para transformá-lo em Surto do Dragão Rugidor: até o início do próximo turno, ataques com sua Arma Santa têm vantagem e, em acerto, causam +1d10 do tipo de dano da arma. O movimento adicional do Surto do Dragão aumenta para 9 metros.",
+      "page": 418,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "spellblade-rimeblade",
+    "identifier": "spellblade-rimeblade",
+    "name": "Lâmina de Geada",
+    "originalName": "Rimeblade",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "kibbles",
+    "title": "Spellblade v1.3 — KibblesTasty — Lâmina de Geada",
+    "pages": "12–13",
+    "chapter": "Técnicas de Spellblade",
+    "page": 12
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "spellblade",
+    "identifier": "spellblade",
+    "name": "Spellblade"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "spellblade",
+    "selectionLevel": 3,
+    "description": "Como uma Lâmina de Geada, você desfaz a fronteira entre o arcano e o ártico, empunhando sua arma com a precisão fria da borda de uma estalactite. Seus golpes infundidos de gelo ecoam o avanço impiedoso do inverno e congelam os inimigos no campo de batalha.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-lamina-de-geada",
+        "title": "Magias de Lâmina de Geada",
+        "page": 12,
+        "description": "Estas magias contam como magias de Spellblade para você e não contam no limite de magias conhecidas.",
+        "sourceTitle": "Spellblade v1.3 — KibblesTasty",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Spellblade"
+          },
+          {
+            "key": "magias",
+            "label": "Magias aprendidas"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Sopro Ártico"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Onda de Frio"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Lentidão"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Espinhos de Gelo"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Cone de Frio"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 12
+  },
+  "features": [
+    {
+      "key": "subclass.spellblade-rimeblade.feature.magias-da-lamina-de-geada.l3.1",
+      "name": "MAGIAS DA LÂMINA DE GEADA",
+      "level": 3,
+      "description": "Você aprende as magias apresentadas na tabela da subclasse. Elas são magias de Spellblade para você e não contam no número de magias conhecidas.",
+      "page": 12,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Geada",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-rimeblade.feature.lamina-de-gelo.l3.1",
+      "name": "LÂMINA DE GELO",
+      "level": 3,
+      "description": "Ao escolher esta técnica no 3º nível, sempre que terminar um descanso longo, você pode tocar uma arma com a qual seja proficiente e que não possua a propriedade Duas Mãos. A arma é infundida com energia gélida: você pode mudar o dano dela para frio e usar Inteligência, em vez de Força ou Destreza, nas jogadas de ataque e dano.",
+      "page": 12,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Geada",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-rimeblade.feature.arsenal-artico.l3.1",
+      "name": "ARSENAL ÁRTICO",
+      "level": 3,
+      "description": "Você aprende o truque Arma de Gelo e pode conjurá-lo uma vez por turno sem exigir uma ação bônus. Qualquer arma criada pelo truque é considerada sob o efeito de Lâmina de Gelo, mesmo que possua a propriedade Duas Mãos.",
+      "page": 12,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Geada",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-rimeblade.feature.mordida-do-frio.l3.1",
+      "name": "MORDIDA DO FRIO",
+      "level": 3,
+      "description": "Você ganha uma nova opção para Surto Arcano: ao atingir uma criatura com um ataque de arma corpo a corpo, gaste um uso para remover qualquer imunidade ou resistência dela a dano de frio e impor desvantagem nos testes de resistência contra magias que causam dano de frio. Isso inclui a magia ativada pelo ataque caso tenha sido usada com Golpe Mágico e exija um teste para efeitos adicionais. Os efeitos duram até o fim do seu próximo turno.",
+      "page": 13,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Geada",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-rimeblade.feature.coracao-congelado.l7.1",
+      "name": "CORAÇÃO CONGELADO",
+      "level": 7,
+      "description": "No 7º nível, você ganha resistência a dano de frio e vantagem em testes de resistência contra ser Enfeitiçado ou Amedrontado.",
+      "page": 13,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Geada",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-rimeblade.feature.garra-do-inverno.l15.1",
+      "name": "GARRA DO INVERNO",
+      "level": 15,
+      "description": "No 15º nível, sempre que uma criatura sob Mordida do Frio sofrer dano de frio, a duração do efeito é prolongada por mais uma rodada, terminando no fim do seu próximo turno. Além disso, quando a criatura falhar em um teste de resistência contra uma de suas magias que cause dano de frio, ela fica Contida até o início do próximo turno dela.",
+      "page": 13,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Geada",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.spellblade-rimeblade.feature.era-do-gelo.l20.1",
+      "name": "ERA DO GELO",
+      "level": 20,
+      "description": "No 20º nível, você pode liberar uma explosão de energia congelante que mergulha uma área de 9 metros de raio centrada em você em um estado de gelo eterno por 1 minuto, sem exigir uma ação.\n\n• Terreno Difícil: a área é terreno difícil para criaturas diferentes de você.\n\n• Resistência ao Frio: aliados na área ganham resistência a frio; criaturas hostis perdem qualquer resistência a frio que possuam.\n\n• Lentidão: criaturas na área quando você ativa a característica ficam sob o efeito de Lentidão. No fim de cada turno, uma criatura afetada realiza um teste de Constituição. Em um sucesso, o efeito termina; em uma falha, ela também fica Contida enquanto permanecer sob Lentidão. Criaturas fora da área passam automaticamente no teste. Você pode excluir da Lentidão um número de criaturas igual ao seu modificador de Inteligência.\n\nVocê pode encerrar o efeito em seu turno para descongelar a área. Depois de usar esta característica, não pode usá-la novamente até concluir um descanso longo.",
+      "page": 13,
+      "sourceTitle": "Spellblade v1.3 — KibblesTasty — Lâmina de Geada",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

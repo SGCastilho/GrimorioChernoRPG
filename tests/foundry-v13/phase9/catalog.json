@@ -1,0 +1,75 @@
+{
+  "schema": "grimorio-foundry-phase9-catalog",
+  "version": 1,
+  "generatedFor": {
+    "foundry": "13.351",
+    "dnd5e": "5.3.3",
+    "importer": "0.5.0",
+    "grimorio": "5.21.0"
+  },
+  "packageProfile": "foundry13-dnd5e533-grimorio-class-package-v1",
+  "packageSchema": "grimorio-foundry-class-package@1",
+  "summary": {
+    "bundles": 401,
+    "classes": 24,
+    "subclasses": 377,
+    "features": 2370,
+    "specialClasses": 5,
+    "specialSubclasses": 30
+  },
+  "fullCatalogFile": "packages/catalogo-completo.json",
+  "samples": [
+    {
+      "id": "barbarian",
+      "name": "Bárbaro",
+      "file": "packages/classe-barbarian.json",
+      "summary": {
+        "bundles": 18,
+        "classes": 1,
+        "subclasses": 17,
+        "features": 93,
+        "specialClasses": 0,
+        "specialSubclasses": 0
+      }
+    },
+    {
+      "id": "dragoneer",
+      "name": "Cavaleiro Dracônico",
+      "file": "packages/classe-dragoneer.json",
+      "summary": {
+        "bundles": 13,
+        "classes": 1,
+        "subclasses": 12,
+        "features": 86,
+        "specialClasses": 1,
+        "specialSubclasses": 12
+      }
+    },
+    {
+      "id": "bender-ryoko",
+      "name": "Dobrador",
+      "file": "packages/classe-bender.json",
+      "summary": {
+        "bundles": 5,
+        "classes": 1,
+        "subclasses": 4,
+        "features": 30,
+        "specialClasses": 1,
+        "specialSubclasses": 4
+      }
+    },
+    {
+      "id": "blood-minister-somnus",
+      "name": "Ministro de Sangue",
+      "file": "packages/classe-blood-minister.json",
+      "summary": {
+        "bundles": 9,
+        "classes": 1,
+        "subclasses": 8,
+        "features": 56,
+        "specialClasses": 1,
+        "specialSubclasses": 8
+      }
+    }
+  ]
+}

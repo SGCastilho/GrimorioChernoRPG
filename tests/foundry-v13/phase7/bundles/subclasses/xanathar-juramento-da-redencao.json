@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-juramento-da-redencao",
+    "identifier": "xanathar-juramento-da-redencao",
+    "name": "Juramento da Redenção",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "55–56",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 55
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "O Juramento da Redenção estabelece um caminho difícil ao paladino, ele exige que o guerreiro sagrado use a violência apenas como último recurso. Paladinos que se dedicam para este juramento acreditam que qualquer pessoa possa ser redimida e que o caminho da benevolência e da justiça é aquele que qualquer pessoa pode caminhar. Esses paladinos enfrentam criaturas malignas com a esperança de transformar seus inimigos na luz, e eles matam seus inimigos somente quando tal ação claramente salvará outras vidas. Os paladinos que seguem esse caminho são conhecidos como redentores. Os redentores são idealistas, eles não são tolos. Os redentores sabem que os mortos-vivos, demônios, diabos e outras ameaças sobrenaturais podem ser inerentemente malignos. Contra tais criaturas, os paladinos que seguem este juramento, trazem a ira completa de suas armas e magias. No entanto, os redentores ainda rezam para que, um dia, até criaturas malignas, encontrarão a sua própria redenção.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-juramento-da-redencao",
+        "title": "Magias do Juramento da Redenção",
+        "page": 55,
+        "description": "Magias adicionais concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Santuário; Sono"
+          },
+          {
+            "level": "5º",
+            "spells": "Imobilizar Pessoa; Acalmar Emoções"
+          },
+          {
+            "level": "9º",
+            "spells": "Contramágica; Padrão Hipnótico"
+          },
+          {
+            "level": "13º",
+            "spells": "Esfera Resiliente de Otiluke; Pele Rochosa"
+          },
+          {
+            "level": "17º",
+            "spells": "Imobilizar Monstro; Muralha de Energia"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 55
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-juramento-da-redencao.feature.dogmas-da-redencao.l3.1",
+      "name": "DOGMAS DA REDENÇÃO",
+      "level": 3,
+      "description": "Os princípios do Juramento da Redenção mantêm um paladino com um alto padrão de paz e justiça. Paz. A violência é uma arma de último recurso. Diplomacia e compreensão são os caminhos para a paz duradoura. Inocência. Todas as pessoas começam a viver em um estado inocente, e é o meio ambiente deles ou a influência das forças das trevas que as levam ao mal. Definindo um exemplo apropriado e trabalhando para curar as feridas de um mundo profundamente imperfeito, você pode ajustar qual quer um no caminho justo. Paciência. A mudança leva tempo. Aqueles que caminharam pelo caminho dos ímpios devem receber lembretes para mantê-los honestos e verdadeiros. Uma vez que você plantou a semente da justiça em uma criatura, você deve trabalhar dia após dia para permitir que essa semente sobreviva e floresça. Sabedoria. Seu coração e mente devem permanecer claros, pois eventualmente você será forçado a admitir a derrota. Embora toda criatura possa ser redimida, alguns estão tão aprofundados no caminho do mal, que você não tem mais escolha do que acabar com suas vidas pelo bem maior. Qualquer ação desse tipo deve ser cuidadosamente ponderada e as conseqüências completamente entendidas, mas uma vez que você tomou a decisão, siga com ela sabendo que este é seu caminho. CARACTERÍSTICAS DO JURAMENTO DA RENDENCÃO Nívelde Paladino Características Magias de Juramento, Canalizar Divindade Aura do Guardião (3 m) Espírito Protetor Aura do Guardião (9 m) Emissário da Rendenção",
+      "page": 55,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-juramento-da-redencao.feature.magias-de-juramento.l3.1",
+      "name": "MAGIAS DE JURAMENTO",
+      "level": 3,
+      "description": "Você ganha magias de juramento nos níveis de paladino listados na tabela de Juramento de Redenção. Veja as características da classe de Juramento Sagrado para saber como os feitiços do juramento funcionam.",
+      "page": 56,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-juramento-da-redencao.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Quando você segue este juramento no 3° nível, você ganha as seguintes duas opções de Canalização Divina. Emissário da Paz. Você pode usar sua Canalização Divina para aumentar sua presença com o poder divino. Como ação bônus, você concede um bônus de +5 ao teste de Carisma (Persuasão) pelos próximos 1 O minutos. Repreendendo a Violência. Você pode usar sua Canalização Divina para repreender aqueles que usam a violência. Imediatamente após um atacante a até 9 metros de você, causar danos com um ataque contra uma criatura diferente de você, você pode usar sua reação para forçar o atacante a fazer um teste de resistência de sabedoria. Caso falhe no teste, o atacante recebe dano radiante igual ao dano que acabou de fazer. Em sucesso, recebe metade do dano.",
+      "page": 56,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-juramento-da-redencao.feature.aura-do-guardiao.l7.1",
+      "name": "AURA DO GUARDIÃO",
+      "level": 7,
+      "description": "PALADINOOA REDENCÁO A partir do 7° nível, você pode proteger os outros de danos ao custo de sua própria saúde. Quando uma criatura dentro de 3 metros de você receber dano, você pode usar sua reação para magicamente, tire esse dano, ao invés d'aquela criatura. Esta característica não transfere quaisquer outros efeitos que possam acompanhar o dano, e esse dano não pode ser reduzido de forma alguma. No 18° nível, o alcance desta aura aumenta para 9 metros.",
+      "page": 56,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-juramento-da-redencao.feature.espirito-protetor.l15.1",
+      "name": "ESPÍRITO PROTETOR",
+      "level": 15,
+      "description": "A partir do 15° nível, uma presença sagrada repara suas feridas na batalha. Você recupera pontos de vida iguais a 1d6 + metade do seu nível de paladino se você terminar o seu turno em combate com menos da metade de seus pontos de vida restantes e você não estiver incapacitado.",
+      "page": 56,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-juramento-da-redencao.feature.emissario-da-redencao.l20.1",
+      "name": "EMISSÁRIO DA REDENÇÃO",
+      "level": 20,
+      "description": "No 20° nível, você se torna um avatar da paz, o que lhe dá dois benefícios: • Você tem resistência a todos os danos causados por outras criaturas (seus ataques, feitiços e outros efeitos). • Sempre que uma criatura atingir você com um ataque, ela recebe dano radiante igual à metade do dano que você recebe. Se você atacar uma criatura, conjurar uma magia sobre ela, ou causar danos a ela p9r qualquer meio, além dessa característica, nenhum desses benefícios funciona contra essa criatura até você terminar um descanso longo.",
+      "page": 56,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-sword-saint-retia-way-of-the-beast-slayer",
+    "identifier": "bbb-sword-saint-retia-way-of-the-beast-slayer",
+    "name": "Caminho do Matador de Bestas",
+    "originalName": "Way of the Beast Slayer",
+    "aliases": [
+      "Way of the Beast Slayer"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "125",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 125
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Um caçador de monstruosidades, bestas, alienígenas e criaturas de fora do mundo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 125
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-beast-slayer.feature.estilo-de-luta-matador.l3.1",
+      "name": "ESTILO DE LUTA: MATADOR",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Matador.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-beast-slayer.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "Você recebe as seguintes Técnicas de Foco.\n\nMATADOR DE BESTAS. Ao atingir uma besta, monstruosidade ou aberração com ataque de arma corpo a corpo, pode gastar Pontos de Foco até metade de seu bônus de proficiência, arredondado para cima, mínimo 1. Para cada ponto gasto, causa 2d6 de dano adicional do mesmo tipo da arma.\n\nAPOSTA DO CAÇADOR. Quando tiver vantagem ou desvantagem numa jogada de ataque ou salvaguarda e ambos os d20 forem 10 ou mais, ou ambos forem menores que 10, pode gastar 1 Foco para transformar a rolagem em acerto ou sucesso automático.\n\nMÉTODO CONHECIDO. Quando vir uma criatura sofrer dano ao qual seja resistente, use reação e gaste 1 Foco para identificar a resistência e desenvolver uma contramedida. Por 1 minuto, quando você causar àquele alvo o mesmo tipo de dano, ele sofre o dano normalmente, ignorando a resistência.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-beast-slayer.feature.kit-do-cacador-sombrio.l6.1",
+      "name": "KIT DO CAÇADOR SOMBRIO",
+      "level": 6,
+      "description": "Como ação, pode produzir os efeitos de arma infundida sem espaço nem concentração, mas por apenas 10 minutos. Usos por Descanso Longo iguais ao seu bônus de proficiência. Ao fazê-lo, pode gastar Pontos de Foco até seu bônus de proficiência para aumentar o nível efetivo da magia em 1 por ponto. Produzir o efeito novamente encerra qualquer uso anterior desta característica, e a arma só recebe os benefícios enquanto estiver sendo empunhada por você.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-beast-slayer.feature.refinamento-agucado.l11.1",
+      "name": "REFINAMENTO AGUÇADO",
+      "level": 11,
+      "description": "Escolha uma perícia para ganhar proficiência e outra para ganhar Especialização. Em ambas, pode usar Sabedoria no lugar do atributo normalmente associado, representando domínio intuitivo dessas habilidades.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-beast-slayer.feature.todos-sao-presas.l14.1",
+      "name": "TODOS SÃO PRESAS",
+      "level": 14,
+      "description": "Quando atingir um alvo com sua Arma Santa sintonizada, ele sempre qualifica para Matador de Bestas, independentemente do tipo de criatura. Além disso, quando usar a técnica, o dano é calculado como se tivesse gasto o dobro dos Pontos de Foco realmente gastos; os pontos virtuais extras ignoram o limite inicial da técnica.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sword-saint-retia-way-of-the-beast-slayer.feature.tornar-se-a-besta.l17.1",
+      "name": "TORNAR-SE A BESTA",
+      "level": 17,
+      "description": "Depois de dedicar-se à caça de todas as bestas, você perde parte de sua humanidade. Seu tipo de criatura deixa de ser humanoide ou os tipos de sua raça e passa a ser besta. Você também se torna proficiente em todas as salvaguardas.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

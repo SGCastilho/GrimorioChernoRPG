@@ -1,0 +1,166 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-fighter-heart-of-focus",
+    "identifier": "bbb-fighter-heart-of-focus",
+    "name": "Coração do Foco",
+    "originalName": "Heart of Focus",
+    "aliases": [
+      "Heart of Focus"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "105",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 105
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Um combatente heroico que apoia e encoraja seus aliados em situações desesperadoras.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 105
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-fighter-heart-of-focus.feature.grande-comando.l3.1",
+      "name": "GRANDE COMANDO",
+      "level": 3,
+      "description": "Você pode realizar a ação Ajudar como ação bônus.",
+      "page": 105,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-heart-of-focus.feature.surto-unificado.l3.1",
+      "name": "SURTO UNIFICADO",
+      "level": 3,
+      "description": "Quando usa Surto de Ação, cada aliado a até 9 m pode escolher um dos benefícios: receber PV temporários iguais ao seu nível de guerreiro + 5; usar a reação para mover-se até metade do próprio deslocamento sem provocar ataques de oportunidade; ou usar a reação para fazer um ataque com arma ou conjurar um truque com tempo de conjuração de 1 ação.",
+      "page": 105,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-heart-of-focus.feature.moral-do-grupo.l7.1",
+      "name": "MORAL DO GRUPO",
+      "level": 7,
+      "description": "Quando usa Retomar o Fôlego, cada aliado a até 3 m recupera metade dos PV que você recuperar com a característica.",
+      "page": 105,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-heart-of-focus.feature.taticas-de-matilha.l7.1",
+      "name": "TÁTICAS DE MATILHA",
+      "level": 7,
+      "description": "Quando realiza um ataque com arma contra um alvo que esteja dentro do alcance corpo a corpo de um de seus aliados não incapacitados, você faz o ataque com vantagem.",
+      "page": 105,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-heart-of-focus.feature.presenca-inabalavel.l10.1",
+      "name": "PRESENÇA INABALÁVEL",
+      "level": 10,
+      "description": "Uma criatura morrendo a até 4,5 m de você não cai no chão e pode mover-se normalmente. Além disso, enquanto permanecer nessa distância, tem vantagem em salvaguardas contra a morte.",
+      "page": 105,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-heart-of-focus.feature.taticas-aflitivas.l15.1",
+      "name": "TÁTICAS AFLITIVAS",
+      "level": 15,
+      "description": "Seus aliados têm vantagem em ataques contra criaturas que estejam dentro de seu alcance corpo a corpo.",
+      "page": 105,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-fighter-heart-of-focus.feature.furia-pelos-caidos.l18.1",
+      "name": "FÚRIA PELOS CAÍDOS",
+      "level": 18,
+      "description": "Quando um aliado morto ou com 0 PV estiver a até 9 m, você pode usar sua ação bônus para fazer dois ataques com arma, ou um ataque com arma com vantagem contra uma criatura hostil.",
+      "page": 105,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

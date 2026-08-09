@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-alma-favorecida",
+    "identifier": "xanathar-alma-favorecida",
+    "name": "Alma Favorecida",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "34",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 34
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Às vezes, a centelha da magia que alimenta um feiticeiro vem de uma fonte divina que brilha dentro da alma. Ter uma alma tão abençoada é um sinalde que sua mágica inata pode vir de uma conexão familiar distante, mas poderosa, a um ser divino. Talvez seu antepassado fosse um anjo, transformado em um mortal e enviado para lutar em nome de Deus. Ou o seu nascimento pode se alinhar com uma antiga profecia, marcando você como servo dos deuses ou um escolhido portador da magia divina. Um Alma Favorecida, com um magnetismo natural, é visto como uma ameaça por algumas hierarquias religiosas. Como um estranho que domina o poder sagrado, um Alma Favorecida pode minar uma ordem existente, reivindicando uma ligação direta com o divino. Em algumas culturas, somente aqueles que podem reivindicar o poder de um Alma Favorecida pode comandar o poder religioso. Nessas terras, as posições eclesiásticas são dominadas por algumas linhagens e preservadas ao longo das gerações.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 34
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-alma-favorecida.feature.magia-divina.l1.1",
+      "name": "MAGIA DIVINA",
+      "level": 1,
+      "description": "Seu vínculo com o divino permite que você aprenda magias da classe clérigo. Quando o sua característica como conjurador permite que você aprenda ou substitua um truque ou uma magia de feiticeiro de 1° nível ou superior, você pode escolher a nova magia da lista de magias do clérigo ou da lista de magias do feiticeiro. Você deve obedecer todas as restrições para selecionar a magia, e isso a toma uma magia de feiticeiro para você. Além disso, escolha um alinhamento pela fonte do seu poder divino: o bem, o mal, a ordem, o caos ou a neutralidade. Você aprende uma magia adicional com base nessa afinidade, como mostrado abaixo. É uma magia de feiticeiro para você, mas não conta para o seu número de magias conhecidas. Se você substituir mais tarde essa magia, você deve substitui-la por uma magia da lista de magias do clérigo. Afinidade Bem Ma10rdem Caos Neutralidade Magia curar ferimentos infligirferimentos benção perdição proteção contra o mal e o bem",
+      "page": 34,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-alma-favorecida.feature.favorecido-pelos-deuses.l1.1",
+      "name": "FAVORECIDO PELOS DEUSES",
+      "level": 1,
+      "description": "A partir do 1º nível, o poder divino protege seu destino. Se você falhar em um teste de resistência ou errar um ataque, pode rolar 2d4 e adicioná-lo ao total, possivelmente alterando o resultado. Depois de usar essa característica, não pode usá-la novamente até terminar um descanso curto ou longo.",
+      "page": 34,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-alma-favorecida.feature.cura-fortalecida.l6.1",
+      "name": "CURA FORTALECIDA",
+      "level": 6,
+      "description": "A partir do 6° nível, a energia divina que o percorre pode fortalecer as magias de cura. Sempre que você ou um aliado dentro de 1,5 metros de alcance rola dados para determinar o número de pontos de vida que uma magia restaura, você pode gastar 1 ponto de feitiçaria para repetir qualquer número desses dados uma vez, desde que você não esteja incapacitado. Você pode usar essa característica apenas uma vez por turno.",
+      "page": 34,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-alma-favorecida.feature.asas-transcendentais.l14.1",
+      "name": "ASAS TRANSCENDENTAIS",
+      "level": 14,
+      "description": "A partir do 14° nível, você pode usar uma ação bônus para manifestar um par de asas espectrais em suas costas. Enquanto as asas estão presentes, você tem um deslocamento de voo de 9 metros. As asas duram até que você esteja incapacitado, morra, ou as desfaça com uma ação bônus. A afinidade que você escolheu para sua característica de Magia Divina determina a aparência das asas espectrais: asas de águia para o bem ou a ordem, asas de morcego para o mal ou o caos e asas da libélula para a neutralidade.",
+      "page": 34,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-alma-favorecida.feature.recuperacao-sublime.l18.1",
+      "name": "RECUPERAÇÃO SUBLIME",
+      "level": 18,
+      "description": "No 1 8° nível, você ganha a capacidade de superar lesões graves. Como uma ação bônus, quando tiver menos da metade de seus pontos de vida restantes, pode recuperar um número de pontos de vida igual ã metade dos seus pontos de vida máximos. Depois de usar essa característica, não pode usá-la novamente até terminar um longo descanso.",
+      "page": 34,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

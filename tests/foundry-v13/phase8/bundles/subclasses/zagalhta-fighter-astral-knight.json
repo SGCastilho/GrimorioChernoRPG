@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-fighter-astral-knight",
+    "identifier": "zagalhta-fighter-astral-knight",
+    "name": "Cavaleiro Astral",
+    "originalName": "Astral Knight",
+    "aliases": [
+      "Astral Knight"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "155",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 155
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Guerreiro que carrega metaforicamente uma estrela no espírito e manipula energia radiante para teleportar, proteger aliados, envolver armas em poder astral e explodir em brilho de nova.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 155
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-fighter-astral-knight.feature.surto-de-dobra.l3.1",
+      "name": "SURTO DE DOBRA",
+      "level": 3,
+      "description": "Ao usar Surto de Ação, escolha: teleportar para espaço desocupado visível a até 9 m e chegar invisível até atacar, conjurar ou início do próximo turno; ou dobrar seu deslocamento e receber aceleração 0-G igual ao dobro do deslocamento base até o início do próximo turno.",
+      "page": 155,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-fighter-astral-knight.feature.elo-de-energia-astral.l7.1",
+      "name": "ELO DE ENERGIA ASTRAL",
+      "level": 7,
+      "description": "Sempre que gastar 1 ponto de Maestria de Combate, criaturas escolhidas a até 6 m recebem PV temporários iguais a 1d6 × proficiência. Se repetir enquanto ainda os possuem, aumente esses PV em 5.",
+      "page": 155,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-fighter-astral-knight.feature.armamento-cosmico.l10.1",
+      "name": "ARMAMENTO CÓSMICO",
+      "level": 10,
+      "description": "Como ação, gaste 1 ponto de Maestria de Combate para produzir arma astral em nível igual à metade do nível de Guerreiro, máximo 9º. Seu atributo de conjuração é Força ou Constituição, à escolha.",
+      "page": 155,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-fighter-astral-knight.feature.manto-de-estrelas-dispersas.l15.1",
+      "name": "MANTO DE ESTRELAS DISPERSAS",
+      "level": 15,
+      "description": "Quando criatura perde por dano os PV temporários concedidos por Elo de Energia Astral, torna-se resistente a todo dano até o fim do próximo turno dela.",
+      "page": 155,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-fighter-astral-knight.feature.alma-nova.l18.1",
+      "name": "ALMA NOVA",
+      "level": 18,
+      "description": "Ao acertar ataque de arma, cause um dado de dano da arma adicional como dano radiante.",
+      "page": 155,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

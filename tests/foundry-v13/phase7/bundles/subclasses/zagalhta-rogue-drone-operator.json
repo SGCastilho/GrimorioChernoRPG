@@ -1,0 +1,291 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-rogue-drone-operator",
+    "identifier": "zagalhta-rogue-drone-operator",
+    "name": "Operador de Drone",
+    "originalName": "Drone Operator",
+    "aliases": [
+      "Drone Operator"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "167–168",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 167
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Especialista em tecnologia de drones que constrói um familiar mecânico Astran para reconhecimento, suporte tático, ataques espelhados e proteção em combate.",
+    "tables": [
+      {
+        "key": "table.1.aprimoramentos-de-drone",
+        "title": "Aprimoramentos de Drone",
+        "page": 167,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Aprimoramento"
+          },
+          {
+            "key": "effect",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Campo Antimagia (Traço)",
+            "effect": "O drone tem vantagem em salvaguardas contra efeitos mágicos; seus aliados a até 3 m dele também."
+          },
+          {
+            "name": "Elo de Batalha (Traço)",
+            "effect": "Quando dano reduziria o drone abaixo de 1 PV ou o mataria instantaneamente, você pode reduzir esse dano a 0 e sofrer metade do dano que ele receberia. Exige linha de visão e que você não esteja incapacitado."
+          },
+          {
+            "name": "Inversão de Fase (Ação do Drone)",
+            "effect": "Você e o drone se teleportam, trocando de lugar; você pode fazer imediatamente um ataque de arma como parte dessa ação."
+          },
+          {
+            "name": "Cintilação Reversa (Reação)",
+            "effect": "Quando dano o reduziria a 0 PV ou o mataria, teleporte o drone para espaço a até 3 m de você e faça-o sofrer o dano. Até o início do seu próximo turno, ele continua recebendo por você e não pode reduzir nem resistir a esse dano."
+          },
+          {
+            "name": "Cortina de Fumaça (Ação do Drone)",
+            "effect": "O drone cria uma esfera de fumaça de 3 m de raio centrada nele; criaturas ficam fortemente obscurecidas. Vento forte dispersa; caso contrário dura 1 minuto ou até nova utilização."
+          },
+          {
+            "name": "Impulso de Velocidade (Traço)",
+            "effect": "Voo (pairado) +9 m e aceleração 0-G +18 m."
+          }
+        ]
+      },
+      {
+        "key": "table.2.drone-astran-bloco-de-estatisticas",
+        "title": "Drone Astran — Bloco de Estatísticas",
+        "page": 168,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "field",
+            "label": "Campo"
+          },
+          {
+            "key": "value",
+            "label": "Valor"
+          }
+        ],
+        "rows": [
+          {
+            "field": "Tamanho/Tipo",
+            "value": "Construto Pequeno"
+          },
+          {
+            "field": "CA",
+            "value": "10 + metade do nível de Ladino (arredondado para cima)"
+          },
+          {
+            "field": "PV",
+            "value": "5 + (5 × nível de Ladino)"
+          },
+          {
+            "field": "Deslocamento",
+            "value": "voo (pairado) 9 m; aceleração 0-G 27 m"
+          },
+          {
+            "field": "Atributos",
+            "value": "For 10; Des 15 (+2 + metade do nível de Ladino); Con 10"
+          },
+          {
+            "field": "Imunidades",
+            "value": "cego, exaustão, paralisado, envenenado, inconsciente"
+          },
+          {
+            "field": "Sentidos",
+            "value": "visão no escuro 18 m; Percepção passiva igual à do operador"
+          },
+          {
+            "field": "Idiomas",
+            "value": "compreende o operador, mas não fala"
+          },
+          {
+            "field": "Espelho Tático",
+            "value": "Ao ser conjurado, copia resistências, imunidades e sentidos do operador; só atualiza quando reconjurado."
+          },
+          {
+            "field": "Monitor de Visão",
+            "value": "Como ação, o operador projeta seus sentidos no drone até o início do próximo turno, podendo prolongar com ação bônus. Não perde os próprios sentidos. Termina se o drone ficar a mais de 150 m."
+          },
+          {
+            "field": "Mente Zero",
+            "value": "Não é afetado por efeitos que exijam salvaguardas de Inteligência, Sabedoria ou Carisma."
+          }
+        ]
+      },
+      {
+        "key": "table.3.drone-astran-acoes",
+        "title": "Drone Astran — Ações",
+        "page": 168,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Ação"
+          },
+          {
+            "key": "effect",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Impulso de Ataque",
+            "effect": "Usa Ajudar para dar vantagem ao operador em ataque; quando a vantagem vier dessa ação, o ataque causa dano adicional igual ao nível de Ladino."
+          },
+          {
+            "name": "Golpe Réplica",
+            "effect": "Replica holograficamente um ataque do operador, usando estatísticas, dano e propriedades dele."
+          },
+          {
+            "name": "Investida Mach",
+            "effect": "Dobra os deslocamentos do drone até o fim do turno e ele move até metade de um deles."
+          },
+          {
+            "name": "Gerador de Escudo",
+            "effect": "Escolha alvo a até 3 m. Na próxima vez que ele for atingido antes do próximo turno do drone, é tratado como resistente ao tipo que causaria a maior parcela do dano."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 167
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-rogue-drone-operator.feature.operador-de-drone-astran.l3.1",
+      "name": "OPERADOR DE DRONE ASTRAN",
+      "level": 3,
+      "description": "Ao terminar um Descanso Curto ou Longo, você produz um familiar que usa o bloco Drone Astran; qualquer Drone Astran anterior sob seu controle desaparece. O drone não possui turno próprio: move-se no seu turno conforme suas instruções, e você usa sua ação bônus para fazê-lo executar uma ação listada no bloco. Ele não pode realizar outras ações. Ataques feitos pelo drone contam como ataques seus, permitindo aplicar Ataque Furtivo por meio dele.",
+      "page": 167,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-rogue-drone-operator.feature.cintilacao-de-fase.l9.1",
+      "name": "CINTILAÇÃO DE FASE",
+      "level": 9,
+      "description": "Quando seu drone seria reduzido a 0 PV, use sua reação para fazê-lo desaparecer inofensivamente e evitar o dano. Ele permanece ausente até o início do seu próximo turno e reaparece em um espaço desocupado a até 3 m de você.",
+      "page": 167,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-rogue-drone-operator.feature.guardiao-estelar.l9.1",
+      "name": "GUARDIÃO ESTELAR",
+      "level": 9,
+      "description": "Enquanto o drone estiver a até 3 m de você, ataques contra você têm desvantagem. Criaturas invisíveis a até 3 m do drone não obtêm benefícios contra você por estarem invisíveis.",
+      "page": 167,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-rogue-drone-operator.feature.aprimoramento-de-drone.l13.1",
+      "name": "APRIMORAMENTO DE DRONE",
+      "level": 13,
+      "description": "Escolha dois Aprimoramentos de Drone da tabela. Eles são permanentes enquanto não forem substituídos por característica posterior.",
+      "page": 167,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-rogue-drone-operator.feature.unidade-secundaria.l17.1",
+      "name": "UNIDADE SECUNDÁRIA",
+      "level": 17,
+      "description": "Ao conjurar seu drone, você cria um segundo Drone Astran. Quando usa a ação bônus para ordenar uma ação a um de seus drones, pode fazer cada drone executar uma ação, que não precisa ser a mesma.",
+      "page": 167,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-rogue-drone-operator.feature.especialista-em-aprimoramento.l17.1",
+      "name": "ESPECIALISTA EM APRIMORAMENTO",
+      "level": 17,
+      "description": "Escolha um Aprimoramento de Drone adicional. A cada Descanso Longo, pode trocar um dos aprimoramentos de seus drones por outro.",
+      "page": 167,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-dominio-da-forja",
+    "identifier": "xanathar-dominio-da-forja",
+    "name": "Domínio da Forja",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "23–24",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 23
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Os deuses da forja são patronos de artistas que trabalham com metal, de um ferreiro humilde que mantém uma aldeia em ferraduras e lãminas de arado para o poderoso artesão elfo, cujas flechas de mithralde ponta de diamante derrubaram os senhores demoníacos. Os deuses da forja ensinam que, com paciência e trabalho árduo, até mesmo o metal mais intratável pode ser transformado de um nódulo para um objeto belamente forjado. Os clérigos dessas divindades procuram objetos perdidos pelas forças da escuridão, liberam as minas invadidas pelos minérios e descobrem materiais raros e maravilhosos necessários para criar potentes itens mágicos. Os seguidores desses deuses orgulham-se de seu trabalho e estão dispostos a criar e usar armaduras pesadas e armas poderosas para protegê-los. As divindades deste domínio incluem Gond, Reorx, Onatar, Moradin, Hephaestus e Goibhniu.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio-da-forja",
+        "title": "Magias do Domínio da Forja",
+        "page": 23,
+        "description": "Magias adicionais concedidas ou disponibilizadas pela subclasse nos níveis indicados.",
+        "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Identificação; Destruição Lancinante"
+          },
+          {
+            "level": "3º",
+            "spells": "Esquentar Metal; Arma Mágica"
+          },
+          {
+            "level": "5º",
+            "spells": "Arma Elemental; Proteção contra Energia"
+          },
+          {
+            "level": "7º",
+            "spells": "Fabricar; Muralha de Fogo"
+          },
+          {
+            "level": "9º",
+            "spells": "Animar Objetos; Criação"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 23
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-dominio-da-forja.feature.magias-de-dominio.l1.1",
+      "name": "MAGIAS DE DOMÍNIO",
+      "level": 1,
+      "description": "Você ganha magias de domínio nos níveis de clérigo listados na tabela de Magias do Domínio da Forja. Veja a característica de classe Domínio Divino para ver como magias de domínio funcionam.",
+      "page": 23,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-forja.feature.proficiencia-bonus.l1.1",
+      "name": "PROFICIÊNCIA BÔNUS",
+      "level": 1,
+      "description": "Quando escolhe esse domínio no 1 ° nível, você ganha proficiência com armadura pesada e ferramentas de ferreiro.",
+      "page": 24,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-forja.feature.bencao-da-forja.l1.1",
+      "name": "BÊNÇÃO DA FORJA",
+      "level": 1,
+      "description": "No 1° Nível, você ganha a habilidade de imbuir magica em uma arma ou armadura. No fim de um descanso longo, pode tocar um objeto não mágico que seja uma armadura ou uma arma simples ou marcial. Até o fim do seu próximo descanso longo ou até você morrer, o objeto se toma um item mágico, garantindo um bônus de + 1 para sua CA se for uma armadura ou + 1 de bônus nas rolagens de ataque e dano dessa arma. Uma vez utilizado essa característica, não pode usá­ la novamente até terminar um descanso longo.",
+      "page": 24,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-forja.feature.canalizar-divindade-bencao-do-artesao.l2.1",
+      "name": "CANALIZAR DIVINDADE: BÊNÇÃO DO ARTESÃO",
+      "level": 2,
+      "description": "Começando no 2° nível, você pode usar seu Canalizar Divindade para criar itens simples. Você conduz um ritualde uma hora de duração que cria um item não mágico que precisa incluir algum metal: Uma arma simples ou marcial, uma armadura, 10 peças de munição, um conjunto de ferramentas ou outro objeto metálico (ver capítulo 5, \"Equipamento\", no Livro do Jogador, para exemplo desses itens). A criação é completada no finalda hora, aglutinando-se em um espaço desocupado da sua escolha em uma superficie dentro de 1,5 metros de você. O que você criar não pode valer mais do que 100 po. Como parte desse ritual, você precisa dispor de metal, cujo pode incluir moedas, com o valor igual à criação. O metal irreversivelmente une-se e se transforma na sua criação no fim do ritual, magicamente formando até partes não metais da criação. O ritual pode criar uma duplicata de um item não mágico que contem metal, como uma chave, se você possuir o originaldurante o ritual.",
+      "page": 24,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-forja.feature.alma-da-forja.l6.1",
+      "name": "ALMA DA FORJA",
+      "level": 6,
+      "description": "Começando no 6° nível, sua maestria em forja garante habilidades especiais: • Você ganha resistência a dano de fogo. • Enquanto vestindo armadura pesada, você ganha + 1 de bônus em CA.",
+      "page": 24,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-forja.feature.impacto-divino.l8.1",
+      "name": "IMPACTO DIVINO",
+      "level": 8,
+      "description": "No 8° nível, você ganha a habilidade de infundir seus ataques com armas com o poder incandescente da forja. Uma vez por turno, quando acertar uma criatura com um ataque com arma, pode fazer o ataque causar um dano extra de 1d8 de dano de fogo. Ao alcançar o 14º nível, o dano é aumentado para 2d8. CLÉRIGO DA SEPULTURA",
+      "page": 24,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-dominio-da-forja.feature.santo-da-forja-e-fogo.l17.1",
+      "name": "SANTO DA FORJA E FOGO",
+      "level": 17,
+      "description": "No 1 7° nível, você é abençoado com afinidade ao fogo e metal e se toma mais poderoso: • Você ganha imunidade a dano de fogo. • Enquanto vestindo armadura pesada, você tem resistência a dano cortante, concussão e perfurante de ataques não mágicos.",
+      "page": 24,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

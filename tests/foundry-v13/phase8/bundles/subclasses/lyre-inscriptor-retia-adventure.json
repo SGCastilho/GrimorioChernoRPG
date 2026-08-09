@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-adventure",
+    "identifier": "lyre-inscriptor-retia-adventure",
+    "name": "Aventura",
+    "originalName": "Adventure",
+    "aliases": [
+      "Adventure"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "364",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 364
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Sua escrita celebra jornadas, heróis, locais distantes e histórias que tiram os protagonistas da segurança para lançá-los em um mundo turbulento. Você se sente mais inspirado quando descreve movimento, risco e feitos ousados.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 364,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Heroísmo"
+          },
+          {
+            "level": "3º",
+            "spells": "Aprimorar Habilidade"
+          },
+          {
+            "level": "5º",
+            "spells": "Salto Trovejante"
+          },
+          {
+            "level": "7º",
+            "spells": "Proteção contra a Morte"
+          },
+          {
+            "level": "9º",
+            "spells": "Vento Cortante"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 364
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-adventure.feature.contra-todas-as-probabilidades.l1.1",
+      "name": "CONTRA TODAS AS PROBABILIDADES",
+      "level": 1,
+      "description": "Perigo e infortúnio são apenas a preparação para uma fuga no último instante. Quando você obtiver resultado 1 em um dado de uma jogada de ataque, teste de atributo, salvaguarda ou jogada de dano, pode rerrolar esse dado uma vez e deve usar o novo resultado.",
+      "page": 364,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-adventure.feature.armado-com-conhecimento.l5.1",
+      "name": "ARMADO COM CONHECIMENTO",
+      "level": 5,
+      "description": "Você escreve sobre indivíduos heroicos e usa a influência de seu patrono para assumir qualidades semelhantes. Você recebe automaticamente a Inscrição Fantasia Aventureira, sem custo de Marcas de Inscrição. Se já a possuía, recupera as Marcas de Inscrição investidas nela e pode escolher uma nova Inscrição. Em qualquer caso, Fantasia Aventureira não conta no seu limite de Inscrições.",
+      "page": 364,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-adventure.feature.ataque-extra.l8.1",
+      "name": "ATAQUE EXTRA",
+      "level": 8,
+      "description": "Quando realiza a ação Atacar, você pode atacar duas vezes em vez de uma.",
+      "page": 364,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-adventure.feature.momento-de-gloria.l12.1",
+      "name": "MOMENTO DE GLÓRIA",
+      "level": 12,
+      "description": "Como ação, você pode gastar um uso de Consulta e escolher um número de criaturas a até 9 metros igual ao seu bônus de proficiência. Cada alvo recebe pontos de vida temporários iguais ao seu nível de Inscritor; esses pontos desaparecem quando a criatura termina um Descanso Curto ou Longo. Enquanto possuir esses pontos de vida temporários, sempre que fizer uma jogada de ataque ou salvaguarda, rola 1d4 e soma o resultado à jogada.",
+      "page": 364,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-adventure.feature.aposta-suprema.l20.1",
+      "name": "APOSTA SUPREMA",
+      "level": 20,
+      "description": "Uma vez por Descanso Longo, você pode conjurar Invulnerabilidade sem gastar espaço de magia nem componentes materiais. A magia pode ter apenas você como alvo, independentemente de outros itens, efeitos ou características. Enquanto estiver sob seus efeitos, quando realiza a ação Atacar, pode atacar três vezes em vez de uma.",
+      "page": 364,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

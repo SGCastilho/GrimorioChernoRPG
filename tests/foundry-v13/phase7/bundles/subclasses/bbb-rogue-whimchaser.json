@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-rogue-whimchaser",
+    "identifier": "bbb-rogue-whimchaser",
+    "name": "Caçador de Caprichos",
+    "originalName": "Whimchaser",
+    "aliases": [
+      "Whimchaser"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "120–121",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 120
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Um ladino que vive como deseja, guiado momento a momento pela própria sorte.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 120
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-rogue-whimchaser.feature.cara-ou-coroa.l3.1",
+      "name": "CARA OU COROA",
+      "level": 3,
+      "description": "Você possui usos de Cara ou Coroa iguais ao número de dados de Ataque Furtivo que possui, recuperados no Descanso Longo; também recupera um uso no Descanso Curto. Quando falha ou erra uma jogada de ataque ou salvaguarda, pode gastar um uso para rolar outro d20. Com 11 ou mais, acerta o ataque ou passa na salvaguarda automaticamente; se for ataque, ele também qualifica automaticamente para Ataque Furtivo caso ainda não o tenha usado no turno. Com 10 ou menos, falha automaticamente e fica lento até o início de seu próximo turno, não podendo usar Cara ou Coroa nesse período. Se falhar dessa forma, o uso não é gasto.",
+      "page": 120,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-whimchaser.feature.sorte-arrogante-pura.l3.1",
+      "name": "SORTE ARROGANTE PURA",
+      "level": 3,
+      "description": "Enquanto não usar armadura, pode calcular sua CA como 10 + modificador de Destreza + modificador de Carisma. Enquanto usar essa CA, pode usar Carisma no lugar de Destreza nas jogadas de ataque e dano com armas e pode fazer salvaguardas de Carisma no lugar de salvaguardas de Destreza, ainda contando como Destreza para efeitos como Evasão.",
+      "page": 120,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-whimchaser.feature.critico-aprimorado-acaso.l9.1",
+      "name": "CRÍTICO APRIMORADO (ACASO)",
+      "level": 9,
+      "description": "Com armas à distância ou armas com as propriedades leve ou acuidade, você obtém acerto crítico com 19 ou 20 no d20. Se usar Cara ou Coroa e o novo d20 cair dentro de seu intervalo de crítico, o acerto automático também é crítico.",
+      "page": 120,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-whimchaser.feature.sorriso-vencedor.l9.1",
+      "name": "SORRISO VENCEDOR",
+      "level": 9,
+      "description": "Você ganha proficiência em salvaguardas de Carisma.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-whimchaser.feature.enxergar-atraves-das-circunstancias.l13.1",
+      "name": "ENXERGAR ATRAVÉS DAS CIRCUNSTÂNCIAS",
+      "level": 13,
+      "description": "Quando ataca com arma à distância ou com uma arma de acuidade ou leve e o ataque não tem desvantagem, pode adicionar ao dano seu modificador de Destreza ou Carisma, à sua escolha, além do modificador já aplicado normalmente.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-rogue-whimchaser.feature.critico-superior-acaso.l17.1",
+      "name": "CRÍTICO SUPERIOR (ACASO)",
+      "level": 17,
+      "description": "Sob as mesmas condições de Crítico Aprimorado (Acaso), você obtém acerto crítico com 18, 19 ou 20 no d20. Esse intervalo também conta como seu intervalo de crítico para Cara ou Coroa.",
+      "page": 121,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

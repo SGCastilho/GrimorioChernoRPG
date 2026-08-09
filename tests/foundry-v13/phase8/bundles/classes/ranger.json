@@ -1,0 +1,1251 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+    "pages": "115–121",
+    "chapter": "Capítulo 3: Classes",
+    "page": 116
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "De aparência áspera e selvagem, um humano espreita sozinho através das sombras das árvores, caçando os orcs que ele sabe estarem planejando um assalto a uma fazenda próxima. Segurando uma espada curta em cada mão, ele se transforma em um vendaval de aço, talando um inimigo após o outro.\n\nApós se evadir de um cone de ar congelante, uma elfa encontra-se de pé e saca seu arco das costas, disparando uma flecha no dragão branco. Ignorando a onda de medo que emana do dragão, assim como ignorou o frio do seu sopro, ela envia uma flecha após a outro tentando encontrar as brechas entre as espessas escamas do dragão.\n\nErguendo sua mão para o alto, um meio-elfo assobia para o falcão que o circunda acima, chamando o pássaro de volta para o seu lado. Sussurrando instruções em Élfico, ele aponta para o urso-coruja que ele estava rastreando e envia o falcão para distrair a criatura enquanto ele prepara seu arco.\n\nLonge do alvoroço das cidades e vilas, passando das divisas que abrigam a fazendas mais longínquas dos horrores do ermo, entre as árvores densas de florestas sem trilhas e através das vastas planícies vazias, os patrulheiros mantem sua vigília interminável.\n\nGuerreiros da natureza, os patrulheiros se especializaram em caçar monstros que ameaçam as margens da civilização – assaltantes humanoides, bestas e monstruosidades devastadoras, gigantes terríveis e dragões mortais. Eles aprendem a rastrear suas presas como os predadores fazem, movendo-se silenciosamente nas florestas e se escondendo atrás de arbustos e pedregulhos. Os patrulheiros focam seu treinamento de combate em técnicas que sejam especialmente úteis contra seus inimigos favoritos específicos.\n\nGraças a sua familiaridade no ambiente selvagem, os patrulheiros adquiriram a habilidade de conjurar magias atreladas ao poder da natureza, similar ao que o druida faz. Suas magias, assim como suas habilidades de combate, enfatizam a velocidade, furtividade e caça. Os talentos e habilidades de um patrulheiro são afinados com o foco mortal na árdua tarefa de proteger as fronteiras.\n\nApesar de um patrulheiro ganhar a vida como um caçador, um guia ou um rastreador, a verdadeira vocação de um patrulheiro é defender as zonas periféricas da civilização das investidas de monstros e hordas de humanoides que vem das regiões selvagens. Em alguns lugares, os patrulheiros se reúnem em ordens secretas ou juntam forças com os círculos druídicos. Muitos patrulheiros, no entanto, são independentes até cometerem um erro, sabendo que, quando um dragão ou um bando de orcs ataca, um patrulheiro deve ser a primeira – e possivelmente a última – linha de defesa.\n\nEssa independência feroz faz dos patrulheiros ótimos aventureiros, já que eles são acostumados a vida longe do conforto de uma cama seca e banho quente. Confrontado com aventureiros mais urbanos que reclamam e choramingam sobre a dureza da vida no ambiente selvagem, os patrulheiros respondem com uma mistura de divertimento, frustração e compaixão. Mas, eles rapidamente aprendem que os outros aventureiros que podem carregar seus próprios fardos em uma luta contra os inimigos da civilização são dignos de qualquer encargo adicional. Gente mimada da cidade podem não saber como se alimentar ou encontrar água fresca nas florestas, mas eles compensam isso de outras maneiras.",
+    "hitDice": {
+      "raw": "d10",
+      "mode": "standard",
+      "number": 1,
+      "faces": 10
+    },
+    "primaryAbility": {
+      "raw": "Destreza e Sabedoria",
+      "abilityKeys": [
+        "dex",
+        "wis"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Força, Destreza",
+        "abilityKeys": [
+          "str",
+          "dex"
+        ]
+      },
+      "armor": "Armaduras leves, armaduras médias e escudos",
+      "weapons": "Armas simples e marciais",
+      "tools": "Nenhuma",
+      "skills": "Escolha três: Adestrar Animais, Atletismo, Furtividade, Intuição, Investigação, Natureza, Percepção ou Sobrevivência"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 116,
+      "text": "Como um patrulheiro, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d10 por nível de patrulheiro Pontos de Vida no 1° Nível: 10 + seu modificador de\n\nConstituição Pontos de Vida nos Níveis Seguintes: 1d10 (ou 6) +\n\nseu modificador de Constituição por nível de patrulheiro após o 1° PROFICIÊNCIAS Armaduras: Armaduras leves, armaduras médias,\n\nescudos Armas: Armas simples, armas marciais Ferramentas: Nenhuma\n\nTestes de Resistência: Força, Destreza Perícias: Escolha três dentre Adestrar Animais,\n\nAtletismo, Furtividade, Intuição, Investigação, Natureza, Percepção e Sobrevivência EQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) brunea ou (b) armadura de couro\n• (a) duas espadas curtas ou (b) duas armas simples\n\ncorpo-a-corpo\n• (a) um pacote de explorador ou (b) um pacote de\n\naventureiro\n• Um arco longo e uma aljava com 20 flechas"
+    },
+    "overview": [
+      {
+        "title": "PATRULHEIRO",
+        "page": 115,
+        "text": "De aparência áspera e selvagem, um humano espreita sozinho através das sombras das árvores, caçando os orcs que ele sabe estarem planejando um assalto a uma fazenda próxima. Segurando uma espada curta em cada mão, ele se transforma em um vendaval de aço, talando um inimigo após o outro.\n\nApós se evadir de um cone de ar congelante, uma elfa encontra-se de pé e saca seu arco das costas, disparando uma flecha no dragão branco. Ignorando a onda de medo que emana do dragão, assim como ignorou o frio do seu sopro, ela envia uma flecha após a outro tentando encontrar as brechas entre as espessas escamas do dragão.\n\nErguendo sua mão para o alto, um meio-elfo assobia para o falcão que o circunda acima, chamando o pássaro de volta para o seu lado. Sussurrando instruções em Élfico, ele aponta para o urso-coruja que ele estava rastreando e envia o falcão para distrair a criatura enquanto ele prepara seu arco.\n\nLonge do alvoroço das cidades e vilas, passando das divisas que abrigam a fazendas mais longínquas dos horrores do ermo, entre as árvores densas de florestas sem trilhas e através das vastas planícies vazias, os patrulheiros mantem sua vigília interminável."
+      },
+      {
+        "title": "CAÇADORES MORTAIS",
+        "page": 115,
+        "text": "Guerreiros da natureza, os patrulheiros se especializaram em caçar monstros que ameaçam as margens da civilização – assaltantes humanoides, bestas e monstruosidades devastadoras, gigantes terríveis e dragões mortais. Eles aprendem a rastrear suas presas como os predadores fazem, movendo-se silenciosamente nas florestas e se escondendo atrás de arbustos e pedregulhos. Os patrulheiros focam seu treinamento de combate em técnicas que sejam especialmente úteis contra seus inimigos favoritos específicos.\n\nGraças a sua familiaridade no ambiente selvagem, os patrulheiros adquiriram a habilidade de conjurar magias atreladas ao poder da natureza, similar ao que o druida faz. Suas magias, assim como suas habilidades de combate, enfatizam a velocidade, furtividade e caça. Os talentos e habilidades de um patrulheiro são afinados com o foco mortal na árdua tarefa de proteger as fronteiras."
+      },
+      {
+        "title": "AVENTUREIROS INDEPENDENTES",
+        "page": 115,
+        "text": "Apesar de um patrulheiro ganhar a vida como um caçador, um guia ou um rastreador, a verdadeira vocação de um patrulheiro é defender as zonas periféricas da civilização das investidas de monstros e hordas de humanoides que vem das regiões selvagens. Em alguns lugares, os patrulheiros se reúnem em ordens secretas ou juntam forças com os círculos druídicos. Muitos patrulheiros, no entanto, são independentes até cometerem um erro, sabendo que, quando um dragão ou um bando de orcs ataca, um patrulheiro deve ser a primeira – e possivelmente a última – linha de defesa.\n\nEssa independência feroz faz dos patrulheiros ótimos aventureiros, já que eles são acostumados a vida longe do conforto de uma cama seca e banho quente. Confrontado com aventureiros mais urbanos que reclamam e choramingam sobre a dureza da vida no ambiente selvagem, os patrulheiros respondem com uma mistura de divertimento, frustração e compaixão. Mas, eles rapidamente aprendem que os outros aventureiros que podem carregar seus próprios fardos em uma luta contra os inimigos da civilização são dignos de qualquer encargo adicional. Gente mimada da cidade podem não saber como se alimentar ou encontrar água fresca nas florestas, mas eles compensam isso de outras maneiras."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM PATRULHEIRO",
+        "page": 116,
+        "text": "Quando você for criar seu personagem patrulheiro, considere a natureza do treinamento que lhe concedeu suas capacidades particulares. Você treinou com um mentor exclusivo, viajando pelas florestas juntos até que você dominasse os modos de patrulheiro? Você abandonou seu aprendizado ou seu mentor foi assassinado – talvez pelo menos tipo de monstro que se tornou seu inimigo favorito? Ou talvez você tenha aprendido suas perícias como parte de um bando de patrulheiros afiliados a um círculo druídico, treinados em caminhos místicos assim como em conhecimento selvagem. Você pode ser autodidata, um recluso que aprendeu perícias de combate, rastreio e, até mesmo, conexões mágicas com a natureza devido a necessidade de sobreviver no ambiente selvagem.\n\nQual a fonte do seu ódio particular por um certo tipo de inimigo? Um monstro matou alguém que você amava ou destruiu sua vila natal? Ou você viu muita da destruição causada por esses monstros e se impeliu a acabar com suas depredações? Sua carreira como aventureiro é uma continuação do seu trabalho em proteger as fronteiras, ou uma mudança significativa? O que fez você se juntar a um bando de aventureiros? Você achou que seria desafiador ensinar novos aliados os caminhos da natureza, ou você apreciou a libertação da solidão que eles ofereceram?"
+      },
+      {
+        "title": "CONSTRUÇÃO RÁPIDA",
+        "page": 116,
+        "text": "Você pode construir um patrulheiro rapidamente seguindo essas sugestões. Primeiro, coloque seu valor de habilidade mais alto em Destreza, seguido de Sabedoria. (Alguns patrulheiros que se focam no combate com duas armas deixam a Força maior que a Destreza.) Segundo, escolha o antecedente forasteiro."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.conclaves-de-patrulheiro",
+        "title": "CONCLAVES DE PATRULHEIRO",
+        "page": 119,
+        "text": "Através do ambiente selvagem, patrulheiro se reunem para formar conclaves – associações independentes cujos membros partillham uma visão similar da melhor forma de proteger a natureza daqueles que a despojam.",
+        "sourceTitle": ""
+      },
+      {
+        "key": "reference.2.ataque-extra-aprimorado-patrulheiro",
+        "title": "ATAQUE EXTRA APRIMORADO: PATRULHEIRO",
+        "page": 149,
+        "text": "Esta regra opcional substitui Ataque Extra. A partir do 7º nível, a segunda vez em seu turno que acertar a mesma criatura com ataque de arma causa dano adicional igual ao bônus de proficiência.",
+        "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "ranger",
+      "color": "#638e67"
+    }
+  },
+  "features": [
+    {
+      "key": "class.ranger.feature.inimigo-favorito.l1.1",
+      "name": "INIMIGO FAVORITO",
+      "level": 1,
+      "description": "A partir do 1° nível, você tem experiência significativa estudando, rastreando, caçando e, até mesmo, falando com certos tipos de inimigos.\n\nEscolha um tipo de inimigo favorito: bestas, fadas, humanoide, monstruosidades ou mortos-vivos. Você recebe um bônus de +2 nas jogadas de dano com ataques com arma contra criaturas do tipo escolhido. Além disso, você tem vantagem em testes de Sabedoria (Sobrevivência) para rastrear seus inimigos favoritos, assim como em testes de Inteligência para lembrar informações sobre eles.\n\nQuando você adquire essa característica, você também aprende um idioma, à sua escolha, que seja falado pelos seus inimigos favoritos, se eles falarem algum.",
+      "page": 117,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.explorador-natural.l1.1",
+      "name": "EXPLORADOR NATURAL",
+      "level": 1,
+      "description": "Você é um mestre na navegação pelo mundo natural e você reage de forma rápida e decisiva quando é atacado. Isso fornece a você os seguintes benefícios:\n\n• Você ignora terreno difícil.\n• Você tem vantagem em rolagens de iniciativa.\n• No seu primeiro turno de combate, você tem vantagem\n\nnas jogadas de ataque contra criaturas que ainda não tenham agido. Além disso, você é perito em navegar pelo ambiente selvagem. Você ganha os seguintes benefícios quando estiver viajando por uma hora ou mais:\n\n• Terreno difícil não atrasa a viagem do seu grupo.\n• Seu grupo não pode se perder, exceto por meios\n\nmágicos.\n• Mesmo quando você está engajado em outra atividade\n\nalém de viajar (como forragear, navegar ou rastrear), você permanece alerta ao perigo.\n• Se você estiver viajando sozinho, você pode se mover\n\nfurtividamente com um ritmo de viagem normal.\n• Quando você forrageia, você encontra o dobro de\n\ncomida que normalmente encontraria.\n• Enquanto estiver rastreando outras criaturas, você\n\ntambém descobre o número exato delas, seus tamanhos e há quanto tempo elas passaram pela área.",
+      "page": 117,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.estilo-de-luta.l2.1",
+      "name": "ESTILO DE LUTA",
+      "level": 2,
+      "description": "No 2° nível, você adota um estilo de combate particular que será sua especialidade. Escolha uma das opções a\n\nseguir. Você não pode escolher o mesmo Estilo de Combate mais de uma vez, mesmo se puder escolher de novo.",
+      "page": 117,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.arquearia.l0.1",
+      "name": "ARQUEARIA",
+      "level": null,
+      "description": "Você ganha +2 de bônus nas jogadas de ataque realizadas com uma arma de ataque à distância.",
+      "page": 117,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.combate-com-duas-armas.l0.1",
+      "name": "COMBATE COM DUAS ARMAS",
+      "level": null,
+      "description": "Quando você estiver engajado em uma luta com duas armas, você pode adicionar o seu modificador de habilidade na jogada de dano do seu segundo ataque.",
+      "page": 117,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.defesa.l0.1",
+      "name": "DEFESA",
+      "level": null,
+      "description": "Enquanto estiver usando armadura, você ganha +1 de bônus em sua CA.",
+      "page": 117,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.duelismo.l0.1",
+      "name": "DUELISMO",
+      "level": null,
+      "description": "Quando você empunhar uma arma de ataque corpo-acorpo em uma mão e nenhuma outra arma, você ganha +2 de bônus nas jogadas de dano com essa arma.",
+      "page": 117,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.conjuracao.l2.1",
+      "name": "CONJURAÇÃO",
+      "level": 2,
+      "description": "Quando você alcança o 2° nível, você aprende a usar a essência mágica da natureza para conjurar magias, como um druida faz. Veja o capítulo 10 para as regras gerais de conjuração e o capítulo 11 para a lista de magias de patrulheiro. ESPAÇOS DE MAGIA A tabela O Patrulheiro mostra quantos espaços de magia você tem para conjurar suas magias de 1° nível e superiores. Para conjurar uma dessas magias, você deve gastar uma espaço de magia do nível da magia ou superior. Você recobra todos os espaços de magia gastos quando você completa um descanso longo.\n\nPor exemplo, se você quiser conjurar a magia de 1° nível amizade animal e você tiver um espaço de magia de 1° nível e um de 2° nível disponíveis, você poderá conjurar amizade animal usando qualquer dos dois espaços. MAGIAS CONHECIDAS DE 1° NÍVEL E SUPERIORES Você conhece duas magias de 1° nível, à sua escolha, da lista de magias de patrulheiro. A coluna Magias Conhecidas na tabela O Patrulheiro mostra quando você aprende mais magias de patrulheiro,\n\nà sua escolha. Cada uma dessas magias deve ser de um nível a que você tenha acesso, como mostrado na tabela. Por exemplo, quando você alcança o 5° nível da classe, você pode aprender uma nova magia de 1° ou 2° nível.\n\nAlém disso, quando você adquire um nível nessa classe, você pode escolher uma magia de patrulheiro que você conheça e substituí-la por outra magia da lista de magias de patrulheiro, que também deve ser de um nível ao qual você tenha espaços de magia.\n\nHABILIDADE DE CONJURAÇÃO Sabedoria é a sua habilidade para conjurar suas magias de patrulheiro, já que sua magia vem da sua sintonia com a natureza. Você usa sua Sabedoria sempre que alguma magia se referir a sua habilidade de conjurar magias. Além disso, você usa o seu modificador de Sabedoria para definir a CD dos testes de resistência para as magias de patrulheiro que você conjura e quando você realiza uma jogada de ataque com uma magia.\n\nCD para suas magias = 8 + bônus de proficiência +\n\nseu modificador de Sabedoria\n\nModificador de ataque de magia = seu bônus de proficiência +\n\nseu modificador de Sabedoria",
+      "page": 117,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.conclave-de-patrulheiro.l3.1",
+      "name": "CONCLAVE DE PATRULHEIRO",
+      "level": 3,
+      "description": "No 3° nível, você escolhe emular os ideais de treinamento de um conclave de patrulheiro: o Conclave da Besta, o Conclave do Caçador ou o Conclave do Rastreador Subterrâneo, todos detalhados no final da descrição da classe. Sua escolha lhe concede características no 3° nível e novamente no 5°, 7°, 11° e 15° nível.",
+      "page": 118,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.consciencia-primitiva.l3.1",
+      "name": "CONSCIÊNCIA PRIMITIVA",
+      "level": 3,
+      "description": "A partir do 3° nível, sua maestria do conhecimento de patrulheiro permite que você estabeleça um poderoso elo com bestas e com a terra ao seu redor.\n\nVocê possui uma habilidade inata de se comunicar com bestas e elas consideram você como um espírito semelhante. Através de sons e gestos, você pode\n\ncomunicar ideias simples a bestas como uma ação e pode compreender seu ânimo e intenção básicos. Você aprende o estado emocional dela, suas necessidades imediatas (como comida e abrigo) e ações que você pode tomar (se aplicável) para persuadi-la a não atacar.\n\nVocê não pode usar essa habilidade contra uma criatura que você tenha atacado nos últimos 10 minutos.\n\nAlém disso, você pode sintonizar seus sentidos para determinar se algum dos seus inimigos favoritos está espreitando nas redondezas. Ao passar 1 minuto ininterrupto em concentração (como se estivesse se concentrando em uma magia), você pode sentir se algum dos seus inimigos favoritos está presente a até 8 quilometros de você. Essa característica revela qual dos seus inimigos favoritos está presente, a quantidade deles e a direção e distância aproximadas dessas criaturas (em quilometros) de você.\n\nSe houverem múltiplos grupos de seus inimigos favoritos no alcance, você descobre essas informações de cada grupo.",
+      "page": 118,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.incremento-no-valor-de-habilidade.l4.1",
+      "name": "INCREMENTO NO VALOR DE HABILIDADE",
+      "level": 4,
+      "description": "Quando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.",
+      "page": 118,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.inimigo-favorito-maior.l6.1",
+      "name": "INIMIGO FAVORITO MAIOR",
+      "level": 6,
+      "description": "A partir do 6° nível, você está pronto para caçar mesmo as presas mais mortais. Escolha um tipo de inimigo favorito maior: aberrações, celestiais, constructos, corruptores, dragões, elementais ou gigantes. Você ganha todos os benefícios contra o inimigo escolhido que você normalmente ganha contra seu inimigo favorito, além do idioma adicional. Seu bônus nas jogadas de dano contra todos os seus inimigos favoritos aumenta para +4.\n\nAlém disso, você tem vantagem em testes de resistência contra magias e habilidades usadas por um inimigo favorito maior.",
+      "page": 118,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.pes-rapidos.l8.1",
+      "name": "PÉS RÁPIDOS",
+      "level": 8,
+      "description": "Começando no 8° nível, você pode usar a ação de Disparada como uma ação bônus no seu turno.",
+      "page": 118,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.mimetismo.l10.1",
+      "name": "MIMETISMO",
+      "level": 10,
+      "description": "A partir do 10° nível, você pode permanecer perfeitamente imóvel por longos períodos de tempo para preparar uma emboscada.\n\nQuando você tentar se esconder no seu turno, você pode optar por não se mover nesse turno. Se você evitar se mover, criaturas que tentarem detectar você sofrem\n–10 de penalidade em testes de Sabedoria (Percepção) até o começo do seu próximo turno. Você perde esse benefício caso se mova ou caia no chão, voluntariamente ou por um efeito externo. Você ainda será automaticamente detectado caso algum efeito ou ação faça com que você não esteja mais escondido.\n\nSe você ainda estiver escondido no seu turno, você pode continuar imóvel e ganhar esse benefício até ser detectado.",
+      "page": 118,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.desaparecer.l14.1",
+      "name": "DESAPARECER",
+      "level": 14,
+      "description": "Começando no 14° nível, você pode usar a ação de Esconder, com uma ação bônus, no seu turno. Além disso, você não pode ser rastreado por meios não-mágicos, a não ser que você decida deixar um rastro.",
+      "page": 119,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.sentidos-selvagens.l18.1",
+      "name": "SENTIDOS SELVAGENS",
+      "level": 18,
+      "description": "No 18° nível, você ganha sentidos preternaturais que o ajudam a lutar contra criaturas que você não pode ver. Quando você atacar uma criatura que você não possa ver, sua incapacidade em vê-la não impõem desvantagem nas suas jogadas de ataque contra ela.\n\nVocê também está ciente da localização de qualquer criatura invisível a até 9 metros de você, considerando que a criatura não esteja se escondendo de você e você não esteja cego ou surdo.",
+      "page": 119,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.ranger.feature.matador-de-inimigos.l20.1",
+      "name": "MATADOR DE INIMIGOS",
+      "level": 20,
+      "description": "No 20° nível, você se torna um caçador incomparável. Uma vez em cada um dos seus turnos, você pode adicionar seu modificador de Sabedoria na jogada de ataque ou jogada de dano de um ataque que você fizer. Você pode escolher usar essa característica antes ou depois da rolagem, mas antes de qualquer efeito da jogada ser aplicado.",
+      "page": 119,
+      "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Patrulheiro",
+    "sourceTitle": "",
+    "sourcePage": 116,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Bônus de Proficiência",
+        "shortLabel": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "spellsKnown",
+        "label": "Magias Conhecidas"
+      },
+      {
+        "key": "slot1",
+        "label": "1º",
+        "title": "Espaços de magia de 1º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot2",
+        "label": "2º",
+        "title": "Espaços de magia de 2º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot3",
+        "label": "3º",
+        "title": "Espaços de magia de 3º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot4",
+        "label": "4º",
+        "title": "Espaços de magia de 4º nível",
+        "group": "Espaços de Magia"
+      },
+      {
+        "key": "slot5",
+        "label": "5º",
+        "title": "Espaços de magia de 5º nível",
+        "group": "Espaços de Magia"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Inimigo Favorito",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.inimigo-favorito.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Explorador Natural",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.explorador-natural.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": "—",
+        "slot1": "—",
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.estilo-de-luta.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Conjuração",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.conjuracao.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 2,
+        "slot1": 2,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Conclave de Patrulheiro",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.conclave-de-patrulheiro.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Consciência Primitiva",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.consciencia-primitiva.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 3,
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 3,
+        "slot1": 3,
+        "slot2": "—",
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Conclave de Patrulheiro",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.ranger.feature.conclave-de-patrulheiro.l3.1"
+            ]
+          }
+        ],
+        "spellsKnown": 4,
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Inimigo Favorito Maior",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.inimigo-favorito-maior.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 4,
+        "slot1": 4,
+        "slot2": 2,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Conclave de Patrulheiro",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.ranger.feature.conclave-de-patrulheiro.l3.1"
+            ]
+          }
+        ],
+        "spellsKnown": 5,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Pés Rápidos",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.pes-rapidos.l8.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 5,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": "—",
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [],
+        "spellsKnown": 6,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Mimetismo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.mimetismo.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 6,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 2,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Conclave de Patrulheiro",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.ranger.feature.conclave-de-patrulheiro.l3.1"
+            ]
+          }
+        ],
+        "spellsKnown": 7,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 7,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": "—",
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [],
+        "spellsKnown": 8,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Desaparecer",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.desaparecer.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 8,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 1,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Característica de Conclave de Patrulheiro",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.ranger.feature.conclave-de-patrulheiro.l3.1"
+            ]
+          }
+        ],
+        "spellsKnown": 9,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 9,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 2,
+        "slot5": "—",
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [],
+        "spellsKnown": 10,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Sentidos Selvagens",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.sentidos-selvagens.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 10,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 1,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento no Valor de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.incremento-no-valor-de-habilidade.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 11,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Matador de Inimigos",
+            "kind": "feature",
+            "featureRefs": [
+              "class.ranger.feature.matador-de-inimigos.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "spellsKnown": 11,
+        "slot1": 4,
+        "slot2": 3,
+        "slot3": 3,
+        "slot4": 3,
+        "slot5": 2,
+        "slot6": "—",
+        "slot7": "—",
+        "slot8": "—",
+        "slot9": "—"
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 21
+    },
+    "options": [
+      {
+        "grimorioId": "conclave-besta",
+        "identifier": "conclave-besta",
+        "name": "Conclave da Besta",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 119
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "conclave-cacador",
+        "identifier": "conclave-cacador",
+        "name": "Conclave do Caçador",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 120
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "rastreador-subterraneo",
+        "identifier": "rastreador-subterraneo",
+        "name": "Conclave do Rastreador Subterrâneo",
+        "originalName": "",
+        "source": {
+          "sourceId": null,
+          "title": "",
+          "pages": "",
+          "chapter": "",
+          "page": 121
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-ranger-radiant-archer",
+        "identifier": "lyre-ranger-radiant-archer",
+        "name": "Arqueiro Radiante",
+        "originalName": "Radiant Archer",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "410",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 410
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-ranger-beast-rider",
+        "identifier": "lyre-ranger-beast-rider",
+        "name": "Cavaleiro de Fera",
+        "originalName": "Beast Rider",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "405–406",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 405
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-ranger-dunestalker",
+        "identifier": "lyre-ranger-dunestalker",
+        "name": "Espreitador das Dunas",
+        "originalName": "Dunestalker",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "407",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 407
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-ranger-grey-arrow",
+        "identifier": "lyre-ranger-grey-arrow",
+        "name": "Flecha Cinzenta",
+        "originalName": "Grey Arrow",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "407–408",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 407
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-ranger-gun-dweller",
+        "identifier": "lyre-ranger-gun-dweller",
+        "name": "Habitante das Armas",
+        "originalName": "Gun Dweller",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "409",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 409
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-ranger-sea-dog",
+        "identifier": "lyre-ranger-sea-dog",
+        "name": "Lobo do Mar",
+        "originalName": "Sea Dog",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "410",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 410
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-ranger-technoscope",
+        "identifier": "lyre-ranger-technoscope",
+        "name": "Tecnoscópio",
+        "originalName": "Technoscope",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "411–412",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 411
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-ranger-velvet-knight",
+        "identifier": "zagalhta-ranger-velvet-knight",
+        "name": "Cavaleiro do Veludo",
+        "originalName": "Velvet Knight",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "165",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 165
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-ranger-xenofactor",
+        "identifier": "zagalhta-ranger-xenofactor",
+        "name": "Xenofator",
+        "originalName": "Xenofactor",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "166–167",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 166
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-ranger-due-collector",
+        "identifier": "bbb-ranger-due-collector",
+        "name": "Cobrador de Dívidas",
+        "originalName": "Due Collector",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "117–118",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 117
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-ranger-kyujutsu",
+        "identifier": "bbb-ranger-kyujutsu",
+        "name": "Kyūjutsu",
+        "originalName": "Kyujutsu",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "118",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 118
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-ranger-night-slayer",
+        "identifier": "bbb-ranger-night-slayer",
+        "name": "Matador Noturno",
+        "originalName": "Night Slayer",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "118–119",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 118
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "ryoko-ranger-ronin",
+        "identifier": "ryoko-ranger-ronin",
+        "name": "Rōnin",
+        "originalName": "Rōnin",
+        "source": {
+          "sourceId": "ryoko-yokai-realms",
+          "title": "Ryoko's Guide to the Yokai Realms",
+          "pages": "184–185",
+          "chapter": "Capítulo 9: Classes",
+          "page": 184
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-perseguidor-obscuro",
+        "identifier": "xanathar-perseguidor-obscuro",
+        "name": "Perseguidor Obscuro",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "58–59",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 58
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-andarilho-do-horizonte",
+        "identifier": "xanathar-andarilho-do-horizonte",
+        "name": "Andarilho do Horizonte",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "59–60",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 59
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "xanathar-exterminador-de-monstros",
+        "identifier": "xanathar-exterminador-de-monstros",
+        "name": "Exterminador de Monstros",
+        "originalName": "",
+        "source": {
+          "sourceId": "xanathar",
+          "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "pages": "60",
+          "chapter": "Capítulo 1: Opções de Personalização",
+          "page": 60
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-andarilho-feerico",
+        "identifier": "tasha-andarilho-feerico",
+        "name": "Andarilho Feérico",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "53–55",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 53
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "tasha-portador-do-enxame",
+        "identifier": "tasha-portador-do-enxame",
+        "name": "Portador do Enxame",
+        "originalName": "",
+        "source": {
+          "sourceId": "tasha",
+          "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "pages": "54–57",
+          "chapter": "Capítulo 1: Opções de Personagens",
+          "page": 54
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

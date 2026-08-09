@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-frame-pilot-technoloader",
+    "identifier": "zagalhta-frame-pilot-technoloader",
+    "name": "Tecnocarregador",
+    "originalName": "Technoloader",
+    "aliases": [
+      "Technoloader"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "136",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 136
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "frame-pilot",
+    "identifier": "frame-pilot",
+    "name": "Piloto de Frame"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "frame-pilot",
+    "selectionLevel": 3,
+    "description": "Um especialista em equipamento que amplia UP-LOAD, contramedidas, casco e sistemas defensivos para processar mais recursos do que uma unidade frame normalmente suportaria.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 136
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-frame-pilot-technoloader.feature.capacidade-avancada.l3.1",
+      "name": "CAPACIDADE AVANÇADA",
+      "level": 3,
+      "description": "O limite de UP-LOAD de qualquer unidade frame que você pilota aumenta em uma quantidade igual à sua proficiência.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-technoloader.feature.contramedidas.l7.1",
+      "name": "CONTRAMEDIDAS",
+      "level": 7,
+      "description": "Ao ser atingido por ataque de arma, pode aumentar sua CA até o fim do turno em metade da proficiência e a CA da unidade pilotada em sua proficiência completa. Usos por Descanso Longo iguais à metade do nível de Piloto de Frame.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-technoloader.feature.casco-reforcado.l11.1",
+      "name": "CASCO REFORÇADO",
+      "level": 11,
+      "description": "A unidade frame que você pilota recebe o melhor entre: seu Limiar de Dano torna-se igual ao seu nível total; ou seu Limiar de Dano aumenta em metade do seu nível total.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-technoloader.feature.maestria-do-impulso-de-frame.l16.1",
+      "name": "MAESTRIA DO IMPULSO DE FRAME",
+      "level": 16,
+      "description": "Quando Impulso de Frame evita que a unidade caia a 0 PV, os PV temporários concedidos são dobrados. Enquanto esses PV temporários existirem, a unidade tem vantagem no primeiro ataque e na primeira salvaguarda de cada turno, controlados separadamente.",
+      "page": 136,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 16,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-cleric-shrine-warden",
+    "identifier": "ryoko-cleric-shrine-warden",
+    "name": "Domínio do Guardião do Santuário",
+    "originalName": "Shrine Warden Domain",
+    "aliases": [
+      "Shrine Warden Domain",
+      "Domínio do Guardião do Santuário"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "174–175",
+    "chapter": "Capítulo 9: Classes",
+    "page": 174
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Um clérigo que consagra santuários espectrais, oferecendo bênçãos a aliados e maldições a inimigos em uma aura sagrada.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-dominio",
+        "title": "Magias do Domínio",
+        "page": 174,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "1º",
+            "magias": "Proteção contra o Bem e Mal, Santuário"
+          },
+          {
+            "nivel": "3º",
+            "magias": "Proteção, Silêncio"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Dissipar Magia, Extrair Shirikodama"
+          },
+          {
+            "nivel": "7º",
+            "magias": "Guardião da Fé, Tumba de Rocha"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Nevasca Abençoada de Bakuryō, Lanterna de Magatsuchi"
+          }
+        ]
+      },
+      {
+        "key": "table.2.bencaos-e-maldicoes-da-consagracao",
+        "title": "Bênçãos e Maldições da Consagração",
+        "page": 175,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "opcao",
+            "label": "Opção"
+          },
+          {
+            "key": "efeito",
+            "label": "Efeito"
+          }
+        ],
+        "rows": [
+          {
+            "opcao": "Bênção da Fortuna",
+            "efeito": "Na aura, criatura afetada pode adicionar 1d4 a ataque, teste ou salvaguarda após o d20 e antes do resultado; uma vez até início do próximo turno."
+          },
+          {
+            "opcao": "Bênção do Poder",
+            "efeito": "Ao acertar ataque na aura, +1d6 radiante; uma vez até início do próximo turno. 2d6 no 11º nível."
+          },
+          {
+            "opcao": "Bênção da Esperança",
+            "efeito": "Imune a amedrontado na aura e ganha 1d4 PV temporários ao terminar turno nela."
+          },
+          {
+            "opcao": "Maldição do Vazio",
+            "efeito": "Ao entrar pela primeira vez no turno ou iniciar turno na aura: Constituição ou cego até início do próximo turno."
+          },
+          {
+            "opcao": "Maldição da Dor",
+            "efeito": "Ao entrar pela primeira vez no turno ou iniciar turno na aura: 1d8 necrótico; 2d8 no 11º nível."
+          },
+          {
+            "opcao": "Maldição do Pânico",
+            "efeito": "Ao entrar pela primeira vez no turno ou iniciar turno na aura: Sabedoria ou amedrontado pelo santuário até início do próximo turno."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 174
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-cleric-shrine-warden.feature.proficiencias-bonus.l1.1",
+      "name": "PROFICIÊNCIAS BÔNUS",
+      "level": 1,
+      "description": "Você ganha proficiência com armas marciais e armaduras pesadas.",
+      "page": 174,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-cleric-shrine-warden.feature.arrebatar.l1.1",
+      "name": "ARREBATAR",
+      "level": 1,
+      "description": "Uma vez por turno, ao acertar criatura com ataque, force salvaguarda de Carisma contra sua CD de Clérigo. Em falha, escolha: empurrá-la 1,5 m × proficiência; ou reduzir seu deslocamento em 1,5 m × proficiência até fim do próximo turno. Usos iguais a Sabedoria (mín. 1) por Descanso Longo.",
+      "page": 174,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-cleric-shrine-warden.feature.canalizar-divindade-consagracao.l2.1",
+      "name": "CANALIZAR DIVINDADE: CONSAGRAÇÃO",
+      "level": 2,
+      "description": "Como ação bônus, use Canalizar Divindade para criar santuário espectral em ponto a 18 m, com aura de 6 m por 10 minutos. Escolha uma Bênção ou Maldição e até 1 + Sabedoria criaturas visíveis (mín. 1) para serem afetadas pela magia do santuário conforme a tabela.",
+      "page": 175,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-cleric-shrine-warden.feature.guardiao-do-santuario.l6.1",
+      "name": "GUARDIÃO DO SANTUÁRIO",
+      "level": 6,
+      "description": "Ao criar santuário, invoque espírito Fey (yokai) Miúdo, imune a dano e condições e capaz de voar. Como ação bônus, mova o santuário até 6 m. Quando criatura na aura faz ataque, teste ou salvaguarda, use reação para rolar 1d4 e aplicar como bônus ou penalidade. Usos iguais a Sabedoria por Descanso Longo.",
+      "page": 175,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-cleric-shrine-warden.feature.golpe-divino.l8.1",
+      "name": "GOLPE DIVINO",
+      "level": 8,
+      "description": "Uma vez em cada turno ao acertar ataque de arma, cause +1d8 radiante; +2d8 no 14º nível.",
+      "page": 175,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-cleric-shrine-warden.feature.consagracao-potencializada.l17.1",
+      "name": "CONSAGRAÇÃO POTENCIALIZADA",
+      "level": 17,
+      "description": "O raio da aura de Consagração aumenta para 9 m. Em vez de uma opção, pode escolher todas as três Bênçãos ou todas as três Maldições para as criaturas designadas.",
+      "page": 175,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

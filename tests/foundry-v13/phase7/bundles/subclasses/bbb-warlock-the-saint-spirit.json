@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-warlock-the-saint-spirit",
+    "identifier": "bbb-warlock-the-saint-spirit",
+    "name": "O Espírito do Santo",
+    "originalName": "The Saint Spirit",
+    "aliases": [
+      "The Saint Spirit"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "133",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 133
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Um guerreiro que canaliza as habilidades de um mestre espiritual da lâmina.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 133
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-warlock-the-saint-spirit.feature.concessao-de-habilidade.l1.1",
+      "name": "CONCESSÃO DE HABILIDADE",
+      "level": 1,
+      "description": "Você ganha proficiência com armaduras leves e médias e aprende o truque cabo cruzado, que não conta no limite de truques de bruxo conhecidos.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-warlock-the-saint-spirit.feature.proficiencia-com-magias-zanjen.l1.1",
+      "name": "PROFICIÊNCIA COM MAGIAS ZANJEN",
+      "level": 1,
+      "description": "Em vez de uma lista expandida comum, todas as magias do grupo Zanjen contam como estando na lista de bruxo para você. Ao conjurar qualquer magia Zanjen, trate seus níveis de bruxo como níveis de Santo da Espada para os efeitos de Bônus de Santo da Espada.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-warlock-the-saint-spirit.feature.concessao-fisica.l6.1",
+      "name": "CONCESSÃO FÍSICA",
+      "level": 6,
+      "description": "Seus PV máximos aumentam em 12. Depois disso, cada vez que ganhar um nível de bruxo, seus PV máximos aumentam em mais 2.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-warlock-the-saint-spirit.feature.concessao-mental.l10.1",
+      "name": "CONCESSÃO MENTAL",
+      "level": 10,
+      "description": "Enquanto não estiver empunhando um escudo, recebe bônus em todas as salvaguardas igual à metade de seu bônus de proficiência.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-warlock-the-saint-spirit.feature.maestria-reivindicada.l14.1",
+      "name": "MAESTRIA REIVINDICADA",
+      "level": 14,
+      "description": "Quando não possuir nenhum espaço de Magia de Pacto e obtiver um acerto crítico contra uma criatura hostil, ou reduzi-la a 0 PV com dano que exija uma jogada de ataque, recupera um espaço de Magia de Pacto.\n\nINVOCAÇÕES MÍSTICAS EXCLUSIVAS DO ESPÍRITO DO SANTO.\n\nCRÍTICO ENEGRECIDO (pré-requisito: bruxo 5º nível). Ataques feitos como parte da conjuração de uma magia obtêm crítico com 19 ou 20; quando isso ocorrer, role um dado de dano adicional.\n\nTÉCNICA DO DISCÍPULO. Uma vez por Descanso, conjure sem espaço uma magia Zanjen de 5º nível ou inferior que tenha aprendido; ela é conjurada no nível base.\n\nCRÍTICO DE MAESTRIA (pré-requisitos: bruxo 15º nível e Crítico Enegrecido). Os ataques cobertos por Crítico Enegrecido obtêm crítico com 18, 19 ou 20.\n\nCRUZ INVERSA. Pode conjurar cabo cruzado como ação ou ação bônus, mas não de ambas as formas no mesmo turno. Quando o conjura como ação bônus, não adiciona modificador de atributo ao dano de nenhum ataque que acertar.\n\nINFUSÃO DO OUTRO MUNDO (pré-requisito: bruxo 7º nível). Uma vez por Descanso Longo, produza os efeitos de arma infundida sem espaço, num nível igual ao de seus espaços de pacto e ignorando o Bônus de Santo da Espada. Os tipos de dano disponíveis são psíquico, radiante ou necrótico. Se possuir Pacto da Lâmina, o uso recarrega em qualquer Descanso.\n\nLÂMINAS REPULSORAS (pré-requisitos: Pacto do Manto, bruxo 5º nível). Seus usos gratuitos de escudo concedidos pelo Pacto tornam-se escudo de lâminas.\n\nGOLPES SUPERIORES (pré-requisito: bruxo 5º nível). Ao conjurar uma magia que exija jogada de ataque, some metade de seu bônus de proficiência às jogadas de ataque.\n\nMULTIFOCO ZANJEN (pré-requisito: bruxo 9º nível). Pode concentrar-se em qualquer número de magias Zanjen simultaneamente, além de sua concentração normal; todos os efeitos de concentração usam a mesma rolagem e têm sucesso ou falham juntos.",
+      "page": 133,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

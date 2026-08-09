@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-favored-soul-sihlu",
+    "identifier": "zagalhta-favored-soul-sihlu",
+    "name": "Fardo de Sihlu",
+    "originalName": "Burden of Sihlu",
+    "aliases": [
+      "Burden of Sihlu"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "152",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 152
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "O Fardo do deus solar monástico de Degozah transmite poder radiante e emoções intensas, convertendo o corpo em uma arma solar capaz de acumular camadas de fúria astral.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 152
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-favored-soul-sihlu.feature.punho-solar.l1.1",
+      "name": "PUNHO SOLAR",
+      "level": 1,
+      "description": "Seus ataques desarmados podem causar fogo ou radiante em vez do tipo normal e usam d8 de dano, salvo característica que aumente o dado. O mesmo vale para armas com propriedade Soqueira; pode usar seu atributo de conjuração nos ataques e danos. Você conhece flecha luminosa e pode conjurá-la como ação bônus.",
+      "page": 152,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-sihlu.feature.aura-sol.l6.1",
+      "name": "AURA SOL",
+      "level": 6,
+      "description": "Em combate, toda criatura que o acerta com ataque de arma a até 1,5 m sofre dano de fogo igual à metade de seu nível de Alma Favorecida, arredondado para cima.",
+      "page": 152,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-sihlu.feature.furia-astral.l10.1",
+      "name": "FÚRIA ASTRAL",
+      "level": 10,
+      "description": "Como ação, gaste Purificação para criar por 1 minuto aura destrutiva e dois braços radiantes. Enquanto ativa: como ação bônus faça um ataque desarmado/Soqueira, mais um ataque para cada camada adicional; pode conjurar como ação bônus magias de tempo 1 ação; ataques desarmados e ataques de magia causam dano adicional igual à metade da proficiência, arredondada para cima. Em turnos posteriores pode gastar Purificação novamente para acumular outra camada. Cada ativação também concede PV temporários iguais a 1d4 × nível de Alma Favorecida.",
+      "page": 152,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-favored-soul-sihlu.feature.corpo-intocavel.l13.1",
+      "name": "CORPO INTOCÁVEL",
+      "level": 13,
+      "description": "Uma vez por turno, quando for atingido ou sofrer dano de um efeito, reduza o dano pelo seu nível de Alma Favorecida canalizando poder solar. Só pode fazê-lo se for capaz de usar reações, mesmo que sua reação já tenha sido gasta.",
+      "page": 152,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

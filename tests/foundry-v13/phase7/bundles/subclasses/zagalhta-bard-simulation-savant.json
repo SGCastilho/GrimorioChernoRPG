@@ -1,0 +1,203 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-bard-simulation-savant",
+    "identifier": "zagalhta-bard-simulation-savant",
+    "name": "Prodígio da Simulação",
+    "originalName": "Simulation Savant",
+    "aliases": [
+      "Simulation Savant"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "141",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 141
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Especialista em previsão que cria hologramas e simulações realistas para reduzir decisões e interações às formas mais eficientes, fornecendo dados táticos em tempo real aos aliados.",
+    "tables": [
+      {
+        "key": "table.1.tabela-de-ordem-embutida",
+        "title": "Tabela de Ordem Embutida",
+        "page": 141,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "d6",
+            "label": "d6"
+          },
+          {
+            "key": "name",
+            "label": "Ordem"
+          },
+          {
+            "key": "effect",
+            "label": "Benefício"
+          }
+        ],
+        "rows": [
+          {
+            "d6": 1,
+            "name": "Sinais de Alerta",
+            "effect": "Ataques, testes e salvaguardas recebem +1."
+          },
+          {
+            "d6": 2,
+            "name": "Bônus Rolante",
+            "effect": "No turno em que usa a Inspiração de Bardo, o resultado do dado torna-se bônus para todas as rolagens do mesmo tipo até o início do próximo turno."
+          },
+          {
+            "d6": 3,
+            "name": "Véu de Energia",
+            "effect": "Recebe 2d10 PV temporários; se iniciar turno sem PV temporários, ganha 1d10; caso ainda os tenha, eles aumentam em 5."
+          },
+          {
+            "d6": 4,
+            "name": "Compartilhamento de Competência",
+            "effect": "Recebe bônus em testes ou salvaguardas em que não seja proficiente igual à metade de sua proficiência."
+          },
+          {
+            "d6": 5,
+            "name": "Compreensão Mágica",
+            "effect": "Faz salvaguardas contra efeitos mágicos com vantagem. Se gastar sua Inspiração numa dessas salvaguardas e obtiver sucesso, fica completamente sem sofrer dano ou efeitos daquela magia."
+          },
+          {
+            "d6": 6,
+            "name": "Simulação Avançada",
+            "effect": "A Inspiração concede quase-previsão: uma vez por turno pode usar o dado sem gastá-lo. Se usar uma segunda vez no mesmo turno, gasta normalmente."
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 141
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-bard-simulation-savant.feature.ordem-embutida.l3.1",
+      "name": "ORDEM EMBUTIDA",
+      "level": 3,
+      "description": "Ao conceder Inspiração de Bardo, role 1d6 na tabela Ordem Embutida. A criatura recebe o benefício correspondente enquanto carregar sua Inspiração.",
+      "page": 141,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-bard-simulation-savant.feature.compartilhar-visao.l3.1",
+      "name": "COMPARTILHAR VISÃO",
+      "level": 3,
+      "description": "Você aprende a magia registro de lembrança como magia de Bardo sem contar contra Magias Conhecidas. Pode conjurá-la uma vez por Descanso sem espaço, em nível igual à sua proficiência.",
+      "page": 141,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-bard-simulation-savant.feature.taticas-de-deliberacao.l6.1",
+      "name": "TÁTICAS DE DELIBERAÇÃO",
+      "level": 6,
+      "description": "Quando criatura faz salvaguarda contra sua magia enquanto está ao alcance corpo a corpo de um aliado seu apto a agir, ela faz a salvaguarda com desvantagem. Da mesma forma, seus ataques de magia contra criatura nessa condição têm vantagem.",
+      "page": 141,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-bard-simulation-savant.feature.simulacao-pessoal.l6.1",
+      "name": "SIMULAÇÃO PESSOAL",
+      "level": 6,
+      "description": "Você possui usos por Descanso Longo iguais ao nível de Bardo. Pode produzir sem espaço disfarçar-se (1 uso), imagem maior (3 usos) ou semelhança (5 usos), gastando usos iguais ao nível da magia.",
+      "page": 141,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-bard-simulation-savant.feature.um-para-todos.l14.1",
+      "name": "UM PARA TODOS",
+      "level": 14,
+      "description": "No primeiro turno de cada combate, produz imagem espelhada como efeito não mágico. O efeito não termina por ficar sem duplicatas e, no início de cada turno, recupera duas duplicatas perdidas, até o máximo de três.",
+      "page": 141,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-bard-simulation-savant.feature.ordens-simplificadas.l14.1",
+      "name": "ORDENS SIMPLIFICADAS",
+      "level": 14,
+      "description": "Para Ordem Embutida, role 2d6 e escolha o resultado. Se forem iguais, conceda Inspiração de Bardo adicional a outra criatura ao alcance sem gastar uso extra; ela recebe a mesma Ordem.",
+      "page": 141,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

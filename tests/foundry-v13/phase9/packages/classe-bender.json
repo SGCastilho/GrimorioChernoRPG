@@ -1,0 +1,1867 @@
+{
+  "schema": "grimorio-foundry-class-package",
+  "schemaVersion": 1,
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-package-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "minimumImporterVersion": "0.5.0"
+  },
+  "identity": {
+    "id": "classe-bender",
+    "name": "Dobrador — classe completa",
+    "scope": "class-with-subclasses",
+    "parentClass": {
+      "grimorioId": "bender-ryoko",
+      "identifier": "bender",
+      "name": "Dobrador"
+    }
+  },
+  "summary": {
+    "bundles": 5,
+    "classes": 1,
+    "subclasses": 4,
+    "features": 30,
+    "specialClasses": 1,
+    "specialSubclasses": 4
+  },
+  "ordering": "classes-first",
+  "bundleIdentifiers": [
+    "class:bender",
+    "subclass:ryoko-bender-ferocity",
+    "subclass:ryoko-bender-fortification",
+    "subclass:ryoko-bender-fusion",
+    "subclass:ryoko-bender-invigoration"
+  ],
+  "bundles": [
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "class",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bender-ryoko",
+        "identifier": "bender",
+        "name": "Dobrador",
+        "originalName": "Bender",
+        "aliases": [
+          "Bender",
+          "Dobrador",
+          "Element Bender"
+        ]
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "pages": "156–173",
+        "chapter": "Capítulo 9: Classes — Dobrador",
+        "page": 157
+      },
+      "nativeMapping": {
+        "status": "review",
+        "warnings": [
+          "A habilidade de conjuração do Dobrador é escolhida entre Inteligência, Sabedoria ou Carisma; o runtime do Grimório Importer solicita e aplica essa escolha no Actor."
+        ]
+      },
+      "class": {
+        "itemType": "class",
+        "description": "Um artista marcial elemental que manipula a Trama por movimentos precisos, combinando golpes mágicos, conjuração preparada e afinidades com ar, terra, fogo e água.",
+        "hitDice": {
+          "raw": "d8",
+          "mode": "standard",
+          "number": 1,
+          "faces": 8
+        },
+        "primaryAbility": {
+          "raw": "Inteligência, Sabedoria ou Carisma (escolha no 1º nível)",
+          "abilityKeys": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "proficiencies": {
+          "saves": {
+            "raw": "Força, Constituição",
+            "abilityKeys": [
+              "str",
+              "con"
+            ]
+          },
+          "armor": "Armaduras leves",
+          "weapons": "Armas simples, chakrams, nunchaku, espadas curtas, shuriken, starknives e twinblades",
+          "tools": "Um tipo de ferramenta de artesão ou um instrumento musical",
+          "skills": "Escolha duas entre Acrobacia, Atletismo, História, Intuição, Religião e Furtividade"
+        },
+        "basics": {
+          "title": "Fundamentos do Dobrador",
+          "page": 157,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "text": "Dado de Vida: 1d8 por nível. PV no 1º nível: 8 + Constituição. PV em níveis superiores: 1d8 (ou 5) + Constituição. Armaduras: leves. Armas: simples, chakrams, nunchaku, espadas curtas, shuriken, starknives e twinblades. Ferramentas: um conjunto de ferramentas de artesão ou um instrumento musical. Salvaguardas: Força e Constituição. Perícias: escolha duas entre Acrobacia, Atletismo, História, Intuição, Religião e Furtividade. Equipamento: bordão/chakram/arma simples; pacote de explorador ou aventureiro; armadura de couro e 10 shuriken; ou 5d4 × 10 po. Multiclasse: 13 na habilidade de conjuração escolhida; ao entrar por multiclasse, ganha armas simples."
+        },
+        "overview": [
+          {
+            "title": "O DOBRADOR",
+            "text": "Dobradores unem virtuosismo físico e mágico. Podem estudar vários elementos ou concentrar-se repetidamente no mesmo, aprofundando a potência de suas magias."
+          }
+        ],
+        "creation": [
+          {
+            "title": "CRIAÇÃO RÁPIDA",
+            "text": "Coloque seu maior atributo na habilidade escolhida para conjuração — Inteligência, Sabedoria ou Carisma — e o seguinte em Destreza. A fonte sugere o antecedente Elementalista."
+          }
+        ],
+        "tables": [
+          {
+            "key": "table.1.afinidades-elementais",
+            "title": "Afinidades Elementais",
+            "page": 159,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "elemento",
+                "label": "Elemento"
+              },
+              {
+                "key": "dano",
+                "label": "Tipos de dano associados"
+              },
+              {
+                "key": "efeito",
+                "label": "Acesso"
+              }
+            ],
+            "rows": [
+              {
+                "elemento": "Ar",
+                "dano": "Trovão",
+                "efeito": "Lista de magias de Ar"
+              },
+              {
+                "elemento": "Terra",
+                "dano": "Ácido e concussão",
+                "efeito": "Lista de magias de Terra"
+              },
+              {
+                "elemento": "Fogo",
+                "dano": "Fogo e elétrico",
+                "efeito": "Lista de magias de Fogo"
+              },
+              {
+                "elemento": "Água",
+                "dano": "Frio",
+                "efeito": "Lista de magias de Água"
+              }
+            ]
+          },
+          {
+            "key": "table.2.avatar-primordial-ar",
+            "title": "Avatar Primordial — Ar",
+            "page": 163,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "afinidades",
+                "label": "Afinidades"
+              },
+              {
+                "key": "beneficio",
+                "label": "Benefício"
+              }
+            ],
+            "rows": [
+              {
+                "afinidades": "1",
+                "beneficio": "Deslocamento de caminhada +4,5 m; deslocamento de voo de 18 m."
+              },
+              {
+                "afinidades": "2",
+                "beneficio": "Imunidade a trovão e às condições agarrado e restringido."
+              },
+              {
+                "afinidades": "3",
+                "beneficio": "Uma vez em cada turno, conjure Passo Nebuloso sem espaço e sem ação; não pode se estiver incapacitado."
+              },
+              {
+                "afinidades": "4",
+                "beneficio": "Caminhada e voo +4,5 m adicionais; fica sob os efeitos de Liberdade de Movimento."
+              }
+            ]
+          },
+          {
+            "key": "table.3.avatar-primordial-terra",
+            "title": "Avatar Primordial — Terra",
+            "page": 163,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "afinidades",
+                "label": "Afinidades"
+              },
+              {
+                "key": "beneficio",
+                "label": "Benefício"
+              }
+            ],
+            "rows": [
+              {
+                "afinidades": "1",
+                "beneficio": "Nova CA: 14 + modificador de conjuração de Dobrador."
+              },
+              {
+                "afinidades": "2",
+                "beneficio": "Imunidade a ácido e sucesso automático em salvaguardas contra movimento forçado ou cair no chão."
+              },
+              {
+                "afinidades": "3",
+                "beneficio": "No início de cada turno, ganha 3d6 PV temporários."
+              },
+              {
+                "afinidades": "4",
+                "beneficio": "Pode conjurar Escudo ou Palavra de Proteção sem espaço nem reação; uma dessas conjurações por rodada, desde que não esteja incapacitado."
+              }
+            ]
+          },
+          {
+            "key": "table.4.avatar-primordial-fogo",
+            "title": "Avatar Primordial — Fogo",
+            "page": 163,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "afinidades",
+                "label": "Afinidades"
+              },
+              {
+                "key": "beneficio",
+                "label": "Benefício"
+              }
+            ],
+            "rows": [
+              {
+                "afinidades": "1",
+                "beneficio": "Primeiro ataque que acerta a cada turno causa +2d6 de fogo ou elétrico (escolha ao receber o benefício)."
+              },
+              {
+                "afinidades": "2",
+                "beneficio": "Imunidade a fogo."
+              },
+              {
+                "afinidades": "3",
+                "beneficio": "Pode conjurar Repreensão Infernal no 2º nível sem espaço nem reação, no máximo uma vez até o início do seu próximo turno."
+              },
+              {
+                "afinidades": "4",
+                "beneficio": "Fica sob os efeitos de Escudo de Fogo (escudo quente)."
+              }
+            ]
+          },
+          {
+            "key": "table.5.avatar-primordial-agua",
+            "title": "Avatar Primordial — Água",
+            "page": 163,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "afinidades",
+                "label": "Afinidades"
+              },
+              {
+                "key": "beneficio",
+                "label": "Benefício"
+              }
+            ],
+            "rows": [
+              {
+                "afinidades": "1",
+                "beneficio": "Deslocamento de natação de 18 m; uma vez em cada turno, pode Ajudar uma criatura visível a 9 m sem ação."
+              },
+              {
+                "afinidades": "2",
+                "beneficio": "Imunidade a frio."
+              },
+              {
+                "afinidades": "3",
+                "beneficio": "Quando criatura visível a 9 m obtém sucesso em salvaguarda ou ataque, force-a a rerrolar e usar o menor resultado; uma vez até o início do seu próximo turno."
+              },
+              {
+                "afinidades": "4",
+                "beneficio": "Fica sob os efeitos de Visão da Verdade."
+              }
+            ]
+          },
+          {
+            "key": "table.6.magias-de-dobrador-ar",
+            "title": "Magias de Dobrador — Ar",
+            "page": 164,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível"
+              },
+              {
+                "key": "magias",
+                "label": "Magias"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "Truques",
+                "magias": "Concussão; Golpe Impetuoso; Cortina de Fumaça; Amortecer Queda"
+              },
+              {
+                "nivel": "1º",
+                "magias": "Leque Cromático; Retirada Acelerada; Queda Suave; Névoa; Gargalhada Nefasta; Salto; Passos Longos; Palma Repulsora; Onda Trovejante; Servo Invisível; Draco de Vento"
+              },
+              {
+                "nivel": "2º",
+                "magias": "Nublar; Acalmar o Ar; Aprimorar Habilidade (Graça do Gato); Lufada de Vento; Levitação; Imagem Espelhada; Passo Nebuloso; Redirecionar Relâmpago; Despedaçar; Silêncio; Golpe de Vento"
+              },
+              {
+                "nivel": "3º",
+                "magias": "Convocar Relâmpagos; Carga de Profundidade; Granada de Luz; Voo; Forma Gasosa; Velocidade; Troca-Troca; Muralha de Vento"
+              },
+              {
+                "nivel": "4º",
+                "magias": "Passo pelas Nuvens; Conjurar Elementais Menores (ar); Porta Dimensional; Liberdade de Movimento; Terreno Alucinatório; Céu Dilacerante; Transformação Tempestuosa"
+              },
+              {
+                "nivel": "5º",
+                "magias": "Conjurar Elemental (ar); Ciclone; Umigiri de Iminada; Despistar; Ligação Planar (elemental do ar); Fúria Dilacerante de Raiko"
+              }
+            ]
+          },
+          {
+            "key": "table.7.magias-de-dobrador-terra",
+            "title": "Magias de Dobrador — Terra",
+            "page": 164,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível"
+              },
+              {
+                "key": "magias",
+                "label": "Magias"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "Truques",
+                "magias": "Salpicar Ácido; Punho Terrestre; Reforçar; Resistência; Bordão Místico"
+              },
+              {
+                "nivel": "1º",
+                "magias": "Uppercut Terrestre; Constrição; Vida Falsa; Disco Flutuante; Bom Fruto; Graxa; Escudo"
+              },
+              {
+                "nivel": "2º",
+                "magias": "Flecha Ácida; Pele de Árvore; Acalmar a Terra; Pele Terrestre; Aprimorar Habilidade (Vigor do Urso ou Força do Touro); Proteção; Proteção contra Veneno; Palavra de Proteção; Mordida de Serpente; Crescer Espinhos"
+              },
+              {
+                "nivel": "3º",
+                "magias": "Chuva Ácida; Mesclar-se às Rochas; Bola de Lodo"
+              },
+              {
+                "nivel": "4º",
+                "magias": "Conjurar Elementais Menores (terra); Tumba de Rocha; Tempestade de Ardósia; Pele de Aço; Moldar Rochas; Pele de Pedra"
+              },
+              {
+                "nivel": "5º",
+                "magias": "Conjurar Elemental (terra); Erupção; Carapaça Adamantina de Nomi; Criar Passagem (pedra); Ligação Planar (elemental da terra); Muralha de Pedra"
+              }
+            ]
+          },
+          {
+            "key": "table.8.magias-de-dobrador-fogo",
+            "title": "Magias de Dobrador — Fogo",
+            "page": 164,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível"
+              },
+              {
+                "key": "magias",
+                "label": "Magias"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "Truques",
+                "magias": "Luzes Dançantes; Raio de Fogo; Golpe Incendiário; Luz; Ilusão Menor; Toque Chocante; Faísca"
+              },
+              {
+                "nivel": "1º",
+                "magias": "Mãos Flamejantes; Leque Cromático; Fogo das Fadas; Clarão; Repreensão Infernal; Heroísmo; Chama Interior; Imagem Silenciosa"
+              },
+              {
+                "nivel": "2º",
+                "magias": "Acalmar as Chamas; Chama Contínua; Aprimorar Habilidade (Esplendor da Águia); Lâmina Flamejante; Esfera Flamejante; Esquentar Metal; Invisibilidade; Redirecionar Relâmpago; Raio Ardente; Fúria de Wanyūdō"
+              },
+              {
+                "nivel": "3º",
+                "magias": "Luz do Dia; Bola de Fogo; Salto do Tigre Flamejante; Velocidade; Relâmpago; Imagem Maior"
+              },
+              {
+                "nivel": "4º",
+                "magias": "Conjurar Elementais Menores (fogo); Escudo de Fogo (quente); Invisibilidade Maior; Rugido do Leão; Muralha de Fogo"
+              },
+              {
+                "nivel": "5º",
+                "magias": "Conjurar Elemental (fogo); Coluna de Chamas; Pele Febril; Lanterna de Magatsuchi; Ligação Planar (elemental do fogo); Fúria Dilacerante de Raiko"
+              }
+            ]
+          },
+          {
+            "key": "table.9.magias-de-dobrador-agua",
+            "title": "Magias de Dobrador — Água",
+            "page": 165,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível"
+              },
+              {
+                "key": "magias",
+                "label": "Magias"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "Truques",
+                "magias": "Orientação; Alfinetes e Agulhas; Raio de Gelo; Poupar os Moribundos; Chicote de Água"
+              },
+              {
+                "nivel": "1º",
+                "magias": "Enfeitiçar Pessoa; Comando; Criar ou Destruir Água; Detectar Veneno e Doença; Lua de Gelo; Purificar Alimentos e Bebidas"
+              },
+              {
+                "nivel": "2º",
+                "magias": "Ajuda; Trama de Sangue; Acalmar Emoções; Acalmar as Águas; Sanguessuga Vital; Aprimorar Habilidade (Sabedoria da Coruja); Imobilizar Pessoa; Restauração Menor; Espelho da Reflexão; Correnteza; Sugestão"
+              },
+              {
+                "nivel": "3º",
+                "magias": "Chuva Ácida; Clarividência; Extrair Shirikodama; Padrão Hipnótico; Revelação de Ryoko; Nevasca; Lentidão; Descompressão; Respirar na Água; Andar na Água; Serpe de Água"
+              },
+              {
+                "nivel": "4º",
+                "magias": "Gaiola de Lágrimas Congeladas; Passo pelas Nuvens; Compulsão; Conjurar Elementais Menores (água); Controlar Água; Adivinhação; Tempestade de Gelo"
+              },
+              {
+                "nivel": "5º",
+                "magias": "Nevasca Abençoada de Bakuryō; Cone de Frio; Conjurar Elemental (água); Dominar Pessoa; Imobilizar Monstro; Umigiri de Iminada; Ligação Planar (elemental da água); Vidência; Muralha de Água Branca"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "key": "reference.1.multiclasse",
+            "title": "MULTICLASSE",
+            "page": 157,
+            "text": "Para entrar ou sair da classe por multiclasse, você precisa ter 13 ou mais na habilidade de conjuração escolhida. Ao obter o primeiro nível de Dobrador por multiclasse, recebe proficiência com armas simples.",
+            "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+          },
+          {
+            "key": "reference.2.ataque-extra-aprimorado-opcional",
+            "title": "ATAQUE EXTRA APRIMORADO (OPCIONAL)",
+            "page": 149,
+            "text": "A fonte oferece uma substituição opcional para Ataque Extra. No 7º nível, quando realiza a ação Atacar, você pode substituir um dos ataques pela conjuração de um truque conhecido da lista de Dobrador com tempo de conjuração de 1 ação; ele é conjurado em seu nível mínimo, sem escalonamento de truque.",
+            "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+          },
+          {
+            "key": "reference.3.ataque-extra-aprimorado-dobrador",
+            "title": "ATAQUE EXTRA APRIMORADO: DOBRADOR",
+            "page": 149,
+            "text": "Esta regra opcional substitui Ataque Extra. A partir do 7º nível, ao realizar a ação Atacar, pode substituir um ataque por um truque conhecido da lista de Dobrador com tempo de conjuração de 1 ação. O truque é conjurado em seu nível mais baixo, sem escalonamento por nível do personagem.",
+            "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+          }
+        ],
+        "presentation": {
+          "sigilKey": "bender-ryoko",
+          "color": "#4c8c7b"
+        }
+      },
+      "features": [
+        {
+          "key": "class.bender-ryoko.feature.conjuracao.l1.1",
+          "name": "CONJURAÇÃO",
+          "level": 1,
+          "description": "Você conjura magias de Dobrador por meio de movimentos precisos. Conhece os truques indicados na progressão e prepara um número de magias igual ao modificador de sua habilidade de conjuração + metade do seu nível de Dobrador (arredondado para baixo, mínimo 1). Recupera espaços em Descanso Longo. Ao obter o 1º nível, escolha Inteligência, Sabedoria ou Carisma como sua habilidade de conjuração. Pode conjurar como ritual magias de Dobrador com a etiqueta ritual que estejam preparadas e pode usar uma mão livre como foco, inclusive para componentes somáticos e materiais sem custo e não consumidos.",
+          "page": 158,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.bender-ryoko.feature.afinidade-elemental.l1.1",
+          "name": "AFINIDADE ELEMENTAL",
+          "level": 1,
+          "description": "Escolha ar, terra, fogo ou água. As magias associadas ao elemento passam a integrar sua lista de Dobrador. Ar está associado a trovão; terra a ácido e concussão; fogo a fogo e elétrico; água a frio. No 6º, 10º e 14º níveis você ganha outra Afinidade: ao escolher um elemento novo, adicione sua lista e aprenda um truque dela sem contar no limite; ao repetir um elemento, magias daquela lista são conjuradas como se o espaço gasto fosse 1 nível maior para cada repetição, acumulando até +3 níveis.",
+          "page": 159,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.bender-ryoko.feature.golpes-elementais.l1.1",
+          "name": "GOLPES ELEMENTAIS",
+          "level": 1,
+          "description": "Ao realizar a ação Atacar, você pode substituir um ou mais ataques por Golpes Elementais, escolhendo um tipo de dano ligado a uma Afinidade. Corpo a corpo: ataque mágico corpo a corpo, tratado como ataque desarmado, alcance de 3 m, causando 1d6 + modificador de conjuração. À distância: ataque mágico à distância, alcance de 18 m, causando 1d4 + modificador de conjuração. O dano não escala com nível; bônus de itens mágicos aos ataques e danos de golpes desarmados também se aplicam aos Golpes Elementais.",
+          "page": 160,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.bender-ryoko.feature.combo-elemental.l2.1",
+          "name": "COMBO ELEMENTAL",
+          "level": 2,
+          "description": "Em seu turno, depois de realizar um ataque de arma ou Golpe Elemental, ou conjurar uma magia de Dobrador de 1º nível ou superior, use uma ação bônus para liberar energia elemental. Faça um ataque mágico corpo a corpo contra alvo a 3 m ou à distância contra alvo a 18 m. Em acerto, causa 1d4 de um tipo ligado a uma Afinidade; se o alvo estiver a até 3 m, some seu modificador de conjuração. O dano aumenta para 2d4 no 6º nível, 3d4 no 10º e 4d4 no 14º.",
+          "page": 161,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 2,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.bender-ryoko.feature.disciplina-de-dobrador.l3.1",
+          "name": "DISCIPLINA DE DOBRADOR",
+          "level": 3,
+          "description": "Escolha uma Disciplina de Dobrador. Ela concede características no 3º, 7º, 15º e 20º níveis.",
+          "page": 161,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.bender-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1",
+          "name": "APRIMORAMENTO NO VALOR DE HABILIDADE",
+          "level": 4,
+          "description": "No 4º, 8º, 12º, 16º e 19º níveis, aumente um atributo em 2 ou dois atributos em 1, sem ultrapassar 20. Se a mesa usar talentos opcionais, você pode escolher um talento no lugar deste benefício.",
+          "page": 161,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 4,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.bender-ryoko.feature.ataque-extra.l5.1",
+          "name": "ATAQUE EXTRA",
+          "level": 5,
+          "description": "Você pode atacar duas vezes, em vez de uma, sempre que realiza a ação Atacar. Os Golpes Superiores associados indicados pela fonte são Rajada para ataques corpo a corpo e Golpe de Bateria para ataques à distância, ambos vinculados à técnica avançada Pugilista de grau 2.",
+          "page": 161,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 5,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.bender-ryoko.feature.forma-primordial.l11.1",
+          "name": "FORMA PRIMORDIAL",
+          "level": 11,
+          "description": "Como ação bônus, escolha um elemento com o qual possua Afinidade e assuma sua forma primordial por 1 minuto ou até ficar inconsciente. Durante o efeito, você pode conjurar as magias de 1º nível daquele elemento mesmo sem tê-las preparadas e sem gastar espaços (essas conjurações gratuitas não recebem o aumento automático de Afinidades repetidas). Ar: resistência a concussão, cortante e perfurante. Terra: +2 na CA. Fogo: ao fim de cada turno, criaturas escolhidas a até 3 m sofrem dano de fogo igual ao seu modificador de conjuração (mín. 1). Água: recebe uma reserva de vitalidade igual a 5 × seu nível; ao fim de cada turno, pode curar até três criaturas a 3 m em 5 PV cada, gastando a mesma quantidade da reserva. Uma vez por Descanso Longo. A partir do 17º nível, enquanto estiver nessa forma, também pode conjurar magias de 2º nível ou menores sem gastar espaços.",
+          "page": 162,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.bender-ryoko.feature.avatar-primordial.l18.1",
+          "name": "AVATAR PRIMORDIAL",
+          "level": 18,
+          "description": "Como ação, torne-se uma encarnação primordial por 10 minutos ou até ficar inconsciente e ganhe 50 PV temporários. Para cada Afinidade Elemental possuída, inclusive repetições, receba o benefício correspondente da tabela de Avatar Primordial; múltiplas Afinidades no mesmo elemento liberam benefícios progressivos. Uma vez por Descanso Longo.",
+          "page": 163,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 18,
+            "automation": "phase-5"
+          }
+        }
+      ],
+      "progression": {
+        "title": "O Dobrador",
+        "sourceTitle": "",
+        "sourcePage": null,
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "proficiency",
+            "label": "Proficiência"
+          },
+          {
+            "key": "features",
+            "label": "Características"
+          },
+          {
+            "key": "cantrips",
+            "label": "Truques"
+          },
+          {
+            "key": "slot1",
+            "label": "1º"
+          },
+          {
+            "key": "slot2",
+            "label": "2º"
+          },
+          {
+            "key": "slot3",
+            "label": "3º"
+          },
+          {
+            "key": "slot4",
+            "label": "4º"
+          },
+          {
+            "key": "slot5",
+            "label": "5º"
+          }
+        ],
+        "levels": [
+          {
+            "level": 1,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Conjuração",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.conjuracao.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Afinidade Elemental (1)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.bender-ryoko.feature.afinidade-elemental.l1.1"
+                ]
+              },
+              {
+                "label": "Golpes Elementais",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.golpes-elementais.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 2,
+            "slot1": 2,
+            "slot2": "—",
+            "slot3": "—",
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 2,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Combo Elemental",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.combo-elemental.l2.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 2,
+            "slot1": 2,
+            "slot2": "—",
+            "slot3": "—",
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 3,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Disciplina de Dobrador",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.disciplina-de-dobrador.l3.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 2,
+            "slot1": 3,
+            "slot2": "—",
+            "slot3": "—",
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 4,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Aprimoramento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 2,
+            "slot1": 3,
+            "slot2": "—",
+            "slot3": "—",
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 5,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Ataque Extra",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.ataque-extra.l5.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 2,
+            "slot1": 4,
+            "slot2": 2,
+            "slot3": "—",
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 6,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Afinidade Elemental (2)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.bender-ryoko.feature.afinidade-elemental.l1.1"
+                ]
+              }
+            ],
+            "cantrips": 2,
+            "slot1": 4,
+            "slot2": 2,
+            "slot3": "—",
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 7,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Característica de Disciplina (7º Nível)",
+                "kind": "subclass-feature",
+                "featureRefs": [],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Ataque Extra Aprimorado (opcional)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.bender-ryoko.feature.ataque-extra.l5.1"
+                ]
+              }
+            ],
+            "cantrips": 2,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": "—",
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 8,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Aprimoramento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 2,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": "—",
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 9,
+            "proficiency": "+4",
+            "features": [],
+            "cantrips": 2,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 2,
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 10,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Afinidade Elemental (3)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.bender-ryoko.feature.afinidade-elemental.l1.1"
+                ]
+              }
+            ],
+            "cantrips": 3,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 2,
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 11,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Forma Primordial",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.forma-primordial.l11.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 3,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 3,
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 12,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Aprimoramento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 3,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 3,
+            "slot4": "—",
+            "slot5": "—"
+          },
+          {
+            "level": 13,
+            "proficiency": "+5",
+            "features": [],
+            "cantrips": 3,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 3,
+            "slot4": 1,
+            "slot5": "—"
+          },
+          {
+            "level": 14,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Afinidade Elemental (4)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.bender-ryoko.feature.afinidade-elemental.l1.1"
+                ]
+              }
+            ],
+            "cantrips": 4,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 3,
+            "slot4": 1,
+            "slot5": "—"
+          },
+          {
+            "level": 15,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Característica de Disciplina (15º Nível)",
+                "kind": "subclass-feature",
+                "featureRefs": [],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 4,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 3,
+            "slot4": 2,
+            "slot5": "—"
+          },
+          {
+            "level": 16,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Aprimoramento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 4,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 3,
+            "slot4": 2,
+            "slot5": "—"
+          },
+          {
+            "level": 17,
+            "proficiency": "+6",
+            "features": [],
+            "cantrips": 4,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 3,
+            "slot4": 3,
+            "slot5": 1
+          },
+          {
+            "level": 18,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Avatar Primordial",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.avatar-primordial.l18.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 4,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 3,
+            "slot4": 3,
+            "slot5": 1
+          },
+          {
+            "level": 19,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Aprimoramento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.bender-ryoko.feature.aprimoramento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 4,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 3,
+            "slot4": 3,
+            "slot5": 2
+          },
+          {
+            "level": 20,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Característica de Disciplina (20º Nível)",
+                "kind": "subclass-feature",
+                "featureRefs": [],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "cantrips": 4,
+            "slot1": 4,
+            "slot2": 3,
+            "slot3": 3,
+            "slot4": 3,
+            "slot5": 2
+          }
+        ]
+      },
+      "subclassSelection": {
+        "selectionLevel": 3,
+        "homogeneous": true,
+        "observedLevels": {
+          "3": 4
+        },
+        "options": [
+          {
+            "grimorioId": "ryoko-bender-ferocity",
+            "identifier": "ryoko-bender-ferocity",
+            "name": "Discípulo da Ferocidade",
+            "originalName": "Disciple of Ferocity",
+            "source": {
+              "sourceId": "ryoko-yokai-realms",
+              "title": "Ryoko's Guide to the Yokai Realms",
+              "pages": "166–167",
+              "chapter": "Capítulo 9: Classes",
+              "page": 166
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "ryoko-bender-fortification",
+            "identifier": "ryoko-bender-fortification",
+            "name": "Discípulo da Fortificação",
+            "originalName": "Disciple of Fortification",
+            "source": {
+              "sourceId": "ryoko-yokai-realms",
+              "title": "Ryoko's Guide to the Yokai Realms",
+              "pages": "167–169",
+              "chapter": "Capítulo 9: Classes",
+              "page": 167
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "ryoko-bender-fusion",
+            "identifier": "ryoko-bender-fusion",
+            "name": "Discípulo da Fusão",
+            "originalName": "Disciple of Fusion",
+            "source": {
+              "sourceId": "ryoko-yokai-realms",
+              "title": "Ryoko's Guide to the Yokai Realms",
+              "pages": "170–171",
+              "chapter": "Capítulo 9: Classes",
+              "page": 170
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "ryoko-bender-invigoration",
+            "identifier": "ryoko-bender-invigoration",
+            "name": "Discípulo do Revigoramento",
+            "originalName": "Disciple of Invigoration",
+            "source": {
+              "sourceId": "ryoko-yokai-realms",
+              "title": "Ryoko's Guide to the Yokai Realms",
+              "pages": "172–173",
+              "chapter": "Capítulo 9: Classes",
+              "page": 172
+            },
+            "firstFeatureLevel": 3
+          }
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "ryoko-bender-ferocity",
+        "identifier": "ryoko-bender-ferocity",
+        "name": "Discípulo da Ferocidade",
+        "originalName": "Disciple of Ferocity",
+        "aliases": [
+          "Disciple of Ferocity",
+          "Discípulo da Ferocidade"
+        ]
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "pages": "166–167",
+        "chapter": "Capítulo 9: Classes",
+        "page": 166
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "bender-ryoko",
+        "identifier": "bender",
+        "name": "Dobrador"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "bender",
+        "selectionLevel": 3,
+        "description": "Um Dobrador ofensivo que transforma os elementos em armas, domina armaduras e armas marciais e converte espaços de magia em explosões de dano elemental.",
+        "tables": [
+          {
+            "key": "table.1.magias-bonus-da-ferocidade",
+            "title": "Magias Bônus da Ferocidade",
+            "page": 167,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível de Dobrador"
+              },
+              {
+                "key": "magias",
+                "label": "Magias"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "3º",
+                "magias": "Mísseis Mágicos (dano passa a um tipo de Afinidade)"
+              },
+              {
+                "nivel": "5º",
+                "magias": "Arma Mágica"
+              },
+              {
+                "nivel": "9º",
+                "magias": "Piscar (Plano Elemental de Fronteira da Afinidade)"
+              },
+              {
+                "nivel": "13º",
+                "magias": "Guardião da Fé (dano passa a um tipo de Afinidade)"
+              },
+              {
+                "nivel": "17º",
+                "magias": "Mão Arcana (dano passa a um tipo de Afinidade)"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 166
+      },
+      "features": [
+        {
+          "key": "subclass.ryoko-bender-ferocity.feature.proficiencias-marciais.l3.1",
+          "name": "PROFICIÊNCIAS MARCIAIS",
+          "level": 3,
+          "description": "Você ganha proficiência com armaduras médias, escudos e armas marciais e pode usar qualquer arma com a qual seja proficiente como foco de conjuração de Dobrador.",
+          "page": 167,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-ferocity.feature.conduto-elemental.l3.1",
+          "name": "CONDUTO ELEMENTAL",
+          "level": 3,
+          "description": "Você pode usar sua habilidade de conjuração de Dobrador no lugar de Força ou Destreza nas jogadas de ataque e dano com armas.",
+          "page": 167,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-ferocity.feature.natureza-destrutiva.l7.1",
+          "name": "NATUREZA DESTRUTIVA",
+          "level": 7,
+          "description": "Uma vez por turno, ao acertar uma criatura com um ataque, gaste um espaço de magia para causar dano adicional de um tipo ligado a uma Afinidade Elemental: 2d8 com espaço de 1º nível + 1d8 por nível acima do 1º, máximo 6d8.",
+          "page": 167,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-ferocity.feature.ferocidade-elemental.l15.1",
+          "name": "FEROCIDADE ELEMENTAL",
+          "level": 15,
+          "description": "O dano de seu Combo Elemental passa a 5d4.",
+          "page": 167,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-ferocity.feature.bateria-primordial.l20.1",
+          "name": "BATERIA PRIMORDIAL",
+          "level": 20,
+          "description": "Você pode atacar três vezes sempre que realiza a ação Atacar.",
+          "page": 167,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 20,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "ryoko-bender-fortification",
+        "identifier": "ryoko-bender-fortification",
+        "name": "Discípulo da Fortificação",
+        "originalName": "Disciple of Fortification",
+        "aliases": [
+          "Disciple of Fortification",
+          "Discípulo da Fortificação"
+        ]
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "pages": "167–169",
+        "chapter": "Capítulo 9: Classes",
+        "page": 167
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "bender-ryoko",
+        "identifier": "bender",
+        "name": "Dobrador"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "bender",
+        "selectionLevel": 3,
+        "description": "Um baluarte elemental que molda os elementos como armadura, absorve ataques elementais e fortalece aliados com defesa primordial.",
+        "tables": [
+          {
+            "key": "table.1.magias-bonus-da-fortificacao",
+            "title": "Magias Bônus da Fortificação",
+            "page": 168,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível de Dobrador"
+              },
+              {
+                "key": "magias",
+                "label": "Magias"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "3º",
+                "magias": "Escudo"
+              },
+              {
+                "nivel": "5º",
+                "magias": "Palavra de Proteção"
+              },
+              {
+                "nivel": "9º",
+                "magias": "Proteção contra Energia (tipo de uma Afinidade)"
+              },
+              {
+                "nivel": "13º",
+                "magias": "Esfera Resiliente"
+              },
+              {
+                "nivel": "17º",
+                "magias": "Resistir"
+              }
+            ]
+          },
+          {
+            "key": "table.2.baluarte-primordial",
+            "title": "Baluarte Primordial",
+            "page": 169,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "afinidade",
+                "label": "Afinidade"
+              },
+              {
+                "key": "magia",
+                "label": "Magia"
+              }
+            ],
+            "rows": [
+              {
+                "afinidade": "Ar",
+                "magia": "Muralha de Vento"
+              },
+              {
+                "afinidade": "Terra",
+                "magia": "Muralha de Pedra"
+              },
+              {
+                "afinidade": "Fogo",
+                "magia": "Muralha de Fogo"
+              },
+              {
+                "afinidade": "Água",
+                "magia": "Muralha de Água Branca"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 167
+      },
+      "features": [
+        {
+          "key": "subclass.ryoko-bender-fortification.feature.proficiencias-defensivas.l3.1",
+          "name": "PROFICIÊNCIAS DEFENSIVAS",
+          "level": 3,
+          "description": "Você ganha proficiência com armaduras médias e pesadas e escudos. Pode usar um escudo como foco de conjuração de Dobrador.",
+          "page": 168,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-fortification.feature.escudo-primordial.l3.1",
+          "name": "ESCUDO PRIMORDIAL",
+          "level": 3,
+          "description": "Como ação bônus, conceda a você ou criatura voluntária a até 9 m 1d6 PV temporários, que duram até usar esta característica novamente ou o alvo terminar Descanso Longo. A quantidade aumenta para 1d10 no 6º nível, 2d6 no 10º e 2d10 no 14º.",
+          "page": 168,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-fortification.feature.redirecionar-elementos.l7.1",
+          "name": "REDIRECIONAR ELEMENTOS",
+          "level": 7,
+          "description": "Quando criatura visível a até 9 m sofreria dano de tipo ligado a uma de suas Afinidades, use reação para reduzir o dano em 2d6 para cada vez que escolheu afinidade com aquele elemento. Se reduzir a 0, faça ataque mágico à distância contra alvo a até 9 m da criatura original; em acerto, causa dano igual à redução. Os dados tornam-se d8 no 11º nível, d10 no 15º e d12 no 20º.",
+          "page": 168,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-fortification.feature.reforco-elemental.l15.1",
+          "name": "REFORÇO ELEMENTAL",
+          "level": 15,
+          "description": "Ao conjurar magia de Dobrador de 1º nível ou superior, escolha criatura visível a até 9 m, incluindo você. Ela recebe bônus na CA igual ao nível-base da magia até o início do seu próximo turno.",
+          "page": 169,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-fortification.feature.baluarte-primordial.l20.1",
+          "name": "BALUARTE PRIMORDIAL",
+          "level": 20,
+          "description": "Ao rolar iniciativa sem estar surpreso, use reação para conjurar gratuitamente uma magia conforme uma de suas Afinidades: Ar — Muralha de Vento; Terra — Muralha de Pedra; Fogo — Muralha de Fogo; Água — Muralha de Água Branca. Uma vez por Descanso Longo.",
+          "page": 169,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 20,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "ryoko-bender-fusion",
+        "identifier": "ryoko-bender-fusion",
+        "name": "Discípulo da Fusão",
+        "originalName": "Disciple of Fusion",
+        "aliases": [
+          "Disciple of Fusion",
+          "Discípulo da Fusão"
+        ]
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "pages": "170–171",
+        "chapter": "Capítulo 9: Classes",
+        "page": 170
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "bender-ryoko",
+        "identifier": "bender",
+        "name": "Dobrador"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "bender",
+        "selectionLevel": 3,
+        "description": "Um manipulador das fronteiras entre elementos, capaz de fundi-los em poeira, fumaça, gelo, lava, lama e vapor e conjurar além de suas Afinidades normais.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 170
+      },
+      "features": [
+        {
+          "key": "subclass.ryoko-bender-fusion.feature.truques-bonus.l3.1",
+          "name": "TRUQUES BÔNUS",
+          "level": 3,
+          "description": "Aprenda dois truques adicionais de Dobrador de qualquer lista elemental; eles não contam no limite de truques conhecidos.",
+          "page": 170,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-fusion.feature.magias-bonus.l3.1",
+          "name": "MAGIAS BÔNUS",
+          "level": 3,
+          "description": "Aprenda uma magia de Dobrador de 1º nível de qualquer elemento; ela fica sempre preparada e não conta no limite. No 5º, 9º, 13º e 17º níveis, aprenda respectivamente uma magia de 2º, 3º, 4º e 5º nível assim. Se você não tiver Afinidade com o elemento escolhido, conjure essa magia como se tivesse 1 Afinidade nele.",
+          "page": 170,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-fusion.feature.conjuracao-fusionista.l3.1",
+          "name": "CONJURAÇÃO FUSIONISTA",
+          "level": 3,
+          "description": "Ao gastar espaço de 1º nível ou superior para conjurar uma magia do repertório de Dobrador, você pode combiná-la com outro elemento e criar um efeito em esfera centrada no alvo ou no centro da área da magia, com raio máximo de 1,5 m × o nível do espaço gasto. Usos iguais ao modificador de conjuração (mín. 1), recuperados em Descanso Curto ou Longo. Ar + Terra — Poeira: Constituição ou cego até fim do seu próximo turno. Ar + Fogo — Fumaça: área muito obscurecida até fim do próximo turno; fala dificultada e magia com componente verbal exige salvaguarda de Constituição ou a ação de conjuração é desperdiçada (não o espaço). Ar + Água — Gelo: terreno difícil; Destreza ou cair no chão ao aparecer, entrar ou terminar turno. Terra + Fogo — Lava: Destreza ou 1d6 de fogo por nível do espaço. Terra + Água — Lama: terreno difícil até limpeza e deslocamento -4,5 m; ação remove a lama de criatura ou quadrado de 1,5 m. Fogo + Água — Vapor: área muito obscurecida; criatura que termina turno sofre 1d4 de fogo por nível do espaço.",
+          "page": 170,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-fusion.feature.conjuracao-interelemental.l7.1",
+          "name": "CONJURAÇÃO INTERELEMENTAL",
+          "level": 7,
+          "description": "Ao conjurar magia que cause dano associado a uma Afinidade, pode trocar o tipo por um tipo associado a outra Afinidade sua. Além disso, quando criatura visível conjura magia que cause dano de qualquer Afinidade, use reação e faça teste de habilidade de conjuração CD 10 + nível da magia (10 para truque); em sucesso, altere o dano para um tipo de uma de suas Afinidades.",
+          "page": 171,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-fusion.feature.elementos-liberados.l15.1",
+          "name": "ELEMENTOS LIBERADOS",
+          "level": 15,
+          "description": "Em seu turno, quando usa a ação para conjurar magia de Dobrador de 1º nível ou superior, pode conjurar como ação bônus um truque de Dobrador cujo tempo normal seja 1 ação. Usos iguais ao modificador de conjuração (mín. 1) por Descanso Longo.",
+          "page": 171,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-fusion.feature.avatar-dos-elementos.l20.1",
+          "name": "AVATAR DOS ELEMENTOS",
+          "level": 20,
+          "description": "Você recebe duas Afinidades Elementais adicionais, totalizando seis. Não pode ter mais de quatro Afinidades no mesmo elemento.",
+          "page": 171,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 20,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "ryoko-bender-invigoration",
+        "identifier": "ryoko-bender-invigoration",
+        "name": "Discípulo do Revigoramento",
+        "originalName": "Disciple of Invigoration",
+        "aliases": [
+          "Disciple of Invigoration",
+          "Discípulo do Revigoramento"
+        ]
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "pages": "172–173",
+        "chapter": "Capítulo 9: Classes",
+        "page": 172
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "bender-ryoko",
+        "identifier": "bender",
+        "name": "Dobrador"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "bender",
+        "selectionLevel": 3,
+        "description": "Um Dobrador de suporte que usa impulsos elementais para fortalecer aliados, corrigir falhas e desestabilizar as ações dos inimigos.",
+        "tables": [
+          {
+            "key": "table.1.magias-bonus-do-revigoramento",
+            "title": "Magias Bônus do Revigoramento",
+            "page": 172,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível de Dobrador"
+              },
+              {
+                "key": "magias",
+                "label": "Magias"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "3º",
+                "magias": "Bênção"
+              },
+              {
+                "nivel": "5º",
+                "magias": "Aprimorar Habilidade"
+              },
+              {
+                "nivel": "9º",
+                "magias": "Velocidade"
+              },
+              {
+                "nivel": "13º",
+                "magias": "Liberdade de Movimento"
+              },
+              {
+                "nivel": "17º",
+                "magias": "Restauração Maior"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 172
+      },
+      "features": [
+        {
+          "key": "subclass.ryoko-bender-invigoration.feature.vigor-interior.l3.1",
+          "name": "VIGOR INTERIOR",
+          "level": 3,
+          "description": "Seu máximo de PV aumenta em 3 e aumenta em mais 1 sempre que ganha um nível nesta classe. Além disso, some seu modificador de conjuração de Dobrador aos testes para manter concentração.",
+          "page": 173,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-invigoration.feature.pulso-primordial.l3.1",
+          "name": "PULSO PRIMORDIAL",
+          "level": 3,
+          "description": "Quando criatura voluntária visível a até 9 m falha salvaguarda ou erra ataque, use reação para fazê-la rerrolar com bônus igual ao seu modificador de conjuração, devendo usar o novo resultado. Se o ataque rerrolado acertar, causa dano adicional de um tipo de uma Afinidade igual ao seu modificador. Usos iguais ao modificador de conjuração (mín. 1) por Descanso Longo.",
+          "page": 173,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-invigoration.feature.investida-distrativa.l7.1",
+          "name": "INVESTIDA DISTRATIVA",
+          "level": 7,
+          "description": "Uma vez em seu turno, ao causar dano a criatura com tipo ligado a uma Afinidade, manifeste os elementos de forma distrativa. A próxima jogada de ataque ou salvaguarda do alvo antes do fim do próximo turno dele sofre -1d8. Usos iguais ao modificador de conjuração (mín. 1) por Descanso Longo.",
+          "page": 173,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-invigoration.feature.aprimoramento-elemental.l15.1",
+          "name": "APRIMORAMENTO ELEMENTAL",
+          "level": 15,
+          "description": "Uma vez por turno ao conjurar magia de Dobrador de 1º nível ou maior que tenha um aliado como alvo, escolha um aliado atingido e um benefício: encerrar cego, enfeitiçado, surdo, amedrontado, envenenado ou atordoado; +1d6 no próximo ataque/salvaguarda até fim do próximo turno; usar reação para um ataque de arma; ou usar reação para mover metade do deslocamento sem ataques de oportunidade. Usos iguais ao modificador de conjuração (mín. 1) por Descanso Longo.",
+          "page": 173,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-bender-invigoration.feature.revigoramento-primordial.l20.1",
+          "name": "REVIGORAMENTO PRIMORDIAL",
+          "level": 20,
+          "description": "Ao entrar em Avatar Primordial, conceda a até cinco criaturas voluntárias a 9 m um benefício de nível 1 de uma tabela de Avatar correspondente a uma Afinidade sua. Você escolhe um único benefício para todas; dura até seu Avatar terminar.",
+          "page": 173,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 20,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    }
+  ]
+}

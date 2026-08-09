@@ -1,0 +1,166 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-rogue-vigilante",
+    "identifier": "lyre-rogue-vigilante",
+    "name": "Vigilante",
+    "originalName": "Vigilante",
+    "aliases": [
+      "Vigilante"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "478–479",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 478
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Um sentinela sombrio que toma a lei nas próprias mãos e usa o medo como arma principal. Ataca quando menos se espera, empregando armas de arremesso enquanto encurta a distância, e costuma assumir uma postura dramática para convencer suas vítimas de que ele próprio é a justiça indomável.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 478
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-rogue-vigilante.feature.medo-do-massacre.l3.1",
+      "name": "MEDO DO MASSACRE",
+      "level": 3,
+      "description": "Quando reduz uma criatura a 0 pontos de vida ou obtém resultado natural 20 em um ataque contra ela, você pode forçar todas as criaturas hostis a até 9 metros dela a realizar uma salvaguarda de Sabedoria contra sua CD baseada em Destreza. Em falha, elas ficam amedrontadas por você até o fim do seu próximo turno. Quando ataca uma criatura amedrontada por você, role 1d4 e some o resultado tanto à jogada de ataque quanto ao dano desse ataque.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-vigilante.feature.especialista-em-armas-de-arremesso.l3.1",
+      "name": "ESPECIALISTA EM ARMAS DE ARREMESSO",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Combate com Armas de Arremesso. Quando realiza a ação Atacar e usa todos os ataques dessa ação exclusivamente para ataques à distância com armas leves de arremesso, pode fazer um ataque adicional desse tipo.",
+      "page": 478,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-vigilante.feature.aprimoramento-de-estilo-de-luta.l9.1",
+      "name": "APRIMORAMENTO DE ESTILO DE LUTA",
+      "level": 9,
+      "description": "Seu Estilo de Luta Combate com Armas de Arremesso avança.",
+      "page": 479,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-vigilante.feature.golpe-imobilizador.l9.1",
+      "name": "GOLPE IMOBILIZADOR",
+      "level": 9,
+      "description": "Quando acerta uma criatura com um ataque que normalmente qualificaria para seu Ataque Furtivo, pode abrir mão desse dano para tentar debilitá-la. O alvo realiza uma salvaguarda de Constituição contra sua CD baseada em Destreza. Em falha, fica paralisado até o início do seu próximo turno e seu Ataque Furtivo deste turno é considerado usado. Em sucesso, você aplica normalmente o dano do Ataque Furtivo. Usos por Descanso Longo iguais à metade do seu bônus de proficiência, arredondado para baixo, mas um uso só é gasto quando uma criatura falha na salvaguarda.",
+      "page": 479,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-vigilante.feature.ataque-extra-leve.l13.1",
+      "name": "ATAQUE EXTRA (LEVE)",
+      "level": 13,
+      "description": "Ao realizar a ação Atacar, você pode fazer dois ataques em vez de um, desde que ambos sejam realizados com armas que possuam a propriedade leve.",
+      "page": 479,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-vigilante.feature.de-um-para-outro.l13.1",
+      "name": "DE UM PARA OUTRO",
+      "level": 13,
+      "description": "Uma vez em cada um de seus turnos, quando reduz uma criatura a 0 pontos de vida com um ataque de arma, pode mover-se imediatamente até seu deslocamento em direção a outra criatura e fazer contra ela um ataque adicional usando uma arma leve.",
+      "page": 479,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-vigilante.feature.torcer-a-lamina.l17.1",
+      "name": "TORCER A LÂMINA",
+      "level": 17,
+      "description": "Se acertar uma criatura atordoada, paralisada ou amedrontada por você depois de já ter usado seu Ataque Furtivo no turno, ainda pode rolar metade dos dados normais do Ataque Furtivo, arredondado para baixo, e somá-los ao dano. Esta característica não pode ser usada contra o mesmo alvo mais de uma vez por turno.",
+      "page": 479,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

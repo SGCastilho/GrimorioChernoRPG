@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-sorcerer-wittica",
+    "identifier": "bbb-sorcerer-wittica",
+    "name": "Wittica",
+    "originalName": "Wittica",
+    "aliases": [
+      "Wittica"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "124",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 124
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sorcerer",
+    "identifier": "sorcerer",
+    "name": "Feiticeiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sorcerer",
+    "selectionLevel": 1,
+    "description": "Um feiticeiro que extrai poder de antigas bruxas e projeta um segundo eu espiritual para auxiliá-lo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 124
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-sorcerer-wittica.feature.veu-dos-sonhos.l1.1",
+      "name": "VÉU DOS SONHOS",
+      "level": 1,
+      "description": "Enquanto estiver inconsciente, em transe ou a 0 PV, você projeta um protetor espiritual semelhante a uma versão fantasmagórica de si mesmo, seu Véu, num espaço adjacente. Ele desaparece quando iniciar seu turno desperto e com ao menos 1 PV.\n\nVIGÍLIA PROTETORA. Enquanto conjurado, o Véu concede bônus em Percepção igual ao seu bônus de proficiência e impede desvantagem em testes de Percepção. Enquanto estiver adjacente a você, ataques contra você têm desvantagem e criaturas não obtêm vantagem por você estar caído ou inconsciente.\n\nDEFENSOR SUBSTITUTO. Em seu turno, o Véu pode mover-se e conjurar magias usando seus recursos e estatísticas sob sua direção. Movimento e ações dele consomem seus próprios movimentos, ações e recursos. No fim de cada turno, ele retorna a um espaço adjacente a você. Não pode interagir fisicamente, usar armas ou itens materiais, não sofre nem recebe efeitos ou condições que afetem você, não pode sofrer dano e possui seus sentidos mais visão no escuro a 18 m.\n\nMALHA DE EXPERIÊNCIA. Quando desaparece, tudo que vivenciou é transmitido a você como se você próprio tivesse observado.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-wittica.feature.feiticaria-primal.l1.1",
+      "name": "FEITIÇARIA PRIMAL",
+      "level": 1,
+      "description": "Magias da lista de druida também contam como magias de feiticeiro para você, permitindo lê-las, aprendê-las e conjurá-las como magias de feiticeiro. Itens mágicos que exigem sintonização por um druida reconhecem você como tal.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-wittica.feature.projecao-holistica.l6.1",
+      "name": "PROJEÇÃO HOLÍSTICA",
+      "level": 6,
+      "description": "Como ação bônus, crie brevemente uma versão espiritual de uma arma empunhada por um aliado a até 9 m e faça imediatamente um ataque com ela, como se estivesse sintonizado e fosse proficiente. O ataque usa seu atributo de conjuração para ataque e dano e replica efeitos da arma que não exijam cargas ou outros itens, como bônus de aprimoramento, mas não munição mágica especial ou magias conjuradas por cargas. O ataque conta como mágico e, se necessário, produz munição mágica sem outros efeitos. PROJEÇÃO COMPLETA: ao gastar 2 Pontos de Feitiçaria com a ação bônus, faça ataques adicionais com essa arma em quantidade igual à metade de seu bônus de proficiência, além do primeiro; a arma é recarregada entre eles quando necessário.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-wittica.feature.chamado-desvinculado.l14.1",
+      "name": "CHAMADO DESVINCULADO",
+      "level": 14,
+      "description": "Quando uma criatura voluntária que veja a até 36 m sofre dano, use sua reação e gaste 1 Ponto de Feitiçaria para substituí-la por uma duplicata espiritual que recebe inofensivamente o dano; a criatura real é teleportada para um espaço desocupado a até 6 m de você e não é atingida. No início de seu próximo turno ou do turno do alvo, pode gastar outro Ponto de Feitiçaria para devolvê-la ao espaço de onde saiu, se ele ainda estiver desocupado.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-sorcerer-wittica.feature.grande-desunificacao.l18.1",
+      "name": "GRANDE DESUNIFICAÇÃO",
+      "level": 18,
+      "description": "Como ação, alcance as almas das criaturas à sua escolha numa esfera de 9 m de raio centrada num ponto a até 18 m. Cada alvo faz salvaguarda de Carisma. Em falha, seu espírito é arrancado do corpo para a área ao redor e ele fica atordoado por 1 minuto; criaturas imunes a atordoado que falhem sofrem 8d10 de dano psíquico em vez disso. Um alvo atordoado repete a salvaguarda no fim de cada turno e com vantagem sempre que sofre dano, encerrando em sucesso. Quem obtiver sucesso em qualquer salvaguarda contra esta característica fica imune a ela por 1 hora. Não afeta construtos, espíritos nem mortos-vivos. Pode usar uma vez por Descanso; usos adicionais custam 4 Pontos de Feitiçaria.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

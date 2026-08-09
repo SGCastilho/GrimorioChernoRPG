@@ -1,0 +1,193 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-dragoneer-raging-titan",
+    "identifier": "zagalhta-dragoneer-raging-titan",
+    "name": "Titã Furioso",
+    "originalName": "Raging Titan",
+    "aliases": [
+      "Raging Titan"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "126",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 126
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Um Cavaleiro Dracônico que abandona a conjuração em favor da força, resistência e poder destrutivo bruto de um dragão, chegando a sobreviver a golpes que deveriam matá-lo.",
+    "tables": [
+      {
+        "key": "table.1.parametros-da-especializacao",
+        "title": "Parâmetros da Especialização",
+        "page": 126,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "hit",
+            "label": "Dado de Vida"
+          },
+          {
+            "key": "saves",
+            "label": "Salvaguardas"
+          },
+          {
+            "key": "weapons",
+            "label": "Armas"
+          },
+          {
+            "key": "armor",
+            "label": "Armaduras"
+          },
+          {
+            "key": "skills",
+            "label": "Perícias"
+          },
+          {
+            "key": "casting",
+            "label": "Conjuração"
+          }
+        ],
+        "rows": [
+          {
+            "hit": "d12",
+            "saves": "Força, Sabedoria",
+            "weapons": "Todas as armas simples e marciais",
+            "armor": "Leves",
+            "skills": "Atletismo; escolha uma entre Adestrar Animais, Intimidação, Natureza, Percepção e Sobrevivência",
+            "casting": "Nenhuma"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 126
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-dragoneer-raging-titan.feature.luta-imprudente.l1.1",
+      "name": "LUTA IMPRUDENTE",
+      "level": 1,
+      "description": "Você recebe o Estilo de Luta Lutador Imprudente. Ele é aprimorado automaticamente uma vez no 7º nível e novamente no 13º; se não puder ser aprimorado, escolha outro Estilo de Luta de Cavaleiro Dracônico.",
+      "page": 126,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-raging-titan.feature.forca-de-tita.l1.1",
+      "name": "FORÇA DE TITÃ",
+      "level": 1,
+      "description": "Seus ataques ignoram resistências causadas por diferença de tamanho; pode Empurrar e Agarrar criaturas maiores que você em uma quantidade de categorias de tamanho igual à proficiência; e sua capacidade de carga é dobrada.",
+      "page": 126,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-raging-titan.feature.robustez-espiritual.l3.1",
+      "name": "ROBUSTEZ ESPIRITUAL",
+      "level": 3,
+      "description": "Quando sofre dano, reduza separadamente cada tipo de dano envolvido por uma quantidade igual à sua proficiência.",
+      "page": 126,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-raging-titan.feature.golpes-grandiosos.l7.1",
+      "name": "GOLPES GRANDIOSOS",
+      "level": 7,
+      "description": "Quando tiver vantagem num ataque com arma corpo a corpo Pesada ou de Duas Mãos, ao acertar cause um dado de dano adicional da arma.",
+      "page": 126,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-raging-titan.feature.ataque-extra-aprimorado.l13.1",
+      "name": "ATAQUE EXTRA APRIMORADO",
+      "level": 13,
+      "description": "Ao realizar a ação Atacar, pode atacar três vezes em vez de uma.",
+      "page": 126,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-raging-titan.feature.impulso-maximo.l17.1",
+      "name": "IMPULSO MÁXIMO",
+      "level": 17,
+      "description": "Uma vez por Descanso Longo, quando for reduzido a 0 PV ou morto instantaneamente, seus PV são definidos para seu nível de Cavaleiro Dracônico e você recebe PV temporários iguais à metade de seus PV máximos.",
+      "page": 126,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

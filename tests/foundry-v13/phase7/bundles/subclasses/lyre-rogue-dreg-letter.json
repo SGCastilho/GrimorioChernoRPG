@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-rogue-dreg-letter",
+    "identifier": "lyre-rogue-dreg-letter",
+    "name": "Carta de Escória",
+    "originalName": "Dreg Letter",
+    "aliases": [
+      "Dreg Letter"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "477",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 477
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Assassinos que aplicam conhecimento médico para perfurar pontos vitais e debilitar seus alvos. Sabem onde golpear, quando torcer a lâmina e o que deve ser seccionado para causar ferimentos graves e persistentes. Esse treinamento também os torna capazes de prestar cuidados médicos básicos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 477
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-rogue-dreg-letter.feature.conhecimento-medico.l3.1",
+      "name": "CONHECIMENTO MÉDICO",
+      "level": 3,
+      "description": "Você ganha proficiência e Especialização na perícia Medicina.",
+      "page": 477,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-dreg-letter.feature.incisao-cirurgica.l3.1",
+      "name": "INCISÃO CIRÚRGICA",
+      "level": 3,
+      "description": "Quando acerta uma criatura com um ataque que qualificaria para seu Ataque Furtivo, mesmo que não aplique esse dano, você pode tentar causar uma ferida severa. O alvo realiza uma salvaguarda de Constituição contra sua CD baseada em Destreza. Em falha, sofre uma ferida duradoura por 1 minuto. Enquanto ela persistir, você causa dano adicional toda vez que acerta o alvo com um ataque de arma e também no início de cada turno dele. O dano depende do seu nível de Ladino: 3º, 1d6; 7º, 1d8; 11º, 1d10; 15º, 1d12; 19º, 2d8. O alvo repete a salvaguarda de Constituição no fim de cada turno, encerrando o efeito em um sucesso. Apenas uma ferida sua pode afetá-lo por vez; aplicar uma nova substitui a anterior. Criaturas incorpóreas, elementais e constructos têm sucesso automático. Como ação, uma criatura ferida pode realizar um teste de Medicina contra a mesma CD e encerrar o efeito em um sucesso. A ferida também se fecha se ela recuperar de uma só vez uma quantidade de pontos de vida igual ou superior ao seu nível de Ladino.",
+      "page": 477,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-dreg-letter.feature.ataque-extra-leve.l9.1",
+      "name": "ATAQUE EXTRA (LEVE)",
+      "level": 9,
+      "description": "Ao realizar a ação Atacar, você pode fazer dois ataques em vez de um, desde que ambos sejam feitos com armas que possuam as propriedades leve ou acuidade.",
+      "page": 477,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-dreg-letter.feature.expor-feridas.l13.1",
+      "name": "EXPOR FERIDAS",
+      "level": 13,
+      "description": "Quando acerta com vantagem uma criatura afetada por sua Incisão Cirúrgica, o dano que ela sofre no início de cada turno aumenta em uma quantidade igual ao seu bônus de proficiência.",
+      "page": 477,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-rogue-dreg-letter.feature.eviscerar.l17.1",
+      "name": "EVISCERAR",
+      "level": 17,
+      "description": "Quando acerta uma criatura afetada por sua Incisão Cirúrgica com um ataque que qualificaria para Ataque Furtivo, você pode forçá-la a realizar uma salvaguarda de Constituição contra sua CD baseada em Destreza. Em falha, a Incisão Cirúrgica termina imediatamente e o ataque se torna automaticamente um acerto crítico.",
+      "page": 477,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

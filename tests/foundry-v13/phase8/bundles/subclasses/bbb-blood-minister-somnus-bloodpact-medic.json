@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-blood-minister-somnus-bloodpact-medic",
+    "identifier": "bbb-blood-minister-somnus-bloodpact-medic",
+    "name": "Médico do Pacto de Sangue",
+    "originalName": "Bloodpact Medic",
+    "aliases": [
+      "Bloodpact Medic"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "71",
+    "chapter": "Capítulo IX: O Ministro de Sangue",
+    "page": 71
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "blood-minister-somnus",
+    "identifier": "blood-minister",
+    "name": "Ministro de Sangue"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "blood-minister",
+    "selectionLevel": 3,
+    "description": "O Médico do Pacto de Sangue possui sangue maleável e carregado de energia curativa, capaz de ser transferido para outros por contato. Seu sangue é aceito por outros organismos e pode restaurar volume e fluxo sanguíneo; se desejar, porém, ele também pode corrompê-lo e transformá-lo em arma.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 71
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-blood-minister-somnus-bloodpact-medic.feature.sangue-puro.l3.1",
+      "name": "Sangue Puro",
+      "level": 3,
+      "description": "Você é imune a dano de veneno e à condição envenenado.",
+      "page": 71,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-bloodpact-medic.feature.infusao-singular.l3.1",
+      "name": "Infusão Singular",
+      "level": 3,
+      "description": "Como ação bônus, toque outra criatura e gaste uma quantidade de Dados de Vida igual ou inferior ao seu bônus de proficiência, rolando todos eles. O alvo recupera pontos de vida iguais ao dobro da soma dos resultados.",
+      "page": 71,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-bloodpact-medic.feature.rajada-de-sangue-vil.l7.1",
+      "name": "Rajada de Sangue Vil",
+      "level": 7,
+      "description": "Como ação, você pode gastar uma quantidade de Dados de Vida igual ou inferior à metade de seu nível de Ministro de Sangue e lançar sangue em um cone de 4,5 m. Cada criatura na área realiza uma salvaguarda de Constituição contra sua CD de Seita Genética, usando Força ou Constituição para a CD conforme indicado pela fonte. Em falha, sofre dano de veneno e dano de ácido, cada um igual a 1d4 × a quantidade de Dados de Vida gastos; em sucesso, sofre metade. Criaturas que receberam pontos de vida de sua Infusão Singular desde o último Descanso são imunes a esse dano.",
+      "page": 71,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-bloodpact-medic.feature.infusao-potencializada.l11.1",
+      "name": "Infusão Potencializada",
+      "level": 11,
+      "description": "Sua Infusão Singular melhora. Todo Dado de Vida gasto nela se torna um d8 caso fosse menor. Além disso, uma criatura curada por ela recebe suas resistências e imunidades a dano e condições por 1 minuto, exceto as obtidas de itens, magias ou efeitos temporários; e qualquer cura que exceda o máximo de PV do alvo torna-se pontos de vida temporários.",
+      "page": 71,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-blood-minister-somnus-bloodpact-medic.feature.tratamento-simpatico.l15.1",
+      "name": "Tratamento Simpático",
+      "level": 15,
+      "description": "Sua Infusão Singular recebe quatro aprimoramentos: pode atingir criaturas a até 9 m; cada Dado de Vida gasto é rolado duas vezes e ambos os resultados são somados; após curar outra criatura, a próxima jogada de ataque, teste de habilidade ou salvaguarda que ela fizer no próximo minuto pode somar o maior tipo de Dado de Vida usado na cura, como pela Ministração Sanguínea; e, ao usar a característica em uma criatura que possa tocar, você recebe PV temporários iguais à metade dos PV concedidos, salvo se tiver escolhido a si mesmo como alvo.",
+      "page": 71,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

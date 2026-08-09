@@ -1,0 +1,164 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-cavaleiro-runico",
+    "identifier": "tasha-cavaleiro-runico",
+    "name": "Cavaleiro Rúnico",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "60–63",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 60
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Cavaleiros Rúnicos aprimoram sua proeza marcial utilizando o poder sobrenatural das runas, uma prática ancestral que se originou com os gigantes. Entalhadores de runas podem ser encontrados entre todas as famílias de gigantes e você provavelmente aprendeu suas técnicas direta ou indiretamente de um desses artesões místicos. Quer você tenha descoberto o trabalho de um gigante esculpido em uma colina ou caverna, aprendido sobre runas com um sábio, ou encontrado um gigante pessoalmente, você estudou o ofício dos gigantes e aprendeu como aplicar runas para fortalecer seu equipamento.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 60
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-cavaleiro-runico.feature.proficiencias-bonus.l3.1",
+      "name": "PROFICIÊNCIAS BÔNUS",
+      "level": 3,
+      "description": "Você ganha proficiência com ferramentas de artesão e aprende a falar, ler e escrever em gigante.",
+      "page": 60,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-cavaleiro-runico.feature.entalhador-de-runas.l3.1",
+      "name": "ENTALHADOR DE RUNAS",
+      "level": 3,
+      "description": "Você pode usar runas mágicas para aprimorar seu equipamento. Ao ganhar essa habilidade você aprende a inscrever duas runas à sua escolha dentre as runas descritas abaixo, e cada vez que você ganhar um nível nesta classe, você pode substituir uma runa que conheça por uma diferente advinda desta característica. Quando você alcança certos níveis nessa classe, você aprende runas adicionais, conforme mostrado na tabela de Runas Conhecidas. Runas Conhecidas Nível de Guerreiro Número de Runas 3º 7º 10º 15º Sempre que terminar um descanso longo você pode tocar uma quantidade de objetos igual ao número de runas que você conhece e gravar uma runa diferente em cada um deles. Para que isso seja possível, este objeto deve ser uma arma, armadura, escudo ou uma joia, ou alguma outra coisa que você possa vestir ou carregar em uma mão. Sua runa permanece em um objeto até você terminar outro descanso longo, e um objeto pode conter apenas uma runa por vez. As seguintes runas estão disponíveis quando você aprender uma runa. Se uma runa possuir algum requisito de nível, você deve estar pelo menos no nível mínimo exigido para aprendêla. Se uma runa pedir por uma salvaguarda, a CD de magia da runa será 8 + bônus de proficiência + modificador de Constituição. Runa da Nuvem. A magia desta runa simula a magia enganadora utilizada por alguns gigantes das nuvens. Enquanto estiver usando ou carregando um item com essa runa gravada, você tem vantagem nos testes de Destreza (Prestidigitação) e Carisma (Enganação). Adicionalmente, quando você ou uma criatura a até 9 metros for acertada por um ataque, você pode usar sua reação para invocar a runa e escolher outra criatura a até 9m de você, que não seja o atacante. A criaura escolhida se torna o alvo do ataque, utilizando a mesma jogada. Essa magia pode transferir o efeito do ataque independente do alcance original dele. Ao invocar esta runa você não poderá fazer isso novamente até terminar um descanso curto ou longo. Runa do Fogo. A magia desta runa canaliza a maestria da perícia dos ferreiros gigantes de fogo. Enquanto estiver usando ou carregando um item com uma runa dessas gravada seu bônus de proficiência é dobrado para qualquer teste que utilizar ferramentas. Além disso, ao acertar um ataque com arma em uma criatura, você pode invocar a runa para conjurar grilhões incandescentes: o alvo recebe 2d6 de dano de fogo e deve ser bem-sucedido em uma salvaguarda de Força ou ficará impedido por 1 minuto. Enquanto estiver impedido pelas correntes, o alvo sofre 2d6 de dano de fogo no começo de cada um dos turnos dele. O alvo pode repetir a salvaguarda no final de cada um dos turnos dele, e os grilhões desaparecem caso ele seja bem-sucedido. Ao invocar esta runa você não poderá fazer isso novamente até terminar um descanso curto ou longo. Runa do Gelo. A magia desta runa evoca o poder daqueles que vivem na vastidão invernal, como os gigantes do gelo. Enquanto estiver usando ou carregando um item com uma runa dessas gravada você tem vantagem nos testes de Sabedoria (Lidar com Animais) e Carisma (Intimidação). Além disso, você pode invocar a runa como uma ação bônus para aumentar sua resistência. Por 10 minutos, você ganha um bônus de +2 para todos os testes de habilidade e salvaguarda que utilizem Força ou Constituição. Ao invocar esta runa você não poderá fazer isso novamente até terminar um descanso curto ou longo. Runa da Pedra. A magia desta runa canaliza a introspecção associada aos gigantes de pedra. Enquanto estiver usando ou carregando um item com uma dessas runas gravada você tem vantagem nos testes de Sabedoria (Intuição) e adquire visão no escuro com alcance de 36m. Adicionalmente, quando uma criatura que você possa ver termina o turno dela a até 9 metros de você, você pode usar sua reação para invocar a runa e forçar a criatura a fazer uma salvaguarda de Sabedoria. A menos que seja bem-sucedida, a criatura fica enfeitiçada por você por 1 minuto. Enquanto estiver enfeitiça desta forma, a criatura tem deslocamento 0 e fica incapacitada, caindo em um coma estupor cheio de sonhos. A criatura repete a salvaguarda ao final de cada um dos turnos dela, encerrando o efeito em caso de sucesso. Ao invocar esta runa você não poderá fazer isso novamente até terminar um descanso curto ou longo. Runa da Colina. (7º nível ou superior) A magia desta runa confere uma resistência semelhante à de um gigante da colina. Enquanto estiver usando ou carregando um item com uma dessas runas gravada você tem vantagem em salvaguardas contra ser envenenado e tem resistência contra dano venenoso. Além disso, você pode invocar a runa com uma ação bônus, ganhando resistência a dano cortante, perfurante e contundente por 1 minuto. Ao invocar esta runa você não poderá fazer isso novamente até terminar um descanso curto ou longo. Runa da Tempestade. (7º nível ou superior) Ao usar esta runa você pode vislumbrar o futuro como um vidente dos gigantes da tempestade. Enquanto estiver usando ou carregando um item com uma dessas runas gravada você tem vantagem nos testes de Inteligência (Arcanismo) e não pode ser surpreendido, desde que não esteja incapacitado. Além disso, você pode invocar a runa com uma ação bônus para entrar em um estado profético por 1 minuto ou até ser incapacitado. Enquanto estiver neste estado, quando você ou outra criatura que você possa ver a até 18m da sua posição fizer uma jogada de ataque, salvaguarda ou teste de habilidade, você pode usar sua reação para dar vantagem ou desvantagem nesta rolagem. Ao invocar esta runa você não poderá fazer isso novamente até terminar um descanso curto ou longo.",
+      "page": 60,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-cavaleiro-runico.feature.poderio-gigante.l3.1",
+      "name": "PODERIO GIGANTE",
+      "level": 3,
+      "description": "Você aprendeu como imbuir a si mesmo com o poder dos gigantes. Como uma ação bônus, você magicamente ganha os seguintes benefícios, que duram por 1 minuto: Caso seu tamanho seja menor do que Grande, você se torna Grande, junto com qualque coisa que estiver vestindo. Se não houver espaço para crescer, seu tamanho não muda. Você tem vantagem em testes de Força e salvaguardas de Força. Uma vez por turno, um de seus ataques com arma ou um ataque desarmado podem provocar 1d6 de dano adicional ao alvo em um acerto. Você pode usar esta habilidade um número de vezes igual ao seu bônus de proficiência, e recupera todos os seus usos ao terminar um descanso longo.",
+      "page": 61,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-cavaleiro-runico.feature.escudo-runico.l7.1",
+      "name": "ESCUDO RÚNICO",
+      "level": 7,
+      "description": "Você aprende a invocar sua magia rúnica para proteger seus aliados. Quando outra criatura que você possa ver a até 18m de você for atingida por um ataque, você pode usar sua reação para forçar o atacante a jogar novamente o d20 e ficar com o novo resultado. Você pode usar esta habilidade um número de vezes igual ao seu bônus de proficiência, e recupera todos os seus usos ao terminar um descanso longo.",
+      "page": 61,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-cavaleiro-runico.feature.grande-estatura.l10.1",
+      "name": "GRANDE ESTATURA",
+      "level": 10,
+      "description": "A magia das runas o afetou permanentemente. Quando ganhar esta característica, role 3d4. Você cresce em altura o resultado total x 2,5 em centímetros. Além disso, o dano extra provocado pelo seu Poderio Gigante aumenta para 1d8.",
+      "page": 61,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-cavaleiro-runico.feature.mestre-das-runas.l15.1",
+      "name": "MESTRE DAS RUNAS",
+      "level": 15,
+      "description": "Você agora pode invocar cada runa que conhece duas vezes ao invés de uma e recupera todos os seus usos com um descanso curto ou longo.",
+      "page": 61,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-cavaleiro-runico.feature.colosso-runico.l18.1",
+      "name": "COLOSSO RÚNICO",
+      "level": 18,
+      "description": "Você aprendeu como amplificar sua transformação motivada pelas runas. Como resultado, o dano extra que você provoca com o Poderio Gigante aumenta para 1d10. Adicionalmente, quando você utilizar essa característica, seu tamanho pode aumentar para Enorme e, enquanto neste tamanho, seu alcance é ampliado em 1,5m.",
+      "page": 62,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

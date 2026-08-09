@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-barbarian-champion-of-mortuous",
+    "identifier": "lyre-barbarian-champion-of-mortuous",
+    "name": "Campeão de Mortuous",
+    "originalName": "Champion of Mortuous",
+    "aliases": [
+      "Champion of Mortuous"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "431–432",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 431
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Um estilo de combate surgido entre antigos guerreiros que lutavam no Anel de Lopoint, em Sermonway, onde Mortuous já foi venerado como patrono da arena. Seus campeões eram treinados para ignorar a própria segurança, aterrorizar e desafiar seus alvos, impondo medo às presas ao custo da própria integridade física e mental.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 431
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-barbarian-champion-of-mortuous.feature.declaracao-sangrenta.l3.1",
+      "name": "DECLARAÇÃO SANGRENTA",
+      "level": 3,
+      "description": "Sempre que entrar em Fúria, escolha uma criatura a até 18 metros que possa ver ou ouvir você e declare com absoluta certeza que irá derrotá-la. Até sua Fúria terminar, adicione seu bônus de dano da Fúria às jogadas de ataque contra essa criatura e você pode realizar imediatamente a ação Disparada, desde que o deslocamento adicional seja usado para se aproximar do alvo. Se você reduzir o alvo a 0 pontos de vida antes do fim da Fúria, recebe pontos de vida temporários iguais a 1d10 + seu nível de Bárbaro. Se o alvo atual estiver com 0 pontos de vida ou morto, você pode usar uma ação bônus para escolher outro alvo; isso pode ser feito, por Fúria, um número de vezes igual à metade do seu bônus de proficiência, arredondado para baixo.",
+      "page": 431,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-champion-of-mortuous.feature.momentos-de-devastacao.l6.1",
+      "name": "MOMENTOS DE DEVASTAÇÃO",
+      "level": 6,
+      "description": "Você possui uma quantidade de Momentos de Devastação igual à metade do seu nível de Bárbaro, arredondado para baixo, recuperando todos após um Descanso Longo. Você pode gastá-los das seguintes formas. Sede de Sangue: ao reduzir uma criatura a 0 pontos de vida ou obter um acerto crítico em seu turno, gaste 2 Momentos como ação bônus para mover até 4,5 metros em direção a outra criatura e realizar outra ação Atacar. Dano Brutal: ao obter o resultado máximo em um dado de dano de arma, gaste 1 Momento para rolar novamente esse dado e somar o resultado ao dano; se o novo resultado também for o máximo, repita o processo. Resistir à Fadiga: como ação bônus, gaste 1 Momento para reduzir sua Fadiga de Combate em 1d4 pontos ou remover um nível de exaustão. Sobrevivência: quando um ataque ou efeito do qual você esteja ciente fosse reduzi-lo a 0 pontos de vida, gaste 1 Momento como reação para reduzir o dano em uma quantidade igual ao seu nível de Bárbaro.",
+      "page": 431,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-champion-of-mortuous.feature.furia-aterrorizante.l10.1",
+      "name": "FÚRIA ATERRORIZANTE",
+      "level": 10,
+      "description": "Enquanto estiver em Fúria, criaturas hostis que iniciarem o turno a até 3 metros de você ou entrarem nessa área pela primeira vez no turno devem realizar uma salvaguarda de Sabedoria contra a CD das suas características baseada em Força. Em caso de falha, ficam amedrontadas por você até o início do próximo turno delas. Em caso de sucesso, não são afetadas e ficam imunes a este efeito por 24 horas, ou até a próxima vez que você entrar em Fúria.",
+      "page": 432,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-barbarian-champion-of-mortuous.feature.aprimoramento-de-ataque-extra.l14.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 14,
+      "description": "Quando realiza a ação Atacar, você pode atacar três vezes em vez de uma.",
+      "page": 432,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

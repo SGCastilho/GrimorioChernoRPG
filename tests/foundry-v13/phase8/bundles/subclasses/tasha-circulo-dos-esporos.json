@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-circulo-dos-esporos",
+    "identifier": "tasha-circulo-dos-esporos",
+    "name": "Círculo dos Esporos",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "41–43",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 41
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Druidas do Círculo dos Esporos encontram a beleza na decadência. Eles veem dentro dos bolores e outros fungos a habilidade de transformar matéria morta em abundante, ainda que de alguma forma estranha, vida. Estes druidas acreditam que vida e morte são parte de um grande ciclo, com um levando ao outro, sempre retornando. A morte não é o fim da vida, em vez disso, é uma mudança de estado que vê a mudança de vida em uma nova forma. Druidas desse círculo possuem uma relação complexa com mortos-vivos. Eles não veem nada inerentemente errado com os mortos-vivos, que eles consideram como um companheiro para a vida e para a morte. Mas estes druidas acreditam que o ciclo natural é mais saudável quando cada parte dele é vibrante e mutável. Mortos-vivos que buscam substituir toda a vida pela morte, ou tentam evitar a passagem para seu descanso final, violam esse ciclo e devem sem combatidos.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-circulo-dos-esporos",
+        "title": "Magias do Círculo dos Esporos",
+        "page": 42,
+        "description": "",
+        "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Druida"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "2º",
+            "spells": "Toque Necrótico"
+          },
+          {
+            "level": "3º",
+            "spells": "Cegueira/Surdez; Repouso Tranquilo"
+          },
+          {
+            "level": "5º",
+            "spells": "Animar Mortos; Forma Gasosa"
+          },
+          {
+            "level": "7º",
+            "spells": "Malogro; Confusão"
+          },
+          {
+            "level": "9º",
+            "spells": "Névoa Mortal; Praga"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 41
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-circulo-dos-esporos.feature.magias-de-circulo.l2.1",
+      "name": "MAGIAS DE CÍRCULO",
+      "level": 2,
+      "description": "Sua ligação simbólica com os fungos e sua habilidade de transitar entre o cíclo da vida e da morte fornece a você acesso a certas magias. No 2° Nível, você aprende o truque Toque Necrótico. No 3°, 5°, 7° e 9° níveis, você ganha acesso às magias listadas na tabela de Magias do círculo dos Esporos. Assim que você ganha acesso a essas magias, elas sempre serão consideradas como preparadas por você, e não contam dentro do número de magias que você pode preparar por dia. Se através disso você adquirir uma magia que não esteja na lista de magias de druida, agora ela passa a ser considerada uma magia de druida para você. Magias do Círculo dos Esporos Nível de Druida Magias 2º Toque Necrótico 3º Cegueira/ Surdez, Repouso Tranquilo 5º Animar Mortos, Forma Gasosa 7º Malogro, Confusão 9º Névoa Mortal, Praga",
+      "page": 42,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-dos-esporos.feature.aura-de-esporos.l2.1",
+      "name": "AURA DE ESPOROS",
+      "level": 2,
+      "description": "Você é cercado por esporos necróticos invisíveis, que são inofensivos até que você os libere em uma criatura próxima. Quando uma criatura que você possa ver se move para um espaço a 3m ou menos de você ou começa seu turno nessa distância, você pode usar sua reação para causar 1d4 de dano necrótico para essa criatura, a menos que ela seja bemsucedida em uma salvaguarda de Constituição contra sua CD de magia. O dano necrótico aumenta para 1d6 no 6° nível, 1d8 no 10° nível, e 1d10 no 14° nível.",
+      "page": 42,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-dos-esporos.feature.entidade-simbiotica.l2.1",
+      "name": "ENTIDADE SIMBIÓTICA",
+      "level": 2,
+      "description": "Você ganha a habilidade de canalizar a magia em seus esporos. Como uma ção, você pode gastar um uso de sua Forma selvagem para despertar esses esporos, em vez de se transformar em uma criatura do tipo fera, e você ganha 4 pontos de vida temporários para cada nível nessa classe. Enquanto esta característica estiver ativa, você ganha os seguintes benefícios: Quando você provoca dano com a Aura de Esporos, jogue o dado de dano uma segunda vez e adicione esse valor ao total de dano. Seus ataques corpo a corpo provocam 1d6 de dano necrótico extra a qualquer alvo que você acertar. Esses benefícios duram por 10 minutos, até que você perca todos esses pontos de vida temporários, ou até que use sua Forma Selvagem novamente.",
+      "page": 42,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-dos-esporos.feature.infestacao-fungica.l6.1",
+      "name": "INFESTAÇÃO FÚNGICA",
+      "level": 6,
+      "description": "Seus esporos ganham a habilidade de infestar um corpo e animá-lo. Se uma fera ou humanóide de tamanho Pequeno ou Médio a até 3m de você morrer, você pode usar sua reação para animá-la, fazendo com que imediatamente se levante com 1 Ponto de Vida. A criatura utiliza o bloco de estatísticas do zumbi do Manual dos Monstros. Ela permanece animada por 1 hora, tempo após o qual ela colapsa e morre. Em combate, o turno do zumbi é realizado logo após o seu. Ele obedece seus comandos mentais, e a única ação que ele pode realizar é a de Ataque, realizando um ataque corpo-acorpo. Você pode usar essa característica um número de vezes igual ao seu modificador de Sabedoria (Mínimo de 1), e você recupera todos os usos ao terminar um descanso longo.",
+      "page": 42,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-dos-esporos.feature.expansao-de-esporos.l10.1",
+      "name": "EXPANSÃO DE ESPOROS",
+      "level": 10,
+      "description": "Você adquire a habilidade de semear uma área com esporos mortais. Como uma ação bônus enquanto sua Entidade simbiótica estiver ativa, você pode espalhar esporos a até 9m de distância, onde eles pairam em um cubo de 3m por 1 minuto. Os esporos desaparecem antes se você usar essa característica novamente, se dissipá-los com uma ação bônus, ou se sua Entidade simbiótica não estiver mais ativa. Sempre que uma criatura mover-se para esse cubo ou começar seu turno lá, a criatura recebe o dano de sua Aura de Esporos, a menos que seja bem-sucedida em uma salvaguarda de Constituição contra sua CD de magia. Uma criatura não pode receber esse dano mais do que uma vez por turno. Enquanto o cubo de esporos durar, você não pode utilizar a reação da Aura de esporos.",
+      "page": 42,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-circulo-dos-esporos.feature.corpo-fungico.l14.1",
+      "name": "CORPO FÚNGICO",
+      "level": 14,
+      "description": "Os esporos fúngicos em seu corpo o alteram: você não pode mais ser cegado, ensurdecido, amedrontado, ou envenenado, e qualquer acerto crítico conta você será considerado um acerto normal, exceto se você estiver incapacitado.",
+      "page": 43,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

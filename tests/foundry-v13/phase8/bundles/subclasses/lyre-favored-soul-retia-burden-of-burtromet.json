@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-burtromet",
+    "identifier": "lyre-favored-soul-retia-burden-of-burtromet",
+    "name": "Fardo de Burtromet",
+    "originalName": "Burden of Burtromet",
+    "aliases": [
+      "Burden of Burtromet"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "347",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 347
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): grande martelo. Burtromet impõe chamas inextinguíveis aos seus favorecidos, inspirando-os a espalhar fogo, fundir e reformar metal e buscar níveis cada vez maiores de poder destrutivo.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 347
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-burtromet.feature.essencia-carbonizada.l1.1",
+      "name": "ESSÊNCIA CARBONIZADA",
+      "level": 1,
+      "description": "Suas opções de Essência recebem benefícios próprios. Manto de Burtromet (Radiância Essencial): uma vez por Descanso Curto ou Longo, conjure Véu de Ilsrabae sem espaço em nível igual ao seu espaço de pacto; ele se torna um manto de fogo branco, concede imunidade a fogo em vez de resistência a frio e causa fogo em vez de frio. Forjado em Chamas (Armamento de Essência): seu Armamento pode causar fogo no lugar do dano normal e, em qualquer caso, causa dano de fogo adicional igual ao bônus de proficiência. Escudo da Desafiadora Cinzenta (Voo de Essência): quando usa Esquivar, manifesta um escudo de fogo; criaturas a até 1,5 m que acertarem você com ataques de arma enquanto estiver Esquivando sofrem 1d6 de fogo.",
+      "page": 347,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-burtromet.feature.resistencia-ignea.l1.1",
+      "name": "RESISTÊNCIA ÍGNEA",
+      "level": 1,
+      "description": "Você tem resistência a dano de fogo.",
+      "page": 347,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-burtromet.feature.azagaia-meteorica.l6.1",
+      "name": "AZAGAIA METEÓRICA",
+      "level": 6,
+      "description": "Na ação Atacar, pode substituir qualquer ataque com arma por uma azagaia flamejante e arremessá-la contra alvo visível a até 18 metros como ataque de magia à distância. Em acerto, causa 2d6 + seu modificador de conjuração de dano de fogo. Se acertar o mesmo alvo com duas ou mais dessas azagaias no mesmo turno, ele fica Incendiado.",
+      "page": 347,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-burtromet.feature.martelo-dos-fornos-estilhacados.l10.1",
+      "name": "MARTELO DOS FORNOS ESTILHAÇADOS",
+      "level": 10,
+      "description": "Uma vez por turno, ao acertar ataque de arma corpo a corpo, gaste Purificação para reforçar o golpe com calor e força. O alvo faz salvaguarda de Destreza; em falha sofre 2d10 × o nível do seu espaço de pacto de dano de fogo, em sucesso metade. Em um sucesso do alvo, você ainda pode fazer as chamas explodirem: todas as criaturas exceto você em raio de 6 metros do alvo fazem a mesma salvaguarda, e quem falhar sofre o mesmo dano do alvo inicial. Quem falhar em qualquer dessas salvaguardas também fica Incendiado, sofrendo 2d8 de dano de fogo em vez do d10 normal da condição.",
+      "page": 347,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-burtromet.feature.aprimoramento-de-ataque-extra.l13.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 13,
+      "description": "Ao realizar a ação Atacar, pode atacar três vezes. No 20º nível de Alma Favorecida, pode atacar quatro vezes.",
+      "page": 347,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

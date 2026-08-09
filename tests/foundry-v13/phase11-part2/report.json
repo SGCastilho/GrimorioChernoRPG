@@ -1,0 +1,27 @@
+{
+  "phase": "11.2",
+  "appVersion": "5.24.0",
+  "importerVersion": "0.8.0",
+  "target": {
+    "foundry": "13.351",
+    "dnd5e": "5.3.3"
+  },
+  "representativeClasses": 6,
+  "automationProfiles": 25,
+  "activities": 23,
+  "resources": 6,
+  "activeEffects": 8,
+  "passiveEffects": 6,
+  "activityAppliedEffects": 2,
+  "tiers": {
+    "full": 7,
+    "partial": 17,
+    "description": 1
+  },
+  "safety": {
+    "auraPropagation": false,
+    "conditionalGlobalAttackEffects": false,
+    "conditionalGlobalDamageEffects": false,
+    "automaticEarlyRageTermination": false
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-apophemia",
+    "identifier": "lyre-favored-soul-retia-burden-of-apophemia",
+    "name": "Fardo de Apophemia",
+    "originalName": "Burden of Apophemia",
+    "aliases": [
+      "Burden of Apophemia"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "346",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 346
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): espada curta ou espada curta de duas pontas. A antiga Correfont e deusa da loucura impõe a compreensão da insanidade aos seus favorecidos. Eles aprendem a corromper a razão, elevar o terror ao delírio e roubar completamente a voz de quem se opõe a eles.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 346
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-apophemia.feature.manual-de-uma-correfont.l1.1",
+      "name": "MANUAL DE UMA CORREFONT",
+      "level": 1,
+      "description": "Como Apophemia já foi uma Correfont, magias de Inscritor contam como se estivessem na lista da Alma Favorecida para você, permitindo aprendê-las e conjurá-las.",
+      "page": 346,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-apophemia.feature.tolerancia-psiquica.l1.1",
+      "name": "TOLERÂNCIA PSÍQUICA",
+      "level": 1,
+      "description": "Você tem resistência a dano psíquico e é imune à condição enfurecido.",
+      "page": 346,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-apophemia.feature.fala-sussurrada.l6.1",
+      "name": "FALA SUSSURRADA",
+      "level": 6,
+      "description": "Você pode comunicar-se telepaticamente com criaturas que veja a até 18 metros. Elas compreendem a mensagem se vocês compartilharem pelo menos um idioma, mas não podem responder. Quem já ouviu sua voz reconhece a comunicação como sua. Uma criatura contatada pode usar reação para tentar bloqueá-lo, realizando salvaguarda de Carisma contra sua CD de magia; em sucesso, bloqueia você por 24 horas, podendo remover e restaurar o bloqueio à vontade durante esse período.",
+      "page": 346,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-apophemia.feature.insanidade-intrusiva.l10.1",
+      "name": "INSANIDADE INTRUSIVA",
+      "level": 10,
+      "description": "Como ação, gaste um uso de Purificação e escolha qualquer número de criaturas a até 4,5 metros. Cada alvo faz salvaguarda de Carisma; em falha, fica enfeitiçado por você e enfurecido por 10 minutos, usando a mesma CD para as regras de enfurecido. Alvos assim não rolam para decidir se atacam um hostil: atacam automaticamente; tratam outras criaturas afetadas como hostis e atacam primeiro a mais próxima; e não compreendem fala ou intenções. Eles repetem a salvaguarda com vantagem sempre que sofrem dano de alguém não afetado e também ao fim de cada turno, encerrando em sucesso.",
+      "page": 346,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-apophemia.feature.valor-do-silencio.l13.1",
+      "name": "VALOR DO SILÊNCIO",
+      "level": 13,
+      "description": "Quando uma criatura a até 18 metros tenta falar, conjurar magia com componente verbal ou pronunciar palavra de comando, use reação para criar uma esfera de silêncio centrada nos espaços dela e em todos os espaços a até 1,5 metro, funcionando como Silêncio por 1 minuto. O efeito que exigia fala falha e a ação é gasta. Usos por Descanso Curto ou Longo iguais à metade do bônus de proficiência, arredondado para baixo.",
+      "page": 346,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

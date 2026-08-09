@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-trilha-da-magia-selvagem",
+    "identifier": "tasha-trilha-da-magia-selvagem",
+    "name": "Trilha da Magia Selvagem",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "24–26",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 24
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Muitos lugares no multiverso fervilham com beleza, emoção intensa e rompantes de magia; Faéria, os Planos Superiores, e outros mundos de poder sobrenatural irradiam com tais forças e podem influenciar profundamente as pessoas. Como seres intensos, bárbaros são especialmente suscetíveis a essas influências imprevisíveis, com alguns deles sendo transformados pela magia. Estes bárbaros inundados pela magia seguem a Trilha da Magia Selvagem. Bárbaros elfos, tiferinos, aasimares, e genasi frequentemente seguem esse caminho, ansiosos por manifestar a magia transcendental de seus ancestrais.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 24
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-trilha-da-magia-selvagem.feature.surto-selvagem.l3.1",
+      "name": "SURTO SELVAGEM",
+      "level": 3,
+      "description": "A energia mágica remexendo-se dentro de você às vezes irrompe de seu corpo. Quando você entra em fúria, role na tabela de Magia Selvagem para determinar o efeito mágico produzido. Se o efeito exigir uma salvaguarda, a CD é igual a 8 + seu bônus de proficiência + seu modificador de Constituição. Magia Selvagem 1d8 Efeito 1 Tentáculos sombrios chicoteiam ao seu redor. Cada criatura a sua escolha em seu campo de visão e que esteja a até 9m de você deve realizar uma salvaguarda de Constituição ou sofre 1d12 de dano necrótico. Você também ganha 1d12 de pontos de vida temporários. 2 Você se teleporta a até 9m para um espaço desocupado que você possa ver. Até que sua fúria termine, você pode utilizar esse efeito novamente em cada um dos seus turnos com uma ação bônus. 3 Um espírito intangível, parecido com um flumph ou uma pixie (a sua escolha), aparece a até 1,5m de distância de uma criatura a sua escolha em seu campo de visão a até 9m de você. No final do turno atual, o espírito explode, e cada criatura a até 1,5m dele deve ser bem-sucedida em uma salvaguarda de Destreza ou sofre 1d6 de dano de energia. Até que sua fúria acabe você pode utilizar esse efeito novamente em cada um de seus turnos, invocando outro espírito com uma ação bônus. 4 A magia infiltra-se em uma arma a sua escolha que você esteja empunhando. Até que sua fúria termine, o tipo de dano da arma muda para energia e ela adquire as propriedades leve e arremesso, com um alcance normal de 6m e um alcance longo de 18m. Se a arma deixar a sua mão, ela reaparecerá empunhada no final do turno atual. 5 Sempre que uma criatura o acertar com uma jogada de ataque antes que sua fúria se encerre, essa criatura sofre 1d6 de dano de energia, conforme a magia chicoteia em retribuição 6 Até que sua fúria acabe, você é cercado por luzes protetoras multicoloridas; você ganha um bônus de +1 na CA, e enquanto estiverem a até 3m de você seus aliados também recebem o mesmo bônus. 7 Flores e vinhas temporariamente crescem ao seu redor; até que sua fúria acabe, o terreno a até 4,5m de você é considerado terreno difícil para os seus inimigos. 8 Um raio de luz é disparado a partir de seu peito. Outra criatura a sua escolha em seu campo de visão e que esteja a até 9m de você deve realizar uma salvaguarda de Constituição ou sofrerá 1d6 de dano radiante e ficará cega até o começo do seu próximo turno. Até que sua fúria se encerre, você pode utilizar este efeito novamente em cada um de seus turnos com uma ação bônus.",
+      "page": 25,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-trilha-da-magia-selvagem.feature.percepcao-magica.l3.1",
+      "name": "PERCEPÇÃO MÁGICA",
+      "level": 3,
+      "description": "uma ação, você pode ampliar seus sentidos para notar a presença de concentração de magia. Até o final de seu próximo turno, você sabe a localização de qualquer magia ou item mágico a até 18m de você que não esteja sob cobertura total. Quando você sente uma magia, você também descobre de que escola ela é. Você pode usar essa característica um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos quando você terminar um descanso longo.",
+      "page": 25,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-trilha-da-magia-selvagem.feature.fortalecimento-magico.l6.1",
+      "name": "FORTALECIMENTO MÁGICO",
+      "level": 6,
+      "description": "Você pode domar sua magia selvagem para fortalecer a si mesmo ou a um companheiro. Usando uma ação, você pode tocar uma criatura (que pode ser você mesmo) e conferir um dos seguintes benefícios a sua escolha para a criatura tocada: Por 10 minutos, a criatura pode rolar um d3 sempre que fizer uma jogada de ataque ou teste de habilidade e adicionar o número rolado na jogada do d20. Role um d3. A criatura recupera um espaço de magia gasto de círculo igual ou menor ao valor rolado (a escolha da criatura). Uma vez que receba esse benefício, a criatura não poderá ser afetada por ele novamente até que termine um descanso longo. Você pode realizar essa ação um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos quando você terminar um descanso longo.",
+      "page": 25,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-trilha-da-magia-selvagem.feature.retaliacao-instavel.l10.1",
+      "name": "RETALIAÇÃO INSTÁVEL",
+      "level": 10,
+      "description": "Quando você estiver ameaçado durante a sua fúria, a mágica dentro de você pode escapar; imediatamente após você receber dano ou falhar em uma salvaguarda enquanto estiver em fúria, você pode utilizar a sua reação para jogar na tabela de Magia Selvagem e imediatamente produzir o efeito rolado. Esse efeito substitui seu efeito de Magia Selvagem atual.",
+      "page": 25,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-trilha-da-magia-selvagem.feature.surto-controlado.l14.1",
+      "name": "SURTO CONTROLADO",
+      "level": 14,
+      "description": "Sempre que rolar na tabela de Magia Selvagem, você pode jogar duas vezes e escolher qual dos dois efeitos liberar. Se você rolar o mesmo número em ambos os dados, você pode ignorar o resultado e escolher qualquer efeito na tabela.",
+      "page": 25,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

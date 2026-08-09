@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-druid-teardrop-admissive",
+    "identifier": "zagalhta-druid-teardrop-admissive",
+    "name": "Admissivo de Teardrop",
+    "originalName": "Teardrop’s Admissive",
+    "aliases": [
+      "Teardrop’s Admissive"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "147–148",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 147
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Druida que permite que as Gotas Cósmicas transformem corpo e mente, aproximando imaginação e realidade e usando radiação eidomântica para alterar energia e anatomia.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 147
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-druid-teardrop-admissive.feature.astrocorretivo.l2.1",
+      "name": "ASTROCORRETIVO",
+      "level": 2,
+      "description": "Ao conjurar magia de Astromancia, recebe o Bônus de Astromancia dela mesmo em ambiente de gravidade normal.",
+      "page": 147,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-druid-teardrop-admissive.feature.coracao-cosmico.l2.1",
+      "name": "CORAÇÃO CÓSMICO",
+      "level": 2,
+      "description": "Ao preparar magias de Druida, trate magias dos grupos Astromancia e Eidomancia como se estivessem na lista de Druida. Você tem vantagem em Verificações de Eidomancia.",
+      "page": 148,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-druid-teardrop-admissive.feature.ressonancia-imaginaria.l6.1",
+      "name": "RESSONÂNCIA IMAGINÁRIA",
+      "level": 6,
+      "description": "Ao preparar magias, pode tratar magias de qualquer lista como magias de Druida se o nível delas for igual ou menor que sua proficiência. Essas magias só podem ser conjuradas no nível-base, independentemente do espaço usado.",
+      "page": 148,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-druid-teardrop-admissive.feature.simpatia-eidolica.l10.1",
+      "name": "SIMPATIA EIDÓLICA",
+      "level": 10,
+      "description": "Quando criatura o mira com magia/arma eidólica ou que causaria dano eidólico, ela faz salvaguarda de Sabedoria contra sua CD de Druida. Em falha deve escolher outro alvo ou o ataque erra automaticamente; em sucesso fica imune a este efeito por 24 horas. Ela sabe da proteção antes de atacar.",
+      "page": 148,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-druid-teardrop-admissive.feature.evolucao-desbloqueada.l14.1",
+      "name": "EVOLUÇÃO DESBLOQUEADA",
+      "level": 14,
+      "description": "Você recebe voo, natação e escalada iguais ao deslocamento; respira ar e água e não precisa de ar para sobreviver no vácuo; e recebe aceleração 0-G igual ao dobro do deslocamento base. Esses benefícios se aplicam a qualquer Forma Selvagem.",
+      "page": 148,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

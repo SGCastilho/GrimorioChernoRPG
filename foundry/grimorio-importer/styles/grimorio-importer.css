@@ -1,0 +1,4 @@
+.grimorio-importer-status {
+  border-left: 3px solid var(--color-border-highlight, #7a5c2e);
+  padding-left: 0.75rem;
+}

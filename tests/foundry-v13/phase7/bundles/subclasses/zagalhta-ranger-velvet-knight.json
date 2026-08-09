@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-ranger-velvet-knight",
+    "identifier": "zagalhta-ranger-velvet-knight",
+    "name": "Cavaleiro do Veludo",
+    "originalName": "Velvet Knight",
+    "aliases": [
+      "Velvet Knight"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "165",
+    "chapter": "Capítulo 6: Opções de Subclasse",
+    "page": 165
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Patrulheiro que canaliza a energia reativa do Veludo Estelar para transformar temporariamente armas e armaduras em extensões explosivas da própria vontade.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 165
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-ranger-velvet-knight.feature.aprimoramentos-de-veludo-estelar.l3.1",
+      "name": "APRIMORAMENTOS DE VELUDO ESTELAR",
+      "level": 3,
+      "description": "Usos por Descanso iguais ao seu Bônus de Favor. Como ação bônus escolha: Armamento de Veludo Estelar — por 1 minuto, uma arma recebe bônus de aprimoramento igual à metade da proficiência (sobrepõe o existente), torna-se mágica/adamantina e concede um ataque extra na ação Atacar; ou Bombardeio de Veludo Estelar — transforme brevemente arma à distância e dispare ponto dentro do alcance normal; criaturas a 4,5 m fazem Destreza, sofrendo em falha o dano normal da arma + Dado de Favor × Bônus de Favor como fogo ou radiante, metade em sucesso.",
+      "page": 165,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-ranger-velvet-knight.feature.nanoarmadura-de-veludo.l7.1",
+      "name": "NANOARMADURA DE VELUDO",
+      "level": 7,
+      "description": "Como ação bônus, aprimore sua armadura por 1 minuto: CA + Bônus de Favor; reduz contundente/perfurante/cortante pela metade do nível de Patrulheiro; deslocamento +3 m. Uma vez por Descanso; usos adicionais gastam Espaço de 2º+. Com Espaço de 4º+, também recebe voo de 18 m. Se cairia a 0 PV, a armadura reverte e você fica com 1 PV.",
+      "page": 165,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-ranger-velvet-knight.feature.autodesdobramento-de-armadura.l11.1",
+      "name": "AUTODESDOBRAMENTO DE ARMADURA",
+      "level": 11,
+      "description": "Ao rolar iniciativa, pode ativar Nanoarmadura imediatamente se ainda não gastou o uso gratuito por Descanso.",
+      "page": 165,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-ranger-velvet-knight.feature.surto-do-reator.l11.1",
+      "name": "SURTO DO REATOR",
+      "level": 11,
+      "description": "Pode gastar Espaço de Patrulheiro para ativar Armamento e Bombardeio de Veludo Estelar juntos na mesma ação bônus, sem consumir os usos normais; também pode ativar apenas um.",
+      "page": 165,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-ranger-velvet-knight.feature.aprimoramentos-de-veludo-estelar.l15.1",
+      "name": "APRIMORAMENTOS DE VELUDO ESTELAR",
+      "level": 15,
+      "description": "Armamento: passa a conceder dois ataques extras na ação Atacar em vez de um. Bombardeio: pode aumentar o raio de 4,5 m até 9 m e dobra o alcance a que pode ser disparado.",
+      "page": 165,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

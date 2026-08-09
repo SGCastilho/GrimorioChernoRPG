@@ -1,0 +1,155 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-paladin-oath-of-the-dawn",
+    "identifier": "lyre-paladin-oath-of-the-dawn",
+    "name": "Juramento da Alvorada",
+    "originalName": "Oath of the Dawn",
+    "aliases": [
+      "Oath of the Dawn"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "474",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 474
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "paladin",
+    "identifier": "paladin",
+    "name": "Paladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "paladin",
+    "selectionLevel": 3,
+    "description": "Paladinos deste juramento buscam inspiração e força no nascer do sol, enfrentando aqueles que se escondem nas sombras. Eles acreditam em recomeços e ciclos de renovação. Magias de Juramento — 3º: Raio Guia, Escudo da Fé; 5º: Destruição Marcante, Arma da Dominação; 9º: Bola de Fogo, Proteção contra Energia; 13º: Escudo de Fogo, Muralha de Fogo; 17º: Crista da Luz Solar, Muralha de Radiância. Dogmas da Alvorada — Escuridão Antes da Alvorada: as circunstâncias são mais sombrias antes de melhorarem; procure esperança no horizonte. Recomece: enquanto respirar, sempre existe a chance de começar de novo. Calor na Luz: permaneça firme ao lado daqueles que caminham sob a luz; quem nada tem a esconder não precisa buscar a escuridão.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-juramento",
+        "title": "Magias de Juramento",
+        "page": 474,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Paladino"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "3º",
+            "spells": "Raio Guia; Escudo da Fé"
+          },
+          {
+            "level": "5º",
+            "spells": "Destruição Marcante; Arma da Dominação"
+          },
+          {
+            "level": "9º",
+            "spells": "Bola de Fogo; Proteção contra Energia"
+          },
+          {
+            "level": "13º",
+            "spells": "Escudo de Fogo; Muralha de Fogo"
+          },
+          {
+            "level": "17º",
+            "spells": "Crista da Luz Solar; Muralha de Radiância"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 474
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-paladin-oath-of-the-dawn.feature.canalizar-divindade.l3.1",
+      "name": "CANALIZAR DIVINDADE",
+      "level": 3,
+      "description": "Você recebe duas opções. Cascata Cegante: como ação bônus, use Canalizar Divindade para imbuir por 1 minuto uma arma que esteja segurando com a luz da alvorada. Ela causa um dado adicional de dano radiante e, na primeira vez em cada turno que acertar uma criatura, o alvo faz salvaguarda de Constituição ou fica cego até o efeito terminar; repete a salvaguarda no fim de cada turno. A arma obtém crítico com 19 ou 20; em um crítico, criaturas à sua escolha a até 3 metros do alvo também fazem a salvaguarda contra cegueira. Luz Reveladora: como ação bônus, escolha um ponto a até 18 metros e crie uma esfera de 9 metros de raio de luz intensa considerada luz solar. Dentro dela, criaturas etéreas podem ser vistas, tocadas e atacadas a partir do Plano Material e vice-versa, e criaturas invisíveis são reveladas e vistas normalmente.",
+      "page": 474,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-the-dawn.feature.aura-de-iluminacao.l7.1",
+      "name": "AURA DE ILUMINAÇÃO",
+      "level": 7,
+      "description": "Como ação bônus, você pode preencher o alcance da Aura de Proteção com luz solar intensa e iluminar com meia-luz uma distância igual além dela. Pode encerrar como ação bônus; termina automaticamente se ficar inconsciente.",
+      "page": 474,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-the-dawn.feature.bencao-do-sol.l15.1",
+      "name": "BÊNÇÃO DO SOL",
+      "level": 15,
+      "description": "Você pode invocar um dos seguintes efeitos: transformar um ataque com arma que errou em um acerto; repetir uma salvaguarda que falhou e somar seu modificador de Carisma ao novo resultado; conjurar qualquer magia de Paladino usando um espaço, mesmo sem estar preparada; ou dobrar o alcance da Aura de Proteção por 1 minuto. Usos por Descanso Longo iguais à metade do seu bônus de proficiência, arredondado para baixo.",
+      "page": 474,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-paladin-oath-of-the-dawn.feature.campeao-da-renovacao.l20.1",
+      "name": "CAMPEÃO DA RENOVAÇÃO",
+      "level": 20,
+      "description": "Como ação, canalize o poder do sol por 1 minuto: luz solar intensa preenche 18 metros de raio e meia-luz alcança mais 18 metros. Ínferos e mortos-vivos que iniciarem o turno na luz intensa sofrem 2d10 de dano radiante. Seus ataques contra criaturas dentro da luz têm vantagem. Ao ativar, criaturas à sua escolha dentro da luz que estejam com 0 pontos de vida recuperam imediatamente 10 pontos de vida.",
+      "page": 474,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

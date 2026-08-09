@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-druid-circle-of-ancestors",
+    "identifier": "bbb-druid-circle-of-ancestors",
+    "name": "Círculo dos Ancestrais",
+    "originalName": "Circle of Ancestors",
+    "aliases": [
+      "Circle of Ancestors"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "97",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 97
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Um druida espiritualmente receptivo que extrai conhecimento e talento de seus antepassados.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 97
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-druid-circle-of-ancestors.feature.comunhao-ancestral.l2.1",
+      "name": "COMUNHÃO ANCESTRAL",
+      "level": 2,
+      "description": "Ao completar um Descanso Longo, escolha um número de proficiências em perícias, ferramentas ou armas igual ao seu bônus de proficiência. Você recebe essas proficiências até completar outro Descanso Longo e pode escolher proficiências que já possua. Armas e perícias escolhidas dessa forma usam Sabedoria para determinar seus modificadores de ataque, dano e testes enquanto permanecerem selecionadas, representando a orientação dos espíritos ancestrais.",
+      "page": 97,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-ancestors.feature.da-espada-e-do-santuario.l2.1",
+      "name": "DA ESPADA E DO SANTUÁRIO",
+      "level": 2,
+      "description": "Magias do grupo Zanjen contam como magias da lista de druida para você, permitindo prepará-las, lê-las e conjurá-las.",
+      "page": 97,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-ancestors.feature.forma-ancestral.l6.1",
+      "name": "FORMA ANCESTRAL",
+      "level": 6,
+      "description": "Como ação bônus, gaste um uso de Forma Selvagem para envolver-se num manto espiritual protetor e incorporar um de seus ancestrais. A forma dura 1 minuto ou até ser dispensada como ação bônus, e pode ser assumida mesmo se você já estiver usando Forma Selvagem. Uma vez por Descanso. Enquanto durar:\n\n• Some seu bônus de proficiência à CA e às salvaguardas.\n• Seus ataques com arma usam Sabedoria nas jogadas de ataque e dano.\n• Você tem resistência a todo dano contundente, perfurante e cortante.\n• Recebe PV temporários iguais a 1d10 × metade do seu nível de druida. Quando esses PV forem reduzidos a 0, você é imune ao dano restante daquela instância de ataque ou efeito.\n• Cada instância de dano que você sofrer é reduzida pela metade do seu nível de druida.",
+      "page": 97,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-ancestors.feature.orientacao-desperta.l10.1",
+      "name": "ORIENTAÇÃO DESPERTA",
+      "level": 10,
+      "description": "Ao terminar um Descanso Longo, pode deixar sem escolha até metade, arredondada para baixo, das proficiências concedidas por Comunhão Ancestral. Antes do próximo Descanso Longo, pode usar uma ação bônus a qualquer momento para preencher uma dessas escolhas com uma proficiência naquele instante.",
+      "page": 97,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-druid-circle-of-ancestors.feature.guardioes-da-linhagem.l14.1",
+      "name": "GUARDIÕES DA LINHAGEM",
+      "level": 14,
+      "description": "A proteção de seus muitos ancestrais soma suas experiências às suas. Você se torna proficiente em todas as salvaguardas.",
+      "page": 97,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3387 @@
+{
+  "schema": "grimorio-foundry-class-package",
+  "schemaVersion": 1,
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-package-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "minimumImporterVersion": "0.5.0"
+  },
+  "identity": {
+    "id": "classe-barbarian",
+    "name": "Bárbaro — classe completa",
+    "scope": "class-with-subclasses",
+    "parentClass": {
+      "grimorioId": "barbarian",
+      "identifier": "barbarian",
+      "name": "Bárbaro"
+    }
+  },
+  "summary": {
+    "bundles": 18,
+    "classes": 1,
+    "subclasses": 17,
+    "features": 93,
+    "specialClasses": 0,
+    "specialSubclasses": 0
+  },
+  "ordering": "classes-first",
+  "bundleIdentifiers": [
+    "class:barbarian",
+    "subclass:furioso",
+    "subclass:guerreiro-totemico",
+    "subclass:lyre-barbarian-champion-of-mortuous",
+    "subclass:lyre-barbarian-grandstander",
+    "subclass:lyre-barbarian-gladiator",
+    "subclass:lyre-barbarian-sacred-obsidian",
+    "subclass:zagalhta-barbarian-cosmic-madness",
+    "subclass:bbb-barbarian-path-of-the-bloodpainted",
+    "subclass:bbb-barbarian-path-of-the-oni",
+    "subclass:bbb-barbarian-swelling-heart",
+    "subclass:ryoko-barbarian-path-kaiju",
+    "subclass:xanathar-caminho-do-guardiao-ancestral",
+    "subclass:xanathar-caminho-do-arauto-da-tempestade",
+    "subclass:xanathar-caminho-do-fanatico",
+    "subclass:tasha-trilha-da-besta",
+    "subclass:tasha-trilha-da-magia-selvagem",
+    "subclass:scag-caminho-da-furia-da-batalha"
+  ],
+  "bundles": [
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "class",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro",
+        "originalName": "",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+        "pages": "46–50",
+        "chapter": "Capítulo 3: Classes",
+        "page": 47
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "class": {
+        "itemType": "class",
+        "description": "Um humano alto membro de alguma tribo caminha em meio a uma nevasca, coberto por peles e empunhando seu machado. Ele gargalha à medida que avança em direção do gigante do gelo que ousou caçar os alces que o seu povo arrebanhava.\n\nUma meio-orc rosna para o último que ousou desafiar sua autoridade sobre a tribo selvagem, pronta para quebrar seu pescoço com suas mãos nuas da mesma forma que ela fez com os outros seis rivais anteriores.\n\nEspumando pela boca, um anão bate com seu elmo na cara de um inimigo drow, depois dirige seu cotovelo armadurado na direção do estomago de outro.\n\nEsses bárbaros, diferentes da forma que conseguem, são definidos por sua fúria: desenfreada, inextinguível e irracional fúria. Mais que uma mera emoção, sua raiva é a ferocidade de um predador acuado, o assalto implacável de uma tempestade, a turbulência agitada do mar.\n\nPara alguns, suas fúrias emerge da comunhão com ferozes espíritos animais. Outras provem de um reservatório turvo de raiva de um mundo cheio de dor. Para cada bárbaro, a fúria é um poder que preenche não apenas o frenesi de batalha, mas também reflexos, resiliência e proezas de força incríveis.\n\nAs pessoas das cidades e vilas costumam se vangloriar de como seus meios civilizados os diferencia dos animais, como se renegar sua própria natureza fosse um indicio de superioridade. Para um bárbaro, no entanto, a civilização não é nenhuma virtude, mas um sinal de fraqueza. Os fortes abraçam a sua natureza selvagem – instintos aguçados, fisicalidade primitiva e fúria voraz. Bárbaros ficam desconfortáveis quando estão cercados por muralhas e multidões. Eles crescem na natureza selvagem de suas terras natais: a tundra, selva ou pradarias onde suas tribos vivem e caçam.\n\nOs bárbaros se sentem mais vivos em meio ao caos do combate. Eles podem entrar num estado de furor quando sua fúria toma controle, concedendo-lhes força e resiliência sobre-humanas. Um bárbaro pode consumir desse reservatório de fúria apenas algumas vezes antes de descansar, mas essas poucas fúrias geralmente são suficientes para derrotar seja lá o que está ameaçando o seu caminho.\n\nNem todos os membros de uma tribo ditos como “bárbaros” por descendentes de sociedades civilizadas pertencem a classe bárbaro. Um bárbaro de verdade dentre essas pessoas é tão incomum quanto um guerreiro bem treinado em uma cidade, e ele possui um papel similar como protetor do povo e líder em tempos de\n\nguerra. A vida na natureza selvagem do mundo é cheia de perigos: tribos rivais, clima mortal e monstros terríveis. Bárbaros investem em direção ao perigo de cabeça para que o seu povo não precise fazê-lo.\n\nSua coragem em frente ao perigo torna os bárbaros perfeitos para se aventurarem. Peregrinar é, muitas vezes, um meio de vida para tribos nativas e a vida desenraizada de um aventureiro é um empecilho pequeno para um bárbaro. Alguns bárbaros sentem falta das estruturas familiares bem forjadas de suas tribos, mas, eventualmente, encontram uma forma de substituí-las por laços formados entre os membros dos seus grupos de aventura.",
+        "hitDice": {
+          "raw": "d12",
+          "mode": "standard",
+          "number": 1,
+          "faces": 12
+        },
+        "primaryAbility": {
+          "raw": "Força",
+          "abilityKeys": [
+            "str"
+          ]
+        },
+        "proficiencies": {
+          "saves": {
+            "raw": "Força, Constituição",
+            "abilityKeys": [
+              "str",
+              "con"
+            ]
+          },
+          "armor": "Armaduras leves, armaduras médias e escudos",
+          "weapons": "Armas simples e marciais",
+          "tools": "Nenhuma",
+          "skills": "Escolha duas: Adestrar Animais, Atletismo, Intimidação, Natureza, Percepção ou Sobrevivência"
+        },
+        "basics": {
+          "title": "CARACTERÍSTICAS DE CLASSE",
+          "page": 47,
+          "text": "Como um bárbaro, você adquire as seguintes características de classe. PONTOS DE VIDA Dado de Vida: 1d12 por nível de bárbaro Pontos de Vida no 1° Nível: 12 + seu modificador de\n\nConstituição Pontos de Vida nos Níveis Seguintes: 1d12 (ou 7) +\n\nseu modificador de Constituição por nível de bárbaro após o 1° PROFICIÊNCIAS Armaduras: Armaduras leves, armaduras médias e\n\nescudos Armas: Armas simples, armas marciais Ferramentas: Nenhuma\n\nTestes de Resistência: Força, Constituição Perícias: Escolha duas dentre Adestrar Animais,\n\nAtletismo, Intimidação, Natureza, Percepção e Sobrevivência\n\nEQUIPAMENTO Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) um machado grande ou (b) qualquer arma marcial\n\ncorpo-a-corpo\n• (a) dois machados de mão ou (b) qualquer arma\n\nsimples\n• Um pacote de aventureiro e quatro azagaias"
+        },
+        "overview": [
+          {
+            "title": "BÁRBARO",
+            "page": 46,
+            "text": "Um humano alto membro de alguma tribo caminha em meio a uma nevasca, coberto por peles e empunhando seu machado. Ele gargalha à medida que avança em direção do gigante do gelo que ousou caçar os alces que o seu povo arrebanhava.\n\nUma meio-orc rosna para o último que ousou desafiar sua autoridade sobre a tribo selvagem, pronta para quebrar seu pescoço com suas mãos nuas da mesma forma que ela fez com os outros seis rivais anteriores.\n\nEspumando pela boca, um anão bate com seu elmo na cara de um inimigo drow, depois dirige seu cotovelo armadurado na direção do estomago de outro.\n\nEsses bárbaros, diferentes da forma que conseguem, são definidos por sua fúria: desenfreada, inextinguível e irracional fúria. Mais que uma mera emoção, sua raiva é a ferocidade de um predador acuado, o assalto implacável de uma tempestade, a turbulência agitada do mar.\n\nPara alguns, suas fúrias emerge da comunhão com ferozes espíritos animais. Outras provem de um reservatório turvo de raiva de um mundo cheio de dor. Para cada bárbaro, a fúria é um poder que preenche não apenas o frenesi de batalha, mas também reflexos, resiliência e proezas de força incríveis."
+          },
+          {
+            "title": "INSTINTO PRIMITIVO",
+            "page": 46,
+            "text": "As pessoas das cidades e vilas costumam se vangloriar de como seus meios civilizados os diferencia dos animais, como se renegar sua própria natureza fosse um indicio de superioridade. Para um bárbaro, no entanto, a civilização não é nenhuma virtude, mas um sinal de fraqueza. Os fortes abraçam a sua natureza selvagem – instintos aguçados, fisicalidade primitiva e fúria voraz. Bárbaros ficam desconfortáveis quando estão cercados por muralhas e multidões. Eles crescem na natureza selvagem de suas terras natais: a tundra, selva ou pradarias onde suas tribos vivem e caçam.\n\nOs bárbaros se sentem mais vivos em meio ao caos do combate. Eles podem entrar num estado de furor quando sua fúria toma controle, concedendo-lhes força e resiliência sobre-humanas. Um bárbaro pode consumir desse reservatório de fúria apenas algumas vezes antes de descansar, mas essas poucas fúrias geralmente são suficientes para derrotar seja lá o que está ameaçando o seu caminho."
+          },
+          {
+            "title": "UMA VIDA DE PERIGO",
+            "page": 46,
+            "text": "Nem todos os membros de uma tribo ditos como “bárbaros” por descendentes de sociedades civilizadas pertencem a classe bárbaro. Um bárbaro de verdade dentre essas pessoas é tão incomum quanto um guerreiro bem treinado em uma cidade, e ele possui um papel similar como protetor do povo e líder em tempos de\n\nguerra. A vida na natureza selvagem do mundo é cheia de perigos: tribos rivais, clima mortal e monstros terríveis. Bárbaros investem em direção ao perigo de cabeça para que o seu povo não precise fazê-lo.\n\nSua coragem em frente ao perigo torna os bárbaros perfeitos para se aventurarem. Peregrinar é, muitas vezes, um meio de vida para tribos nativas e a vida desenraizada de um aventureiro é um empecilho pequeno para um bárbaro. Alguns bárbaros sentem falta das estruturas familiares bem forjadas de suas tribos, mas, eventualmente, encontram uma forma de substituí-las por laços formados entre os membros dos seus grupos de aventura."
+          }
+        ],
+        "creation": [
+          {
+            "title": "CRIANDO UM BÁRBARO",
+            "page": 47,
+            "text": "Quando for criar um personagem bárbaro, pense em de onde o seu personagem veio e sobre o seu lugar no mundo. Fale com o Mestre sobre uma origem apropriada para o seu bárbaro. Você ter vindo de uma terra distante fará de você um forasteiro na área da campanha? Ou a campanha é centrada numa fronteira áspera de onde os bárbaros são comuns?\n\nO que fez você seguir a vida de aventureiro? Você foi atraído às terras civilizadas pelas promessas de riqueza? Você uniu forças com os soldados dessas terras para\n\nenfrentar uma ameaça em comum? Monstros ou uma horda invasora fizeram você abandonar sua terra natal, tornando você um refugiado sem origem? Talvez você seja um prisioneiro de guerra, trazido acorrentado para as terras “civilizadas” e só agora foi capaz de ganhar sua liberdade. Ou você teve que abandonar seu povo por causa de um crime que cometeu, um tabu que você violou ou um golpe que depôs você de uma posição de autoridade."
+          },
+          {
+            "title": "CONSTRUÇÃO RÁPIDA",
+            "page": 47,
+            "text": "Você pode construir um bárbaro rapidamente seguindo essas sugestões. Primeiro, coloque seu valor de habilidade mais alto em Força, seguido de Constituição. Segundo, escolha o antecedente forasteiro."
+          }
+        ],
+        "tables": [],
+        "references": [
+          {
+            "key": "reference.1.caminho-primitivo",
+            "title": "CAMINHO PRIMITIVO",
+            "page": 49,
+            "text": "A fúria queima no coração de cada bárbaro, uma queimação que leva-os a grandeza. Bárbaros diferentes, no entanto, atribuem suas fúrias a fontes diferentes. Para alguns, é um reservatório interno onde a dor, aflição e raiva são forjados numa fúria dura como aço. Outros veem-na como uma bênção espiritual, uma dadiva de um totem animal.",
+            "sourceTitle": ""
+          },
+          {
+            "key": "reference.2.ataque-extra-aprimorado-barbaro",
+            "title": "ATAQUE EXTRA APRIMORADO: BÁRBARO",
+            "page": 148,
+            "text": "Esta regra opcional substitui Ataque Extra. Você continua atacando duas vezes. A partir do 7º nível, quando fizer um ataque com vantagem durante a ação Atacar e ambos os d20 acertariam, force salvaguarda de Força (CD 8 + proficiência + atributo de ataque); em falha, derrube o alvo ou empurre-o 1,5 m. Criaturas mais de um tamanho maiores têm sucesso automático. Uma vez por turno.",
+            "sourceTitle": "Ryoko's Guide to the Yokai Realms"
+          }
+        ],
+        "presentation": {
+          "sigilKey": "barbarian",
+          "color": "#c7664d"
+        }
+      },
+      "features": [
+        {
+          "key": "class.barbarian.feature.furia.l1.1",
+          "name": "FÚRIA",
+          "level": 1,
+          "description": "Em batalha, você luta com uma ferocidade primitiva. No seu turno, você pode entrar em fúria com uma ação bônus.\n\nEnquanto estiver em fúria, você recebe os seguintes benefícios se você não estiver vestindo uma armadura pesada:\n\n• Você tem vantagem em testes de Força e testes de\n\nresistência de Força.\n• Quando você desferir um ataque com arma corpo-a-\n\ncorpo usando Força, você recebe um bônus nas jogadas de dano que aumenta à medida que você adquire níveis de bárbaro, como mostrado na coluna Dano de Fúria na tabela O Bárbaro.\n• Você possui resistência contra dano de concussão,\n\ncortante e perfurante.\n\nSe você for capaz de conjurar magias, você não poderá conjurá-las ou se concentrar nelas enquanto estiver em fúria.\n\nSua fúria dura por 1 minuto. Ela termina prematuramente se você cair inconsciente ou se seu turno acabar e você não tiver atacado nenhuma criatura hostil desde seu último turno ou não tiver sofrido dano nesse período. Você também pode terminar sua fúria no seu turno com uma ação bônus.\n\nQuando você tiver usado a quantidade de fúrias mostrada para o seu nível de bárbaro na coluna Fúrias da tabela O Bárbaro, você precisará terminar um descanso longo antes de poder entrar em fúria novamente.",
+          "page": 48,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.defesa-sem-armadura.l1.1",
+          "name": "DEFESA SEM ARMADURA",
+          "level": 1,
+          "description": "Quando você não estiver vestindo qualquer armadura, sua Classe de Armadura será 10 + seu modificador de Destreza + seu modificador de Constituição. Você pode usar um escudo e continuar a receber esse benefício.",
+          "page": 48,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.ataque-descuidado.l2.1",
+          "name": "ATAQUE DESCUIDADO",
+          "level": 2,
+          "description": "A partir do 2° nível, você pode desistir de toda preocupação com sua defesa para atacar com um desespero feroz. Quando você fizer o seu primeiro ataque no turno, você pode decidir atacar descuidadamente. Fazer isso lhe concede vantagem nas jogadas de ataque com armas corpo-a-corpo usando Força durante seu turno, porém, as jogadas de ataques feitas contra você possuem vantagem até o início do seu próximo turno.",
+          "page": 48,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 2,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.sentido-de-perigo.l2.1",
+          "name": "SENTIDO DE PERIGO",
+          "level": 2,
+          "description": "No 2° nível, você adquire um sentido sobrenatural de quando as coisas próximas não estão como deveriam, concedendo a você uma chance maior quando estiver evitando perigos.\n\nVocê possui vantagem em testes de resistência de Destreza contra efeitos que você possa ver, como armadilhas e magias. Para receber esse benefício você não pode estar cego, surdo ou incapacitado.",
+          "page": 48,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 2,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.caminho-primitivo.l3.1",
+          "name": "CAMINHO PRIMITIVO",
+          "level": 3,
+          "description": "No 3° nível, você escolhe um caminho que molda a natureza da sua fúria. Escolha o Caminho do Furioso ou o Caminho do Guerreiro Totêmico, ambos detalhados no final da descrição de classe. Sua escolha lhe concederá características no 3° nível e novamente no 6°, 10° e 14° níveis.",
+          "page": 48,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1",
+          "name": "INCREMENTO NO VALOR DE HABILIDADE",
+          "level": 4,
+          "description": "Quando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.",
+          "page": 49,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 4,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.ataque-extra.l5.1",
+          "name": "ATAQUE EXTRA",
+          "level": 5,
+          "description": "A partir do 5° nível, você pode atacar duas vezes, ao invés de uma, sempre que você realizar a ação de Ataque no seu turno.",
+          "page": 49,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 5,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.movimento-rapido.l5.1",
+          "name": "MOVIMENTO RÁPIDO",
+          "level": 5,
+          "description": "Começando no 5° nível, seu deslocamento aumenta em 3 metros enquanto você não estiver vestindo uma armadura pesada.",
+          "page": 49,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 5,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.instinto-selvagem.l7.1",
+          "name": "INSTINTO SELVAGEM",
+          "level": 7,
+          "description": "No 7° nível, seu instinto está tão apurado que você recebe vantagem nas jogadas de iniciativa.\n\nAlém disso, se você estiver surpreso no começo de um combate e não estiver incapacitado, você pode agir normalmente no seu primeiro turno, mas apenas se você entrar em fúria antes de realizar qualquer outra coisa neste turno.",
+          "page": 49,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.critico-brutal.l9.1",
+          "name": "CRÍTICO BRUTAL",
+          "level": 9,
+          "description": "A partir do 9° nível, você pode rolar um dado de dano de arma adicional quando estiver determinando o dano extra de um acerto crítico com uma arma corpo-a-corpo.\n\nIsso aumenta para dois dados adicionais no 13° nível e três dados adicionais no 17° nível.",
+          "page": 49,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 9,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.furia-implacavel.l11.1",
+          "name": "FÚRIA IMPLACÁVEL",
+          "level": 11,
+          "description": "A partir do 11° nível, sua fúria pode manter você lutando independente da gravidade dos seus ferimentos. Se você cair para 0 pontos de vida enquanto estiver em fúria e não morrer, você pode realizar um teste de resistência de Constituição CD 10. Se você for bem sucedido, você volta para 1 ponto de vida ao invés disso.\n\nCada vez que você utilizar essa característica após a primeira, a CD aumenta em 5. Assim que você terminar um descanso curto ou longo a CD volta para 10.",
+          "page": 49,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.furia-persistente.l15.1",
+          "name": "FÚRIA PERSISTENTE",
+          "level": 15,
+          "description": "A partir do 15° nível, sua fúria é tão brutal que ela só termina prematuramente se você cair inconsciente ou se você decidir terminá-la.",
+          "page": 49,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.forca-indomavel.l18.1",
+          "name": "FORÇA INDOMÁVEL",
+          "level": 18,
+          "description": "A partir do 18° nível, se o total de um teste de Força seu for menor que o seu valor de Força, você pode usar esse valor no lugar do resultado.",
+          "page": 49,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 18,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.barbarian.feature.campeao-primitivo.l20.1",
+          "name": "CAMPEÃO PRIMITIVO",
+          "level": 20,
+          "description": "No 20° nível, você incorpora os poderes da natureza. Seus valores de Força e Constituição aumentam em 4. Seu máximo para esses valores agora é 24.",
+          "page": 49,
+          "sourceTitle": "Livro do Jogador — Dungeons & Dragons 5ª Edição",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 20,
+            "automation": "phase-5"
+          }
+        }
+      ],
+      "progression": {
+        "title": "O Bárbaro",
+        "sourceTitle": "",
+        "sourcePage": 47,
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível",
+            "sticky": true
+          },
+          {
+            "key": "proficiency",
+            "label": "Bônus de Proficiência",
+            "shortLabel": "Prof."
+          },
+          {
+            "key": "features",
+            "label": "Características",
+            "wide": true
+          },
+          {
+            "key": "rages",
+            "label": "Fúrias"
+          },
+          {
+            "key": "rageDamage",
+            "label": "Dano de Fúria"
+          }
+        ],
+        "levels": [
+          {
+            "level": 1,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Fúria",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.furia.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Defesa sem Armadura",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.defesa-sem-armadura.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 2,
+            "rageDamage": "+2"
+          },
+          {
+            "level": 2,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Ataque Descuidado",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.ataque-descuidado.l2.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Sentido de Perigo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.sentido-de-perigo.l2.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 2,
+            "rageDamage": "+2"
+          },
+          {
+            "level": 3,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Caminho Primitivo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.caminho-primitivo.l3.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 3,
+            "rageDamage": "+2"
+          },
+          {
+            "level": 4,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Incremento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 3,
+            "rageDamage": "+2"
+          },
+          {
+            "level": 5,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Ataque Extra",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.ataque-extra.l5.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Movimento Rápido",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.movimento-rapido.l5.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 3,
+            "rageDamage": "+2"
+          },
+          {
+            "level": 6,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Característica de Caminho Primitivo",
+                "kind": "subclass-feature",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.barbarian.feature.caminho-primitivo.l3.1"
+                ]
+              }
+            ],
+            "rages": 4,
+            "rageDamage": "+2"
+          },
+          {
+            "level": 7,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Instinto Selvagem",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.instinto-selvagem.l7.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 4,
+            "rageDamage": "+2"
+          },
+          {
+            "level": 8,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Incremento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 4,
+            "rageDamage": "+2"
+          },
+          {
+            "level": 9,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Crítico Brutal (+1 dado)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.barbarian.feature.critico-brutal.l9.1"
+                ]
+              }
+            ],
+            "rages": 4,
+            "rageDamage": "+3"
+          },
+          {
+            "level": 10,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Característica de Caminho Primitivo",
+                "kind": "subclass-feature",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.barbarian.feature.caminho-primitivo.l3.1"
+                ]
+              }
+            ],
+            "rages": 4,
+            "rageDamage": "+3"
+          },
+          {
+            "level": 11,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Fúria Implacável",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.furia-implacavel.l11.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 4,
+            "rageDamage": "+3"
+          },
+          {
+            "level": 12,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Incremento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 5,
+            "rageDamage": "+3"
+          },
+          {
+            "level": 13,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Crítico Brutal (+2 dados)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.barbarian.feature.critico-brutal.l9.1"
+                ]
+              }
+            ],
+            "rages": 5,
+            "rageDamage": "+3"
+          },
+          {
+            "level": 14,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Característica de Caminho Primitivo",
+                "kind": "subclass-feature",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.barbarian.feature.caminho-primitivo.l3.1"
+                ]
+              }
+            ],
+            "rages": 5,
+            "rageDamage": "+3"
+          },
+          {
+            "level": 15,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Fúria Persistente",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.furia-persistente.l15.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 5,
+            "rageDamage": "+3"
+          },
+          {
+            "level": 16,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Incremento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 5,
+            "rageDamage": "+4"
+          },
+          {
+            "level": 17,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Crítico Brutal (+3 dados)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.barbarian.feature.critico-brutal.l9.1"
+                ]
+              }
+            ],
+            "rages": 6,
+            "rageDamage": "+4"
+          },
+          {
+            "level": 18,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Força Indomável",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.forca-indomavel.l18.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 6,
+            "rageDamage": "+4"
+          },
+          {
+            "level": 19,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Incremento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.incremento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": 6,
+            "rageDamage": "+4"
+          },
+          {
+            "level": 20,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Campeão Primitivo",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.barbarian.feature.campeao-primitivo.l20.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "rages": "Ilimitado",
+            "rageDamage": "+4"
+          }
+        ]
+      },
+      "subclassSelection": {
+        "selectionLevel": 3,
+        "homogeneous": true,
+        "observedLevels": {
+          "3": 17
+        },
+        "options": [
+          {
+            "grimorioId": "furioso",
+            "identifier": "furioso",
+            "name": "Caminho do Furioso",
+            "originalName": "",
+            "source": {
+              "sourceId": null,
+              "title": "",
+              "pages": "",
+              "chapter": "",
+              "page": 49
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "guerreiro-totemico",
+            "identifier": "guerreiro-totemico",
+            "name": "Caminho do Guerreiro Totêmico",
+            "originalName": "",
+            "source": {
+              "sourceId": null,
+              "title": "",
+              "pages": "",
+              "chapter": "",
+              "page": 50
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "lyre-barbarian-champion-of-mortuous",
+            "identifier": "lyre-barbarian-champion-of-mortuous",
+            "name": "Campeão de Mortuous",
+            "originalName": "Champion of Mortuous",
+            "source": {
+              "sourceId": "lyre",
+              "title": "Lyre's Guide to Retia — Land of Industry",
+              "pages": "431–432",
+              "chapter": "Capítulo 8: Opções de Classe",
+              "page": 431
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "lyre-barbarian-grandstander",
+            "identifier": "lyre-barbarian-grandstander",
+            "name": "Exibicionista",
+            "originalName": "Grandstander",
+            "source": {
+              "sourceId": "lyre",
+              "title": "Lyre's Guide to Retia — Land of Industry",
+              "pages": "433",
+              "chapter": "Capítulo 8: Opções de Classe",
+              "page": 433
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "lyre-barbarian-gladiator",
+            "identifier": "lyre-barbarian-gladiator",
+            "name": "Gladiador",
+            "originalName": "Gladiator",
+            "source": {
+              "sourceId": "lyre",
+              "title": "Lyre's Guide to Retia — Land of Industry",
+              "pages": "432",
+              "chapter": "Capítulo 8: Opções de Classe",
+              "page": 432
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "lyre-barbarian-sacred-obsidian",
+            "identifier": "lyre-barbarian-sacred-obsidian",
+            "name": "Obsidiana Sagrada",
+            "originalName": "Sacred Obsidian",
+            "source": {
+              "sourceId": "lyre",
+              "title": "Lyre's Guide to Retia — Land of Industry",
+              "pages": "433",
+              "chapter": "Capítulo 8: Opções de Classe",
+              "page": 433
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "zagalhta-barbarian-cosmic-madness",
+            "identifier": "zagalhta-barbarian-cosmic-madness",
+            "name": "Caminho da Loucura Cósmica",
+            "originalName": "Path of Cosmic Madness",
+            "source": {
+              "sourceId": "zagalhta-exolunar",
+              "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+              "pages": "139–140",
+              "chapter": "Capítulo 6: Opções de Subclasse",
+              "page": 139
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "bbb-barbarian-path-of-the-bloodpainted",
+            "identifier": "bbb-barbarian-path-of-the-bloodpainted",
+            "name": "Caminho do Pintado de Sangue",
+            "originalName": "Path of the Bloodpainted",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "83–84",
+              "chapter": "Capítulo X: Subclasses",
+              "page": 83
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "bbb-barbarian-path-of-the-oni",
+            "identifier": "bbb-barbarian-path-of-the-oni",
+            "name": "Caminho do Oni",
+            "originalName": "Path of the Oni",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "84",
+              "chapter": "Capítulo X: Subclasses",
+              "page": 84
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "bbb-barbarian-swelling-heart",
+            "identifier": "bbb-barbarian-swelling-heart",
+            "name": "Coração Transbordante",
+            "originalName": "Swelling Heart",
+            "source": {
+              "sourceId": "blade-bone-benefit",
+              "title": "Somnus Domina — Blade, Bone, & Benefit",
+              "pages": "84–85",
+              "chapter": "Capítulo X: Subclasses",
+              "page": 84
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "ryoko-barbarian-path-kaiju",
+            "identifier": "ryoko-barbarian-path-kaiju",
+            "name": "Caminho do Kaiju",
+            "originalName": "Path of the Kaiju",
+            "source": {
+              "sourceId": "ryoko-yokai-realms",
+              "title": "Ryoko's Guide to the Yokai Realms",
+              "pages": "150–151",
+              "chapter": "Capítulo 9: Classes",
+              "page": 150
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "xanathar-caminho-do-guardiao-ancestral",
+            "identifier": "xanathar-caminho-do-guardiao-ancestral",
+            "name": "Caminho do Guardião Ancestral",
+            "originalName": "",
+            "source": {
+              "sourceId": "xanathar",
+              "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+              "pages": "9–10",
+              "chapter": "Capítulo 1: Opções de Personalização",
+              "page": 9
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "xanathar-caminho-do-arauto-da-tempestade",
+            "identifier": "xanathar-caminho-do-arauto-da-tempestade",
+            "name": "Caminho do Arauto da Tempestade",
+            "originalName": "",
+            "source": {
+              "sourceId": "xanathar",
+              "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+              "pages": "10–11",
+              "chapter": "Capítulo 1: Opções de Personalização",
+              "page": 10
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "xanathar-caminho-do-fanatico",
+            "identifier": "xanathar-caminho-do-fanatico",
+            "name": "Caminho do Fanático",
+            "originalName": "",
+            "source": {
+              "sourceId": "xanathar",
+              "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+              "pages": "11",
+              "chapter": "Capítulo 1: Opções de Personalização",
+              "page": 11
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "tasha-trilha-da-besta",
+            "identifier": "tasha-trilha-da-besta",
+            "name": "Trilha da Besta",
+            "originalName": "",
+            "source": {
+              "sourceId": "tasha",
+              "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+              "pages": "23–24",
+              "chapter": "Capítulo 1: Opções de Personagens",
+              "page": 23
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "tasha-trilha-da-magia-selvagem",
+            "identifier": "tasha-trilha-da-magia-selvagem",
+            "name": "Trilha da Magia Selvagem",
+            "originalName": "",
+            "source": {
+              "sourceId": "tasha",
+              "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+              "pages": "24–26",
+              "chapter": "Capítulo 1: Opções de Personagens",
+              "page": 24
+            },
+            "firstFeatureLevel": 3
+          },
+          {
+            "grimorioId": "scag-caminho-da-furia-da-batalha",
+            "identifier": "scag-caminho-da-furia-da-batalha",
+            "name": "Caminho da Fúria da Batalha",
+            "originalName": "",
+            "source": {
+              "sourceId": "scag",
+              "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+              "pages": "121",
+              "chapter": "Capítulo 4: Classes",
+              "page": 121
+            },
+            "firstFeatureLevel": 3
+          }
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "furioso",
+        "identifier": "furioso",
+        "name": "Caminho do Furioso",
+        "originalName": "",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": null,
+        "title": "",
+        "pages": "",
+        "chapter": "",
+        "page": 49
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Para alguns bárbaros, a fúria é um meio para um fim – esse fim é a violência. O Caminho do Furioso é um caminho de fúria livre, entumecido em sangue. A medida que você entra na fúria de um furioso, você vibra no caos da batalha, despreocupado com a sua própria saúde ou bem-estar.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 49
+      },
+      "features": [
+        {
+          "key": "subclass.furioso.feature.frenesi.l3.1",
+          "name": "FRENESI",
+          "level": 3,
+          "description": "Começando no momento que você escolhe esse caminho no 3° nível, você pode entrar num frenesi quando estiver em fúria. Se você desejar, pela duração da sua fúria, você pode realizar um único ataque corpo-a-corpo com arma, com uma ação bônus, em cada um de seus turnos após esse. Quando sua fúria acabar, você sofrerá um nível de exaustão (como descrito no apêndice A).",
+          "page": 49,
+          "sourceTitle": "",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.furioso.feature.furia-inconsciente.l6.1",
+          "name": "FÚRIA INCONSCIENTE",
+          "level": 6,
+          "description": "A partir do 6° nível, você não pode ser enfeitiçado ou amedrontado enquanto estiver em fúria. Se você estava enfeitiçado ou amedrontado quando entrou em fúria, o efeito é suspenso pela duração da fúria.",
+          "page": 49,
+          "sourceTitle": "",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.furioso.feature.presenca-intimidante.l10.1",
+          "name": "PRESENÇA INTIMIDANTE",
+          "level": 10,
+          "description": "A partir do 10° nível, você pode usar sua ação para amedrontar alguém com sua presença intimidante. Quando o fizer, escolha uma criatura que você possa ver a 9 metros. Se a criatura puder ver ou ouvir você, ela deve ser bem sucedida num teste de resistência de Sabedoria (CD igual a 8 + seu bônus de proficiência + seu modificador de Carisma) ou ficara com medo de você até o fim do seu próximo turno. Nos turnos seguintes, você pode usar sua ação para estender a duração desse efeito na criatura amedrontada até o início do seu próximo turno. Esse efeito termina se a criatura terminar seu turno fora da sua linha de visão ao a mais de 18 metros de você.\n\nSe a criatura for bem sucedida no teste de resistência, você não poderá usar essa característica nessa criatura novamente por 24 horas.",
+          "page": 49,
+          "sourceTitle": "",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.furioso.feature.retaliacao.l14.1",
+          "name": "RETALIAÇÃO",
+          "level": 14,
+          "description": "A partir do 14° nível, quando você sofrer dano de uma criatura que esteja a até 1,5 metro de você, você pode usar sua reação para realizar um ataque corpo-a-corpo com arma contra essa criatura.",
+          "page": 50,
+          "sourceTitle": "",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "guerreiro-totemico",
+        "identifier": "guerreiro-totemico",
+        "name": "Caminho do Guerreiro Totêmico",
+        "originalName": "",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": null,
+        "title": "",
+        "pages": "",
+        "chapter": "",
+        "page": 50
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "O Caminho do Guerreiro Totêmico é uma jornada espiritual, à partir do momento que o bárbaro aceita um espirito animal como seu guia, protetor e inspiração. Em batalha, seu espirito totêmico preenche você com força sobrenatural, adicionando combustível mágico a sua fúria bárbara.\n\nA maioria das tribos bárbaras consideram que um animal totêmico possui parentesco a um clã em particular. Em tais casos, é incomum a um indivíduo possuir mais de um espirito animal totêmico, apesar de existirem exceções.",
+        "tables": [
+          {
+            "key": "table.1.totens-uthgardt",
+            "title": "Totens Uthgardt",
+            "page": null,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "totem",
+                "label": "Totem"
+              },
+              {
+                "key": "spirit",
+                "label": "Espírito"
+              }
+            ],
+            "rows": [
+              {
+                "totem": "Leão Negro",
+                "spirit": "Tigre"
+              },
+              {
+                "totem": "Corvo Negro",
+                "spirit": "Águia"
+              },
+              {
+                "totem": "Urso Azul",
+                "spirit": "Urso"
+              },
+              {
+                "totem": "Lobo Cinzento",
+                "spirit": "Lobo"
+              },
+              {
+                "totem": "Verme Gigante",
+                "spirit": "Lobo"
+              },
+              {
+                "totem": "Griffon",
+                "spirit": "Águia"
+              },
+              {
+                "totem": "Tigre Vermelho",
+                "spirit": "Tigre"
+              },
+              {
+                "totem": "Pônei Alado",
+                "spirit": "Águia, com um aspecto animal de Cervo"
+              },
+              {
+                "totem": "Fera do Trovão",
+                "spirit": "Urso, com uma ligação totêmica com um Tigre"
+              },
+              {
+                "totem": "Árvore dos Espíritos",
+                "spirit": "Urso, com falar com plantas nos rituais normais da característica de Espreitador dos Espíritos"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "key": "reference.1.costa-da-espada-guia-de-aventureiros-d-d-5e",
+            "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+            "page": null,
+            "text": "",
+            "sourceTitle": ""
+          }
+        ],
+        "sourcePage": 50
+      },
+      "features": [
+        {
+          "key": "subclass.guerreiro-totemico.feature.conselheiro-espiritual.l3.1",
+          "name": "CONSELHEIRO ESPIRITUAL",
+          "level": 3,
+          "description": "Seu caminho é buscar a sintonia com o mundo natural, concedendo a você uma afinidade com as bestas. A partir do 3° nível, quando você toma esse caminho, você recebe a habilidade de conjurar as magias sentido bestial e falar com animais, mas apenas na forma de rituais, como descrito no capítulo 10.",
+          "page": 50,
+          "sourceTitle": "",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.guerreiro-totemico.feature.totem-espiritual.l3.1",
+          "name": "TOTEM ESPIRITUAL",
+          "level": 3,
+          "description": "A partir do 3° nível, quando você adota esse caminho, você escolhe um totem espiritual e ganha suas características. Você deve fazer ou adquirir um objeto físico como totem – um amuleto ou adorno similar – que incorpora o pelo ou penas, garras, dente ou ossos do animal totêmico. Se você quiser, você também adquire pequenos atributos físicos que o assemelham ao seu totem espiritual. Por exemplo, se você tiver o totem espiritual do urso, você seria incomumente peludo e de pele grossa, ou se o seu totem for a águia, seu olhos teriam um brilho amarelado.\n\nSeu totem animal deve ser um animal relacionado aos listados aqui, mas pode ser um mais apropriado a sua terra natal. Por exemplo, você poderia escolher falcão ou abutre ao invés de águia.\n\nÁguia. Quando estiver em fúria e não estiver vestindo uma armadura pesada, as outras criaturas terão desvantagem nas jogadas de ataque de oportunidade contra você e você pode usar a ação de Disparada como uma ação bônus no seu turno. O espirito da águia torna você um predador que pode vagar pelo meio da briga com facilidade.\n\nLobo. Quando estiver em fúria, seus amigos tem vantagem nas jogadas de ataque corpo-a-corpo realizadas contra qualquer criatura a 1,5 metro de você que seja hostil a você. O espirito do lobo transforma você em um líder de caça.\n\nUrso. Quando em fúria, você adquire resistência a todos os tipos de dano, exceto dano psíquico. O espirito do urso torna você vigoroso o suficiente para permanecer de pé diante de qualquer castigo.\n\nOpções da Costa da Espada:\n\nCervo. Enquanto você está em fúria e não está usando armadura pesada, seu deslocamento aumenta em 4,5m. O espírito do cervo torna você extremamente veloz.\n\nTigre. Enquanto você está em fúria, você pode adicionar 3 metros ao seu salto em distância e 90cm ao seu salto em distância vertical. O espírito do tigre aprimora seu salto.",
+          "page": 50,
+          "sourceTitle": "",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.guerreiro-totemico.feature.aspecto-da-besta.l6.1",
+          "name": "ASPECTO DA BESTA",
+          "level": 6,
+          "description": "No 6° nível, você adquire um benefício místico baseado no totem que você escolheu. Você pode escolher o mesmo animal que selecionou no 3° nível ou um diferente.\n\nÁguia. Você ganha a visão aguçada de uma águia. Você pode ver a até 1,6 km sem dificuldade, sendo capaz de discernir até os menores detalhes quando estiver olhando para algo a menos de 30 metros de você. Além disso, penumbra não impõem desvantagem nos seus testes de Sabedoria (Percepção).\n\nLobo. Você ganha a sensibilidade predatória de um lobo. Você pode rastrear outras criaturas quando estiver viajando a passo rápido e você pode se mover furtivamente quando estiver viajando a passo normal (veja o capítulo 8 para as regras de passo de viagem).\n\nUrso. Você ganha a força de um urso. Sua capacidade de carga (incluindo carga máxima e capacidade de erguer) é dobrada e você tem vantagem em testes de Força realizados para empurrar, puxar, erguer ou quebrar objetos.\n\nOpções da Costa da Espada:\n\nCervo. Quando montado ou a pé, sua caminhada de travessia é duplicada, até dez companheiros podem manter este ritmo de caminhada com você desde que não estejam a mais de 18 metros e que você não esteja incapacitado. O espírito do cervo lhe ajuda a vagar mais distante e veloz.\n\nTigre. Você recebe duas proficiências em duas perícias da seguinte lista: Atletismo, Acrobacia, Furtividade e Sobrevivência. O espírito gatuno afia seu senso de sobrevivência.",
+          "page": 50,
+          "sourceTitle": "",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.guerreiro-totemico.feature.andarilho-espiritual.l10.1",
+          "name": "ANDARILHO ESPIRITUAL",
+          "level": 10,
+          "description": "No 10° nível, você pode conjurar a magia comunhão com a natureza, mas apenas como um ritual. Quando o fizer, uma versão espiritual de um dos animais que você escolheu como Totem Espiritual ou Aspecto da Besta aparece para você para transmitir a informação que você busca.",
+          "page": 50,
+          "sourceTitle": "",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.guerreiro-totemico.feature.sintonia-totemica.l14.1",
+          "name": "SINTONIA TOTÊMICA",
+          "level": 14,
+          "description": "No 14° nível, você ganha um benefício magico baseado em um totem animal, à sua escolha. Você pode escolher o mesmo animal que selecionou anteriormente ou um diferente.\n\nÁguia. Quando estiver em fúria, você adquire um deslocamento de voo igual ao seu deslocamento de caminhada. Esse benefício funciona apenas em pequenos explosões: você cai se terminar seu turno no ar e não tiver nada em que possa se agarrar.\n\nLobo. Quando estiver em fúria, você pode usar uma ação bônus no seu turno para derrubar uma criatura Grande ou menor no chão quando você atingi-la com um ataque corpo-a-corpo com arma.\n\nUrso. Quando estiver em fúria, qualquer criatura a até 1,5 metro de você que for hostil a você terá desvantagem nas jogadas de ataque contra outros alvos além de você ou outro personagem com essa característica. Um inimigo é imune a esse efeito se ele não puder ver ou ouvir você ou caso ele não possa ser amedrontado.\n\nOpções da Costa da Espada:\n\nCervo. Enquanto em fúria, você pode usar uma ação bônus durante seu movimento para passar através do espaço de uma criatura Grande ou menor. Esta criatura precisa ter sucesso em um TR de Força (CD 8 + seu modificador de Força + seu bônus de proficiência) ou será derrubada e receberá dano de concussão equivalente a 1d12 + seu modificador de Força.\n\nTigre. Enquanto você está em fúria, se você se mover ao menos 6 metros em linha reta até um inimigo que seja Grande ou menor em um momento antes de fazer um ataque corpo a corpo contra ele, você pode usar sua ação bônus para fazer um ataque corpo a corpo adicional contra ele.",
+          "page": 50,
+          "sourceTitle": "",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "lyre-barbarian-champion-of-mortuous",
+        "identifier": "lyre-barbarian-champion-of-mortuous",
+        "name": "Campeão de Mortuous",
+        "originalName": "Champion of Mortuous",
+        "aliases": [
+          "Champion of Mortuous"
+        ]
+      },
+      "source": {
+        "sourceId": "lyre",
+        "title": "Lyre's Guide to Retia — Land of Industry",
+        "pages": "431–432",
+        "chapter": "Capítulo 8: Opções de Classe",
+        "page": 431
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Um estilo de combate surgido entre antigos guerreiros que lutavam no Anel de Lopoint, em Sermonway, onde Mortuous já foi venerado como patrono da arena. Seus campeões eram treinados para ignorar a própria segurança, aterrorizar e desafiar seus alvos, impondo medo às presas ao custo da própria integridade física e mental.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 431
+      },
+      "features": [
+        {
+          "key": "subclass.lyre-barbarian-champion-of-mortuous.feature.declaracao-sangrenta.l3.1",
+          "name": "DECLARAÇÃO SANGRENTA",
+          "level": 3,
+          "description": "Sempre que entrar em Fúria, escolha uma criatura a até 18 metros que possa ver ou ouvir você e declare com absoluta certeza que irá derrotá-la. Até sua Fúria terminar, adicione seu bônus de dano da Fúria às jogadas de ataque contra essa criatura e você pode realizar imediatamente a ação Disparada, desde que o deslocamento adicional seja usado para se aproximar do alvo. Se você reduzir o alvo a 0 pontos de vida antes do fim da Fúria, recebe pontos de vida temporários iguais a 1d10 + seu nível de Bárbaro. Se o alvo atual estiver com 0 pontos de vida ou morto, você pode usar uma ação bônus para escolher outro alvo; isso pode ser feito, por Fúria, um número de vezes igual à metade do seu bônus de proficiência, arredondado para baixo.",
+          "page": 431,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-champion-of-mortuous.feature.momentos-de-devastacao.l6.1",
+          "name": "MOMENTOS DE DEVASTAÇÃO",
+          "level": 6,
+          "description": "Você possui uma quantidade de Momentos de Devastação igual à metade do seu nível de Bárbaro, arredondado para baixo, recuperando todos após um Descanso Longo. Você pode gastá-los das seguintes formas. Sede de Sangue: ao reduzir uma criatura a 0 pontos de vida ou obter um acerto crítico em seu turno, gaste 2 Momentos como ação bônus para mover até 4,5 metros em direção a outra criatura e realizar outra ação Atacar. Dano Brutal: ao obter o resultado máximo em um dado de dano de arma, gaste 1 Momento para rolar novamente esse dado e somar o resultado ao dano; se o novo resultado também for o máximo, repita o processo. Resistir à Fadiga: como ação bônus, gaste 1 Momento para reduzir sua Fadiga de Combate em 1d4 pontos ou remover um nível de exaustão. Sobrevivência: quando um ataque ou efeito do qual você esteja ciente fosse reduzi-lo a 0 pontos de vida, gaste 1 Momento como reação para reduzir o dano em uma quantidade igual ao seu nível de Bárbaro.",
+          "page": 431,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-champion-of-mortuous.feature.furia-aterrorizante.l10.1",
+          "name": "FÚRIA ATERRORIZANTE",
+          "level": 10,
+          "description": "Enquanto estiver em Fúria, criaturas hostis que iniciarem o turno a até 3 metros de você ou entrarem nessa área pela primeira vez no turno devem realizar uma salvaguarda de Sabedoria contra a CD das suas características baseada em Força. Em caso de falha, ficam amedrontadas por você até o início do próximo turno delas. Em caso de sucesso, não são afetadas e ficam imunes a este efeito por 24 horas, ou até a próxima vez que você entrar em Fúria.",
+          "page": 432,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-champion-of-mortuous.feature.aprimoramento-de-ataque-extra.l14.1",
+          "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+          "level": 14,
+          "description": "Quando realiza a ação Atacar, você pode atacar três vezes em vez de uma.",
+          "page": 432,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "lyre-barbarian-grandstander",
+        "identifier": "lyre-barbarian-grandstander",
+        "name": "Exibicionista",
+        "originalName": "Grandstander",
+        "aliases": [
+          "Grandstander"
+        ]
+      },
+      "source": {
+        "sourceId": "lyre",
+        "title": "Lyre's Guide to Retia — Land of Industry",
+        "pages": "433",
+        "chapter": "Capítulo 8: Opções de Classe",
+        "page": 433
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Pronto para atrair todos os olhares e declarar sua vitória antes mesmo do fim da luta, o Exibicionista é um guerreiro indomável que provoca a ira dos adversários em benefício dos aliados. Ele dramatiza o combate e o transforma em um espetáculo sobre si mesmo, enquanto conduz inimigos a distrações e fintas enganosas.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 433
+      },
+      "features": [
+        {
+          "key": "subclass.lyre-barbarian-grandstander.feature.grande-distracao.l3.1",
+          "name": "GRANDE DISTRAÇÃO",
+          "level": 3,
+          "description": "Você é uma presença caótica no campo de batalha. Como ação bônus ou como parte de entrar em Fúria, escolha um aliado a até 18 metros que possa ver ou ouvir você. Por 1 minuto, criaturas têm desvantagem em ataques contra esse aliado se você estiver a até 9 metros dele ou dos atacantes. Durante o mesmo período, o aliado tem vantagem no primeiro ataque que realizar em cada turno contra uma criatura a até 6 metros de você. O efeito termina se você ficar incapacitado ou usá-lo novamente. Você pode usá-lo um número de vezes por Descanso Longo igual ao seu bônus de proficiência. A partir do 10º nível de Bárbaro, pode escolher dois aliados em vez de um.",
+          "page": 433,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-grandstander.feature.destemor.l6.1",
+          "name": "DESTEMOR",
+          "level": 6,
+          "description": "Você é imune às condições amedrontado e enfurecido. Além disso, enquanto você não estiver incapacitado, criaturas a até 6 metros de você têm vantagem em salvaguardas contra ficarem amedrontadas.",
+          "page": 433,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-grandstander.feature.surto-de-adrenalina.l6.1",
+          "name": "SURTO DE ADRENALINA",
+          "level": 6,
+          "description": "Sempre que sua Fúria terminar, você recebe um surto de adrenalina: até o fim do seu turno, seu deslocamento aumenta em 3 metros e você tem vantagem em todos os ataques com arma que realizar.",
+          "page": 433,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-grandstander.feature.critico-aprimorado-furia.l10.1",
+          "name": "CRÍTICO APRIMORADO (FÚRIA)",
+          "level": 10,
+          "description": "Enquanto estiver em Fúria, você obtém um acerto crítico com uma jogada de ataque cujo d20 mostre 19 ou 20.",
+          "page": 433,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-grandstander.feature.manto-do-campeao.l14.1",
+          "name": "MANTO DO CAMPEÃO",
+          "level": 14,
+          "description": "Sua confiança demonstra a alma de um verdadeiro campeão. Você recebe os seguintes benefícios: quando acerta um ataque com arma realizado com vantagem, causa 1d6 adicional do tipo de dano da arma; quando obtém um acerto crítico rolando 19 ou 20 no d20, recebe pontos de vida temporários iguais ao dano causado por esse ataque; e ganha proficiência em salvaguardas de Carisma, além de poder adicionar metade do seu bônus de proficiência, arredondado para baixo, a qualquer teste de atributo baseado em Carisma que ainda não inclua esse bônus.",
+          "page": 433,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "lyre-barbarian-gladiator",
+        "identifier": "lyre-barbarian-gladiator",
+        "name": "Gladiador",
+        "originalName": "Gladiator",
+        "aliases": [
+          "Gladiator"
+        ]
+      },
+      "source": {
+        "sourceId": "lyre",
+        "title": "Lyre's Guide to Retia — Land of Industry",
+        "pages": "432",
+        "chapter": "Capítulo 8: Opções de Classe",
+        "page": 432
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "O rugido da multidão impulsiona o Gladiador, que busca entreter e atrair atenção tanto quanto se entrega à própria ira. Ele concentra seus esforços em adversários específicos e transforma o combate direto em espetáculo. Gladiadores são conhecidos por personalidades extravagantes e por uma visão grandiosa de honra e competição física.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 432
+      },
+      "features": [
+        {
+          "key": "subclass.lyre-barbarian-gladiator.feature.ataque-de-derrubada.l3.1",
+          "name": "ATAQUE DE DERRUBADA",
+          "level": 3,
+          "description": "Uma vez em cada um dos seus turnos, quando acertar um ataque corpo a corpo com arma, force o alvo a realizar uma salvaguarda de Força, CD 8 + seu modificador de Força + seu bônus de proficiência. Em caso de falha, além do dano normal, o alvo fica caído, a menos que seja duas ou mais categorias de tamanho maior que você. Se você estiver em Fúria, o alvo realiza essa salvaguarda com desvantagem.",
+          "page": 432,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-gladiator.feature.devastacao-competitiva.l6.1",
+          "name": "DEVASTAÇÃO COMPETITIVA",
+          "level": 6,
+          "description": "Em vez de entrar em uma Fúria comum, use uma ação bônus e gaste um uso de Fúria para entrar em Devastação Competitiva por 1 minuto. Durante ela: recebe 1d10 + seu nível de Bárbaro em pontos de vida temporários, que desaparecem ao fim; seus ataques com armas baseados em Força recebem um bônus igual ao bônus de dano da Fúria; todo dano que sofre é reduzido pelo seu modificador de Carisma; você tem vantagem em testes e salvaguardas de Força e em salvaguardas de Constituição; enquanto estiver Morrendo, ainda pode agir e não cai, e se falhar uma terceira salvaguarda contra a morte, a falha é anulada e a Devastação termina; e você ignora a penalidade da Fadiga de Combate em suas rolagens. Ao iniciar a Devastação, você pode desafiar criaturas que possam ouvi-lo em quantidade igual ao seu bônus de dano da Fúria. Cada uma realiza uma salvaguarda de Sabedoria contra sua Intimidação passiva. Em uma falha, deve aceitar o desafio e tem desvantagem em ataques contra criaturas que não sejam você enquanto a Devastação durar; contra o dano perfurante, cortante e contundente causado a você por essas criaturas desafiadas, você possui resistência. A Devastação termina se você ficar inconsciente, terminar seu turno sem inimigos à vista ou sem ter realizado ataques nem causado dano. Fúria e Devastação Competitiva não podem coexistir: iniciar uma encerra a outra. Você pode usar esta característica um número de vezes por Descanso Longo igual ao seu bônus de proficiência, independentemente dos usos restantes de Fúria. Fúria Persistente também se aplica à Devastação Competitiva.",
+          "page": 432,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-gladiator.feature.retaliacao-estrondosa.l10.1",
+          "name": "RETALIAÇÃO ESTRONDOSA",
+          "level": 10,
+          "description": "Quando for atingido por um ataque que possa ver, use sua reação para reduzir o dano em 1d10 + seu nível de Bárbaro. Em seguida, se a fonte do ataque estiver ao alcance, você pode realizar contra ela um ataque com arma como parte da mesma reação. Depois, faça uma salvaguarda de Carisma CD 10; em caso de falha, recebe 1 ponto de Fadiga de Combate. Se já estiver no máximo de Fadiga, não pode usar esta reação. A CD aumenta em 2 cada vez que você obtém sucesso nessa salvaguarda e volta a 10 quando falhar ou concluir um Descanso Curto ou Longo.",
+          "page": 432,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-gladiator.feature.aprimoramento-de-ataque-extra.l14.1",
+          "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+          "level": 14,
+          "description": "Quando realiza a ação Atacar em seu turno, você pode fazer três ataques com arma em vez de um.",
+          "page": 432,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "lyre-barbarian-sacred-obsidian",
+        "identifier": "lyre-barbarian-sacred-obsidian",
+        "name": "Obsidiana Sagrada",
+        "originalName": "Sacred Obsidian",
+        "aliases": [
+          "Sacred Obsidian"
+        ]
+      },
+      "source": {
+        "sourceId": "lyre",
+        "title": "Lyre's Guide to Retia — Land of Industry",
+        "pages": "433",
+        "chapter": "Capítulo 8: Opções de Classe",
+        "page": 433
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Ao cobrir a pele com tatuagens e símbolos arcanos feitos com a tinta especial expoentrum, alguns guerreiros transformam o próprio corpo em um escudo poderoso. A tinta incorporada ao corpo move-se intuitivamente para gerar transmutação temporária, convertendo a pele em uma substância carbonizada tão dura quanto aço. Essa arte pode ser usada ofensiva ou defensivamente, e seu domínio completo cria uma proteção quase autônoma.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 433
+      },
+      "features": [
+        {
+          "key": "subclass.lyre-barbarian-sacred-obsidian.feature.golpeamento-furioso.l3.1",
+          "name": "GOLPEAMENTO FURIOSO",
+          "level": 3,
+          "description": "Quando realiza a ação Atacar enquanto está em Fúria, você pode usar uma ação bônus para realizar dois ataques desarmados. Além disso, durante a Fúria, seus ataques desarmados causam 1d8 + seu modificador de Força de dano contundente.",
+          "page": 433,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-sacred-obsidian.feature.escudo-de-carbono.l6.1",
+          "name": "ESCUDO DE CARBONO",
+          "level": 6,
+          "description": "Quando for atingido por um ataque, você pode usar sua reação para endurecer a pele no ponto de impacto, recebendo um bônus na Classe de Armadura igual ao seu bônus de proficiência. O bônus é aplicado inclusive contra o ataque desencadeador e permanece até o fim do turno. Você pode usar esta característica um número de vezes por Descanso Longo igual à metade do seu nível de Bárbaro, arredondado para baixo.",
+          "page": 433,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-sacred-obsidian.feature.resiliencia-de-aco.l10.1",
+          "name": "RESILIÊNCIA DE AÇO",
+          "level": 10,
+          "description": "Uma vez por Descanso Curto ou Longo, quando entrar em Fúria, você recebe pontos de vida temporários iguais ao dobro do seu nível de Bárbaro. Eles desaparecem após 1 minuto ou quando sua Fúria terminar.",
+          "page": 433,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.lyre-barbarian-sacred-obsidian.feature.evasao-feral.l14.1",
+          "name": "EVASÃO FERAL",
+          "level": 14,
+          "description": "Os encantamentos que protegem seu corpo tornam-se rápidos e autônomos o bastante para reagir a qualquer ameaça previsível. Sempre que realizar uma salvaguarda que permita sofrer metade do dano, você não sofre dano em caso de sucesso e sofre apenas metade em caso de falha.",
+          "page": 433,
+          "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "zagalhta-barbarian-cosmic-madness",
+        "identifier": "zagalhta-barbarian-cosmic-madness",
+        "name": "Caminho da Loucura Cósmica",
+        "originalName": "Path of Cosmic Madness",
+        "aliases": [
+          "Path of Cosmic Madness"
+        ]
+      },
+      "source": {
+        "sourceId": "zagalhta-exolunar",
+        "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+        "pages": "139–140",
+        "chapter": "Capítulo 6: Opções de Subclasse",
+        "page": 139
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Bárbaros que encararam o vazio e foram marcados pela força das estrelas. A Fúria dobra o espaço ao redor e produz efeitos cósmicos imprevisíveis que se tornam cada vez mais extremos.",
+        "tables": [
+          {
+            "key": "table.1.efeitos-do-frenesi-cosmico",
+            "title": "Efeitos do Frenesi Cósmico",
+            "page": 139,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "result",
+                "label": "Resultado"
+              },
+              {
+                "key": "name",
+                "label": "Efeito"
+              },
+              {
+                "key": "effect",
+                "label": "Regra"
+              }
+            ],
+            "rows": [
+              {
+                "result": 1,
+                "name": "Corte dos Céus",
+                "effect": "Cada criatura que você escolher e puder ver a até 9 m recebe voo laborioso igual ao deslocamento base, funcionando como voo pairado quando usado. O efeito termina para cada criatura no fim do primeiro turno dela após sua Fúria terminar."
+              },
+              {
+                "result": 2,
+                "name": "Arma Cósmica",
+                "effect": "Durante a Fúria, seus ataques contam como mágicos e causam um dado de dano de arma adicional."
+              },
+              {
+                "result": 3,
+                "name": "Puxão de Portal",
+                "effect": "Durante a Fúria, como ação bônus a cada turno, escolha criatura visível a até 4,5 m × proficiência. Ela faz salvaguarda de Carisma; em falha é teleportada para espaço adjacente que comporte seu tamanho, ou para o espaço disponível mais próximo."
+              },
+              {
+                "result": 4,
+                "name": "Frenesi Cósmico Indomado",
+                "effect": "Durante a Fúria você também fica enfurecido e considera todas as criaturas hostis. No início de cada turno faça salvaguarda de Sabedoria; em sucesso o efeito termina e role outro efeito para substituí-lo."
+              },
+              {
+                "result": 5,
+                "name": "Teleporte Relâmpago",
+                "effect": "No início de cada turno em Fúria, se não estiver incapacitado, teleporte até 9 m para espaço visível e desocupado. Pode chegar caído ou em pé e isso não consome movimento."
+              },
+              {
+                "result": 6,
+                "name": "Bomba de Radiação",
+                "effect": "Explosão atinge criaturas escolhidas a até 6 m. Cada alvo faz salvaguarda de Constituição; em falha sofre uma quantidade de d6 de dano radiante igual à metade do seu nível de Bárbaro e fica cego até o fim de seu próximo turno."
+              },
+              {
+                "result": 7,
+                "name": "Pele de Cristal",
+                "effect": "Até a Fúria terminar, sua CA aumenta pelo bônus à CD do Frenesi Cósmico: +1 no 6º, +2 no 10º e +3 no 14º nível."
+              },
+              {
+                "result": 8,
+                "name": "Frequência da Violência",
+                "effect": "Criatura que inicia o turno a até 3 m de você sofre 2d6 de dano de força."
+              },
+              {
+                "result": 9,
+                "name": "Fúria Maior",
+                "effect": "Durante a Fúria, sempre que realiza a ação Atacar faz um ataque de arma adicional além do normal; esse ataque tem vantagem."
+              },
+              {
+                "result": 10,
+                "name": "Escala Cósmica",
+                "effect": "Durante a Fúria, você é aumentado como pelo efeito Aumentar de aumentar/reduzir, tratado como conjurado num nível igual à metade do nível de Bárbaro, máximo 9º."
+              },
+              {
+                "result": 11,
+                "name": "Campo Estelar",
+                "effect": "Luz estelar e névoa arco-íris ocupam uma área de 6 m ao seu redor. Você não é afetado; outras criaturas dentro dela, ou mirando através dela, são tratadas como cegas. Termina com a Fúria."
+              },
+              {
+                "result": 12,
+                "name": "Arsenal Galáctico",
+                "effect": "Durante a Fúria pode empunhar armas de Duas Mãos ou Versáteis em uma mão mantendo os benefícios de duas mãos. Como ação bônus cria cópia astral de uma arma que possui, com Arremesso 9/27 m e dano apenas de força; deve atacá-la imediatamente e ela desaparece depois."
+              },
+              {
+                "result": 13,
+                "name": "Mudança de Gravidade Zero",
+                "effect": "Esfera de 15 m de raio centrada em você torna-se ambiente de gravidade zero; você recebe aceleração 0-G igual ao deslocamento base. A esfera acompanha você e dura até a Fúria terminar."
+              },
+              {
+                "result": 14,
+                "name": "Escudo de Gravidade Invertida",
+                "effect": "Até a Fúria terminar, você tem resistência a todo dano."
+              },
+              {
+                "result": 15,
+                "name": "Fúria dos Titãs Celestiais",
+                "effect": "Durante a Fúria, Agarra, Empurra e causa dano como se fosse quatro categorias de tamanho maior. O primeiro ataque que acertar em cada turno causa dano de força adicional igual ao nível de Bárbaro."
+              },
+              {
+                "result": 16,
+                "name": "Mão do Julgamento",
+                "effect": "Produz os efeitos de mão suprema sem concentração enquanto durar sua Fúria, como se conjurada num nível igual à metade do seu nível de Bárbaro, máximo 9º."
+              },
+              {
+                "result": 17,
+                "name": "Arremesso Meteórico",
+                "effect": "Como ação em Fúria, abra portal e lance meteoro num ponto visível a até 18 m. Criaturas em esfera de 9 m fazem salvaguarda de Destreza; falha: 6d6 + nível de Bárbaro de fogo; sucesso: metade. Conta como atacar para sustentar Fúria se houver ao menos uma criatura na área."
+              },
+              {
+                "result": 18,
+                "name": "Guardião Cósmico",
+                "effect": "Ser alienígena espectral cerca você durante a Fúria. Ataques contra você não podem ter vantagem, você recebe visão verdadeira a 9 m e, quando é atingido, pode usar reação para o espectro causar 10 de dano psíquico ao atacante."
+              },
+              {
+                "result": 19,
+                "name": "Loucura do Reino",
+                "effect": "Receba PV temporários iguais ao dobro de seu nível total. Sua Fúria só termina se você permitir, mesmo após a duração normal. No início de cada turno, enquanto restar ao menos 1 desses PV, eles aumentam em 10. Desaparecem ao fim da Fúria ou ao rolar novamente na tabela."
+              },
+              {
+                "result": 20,
+                "name": "Intervenção Cósmica",
+                "effect": "O primeiro ataque que acertar durante a Fúria é automaticamente crítico e concede PV temporários iguais ao dano causado. O dano ignora resistências e imunidades, mas não Limiares ou reduções. Os PV desaparecem ao terminar a Fúria ou rolar novamente na tabela."
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 139
+      },
+      "features": [
+        {
+          "key": "subclass.zagalhta-barbarian-cosmic-madness.feature.oportunidade-astral.l3.1",
+          "name": "OPORTUNIDADE ASTRAL",
+          "level": 3,
+          "description": "Ao obter 20 natural em ataque ou salvaguarda, pode rolar imediatamente na tabela de Efeitos do Frenesi Cósmico como se tivesse entrado em Fúria. O efeito dura 1 minuto ou até você entrar em Fúria; durante esse tempo exige concentração.",
+          "page": 139,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-barbarian-cosmic-madness.feature.frenesi-cosmico.l3.1",
+          "name": "FRENESI CÓSMICO",
+          "level": 3,
+          "description": "Sempre que entra em Fúria, role 1d4 na tabela de Efeitos do Frenesi Cósmico. A CD de qualquer efeito é 8 + Constituição + proficiência. O dado passa a d8 no 6º nível, d12 no 10º e d20 no 14º; a CD também aumenta em +1 em cada um desses níveis.",
+          "page": 139,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-barbarian-cosmic-madness.feature.dobra-cortante.l6.1",
+          "name": "DOBRA CORTANTE",
+          "level": 6,
+          "description": "Pode fazer um ataque corpo a corpo contra alvo a até 6 m × proficiência. Para isso, gaste 1 Carga Arcana, teleporte para espaço desocupado adjacente antes do ataque e some 1d10 tanto ao ataque quanto ao dano.",
+          "page": 139,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-barbarian-cosmic-madness.feature.impulso-cosmico-focado.l10.1",
+          "name": "IMPULSO CÓSMICO FOCADO",
+          "level": 10,
+          "description": "Ao rolar na tabela, role dois dados e escolha o resultado. Se os dois forem iguais, ignore-os e escolha qualquer efeito da tabela.",
+          "page": 139,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.zagalhta-barbarian-cosmic-madness.feature.frenesi-concussivo.l14.1",
+          "name": "FRENESI CONCUSSIVO",
+          "level": 14,
+          "description": "Enquanto estiver em Fúria, no início de cada turno pode rolar novamente na tabela e substituir o efeito atual pelo novo. Esta rolagem específica não usa dois dados.",
+          "page": 139,
+          "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-barbarian-path-of-the-bloodpainted",
+        "identifier": "bbb-barbarian-path-of-the-bloodpainted",
+        "name": "Caminho do Pintado de Sangue",
+        "originalName": "Path of the Bloodpainted",
+        "aliases": [
+          "Path of the Bloodpainted"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "83–84",
+        "chapter": "Capítulo X: Subclasses",
+        "page": 83
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Um bárbaro que abriga um espírito bestial capaz de deformar e transformar sua carne.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 83
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.frenesi-sanguineo.l3.1",
+          "name": "FRENESI SANGUÍNEO",
+          "level": 3,
+          "description": "A visão de sangue e violência o lança em frenesi. Se, desde o início de seu último turno, você sofreu dano de um ataque ou atingiu outra criatura com um ataque, pode realizar um ataque adicional como parte de qualquer ação Atacar que fizer. Além disso, uma vez por turno, se obtiver um acerto crítico em um ataque com arma, pode usar uma ação bônus para realizar dois ataques adicionais com a mesma arma. Esse benefício só se aplica se o crítico resultar de uma rolagem de dado, não de um acerto crítico automático causado por uma condição como paralisado.",
+          "page": 83,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.descarga-de-adrenalina.l6.1",
+          "name": "DESCARGA DE ADRENALINA",
+          "level": 6,
+          "description": "Ao entrar em Fúria, você pode encerrar qualquer efeito que esteja fazendo com que fique restringido, paralisado, atordoado, envenenado, amedrontado ou enfeitiçado. Se a condição vier de uma doença ou de um efeito contínuo que duraria mais de 10 minutos, ela apenas fica suprimida enquanto sua Fúria durar. Se começar seu turno incapaz de realizar ações por uma dessas condições, como paralisado ou atordoado, ainda pode entrar em Fúria, sem exigir ação.",
+          "page": 83,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.golpe-explosivo.l6.1",
+          "name": "GOLPE EXPLOSIVO",
+          "level": 6,
+          "description": "Mesmo fora de Fúria, sangue e violência despertam a influência monstruosa em você. Uma vez para cada dado de dano, quando fizer um ataque com arma baseado em Força e obtiver o resultado máximo em um dado de dano (como 6 em d6 ou 8 em d8), pode rolar esse dado novamente e somar o novo resultado ao dano. Isso só se aplica a dados efetivamente rolados como parte do dano; resultados fixados automaticamente no máximo por regras, características, traços ou efeitos não ativam esta característica.",
+          "page": 83,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.besta-de-sangue.l10.1",
+          "name": "BESTA DE SANGUE",
+          "level": 10,
+          "description": "Uma vez por Descanso, quando entrar em Fúria, você pode transformar-se em uma aterradora besta híbrida da noite em vez de entrar em Fúria normalmente. Você recebe os benefícios normais de Fúria, com as seguintes alterações:\n\n• Sua Fúria não termina antes do tempo, a menos que você fique inconsciente ou escolha encerrá-la em seu turno.\n• Você aumenta uma categoria de tamanho e seu alcance com ataques corpo a corpo aumenta em 1,5 m.\n• Some seu bônus de Dano de Fúria à CA e às salvaguardas de Força, Destreza e Constituição realizadas durante a transformação.\n• Em cada turno, pode usar sua ação bônus para fazer um ataque desarmado baseado em Força que causa dano igual a 1d6 × seu bônus de proficiência. Se usar a ação bônus para os ataques extras de Frenesi Sanguíneo, ambos podem ser esses ataques desarmados.\n• No início de cada um de seus turnos transformado, você perde seu maior Dado de Vida restante.\n\nA transformação dura até 1 minuto ou até sua Fúria terminar.",
+          "page": 83,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.besta-faminta-por-sangue.l14.1",
+          "name": "BESTA FAMINTA POR SANGUE",
+          "level": 14,
+          "description": "Quando perder um Dado de Vida no início de seu turno enquanto estiver transformado em Besta de Sangue, você pode rolar esse dado, sem adicionar seu modificador de Constituição, e recuperar pontos de vida iguais ao resultado. Se o resultado for menor que seu modificador de Constituição, use o modificador de Constituição em seu lugar.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-bloodpainted.feature.critico-aprimorado.l14.1",
+          "name": "CRÍTICO APRIMORADO",
+          "level": 14,
+          "description": "Você obtém um acerto crítico com um resultado 19 ou 20 no d20.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-barbarian-path-of-the-oni",
+        "identifier": "bbb-barbarian-path-of-the-oni",
+        "name": "Caminho do Oni",
+        "originalName": "Path of the Oni",
+        "aliases": [
+          "Path of the Oni"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "84",
+        "chapter": "Capítulo X: Subclasses",
+        "page": 84
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Um bárbaro que manifesta a fúria de um oni e seu poder místico.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 84
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-oni.feature.natureza-lavanda.l3.1",
+          "name": "NATUREZA LAVANDA",
+          "level": 3,
+          "description": "Você pode falar, ler e escrever Gigante e Abissal. Além disso, recebe Especialização em Atletismo ou Intimidação, à sua escolha quando recebe esta característica.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-oni.feature.ira-do-tita.l3.1",
+          "name": "IRA DO TITÃ",
+          "level": 3,
+          "description": "Você canaliza o poder do gigante infernal imbuído em seu corpo para crescer a proporções absurdas. Ao entrar em Fúria, pode produzir em si mesmo o efeito de ampliar de ampliar/reduzir, sem concentração nem espaço de magia; o efeito não conta como magia nem efeito mágico. Considere-o produzido como se fosse conjurado em um nível igual à metade de seu nível de bárbaro, arredondado para cima, no máximo 9º, ou em um nível inferior à sua escolha. O efeito termina quando sua Fúria termina. Você pode usá-lo um número de vezes por Descanso Longo igual ao seu bônus de proficiência.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-oni.feature.passos-de-pesadelo.l6.1",
+          "name": "PASSOS DE PESADELO",
+          "level": 6,
+          "description": "Você replica a capacidade de levitação de um oni e recebe deslocamento de voo laborioso (pairar) igual ao seu deslocamento base.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-oni.feature.neobhasmhor.l10.1",
+          "name": "NEOBHÀSMHOR",
+          "level": 10,
+          "description": "Seu corpo recompõe a si mesmo conforme necessário. Quando iniciar seu turno com 1 ou mais pontos de vida, mas com no máximo metade de seus pontos de vida máximos, recupera pontos de vida iguais a 1d6 + seu bônus de proficiência.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-path-of-the-oni.feature.frenesi-sombrio.l14.1",
+          "name": "FRENESI SOMBRIO",
+          "level": 14,
+          "description": "Seu domínio da natureza de um gigante voraz aprimora suas características anteriores. Se usar Ira do Titã para ampliar-se e sua Fúria terminar, pode manter o efeito de ampliar/reduzir, passando a concentrar-se nele; ele termina quando sua concentração acabar ou após 1 minuto. Enquanto estiver em Fúria, seu deslocamento de voo laborioso (pairar) torna-se deslocamento normal de voo (pairar). Além disso, quando fizer qualquer ataque com vantagem e acertar, pode rolar um dado de dano adicional da arma e somá-lo ao dano.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "bbb-barbarian-swelling-heart",
+        "identifier": "bbb-barbarian-swelling-heart",
+        "name": "Coração Transbordante",
+        "originalName": "Swelling Heart",
+        "aliases": [
+          "Swelling Heart"
+        ]
+      },
+      "source": {
+        "sourceId": "blade-bone-benefit",
+        "title": "Somnus Domina — Blade, Bone, & Benefit",
+        "pages": "84–85",
+        "chapter": "Capítulo X: Subclasses",
+        "page": 84
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Um guerreiro enfurecido cuja força cresce quando protege aqueles ao seu redor.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 84
+      },
+      "features": [
+        {
+          "key": "subclass.bbb-barbarian-swelling-heart.feature.amizade-incessante.l3.1",
+          "name": "AMIZADE INCESSANTE",
+          "level": 3,
+          "description": "Quando um de seus aliados a até 18 m sofre dano ou é atacado, isso conta como se você tivesse sofrido dano para fins de manter sua Fúria.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-swelling-heart.feature.interferencia-furiosa.l3.1",
+          "name": "INTERFERÊNCIA FURIOSA",
+          "level": 3,
+          "description": "Enquanto estiver em Fúria, quando criaturas dentro do alcance de sua arma corpo a corpo sofrerem dano perfurante, cortante ou contundente, reduza esse dano pelo seu bônus de Dano de Fúria.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-swelling-heart.feature.perda-erratica-de-um-companheiro.l6.1",
+          "name": "PERDA ERRÁTICA DE UM COMPANHEIRO",
+          "level": 6,
+          "description": "Se uma criatura aliada a até 9 m for reduzida a 0 pontos de vida ou sofrer um acerto crítico, você recupera um uso gasto de Fúria. Como reação ao evento, pode entrar em Fúria e/ou mover-se até seu deslocamento em direção à fonte do dano e, imediatamente, realizar uma ação Atacar contra ela. Todos os ataques dessa ação devem ter como alvo essa mesma criatura.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-swelling-heart.feature.dor-dilacerante.l10.1",
+          "name": "DOR DILACERANTE",
+          "level": 10,
+          "description": "Quando atingir uma criatura com um ataque com arma enquanto um aliado próximo estiver morrendo ou tiver morrido recentemente a até 18 m de você, o ataque causa dano adicional igual a um dado de dano da arma. O efeito se acumula para cada aliado que se enquadre nessa condição dentro do alcance, até um máximo igual ao seu bônus de proficiência.",
+          "page": 84,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-swelling-heart.feature.lacos-nada-sutis.l10.1",
+          "name": "LAÇOS NADA SUTIS",
+          "level": 10,
+          "description": "Enquanto uma criatura morrendo puder ver ou ouvir você a até 9 m e você estiver em Fúria, ela tem vantagem em salvaguardas contra a morte. Se obtiver o terceiro sucesso em uma salvaguarda contra a morte enquanto tiver essa vantagem, recupera imediatamente 1 ponto de vida. Da mesma forma, você tem vantagem em suas salvaguardas contra a morte e recupera 1 ponto de vida no terceiro sucesso se houver um aliado a até 9 m.",
+          "page": 85,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.bbb-barbarian-swelling-heart.feature.ataque-circunstancial.l14.1",
+          "name": "ATAQUE CIRCUNSTANCIAL",
+          "level": 14,
+          "description": "Quando realiza a ação Atacar, você pode fazer um ataque adicional, desde que ele seja contra um alvo que esteja no alcance corpo a corpo de um de seus aliados. Esse ataque especial ocorre depois de todos os outros ataques da ação. Se obtiver 9 ou menos no d20 desse ataque, pode tratar o resultado como 10.",
+          "page": 85,
+          "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "ryoko-barbarian-path-kaiju",
+        "identifier": "ryoko-barbarian-path-kaiju",
+        "name": "Caminho do Kaiju",
+        "originalName": "Path of the Kaiju",
+        "aliases": [
+          "Path of the Kaiju",
+          "Caminho do Kaiju"
+        ]
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "pages": "150–151",
+        "chapter": "Capítulo 9: Classes",
+        "page": 150
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Um bárbaro que canaliza a força de kaiju, adotando aspectos e transformações de colossos durante sua Fúria.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 150
+      },
+      "features": [
+        {
+          "key": "subclass.ryoko-barbarian-path-kaiju.feature.aspecto-do-kaiju.l3.1",
+          "name": "ASPECTO DO KAIJU",
+          "level": 3,
+          "description": "Ao escolher o caminho, escolha um Kaiju e receba seu aspecto. Dragão Ascendente: enquanto em Fúria, como ação exale cone de 4,5 m; Destreza CD 8 + Força + proficiência, 2d10 radiante (metade em sucesso), escalando para 3d10/4d10/5d10 nos níveis 5/11/17; conta como ataque para manter Fúria. Leviatã Eterno: ao entrar em Fúria ou como ação bônus, criaturas escolhidas a 3 m fazem Sabedoria CD 8 + Constituição + proficiência ou têm desvantagem para atacar qualquer alvo além de você até início do próximo turno. Terra Titânica: use Constituição no lugar de Força em testes de Força e em ataques/danos de golpes desarmados e armas; continuam contando como baseados em Força; tremorsense 3 m. Kabuto Blindado: enquanto em Fúria, após mover 4,5 m em linha reta e acertar ataque de arma, +2d8 concussão. Tempestade Infinita: primeiro acerto corpo a corpo em cada turno durante Fúria causa 1d6 elétrico a criaturas escolhidas a 1,5 m do alvo. Pode trocar o Kaiju ao ganhar nível de Bárbaro.",
+          "page": 150,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-barbarian-path-kaiju.feature.cacador-de-apice.l3.1",
+          "name": "CAÇADOR DE ÁPICE",
+          "level": 3,
+          "description": "Você ganha proficiência em Medicina e Sobrevivência; se já possuir uma delas, ganhe outra perícia à escolha. Pode usar a ação Firmar-se, levantar-se do chão ou montar uma criatura gastando apenas 1,5 m de movimento.",
+          "page": 150,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-barbarian-path-kaiju.feature.forca-de-kaiju.l6.1",
+          "name": "FORÇA DE KAIJU",
+          "level": 6,
+          "description": "Ao entrar em Fúria, pode aumentar você e seu equipamento para tamanho Grande se for menor; peso ×8 por categoria. Se não houver espaço, cresce ao máximo possível. Dura até a Fúria acabar. Enquanto assim, some Constituição a todos os testes e salvaguardas de Força e ataques de arma causam +1d4 dano.",
+          "page": 150,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-barbarian-path-kaiju.feature.transformacao-do-kaiju.l10.1",
+          "name": "TRANSFORMAÇÃO DO KAIJU",
+          "level": 10,
+          "description": "Ao entrar em Fúria, você também pode assumir uma transformação de Kaiju (pode ser diferente do seu Aspecto). Dragão Ascendente: forma pseudolíquida, resistência a fogo, imunidade a agarrado/restringido, natação 18 m, passa por criaturas e frestas de 2,5 cm sem se espremer, não pode parar nelas e recebe meia cobertura submerso. Leviatã Eterno: forma espectral, resistência a frio e necrótico, atravessa criaturas/objetos como terreno difícil; sofre 5 de força se terminar dentro deles e, se a Fúria acabar dentro, é expulso e sofre 5 de força por 1,5 m percorrido. Terra Titânica: Força de Kaiju o torna Enorme em vez de Grande, alcance +1,5 m e ataques de arma causam +1d4 adicional (total +2d4 pela característica). Kabuto Blindado: asas insetoides, voo igual à caminhada e ataques de oportunidade contra você têm desvantagem. Tempestade Infinita: resistência a elétrico e trovão; ação bônus para mover 9 m em linha reta sem ataques de oportunidade e atravessando criaturas; cada uma faz Destreza CD 8 + Constituição + proficiência ou sofre 2d6 elétrico.",
+          "page": 150,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.ryoko-barbarian-path-kaiju.feature.furia-devastadora.l14.1",
+          "name": "FÚRIA DEVASTADORA",
+          "level": 14,
+          "description": "Enquanto estiver em Fúria e com PV iguais ou inferiores à metade do máximo, seu deslocamento aumenta em 3 m e você pode fazer um ataque de arma como ação bônus. Além disso, ao falhar uma salvaguarda, pode escolher ter sucesso. Usos de sucesso automático iguais à metade do modificador de Constituição, arredondado para baixo (mín. 1), por Descanso Longo.",
+          "page": 151,
+          "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "xanathar-caminho-do-guardiao-ancestral",
+        "identifier": "xanathar-caminho-do-guardiao-ancestral",
+        "name": "Caminho do Guardião Ancestral",
+        "originalName": "",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": "xanathar",
+        "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "pages": "9–10",
+        "chapter": "Capítulo 1: Opções de Personalização",
+        "page": 9
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Alguns bárbaros saem de culturas que reverenciam seus antepassados. Essas tribos ensinam que os guerreiros do passado permanecem no mundo como espíritos poderosos, que podem guiar e proteger a vida. Quando um bárbaro que segue este caminho se aguda, o bárbaro entra em contato com o mundo espiritual e convida esses espiritos guardiões para ajuda. Os bárbaros que se empenham em seus guardiões ancestrais podem lutar melhor para proteger suas tribos e seus aliados. A fim de consolidar os vínculos com seus guardiões ancestrais, os bárbaros que seguem esse caminho cobrem-se em tatuagens elaboradas que celebram atos de seus antepassados. Essas tatuagens contam sagas de vitórias contra monstros terríveis e outros rivais temíveis.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 9
+      },
+      "features": [
+        {
+          "key": "subclass.xanathar-caminho-do-guardiao-ancestral.feature.protetor-ancestral.l3.1",
+          "name": "PROTETOR ANCESTRAL",
+          "level": 3,
+          "description": "Começando quando você escolhe esse caminho no 3º nível, os guerreiros espectrais aparecem quando você entra em fúria. Enquanto você está em fúria, a primeira criatura que você acertou com um ataque no seu turno torna-se o alvo dos guerreiros, o que dificulta seus ataques. Até o início do seu próximo turno, esse alvo tem desvantagem em qualquer jogada de ataque que não seja contra você, e quando o alvo atingir uma criatura diferente de você com um ataque, essa criatura tem resistência ao dano causado pelo ataque. O efeito sobre o alvo acaba mais cedo se sua fúria termina.",
+          "page": 10,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.xanathar-caminho-do-guardiao-ancestral.feature.escudo-espiritual.l6.1",
+          "name": "ESCUDO ESPIRITUAL",
+          "level": 6,
+          "description": "Começando no 6° nível, os guardiões espirituais que te protegem podem prover uma defesa sobrenatural para aqueles que você defende. Se você estiver em fúria e outra criatura que possa ver a até 9 metros receba dano, você pode usar sua reação para reduzir esse dano em 2d6. Quando você atinge determinados níveis nesta classe, pode reduzir este dano ainda mais: em 3d6 no 10° nível e em 4d6 no 14° nível",
+          "page": 10,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.xanathar-caminho-do-guardiao-ancestral.feature.consultar-os-espiritos.l10.1",
+          "name": "CONSULTAR OS ESPÍRITOS",
+          "level": 10,
+          "description": "No 10º nível você ganha a habilidade de se consultar com seus espíritos ancestrais. Quando você o faz, pode conjurar as magias augúrio ou clarividência, sem usar espaços de magia ou componentes materiais. Em vez de criar um sensor esférico, esse uso da clarividência invoca invisivelmente um de seus espíritos ancestrais para o local escolhido. Sabedoria é a sua habilidade para conjurar essa magia. Depois de conjurar qualquer magia desta forma, você não pode usar essa característica novamente até terminar um descanso curto ou longo.",
+          "page": 10,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.xanathar-caminho-do-guardiao-ancestral.feature.ancestrais-vingativos.l14.1",
+          "name": "ANCESTRAIS VINGATIVOS",
+          "level": 14,
+          "description": "No 14º nível, seus espíritos ancestrais aumentam de poder o suficiente e conseguem retaliar. Quando você usa seu escudo espiritual para reduzir o dano de um ataque, o atacante recebe uma quantidade de dano de energia igual ao dano que seu Escudo Espiritual.",
+          "page": 10,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "xanathar-caminho-do-arauto-da-tempestade",
+        "identifier": "xanathar-caminho-do-arauto-da-tempestade",
+        "name": "Caminho do Arauto da Tempestade",
+        "originalName": "",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": "xanathar",
+        "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "pages": "10–11",
+        "chapter": "Capítulo 1: Opções de Personalização",
+        "page": 10
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Todos os bárbaros abrigam uma fúria interior. Sua fúria lhes garante superioridade em força, durabilidade e velocidade. Bárbaros que seguem o Caminho do Arauto da Tempestade aprendem a transformar essa fúria em um manto de magia primai, que permeia envolta dele. Quando em fúria um bárbaro desse caminho toca as forças da natureza para criar poderosos efeitos mágicos. Arautos da tempestade são típicos campeões de elite que treinam junto a druidas, patrulheiros, e quaisquer outros que jurem proteger a natureza. Outros arautos da tempestade aprimoram suas capacidades em cabanas destruídas por tempestades, em picos congelados nos confins do mundo, ou nos mais profundos desertos escaldantes.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 10
+      },
+      "features": [
+        {
+          "key": "subclass.xanathar-caminho-do-arauto-da-tempestade.feature.aura-da-tempestade.l3.1",
+          "name": "AURA DA TEMPESTADE",
+          "level": 3,
+          "description": "Começando no 3º nível, você emana uma aura tempestuosa e mágica enquanto você se enfurece. A aura se estende a 3 metros de você em todas as direções, mas não através da cobertura total.\n\nSua aura tem um efeito que se ativa quando você entra na sua fúria, e você pode ativar o efeito novamente em cada um dos seus turnos como uma ação bônus. Escolha entre deserto, mar ou tundra. O efeito da aura depende do ambiente escolhido, conforme detalhado abaixo. Você pode alterar sua escolha de ambiente sempre que você ganha um nível nesta classe.\n\nSe os efeitos da sua aura exigirem um teste de resistência, a CD é igual a 8 + seu bônus de proficiência + seu modificador de Constituição.\n\nDeserto. Quando este efeito é ativado, todas as outras criaturas em sua aura recebem 2 de dano por fogo cada. O dano aumenta quando você alcança certos níveis nesta classe, aumentando para 3 no 5º nível, 4 no 10º nível, 5 no 15º nível e 6 no 20º nível.\n\nMar. Quando este efeito é ativado, você pode escolher uma outra criatura que possa ver em sua aura. O alvo deve fazer um teste de resistência de Destreza. O alvo recebe 1d6 de dano elétrico em caso de falha, ou metade de dano se bem-sucedido. O dano aumenta quando você alcança certos níveis nesta classe, aumentando para 2d6 no 10º nível, 3d6 no 15º nível e 4d6 no 20º nível.\n\nTundra. Quando este efeito é ativado, cada criatura a sua escolha em sua aura ganha 2 pontos de vida temporários, já que os espíritos se acostumam ao sofrimento. Os pontos de vida temporários aumentam quando você atinge certos níveis nesta classe, aumentando para 3 no 5º nível, 4 no 10º nível, 5 no 15º nível e 6 no 20º nível.",
+          "page": 10,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.xanathar-caminho-do-arauto-da-tempestade.feature.alma-da-tempestade.l6.1",
+          "name": "ALMA DA TEMPESTADE",
+          "level": 6,
+          "description": "No 6º nível, a tempestade lhe concede benefícios mesmo quando sua aura não está ativa. Os benefícios são baseados no ambiente que você escolheu para sua Aura da Tempestade.\n\nDeserto. Você ganha resistência ao dano de fogo, e não sofre os efeitos do calor extremo, conforme descrito no Guia do Mestre. Além disso, como uma ação, pode tocar em um objeto inflamável que não esteja sendo usado ou transportado por ninguém e incendiá-lo.\n\nMar. Você ganha resistência ao dano elétrico, e pode respirar debaixo d'água. Você também ganha um deslocamento de natação de 9 metros.\n\nTundra. Você ganha resistência ao frio, e não sofre os efeitos do frio extremo, conforme descrito no Guia do Mestre. Além disso, como uma ação, pode tocar a água e transformar um cubo de 1,5 metros em gelo, que derrete após 1 minuto. Esta ação falha se uma criatura estiver no cubo.",
+          "page": 10,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.xanathar-caminho-do-arauto-da-tempestade.feature.tempestade-protetora.l10.1",
+          "name": "TEMPESTADE PROTETORA",
+          "level": 10,
+          "description": "No 1 0º nível, você aprende a usar seu domínio da tempestade para proteger os outros. Cada criatura a sua escolha tem a resistência a dano que você ganhou com o recurso Alma da Tempestade enquanto a criatura esteja em sua Aura da Tempestade.",
+          "page": 10,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.xanathar-caminho-do-arauto-da-tempestade.feature.tempestade-furiosa.l14.1",
+          "name": "TEMPESTADE FURIOSA",
+          "level": 14,
+          "description": "No 14° nível, o poder da tempestade que você canaliza cresce mais forte, atacando seus inimigos. O efeito é baseado no ambiente que você escolheu para a Aura de Tempestade. Deserto. Imediatamente depois que uma criatura em sua aura acerta um ataque conta você, pode usar sua reação para forçar essa criatura a fazer um de teste de resistência de Destreza. Em caso de falha, a criatura recebe dano de fogo igual à metade do seu nível bárbaro. Mar. Quando você atinge uma criatura em sua aura com um ataque, pode usar sua reação para forçar essa criatura a fazer um de teste de resistência de Força. Em caso de falha, a criatura é derrubada, como se tivesse sido atingido por uma onda. Tundra. Sempre que o efeito de sua Aura da Tempestade estiver ativado, pode escolher uma criatura que possa ver na aura. Essa criatura deve ter sucesso em um teste de resistência de Força, ou seu deslocamento é reduzido para 0 até o início do seu próximo turno, pois uma geada mágica o encobre.",
+          "page": 11,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "xanathar-caminho-do-fanatico",
+        "identifier": "xanathar-caminho-do-fanatico",
+        "name": "Caminho do Fanático",
+        "originalName": "",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": "xanathar",
+        "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+        "pages": "11",
+        "chapter": "Capítulo 1: Opções de Personalização",
+        "page": 11
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Algumas divindades inspiram seus seguidores a se lançarem em uma fúria selvagem. Esses bárbaros são fanáticos-guerreiros que canalizam sua fúria em espetaculares demonstrações de poder divino. Uma variedade de deuses em todo o mundo de D&D inspiram seus seguidores a abraçar esse caminho. Tempus em Reinos Esquecidos e Hextor e Erythnulde Greyhawk são exemplos excelentes. Em geral, os deuses que inspiram fanáticos são divindades de combate, destruição e violência. Nem todos são maus, mas poucos são bons.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 11
+      },
+      "features": [
+        {
+          "key": "subclass.xanathar-caminho-do-fanatico.feature.furia-divina.l3.1",
+          "name": "FÚRIA DIVINA",
+          "level": 3,
+          "description": "Começando quando escolher esse caminho no 3º nível, você pode canalizar fúria divina em ataques de armas. Enquanto você estiver furioso, a primeira criatura que atingiu em cada um dos seus turnos com um ataque de arma recebe dano extra igual a 1d6 + metade do seu nível bárbaro. 0 dano extra é necrótico ou radiante; você escolhe o tipo de dano quando adquire essa característica.",
+          "page": 11,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.xanathar-caminho-do-fanatico.feature.guerreiro-dos-deuses.l3.1",
+          "name": "GUERREIRO DOS DEUSES",
+          "level": 3,
+          "description": "No 3° nível, sua alma está marcada para uma batalha infinita. Se uma magia, como reviver os mortos, tiver o único intuito de trazê-lo de volta a vida (mas não como um morto-vivo), o conjurador não precisa de componentes materiais para conjurar a magia em você.",
+          "page": 11,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.xanathar-caminho-do-fanatico.feature.foco-fanatico.l6.1",
+          "name": "FOCO FANÁTICO",
+          "level": 6,
+          "description": "A partir do 6° nível, o poder divino que abastece sua fúria pode protegê-lo. Se você falhar em um teste de resistência enquanto estiver furioso, pode refazê-lo, e deve usar o novo resultado. Você pode usar essa característica apenas uma vez por fúria.",
+          "page": 11,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.xanathar-caminho-do-fanatico.feature.presenca-zelosa.l10.1",
+          "name": "PRESENÇA ZELOSA",
+          "level": 10,
+          "description": "No 10° nível, você aprende a canalizar o poder divino para inspirar o fanatismo nos outros. Como uma ação bônus, você desencadeia um grito de batalha imbuído com energia divina. Até dez outras criaturas de sua escolha a até 18 metros que possam lhe ouvir ganham vantagem em jogadas de ataque e testes de resistência até o inicio do seu próximo turno. Depois de usar esta característica, você não pode usá-la novamente até terminar um descanso longo.",
+          "page": 11,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.xanathar-caminho-do-fanatico.feature.furia-alem-da-morte.l14.1",
+          "name": "FÚRIA ALÉM DA MORTE",
+          "level": 14,
+          "description": "A partir do 14° nível, o poder divino que alimenta sua fúria permite que você ignore os golpes fatais. Enquanto estiver furioso, ter 0 pontos de vida não o deixa inconsciente. Você ainda deve fazer testes de resistência contra morte, e sofre os efeitos normais de receber dano enquanto estiver em 0 pontos de vida. No entanto, se você morreria devido a falhar nos testes de resistência contra morte, não morre até que sua fúria termine, e só caso ainda esteja com 0 pontos de vida.",
+          "page": 11,
+          "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "tasha-trilha-da-besta",
+        "identifier": "tasha-trilha-da-besta",
+        "name": "Trilha da Besta",
+        "originalName": "",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": "tasha",
+        "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "pages": "23–24",
+        "chapter": "Capítulo 1: Opções de Personagens",
+        "page": 23
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Bárbaros que caminham pela Trilha da Besta tiram sua fúria de uma centelha bestial que queima em suas almas. Essa besta irrompe no auge da fúria, transformando fisicamente o bárbaro. Tais bárbaros podem ser possuídos por um espírito primitivo ou serem descendentes de metamorfos. Você pode escolher a origem de seu poder feral ou determinar isso rolando na tabela de Origem da Besta. Origem da besta d4 Origem 1 Um de seus pais é um licantropo, e você herdou parte de sua maldição. 2 Você é descendente de um arquidruida e herdou a habilidade de mudar de forma parcialmente. 3 Um espírito feérico o presentou com a habilidade de adotar diferentes aspectos bestiais. 4 O espírito de um animal ancestral vive dentro de você, permitindo que trilhe esse caminho.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 23
+      },
+      "features": [
+        {
+          "key": "subclass.tasha-trilha-da-besta.feature.forma-da-besta.l3.1",
+          "name": "FORMA DA BESTA",
+          "level": 3,
+          "description": "Quando você entra em fúria, você pode se transformar, revelando o poder bestial que há dentro de você. Até que a fúria se encerre, você manifesta uma arma natural. Ela conta como uma arma simples de ataque corpo a corpo para você, e você adiciona seu modificador de Força às rolagens de ataque e dano quando ataca com ela, como normalmente. Você escolhe a forma da arma cada vez que entra em fúria: Mordida. Sua boca se transforma em um focinho bestial ou em grandes mandíbulas (a sua escolha). Isso provoca 1d8 de dano perfurante em um acerto. Uma vez por turno, quando você causa dano em uma criatura com essa mordida, você recupera uma quantia de pontos de vida igual ao seu modificador de proficiência, desde que você esteja com metade ou menos de seus pontos de vida totais no momento do acerto. Garras. Cada uma de suas mãos se transforma em uma pata com garras que você pode utilizar como arma caso suas mãos estejam livres. Isso provoca 1d6 de dano cortante em caso de acerto. Uma vez por turno, quando você atacar com suas garras usando a ação de Ataque, você pode realizar um ataque de garra adicional como parte da mesma ação. Cauda. Cresce uma cauda chicoteante e espinhosa em você, que causa 1d8 de dano perfurante em um acerto e que possui a propriedade de alcance. Se uma criatura a até 3m de você e que esteja em seu campo de visão o acerta com uma jogada de ataque, você pode utilizar a sua reação para golpear com sua cauda e rolar um d8, aplicando um bônus em sua CA equivalente ao valor rolado e fazendo com que o ataque potencialmente o erre.",
+          "page": 23,
+          "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.tasha-trilha-da-besta.feature.alma-bestial.l6.1",
+          "name": "ALMA BESTIAL",
+          "level": 6,
+          "description": "O poder feral dentro de você aumenta, fazendo com que a arma natural da sua Forma Bestial conte como mágica para o propósito de superar resistências e imunidades a ataques e danos não-mágicos. Você também pode alterar sua forma para se adaptar aos seus arredores. Quando você finalizar um descanso curto ou longo, escolha um dos seguintes benefícios, que durará até que você termine seu próximo descanso, seja ele curto ou longo: Você adquire deslocamento de natação igual ao seu deslocamento terrestre, e você pode respirar debaixo da água Você ganha deslocamento de escalada igual ao seu deslocamento terrestre e você pode escalar superfícies difíceis, incluindo ficar de cabeça para baixo em tetos, sem a necessidade de realizar testes de habilidade. Quando você salta, você pode realizar um teste de Força (Atletismo) e ampliar seu salto por uma quantia de metros igual a um terço do resultado total. Você pode realizar esse teste especial apenas uma vez por turno",
+          "page": 24,
+          "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.tasha-trilha-da-besta.feature.furia-contagiosa.l10.1",
+          "name": "FÚRIA CONTAGIOSA",
+          "level": 10,
+          "description": "Quando você acerta uma criatura com suas armas naturais enquanto em fúria, a besta dentro de você pode amaldiçoar seu alvo com uma raiva descontrolada. O alvo deve ser bemsucedido em uma salvaguarda de Sabedoria (CD igual a 8 + seu modificador de Constituição + seu bônus de proficiência) ou sofrer um dos seguintes efeitos (a sua escolha): O alvo deve usar sua reação para realizar um ataque corpo a corpo contra outra criatura a sua escolha que você possa ver. O alvo recebe 2d12 de dano psíquico. Você pode usar essa característica um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos quando você terminar um descanso longo.",
+          "page": 24,
+          "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.tasha-trilha-da-besta.feature.chamado-de-caca.l14.1",
+          "name": "CHAMADO DE CAÇA",
+          "level": 14,
+          "description": "A besta dentro de você torna-se tão poderosa que você pode espalhar sua ferocidade para os outros e adquirir resiliência através daqueles que se juntarem a sua caçada. Quando você entrar em fúria, você pode escolher uma quantia de outras criaturas voluntárias dentro da sua visão a até 9m de você igual ao seu modificador de Constituição (mínimo de uma criatura). Você ganha 5 pontos de vida temporários para cada criatura que aceitar essa característica. Até que a fúria se encerre, cada uma das criaturas escolhidas pode utilizar o seguinte benefício uma vez em cada um dos seus turnos: Quando a criatura acertar um alvo com uma jogada de ataque e provocar dano nele, a criatura pode rolar um d6 e ganhar um bônus no dado igual ao valor rolado. Você pode usar essa característica um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos ao terminar um descanso longo.",
+          "page": 24,
+          "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "tasha-trilha-da-magia-selvagem",
+        "identifier": "tasha-trilha-da-magia-selvagem",
+        "name": "Trilha da Magia Selvagem",
+        "originalName": "",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": "tasha",
+        "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+        "pages": "24–26",
+        "chapter": "Capítulo 1: Opções de Personagens",
+        "page": 24
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Muitos lugares no multiverso fervilham com beleza, emoção intensa e rompantes de magia; Faéria, os Planos Superiores, e outros mundos de poder sobrenatural irradiam com tais forças e podem influenciar profundamente as pessoas. Como seres intensos, bárbaros são especialmente suscetíveis a essas influências imprevisíveis, com alguns deles sendo transformados pela magia. Estes bárbaros inundados pela magia seguem a Trilha da Magia Selvagem. Bárbaros elfos, tiferinos, aasimares, e genasi frequentemente seguem esse caminho, ansiosos por manifestar a magia transcendental de seus ancestrais.",
+        "tables": [],
+        "references": [],
+        "sourcePage": 24
+      },
+      "features": [
+        {
+          "key": "subclass.tasha-trilha-da-magia-selvagem.feature.surto-selvagem.l3.1",
+          "name": "SURTO SELVAGEM",
+          "level": 3,
+          "description": "A energia mágica remexendo-se dentro de você às vezes irrompe de seu corpo. Quando você entra em fúria, role na tabela de Magia Selvagem para determinar o efeito mágico produzido. Se o efeito exigir uma salvaguarda, a CD é igual a 8 + seu bônus de proficiência + seu modificador de Constituição. Magia Selvagem 1d8 Efeito 1 Tentáculos sombrios chicoteiam ao seu redor. Cada criatura a sua escolha em seu campo de visão e que esteja a até 9m de você deve realizar uma salvaguarda de Constituição ou sofre 1d12 de dano necrótico. Você também ganha 1d12 de pontos de vida temporários. 2 Você se teleporta a até 9m para um espaço desocupado que você possa ver. Até que sua fúria termine, você pode utilizar esse efeito novamente em cada um dos seus turnos com uma ação bônus. 3 Um espírito intangível, parecido com um flumph ou uma pixie (a sua escolha), aparece a até 1,5m de distância de uma criatura a sua escolha em seu campo de visão a até 9m de você. No final do turno atual, o espírito explode, e cada criatura a até 1,5m dele deve ser bem-sucedida em uma salvaguarda de Destreza ou sofre 1d6 de dano de energia. Até que sua fúria acabe você pode utilizar esse efeito novamente em cada um de seus turnos, invocando outro espírito com uma ação bônus. 4 A magia infiltra-se em uma arma a sua escolha que você esteja empunhando. Até que sua fúria termine, o tipo de dano da arma muda para energia e ela adquire as propriedades leve e arremesso, com um alcance normal de 6m e um alcance longo de 18m. Se a arma deixar a sua mão, ela reaparecerá empunhada no final do turno atual. 5 Sempre que uma criatura o acertar com uma jogada de ataque antes que sua fúria se encerre, essa criatura sofre 1d6 de dano de energia, conforme a magia chicoteia em retribuição 6 Até que sua fúria acabe, você é cercado por luzes protetoras multicoloridas; você ganha um bônus de +1 na CA, e enquanto estiverem a até 3m de você seus aliados também recebem o mesmo bônus. 7 Flores e vinhas temporariamente crescem ao seu redor; até que sua fúria acabe, o terreno a até 4,5m de você é considerado terreno difícil para os seus inimigos. 8 Um raio de luz é disparado a partir de seu peito. Outra criatura a sua escolha em seu campo de visão e que esteja a até 9m de você deve realizar uma salvaguarda de Constituição ou sofrerá 1d6 de dano radiante e ficará cega até o começo do seu próximo turno. Até que sua fúria se encerre, você pode utilizar este efeito novamente em cada um de seus turnos com uma ação bônus.",
+          "page": 25,
+          "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.tasha-trilha-da-magia-selvagem.feature.percepcao-magica.l3.1",
+          "name": "PERCEPÇÃO MÁGICA",
+          "level": 3,
+          "description": "uma ação, você pode ampliar seus sentidos para notar a presença de concentração de magia. Até o final de seu próximo turno, você sabe a localização de qualquer magia ou item mágico a até 18m de você que não esteja sob cobertura total. Quando você sente uma magia, você também descobre de que escola ela é. Você pode usar essa característica um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos quando você terminar um descanso longo.",
+          "page": 25,
+          "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.tasha-trilha-da-magia-selvagem.feature.fortalecimento-magico.l6.1",
+          "name": "FORTALECIMENTO MÁGICO",
+          "level": 6,
+          "description": "Você pode domar sua magia selvagem para fortalecer a si mesmo ou a um companheiro. Usando uma ação, você pode tocar uma criatura (que pode ser você mesmo) e conferir um dos seguintes benefícios a sua escolha para a criatura tocada: Por 10 minutos, a criatura pode rolar um d3 sempre que fizer uma jogada de ataque ou teste de habilidade e adicionar o número rolado na jogada do d20. Role um d3. A criatura recupera um espaço de magia gasto de círculo igual ou menor ao valor rolado (a escolha da criatura). Uma vez que receba esse benefício, a criatura não poderá ser afetada por ele novamente até que termine um descanso longo. Você pode realizar essa ação um número de vezes igual ao seu bônus de proficiência, e você recupera todos os usos quando você terminar um descanso longo.",
+          "page": 25,
+          "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.tasha-trilha-da-magia-selvagem.feature.retaliacao-instavel.l10.1",
+          "name": "RETALIAÇÃO INSTÁVEL",
+          "level": 10,
+          "description": "Quando você estiver ameaçado durante a sua fúria, a mágica dentro de você pode escapar; imediatamente após você receber dano ou falhar em uma salvaguarda enquanto estiver em fúria, você pode utilizar a sua reação para jogar na tabela de Magia Selvagem e imediatamente produzir o efeito rolado. Esse efeito substitui seu efeito de Magia Selvagem atual.",
+          "page": 25,
+          "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.tasha-trilha-da-magia-selvagem.feature.surto-controlado.l14.1",
+          "name": "SURTO CONTROLADO",
+          "level": 14,
+          "description": "Sempre que rolar na tabela de Magia Selvagem, você pode jogar duas vezes e escolher qual dos dois efeitos liberar. Se você rolar o mesmo número em ambos os dados, você pode ignorar o resultado e escolher qualquer efeito na tabela.",
+          "page": 25,
+          "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "scag-caminho-da-furia-da-batalha",
+        "identifier": "scag-caminho-da-furia-da-batalha",
+        "name": "Caminho da Fúria da Batalha",
+        "originalName": "",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": "scag",
+        "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+        "pages": "121",
+        "chapter": "Capítulo 4: Classes",
+        "page": 121
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "barbarian",
+        "identifier": "barbarian",
+        "name": "Bárbaro"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "barbarian",
+        "selectionLevel": 3,
+        "description": "Conhecidos como Kuldjarg (literalmente “o machado idiota”) em Anão, furiosos de batalha são anões seguidores do deus da guerra e trilham o Caminho da Fúria. Eles se especializam em vestir armaduras com espinhos maciças e se lançar em combates, golpeando com seu próprio corpo e aterrorizando seus inimigos com a fúria da batalha.\n\nRestrição: Apenas Anões. Apenas anões podem seguir o Caminho da Fúria da Batalha. A Fúria da Batalha preenche um nicho pessoal da sociedade e cultura anã. O Mestre pode permitir esta restrição para melhor se adequar à campanha; ela existe para os Reinos Esquecidos e pode não se aplicar a outro cenário.",
+        "tables": [
+          {
+            "key": "table.1.armadura-com-espinhos",
+            "title": "Armadura com Espinhos",
+            "page": null,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "item",
+                "label": "Item"
+              },
+              {
+                "key": "value",
+                "label": "Valor"
+              }
+            ],
+            "rows": [
+              {
+                "item": "Tipo",
+                "value": "Armadura média rara de fabricação anã"
+              },
+              {
+                "item": "Custo",
+                "value": "75 po"
+              },
+              {
+                "item": "CA",
+                "value": "14 + modificador de Destreza (máx. +2)"
+              },
+              {
+                "item": "Furtividade",
+                "value": "Desvantagem"
+              },
+              {
+                "item": "Peso",
+                "value": "20 kg"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 121
+      },
+      "features": [
+        {
+          "key": "subclass.scag-caminho-da-furia-da-batalha.feature.furia-com-armadura.l3.1",
+          "name": "FÚRIA COM ARMADURA",
+          "level": 3,
+          "description": "Quando você escolhe esse caminho no 3º nível, você recebe a habilidade de usar a armadura com espinhos (veja a coluna lateral “Armadura com Espinhos”) como uma arma.\n\nEnquanto estiver usando esta armadura com espinhos e estiver em fúria, você pode usar sua ação bônus para fazer um ataque corpo a corpo usando sua armadura de espinhos em um alvo a até 1,5m de você. Se o ataque acertar, os espinhos causam 1d4 de dano perfurante. Use seu modificador de Força para as jogadas de ataque e de dano. Adicionalmente, quando você usa a ação Atacar para agarrar uma criatura, o alvo recebe 3 pontos de dano se o seu agarrão tiver sucesso.",
+          "page": 121,
+          "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.scag-caminho-da-furia-da-batalha.feature.entrega-imprudente.l6.1",
+          "name": "ENTREGA IMPRUDENTE",
+          "level": 6,
+          "description": "Começando no 6º nível, quando você usa Entrega Imprudente enquanto estiver em fúria, você também recebe pontos de vida temporários igual ao seu modificador de Constituição (mínimo de 1). Eles somem se qualquer um deles restar quando a fúria terminar.",
+          "page": 121,
+          "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.scag-caminho-da-furia-da-batalha.feature.investida-furiosa.l10.1",
+          "name": "INVESTIDA FURIOSA",
+          "level": 10,
+          "description": "A partir do 10º nível, você pode fazer uma ação de Corrida como uma ação bônus enquanto estiver em Fúria.",
+          "page": 121,
+          "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.scag-caminho-da-furia-da-batalha.feature.retribuicao-farpada.l14.1",
+          "name": "RETRIBUIÇÃO FARPADA",
+          "level": 14,
+          "description": "Começando no 14º nível, quando uma criatura a até 1,5m de você o acerta com um golpe corpo a corpo, esse atacante recebe 3 pontos de dano caso você esteja em fúria, não esteja inconsciente e esteja usando uma armadura com espinhos.",
+          "page": 121,
+          "sourceTitle": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    }
+  ]
+}

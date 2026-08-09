@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "tasha-ordem-dos-escribas",
+    "identifier": "tasha-ordem-dos-escribas",
+    "name": "Ordem dos Escribas",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "tasha",
+    "title": "Caldeirão de Tasha para Tudo — D&D 5e",
+    "pages": "69–72",
+    "chapter": "Capítulo 1: Opções de Personagens",
+    "page": 69
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "wizard",
+    "identifier": "wizard",
+    "name": "Mago"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "wizard",
+    "selectionLevel": 2,
+    "description": "Magia do livro – é o que muitas pessoas chamam de feitiçaria. O nome é adequado, considerando quanto tempo magos gastam debruçados em tomos e escrevendo teorias sobre a natureza da magia. É raro ver magos viajando sem livros e pergaminhos brotando de suas mochilas, e um mago percorreria longas distâncias para examinar um acervo de conhecimento antigo. Entre os magos, a Ordem dos Escribas é a mais estudiosa. Ela assume muitas formas em mundos diferentes, mas sua missão principal é a mesma em todos os lugares: registrar descobertas mágicas para que a magia possa florescer. E embora todo mago valorize seu livro de magia, um mago da Ordem dos Escribas desperta magicamente o seu, transformando-o em um companheiro confiável. Todos os magos estudam livros, mas um mago escriba fala com os dele!",
+    "tables": [],
+    "references": [],
+    "sourcePage": 69
+  },
+  "features": [
+    {
+      "key": "subclass.tasha-ordem-dos-escribas.feature.pena-magica.l2.1",
+      "name": "PENA MÁGICA",
+      "level": 2,
+      "description": "Como uma ação bônus, você pode magicamente criar uma pena Minúscula em sua mão livre. A pena mágica possui as seguintes propriedades: A pena não requer tinta. Quando você a utiliza, ela produz tinta em uma cor de sua escolha sobre a superfície de escrita. O tempo utilizado para copiar uma magia para seu livro de magia é igual a 2 minutos por círculo de magia se você usar a pena para a transcrição. Usando uma ação bônus você pode apagar qualquer coisa que você escreva com a pena se balançar a pluma sobre o texto, desde que esse texto esteja a até 1,5m de você. A pena desaparece se você criar outra ou se você morrer.",
+      "page": 70,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-ordem-dos-escribas.feature.livro-de-magia-desperto.l2.1",
+      "name": "LIVRO DE MAGIA DESPERTO",
+      "level": 2,
+      "description": "Usando tintas especialmente preparadas e encantamentos antigos passados por sua ordem de magia, você pode despertar uma consciência arcana dentro do seu livro de magia. Enquanto estiver segurando o livro, ele lhe fornece os seguintes benefícios: Você pode usar o livro como foco de conjuração para suas magias de mago. Quando você conjurar uma magia de mago com um espaço de magia, você pode temporariamente substituir o tipo de dano dessa magia para um tipo de dano de outra magia no seu grimório, o que magicamente altera a fórmula da magia para esta única conjuração. A magia usada como base para o tipo de dano substituto precisa ser de mesmo círculo do espaço de magia que você utilizou. Quando você conjurar uma magia de mago como ritual, você pode usar o tempo de conjuração normal da magia em vez de adicionar 10 minutos para a conjuração. Assim que usar este benefício, você não poderá fazer isso novamente até que termine um descanso longo. Se necessário, você pode substituir o livro durante um descanso curto usando sua Pena Mágica para escrever selos arcanos em outro livro em branco ou um grimório mágico ao qual você esteja sintonizado. Ao fim desse descanso, a consciência do seu grimório é transportada para o novo livro, o transformando em seu novo livro de magia, junto a todas as suas magias. Se o grimório anterior ainda existe em algum lugar, todas as magias desaparecem de suas páginas.",
+      "page": 70,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-ordem-dos-escribas.feature.manifestar-mente.l6.1",
+      "name": "MANIFESTAR MENTE",
+      "level": 6,
+      "description": "Você pode invocar a mente do seu Livro de Magia Desperto. Usando uma ação bônus enquanto estiver portando o livro, você pode fazer com que a mente dele se manifeste como um objeto espectral Minúsculo, pairando sobre um espaço desocupado a sua escolha a até 18m de você. A mente espectral é intangível e não ocupa esse espaço, e irradia meialuz em um raio de 3m. Ela se parece com um tomo fantasmagórico, uma cascata de texto, ou um estudioso do seu passado (a sua escolha). Enquanto manifesta, a mente espectral pode ver e ouvir, e possui visão no escuro de 18m. A mente pode compartilhar telepaticamente com você o que ela percebe (nenhuma ação é necessária). Sempre que você conjurar uma magia de mago em seu turno, você pode fazer isso como se estivesse no espaço da mente espectral, em vez de no seu próprio, usando os sentidos da mente. Você pode fazer isso um número de vezes por dia igual ao seu bônus de proficiência, e você recupera todos os usos ao terminar um descanso longo. Com uma ação bônus, você pode fazer com que a mente espectral se mova a até 9m para um espaço desocupado que você possa ver. Ela pode passar através de criaturas, mas não por objetos. A mente espectral para de se manifestar se estiver a mais de 90m de você, se alguém conjurar “dissipar magia” sobre ela, se o Livro de Magia Desperto for destruído, se você morrer, ou se você usar sua ação bônus para dispensá-la. Uma vez que tenha conjurado a mente, você não pode fazer isso de novo até terminar um descanso longo, a menos que gaste um espaço de magia de qualquer círculo para tal.",
+      "page": 70,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-ordem-dos-escribas.feature.mestre-escriba.l10.1",
+      "name": "MESTRE ESCRIBA",
+      "level": 10,
+      "description": "Sempre que finalizar um descanso longo, você pode criar um pergaminho de magia apenas tocando sua Pena Mágica em um papel ou pergaminho em branco e fazendo que a magia do seu Livro de Magia Desperto seja copiada para ele. O grimório deve estar a até 1,5m de você quando você criar esse pergaminho de magia. A magia escolhida deve ser de 1º ou 2º círculo e deve ter o tempo de conjuração de 1 ação. Uma vez no pergaminho, o poder da magia é aprimorado, contando como um círculo acima do que o normal. Você pode conjurar a magia pelo pergaminho de magia usando uma ação para sua leitura. O pergaminho de magia é ininteligível para todos os outros, e a magia desaparece do pergaminho quando você a conjurar ou quando você terminar seu próximo descanso longo. Você é também apto na criação de pergaminhos de magia, que são descritos no capítulo sobre tesouros do “Guia do Mestre”. O ouro e o tempo gastos para criar um pergaminho são diminuídos pela metade se você utilizar sua Pena Mágica.",
+      "page": 71,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.tasha-ordem-dos-escribas.feature.um-com-a-palavra.l14.1",
+      "name": "UM COM A PALAVRA",
+      "level": 14,
+      "description": "Sua conexão com seu Livro de Magias Desperto se tornou tão profunda que sua alma entrelaçou-se a ele. Enquanto o livro estiver com você, você possui vantagem em todos os testes de Inteligência (Arcanismo), conforme o livro o ajuda a se lembrar dos conhecimentos mágicos. Além disso, se você receber dano enquanto o livro estiver com sua Mente Manifesta, você pode prevenir todo esse dano usando sua reação para fazer a mente espectral desaparecer, usando sua magia para se salvar. Então role 3d6. O livro de magias temporariamente perde uma quantia de magias a sua escolha que devem possuir um valor de círculo de magia igual a rolagem ou maior. Por exemplo, se o valor total da rolagem for 9, as magias que desaparecem do livro devem possuir um valor de círculo de no mínimo 9; o que pode significar uma única magia de 9º círculo, 3 de 3º círculo, ou qualquer outra combinação que totalize 9. Se não houver magias suficientes no livro de magias para cobrir esse custo, você cai a 0 pontos de vida. Até você terminar 1d6 descansos longos, você é incapaz de conjurar as magias perdidas, mesmo se você encontrá-las em um pergaminho de magia ou em outro livro de magias. Após terminar o número de descansos exigidos, as magias reaparecem no seu grimório. Uma vez que use essa reação, você não pode fazer isso novamente até terminar um descanso longo.",
+      "page": 71,
+      "sourceTitle": "Caldeirão de Tasha para Tudo — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

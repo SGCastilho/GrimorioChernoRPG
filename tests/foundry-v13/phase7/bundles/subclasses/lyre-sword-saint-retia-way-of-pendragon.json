@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-pendragon",
+    "identifier": "lyre-sword-saint-retia-way-of-pendragon",
+    "name": "Caminho de Pendragon",
+    "originalName": "Way of Pendragon",
+    "aliases": [
+      "Way of Pendragon"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "427",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 427
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Caliburn. Baseado no lendário rei-cavaleiro escolhido por profecia, este Caminho une liderança, sorte, defesa e poder sagrado. Seus praticantes se veem como baluartes contra injustiça e traição.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 427
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-pendragon.feature.estilo-de-luta-defesa.l3.1",
+      "name": "ESTILO DE LUTA: DEFESA",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Defesa, proficiência com armaduras pesadas e proficiência em salvaguardas de Carisma.",
+      "page": 427,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-pendragon.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "CORAGEM: ao usar a ação Atacar, gaste 1 Foco para acrescentar a cada ataque corpo a corpo com arma que acerte dano adicional do tipo da arma igual ao seu modificador de Força; uma vez por ação Atacar. MANTER FIRME: quando ataque com arma o acertar, gaste 2 Foco para reduzir o dano em 1d8 + Constituição; pode usar várias vezes na mesma fonte, decidindo antes de sofrer o dano. CHAMADO INSPIRADOR: como ação bônus, gaste 2 Foco e escolha criaturas que possam vê-lo ou ouvi-lo em quantidade igual ao seu modificador de Sabedoria; cada uma recebe 1d10 + seu bônus de proficiência em PV temporários por 1 minuto ou até você cair a 0 PV/inconsciente, e enquanto os possuir tem vantagem contra amedrontado ou enfeitiçado.",
+      "page": 427,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-pendragon.feature.assalto-valente.l6.1",
+      "name": "ASSALTO VALENTE",
+      "level": 6,
+      "description": "Ao fazer seu primeiro ataque do turno, pode usar ação bônus para avançar com fervor. Durante esse turno, toda jogada de ataque com arma recebe +1d8. Usos por Descanso Longo iguais ao seu bônus de proficiência.",
+      "page": 427,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-pendragon.feature.instinto-e-sorte.l11.1",
+      "name": "INSTINTO E SORTE",
+      "level": 11,
+      "description": "Ao terminar Descanso Longo, role d20s em quantidade igual ao seu bônus de proficiência; rerrole resultados 10 ou menos até serem 11 ou mais, exceto um 1 natural, que é perdido. Esses são seus resultados de Instinto e duram até o próximo Descanso Longo. Antes de fazer um ataque, teste ou salvaguarda, pode gastar um resultado de Instinto e usá-lo em vez de rolar. Alternativamente, gaste 1 Foco para substituir por um resultado de Instinto um d20 já rolado, mesmo após sucesso ou falha ser declarado.",
+      "page": 427,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-pendragon.feature.luz-da-esperanca.l14.1",
+      "name": "LUZ DA ESPERANÇA",
+      "level": 14,
+      "description": "Como ação bônus, sua Arma Santa pode emitir 15 metros de luz plena e mais 15 metros de penumbra; sua luz plena penetra e dissipa escuridão mágica criada por magia de 4º nível ou inferior. Dura até você ficar incapacitado, soltar a arma ou encerrá-la como ação bônus. Além disso, como ação bônus, pode gastar de 1 a 4 Foco para imbuir a Arma Santa com energia radiante por 1 minuto; no próximo acerto, causa +1d10 de dano radiante por ponto gasto e o efeito termina.",
+      "page": 427,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-pendragon.feature.orientacao-de-avalon.l17.1",
+      "name": "ORIENTAÇÃO DE AVALON",
+      "level": 17,
+      "description": "Toda cura que receber restaura o máximo possível de PV. Se sofrer exaustão recuperável normalmente, um único Descanso Longo remove todos os níveis, e você é imune a Fadiga de Combate. Além disso, quando uma salvaguarda bem-sucedida normalmente reduziria o dano à metade, você sofre metade em uma falha e nenhum dano em sucesso.",
+      "page": 427,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

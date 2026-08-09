@@ -1,0 +1,140 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-mentor",
+    "identifier": "xanathar-mentor",
+    "name": "Mentor",
+    "originalName": "",
+    "aliases": [
+      "Manipulador"
+    ]
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "44",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 44
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "rogue",
+    "identifier": "rogue",
+    "name": "Ladino"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "rogue",
+    "selectionLevel": 3,
+    "description": "Seu foco está em pessoas, na influência e nos segredos que elas têm. Muitos espiões, cortesãs e manipuladores escolhem este arquétipo, conduzindo sua vida de intriga. Palavras são suas armas assim como, por muitas vezes, facas ou veneno; segredos e favores são alguns de seus maiores tesouros.",
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.costa-da-espada-guia-de-aventureiros-d-d-5e",
+        "title": "Costa da Espada — Guia de Aventureiros — D&D 5e",
+        "page": null,
+        "text": "",
+        "sourceTitle": ""
+      }
+    ],
+    "sourcePage": 44
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-mentor.feature.mestre-da-intriga.l3.1",
+      "name": "MESTRE DA INTRIGA",
+      "level": 3,
+      "description": "Quando você escolhe esse arquétipo no 3º nível obtém proficiência com kit de disfarce, kit de ' falsificação e um conjunto de jogo de sua preferência. Também aprende dois idiomas adicionais (de sua preferência). Além disto, pode infalivelmente imitar os padrões de fala e sotaques de uma criatura que ouviu por ao menos 1 minuto, possibilitando que se passe por um nativo de uma terra particular que lhe ensinou tal idioma.",
+      "page": 44,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-mentor.feature.mestre-de-tatica.l3.1",
+      "name": "MESTRE DE TÁTICA",
+      "level": 3,
+      "description": "C?meçando no 3º nível, você pode usar a ação de AJuda como uma ação bônus. Além disto, quando usar a ação de Ajuda para socorrer um aliado que esteja recebendo um ataque de uma criatura, o alvo deste ataque pode estar dentro de um raio de 9 metros de alcance, ao invés de 1,5 metros, isso se o alvo puder ver e ouvi-lo.",
+      "page": 44,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-mentor.feature.manipulador-perspicaz.l9.1",
+      "name": "MANIPULADOR PERSPICAZ",
+      "level": 9,
+      "description": "No 9º nível, se gastar ao menos 1 minuto observando e interagindo com outra criatura fora de combate, pode obter certas informações e compará-las com as suas. O Mestre dirá se a criatura e de igual, superior ou inferior no que diz respeito as seguintes características a sua escolha: • Valor de Inteligência • Valor de Sabedoria • Valor de Carisma • Nívelde Classe (caso exista) Como opção do Mestre você também sabe a cerca da historia do personagem e um dos seus traços de personalidade, se tiver algum.",
+      "page": 44,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-mentor.feature.redirecionar.l13.1",
+      "name": "REDIRECIONAR",
+      "level": 13,
+      "description": "A partir do 13° nível, às vezes você pode redirecionar para outra criatura um ataque direcionado a você. Quando for alvo de um ataque enquanto uma criatura dentro de 1,5 metros de alcance está concedendo cobertura contra esse ataque, pode usar sua reação para que o alvo do ataque seja essa criatura em vez de você.",
+      "page": 44,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-mentor.feature.alma-do-enganador.l17.1",
+      "name": "ALMA DO ENGANADOR",
+      "level": 17,
+      "description": "A partir do 17º nível, seus pensamentos não podem ser lidos por telepatia, ou outros meios, ao menos que você o permita. Você pode pressentir falsos pensamentos, sendo bem sucedido em um teste de Carisma (Enganação) resistido contra a Sabedoria (Intuição) do leitor da mente.\n\nAlém disso, não importa o que você diga, a magia que determinaria se você está dizendo a verdade indica que está sendo sincero se você escolher, e você não pode ser compelido a dizer a verdade pela magia.",
+      "page": 44,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

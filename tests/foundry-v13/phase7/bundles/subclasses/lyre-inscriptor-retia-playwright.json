@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-inscriptor-retia-playwright",
+    "identifier": "lyre-inscriptor-retia-playwright",
+    "name": "Dramaturgo",
+    "originalName": "Playwright",
+    "aliases": [
+      "Playwright"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "372",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 372
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "inscriptor-retia",
+    "identifier": "inscriptor",
+    "name": "Inscritor"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "inscriptor",
+    "selectionLevel": 1,
+    "description": "Você escreve peças, discursos, roteiros e textos destinados à interpretação. Sua magia toma a forma de direções de palco capazes de motivar, orientar e até reescrever temporariamente a atuação de outras pessoas.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-capitulo",
+        "title": "Magias de Capítulo",
+        "page": 372,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Inscritor"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Comando"
+          },
+          {
+            "level": "3º",
+            "spells": "Raio Lunar"
+          },
+          {
+            "level": "5º",
+            "spells": "Forjar Morte"
+          },
+          {
+            "level": "7º",
+            "spells": "Terreno Alucinógeno"
+          },
+          {
+            "level": "9º",
+            "spells": "Similaridade"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 372
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-inscriptor-retia-playwright.feature.entrar-em-cena.l1.1",
+      "name": "ENTRAR EM CENA",
+      "level": 1,
+      "description": "Você soma seu bônus de proficiência às jogadas de iniciativa.",
+      "page": 372,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-playwright.feature.motivacao.l5.1",
+      "name": "MOTIVAÇÃO",
+      "level": 5,
+      "description": "Uma vez por Descanso Curto ou Longo, como ação, escolha um número de criaturas voluntárias que possa ver, incluindo você, até seu bônus de proficiência. Elas ficam enfeitiçadas por você por 1 minuto, mesmo que normalmente sejam imunes. Como ação bônus no seu turno, pode conceder a todas elas pontos de vida temporários iguais a 1d10 + seu nível de Inscritor. Quando uma dessas criaturas falhar em uma salvaguarda ou errar um ataque, você pode usar sua reação e gastar uma Distorção Narrativa para conceder a ela, até o início do seu próximo turno, um bônus igual ao seu modificador de Carisma naquele tipo de salvaguarda ou em ataques com a mesma arma, característica ou magia; o bônus também se aplica à jogada que falhou, podendo mudar o resultado. Você deve manter concentração como se fosse uma magia.",
+      "page": 372,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-playwright.feature.direcao-de-palco.l8.1",
+      "name": "DIREÇÃO DE PALCO",
+      "level": 8,
+      "description": "Como ação bônus, gaste um uso de Consulta e escolha um aliado a até 18 metros. No próximo turno que ele iniciar dentro do próximo minuto, desde que não esteja incapacitado, ele recebe uma ação adicional que deve usar para Atacar, Disparada, Desengajar, Esquivar ou conjurar uma magia que normalmente exija 1 ação ou 1 ação bônus. Ele não pode usar essa ação extra se tiver obtido uma segunda ação naquele turno por outra característica, como Surto de Ação, nem pode receber uma ação extra de característica semelhante depois de usar esta.",
+      "page": 372,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-playwright.feature.talento-confiavel.l12.1",
+      "name": "TALENTO CONFIÁVEL",
+      "level": 12,
+      "description": "Quando fizer um teste com uma perícia na qual seja proficiente e o d20 mostrar menos de 10, trate o resultado do d20 como 10.",
+      "page": 372,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-inscriptor-retia-playwright.feature.bis.l20.1",
+      "name": "BIS",
+      "level": 20,
+      "description": "Você pode gastar um uso de Consulta para conjurar qualquer magia que tenha visto ser conjurada ou que você mesmo tenha conjurado desde seu último Descanso Longo, sem gastar espaço nem componentes materiais. A magia é conjurada no mesmo nível em que você a viu ser conjurada.",
+      "page": 372,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

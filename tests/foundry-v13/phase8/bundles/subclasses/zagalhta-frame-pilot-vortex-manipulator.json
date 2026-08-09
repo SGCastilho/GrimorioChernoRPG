@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-frame-pilot-vortex-manipulator",
+    "identifier": "zagalhta-frame-pilot-vortex-manipulator",
+    "name": "Manipulador de Vórtice",
+    "originalName": "Vortex Manipulator",
+    "aliases": [
+      "Vortex Manipulator"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "137",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 137
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "frame-pilot",
+    "identifier": "frame-pilot",
+    "name": "Piloto de Frame"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "frame-pilot",
+    "selectionLevel": 3,
+    "description": "Piloto que usa tecnologia de teleporte para deslocar sua unidade, conjurar Astromancia através dela, atacar a distância por saltos espaciais e envolver o frame numa anomalia probabilística.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 137
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-frame-pilot-vortex-manipulator.feature.transmissor-de-dobra.l3.1",
+      "name": "TRANSMISSOR DE DOBRA",
+      "level": 3,
+      "description": "Como ação em seu turno (não no turno da unidade), teleporte a unidade para espaço desocupado dentro do maior deslocamento dela, sem exceder o movimento restante. Depois do teleporte, todo o movimento da unidade é considerado gasto.",
+      "page": 137,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-vortex-manipulator.feature.feiticaria-astral.l7.1",
+      "name": "FEITIÇARIA ASTRAL",
+      "level": 7,
+      "description": "Escolha magias de Astromancia cuja soma dos níveis-base seja igual ou menor que seu nível total. Você as aprende. Além de espaços normais, pode conjurá-las através de uma unidade frame gastando usos desta característica, sem espaço nem componentes, em nível igual ao maior bônus de proficiência entre você e a unidade ou ao nível-base da magia, o que for maior. Use Inteligência, Sabedoria ou Carisma. Usos por Descanso Longo iguais à proficiência; magias de 4º nível ou mais custam 2 usos.",
+      "page": 137,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-vortex-manipulator.feature.golpe-teleportante.l11.1",
+      "name": "GOLPE TELEPORTANTE",
+      "level": 11,
+      "description": "Quando você ou a unidade fizer a ação Atacar ou Multiataque, a unidade pode realizar um de seus ataques corpo a corpo contra alvo a até 9 m × a Pegada da unidade. Ela teleporta para espaço adjacente ao alvo, realiza o ataque e volta ao espaço de origem.",
+      "page": 137,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-frame-pilot-vortex-manipulator.feature.mortalha-de-anomalia-estelar.l16.1",
+      "name": "MORTALHA DE ANOMALIA ESTELAR",
+      "level": 16,
+      "description": "Enquanto a unidade não estiver incapacitada, projeta um campo que torna sua posição espacial incerta: ataques de arma contra ela têm desvantagem. Visão verdadeira ignora o efeito; previsão também o ignora. O campo não é considerado ilusão.",
+      "page": 137,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 16,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

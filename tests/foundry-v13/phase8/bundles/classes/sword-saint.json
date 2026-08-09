@@ -1,0 +1,969 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada",
+    "originalName": "Sword Saint",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "413–429",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 414
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Guerreiros que emulam santos da espada lendários e convertem foco mental e energia espiritual em técnicas de combate sobre-humanas.",
+    "hitDice": {
+      "raw": "d10",
+      "mode": "standard",
+      "number": 1,
+      "faces": 10
+    },
+    "primaryAbility": {
+      "raw": "Força ou Destreza; Sabedoria",
+      "abilityKeys": [
+        "str",
+        "dex",
+        "wis"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Força, Sabedoria",
+        "abilityKeys": [
+          "str",
+          "wis"
+        ]
+      },
+      "armor": "Armaduras leves, médias e escudos",
+      "weapons": "Armas simples e marciais",
+      "tools": "Nenhuma",
+      "skills": "Escolha três: Acrobacia, Atletismo, Enganação, História, Intuição, Intimidação, Medicina, Percepção ou Sobrevivência"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "text": "PONTOS DE VIDA\n\nDado de Vida: 1d10 por nível de Santo da Espada.\n\nPontos de Vida no 1º nível: 10 + seu modificador de Constituição.\n\nPontos de Vida em níveis superiores: 1d10 (ou 6) + Constituição por nível após o 1º.\n\nPROFICIÊNCIAS\n\nArmaduras: Armaduras leves, médias e escudos.\n\nArmas: Armas simples e marciais.\n\nFerramentas: Nenhuma.\n\nSalvaguardas: Força e Sabedoria.\n\nPerícias: Escolha três entre Acrobacia, Atletismo, Enganação, História, Intuição, Intimidação, Medicina, Percepção e Sobrevivência.\n\nEQUIPAMENTO\n\nCamisa de malha, ou couro batido, arco longo e 20 flechas; arma marcial e escudo, ou duas armas marciais; besta leve e 20 virotes, ou quatro azagaias; pacote de estudioso ou de explorador. Alternativamente, 5d4 × 10 po."
+    },
+    "overview": [
+      {
+        "title": "SANTO DA ESPADA",
+        "page": 413,
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "text": "Santos da Espada são guerreiros que percorrem caminhos já trilhados por figuras lendárias, tentando alcançar tamanha habilidade que também sejam lembrados pela história. Os praticantes modernos normalmente se chamam apenas guerreiros, samurais ou combatentes; “Santo da Espada” é um paralelo com mestres antigos cuja perícia ultrapassou a simples maestria. Suas Técnicas de Foco transformam concentração mental e energia espiritual em feitos sobre-humanos, enquanto seus Caminhos de Devoção preservam estilos de vida e combate transmitidos por histórias, pergaminhos, templos e mestres."
+      }
+    ],
+    "creation": [
+      {
+        "title": "CRIANDO UM SANTO DA ESPADA",
+        "page": 414,
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "text": "Pense primeiro no conjunto de armas que pretende dominar e no motivo para buscar tamanho refinamento. Alguns querem ser lembrados; outros buscam força para proteger alguém ou carregar um legado familiar. Para uma construção rápida, use Força ou Destreza como maior atributo conforme sua arma e Sabedoria como o seguinte, pois ela define suas CDs; depois priorize Constituição. A fonte sugere o antecedente Herdeiro, com uma herança que ajude a explicar o aprendizado de seu caminho."
+      }
+    ],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.multiclasse-5-19-santo-da-espada",
+        "title": "MULTICLASSE 5.19 — SANTO DA ESPADA",
+        "page": 339,
+        "text": "Pré-requisitos indicados pela fonte: Destreza 15 e Sabedoria 13. Ao entrar por multiclasse, recebe proficiência com armaduras leves e médias, escudos e armas simples e marciais.",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "sword-saint",
+      "color": "#d26063"
+    }
+  },
+  "features": [
+    {
+      "key": "class.sword-saint-retia.feature.canalizacao-de-foco.l1.1",
+      "name": "CANALIZAÇÃO DE FOCO",
+      "level": 1,
+      "description": "Você possui Pontos de Foco iguais a 5 + seu nível de Santo da Espada. Eles alimentam características e Técnicas de Foco. Em um único turno, você só pode gastar uma quantidade de Foco igual à metade de seu nível de Santo da Espada, arredondada para cima, + 2. Salvo indicação contrária, a CD de suas características e técnicas é 8 + seu bônus de proficiência + seu modificador de Sabedoria. Você recupera todo o Foco gasto após um Descanso Longo e metade de seu máximo, arredondado para cima, após um Descanso Curto.\n\nTÉCNICAS BÁSICAS DE FOCO.\nMomento de Adepto: ao fazer um teste de perícia na qual seja proficiente, gaste 1 Foco para somar novamente seu bônus de proficiência, a menos que ele já esteja sendo somado uma segunda vez.\nVertical Astuta: gaste 1 Foco para Desengajar como ação bônus.\nDeflexão da Asa do Falcão: como reação a um ataque corpo a corpo com arma, gaste 2 Focos para receber bônus na CA igual ao seu bônus de proficiência até o início de seu próximo turno; exige uma arma com a qual seja proficiente e o bônus termina se você ficar impedido ou caído.\nPasso Fugaz: como ação bônus, gaste 1 Foco para mover uma distância adicional de 3 metros × seu bônus de proficiência até o fim do turno, usando qualquer tipo de movimento disponível; isso não aumenta seu deslocamento-base.\nAvanço Avassalador: quando errar um ataque com arma, gaste 1 Foco para rolar um novo d20 e obrigatoriamente usar esse novo resultado no lugar do anterior.",
+      "page": 415,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.surto-do-dragao.l2.1",
+      "name": "SURTO DO DRAGÃO",
+      "level": 2,
+      "description": "No seu turno, gaste 2 Pontos de Foco para realizar uma ação adicional. Esta característica não pode ser usada duas vezes no mesmo turno nem no mesmo turno em que outra característica lhe conceda uma ação adicional, como Surto de Ação. Cada vez que usa Surto do Dragão, seu custo aumenta em 1 Foco até você terminar um Descanso Curto ou Longo. Ao usá-lo, seu deslocamento aumenta até o fim do turno em 1,5 metro × o número de Pontos de Foco que a ativação custou.",
+      "page": 415,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.caminho-de-devocao.l3.1",
+      "name": "CAMINHO DE DEVOÇÃO",
+      "level": 3,
+      "description": "Escolha um Caminho de Devoção. Você se dedica ao estilo de combate e modo de vida de um Santo da Espada lendário e recebe as características de 3º nível desse Caminho; recebe novas características nos níveis indicados pela progressão da classe. Os Caminhos de Devoção estão disponíveis na seção de subclasses do Santo da Espada.",
+      "page": 415,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.aumento-no-valor-de-atributo.l4.1",
+      "name": "AUMENTO NO VALOR DE ATRIBUTO",
+      "level": 4,
+      "description": "No 4º nível e novamente nos níveis 8, 12, 16 e 19, você pode escolher um talento cujos requisitos cumpra, aumentar um atributo em 2 ou aumentar dois em 1, sem ultrapassar 20 por esta característica.",
+      "page": 415,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "Ao realizar a ação Atacar, você pode atacar duas vezes em vez de uma. No 13º nível, passa a atacar três vezes em vez de uma.",
+      "page": 415,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.caracteristica-de-caminho-de-devocao-6-nivel.l6.1",
+      "name": "CARACTERÍSTICA DE CAMINHO DE DEVOÇÃO (6º NÍVEL)",
+      "level": 6,
+      "description": "Seu Caminho de Devoção concede uma nova característica no 6º nível. Consulte o Caminho escolhido na seção de subclasses.",
+      "page": 416,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.aprimoramento-de-estilo-de-luta.l7.1",
+      "name": "APRIMORAMENTO DE ESTILO DE LUTA",
+      "level": 7,
+      "description": "No 7º nível, e novamente nos níveis 10 e 15, você aprimora um de seus Estilos de Luta. Se não possuir um Estilo para aprimorar, pode aprender um novo entre: Arquearia, Luta às Cegas, Defesa, Duelo, Combate com Arma Grande, Especialista em Armas de Fogo, Interceptação, Proficiência (Armas de Haste), Proficiência (Duas Mãos) ou Combate com Duas Armas.",
+      "page": 415,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.maestria-florescente.l9.1",
+      "name": "MAESTRIA FLORESCENTE",
+      "level": 9,
+      "description": "Sua maestria pessoal se desenvolve além do Caminho de Devoção. Escolha uma salvaguarda na qual ainda não seja proficiente; você ganha proficiência nela.",
+      "page": 416,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.caracteristica-de-caminho-de-devocao-11-nivel.l11.1",
+      "name": "CARACTERÍSTICA DE CAMINHO DE DEVOÇÃO (11º NÍVEL)",
+      "level": 11,
+      "description": "Seu Caminho de Devoção concede uma nova característica no 11º nível. Consulte o Caminho escolhido na seção de subclasses.",
+      "page": 416,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.vinculo-com-a-arma-santa.l14.1",
+      "name": "VÍNCULO COM A ARMA SANTA",
+      "level": 14,
+      "description": "Você pode se sintonizar com uma arma específica e ligar seu espírito a ela. O ritual ocupa um Descanso Curto e exige incenso e materiais de suas tradições no valor total de 500 po, misturados com uma gota de seu sangue. A arma se torna sua Arma Santa; criar uma nova rompe o vínculo com a anterior.\n\nAo se sintonizar com a Arma Santa como se fosse um item mágico, recebe os seguintes benefícios: armas com munição podem criar munição mundana magicamente ao serem usadas; armas arremessadas podem retornar à sua mão como ação bônus se estiverem a até 30 metros; você recebe +1 em ataques e dano com ela; seus ataques com a arma são mágicos; você deixa de ter limite de Foco gasto por turno, mas, se ultrapassar o limite normal e usar uma Técnica de Foco que exija ataque, esse ataque deve usar a Arma Santa; e você recebe quaisquer benefícios normais de sintonização que o item já possua. Se perder a arma, sempre sabe em que direção ela está e qual é sua condição.",
+      "page": 416,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.caracteristica-de-caminho-de-devocao-14-nivel.l14.1",
+      "name": "CARACTERÍSTICA DE CAMINHO DE DEVOÇÃO (14º NÍVEL)",
+      "level": 14,
+      "description": "Seu Caminho de Devoção concede uma característica adicional no 14º nível. Consulte o Caminho escolhido na seção de subclasses.",
+      "page": 416,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.caracteristica-de-caminho-de-devocao-17-nivel.l17.1",
+      "name": "CARACTERÍSTICA DE CAMINHO DE DEVOÇÃO (17º NÍVEL)",
+      "level": 17,
+      "description": "Seu Caminho de Devoção concede sua característica de 17º nível. Consulte o Caminho escolhido na seção de subclasses.",
+      "page": 416,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.alma-de-luxus.l18.1",
+      "name": "ALMA DE LUXUS",
+      "level": 18,
+      "description": "Quando conclui um Descanso Curto, você recupera todos os seus Pontos de Foco gastos.",
+      "page": 416,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.sword-saint-retia.feature.lenda-inabalavel.l20.1",
+      "name": "LENDA INABALÁVEL",
+      "level": 20,
+      "description": "Quando é reduzido a 0 pontos de vida, você não fica inconsciente nem deixa de agir. Em vez disso, continua agindo normalmente enquanto realiza salvaguardas contra morte, como se estivesse morrendo, até recuperar pontos de vida. Sempre que sofre dano nesse estado, recebe uma falha em salvaguarda contra morte. Sempre que falharia em uma salvaguarda contra morte, pode gastar 1 Ponto de Foco para anular a falha ou falhas. Enquanto estiver nesse estado, não pode recuperar Pontos de Foco por nenhum meio.",
+      "page": 416,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Santo da Espada",
+    "sourceTitle": "",
+    "sourcePage": 414,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Prof."
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "focus",
+        "label": "Pontos de Foco"
+      },
+      {
+        "key": "focusMax",
+        "label": "Máx. por Turno"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Canalização de Foco",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.canalizacao-de-foco.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 6,
+        "focusMax": 3
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Surto do Dragão",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.surto-do-dragao.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 7,
+        "focusMax": 3
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Caminho de Devoção",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.caminho-de-devocao.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 8,
+        "focusMax": 4
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 9,
+        "focusMax": 4
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Ataque Extra",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.ataque-extra.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 10,
+        "focusMax": 5
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Característica de Caminho de Devoção (6º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.caracteristica-de-caminho-de-devocao-6-nivel.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 11,
+        "focusMax": 5
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Aprimoramento de Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.aprimoramento-de-estilo-de-luta.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 12,
+        "focusMax": 6
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 13,
+        "focusMax": 6
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Maestria Florescente",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.maestria-florescente.l9.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 14,
+        "focusMax": 7
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Aprimoramento de Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.aprimoramento-de-estilo-de-luta.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 15,
+        "focusMax": 7
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Característica de Caminho de Devoção (11º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.caracteristica-de-caminho-de-devocao-11-nivel.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 16,
+        "focusMax": 8
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 17,
+        "focusMax": 8
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Ataque Extra",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.ataque-extra.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 18,
+        "focusMax": 9
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Vínculo com a Arma Santa",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.vinculo-com-a-arma-santa.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Característica de Caminho de Devoção (14º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.caracteristica-de-caminho-de-devocao-14-nivel.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 19,
+        "focusMax": 9
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Aprimoramento de Estilo de Luta",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.aprimoramento-de-estilo-de-luta.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 20,
+        "focusMax": 10
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 21,
+        "focusMax": 10
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Característica de Caminho de Devoção (17º Nível)",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.caracteristica-de-caminho-de-devocao-17-nivel.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 22,
+        "focusMax": 11
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Alma de Luxus",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.alma-de-luxus.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 23,
+        "focusMax": 11
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Aumento no Valor de Atributo",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.aumento-no-valor-de-atributo.l4.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 24,
+        "focusMax": 12
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Lenda Inabalável",
+            "kind": "feature",
+            "featureRefs": [
+              "class.sword-saint-retia.feature.lenda-inabalavel.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "focus": 25,
+        "focusMax": 12
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 19
+    },
+    "options": [
+      {
+        "grimorioId": "lyre-sword-saint-retia-gadabout",
+        "identifier": "lyre-sword-saint-retia-gadabout",
+        "name": "Andarilho",
+        "originalName": "Gadabout",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "417",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 417
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-the-dragonfly",
+        "identifier": "lyre-sword-saint-retia-way-of-the-dragonfly",
+        "name": "Caminho da Libélula",
+        "originalName": "Way of the Dragonfly",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "419",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 419
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-the-snow-white-sleeve",
+        "identifier": "lyre-sword-saint-retia-way-of-the-snow-white-sleeve",
+        "name": "Caminho da Manga Branca de Neve",
+        "originalName": "Way of the Snow White Sleeve",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "428",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 428
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-kojiro",
+        "identifier": "lyre-sword-saint-retia-way-of-kojiro",
+        "name": "Caminho de Kojirō",
+        "originalName": "Way of Kojirō",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "423",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 423
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-kyuubi",
+        "identifier": "lyre-sword-saint-retia-way-of-kyuubi",
+        "name": "Caminho de Kyuubi",
+        "originalName": "Way of Kyuubi",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "424",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 424
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-muramasa",
+        "identifier": "lyre-sword-saint-retia-way-of-muramasa",
+        "name": "Caminho de Muramasa",
+        "originalName": "Way of Muramasa",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "425",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 425
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-musashi",
+        "identifier": "lyre-sword-saint-retia-way-of-musashi",
+        "name": "Caminho de Musashi",
+        "originalName": "Way of Musashi",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "426",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 426
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-pendragon",
+        "identifier": "lyre-sword-saint-retia-way-of-pendragon",
+        "name": "Caminho de Pendragon",
+        "originalName": "Way of Pendragon",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "427",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 427
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-tomoe",
+        "identifier": "lyre-sword-saint-retia-way-of-tomoe",
+        "name": "Caminho de Tomoe",
+        "originalName": "Way of Tomoe",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "429–430",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 429
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-the-eroded-lord",
+        "identifier": "lyre-sword-saint-retia-way-of-the-eroded-lord",
+        "name": "Caminho do Lorde Erodido",
+        "originalName": "Way of the Eroded Lord",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "420–421",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 420
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-blue-metal",
+        "identifier": "lyre-sword-saint-retia-way-of-blue-metal",
+        "name": "Caminho do Metal Azul",
+        "originalName": "Way of Blue Metal",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "418",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 418
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "lyre-sword-saint-retia-way-of-the-heavenbreaker",
+        "identifier": "lyre-sword-saint-retia-way-of-the-heavenbreaker",
+        "name": "Caminho do Rompe-Céus",
+        "originalName": "Way of the Heavenbreaker",
+        "source": {
+          "sourceId": "lyre",
+          "title": "Lyre's Guide to Retia — Land of Industry",
+          "pages": "421–422",
+          "chapter": "Capítulo 8: Opções de Classe",
+          "page": 421
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-sword-saint-empyreal-order",
+        "identifier": "zagalhta-sword-saint-empyreal-order",
+        "name": "Caminho da Ordem Empírea",
+        "originalName": "Way of the Empyreal Order",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "173",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 173
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-sword-saint-grim-passenger",
+        "identifier": "zagalhta-sword-saint-grim-passenger",
+        "name": "Caminho do Passageiro Sombrio",
+        "originalName": "Way of the Grim Passenger",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "174",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 174
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "zagalhta-sword-saint-progenitor",
+        "identifier": "zagalhta-sword-saint-progenitor",
+        "name": "Caminho do Progenitor",
+        "originalName": "Way of the Progenitor",
+        "source": {
+          "sourceId": "zagalhta-exolunar",
+          "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+          "pages": "174–176",
+          "chapter": "Capítulo 6: Opções de Subclasse",
+          "page": 174
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-sword-saint-retia-way-of-the-beast-slayer",
+        "identifier": "bbb-sword-saint-retia-way-of-the-beast-slayer",
+        "name": "Caminho do Matador de Bestas",
+        "originalName": "Way of the Beast Slayer",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "125",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 125
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-sword-saint-retia-way-of-besheth",
+        "identifier": "bbb-sword-saint-retia-way-of-besheth",
+        "name": "Caminho de Besheth",
+        "originalName": "Way of Besheth",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "125–126",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 125
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-sword-saint-retia-way-of-the-butterfly",
+        "identifier": "bbb-sword-saint-retia-way-of-the-butterfly",
+        "name": "Caminho da Borboleta",
+        "originalName": "Way of the Butterfly",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "127",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 127
+        },
+        "firstFeatureLevel": 3
+      },
+      {
+        "grimorioId": "bbb-sword-saint-retia-way-of-rust",
+        "identifier": "bbb-sword-saint-retia-way-of-rust",
+        "name": "Caminho da Ferrugem",
+        "originalName": "Way of Rust",
+        "source": {
+          "sourceId": "blade-bone-benefit",
+          "title": "Somnus Domina — Blade, Bone, & Benefit",
+          "pages": "128",
+          "chapter": "Capítulo X: Subclasses",
+          "page": 128
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "cavaleiro-arcano",
+    "identifier": "cavaleiro-arcano",
+    "name": "Cavaleiro Arcano",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 86
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "O arquétipo de Cavaleiro Arcano combina a maestria marcial comum a todos os guerreiros, com um cuidadoso estudo de magia. Os cavaleiros arcanos usam técnicas mágicas similares as praticadas pelos magos. Eles focam seu estudo em duas das oito escolas: abjuração e evocação. As magia de abjuração concedem proteção adicional em batalha ao Cavaleiro Arcano, e as magias de evocação causam dano a vários oponentes de uma vez, estendendo o alcance do guerreiro em combate. Esses cavaleiros aprendem, comparativamente, um pequeno número de magias, guardando-as na memória ao invés de mantê-las em um grimório.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 86
+  },
+  "features": [
+    {
+      "key": "subclass.cavaleiro-arcano.feature.conjuracao.l10.1",
+      "name": "CONJURAÇÃO",
+      "level": 10,
+      "description": "Quando você alcançar o 3° nível, você amplia o seu poderio marcial com a habilidade de conjurar magias. Veja o capítulo 10 para as regras gerais de conjuração e o capítulo 11 para a lista de magias de mago.\n\nTruques. Você aprende dois truques, à sua escolha, da lista de magias de mago. Você aprende um truque de mago adicional, à sua escolha, no 10° nível.\n\nEspaços de Magia. A tabela Conjuração de Cavaleiro Arcano mostra quantos espaços de magia de 1° nível e superiores você possui disponíveis para conjuração. Para conjurar uma dessas magias, você deve gastar uma espaço de magia do nível da magia ou superior. Você recobra todos os espaços de magia gastos quando você completa um descanso longo.\n\nPor exemplo, se você quiser conjurar a magia de 1° nível escudo arcano e você tiver um espaço de magia de 1° nível e um de 2° nível disponíveis, você poderá conjurar escudo arcano usando qualquer dos dois espaços.\n\nMagias Conhecidas de 1° Nível e Superiores. Você conhece três magias de 1° nível, à sua escolha, as quais duas delas você deve escolher das magias de abjuração e evocação da lista de magias de mago.\n\nA coluna Magias Conhecidas na tabela Conjuração do Cavaleiro Arcano mostra quando você aprende mais magias de mago, de 1° nível ou superior. Cada uma dessas magias deve ser uma magia de abjuração ou evocação, à sua escolha, de um nível a que você tenha acesso, como mostrado na tabela. Por exemplo, quando você alcança o 7° nível da classe, você pode aprender uma nova magia de 1° ou 2° nível.\n\nAs magias que você aprende no 8°, 14° e 20° nível podem vir de qualquer escola de magia.",
+      "page": 86,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cavaleiro-arcano.feature.conjuracao-de-cavaleiro-arcano.l3.1",
+      "name": "CONJURAÇÃO DE CAVALEIRO ARCANO",
+      "level": 3,
+      "description": "Nível de Guerreiro\n\nTruques Conhecidos\n\nMagias Conhecidas\n\nEspaços de Magia por Nível\n\n1° 2° 3° 4° 3° 2 3 2\n–\n–\n– 4° 2 4 3\n–\n–\n– 5° 2 4 3\n–\n–\n– 6° 2 4 3\n–\n–\n– 7° 2 5 4 2\n–\n– 8° 2 6 4 2\n–\n– 9° 2 6 4 2\n–\n– 10° 3 7 4 3\n–\n– 11° 3 8 4 3\n–\n– 12° 3 8 4 3\n–\n– 13° 3 9 4 3 2\n– 14° 3 10 4 3 2\n– 15° 3 10 4 3 2\n– 16° 3 11 4 3 3\n– 17° 3 11 4 3 3\n– 18° 3 11 4 3 3\n– 19° 3 12 4 3 3 1 20° 3 13 4 3 3 1\n\nAlém disso, quando você adquire um nível nessa classe, você pode escolher uma magia de mago que você conheça e substituí-la por outra magia da lista de magias de mago, que também deve ser de um nível ao qual você tenha espaços de magia e deve ser uma magia de abjuração ou evocação, a não ser que você esteja substituindo a magia que você ganhou no 3°, 8°, 14° ou 20º nível de qualquer escola de magia.\n\nHabilidade de Conjuração. Sua habilidade de conjuração é Inteligência para suas magias de mago, portanto, você usa sua Inteligência sempre que alguma magia se referir à sua habilidade de conjurar magias. Além disso, você usa o seu modificador de Inteligência para definir a CD dos testes de resistência para as magias de mago que você conjura e quando você realiza uma jogada de ataque com uma magia.\n\nCD para suas magias = 8 + bônus de proficiência +\n\nseu modificador de Inteligência\n\nModificador de ataque de magia = seu bônus de proficiência + seu modificador de Inteligência",
+      "page": 86,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cavaleiro-arcano.feature.vinculo-com-arma.l3.1",
+      "name": "VÍNCULO COM ARMA",
+      "level": 3,
+      "description": "No 3° nível, você aprende um ritual que cria um vínculo mágico entre você e uma arma. Você realiza esse ritual no curso de 1 hora, que pode ser realizada durante um descanso curto. A arma deve estar ao seu alcance ao decorrer do ritual, ao concluí-lo, você toca a arma e forja o elo.\n\nUma vez que você tenha vinculado uma arma a você, você não pode ser desarmado dessa arma, a menos que você esteja incapacitado. Se ela estiver no mesmo plano de existência, você pode invocar essa arma com uma ação bônus, no seu turno, fazendo-a se teletransportar instantaneamente para a sua mão.\n\nVocê pode ter até duas armas vinculadas, mas só pode invocar uma por vez com sua ação bônus. Se você quiser criar um elo com uma terceira arma, você deve quebrar o vínculo com um das outras duas.",
+      "page": 86,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cavaleiro-arcano.feature.magia-de-guerra.l7.1",
+      "name": "MAGIA DE GUERRA",
+      "level": 7,
+      "description": "A partir do 7° nível, quando você usar sua ação para conjurar um truque, você pode realizar um ataque com arma, com uma ação bônus.",
+      "page": 86,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cavaleiro-arcano.feature.golpe-mistico.l10.1",
+      "name": "GOLPE MÍSTICO",
+      "level": 10,
+      "description": "No 10° nível, você aprende como fazer com que os seus golpes com arma penetrem a resistência de uma criatura às suas magias. Quando você atingir uma criatura com um ataque com arma, aquela criatura terá desvantagem no próximo teste de resistência que ela fizer contra uma magia que você conjurar antes do final do seu próximo turno.",
+      "page": 87,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cavaleiro-arcano.feature.investida-arcana.l15.1",
+      "name": "INVESTIDA ARCANA",
+      "level": 15,
+      "description": "No 15° nível, você ganha a capacidade de se teletransportar até 9 metros para um espaço desocupado que você possa ver, quando você usar seu Surto de Ação. Você pode se teletransportar antes ou depois da ação adicional.",
+      "page": 87,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cavaleiro-arcano.feature.magia-de-guerra-aprimorada.l18.1",
+      "name": "MAGIA DE GUERRA APRIMORADA",
+      "level": 18,
+      "description": "A partir do 18° nível, quando você usar sua ação para conjurar uma magia, você pode realizar um ataque com arma, com uma ação bônus.",
+      "page": 87,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

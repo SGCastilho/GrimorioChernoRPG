@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-favored-soul-retia-burden-of-ilsrabae",
+    "identifier": "lyre-favored-soul-retia-burden-of-ilsrabae",
+    "name": "Fardo de Ilsrabae",
+    "originalName": "Burden of Ilsrabae",
+    "aliases": [
+      "Burden of Ilsrabae"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "351",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 351
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "favored-soul-retia",
+    "identifier": "favored-soul",
+    "name": "Alma Favorecida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "favored-soul",
+    "selectionLevel": 1,
+    "description": "Arma(s) Favorecida(s): tridente. Ilsrabae chama seus favorecidos às águas geladas, usando-os como agentes para espionar a terra e recolher tributos. Sua voz doce exige afeto e lealdade até nos sonhos.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 351
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-ilsrabae.feature.resistencia-arrepiante.l1.1",
+      "name": "RESISTÊNCIA ARREPIANTE",
+      "level": 1,
+      "description": "Você tem resistência a dano de frio.",
+      "page": 351,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-ilsrabae.feature.essencia-submersa.l1.1",
+      "name": "ESSÊNCIA SUBMERSA",
+      "level": 1,
+      "description": "Suas Essências recebem benefícios. Versatilidade Aquática (Voo de Essência): respira ar e água e, submerso, trata seu voo como deslocamento de natação. Regalia de Ilsrabae (Radiância Essencial): uma vez por Descanso Curto ou Longo, conjure Véu de Ilsrabae sem espaço em nível igual ao seu espaço de pacto; toma forma de veste de seda gelada, concede imunidade a frio e impõe desvantagem a ataques corpo a corpo contra você. Lâmina Estígia (Armamento): pode causar frio no lugar do dano normal e causa dano de frio adicional igual ao bônus de proficiência.",
+      "page": 351,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-ilsrabae.feature.acumulador-de-segredos.l6.1",
+      "name": "ACUMULADOR DE SEGREDOS",
+      "level": 6,
+      "description": "Você lê toda forma de escrita e a compreende como se conhecesse o idioma, desde que não seja código ou padrão sem sentido. Isso inclui pergaminhos e escrita mágica, permitindo conjurar magias escritas como se estivessem na lista da Alma Favorecida. Além disso, uma vez por Descanso Curto ou Longo, conjure Ver o Invisível sem espaço ou componentes como se usasse espaço de pacto.",
+      "page": 351,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-ilsrabae.feature.furacao-da-tundra.l10.1",
+      "name": "FURACÃO DA TUNDRA",
+      "level": 10,
+      "description": "Como ação, gaste Purificação e crie redemoinho de água congelante, escolhendo criaturas a até 12 metros. Cada uma faz salvaguarda de Força; em falha sofre 1d8 × nível do espaço de pacto de dano contundente mágico e fica restringida pelo gelo; em sucesso, metade e não fica restringida. Uma criatura presa usa ação para teste de Força contra sua CD ou pode quebrar o gelo com 10+ dano em um ataque. O gelo tem CA igual à sua CD, resistência a perfurante/cortante não mágicos e vulnerabilidade a fogo/contundente. No início do turno, preso sofre 2d6 de frio. Criaturas totalmente submersas dentro do alcance devem ser escolhidas e têm desvantagem na salvaguarda. Os espaços congelados e adjacentes viram terreno difícil por 10 minutos.",
+      "page": 351,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-favored-soul-retia-burden-of-ilsrabae.feature.veu-da-imperatriz.l13.1",
+      "name": "VÉU DA IMPERATRIZ",
+      "level": 13,
+      "description": "Você fica permanentemente envolto em gelo. Criaturas que acertam você com ataques corpo a corpo a até 1,5 m sofrem dano de frio igual à metade do seu nível de Alma Favorecida. Criaturas que estejam agarrando você ou sendo agarradas por você também sofrem esse dano no início do seu turno. Como consequência, você fica vulnerável a dano de fogo.",
+      "page": 351,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

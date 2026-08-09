@@ -1,0 +1,133 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-barbarian-path-kaiju",
+    "identifier": "ryoko-barbarian-path-kaiju",
+    "name": "Caminho do Kaiju",
+    "originalName": "Path of the Kaiju",
+    "aliases": [
+      "Path of the Kaiju",
+      "Caminho do Kaiju"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "150–151",
+    "chapter": "Capítulo 9: Classes",
+    "page": 150
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "barbarian",
+    "identifier": "barbarian",
+    "name": "Bárbaro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "barbarian",
+    "selectionLevel": 3,
+    "description": "Um bárbaro que canaliza a força de kaiju, adotando aspectos e transformações de colossos durante sua Fúria.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 150
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-barbarian-path-kaiju.feature.aspecto-do-kaiju.l3.1",
+      "name": "ASPECTO DO KAIJU",
+      "level": 3,
+      "description": "Ao escolher o caminho, escolha um Kaiju e receba seu aspecto. Dragão Ascendente: enquanto em Fúria, como ação exale cone de 4,5 m; Destreza CD 8 + Força + proficiência, 2d10 radiante (metade em sucesso), escalando para 3d10/4d10/5d10 nos níveis 5/11/17; conta como ataque para manter Fúria. Leviatã Eterno: ao entrar em Fúria ou como ação bônus, criaturas escolhidas a 3 m fazem Sabedoria CD 8 + Constituição + proficiência ou têm desvantagem para atacar qualquer alvo além de você até início do próximo turno. Terra Titânica: use Constituição no lugar de Força em testes de Força e em ataques/danos de golpes desarmados e armas; continuam contando como baseados em Força; tremorsense 3 m. Kabuto Blindado: enquanto em Fúria, após mover 4,5 m em linha reta e acertar ataque de arma, +2d8 concussão. Tempestade Infinita: primeiro acerto corpo a corpo em cada turno durante Fúria causa 1d6 elétrico a criaturas escolhidas a 1,5 m do alvo. Pode trocar o Kaiju ao ganhar nível de Bárbaro.",
+      "page": 150,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-barbarian-path-kaiju.feature.cacador-de-apice.l3.1",
+      "name": "CAÇADOR DE ÁPICE",
+      "level": 3,
+      "description": "Você ganha proficiência em Medicina e Sobrevivência; se já possuir uma delas, ganhe outra perícia à escolha. Pode usar a ação Firmar-se, levantar-se do chão ou montar uma criatura gastando apenas 1,5 m de movimento.",
+      "page": 150,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-barbarian-path-kaiju.feature.forca-de-kaiju.l6.1",
+      "name": "FORÇA DE KAIJU",
+      "level": 6,
+      "description": "Ao entrar em Fúria, pode aumentar você e seu equipamento para tamanho Grande se for menor; peso ×8 por categoria. Se não houver espaço, cresce ao máximo possível. Dura até a Fúria acabar. Enquanto assim, some Constituição a todos os testes e salvaguardas de Força e ataques de arma causam +1d4 dano.",
+      "page": 150,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-barbarian-path-kaiju.feature.transformacao-do-kaiju.l10.1",
+      "name": "TRANSFORMAÇÃO DO KAIJU",
+      "level": 10,
+      "description": "Ao entrar em Fúria, você também pode assumir uma transformação de Kaiju (pode ser diferente do seu Aspecto). Dragão Ascendente: forma pseudolíquida, resistência a fogo, imunidade a agarrado/restringido, natação 18 m, passa por criaturas e frestas de 2,5 cm sem se espremer, não pode parar nelas e recebe meia cobertura submerso. Leviatã Eterno: forma espectral, resistência a frio e necrótico, atravessa criaturas/objetos como terreno difícil; sofre 5 de força se terminar dentro deles e, se a Fúria acabar dentro, é expulso e sofre 5 de força por 1,5 m percorrido. Terra Titânica: Força de Kaiju o torna Enorme em vez de Grande, alcance +1,5 m e ataques de arma causam +1d4 adicional (total +2d4 pela característica). Kabuto Blindado: asas insetoides, voo igual à caminhada e ataques de oportunidade contra você têm desvantagem. Tempestade Infinita: resistência a elétrico e trovão; ação bônus para mover 9 m em linha reta sem ataques de oportunidade e atravessando criaturas; cada uma faz Destreza CD 8 + Constituição + proficiência ou sofre 2d6 elétrico.",
+      "page": 150,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-barbarian-path-kaiju.feature.furia-devastadora.l14.1",
+      "name": "FÚRIA DEVASTADORA",
+      "level": 14,
+      "description": "Enquanto estiver em Fúria e com PV iguais ou inferiores à metade do máximo, seu deslocamento aumenta em 3 m e você pode fazer um ataque de arma como ação bônus. Além disso, ao falhar uma salvaguarda, pode escolher ter sucesso. Usos de sucesso automático iguais à metade do modificador de Constituição, arredondado para baixo (mín. 1), por Descanso Longo.",
+      "page": 151,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

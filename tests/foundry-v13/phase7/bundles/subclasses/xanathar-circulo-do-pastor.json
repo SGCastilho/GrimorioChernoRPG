@@ -1,0 +1,130 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "xanathar-circulo-do-pastor",
+    "identifier": "xanathar-circulo-do-pastor",
+    "name": "Círculo do Pastor",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "xanathar",
+    "title": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+    "pages": "28–29",
+    "chapter": "Capítulo 1: Opções de Personalização",
+    "page": 28
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "druid",
+    "identifier": "druid",
+    "name": "Druida"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "druid",
+    "selectionLevel": 2,
+    "description": "Os Druidas do Círculo do Pastor comungam com os espíritos da natureza, especialmente os espíritos dos animais e das fadas, e chamam a esses espíritos para ajudar. Esses druidas reconhecem que todos os seres vivos desempenham um papel no mundo natural, no entanto, eles se concentram em proteger animais e criaturas feéricas que têm dificuldade em se defender. Os pastores, como são conhecidos, veem essas criaturas como suas responsabilidades. Eles impedem os monstros que os ameaçam, repreendem os caçadores que matam mais presas do que o necessário e impedem a civilização de invadir os habitats raros dos animais e os locais sagrados para as fadas. Muitos desses druidas são mais felizes longe das cidades, que se contentam em passar os dias em companhia dos animais e das criaturas feéricas das selvas. Os membros deste círculo se tomam aventureiros para se oporem às forças que ameaçam suas responsabilidades ou buscam conhecimento e poder que os ajudem a proteger melhor seus desígnios. Onde quer que estes druidas forem, os espíritos da natureza estarão com eles.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 28
+  },
+  "features": [
+    {
+      "key": "subclass.xanathar-circulo-do-pastor.feature.voz-da-natureza.l2.1",
+      "name": "VOZ DA NATUREZA",
+      "level": 2,
+      "description": "No 2° nível, você ganha a capacidade de conversar com bestas e muitos feéricos. Você aprende a falar, ler e escrever Silvestre. Além disso, os animais podem entender o seu discurso, e você ganha a capacidade de decifrar seus ruídos e movimentos. A maioria dos animais não tem inteligência para transmitir ou entender conceitos sofisticados, mas uma besta amigável pode transmitir o que viu ou ouviu no passado recente. Esta habilidade não lhe concede amizade com bestas, embora você possa combinar essa habilidade com presentes para angariar favores com eles como faria com qualquer PdM.",
+      "page": 28,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-circulo-do-pastor.feature.espirito-totemico.l2.1",
+      "name": "ESPÍRITO TOTÊMICO",
+      "level": 2,
+      "description": "A partir do 2° nível, você pode chamar espíritos da natureza para influenciar o mundo ao seu redor. Com uma ação bônus, você pode invocar magicamente um espírito incorpóreo até um ponto que possa ver em até 18 metros de alcance. O espírito cria uma aura em um raio de 9 metros em torno desse ponto. Ele conta como nem uma criatura nem um objeto, embora tenha a aparência espectralda criatura que representa. Corno urna ação bônus, você pode mover o espírito até 18 metros em um ponto que possa ver. O espírito persiste por 1 minuto ou até você ficar incapacitado. Depois de usar essa característica, não pode usá-la novamente até terminar um descanso curto ou longo. O efeito da aura do espírito depende do tipo de espírito que você convoca das opções abaixo: Espírito do Urso. O espírito do urso concede a você e seus aliados seu poder e resistência. Cada criatura de sua escolha na aura quando o espírito aparecer ganha pontos de vida temporários iguais a 5 + seu nível de druida. Além disso, você e seus aliados ganham vantagem em testes de Força e testes de resistência de Força enquanto permanecerem na aura. Espírito do Falcão. O espírito do falcão é um caçador consumado, ajudando você e seus aliados com sua visão afiada. Quando uma criatura fizer um teste de ataque contra um alvo na aura do espírito, você pode usar sua reação para conceder vantagem a esse teste. Além disso, você e seus aliados têm vantagem em testes de Sabedoria (Percepção) enquanto estiverem na aura. Espírito do Unicórnio. O espírito do unicórnio concede proteção aos que estão nas proximidades. Você e seus aliados ganham vantagem em todos os testes de habilidades feitos para detectar criaturas dentro aura do espírito. Além do mais, se você conjurar uma magia usando um espaço de magia que restaure pontos de vida para qualquer criatura dentro ou fora da aura, cada criatura de sua escolha na aura também recupera pontos de vida iguais ao seu níveldruida.",
+      "page": 28,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-circulo-do-pastor.feature.invocador-poderoso.l6.1",
+      "name": "INVOCADOR PODEROSO",
+      "level": 6,
+      "description": "A partir do 6° nível, bestas e feéricos que você conjure são mais resistentes do que o normal. Qualquer besta ou feérico convocado ou criado por uma magia que tenha usado ganha os seguintes benefícios: • A criatura surge com mais pontos de vida do que o normal: 2 pontos de vida adicionais por cada Dado de Vida que ela tenha. • 0 dano de suas armas naturais será considerado mágico com o objetivo de superar a imunidade e resistência a ataques e danos não mágicos.",
+      "page": 29,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-circulo-do-pastor.feature.espirito-guardiao.l10.1",
+      "name": "ESPÍRITO GUARDIÃO",
+      "level": 10,
+      "description": "A partir do 10° nível, o seu Espírito Totêmico protege os animais e feéricos que invoque com sua magia. Quando uma besta ou feérico que tenha convocado ou criado com uma magia termina seu turno na aura do Espírito Totêmico, essa criatura recupera pontos de vida iguais a metade do nível de druida.",
+      "page": 29,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.xanathar-circulo-do-pastor.feature.chamado-de-fidelidade.l14.1",
+      "name": "CHAMADO DE FIDELIDADE",
+      "level": 14,
+      "description": "A partir do 14° nível, os espíritos da natureza com os quais você comunga o protegem quando estiver mais indefeso. Se você for reduzido a 0 pontos de vida ou estiver incapacitado contra sua vontade, pode ganhar imediatamente os benefícios da magia conjurar animais, como se fosse conjurado usando um espaço de magias do nível 9. Convoca quatro bestas de sua escolha, desde que sejam de um nível de desafio 2 ou inferior. Os animais conjurados aparecem em até de 6 metros de alcance. Se eles não recebem nenhum comando seu, eles o protegem contra danos e atacam seus inimigos. A magia dura 1 hora, não requer nenhuma concentração, ou até que a descarte (não é necessária nenhuma ação). Depois de usar esta característica, não pode usá-la novamente até terminar um descanso longo.",
+      "page": 29,
+      "sourceTitle": "Guia de Xanathar para Todas as Coisas — D&D 5e",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

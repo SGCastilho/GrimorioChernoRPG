@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-gadabout",
+    "identifier": "lyre-sword-saint-retia-gadabout",
+    "name": "Andarilho",
+    "originalName": "Gadabout",
+    "aliases": [
+      "Gadabout"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "417",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 417
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Nenhuma. O Andarilho abandonou um Caminho formal e passou a aperfeiçoar apenas as próprias técnicas. Outros Santos da Espada o veem como errante ou desistente, mas sua liberdade permite uma maestria pessoal incomum.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 417
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-gadabout.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "Você aprende técnicas exclusivas deste Caminho; características que permitam aprender técnicas de outros Caminhos não podem escolher as de Andarilho. ESCÁRNIO: quando uma criatura fizer ataque com arma contra você, gaste 2 Foco como reação para reduzir a jogada de ataque pelo seu modificador de Carisma, após a rolagem mas antes do resultado ser declarado. MESTRIA GENERALISTA: antes de fazer ataque com arma com a qual seja proficiente, gaste 1 Foco para somar seu bônus de proficiência uma segunda vez à jogada; se não for proficiente, pode gastar 1 Foco para tratá-la como se fosse até o fim do turno. PADRÃO CONFIÁVEL: quando fizer ataque com arma, teste de perícia ou salvaguarda em que seja proficiente e o d20 mostrar menos de 10, gaste 1 Foco para tratar o resultado como 10.",
+      "page": 417,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-gadabout.feature.estilo-de-luta-roubado.l3.1",
+      "name": "ESTILO DE LUTA ROUBADO",
+      "level": 3,
+      "description": "Escolha qualquer Estilo de Luta disponível a outro Caminho de Devoção do Santo da Espada e receba-o.",
+      "page": 417,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-gadabout.feature.especializacao-do-desbravador.l6.1",
+      "name": "ESPECIALIZAÇÃO DO DESBRAVADOR",
+      "level": 6,
+      "description": "Escolha uma opção: receba proficiência em uma perícia ou ferramenta que ainda não possua e some seu bônus de proficiência uma segunda vez nos testes com ela; ou escolha duas perícias/ferramentas em que já seja proficiente e passe a somar seu bônus de proficiência uma segunda vez nesses testes.",
+      "page": 417,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-gadabout.feature.reputacao-desprezivel.l11.1",
+      "name": "REPUTAÇÃO DESPREZÍVEL",
+      "level": 11,
+      "description": "Como ação bônus, escolha uma criatura a até 9 metros que possa ver ou ouvir você; ela faz salvaguarda de Sabedoria contra sua CD de Técnica de Foco. Em falha, fica amedrontada por você. Pode gastar até 5 Foco para escolher um alvo adicional por ponto gasto. Os alvos repetem a salvaguarda ao fim de cada turno, encerrando em sucesso; quem passar em qualquer salvaguarda fica imune a esta característica vinda de você por 24 horas.",
+      "page": 417,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-gadabout.feature.sem-vinculo.l14.1",
+      "name": "SEM VÍNCULO",
+      "level": 14,
+      "description": "Sua Arma Santa concede +2 em jogadas de ataque e dano em vez de +1. Você ainda precisa estar sintonizado com ela, mas essa sintonia não conta no seu limite de itens sintonizados.",
+      "page": 417,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-gadabout.feature.buscador-de-prazer.l17.1",
+      "name": "BUSCADOR DE PRAZER",
+      "level": 17,
+      "description": "Você se torna imune à condição envenenado. Sempre que beber uma poção, receber cura ou usar medicina que restaure PV, recebe o valor máximo possível. Um Descanso Curto exige apenas 30 minutos e um Descanso Longo apenas 4 horas; durante essas 4 horas, pode realizar até 2 horas de atividade moderada. Se abandonar outro Caminho de Devoção e não puder mais concluí-lo, pode trocar para Andarilho, substituindo as características do Caminho anterior pelas deste; opcionalmente, pode conservar as Técnicas de Foco de 3º nível e a característica de 14º nível do Caminho anterior, deixando de receber as equivalentes do Andarilho. Se ainda não chegou ao 14º nível, receberá Sem Vínculo ao alcançá-lo. Um Andarilho que assuma outro Caminho deve substituir todas as características de Andarilho pelas do novo Caminho.",
+      "page": 417,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

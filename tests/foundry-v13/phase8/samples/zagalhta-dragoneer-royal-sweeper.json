@@ -1,0 +1,176 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-dragoneer-royal-sweeper",
+    "identifier": "zagalhta-dragoneer-royal-sweeper",
+    "name": "Varredor Real",
+    "originalName": "Royal Sweeper",
+    "aliases": [
+      "Royal Sweeper"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "126–127",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 126
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Um símbolo de autoridade que ganha ímpeto derrubando inimigos, inspira aliados e intercepta golpes destinados a eles enquanto avança com postura de comandante.",
+    "tables": [
+      {
+        "key": "table.1.parametros-da-especializacao",
+        "title": "Parâmetros da Especialização",
+        "page": 126,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "hit",
+            "label": "Dado de Vida"
+          },
+          {
+            "key": "saves",
+            "label": "Salvaguardas"
+          },
+          {
+            "key": "weapons",
+            "label": "Armas"
+          },
+          {
+            "key": "armor",
+            "label": "Armaduras"
+          },
+          {
+            "key": "skills",
+            "label": "Perícias"
+          },
+          {
+            "key": "casting",
+            "label": "Conjuração"
+          }
+        ],
+        "rows": [
+          {
+            "hit": "d10",
+            "saves": "Sabedoria, Carisma",
+            "weapons": "Todas as armas simples e marciais",
+            "armor": "Todas as armaduras e escudos",
+            "skills": "Persuasão; escolha uma entre Atletismo, Intuição, Intimidação, Medicina e Religião",
+            "casting": "Meio Conjurador (lista do Paladino)"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 126
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-dragoneer-royal-sweeper.feature.danca-encadeada.l1.1",
+      "name": "DANÇA ENCADEADA",
+      "level": 1,
+      "description": "Uma vez por turno, ao reduzir uma criatura a 0 PV como resultado imediato de uma ação sua, escolha: fazer imediatamente um ataque de arma com vantagem contra outro alvo ao alcance; ou, antes do fim do turno, usar ação bônus para fazer dois ataques de arma adicionais contra um único alvo ao alcance.",
+      "page": 126,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-royal-sweeper.feature.grito-de-redemoinho.l3.1",
+      "name": "GRITO DE REDEMOINHO",
+      "level": 3,
+      "description": "Como ação, faça um ataque com a mesma arma contra cada criatura à sua escolha dentro do alcance dela. Usos por Descanso Longo iguais à sua proficiência.",
+      "page": 126,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-royal-sweeper.feature.negar-a-perda.l7.1",
+      "name": "NEGAR A PERDA",
+      "level": 7,
+      "description": "Quando um aliado ao alcance da arma que você empunha seria atingido por um ataque visível, use reação para redirecioná-lo a você; ele acerta automaticamente e o dano é reduzido pela metade de seu nível de Cavaleiro Dracônico. Pode fazer o mesmo sem reação gastando um Espaço de Magia; nesse caso reduza ainda o dano em 1d8 × nível do Espaço.",
+      "page": 126,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-royal-sweeper.feature.aprimoramento-do-ataque-encadeado.l13.1",
+      "name": "APRIMORAMENTO DO ATAQUE ENCADEADO",
+      "level": 13,
+      "description": "Ao realizar a ação Atacar, pode atacar três vezes, substituindo um deles por uma magia de Cavaleiro Dracônico de 1 ação.",
+      "page": 126,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-royal-sweeper.feature.autoridade-do-comandante.l17.1",
+      "name": "AUTORIDADE DO COMANDANTE",
+      "level": 17,
+      "description": "Você e criaturas a até 4,5 m são imunes a amedrontado e enfurecido, mantendo a imunidade até terminar um turno fora da área. Enquanto não estiver incapacitado, você e cada criatura na área recebem +2 no primeiro ataque e na primeira salvaguarda que fizerem em cada turno.",
+      "page": 127,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

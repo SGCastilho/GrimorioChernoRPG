@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-ranger-grey-arrow",
+    "identifier": "lyre-ranger-grey-arrow",
+    "name": "Flecha Cinzenta",
+    "originalName": "Grey Arrow",
+    "aliases": [
+      "Grey Arrow"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "407–408",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 407
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Compatibilidade com o Patrulheiro Revisado de Lyre: esta opção foi escrita para a revisão completa da classe apresentada no mesmo capítulo, que preserva a estrutura de arquétipos nos níveis 3, 7, 11 e 15 e admite adaptação de subclasses de Patrulheiro. As Flechas Cinzentas são caçadores de arcanistas descendentes das antigas forças anti-magia do império de Neromus. Suas técnicas perturbam a própria natureza da magia e sobreviveram por linhagens e ensinamentos dispersos depois que a facção original se dissolveu.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 407
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-ranger-grey-arrow.feature.sabueso-arcano.l3.1",
+      "name": "SABUESO ARCANO",
+      "level": 3,
+      "description": "Como ação bônus, produza os efeitos de Detectar Magia por 1 minuto sem concentração. Usos por Descanso Curto ou Longo iguais ao bônus de proficiência. Além disso, você consegue perceber intuitivamente se uma criatura a até 18 metros está se concentrando em um efeito mágico ao passar em um teste de Sabedoria (Percepção) contra a Enganação passiva dela.",
+      "page": 407,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-grey-arrow.feature.municao-perfuradora-de-magia.l3.1",
+      "name": "MUNIÇÃO PERFURADORA DE MAGIA",
+      "level": 3,
+      "description": "Quando ataca com arma uma criatura que voluntariamente esteja sob efeito mágico ou concentrando-se em uma magia, trate-a como Inimigo Favorecido. Se ela já for seu Inimigo Favorecido, um ataque de arma que acertar causa um Dado de Favor adicional de dano.",
+      "page": 407,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-grey-arrow.feature.aura-de-ruptura.l7.1",
+      "name": "AURA DE RUPTURA",
+      "level": 7,
+      "description": "Criaturas a até 9 metros fazem testes de concentração com desvantagem. Além disso, quando uma criatura a até 18 metros conjura uma magia que exige concentração ou inicia o turno concentrando-se em uma, use reação para exigir um teste de concentração contra sua CD de magia de Patrulheiro. Em falha, perde concentração e a magia falha. Usos por Descanso Longo iguais ao Bônus de Favor.",
+      "page": 407,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-grey-arrow.feature.flecha-de-apagamento.l11.1",
+      "name": "FLECHA DE APAGAMENTO",
+      "level": 11,
+      "description": "Você aprende Contramágica e Dissipar Magia como magias de Patrulheiro sem contar em Magias Conhecidas. Enquanto empunha uma arma à distância na qual é proficiente, trate o alcance dessas magias como o alcance longo da arma; para usá-las além do alcance normal da magia, você deve realizar como parte da conjuração um ataque com a arma contra o alvo e acertar, caso contrário a magia é desperdiçada. Esse ataque também causa seu dano normal. Ao usar Dissipar Magia desta forma contra alvo dentro do alcance normal da arma, o teste de atributo da magia é feito com vantagem; entre o alcance normal e longo, é normal.",
+      "page": 408,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-grey-arrow.feature.projetil-que-corta-a-teia.l15.1",
+      "name": "PROJÉTIL QUE CORTA A TEIA",
+      "level": 15,
+      "description": "Ao fazer um ataque com arma à distância, substitua a munição por um projétil mágico com campo antimagia localizado. Ele concede bônus à jogada de ataque igual ao seu Dado de Favor. Em acerto, o alvo faz salvaguarda de Sabedoria, sofrendo 6d10 de dano psíquico adicional em falha ou metade em sucesso. Quem falhar não pode conjurar magias que gastem espaço por 1 minuto, a menos que obtenha sucesso em uma salvaguarda de Inteligência sempre que tentar. Se falhar, a magia e o espaço são desperdiçados, salvo se gastar um segundo espaço do mesmo nível ou superior para transformar o resultado em sucesso automático. Uma criatura já sofrendo esse bloqueio não pode receber o dano desta característica novamente até o efeito terminar. Dois usos por Descanso Longo; usos adicionais exigem gastar um espaço de Patrulheiro de 4º nível ou superior.",
+      "page": 408,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "rastreador-subterraneo",
+    "identifier": "rastreador-subterraneo",
+    "name": "Conclave do Rastreador Subterrâneo",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": null,
+    "title": "",
+    "pages": "",
+    "chapter": "",
+    "page": 121
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Muitos povos descem para as profundezas do Subterrâneo apenas sob as condições mais urgentes, empreendendo alguma busca desesperada ou seguindo promesas de vastas riquezas. Com demasiada frequência, males antigos ocultos abaixo da terra e patrulheiros do Conclave dos Rastreadores Subterrâneos se esforçam para descobrir e derrotar tais ameaças antes que elas possam alcançar a superfície.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 121
+  },
+  "features": [
+    {
+      "key": "subclass.rastreador-subterraneo.feature.batedor-do-subterraneo.l3.1",
+      "name": "BATEDOR DO SUBTERRÂNEO",
+      "level": 3,
+      "description": "No 3° nível, você domina a arte da emboscada. No seu primeiro turno durante o combate, você ganha +3 metros\n\nde bônus no seu deslocamento e, se você usar a ação de Ataque nesse turno, você pode realizar um ataque adicional.\n\nVocê também é especialista em evitar criaturas que contam com visão no escuro. Tais criaturas não ganham qualquer benefício quando tentarem detectar você em condições de escuridão ou penumbra. Além disso, quando o Mestre determina se você pode se esconder de uma criatura, tal criatura não ganham qualquer benefício devido a visão no escuro dela.",
+      "page": 121,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.rastreador-subterraneo.feature.magia-do-rastreador-subterraneo.l3.1",
+      "name": "MAGIA DO RASTREADOR SUBTERRÂNEO",
+      "level": 3,
+      "description": "A partir do 3° nível, você ganha visão no escuro com um alcance de 27 metros. Você também ganha acesso a magias adicionais no 3°, 5°, 9°, 13° e 17° níveis. Uma vez que tenha adquirido uma magia de rastreador subterrâneo, ela conta como uma magia de patrulheiro para você, mas não conta na quantidade de magias de patrulheiro que você conhece.",
+      "page": 121,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.rastreador-subterraneo.feature.magias-do-rastreador-subterraneo.l3.1",
+      "name": "MAGIAS DO RASTREADOR SUBTERRÂNEO",
+      "level": 3,
+      "description": "Nível de Patrulheiro Magias\n\n3° disfarçar-se 5° truque de corda 9° glifo de vigilância 13° invisibilidade maior 17° similaridade",
+      "page": 121,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.rastreador-subterraneo.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "A partir do 5° nível, você pode atacar duas vezes, ao invés de uma, sempre que você realizar a ação de Ataque no seu turno.",
+      "page": 121,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.rastreador-subterraneo.feature.mente-de-aco.l7.1",
+      "name": "MENTE DE AÇO",
+      "level": 7,
+      "description": "No 7° nível, você ganha proficiência em testes de resistência de Sabedoria.",
+      "page": 121,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.rastreador-subterraneo.feature.rajada-do-rastreador.l11.1",
+      "name": "RAJADA DO RASTREADOR",
+      "level": 11,
+      "description": "A partir do 11° nível, uma vez em cada um dos seus turnos quando você errar um ataque, você pode realizar outro ataque.",
+      "page": 121,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.rastreador-subterraneo.feature.esquiva-do-rastreador.l15.1",
+      "name": "ESQUIVA DO RASTREADOR",
+      "level": 15,
+      "description": "No 15° nível, sempre que uma criatura atacar você e não tiver vantagem, você pode usar sua reação para impor desvantagem na jogada de ataque da criatura contra você. Você pode usar essa característica antes ou depois da jogada de ataque ser feita, mas deve ser usada antes do resultado da jogada ser determinado.",
+      "page": 121,
+      "sourceTitle": "",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

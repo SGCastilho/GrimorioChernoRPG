@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-ranger-dunestalker",
+    "identifier": "lyre-ranger-dunestalker",
+    "name": "Espreitador das Dunas",
+    "originalName": "Dunestalker",
+    "aliases": [
+      "Dunestalker"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "407",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 407
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "ranger",
+    "identifier": "ranger",
+    "name": "Patrulheiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "ranger",
+    "selectionLevel": 3,
+    "description": "Compatibilidade com o Patrulheiro Revisado de Lyre: esta opção foi escrita para a revisão completa da classe apresentada no mesmo capítulo, que preserva a estrutura de arquétipos nos níveis 3, 7, 11 e 15 e admite adaptação de subclasses de Patrulheiro. Treinados nas dunas escaldantes de Greyrock, estes Patrulheiros sobrevivem a queimaduras, desidratação e exaustão, usando areia e calor para ocultar-se, emboscar e incendiar suas presas. A defesa de tribos isoladas contra saqueadores também os torna especialmente letais contra humanoides.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 407
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-ranger-dunestalker.feature.assassino-das-areias.l3.1",
+      "name": "ASSASSINO DAS AREIAS",
+      "level": 3,
+      "description": "Todos os humanoides passam a ser seus Inimigos Favorecidos, se ainda não forem. Você ganha resistência a fogo e vantagem em salvaguardas contra efeitos negativos de ambientes de alta temperatura.",
+      "page": 407,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-dunestalker.feature.emboscada-tatica.l3.1",
+      "name": "EMBOSCADA TÁTICA",
+      "level": 3,
+      "description": "Um número de vezes por Descanso Curto ou Longo igual ao seu Bônus de Favor, você pode realizar Esconder-se ou Desengajar como ação bônus. Ao usar Esconder-se desta forma, pode fazê-lo estando apenas levemente obscurecido.",
+      "page": 407,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-dunestalker.feature.chamas-do-deserto.l7.1",
+      "name": "CHAMAS DO DESERTO",
+      "level": 7,
+      "description": "Quando acerta uma criatura com ataque de arma no seu turno, pode incendiar a arma e liberar uma explosão. Além do dano normal, o alvo sofre dano de fogo igual ao resultado de seus Dados de Favor rolados em quantidade igual ao dobro do seu Bônus de Favor. Usos por Descanso Curto ou Longo iguais à metade do bônus de proficiência, arredondado para cima.",
+      "page": 407,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-dunestalker.feature.escaramucador-furtivo.l7.1",
+      "name": "ESCARAMUÇADOR FURTIVO",
+      "level": 7,
+      "description": "Ao realizar a ação Atacar enquanto estiver escondido, trate todas as criaturas atacadas durante essa ação como Inimigos Favorecidos; todos os ataques contra o primeiro alvo têm vantagem como se você ainda estivesse escondido.",
+      "page": 407,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-dunestalker.feature.aprimoramento-de-ataque-extra.l11.1",
+      "name": "APRIMORAMENTO DE ATAQUE EXTRA",
+      "level": 11,
+      "description": "Ao realizar a ação Atacar, você pode fazer três ataques em vez de um ou dois.",
+      "page": 407,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-ranger-dunestalker.feature.chamas-explosivas.l15.1",
+      "name": "CHAMAS EXPLOSIVAS",
+      "level": 15,
+      "description": "Quando obtém um acerto crítico com ataque de arma, pode aplicar Chamas do Deserto automaticamente sem gastar um uso.",
+      "page": 407,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

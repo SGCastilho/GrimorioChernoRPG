@@ -1,0 +1,149 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "bbb-monk-way-of-the-soldier",
+    "identifier": "bbb-monk-way-of-the-soldier",
+    "name": "Caminho do Soldado",
+    "originalName": "Way of the Soldier",
+    "aliases": [
+      "Way of the Soldier"
+    ]
+  },
+  "source": {
+    "sourceId": "blade-bone-benefit",
+    "title": "Somnus Domina — Blade, Bone, & Benefit",
+    "pages": "111",
+    "chapter": "Capítulo X: Subclasses",
+    "page": 111
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "monk",
+    "identifier": "monk",
+    "name": "Monge"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "monk",
+    "selectionLevel": 3,
+    "description": "Um monge que transforma suas habilidades em disciplina militar e combate organizado.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 111
+  },
+  "features": [
+    {
+      "key": "subclass.bbb-monk-way-of-the-soldier.feature.estilo-de-luta.l3.1",
+      "name": "ESTILO DE LUTA",
+      "level": 3,
+      "description": "Escolha um Estilo de Luta normalmente disponível ao Guerreiro ou ao Santo da Espada. Você recebe esse estilo; se já o possuir por outra fonte, ele avança.",
+      "page": 111,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-the-soldier.feature.armamento-militar.l3.1",
+      "name": "ARMAMENTO MILITAR",
+      "level": 3,
+      "description": "Você treinou com armas associadas ao serviço militar, incluindo espada longa (katana) e glaive (naginata); elas contam como suas Armas de Monge. Enquanto empunhar uma delas, uma vez por turno pode adicionar seu dado de Artes Marciais a uma jogada de ataque feita com essa arma.",
+      "page": 111,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-the-soldier.feature.talento-extra.l6.1",
+      "name": "TALENTO EXTRA",
+      "level": 6,
+      "description": "Escolha um talento cujos requisitos você cumpra. Você aprende esse talento imediatamente.",
+      "page": 111,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-the-soldier.feature.avanco.l11.1",
+      "name": "AVANÇO",
+      "level": 11,
+      "description": "Você pode avançar um de seus Estilos de Luta. Se nenhum puder ser avançado, pode aprender um novo Estilo de Luta dentre os disponíveis ao Guerreiro e ao Santo da Espada.",
+      "page": 111,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-the-soldier.feature.broquel-resistente.l11.1",
+      "name": "BROQUEL RESISTENTE",
+      "level": 11,
+      "description": "Quando dano o reduziria a 0 PV, pode ficar com PV iguais ao seu nível de monge em vez disso. Pode usar uma vez por Descanso; usos adicionais custam 2 Ki. Ao usar esta característica, pode gastar Ki adicional até seu bônus de proficiência e receber PV temporários iguais a 1d10 × a quantidade de Ki gasta, contando também os 2 Ki do custo da característica, se aplicável.",
+      "page": 111,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.bbb-monk-way-of-the-soldier.feature.broquel-inquebravel.l17.1",
+      "name": "BROQUEL INQUEBRÁVEL",
+      "level": 17,
+      "description": "Quando usa Broquel Resistente para evitar cair a 0 PV, torna-se resistente a todo dano até o início de seu próximo turno.",
+      "page": 111,
+      "sourceTitle": "Somnus Domina — Blade, Bone, & Benefit",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

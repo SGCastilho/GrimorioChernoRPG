@@ -1,0 +1,172 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-warlock-valkyrie",
+    "identifier": "lyre-warlock-valkyrie",
+    "name": "Valquíria",
+    "originalName": "Valkyrie",
+    "aliases": [
+      "Valkyrie"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "503–504",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 503
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "warlock",
+    "identifier": "warlock",
+    "name": "Bruxo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "warlock",
+    "selectionLevel": 1,
+    "description": "Seu patrono é uma das Valquírias Nephilim, filhas de Mnemosyne e agentes de Vestias. O pacto concede treinamento marcial e manipulação limitada do fluxo do tempo para agir como agente de paz e ordem.",
+    "tables": [
+      {
+        "key": "table.1.lista-expandida-de-magias",
+        "title": "Lista Expandida de Magias",
+        "page": 503,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível da Magia"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Destruição Silenciadora; Golpe da Valquíria"
+          },
+          {
+            "level": "2º",
+            "spells": "Aceleração; Arma Espiritual"
+          },
+          {
+            "level": "3º",
+            "spells": "Velocidade; Tempestade de Relâmpagos"
+          },
+          {
+            "level": "4º",
+            "spells": "Movimentação Livre; Esfera Tempestuosa"
+          },
+          {
+            "level": "5º",
+            "spells": "Ira da Guardiã do Céu; Aljava Acelerada"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 503
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-warlock-valkyrie.feature.preparativos-do-pacificador.l1.1",
+      "name": "PREPARATIVOS DO PACIFICADOR",
+      "level": 1,
+      "description": "Você recebe percepção às cegas em alcance de 3 metros × seu bônus de proficiência; proficiência em Intuição; e soma seu bônus de proficiência à Percepção passiva, salvo se outra característica já permitir isso, independentemente de proficiência ou Especialização em Percepção.",
+      "page": 503,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-valkyrie.feature.proficiencias-valquirianas.l1.1",
+      "name": "PROFICIÊNCIAS VALQUIRIANAS",
+      "level": 1,
+      "description": "Você recebe proficiência com armaduras médias e três armas marciais à sua escolha.",
+      "page": 503,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-valkyrie.feature.fora-do-mostrador.l6.1",
+      "name": "FORA DO MOSTRADOR",
+      "level": 6,
+      "description": "Você é imune aos efeitos da magia Lentidão e não sofre os efeitos negativos quando Aceleração termina. Pode escapar de qualquer agarrão ou efeito que o restrinja gastando 1,5 m de movimento, e seu deslocamento não pode ser reduzido por efeito que não o reduza completamente a 0. Se for atingido por magia hostil que congele/manipule o tempo para conceder turnos extras, você age normalmente como se também se beneficiasse da magia.",
+      "page": 504,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-valkyrie.feature.avanco-mistico.l10.1",
+      "name": "AVANÇO MÍSTICO",
+      "level": 10,
+      "description": "Uma vez por Descanso Curto ou Longo, como ação bônus, tente ler o futuro imediato de uma criatura visível a até 18 m. Ela faz salvaguarda de Carisma. Em falha, seu controlador deve declarar todas as ações, ações bônus e movimentos que ela fará antes do início de seu próximo turno. Movimento diferente do declarado custa 2 m para cada 1 m; ataques, testes e salvaguardas inconsistentes com a declaração têm desvantagem. Se conjurar magia/efeito não declarado que exija salvaguarda ou teste de outra criatura, essa criatura tem vantagem. O uso só é gasto se o alvo falhar. Depois de gasto, pode tentar novamente gastando um espaço de pacto, que também só é gasto em falha do alvo.",
+      "page": 504,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-warlock-valkyrie.feature.bencao-da-filha-do-tempo.l14.1",
+      "name": "BÊNÇÃO DA FILHA DO TEMPO",
+      "level": 14,
+      "description": "Uma vez por Descanso Longo, como ação bônus, transforme-se por 1 minuto e receba imediatamente 1d10 + seu nível de Bruxo em PV temporários. Durante a transformação, ataques com arma têm vantagem; ao usar ação Atacar, faça um ataque adicional com arma com a qual seja proficiente; e tenha vantagem em salvaguardas contra efeitos mágicos.\n\nINVOCAÇÕES DA VALQUÍRIA. RECORDAÇÃO BIZARRA (7º): ação bônus retorna a qualquer espaço desocupado que ocupou desde o início do turno; se sofrer dano no próprio turno, pode usar reação para retornar ao espaço inicial e evita o dano se sair do alcance do efeito. CRONOCAST (9º): uma vez por Descanso Curto ou Longo, magia de 1 ação pode ser conjurada como ação bônus; sua ação no turno deve ser Atacar, Disparada ou Desengajar. CRONOMAESTRIA (18º): pode gastar seu Arcano Místico de 9º nível para conjurar Parar o Tempo no lugar da magia normal. ARMA FIEL: use Carisma em ataques e dano com armas em que seja proficiente, incluindo Arma de Pacto. MESTRE DE ARMAS (12º): ação Atacar com arma proficiente faz dois ataques em vez de um; se já faria dois, faça três. ASAS PRISMÁTICAS (5º): manifeste/dispense asas à vontade; voo igual ao deslocamento básico e pode usar Disparada como ação bônus se usar o voo no movimento adicional. RITO DA INSISTÊNCIA (9º): uma vez por Descanso Longo, quando cairia a 0 PV ou morreria instantaneamente, fica com 1 PV.",
+      "page": 504,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

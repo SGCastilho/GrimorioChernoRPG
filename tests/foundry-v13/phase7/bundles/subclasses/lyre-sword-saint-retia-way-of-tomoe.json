@@ -1,0 +1,166 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-sword-saint-retia-way-of-tomoe",
+    "identifier": "lyre-sword-saint-retia-way-of-tomoe",
+    "name": "Caminho de Tomoe",
+    "originalName": "Way of Tomoe",
+    "aliases": [
+      "Way of Tomoe"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "429–430",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 429
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "sword-saint-retia",
+    "identifier": "sword-saint",
+    "name": "Santo da Espada"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "sword-saint",
+    "selectionLevel": 3,
+    "description": "Relíquia Santa: Folding Sky. Tomoe levou a arquearia além da perfeição e, segundo as lendas, conquistou o favor de um deus do relâmpago. Seus seguidores dominam ataques à distância, mobilidade e rajadas elétricas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 429
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-tomoe.feature.estilo-de-luta-arquearia.l3.1",
+      "name": "ESTILO DE LUTA: ARQUEARIA",
+      "level": 3,
+      "description": "Você recebe o Estilo de Luta Arquearia. Ignora a propriedade recarga de armas com as quais seja proficiente; sacar arma com arremesso é uma ação livre se ela for imediatamente arremessada como parte de um ataque.",
+      "page": 429,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-tomoe.feature.tecnicas-de-foco.l3.1",
+      "name": "TÉCNICAS DE FOCO",
+      "level": 3,
+      "description": "MAJESTOSO: como ação bônus, gaste 2 Foco para impor desvantagem a todos os ataques contra você até o início do próximo turno. ERGUER E VOAR: gaste 1 Foco para aumentar seu deslocamento em 3 metros até o fim do turno; nesse tempo, pode realizar saltos em altura/distância sem corrida e correr por superfícies verticais sem cair, mas cai se terminar o turno nelas ou tiver deslocamento 0. CORRENTE DE VENTO: ao fazer ataque corpo a corpo com arma, gaste 1 Foco para ampliar o alcance para 9 metros; todos os ataques com a mesma arma até o fim do turno podem usar esse alcance e continuam sendo corpo a corpo.",
+      "page": 429,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-tomoe.feature.olhos-do-santo.l6.1",
+      "name": "OLHOS DO SANTO",
+      "level": 6,
+      "description": "Seus ataques à distância não têm desvantagem por inimigos a 1,5 metro nem por alcance longo. Ataques à distância com arma obtêm crítico em 19 ou 20 no d20 e, num crítico, role um dado de dano de arma adicional.",
+      "page": 429,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-tomoe.feature.lotus-trovejante.l6.1",
+      "name": "LÓTUS TROVEJANTE",
+      "level": 6,
+      "description": "Ao acertar ataque com arma com a qual seja proficiente, gaste 1 Foco e, opcionalmente, Foco adicional até metade de seu bônus de proficiência, arredondado para cima. O alvo faz salvaguarda de Destreza; em falha, sofre 2d8 de dano elétrico +1d8 por Foco adicional. Armadura de metal impõe desvantagem à salvaguarda. Se o ataque usou sua Arma Santa, causa ainda +1d12 de dano elétrico.",
+      "page": 429,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-tomoe.feature.bombardeio-raikou.l11.1",
+      "name": "BOMBARDEIO RAIKOU",
+      "level": 11,
+      "description": "Como ação, gaste 3 Foco para armar por 1 minuto uma arma à distância que empunhe com relâmpago espiritual; ela dispara raios em vez de munição e seu dano torna-se elétrico. Enquanto durar, como ação escolha ponto no alcance normal da arma; criaturas em esfera de 4,5 metros fazem salvaguarda de Destreza, sofrendo 1d10 + os dados de dano da arma em dano elétrico em falha ou metade em sucesso. Pode usar essa ação imediatamente uma vez ao armar a arma. Quem falhar por 5 ou mais fica atordoado até o fim do próximo turno.",
+      "page": 430,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-tomoe.feature.postura-da-flor-do-relampago.l14.1",
+      "name": "POSTURA DA FLOR DO RELÂMPAGO",
+      "level": 14,
+      "description": "Você tem resistência a dano elétrico. Na primeira vez que acertar cada criatura, o ataque causa +1d8 + metade de seu nível de Santo da Espada, arredondado para baixo, de dano elétrico. O controle de “primeira vez” reinicia para cada alvo no início de seu turno.",
+      "page": 430,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-sword-saint-retia-way-of-tomoe.feature.mira-alem-da-perfeicao.l17.1",
+      "name": "MIRA ALÉM DA PERFEIÇÃO",
+      "level": 17,
+      "description": "Ataques à distância com arma obtêm crítico em 18, 19 ou 20 no d20. Em um crítico, role dois dados de dano de arma adicionais, além do dado adicional de Olhos do Santo.",
+      "page": 430,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-bender-fortification",
+    "identifier": "ryoko-bender-fortification",
+    "name": "Discípulo da Fortificação",
+    "originalName": "Disciple of Fortification",
+    "aliases": [
+      "Disciple of Fortification",
+      "Discípulo da Fortificação"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "167–169",
+    "chapter": "Capítulo 9: Classes",
+    "page": 167
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bender-ryoko",
+    "identifier": "bender",
+    "name": "Dobrador"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bender",
+    "selectionLevel": 3,
+    "description": "Um baluarte elemental que molda os elementos como armadura, absorve ataques elementais e fortalece aliados com defesa primordial.",
+    "tables": [
+      {
+        "key": "table.1.magias-bonus-da-fortificacao",
+        "title": "Magias Bônus da Fortificação",
+        "page": 168,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Dobrador"
+          },
+          {
+            "key": "magias",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "3º",
+            "magias": "Escudo"
+          },
+          {
+            "nivel": "5º",
+            "magias": "Palavra de Proteção"
+          },
+          {
+            "nivel": "9º",
+            "magias": "Proteção contra Energia (tipo de uma Afinidade)"
+          },
+          {
+            "nivel": "13º",
+            "magias": "Esfera Resiliente"
+          },
+          {
+            "nivel": "17º",
+            "magias": "Resistir"
+          }
+        ]
+      },
+      {
+        "key": "table.2.baluarte-primordial",
+        "title": "Baluarte Primordial",
+        "page": 169,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "afinidade",
+            "label": "Afinidade"
+          },
+          {
+            "key": "magia",
+            "label": "Magia"
+          }
+        ],
+        "rows": [
+          {
+            "afinidade": "Ar",
+            "magia": "Muralha de Vento"
+          },
+          {
+            "afinidade": "Terra",
+            "magia": "Muralha de Pedra"
+          },
+          {
+            "afinidade": "Fogo",
+            "magia": "Muralha de Fogo"
+          },
+          {
+            "afinidade": "Água",
+            "magia": "Muralha de Água Branca"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 167
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-bender-fortification.feature.proficiencias-defensivas.l3.1",
+      "name": "PROFICIÊNCIAS DEFENSIVAS",
+      "level": 3,
+      "description": "Você ganha proficiência com armaduras médias e pesadas e escudos. Pode usar um escudo como foco de conjuração de Dobrador.",
+      "page": 168,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-fortification.feature.escudo-primordial.l3.1",
+      "name": "ESCUDO PRIMORDIAL",
+      "level": 3,
+      "description": "Como ação bônus, conceda a você ou criatura voluntária a até 9 m 1d6 PV temporários, que duram até usar esta característica novamente ou o alvo terminar Descanso Longo. A quantidade aumenta para 1d10 no 6º nível, 2d6 no 10º e 2d10 no 14º.",
+      "page": 168,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-fortification.feature.redirecionar-elementos.l7.1",
+      "name": "REDIRECIONAR ELEMENTOS",
+      "level": 7,
+      "description": "Quando criatura visível a até 9 m sofreria dano de tipo ligado a uma de suas Afinidades, use reação para reduzir o dano em 2d6 para cada vez que escolheu afinidade com aquele elemento. Se reduzir a 0, faça ataque mágico à distância contra alvo a até 9 m da criatura original; em acerto, causa dano igual à redução. Os dados tornam-se d8 no 11º nível, d10 no 15º e d12 no 20º.",
+      "page": 168,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-fortification.feature.reforco-elemental.l15.1",
+      "name": "REFORÇO ELEMENTAL",
+      "level": 15,
+      "description": "Ao conjurar magia de Dobrador de 1º nível ou superior, escolha criatura visível a até 9 m, incluindo você. Ela recebe bônus na CA igual ao nível-base da magia até o início do seu próximo turno.",
+      "page": 169,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-fortification.feature.baluarte-primordial.l20.1",
+      "name": "BALUARTE PRIMORDIAL",
+      "level": 20,
+      "description": "Ao rolar iniciativa sem estar surpreso, use reação para conjurar gratuitamente uma magia conforme uma de suas Afinidades: Ar — Muralha de Vento; Terra — Muralha de Pedra; Fogo — Muralha de Fogo; Água — Muralha de Água Branca. Uma vez por Descanso Longo.",
+      "page": 169,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-fighter-chaos-blade",
+    "identifier": "lyre-fighter-chaos-blade",
+    "name": "Lâmina do Caos",
+    "originalName": "Chaos Blade",
+    "aliases": [
+      "Chaos Blade"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "459",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 459
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "fighter",
+    "identifier": "fighter",
+    "name": "Guerreiro"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "fighter",
+    "selectionLevel": 3,
+    "description": "Alguns guerreiros se entregam completamente ao instinto e, no auge do perigo, acessam uma energia caótica que se manifesta de maneiras imprevisíveis. Essas explosões parecem reconectar ao corpo aqueles que sofreram trauma ou dissociação, dando forma física à confusão e à ansiedade.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 459
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-fighter-chaos-blade.feature.surto-do-caos.l3.1",
+      "name": "SURTO DO CAOS",
+      "level": 3,
+      "description": "Você desencadeia um Surto do Caos quando obtém 1 ou 20 no d20 de um ataque ou salvaguarda, ou quando usa Surto de Ação. Role 1d10 na tabela Surto do Caos; as salvaguardas indicadas usam Constituição, e Constituição é seu atributo de conjuração. Se gerar vários surtos no mesmo turno, você não pode obter o mesmo resultado duas vezes: repita a rolagem até sair um resultado diferente. O mesmo efeito da tabela não se acumula consigo próprio.",
+      "page": 459,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-chaos-blade.feature.salto-ilogico.l7.1",
+      "name": "SALTO ILÓGICO",
+      "level": 7,
+      "description": "Como ação bônus, teleporte-se para um espaço desocupado que possa ver a uma distância de até 3 metros × seu bônus de proficiência. Uma vez por Descanso Curto ou Longo; você pode usá-lo novamente gastando 1 ponto de Maestria de Combate.",
+      "page": 459,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-chaos-blade.feature.caos-controlado.l10.1",
+      "name": "CAOS CONTROLADO",
+      "level": 10,
+      "description": "Quando rolar na tabela Surto do Caos, você pode ignorar a primeira rolagem e repetir uma vez, exceto se o resultado original for 1; deve manter o novo resultado. Além disso, a partir de agora você rola 1d20, não 1d10, para o Surto do Caos.",
+      "page": 459,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-chaos-blade.feature.evasao-impossivel.l15.1",
+      "name": "EVASÃO IMPOSSÍVEL",
+      "level": 15,
+      "description": "Em salvaguardas que normalmente permitem sofrer metade do dano, você não sofre dano em um sucesso e sofre apenas metade em uma falha.",
+      "page": 459,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-fighter-chaos-blade.feature.caos-infinito.l18.1",
+      "name": "CAOS INFINITO",
+      "level": 18,
+      "description": "Ao rolar iniciativa, você pode gerar imediatamente um Surto do Caos mesmo se estiver surpreso. Tabela d20: 1, Infortúnio — o próximo d20 de ataque ou salvaguarda em 1 minuto vira 1, sem provocar novo Surto. 2, Golpe Sombrio — na próxima ação Atacar em 1 minuto faça dois ataques de arma adicionais; se um ataque desencadeou o efeito, pode fazê-los imediatamente. 3, Campo de Força — por 1 minuto, uma bolha móvel dá desvantagem a ataques à distância contra você ou alvos dentro dela e faz cada 1,5 metro de movimento interno custar 3 metros. 4, Passo de Dobra Lento — por 1 minuto, seus deslocamentos são substituídos por um deslocamento de teleporte igual à metade do deslocamento base. 5, Maestria em Armas — por 1 minuto, vantagem com a arma que desencadeou o surto, ou na salvaguarda desencadeadora; se veio de Surto de Ação, use a última dessas rolagens. 6, Falha de Armas — igual ao anterior, mas com desvantagem. 7, Cascata de Relâmpagos — criaturas a até 3 metros fazem salvaguarda de Destreza; em uma falha sofrem um número de d8 de dano elétrico igual ao seu bônus de proficiência. 8, Perda Cegante — você fica cego por 1 minuto e repete salvaguarda de Constituição ao fim de cada turno, encerrando em sucesso. 9, Sem Talento — seu bônus de proficiência torna-se 0 por 1 minuto. 10, Luta Valente — produz, sem ação, os efeitos de Bravura Deslacrada; equipamento não mágico removido não é destruído, Constituição é o atributo da magia e não exige concentração. 11, Intocável — resistência a todo dano por 1 minuto. 12, Arma Fantasma — por 1 minuto, a próxima arma com que atacar ignora resistências e imunidades e causa um dado extra de dano. 13, Transparente — invisível por 1 minuto ou até realizar ação com ataque, dano ou salvaguarda de outra criatura. 14, Ampliado — aumenta uma categoria de tamanho por 1 minuto, se houver espaço, e soma 1d4 a ataques e danos corpo a corpo. 15, Aura Explosiva — por 1 minuto, quem acertar você em corpo a corpo a até 1,5 metro sofre 1d8 de um tipo determinado por 1d6: fogo, frio, elétrico, ácido, radiante ou necrótico. 16, Olhos Inquestionáveis — visão verdadeira a 9 metros por 1 minuto. 17, Monoataque — por 1 minuto, no máximo um ataque de arma por ação Atacar; salvaguarda de Sabedoria ao fim de cada turno encerra em sucesso. 18, Indestrutível — imunidade, por 1 minuto, a perfurante, cortante ou contundente, à sua escolha. 19, Um Tiro — o próximo ataque que o acertaria em 1 minuto erra; depois, sua CA aumenta em 5 até o início do próximo turno. 20, Soma Zero — o próximo ataque em 1 minuto trata o d20 como 20, sem provocar novo Surto.",
+      "page": 459,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

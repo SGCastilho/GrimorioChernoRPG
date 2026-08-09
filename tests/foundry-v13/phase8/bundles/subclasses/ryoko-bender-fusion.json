@@ -1,0 +1,150 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "ryoko-bender-fusion",
+    "identifier": "ryoko-bender-fusion",
+    "name": "Discípulo da Fusão",
+    "originalName": "Disciple of Fusion",
+    "aliases": [
+      "Disciple of Fusion",
+      "Discípulo da Fusão"
+    ]
+  },
+  "source": {
+    "sourceId": "ryoko-yokai-realms",
+    "title": "Ryoko's Guide to the Yokai Realms",
+    "pages": "170–171",
+    "chapter": "Capítulo 9: Classes",
+    "page": 170
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bender-ryoko",
+    "identifier": "bender",
+    "name": "Dobrador"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bender",
+    "selectionLevel": 3,
+    "description": "Um manipulador das fronteiras entre elementos, capaz de fundi-los em poeira, fumaça, gelo, lava, lama e vapor e conjurar além de suas Afinidades normais.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 170
+  },
+  "features": [
+    {
+      "key": "subclass.ryoko-bender-fusion.feature.truques-bonus.l3.1",
+      "name": "TRUQUES BÔNUS",
+      "level": 3,
+      "description": "Aprenda dois truques adicionais de Dobrador de qualquer lista elemental; eles não contam no limite de truques conhecidos.",
+      "page": 170,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-fusion.feature.magias-bonus.l3.1",
+      "name": "MAGIAS BÔNUS",
+      "level": 3,
+      "description": "Aprenda uma magia de Dobrador de 1º nível de qualquer elemento; ela fica sempre preparada e não conta no limite. No 5º, 9º, 13º e 17º níveis, aprenda respectivamente uma magia de 2º, 3º, 4º e 5º nível assim. Se você não tiver Afinidade com o elemento escolhido, conjure essa magia como se tivesse 1 Afinidade nele.",
+      "page": 170,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-fusion.feature.conjuracao-fusionista.l3.1",
+      "name": "CONJURAÇÃO FUSIONISTA",
+      "level": 3,
+      "description": "Ao gastar espaço de 1º nível ou superior para conjurar uma magia do repertório de Dobrador, você pode combiná-la com outro elemento e criar um efeito em esfera centrada no alvo ou no centro da área da magia, com raio máximo de 1,5 m × o nível do espaço gasto. Usos iguais ao modificador de conjuração (mín. 1), recuperados em Descanso Curto ou Longo. Ar + Terra — Poeira: Constituição ou cego até fim do seu próximo turno. Ar + Fogo — Fumaça: área muito obscurecida até fim do próximo turno; fala dificultada e magia com componente verbal exige salvaguarda de Constituição ou a ação de conjuração é desperdiçada (não o espaço). Ar + Água — Gelo: terreno difícil; Destreza ou cair no chão ao aparecer, entrar ou terminar turno. Terra + Fogo — Lava: Destreza ou 1d6 de fogo por nível do espaço. Terra + Água — Lama: terreno difícil até limpeza e deslocamento -4,5 m; ação remove a lama de criatura ou quadrado de 1,5 m. Fogo + Água — Vapor: área muito obscurecida; criatura que termina turno sofre 1d4 de fogo por nível do espaço.",
+      "page": 170,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-fusion.feature.conjuracao-interelemental.l7.1",
+      "name": "CONJURAÇÃO INTERELEMENTAL",
+      "level": 7,
+      "description": "Ao conjurar magia que cause dano associado a uma Afinidade, pode trocar o tipo por um tipo associado a outra Afinidade sua. Além disso, quando criatura visível conjura magia que cause dano de qualquer Afinidade, use reação e faça teste de habilidade de conjuração CD 10 + nível da magia (10 para truque); em sucesso, altere o dano para um tipo de uma de suas Afinidades.",
+      "page": 171,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-fusion.feature.elementos-liberados.l15.1",
+      "name": "ELEMENTOS LIBERADOS",
+      "level": 15,
+      "description": "Em seu turno, quando usa a ação para conjurar magia de Dobrador de 1º nível ou superior, pode conjurar como ação bônus um truque de Dobrador cujo tempo normal seja 1 ação. Usos iguais ao modificador de conjuração (mín. 1) por Descanso Longo.",
+      "page": 171,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.ryoko-bender-fusion.feature.avatar-dos-elementos.l20.1",
+      "name": "AVATAR DOS ELEMENTOS",
+      "level": 20,
+      "description": "Você recebe duas Afinidades Elementais adicionais, totalizando seis. Não pode ter mais de quatro Afinidades no mesmo elemento.",
+      "page": 171,
+      "sourceTitle": "Ryoko's Guide to the Yokai Realms",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

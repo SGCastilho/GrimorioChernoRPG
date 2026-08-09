@@ -1,0 +1,132 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-bard-college-of-terpsichore",
+    "identifier": "lyre-bard-college-of-terpsichore",
+    "name": "Colégio de Terpsícore",
+    "originalName": "College of Terpsichore",
+    "aliases": [
+      "College of Terpsichore"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "434–435",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 434
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "bard",
+    "identifier": "bard",
+    "name": "Bardo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "bard",
+    "selectionLevel": 3,
+    "description": "Bardos do Colégio de Terpsícore preservam histórias por meio da dança interpretativa e do movimento corporal. Eles treinam o corpo como um instrumento, usando coreografias precisas para evocar imagens, encantar e distrair. Sua tradição remonta a Terpsícore, uma antiga musa celestial associada à preservação de histórias e lendas.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 434
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-bard-college-of-terpsichore.feature.momento-inspirado.l3.1",
+      "name": "MOMENTO INSPIRADO",
+      "level": 3,
+      "description": "Sempre que usar uma ação bônus para conceder Inspiração de Bardo a outra criatura, você pode, como parte da mesma ação bônus, mover-se imediatamente até metade do seu deslocamento. Esse movimento não provoca ataques de oportunidade e não consome seu deslocamento do turno.",
+      "page": 434,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-college-of-terpsichore.feature.expressao-interpretativa.l3.1",
+      "name": "EXPRESSÃO INTERPRETATIVA",
+      "level": 3,
+      "description": "Enquanto não estiver incapacitado, você pode usar Destreza no lugar de Carisma em testes de Atuação. Além disso, enquanto não estiver impedido e tiver deslocamento maior que 0, suas magias de Bardo não exigem foco de conjuração nem componentes verbais; você as conjura por meio de movimentos corporais expressivos, normalmente dança.",
+      "page": 435,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-college-of-terpsichore.feature.danca-da-coercao.l6.1",
+      "name": "DANÇA DA COERÇÃO",
+      "level": 6,
+      "description": "Como ação bônus, enquanto não estiver incapacitado nem agarrado, escolha uma criatura que possa vê-lo. Ela realiza uma salvaguarda de Sabedoria contra sua CD de magia. Em uma falha, fica enfeitiçada por 1 minuto e fascinada ou distraída por você. Você pode manter simultaneamente um número de criaturas enfeitiçadas dessa forma igual à metade do seu bônus de proficiência, arredondado para baixo. Se agir de modo diretamente prejudicial contra uma delas, o efeito termina para esse alvo. Uma criatura afetada rola 1d4 e subtrai o resultado de cada ataque, salvaguarda ou teste de atributo. No fim de cada turno, ela pode repetir a salvaguarda, com desvantagem se puder vê-lo. Ao obter sucesso, fica imune a esta característica por 24 horas. Se você ficar inconsciente, todos os efeitos terminam. No 14º nível de Bardo, o dado subtraído passa de d4 para d6.",
+      "page": 435,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-college-of-terpsichore.feature.intervencao-retorcida.l6.1",
+      "name": "INTERVENÇÃO RETORCIDA",
+      "level": 6,
+      "description": "Quando uma criatura a até 18 metros tentar conjurar uma magia, realizar a ação Atacar ou usar uma característica que exija uma jogada de ataque, você pode usar sua reação para interferir. Ela realiza uma salvaguarda de Carisma contra sua CD de magia, com desvantagem se estiver enfeitiçada por você. Em uma falha, não realiza a ação pretendida e, se possível, deve escolher outra. Você precisa usar esta característica antes de conhecer o resultado de ataques ou salvaguardas ligados ao efeito e antes que seus efeitos sejam resolvidos. Usos por Descanso Longo iguais ao seu bônus de proficiência.",
+      "page": 435,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-bard-college-of-terpsichore.feature.terpsicoreano-magistral.l14.1",
+      "name": "TERPSICOREANO MAGISTRAL",
+      "level": 14,
+      "description": "Ao conjurar uma magia que gaste um espaço de magia, você também pode realizar um ataque com arma como parte da mesma ação. A arma deve ser de uma mão à distância/arremesso ou possuir a propriedade acuidade ou leve. Você pode rolar um dado equivalente ao seu dado de Inspiração de Bardo e somá-lo à jogada desse ataque.",
+      "page": 435,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

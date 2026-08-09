@@ -1,0 +1,176 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "zagalhta-dragoneer-echoing-voice",
+    "identifier": "zagalhta-dragoneer-echoing-voice",
+    "name": "Voz Ecoante",
+    "originalName": "Echoing Voice",
+    "aliases": [
+      "Echoing Voice"
+    ]
+  },
+  "source": {
+    "sourceId": "zagalhta-exolunar",
+    "title": "Somnus Domina — Zagalhta's Exolunar Collection",
+    "pages": "124–125",
+    "chapter": "Capítulo 6: Opções de Classe",
+    "page": 124
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "dragoneer",
+    "identifier": "dragoneer",
+    "name": "Cavaleiro Dracônico"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "dragoneer",
+    "selectionLevel": 1,
+    "description": "Um estudioso da potência arcana da alma dracônica que projeta ecos de si, pronuncia nomes dracônicos para ampliar magias e atravessa defesas mágicas por pura autoridade arcana.",
+    "tables": [
+      {
+        "key": "table.1.parametros-da-especializacao",
+        "title": "Parâmetros da Especialização",
+        "page": 124,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "hit",
+            "label": "Dado de Vida"
+          },
+          {
+            "key": "saves",
+            "label": "Salvaguardas"
+          },
+          {
+            "key": "weapons",
+            "label": "Armas"
+          },
+          {
+            "key": "armor",
+            "label": "Armaduras"
+          },
+          {
+            "key": "skills",
+            "label": "Perícias"
+          },
+          {
+            "key": "casting",
+            "label": "Conjuração"
+          }
+        ],
+        "rows": [
+          {
+            "hit": "d8",
+            "saves": "Inteligência, Sabedoria",
+            "weapons": "Todas as armas simples",
+            "armor": "Leves e médias",
+            "skills": "Arcanismo; escolha uma entre História, Intuição, Investigação, Medicina e Religião",
+            "casting": "Meio Conjurador (lista do Mago)"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 124
+  },
+  "features": [
+    {
+      "key": "subclass.zagalhta-dragoneer-echoing-voice.feature.arco-selador.l1.1",
+      "name": "ARCO SELADOR",
+      "level": 1,
+      "description": "Pode produzir os efeitos de escudo sem Espaço de Magia nem componentes, duas vezes por Descanso. Os usos aumentam para três no 7º nível e quatro no 13º.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-echoing-voice.feature.espirito-eco.l3.1",
+      "name": "ESPÍRITO ECO",
+      "level": 3,
+      "description": "Ao conjurar uma magia de Cavaleiro Dracônico, pode projetar uma cópia de si a até 9 m e fazer a magia se originar do eco. No fim do turno, o eco desaparece; efeitos contínuos com alcance Pessoal voltam a ser centrados em você.",
+      "page": 124,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-echoing-voice.feature.magia-explosiva.l7.1",
+      "name": "MAGIA EXPLOSIVA",
+      "level": 7,
+      "description": "Ao conjurar uma magia acima do nível-base e realizar componentes vocais, você pode tratar a magia como se tivesse opções adicionais de níveis superiores: aumentar a CD da primeira salvaguarda de cada criatura em +1 por 1 nível, +2 por 3 níveis ou +3 por 5 níveis; conceder +1 a ataques feitos pela magia no turno de conjuração; ou converter todo o dano da magia para seu tipo de Encarnação.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-echoing-voice.feature.arma-de-sangue-de-wyrm.l13.1",
+      "name": "ARMA DE SANGUE DE WYRM",
+      "level": 13,
+      "description": "Uma vez por Descanso, produz espada do arquimago sem gastar Espaço nem componentes materiais. A espada pode causar seu tipo de dano de Encarnação em vez de força.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.zagalhta-dragoneer-echoing-voice.feature.contorno-draconico.l17.1",
+      "name": "CONTORNO DRACÔNICO",
+      "level": 17,
+      "description": "Suas magias ignoram características que concedam vantagem em salvaguardas contra efeitos mágicos, salvo se a característica negar completamente o efeito ou tornar o alvo automaticamente imune a ele.",
+      "page": 125,
+      "sourceTitle": "Somnus Domina — Zagalhta's Exolunar Collection",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

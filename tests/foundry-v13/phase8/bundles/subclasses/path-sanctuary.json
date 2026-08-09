@@ -1,0 +1,187 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "path-sanctuary",
+    "identifier": "path-sanctuary",
+    "name": "Caminho do Santuário",
+    "originalName": "",
+    "aliases": []
+  },
+  "source": {
+    "sourceId": "emissario-homebrew",
+    "title": "Emissário Espiritual — Homebrew Original",
+    "pages": "5–6",
+    "chapter": "Caminho do Santuário",
+    "page": 5
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "spiritual-emissary",
+    "identifier": "spiritual-emissary",
+    "name": "Emissário Espiritual"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "spiritual-emissary",
+    "selectionLevel": 3,
+    "description": "No 3º nível, você dedica sua vida a proteger os espíritos e limpar as máculas do mundo. Suas habilidades passam a focar em resiliência e remoção de efeitos negativos.",
+    "tables": [
+      {
+        "key": "table.1.ofudas-preparaveis",
+        "title": "Ofudas Preparáveis",
+        "page": 5,
+        "description": "Magias que podem ser preparadas em ofudas, separadas pelo nível de Emissário Espiritual indicado no PDF.",
+        "sourceTitle": "Emissário Espiritual — Homebrew Original",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "Truques",
+            "spells": "Estabilizar, Orientação, Taumaturgia, Luz e Resistência"
+          },
+          {
+            "level": "3º",
+            "spells": "Bênção, Criar ou Destruir Água, Detectar o Bem e Mal, Detectar Magia, Escudo da Fé, Detectar Veneno e Doença, Proteção contra o Bem e Mal, Purificar Alimentos, Santuário, Acalmar Emoções, Auxílio, Encontrar Armadilhas, Localizar Objeto, Proteção contra Veneno, Vínculo Protetor, Zona da Verdade, Silêncio e Restauração Menor"
+          },
+          {
+            "level": "5º",
+            "spells": "Andar na Água, Criar Alimentos, Clarividência, Círculo Mágico, Enviar Mensagem, Dissipar Magia, Proteção contra Energia, Idiomas, Luz do Dia, Remover Maldição e Sinal de Esperança"
+          },
+          {
+            "level": "7º",
+            "spells": "Adivinhação, Guardião da Fé, Controlar a Água, Proteção contra a Morte e Movimentação Livre"
+          },
+          {
+            "level": "9º",
+            "spells": "Comunhão, Conhecimento Lendário, Consagrar, Dissipar o Bem e Mal, Restauração Maior e Vidência"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 5
+  },
+  "features": [
+    {
+      "key": "subclass.path-sanctuary.feature.ofuda-da-protecao.l3.1",
+      "name": "OFUDA DA PROTEÇÃO",
+      "level": 3,
+      "description": "No 3º nível, você aprende a infundir seus selos com energia protetora. Como uma reação, quando um aliado que você possa ver a até 9 metros for atingido por um ataque, você pode gastar 1 Ponto de Selo para lançar um Ofuda Protetor. O aliado recebe +2 de bônus na CA contra aquele ataque e ganha Pontos de Vida Temporários iguais ao seu Dado Curativo + seu modificador de Sabedoria.",
+      "page": 5,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.path-sanctuary.feature.preparacao-de-ofudas.l3.1",
+      "name": "PREPARAÇÃO DE OFUDAS",
+      "level": 3,
+      "description": "No 3º nível, você aprende a criar ofudas personalizados contendo efeitos distintos. O número de ofudas que pode preparar é igual ao seu nível de Emissário Espiritual + seu modificador de Sabedoria. Os ofudas podem ser preparados durante um descanso longo. Consulte a aba Tabelas para ver as magias disponíveis em cada nível.",
+      "page": 5,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.path-sanctuary.feature.senda-purificadora.l6.1",
+      "name": "SENDA PURIFICADORA",
+      "level": 6,
+      "description": "No 6º nível, seus Portais de Torii passam a emanar uma aura de limpeza. Enquanto a Senda de Torii estiver ativa, você pode gastar uma ação e 1 Ponto de Selo para que aliados dentro da área dos portais tenham vantagem em testes de resistência contra as condições Envenenado, Amedrontado e Paralisado. Esse efeito permanece ativo até a Senda de Torii acabar ou ser sobreposto por outro efeito.",
+      "page": 5,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.path-sanctuary.feature.presenca-calmante.l9.1",
+      "name": "PRESENÇA CALMANTE",
+      "level": 9,
+      "description": "No 9º nível, o santuário que você carrega em seu espírito acalma os aliados ao seu redor. Você e aliados a até 3 metros de você não podem ser amedrontados enquanto você estiver consciente.",
+      "page": 5,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.path-sanctuary.feature.oracao-do-grande-torii.l13.1",
+      "name": "ORAÇÃO DO GRANDE TORII",
+      "level": 13,
+      "description": "No 13º nível, você pode gastar uma ação bônus e 4 Pontos de Selo para conjurar uma versão aprimorada da Senda de Torii. Além dos benefícios normais, os portais criam uma barreira de luz e inimigos tratam a área como terreno difícil.\n\nUma vez por rodada, quando um aliado for curado dentro da área, ele pode usar uma reação para realizar um ataque de arma ou se mover metade do próprio deslocamento sem provocar ataques de oportunidade. Efeitos anteriores aplicados à Senda de Torii são sobrepostos pela Oração do Grande Torii.",
+      "page": 5,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.path-sanctuary.feature.deixe-a-kitsune-guiar-voce.l17.1",
+      "name": "DEIXE A KITSUNE GUIAR VOCÊ",
+      "level": 17,
+      "description": "No 17º nível, uma vez por descanso longo e como uma ação completa, você gasta 6 Pontos de Selo para invocar o espírito da Grande Raposa. Um rastro de luz azulada e portais de Torii majestosos surgem em uma linha de até 18 metros à sua frente, com 3 metros de largura. A manifestação dura 1 minuto. Enquanto a trilha estiver ativa, você e todos os aliados dentro da área, ou que comecem o turno nela, recebem os seguintes benefícios:\n\n• Aceleração Espiritual: o deslocamento de caminhada dos aliados é dobrado e eles não provocam ataques de oportunidade ao se moverem dentro da área.\n\n• Vigor da Raposa: além do bônus de cura da Senda de Torii, qualquer aliado que iniciar o turno na área recupera automaticamente Pontos de Vida iguais ao seu modificador de Sabedoria, com mínimo de 1, sem gastar recursos.\n\n• Foco Transcendente: uma vez por turno, quando um aliado dentro da área realizar a ação de Ataque, ele pode fazer um ataque adicional como parte da mesma ação.\n\n• Conjuração Veloz: se um aliado dentro da área conjurar uma magia com tempo de conjuração de 1 ação, ele pode usar uma ação bônus em vez disso, limitado a uma vez por batalha.",
+      "page": 6,
+      "sourceTitle": "Emissário Espiritual — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

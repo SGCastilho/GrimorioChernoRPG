@@ -1,0 +1,189 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "lyre-cleric-honor-domain",
+    "identifier": "lyre-cleric-honor-domain",
+    "name": "Domínio da Honra",
+    "originalName": "Honor Domain",
+    "aliases": [
+      "Honor Domain"
+    ]
+  },
+  "source": {
+    "sourceId": "lyre",
+    "title": "Lyre's Guide to Retia — Land of Industry",
+    "pages": "445–446",
+    "chapter": "Capítulo 8: Opções de Classe",
+    "page": 445
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cleric",
+    "identifier": "cleric",
+    "name": "Clérigo"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cleric",
+    "selectionLevel": 1,
+    "description": "Clérigos da Honra são guerreiros de convicção inabalável, críticos daqueles que quebram a palavra e incapazes de trair aliados por coerção. Suas promessas carregam poder sagrado. Magias de Domínio — 1º: Inimigo Dedicado, Escudo do Verão; 3º: Localizar Objetos, Arma Espiritual; 5º: Alvo Mortal, Corcel Fantasmagórico; 7º: Salvaguarda contra a Morte, Bravura Desatada; 9º: Missão, Espiral Dourada.",
+    "tables": [
+      {
+        "key": "table.1.magias-de-dominio",
+        "title": "Magias de Domínio",
+        "page": 445,
+        "description": "",
+        "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível de Clérigo"
+          },
+          {
+            "key": "spells",
+            "label": "Magias"
+          }
+        ],
+        "rows": [
+          {
+            "level": "1º",
+            "spells": "Inimigo Dedicado; Escudo do Verão"
+          },
+          {
+            "level": "3º",
+            "spells": "Localizar Objetos; Arma Espiritual"
+          },
+          {
+            "level": "5º",
+            "spells": "Alvo Mortal; Corcel Fantasmagórico"
+          },
+          {
+            "level": "7º",
+            "spells": "Salvaguarda contra a Morte; Bravura Desatada"
+          },
+          {
+            "level": "9º",
+            "spells": "Missão; Espiral Dourada"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 445
+  },
+  "features": [
+    {
+      "key": "subclass.lyre-cleric-honor-domain.feature.proficiencias-adicionais.l1.1",
+      "name": "PROFICIÊNCIAS ADICIONAIS",
+      "level": 1,
+      "description": "Você ganha proficiência com armaduras pesadas e na perícia Intimidação.",
+      "page": 445,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-honor-domain.feature.integridade.l1.1",
+      "name": "INTEGRIDADE",
+      "level": 1,
+      "description": "Você tem vantagem em salvaguardas contra ficar enfeitiçado ou enfurecido, e nenhum efeito pode obrigá-lo a atacar ou ferir uma criatura que normalmente consideraria aliada.",
+      "page": 445,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-honor-domain.feature.canalizar-divindade-promessa-do-campeao.l2.1",
+      "name": "CANALIZAR DIVINDADE: PROMESSA DO CAMPEÃO",
+      "level": 2,
+      "description": "Como ação, use Canalizar Divindade para fazer uma promessa a uma criatura a até 9 metros e escolha um efeito por 1 minuto; ele permanece enquanto você estiver a até 9 metros do alvo e não estiver incapacitado/inconsciente, sendo apenas suspenso quando estiver mais longe. Desafio: o alvo tem desvantagem em ataques exceto contra você. Derrota: você tem vantagem em ataques contra o alvo. Destruição: seus ataques contra ele causam dano adicional igual à metade do nível de Clérigo. Guardião: o alvo soma seu bônus de proficiência à CA contra o primeiro ataque que o escolher em cada turno. Fardo Compartilhado: o alvo é resistente a todo dano, mas sempre que sofre dano você sofre a mesma quantidade. Inabalável: se o alvo reduzir você ou um aliado a até 9 metros a 0 PV, a criatura fica com 1 PV em vez disso e o efeito termina.",
+      "page": 446,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-honor-domain.feature.juramento-de-defender.l6.1",
+      "name": "JURAMENTO DE DEFENDER",
+      "level": 6,
+      "description": "Quando um aliado a até 18 metros é alvo de um ataque ou efeito com salvaguarda, use sua reação para mover-se até seu deslocamento na direção dele. Se terminar adjacente, conceda ao aliado um bônus igual ao seu modificador de Sabedoria na CA ou na salvaguarda. Usos por Descanso Longo iguais ao bônus de proficiência.",
+      "page": 446,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-honor-domain.feature.golpe-divino-fogo.l8.1",
+      "name": "GOLPE DIVINO (FOGO)",
+      "level": 8,
+      "description": "Uma vez em cada um de seus turnos, ao acertar com ataque de arma, cause 1d8 de dano de fogo adicional. No 14º nível, aumenta para 2d8.",
+      "page": 446,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.lyre-cleric-honor-domain.feature.visao-verdadeira.l17.1",
+      "name": "VISÃO VERDADEIRA",
+      "level": 17,
+      "description": "Você ganha visão verdadeira de 9 metros.",
+      "page": 446,
+      "sourceTitle": "Lyre's Guide to Retia — Land of Industry",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}
