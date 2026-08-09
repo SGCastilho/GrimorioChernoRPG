@@ -1,3 +1,16 @@
+## 5.27.0
+
+- Integrada a classe homebrew original **Lutador de Rua** a partir do PDF fornecido pelo usuário.
+- Adicionada progressão completa do 1º ao 20º nível, incluindo **Dado de Briga** de 1d6 a 1d12.
+- Estruturados **62 registros de características/opções**, com **Cólera**, Surtos de Cólera e **20 Essências de Cólera selecionáveis**.
+- Adicionado o Arquétipo de Rua **Dragão de Dojima** com características nos níveis 3, 6, 11 e 17, preservando Rush Style, Beast Style e Dragon Style.
+- Registradas notas editoriais para lacunas explícitas da fonte: Ataque Extra, Incremento de Habilidade e Essência Adicional não recebem mecânicas externas ao PDF.
+- Registradas as inconsistências nominais **Deita Tigre / Queda do Tigre** e **Essência do Deita Tigre** sem criar conteúdo adicional.
+- Registrada nova fonte `street-fighter-homebrew`; total de fontes passa para **15**.
+- Catálogo passa para **26 classes, 381 subclasses/especializações e 26 progressões estruturadas**.
+- Exporter de classes recebe identificador estável `street-fighter` e aviso de compatibilidade: o **Grimório Importer 0.9.2** ainda não possui perfil nativo para a nova classe.
+- Adicionado `tools/validate-street-fighter-5.27.js`.
+
 ## 5.26.0
 
 - Integrada a classe **Cultivador (Cultivator)** em PT-BR a partir do PDF do D&D Wiki fornecido pelo usuário.

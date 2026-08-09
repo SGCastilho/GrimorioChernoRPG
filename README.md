@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 5.26.0
+# Grimório D&D 5e PT-BR — versão 5.27.0
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
 
@@ -9,6 +9,18 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 3. Abra `index.html` em um navegador moderno.
 
 Os catálogos incorporados funcionam offline.
+
+## Novidades da versão 5.27 — Lutador de Rua
+
+- Integrada a classe homebrew original **Lutador de Rua** diretamente do PDF fornecido para o projeto.
+- A classe possui **progressão completa do 1º ao 20º nível**, Dado de Vida d10 e **Dado de Briga** escalando de **1d6 → 1d8 → 1d10 → 1d12**.
+- Foram estruturados **62 registros de características/opções de classe**, incluindo **Cólera**, os quatro Surtos iniciais e **20 Essências de Cólera selecionáveis** distribuídas entre os desbloqueios de 3º, 9º, 13º, 15º e 17º nível.
+- Adicionado o primeiro **Arquétipo de Rua: Dragão de Dojima**, com quatro marcos de subclasse nos níveis **3, 6, 11 e 17**, cobrindo Rush Style, Beast Style e Dragon Style e seus aprimoramentos.
+- As entradas **Ataque Extra**, **Incremento de Habilidade** e **Essência Adicional** aparecem na progressão, mas o PDF não fornece blocos próprios para elas. O Grimório registra a concessão sem importar texto padrão de outra fonte.
+- As variações nominais **Deita Tigre / Queda do Tigre** e **Essência do Deita Tigre** foram documentadas em referências editoriais, sem inventar uma técnica adicional.
+- Registrada a fonte `street-fighter-homebrew`; o catálogo atual passa para **26 classes, 381 subclasses/especializações, 26 progressões estruturadas e 15 fontes registradas**.
+- O **Grimório Importer permanece em 0.9.2** nesta versão do site. O exporter já usa o identificador estável `street-fighter`, mas a importação nativa da nova classe fica explicitamente marcada como pendente até uma próxima versão do módulo.
+- Adicionado `tools/validate-street-fighter-5.27.js` para validar conteúdo, progressão, Essências, subclasse e bundle Foundry do site.
 
 ## Novidades da versão 5.26 — Cultivador
 
@@ -234,9 +246,9 @@ Consulte `FOUNDRY_IMPORTER_FASE12.md`, `TESTE_FOUNDRY_FASE12.md` e `VALIDACAO_FO
 
 ## Conteúdo atual
 
-- **25 classes**.
-- **380 subclasses/especializações**.
-- **25 progressões estruturadas**.
+- **26 classes**.
+- **381 subclasses/especializações**.
+- **26 progressões estruturadas**.
 - **1170 registros-base de magias/poderes** antes de conteúdo personalizado do usuário.
 - 361 magias do Livro do Jogador.
 - 95 magias do Guia de Xanathar.
@@ -247,6 +259,15 @@ Consulte `FOUNDRY_IMPORTER_FASE12.md`, `TESTE_FOUNDRY_FASE12.md` e `VALIDACAO_FO
 - 62 magias do Capítulo 13 de *Ryoko's Guide to the Yokai Realms*, integralmente localizadas para PT-BR.
 - 240 magias/poderes completos + 1 referência incompleta do Spell Compendium.
 - Conteúdo homebrew incorporado anteriormente.
+
+### Lutador de Rua
+
+- Classe-base: **Lutador de Rua**.
+- Arquétipos de Rua: **1** — Dragão de Dojima.
+- Registros de características/opções de classe: **62**.
+- Essências de Cólera selecionáveis: **20**.
+- Características concedidas pela subclasse: **4**, nos níveis 3, 6, 11 e 17.
+- Progressão própria: **Dado de Briga 1d6–1d12** e eventos completos do 1º ao 20º nível.
 
 ### Cultivador
 

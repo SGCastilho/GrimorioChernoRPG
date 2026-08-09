@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION='5.26.0';
+const APP_VERSION='5.27.0';
 const STORAGE_KEY='grimorio-campanha-v2';
 const SRD_CACHE_KEY='grimorio-srd-2014-cache-v3-ptbr';
 const SRD_SOURCE='https://raw.githubusercontent.com/5e-bits/5e-database/main/src/2014/en/5e-SRD-Spells.json';
@@ -26,6 +26,7 @@ const SIGILS={
  'petal-knight':'<circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M16 13c-4-8-8-5-7-1 1 3 4 4 7 4-8 4-5 8-1 7 3-1 4-4 4-7 4 8 8 5 7 1-1-3-4-4-7-4 8-4 5-8 1-7-3 1-4 4-4 7z" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M16 19v10" stroke="currentColor" stroke-width="1.2"/>',
  'sword-saint':'<path d="M10 27L22 7l3-3 3 3-3 3L13 29z" stroke="currentColor" stroke-width="1.35" fill="none" stroke-linejoin="round"/><path d="M8 12h10M11 9l6 6M7 25l5 4" stroke="currentColor" stroke-width="1.1" fill="none"/><circle cx="9" cy="10" r="5" stroke="currentColor" stroke-width="1" fill="none" opacity=".6"/>',
  'blood-minister':'<path d="M16 3C12.5 8.3 8 14.1 8 20a8 8 0 0 0 16 0c0-5.9-4.5-11.7-8-17z" stroke="currentColor" stroke-width="1.45" fill="none"/><path d="M12 20.5c.8 2.2 2.2 3.4 4.5 3.8M19.8 11.7l-7.4 8.1" stroke="currentColor" stroke-width="1.15" fill="none" stroke-linecap="round"/>',
+ 'street-fighter':'<path d="M8 16v-5.2c0-1.4 2.2-1.4 2.2 0v3.4-5.3c0-1.5 2.3-1.5 2.3 0v5.3-6.1c0-1.5 2.3-1.5 2.3 0v6.1-5.4c0-1.5 2.3-1.5 2.3 0v7.1l2.1-2.2c1.4-1.4 3.5.4 2.3 2l-4.2 6.8c-1.3 2.1-3.1 4-5.8 4.5-4.1.8-7.5-2.4-7.5-6.5V18c0-1.7 2.4-2.4 3.3-1z" stroke="currentColor" stroke-width="1.35" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
  spell:'<path d="M16 3l2.5 9.5L28 15l-9.5 2.5L16 27l-2.5-9.5L4 15l9.5-2.5z" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linejoin="round"/>',
  book:'<path d="M6 5h20v22H6zM16 5v22M9 11h4m-4 5h4m6-5h4m-4 5h4" stroke="currentColor" stroke-width="1.3" fill="none"/>',
 
@@ -41,7 +42,7 @@ const SIGILS={
  'school-unknown':'<circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.35" fill="none"/><path d="M12.5 12.5a3.8 3.8 0 1 1 5.7 3.3c-.9.5-1.5 1.1-1.5 2.2v.6" stroke="currentColor" stroke-width="1.35" fill="none" stroke-linecap="round"/><path d="M16 23.3h.01" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>',
 
 };
-const CLASS_COLORS={artificer:'#7fc7b8',barbarian:'#c7664d',bard:'#b867a7',cleric:'#c9a55c',druid:'#6fa25d',fighter:'#c1543c',monk:'#5fa5a7',paladin:'#d3b66d',ranger:'#638e67',rogue:'#4f9c82',sorcerer:'#b75a6d',warlock:'#7f69a8',wizard:'#8b7fd9','spiritual-emissary':'#d86b5b',spellblade:'#6f8fd6','favored-soul-retia':'#d9b66f','inscriptor-retia':'#a782d8','petal-knight-retia':'#d8779d','sword-saint-retia':'#d26063','blood-minister-somnus':'#9d465b',custom:'#7a92c9'};
+const CLASS_COLORS={artificer:'#7fc7b8',barbarian:'#c7664d',bard:'#b867a7',cleric:'#c9a55c',druid:'#6fa25d',fighter:'#c1543c',monk:'#5fa5a7',paladin:'#d3b66d',ranger:'#638e67',rogue:'#4f9c82',sorcerer:'#b75a6d',warlock:'#7f69a8',wizard:'#8b7fd9','spiritual-emissary':'#d86b5b',spellblade:'#6f8fd6','favored-soul-retia':'#d9b66f','inscriptor-retia':'#a782d8','petal-knight-retia':'#d8779d','sword-saint-retia':'#d26063','blood-minister-somnus':'#9d465b','street-fighter-homebrew':'#b84e43',custom:'#7a92c9'};
 const SCHOOL_COLORS={'Abjuração':'#5b8fc9','Conjuração':'#4f9c82','Adivinhação':'#c9a55c','Encantamento':'#c96f9c','Evocação':'#c1543c','Ilusão':'#8b7fd9','Necromancia':'#8a8fb0','Transmutação':'#4f9cc9','Psiônica':'#d07bd8','Escola não informada':'#7f8799','Escola especial':'#7f8799'};
 const SCHOOL_PT={Abjuration:'Abjuração',Conjuration:'Conjuração',Divination:'Adivinhação',Enchantment:'Encantamento',Evocation:'Evocação',Illusion:'Ilusão',Necromancy:'Necromancia',Transmutation:'Transmutação',Psionic:'Psiônica'};
 const CLASS_PT={Artificer:'Artífice',Barbarian:'Bárbaro',Bard:'Bardo',Cleric:'Clérigo',Druid:'Druida',Fighter:'Guerreiro',Monk:'Monge',Paladin:'Paladino',Ranger:'Patrulheiro',Rogue:'Ladino',Sorcerer:'Feiticeiro',Warlock:'Bruxo',Wizard:'Mago',Spellblade:'Spellblade','Favored Soul':'Alma Favorecida',Inscriptor:'Inscritor','Petal Knight':'Cavaleiro das Pétalas','Sword Saint':'Santo da Espada','Blood Minister':'Ministro de Sangue'};

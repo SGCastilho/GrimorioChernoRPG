@@ -55,7 +55,13 @@
     },
     'spiritual-emissary': { identifier: 'spiritual-emissary' },
     'spellblade': { identifier: 'spellblade' },
-    'cultivator-dandwiki': { identifier: 'cultivator' }
+    'cultivator-dandwiki': { identifier: 'cultivator' },
+    'street-fighter-homebrew': {
+      identifier: 'street-fighter',
+      nativeWarnings: [
+        'O Grimório Importer 0.9.2 ainda não possui CLASS_PROFILE nativo para Lutador de Rua. O bundle pode ser exportado pelo site, mas a materialização nativa no Foundry deve aguardar uma atualização do módulo.'
+      ]
+    }
   };
 
   global.GRIMORIO_FOUNDRY_CLASS_OVERRIDES = Object.freeze({

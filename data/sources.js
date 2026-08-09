@@ -222,6 +222,24 @@
       ]
     },
     {
+      id: 'street-fighter-homebrew',
+      title: 'Lutador de Rua — Homebrew Original',
+      shortTitle: 'Lutador de Rua',
+      filterLabel: 'Lutador de Rua — Homebrew',
+      homeLabel: 'Lutador de Rua — Homebrew',
+      catalogLabel: 'Lutador de Rua — Homebrew',
+      order: 83,
+      showOnHome: true,
+      showInAbout: true,
+      aliases: ['Lutador de Rua', 'Lutador de Rua — Homebrew Original'],
+      matchIncludes: ['Lutador de Rua'],
+      about: [
+        'Classe homebrew original fornecida pelo usuário, integrada diretamente do PDF Lutador de Rua.',
+        'Inclui a progressão completa do 1º ao 20º nível, Dado de Briga, Cólera, Surtos de Cólera, Essências de Cólera e o Arquétipo de Rua Dragão de Dojima.',
+        'Quando a tabela da fonte cita uma característica sem fornecer seu bloco de regras — como Ataque Extra, Incremento de Habilidade e Essência Adicional — o Grimório preserva a concessão sem importar texto mecânico de fontes externas.'
+      ]
+    },
+    {
       id: 'custom',
       title: 'Conteúdo próprio',
       shortTitle: 'Conteúdo próprio',
