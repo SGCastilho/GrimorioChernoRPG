@@ -22,8 +22,8 @@ function effectByKey(doc, key) { return effects(doc).find(e => e.flags?.['grimor
 (async () => {
   const siteManifest = readJson(path.join(root, 'manifest.json'));
   const moduleManifest = readJson(path.join(moduleRoot, 'module.json'));
-  assert(siteManifest.version === '5.25.1', 'Grimório deve estar em 5.25.1');
-  assert(moduleManifest.version === '0.9.1', 'Grimório Importer deve estar em 0.9.1');
+  assert(siteManifest.version === '5.26.0', 'Grimório deve estar em 5.26.0');
+  assert(moduleManifest.version === '0.9.2', 'Grimório Importer deve estar em 0.9.2');
   assert(siteManifest.foundryClassImporter?.phase === 12, 'Manifest não registra Fase 12');
   assert(siteManifest.foundryClassImporter?.realFoundryPhase11AutomationValidated === true, 'Fase 11 deve estar registrada como homologada no Foundry real');
 
@@ -32,13 +32,13 @@ function effectByKey(doc, key) { return effects(doc).find(e => e.flags?.['grimor
   const storage = await import(pathToFileURL(path.join(moduleRoot, 'scripts', 'pack-storage.js')).href + `?v=${Date.now()}`);
   const coverage = automation.automationCoverage();
   assert(coverage.phase === '12' && coverage.schemaVersion === 3, 'Cobertura deve declarar Fase 12 / schema 3');
-  assert(coverage.profiles === 71, `Esperados 71 perfis; encontrados ${coverage.profiles}`);
-  assert(coverage.classProfiles === 59 && coverage.subclassProfiles === 12, 'Distribuição classe/subclasse inesperada');
-  assert(coverage.classes === 24 && coverage.subclassBundles === 12, 'Cobertura deve representar 24 classes e 12 subclasses específicas');
-  assert(coverage.activities === 86, `Esperadas 86 Activities; encontradas ${coverage.activities}`);
+  assert(coverage.profiles === 72, `Esperados 72 perfis; encontrados ${coverage.profiles}`);
+  assert(coverage.classProfiles === 60 && coverage.subclassProfiles === 12, 'Distribuição classe/subclasse inesperada');
+  assert(coverage.classes === 25 && coverage.subclassBundles === 12, 'Cobertura deve representar 25 classes e 12 subclasses específicas');
+  assert(coverage.activities === 87, `Esperadas 87 Activities; encontradas ${coverage.activities}`);
   assert(coverage.resources === 37, `Esperadas 37 reservas/usos; encontradas ${coverage.resources}`);
   assert(coverage.effects === 11 && coverage.passiveEffects === 6 && coverage.activityEffects === 5, 'Cobertura de Active Effects inesperada');
-  assert(coverage.byTier.full === 12 && coverage.byTier.partial === 58 && coverage.byTier.description === 1, 'Distribuição de tiers inesperada');
+  assert(coverage.byTier.full === 12 && coverage.byTier.partial === 59 && coverage.byTier.description === 1, 'Distribuição de tiers inesperada');
   const support = automation.phase12Support();
   assert(support.catalogAudit && support.subclassSpecificProfiles && support.profileTargetingByBundleId && support.partialRecoveryFormulas, 'Recursos centrais da Fase 12 ausentes');
   assert(support.auraPropagation === false && support.conditionalAttackEffects === false, 'Fase 12 não deve prometer aura/efeitos condicionais globais');
@@ -51,9 +51,9 @@ function effectByKey(doc, key) { return effects(doc).find(e => e.flags?.['grimor
     for (const k of Object.keys(auditTotals)) auditTotals[k] += Number(a[k] ?? 0);
     matched.push(...a.entries.filter(e => e.status === 'profiled').map(e => e.profileId));
   }
-  assert(auditTotals.features === 2370, 'Auditoria deve cobrir as 2370 características de origem');
-  assert(auditTotals.profiled === 71 && new Set(matched).size === 71, 'Todos os 71 perfis devem casar exatamente no catálogo');
-  assert(auditTotals.candidateHigh === 289 && auditTotals.candidateMedium === 718 && auditTotals.textual === 1292, 'Distribuição da auditoria do catálogo mudou inesperadamente');
+  assert(auditTotals.features === 2411, 'Auditoria deve cobrir as 2411 características de origem');
+  assert(auditTotals.profiled === 72 && new Set(matched).size === 72, 'Todos os 72 perfis devem casar exatamente no catálogo');
+  assert(auditTotals.candidateHigh === 292 && auditTotals.candidateMedium === 732 && auditTotals.textual === 1315, 'Distribuição da auditoria do catálogo mudou inesperadamente');
   for (const p of automation.FEATURE_AUTOMATION_PROFILES) assert(matched.filter(id => id === p.id).length === 1, `${p.id}: perfil deve corresponder exatamente a uma característica`);
 
   let sequence = 0;
@@ -77,15 +77,15 @@ function effectByKey(doc, key) { return effects(doc).find(e => e.flags?.['grimor
 
   const ordered = [...full.bundles].sort((a,b)=>(a.kind===b.kind?0:a.kind==='class'?-1:1));
   for (const bundle of ordered) await materializer.materializeBundle(bundle, runtime);
-  assert(packs.classes.docs.length === 24 && packs.subclasses.docs.length === 377 && packs.features.docs.length === 2293, 'Materialização completa da Fase 12 mudou as contagens estruturais');
+  assert(packs.classes.docs.length === 25 && packs.subclasses.docs.length === 380 && packs.features.docs.length === 2329, 'Materialização completa da Fase 12 mudou as contagens estruturais');
   assert(Object.values(packs).every(pack => pack.locked), 'Packs devem terminar bloqueados');
   assert(runtime.listWorldItems().length === 0, 'Fase 12 não deve criar Items no Mundo');
 
   const profiledDocs = packs.features.docs.filter(d => d.flags?.['grimorio-importer']?.automation?.applied);
-  assert(profiledDocs.length === 71, `Esperadas 71 características perfiladas materializadas; encontradas ${profiledDocs.length}`);
+  assert(profiledDocs.length === 72, `Esperadas 72 características perfiladas materializadas; encontradas ${profiledDocs.length}`);
   const materializedActivities = profiledDocs.reduce((n,d)=>n+acts(d).length,0);
   const materializedEffects = profiledDocs.reduce((n,d)=>n+effects(d).length,0);
-  assert(materializedActivities === 86, `Activities materializadas inesperadas: ${materializedActivities}`);
+  assert(materializedActivities === 87, `Activities materializadas inesperadas: ${materializedActivities}`);
   assert(materializedEffects === 11, `Active Effects materializados inesperados: ${materializedEffects}`);
 
   // Integridade genérica do schema produzido.
@@ -147,6 +147,10 @@ function effectByKey(doc, key) { return effects(doc).find(e => e.flags?.['grimor
   const ofuda = featureDoc(packs.features, 'spiritual-emissary', 'OFUDAS DE CURA');
   const ofudaAct = actByName(ofuda,'Ofudas de Cura');
   assert(ofudaAct?.consumption?.scaling?.allowed === true && ofudaAct.consumption.targets?.[0]?.target === 'spiritual-emissary-energia-espiritual', 'Ofudas de Cura deve consumir Energia Espiritual com scaling');
+
+  const cultivatorAuthority = featureDoc(packs.features, 'cultivator-dandwiki', 'AUTORIDADE DIVINA');
+  const authorityActivity = actByName(cultivatorAuthority, 'Apelar à Autoridade Divina');
+  assert(authorityActivity?.roll?.formula === '1d100' && authorityActivity?.activation?.type === 'action', 'Autoridade Divina do Cultivador deve fornecer Activity de ação com rolagem 1d100');
 
   // Perfis de subclasses devem ser isolados por bundle ID.
   const vengeance = featureDoc(packs.features, 'juramento-vinganca', 'CANALIZAR DIVINDADE');

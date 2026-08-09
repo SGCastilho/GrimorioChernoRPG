@@ -28,7 +28,7 @@
   "nativeMapping": {
     "status": "review",
     "warnings": [
-      "A habilidade de conjuração do Domador é escolhida entre Inteligência, Sabedoria ou Carisma; a Fase 5 deverá preservar essa escolha."
+      "A habilidade de conjuração do Domador é escolhida entre Inteligência, Sabedoria ou Carisma; o runtime do Grimório Importer solicita e aplica essa escolha no Actor."
     ]
   },
   "class": {

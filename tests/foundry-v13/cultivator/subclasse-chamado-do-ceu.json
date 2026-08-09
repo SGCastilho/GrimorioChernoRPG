@@ -1,0 +1,219 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "cultivator-calling-heaven",
+    "identifier": "cultivator-calling-heaven",
+    "name": "Chamado do Céu",
+    "originalName": "Calling of Heaven",
+    "aliases": [
+      "Calling of Heaven",
+      "Chamado do Céu"
+    ]
+  },
+  "source": {
+    "sourceId": "dandwiki-cultivator",
+    "title": "D&D Wiki — Cultivator (5e Class)",
+    "pages": "19–21",
+    "chapter": "Chamados à Divindade",
+    "page": 19
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cultivator-dandwiki",
+    "identifier": "cultivator",
+    "name": "Cultivador"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cultivator",
+    "selectionLevel": 6,
+    "description": "Cultivadores que procuram divindade por compaixão, fé e influência espiritual, restringindo seu Núcleo aos Qi de Felicidade, Seguidor e Ganância.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-chamado-do-ceu",
+        "title": "Magias do Chamado do Céu",
+        "page": 19,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível"
+          },
+          {
+            "key": "felicidade",
+            "label": "Felicidade"
+          },
+          {
+            "key": "seguidor",
+            "label": "Seguidor"
+          },
+          {
+            "key": "ganancia",
+            "label": "Ganância"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "6º",
+            "felicidade": "Aura de Vida; Aura de Vitalidade; Proteção contra a Morte",
+            "seguidor": "Discurso Motivacional; Localizar Criatura",
+            "ganancia": "Cabana Minúscula; Mesclar-se às Rochas; Indetectável"
+          },
+          {
+            "nivel": "10º",
+            "felicidade": "Revivificar",
+            "seguidor": "Similaridade; Missão",
+            "ganancia": "Enfeitiçar Monstro"
+          },
+          {
+            "nivel": "14º",
+            "felicidade": "Ressurreição; Palavra de Poder: Cura",
+            "seguidor": "Miragem Arcana; Palavra de Poder: Atordoar; Dominar Monstro",
+            "ganancia": "Antipatia/Simpatia; Simulacro"
+          },
+          {
+            "nivel": "18º",
+            "felicidade": "Ressurreição Verdadeira",
+            "seguidor": "Grito Psíquico; Palavra de Poder: Matar",
+            "ganancia": "Mudar Forma"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 19
+  },
+  "features": [
+    {
+      "key": "subclass.cultivator-calling-heaven.feature.sacrificio-pelo-bem.l6.1",
+      "name": "SACRIFÍCIO PELO BEM",
+      "level": 6,
+      "description": "Ao escolher este Chamado no 6º nível, seu Núcleo da Alma perde permanentemente a capacidade de conter Qi Antigo, Demoníaco e Esotérico. Você não pode recuperá-los com o Ritual de Alteração da Alma. Se estiver usando um desses tipos, muda imediatamente para Ganância, Felicidade ou Seguidor, à sua escolha.",
+      "page": 19,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-heaven.feature.quietude-do-ceu.l6.1",
+      "name": "QUIETUDE DO CÉU",
+      "level": 6,
+      "description": "Como ação bônus, você pode gastar 2 Qi para encerrar um efeito de estado/condição em si mesmo ou em outra criatura que possa ver a até 9 metros.",
+      "page": 19,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-heaven.feature.retribuicao-da-fe.l6.1",
+      "name": "RETRIBUIÇÃO DA FÉ",
+      "level": 6,
+      "description": "Ao escolher este Chamado, você se torna sacerdote errante de uma religião ou fundador de uma nova. Pode erguer santuários, pregar sua fé e definir seus preceitos. Quando alguém decide seguir sua religião e reza, pode realizar um teste de Religião com CD igual a 20 − seu modificador de Sabedoria. A pessoa só pode repetir esse teste uma vez por semana e possui vantagem se você ou um sacerdote de sua fé estiver presente.\n\nEm sucesso, uma magia correspondente a um dos preceitos da religião é conjurada sobre o fiel. Se houver vários preceitos, ele escolhe qual pedir. A magia dura normalmente e, se exigir concentração, o fiel é considerado o conjurador. Você pode escolher magias/preceitos apropriados, mas a magia deve ser conhecida por você e não pode ter nível superior a um terço do seu Nível de Magia, arredondado para baixo. Exemplos da fonte: Bem-estar — Santuário; Fortuna — Distorcer Valor; Orientação — Orientação; Saúde Forte — Ajuda; Força — Aprimorar Habilidade; Proteção — Proteção.\n\nAo se concentrar dentro de um santuário dedicado a uma de suas divindades ou a você, pode projetar-se astralmente para um Reino Divino onde Cultivadores conversam, pedem conselhos e concedem missões. Cada nova característica do Chamado concede acesso a um reino mais prestigioso, do Reino Divino Menor ao Médio, Maior e por fim ao Palácio de Jade. A partir do 14º nível, se um fiel fizer o teste com você ou um sacerdote presente, ele obtém sucesso automaticamente.",
+      "page": 19,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-heaven.feature.tranquilidade-absoluta.l10.1",
+      "name": "TRANQUILIDADE ABSOLUTA",
+      "level": 10,
+      "description": "No 10º nível, enquanto estiver consciente você irradia serenidade. Ao fim de um descanso longo, recebe o efeito da magia Santuário até o início do próximo descanso longo, usando sua CD de magia. O efeito não termina antecipadamente como Santuário normalmente terminaria; cada criatura específica precisa superar a proteção apenas uma vez para poder atacá-lo.\n\nEnquanto estiver consciente, você também é imune a doenças e venenos.",
+      "page": 20,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-heaven.feature.restauracao-mistica.l10.1",
+      "name": "RESTAURAÇÃO MÍSTICA",
+      "level": 10,
+      "description": "Sempre que rolar um Dado de Alma para recuperar Qi, adicione também seu modificador de Sabedoria à quantidade de Qi recuperada.",
+      "page": 20,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-heaven.feature.edito-da-graca.l14.1",
+      "name": "ÉDITO DA GRAÇA",
+      "level": 14,
+      "description": "Enquanto estiver consciente, criaturas não hostis a até 9 metros recebem um bônus em testes de resistência de Sabedoria igual ao seu modificador de Sabedoria.\n\nAlém disso, quando você ou uma criatura a até 9 metros realizar um teste de resistência, você pode usar sua reação e gastar qualquer quantidade de Qi para adicionar esse valor como bônus ao resultado. Você pode dividir o Qi gasto entre vários testes de resistência. A decisão pode ser tomada depois da rolagem, mas antes de o Mestre determinar o resultado.",
+      "page": 20,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-heaven.feature.grao-mestre-do-ceu-final.l18.1",
+      "name": "GRÃO-MESTRE DO CÉU FINAL",
+      "level": 18,
+      "description": "No 18º nível, você manifesta os primeiros sinais de verdadeira divindade.\n\n• Sempre que uma criatura recuperar PV por uma de suas magias, você pode causar dano radiante igual à metade dos PV recuperados a uma criatura a até 9 metros dela.\n• Como ação, você pode absorver a Ganância de moedas de ouro ou objetos valiosos e convertê-la diretamente em Qi. Cada 100 po de valor tornam-se 1 Qi e são perdidas para o além.\n• A CD de resistência de suas magias aumenta em metade do seu modificador de Carisma, arredondado para cima.",
+      "page": 21,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -1,16 +1,21 @@
 {
   "phase": 10,
-  "appVersion": "5.22.1",
-  "importerVersion": "0.6.0",
-  "classBundles": 24,
-  "subclassBundles": 377,
-  "individualBundles": 401,
+  "appVersion": "5.26.0",
+  "importerVersion": "0.9.2",
+  "classBundles": 25,
+  "subclassBundles": 380,
+  "individualBundles": 405,
   "samples": [
     "classe-barbaro-individual.json",
     "subclasse-caminho-do-kaiju-individual.json",
     "classe-cavaleiro-draconico-individual.json",
     "subclasse-tecelao-de-sangue-individual.json",
-    "pacote-barbaro-classe-completa.json"
+    "pacote-barbaro-classe-completa.json",
+    "classe-cultivador-individual.json",
+    "subclasse-chamado-do-ceu-individual.json",
+    "subclasse-chamado-do-mal-individual.json",
+    "subclasse-chamado-acromatico-individual.json",
+    "pacote-cultivador-classe-completa.json"
   ],
   "schemas": {
     "bundle": "grimorio-foundry-class-bundle@1",

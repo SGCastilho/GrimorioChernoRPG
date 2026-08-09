@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 5.25.1
+# Grimório D&D 5e PT-BR — versão 5.26.0
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
 
@@ -9,6 +9,21 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 3. Abra `index.html` em um navegador moderno.
 
 Os catálogos incorporados funcionam offline.
+
+## Novidades da versão 5.26 — Cultivador
+
+- Integrada integralmente a classe **Cultivador (Cultivator)** a partir do PDF do D&D Wiki fornecido para o projeto, com tradução completa para PT-BR.
+- A progressão cobre os **20 níveis**, incluindo **Qi**, **Nível de Magia** e **Limite de Amplificação** próprios da classe.
+- Foram estruturados **22 blocos de características de classe**, **10 tabelas**, **5 referências editoriais/multiclasse** e a lista de magias do Cultivador.
+- Foram adicionados os três **Chamados à Divindade**: **Chamado do Mal**, **Chamado Acromático** e **Chamado do Céu**, totalizando **19 características de subclasse** e 3 tabelas de Magias do Chamado.
+- As dez Magias da Alma da progressão — Rajada, Conexão, Alteração, Explosão, Amplificação, Esfera, Campo, Deslocamento, Santuário e Tempestade conforme os blocos da fonte — permanecem incorporadas às características da classe com seus efeitos por tipo de Qi.
+- A inconsistência da tabela Esotérica de **Amplificação da Alma** (rotulada como d4, mas com seis resultados) foi documentada sem correção inventada. O cabeçalho **Sweeping Soul Shaping**, sem texto mecânico nem entrada na progressão, foi preservado como referência editorial.
+- Magias homebrew apenas citadas na lista do PDF, mas sem bloco de regras no documento, permanecem somente como referências; nenhuma mecânica ausente foi fabricada.
+- O **Grimório Importer 0.9.2** reconhece `cultivator`, seus três Chamados e seus bundles individuais. O Item de classe usa Sabedoria como habilidade de conjuração, mas mantém `progression: none` para não criar espaços de magia que a classe não possui — sua conjuração funciona por **Qi**.
+- **Autoridade Divina** recebe uma Activity conservadora de ação com rolagem `1d100`; sucesso por nível e recarga condicional permanecem sob conferência do jogador/Mestre.
+- O catálogo atual passa para **25 classes, 380 subclasses/especializações e 25 progressões estruturadas**.
+
+Consulte `INTEGRACAO_CULTIVADOR_5.26.md`, `TESTE_FOUNDRY_CULTIVADOR_5.26.md` e `VALIDACAO_CULTIVADOR_5.26.md`.
 
 ## Ajuste 5.25.1 — Organização das características no Foundry
 
@@ -219,9 +234,9 @@ Consulte `FOUNDRY_IMPORTER_FASE12.md`, `TESTE_FOUNDRY_FASE12.md` e `VALIDACAO_FO
 
 ## Conteúdo atual
 
-- **24 classes**.
-- **377 subclasses/especializações**.
-- **24 progressões estruturadas**.
+- **25 classes**.
+- **380 subclasses/especializações**.
+- **25 progressões estruturadas**.
 - **1170 registros-base de magias/poderes** antes de conteúdo personalizado do usuário.
 - 361 magias do Livro do Jogador.
 - 95 magias do Guia de Xanathar.
@@ -232,6 +247,15 @@ Consulte `FOUNDRY_IMPORTER_FASE12.md`, `TESTE_FOUNDRY_FASE12.md` e `VALIDACAO_FO
 - 62 magias do Capítulo 13 de *Ryoko's Guide to the Yokai Realms*, integralmente localizadas para PT-BR.
 - 240 magias/poderes completos + 1 referência incompleta do Spell Compendium.
 - Conteúdo homebrew incorporado anteriormente.
+
+### Cultivador
+
+- Classe-base: **Cultivador**.
+- Chamados à Divindade: **3** — Mal, Acromático e Céu.
+- Características de classe estruturadas: **22**.
+- Características de subclasse estruturadas: **19**.
+- Tabelas de classe: **10**; tabelas de subclasse: **3**.
+- Progressão própria: **Qi 5–80**, Nível de Magia 1º–9º e Limite de Amplificação até **∞** no 20º nível.
 
 ### Distribuição de Zagalhta
 

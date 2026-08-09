@@ -76,7 +76,7 @@ export function phase8Support() {
     subclassesFor: [...READY_CLASS_IDENTIFIERS],
     specialClasses: [...SPECIAL_CLASS_IDENTIFIERS],
     reviewClasses: [...REVIEW_CLASS_IDENTIFIERS],
-    counts: { classes: READY_CLASS_IDENTIFIERS.length, subclasses: 377, specialClasses: SPECIAL_CLASS_IDENTIFIERS.length, specialSubclasses: 30, reviewClasses: REVIEW_CLASS_IDENTIFIERS.length },
+    counts: { classes: READY_CLASS_IDENTIFIERS.length, subclasses: 380, specialClasses: SPECIAL_CLASS_IDENTIFIERS.length, specialSubclasses: 30, reviewClasses: REVIEW_CLASS_IDENTIFIERS.length },
     targetFoundry: TARGET_FOUNDRY,
     targetDnd5e: TARGET_DND5E,
     storage: "module-compendiums",

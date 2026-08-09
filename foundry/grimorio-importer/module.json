@@ -2,7 +2,7 @@
   "id": "grimorio-importer",
   "title": "Grimório Importer",
   "description": "Importador de classes e subclasses do Grimório para compêndios nativos DnD5e, com Advancements portáveis, pacotes JSON, automação mecânica conservadora e organização hierárquica das características por classe/subclasse. Fase 12.1 para Foundry VTT 13.351.",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "authors": [
     {
       "name": "Projeto Grimório D&D 5e PT-BR"

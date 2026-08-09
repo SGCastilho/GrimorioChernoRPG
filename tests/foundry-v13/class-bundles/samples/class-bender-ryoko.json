@@ -29,7 +29,7 @@
   "nativeMapping": {
     "status": "review",
     "warnings": [
-      "A habilidade de conjuração do Dobrador é escolhida entre Inteligência, Sabedoria ou Carisma no 1º nível; a Fase 5 deverá preservar essa escolha."
+      "A habilidade de conjuração do Dobrador é escolhida entre Inteligência, Sabedoria ou Carisma; o runtime do Grimório Importer solicita e aplica essa escolha no Actor."
     ]
   },
   "class": {

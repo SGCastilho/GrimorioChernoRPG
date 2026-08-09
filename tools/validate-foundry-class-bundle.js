@@ -37,7 +37,7 @@ function load(file) {
   'data/tasha-subclasses.js',
   'data/scag-subclasses.js',
   'data/homebrew-paladin-bahamut.js',
-  'data/homebrew-spellblade-class.js',
+  'data/homebrew-spellblade-class.js','data/cultivator-class.js',
   'data/export/foundry-class-overrides.js',
   'js/exporters/registry.js',
   'js/exporters/foundry-class-bundle.js'
@@ -50,12 +50,12 @@ const report = api.inspectCatalog(classes, subclasses);
 const errors = [];
 
 const EXPECTED = {
-  classes: 24,
-  subclasses: 377,
-  classFeatures: 345,
-  subclassFeatures: 2025,
-  classTables: 23,
-  subclassTables: 135,
+  classes: 25,
+  subclasses: 380,
+  classFeatures: 367,
+  subclassFeatures: 2044,
+  classTables: 33,
+  subclassTables: 138,
   nativeReviewIds: new Set(['dragoneer', 'frame-pilot', 'bender-ryoko', 'tamer-ryoko', 'blood-minister-somnus']),
   unlevelledClassFeatures: 29,
   subclassesMissingSource: 41

@@ -28,7 +28,7 @@
   "nativeMapping": {
     "status": "review",
     "warnings": [
-      "Dados de Vida, salvaguardas e proficiências variam conforme o Conceito Central; a Fase 5 deverá materializar essas escolhas de forma condicional.",
+      "Dados de Vida, salvaguardas, proficiências e conjuração variam conforme o Conceito Central; o Grimório Importer aplica o perfil especial ao Actor quando o conceito é escolhido.",
       "Dado de Vida não padrão para o Item de classe vanilla: Varia por Conceito Central (d6–d12)."
     ]
   },

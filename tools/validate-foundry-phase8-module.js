@@ -24,7 +24,7 @@ function applyUpdate(source, data) {
 
 (async()=>{
   const manifest = JSON.parse(fs.readFileSync(path.join(moduleRoot,'module.json'),'utf8'));
-  assert(manifest.version === '0.4.0', 'module.json deve estar em 0.4.0');
+  assert(['0.4.0','0.5.0','0.6.0','0.7.0','0.8.0','0.9.0','0.9.1','0.9.2'].includes(manifest.version), 'module.json deve preservar o suporte da Fase 8');
   const mainSource = fs.readFileSync(path.join(moduleRoot,'scripts','main.js'),'utf8');
   assert(mainSource.includes('registerSpecialRuntimeHooks();'), 'main.js deve registrar o runtime especial');
   assert(mainSource.includes('/grimorio-special') && mainSource.includes('/grimorio-configurar'), 'Comandos de configuração especial ausentes');
@@ -40,19 +40,19 @@ function applyUpdate(source, data) {
   const { PACKS } = storage;
   const support = phase8Support();
 
-  assert(support.counts.classes === 24 && support.classes.length === 24, 'Fase 8 deve habilitar 24 classes');
-  assert(support.counts.subclasses === 377, 'Fase 8 deve habilitar 377 subclasses');
+  assert(support.counts.classes === 25 && support.classes.length === 25, 'Suporte atual deve habilitar 25 classes');
+  assert(support.counts.subclasses === 380, 'Suporte atual deve habilitar 380 subclasses');
   assert(support.counts.specialClasses === 5 && support.specialClasses.length === 5, 'Fase 8 deve ter 5 classes especiais');
   assert(support.counts.specialSubclasses === 30, 'Fase 8 deve ter 30 subclasses especiais');
   assert(support.reviewClasses.length === 0, 'Fase 8 não deve manter classes bloqueadas');
   assert(support.specialRuntimeConfiguration && support.dragoneerConceptProfiles === 12, 'Suporte especial incompleto');
-  assert(profiles.READY_CLASS_IDENTIFIERS.length === 24 && profiles.REVIEW_CLASS_IDENTIFIERS.length === 0, 'Perfis de classe inconsistentes');
+  assert(profiles.READY_CLASS_IDENTIFIERS.length === 25 && profiles.REVIEW_CLASS_IDENTIFIERS.length === 0, 'Perfis de classe inconsistentes');
   assert(specialProfiles.SPECIAL_CLASS_IDENTIFIERS.length === 5, 'Lista de classes especiais inconsistente');
   assert(Object.keys(specialProfiles.DRAGONEER_CONCEPT_PROFILES).length === 12, 'Devem existir 12 perfis de Conceito Central');
 
   const phaseRoot = path.join(root,'tests','foundry-v13','phase8');
   const catalog = JSON.parse(fs.readFileSync(path.join(phaseRoot,'catalog.json'),'utf8'));
-  assert(catalog.summary.classes === 24 && catalog.summary.subclasses === 377, 'Catálogo Fase 8 inconsistente');
+  assert(catalog.summary.classes === 25 && catalog.summary.subclasses === 380, 'Catálogo Fase 8 inconsistente');
   assert(catalog.summary.specialClasses === 5 && catalog.summary.specialSubclasses === 30, 'Contagem especial do catálogo inconsistente');
   const classBundles = catalog.classes.map(x => JSON.parse(fs.readFileSync(path.join(phaseRoot,x.file),'utf8')));
   const subclassBundles = catalog.subclasses.map(x => JSON.parse(fs.readFileSync(path.join(phaseRoot,x.file),'utf8')));
@@ -84,8 +84,8 @@ function applyUpdate(source, data) {
   const results=new Map();
   for(const b of classBundles) results.set(`class:${b.identity.identifier}`,await materializeBundle(b,runtime));
   for(const b of subclassBundles) results.set(`subclass:${b.identity.identifier}`,await materializeBundle(b,runtime));
-  assert(packs.classes.docs.length===24,`Esperado 24 classes, obtido ${packs.classes.docs.length}`);
-  assert(packs.subclasses.docs.length===377,`Esperado 377 subclasses, obtido ${packs.subclasses.docs.length}`);
+  assert(packs.classes.docs.length===25,`Esperado 25 classes, obtido ${packs.classes.docs.length}`);
+  assert(packs.subclasses.docs.length===380,`Esperado 380 subclasses, obtido ${packs.subclasses.docs.length}`);
   assert(Object.values(packs).every(p=>p.locked),'Packs devem estar bloqueados ao final');
   assert(runtime.listWorldItems().length===0,'Fase 8 não deve criar Items de Mundo');
 
@@ -163,7 +163,7 @@ function applyUpdate(source, data) {
   const benderBundle=classBundles.find(b=>b.identity.identifier==='bender');
   const dragAgain=await materializeBundle(dragBundle,runtime); const benderAgain=await materializeBundle(benderBundle,runtime);
   assert(dragAgain.item.uuid===before.drag && benderAgain.item.uuid===before.bender,'Reimportação alterou UUID de classe especial');
-  assert(packs.classes.docs.length===24 && packs.features.docs.length===before.features,'Reimportação criou duplicações');
+  assert(packs.classes.docs.length===25 && packs.features.docs.length===before.features,'Reimportação criou duplicações');
 
   const failPacks=Object.fromEntries(Object.entries(PACKS).map(([k,s])=>[k,new MockPack(s)]));
   const failRuntime={...runtime,getPack:k=>failPacks[k],listPackItems:async k=>failPacks[k].getDocuments(),createPackItem:async()=>{throw new Error('falha simulada');},setPackLocked:async(k,l)=>failPacks[k].configure({locked:l}),isPackLocked:k=>failPacks[k].locked};

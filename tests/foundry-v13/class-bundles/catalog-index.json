@@ -356,7 +356,7 @@
       "nativeMapping": {
         "status": "review",
         "warnings": [
-          "Dados de Vida, salvaguardas e proficiências variam conforme o Conceito Central; a Fase 5 deverá materializar essas escolhas de forma condicional.",
+          "Dados de Vida, salvaguardas, proficiências e conjuração variam conforme o Conceito Central; o Grimório Importer aplica o perfil especial ao Actor quando o conceito é escolhido.",
           "Dado de Vida não padrão para o Item de classe vanilla: Varia por Conceito Central (d6–d12)."
         ]
       },
@@ -378,7 +378,7 @@
       "nativeMapping": {
         "status": "review",
         "warnings": [
-          "As proficiências de salvaguarda do Piloto de Frame são escolhas variáveis; a Fase 5 deverá usar uma escolha de Trait/Advancement ou rotina equivalente."
+          "As proficiências de salvaguarda do Piloto de Frame são escolhas variáveis; o Grimório Importer as materializa em dois pools nativos de Trait Advancement."
         ]
       },
       "featureCount": 14,
@@ -399,7 +399,7 @@
       "nativeMapping": {
         "status": "review",
         "warnings": [
-          "A habilidade de conjuração do Dobrador é escolhida entre Inteligência, Sabedoria ou Carisma no 1º nível; a Fase 5 deverá preservar essa escolha."
+          "A habilidade de conjuração do Dobrador é escolhida entre Inteligência, Sabedoria ou Carisma; o runtime do Grimório Importer solicita e aplica essa escolha no Actor."
         ]
       },
       "featureCount": 9,
@@ -420,7 +420,7 @@
       "nativeMapping": {
         "status": "review",
         "warnings": [
-          "A habilidade de conjuração do Domador é escolhida entre Inteligência, Sabedoria ou Carisma; a Fase 5 deverá preservar essa escolha."
+          "A habilidade de conjuração do Domador é escolhida entre Inteligência, Sabedoria ou Carisma; o runtime do Grimório Importer solicita e aplica essa escolha no Actor."
         ]
       },
       "featureCount": 17,
@@ -441,7 +441,7 @@
       "nativeMapping": {
         "status": "review",
         "warnings": [
-          "O Ministro de Sangue usa 2d4 Dados de Vida por nível, enquanto o Item de classe padrão do dnd5e trabalha com um único dado-base; a Fase 5 exigirá tratamento customizado.",
+          "O Ministro de Sangue usa 2d4 Dados de Vida por nível; o Grimório Importer trata a rolagem de ganho de PV como 2d4, mas o pool nativo de Dados de Vida de descanso continua exigindo acompanhamento especial.",
           "Dado de Vida não padrão para o Item de classe vanilla: 2d4."
         ]
       },
@@ -486,6 +486,25 @@
       "featureCount": 21,
       "subclassCount": 9,
       "subclassSelectionLevel": 3
+    },
+    {
+      "grimorioId": "cultivator-dandwiki",
+      "identifier": "cultivator",
+      "name": "Cultivador",
+      "source": {
+        "sourceId": "dandwiki-cultivator",
+        "title": "D&D Wiki — Cultivator (5e Class)",
+        "pages": "1–22",
+        "chapter": "Classe Cultivador e Chamados à Divindade",
+        "page": 3
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "featureCount": 22,
+      "subclassCount": 3,
+      "subclassSelectionLevel": 6
     }
   ],
   "subclasses": [
@@ -7651,6 +7670,63 @@
       },
       "selectionLevel": 3,
       "featureCount": 6
+    },
+    {
+      "grimorioId": "cultivator-calling-evil",
+      "identifier": "cultivator-calling-evil",
+      "name": "Chamado do Mal",
+      "parentClass": {
+        "grimorioId": "cultivator-dandwiki",
+        "identifier": "cultivator",
+        "name": "Cultivador"
+      },
+      "source": {
+        "sourceId": "dandwiki-cultivator",
+        "title": "D&D Wiki — Cultivator (5e Class)",
+        "pages": "15–17",
+        "chapter": "Chamados à Divindade",
+        "page": 15
+      },
+      "selectionLevel": 6,
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "cultivator-calling-achromatic",
+      "identifier": "cultivator-calling-achromatic",
+      "name": "Chamado Acromático",
+      "parentClass": {
+        "grimorioId": "cultivator-dandwiki",
+        "identifier": "cultivator",
+        "name": "Cultivador"
+      },
+      "source": {
+        "sourceId": "dandwiki-cultivator",
+        "title": "D&D Wiki — Cultivator (5e Class)",
+        "pages": "17–19",
+        "chapter": "Chamados à Divindade",
+        "page": 17
+      },
+      "selectionLevel": 6,
+      "featureCount": 6
+    },
+    {
+      "grimorioId": "cultivator-calling-heaven",
+      "identifier": "cultivator-calling-heaven",
+      "name": "Chamado do Céu",
+      "parentClass": {
+        "grimorioId": "cultivator-dandwiki",
+        "identifier": "cultivator",
+        "name": "Cultivador"
+      },
+      "source": {
+        "sourceId": "dandwiki-cultivator",
+        "title": "D&D Wiki — Cultivator (5e Class)",
+        "pages": "19–21",
+        "chapter": "Chamados à Divindade",
+        "page": 19
+      },
+      "selectionLevel": 6,
+      "featureCount": 7
     }
   ]
 }

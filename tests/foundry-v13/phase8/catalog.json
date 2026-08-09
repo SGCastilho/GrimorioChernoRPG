@@ -8,12 +8,12 @@
     "importer": "0.4.0"
   },
   "summary": {
-    "classes": 24,
-    "subclasses": 377,
+    "classes": 25,
+    "subclasses": 380,
     "specialClasses": 5,
     "specialSubclasses": 30,
-    "classFeatures": 345,
-    "subclassFeatures": 2025
+    "classFeatures": 367,
+    "subclassFeatures": 2044
   },
   "classes": [
     {
@@ -253,6 +253,16 @@
       "file": "bundles/classes/spellblade.json",
       "featureCount": 21,
       "subclassCount": 9,
+      "special": false,
+      "nativeMappingStatus": "ready"
+    },
+    {
+      "grimorioId": "cultivator-dandwiki",
+      "identifier": "cultivator",
+      "name": "Cultivador",
+      "file": "bundles/classes/cultivator.json",
+      "featureCount": 22,
+      "subclassCount": 3,
       "special": false,
       "nativeMappingStatus": "ready"
     }
@@ -3649,6 +3659,33 @@
       "parentIdentifier": "spellblade",
       "file": "bundles/subclasses/spellblade-spellfist.json",
       "featureCount": 6,
+      "specialParent": false
+    },
+    {
+      "grimorioId": "cultivator-calling-evil",
+      "identifier": "cultivator-calling-evil",
+      "name": "Chamado do Mal",
+      "parentIdentifier": "cultivator",
+      "file": "bundles/subclasses/cultivator-calling-evil.json",
+      "featureCount": 6,
+      "specialParent": false
+    },
+    {
+      "grimorioId": "cultivator-calling-achromatic",
+      "identifier": "cultivator-calling-achromatic",
+      "name": "Chamado Acromático",
+      "parentIdentifier": "cultivator",
+      "file": "bundles/subclasses/cultivator-calling-achromatic.json",
+      "featureCount": 6,
+      "specialParent": false
+    },
+    {
+      "grimorioId": "cultivator-calling-heaven",
+      "identifier": "cultivator-calling-heaven",
+      "name": "Chamado do Céu",
+      "parentIdentifier": "cultivator",
+      "file": "bundles/subclasses/cultivator-calling-heaven.json",
+      "featureCount": 7,
       "specialParent": false
     }
   ],

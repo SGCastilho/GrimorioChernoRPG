@@ -1,6 +1,17 @@
-# Grimório Importer — v0.9.1
+# Grimório Importer — v0.9.2
 
 Módulo complementar do **Grimório D&D 5e PT-BR** para **Foundry VTT 13.351 + DnD5e 5.3.3**.
+
+## Atualização 0.9.2 — Cultivador
+
+O importador passa a reconhecer a nova classe **Cultivador** (`identifier: cultivator`) e seus três Chamados à Divindade.
+
+- Catálogo atual: **25 classes + 380 subclasses = 405 bundles**.
+- O Cultivador usa **Sabedoria** como habilidade de conjuração, mas não recebe progressão de slots nativos: sua classe consome **Qi**, conforme a fonte.
+- A seleção de subclasse é criada no **6º nível** com o título **Chamado à Divindade**.
+- As características são organizadas normalmente em `Cultivador/` e em `Cultivador/<Chamado>/` dentro de **Grimório — Características**.
+- **Autoridade Divina** possui Activity parcial de ação com rolagem `1d100`; o módulo não inventa uma recarga fixa porque a fonte diferencia sucesso, falha e o 20º nível.
+- O framework de automação passa a **72 perfis**, **60 de classe + 12 de subclasse**, cobrindo **25/25 famílias de classe**, com **87 Activities**, 37 reservas/usos e 11 Active Effects.
 
 ## Ajuste 0.9.1 — Pastas e nomes das características
 
@@ -33,13 +44,13 @@ A Fase 12 generaliza o framework homologado da Fase 11 sem transformar texto em 
 
 Cobertura atual:
 
-- **71 perfis mecânicos explícitos**;
-- **59 perfis de classe** e **12 de subclasse**;
-- **24/24 famílias de classe** representadas;
-- **86 Activities**;
+- **72 perfis mecânicos explícitos**;
+- **60 perfis de classe** e **12 de subclasse**;
+- **25/25 famílias de classe** representadas;
+- **87 Activities**;
 - **37 reservas/usos**;
 - **11 Active Effects**;
-- tiers: 12 `full`, 58 `partial`, 1 `description`.
+- tiers: 12 `full`, 59 `partial`, 1 `description`.
 
 Novidades centrais:
 
@@ -47,10 +58,10 @@ Novidades centrais:
 - recuperação parcial de usos por fórmula;
 - recursos compartilhados adicionais, como Canalizar Divindade, Pontos de Feitiçaria, Foco, Pontos de Selo e Surto Arcano;
 - primeira expansão direcionada para 12 subclasses;
-- auditoria das 2.370 características de origem, sem automatização cega;
+- auditoria das 2.411 características de origem, sem automatização cega;
 - comando `/grimorio-auditoria-automacao`.
 
-A auditoria atual identifica 71 características perfiladas, 289 candidatos de alta prioridade, 718 de prioridade média e 1.292 predominantemente textuais/contextuais. **Candidato não significa automação segura**: o perfil continua exigindo revisão explícita.
+A auditoria atual identifica 72 características perfiladas, 292 candidatos de alta prioridade, 732 de prioridade média e 1.315 predominantemente textuais/contextuais. **Candidato não significa automação segura**: o perfil continua exigindo revisão explícita.
 
 Auras dinâmicas e bônus condicionais globais continuam desativados.
 

@@ -54,7 +54,8 @@
       ]
     },
     'spiritual-emissary': { identifier: 'spiritual-emissary' },
-    'spellblade': { identifier: 'spellblade' }
+    'spellblade': { identifier: 'spellblade' },
+    'cultivator-dandwiki': { identifier: 'cultivator' }
   };
 
   global.GRIMORIO_FOUNDRY_CLASS_OVERRIDES = Object.freeze({

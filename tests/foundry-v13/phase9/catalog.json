@@ -4,16 +4,16 @@
   "generatedFor": {
     "foundry": "13.351",
     "dnd5e": "5.3.3",
-    "importer": "0.5.0",
-    "grimorio": "5.21.0"
+    "importer": "0.9.2",
+    "grimorio": "5.26.0"
   },
   "packageProfile": "foundry13-dnd5e533-grimorio-class-package-v1",
   "packageSchema": "grimorio-foundry-class-package@1",
   "summary": {
-    "bundles": 401,
-    "classes": 24,
-    "subclasses": 377,
-    "features": 2370,
+    "bundles": 405,
+    "classes": 25,
+    "subclasses": 380,
+    "features": 2411,
     "specialClasses": 5,
     "specialSubclasses": 30
   },
@@ -69,6 +69,19 @@
         "features": 56,
         "specialClasses": 1,
         "specialSubclasses": 8
+      }
+    },
+    {
+      "id": "cultivator-dandwiki",
+      "name": "Cultivador",
+      "file": "packages/classe-cultivator.json",
+      "summary": {
+        "bundles": 4,
+        "classes": 1,
+        "subclasses": 3,
+        "features": 41,
+        "specialClasses": 0,
+        "specialSubclasses": 0
       }
     }
   ]

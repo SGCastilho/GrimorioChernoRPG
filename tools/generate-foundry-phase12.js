@@ -77,7 +77,7 @@ function safeName(value) {
   const audit = {
     schema: 'grimorio-foundry-automation-audit',
     schemaVersion: 1,
-    generatedFor: { grimorio: '5.25.0', importer: '0.9.0', foundry: '13.351', dnd5e: '5.3.3', phase: '12' },
+    generatedFor: { grimorio: '5.26.0', importer: '0.9.2', foundry: '13.351', dnd5e: '5.3.3', phase: '12' },
     automation: coverage,
     catalog: {
       bundles: full.bundles?.length ?? 0,
@@ -99,7 +99,7 @@ function safeName(value) {
   writeJson(path.join(phaseRoot, 'automation-audit.json'), audit);
 
   const sampleIds = [
-    'bard', 'cleric', 'sorcerer', 'sword-saint-retia', 'bender-ryoko', 'spiritual-emissary', 'spellblade',
+    'bard', 'cleric', 'sorcerer', 'sword-saint-retia', 'bender-ryoko', 'spiritual-emissary', 'spellblade', 'cultivator-dandwiki',
     'arquifada', 'dominio-guerra', 'circulo-lua', 'magia-selvagem', 'mestre-batalha',
     'escola-adivinhacao', 'mao-aberta', 'juramento-vinganca', 'ryoko-barbarian-path-kaiju'
   ];
@@ -114,7 +114,7 @@ function safeName(value) {
   }
   writeJson(path.join(phaseRoot, 'samples.json'), { generatedFor: audit.generatedFor, samples: sampleIndex });
 
-  const report = `# Validação — Automação Foundry Fase 12 — Grimório 5.25\n\n` +
+  const report = `# Validação — Automação Foundry Fase 12 — Grimório 5.26\n\n` +
     `## Resultado\n\n` +
     `- Bundles auditados: **${audit.catalog.bundles}** (${audit.catalog.classes} classes + ${audit.catalog.subclasses} subclasses).\n` +
     `- Características de origem auditadas: **${audit.catalog.features}**.\n` +
@@ -126,7 +126,7 @@ function safeName(value) {
     `- Candidatos de prioridade média: **${audit.catalog.candidateMedium}**.\n` +
     `- Predominantemente textuais/contextuais: **${audit.catalog.textual}**.\n\n` +
     `## Cobertura do framework\n\n` +
-    `- Classes representadas por perfis: **${coverage.classes}/24**.\n` +
+    `- Classes representadas por perfis: **${coverage.classes}/25**.\n` +
     `- Perfis de classe: **${coverage.classProfiles}**.\n` +
     `- Perfis de subclasse: **${coverage.subclassProfiles}**, em ${coverage.subclassBundles} subclasses específicas.\n` +
     `- Activities planejadas: **${coverage.activities}**.\n` +
@@ -138,10 +138,10 @@ function safeName(value) {
     `- Perfis sem correspondência: ${audit.profileIntegrity.unmatchedProfiles.length}.\n` +
     `- Perfis com correspondência duplicada: ${audit.profileIntegrity.duplicateMatches.length}.\n\n` +
     `> Os grupos “alta prioridade” e “prioridade média” são apenas sinais de auditoria. Eles **não** significam que a característica pode ser automatizada com segurança sem revisão.\n`;
-  fs.writeFileSync(path.join(root, 'VALIDACAO_FOUNDRY_AUTOMACAO_5.25.md'), report);
+  fs.writeFileSync(path.join(root, 'VALIDACAO_FOUNDRY_AUTOMACAO_5.26.md'), report);
 
-  assert(totals.features === 2370, `Esperadas 2370 características; encontradas ${totals.features}`);
-  assert(totals.profiled === 71, `Esperados 71 perfis aplicados; encontrados ${totals.profiled}`);
+  assert(totals.features === 2411, `Esperadas 2411 características; encontradas ${totals.features}`);
+  assert(totals.profiled === 72, `Esperados 72 perfis aplicados; encontrados ${totals.profiled}`);
   assert(unmatchedProfiles.length === 0, `Perfis sem correspondência: ${unmatchedProfiles.join(', ')}`);
   assert(duplicateMatches.length === 0, `Perfis com múltiplas correspondências: ${JSON.stringify(duplicateMatches)}`);
   console.log(`PHASE12_AUDIT_OK ${totals.profiled}/${totals.features} perfiladas; ${totals.candidateHigh} high; ${totals.candidateMedium} medium; ${totals.textual} textual`);

@@ -689,6 +689,17 @@ const PROFILES = [
     activities: [ctx => baseActivity({ ...ctx, key: "shield", type: "utility", name: "Deflexão Arcana — Escudo gratuito", activation: "reaction", consumptionTargets: [consumptionTarget("itemUses")], chatFlavor: "Consome o uso gratuito de Escudo. Use/conjure a magia Escudo normalmente na ficha sem gastar espaço." })],
     limitations: ["O uso gratuito é controlado; o Activity não dispara automaticamente outro Item de magia."]
   }),
+  profile("cultivator-divine-authority", "cultivator", "AUTORIDADE DIVINA", AUTOMATION_TIER.PARTIAL, {
+    activities: [ctx => baseActivity({
+      ...ctx, key: "appeal", type: "utility", name: "Apelar à Autoridade Divina", activation: "action",
+      roll: utilityRoll("1d100", { name: "Autoridade Divina", visible: true }),
+      chatFlavor: "Role 1d100. Do 10º ao 19º nível, a manifestação ocorre se o resultado for igual ou inferior ao seu nível de Cultivador. No 20º nível, o sucesso é automático. O Mestre determina a natureza da manifestação."
+    })],
+    limitations: [
+      "O sucesso por nível e o sucesso automático do 20º nível permanecem para conferência do jogador/Mestre.",
+      "A recarga é condicional: após sucesso, 7 dias até o 19º nível; após falha, descanso longo; no 20º nível, descanso longo. Por isso o módulo não aplica uma reserva automática que poderia bloquear usos incorretamente."
+    ]
+  }),
   profile("paladin-channel-divinity", "paladin", "CANALIZAR DIVINDADE", AUTOMATION_TIER.FULL, {
     itemUses: { max: "1", periods: ["sr", "lr"] },
     notes: ["Reserva compartilhada para as opções de Juramento automatizadas."]
@@ -957,7 +968,7 @@ export function phase12Support() {
     subclassSpecificProfiles: true,
     profileTargetingByBundleId: true,
     partialRecoveryFormulas: true,
-    allClassFamiliesRepresented: coverage.classes === 24,
+    allClassFamiliesRepresented: coverage.classes === 25,
     auraPropagation: false,
     conditionalAttackEffects: false,
     ...coverage

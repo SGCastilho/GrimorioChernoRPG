@@ -1,7 +1,7 @@
 export const READY_CLASS_IDENTIFIERS = Object.freeze([
   "barbarian", "bard", "warlock", "cleric", "druid", "sorcerer", "fighter", "rogue", "wizard",
   "monk", "paladin", "ranger", "artificer", "favored-soul", "inscriptor", "petal-knight", "sword-saint",
-  "spiritual-emissary", "spellblade", "dragoneer", "frame-pilot", "bender", "tamer", "blood-minister"
+  "spiritual-emissary", "spellblade", "cultivator", "dragoneer", "frame-pilot", "bender", "tamer", "blood-minister"
 ]);
 
 export const SPECIAL_CLASS_IDENTIFIERS = Object.freeze([
@@ -199,6 +199,18 @@ export const CLASS_PROFILES = Object.freeze({
     subclassTitle: "Técnica de Spellblade", subclassFeatureNames: ["TÉCNICA DE SPELLBLADE"],
     subclassPlaceholderPrefixes: ["CARACTERÍSTICA DE ESPECIALIZAÇÃO"],
     spellcasting: { progression: "half", ability: "int", preparationFormula: "" }
+  }),
+  cultivator: profile({
+    armorGrants: [], weaponGrants: [],
+    skillChoice: skills(2, ["acrobacia", "historia", "intuicao", "investigacao", "medicina", "percepcao", "atuacao", "religiao"]),
+    subclassTitle: "Chamado à Divindade", subclassFeatureNames: ["CHAMADO À DIVINDADE"],
+    subclassPlaceholderPrefixes: ["CARACTERÍSTICA DO CHAMADO À DIVINDADE"],
+    spellcasting: { progression: "none", ability: "wis", preparationFormula: "" },
+    warnings: [
+      "O Cultivador usa Qi próprio e não espaços de magia do DnD5e; a progressão nativa de slots permanece desativada para não criar recursos que a classe não possui.",
+      "Adagas, dardos, arco curto, espada curta, bordão e dois instrumentos musicais permanecem descritos no Item para conferência manual.",
+      "Magias homebrew citadas sem bloco mecânico no PDF são preservadas somente como referências."
+    ]
   }),
   dragoneer: profile({
     armorGrants: [], weaponGrants: [], skillChoice: null,

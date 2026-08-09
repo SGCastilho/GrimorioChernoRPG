@@ -28,7 +28,7 @@
   "nativeMapping": {
     "status": "review",
     "warnings": [
-      "As proficiências de salvaguarda do Piloto de Frame são escolhas variáveis; a Fase 5 deverá usar uma escolha de Trait/Advancement ou rotina equivalente."
+      "As proficiências de salvaguarda do Piloto de Frame são escolhas variáveis; o Grimório Importer as materializa em dois pools nativos de Trait Advancement."
     ]
   },
   "class": {

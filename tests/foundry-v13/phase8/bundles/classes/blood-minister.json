@@ -25,7 +25,7 @@
   "nativeMapping": {
     "status": "review",
     "warnings": [
-      "O Ministro de Sangue usa 2d4 Dados de Vida por nível, enquanto o Item de classe padrão do dnd5e trabalha com um único dado-base; a Fase 5 exigirá tratamento customizado.",
+      "O Ministro de Sangue usa 2d4 Dados de Vida por nível; o Grimório Importer trata a rolagem de ganho de PV como 2d4, mas o pool nativo de Dados de Vida de descanso continua exigindo acompanhamento especial.",
       "Dado de Vida não padrão para o Item de classe vanilla: 2d4."
     ]
   },

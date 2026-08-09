@@ -1,0 +1,226 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "cultivator-calling-achromatic",
+    "identifier": "cultivator-calling-achromatic",
+    "name": "Chamado Acromático",
+    "originalName": "Calling of the Achromatic",
+    "aliases": [
+      "Calling of the Achromatic",
+      "Chamado Acromático"
+    ]
+  },
+  "source": {
+    "sourceId": "dandwiki-cultivator",
+    "title": "D&D Wiki — Cultivator (5e Class)",
+    "pages": "17–19",
+    "chapter": "Chamados à Divindade",
+    "page": 17
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cultivator-dandwiki",
+    "identifier": "cultivator",
+    "name": "Cultivador"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cultivator",
+    "selectionLevel": 6,
+    "description": "Cultivadores pacientes que permanecem sem cor, estudando todos os tipos de Qi e alcançando flexibilidade excepcional por meio do refinamento do Qi Antigo.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-chamado-acromatico",
+        "title": "Magias do Chamado Acromático",
+        "page": 17,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível"
+          },
+          {
+            "key": "felicidade",
+            "label": "Felicidade"
+          },
+          {
+            "key": "seguidor",
+            "label": "Seguidor"
+          },
+          {
+            "key": "ganancia",
+            "label": "Ganância"
+          },
+          {
+            "key": "antigo",
+            "label": "Antigo"
+          },
+          {
+            "key": "demoniaco",
+            "label": "Demoníaco"
+          },
+          {
+            "key": "esoterico",
+            "label": "Esotérico"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "6º",
+            "felicidade": "Cabana Minúscula",
+            "seguidor": "Cerimônia",
+            "ganancia": "Porta Dimensional",
+            "antigo": "Golpe Marcante; Corcel Fantasmagórico; Alterar-se; Disco Flutuante; Animar Objetos",
+            "demoniaco": "Perdição",
+            "esoterico": "Metamorfose"
+          },
+          {
+            "nivel": "10º",
+            "felicidade": "Aura de Vida",
+            "seguidor": "Fortalecimento de Perícia",
+            "ganancia": "Vidência",
+            "antigo": "Conjurar Saraivada; Encontrar Montaria Maior; Controlar Ventos",
+            "demoniaco": "Escudo de Fogo",
+            "esoterico": "Criar Passagem"
+          },
+          {
+            "nivel": "14º",
+            "felicidade": "Palavra Divina",
+            "seguidor": "Loquacidade",
+            "ganancia": "Teletransporte",
+            "antigo": "Transformação Dracônica; Inverter a Gravidade; Campo Antimagia; Tsunami",
+            "demoniaco": "Espada Arcana",
+            "esoterico": "Clone"
+          },
+          {
+            "nivel": "18º",
+            "felicidade": "—",
+            "seguidor": "—",
+            "ganancia": "—",
+            "antigo": "Sexto Sentido; Projeção Astral",
+            "demoniaco": "—",
+            "esoterico": "—"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 17
+  },
+  "features": [
+    {
+      "key": "subclass.cultivator-calling-achromatic.feature.conexao-inigualavel.l6.1",
+      "name": "CONEXÃO INIGUALÁVEL",
+      "level": 6,
+      "description": "Ao escolher este Chamado, o dado de dano dos objetos de Conexão da Alma torna-se d12. O alcance em que eles podem permanecer aumenta em 1,5 metro × seu bônus de proficiência. Em conjunto, seus objetos podem carregar até seu valor de Sabedoria × 15 libras. Se ultrapassarem esse peso, você faz um teste de resistência de Sabedoria CD 15 a cada minuto ou perde a conexão com o objeto que carrega mais peso.",
+      "page": 18,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-achromatic.feature.moldador-de-qi-antigo.l6.1",
+      "name": "MOLDADOR DE QI ANTIGO",
+      "level": 6,
+      "description": "Ao escolher este Chamado, você pode designar a si mesmo e uma quantidade de criaturas igual ao seu modificador de Sabedoria para serem excluídas dos efeitos de quaisquer magias de Qi Antigo que você conjure.",
+      "page": 18,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-achromatic.feature.maestria-prismatica-do-qi.l10.1",
+      "name": "MAESTRIA PRISMÁTICA DO QI",
+      "level": 10,
+      "description": "No 10º nível, seu Núcleo da Alma pode conter dois tipos diferentes de Qi simultaneamente, permitindo conjurar magias de dois tipos de Núcleo. Você escolhe os dois tipos ao receber esta característica e sempre que concluir um Ritual de Alteração da Alma. No 18º nível, esse limite aumenta para três tipos.",
+      "page": 18,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-achromatic.feature.restauracao-adepta.l10.1",
+      "name": "RESTAURAÇÃO ADEPTA",
+      "level": 10,
+      "description": "Quando usa Dados de Alma para recuperar Qi, você pode gastar quantos desejar, decidindo gastar outro depois de cada rolagem. Cada Dado de Alma também recupera Qi adicional igual à posição dele na sequência: o primeiro recupera +1 Qi, o segundo +2, o terceiro +3, e assim por diante.",
+      "page": 18,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-achromatic.feature.formacao-de-pilhagem-de-essencia.l14.1",
+      "name": "FORMAÇÃO DE PILHAGEM DE ESSÊNCIA",
+      "level": 14,
+      "description": "Ao realizar um Ritual de Coleta de Almas, você pode meditar por mais 24 horas para receber 1 Dado de Alma adicional. Além disso, estar em um Local Preferido passa a conceder 2 Dados de Alma adicionais, totalizando até 3 dados extras com a meditação prolongada.",
+      "page": 18,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-achromatic.feature.grao-mestre-caleidoscopico.l18.1",
+      "name": "GRÃO-MESTRE CALEIDOSCÓPICO",
+      "level": 18,
+      "description": "No 18º nível, você pode conjurar magias de Qi Antigo de até 3º nível sem gastar Qi. Além disso, quando estiver num lugar que conte como Local Preferido de outro tipo de Núcleo, pode conjurar magias de até 2º nível daquele tipo sem gastar Qi, mesmo que seu Núcleo não esteja atualmente configurado para esse Qi.",
+      "page": 18,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

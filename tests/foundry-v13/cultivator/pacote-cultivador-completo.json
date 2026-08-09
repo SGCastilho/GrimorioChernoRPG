@@ -1,0 +1,2328 @@
+{
+  "schema": "grimorio-foundry-class-package",
+  "schemaVersion": 1,
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-package-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "minimumImporterVersion": "0.5.0"
+  },
+  "identity": {
+    "id": "classe-cultivator",
+    "name": "Cultivador — classe completa",
+    "scope": "class-with-subclasses",
+    "parentClass": {
+      "grimorioId": "cultivator-dandwiki",
+      "identifier": "cultivator",
+      "name": "Cultivador"
+    }
+  },
+  "summary": {
+    "bundles": 4,
+    "classes": 1,
+    "subclasses": 3,
+    "features": 41,
+    "specialClasses": 0,
+    "specialSubclasses": 0
+  },
+  "ordering": "classes-first",
+  "bundleIdentifiers": [
+    "class:cultivator",
+    "subclass:cultivator-calling-evil",
+    "subclass:cultivator-calling-achromatic",
+    "subclass:cultivator-calling-heaven"
+  ],
+  "bundles": [
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "class",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "cultivator-dandwiki",
+        "identifier": "cultivator",
+        "name": "Cultivador",
+        "originalName": "Cultivator",
+        "aliases": []
+      },
+      "source": {
+        "sourceId": "dandwiki-cultivator",
+        "title": "D&D Wiki — Cultivator (5e Class)",
+        "pages": "1–22",
+        "chapter": "Classe Cultivador e Chamados à Divindade",
+        "page": 3
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "class": {
+        "itemType": "class",
+        "description": "Um praticante de cultivo espiritual que recolhe Qi — a energia deixada pelas vontades e fragmentos de almas dos mortos — e o conduz por seu Núcleo da Alma para produzir magia, fortalecer o corpo e avançar em direção à divindade. Cultivadores combinam disciplina meditativa, refinamento espiritual e uma tradição marcadamente ritualística.",
+        "hitDice": {
+          "raw": "d6",
+          "mode": "standard",
+          "number": 1,
+          "faces": 6
+        },
+        "primaryAbility": {
+          "raw": "Sabedoria",
+          "abilityKeys": [
+            "wis"
+          ]
+        },
+        "proficiencies": {
+          "saves": {
+            "raw": "Sabedoria, Carisma",
+            "abilityKeys": [
+              "wis",
+              "cha"
+            ]
+          },
+          "armor": "Nenhuma",
+          "weapons": "Adagas, dardos, arcos curtos, espadas curtas e bordões",
+          "tools": "Dois instrumentos musicais",
+          "skills": "Escolha duas: Acrobacia, História, Intuição, Investigação, Medicina, Percepção, Atuação ou Religião"
+        },
+        "basics": {
+          "title": "CARACTERÍSTICAS DE CLASSE",
+          "page": 2,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "text": "Como Cultivador, você adquire as seguintes características de classe.\n\nPONTOS DE VIDA\n\nDado de Vida: 1d6 por nível de Cultivador.\n\nPontos de Vida no 1º nível: 6 + seu modificador de Constituição.\n\nPontos de Vida em níveis superiores: 1d6 (ou 4) + seu modificador de Constituição por nível de Cultivador após o 1º.\n\nPROFICIÊNCIAS\n\nArmaduras: Nenhuma.\n\nArmas: Adagas, dardos, arcos curtos, espadas curtas e bordões.\n\nFerramentas: Dois instrumentos musicais.\n\nTestes de Resistência: Sabedoria e Carisma.\n\nPerícias: Escolha duas entre Acrobacia, História, Intuição, Investigação, Medicina, Percepção, Atuação e Religião.\n\nEQUIPAMENTO\n\nVocê começa com o seguinte equipamento, além do equipamento concedido por seu antecedente:\n\n• (a) uma lira ou (b) qualquer outro instrumento musical.\n• (a) um pacote de artista ou (b) um pacote de sacerdote.\n• (a) um kit de curandeiro ou (b) um pacote de explorador.\n• Vestes e uma adaga.\n\nSe estiver usando riqueza inicial, você começa com 6d4 × 10 po."
+        },
+        "overview": [
+          {
+            "title": "CULTIVADOR",
+            "page": 1,
+            "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+            "text": "Sob a luz da lua, um elfo alto salta de sua espada de aço branco e aterrissa diante de seus agressores com um sorriso cortês; no instante seguinte, adagas despencam como estrelas sem que ele mova um dedo. Em uma cidade tomada por multidões, uma orc toca seu dulcimer e a fúria dos manifestantes se dissolve em calma. Em um campo de guerra tingido de vermelho, uma criança toca uma melodia triste em sua flauta, e um a um os soldados mortos se levantam para servir a um novo rei.\n\nTodos os Cultivadores, independentemente de seu Chamado, procuram prolongar a vida e ampliar seu domínio sobre o mundo através do Qi, a energia vital deixada pelos fragmentos das almas dos falecidos. Com a disciplina de monges e a graça de bardos, eles manipulam o mundo ao redor e concentram essa energia em manifestações de poder quase mítico."
+          },
+          {
+            "title": "OS PASTORES DO QI",
+            "page": 1,
+            "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+            "text": "Cultivadores dedicam longos períodos de meditação ao estudo da energia mística chamada Qi. Essa concentração mágica permeia o universo e nasce de desejos, emoções e vontades deixados por almas que seguiram para o além. O Cultivador recolhe essa energia por onde passa, utiliza-a em efeitos mágicos e sobre-humanos e depois a libera para que siga seu curso de vida e renascimento.\n\nOs diferentes Chamados interpretam esse papel de formas distintas. O Chamado do Céu encara o cultivo como dever sagrado; o Chamado Acromático o entende como parte do ciclo natural; e o Chamado do Mal o utiliza como meio para seus próprios fins. Apesar dessas diferenças, todos sentem as vontades das almas que conduzem e precisam de disciplina e autoconhecimento para não serem dominados pelo desejo e pela loucura carregados pelo Qi."
+          },
+          {
+            "title": "TECELÕES DE MAGIA DISTINTOS",
+            "page": 2,
+            "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+            "text": "Muitos Cultivadores surgem de sociedades estruturadas, famílias nobres, cortes e tradições antigas. Ao contrário de ordens ascéticas que rejeitam posses, eles frequentemente valorizam beleza exterior, graça, vestimentas, música e posição social. Isso faz com que sejam encontrados como cortesãos, nobres, sacerdotes ou figuras de alta posição, contraste que pode ocultar sua assustadora capacidade de combate.\n\nEmbora busquem lugares perigosos para reunir Qi, muitos não se consideram aventureiros. Deixar uma vida de contemplação para vagar pelo mundo é uma mudança severa, encarada como teste mental e oportunidade de crescimento espiritual. Cultivadores tendem à ordem, ainda que sigam códigos de honra próprios e por vezes excêntricos, moldados pela convicção de que disciplina é necessária para alcançar a divindade."
+          }
+        ],
+        "creation": [
+          {
+            "title": "CRIANDO UM CULTIVADOR",
+            "page": 2,
+            "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+            "text": "Ao criar um Cultivador, pense primeiro em sua relação com a arte do cultivo. Você aprendeu com um antigo dragão, nasceu em uma linhagem real de jade, roubou textos sagrados de um mosteiro ou descobriu o caminho sozinho por talento ou por um chamado superior?\n\nDepois, determine por que deixou sua vida anterior. Você foi escolhido para uma missão espiritual, expulso por violar as regras de sua ordem, libertado de uma tradição que o prendia ou simplesmente deseja encontrar um novo lar? O que pretende alcançar como Cultivador errante, e quem se beneficiará disso?\n\nA estrutura rígida do cultivo faz com que muitos Cultivadores tenham inclinação à ordem, ainda que seus códigos possam ser muito diferentes das leis locais."
+          },
+          {
+            "title": "CONSTRUÇÃO RÁPIDA",
+            "page": 2,
+            "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+            "text": "Para criar um Cultivador rapidamente, coloque seu maior valor de habilidade em Sabedoria e o segundo maior em Destreza. A fonte sugere o antecedente Artista."
+          }
+        ],
+        "tables": [
+          {
+            "key": "table.1.tipos-de-qi-do-nucleo-da-alma",
+            "title": "Tipos de Qi do Núcleo da Alma",
+            "page": 4,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "tipo",
+                "label": "Tipo de Qi"
+              },
+              {
+                "key": "origem",
+                "label": "Origem"
+              },
+              {
+                "key": "uso",
+                "label": "Tendência de uso"
+              }
+            ],
+            "rows": [
+              {
+                "tipo": "Felicidade",
+                "origem": "Memórias felizes e vidas bem vividas.",
+                "uso": "Fortalecer e sustentar aliados."
+              },
+              {
+                "tipo": "Seguidor",
+                "origem": "Dever, comunidade e laços sociais.",
+                "uso": "Inspirar, influenciar e manipular aliados ou inimigos."
+              },
+              {
+                "tipo": "Ganância",
+                "origem": "Desejos terrenos não realizados.",
+                "uso": "Efeitos versáteis, truques e manipulação."
+              },
+              {
+                "tipo": "Antigo",
+                "origem": "Qi purificado pelo tempo e pelo ciclo do mundo.",
+                "uso": "Efeitos mágicos puros e proteção."
+              },
+              {
+                "tipo": "Demoníaco",
+                "origem": "Vontades dolorosas de mortos em batalha.",
+                "uso": "Necromancia, minions e dano."
+              },
+              {
+                "tipo": "Esotérico",
+                "origem": "Resíduos de degradação espiritual e mistura instável de almas.",
+                "uso": "Efeitos imprevisíveis e poderes pouco ortodoxos."
+              }
+            ]
+          },
+          {
+            "key": "table.2.locais-preferidos-e-problemas-do-ritual-de-coleta",
+            "title": "Locais Preferidos e Problemas do Ritual de Coleta",
+            "page": 6,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "qi",
+                "label": "Qi"
+              },
+              {
+                "key": "preferido",
+                "label": "Local Preferido"
+              },
+              {
+                "key": "exemplos",
+                "label": "Exemplos"
+              },
+              {
+                "key": "trivial",
+                "label": "Trivial"
+              },
+              {
+                "key": "menor",
+                "label": "Menor"
+              },
+              {
+                "key": "medio",
+                "label": "Médio"
+              },
+              {
+                "key": "maior",
+                "label": "Maior"
+              },
+              {
+                "key": "grave",
+                "label": "Grave"
+              }
+            ],
+            "rows": [
+              {
+                "qi": "Felicidade",
+                "preferido": "Cheio de agitação e movimento.",
+                "exemplos": "Tavernas, praças de mercado, desfiles.",
+                "trivial": "Uma pegadinha envolvendo tinta foi feita com você.",
+                "menor": "Você está algumas peças de ouro mais pobre.",
+                "medio": "Surpresa: você está casado!",
+                "maior": "Um nobre local agora o detesta e você não sabe por quê.",
+                "grave": "Cartazes de procurado com seu rosto aparecem por toda parte, com caçadores de recompensa atrás de você."
+              },
+              {
+                "qi": "Seguidor",
+                "preferido": "Sereno com devoção e culto.",
+                "exemplos": "Igrejas, esconderijos de cultos, ordens fanáticas.",
+                "trivial": "Pedem que você realize tarefas para a ordem, como limpeza.",
+                "menor": "Suas ações são consideradas blasfemas pela ordem.",
+                "medio": "Eles sabem algo sobre você e pressionam você a se juntar a eles.",
+                "maior": "Você recebe uma missão crítica e imoral.",
+                "grave": "A divindade da ordem faz contato e apresenta uma oferta difícil de recusar."
+              },
+              {
+                "qi": "Ganância",
+                "preferido": "Repleto de tesouros mundanos.",
+                "exemplos": "Cofres de castelos, tesouros de dragões, distritos comerciais.",
+                "trivial": "Durante a meditação, você perde algumas moedas.",
+                "menor": "O brilho dos tesouros torna difícil se concentrar.",
+                "medio": "Eles acham que você roubou alguma coisa — você não roubou.",
+                "maior": "Um item precioso seu é roubado.",
+                "grave": "Eles acham que você roubou alguma coisa — alguém o incriminou."
+              },
+              {
+                "qi": "Antigo",
+                "preferido": "No coração de natureza perigosa.",
+                "exemplos": "Árvores mais altas, cataventos, picos de montanhas.",
+                "trivial": "Uma família de animais usa você como abrigo.",
+                "menor": "Você é surpreendido por clima perigoso.",
+                "medio": "Um desastre natural destruirá o lugar.",
+                "maior": "Você desperta no meio de um desastre.",
+                "grave": "Você é a primeira pessoa a perceber a aproximação de um cataclismo."
+              },
+              {
+                "qi": "Demoníaco",
+                "preferido": "Cercado pela morte.",
+                "exemplos": "Pântanos apodrecidos, cemitérios, campos de batalha.",
+                "trivial": "Seu cabelo ou suas roupas ficam sujos de vísceras.",
+                "menor": "O cheiro de morte permanece por dias.",
+                "medio": "Você atrai a atenção de devoradores de cadáveres.",
+                "maior": "Você é detido por ser confundido com um demônio ou saqueador.",
+                "grave": "Demônios o perseguem por roubar as almas que eles teriam colhido."
+              },
+              {
+                "qi": "Esotérico",
+                "preferido": "Abandonado pelo destino.",
+                "exemplos": "Bibliotecas heréticas, depósitos de esgoto, carcaças de deuses mortos.",
+                "trivial": "Um item comum seu é alterado de alguma forma.",
+                "menor": "Seus pensamentos ficam sutilmente contaminados pelo lugar.",
+                "medio": "Um de seus membros fica alterado de forma irrevogável.",
+                "maior": "Sua mente é consumida e a loucura o atinge.",
+                "grave": "Uma entidade ancestral que deveria estar morta há milênios começa a sussurrar para você."
+              }
+            ]
+          },
+          {
+            "key": "table.3.rajada-da-alma-dano-esoterico",
+            "title": "Rajada da Alma — Dano Esotérico",
+            "page": 5,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "resultado",
+                "label": "d8"
+              },
+              {
+                "key": "dano",
+                "label": "Tipo de dano"
+              }
+            ],
+            "rows": [
+              {
+                "resultado": "1",
+                "dano": "Ácido"
+              },
+              {
+                "resultado": "2",
+                "dano": "Energia"
+              },
+              {
+                "resultado": "3",
+                "dano": "Elétrico"
+              },
+              {
+                "resultado": "4",
+                "dano": "Veneno"
+              },
+              {
+                "resultado": "5",
+                "dano": "Psíquico"
+              },
+              {
+                "resultado": "6",
+                "dano": "Trovejante"
+              }
+            ]
+          },
+          {
+            "key": "table.4.explosao-da-alma-dano-esoterico",
+            "title": "Explosão da Alma — Dano Esotérico",
+            "page": 9,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "resultado",
+                "label": "d4"
+              },
+              {
+                "key": "dano",
+                "label": "Tipo de dano"
+              }
+            ],
+            "rows": [
+              {
+                "resultado": "1",
+                "dano": "Necrótico"
+              },
+              {
+                "resultado": "2",
+                "dano": "Radiante"
+              },
+              {
+                "resultado": "3",
+                "dano": "Energia"
+              },
+              {
+                "resultado": "4",
+                "dano": "Trovejante"
+              }
+            ]
+          },
+          {
+            "key": "table.5.amplificacao-da-alma-condicao-esoterica",
+            "title": "Amplificação da Alma — Condição Esotérica",
+            "page": 10,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "resultado",
+                "label": "Resultado impresso"
+              },
+              {
+                "key": "condicao",
+                "label": "Condição"
+              }
+            ],
+            "rows": [
+              {
+                "resultado": "1",
+                "condicao": "Cego"
+              },
+              {
+                "resultado": "2",
+                "condicao": "Envenenado"
+              },
+              {
+                "resultado": "3",
+                "condicao": "Exaustão"
+              },
+              {
+                "resultado": "4",
+                "condicao": "Atordoado"
+              },
+              {
+                "resultado": "5",
+                "condicao": "Petrificado"
+              },
+              {
+                "resultado": "6",
+                "condicao": "Inconsciente"
+              }
+            ]
+          },
+          {
+            "key": "table.6.esfera-da-alma-dano-esoterico",
+            "title": "Esfera da Alma — Dano Esotérico",
+            "page": 10,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "resultado",
+                "label": "d8"
+              },
+              {
+                "key": "dano",
+                "label": "Tipo de dano"
+              }
+            ],
+            "rows": [
+              {
+                "resultado": "1",
+                "dano": "Contundente não mágico"
+              },
+              {
+                "resultado": "2",
+                "dano": "Perfurante não mágico"
+              },
+              {
+                "resultado": "3",
+                "dano": "Cortante não mágico"
+              },
+              {
+                "resultado": "4",
+                "dano": "Energia"
+              },
+              {
+                "resultado": "5",
+                "dano": "Radiante"
+              },
+              {
+                "resultado": "6",
+                "dano": "Necrótico"
+              },
+              {
+                "resultado": "7",
+                "dano": "Trovejante"
+              },
+              {
+                "resultado": "8",
+                "dano": "Psíquico"
+              }
+            ]
+          },
+          {
+            "key": "table.7.campo-da-alma-dano-esoterico",
+            "title": "Campo da Alma — Dano Esotérico",
+            "page": 11,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "resultado",
+                "label": "d6"
+              },
+              {
+                "key": "dano",
+                "label": "Tipo de dano"
+              }
+            ],
+            "rows": [
+              {
+                "resultado": "1",
+                "dano": "Contundente"
+              },
+              {
+                "resultado": "2",
+                "dano": "Energia"
+              },
+              {
+                "resultado": "3",
+                "dano": "Radiante"
+              },
+              {
+                "resultado": "4",
+                "dano": "Necrótico"
+              },
+              {
+                "resultado": "5",
+                "dano": "Perfurante"
+              },
+              {
+                "resultado": "6",
+                "dano": "Cortante"
+              }
+            ]
+          },
+          {
+            "key": "table.8.santuario-da-alma-armadilhas-esotericas",
+            "title": "Santuário da Alma — Armadilhas Esotéricas",
+            "page": 13,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "resultado",
+                "label": "d6"
+              },
+              {
+                "key": "dano",
+                "label": "Tipo de dano"
+              },
+              {
+                "key": "salvaguarda",
+                "label": "Teste de resistência"
+              }
+            ],
+            "rows": [
+              {
+                "resultado": "1",
+                "dano": "Contundente, Perfurante ou Cortante",
+                "salvaguarda": "Constituição"
+              },
+              {
+                "resultado": "2",
+                "dano": "Energia",
+                "salvaguarda": "Força"
+              },
+              {
+                "resultado": "3",
+                "dano": "Radiante",
+                "salvaguarda": "Destreza"
+              },
+              {
+                "resultado": "4",
+                "dano": "Necrótico",
+                "salvaguarda": "Sabedoria"
+              },
+              {
+                "resultado": "5",
+                "dano": "Trovejante",
+                "salvaguarda": "Carisma"
+              },
+              {
+                "resultado": "6",
+                "dano": "Psíquico",
+                "salvaguarda": "Inteligência"
+              }
+            ]
+          },
+          {
+            "key": "table.9.tempestade-da-alma-dano-esoterico",
+            "title": "Tempestade da Alma — Dano Esotérico",
+            "page": 14,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "resultado",
+                "label": "d10"
+              },
+              {
+                "key": "dano",
+                "label": "Tipo de dano"
+              }
+            ],
+            "rows": [
+              {
+                "resultado": "1",
+                "dano": "Contundente, Perfurante ou Cortante"
+              },
+              {
+                "resultado": "2",
+                "dano": "Energia"
+              },
+              {
+                "resultado": "3",
+                "dano": "Radiante"
+              },
+              {
+                "resultado": "4",
+                "dano": "Necrótico"
+              },
+              {
+                "resultado": "5",
+                "dano": "Trovejante"
+              },
+              {
+                "resultado": "6",
+                "dano": "Psíquico"
+              },
+              {
+                "resultado": "7",
+                "dano": "Veneno"
+              },
+              {
+                "resultado": "8",
+                "dano": "Frio"
+              },
+              {
+                "resultado": "9",
+                "dano": "Fogo"
+              },
+              {
+                "resultado": "10",
+                "dano": "Ácido"
+              }
+            ]
+          },
+          {
+            "key": "table.10.lista-de-magias-do-cultivador",
+            "title": "Lista de Magias do Cultivador",
+            "page": 21,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível"
+              },
+              {
+                "key": "todos",
+                "label": "Todas"
+              },
+              {
+                "key": "felicidade",
+                "label": "Felicidade"
+              },
+              {
+                "key": "seguidor",
+                "label": "Seguidor"
+              },
+              {
+                "key": "ganancia",
+                "label": "Ganância"
+              },
+              {
+                "key": "antigo",
+                "label": "Antigo"
+              },
+              {
+                "key": "demoniaco",
+                "label": "Demoníaco"
+              },
+              {
+                "key": "esoterico",
+                "label": "Esotérico"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "Truques",
+                "todos": "Conexão da Alma",
+                "felicidade": "Orientação",
+                "seguidor": "Mensagem",
+                "ganancia": "Pedra Mágica",
+                "antigo": "Proteção contra Lâminas",
+                "demoniaco": "Toque Arrepiante",
+                "esoterico": "Fragmento do Caos (Sliver of Chaos)"
+              },
+              {
+                "nivel": "1º",
+                "todos": "Rajada da Alma",
+                "felicidade": "Heroísmo",
+                "seguidor": "Enfeitiçar Pessoa; Riso Histérico de Tasha; Sono",
+                "ganancia": "Purificar Alimentos e Bebidas",
+                "antigo": "Escudo; Saraivada de Espinhos; Golpe Trovejante",
+                "demoniaco": "Animar Energia (Animate Energy); Braços de Hadar",
+                "esoterico": "Proteção do Caos (Protection of Chaos)"
+              },
+              {
+                "nivel": "2º",
+                "todos": "Alteração da Alma",
+                "felicidade": "Ajuda; Acalmar Emoções",
+                "seguidor": "Coroa da Loucura; Imobilizar Pessoa; Cativar",
+                "ganancia": "Encontrar Montaria; Truque de Corda; Arrombar",
+                "antigo": "Nuvem de Adagas; Levitação",
+                "demoniaco": "Passo Nebuloso; Esquentar Metal",
+                "esoterico": "Adivinhação do Caos (Divination of Chaos); Nublar"
+              },
+              {
+                "nivel": "3º",
+                "todos": "Explosão da Alma",
+                "felicidade": "Palavra Curativa em Massa; Manto do Cruzado; Remover Maldição",
+                "seguidor": "Enviar Mensagem; Padrão Hipnótico; Idiomas",
+                "ganancia": "Cochilo; Incitar Ganância; Imagem Maior",
+                "antigo": "Contramágica; Arma Elemental; Onda de Pulso (Pulse Wave)",
+                "demoniaco": "Animar Mortos; Transferência de Vida; Fingir de Morto",
+                "esoterico": "Elemento do Caos (Element of Chaos); Piscar"
+              },
+              {
+                "nivel": "4º",
+                "todos": "Amplificação da Alma",
+                "felicidade": "Esfera Resiliente; Aura de Pureza",
+                "seguidor": "Confusão; Compulsão",
+                "ganancia": "Olho Arcano; Vinha Agarradora; Fabricar",
+                "antigo": "Golpe Estonteante; Pele de Pedra",
+                "demoniaco": "Muralha de Fogo",
+                "esoterico": "Invisibilidade Maior; Ilusão do Caos (Illusion of Chaos)"
+              },
+              {
+                "nivel": "5º",
+                "todos": "Esfera da Alma",
+                "felicidade": "Círculo de Poder; Curar Ferimentos em Massa",
+                "seguidor": "Dominar Pessoa; Imobilizar Pessoa",
+                "ganancia": "Conhecimento Lendário; Ligação Planar",
+                "antigo": "Mão Arcana; Onda Destrutiva",
+                "demoniaco": "Enervação; Imolação",
+                "esoterico": "Barreira Caótica (Chaotic Barrier); Passo Distante"
+              },
+              {
+                "nivel": "6º",
+                "todos": "Campo da Alma",
+                "felicidade": "Cura; Banquete de Heróis",
+                "seguidor": "Dança Irresistível",
+                "ganancia": "Palavra de Recordação",
+                "antigo": "Barreira de Lâminas",
+                "demoniaco": "Círculo da Morte",
+                "esoterico": "Visão da Verdade; Aparência Extramundana; Sugestão em Massa; Ossos da Terra; Prisão Mental; Invocar Ínfero"
+              },
+              {
+                "nivel": "7º",
+                "todos": "Deslocamento da Alma",
+                "felicidade": "Regeneração",
+                "seguidor": "Projetar Imagem",
+                "ganancia": "Mansão Magnífica; Viagem Planar",
+                "antigo": "Coroa de Estrelas",
+                "demoniaco": "Tempestade de Fogo",
+                "esoterico": "Rajada Prismática"
+              },
+              {
+                "nivel": "8º",
+                "todos": "Santuário da Alma",
+                "felicidade": "Aura Sagrada",
+                "seguidor": "Dominar Monstro; Dragão Ilusório",
+                "ganancia": "Semiplano; Fortaleza Poderosa",
+                "antigo": "Controlar o Clima; Terremoto; Labirinto",
+                "demoniaco": "Escuridão Enlouquecedora",
+                "esoterico": "Enfraquecer Intelecto"
+              },
+              {
+                "nivel": "9º",
+                "todos": "Tempestade da Alma",
+                "felicidade": "Cura em Massa",
+                "seguidor": "Estranheza",
+                "ganancia": "Portal",
+                "antigo": "Parar o Tempo; Tempestade da Vingança",
+                "demoniaco": "Lâmina do Desastre",
+                "esoterico": "Muralha Prismática; Desejo"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "key": "reference.1.multiclasse-cultivador",
+            "title": "MULTICLASSE — CULTIVADOR",
+            "page": 22,
+            "text": "Pré-requisito: Sabedoria 13. Ao adquirir níveis de Cultivador por multiclasse, você recebe proficiência com um instrumento musical à sua escolha.",
+            "sourceTitle": "D&D Wiki — Cultivator (5e Class)"
+          },
+          {
+            "key": "reference.2.regra-opcional-cultivador-e-monge",
+            "title": "REGRA OPCIONAL — CULTIVADOR E MONGE",
+            "page": 22,
+            "text": "A fonte sugere uma regra opcional para campanhas que desejem intercâmbio entre Qi de Cultivador e pontos de Chi/Espírito de Monge: 3 Qi podem ser trocados por 1 ponto de Chi, e o inverso também pode ser permitido.",
+            "sourceTitle": "D&D Wiki — Cultivator (5e Class)"
+          },
+          {
+            "key": "reference.3.moldagem-abrangente-da-alma",
+            "title": "MOLDAGEM ABRANGENTE DA ALMA",
+            "page": 11,
+            "text": "A página 11 da fonte exibe o cabeçalho “Sweeping Soul Shaping” entre Autoridade Divina e Campo da Alma, mas não apresenta qualquer texto mecânico associado a ele nem o inclui na tabela de progressão. O Grimório preserva essa ocorrência como referência editorial e não inventa uma característica.",
+            "sourceTitle": "D&D Wiki — Cultivator (5e Class)"
+          },
+          {
+            "key": "reference.4.magias-externas-da-lista",
+            "title": "MAGIAS EXTERNAS DA LISTA",
+            "page": 21,
+            "text": "A lista de magias do Cultivador cita algumas magias homebrew — como Sliver of Chaos, Animate Energy, Protection of Chaos, Divination of Chaos, Element of Chaos, Illusion of Chaos e Chaotic Barrier — sem apresentar seus blocos mecânicos neste PDF. Seus nomes são preservados na lista, mas nenhuma regra ausente foi inventada.",
+            "sourceTitle": "D&D Wiki — Cultivator (5e Class)"
+          },
+          {
+            "key": "reference.5.nota-editorial-tabela-esoterica",
+            "title": "NOTA EDITORIAL — TABELA ESOTÉRICA",
+            "page": 10,
+            "text": "Na Amplificação da Alma, a fonte rotula a tabela de condições como “d4”, mas apresenta seis resultados numerados de 1 a 6. O Grimório mantém a inconsistência documentada em vez de alterar silenciosamente o dado.",
+            "sourceTitle": "D&D Wiki — Cultivator (5e Class)"
+          }
+        ],
+        "presentation": {
+          "sigilKey": "cultivator",
+          "color": "#71a98f"
+        }
+      },
+      "features": [
+        {
+          "key": "class.cultivator-dandwiki.feature.conjuracao-da-alma.l1.1",
+          "name": "CONJURAÇÃO DA ALMA",
+          "level": 1,
+          "description": "Como coletor de energia e condutor da ordem natural, você pode conjurar magias de Cultivador.\n\nNÚCLEO DA ALMA. Você conhece e controla seu Núcleo da Alma, uma esfera espiritual que existe no meridiano do seu ser. Ele reúne e molda Qi — as crenças, emoções e energias dos mortais recolhidas do ambiente. Seu Núcleo da Alma pode conter apenas um tipo de Qi por vez: Felicidade, Seguidor, Ganância, Antigo, Demoníaco ou Esotérico.\n\nFelicidade nasce de lembranças felizes e vidas bem vividas e fortalece aliados. Seguidor nasce do dever e da comunidade e pode inspirar ou manipular. Ganância nasce de desejos terrenos não realizados e produz efeitos versáteis. Antigo é Qi purificado pelo tempo, útil para efeitos mágicos puros. Demoníaco vem das vontades dolorosas de mortos em batalha e alimenta necromancia. Esotérico nasce da degradação das almas e combina energias instáveis de formas pouco ortodoxas.\n\nQuando você gasta Qi, ele não é destruído; segue adiante para o ciclo de vida e renascimento. Durante um descanso longo, você pode realizar um ritual de 2 horas para reunir Qi ao seu redor.\n\nPREPARANDO E CONJURANDO MAGIAS. O tipo de Núcleo da Alma determina quais magias da lista de Cultivador estão preparadas. Conjurar uma magia exige gastar uma quantidade de Qi igual ao nível da magia ou maior. Sua capacidade máxima de Qi e o limite máximo de Qi que pode gastar numa conjuração são mostrados na progressão da classe.\n\nRITUAL DE ALTERAÇÃO DA ALMA. Para trocar o tipo de Qi contido no Núcleo, você deve realizar 24 horas de meditação ininterrupta. Ao concluir o ritual, seu Qi cai para 0, pois o novo Núcleo não pode conservar a energia anterior.\n\nHABILIDADE DE CONJURAÇÃO. Sabedoria é sua habilidade de conjuração. CD para resistir às suas magias = 8 + seu bônus de proficiência + seu modificador de Sabedoria. Modificador de ataque mágico = seu bônus de proficiência + seu modificador de Sabedoria.\n\nFOCO DE CONJURAÇÃO. Você usa o próprio corpo para conduzir as magias. Não precisa de um foco material, mas precisa ter pelo menos uma mão livre para servir como foco de conjuração.\n\nMAGIAS DE CHAMADO. Cada Chamado à Divindade concede magias adicionais nos níveis indicados em sua descrição. Elas ficam preparadas quando seu Núcleo possui o tipo de Qi apropriado, mesmo que sejam de nível superior ao seu Nível de Magia atual.\n\nMAGIAS “DA ALMA”. Você sempre tem preparadas magias especiais exclusivas de Cultivador. Você aprende Conexão da Alma e Rajada da Alma no início e aprende uma nova magia da Alma sempre que o Nível de Magia da tabela aumenta.\n\nAPRIMORAMENTO NO 13º NÍVEL. A partir do 13º nível, o Ritual de Alteração da Alma leva apenas 2 horas, pode ser realizado durante um descanso longo e você deixa de precisar de uma mão livre como foco de conjuração.",
+          "page": 3,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.defesa-sem-armadura.l1.1",
+          "name": "DEFESA SEM ARMADURA",
+          "level": 1,
+          "description": "Enquanto não estiver usando armadura nem empunhando escudo, sua Classe de Armadura é igual a 10 + seu modificador de Destreza + seu modificador de Sabedoria.",
+          "page": 5,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.rajada-da-alma.l1.1",
+          "name": "RAJADA DA ALMA",
+          "level": 1,
+          "description": "Magia da Alma de 1º nível (Evocação).\n\nTempo de Conjuração: 1 ação. Alcance: 18 metros. Componentes: V, S. Duração: 1 minuto.\n\nVocê atinge diretamente o núcleo de um inimigo com Qi infalível; a magia sempre acerta e causa 2d6 de dano. O tipo de dano e os efeitos adicionais dependem do Qi usado.\n\nFELICIDADE. Dano radiante. O alvo realiza um teste de resistência de Inteligência; em falha, cai no chão e fica incapacitado, rindo de lembranças felizes, até o início do próximo turno dele ou até ser atacado.\n\nSEGUIDOR. Dano psíquico. O alvo realiza um teste de resistência de Sabedoria; em falha, fica enfeitiçado por você durante a duração. Repete o teste sempre que você lhe causa dano ou tenta interagir verbalmente com ele.\n\nGANÂNCIA. Dano de energia. O alvo realiza um teste de resistência de Inteligência; em falha, fica cego por 1 turno devido a visões de tesouros. Além disso, recebe 1d6 pontos de vida temporários.\n\nANTIGO. Dano trovejante. O alvo realiza um teste de resistência de Destreza; em falha, fica surdo e seu deslocamento de caminhada se torna 0. Repete o teste ao final de cada turno.\n\nDEMONÍACO. O dano se torna 2d8 necrótico. O alvo realiza um teste de resistência de Constituição; em falha, sofre 1d8 de dano necrótico no início do próximo turno. Esse dano não pode ser curado por meios não mágicos.\n\nESOTÉRICO. Role os 2d6 de dano e escolha um dos resultados para determinar o tipo de dano na tabela correspondente. Se os dois d6 mostrarem o mesmo número, a alma salta para a criatura diferente mais próxima; faça uma nova rolagem de dano contra ela, podendo provocar novos saltos.\n\nMAIS QI. O dano aumenta em um dado para cada ponto adicional de Qi gasto na conjuração.",
+          "page": 5,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 1,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.ritual-de-coleta-de-almas.l2.1",
+          "name": "RITUAL DE COLETA DE ALMAS",
+          "level": 2,
+          "description": "No 2º nível, você domina a arte de cultivar almas do ambiente. O Ritual de Coleta de Almas exige um dia de meditação quase ininterrupta e só pode ser realizado em um lugar ressonante com o tipo de alma que deseja reunir. O ritual restaura todo o seu Qi e concede uma quantidade de Dados de Alma igual à metade do seu bônus de proficiência.\n\nDADOS DE ALMA. Representam agrupamentos de almas ainda não convertidos completamente para um tipo de Qi. Inicialmente cada Dado de Alma é um d6. Como ação bônus, você pode gastar e rolar um deles para recuperar uma quantidade de Qi igual ao resultado. Ao alterar o tipo de seu Núcleo da Alma, você perde todos os Dados de Alma ainda não gastos.\n\nLOCAL PREFERIDO. Cada tipo de Qi se acumula em certos lugares. Realizar o ritual em um Local Preferido concede 1 Dado de Alma adicional.\n\nPROBLEMAS. Durante o ritual, sua conexão com o mundo físico é reduzida. O Mestre pode decidir que problemas ocorram, por escolha ou por uma rolagem em que resultados menores representam complicações piores. A tabela de Locais Preferidos e Problemas apresenta exemplos para cada tipo de Qi.\n\nEM NÍVEIS SUPERIORES. Seus Dados de Alma tornam-se d8 no 7º nível, d10 no 11º nível e d12 no 17º nível.",
+          "page": 6,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 2,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.conexao-da-alma.l2.1",
+          "name": "CONEXÃO DA ALMA",
+          "level": 2,
+          "description": "Truque de Encantamento.\n\nTempo de Conjuração: 1 ação. Alcance: 9 metros. Componentes: V, S. Duração: até ser dissipada.\n\nVocê usa seu Núcleo da Alma para possuir um objeto mundano ou mágico que poderia segurar, ou uma arma corpo a corpo. O dado de dano do objeto torna-se d8, ele ganha Alcance e passa a causar dano mágico contundente, cortante ou perfurante conforme sua forma. Você pode usar Sabedoria nas jogadas de ataque e dano feitas com ele.\n\nUma arma ligada dessa forma pode pairar ao seu lado e mover-se telepaticamente dentro de 9 metros. Se for forçada a ficar a mais de 3 metros de você, a conexão é rompida e ela volta ao normal.\n\nEM NÍVEIS SUPERIORES. No 5º nível, você pode manter 2 objetos conectados; no 11º, 3; no 17º, 4. Quando realiza a ação Atacar com mais de uma arma da alma conectada, pode atacar com todas elas como parte da mesma ação. A partir do 5º nível, você também recebe deslocamento de voo de 9 metros ao viajar sobre os objetos conectados.",
+          "page": 7,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 2,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.alteracao-da-alma.l3.1",
+          "name": "ALTERAÇÃO DA ALMA",
+          "level": 3,
+          "description": "Magia da Alma de 2º nível (Encantamento).\n\nTempo de Conjuração: 1 ação bônus. Alcance: Toque. Componentes: V, S. Duração: Concentração, até 1 minuto.\n\nVocê toca uma criatura e concede a ela um efeito correspondente ao Qi usado.\n\nFELICIDADE. No início de cada turno, o alvo recebe pontos de vida temporários iguais ao seu modificador de Sabedoria + seu bônus de proficiência.\n\nSEGUIDOR. O alvo realiza um teste de resistência de Inteligência. Em falha, não consegue distinguir amigo de inimigo e considera todas as criaturas que vê como inimigas. Repete o teste sempre que sofre dano e no início de seus turnos. Se uma criatura provocar um ataque de oportunidade dele, ele deve realizá-lo se puder.\n\nGANÂNCIA. O alvo realiza um teste de resistência de Carisma. Em falha, subtrai 1d4 de jogadas de ataque, testes de habilidade e testes de resistência de Constituição para manter concentração. Repete o teste ao final de cada turno.\n\nANTIGO. A pele do alvo assume brilho prateado e sua CA não pode ser menor que 16, independentemente da armadura usada.\n\nDEMONÍACO. Sempre que você acerta o alvo com um ataque ou magia, causa 1d6 de dano necrótico adicional.\n\nESOTÉRICO. O alvo realiza um teste de resistência de Sabedoria. Em falha, fica enfeitiçado, incapacitado e com deslocamento 0. O efeito termina se sofrer dano ou se outra criatura usar uma ação para despertá-lo. Enquanto o efeito durar, você pode, como ação bônus em seus turnos, rolar na tabela de Surto de Magia Selvagem; você e o alvo recebem o efeito quando aplicável.",
+          "page": 7,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 3,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.incremento-no-valor-de-habilidade.l4.1",
+          "name": "INCREMENTO NO VALOR DE HABILIDADE",
+          "level": 4,
+          "description": "No 4º nível e novamente nos níveis 8, 12, 16 e 19, você pode aumentar um valor de habilidade em 2 ou dois valores de habilidade em 1. Como normal, não pode aumentar um valor acima de 20 com esta característica.",
+          "page": 8,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 4,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.explosao-da-alma.l5.1",
+          "name": "EXPLOSÃO DA ALMA",
+          "level": 5,
+          "description": "Magia da Alma de 3º nível (Evocação).\n\nTempo de Conjuração: 1 ação. Alcance: 18 metros. Componentes: V, S. Duração: Instantânea. Área: esfera de 6 metros de raio centrada em um ponto que você possa ver.\n\nFELICIDADE. Todas as criaturas na esfera recuperam 2d6 PV; cada Qi adicional aumenta a cura em 1d6.\n\nSEGUIDOR. Cada criatura realiza teste de resistência de Sabedoria ou sofre Confusão. Use a tabela da magia Confusão, mas a rolagem de movimento começa em d4+6 e melhora para d6+4 com 1 Qi adicional, d8+2 com 2 e d10 com 3. A criatura repete o teste ao final de cada turno.\n\nGANÂNCIA. Escolha ácido, frio, fogo, elétrico ou trovejante; todas as criaturas na esfera recebem resistência ao tipo escolhido por 1 minuto.\n\nANTIGO. Cada criatura pode usar sua reação uma vez durante 1 minuto para receber +3 CA contra um ataque. O bônus aumenta em +1 para cada Qi adicional.\n\nDEMONÍACO. Todas as criaturas exceto você realizam teste de resistência de Destreza; sofrem 6d6 necrótico em falha ou metade em sucesso. Mortos-vivos na área são curados em vez de sofrer dano. O dano/cura aumenta em 1d6 por Qi adicional.\n\nESOTÉRICO. Cada criatura sofre 5d8 de dano. Role 2d4 e escolha um para determinar o tipo de dano na tabela. Se os dois dados mostrarem o mesmo número, a alma explode novamente e você rola outra vez.\n\nMAIS QI. Além dos efeitos acima, o raio da esfera aumenta em 1,5 metro por Qi adicional.",
+          "page": 8,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 5,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.chamado-a-divindade.l6.1",
+          "name": "CHAMADO À DIVINDADE",
+          "level": 6,
+          "description": "No 6º nível, sua sabedoria e treinamento são suficientes para que você escolha como pretende alcançar a divindade. Escolha um Chamado à Divindade: Chamado do Mal, Chamado Acromático ou Chamado do Céu. Sua escolha concede características no 6º nível e novamente nos níveis 10, 14 e 18.\n\nTodos os Chamados concedem Magias de Chamado. O Chamado do Mal e o Chamado do Céu também restringem permanentemente os tipos de Qi que seu Núcleo pode conter, enquanto o Chamado Acromático preserva sua flexibilidade.",
+          "page": 9,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.amplificacao-da-alma.l7.1",
+          "name": "AMPLIFICAÇÃO DA ALMA",
+          "level": 7,
+          "description": "Magia da Alma de 4º nível (Transmutação).\n\nTempo de Conjuração: 1 ação. Alcance: Pessoal. Componentes: V, S. Duração: 1 hora.\n\nVocê concentra o Qi acumulado e torna seu Núcleo da Alma dourado.\n\nFELICIDADE. Sempre que rolar um ou mais dados para restaurar PV com uma magia ou habilidade, adicione seu modificador de Sabedoria à quantidade restaurada.\n\nSEGUIDOR. Adicione seu modificador de Sabedoria a qualquer teste de Carisma que realizar.\n\nGANÂNCIA. Você pode manter concentração em duas magias ao mesmo tempo. Quando realiza um teste de concentração, faça um teste para cada magia. Se falhar em qualquer um, perde a concentração nas duas e este efeito termina.\n\nANTIGO. Na primeira vez em que seria reduzido a 0 PV por dano, fica com 1 PV. Se um efeito fosse matá-lo instantaneamente, ele é negado. Quando qualquer desses efeitos ocorre, Amplificação da Alma termina; você pode conjurá-la novamente como reação.\n\nDEMONÍACO. Sempre que conjura uma magia Demoníaca, escolha criaturas visíveis em número máximo igual ao seu bônus de proficiência. Role 1d10 + seu modificador de Sabedoria; elas sofrem esse dano necrótico. Faça um teste de resistência de Constituição contra sua própria CD de magia; em falha, você também sofre o dano.\n\nESOTÉRICO. Você recebe vantagem em testes de resistência contra uma condição determinada aleatoriamente pela tabela. A fonte rotula a tabela como “d4”, embora apresente seis resultados. Se os dois dados rolados mostrarem o mesmo número, você recebe imunidade à condição sorteada e vantagem contra todas as outras da lista.\n\nMAIS QI. Você pode incluir uma criatura adicional na conjuração para cada Qi adicional gasto.",
+          "page": 9,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 7,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.esfera-da-alma.l9.1",
+          "name": "ESFERA DA ALMA",
+          "level": 9,
+          "description": "Magia da Alma de 5º nível (Conjuração).\n\nTempo de Conjuração: 1 ação bônus. Alcance: 18 metros. Componentes: V, S. Duração: 1 minuto.\n\nVocê conjura uma esfera de Qi no campo de batalha. Como ação bônus, pode movê-la até 9 metros. Ao colidir com uma criatura, ela realiza o teste de resistência correspondente à esfera e a esfera encerra o movimento do turno. A esfera pode transpor barreiras de até 1,5 metro e saltar fossos de até 3 metros. Emite luz plena em 6 metros e penumbra por mais 6 metros. No início de cada um de seus turnos, você deve gastar 2 Qi para manter a esfera.\n\nFELICIDADE. Criaturas a até 1,5 metro realizam teste de resistência de Carisma. Em sucesso, sofrem 2d6 radiante e são movidas ao espaço mais próximo fora da área; em falha, sofrem 6d6 e não são empurradas. Você pode curar uma criatura não hostil em metade do dano causado pela esfera naquele turno.\n\nSEGUIDOR. Criaturas a até 1,5 metro fazem teste de Inteligência. Em sucesso, sofrem 3d6 psíquico; em falha, 6d6 e só podem realizar metade do número máximo de ataques no próximo turno, arredondado para cima.\n\nGANÂNCIA. O terreno a até 1,5 metro fica fortemente obscurecido. Criaturas fazem teste de Destreza; em sucesso, sofrem 3d6 de veneno e são empurradas para fora; em falha, sofrem 6d6 e ficam envenenadas até o fim do próximo turno.\n\nDEMONÍACO. Criaturas a até 1,5 metro fazem teste de Força. Em sucesso, sofrem 4d6 necrótico e são movidas para fora; em falha, sofrem 8d6.\n\nESOTÉRICO. Criaturas a até 1,5 metro fazem teste de Sabedoria. Em sucesso, sofrem 3d6 e são movidas para fora; em falha, sofrem 6d6. Role dois d8 e escolha um para determinar o tipo de dano. Se os dois mostrarem o mesmo número, outra esfera surge e você controla as duas com a mesma ação bônus.\n\nMAIS QI. Para cada Qi adicional, escolha um efeito diferente: aumentar o raio de 1,5 para 3 metros; aumentar o dano em 2d6; ou impor desvantagem no teste de resistência. Cada opção só pode ser escolhida uma vez.",
+          "page": 10,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 9,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.autoridade-divina.l10.1",
+          "name": "AUTORIDADE DIVINA",
+          "level": 10,
+          "description": "A partir do 10º nível, você pode invocar pequenas centelhas da força divina que acumulou. Usar esta característica exige uma ação. Descreva a façanha que deseja realizar e role d100. Se o resultado for igual ou menor que seu nível de Cultivador, você manifesta poder suficiente para realizá-la. O Mestre determina a natureza exata do efeito; uma magia de Cultivador é uma referência apropriada, embora outros efeitos possam ser possíveis.\n\nSe obtiver sucesso, depois que a façanha for concluída você não pode usar Autoridade Divina novamente por 7 dias. Se falhar, recupera o uso ao terminar um descanso longo.\n\nNo 20º nível, Autoridade Divina obtém sucesso automaticamente e, mesmo após um sucesso, volta a ficar disponível ao terminar um descanso longo.",
+          "page": 11,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-10-nivel.l10.1",
+          "name": "CARACTERÍSTICA DO CHAMADO À DIVINDADE (10º NÍVEL)",
+          "level": 10,
+          "description": "Seu Chamado à Divindade concede características adicionais no 10º nível. Consulte a subclasse escolhida.",
+          "page": 11,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.campo-da-alma.l11.1",
+          "name": "CAMPO DA ALMA",
+          "level": 11,
+          "description": "Magia da Alma de 6º nível (Evocação).\n\nTempo de Conjuração: 1 ação. Alcance: esfera de 9 metros centrada em você. Componentes: V, S. Duração: Concentração, até 1 minuto.\n\nVocê faz Qi brotar do próprio ventre da criação ao seu redor.\n\nFELICIDADE. Como ação, você pode fazer alvos à sua escolha recuperarem 5d6 PV. Um alvo já com PV máximos recebe 3d6 PV temporários, que duram até o fim da magia.\n\nSEGUIDOR. Quem entra ou termina o turno na área fica imune a dano psíquico, leitura de pensamentos/emoções, magias de adivinhação e à condição Enfeitiçado.\n\nGANÂNCIA. Você conjura automaticamente Dissipar Magia sobre efeitos mágicos e Contramágica sobre magias conjuradas na esfera. Isso não exige ação, mas custa 3 Qi a cada ativação; se não puder pagar, perde a concentração em Campo da Alma.\n\nANTIGO. Suas armas dentro da esfera brilham em jade e causam 2d6 de dano adicional quando você ataca com elas.\n\nDEMONÍACO. Quem entra ou começa o turno na esfera realiza teste de resistência de Constituição; sofre 6d6 necrótico em falha ou metade em sucesso.\n\nESOTÉRICO. Alvos à sua escolha recebem imunidade a um tipo de dano determinado por dois d6, escolhendo um dos resultados. Se os dois mostrarem o mesmo número, você recebe também essa imunidade e resistência aos demais tipos da tabela.\n\nMAIS QI. A duração aumenta conforme o Qi adicional gasto: +1 Qi = 10 minutos; +2 Qi = 1 hora; +3 Qi = 8 horas.",
+          "page": 11,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 11,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.aprimoramento-da-conjuracao-da-alma.l13.1",
+          "name": "APRIMORAMENTO DA CONJURAÇÃO DA ALMA",
+          "level": 13,
+          "description": "A partir do 13º nível, o Ritual de Alteração da Alma passa de 24 horas para apenas 2 horas e pode ser realizado durante um descanso longo. Você também deixa de precisar manter uma mão livre como foco de conjuração.",
+          "page": 5,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.deslocamento-da-alma.l13.1",
+          "name": "DESLOCAMENTO DA ALMA",
+          "level": 13,
+          "description": "Magia da Alma de 7º nível (Evocação).\n\nTempo de Conjuração: 1 ação. Alcance: Pessoal. Componentes: V, S. Duração: Concentração, até 1 hora.\n\nVocê fortalece a si mesmo com Qi, manifesta uma alma nascente e eleva drasticamente sua capacidade de manipulação. Enquanto esta forma durar, todas as magias que conjura são tratadas como se fossem conjuradas dois níveis acima; os demais efeitos dependem do Qi.\n\nFELICIDADE. Você e criaturas não hostis a até 9 metros recebem, no início dos turnos, PV temporários iguais a seu modificador de Sabedoria + seu bônus de proficiência.\n\nSEGUIDOR. Inimigos a até 9 metros têm desvantagem nas rolagens para resistir aos efeitos de suas magias.\n\nGANÂNCIA. Você e criaturas não hostis a até 9 metros obtêm acerto crítico com resultados naturais 18–20.\n\nANTIGO. Sua CA aumenta em 5.\n\nDEMONÍACO. Suas magias ignoram resistência e imunidade a dano; ao rolar dano de magia, você pode rolar duas vezes e escolher o maior resultado.\n\nESOTÉRICO. No início de cada turno, role 2d4. Você pode conjurar naquele turno uma magia cujo custo-base de Qi seja igual à soma dos dados sem gastar Qi. Se os dois dados forem iguais, recebe ainda o dobro dessa quantidade em Qi gratuito, conforme descrito pela fonte.\n\nMAIS QI. A duração aumenta conforme o Qi adicional gasto: +1 Qi = 10 minutos; +2 Qi = 1 hora; +3 Qi = 8 horas.",
+          "page": 12,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 13,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-14-nivel.l14.1",
+          "name": "CARACTERÍSTICA DO CHAMADO À DIVINDADE (14º NÍVEL)",
+          "level": 14,
+          "description": "Seu Chamado à Divindade concede características adicionais no 14º nível. Consulte a subclasse escolhida.",
+          "page": 12,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.santuario-da-alma.l15.1",
+          "name": "SANTUÁRIO DA ALMA",
+          "level": 15,
+          "description": "Magia da Alma de 8º nível (Evocação).\n\nTempo de Conjuração: 1 ação. Alcance: Pessoal. Componentes: V, S. Duração: 7 dias.\n\nVocê solidifica o Qi em uma estrutura gloriosa que deve caber num cubo desocupado de até 36 metros de lado. A aparência é escolhida por você e a função depende do Qi.\n\nFELICIDADE. Surge um mercado movimentado com comerciantes felizes, bons preços e passagem para o Feywild. Quem entra recebe Remover Maldição e vantagem em testes de resistência contra morte.\n\nSEGUIDOR. Surge uma igreja dedicada a uma divindade ou crença escolhida. Escolha uma magia de Abjuração, Encantamento, Evocação ou Adivinhação de até 4º nível que não cause dano; quem entra e decide venerar a crença recebe o efeito da magia, com o Seguidor como conjurador e habilidade de conjuração 18.\n\nGANÂNCIA. Surge um grande leilão extraplanar com itens valiosos, compradores de outros planos e pelo menos um portal para os Planos Exteriores, frequentemente Sigil.\n\nANTIGO. Surge uma região ancestral compatível com a geografia local, que pode conter criaturas extintas e povos desaparecidos. Tempestades são comuns e você recupera 1 Qi a cada 10 minutos mesmo sem meditar.\n\nDEMONÍACO. Surge um bastião devastado, fortificado e guarnecido por autômatos espectrais. Você pode fazer criaturas designadas que entrem ficarem cegas e envoltas em escuridão mágica; fora isso, a fortaleza usa as estatísticas de Fortaleza Poderosa.\n\nESOTÉRICO. Armadilhas mágicas mutáveis surgem pelo espaço ocupado. Uma criatura que se mova mais de 3 metros em uma rodada sem usar a ação para fazer um teste de Percepção cai numa armadilha que causa 10d8. Role dois d6; um determina o tipo de dano e o outro o teste de resistência, à sua escolha. Se os resultados forem iguais, você pode dobrar o dano e fazer outra criatura cair numa nova armadilha.\n\nO Santuário conta como Local Preferido do Qi usado. Ele dura 7 dias; conjurá-lo no mesmo local a cada 7 dias por um ano, ou gastar um total de 500 Qi em conjurações no mesmo ponto, torna a estrutura permanente.",
+          "page": 13,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.nucleo-dos-mil-espiritos.l15.1",
+          "name": "NÚCLEO DOS MIL ESPÍRITOS",
+          "level": 15,
+          "description": "No 15º nível, seu Núcleo da Alma se torna sofisticado o bastante para resistir à repulsão natural entre diferentes formas de Qi. Você pode aprender e conjurar, de tipos de Núcleo aos quais consegue se converter, uma quantidade de magias igual ao seu modificador de Sabedoria. Essas magias precisam estar pelo menos 3 níveis abaixo do seu Nível de Magia máximo. Você pode trocar essas escolhas ao concluir um descanso longo.",
+          "page": 12,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 15,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.tempestade-da-alma.l17.1",
+          "name": "TEMPESTADE DA ALMA",
+          "level": 17,
+          "description": "Magia da Alma de 9º nível (Evocação).\n\nTempo de Conjuração: 1 ação. Alcance: 1,6 km. Componentes: V, S. Duração: Instantânea.\n\nSeu Núcleo da Alma libera uma barragem avassaladora de Qi, afetando criaturas em todo o alcance conforme o tipo usado.\n\nFELICIDADE. Criaturas não hostis recuperam 15d6 PV, removem todas as condições e são revividas caso tenham morrido na última hora. Criaturas hostis sofrem 3d6 radiante para cada criatura beneficiada a até 9 metros delas.\n\nSEGUIDOR. Criaturas hostis fazem teste de Sabedoria; criaturas de ND 5 ou menor falham automaticamente. Em falha, ficam dominadas como por Dominar Monstro. Quando obtêm sucesso num teste para se libertar, sofrem 15d6 psíquico e deixam de adicionar modificadores de Sabedoria, Inteligência ou Carisma às rolagens até passarem em um teste de Constituição.\n\nGANÂNCIA. Criaturas inteligentes hostis fazem teste de Inteligência. Em falha, precisam usar as ações para descartar pertences e sofrem 10d6 por turno até conseguirem se libertar; depois que não possuem mais o que descartar além das roupas, deixam de sofrer o dano e permanecem não hostis enquanto não obtiverem sucesso.\n\nANTIGO. Uma combinação de tempestade, tsunami e terremoto destrói estruturas e devasta a região. Por 5 turnos, criaturas não escolhidas por você a mais de 9 metros realizam testes de Força, sofrendo dano completo em falha ou metade em sucesso: 5d6 trovejante, depois 5d6 elétrico, 10d6 perfurante, 10d6 contundente e, por fim, 30d6 cortante.\n\nDEMONÍACO. Todas as criaturas fazem teste de Destreza; sofrem 30d6 de fogo em falha ou metade em sucesso. O dano ignora resistências e imunidades. Você recupera PV iguais a um terço do dano causado.\n\nESOTÉRICO. Role 2d10, escolha um para determinar o tipo de dano e some os dois resultados para determinar quantos d6 de dano são causados. Faça esse procedimento duas vezes. Resultados repetidos fazem a tempestade continuar, dobrando a área e permitindo três novos pares de d10, até que não haja repetição ou até ambos mostrarem 1.\n\nMAIS QI. Cada Qi adicional dobra a área. A cada 3 Qi adicionais, o dado de dano sobe um passo: d6 → d8 → d10 e assim por diante.",
+          "page": 14,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 17,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-18-nivel.l18.1",
+          "name": "CARACTERÍSTICA DO CHAMADO À DIVINDADE (18º NÍVEL)",
+          "level": 18,
+          "description": "Seu Chamado à Divindade concede sua característica final no 18º nível. Consulte a subclasse escolhida.",
+          "page": 15,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 18,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "class.cultivator-dandwiki.feature.manifestacao-do-dao-eterno-do-eu-astral.l20.1",
+          "name": "MANIFESTAÇÃO DO DAO ETERNO DO EU ASTRAL",
+          "level": 20,
+          "description": "No 20º nível, você alcança uma centelha de divindade e começa a romper a barreira humana. Você não precisa mais dormir, comer, beber ou respirar. Ganha proficiência em um teste de resistência à sua escolha e dobra seu bônus de proficiência em testes de resistência nos quais já seja proficiente.\n\nSeu valor de Sabedoria aumenta em 4 e seu máximo de Sabedoria passa a 24. Dois outros valores de habilidade à sua escolha aumentam em 3 e seus máximos passam a 23.\n\nAlém disso, sempre que rolar iniciativa com menos de 10 Qi, recupera Qi até ficar com 10.",
+          "page": 15,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 20,
+            "automation": "phase-5"
+          }
+        }
+      ],
+      "progression": {
+        "title": "O Cultivador",
+        "sourceTitle": "",
+        "sourcePage": 3,
+        "columns": [
+          {
+            "key": "level",
+            "label": "Nível",
+            "sticky": true
+          },
+          {
+            "key": "proficiency",
+            "label": "Prof.",
+            "title": "Bônus de Proficiência"
+          },
+          {
+            "key": "features",
+            "label": "Características",
+            "wide": true
+          },
+          {
+            "key": "qi",
+            "label": "Qi"
+          },
+          {
+            "key": "spellLevel",
+            "label": "Nível de Magia"
+          },
+          {
+            "key": "upcast",
+            "label": "Limite de Amplificação"
+          }
+        ],
+        "levels": [
+          {
+            "level": 1,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Conjuração da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.conjuracao-da-alma.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Defesa sem Armadura",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.defesa-sem-armadura.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Rajada da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.rajada-da-alma.l1.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 5,
+            "spellLevel": "1º",
+            "upcast": "1"
+          },
+          {
+            "level": 2,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Ritual de Coleta de Almas",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.ritual-de-coleta-de-almas.l2.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Conexão da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.conexao-da-alma.l2.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 7,
+            "spellLevel": "1º",
+            "upcast": "2"
+          },
+          {
+            "level": 3,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Alteração da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.alteracao-da-alma.l3.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 10,
+            "spellLevel": "2º",
+            "upcast": "2"
+          },
+          {
+            "level": 4,
+            "proficiency": "+2",
+            "features": [
+              {
+                "label": "Incremento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.incremento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 13,
+            "spellLevel": "2º",
+            "upcast": "3"
+          },
+          {
+            "level": 5,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Explosão da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.explosao-da-alma.l5.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 18,
+            "spellLevel": "3º",
+            "upcast": "3"
+          },
+          {
+            "level": 6,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Chamado à Divindade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.chamado-a-divindade.l6.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 21,
+            "spellLevel": "3º",
+            "upcast": "4"
+          },
+          {
+            "level": 7,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Amplificação da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.amplificacao-da-alma.l7.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Ritual de Coleta de Almas (d8)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.cultivator-dandwiki.feature.ritual-de-coleta-de-almas.l2.1"
+                ]
+              }
+            ],
+            "qi": 25,
+            "spellLevel": "4º",
+            "upcast": "4"
+          },
+          {
+            "level": 8,
+            "proficiency": "+3",
+            "features": [
+              {
+                "label": "Incremento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.incremento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 29,
+            "spellLevel": "4º",
+            "upcast": "5"
+          },
+          {
+            "level": 9,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Esfera da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.esfera-da-alma.l9.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 33,
+            "spellLevel": "5º",
+            "upcast": "5"
+          },
+          {
+            "level": 10,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Característica do Chamado à Divindade",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.cultivator-dandwiki.feature.chamado-a-divindade.l6.1",
+                  "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-10-nivel.l10.1",
+                  "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-14-nivel.l14.1",
+                  "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-18-nivel.l18.1"
+                ]
+              },
+              {
+                "label": "Autoridade Divina",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.autoridade-divina.l10.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 37,
+            "spellLevel": "5º",
+            "upcast": "6"
+          },
+          {
+            "level": 11,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Campo da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.campo-da-alma.l11.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Ritual de Coleta de Almas (d10)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.cultivator-dandwiki.feature.ritual-de-coleta-de-almas.l2.1"
+                ]
+              }
+            ],
+            "qi": 42,
+            "spellLevel": "6º",
+            "upcast": "6"
+          },
+          {
+            "level": 12,
+            "proficiency": "+4",
+            "features": [
+              {
+                "label": "Incremento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.incremento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 46,
+            "spellLevel": "6º",
+            "upcast": "7"
+          },
+          {
+            "level": 13,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Deslocamento da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.deslocamento-da-alma.l13.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Aprimoramento da Conjuração da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.aprimoramento-da-conjuracao-da-alma.l13.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 50,
+            "spellLevel": "7º",
+            "upcast": "7"
+          },
+          {
+            "level": 14,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Característica do Chamado à Divindade",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.cultivator-dandwiki.feature.chamado-a-divindade.l6.1",
+                  "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-10-nivel.l10.1",
+                  "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-14-nivel.l14.1",
+                  "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-18-nivel.l18.1"
+                ]
+              }
+            ],
+            "qi": 54,
+            "spellLevel": "7º",
+            "upcast": "8"
+          },
+          {
+            "level": 15,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Santuário da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.santuario-da-alma.l15.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Núcleo dos Mil Espíritos",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.nucleo-dos-mil-espiritos.l15.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 59,
+            "spellLevel": "8º",
+            "upcast": "8"
+          },
+          {
+            "level": 16,
+            "proficiency": "+5",
+            "features": [
+              {
+                "label": "Incremento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.incremento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 63,
+            "spellLevel": "8º",
+            "upcast": "9"
+          },
+          {
+            "level": 17,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Tempestade da Alma",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.tempestade-da-alma.l17.1"
+                ],
+                "relatedFeatureRefs": []
+              },
+              {
+                "label": "Ritual de Coleta de Almas (d12)",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.cultivator-dandwiki.feature.ritual-de-coleta-de-almas.l2.1"
+                ]
+              }
+            ],
+            "qi": 68,
+            "spellLevel": "9º",
+            "upcast": "9"
+          },
+          {
+            "level": 18,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Característica do Chamado à Divindade",
+                "kind": "feature-scaling",
+                "featureRefs": [],
+                "relatedFeatureRefs": [
+                  "class.cultivator-dandwiki.feature.chamado-a-divindade.l6.1",
+                  "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-10-nivel.l10.1",
+                  "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-14-nivel.l14.1",
+                  "class.cultivator-dandwiki.feature.caracteristica-do-chamado-a-divindade-18-nivel.l18.1"
+                ]
+              }
+            ],
+            "qi": 72,
+            "spellLevel": "9º",
+            "upcast": "10"
+          },
+          {
+            "level": 19,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Incremento no Valor de Habilidade",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.incremento-no-valor-de-habilidade.l4.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 76,
+            "spellLevel": "9º",
+            "upcast": "10"
+          },
+          {
+            "level": 20,
+            "proficiency": "+6",
+            "features": [
+              {
+                "label": "Manifestação do Dao Eterno do Eu Astral",
+                "kind": "feature",
+                "featureRefs": [
+                  "class.cultivator-dandwiki.feature.manifestacao-do-dao-eterno-do-eu-astral.l20.1"
+                ],
+                "relatedFeatureRefs": []
+              }
+            ],
+            "qi": 80,
+            "spellLevel": "9º",
+            "upcast": "∞"
+          }
+        ]
+      },
+      "subclassSelection": {
+        "selectionLevel": 6,
+        "homogeneous": true,
+        "observedLevels": {
+          "6": 3
+        },
+        "options": [
+          {
+            "grimorioId": "cultivator-calling-evil",
+            "identifier": "cultivator-calling-evil",
+            "name": "Chamado do Mal",
+            "originalName": "Calling of Evil",
+            "source": {
+              "sourceId": "dandwiki-cultivator",
+              "title": "D&D Wiki — Cultivator (5e Class)",
+              "pages": "15–17",
+              "chapter": "Chamados à Divindade",
+              "page": 15
+            },
+            "firstFeatureLevel": 6
+          },
+          {
+            "grimorioId": "cultivator-calling-achromatic",
+            "identifier": "cultivator-calling-achromatic",
+            "name": "Chamado Acromático",
+            "originalName": "Calling of the Achromatic",
+            "source": {
+              "sourceId": "dandwiki-cultivator",
+              "title": "D&D Wiki — Cultivator (5e Class)",
+              "pages": "17–19",
+              "chapter": "Chamados à Divindade",
+              "page": 17
+            },
+            "firstFeatureLevel": 6
+          },
+          {
+            "grimorioId": "cultivator-calling-heaven",
+            "identifier": "cultivator-calling-heaven",
+            "name": "Chamado do Céu",
+            "originalName": "Calling of Heaven",
+            "source": {
+              "sourceId": "dandwiki-cultivator",
+              "title": "D&D Wiki — Cultivator (5e Class)",
+              "pages": "19–21",
+              "chapter": "Chamados à Divindade",
+              "page": 19
+            },
+            "firstFeatureLevel": 6
+          }
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "cultivator-calling-evil",
+        "identifier": "cultivator-calling-evil",
+        "name": "Chamado do Mal",
+        "originalName": "Calling of Evil",
+        "aliases": [
+          "Calling of Evil",
+          "Chamado do Mal"
+        ]
+      },
+      "source": {
+        "sourceId": "dandwiki-cultivator",
+        "title": "D&D Wiki — Cultivator (5e Class)",
+        "pages": "15–17",
+        "chapter": "Chamados à Divindade",
+        "page": 15
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "cultivator-dandwiki",
+        "identifier": "cultivator",
+        "name": "Cultivador"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "cultivator",
+        "selectionLevel": 6,
+        "description": "Cultivadores que abraçam a origem mortuária do Qi e empregam almas Demoníacas e Esotéricas para necromancia, caos e domínio sobre mortos-vivos.",
+        "tables": [
+          {
+            "key": "table.1.magias-do-chamado-do-mal",
+            "title": "Magias do Chamado do Mal",
+            "page": 15,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível de Cultivador"
+              },
+              {
+                "key": "demoniaco",
+                "label": "Demoníaco"
+              },
+              {
+                "key": "esoterico",
+                "label": "Esotérico"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "6º",
+                "demoniaco": "Invocar Morto-Vivo; Vida Falsa; Toque Vampírico; Praga",
+                "esoterico": "Aprimoramento do Caos (Enhancement of Chaos); Leque Cromático; Augúrio"
+              },
+              {
+                "nivel": "10º",
+                "demoniaco": "Concha Antivida; Consagrar; Dança Macabra",
+                "esoterico": "Conjuração do Caos (Conjuration of Chaos); Praga de Insetos"
+              },
+              {
+                "nivel": "14º",
+                "demoniaco": "Dedo da Morte; Nuvem Incendiária; Palavra de Poder: Dor",
+                "esoterico": "Exílio do Caos (Exile of Chaos); Forma Etérea; Sequestro; Mente Vazia"
+              },
+              {
+                "nivel": "18º",
+                "demoniaco": "Chuva de Meteoros; Palavra de Poder: Cura",
+                "esoterico": "Bênção do Caos (Blessing of Chaos); Metamorfose Verdadeira; Invulnerabilidade"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 15
+      },
+      "features": [
+        {
+          "key": "subclass.cultivator-calling-evil.feature.sacrificio-pelo-mal.l6.1",
+          "name": "SACRIFÍCIO PELO MAL",
+          "level": 6,
+          "description": "Ao escolher este Chamado no 6º nível, seu Núcleo da Alma perde permanentemente a capacidade de conter Qi de Seguidor, Felicidade, Antigo e Ganância. Você não pode recuperá-los com o Ritual de Alteração da Alma. Se estiver usando um desses tipos quando escolher o Chamado, muda imediatamente para Qi Demoníaco ou Esotérico, à sua escolha.",
+          "page": 15,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-evil.feature.cortejo-demoniaco.l6.1",
+          "name": "CORTEJO DEMONÍACO",
+          "level": 6,
+          "description": "Sua conexão com as vontades dos mortos permite fortalecer criaturas criadas por suas magias de necromancia. Cada lacaio desse tipo recebe: aumento do máximo de PV igual ao seu nível de Cultivador; seu bônus de proficiência nas jogadas de dano com armas; metade do seu modificador de Sabedoria na CA (mínimo +1); e metade do seu modificador de Destreza nas jogadas de ataque (mínimo +1).\n\nVocê também pode usar um corpo ou conjunto de ossos como objeto de Conexão da Alma. Ele se torna Médio, causa dano contundente e ocupa seu espaço. Mantém as demais propriedades de uma arma da alma, mas pode realizar tarefas que uma arma não faria, como abrir portas ou manter vigília.",
+          "page": 16,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-evil.feature.espirito-amaldicoado.l10.1",
+          "name": "ESPÍRITO AMALDIÇOADO",
+          "level": 10,
+          "description": "Quando uma magia ou característica de Cultivador exige rolar dois dados e escolher um para determinar a natureza de um efeito, você pode rolar três dados em vez disso. Se quaisquer dois mostrarem o mesmo número, pode escolher esse par para ativar efeitos que normalmente exigiriam resultados iguais. Se a regra somar os dados, some os três. Se os três mostrarem o mesmo número, você recebe três vezes, quando aplicável, o efeito especial que obteria com dois resultados iguais.",
+          "page": 16,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-evil.feature.restauracao-caotica.l10.1",
+          "name": "RESTAURAÇÃO CAÓTICA",
+          "level": 10,
+          "description": "Quando usa um Dado de Alma para recuperar Qi, role dois dados do mesmo tipo e escolha o maior resultado. Se ambos mostrarem o mesmo número, além de recuperar essa quantidade de Qi você pode, como parte da mesma ação bônus, conjurar gratuitamente uma magia cujo custo de Qi seja igual ao número obtido.",
+          "page": 16,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-evil.feature.supervisor-demoniaco.l14.1",
+          "name": "SUPERVISOR DEMONÍACO",
+          "level": 14,
+          "description": "A partir do 14º nível, todas as magias de Núcleo Demoníaco custam 2 Qi a menos para serem conjuradas, sem permitir que sejam amplificadas acima do limite normal. Sempre que causar dano com uma magia Demoníaca, você recupera PV iguais a um quarto do dano causado, arredondado para baixo. Você pode conceder essa cura a qualquer um de seus lacaios invocados em vez de recebê-la.",
+          "page": 16,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-evil.feature.grao-mestre-do-caos-demoniaco.l18.1",
+          "name": "GRÃO-MESTRE DO CAOS DEMONÍACO",
+          "level": 18,
+          "description": "No 18º nível, ao rolar dois dados e escolher um para determinar a natureza de um efeito, você pode rerrolar individualmente qualquer dado que mostre o menor ou o maior valor possível do dado. Você só pode acionar isso uma vez por conjuração. Se a regra soma os dois dados, some tanto o resultado anterior quanto o novo resultado do dado rerrolado.\n\nAlém disso, você pode tornar automaticamente amigável e obediente qualquer morto-vivo de ND 3 ou menor. Mortos-vivos acima de ND 3 fazem teste de resistência de Inteligência contra sua CD de magia; em sucesso, resistem. Criaturas de ND 6 ou maior repetem o teste ao final de cada hora até obterem sucesso e se libertarem.",
+          "page": 16,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 18,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "cultivator-calling-achromatic",
+        "identifier": "cultivator-calling-achromatic",
+        "name": "Chamado Acromático",
+        "originalName": "Calling of the Achromatic",
+        "aliases": [
+          "Calling of the Achromatic",
+          "Chamado Acromático"
+        ]
+      },
+      "source": {
+        "sourceId": "dandwiki-cultivator",
+        "title": "D&D Wiki — Cultivator (5e Class)",
+        "pages": "17–19",
+        "chapter": "Chamados à Divindade",
+        "page": 17
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "cultivator-dandwiki",
+        "identifier": "cultivator",
+        "name": "Cultivador"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "cultivator",
+        "selectionLevel": 6,
+        "description": "Cultivadores pacientes que permanecem sem cor, estudando todos os tipos de Qi e alcançando flexibilidade excepcional por meio do refinamento do Qi Antigo.",
+        "tables": [
+          {
+            "key": "table.1.magias-do-chamado-acromatico",
+            "title": "Magias do Chamado Acromático",
+            "page": 17,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível"
+              },
+              {
+                "key": "felicidade",
+                "label": "Felicidade"
+              },
+              {
+                "key": "seguidor",
+                "label": "Seguidor"
+              },
+              {
+                "key": "ganancia",
+                "label": "Ganância"
+              },
+              {
+                "key": "antigo",
+                "label": "Antigo"
+              },
+              {
+                "key": "demoniaco",
+                "label": "Demoníaco"
+              },
+              {
+                "key": "esoterico",
+                "label": "Esotérico"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "6º",
+                "felicidade": "Cabana Minúscula",
+                "seguidor": "Cerimônia",
+                "ganancia": "Porta Dimensional",
+                "antigo": "Golpe Marcante; Corcel Fantasmagórico; Alterar-se; Disco Flutuante; Animar Objetos",
+                "demoniaco": "Perdição",
+                "esoterico": "Metamorfose"
+              },
+              {
+                "nivel": "10º",
+                "felicidade": "Aura de Vida",
+                "seguidor": "Fortalecimento de Perícia",
+                "ganancia": "Vidência",
+                "antigo": "Conjurar Saraivada; Encontrar Montaria Maior; Controlar Ventos",
+                "demoniaco": "Escudo de Fogo",
+                "esoterico": "Criar Passagem"
+              },
+              {
+                "nivel": "14º",
+                "felicidade": "Palavra Divina",
+                "seguidor": "Loquacidade",
+                "ganancia": "Teletransporte",
+                "antigo": "Transformação Dracônica; Inverter a Gravidade; Campo Antimagia; Tsunami",
+                "demoniaco": "Espada Arcana",
+                "esoterico": "Clone"
+              },
+              {
+                "nivel": "18º",
+                "felicidade": "—",
+                "seguidor": "—",
+                "ganancia": "—",
+                "antigo": "Sexto Sentido; Projeção Astral",
+                "demoniaco": "—",
+                "esoterico": "—"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 17
+      },
+      "features": [
+        {
+          "key": "subclass.cultivator-calling-achromatic.feature.conexao-inigualavel.l6.1",
+          "name": "CONEXÃO INIGUALÁVEL",
+          "level": 6,
+          "description": "Ao escolher este Chamado, o dado de dano dos objetos de Conexão da Alma torna-se d12. O alcance em que eles podem permanecer aumenta em 1,5 metro × seu bônus de proficiência. Em conjunto, seus objetos podem carregar até seu valor de Sabedoria × 15 libras. Se ultrapassarem esse peso, você faz um teste de resistência de Sabedoria CD 15 a cada minuto ou perde a conexão com o objeto que carrega mais peso.",
+          "page": 18,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-achromatic.feature.moldador-de-qi-antigo.l6.1",
+          "name": "MOLDADOR DE QI ANTIGO",
+          "level": 6,
+          "description": "Ao escolher este Chamado, você pode designar a si mesmo e uma quantidade de criaturas igual ao seu modificador de Sabedoria para serem excluídas dos efeitos de quaisquer magias de Qi Antigo que você conjure.",
+          "page": 18,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-achromatic.feature.maestria-prismatica-do-qi.l10.1",
+          "name": "MAESTRIA PRISMÁTICA DO QI",
+          "level": 10,
+          "description": "No 10º nível, seu Núcleo da Alma pode conter dois tipos diferentes de Qi simultaneamente, permitindo conjurar magias de dois tipos de Núcleo. Você escolhe os dois tipos ao receber esta característica e sempre que concluir um Ritual de Alteração da Alma. No 18º nível, esse limite aumenta para três tipos.",
+          "page": 18,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-achromatic.feature.restauracao-adepta.l10.1",
+          "name": "RESTAURAÇÃO ADEPTA",
+          "level": 10,
+          "description": "Quando usa Dados de Alma para recuperar Qi, você pode gastar quantos desejar, decidindo gastar outro depois de cada rolagem. Cada Dado de Alma também recupera Qi adicional igual à posição dele na sequência: o primeiro recupera +1 Qi, o segundo +2, o terceiro +3, e assim por diante.",
+          "page": 18,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-achromatic.feature.formacao-de-pilhagem-de-essencia.l14.1",
+          "name": "FORMAÇÃO DE PILHAGEM DE ESSÊNCIA",
+          "level": 14,
+          "description": "Ao realizar um Ritual de Coleta de Almas, você pode meditar por mais 24 horas para receber 1 Dado de Alma adicional. Além disso, estar em um Local Preferido passa a conceder 2 Dados de Alma adicionais, totalizando até 3 dados extras com a meditação prolongada.",
+          "page": 18,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-achromatic.feature.grao-mestre-caleidoscopico.l18.1",
+          "name": "GRÃO-MESTRE CALEIDOSCÓPICO",
+          "level": 18,
+          "description": "No 18º nível, você pode conjurar magias de Qi Antigo de até 3º nível sem gastar Qi. Além disso, quando estiver num lugar que conte como Local Preferido de outro tipo de Núcleo, pode conjurar magias de até 2º nível daquele tipo sem gastar Qi, mesmo que seu Núcleo não esteja atualmente configurado para esse Qi.",
+          "page": 18,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 18,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "grimorio-foundry-class-bundle",
+      "schemaVersion": 1,
+      "kind": "subclass",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer"
+      },
+      "identity": {
+        "grimorioId": "cultivator-calling-heaven",
+        "identifier": "cultivator-calling-heaven",
+        "name": "Chamado do Céu",
+        "originalName": "Calling of Heaven",
+        "aliases": [
+          "Calling of Heaven",
+          "Chamado do Céu"
+        ]
+      },
+      "source": {
+        "sourceId": "dandwiki-cultivator",
+        "title": "D&D Wiki — Cultivator (5e Class)",
+        "pages": "19–21",
+        "chapter": "Chamados à Divindade",
+        "page": 19
+      },
+      "nativeMapping": {
+        "status": "ready",
+        "warnings": []
+      },
+      "parentClass": {
+        "grimorioId": "cultivator-dandwiki",
+        "identifier": "cultivator",
+        "name": "Cultivador"
+      },
+      "subclass": {
+        "itemType": "subclass",
+        "classIdentifier": "cultivator",
+        "selectionLevel": 6,
+        "description": "Cultivadores que procuram divindade por compaixão, fé e influência espiritual, restringindo seu Núcleo aos Qi de Felicidade, Seguidor e Ganância.",
+        "tables": [
+          {
+            "key": "table.1.magias-do-chamado-do-ceu",
+            "title": "Magias do Chamado do Céu",
+            "page": 19,
+            "description": "",
+            "sourceTitle": "",
+            "columns": [
+              {
+                "key": "nivel",
+                "label": "Nível"
+              },
+              {
+                "key": "felicidade",
+                "label": "Felicidade"
+              },
+              {
+                "key": "seguidor",
+                "label": "Seguidor"
+              },
+              {
+                "key": "ganancia",
+                "label": "Ganância"
+              }
+            ],
+            "rows": [
+              {
+                "nivel": "6º",
+                "felicidade": "Aura de Vida; Aura de Vitalidade; Proteção contra a Morte",
+                "seguidor": "Discurso Motivacional; Localizar Criatura",
+                "ganancia": "Cabana Minúscula; Mesclar-se às Rochas; Indetectável"
+              },
+              {
+                "nivel": "10º",
+                "felicidade": "Revivificar",
+                "seguidor": "Similaridade; Missão",
+                "ganancia": "Enfeitiçar Monstro"
+              },
+              {
+                "nivel": "14º",
+                "felicidade": "Ressurreição; Palavra de Poder: Cura",
+                "seguidor": "Miragem Arcana; Palavra de Poder: Atordoar; Dominar Monstro",
+                "ganancia": "Antipatia/Simpatia; Simulacro"
+              },
+              {
+                "nivel": "18º",
+                "felicidade": "Ressurreição Verdadeira",
+                "seguidor": "Grito Psíquico; Palavra de Poder: Matar",
+                "ganancia": "Mudar Forma"
+              }
+            ]
+          }
+        ],
+        "references": [],
+        "sourcePage": 19
+      },
+      "features": [
+        {
+          "key": "subclass.cultivator-calling-heaven.feature.sacrificio-pelo-bem.l6.1",
+          "name": "SACRIFÍCIO PELO BEM",
+          "level": 6,
+          "description": "Ao escolher este Chamado no 6º nível, seu Núcleo da Alma perde permanentemente a capacidade de conter Qi Antigo, Demoníaco e Esotérico. Você não pode recuperá-los com o Ritual de Alteração da Alma. Se estiver usando um desses tipos, muda imediatamente para Ganância, Felicidade ou Seguidor, à sua escolha.",
+          "page": 19,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-heaven.feature.quietude-do-ceu.l6.1",
+          "name": "QUIETUDE DO CÉU",
+          "level": 6,
+          "description": "Como ação bônus, você pode gastar 2 Qi para encerrar um efeito de estado/condição em si mesmo ou em outra criatura que possa ver a até 9 metros.",
+          "page": 19,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-heaven.feature.retribuicao-da-fe.l6.1",
+          "name": "RETRIBUIÇÃO DA FÉ",
+          "level": 6,
+          "description": "Ao escolher este Chamado, você se torna sacerdote errante de uma religião ou fundador de uma nova. Pode erguer santuários, pregar sua fé e definir seus preceitos. Quando alguém decide seguir sua religião e reza, pode realizar um teste de Religião com CD igual a 20 − seu modificador de Sabedoria. A pessoa só pode repetir esse teste uma vez por semana e possui vantagem se você ou um sacerdote de sua fé estiver presente.\n\nEm sucesso, uma magia correspondente a um dos preceitos da religião é conjurada sobre o fiel. Se houver vários preceitos, ele escolhe qual pedir. A magia dura normalmente e, se exigir concentração, o fiel é considerado o conjurador. Você pode escolher magias/preceitos apropriados, mas a magia deve ser conhecida por você e não pode ter nível superior a um terço do seu Nível de Magia, arredondado para baixo. Exemplos da fonte: Bem-estar — Santuário; Fortuna — Distorcer Valor; Orientação — Orientação; Saúde Forte — Ajuda; Força — Aprimorar Habilidade; Proteção — Proteção.\n\nAo se concentrar dentro de um santuário dedicado a uma de suas divindades ou a você, pode projetar-se astralmente para um Reino Divino onde Cultivadores conversam, pedem conselhos e concedem missões. Cada nova característica do Chamado concede acesso a um reino mais prestigioso, do Reino Divino Menor ao Médio, Maior e por fim ao Palácio de Jade. A partir do 14º nível, se um fiel fizer o teste com você ou um sacerdote presente, ele obtém sucesso automaticamente.",
+          "page": 19,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 6,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-heaven.feature.tranquilidade-absoluta.l10.1",
+          "name": "TRANQUILIDADE ABSOLUTA",
+          "level": 10,
+          "description": "No 10º nível, enquanto estiver consciente você irradia serenidade. Ao fim de um descanso longo, recebe o efeito da magia Santuário até o início do próximo descanso longo, usando sua CD de magia. O efeito não termina antecipadamente como Santuário normalmente terminaria; cada criatura específica precisa superar a proteção apenas uma vez para poder atacá-lo.\n\nEnquanto estiver consciente, você também é imune a doenças e venenos.",
+          "page": 20,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-heaven.feature.restauracao-mistica.l10.1",
+          "name": "RESTAURAÇÃO MÍSTICA",
+          "level": 10,
+          "description": "Sempre que rolar um Dado de Alma para recuperar Qi, adicione também seu modificador de Sabedoria à quantidade de Qi recuperada.",
+          "page": 20,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 10,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-heaven.feature.edito-da-graca.l14.1",
+          "name": "ÉDITO DA GRAÇA",
+          "level": 14,
+          "description": "Enquanto estiver consciente, criaturas não hostis a até 9 metros recebem um bônus em testes de resistência de Sabedoria igual ao seu modificador de Sabedoria.\n\nAlém disso, quando você ou uma criatura a até 9 metros realizar um teste de resistência, você pode usar sua reação e gastar qualquer quantidade de Qi para adicionar esse valor como bônus ao resultado. Você pode dividir o Qi gasto entre vários testes de resistência. A decisão pode ser tomada depois da rolagem, mas antes de o Mestre determinar o resultado.",
+          "page": 20,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 14,
+            "automation": "phase-5"
+          }
+        },
+        {
+          "key": "subclass.cultivator-calling-heaven.feature.grao-mestre-do-ceu-final.l18.1",
+          "name": "GRÃO-MESTRE DO CÉU FINAL",
+          "level": 18,
+          "description": "No 18º nível, você manifesta os primeiros sinais de verdadeira divindade.\n\n• Sempre que uma criatura recuperar PV por uma de suas magias, você pode causar dano radiante igual à metade dos PV recuperados a uma criatura a até 9 metros dela.\n• Como ação, você pode absorver a Ganância de moedas de ouro ou objetos valiosos e convertê-la diretamente em Qi. Cada 100 po de valor tornam-se 1 Qi e são perdidas para o além.\n• A CD de resistência de suas magias aumenta em metade do seu modificador de Carisma, arredondado para cima.",
+          "page": 21,
+          "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+          "originalName": "",
+          "tables": [],
+          "foundryPlan": {
+            "itemType": "feat",
+            "role": "granted-feature",
+            "advancementType": "ItemGrant",
+            "grantAtLevel": 18,
+            "automation": "phase-5"
+          }
+        }
+      ]
+    }
+  ]
+}

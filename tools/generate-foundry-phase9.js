@@ -8,7 +8,7 @@ const root = path.resolve(__dirname, '..');
 global.window = global;
 function load(file) { vm.runInThisContext(fs.readFileSync(path.join(root, file), 'utf8'), { filename: file }); }
 [
-  'js/config.js','js/registry.js','data/sources.js','data/classes.js','data/progression.js','data/tasha-artificer.js','data/lyre-classes.js','data/zagalhta-classes.js','data/ryoko-classes.js','data/lyre-subclasses.js','data/blade-bone-benefit-classes.js','data/zagalhta-specializations.js','data/zagalhta-subclasses-standard.js','data/zagalhta-subclasses-standard-2.js','data/zagalhta-subclasses-standard-3.js','data/zagalhta-compulsions.js','data/blade-bone-benefit-subclasses.js','data/ryoko-subclasses.js','data/ryoko-optional-features.js','data/homebrew-emissario.js','data/xanathar-subclasses.js','data/tasha-subclasses.js','data/scag-subclasses.js','data/homebrew-paladin-bahamut.js','data/homebrew-spellblade-class.js','data/export/foundry-class-overrides.js','js/exporters/registry.js','js/exporters/foundry-class-bundle.js','js/exporters/foundry-class-package.js'
+  'js/config.js','js/registry.js','data/sources.js','data/classes.js','data/progression.js','data/tasha-artificer.js','data/lyre-classes.js','data/zagalhta-classes.js','data/ryoko-classes.js','data/lyre-subclasses.js','data/blade-bone-benefit-classes.js','data/zagalhta-specializations.js','data/zagalhta-subclasses-standard.js','data/zagalhta-subclasses-standard-2.js','data/zagalhta-subclasses-standard-3.js','data/zagalhta-compulsions.js','data/blade-bone-benefit-subclasses.js','data/ryoko-subclasses.js','data/ryoko-optional-features.js','data/homebrew-emissario.js','data/xanathar-subclasses.js','data/tasha-subclasses.js','data/scag-subclasses.js','data/homebrew-paladin-bahamut.js','data/homebrew-spellblade-class.js','data/cultivator-class.js','data/export/foundry-class-overrides.js','js/exporters/registry.js','js/exporters/foundry-class-bundle.js','js/exporters/foundry-class-package.js'
 ].forEach(load);
 
 const bundleApi = global.GRIMORIO_FOUNDRY_CLASS_BUNDLE;
@@ -24,7 +24,7 @@ const fullValidation = packageApi.validatePackage(full);
 if (!fullValidation.ok) throw new Error(fullValidation.errors.join('\n'));
 fs.writeFileSync(path.join(out, 'packages', 'catalogo-completo.json'), packageApi.stringify(full));
 
-const sampleClasses = ['barbarian', 'dragoneer', 'bender-ryoko', 'blood-minister-somnus'];
+const sampleClasses = ['barbarian', 'dragoneer', 'bender-ryoko', 'blood-minister-somnus', 'cultivator-dandwiki'];
 const samples = [];
 for (const id of sampleClasses) {
   const cls = global.GRIMORIO_CLASSES.find(x => x.id === id);
@@ -46,7 +46,7 @@ fs.writeFileSync(path.join(out, 'bundles', 'path-of-the-kaiju.json'), bundleApi.
 const catalog = {
   schema: 'grimorio-foundry-phase9-catalog',
   version: 1,
-  generatedFor: { foundry: '13.351', dnd5e: '5.3.3', importer: '0.5.0', grimorio: '5.21.0' },
+  generatedFor: { foundry: '13.351', dnd5e: '5.3.3', importer: '0.9.2', grimorio: '5.26.0' },
   packageProfile: packageApi.profile.id,
   packageSchema: `${packageApi.schema.name}@${packageApi.schema.version}`,
   summary: full.summary,

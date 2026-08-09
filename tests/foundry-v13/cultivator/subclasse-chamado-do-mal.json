@@ -1,0 +1,194 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "cultivator-calling-evil",
+    "identifier": "cultivator-calling-evil",
+    "name": "Chamado do Mal",
+    "originalName": "Calling of Evil",
+    "aliases": [
+      "Calling of Evil",
+      "Chamado do Mal"
+    ]
+  },
+  "source": {
+    "sourceId": "dandwiki-cultivator",
+    "title": "D&D Wiki — Cultivator (5e Class)",
+    "pages": "15–17",
+    "chapter": "Chamados à Divindade",
+    "page": 15
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "cultivator-dandwiki",
+    "identifier": "cultivator",
+    "name": "Cultivador"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "cultivator",
+    "selectionLevel": 6,
+    "description": "Cultivadores que abraçam a origem mortuária do Qi e empregam almas Demoníacas e Esotéricas para necromancia, caos e domínio sobre mortos-vivos.",
+    "tables": [
+      {
+        "key": "table.1.magias-do-chamado-do-mal",
+        "title": "Magias do Chamado do Mal",
+        "page": 15,
+        "description": "",
+        "sourceTitle": "",
+        "columns": [
+          {
+            "key": "nivel",
+            "label": "Nível de Cultivador"
+          },
+          {
+            "key": "demoniaco",
+            "label": "Demoníaco"
+          },
+          {
+            "key": "esoterico",
+            "label": "Esotérico"
+          }
+        ],
+        "rows": [
+          {
+            "nivel": "6º",
+            "demoniaco": "Invocar Morto-Vivo; Vida Falsa; Toque Vampírico; Praga",
+            "esoterico": "Aprimoramento do Caos (Enhancement of Chaos); Leque Cromático; Augúrio"
+          },
+          {
+            "nivel": "10º",
+            "demoniaco": "Concha Antivida; Consagrar; Dança Macabra",
+            "esoterico": "Conjuração do Caos (Conjuration of Chaos); Praga de Insetos"
+          },
+          {
+            "nivel": "14º",
+            "demoniaco": "Dedo da Morte; Nuvem Incendiária; Palavra de Poder: Dor",
+            "esoterico": "Exílio do Caos (Exile of Chaos); Forma Etérea; Sequestro; Mente Vazia"
+          },
+          {
+            "nivel": "18º",
+            "demoniaco": "Chuva de Meteoros; Palavra de Poder: Cura",
+            "esoterico": "Bênção do Caos (Blessing of Chaos); Metamorfose Verdadeira; Invulnerabilidade"
+          }
+        ]
+      }
+    ],
+    "references": [],
+    "sourcePage": 15
+  },
+  "features": [
+    {
+      "key": "subclass.cultivator-calling-evil.feature.sacrificio-pelo-mal.l6.1",
+      "name": "SACRIFÍCIO PELO MAL",
+      "level": 6,
+      "description": "Ao escolher este Chamado no 6º nível, seu Núcleo da Alma perde permanentemente a capacidade de conter Qi de Seguidor, Felicidade, Antigo e Ganância. Você não pode recuperá-los com o Ritual de Alteração da Alma. Se estiver usando um desses tipos quando escolher o Chamado, muda imediatamente para Qi Demoníaco ou Esotérico, à sua escolha.",
+      "page": 15,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-evil.feature.cortejo-demoniaco.l6.1",
+      "name": "CORTEJO DEMONÍACO",
+      "level": 6,
+      "description": "Sua conexão com as vontades dos mortos permite fortalecer criaturas criadas por suas magias de necromancia. Cada lacaio desse tipo recebe: aumento do máximo de PV igual ao seu nível de Cultivador; seu bônus de proficiência nas jogadas de dano com armas; metade do seu modificador de Sabedoria na CA (mínimo +1); e metade do seu modificador de Destreza nas jogadas de ataque (mínimo +1).\n\nVocê também pode usar um corpo ou conjunto de ossos como objeto de Conexão da Alma. Ele se torna Médio, causa dano contundente e ocupa seu espaço. Mantém as demais propriedades de uma arma da alma, mas pode realizar tarefas que uma arma não faria, como abrir portas ou manter vigília.",
+      "page": 16,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-evil.feature.espirito-amaldicoado.l10.1",
+      "name": "ESPÍRITO AMALDIÇOADO",
+      "level": 10,
+      "description": "Quando uma magia ou característica de Cultivador exige rolar dois dados e escolher um para determinar a natureza de um efeito, você pode rolar três dados em vez disso. Se quaisquer dois mostrarem o mesmo número, pode escolher esse par para ativar efeitos que normalmente exigiriam resultados iguais. Se a regra somar os dados, some os três. Se os três mostrarem o mesmo número, você recebe três vezes, quando aplicável, o efeito especial que obteria com dois resultados iguais.",
+      "page": 16,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-evil.feature.restauracao-caotica.l10.1",
+      "name": "RESTAURAÇÃO CAÓTICA",
+      "level": 10,
+      "description": "Quando usa um Dado de Alma para recuperar Qi, role dois dados do mesmo tipo e escolha o maior resultado. Se ambos mostrarem o mesmo número, além de recuperar essa quantidade de Qi você pode, como parte da mesma ação bônus, conjurar gratuitamente uma magia cujo custo de Qi seja igual ao número obtido.",
+      "page": 16,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-evil.feature.supervisor-demoniaco.l14.1",
+      "name": "SUPERVISOR DEMONÍACO",
+      "level": 14,
+      "description": "A partir do 14º nível, todas as magias de Núcleo Demoníaco custam 2 Qi a menos para serem conjuradas, sem permitir que sejam amplificadas acima do limite normal. Sempre que causar dano com uma magia Demoníaca, você recupera PV iguais a um quarto do dano causado, arredondado para baixo. Você pode conceder essa cura a qualquer um de seus lacaios invocados em vez de recebê-la.",
+      "page": 16,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.cultivator-calling-evil.feature.grao-mestre-do-caos-demoniaco.l18.1",
+      "name": "GRÃO-MESTRE DO CAOS DEMONÍACO",
+      "level": 18,
+      "description": "No 18º nível, ao rolar dois dados e escolher um para determinar a natureza de um efeito, você pode rerrolar individualmente qualquer dado que mostre o menor ou o maior valor possível do dado. Você só pode acionar isso uma vez por conjuração. Se a regra soma os dois dados, some tanto o resultado anterior quanto o novo resultado do dado rerrolado.\n\nAlém disso, você pode tornar automaticamente amigável e obediente qualquer morto-vivo de ND 3 ou menor. Mortos-vivos acima de ND 3 fazem teste de resistência de Inteligência contra sua CD de magia; em sucesso, resistem. Criaturas de ND 6 ou maior repetem o teste ao final de cada hora até obterem sucesso e se libertarem.",
+      "page": 16,
+      "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

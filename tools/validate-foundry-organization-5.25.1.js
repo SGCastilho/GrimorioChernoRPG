@@ -17,8 +17,8 @@ function flagsOf(doc){return doc.flags?.['grimorio-importer'] ?? doc._source?.fl
 (async () => {
   const siteManifest = readJson(path.join(root, 'manifest.json'));
   const moduleManifest = readJson(path.join(moduleRoot, 'module.json'));
-  assert(siteManifest.version === '5.25.1', 'Grimório deve estar em 5.25.1');
-  assert(moduleManifest.version === '0.9.1', 'Grimório Importer deve estar em 0.9.1');
+  assert(siteManifest.version === '5.26.0', 'Grimório deve estar em 5.26.0');
+  assert(moduleManifest.version === '0.9.2', 'Grimório Importer deve estar em 0.9.2');
   assert(siteManifest.foundryClassImporter?.featureCompendiumFolders === true, 'Manifest deve registrar pastas de características');
   assert(siteManifest.foundryClassImporter?.featureFolderHierarchy === 'class/subclass', 'Hierarquia declarada deve ser class/subclass');
   assert(siteManifest.foundryClassImporter?.featureDisplayNameNormalization === true, 'Normalização de títulos deve estar registrada');
@@ -26,7 +26,7 @@ function flagsOf(doc){return doc.flags?.['grimorio-importer'] ?? doc._source?.fl
   const materializer = await import(pathToFileURL(path.join(moduleRoot, 'scripts', 'materializer.js')).href + `?v=${Date.now()}`);
   const storage = await import(pathToFileURL(path.join(moduleRoot, 'scripts', 'pack-storage.js')).href + `?v=${Date.now()}`);
   const full = readJson(catalogFile);
-  assert(full.bundles.length === 401, 'Catálogo completo deve possuir 401 bundles');
+  assert(full.bundles.length === 405, 'Catálogo completo deve possuir 405 bundles');
 
   // Validação unitária da capitalização sem alterar nomes já editoriais.
   const displayCases = new Map([
@@ -74,17 +74,17 @@ function flagsOf(doc){return doc.flags?.['grimorio-importer'] ?? doc._source?.fl
   const ordered=[...full.bundles].sort((a,b)=>(a.kind===b.kind?0:a.kind==='class'?-1:1));
   for (const bundle of ordered) await materializer.materializeBundle(bundle,runtime);
 
-  assert(packs.classes.docs.length===24,'Devem existir 24 classes');
-  assert(packs.subclasses.docs.length===377,'Devem existir 377 subclasses');
-  assert(packs.features.docs.length===2293,'Devem existir 2293 características materializadas');
-  assert(packs.features.folders.length===401,`Esperadas 401 pastas; encontradas ${packs.features.folders.length}`);
+  assert(packs.classes.docs.length===25,'Devem existir 25 classes');
+  assert(packs.subclasses.docs.length===380,'Devem existir 380 subclasses');
+  assert(packs.features.docs.length===2329,'Devem existir 2329 características materializadas');
+  assert(packs.features.folders.length===405,`Esperadas 405 pastas; encontradas ${packs.features.folders.length}`);
   assert(packs.classes.folders.length===0 && packs.subclasses.folders.length===0,'Pastas novas devem existir somente em Grimório — Características');
 
   const managedFolders=packs.features.folders.filter(f=>flagsOf(f).managedFolder===true);
   const classFolders=managedFolders.filter(f=>flagsOf(f).folderRole==='class');
   const subclassFolders=managedFolders.filter(f=>flagsOf(f).folderRole==='subclass');
-  assert(classFolders.length===24,`Esperadas 24 pastas de classe; encontradas ${classFolders.length}`);
-  assert(subclassFolders.length===377,`Esperadas 377 subpastas de subclasse; encontradas ${subclassFolders.length}`);
+  assert(classFolders.length===25,`Esperadas 25 pastas de classe; encontradas ${classFolders.length}`);
+  assert(subclassFolders.length===380,`Esperadas 380 subpastas de subclasse; encontradas ${subclassFolders.length}`);
   assert(classFolders.every(f=>!f.folder),'Pastas de classe devem ficar na raiz do compêndio');
   assert(subclassFolders.every(f=>classFolders.some(parent=>parent.id===f.folder)),'Toda pasta de subclasse deve estar dentro de uma pasta de classe gerenciada');
 
@@ -137,7 +137,7 @@ function flagsOf(doc){return doc.flags?.['grimorio-importer'] ?? doc._source?.fl
   assert(runtime.listWorldItems().length===0,'A organização não deve criar Items no Mundo');
 
   console.log('FOUNDRY_ORGANIZATION_5_25_1_OK',JSON.stringify({
-    app:siteManifest.version,module:moduleManifest.version,classes:24,subclasses:377,features:2293,
+    app:siteManifest.version,module:moduleManifest.version,classes:25,subclasses:380,features:2329,
     folders:{total:packs.features.folders.length,classes:classFolders.length,subclasses:subclassFolders.length},
     examples:{bardFolder:bardFolder.name,bardSubclassFolder:bardSubFolder.name,fury:furyAfter.name},
     stableReimport:true,stableFeatureUuid:true,stableFolderIds:true,worldItemsCreated:0

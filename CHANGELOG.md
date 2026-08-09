@@ -1,3 +1,20 @@
+## 5.26.0
+
+- Integrada a classe **Cultivador (Cultivator)** em PT-BR a partir do PDF do D&D Wiki fornecido pelo usuário.
+- Adicionada progressão completa do 1º ao 20º nível com Qi, Nível de Magia e Limite de Amplificação.
+- Estruturados **22 blocos de características da classe**, **10 tabelas** e referências de multiclasse/regras opcionais/editoriais.
+- Adicionados **3 Chamados à Divindade** — Chamado do Mal, Chamado Acromático e Chamado do Céu — com **19 características** e **3 tabelas de magias de Chamado**.
+- Preservados Núcleo da Alma, seis tipos de Qi, Magias da Alma, Ritual de Coleta de Almas, Dados de Alma, Amplificação, Autoridade Divina e as demais regras de alto nível.
+- Preservada explicitamente a inconsistência da fonte na tabela de Amplificação da Alma e o cabeçalho sem regra `Sweeping Soul Shaping`; nenhuma regra foi inventada para magias externas citadas sem bloco mecânico no PDF.
+- Registrada nova fonte `dandwiki-cultivator`; total de fontes passa para **14**.
+- Catálogo passa para **25 classes, 380 subclasses/especializações e 25 progressões estruturadas**.
+- Bundles Foundry passam para **405**; características de origem passam para **2.411** e características materializadas para **2.329**.
+- Atualizado **Grimório Importer para 0.9.2**, com perfil `cultivator`, seleção de Chamado no 6º nível e sem criação de spell slots nativos para o sistema de Qi.
+- Adicionado perfil parcial para **Autoridade Divina**, com Activity de ação e rolagem `1d100`; a recarga condicional permanece manual.
+- Cobertura de automação passa para **72 perfis**, **87 Activities**, 37 recursos/usos e 11 Active Effects.
+- Auditoria atualizada: 72 perfiladas, 292 candidatas de alta prioridade, 732 médias e 1.315 predominantemente textuais/contextuais.
+- Adicionado `tools/validate-cultivator-5.26.js` e novos artefatos/roteiros de validação do Cultivador.
+
 ## 5.25.1
 
 - Atualizado o **Grimório Importer para 0.9.1**.

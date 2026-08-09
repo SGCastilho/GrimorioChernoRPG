@@ -203,6 +203,25 @@
       matchIncludes: ['Lâminas de Bahamut']
     },
     {
+      id: 'dandwiki-cultivator',
+      title: 'D&D Wiki — Cultivator (5e Class)',
+      shortTitle: 'Cultivator — D&D Wiki',
+      filterLabel: 'Cultivator — D&D Wiki',
+      homeLabel: 'Cultivator — D&D Wiki',
+      catalogLabel: 'Cultivator — D&D Wiki',
+      order: 82,
+      showOnHome: true,
+      showInAbout: true,
+      aliases: ['Cultivator (5e Class)', 'D&D Wiki — Cultivator (5e Class)', 'Cultivator'],
+      matchIncludes: ['Cultivator (5e Class)', 'D&D Wiki — Cultivator'],
+      about: [
+        'Integração integral da classe Cultivador em PT-BR, incluindo progressão do 1º ao 20º nível, Núcleo da Alma, Qi, Magias da Alma, Ritual de Coleta de Almas, tabelas e regras de multiclasse.',
+        'Três Chamados à Divindade foram integrados: Chamado do Mal, Chamado Acromático e Chamado do Céu.',
+        'A lista de magias da classe foi preservada. Magias homebrew citadas pela página sem bloco de regras no PDF permanecem apenas como referências, sem mecânicas inventadas.',
+        'A página de origem informa que seu conteúdo está disponível sob a GNU Free Documentation License 1.3, exceto onde indicado.'
+      ]
+    },
+    {
       id: 'custom',
       title: 'Conteúdo próprio',
       shortTitle: 'Conteúdo próprio',

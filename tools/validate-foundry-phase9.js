@@ -14,14 +14,14 @@ function applyUpdate(source,data){for(const [key,value] of Object.entries(data))
 
 (async()=>{
   const manifest = JSON.parse(fs.readFileSync(path.join(moduleRoot,'module.json'),'utf8'));
-  assert(['0.5.0','0.6.0','0.7.0','0.8.0','0.9.0','0.9.1'].includes(manifest.version), 'module.json deve preservar compatibilidade da Fase 9 (0.5.0+)');
+  assert(['0.5.0','0.6.0','0.7.0','0.8.0','0.9.0','0.9.1','0.9.2'].includes(manifest.version), 'module.json deve preservar compatibilidade da Fase 9 (0.5.0+)');
   const mainSource = fs.readFileSync(path.join(moduleRoot,'scripts','main.js'),'utf8');
   for (const token of ['importPackage','importPayload','importPayloads','validatePackage','phase9PackageSupport','/grimorio-import-package','notifyEach: false','notifySummary: false']) assert(mainSource.includes(token), `main.js sem ${token}`);
 
   const phaseRoot = path.join(root,'tests','foundry-v13','phase9');
   const catalog = JSON.parse(fs.readFileSync(path.join(phaseRoot,'catalog.json'),'utf8'));
   const full = JSON.parse(fs.readFileSync(path.join(phaseRoot,catalog.fullCatalogFile),'utf8'));
-  assert(catalog.summary.bundles === 401 && catalog.summary.classes === 24 && catalog.summary.subclasses === 377, 'Pacote completo deve conter 401 bundles (24+377)');
+  assert(catalog.summary.bundles === 405 && catalog.summary.classes === 25 && catalog.summary.subclasses === 380, 'Pacote completo deve conter 405 bundles (25+380)');
 
   const validator = await import(pathToFileURL(path.join(moduleRoot,'scripts','bundle-validator.js')).href + `?v=${Date.now()}`);
   const pkgValidator = await import(pathToFileURL(path.join(moduleRoot,'scripts','package-validator.js')).href + `?v=${Date.now()}`);
@@ -47,9 +47,9 @@ function applyUpdate(source,data){for(const [key,value] of Object.entries(data))
 
   const ordered=[...full.bundles].sort((a,b)=>(a.kind===b.kind?0:a.kind==='class'?-1:1));
   for(const bundle of ordered) await materializer.materializeBundle(bundle,runtime);
-  assert(packs.classes.docs.length===24,`Pacote materializou ${packs.classes.docs.length}/24 classes`);
-  assert(packs.subclasses.docs.length===377,`Pacote materializou ${packs.subclasses.docs.length}/377 subclasses`);
-  assert(packs.features.docs.length===2293,`Pacote materializou ${packs.features.docs.length}/2293 características`);
+  assert(packs.classes.docs.length===25,`Pacote materializou ${packs.classes.docs.length}/25 classes`);
+  assert(packs.subclasses.docs.length===380,`Pacote materializou ${packs.subclasses.docs.length}/380 subclasses`);
+  assert(packs.features.docs.length===2329,`Pacote materializou ${packs.features.docs.length}/2329 características`);
   assert(Object.values(packs).every(p=>p.locked),'Packs devem terminar bloqueados');
   assert(runtime.listWorldItems().length===0,'Pacote não deve criar Items de Mundo');
 
@@ -62,10 +62,10 @@ function applyUpdate(source,data){for(const [key,value] of Object.entries(data))
   global.window=global;
   function load(file){vm.runInThisContext(fs.readFileSync(path.join(root,file),'utf8'),{filename:file});}
   [
-    'js/config.js','js/registry.js','data/sources.js','data/classes.js','data/progression.js','data/tasha-artificer.js','data/lyre-classes.js','data/zagalhta-classes.js','data/ryoko-classes.js','data/lyre-subclasses.js','data/blade-bone-benefit-classes.js','data/zagalhta-specializations.js','data/zagalhta-subclasses-standard.js','data/zagalhta-subclasses-standard-2.js','data/zagalhta-subclasses-standard-3.js','data/zagalhta-compulsions.js','data/blade-bone-benefit-subclasses.js','data/ryoko-subclasses.js','data/ryoko-optional-features.js','data/homebrew-emissario.js','data/xanathar-subclasses.js','data/tasha-subclasses.js','data/scag-subclasses.js','data/homebrew-paladin-bahamut.js','data/homebrew-spellblade-class.js','data/export/foundry-class-overrides.js','js/exporters/registry.js','js/exporters/foundry-class-bundle.js','js/exporters/foundry-class-package.js'
+    'js/config.js','js/registry.js','data/sources.js','data/classes.js','data/progression.js','data/tasha-artificer.js','data/lyre-classes.js','data/zagalhta-classes.js','data/ryoko-classes.js','data/lyre-subclasses.js','data/blade-bone-benefit-classes.js','data/zagalhta-specializations.js','data/zagalhta-subclasses-standard.js','data/zagalhta-subclasses-standard-2.js','data/zagalhta-subclasses-standard-3.js','data/zagalhta-compulsions.js','data/blade-bone-benefit-subclasses.js','data/ryoko-subclasses.js','data/ryoko-optional-features.js','data/homebrew-emissario.js','data/xanathar-subclasses.js','data/tasha-subclasses.js','data/scag-subclasses.js','data/homebrew-paladin-bahamut.js','data/homebrew-spellblade-class.js','data/cultivator-class.js','data/export/foundry-class-overrides.js','js/exporters/registry.js','js/exporters/foundry-class-bundle.js','js/exporters/foundry-class-package.js'
   ].forEach(load);
   const sitePkg=global.GRIMORIO_FOUNDRY_CLASS_PACKAGE.buildCatalogPackage();
-  assert(sitePkg.summary.bundles===401 && global.GRIMORIO_FOUNDRY_CLASS_PACKAGE.validatePackage(sitePkg).ok,'Exportador do site não gera pacote completo válido');
+  assert(sitePkg.summary.bundles===405 && global.GRIMORIO_FOUNDRY_CLASS_PACKAGE.validatePackage(sitePkg).ok,'Exportador do site não gera pacote completo válido');
   const barbarianPkg=global.GRIMORIO_FOUNDRY_CLASS_PACKAGE.buildClassPackage('barbarian');
   assert(barbarianPkg.summary.classes===1 && barbarianPkg.summary.subclasses===17,'Pacote completo do Bárbaro deve ter 1 classe + 17 subclasses');
 
@@ -75,7 +75,7 @@ function applyUpdate(source,data){for(const [key,value] of Object.entries(data))
   assert(ctx.viewSubclass('ryoko-barbarian-path-kaiju').includes('Exportar Foundry'),'Ficha de subclasse sem botão Foundry');
   assert(ctx.viewClassList().includes('Exportar catálogo'),'Lista de classes sem exportação do catálogo');
   const uiCatalog=ctx.GRIMORIO_FOUNDRY_CLASS_EXPORT_UI.buildCatalogState();
-  assert(uiCatalog.ok && uiCatalog.summary.bundles===401,'Estado UI do catálogo inválido');
+  assert(uiCatalog.ok && uiCatalog.summary.bundles===405,'Estado UI do catálogo inválido');
 
-  console.log('PHASE9_OK',JSON.stringify({module:manifest.version,packageBundles:401,classes:24,subclasses:377,features:packs.features.docs.length,classPackageBarbarian:barbarianPkg.summary.bundles,siteUi:true,reimportStable:true,worldItemsCreated:0},null,2));
+  console.log('PHASE9_OK',JSON.stringify({module:manifest.version,packageBundles:405,classes:25,subclasses:380,features:packs.features.docs.length,classPackageBarbarian:barbarianPkg.summary.bundles,siteUi:true,reimportStable:true,worldItemsCreated:0},null,2));
 })().catch(e=>{console.error(e.stack||e);process.exit(1);});
