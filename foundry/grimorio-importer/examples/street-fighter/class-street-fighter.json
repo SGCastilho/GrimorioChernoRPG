@@ -1,0 +1,1734 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "class",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "street-fighter-homebrew",
+    "identifier": "street-fighter",
+    "name": "Lutador de Rua",
+    "originalName": "",
+    "aliases": [
+      "Lutador de Rua"
+    ]
+  },
+  "source": {
+    "sourceId": "street-fighter-homebrew",
+    "title": "Lutador de Rua — Homebrew Original",
+    "pages": "2–13",
+    "chapter": "Classe Lutador de Rua e Arquétipo Dragão de Dojima",
+    "page": 2
+  },
+  "nativeMapping": {
+    "status": "review",
+    "warnings": [
+      "O Grimório Importer 0.9.2 ainda não possui CLASS_PROFILE nativo para Lutador de Rua. O bundle pode ser exportado pelo site, mas a materialização nativa no Foundry deve aguardar uma atualização do módulo."
+    ]
+  },
+  "class": {
+    "itemType": "class",
+    "description": "Um combatente marcial que transforma instinto, brutalidade, técnica urbana e presença intimidadora em uma arte de combate própria, recorrendo a punhos, joelhadas, arremessos, armas improvisadas, objetos do cenário e explosões violentas de adrenalina.",
+    "hitDice": {
+      "raw": "d10",
+      "mode": "standard",
+      "number": 1,
+      "faces": 10
+    },
+    "primaryAbility": {
+      "raw": "Força",
+      "abilityKeys": [
+        "str"
+      ]
+    },
+    "proficiencies": {
+      "saves": {
+        "raw": "Força, Constituição",
+        "abilityKeys": [
+          "str",
+          "con"
+        ]
+      },
+      "armor": "Armaduras leves",
+      "weapons": "Armas simples, armas improvisadas e armas marciais corpo a corpo sem a propriedade pesada",
+      "tools": "Escolha uma: ferramentas de ladrão, veículos terrestres, um tipo de kit de jogo ou um tipo de ferramentas de artesão",
+      "skills": "Escolha duas: Acrobacia, Atletismo, Intimidação, Intuição, Investigação, Percepção, Persuasão, Prestidigitação ou Sobrevivência"
+    },
+    "basics": {
+      "title": "CARACTERÍSTICAS DE CLASSE",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "text": "Como Lutador de Rua, você adquire as seguintes características de classe.\n\nPONTOS DE VIDA\n\nDado de Vida: 1d10 por nível de Lutador de Rua.\n\nPontos de Vida no 1º Nível: 10 + seu modificador de Constituição.\n\nPontos de Vida em Níveis Superiores: 1d10, ou 6, + seu modificador de Constituição por nível de Lutador de Rua após o 1º.\n\nPROFICIÊNCIAS\n\nArmaduras: Armaduras leves.\n\nArmas: Armas simples, armas improvisadas e armas marciais corpo a corpo que não tenham a propriedade pesada.\n\nFerramentas: Escolha uma entre ferramentas de ladrão, veículos terrestres, um tipo de kit de jogo ou um tipo de ferramentas de artesão.\n\nTestes de Resistência: Força e Constituição.\n\nPerícias: Escolha duas entre Acrobacia, Atletismo, Intimidação, Intuição, Investigação, Percepção, Persuasão, Prestidigitação e Sobrevivência.\n\nEQUIPAMENTO\n\nVocê começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:\n\n• (a) uma armadura de couro ou (b) uma jaqueta reforçada equivalente a armadura de couro;\n• (a) uma arma marcial corpo a corpo sem a propriedade pesada ou (b) duas armas simples corpo a corpo;\n• (a) um pacote de aventureiro ou (b) um pacote de explorador de masmorras;\n• (a) ferramentas de ladrão, (b) um kit de jogo à sua escolha ou (c) um tipo de ferramentas de artesão à sua escolha;\n• um objeto urbano resistente que conta como arma improvisada para você; e\n• 10 po.\n\nComo alternativa, você pode começar com 2d4 × 10 po para comprar seu próprio equipamento."
+    },
+    "overview": [
+      {
+        "title": "LUTADOR DE RUA",
+        "page": 2,
+        "sourceTitle": "Lutador de Rua — Homebrew Original",
+        "text": "Lutador de Rua é um combatente marcial que transforma instinto, brutalidade, técnica urbana e presença intimidadora em uma arte de combate própria.\n\nDiferente de monges disciplinados ou guerreiros treinados em academias militares, o Lutador de Rua aprendeu a sobreviver no caos: punhos, joelhadas, arremessos, armas improvisadas, objetos do cenário e explosões violentas de adrenalina."
+      }
+    ],
+    "creation": [],
+    "tables": [],
+    "references": [
+      {
+        "key": "reference.1.nota-editorial-habilidade-principal",
+        "title": "NOTA EDITORIAL — HABILIDADE PRINCIPAL",
+        "page": 3,
+        "text": "O PDF não apresenta um campo separado chamado “habilidade principal”. Para a organização visual do Grimório, Força é exibida como habilidade principal porque Briga de Rua, a CD dos Surtos e a capacidade máxima inicial de Cólera usam o modificador de Força. Isso é uma classificação editorial do site, não uma regra adicional da classe.",
+        "sourceTitle": "Lutador de Rua — Homebrew Original"
+      },
+      {
+        "key": "reference.2.nota-editorial-ataque-extra-e-incremento-de-habilidade",
+        "title": "NOTA EDITORIAL — ATAQUE EXTRA E INCREMENTO DE HABILIDADE",
+        "page": 2,
+        "text": "Ataque Extra e Incremento de Habilidade aparecem na tabela de progressão, mas o PDF não fornece blocos de regras próprios para essas características. O Grimório registra os níveis em que são concedidas e não insere texto padrão de outra fonte.",
+        "sourceTitle": "Lutador de Rua — Homebrew Original"
+      },
+      {
+        "key": "reference.3.nota-editorial-essencia-adicional",
+        "title": "NOTA EDITORIAL — ESSÊNCIA ADICIONAL",
+        "page": 2,
+        "text": "A progressão registra “Essência Adicional” nos níveis 6, 9, 13, 15 e 17, porém o PDF não apresenta um bloco de regra separado que explicite a quantidade adicional ou um procedimento específico. Esses eventos foram preservados como entradas de progressão sem extrapolação.",
+        "sourceTitle": "Lutador de Rua — Homebrew Original"
+      },
+      {
+        "key": "reference.4.nota-editorial-ritmo-de-combate-e-estilos",
+        "title": "NOTA EDITORIAL — RITMO DE COMBATE E ESTILOS",
+        "page": 5,
+        "text": "Ritmo de Combate menciona a troca de “estilo ativo”. No PDF fornecido, os estilos são apresentados no Arquétipo de Rua Dragão de Dojima. O Grimório mantém a redação original e não generaliza essa mecânica para arquétipos que não estejam documentados.",
+        "sourceTitle": "Lutador de Rua — Homebrew Original"
+      },
+      {
+        "key": "reference.5.multiclasse",
+        "title": "MULTICLASSE",
+        "page": 2,
+        "text": "O PDF fornecido não apresenta requisitos ou proficiências de multiclasse para Lutador de Rua. O Grimório não acrescenta regras de multiclasse ausentes da fonte.",
+        "sourceTitle": "Lutador de Rua — Homebrew Original"
+      }
+    ],
+    "presentation": {
+      "sigilKey": "street-fighter",
+      "color": "#b84e43"
+    }
+  },
+  "features": [
+    {
+      "key": "class.street-fighter-homebrew.feature.briga-de-rua.l1.1",
+      "name": "BRIGA DE RUA",
+      "level": 1,
+      "description": "Você aprendeu a transformar seu corpo, seus reflexos e qualquer objeto ao seu redor em ferramentas de combate.\n\nVocê possui um Dado de Briga, que representa o dano base dos seus golpes, combos, finalizadores e técnicas de rua. No 1º nível, esse dado é 1d6. Ele aumenta conforme você ganha níveis nesta classe, como mostrado na coluna Dado de Briga da tabela do Lutador de Rua.\n\nEnquanto estiver usando um golpe desarmado, uma arma improvisada, uma arma simples corpo a corpo ou uma arma marcial corpo a corpo sem a propriedade pesada, você pode usar seu modificador de Força para as jogadas de ataque e dano. Além disso:\n\n• Seus golpes desarmados causam dano contundente igual ao seu Dado de Briga.\n• Você é proficiente com armas improvisadas.\n• Quando usa uma arma improvisada, você pode usar seu Dado de Briga no lugar do dano normal da arma improvisada.\n• O Mestre determina o tipo de dano de uma arma improvisada, como contundente, cortante ou perfurante, de acordo com o objeto usado.\n• Uma vez por turno, quando fizer um ataque corpo a corpo, você pode sacar, apanhar ou chutar para sua mão um objeto solto ao seu alcance para usá-lo como arma improvisada naquele ataque.\n\nPara as características desta classe, golpes desarmados, armas improvisadas, armas simples corpo a corpo e armas marciais corpo a corpo sem a propriedade pesada são chamadas de armas de rua.",
+      "page": 3,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.combo-acelerado.l1.1",
+      "name": "COMBO ACELERADO",
+      "level": 1,
+      "description": "Você desfere uma sequência rápida de socos, cotoveladas, joelhadas, chutes baixos e golpes curtos, pressionando o inimigo com uma ofensiva contínua.\n\nQuando realiza a ação Atacar no seu turno, você pode substituir um dos seus ataques por um Combo Acelerado contra uma criatura ao seu alcance.\n\nFaça uma jogada de ataque corpo a corpo usando uma arma de rua. Em caso de acerto, o alvo sofre dano igual a:\n\n1 Dado de Briga + seu modificador de Força\n\nVocê só pode usar Combo Acelerado uma vez por turno.",
+      "page": 3,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.golpe-finalizador.l1.1",
+      "name": "GOLPE FINALIZADOR",
+      "level": 1,
+      "description": "Após abrir a guarda do inimigo com um combo, você encerra a sequência com um golpe pesado: um direto no queixo, um chute giratório, uma joelhada no torso, uma cotovelada descendente ou uma pancada brutal com o objeto em mãos.\n\nQuando acerta uma criatura com seu Combo Acelerado no seu turno, você pode usar uma ação bônus para fazer um Golpe Finalizador contra a mesma criatura.\n\nFaça uma jogada de ataque corpo a corpo usando uma arma de rua. Em caso de acerto, o alvo sofre dano igual a:\n\n1 Dado de Briga + seu modificador de Força\n\nVocê só pode usar Golpe Finalizador uma vez por turno.",
+      "page": 3,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.defesa-de-rua.l1.1",
+      "name": "DEFESA DE RUA",
+      "level": 1,
+      "description": "Você aprendeu a se proteger sem depender de armaduras pesadas: guarda alta, movimentação curta, resistência física, leitura corporal e puro instinto de sobrevivência.\n\nEnquanto não estiver usando armadura nem escudo, sua Classe de Armadura é igual a:\n\n10 + seu modificador de Destreza + seu modificador de Constituição\n\nVocê ainda pode usar armaduras leves normalmente, mas deve escolher entre a CA da armadura ou a CA concedida por esta característica.",
+      "page": 3,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 1,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.colera.l2.1",
+      "name": "CÓLERA",
+      "level": 2,
+      "description": "A partir do 2º nível, sua adrenalina em combate se manifesta como Cólera, uma reserva de energia violenta usada para executar surtos explosivos de força, resistência e brutalidade.\n\nVocê começa cada combate com 0 pontos de Cólera. Sua quantidade máxima de Cólera é igual a seu bônus de proficiência + seu modificador de Força. O mínimo de Cólera máxima é igual ao seu bônus de proficiência.\n\nVocê perde toda a sua Cólera quando fica inconsciente ou quando passa 1 minuto sem atacar uma criatura hostil ou participar de uma cena de combate.\n\nGANHANDO CÓLERA\n\nVocê ganha Cólera das seguintes formas:\n\nPressão Ofensiva. Uma vez em cada um dos seus turnos, quando acerta uma criatura hostil com uma arma de rua, seu Combo Acelerado ou seu Golpe Finalizador, você ganha 1 ponto de Cólera.\n\nAguentar na Marra. Uma vez por rodada, quando uma criatura hostil causa dano a você enquanto você está consciente, você ganha 1 ponto de Cólera.\n\nMomento Decisivo. Quando você obtém um acerto crítico com uma arma de rua, Combo Acelerado ou Golpe Finalizador, você ganha 1 ponto de Cólera adicional. Você também ganha 1 ponto de Cólera adicional quando reduz uma criatura hostil a 0 pontos de vida com uma dessas opções.\n\nVocê não pode ultrapassar sua Cólera máxima. O Mestre pode impedir que você ganhe Cólera ao atacar criaturas indefesas, objetos, aliados ou alvos que não representem ameaça real.",
+      "page": 3,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.surtos-de-colera.l2.1",
+      "name": "SURTOS DE CÓLERA",
+      "level": 2,
+      "description": "No 2º nível, você aprende a gastar Cólera para executar Surtos de Cólera. A CD dos seus Surtos é igual a 8 + seu bônus de proficiência + seu modificador de Força.\n\nVocê pode usar apenas um Surto de Cólera por turno.\n\nVocê aprende os seguintes Surtos: Essência do Impacto, Aguentar Pancada, Passo de Rua e Pegada Violenta.\n\nESSÊNCIA DO IMPACTO\nQuando acerta uma criatura com seu Combo Acelerado ou Golpe Finalizador, você pode gastar 2 pontos de Cólera para transformar o golpe em um impacto brutal. O ataque causa 1 Dado de Briga adicional de dano. Além disso, escolha um dos efeitos abaixo:\n\n• Empurrão Brutal. O alvo deve ser bem-sucedido em um teste de resistência de Força ou é empurrado 1,5 metro para longe de você.\n• Quebra de Ritmo. O alvo não pode realizar reações até o início do seu próximo turno.\n\nVocê pode ganhar Cólera com o ataque que ativou este Surto.\n\nAGUENTAR PANCADA\nQuando sofre dano, você pode usar sua reação e gastar 1 ponto de Cólera para reduzir o dano recebido em 1 Dado de Briga + seu modificador de Constituição. Essa redução se aplica depois que o dano é rolado, mas antes de ele ser subtraído dos seus pontos de vida.\n\nPASSO DE RUA\nDurante seu turno, quando acerta ou erra uma criatura com seu Combo Acelerado, você pode gastar 1 ponto de Cólera para se mover até 3 metros. Esse movimento não provoca ataques de oportunidade da criatura que você atacou com o Combo Acelerado.\n\nPEGADA VIOLENTA\nQuando faz um teste de Força (Atletismo) para agarrar, empurrar, derrubar, escapar de um agarrão ou realizar uma manobra física semelhante, você pode gastar 1 ponto de Cólera para adicionar seu Dado de Briga ao resultado do teste.",
+      "page": 4,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 2,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.arquetipo-de-rua.l3.1",
+      "name": "ARQUÉTIPO DE RUA",
+      "level": 3,
+      "description": "No 3º nível, você escolhe um arquétipo que representa a forma como sua brutalidade, técnica e experiência nas ruas evoluíram.\n\nSua escolha concede características no 3º nível e novamente nos níveis 6, 11 e 17.\n\nPara esta classe, o primeiro arquétipo disponível é Dragão de Dojima.\n\nO Dragão de Dojima representa o lutador que domina múltiplas formas de combate e alterna entre velocidade, brutalidade e técnica absoluta. Esse arquétipo não luta apenas com força física: ele lê o ritmo da batalha, muda de postura no momento certo e transforma cada golpe em uma declaração de presença.\n\nAo escolher este arquétipo no 3º nível, você recebe a característica Estilos do Dragão de Dojima.",
+      "page": 4,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencias-de-colera.l3.1",
+      "name": "ESSÊNCIAS DE CÓLERA",
+      "level": 3,
+      "description": "A partir do 3º nível, você aprende a canalizar sua Cólera em técnicas cinematográficas chamadas Essências de Cólera.\n\nVocê aprende duas Essências de Cólera à sua escolha. Quando ganha um nível nesta classe, você pode substituir uma Essência que conhece por outra Essência para a qual cumpra os pré-requisitos.\n\nAlgumas Essências exigem um nível mínimo de Lutador de Rua, um estilo específico ou uma condição especial, como o alvo estar caído, agarrado ou próximo de uma parede.\n\nUma Essência de Cólera conta como um Surto de Cólera. Portanto, você ainda só pode usar um Surto de Cólera por turno, salvo se uma característica disser o contrário.",
+      "page": 4,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-do-pisao-facial.l0.1",
+      "name": "ESSÊNCIA DO PISÃO FACIAL",
+      "level": null,
+      "description": "Custo: 1 ponto de Cólera.\nPré-requisito: o alvo deve estar caído.\n\nQuando você acerta uma criatura caída com seu Combo Acelerado ou Golpe Finalizador, pode gastar 1 ponto de Cólera para pisar, esmagar ou golpear o alvo com brutalidade.\n\nO ataque causa 1 Dado de Briga adicional de dano. Além disso, o alvo deve ser bem-sucedido em um teste de resistência de Constituição contra sua CD dos Surtos de Cólera ou não poderá realizar reações até o início do seu próximo turno.",
+      "page": 4,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-parede.l0.1",
+      "name": "ESSÊNCIA DA PAREDE",
+      "level": null,
+      "description": "Custo: 2 pontos de Cólera.\nPré-requisito: o alvo deve estar a até 1,5 metro de uma parede, coluna, veículo, balcão, árvore, estrutura rígida ou objeto grande.\n\nQuando você acerta uma criatura com seu Combo Acelerado ou Golpe Finalizador, pode gastar 2 pontos de Cólera para arremessá-la ou esmagá-la contra uma superfície próxima.\n\nO ataque causa 1 Dado de Briga adicional de dano. O alvo deve realizar um teste de resistência de Força contra sua CD dos Surtos de Cólera. Em uma falha, ele fica caído.",
+      "page": 4,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-arma-improvisada.l0.1",
+      "name": "ESSÊNCIA DA ARMA IMPROVISADA",
+      "level": null,
+      "description": "Custo: 1 ponto de Cólera.\nPré-requisito: você deve estar usando uma arma improvisada.\n\nQuando você acerta uma criatura com uma arma improvisada usando seu Combo Acelerado ou Golpe Finalizador, pode gastar 1 ponto de Cólera para transformar o objeto em uma ferramenta de destruição brutal.\n\nO ataque causa 1 Dado de Briga adicional de dano. Depois do ataque, você pode escolher quebrar a arma improvisada. Se fizer isso, o alvo sofre dano adicional igual ao seu modificador de Força.",
+      "page": 5,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-do-arremesso-de-rua.l0.1",
+      "name": "ESSÊNCIA DO ARREMESSO DE RUA",
+      "level": null,
+      "description": "Custo: 2 pontos de Cólera.\nPré-requisito: o alvo deve estar agarrado por você.\n\nQuando você acerta uma criatura agarrada por você com seu Combo Acelerado ou Golpe Finalizador, pode gastar 2 pontos de Cólera para arremessá-la.\n\nO alvo deve realizar um teste de resistência de Força contra sua CD dos Surtos de Cólera. Em uma falha, você o arremessa até 3 metros para um espaço desocupado que possa ver, e ele fica caído. Se ele colidir com uma parede, objeto grande ou outra criatura, sofre 1 Dado de Briga adicional de dano.\n\nEm um sucesso, o alvo não é arremessado, mas ainda sofre o dano normal do ataque.",
+      "page": 5,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-intimidacao-brutal.l0.1",
+      "name": "ESSÊNCIA DA INTIMIDAÇÃO BRUTAL",
+      "level": null,
+      "description": "Custo: 1 ponto de Cólera.\nPré-requisito: você deve ter reduzido uma criatura hostil a 0 pontos de vida neste turno.\n\nQuando você reduz uma criatura hostil a 0 pontos de vida com uma arma de rua, Combo Acelerado, Golpe Finalizador ou Essência de Cólera, pode gastar 1 ponto de Cólera para aterrorizar os inimigos próximos.\n\nEscolha uma criatura hostil que possa ver você a até 9 metros. Ela deve realizar um teste de resistência de Sabedoria contra sua CD dos Surtos de Cólera. Em uma falha, ela fica amedrontada por você até o fim do seu próximo turno.",
+      "page": 5,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.incremento-de-habilidade.l4.1",
+      "name": "INCREMENTO DE HABILIDADE",
+      "level": 4,
+      "description": "A tabela de progressão do PDF concede Incremento de Habilidade neste nível, mas a fonte não apresenta um bloco de regras separado para esta característica. O Grimório preserva a concessão exatamente como indicada na tabela e não acrescenta uma mecânica que não esteja escrita no PDF.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 4,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.ataque-extra.l5.1",
+      "name": "ATAQUE EXTRA",
+      "level": 5,
+      "description": "A tabela de progressão do PDF concede Ataque Extra no 5º nível, mas a fonte não apresenta um bloco de regras separado para esta característica. O Grimório registra a concessão sem completar silenciosamente sua mecânica com texto externo ao PDF.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.ritmo-de-combate.l5.1",
+      "name": "RITMO DE COMBATE",
+      "level": 5,
+      "description": "No 5º nível, você aprende a mudar seu ritmo no meio da luta, alternando entre pressão, defesa e brutalidade com mais naturalidade.\n\nQuando você rola iniciativa, você pode ganhar 1 ponto de Cólera, desde que não esteja surpreso.\n\nVocê ainda pode trocar seu estilo ativo no início do seu turno sem gastar ação, mas agora também pode trocar de estilo uma vez por rodada quando uma das seguintes situações acontecer:\n\n• você acerta uma criatura com seu Combo Acelerado;\n• você acerta uma criatura com seu Golpe Finalizador;\n• você sofre dano de uma criatura hostil;\n• você reduz uma criatura hostil a 0 pontos de vida.\n\nEssa troca não exige ação, mas só pode acontecer depois que a situação que a ativou for resolvida. Você só pode trocar de estilo dessa forma uma vez por rodada.",
+      "page": 5,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 5,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.golpes-implacaveis.l6.1",
+      "name": "GOLPES IMPLACÁVEIS",
+      "level": 6,
+      "description": "A partir do 6º nível, seus golpes desarmados, armas improvisadas e armas de rua não mágicas contam como mágicos para superar resistência e imunidade a ataques e dano não mágicos.",
+      "page": 5,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-adicional.l6.1",
+      "name": "ESSÊNCIA ADICIONAL",
+      "level": 6,
+      "description": "A tabela de progressão do PDF registra uma Essência Adicional neste nível. A fonte não apresenta um bloco separado explicando uma quantidade, procedimento ou regra adicional; o Grimório mantém apenas a concessão indicada na progressão.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.reflexos-das-ruas.l7.1",
+      "name": "REFLEXOS DAS RUAS",
+      "level": 7,
+      "description": "A partir do 7º nível, quando você for alvo de um efeito que permita realizar um teste de resistência de Destreza para sofrer apenas metade do dano, você não sofre dano se for bem-sucedido no teste, e sofre apenas metade do dano se falhar.\n\nVocê não pode usar esta característica se estiver incapacitado, usando armadura média, armadura pesada ou escudo.",
+      "page": 5,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.nome-nas-ruas.l7.1",
+      "name": "NOME NAS RUAS",
+      "level": 7,
+      "description": "No 7º nível, escolha uma perícia entre Atletismo, Intimidação, Intuição, Investigação, Percepção, Persuasão e Sobrevivência. Você ganha proficiência na perícia escolhida. Se já for proficiente nela, você dobra seu bônus de proficiência para testes feitos com essa perícia.\n\nAlém disso, sua reputação pode ajudá-lo a obter rumores, contatos e informações em ambientes urbanos, criminosos ou violentos, a critério do Mestre.",
+      "page": 5,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 7,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.incremento-de-habilidade.l8.1",
+      "name": "INCREMENTO DE HABILIDADE",
+      "level": 8,
+      "description": "A tabela de progressão do PDF concede Incremento de Habilidade neste nível, mas a fonte não apresenta um bloco de regras separado para esta característica. O Grimório preserva a concessão exatamente como indicada na tabela e não acrescenta uma mecânica que não esteja escrita no PDF.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 8,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.movimento-de-rua.l9.1",
+      "name": "MOVIMENTO DE RUA",
+      "level": 9,
+      "description": "A partir do 9º nível, enquanto não estiver usando armadura média, armadura pesada ou escudo, você recebe deslocamento de escalada igual ao seu deslocamento de caminhada. Levantar-se da condição caído custa apenas 1,5 metro de deslocamento para você. Além disso, você ignora terreno difícil causado por multidões, entulho, móveis quebrados, destroços urbanos ou obstáculos semelhantes.\n\nQuando usa a ação Disparada, você pode atravessar o espaço de criaturas hostis que sejam no máximo uma categoria de tamanho maior que você. O espaço dessas criaturas ainda conta como terreno difícil.",
+      "page": 5,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.impeto-indomavel.l9.1",
+      "name": "ÍMPETO INDOMÁVEL",
+      "level": 9,
+      "description": "No 9º nível, quando falha em um teste de resistência de Força, Destreza ou Constituição, você pode gastar 2 pontos de Cólera para repetir o teste. Você deve usar o novo resultado.\n\nVocê pode usar esta característica apenas uma vez por turno e não pode usá-la se estiver incapacitado.",
+      "page": 5,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-adicional.l9.1",
+      "name": "ESSÊNCIA ADICIONAL",
+      "level": 9,
+      "description": "A tabela de progressão do PDF registra uma Essência Adicional neste nível. A fonte não apresenta um bloco separado explicando uma quantidade, procedimento ou regra adicional; o Grimório mantém apenas a concessão indicada na progressão.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.novas-essencias-de-colera-9-nivel.l9.1",
+      "name": "NOVAS ESSÊNCIAS DE CÓLERA — 9º NÍVEL",
+      "level": 9,
+      "description": "As Essências abaixo ficam disponíveis para Lutadores de Rua de 9º nível ou superior.",
+      "page": 6,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 9,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-colisao-dupla.l0.1",
+      "name": "ESSÊNCIA DA COLISÃO DUPLA",
+      "level": null,
+      "description": "Custo: 2 pontos de Cólera.\nPré-requisito: 9º nível de Lutador de Rua.\n\nQuando você arremessa, empurra ou move uma criatura contra outra criatura usando uma característica de Lutador de Rua, pode gastar 2 pontos de Cólera para transformar a colisão em um impacto brutal.\n\nA criatura arremessada sofre 1 Dado de Briga adicional de dano contundente.\n\nA criatura atingida deve realizar um teste de resistência de Destreza contra sua CD dos Surtos de Cólera. Em uma falha, ela sofre dano contundente igual a 1 Dado de Briga + seu modificador de Força. Em um sucesso, ela sofre metade desse dano.\n\nSe ambas as criaturas forem do seu tamanho ou menores, a criatura atingida também fica caída em uma falha.",
+      "page": 6,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-interrupcao-violenta.l0.1",
+      "name": "ESSÊNCIA DA INTERRUPÇÃO VIOLENTA",
+      "level": null,
+      "description": "Custo: 2 pontos de Cólera.\nPré-requisito: 9º nível de Lutador de Rua.\n\nQuando uma criatura que você possa ver e que esteja ao seu alcance tenta se mover para fora do seu alcance, você pode usar sua reação e gastar 2 pontos de Cólera para interromper o movimento dela.\n\nFaça um ataque corpo a corpo com uma arma de rua contra a criatura. Em caso de acerto, o ataque causa dano normal, e o deslocamento da criatura se torna 0 até o fim do turno atual.\n\nEssa Essência conta como um Surto de Cólera, mas pode ser usada fora do seu turno.",
+      "page": 6,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-do-impacto-no-chao.l0.1",
+      "name": "ESSÊNCIA DO IMPACTO NO CHÃO",
+      "level": null,
+      "description": "Custo: 2 pontos de Cólera.\nPré-requisito: 9º nível de Lutador de Rua; o alvo deve estar agarrado por você ou caído.\n\nQuando acerta uma criatura agarrada por você ou caída com seu Combo Acelerado ou Golpe Finalizador, pode gastar 2 pontos de Cólera para esmagá-la contra o chão.\n\nO ataque causa 1 Dado de Briga adicional de dano contundente. Além disso, o alvo deve realizar um teste de resistência de Constituição contra sua CD dos Surtos de Cólera. Em uma falha, o alvo tem desvantagem no próximo ataque que fizer antes do fim do próximo turno dele.",
+      "page": 6,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-do-objeto-pesado.l0.1",
+      "name": "ESSÊNCIA DO OBJETO PESADO",
+      "level": null,
+      "description": "Custo: 3 pontos de Cólera.\nPré-requisito: 9º nível de Lutador de Rua; você deve estar usando uma arma improvisada grande ou pesada com duas mãos.\n\nQuando acerta uma criatura com uma arma improvisada grande usando seu Combo Acelerado ou Golpe Finalizador, pode gastar 3 pontos de Cólera para destruir o objeto em um golpe devastador.\n\nO ataque causa 2 Dados de Briga adicionais de dano. Depois do ataque, a arma improvisada é destruída ou fica inutilizável, a critério do Mestre.",
+      "page": 6,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.colera-ardente.l10.1",
+      "name": "CÓLERA ARDENTE",
+      "level": 10,
+      "description": "A partir do 10º nível, sua quantidade máxima de Cólera aumenta em 2.\n\nAlém disso, quando rola iniciativa e não está surpreso, você ganha 2 pontos de Cólera, em vez de 1 ponto concedido por sua característica Ritmo de Combate.",
+      "page": 6,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.nao-acabou-ainda.l10.1",
+      "name": "NÃO ACABOU AINDA",
+      "level": 10,
+      "description": "No 10º nível, quando você é reduzido a 0 pontos de vida, mas não morre instantaneamente, pode gastar 3 pontos de Cólera para ser reduzido a 1 ponto de vida em vez disso.\n\nDepois de usar esta característica, você pode se mover até 1,5 metro sem provocar ataques de oportunidade.\n\nVocê pode usar esta característica uma vez por descanso longo. Esta característica não conta como um Surto de Cólera.",
+      "page": 6,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 10,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.climax-de-colera.l11.1",
+      "name": "CLÍMAX DE CÓLERA",
+      "level": 11,
+      "description": "A partir do 11º nível, uma vez por turno, quando você gastar pelo menos 1 ponto de Cólera em um Surto de Cólera ou Essência de Cólera, escolha um dos seguintes efeitos:\n\nImpacto de Clímax. Uma criatura que sofreu dano do Surto ou Essência sofre dano adicional igual ao seu bônus de proficiência.\n\nMovimento de Clímax. Depois de executar o Surto ou Essência, você pode se mover até 3 metros sem provocar ataques de oportunidade de uma criatura que tenha sofrido dano dessa técnica.\n\nResistência de Clímax. Você recebe pontos de vida temporários iguais ao seu bônus de proficiência.\n\nEsta característica não conta como um Surto de Cólera separado.",
+      "page": 6,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.incremento-de-habilidade.l12.1",
+      "name": "INCREMENTO DE HABILIDADE",
+      "level": 12,
+      "description": "A tabela de progressão do PDF concede Incremento de Habilidade neste nível, mas a fonte não apresenta um bloco de regras separado para esta característica. O Grimório preserva a concessão exatamente como indicada na tabela e não acrescenta uma mecânica que não esteja escrita no PDF.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 12,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.coracao-indomavel.l13.1",
+      "name": "CORAÇÃO INDOMÁVEL",
+      "level": 13,
+      "description": "A partir do 13º nível, quando falha em um teste de resistência de Sabedoria ou Carisma, você pode gastar 2 pontos de Cólera para repetir o teste. Você deve usar o novo resultado.\n\nAlém disso, no início do seu turno, se estiver amedrontado ou enfeitiçado, você pode gastar 1 ponto de Cólera para encerrar uma dessas condições sobre si mesmo.\n\nVocê não pode usar esta característica se estiver incapacitado. Você pode usar a repetição de teste concedida por esta característica apenas uma vez por turno.",
+      "page": 7,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-adicional.l13.1",
+      "name": "ESSÊNCIA ADICIONAL",
+      "level": 13,
+      "description": "A tabela de progressão do PDF registra uma Essência Adicional neste nível. A fonte não apresenta um bloco separado explicando uma quantidade, procedimento ou regra adicional; o Grimório mantém apenas a concessão indicada na progressão.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.novas-essencias-de-colera-13-nivel.l13.1",
+      "name": "NOVAS ESSÊNCIAS DE CÓLERA — 13º NÍVEL",
+      "level": 13,
+      "description": "As Essências abaixo ficam disponíveis para Lutadores de Rua de 13º nível ou superior.",
+      "page": 7,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 13,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-queda-do-campeao.l0.1",
+      "name": "ESSÊNCIA DA QUEDA DO CAMPEÃO",
+      "level": null,
+      "description": "Custo: 3 pontos de Cólera.\nPré-requisito: 13º nível de Lutador de Rua.\n\nQuando você acerta uma criatura com seu Combo Acelerado ou Golpe Finalizador, pode gastar 3 pontos de Cólera para transformar o impacto em uma queda esmagadora.\n\nO ataque causa 2 Dados de Briga adicionais de dano. Além disso, o alvo deve realizar um teste de resistência de Força contra sua CD dos Surtos de Cólera.\n\nEm uma falha, o alvo fica caído e seu deslocamento é reduzido para 0 até o início do seu próximo turno. Em um sucesso, o alvo não fica caído, mas seu deslocamento é reduzido pela metade até o início do seu próximo turno.",
+      "page": 7,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-reversao-brutal.l0.1",
+      "name": "ESSÊNCIA DA REVERSÃO BRUTAL",
+      "level": null,
+      "description": "Custo: 2 pontos de Cólera.\nPré-requisito: 13º nível de Lutador de Rua.\n\nQuando uma criatura que você possa ver acertar você com um ataque corpo a corpo, você pode usar sua reação e gastar 2 pontos de Cólera para transformar o impacto recebido em uma abertura.\n\nReduza o dano recebido em 1 Dado de Briga + seu modificador de Constituição + seu bônus de proficiência.\n\nDepois, se a criatura estiver ao seu alcance, você pode tentar empurrá-la ou derrubá-la. O alvo deve realizar um teste de resistência de Força contra sua CD dos Surtos de Cólera. Em uma falha, você escolhe se ele é empurrado 1,5 metros ou fica caído.\n\nEsta Essência conta como um Surto de Cólera, mas pode ser usada fora do seu turno.",
+      "page": 7,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-do-desarme-violento.l0.1",
+      "name": "ESSÊNCIA DO DESARME VIOLENTO",
+      "level": null,
+      "description": "Custo: 2 pontos de Cólera.\nPré-requisito: 13º nível de Lutador de Rua.\n\nQuando você acerta uma criatura que esteja segurando uma arma, foco arcano, escudo ou objeto importante com seu Combo Acelerado ou Golpe Finalizador, pode gastar 2 pontos de Cólera para tentar arrancar o objeto da mão dela.\n\nO ataque causa 1 Dado de Briga adicional de dano. O alvo deve realizar um teste de resistência de Força contra sua CD dos Surtos de Cólera. Em uma falha, ele deixa cair um objeto que esteja segurando, à sua escolha. O objeto cai em um espaço desocupado a até 1,5 metros dele. Em um sucesso, o alvo mantém o objeto.\n\nO Mestre pode determinar que certos objetos presos, amaldiçoados, gigantescos ou impossíveis de largar não podem ser desarmados por esta Essência.",
+      "page": 7,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-do-espirito-inabalavel.l0.1",
+      "name": "ESSÊNCIA DO ESPÍRITO INABALÁVEL",
+      "level": null,
+      "description": "Custo: 2 pontos de Cólera.\nPré-requisito: 13º nível de Lutador de Rua.\n\nQuando você for alvo de um efeito que cause as condições amedrontado, enfeitiçado, atordoado ou paralisado, pode gastar 2 pontos de Cólera para receber vantagem no teste de resistência contra esse efeito.\n\nVocê pode decidir usar esta Essência depois de saber qual teste de resistência será exigido, mas antes de rolar o dado.\n\nSe o teste for bem-sucedido, você também ganha pontos de vida temporários iguais ao seu modificador de Constituição + seu bônus de proficiência.",
+      "page": 7,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.pressao-incessante.l14.1",
+      "name": "PRESSÃO INCESSANTE",
+      "level": 14,
+      "description": "A partir do 14º nível, quando erra uma criatura com seu Combo Acelerado no seu turno, você pode escolher um dos seguintes efeitos:\n\nRecuo Agressivo. Você se move até 1,5 metros sem provocar ataques de oportunidade da criatura que você errou.\n\nPressão de Guarda. A próxima jogada de ataque que você fizer contra essa mesma criatura antes do fim do seu turno recebe um bônus igual à metade do seu bônus de proficiência, arredondado para baixo.\n\nCólera Contida. Se você não ganhou Cólera neste turno, você ganha 1 ponto de Cólera.\n\nVocê só pode usar esta característica uma vez por turno.",
+      "page": 7,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.surto-imediato.l14.1",
+      "name": "SURTO IMEDIATO",
+      "level": 14,
+      "description": "No 14º nível, uma vez por rodada, quando você usa um Surto de Cólera ou Essência de Cólera que custe 1 ponto de Cólera, você pode reduzir o custo dela para 0.\n\nVocê não pode usar esta característica em uma Essência ou Surto que cause Dados de Briga adicionais de dano.",
+      "page": 7,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 14,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.sequencia-implacavel.l15.1",
+      "name": "SEQUÊNCIA IMPLACÁVEL",
+      "level": 15,
+      "description": "A partir do 15º nível, quando você usa Combo Acelerado como parte da ação Atacar e erra o alvo, mas acerta a mesma criatura com outro ataque corpo a corpo usando uma arma de rua antes do fim do seu turno, você pode usar Golpe Finalizador contra essa criatura como se tivesse acertado o Combo Acelerado.\n\nO Combo Acelerado que errou não causa dano, não gera Cólera e não ativa efeitos que exigem um acerto.\n\nVocê só pode usar esta característica uma vez por turno.",
+      "page": 8,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.colera-persistente.l15.1",
+      "name": "CÓLERA PERSISTENTE",
+      "level": 15,
+      "description": "No 15º nível, quando rola iniciativa e não está surpreso, você ganha pontos de Cólera iguais ao seu bônus de proficiência, em vez dos 2 pontos concedidos por Cólera Ardente.",
+      "page": 8,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-adicional.l15.1",
+      "name": "ESSÊNCIA ADICIONAL",
+      "level": 15,
+      "description": "A tabela de progressão do PDF registra uma Essência Adicional neste nível. A fonte não apresenta um bloco separado explicando uma quantidade, procedimento ou regra adicional; o Grimório mantém apenas a concessão indicada na progressão.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.novas-essencias-de-colera-15-nivel.l15.1",
+      "name": "NOVAS ESSÊNCIAS DE CÓLERA — 15º NÍVEL",
+      "level": 15,
+      "description": "As Essências abaixo ficam disponíveis para Lutadores de Rua de 15º nível ou superior.",
+      "page": 8,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 15,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-do-climax-brutal.l0.1",
+      "name": "ESSÊNCIA DO CLÍMAX BRUTAL",
+      "level": null,
+      "description": "Custo: 4 pontos de Cólera.\nPré-requisito: 15º nível de Lutador de Rua; você deve ter acertado a mesma criatura com Combo Acelerado neste turno.\n\nQuando você acerta uma criatura com seu Golpe Finalizador, pode gastar 4 pontos de Cólera para transformar o golpe em uma finalização devastadora.\n\nO ataque causa 3 Dados de Briga adicionais de dano. Além disso, o alvo deve realizar um teste de resistência de Constituição contra sua CD dos Surtos de Cólera. Em uma falha, ele tem desvantagem na próxima jogada de ataque que fizer antes do fim do próximo turno dele.",
+      "page": 8,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-quebra-de-guarda.l0.1",
+      "name": "ESSÊNCIA DA QUEBRA DE GUARDA",
+      "level": null,
+      "description": "Custo: 3 pontos de Cólera.\nPré-requisito: 15º nível de Lutador de Rua.\n\nQuando você acerta uma criatura com seu Combo Acelerado ou Golpe Finalizador, pode gastar 3 pontos de Cólera para quebrar sua postura defensiva.\n\nO ataque causa 1 Dado de Briga adicional de dano. Além disso, o alvo deve realizar um teste de resistência de Força contra sua CD dos Surtos de Cólera. Em uma falha, a próxima jogada de ataque feita contra ele antes do início do seu próximo turno tem vantagem.\n\nIndependentemente do resultado do teste, o alvo não pode realizar reações até o início do seu próximo turno.",
+      "page": 8,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-do-arremesso-devastador.l0.1",
+      "name": "ESSÊNCIA DO ARREMESSO DEVASTADOR",
+      "level": null,
+      "description": "Custo: 3 pontos de Cólera.\nPré-requisito: 15º nível de Lutador de Rua; o alvo deve estar agarrado por você.\n\nQuando você acerta uma criatura agarrada por você com seu Combo Acelerado ou Golpe Finalizador, pode gastar 3 pontos de Cólera para arremessá-la com força extrema.\n\nO alvo deve realizar um teste de resistência de Força contra sua CD dos Surtos de Cólera.\n\nEm uma falha, você arremessa o alvo até 6 metros para um espaço desocupado que possa ver. O alvo sofre dano contundente igual a 2 Dados de Briga + seu modificador de Força. Além disso, ele fica caído. Se o alvo colidir com uma parede, objeto grande ou outra criatura, ele sofre 1 Dado de Briga adicional de dano contundente.\n\nEm um sucesso, o alvo não é arremessado, mas sofre dano contundente igual a 1 Dado de Briga + seu modificador de Força.",
+      "page": 8,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-resistencia-furiosa.l0.1",
+      "name": "ESSÊNCIA DA RESISTÊNCIA FURIOSA",
+      "level": null,
+      "description": "Custo: 3 pontos de Cólera.\nPré-requisito: 15º nível de Lutador de Rua.\n\nQuando você sofre dano, pode usar sua reação e gastar 3 pontos de Cólera para resistir ao impacto com pura força de vontade.\n\nReduza o dano recebido em 2 Dados de Briga + seu modificador de Constituição + seu bônus de proficiência.\n\nSe essa redução diminuir o dano a 0, você pode se mover até 3 metros em direção à criatura que causou o dano, sem provocar ataques de oportunidade.\n\nEsta Essência conta como um Surto de Cólera, mas pode ser usada fora do seu turno.",
+      "page": 8,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.incremento-de-habilidade.l16.1",
+      "name": "INCREMENTO DE HABILIDADE",
+      "level": 16,
+      "description": "A tabela de progressão do PDF concede Incremento de Habilidade neste nível, mas a fonte não apresenta um bloco de regras separado para esta característica. O Grimório preserva a concessão exatamente como indicada na tabela e não acrescenta uma mecânica que não esteja escrita no PDF.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 16,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.estado-de-climax.l17.1",
+      "name": "ESTADO DE CLÍMAX",
+      "level": 17,
+      "description": "A partir do 17º nível, quando sua Cólera atinge o auge, você consegue entrar em um estado de combate extremo. Seus golpes ficam mais precisos, seus movimentos mais agressivos e suas Essências se tornam devastadoras.\n\nComo uma ação bônus, você pode gastar 5 pontos de Cólera para entrar em Estado de Clímax por 1 minuto. Esse estado termina antes se você ficar inconsciente.\n\nEnquanto estiver em Estado de Clímax, você recebe os seguintes benefícios:\n\nPressão Máxima. Uma vez por turno, quando você acerta uma criatura com seu Combo Acelerado ou Golpe Finalizador, o ataque causa dano adicional igual ao seu bônus de proficiência.\n\nSurto de Cólera Aprimorada. Uma vez por turno, quando você usa um Surto de Cólera ou uma Essência de Cólera que cause dano adicional em Dados de Briga, você pode adicionar 1 Dado de Briga adicional ao dano da técnica.\n\nCorpo em Chamas. No início de cada um dos seus turnos durante o Estado de Clímax, você ganha pontos de vida temporários iguais ao seu modificador de Constituição, mínimo de 1.\n\nLimite. Depois que o Estado de Clímax termina, você não pode usá-lo novamente até terminar um descanso longo, a menos que gaste 7 pontos de Cólera para ativá-lo novamente.",
+      "page": 8,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-adicional.l17.1",
+      "name": "ESSÊNCIA ADICIONAL",
+      "level": 17,
+      "description": "A tabela de progressão do PDF registra uma Essência Adicional neste nível. A fonte não apresenta um bloco separado explicando uma quantidade, procedimento ou regra adicional; o Grimório mantém apenas a concessão indicada na progressão.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.novas-essencias-de-colera-17-nivel.l17.1",
+      "name": "NOVAS ESSÊNCIAS DE CÓLERA — 17º NÍVEL",
+      "level": 17,
+      "description": "As Essências abaixo ficam disponíveis para Lutadores de Rua de 17º nível ou superior.",
+      "page": 9,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-lenda-viva.l0.1",
+      "name": "ESSÊNCIA DA LENDA VIVA",
+      "level": null,
+      "description": "Custo: 5 pontos de Cólera.\nPré-requisito: 17º nível de Lutador de Rua; você deve estar em Estado de Clímax.\n\nQuando você acerta uma criatura com seu Golpe Finalizador, pode gastar 5 pontos de Cólera para executar uma finalização lendária.\n\nO ataque causa 4 Dados de Briga adicionais de dano. Além disso, o alvo deve realizar um teste de resistência de Constituição contra sua CD dos Surtos de Cólera. Em uma falha, ele fica atordoado até o início do seu próximo turno. Em um sucesso, ele não fica atordoado, mas não pode realizar reações até o início do seu próximo turno.\n\nDepois de usar esta Essência, seu Estado de Clímax termina no fim do seu turno.",
+      "page": 9,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-da-queda-absoluta.l0.1",
+      "name": "ESSÊNCIA DA QUEDA ABSOLUTA",
+      "level": null,
+      "description": "Custo: 4 pontos de Cólera.\nPré-requisito: 17º nível de Lutador de Rua.\n\nQuando você acerta uma criatura com seu Combo Acelerado ou Golpe Finalizador, pode gastar 4 pontos de Cólera para derrubá-la com um impacto esmagador.\n\nO ataque causa 2 Dados de Briga adicionais de dano.\n\nO alvo deve realizar um teste de resistência de Força contra sua CD dos Surtos de Cólera. Em uma falha, ele fica caído e contido até o início do seu próximo turno. Em um sucesso, ele fica apenas caído.\n\nUma criatura de tamanho Enorme ou maior tem vantagem nesse teste de resistência.",
+      "page": 9,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.essencia-do-dragao-furioso.l0.1",
+      "name": "ESSÊNCIA DO DRAGÃO FURIOSO",
+      "level": null,
+      "description": "Custo: 4 pontos de Cólera.\nPré-requisito: 17º nível de Lutador de Rua.\n\nQuando você reduz uma criatura hostil a 0 pontos de vida, pode gastar 4 pontos de Cólera para continuar sua ofensiva contra outro inimigo.\n\nVocê pode se mover até metade do seu deslocamento sem provocar ataques de oportunidade. Depois, pode fazer um ataque corpo a corpo com uma arma de rua contra uma criatura ao seu alcance.\n\nEm caso de acerto, o ataque causa dano igual a 2 Dados de Briga + seu modificador de Força.\n\nEsse ataque não pode ativar Golpe Finalizador.",
+      "page": 9,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "feature-option",
+        "advancementType": "ChooseItemsCandidate",
+        "grantAtLevel": null,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.colera-lendaria.l18.1",
+      "name": "CÓLERA LENDÁRIA",
+      "level": 18,
+      "description": "A partir do 18º nível, sua quantidade máxima de Cólera aumenta em 2.\n\nAlém disso, quando você rola iniciativa e não está surpreso, você ganha pontos de Cólera iguais ao seu bônus de proficiência + 2. Isso substitui a quantidade de Cólera recebida por Cólera Persistente. Você não pode ultrapassar sua Cólera máxima.",
+      "page": 9,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.recusar-a-derrota.l18.1",
+      "name": "RECUSAR A DERROTA",
+      "level": 18,
+      "description": "No 18º nível, no início do seu turno, se estiver consciente e tiver pelo menos 1 ponto de vida, você pode gastar 3 pontos de Cólera para encerrar uma das seguintes condições sobre si mesmo: agarrado, amedrontado, caído, contido, enfeitiçado ou envenenado.\n\nSe estiver atordoado ou paralisado, você pode usar esta característica mesmo que a condição esteja deixando você incapacitado. Nesse caso, o custo aumenta para 5 pontos de Cólera. Depois de encerrar a condição atordoado ou paralisado com esta característica, você não pode usá-la novamente para encerrar uma dessas duas condições até terminar um descanso longo.\n\nEsta característica não exige ação.",
+      "page": 9,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 18,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.incremento-de-habilidade.l19.1",
+      "name": "INCREMENTO DE HABILIDADE",
+      "level": 19,
+      "description": "A tabela de progressão do PDF concede Incremento de Habilidade neste nível, mas a fonte não apresenta um bloco de regras separado para esta característica. O Grimório preserva a concessão exatamente como indicada na tabela e não acrescenta uma mecânica que não esteja escrita no PDF.",
+      "page": 2,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 19,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.lenda-das-ruas.l20.1",
+      "name": "LENDA DAS RUAS",
+      "level": 20,
+      "description": "No 20º nível, seu valor de Força aumenta em 2, e seu valor de Constituição aumenta em 2. Seu máximo para esses atributos também aumenta para 22.\n\nAlém disso, você tem vantagem em testes de Carisma (Intimidação) feitos contra criaturas que tenham visto você reduzir uma criatura hostil a 0 pontos de vida, usar uma Essência de Cólera ou entrar em Estado de Clímax.",
+      "page": 9,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "class.street-fighter-homebrew.feature.colera-inesgotavel.l20.1",
+      "name": "CÓLERA INESGOTÁVEL",
+      "level": 20,
+      "description": "No 20º nível, quando você rola iniciativa e não está surpreso, sua Cólera se torna igual à sua Cólera máxima.\n\nAlém disso, o custo para entrar em Estado de Clímax diminui para 4 pontos de Cólera. Você também ignora a limitação de descanso longo de Estado de Clímax, podendo ativá-lo novamente sempre que pagar seu custo.\n\nEnquanto estiver em Estado de Clímax, uma vez por turno, quando usar um Surto de Cólera ou uma Essência de Cólera, você pode reduzir o custo dessa técnica em 1 ponto de Cólera, até o mínimo de 1.",
+      "page": 9,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 20,
+        "automation": "phase-5"
+      }
+    }
+  ],
+  "progression": {
+    "title": "O Lutador de Rua",
+    "sourceTitle": "Lutador de Rua — Homebrew Original",
+    "sourcePage": 2,
+    "columns": [
+      {
+        "key": "level",
+        "label": "Nível",
+        "sticky": true
+      },
+      {
+        "key": "proficiency",
+        "label": "Prof.",
+        "title": "Bônus de Proficiência"
+      },
+      {
+        "key": "features",
+        "label": "Características",
+        "wide": true
+      },
+      {
+        "key": "brawlDie",
+        "label": "Dado de Briga"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Briga de Rua",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.briga-de-rua.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Combo Acelerado",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.combo-acelerado.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Golpe Finalizador",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.golpe-finalizador.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Defesa de Rua",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.defesa-de-rua.l1.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d6"
+      },
+      {
+        "level": 2,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Cólera",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.colera.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Surtos de Cólera",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.surtos-de-colera.l2.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d6"
+      },
+      {
+        "level": 3,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Arquétipo de Rua",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.arquetipo-de-rua.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Essências de Cólera",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.essencias-de-colera.l3.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d6"
+      },
+      {
+        "level": 4,
+        "proficiency": "+2",
+        "features": [
+          {
+            "label": "Incremento de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l4.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l8.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l12.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l16.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l19.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d6"
+      },
+      {
+        "level": 5,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Ataque Extra",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.ataque-extra.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Ritmo de Combate",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.ritmo-de-combate.l5.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d8"
+      },
+      {
+        "level": 6,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Golpes Implacáveis",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.golpes-implacaveis.l6.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Essência Adicional",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.essencia-adicional.l6.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l9.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l13.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l15.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "característica de Arquétipo de Rua",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.street-fighter-homebrew.feature.arquetipo-de-rua.l3.1"
+            ]
+          }
+        ],
+        "brawlDie": "1d8"
+      },
+      {
+        "level": 7,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Reflexos das Ruas",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.reflexos-das-ruas.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Nome nas Ruas",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.nome-nas-ruas.l7.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d8"
+      },
+      {
+        "level": 8,
+        "proficiency": "+3",
+        "features": [
+          {
+            "label": "Incremento de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l4.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l8.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l12.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l16.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l19.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d8"
+      },
+      {
+        "level": 9,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Movimento de Rua",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.movimento-de-rua.l9.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Ímpeto Indomável",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.impeto-indomavel.l9.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Essência Adicional",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.essencia-adicional.l6.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l9.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l13.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l15.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d8"
+      },
+      {
+        "level": 10,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Cólera Ardente",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.colera-ardente.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Não Acabou Ainda",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.nao-acabou-ainda.l10.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d8"
+      },
+      {
+        "level": 11,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Clímax de Cólera",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.climax-de-colera.l11.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "característica de Arquétipo de Rua",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.street-fighter-homebrew.feature.arquetipo-de-rua.l3.1"
+            ]
+          }
+        ],
+        "brawlDie": "1d10"
+      },
+      {
+        "level": 12,
+        "proficiency": "+4",
+        "features": [
+          {
+            "label": "Incremento de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l4.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l8.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l12.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l16.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l19.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d10"
+      },
+      {
+        "level": 13,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Coração Indomável",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.coracao-indomavel.l13.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Essência Adicional",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.essencia-adicional.l6.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l9.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l13.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l15.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d10"
+      },
+      {
+        "level": 14,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Pressão Incessante",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.pressao-incessante.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Surto Imediato",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.surto-imediato.l14.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d10"
+      },
+      {
+        "level": 15,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Sequência Implacável",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.sequencia-implacavel.l15.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Cólera Persistente",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.colera-persistente.l15.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Essência Adicional",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.essencia-adicional.l6.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l9.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l13.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l15.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d10"
+      },
+      {
+        "level": 16,
+        "proficiency": "+5",
+        "features": [
+          {
+            "label": "Incremento de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l4.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l8.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l12.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l16.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l19.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d10"
+      },
+      {
+        "level": 17,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Estado de Clímax",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.estado-de-climax.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Essência Adicional",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.essencia-adicional.l6.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l9.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l13.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l15.1",
+              "class.street-fighter-homebrew.feature.essencia-adicional.l17.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "característica de Arquétipo de Rua",
+            "kind": "subclass-feature",
+            "featureRefs": [],
+            "relatedFeatureRefs": [
+              "class.street-fighter-homebrew.feature.arquetipo-de-rua.l3.1"
+            ]
+          }
+        ],
+        "brawlDie": "1d12"
+      },
+      {
+        "level": 18,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Cólera Lendária",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.colera-lendaria.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Recusar a Derrota",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.recusar-a-derrota.l18.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d12"
+      },
+      {
+        "level": 19,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Incremento de Habilidade",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l4.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l8.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l12.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l16.1",
+              "class.street-fighter-homebrew.feature.incremento-de-habilidade.l19.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d12"
+      },
+      {
+        "level": 20,
+        "proficiency": "+6",
+        "features": [
+          {
+            "label": "Lenda das Ruas",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.lenda-das-ruas.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          },
+          {
+            "label": "Cólera Inesgotável",
+            "kind": "feature",
+            "featureRefs": [
+              "class.street-fighter-homebrew.feature.colera-inesgotavel.l20.1"
+            ],
+            "relatedFeatureRefs": []
+          }
+        ],
+        "brawlDie": "1d12"
+      }
+    ]
+  },
+  "subclassSelection": {
+    "selectionLevel": 3,
+    "homogeneous": true,
+    "observedLevels": {
+      "3": 1
+    },
+    "options": [
+      {
+        "grimorioId": "street-fighter-dragon-dojima",
+        "identifier": "street-fighter-dragon-dojima",
+        "name": "Dragão de Dojima",
+        "originalName": "",
+        "source": {
+          "sourceId": "street-fighter-homebrew",
+          "title": "Lutador de Rua — Homebrew Original",
+          "pages": "10–13",
+          "chapter": "Arquétipo de Rua — Dragão de Dojima",
+          "page": 10
+        },
+        "firstFeatureLevel": 3
+      }
+    ]
+  }
+}

@@ -9,7 +9,7 @@ function assert(value, message) { if (!value) throw new Error(message); }
 function loadInto(context, file) { vm.runInContext(fs.readFileSync(path.join(root, file), 'utf8'), context, { filename: file }); }
 
 const dataScripts = [
-  'js/config.js','js/registry.js','data/sources.js','data/classes.js','data/progression.js','data/tasha-artificer.js','data/lyre-classes.js','data/zagalhta-classes.js','data/ryoko-classes.js','data/lyre-subclasses.js','data/blade-bone-benefit-classes.js','data/zagalhta-specializations.js','data/zagalhta-subclasses-standard.js','data/zagalhta-subclasses-standard-2.js','data/zagalhta-subclasses-standard-3.js','data/zagalhta-compulsions.js','data/blade-bone-benefit-subclasses.js','data/ryoko-subclasses.js','data/ryoko-optional-features.js','data/homebrew-emissario.js','data/xanathar-subclasses.js','data/tasha-subclasses.js','data/scag-subclasses.js','data/homebrew-paladin-bahamut.js','data/phb-spells.js','data/xanathar-spells.js','data/tasha-spells.js','data/scag-spells.js','data/spells.js','data/spellblade-spells.js','data/lyre-spells.js','data/blade-bone-benefit-spells.js','data/zagalhta-spells.js','data/ryoko-spells.js','data/export/foundry-v13-overrides.js','data/export/foundry-class-overrides.js','js/exporters/registry.js','js/exporters/foundry-v13.js','data/homebrew-spellblade-class.js','data/cultivator-class.js','js/exporters/foundry-class-bundle.js','js/exporters/foundry-class-package.js'
+  'js/config.js','js/registry.js','data/sources.js','data/classes.js','data/progression.js','data/tasha-artificer.js','data/lyre-classes.js','data/zagalhta-classes.js','data/ryoko-classes.js','data/lyre-subclasses.js','data/blade-bone-benefit-classes.js','data/zagalhta-specializations.js','data/zagalhta-subclasses-standard.js','data/zagalhta-subclasses-standard-2.js','data/zagalhta-subclasses-standard-3.js','data/zagalhta-compulsions.js','data/blade-bone-benefit-subclasses.js','data/ryoko-subclasses.js','data/ryoko-optional-features.js','data/homebrew-emissario.js','data/xanathar-subclasses.js','data/tasha-subclasses.js','data/scag-subclasses.js','data/homebrew-paladin-bahamut.js','data/phb-spells.js','data/xanathar-spells.js','data/tasha-spells.js','data/scag-spells.js','data/spells.js','data/spellblade-spells.js','data/lyre-spells.js','data/blade-bone-benefit-spells.js','data/zagalhta-spells.js','data/ryoko-spells.js','data/cultivator-homebrew-spells.js','data/export/foundry-v13-overrides.js','data/export/foundry-class-overrides.js','js/exporters/registry.js','js/exporters/foundry-v13.js','data/homebrew-spellblade-class.js','data/cultivator-class.js','data/homebrew-street-fighter.js','js/exporters/foundry-class-bundle.js','js/exporters/foundry-class-package.js'
 ];
 
 function baseContext(hash = '#/classes') {
@@ -69,8 +69,8 @@ function loadAppAt(hash, fullRenderStack = false) {
 (async () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
   const moduleManifest = JSON.parse(fs.readFileSync(path.join(root, 'foundry/grimorio-importer/module.json'), 'utf8'));
-  assert(['5.22.1','5.23.0','5.24.0','5.25.0','5.25.1','5.26.0'].includes(manifest.version), 'manifest.json deve preservar a integração granular da Fase 10');
-  assert(['0.6.0','0.7.0','0.8.0','0.9.0','0.9.1','0.9.2'].includes(moduleManifest.version), 'Grimório Importer deve preservar suporte da Fase 10');
+  assert(['5.22.1','5.23.0','5.24.0','5.25.0','5.25.1','5.26.0','5.27.0','5.28.0'].includes(manifest.version), 'manifest.json deve preservar a integração granular da Fase 10');
+  assert(['0.6.0','0.7.0','0.8.0','0.9.0','0.9.1','0.9.2','0.9.3'].includes(moduleManifest.version), 'Grimório Importer deve preservar suporte da Fase 10');
   assert(Number(manifest.foundryClassImporter?.phase) >= 10, 'Manifest deve preservar suporte da Fase 10');
   assert(manifest.foundryClassImporter?.realFoundryPhase9PackageFlowValidated === true, 'Homologação real da Fase 9 não registrada');
 
@@ -129,8 +129,8 @@ function loadAppAt(hash, fullRenderStack = false) {
   loadInto(ctx, 'js/app.js');
   const classCount = vm.runInContext('allClasses().length', ctx);
   const subclassCount = vm.runInContext('allSubclasses().length', ctx);
-  assert(classCount === 25, `Esperadas 25 classes; encontradas ${classCount}`);
-  assert(subclassCount === 380, `Esperadas 380 subclasses; encontradas ${subclassCount}`);
+  assert(classCount === manifest.classes, `Esperadas ${manifest.classes} classes; encontradas ${classCount}`);
+  assert(subclassCount === manifest.subclasses, `Esperadas ${manifest.subclasses} subclasses; encontradas ${subclassCount}`);
   const classIds = vm.runInContext('allClasses().map(x=>x.id)', ctx);
   const subclassIds = vm.runInContext('allSubclasses().map(x=>x.id)', ctx);
   for (const id of classIds) {
@@ -143,7 +143,7 @@ function loadAppAt(hash, fullRenderStack = false) {
     assert(html.includes(`openFoundrySubclassExport('${id}')`), `Subclasse ${id} sem botão individual`);
   }
 
-  // Estado/JSON real do exportador: todos os 405 itens devem gerar arquivos individuais válidos.
+  // Estado/JSON real do exportador: todos os itens atuais devem gerar arquivos individuais válidos.
   loadInto(ctx, 'js/exporters/foundry-class-export-ui.js');
   const api = ctx.GRIMORIO_FOUNDRY_CLASS_EXPORT_UI;
   assert(api?.version === '1.1.0', 'UI Foundry de classes deve estar em 1.1.0');
@@ -168,7 +168,7 @@ function loadAppAt(hash, fullRenderStack = false) {
   const barbarianPackage = api.buildClassState('barbarian', 'package');
   assert(barbarianPackage.ok && barbarianPackage.summary.classes === 1 && barbarianPackage.summary.subclasses === 17, 'Pacote do Bárbaro regrediu');
   const fullCatalog = api.buildCatalogState();
-  assert(fullCatalog.ok && fullCatalog.summary.bundles === 405, 'Catálogo completo deve manter 405 bundles');
+  assert(fullCatalog.ok && fullCatalog.summary.bundles === classCount + subclassCount, `Catálogo completo deve manter ${classCount + subclassCount} bundles`);
 
   const mainSource = fs.readFileSync(path.join(root, 'foundry/grimorio-importer/scripts/main.js'), 'utf8');
   assert(mainSource.includes('phase10Support'), 'Importer sem phase10Support');

@@ -1,6 +1,23 @@
-# Grimório Importer — v0.9.2
+# Grimório Importer — v0.9.3
 
 Módulo complementar do **Grimório D&D 5e PT-BR** para **Foundry VTT 13.351 + DnD5e 5.3.3**.
+
+## Atualização 0.9.3 — Lutador de Rua
+
+O importador passa a reconhecer a classe homebrew **Lutador de Rua** (`identifier: street-fighter`) e o Arquétipo de Rua **Dragão de Dojima** (`street-fighter-dragon-dojima`) exportados pelo Grimório 5.27.
+
+- Catálogo atual: **26 classes + 381 subclasses/especializações = 407 bundles**.
+- O bundle da classe gerado pelo Grimório 5.27 ainda carrega o aviso histórico de que o Importer 0.9.2 não possuía perfil nativo. A 0.9.3 reconhece esse aviso como obsoleto e usa seu **CLASS_PROFILE local homologado**, sem exigir que o usuário regenere o JSON.
+- Lutador de Rua usa **d10**, salvaguardas de **Força e Constituição**, armadura leve e escolha de duas perícias entre as nove opções documentadas.
+- Armas simples são concedidas nativamente. Armas improvisadas e armas marciais corpo a corpo sem a propriedade Pesada permanecem descritas para conferência manual, evitando conceder toda a categoria marcial de forma incorreta.
+- **Arquétipo de Rua** é criado como Advancement de `Subclass` no **3º nível**. Dragão de Dojima concede `ItemGrant` nos níveis **3, 6, 11 e 17**.
+- O PDF lista **Incremento de Habilidade** nos níveis 4, 8, 12, 16 e 19 sem fornecer o bloco de regras. Por fidelidade à fonte, a 0.9.3 materializa e concede essas entradas como características textuais e **não cria AbilityScoreImprovement nativo por inferência**.
+- No 3º nível, o PDF afirma explicitamente que o personagem aprende **duas Essências de Cólera**. O módulo cria um `ItemChoice` de 2 entre as **5 Essências inicialmente disponíveis**.
+- As **15 Essências posteriores** ficam preservadas no compêndio com seus níveis de disponibilidade (9, 13, 15 e 17), mas não são concedidas automaticamente: a fonte registra “Essência Adicional” nesses níveis sem definir explicitamente a quantidade concedida.
+- **Cólera** recebe uma reserva nativa com máximo calculado por bônus de proficiência + Força, respeitando o mínimo pelo bônus de proficiência e os aumentos de +2 nos níveis 10 e 18. Ganho/perda da reserva continua manual porque depende de eventos de combate que a fonte descreve de forma contextual.
+- A automação conservadora sobe para **99 perfis**: **86 de classe + 13 de subclasse**, cobrindo **26/26 famílias**, com **121 Activities**, 39 reservas/usos e 11 Active Effects. O Lutador de Rua responde por **27 perfis**, incluindo os quatro Surtos básicos, as 20 Essências, Ímpeto Indomável, Não Acabou Ainda, Coração Indomável, Recusar a Derrota e as reações da Técnica Komaki.
+- `package.json`, `module.json` e `IMPORTER_VERSION` estão sincronizados em **0.9.3**.
+
 
 ## Atualização 0.9.2 — Cultivador
 
@@ -44,24 +61,24 @@ A Fase 12 generaliza o framework homologado da Fase 11 sem transformar texto em 
 
 Cobertura atual:
 
-- **72 perfis mecânicos explícitos**;
-- **60 perfis de classe** e **12 de subclasse**;
-- **25/25 famílias de classe** representadas;
-- **87 Activities**;
-- **37 reservas/usos**;
+- **99 perfis mecânicos explícitos**;
+- **86 perfis de classe** e **13 de subclasse**;
+- **26/26 famílias de classe** representadas;
+- **121 Activities**;
+- **39 reservas/usos**;
 - **11 Active Effects**;
-- tiers: 12 `full`, 59 `partial`, 1 `description`.
+- tiers: 12 `full`, 86 `partial`, 1 `description`.
 
 Novidades centrais:
 
 - matching de perfis de subclasse por bundle ID exato;
 - recuperação parcial de usos por fórmula;
 - recursos compartilhados adicionais, como Canalizar Divindade, Pontos de Feitiçaria, Foco, Pontos de Selo e Surto Arcano;
-- primeira expansão direcionada para 12 subclasses;
-- auditoria das 2.411 características de origem, sem automatização cega;
+- expansão direcionada para 13 subclasses com perfis específicos;
+- auditoria das 2.477 características de origem do catálogo 5.27, sem automatização cega;
 - comando `/grimorio-auditoria-automacao`.
 
-A auditoria atual identifica 72 características perfiladas, 292 candidatos de alta prioridade, 732 de prioridade média e 1.315 predominantemente textuais/contextuais. **Candidato não significa automação segura**: o perfil continua exigindo revisão explícita.
+A auditoria atual do catálogo 5.27 identifica 99 características perfiladas, 294 candidatos de alta prioridade, 745 de prioridade média e 1.339 predominantemente textuais/contextuais. **Candidato não significa automação segura**: o perfil continua exigindo revisão explícita.
 
 Auras dinâmicas e bônus condicionais globais continuam desativados.
 

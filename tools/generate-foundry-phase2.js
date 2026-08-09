@@ -10,7 +10,7 @@ const load = file => vm.runInThisContext(fs.readFileSync(path.join(root, file), 
 [
   'js/config.js','js/registry.js','data/sources.js','data/phb-spells.js','data/xanathar-spells.js',
   'data/tasha-spells.js','data/spellblade-spells.js','data/lyre-spells.js','data/blade-bone-benefit-spells.js',
-  'data/zagalhta-spells.js','data/ryoko-spells.js','data/export/foundry-v13-overrides.js',
+  'data/zagalhta-spells.js','data/ryoko-spells.js','data/cultivator-homebrew-spells.js','data/export/foundry-v13-overrides.js',
   'js/exporters/registry.js','js/exporters/foundry-v13.js'
 ].forEach(load);
 

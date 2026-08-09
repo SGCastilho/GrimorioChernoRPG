@@ -40,7 +40,11 @@ export function validateBundle(bundle, runtime = {}) {
       errors.push(`Classe fora da lista homologada da Fase 8: ${identifier ?? "desconhecido"}.`);
     }
     if (bundle.nativeMapping?.status !== "ready" && !SPECIAL_CLASS_ALLOWLIST.has(identifier)) {
-      errors.push(`A classe ${bundle.identity?.name ?? identifier ?? "desconhecida"} não possui mapeamento nativo pronto nem perfil especial da Fase 8.`);
+      if (READY_CLASS_ALLOWLIST.has(identifier)) {
+        warnings.push(`O bundle sinaliza mapeamento nativo em revisão, mas o Grimório Importer 0.9.3 possui perfil local homologado para ${bundle.identity?.name ?? identifier}. O perfil local será usado.`);
+      } else {
+        errors.push(`A classe ${bundle.identity?.name ?? identifier ?? "desconhecida"} não possui mapeamento nativo pronto nem perfil especial da Fase 8.`);
+      }
     }
     const hd = bundle.class?.hitDice;
     const standard = hd?.mode === "standard" && hd?.number === 1 && [4, 6, 8, 10, 12].includes(Number(hd?.faces));
@@ -76,7 +80,7 @@ export function phase8Support() {
     subclassesFor: [...READY_CLASS_IDENTIFIERS],
     specialClasses: [...SPECIAL_CLASS_IDENTIFIERS],
     reviewClasses: [...REVIEW_CLASS_IDENTIFIERS],
-    counts: { classes: READY_CLASS_IDENTIFIERS.length, subclasses: 380, specialClasses: SPECIAL_CLASS_IDENTIFIERS.length, specialSubclasses: 30, reviewClasses: REVIEW_CLASS_IDENTIFIERS.length },
+    counts: { classes: READY_CLASS_IDENTIFIERS.length, subclasses: 381, specialClasses: SPECIAL_CLASS_IDENTIFIERS.length, specialSubclasses: 30, reviewClasses: REVIEW_CLASS_IDENTIFIERS.length },
     targetFoundry: TARGET_FOUNDRY,
     targetDnd5e: TARGET_DND5E,
     storage: "module-compendiums",

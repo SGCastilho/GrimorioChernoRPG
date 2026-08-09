@@ -1,3 +1,15 @@
+## 5.28.0
+
+- Adicionada **Animar Energia (Animate Energy)** ao catálogo do **Cultivador**, traduzida diretamente da captura de tela fornecida pelo usuário.
+- Criado `data/cultivator-homebrew-spells.js`, com catálogo `cultivator-homebrew-spells` e fonte `cultivator-homebrew-spells` (**Magias Homebrew — Cultivador**).
+- Preservados: Necromancia de 1º nível (ritual), conjuração de 1 minuto, alcance de 9 m, componentes V/S/M, duração instantânea, comando a 18 m, limite base de 2 criaturas e escalonamento até o teto de 4 descrito pela fonte.
+- A ausência de estatísticas do servo morto-vivo/esfera necromântica foi documentada sem criação de mecânicas inferidas.
+- Atualizada a referência `MAGIAS EXTERNAS DA LISTA` do Cultivador: **Animate Energy** deixa de ser tratado como ficha indisponível.
+- Catálogo passa a **1.171 registros-base**, **9 catálogos de magia** e **16 fontes registradas**.
+- Readiness Foundry de magias passa para **1.170 exportáveis**, **1.168 prontas**, 2 em revisão e 1 bloqueada; **Animar Energia** é exportável sem avisos.
+- Grimório Importer embutido sincronizado para **0.9.3** e removido do exporter o aviso obsoleto de incompatibilidade do Lutador de Rua.
+- Adicionado `tools/validate-cultivator-homebrew-spell-5.28.js`.
+
 ## 5.27.0
 
 - Integrada a classe homebrew original **Lutador de Rua** a partir do PDF fornecido pelo usuário.

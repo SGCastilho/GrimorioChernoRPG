@@ -1,7 +1,7 @@
 export const READY_CLASS_IDENTIFIERS = Object.freeze([
   "barbarian", "bard", "warlock", "cleric", "druid", "sorcerer", "fighter", "rogue", "wizard",
   "monk", "paladin", "ranger", "artificer", "favored-soul", "inscriptor", "petal-knight", "sword-saint",
-  "spiritual-emissary", "spellblade", "cultivator", "dragoneer", "frame-pilot", "bender", "tamer", "blood-minister"
+  "spiritual-emissary", "spellblade", "cultivator", "street-fighter", "dragoneer", "frame-pilot", "bender", "tamer", "blood-minister"
 ]);
 
 export const SPECIAL_CLASS_IDENTIFIERS = Object.freeze([
@@ -54,8 +54,10 @@ function profile(data) {
     subclassPlaceholderPrefixes: [],
     spellcasting: { progression: "none", ability: "", preparationFormula: "" },
     asiLevels: CORE_ASI,
+    asiFeatureMode: "native",
     directOptionGrants: [],
     itemChoices: [],
+    supportingOptions: [],
     saveChoices: [],
     hitDieOverride: null,
     specialRuntime: null,
@@ -210,6 +212,39 @@ export const CLASS_PROFILES = Object.freeze({
       "O Cultivador usa Qi próprio e não espaços de magia do DnD5e; a progressão nativa de slots permanece desativada para não criar recursos que a classe não possui.",
       "Adagas, dardos, arco curto, espada curta, bordão e dois instrumentos musicais permanecem descritos no Item para conferência manual.",
       "Magias homebrew citadas sem bloco mecânico no PDF são preservadas somente como referências."
+    ]
+  }),
+  "street-fighter": profile({
+    armorGrants: ["armor:lgt"], weaponGrants: ["weapon:sim"],
+    skillChoice: skills(2, ["acrobacia", "atletismo", "intimidacao", "intuicao", "investigacao", "percepcao", "persuasao", "prestidigitacao", "sobrevivencia"]),
+    subclassTitle: "Arquétipo de Rua", subclassFeatureNames: ["ARQUÉTIPO DE RUA"],
+    subclassPlaceholderPrefixes: ["CARACTERÍSTICA DE ARQUÉTIPO DE RUA"],
+    spellcasting: { progression: "none", ability: "", preparationFormula: "" },
+    asiLevels: [],
+    asiFeatureMode: "textual",
+    itemChoices: [{
+      key: "wrath-essences-initial",
+      title: "Essências de Cólera — escolhas iniciais",
+      optionNames: [
+        "ESSÊNCIA DO PISÃO FACIAL",
+        "ESSÊNCIA DA PAREDE",
+        "ESSÊNCIA DA ARMA IMPROVISADA",
+        "ESSÊNCIA DO ARREMESSO DE RUA",
+        "ESSÊNCIA DA INTIMIDAÇÃO BRUTAL"
+      ],
+      choices: { 3: { count: 2, replacement: false } }
+    }],
+    supportingOptions: [
+      { key: "wrath-essences-9", level: 9, optionNames: ["ESSÊNCIA DA COLISÃO DUPLA", "ESSÊNCIA DA INTERRUPÇÃO VIOLENTA", "ESSÊNCIA DO IMPACTO NO CHÃO", "ESSÊNCIA DO OBJETO PESADO"] },
+      { key: "wrath-essences-13", level: 13, optionNames: ["ESSÊNCIA DA QUEDA DO CAMPEÃO", "ESSÊNCIA DA REVERSÃO BRUTAL", "ESSÊNCIA DO DESARME VIOLENTO", "ESSÊNCIA DO ESPÍRITO INABALÁVEL"] },
+      { key: "wrath-essences-15", level: 15, optionNames: ["ESSÊNCIA DO CLÍMAX BRUTAL", "ESSÊNCIA DA QUEBRA DE GUARDA", "ESSÊNCIA DO ARREMESSO DEVASTADOR", "ESSÊNCIA DA RESISTÊNCIA FURIOSA"] },
+      { key: "wrath-essences-17", level: 17, optionNames: ["ESSÊNCIA DA LENDA VIVA", "ESSÊNCIA DA QUEDA ABSOLUTA", "ESSÊNCIA DO DRAGÃO FURIOSO"] }
+    ],
+    warnings: [
+      "A classe concede armas simples automaticamente. Armas improvisadas e armas marciais corpo a corpo sem a propriedade Pesada não correspondem a uma categoria nativa segura do DnD5e e permanecem na descrição para conferência manual.",
+      "A escolha de ferramenta do Lutador de Rua permanece na descrição, pois combina Ferramentas de Ladrão, veículos terrestres, kit de jogo ou ferramentas de artesão em uma única escolha que o Advancement nativo não representa com fidelidade.",
+      "O PDF lista Incremento de Habilidade nos níveis 4, 8, 12, 16 e 19 sem fornecer o bloco de regras. A 0.9.3 preserva essas entradas como características textuais e não cria AbilityScoreImprovement nativo por inferência.",
+      "O PDF lista Essência Adicional nos níveis 6, 9, 13, 15 e 17 sem definir explicitamente a quantidade concedida. A escolha inicial de duas Essências no 3º nível é nativa; as concessões adicionais permanecem textuais e as Essências posteriores ficam disponíveis no compêndio para seleção manual conforme a mesa."
     ]
   }),
   dragoneer: profile({

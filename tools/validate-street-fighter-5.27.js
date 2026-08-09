@@ -70,8 +70,8 @@ function same(actual, expected, message) {
   assert(classBundle.identity.identifier === 'street-fighter', 'Foundry identifier deve ser street-fighter');
   assert(classBundle.subclassSelection.selectionLevel === 3, `Seleção de Arquétipo deve ocorrer no nível 3; encontrado ${classBundle.subclassSelection.selectionLevel}`);
   assert(classBundle.subclassSelection.options.length === 1, 'Bundle deve expor 1 Arquétipo');
-  assert(classBundle.nativeMapping?.status === 'review', 'Bundle deve permanecer em revisão até o Importer ganhar perfil nativo');
-  assert((classBundle.nativeMapping?.warnings || []).some(w => /0\.9\.2/.test(w) && /ainda não possui CLASS_PROFILE/i.test(w)), 'Aviso de compatibilidade com Importer 0.9.2 ausente');
+  assert(classBundle.nativeMapping?.status === 'ready', 'Bundle do Lutador de Rua deve estar pronto para o Importer 0.9.3');
+  assert(!(classBundle.nativeMapping?.warnings || []).some(w => /0\.9\.2/.test(w) && /ainda não possui CLASS_PROFILE/i.test(w)), 'Aviso obsoleto de compatibilidade com Importer 0.9.2 ainda presente');
   assert(classBundle.features.filter(f => f.foundryPlan?.role === 'feature-option').length === 20, 'Bundle deve marcar 20 Essências como opções de escolha');
 
   const subInspection = bundleApi.inspectSubclass(sub);
@@ -80,11 +80,11 @@ function same(actual, expected, message) {
   assert(subBundle.subclass.classIdentifier === 'street-fighter', 'Subclasse deve apontar para classIdentifier street-fighter');
 
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
-  assert(manifest.version === '5.27.0' && manifest.classes === 26 && manifest.subclasses === 381, 'Manifesto 5.27 com contagens incorretas');
+  assert(['5.27.0','5.28.0'].includes(manifest.version) && manifest.classes === 26 && manifest.subclasses === 381, 'Manifesto 5.27+ com contagens incorretas');
   assert(manifest.subclassCounts?.['Lutador de Rua'] === 1, 'Manifesto sem contagem de Arquétipos do Lutador de Rua');
-  assert(manifest.registeredSources === 15, 'Manifesto deve registrar 15 fontes');
+  assert(manifest.registeredSources >= 15, 'Manifesto deve preservar ao menos as 15 fontes da integração do Lutador de Rua');
 
-  console.log('STREET_FIGHTER_5_27_OK', JSON.stringify({
+  console.log('STREET_FIGHTER_5_27_PLUS_OK', JSON.stringify({
     class: cls.name,
     classFeaturesAndOptions: cls.features.length,
     selectableEssences: optionalEssences.length,

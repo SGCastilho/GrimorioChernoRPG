@@ -1,8 +1,8 @@
 {
   "id": "grimorio-importer",
   "title": "Grimório Importer",
-  "description": "Importador de classes e subclasses do Grimório para compêndios nativos DnD5e, com Advancements portáveis, pacotes JSON, automação mecânica conservadora e organização hierárquica das características por classe/subclasse. Fase 12.1 para Foundry VTT 13.351.",
-  "version": "0.9.2",
+  "description": "Importador de classes e subclasses do Grimório para compêndios nativos DnD5e, com Advancements portáveis, pacotes JSON, automação mecânica conservadora e organização hierárquica das características por classe/subclasse. Fase 12.2 para Foundry VTT 13.351, com suporte nativo ao Lutador de Rua e Dragão de Dojima.",
+  "version": "0.9.3",
   "authors": [
     {
       "name": "Projeto Grimório D&D 5e PT-BR"

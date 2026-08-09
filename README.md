@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 5.27.0
+# Grimório D&D 5e PT-BR — versão 5.28.0
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
 
@@ -9,6 +9,19 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 3. Abra `index.html` em um navegador moderno.
 
 Os catálogos incorporados funcionam offline.
+
+## Novidades da versão 5.28 — Animar Energia
+
+- Adicionada **Animar Energia (Animate Energy)**, magia homebrew vinculada à classe **Cultivador**, traduzida diretamente da captura de tela fornecida pelo usuário.
+- A magia foi cadastrada como **Necromancia de 1º nível (ritual)**, com tempo de conjuração de **1 minuto**, alcance de **9 metros**, componentes **V, S, M** e duração **Instantânea**.
+- A regra de comando a até **18 metros**, o limite base de **até 2 criaturas** e o escalonamento descrito pela fonte até o limite de **4** foram preservados.
+- A imagem não fornece bloco de estatísticas para o servo morto-vivo/esfera de energia necromântica; o Grimório registra essa lacuna em `sourceNote` sem inventar CA, PV, ataques ou outros valores.
+- Criado `data/cultivator-homebrew-spells.js` e registrada a fonte/catálogo **Magias Homebrew — Cultivador**.
+- A referência editorial da classe Cultivador foi atualizada para retirar **Animate Energy** da relação de magias ainda sem bloco mecânico disponível.
+- O catálogo passa para **1.171 registros-base de magias/poderes**, distribuídos em **9 catálogos**, com **16 fontes registradas**.
+- A exportação Foundry da nova magia passa na validação sem avisos: escola `nec`, ritual, alcance métrico e componentes materiais são representáveis pelo perfil homologado.
+- O **Grimório Importer embutido foi sincronizado para 0.9.3**, preservando o suporte ao Lutador de Rua e Dragão de Dojima já desenvolvido.
+- Adicionado `tools/validate-cultivator-homebrew-spell-5.28.js`.
 
 ## Novidades da versão 5.27 — Lutador de Rua
 
@@ -249,7 +262,7 @@ Consulte `FOUNDRY_IMPORTER_FASE12.md`, `TESTE_FOUNDRY_FASE12.md` e `VALIDACAO_FO
 - **26 classes**.
 - **381 subclasses/especializações**.
 - **26 progressões estruturadas**.
-- **1170 registros-base de magias/poderes** antes de conteúdo personalizado do usuário.
+- **1171 registros-base de magias/poderes** antes de conteúdo personalizado do usuário.
 - 361 magias do Livro do Jogador.
 - 95 magias do Guia de Xanathar.
 - 21 magias do Caldeirão de Tasha.

@@ -839,7 +839,7 @@
       "title": "MAGIAS EXTERNAS DA LISTA",
       "page": 21,
       "sourceTitle": "D&D Wiki — Cultivator (5e Class)",
-      "text": "A lista de magias do Cultivador cita algumas magias homebrew — como Sliver of Chaos, Animate Energy, Protection of Chaos, Divination of Chaos, Element of Chaos, Illusion of Chaos e Chaotic Barrier — sem apresentar seus blocos mecânicos neste PDF. Seus nomes são preservados na lista, mas nenhuma regra ausente foi inventada."
+      "text": "A lista de magias do Cultivador cita algumas magias homebrew — como Sliver of Chaos, Protection of Chaos, Divination of Chaos, Element of Chaos, Illusion of Chaos e Chaotic Barrier — sem apresentar seus blocos mecânicos neste PDF. Seus nomes são preservados na lista, mas nenhuma regra ausente foi inventada. Animate Energy (Animar Energia), antes apenas referenciada, recebeu posteriormente uma ficha mecânica completa por meio de uma captura de tela fornecida pelo usuário e foi incorporada ao catálogo separado Magias Homebrew — Cultivador."
     },
     {
       "title": "NOTA EDITORIAL — TABELA ESOTÉRICA",

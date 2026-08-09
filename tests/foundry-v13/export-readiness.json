@@ -18,16 +18,16 @@
   },
   "phase": 2,
   "summary": {
-    "catalogs": 8,
-    "total": 1170,
-    "exportable": 1169,
-    "ready": 1167,
+    "catalogs": 9,
+    "total": 1171,
+    "exportable": 1170,
+    "ready": 1168,
     "reviewRequired": 2,
     "blocked": 1,
     "warningCounts": {
       "source-duration-incomplete": 2
     },
-    "rituals": 43,
+    "rituals": 44,
     "psionicFallbacks": 12
   },
   "byCatalog": [
@@ -102,6 +102,15 @@
       "ready": 240,
       "reviewRequired": 0,
       "blocked": 1
+    },
+    {
+      "id": "cultivator-homebrew-spells",
+      "sourceId": "cultivator-homebrew-spells",
+      "total": 1,
+      "exportable": 1,
+      "ready": 1,
+      "reviewRequired": 0,
+      "blocked": 0
     }
   ],
   "review": [

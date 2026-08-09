@@ -1,0 +1,115 @@
+{
+  "schema": "grimorio-foundry-class-bundle",
+  "schemaVersion": 1,
+  "kind": "subclass",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-class-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer"
+  },
+  "identity": {
+    "grimorioId": "street-fighter-dragon-dojima",
+    "identifier": "street-fighter-dragon-dojima",
+    "name": "Dragão de Dojima",
+    "originalName": "",
+    "aliases": [
+      "Dragão de Dojima"
+    ]
+  },
+  "source": {
+    "sourceId": "street-fighter-homebrew",
+    "title": "Lutador de Rua — Homebrew Original",
+    "pages": "10–13",
+    "chapter": "Arquétipo de Rua — Dragão de Dojima",
+    "page": 10
+  },
+  "nativeMapping": {
+    "status": "ready",
+    "warnings": []
+  },
+  "parentClass": {
+    "grimorioId": "street-fighter-homebrew",
+    "identifier": "street-fighter",
+    "name": "Lutador de Rua"
+  },
+  "subclass": {
+    "itemType": "subclass",
+    "classIdentifier": "street-fighter",
+    "selectionLevel": 3,
+    "description": "O arquétipo do Lutador de Rua que transforma a batalha em uma dança brutal de instinto, técnica e presença esmagadora, alternando entre velocidade explosiva, força monstruosa e domínio absoluto do combate.",
+    "tables": [],
+    "references": [],
+    "sourcePage": 10
+  },
+  "features": [
+    {
+      "key": "subclass.street-fighter-dragon-dojima.feature.estilos-do-dragao-de-dojima.l3.1",
+      "name": "ESTILOS DO DRAGÃO DE DOJIMA",
+      "level": 3,
+      "description": "No 3º nível, você aprende a alternar entre três estilos de combate: Rush, Beast e Dragon.\n\nVocê só pode ter um estilo ativo por vez. Quando rola iniciativa, escolha um dos seus estilos para ficar ativo. No início de cada um dos seus turnos, antes de se mover ou realizar qualquer ação, você pode trocar seu estilo ativo sem gastar ação.\n\nOs benefícios dos seus estilos só funcionam enquanto você não estiver usando armadura média, armadura pesada ou escudo, e enquanto estiver usando golpes desarmados, armas improvisadas ou armas de rua.\n\nQuando uma característica reduz seu Dado de Briga em um passo, ele não pode ficar abaixo de 1d4. Quando uma característica aumenta seu Dado de Briga em um passo, ele não pode ultrapassar 1d12.\n\nRUSH STYLE\n\nJogo de Pés Acelerado. Seu deslocamento aumenta em 3 metros. Além disso, quando usa Combo Acelerado, você pode se mover 1,5 metro antes ou depois do ataque. Esse movimento não provoca ataques de oportunidade da criatura atacada pelo Combo Acelerado.\n\nCombo Relâmpago. Quando usa Combo Acelerado, seu Dado de Briga é reduzido em um passo (por exemplo, de 1d6 para 1d4). Porém, em vez de fazer uma única jogada de ataque, você faz duas jogadas de ataque contra a mesma criatura.\n\nFinalizador Relâmpago. Quando usa Golpe Finalizador, seu Dado de Briga também é reduzido em um passo. Você faz duas jogadas de ataque contra a mesma criatura.\n\nEsquiva de Rush. Quando você for alvo de um teste de resistência de Destreza, pode gastar 1 ponto de Cólera para realizar o teste com vantagem.\n\nBEAST STYLE\n\nPasso Pesado. Seu deslocamento é reduzido pela metade.\n\nGolpe Esmagador. Quando usa Combo Acelerado ou Golpe Finalizador, seu Dado de Briga aumenta em um passo, até o máximo de 1d12.\n\nAgarrão Brutal. Uma vez por turno, quando acerta uma criatura com seu Combo Acelerado, você pode tentar agarrá-la como parte do mesmo ataque, sem gastar ação adicional. O alvo deve estar no máximo uma categoria de tamanho acima da sua.\n\nArremesso Bestial. Quando acerta uma criatura agarrada por você com seu Combo Acelerado ou Golpe Finalizador, você pode substituir o dano normal do ataque por um arremesso. O alvo deve realizar um teste de resistência de Força contra sua CD dos Surtos de Cólera. Em uma falha, você o arremessa até 3 metros para um espaço desocupado que possa ver. O alvo sofre dano contundente igual a 1 Dado de Briga + seu modificador de Força e fica caído. Em um sucesso, o alvo não é arremessado, mas sofre dano contundente igual ao seu modificador de Força.\n\nAbsorção Bestial. Quando usa o Surto de Cólera Aguentar Pancada enquanto está em Beast, você reduz dano adicional igual ao seu bônus de proficiência.\n\nDRAGON STYLE\n\nPostura do Dragão. Quando usa Combo Acelerado ou Golpe Finalizador, você usa seu Dado de Briga normal, sem reduzir nem aumentar o dado.\n\nTécnica do Dragão. Uma vez por turno, quando acerta uma criatura com seu Combo Acelerado ou Golpe Finalizador, você pode escolher um dos efeitos abaixo:\n\n• Quebrar Ritmo: o alvo não pode realizar reações até o início do seu próximo turno.\n• Passo Dominante: você pode se mover até 1,5 metro sem provocar ataques de oportunidade do alvo atingido.\n• Reposicionar: o alvo deve ser bem-sucedido em um teste de resistência de Força contra sua CD dos Surtos de Cólera ou é movido 1,5 metro para um espaço desocupado à sua escolha.\n• Fúria Controlada: se você estiver com 0 pontos de Cólera, ganha 1 ponto de Cólera.\n\nPresença do Dragão. Você tem vantagem em testes de Carisma (Intimidação) feitos contra criaturas que você tenha causado dano nesta cena.",
+      "page": 10,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 3,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.street-fighter-dragon-dojima.feature.tecnica-komaki.l6.1",
+      "name": "TÉCNICA KOMAKI",
+      "level": 6,
+      "description": "No 6º nível, seu domínio dos estilos do Dragão de Dojima se torna mais refinado. Você aprende a punir erros inimigos com contra-ataques, reversões e movimentos precisos. Você recebe os benefícios abaixo:\n\nContra-Ataque do Dragão. Enquanto estiver no Dragon Style, quando uma criatura que você possa ver errar um ataque corpo a corpo contra você, você pode usar sua reação e gastar 1 ponto de Cólera para fazer um ataque corpo a corpo contra essa criatura usando uma arma de rua. Se esse ataque acertar, você pode aplicar um dos efeitos da sua característica Técnica do Dragão ao alvo, sem contar contra o limite de uma vez por turno dessa característica. Esse contra-ataque não pode ativar Golpe Finalizador.\n\nRush Style — Esquiva Relâmpago. Enquanto estiver no Rush Style, quando uma criatura que você possa ver fizer um ataque contra você, você pode usar sua reação e gastar 1 ponto de Cólera para aumentar sua CA em +2 contra esse ataque. Se o ataque errar, você pode se mover até 1,5 metros sem provocar ataques de oportunidade da criatura atacante. No 11º nível, esse bônus aumenta para +3.\n\nBeast Style — Guarda Brutal. Enquanto estiver no Beast Style, quando você usa Aguentar Pancada, você pode se mover até 1,5 metro em direção à criatura que causou o dano, desde que possa vê-la. Além disso, se a criatura que causou o dano estiver ao seu alcance depois desse movimento, você pode gastar 1 ponto de Cólera adicional para tentar agarrá-la como parte da mesma reação. O alvo deve realizar um teste resistido contra seu teste de Força (Atletismo), como normal para agarrar.\n\nDragon Style — Deita Tigre. Enquanto estiver no Dragon Style, você aprende uma técnica de contra-ataque devastadora. Quando uma criatura que você possa ver errar um ataque corpo a corpo contra você, você pode usar sua reação e gastar 2 pontos de Cólera para executar o Deita Tigre. Faça um ataque corpo a corpo contra a criatura usando um ataque desarmado. Em caso de acerto, o ataque causa dano igual a 2 Dados de Briga + seu modificador de Força. Além disso, o alvo deve ser bem-sucedido em um teste de resistência de Força contra sua CD dos Surtos de Cólera ou será empurrado 1,5 metro para longe de você.\n\nVocê não pode usar Contra-Ataque do Dragão e Queda do Tigre contra o mesmo ataque.",
+      "page": 11,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 6,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.street-fighter-dragon-dojima.feature.lenda-do-dragao.l11.1",
+      "name": "LENDA DO DRAGÃO",
+      "level": 11,
+      "description": "No 11º nível, seus estilos deixam de ser apenas posturas isoladas e passam a fluir entre si. Você ainda precisa escolher um estilo ativo por vez, mas agora cada estilo possui uma forma mais refinada. Você recebe os seguintes benefícios:\n\nRUSH STYLE APRIMORADO\n\nJogo de Pés Superior. O bônus de deslocamento concedido por Rush Style aumenta para 6 metros, em vez de 3 metros.\n\nCombo Relâmpago Flexível. Quando usa Combo Relâmpago ou Finalizador Relâmpago, você não precisa mais fazer todos os ataques contra a mesma criatura. Você pode dividir os ataques entre uma ou duas criaturas ao seu alcance.\n\nEsquiva Relâmpago Aprimorada. O bônus de CA concedido por Esquiva Relâmpago aumenta para +3, em vez de +2.\n\nBEAST STYLE APRIMORADO\n\nPasso Pesado Controlado. Seu deslocamento não é mais reduzido pela metade. Em vez disso, seu deslocamento é reduzido em 3 metros.\n\nForça de Monstro. Você conta como uma categoria de tamanho maior para determinar quais criaturas pode agarrar, empurrar, derrubar ou arremessar usando características de Lutador de Rua.\n\nArremesso Bestial Aprimorado. Quando arremessa uma criatura usando Arremesso Bestial, a distância do arremesso aumenta para 4,5 metros. Se a criatura arremessada colidir com uma parede, objeto grande ou outra criatura, ela sofre dano contundente adicional igual ao seu bônus de proficiência.\n\nDRAGON STYLE APRIMORADO\n\nFusão Controlada. No início de cada um dos seus turnos, enquanto estiver em Dragon Style, escolha uma das influências abaixo. Ela dura até o início do seu próximo turno.\n\n• Influência Acelerada: seu deslocamento aumenta em 3 metros. Além disso, uma vez neste turno, quando aplicar um efeito de Técnica do Dragão, você pode se mover 1,5 metros sem provocar ataques de oportunidade do alvo atingido.\n• Influência Bestial: uma vez neste turno, quando aplicar um efeito de Técnica do Dragão a uma criatura, você pode também tentar agarrar, empurrar ou derrubar essa criatura como parte do mesmo golpe. O alvo deve estar no máximo uma categoria de tamanho acima da sua, considerando qualquer benefício que aumente seu tamanho efetivo para agarrões e empurrões.",
+      "page": 11,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 11,
+        "automation": "phase-5"
+      }
+    },
+    {
+      "key": "subclass.street-fighter-dragon-dojima.feature.dragao-de-dojima.l17.1",
+      "name": "DRAGÃO DE DOJIMA",
+      "level": 17,
+      "description": "No 17º nível, você atinge o verdadeiro domínio do estilo lendário do Dragão de Dojima. Rush, Beast e Dragon deixam de ser apenas posturas separadas: você passa a alternar entre elas com instinto absoluto, convertendo velocidade em força, força em técnica e técnica em destruição.\n\nVocê recebe os seguintes benefícios.\n\nRUSH STYLE SUPREMO\n\nVelocidade do Dragão. O bônus de deslocamento concedido por Rush aumenta para 9 metros.\n\nCombo Relâmpago Supremo. Quando usa Combo Relâmpago ou Finalizador Relâmpago, você faz três jogadas de ataque, em vez de duas.\n\nEvasão Perfeita. Quando usa Esquiva Relâmpago e o ataque erra, você pode fazer um ataque corpo a corpo com uma arma de rua contra a criatura atacante como parte da mesma reação. Esse ataque não pode ativar Golpe Finalizador.\n\nBEAST STYLE SUPREMO\n\nForça Inabalável. Você não sofre mais redução de deslocamento por estar em Beast Style.\n\nMonstro das Ruas. Você conta como duas categorias de tamanho maior para determinar quais criaturas pode agarrar, empurrar, derrubar ou arremessar usando características de Lutador de Rua.\n\nArremesso Bestial Supremo. Quando usa Arremesso Bestial, você pode arremessar o alvo até 6 metros. Se o alvo colidir com uma parede, objeto grande ou outra criatura, ele sofre 1 Dado de Briga adicional de dano contundente e deve ser bem-sucedido em um teste de resistência de Constituição contra sua CD dos Surtos de Cólera ou não poderá realizar reações até o início do seu próximo turno.\n\nDRAGON STYLE SUPREMO\n\nFusão Suprema. No início de cada um dos seus turnos, enquanto estiver em Dragon Style, você escolhe uma das opções abaixo:\n\n• Influência de Rush: seu deslocamento aumenta em 6 metros. Além disso, uma vez neste turno, quando acertar uma criatura com Combo Acelerado ou Golpe Finalizador, você pode fazer um ataque adicional contra a mesma criatura. Esse ataque causa dano igual a 1 Dado de Briga, sem adicionar seu modificador de Força.\n• Influência de Beast: uma vez neste turno, quando acertar uma criatura com Combo Acelerado ou Golpe Finalizador, você pode aumentar o dano do ataque em 1 Dado de Briga ou tentar agarrar, empurrar ou derrubar o alvo como parte do mesmo golpe.\n• Influência do Dragão: uma vez neste turno, quando aplicar Técnica do Dragão, você pode aplicar dois efeitos diferentes da lista sem gastar Cólera.\n\nDeita Tigre Supremo. Enquanto estiver em Dragon Style, quando você usa a Essência do Deita Tigre, ele causa dano igual a 3 Dados de Briga + seu modificador de Força. Além disso, se o alvo falhar no teste de resistência de Força, você pode escolher derrubá-lo em vez de empurrá-lo 1,5 metro.",
+      "page": 12,
+      "sourceTitle": "Lutador de Rua — Homebrew Original",
+      "originalName": "",
+      "tables": [],
+      "foundryPlan": {
+        "itemType": "feat",
+        "role": "granted-feature",
+        "advancementType": "ItemGrant",
+        "grantAtLevel": 17,
+        "automation": "phase-5"
+      }
+    }
+  ]
+}

@@ -222,6 +222,30 @@ function profile(id, classIdentifier, featureName, tier, config = {}) {
   });
 }
 
+function streetFighterEssenceProfile(id, featureName, cost, { activation = "special", condition = "" } = {}) {
+  return profile(`street-fighter-essence-${id}`, "street-fighter", featureName, AUTOMATION_TIER.PARTIAL, {
+    activities: [ctx => baseActivity({
+      ...ctx,
+      key: "use",
+      type: "utility",
+      name: featureDisplayActivityName(featureName),
+      activation,
+      condition,
+      consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", String(cost))],
+      chatFlavor: `Consome ${cost} ponto${cost === 1 ? "" : "s"} de Cólera. Resolva o ataque, Dado de Briga, salvaguarda, movimento e condições exatamente como descritos na Essência.`
+    })],
+    limitations: [
+      "O consumo de Cólera é automático; o Dado de Briga escalável e efeitos condicionais da técnica permanecem manuais para evitar fórmulas ou estados não suportados com fidelidade pelo DnD5e 5.3.3."
+    ]
+  });
+}
+
+function featureDisplayActivityName(value) {
+  return String(value ?? "Essência de Cólera")
+    .toLocaleLowerCase("pt-BR")
+    .replace(/(^|[\s—-])([a-záàâãéêíóôõúç])/g, (_m, prefix, letter) => `${prefix}${letter.toLocaleUpperCase("pt-BR")}`);
+}
+
 const PROFILES = [
   profile("barbarian-rage", "barbarian", "FÚRIA", AUTOMATION_TIER.PARTIAL, {
     effects: [ctx => baseEffect({
@@ -700,6 +724,77 @@ const PROFILES = [
       "A recarga é condicional: após sucesso, 7 dias até o 19º nível; após falha, descanso longo; no 20º nível, descanso longo. Por isso o módulo não aplica uma reserva automática que poderia bloquear usos incorretamente."
     ]
   }),
+  // Grimório Importer 0.9.3 — Lutador de Rua.
+  profile("street-fighter-wrath", "street-fighter", "CÓLERA", AUTOMATION_TIER.PARTIAL, {
+    itemUses: {
+      max: "max(@prof, @prof + @abilities.str.mod) + 2 * floor(@classes.street-fighter.levels / 10) + 2 * floor(@classes.street-fighter.levels / 18) - 2 * floor(@classes.street-fighter.levels / 20)",
+      periods: []
+    },
+    limitations: [
+      "A capacidade máxima de Cólera é calculada automaticamente, incluindo os aumentos dos níveis 10 e 18.",
+      "Ganhar Cólera por Pressão Ofensiva, Aguentar na Marra e Momento Decisivo permanece manual; o módulo não tenta inferir acertos, críticos, dano recebido ou reduções a 0 PV.",
+      "A perda de toda a Cólera ao ficar inconsciente ou após 1 minuto sem atacar/participar do combate permanece manual porque não corresponde a uma recuperação de descanso do DnD5e."
+    ]
+  }),
+  profile("street-fighter-wrath-surges", "street-fighter", "SURTOS DE CÓLERA", AUTOMATION_TIER.PARTIAL, {
+    activities: [
+      ctx => baseActivity({ ...ctx, key: "impact", type: "utility", name: "Essência do Impacto", activation: "special", condition: "Após acertar Combo Acelerado ou Golpe Finalizador.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "2")], chatFlavor: "Consome 2 pontos de Cólera. Some 1 Dado de Briga ao dano e escolha Empurrão Brutal ou Quebra de Ritmo conforme a característica." }),
+      ctx => baseActivity({ ...ctx, key: "take-hit", type: "utility", name: "Aguentar Pancada", activation: "reaction", condition: "Quando sofrer dano.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "1")], chatFlavor: "Consome 1 ponto de Cólera. Reduza o dano em 1 Dado de Briga + modificador de Constituição, depois da rolagem e antes de subtrair PV." }),
+      ctx => baseActivity({ ...ctx, key: "street-step", type: "utility", name: "Passo de Rua", activation: "special", condition: "No seu turno, após acertar ou errar Combo Acelerado.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "1")], chatFlavor: "Consome 1 ponto de Cólera. Mova até 3 m sem provocar ataque de oportunidade da criatura atacada pelo Combo Acelerado." }),
+      ctx => baseActivity({ ...ctx, key: "violent-grip", type: "utility", name: "Pegada Violenta", activation: "special", condition: "Ao realizar o teste físico elegível de Força (Atletismo).", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "1")], chatFlavor: "Consome 1 ponto de Cólera. Adicione seu Dado de Briga ao teste de Força (Atletismo) elegível." })
+    ],
+    limitations: ["O módulo controla o consumo da reserva compartilhada. Rolagens do Dado de Briga e efeitos condicionais permanecem manuais."]
+  }),
+  profile("street-fighter-indomitable-momentum", "street-fighter", "ÍMPETO INDOMÁVEL", AUTOMATION_TIER.PARTIAL, {
+    activities: [ctx => baseActivity({ ...ctx, key: "reroll-save", type: "utility", name: "Ímpeto Indomável", activation: "special", condition: "Após falhar em salvaguarda de Força, Destreza ou Constituição; no máximo uma vez por turno.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "2")], chatFlavor: "Consome 2 pontos de Cólera. Repita a salvaguarda elegível e use o novo resultado." })]
+  }),
+  profile("street-fighter-not-over-yet", "street-fighter", "NÃO ACABOU AINDA", AUTOMATION_TIER.PARTIAL, {
+    itemUses: { max: "1", periods: ["lr"] },
+    activities: [ctx => baseActivity({ ...ctx, key: "stay-up", type: "utility", name: "Não Acabou Ainda", activation: "special", condition: "Quando for reduzido a 0 PV sem morrer instantaneamente.", consumptionTargets: [consumptionTarget("itemUses"), consumptionTarget("itemUses", "street-fighter-colera", "3")], chatFlavor: "Consome o uso de descanso longo e 3 pontos de Cólera. Fique com 1 PV e mova até 1,5 m sem provocar ataques de oportunidade." })]
+  }),
+  profile("street-fighter-indomitable-heart", "street-fighter", "CORAÇÃO INDOMÁVEL", AUTOMATION_TIER.PARTIAL, {
+    activities: [
+      ctx => baseActivity({ ...ctx, key: "reroll-save", type: "utility", name: "Coração Indomável — repetir salvaguarda", activation: "special", condition: "Após falhar em salvaguarda de Sabedoria ou Carisma; no máximo uma vez por turno.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "2")], chatFlavor: "Consome 2 pontos de Cólera. Repita a salvaguarda elegível e use o novo resultado." }),
+      ctx => baseActivity({ ...ctx, key: "end-condition", type: "utility", name: "Coração Indomável — encerrar condição", activation: "special", condition: "No início do seu turno, se estiver Amedrontado ou Enfeitiçado e não estiver incapacitado.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "1")], chatFlavor: "Consome 1 ponto de Cólera. Encerre Amedrontado ou Enfeitiçado sobre você." })
+    ]
+  }),
+  profile("street-fighter-refuse-defeat", "street-fighter", "RECUSAR A DERROTA", AUTOMATION_TIER.PARTIAL, {
+    activities: [
+      ctx => baseActivity({ ...ctx, key: "end-standard", type: "utility", name: "Recusar a Derrota — condição comum", activation: "special", condition: "No início do seu turno, consciente e com pelo menos 1 PV.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "3")], chatFlavor: "Consome 3 pontos de Cólera. Encerre Agarrado, Amedrontado, Caído, Contido, Enfeitiçado ou Envenenado sobre você." }),
+      ctx => baseActivity({ ...ctx, key: "end-severe", type: "utility", name: "Recusar a Derrota — Atordoado/Paralisado", activation: "special", condition: "No início do seu turno; esta opção pode ser usada mesmo que a condição esteja incapacitando você.", uses: itemUses({ max: "1", periods: ["lr"] }), consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "5")], chatFlavor: "Consome 5 pontos de Cólera e o uso de descanso longo desta opção. Encerre Atordoado ou Paralisado sobre você." })
+    ]
+  }),
+  streetFighterEssenceProfile("face-stomp", "ESSÊNCIA DO PISÃO FACIAL", 1),
+  streetFighterEssenceProfile("wall", "ESSÊNCIA DA PAREDE", 2),
+  streetFighterEssenceProfile("improvised-weapon", "ESSÊNCIA DA ARMA IMPROVISADA", 1),
+  streetFighterEssenceProfile("street-throw", "ESSÊNCIA DO ARREMESSO DE RUA", 2),
+  streetFighterEssenceProfile("brutal-intimidation", "ESSÊNCIA DA INTIMIDAÇÃO BRUTAL", 1),
+  streetFighterEssenceProfile("double-collision", "ESSÊNCIA DA COLISÃO DUPLA", 2),
+  streetFighterEssenceProfile("violent-interruption", "ESSÊNCIA DA INTERRUPÇÃO VIOLENTA", 2, { activation: "reaction", condition: "Quando criatura visível ao alcance tentar sair do seu alcance." }),
+  streetFighterEssenceProfile("ground-impact", "ESSÊNCIA DO IMPACTO NO CHÃO", 2),
+  streetFighterEssenceProfile("heavy-object", "ESSÊNCIA DO OBJETO PESADO", 3),
+  streetFighterEssenceProfile("champion-fall", "ESSÊNCIA DA QUEDA DO CAMPEÃO", 3),
+  streetFighterEssenceProfile("brutal-reversal", "ESSÊNCIA DA REVERSÃO BRUTAL", 2, { activation: "reaction", condition: "Quando uma criatura visível acertar você com ataque corpo a corpo." }),
+  streetFighterEssenceProfile("violent-disarm", "ESSÊNCIA DO DESARME VIOLENTO", 2),
+  streetFighterEssenceProfile("unshakable-spirit", "ESSÊNCIA DO ESPÍRITO INABALÁVEL", 2),
+  streetFighterEssenceProfile("brutal-climax", "ESSÊNCIA DO CLÍMAX BRUTAL", 4),
+  streetFighterEssenceProfile("guard-break", "ESSÊNCIA DA QUEBRA DE GUARDA", 3),
+  streetFighterEssenceProfile("devastating-throw", "ESSÊNCIA DO ARREMESSO DEVASTADOR", 3),
+  streetFighterEssenceProfile("furious-resistance", "ESSÊNCIA DA RESISTÊNCIA FURIOSA", 3, { activation: "reaction", condition: "Quando sofrer dano." }),
+  streetFighterEssenceProfile("living-legend", "ESSÊNCIA DA LENDA VIVA", 5),
+  streetFighterEssenceProfile("absolute-fall", "ESSÊNCIA DA QUEDA ABSOLUTA", 4),
+  streetFighterEssenceProfile("furious-dragon", "ESSÊNCIA DO DRAGÃO FURIOSO", 4),
+  profile("street-fighter-dojima-komaki", "street-fighter", "TÉCNICA KOMAKI", AUTOMATION_TIER.PARTIAL, {
+    kind: "subclass", bundleIds: ["street-fighter-dragon-dojima"],
+    activities: [
+      ctx => baseActivity({ ...ctx, key: "dragon-counter", type: "utility", name: "Contra-Ataque do Dragão", activation: "reaction", condition: "Em Dragon Style, quando criatura visível errar ataque corpo a corpo contra você.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "1")], chatFlavor: "Consome 1 ponto de Cólera. Faça o contra-ataque com arma de rua e, se acertar, aplique uma opção de Técnica do Dragão conforme a característica." }),
+      ctx => baseActivity({ ...ctx, key: "rush-dodge", type: "utility", name: "Rush Style — Esquiva Relâmpago", activation: "reaction", condition: "Em Rush Style, quando criatura visível fizer um ataque contra você.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "1")], chatFlavor: "Consome 1 ponto de Cólera. Aumente a CA contra o ataque conforme seu nível; se ele errar, aplique o movimento permitido." }),
+      ctx => baseActivity({ ...ctx, key: "beast-grab", type: "utility", name: "Beast Style — Guarda Brutal (agarrar)", activation: "reaction", condition: "Em Beast Style, depois de Aguentar Pancada e do movimento permitido, se o agressor estiver ao alcance.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "1")], chatFlavor: "Consome o 1 ponto de Cólera adicional da tentativa de agarrar concedida por Guarda Brutal. O custo de Aguentar Pancada é controlado pela própria Activity base." }),
+      ctx => baseActivity({ ...ctx, key: "tiger-drop", type: "utility", name: "Dragon Style — Deita Tigre", activation: "reaction", condition: "Em Dragon Style, quando criatura visível errar ataque corpo a corpo contra você.", consumptionTargets: [consumptionTarget("itemUses", "street-fighter-colera", "2")], chatFlavor: "Consome 2 pontos de Cólera. Faça o ataque desarmado e resolva dano/empurrão conforme Deita Tigre. Não combine com Contra-Ataque do Dragão no mesmo ataque." })
+    ],
+    limitations: ["Os estilos ativos e seus efeitos passivos não são alternados automaticamente nesta versão; as Activities apenas controlam o consumo de Cólera das técnicas de reação."]
+  }),
+
   profile("paladin-channel-divinity", "paladin", "CANALIZAR DIVINDADE", AUTOMATION_TIER.FULL, {
     itemUses: { max: "1", periods: ["sr", "lr"] },
     notes: ["Reserva compartilhada para as opções de Juramento automatizadas."]
@@ -968,7 +1063,7 @@ export function phase12Support() {
     subclassSpecificProfiles: true,
     profileTargetingByBundleId: true,
     partialRecoveryFormulas: true,
-    allClassFamiliesRepresented: coverage.classes === 25,
+    allClassFamiliesRepresented: coverage.classes === 26,
     auraPropagation: false,
     conditionalAttackEffects: false,
     ...coverage

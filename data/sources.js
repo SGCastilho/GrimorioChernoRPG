@@ -217,8 +217,26 @@
       about: [
         'Integração integral da classe Cultivador em PT-BR, incluindo progressão do 1º ao 20º nível, Núcleo da Alma, Qi, Magias da Alma, Ritual de Coleta de Almas, tabelas e regras de multiclasse.',
         'Três Chamados à Divindade foram integrados: Chamado do Mal, Chamado Acromático e Chamado do Céu.',
-        'A lista de magias da classe foi preservada. Magias homebrew citadas pela página sem bloco de regras no PDF permanecem apenas como referências, sem mecânicas inventadas.',
+        'A lista de magias da classe foi preservada. Magias homebrew citadas pela página sem bloco de regras no PDF permanecem apenas como referências enquanto nenhuma ficha separada for fornecida; Animar Energia foi incorporada posteriormente a partir da captura de tela enviada pelo usuário.',
         'A página de origem informa que seu conteúdo está disponível sob a GNU Free Documentation License 1.3, exceto onde indicado.'
+      ]
+    },
+    {
+      id: 'cultivator-homebrew-spells',
+      title: 'Magias Homebrew — Cultivador',
+      shortTitle: 'Cultivador — Homebrew',
+      filterLabel: 'Cultivador — Homebrew',
+      homeLabel: 'Cultivador — Homebrew',
+      catalogLabel: 'Cultivador — Homebrew',
+      kind: 'homebrew',
+      order: 83,
+      showOnHome: true,
+      showInAbout: true,
+      aliases: ['Magias Homebrew — Cultivador', 'Cultivador — Homebrew', 'Animate Energy', 'Animar Energia'],
+      matchIncludes: ['Magias Homebrew — Cultivador', 'Cultivador — Homebrew'],
+      about: [
+        'Catálogo de magias homebrew vinculadas à classe Cultivador e fornecidas separadamente pelo usuário.',
+        'As fichas são traduzidas preservando as mecânicas da fonte. Quando uma imagem não fornece estatísticas ou regras auxiliares, o Grimório documenta a lacuna sem inventar valores.'
       ]
     },
     {
@@ -228,7 +246,7 @@
       filterLabel: 'Lutador de Rua — Homebrew',
       homeLabel: 'Lutador de Rua — Homebrew',
       catalogLabel: 'Lutador de Rua — Homebrew',
-      order: 83,
+      order: 84,
       showOnHome: true,
       showInAbout: true,
       aliases: ['Lutador de Rua', 'Lutador de Rua — Homebrew Original'],

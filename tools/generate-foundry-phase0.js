@@ -19,7 +19,7 @@ function load(relativePath) {
   'data/sources.js',
   'data/phb-spells.js',
   'data/zagalhta-spells.js',
-  'data/ryoko-spells.js',
+  'data/ryoko-spells.js','data/cultivator-homebrew-spells.js',
   'data/export/foundry-v13-overrides.js',
   'js/exporters/registry.js',
   'js/exporters/foundry-v13.js'

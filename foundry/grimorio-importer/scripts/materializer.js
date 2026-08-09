@@ -5,7 +5,7 @@ import { dragoneerConceptProfile, SPECIAL_CLASS_RUNTIME } from "./special-class-
 import { applyFeatureAutomation } from "./feature-automation.js";
 
 export { MODULE_ID };
-export const IMPORTER_VERSION = "0.9.2";
+export const IMPORTER_VERSION = "0.9.3";
 
 const ABILITIES = ["str", "dex", "con", "int", "wis", "cha"];
 const ALNUM = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -280,9 +280,13 @@ function itemChoiceRule(profile, feature) {
   return profile?.itemChoices?.find(rule => matchesAnyName(feature, rule.optionNames)) ?? null;
 }
 
+function supportingOptionRule(profile, feature) {
+  return profile?.supportingOptions?.find(rule => matchesAnyName(feature, rule.optionNames)) ?? null;
+}
+
 function featureIsSyntheticClassFeature(bundle, feature, profile) {
   if (bundle.kind !== "class") return false;
-  if (isAsiFeature(feature)) return true;
+  if (isAsiFeature(feature) && profile?.asiFeatureMode !== "textual") return true;
   if (matchesAnyName(feature, profile?.subclassFeatureNames)) return true;
   if (matchesAnyPrefix(feature, profile?.subclassPlaceholderPrefixes)) return true;
   return false;
@@ -618,6 +622,8 @@ function featureStoragePlan(bundle, feature, profile) {
     const firstLevel = Math.min(...Object.keys(choice.choices).map(Number));
     return { level: firstLevel, featureRole: "choice-option", optionGroup: choice.key };
   }
+  const supporting = supportingOptionRule(profile, feature);
+  if (supporting) return { level: Number(supporting.level) || null, featureRole: "supporting-feature", optionGroup: supporting.key ?? "" };
   return null;
 }
 
