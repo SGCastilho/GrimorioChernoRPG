@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 5.28.0
+# Grimório D&D 5e PT-BR — versão 5.29.1
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
 
@@ -9,6 +9,20 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 3. Abra `index.html` em um navegador moderno.
 
 Os catálogos incorporados funcionam offline.
+
+
+## Novidades da versão 5.29 — Planejador de Atributos
+
+**5.29.1:** corrigida a navegação lateral para exibir **Planejador de Atributos** imediatamente abaixo de **Painel** em todas as camadas de UI.
+
+- Nova ferramenta **Planejador de Atributos**, acessível logo abaixo de **Painel** no menu lateral.
+- Interface de Point Buy inspirada no fluxo de criação de personagem de **Baldur's Gate 3**, mantendo a identidade visual do Grimório.
+- Orçamento de **27 pontos**, valores-base entre **8 e 15** e custos progressivos 8=0, 9=1, 10=2, 11=3, 12=4, 13=5, 14=7 e 15=9.
+- Bônus flexíveis separados de **+2** e **+1**, impedindo que os dois sejam aplicados ao mesmo atributo.
+- Exibição simultânea do valor-base, custo, valor final e modificador de Força, Destreza, Constituição, Inteligência, Sabedoria e Carisma.
+- O planejamento é salvo automaticamente no navegador em `grimorio-ability-planner-v1`.
+- Adicionado `js/ability-planner.js` para manter a ferramenta isolada do catálogo de classes/magias.
+- Adicionado `tools/validate-ability-planner-5.29.js`.
 
 ## Novidades da versão 5.28 — Animar Energia
 

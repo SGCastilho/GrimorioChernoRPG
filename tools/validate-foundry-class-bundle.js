@@ -56,7 +56,7 @@ const EXPECTED = {
   subclassFeatures: 2048,
   classTables: 33,
   subclassTables: 138,
-  nativeReviewIds: new Set(['dragoneer', 'frame-pilot', 'bender-ryoko', 'tamer-ryoko', 'blood-minister-somnus', 'street-fighter-homebrew']),
+  nativeReviewIds: new Set(['dragoneer', 'frame-pilot', 'bender-ryoko', 'tamer-ryoko', 'blood-minister-somnus']),
   unlevelledClassFeatures: 49,
   subclassesMissingSource: 41
 };

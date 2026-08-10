@@ -1,5 +1,5 @@
 {
-  "version": "5.28.0",
+  "version": "5.29.1",
   "classes": 26,
   "subclasses": 381,
   "classNames": [
@@ -58,8 +58,13 @@
     "Cultivador": 3,
     "Lutador de Rua": 1
   },
-  "uiRevision": "Animar Energia — v5.28.0",
+  "uiRevision": "Planejador de Atributos — v5.29.1",
   "improvements": [
+    "Correção da navegação: Planejador de Atributos agora aparece explicitamente logo abaixo de Painel no menu lateral, inclusive na camada ui-enhancements que sobrescreve a navegação base.",
+    "Persistência automática do planejamento no navegador e layout responsivo inspirado no fluxo de Baldur’s Gate 3.",
+    "Bônus flexíveis +2 e +1 em atributos diferentes, com cálculo de valor final e modificador.",
+    "Point Buy interativo de 27 pontos com custos oficiais da matriz 8–15.",
+    "Nova aba Planejador de Atributos logo abaixo de Painel na navegação lateral.",
     "Magia homebrew Animar Energia (Animate Energy) adicionada ao catálogo do Cultivador em PT-BR a partir da captura de tela fornecida pelo usuário.",
     "Animar Energia é uma magia de Necromancia de 1º nível (ritual), com conjuração de 1 minuto, alcance de 9 metros, componentes V/S/M e duração instantânea.",
     "A ficha preserva o controle de servos/esferas necromânticas, limite base de até 2 criaturas e escalonamento de conjuração até o limite de 4, sem inventar bloco de estatísticas ausente da imagem.",
@@ -849,5 +854,14 @@
   "cultivatorHomebrewSpells": 1,
   "animateEnergyIntegrated": true,
   "animateEnergyOriginalName": "Animate Energy",
-  "animateEnergyClass": "Cultivador"
+  "animateEnergyClass": "Cultivador",
+  "abilityPlanner": true,
+  "abilityPlannerMode": "Point Buy 27 pontos inspirado em Baldur's Gate 3",
+  "abilityPlannerBudget": 27,
+  "abilityPlannerBaseRange": "8–15",
+  "abilityPlannerFlexibleBonuses": [
+    "+2",
+    "+1"
+  ],
+  "abilityPlannerPersistence": "localStorage"
 }

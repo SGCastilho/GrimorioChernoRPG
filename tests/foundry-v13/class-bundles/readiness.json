@@ -4,8 +4,8 @@
     "schema": "grimorio-foundry-class-bundle@1",
     "classes": 26,
     "classBundlesReady": 26,
-    "classesNativeReady": 20,
-    "classesNativeReview": 6,
+    "classesNativeReady": 21,
+    "classesNativeReview": 5,
     "subclasses": 381,
     "subclassBundlesReady": 381,
     "classFeatures": 429,
@@ -56,13 +56,6 @@
       "warnings": [
         "O Ministro de Sangue usa 2d4 Dados de Vida por nível; o Grimório Importer trata a rolagem de ganho de PV como 2d4, mas o pool nativo de Dados de Vida de descanso continua exigindo acompanhamento especial.",
         "Dado de Vida não padrão para o Item de classe vanilla: 2d4."
-      ]
-    },
-    {
-      "id": "street-fighter-homebrew",
-      "name": "Lutador de Rua",
-      "warnings": [
-        "O Grimório Importer 0.9.2 ainda não possui CLASS_PROFILE nativo para Lutador de Rua. O bundle pode ser exportado pelo site, mas a materialização nativa no Foundry deve aguardar uma atualização do módulo."
       ]
     }
   ],

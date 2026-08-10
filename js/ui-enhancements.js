@@ -238,7 +238,7 @@ renderNav = function() {
   const nav = document.getElementById('navContent');
   const activeSubclass = route.view === 'subclass' ? getSubclass(route.id) : null;
   const activeClassId = route.view === 'class' ? route.id : activeSubclass?.classId;
-  let html = '<div class="nav-section"><div class="nav-title">Início</div><a class="nav-item ' + (route.view === 'home' ? 'active' : '') + '" onclick="navigate(\'home\')" style="cursor:pointer"><svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg>Painel</a></div>';
+  let html = '<div class="nav-section"><div class="nav-title">Início</div><a class="nav-item ' + (route.view === 'home' ? 'active' : '') + '" onclick="navigate(\'home\')" style="cursor:pointer"><svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg><span class="nav-label">Painel</span></a><a class="nav-item ' + (route.view === 'ability-planner' ? 'active' : '') + '" onclick="navigate(\'ability-planner\')" style="cursor:pointer"><svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 8h8M8 12h8M8 16h8"/><path d="M10 6v4M14 10v4M11 14v4"/></svg><span class="nav-label">Planejador de Atributos</span></a></div>';
   html += '<div class="nav-section"><div class="nav-title">Classes <span class="count">' + allClasses().length + '</span></div>';
 
   allClasses().forEach(c => {

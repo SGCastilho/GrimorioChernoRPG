@@ -1,3 +1,20 @@
+## 5.29.1
+
+- Corrigido o menu lateral aprimorado (`ui-enhancements.js`), que sobrescrevia o `renderNav()` base e ocultava o atalho do Planejador de Atributos.
+- **Planejador de Atributos** agora aparece imediatamente abaixo de **Painel**, como opção própria dentro da seção **Início**.
+- O estado ativo do menu acompanha corretamente a rota `ability-planner`.
+- Validador do planejador ampliado para verificar tanto a navegação base quanto a navegação sobrescrita pela camada de melhorias.
+
+## 5.29.0
+
+- Adicionada a aba **Planejador de Atributos** abaixo de **Painel**.
+- Implementado Point Buy de **27 pontos** com intervalo base de 8–15 e custo progressivo padrão.
+- Adicionados controles `+ / −`, custo do próximo incremento, bônus flexíveis `+2 / +1`, valor final e modificador por atributo.
+- Bônus +2 e +1 são mutuamente exclusivos no mesmo atributo, reproduzindo o fluxo de criação inspirado em Baldur's Gate 3.
+- Estado do planejador salvo automaticamente via `localStorage`, independente do armazenamento de conteúdo próprio do Grimório.
+- Adicionado layout responsivo dedicado em `css/styles.css` e lógica isolada em `js/ability-planner.js`.
+- Adicionado `tools/validate-ability-planner-5.29.js`.
+
 ## 5.28.0
 
 - Adicionada **Animar Energia (Animate Energy)** ao catálogo do **Cultivador**, traduzida diretamente da captura de tela fornecida pelo usuário.
