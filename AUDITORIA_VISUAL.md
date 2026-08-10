@@ -1,3 +1,12 @@
+
+## v5.30 — Raças e Subraças
+
+- A opção **Raças e Subraças** aparece na seção **Início**, imediatamente abaixo de **Planejador de Atributos**, tanto na navegação base quanto na navegação aprimorada.
+- O catálogo racial usa busca, filtros e cartões; a ficha de raça separa **traços fixos**, **subraça**, **Traços de Legado** e **Sangue Misto**.
+- A seleção de Legado limita visualmente o personagem a **2 escolhas**, salvo exceções explicitamente descritas pela raça/subraça.
+- Hanyou recebe apresentação especial para seus Traços de Herança positivos/prejudiciais, evitando confundi-los com as duas escolhas gerais de Legado.
+- O estado do construtor racial é persistido localmente e não interfere no Planejador de Atributos.
+
 # Auditoria visual e estrutural — Grimório 4.5
 
 ## Status desta versão

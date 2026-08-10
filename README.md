@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 5.29.1
+# Grimório D&D 5e PT-BR — versão 5.30.0
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
 
@@ -10,6 +10,19 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 
 Os catálogos incorporados funcionam offline.
 
+
+
+## Novidades da versão 5.30 — Raças e Subraças
+
+- Nova seção **Raças e Subraças**, posicionada no menu lateral imediatamente abaixo de **Planejador de Atributos**.
+- Indexadas **34 raças** e **196 subraças** do Capítulo VII de *Lyre's Guide to Retia — Land of Industry*.
+- Cada raça apresenta especificações, traços raciais fixos, aumentos de atributo tradicionais, subraças e Traços de Legado em português.
+- Implementada seleção interativa de **2 Traços de Legado**, com bloqueio visual após completar as duas escolhas.
+- Implementado modo **Sangue Misto**: a raça dominante fornece traços fixos e subraça, enquanto as duas escolhas de Legado podem ser combinadas com uma raça secundária e suas opções próprias de Sangue Misto.
+- Exceções internas foram preservadas, incluindo o sistema de **Traços de Herança dos Hanyou**, escolhas extras de determinadas linhagens e regras raciais que modificam quantidade/tipo de escolhas.
+- Todos os cartões utilizam resumos mecânicos em **PT-BR** e mantêm a página da fonte para consulta de texto longo, condições e exceções.
+- Estado das escolhas salvo em `grimorio-race-builder-v1` via `localStorage`.
+- Adicionados `data/lyre-races.js`, `js/race-browser.js` e `tools/validate-races-5.30.js`.
 
 ## Novidades da versão 5.29 — Planejador de Atributos
 

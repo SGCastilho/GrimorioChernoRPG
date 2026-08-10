@@ -97,6 +97,7 @@
       matchIncludes: ["Lyre's Guide to Retia"],
       about: [
         'O Grimório incorpora 280 entradas de magia, quatro classes originais — Alma Favorecida, Inscritor, Cavaleiro das Pétalas e Santo da Espada — e 127 subclasses, localizadas para PT-BR.',
+        'O Capítulo VII também está indexado na seção Raças e Subraças: 34 raças e 196 subraças da edição fornecida, com traços fixos, Traços de Legado, regras de Sangue Misto e referências de página em PT-BR.',
         'Os arquétipos apresentados para o Patrulheiro Revisado permanecem ligados ao Patrulheiro do Grimório com indicação de compatibilidade, e revisões Legacy/5.19 continuam identificadas como versões próprias da fonte.'
       ]
     },

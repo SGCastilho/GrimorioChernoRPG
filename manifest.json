@@ -1,5 +1,5 @@
 {
-  "version": "5.29.1",
+  "version": "5.30.0",
   "classes": 26,
   "subclasses": 381,
   "classNames": [
@@ -58,8 +58,14 @@
     "Cultivador": 3,
     "Lutador de Rua": 1
   },
-  "uiRevision": "Planejador de Atributos — v5.29.1",
+  "uiRevision": "Raças e Subraças — v5.30.0",
   "improvements": [
+    "Adicionada a seção Raças e Subraças logo abaixo do Planejador de Atributos, com catálogo próprio de 34 raças e 196 subraças do capítulo VII de Lyre.",
+    "Implementado montador racial 5.19: traços fixos, escolha de subraça, exatamente 2 Traços de Legado e resumo do planejamento atual.",
+    "Implementado modo opcional de Sangue Misto: a raça dominante mantém traços fixos/subraça e as duas escolhas de Legado podem vir das listas das duas raças, incluindo opções exclusivas de sangue misto.",
+    "Todo o conteúdo exibido pela nova interface foi localizado para PT-BR, com resumos mecânicos e indicação da página da fonte para exceções extensas.",
+    "Tratadas exceções específicas do sistema racial, incluindo Traços de Herança de Hanyou, escolhas adicionais de algumas subraças e a subraça Glória dos Enáretos.",
+    "A ferramenta racial usa armazenamento local independente (grimorio-race-builder-v1), preservando escolhas ao navegar pelo Grimório.",
     "Correção da navegação: Planejador de Atributos agora aparece explicitamente logo abaixo de Painel no menu lateral, inclusive na camada ui-enhancements que sobrescreve a navegação base.",
     "Persistência automática do planejamento no navegador e layout responsivo inspirado no fluxo de Baldur’s Gate 3.",
     "Bônus flexíveis +2 e +1 em atributos diferentes, com cálculo de valor final e modificador.",
@@ -282,7 +288,7 @@
     "Fontes oficiais e homebrew identificadas separadamente",
     "Aba Tabelas disponível quando o conteúdo possui dados estruturados"
   ],
-  "description": "Compêndio local em português com classes, subclasses, magias, progressões dinâmicas e homebrews de D&D 5e 2014.",
+  "description": "Compêndio local em português com raças, subraças, classes, subclasses, magias, progressões dinâmicas, ferramentas de criação e homebrews de D&D 5e 2014.",
   "spellbladeSpells": 240,
   "bloodMagicSpells": 22,
   "psionicPowers": 12,
@@ -863,5 +869,13 @@
     "+2",
     "+1"
   ],
-  "abilityPlannerPersistence": "localStorage"
+  "abilityPlannerPersistence": "localStorage",
+  "racesIntegrated": true,
+  "races": 34,
+  "raceSubraces": 196,
+  "racialLegacyTraitSystem": true,
+  "racialLegacyTraitChoices": 2,
+  "racialMixedBloodPlanner": true,
+  "racialSource": "Lyre's Guide to Retia — Land of Industry",
+  "racialSourcePages": "193–318"
 }

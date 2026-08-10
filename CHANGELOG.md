@@ -1,3 +1,14 @@
+## 5.30.0
+
+- Adicionada **Raças e Subraças** como nova opção da seção Início, imediatamente abaixo do Planejador de Atributos.
+- Integradas **34 raças** e **196 subraças** do Capítulo VII de *Lyre's Guide to Retia — Land of Industry*.
+- Implementado o sistema de **2 Traços de Legado** da 5.19 com seleção interativa e persistência local.
+- Implementadas as regras de **Sangue Misto**, mantendo raça/subraça dominantes e combinando as listas de Traços de Legado das duas raças.
+- Adicionados resumos mecânicos em PT-BR para traços fixos, Traços de Legado, Traços de Sangue Misto e características de subraça, todos com referência de página.
+- Adicionada a subraça **Glória** dos Enáretos, identificada por auditoria cruzada entre a lista de Sangue Misto, a descrição racial e a tabela de subraças.
+- A interface exibe regras de aumentos de atributo da 5.19 e mantém link direto para o Planejador de Atributos.
+- Criados `data/lyre-races.js`, `js/race-browser.js` e `tools/validate-races-5.30.js`.
+
 ## 5.29.1
 
 - Corrigido o menu lateral aprimorado (`ui-enhancements.js`), que sobrescrevia o `renderNav()` base e ocultava o atalho do Planejador de Atributos.
