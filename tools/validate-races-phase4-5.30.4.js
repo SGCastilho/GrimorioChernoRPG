@@ -106,7 +106,7 @@ const index=fs.readFileSync(path.join(root,'index.html'),'utf8');
 let last=-1;for(const item of scripts){const p=index.indexOf(item);if(p<0||p<=last)fail(`index.html: ordem incorreta/ausente para ${item}.`);last=p;}
 if(!errors.some(e=>e.startsWith('index.html')))ok('Ordem de carregamento da Fase 4');
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.json'),'utf8'));
-if(manifest.version!=='5.30.4'||manifest.races!==34||manifest.raceSubraces!==196||manifest.raceTraitRecords!==928||manifest.racesTextReviewed!==34)fail('Manifest 5.30.4 inconsistente.');else ok('Manifest 5.30.4 sincronizado');
-const cfg=fs.readFileSync(path.join(root,'js/config.js'),'utf8'); if(!cfg.includes("APP_VERSION='5.30.4'"))fail('APP_VERSION não está em 5.30.4.');else ok('APP_VERSION 5.30.4 sincronizado');
+if(!/^5\.30\.(?:[4-9]|[1-9][0-9]+)$/.test(manifest.version)||manifest.races!==34||manifest.raceSubraces!==196||manifest.raceTraitRecords!==928||manifest.racesTextReviewed!==34)fail('Manifest pós-5.30.4 inconsistente.');else ok('Manifest pós-5.30.4 sincronizado');
+const cfg=fs.readFileSync(path.join(root,'js/config.js'),'utf8'); if(!cfg.includes("APP_VERSION='"+manifest.version+"'"))fail('APP_VERSION não está sincronizado ao manifest.');else ok('APP_VERSION sincronizado ao manifest');
 finish();
 function finish(){if(errors.length){console.error('\nFalhas:');for(const e of errors)console.error('✗ '+e);process.exit(1);}console.log('\nFase 4 da revisão textual racial validada com sucesso.');}

@@ -56,7 +56,7 @@ for(const needle of ['Jackman','Qualquer atributo à sua escolha (exceto Sabedor
 const gnomeHtml=api.renderRace('gnome');
 if(!gnomeHtml.includes('revisão integral pendente'))fail('Raças ainda não revisadas não exibem aviso de pendência.'); else ok('Status de revisão pendente visível nas raças ainda não auditadas');
 const catalog=api.renderCatalog();
-if(!catalog.includes('Revisão textual em andamento'))fail('Catálogo não informa a revisão textual progressiva.'); else ok('Catálogo informa revisão textual progressiva');
+if(catalog.includes('Revisão textual em andamento'))fail('Aviso de revisão textual não deveria permanecer no catálogo após o hotfix de UI.'); else ok('Aviso de revisão textual removido do catálogo');
 
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.json'),'utf8'));
 if(!/^5\.30\.[1-9]$/.test(manifest.version))fail(`Manifest deveria estar em 5.30.1+; está em ${manifest.version}.`); else ok(`Manifest ${manifest.version} compatível com a Fase 1`);

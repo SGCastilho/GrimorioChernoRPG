@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 5.30.4
+# Grimório D&D 5e PT-BR — versão 5.30.6
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
 
@@ -14,6 +14,20 @@ Os catálogos incorporados funcionam offline.
 
 
 
+
+## 5.30.6 — Hotfix da busca de Raças e Subraças
+
+- Corrigida a busca por nomes como **Humano**, que antes também encontrava o termo `Humanoide` no tipo de criatura e mantinha praticamente todo o catálogo visível.
+- Nomes de raças e subraças usam correspondência parcial; campos auxiliares como tipo, região e origem planar usam correspondência por palavra/expressão.
+- A digitação continua sem re-renderizar o campo de busca: apenas a visibilidade dos cards é atualizada no DOM.
+- Busca e filtros laterais agora compartilham a mesma função de correspondência.
+
+## 5.30.5 — Ajustes de interface do catálogo racial
+
+- Removidas, da página de catálogo de **Raças e Subraças**, a caixa **"Regras de atributos e exceções da 5.19"** e o aviso **"Revisão textual em andamento"**.
+- Removida a tag **"Texto integral revisado"** dos cards de raça no catálogo.
+- Corrigido o campo de busca do catálogo racial: a digitação agora permanece contínua, sem perder foco ao filtrar os resultados.
+- A filtragem foi reorganizada para atualizar apenas a lista de resultados e a contagem exibida, preservando a experiência de pesquisa.
 
 ## 5.30.4 — Revisão textual racial, Fase 4 (conclusão)
 

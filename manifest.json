@@ -1,5 +1,5 @@
 {
-  "version": "5.30.4",
+  "version": "5.30.6",
   "classes": 26,
   "subclasses": 381,
   "classNames": [
@@ -58,7 +58,7 @@
     "Cultivador": 3,
     "Lutador de Rua": 1
   },
-  "uiRevision": "Raças e Subraças — revisão textual Fase 4 concluída — v5.30.4",
+  "uiRevision": "Hotfix da busca racial — v5.30.6",
   "improvements": [
     "Fase 4 conclui a revisão textual racial: Kits’adria, Kobold, Kua Hono, Povo do Mar, Minotauro, Nefilim, Orc, Pétratára, Primordia, Maculado, Trealtin e Vanquis receberam texto mecânico integral em PT-BR.",
     "Revisadas 12 raças, 60 subraças e 280 registros mecânicos no bloco final das páginas impressas 281–317 de Lyre’s Guide to Retia.",

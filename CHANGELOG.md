@@ -1,3 +1,19 @@
+## 5.30.6
+
+### Raças e Subraças — hotfix da busca
+- Corrigida a pesquisa por `Humano`: o termo não é mais confundido com o tipo de criatura `Humanoide`.
+- Nomes de raça/subraça mantêm busca parcial; metadados usam correspondência por palavra ou expressão inteira.
+- A filtragem agora alterna diretamente a visibilidade dos cards já renderizados, sem reconstruir o campo de pesquisa.
+- Adicionado validador dedicado para as buscas `Humano`, `Jackman`, `Dragon`, `Humanoide` e `High Wave`.
+
+## 5.30.5
+
+### Raças e Subraças — ajustes de interface
+- Removidas do catálogo racial as caixas **"Regras de atributos e exceções da 5.19"** e **"Revisão textual em andamento"**.
+- Removido o selo **"Texto integral revisado"** dos botões/cards de raça no catálogo.
+- Corrigido o campo de busca das Raças e Subraças, que perdia foco ao digitar.
+- A atualização da busca agora re-renderiza apenas os resultados e a contagem, preservando a entrada do usuário e a usabilidade do filtro.
+
 ## 5.30.4
 
 ### Raças e Subraças — revisão textual Fase 4
