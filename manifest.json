@@ -1,5 +1,5 @@
 {
-  "version": "5.30.0",
+  "version": "5.30.4",
   "classes": 26,
   "subclasses": 381,
   "classNames": [
@@ -58,8 +58,34 @@
     "Cultivador": 3,
     "Lutador de Rua": 1
   },
-  "uiRevision": "Raças e Subraças — v5.30.0",
+  "uiRevision": "Raças e Subraças — revisão textual Fase 4 concluída — v5.30.4",
   "improvements": [
+    "Fase 4 conclui a revisão textual racial: Kits’adria, Kobold, Kua Hono, Povo do Mar, Minotauro, Nefilim, Orc, Pétratára, Primordia, Maculado, Trealtin e Vanquis receberam texto mecânico integral em PT-BR.",
+    "Revisadas 12 raças, 60 subraças e 280 registros mecânicos no bloco final das páginas impressas 281–317 de Lyre’s Guide to Retia.",
+    "Com as Fases 1–4, as 34 raças e 196 subraças do catálogo estão integralmente revisadas; não há mais fichas marcadas como revisão textual pendente.",
+    "Kua Hono Lagarto: Rastreador pelo Olfato, omitido na extração inicial, foi restaurado.",
+    "Nefilim: Linhagem foi restaurada entre os Traços de Sangue Misto.",
+    "Trealtin Fúngico: Esporos Comunicativos, Nuvem Curativa, Esporos Pacificadores e Esporos Venenosos foram consolidados como opções internas de Sopro de Esporos, conforme a fonte.",
+    "Vanquis Carniçal: as linhas por tamanho foram consolidadas dentro de Frenesi Alimentar em vez de aparecerem como características independentes.",
+    "Primordia: a interface passa a exibir o trio de magias de Magia Elemental correspondente à subraça selecionada.",
+    "Povo do Mar Litorâneo: a linha incompleta de Aumento no Valor de Habilidade do PDF é sinalizada como lacuna editorial, sem inferir um atributo ausente.",
+    "Após as correções estruturais da Fase 4, o catálogo possui 928 registros mecânicos reais.",
+    "Fase 3 da revisão textual racial: Gnomo, Goblin, Golias, Hádislin, Halfling, Hanyou, Hobgoblin, Ilthrak-yar e Kaijou receberam texto mecânico integral em PT-BR.",
+    "Revisadas 9 raças, 60 subraças e 301 registros mecânicos no bloco contínuo das páginas impressas 241–280 de Lyre’s Guide to Retia, preservando o Humano já auditado na Fase 1.",
+    "Hanyou recebeu apresentação especial para Traços de Herança: 2 positivos e 2 prejudiciais na construção dominante, com remoções nos níveis 8 e 13 e regra específica quando Hanyou é a raça secundária.",
+    "Hádislin passa a exibir, junto de cada uma das 19 subraças, as magias de 3º e 5º nível determinadas por Legado Amaldiçoado, incluindo as variantes de Hádislin de Cristal.",
+    "Hobgoblin foi corrigido estruturalmente: Hospitalidade, Passagem e Despeito são opções internas de Orientação Feérica, não Traços de Legado independentes.",
+    "Com as Fases 1–3, 22 das 34 raças possuem texto integral revisado; o catálogo preserva 196 subraças e passa a 934 registros de traços após a correção estrutural do Hobgoblin.",
+    "Fase 2 da revisão textual racial: Arhcoon, Tribo Bestial, Povo-Pássaro, Capy’hado, Dragonkin, Anão, Elfo, Enáretos, Feralus, Firbolg, Flooflin e Framebilt receberam texto mecânico integral em PT-BR.",
+    "Revisadas 12 raças, 69 subraças e 322 registros mecânicos no bloco de páginas impressas 197–240 de Lyre’s Guide to Retia.",
+    "Corrigidas relações estruturais identificadas na releitura: Linhagem de Sangue Misto do Capy’hado, Visão às Cegas do Anão Sermiano, Pressa Felina como traço fixo do Feralus, Forma Sazonal do Elfo Selvagem e continuidades de página dos Enáretos.",
+    "Enáretos: Passagem Radiante foi restaurada à subraça Descoberta, Ler Adiante à Profecia e traços da Glória foram removidos do bloco incorreto de Sangue Misto.",
+    "Após as correções estruturais, o catálogo racial possui 937 registros de traços, preservando 34 raças e 196 subraças.",
+    "Fase 1 da revisão textual racial: Humano e todas as suas 7 subraças foram relidos diretamente no Lyre’s Guide to Retia e receberam descrições mecânicas integrais em PT-BR.",
+    "O modelo racial agora separa summary (consulta rápida) de description (texto mecânico integral revisado), permitindo migrar as demais 33 raças sem perder a navegação compacta.",
+    "A ficha racial passa a indicar explicitamente quais raças já possuem texto integral revisado e quais ainda estão em modo de resumo pendente de auditoria.",
+    "Adicionada descrição narrativa estruturada da raça Humano e descrições próprias para Artesão, Litorâneo, Habitante das Geadas, Greythian, Jackman, Sermian e Habitante das Florestas.",
+    "Corrigidos Perícia Enraizada e Conjunto Expandido de Perícias (Jackman), além das demais características humanas, incluindo Sorte Vinculada, Nadador, Descanso Rápido e Adepto do Terreno.",
     "Adicionada a seção Raças e Subraças logo abaixo do Planejador de Atributos, com catálogo próprio de 34 raças e 196 subraças do capítulo VII de Lyre.",
     "Implementado montador racial 5.19: traços fixos, escolha de subraça, exatamente 2 Traços de Legado e resumo do planejamento atual.",
     "Implementado modo opcional de Sangue Misto: a raça dominante mantém traços fixos/subraça e as duas escolhas de Legado podem vir das listas das duas raças, incluindo opções exclusivas de sangue misto.",
@@ -877,5 +903,7 @@
   "racialLegacyTraitChoices": 2,
   "racialMixedBloodPlanner": true,
   "racialSource": "Lyre's Guide to Retia — Land of Industry",
-  "racialSourcePages": "193–318"
+  "racialSourcePages": "193–318",
+  "raceTraitRecords": 928,
+  "racesTextReviewed": 34
 }

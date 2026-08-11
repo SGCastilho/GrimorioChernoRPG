@@ -1,3 +1,52 @@
+## 5.30.4
+
+### Raças e Subraças — revisão textual Fase 4
+- Concluída a auditoria integral das 12 raças restantes: Kits’adria, Kobold, Kua Hono, Povo do Mar, Minotauro, Nefilim, Orc, Pétratára, Primordia, Maculado, Trealtin e Vanquis.
+- 60 subraças e 280 registros mecânicos do bloco final foram relidos no *Lyre’s Guide to Retia* e traduzidos integralmente para PT-BR.
+- O catálogo racial agora possui 34/34 raças integralmente revisadas, 196 subraças e 928 registros mecânicos reais.
+- Restaurados Rastreador pelo Olfato (Kua Hono Lagarto) e Linhagem de Sangue Misto (Nefilim).
+- Sopro de Esporos (Trealtin Fúngico) e Frenesi Alimentar (Vanquis Carniçal) tiveram suas opções internas consolidadas corretamente.
+- Adicionado painel de Magia Elemental por subraça para Primordia.
+- A lacuna de Aumento no Valor de Habilidade do Povo do Mar Litorâneo é sinalizada sem inventar o atributo ausente.
+- Criado `tools/validate-races-phase4-5.30.4.js`.
+
+## 5.30.3
+
+### Raças e Subraças — revisão textual Fase 3
+- Relido o bloco das páginas impressas **241–280** de *Lyre’s Guide to Retia — Land of Industry*.
+- Receberam texto mecânico integral em PT-BR: **Gnomo, Goblin, Golias, Hádislin, Halfling, Hanyou, Hobgoblin, Ilthrak-yar e Kaijou**.
+- Revisadas **60 subraças** e **301 registros mecânicos** dessas 9 raças.
+- **Hanyou**: implementada apresentação específica dos Traços de Herança, com grupos de opções positivas/prejudiciais, regra de 2 + 2 e remoção progressiva dos prejuízos nos níveis 8 e 13; preservada também a exceção de Hanyou como raça secundária.
+- **Hádislin**: vinculadas às 19 subraças as magias concedidas por **Legado Amaldiçoado** nos níveis 3 e 5; a interface passa a exibir essas magias junto da linhagem escolhida.
+- **Hobgoblin**: removidos os falsos Traços de Legado independentes Hospitalidade, Passagem e Despeito; as três opções foram consolidadas dentro de **Orientação Feérica**.
+- O catálogo passa a **934 registros de traços**, mantendo **34 raças** e **196 subraças**; **22/34 raças** estão agora integralmente revisadas.
+- Criados `data/lyre-races-phase3-structure.js`, `data/lyre-races-phase3-text.js` e `tools/validate-races-phase3-5.30.3.js`.
+
+## 5.30.2
+
+### Raças e Subraças — revisão textual Fase 2
+- Relido o bloco de raças das páginas impressas **197–240** de *Lyre’s Guide to Retia — Land of Industry*.
+- Receberam texto mecânico integral em PT-BR: **Arhcoon, Tribo Bestial, Povo-Pássaro, Capy’hado, Dragonkin, Anão, Elfo, Enáretos, Feralus, Firbolg, Flooflin e Framebilt**.
+- Revisadas **69 subraças** e **322 registros mecânicos** dessas 12 raças, preservando `summary` apenas como consulta rápida e `description` como regra completa.
+- Corrigido **Capy’hado**: `Linhagem` volta a existir entre os Traços de Sangue Misto.
+- Corrigido **Anão Sermiano**: restaurada a característica **Visão às Cegas**, omitida pela extração inicial.
+- Corrigido **Feralus**: **Pressa Felina** passa a constar também entre os Traços Fixos, como determina a fonte.
+- Corrigido **Elfo Selvagem**: Outono, Inverno, Primavera e Verão são opções internas de **Forma Sazonal**, e não características independentes.
+- Corrigido **Enáretos**: **Passagem Radiante** pertence à Descoberta; **Ler Adiante** pertence à Profecia; características da Glória deixam de aparecer incorretamente em Sangue Misto.
+- Criados `data/lyre-races-phase2-structure.js`, `data/lyre-races-phase2-text.js` e `tools/validate-races-phase2-5.30.2.js`, mantendo a base racial original estável e tornando a revisão auditável.
+- O catálogo permanece com **34 raças** e **196 subraças**; após a correção dos falsos/ausentes registros estruturais, passa a **937 registros de traços**.
+
+## 5.30.1
+
+### Raças e Subraças — revisão textual Fase 1
+- Relido o bloco completo de **Humano** no Lyre’s Guide to Retia (páginas impressas 273–275).
+- Substituídos resumos vagos por descrições mecânicas integrais em PT-BR para Humano, seus Traços de Legado, Sangue Misto e suas 7 subraças.
+- Corrigida **Perícia Enraizada**: duas salvaguardas sem proficiência recebem metade do bônus de proficiência, com possibilidade de trocar a escolha se proficiência for obtida posteriormente.
+- Corrigido **Jackman**: +1 em qualquer atributo exceto Sabedoria; **Conjunto Expandido de Perícias** amplia Perícia Enraizada a todas as salvaguardas sem proficiência; **Talento** concede um talento elegível.
+- Criado o contrato `summary` + `description`, além de `lore` e descrição de subraça, para suportar a revisão progressiva das demais raças.
+- A interface agora diferencia conteúdo **integralmente revisado** de conteúdo ainda em **resumo pendente**, evitando apresentar a v5.30 inteira como se já tivesse fidelidade textual completa.
+- Adicionado validador específico da Fase 1 para impedir o retorno de placeholders genéricos no Humano.
+
 ## 5.30.0
 
 - Adicionada **Raças e Subraças** como nova opção da seção Início, imediatamente abaixo do Planejador de Atributos.

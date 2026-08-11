@@ -15,7 +15,8 @@ const ctx = { console }; ctx.window = ctx; vm.createContext(ctx);
 for (const file of scripts) vm.runInContext(fs.readFileSync(path.join(root, file), 'utf8'), ctx, { filename: file });
 
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
-assert(manifest.version === '5.28.0', `Versão esperada 5.28.0; encontrada ${manifest.version}`);
+const versionParts=String(manifest.version).split('.').map(Number);
+assert(versionParts[0] > 5 || (versionParts[0] === 5 && versionParts[1] >= 28), `Versão esperada 5.28.0+; encontrada ${manifest.version}`);
 assert(manifest.baseSpellRecords === 1171 && manifest.baseCatalogEntries === 1171, 'Contagem-base de magias deve ser 1.171');
 assert(manifest.registeredSources === 16, 'Manifesto deve registrar 16 fontes');
 assert(manifest.registeredSpellCatalogs === 9, 'Manifesto deve registrar 9 catálogos de magia');

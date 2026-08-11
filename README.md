@@ -1,4 +1,4 @@
-# Grimório D&D 5e PT-BR — versão 5.30.0
+# Grimório D&D 5e PT-BR — versão 5.30.4
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
 
@@ -11,6 +11,51 @@ Compêndio local em português para consulta de classes, subclasses e magias de 
 Os catálogos incorporados funcionam offline.
 
 
+
+
+
+
+## 5.30.4 — Revisão textual racial, Fase 4 (conclusão)
+
+- Revisão integral em PT-BR de **Kits’adria, Kobold, Kua Hono, Povo do Mar, Minotauro, Nefilim, Orc, Pétratára, Primordia, Maculado, Trealtin e Vanquis**.
+- A Fase 4 cobre **12 raças, 60 subraças e 280 registros mecânicos** das páginas impressas 281–317 de *Lyre’s Guide to Retia*.
+- Com as quatro fases, **34/34 raças e 196/196 subraças** estão marcadas como **Texto integral revisado**.
+- Correções estruturais: `Rastreador pelo Olfato` restaurado ao Kua Hono Lagarto; `Linhagem` restaurada ao Sangue Misto do Nefilim; opções de `Sopro de Esporos` e tabela de `Frenesi Alimentar` deixaram de ser pseudo-traços independentes.
+- Primordia exibe as magias de **Magia Elemental** da subraça selecionada.
+- A linha incompleta de atributo do **Povo do Mar Litorâneo** é mostrada como nota editorial, sem inferência mecânica.
+- O catálogo racial passa a **928 registros mecânicos reais** após as consolidações estruturais.
+- Arquivos desta fase: `data/lyre-races-phase4-structure.js`, `data/lyre-races-phase4-text.js` e `tools/validate-races-phase4-5.30.4.js`.
+
+## 5.30.3 — Revisão textual racial, Fase 3
+
+- Revisado diretamente no *Lyre’s Guide to Retia — Land of Industry* o bloco contínuo das páginas impressas **241–280**: **Gnomo, Goblin, Golias, Hádislin, Halfling, Hanyou, Hobgoblin, Ilthrak-yar e Kaijou**. O **Humano**, situado no mesmo intervalo, permanece com a revisão integral já concluída na Fase 1.
+- As 9 raças recebem **texto mecânico integral em PT-BR** para Traços Fixos, Traços de Legado, Sangue Misto e características de subraça.
+- Foram auditadas **60 subraças** e **301 registros mecânicos** nesta fase.
+- **Hanyou** recebeu uma apresentação própria de Traços de Herança, separando regra, traço de linhagem, opções positivas e prejudiciais e explicitando as remoções dos prejuízos nos níveis 8 e 13.
+- **Hádislin** passa a mostrar a tabela de **Legado Amaldiçoado** dentro da subraça selecionada, incluindo as 9 linhagens infernais e 10 variantes de Hádislin de Cristal.
+- **Hobgoblin** foi corrigido estruturalmente: Hospitalidade, Passagem e Despeito agora aparecem apenas dentro de **Orientação Feérica**, como determina a fonte.
+- Com as Fases 1–3, **22 das 34 raças** estão marcadas como **Texto integral revisado**. O catálogo mantém **196 subraças** e contém **934 registros de traços** após a correção estrutural desta fase.
+- A Fase 3 é aplicada em camadas (`lyre-races-phase3-structure.js` + `lyre-races-phase3-text.js`) e possui validador próprio (`validate-races-phase3-5.30.3.js`).
+
+## 5.30.2 — Revisão textual racial, Fase 2
+
+- Revisadas diretamente no *Lyre’s Guide to Retia — Land of Industry* as raças **Arhcoon, Tribo Bestial, Povo-Pássaro, Capy’hado, Dragonkin, Anão, Elfo, Enáretos, Feralus, Firbolg, Flooflin e Framebilt** (páginas impressas 197–240).
+- As 12 raças passam a usar **texto mecânico integral em PT-BR** para Traços Fixos, Traços de Legado, Sangue Misto e características de subraça.
+- Foram auditadas **69 subraças** e **322 registros mecânicos** nesta fase.
+- A releitura também corrigiu erros de estrutura da importação inicial, incluindo características omitidas ou atribuídas à categoria/subraça errada.
+- Com o Humano já revisado na Fase 1, **13 das 34 raças** agora estão marcadas como **Texto integral revisado**; as demais continuam explicitamente marcadas como pendentes.
+- O catálogo preserva **34 raças** e **196 subraças** e, após eliminar pseudo-traços e restaurar características omitidas, contém **937 registros de traços**.
+- A revisão é aplicada em camadas (`lyre-races-phase2-structure.js` + `lyre-races-phase2-text.js`) para manter a base original rastreável.
+
+## 5.30.1 — Revisão textual racial, Fase 1 (Humano)
+
+- **Humano** foi relido diretamente no *Lyre’s Guide to Retia — Land of Industry* (páginas impressas 273–275) e passa a usar texto mecânico integral em PT-BR.
+- Corrigidas **Perícia Enraizada**, todas as 6 opções de **Traços de Legado** humanos, os 3 **Traços de Sangue Misto** e as habilidades das 7 subraças.
+- **Jackman** agora exibe corretamente o aumento de atributo, **Conjunto Expandido de Perícias** e **Talento**.
+- O formato de dados passa a aceitar `description` para texto integral e mantém `summary` apenas para consulta rápida.
+- O detalhe racial passa a exibir uma marca de qualidade: **Texto integral revisado** ou **Resumo — revisão pendente**.
+- Adicionado suporte a `lore`/descrição narrativa da raça e `description` própria para subraças, criando o padrão que será aplicado às demais raças nas próximas fases.
+- A versão 5.30.1 não declara as outras 33 raças como revisadas: elas continuam visivelmente marcadas como pendentes até a auditoria correspondente.
 
 ## Novidades da versão 5.30 — Raças e Subraças
 

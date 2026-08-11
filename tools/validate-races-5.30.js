@@ -17,7 +17,7 @@ const context={
 };
 context.window=context;
 vm.createContext(context);
-for(const rel of ['data/lyre-races.js','js/race-browser.js']){
+for(const rel of ['data/lyre-races.js','data/lyre-races-phase2-structure.js','data/lyre-races-phase2-text.js','data/lyre-races-phase3-structure.js','data/lyre-races-phase3-text.js','data/lyre-races-phase4-structure.js','data/lyre-races-phase4-text.js','js/race-browser.js']){
   try{vm.runInContext(fs.readFileSync(path.join(root,rel),'utf8'),context,{filename:rel});}
   catch(e){fail(`Falha ao carregar ${rel}: ${e.message}`);}
 }
@@ -83,9 +83,9 @@ for(const [name,text] of [['app.js',app],['ui-enhancements.js',ui]]){
 if(!app.includes("route.view==='races'")||!app.includes("route.view==='race'"))fail('render() não trata as rotas races/race.'); else ok('Rotas races/race tratadas');
 
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.json'),'utf8'));
-if(manifest.version!=='5.30.0'||manifest.races!==34||manifest.raceSubraces!==196)fail('Metadados do manifest 5.30 estão incorretos.'); else ok('Manifest 5.30 sincronizado');
+if(manifest.races!==34||manifest.raceSubraces!==196)fail('Metadados do manifest racial estão incorretos.'); else ok(`Manifest ${manifest.version} com contagens raciais sincronizadas`);
 finish();
 function finish(){
   if(errors.length){console.error('\nFalhas:');for(const e of errors)console.error('✗ '+e);process.exit(1);}
-  console.log('\nRaças e Subraças v5.30 validadas com sucesso.');
+  console.log('\nRaças e Subraças validadas com sucesso.');
 }

@@ -80,7 +80,7 @@ function same(actual, expected, message) {
   assert(subBundle.subclass.classIdentifier === 'street-fighter', 'Subclasse deve apontar para classIdentifier street-fighter');
 
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
-  assert(['5.27.0','5.28.0'].includes(manifest.version) && manifest.classes === 26 && manifest.subclasses === 381, 'Manifesto 5.27+ com contagens incorretas');
+  assert((()=>{const [a,b]=String(manifest.version||'').split('.').map(Number);return a>5||(a===5&&b>=27);})() && manifest.classes === 26 && manifest.subclasses === 381, 'Manifesto 5.27+ com contagens incorretas');
   assert(manifest.subclassCounts?.['Lutador de Rua'] === 1, 'Manifesto sem contagem de Arquétipos do Lutador de Rua');
   assert(manifest.registeredSources >= 15, 'Manifesto deve preservar ao menos as 15 fontes da integração do Lutador de Rua');
 

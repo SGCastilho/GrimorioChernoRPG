@@ -1,3 +1,12 @@
+# Auditoria visual — 5.30.1
+
+## Revisão textual racial — Fase 1
+- Conferir **Raças e Subraças → Humano**: selo verde “Texto integral revisado”.
+- Em **Traços fixos**, Perícia Enraizada deve mostrar dois parágrafos completos, sem a frase genérica “Modifica testes ou salvaguardas...”.
+- Selecionar **Jackman**: deve aparecer a descrição narrativa, o aumento “Qualquer atributo à sua escolha (exceto Sabedoria) +1”, Conjunto Expandido de Perícias completo e Talento completo.
+- Conferir que as demais raças exibem o selo “Resumo — revisão pendente”, deixando explícito que ainda não passaram pela revisão integral.
+- Conferir quebra de parágrafos nos cartões longos e layout em duas colunas no desktop / uma coluna no mobile para raças revisadas.
+
 
 ## v5.30 — Raças e Subraças
 
@@ -89,3 +98,27 @@ A versão 4.5 mantém a consulta dinâmica e as tabelas reais da versão anterio
 - Lista de magias da classe localizada em português e integrada ao filtro Spellblade.
 - Fontes e atribuição do conteúdo KibblesTasty identificadas separadamente.
 - Validação estrutural concluída com 14 classes, 51 subclasses e 14 progressões.
+
+## v5.30.2 — revisão racial Fase 2
+- Conferir que Arhcoon até Framebilt (bloco revisado) exibem o selo **Texto integral revisado**.
+- Conferir descrições longas, listas internas e quebras de parágrafo em Traços Fixos, Legado, Sangue Misto e subraças.
+- Casos estruturais obrigatórios: Feralus/Pressa Felina em Traços Fixos; Anão Sermiano/Visão às Cegas; Enáretos/Passagem Radiante em Descoberta e Ler Adiante em Profecia; Elfo Selvagem com uma única Forma Sazonal.
+- Confirmar que raças ainda não auditadas continuam exibindo **Resumo — revisão pendente**.
+
+## v5.30.3 — revisão racial Fase 3
+- Conferir que **Gnomo, Goblin, Golias, Hádislin, Halfling, Hanyou, Hobgoblin, Ilthrak-yar e Kaijou** exibem o selo **Texto integral revisado**.
+- Em **Hádislin**, alternar entre subraças infernais e de cristal e confirmar o painel **Legado Amaldiçoado — magias desta subraça**, com uma magia no nível 3 e outra no nível 5.
+- Em **Hanyou**, confirmar os grupos visuais separados: **Regra da Herança**, **Traço da linhagem**, **Traços de Herança positivos — escolha 2** e **Traços de Herança prejudiciais — escolha 2**, além do aviso sobre os níveis 8 e 13.
+- Em **Hobgoblin**, confirmar que Hospitalidade, Passagem e Despeito não aparecem como cards independentes de Traços de Legado e estão descritos dentro de **Orientação Feérica**.
+- Conferir textos extensos e listas internas em Dom da Esperteza (Gnomo), Passo Feérico (Goblin Selvagem), Resistência da Pedra (Golias), Sorte e Favor (Halfling), Regeneração Demoníaca (Hanyou), Mãos Extras (Ilthrak-yar) e Thagomizer (Kaijou).
+- Confirmar que **Kits’adria** e as raças seguintes ainda exibem **Resumo — revisão pendente**.
+
+
+## v5.30.4 — revisão racial Fase 4
+- Confirmar que todas as 34 raças exibem `Texto integral revisado` e nenhuma mantém selo de revisão pendente.
+- Primordia: trocar entre as 8 subraças e conferir o painel `Magia Elemental — magias desta subraça` com Truque / 1º nível / 2º nível.
+- Povo do Mar → Litorâneo: conferir a nota editorial sobre o atributo não especificado no PDF.
+- Kua Hono → Lagarto: conferir `Rastreador pelo Olfato`.
+- Trealtin → Fúngico: `Sopro de Esporos` deve conter quatro efeitos dentro do mesmo cartão, sem quatro pseudo-traços separados.
+- Vanquis → Carniçal: `Frenesi Alimentar` deve conter os valores por tamanho dentro do mesmo cartão.
+- Nefilim em Sangue Misto: conferir a opção `Linhagem`.

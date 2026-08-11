@@ -66,7 +66,13 @@
   }
   function clearChoices(raceId){const r=findRace(raceId);if(!r)return;const rs=raceState(raceId);rs.legacy=[];rs.subraceId=r.subraces[0]?.id||null;rs.mixed=false;rs.secondaryRaceId=null;setRaceState(raceId,rs);refresh();}
 
+  function traitText(t){return String((t&&t.description)|| (t&&t.summary)||'');}
+  function isFullRace(race){return race&&race.textRevision==='full';}
   function stat(label,value){return '<div class="race-meta-item"><span>'+esc(label)+'</span><strong>'+esc(value||'—')+'</strong></div>';}
+  function loreBlock(race){
+    if(!Array.isArray(race.lore)||!race.lore.length)return '';
+    return '<section class="race-detail-section race-lore-section"><div class="race-section-title"><div><span>Descrição da raça</span><h2>Contexto e identidade</h2></div><span class="race-source-chip">Fonte p. '+esc(race.sourcePage)+'</span></div><div class="race-lore-grid">'+race.lore.map(x=>'<article class="race-lore-card"><h3>'+esc(x.title||'Descrição')+'</h3><p>'+esc(x.text||'')+'</p></article>').join('')+'</div></section>';
+  }
   function ruleCard(title,text,tag){return '<article class="race-rule-card"><span class="race-rule-tag">'+esc(tag)+'</span><h3>'+esc(title)+'</h3><p>'+esc(text)+'</p></article>';}
   function catalogInner(){
     const rr=rules(),list=filtered(),subCount=races().reduce((n,r)=>n+r.subraces.length,0);
@@ -76,42 +82,75 @@
       +ruleCard('2. Escolha a subraça','A subraça acrescenta seus próprios benefícios e, no modelo tradicional, normalmente define o ponto racial adicional.','Subraça')
       +ruleCard('3. Escolha 2 Traços de Legado',rr.intro||'Escolha dois Traços de Legado da raça.','2 escolhas')
       +ruleCard('Sangue misto',rr.mixedBlood||'Use a raça dominante para os traços fixos e combine as listas de Legado das duas raças.','Opcional')
-      +'</div><details class="race-rule-details"><summary>Regras de atributos e exceções da 5.19</summary><p>'+esc(rr.abilityScores||'')+'</p><p>'+esc(rr.specificBeatsGeneral||'')+'</p></details></section>'
+      +'</div><details class="race-rule-details"><summary>Regras de atributos e exceções da 5.19</summary><p>'+esc(rr.abilityScores||'')+'</p><p>'+esc(rr.specificBeatsGeneral||'')+'</p></details>'+(rr.textQuality?'<div class="race-text-revision-note"><strong>Revisão textual em andamento:</strong> '+esc(rr.textQuality)+'</div>':'')+'</section>'
       +'<section class="race-catalog"><div class="race-catalog-toolbar"><label class="race-search"><span aria-hidden="true">⌕</span><input value="'+attr(state.search)+'" oninput="GRIMORIO_RACE_BROWSER.setSearch(this.value)" placeholder="Buscar raça, subraça, tipo ou região..."></label><div class="race-filter-group">'
       +[['all','Todas'],['planetouched','Planetouched'],['planar','Origem planar'],['undying','Sem envelhecimento']].map(([v,l])=>'<button type="button" class="race-filter '+(state.filter===v?'active':'')+'" onclick="GRIMORIO_RACE_BROWSER.setFilter(\''+v+'\')">'+l+'</button>').join('')
       +'</div></div><div class="race-catalog-count">'+list.length+' de '+races().length+' raças exibidas</div><div class="race-card-grid">'+list.map(raceCard).join('')+'</div></section>';
   }
   function raceCard(r){
-    return '<button type="button" class="race-card" onclick="GRIMORIO_RACE_BROWSER.openRace(\''+attr(r.id)+'\')"><div class="race-card-top"><span class="race-card-rune">'+esc(r.name.slice(0,2).toUpperCase())+'</span><div><h3>'+esc(r.name)+'</h3><span>'+r.subraces.length+' subraça'+(r.subraces.length===1?'':'s')+' · '+r.legacyTraits.length+' opções de Legado</span></div></div><p>'+esc(r.summary)+'</p><div class="race-card-tags"><span>'+esc(r.meta.creatureTypes)+'</span><span>'+esc(r.meta.size)+'</span>'+(r.meta.planarOrigin&&r.meta.planarOrigin!=='—'?'<span>'+esc(r.meta.planarOrigin)+'</span>':'')+'</div><div class="race-card-foot"><span>Fonte p. '+r.sourcePage+'</span><b>Consultar →</b></div></button>';
+    const revision=isFullRace(r)?'<span class="race-card-revision full">Texto integral revisado</span>':'<span class="race-card-revision pending">Resumo — revisão pendente</span>';
+    return '<button type="button" class="race-card" onclick="GRIMORIO_RACE_BROWSER.openRace(\''+attr(r.id)+'\')"><div class="race-card-top"><span class="race-card-rune">'+esc(r.name.slice(0,2).toUpperCase())+'</span><div><h3>'+esc(r.name)+'</h3><span>'+r.subraces.length+' subraça'+(r.subraces.length===1?'':'s')+' · '+r.legacyTraits.length+' opções de Legado</span></div></div>'+revision+'<p>'+esc(r.summary)+'</p><div class="race-card-tags"><span>'+esc(r.meta.creatureTypes)+'</span><span>'+esc(r.meta.size)+'</span>'+(r.meta.planarOrigin&&r.meta.planarOrigin!=='—'?'<span>'+esc(r.meta.planarOrigin)+'</span>':'')+'</div><div class="race-card-foot"><span>Fonte p. '+r.sourcePage+'</span><b>Consultar →</b></div></button>';
   }
   function traitCard(t,opts={}){
     const selected=!!opts.selected,disabled=!!opts.disabled,onclick=opts.onclick||'';
     const role=t.heritageRole||'';
     const roleLabels={rule:'Regra de Herança',positive:'Positivo',detrimental:'Prejudicial',lineage:'Traço da linhagem'};
-    const cls='race-trait-card'+(selected?' selected':'')+(disabled?' disabled':'')+(opts.mixed?' mixed':'')+(role?' heritage-'+role:'');
+    const cls='race-trait-card'+(selected?' selected':'')+(disabled?' disabled':'')+(opts.mixed?' mixed':'')+(role?' heritage-'+role:'')+(t.description?' text-full':'');
     const origin=opts.origin?'<span>'+esc(opts.origin)+(opts.mixed?' · sangue misto':'')+'</span>':'';
     const roleBadge=role?'<span class="heritage-role '+role+'">'+roleLabels[role]+'</span>':'';
-    const body='<div class="race-trait-head"><div><h4>'+esc(t.name)+'</h4>'+origin+roleBadge+'</div>'+(opts.selectable?'<span class="race-choice-mark">'+(selected?'✓':'')+'</span>':'')+'</div><p>'+esc(t.summary)+'</p><small>Fonte p. '+esc(t.page)+'</small>';
+    const textBadge=t.description?'<span class="trait-text-quality">Texto integral</span>':'';
+    const body='<div class="race-trait-head"><div><h4>'+esc(t.name)+'</h4>'+origin+roleBadge+textBadge+'</div>'+(opts.selectable?'<span class="race-choice-mark">'+(selected?'✓':'')+'</span>':'')+'</div><p class="race-trait-text">'+esc(traitText(t))+'</p><small>Fonte p. '+esc(t.page)+'</small>';
     return opts.selectable?'<button type="button" class="'+cls+'" '+(disabled?'disabled':'')+' onclick="'+onclick+'">'+body+'</button>':'<article class="'+cls+'">'+body+'</article>';
   }
   function subraceCard(race,s,selected){
     return '<button type="button" class="subrace-card '+(selected?'selected':'')+'" onclick="GRIMORIO_RACE_BROWSER.selectSubrace(\''+attr(race.id)+'\',\''+attr(s.id)+'\')"><div class="subrace-card-head"><div><h4>'+esc(s.name)+'</h4><span>Fonte p. '+s.page+'</span></div><span class="subrace-radio">'+(selected?'●':'○')+'</span></div>'+(s.ability?'<div class="subrace-ability">'+esc(s.ability)+'</div>':'')+'<div class="subrace-trait-pills">'+s.traits.slice(0,4).map(t=>'<span>'+esc(t.name)+'</span>').join('')+(s.traits.length>4?'<span>+'+(s.traits.length-4)+' opções</span>':'')+'</div></button>';
   }
+  function selectedSubraceTraits(race,sub){
+    if(!sub)return '';
+    let extra='';
+    if(race.id==='hadislin'&&sub.cursedLegacySpells){
+      extra+='<div class="cursed-legacy-spells"><div><strong>Legado Amaldiçoado — magias desta subraça</strong><span>O traço racial Legado Amaldiçoado usa esta mesma subraça para determinar suas magias.</span></div><div class="cursed-spell-grid"><span><b>Nível 3</b>'+esc(sub.cursedLegacySpells.characterLevel3)+'</span><span><b>Nível 5</b>'+esc(sub.cursedLegacySpells.characterLevel5)+'</span></div></div>';
+    }
+    if(race.id==='primordia'&&sub.elementalMagicSpells){
+      extra+='<div class="cursed-legacy-spells elemental-magic-spells"><div><strong>Magia Elemental — magias desta subraça</strong><span>O traço racial Magia Elemental usa a subraça escolhida para definir o truque e as magias de 1º e 2º nível.</span></div><div class="cursed-spell-grid elemental-spell-grid"><span><b>Truque</b>'+esc(sub.elementalMagicSpells.cantrip)+'</span><span><b>1º nível</b>'+esc(sub.elementalMagicSpells.level1)+'</span><span><b>2º nível</b>'+esc(sub.elementalMagicSpells.level2)+'</span></div></div>';
+    }
+    if(race.id==='hanyou'){
+      const rule=sub.traits.find(t=>t.heritageRole==='rule');
+      const lineage=sub.traits.filter(t=>t.heritageRole==='lineage');
+      const positive=sub.traits.filter(t=>t.heritageRole==='positive');
+      const detrimental=sub.traits.filter(t=>t.heritageRole==='detrimental');
+      const hr=race.heritageRules||{};
+      extra+='<div class="hanyou-heritage-note"><strong>Escolhas de Herança Hanyou</strong><span>Como Hanyou dominante, escolha '+esc(hr.positiveChoices||2)+' Traços de Herança positivos e '+esc(hr.detrimentalChoices||2)+' prejudiciais. Um prejudicial é removido após o primeiro Descanso Longo no 8º nível ou superior e o outro no 13º nível ou superior. Se Hanyou for sua raça secundária, Linhagem é obtida automaticamente e uma das duas escolhas de Legado é usada para obter 1 traço positivo e 1 prejudicial da subraça escolhida.</span></div>';
+      if(rule)extra+='<div class="heritage-group rule"><h4>Regra da Herança</h4><div class="race-trait-grid">'+traitCard(rule)+'</div></div>';
+      if(lineage.length)extra+='<div class="heritage-group lineage"><h4>Traço da linhagem</h4><div class="race-trait-grid">'+lineage.map(t=>traitCard(t)).join('')+'</div></div>';
+      if(positive.length)extra+='<div class="heritage-group positive"><h4>Traços de Herança positivos — escolha 2</h4><div class="race-trait-grid">'+positive.map(t=>traitCard(t)).join('')+'</div></div>';
+      if(detrimental.length)extra+='<div class="heritage-group detrimental"><h4>Traços de Herança prejudiciais — escolha 2</h4><div class="race-trait-grid">'+detrimental.map(t=>traitCard(t)).join('')+'</div></div>';
+      return extra;
+    }
+    return extra+'<div class="race-trait-grid">'+sub.traits.map(t=>traitCard(t)).join('')+'</div>';
+  }
   function renderRace(id){
     const race=findRace(id);if(!race)return '<div class="empty-state">Raça não encontrada.</div>';
     const rs=raceState(id),sub=race.subraces.find(s=>s.id===rs.subraceId)||race.subraces[0],pool=legacyPool(race,rs),selected=pool.filter(x=>rs.legacy.includes(x.key));
     const secondary=rs.secondaryRaceId?findRace(rs.secondaryRaceId):null;
-    return '<div class="race-detail"><div class="race-detail-actions"><button class="action-btn" onclick="navigate(\'races\')">← Todas as raças</button><div><button class="action-btn" onclick="navigate(\'ability-planner\')">Abrir Planejador de Atributos</button><button class="action-btn" onclick="GRIMORIO_RACE_BROWSER.clearChoices(\''+attr(race.id)+'\')">Limpar escolhas</button></div></div>'
-      +'<header class="race-detail-hero"><div class="race-detail-rune">'+esc(race.name.slice(0,2).toUpperCase())+'</div><div><div class="eyebrow"><span class="dot"></span>'+esc(race.source)+' · p. '+race.sourcePage+'</div><h1 class="page-title">'+esc(race.name)+'</h1><p class="lede">'+esc(race.summary)+'</p></div><div class="race-choice-counter"><span>Traços de Legado</span><strong>'+selected.length+' / 2</strong><small>'+(selected.length===2?'Escolha completa':'Selecione '+(2-selected.length))+'</small></div></header>'
-      +'<div class="race-meta-grid">'+stat('Tipos de criatura',race.meta.creatureTypes)+stat('Expectativa de vida',race.meta.lifeExpectancy)+stat('Alinhamento nacional',race.meta.nationalAlignment)+stat('Origem planar',race.meta.planarOrigin)+stat('Planetouched?',race.meta.planetouched)+stat('Tamanho',race.meta.size)+stat('Regiões',race.meta.regions)+'</div>'
+    const full=isFullRace(race);
+    const revisionBadge=full?'<span class="race-revision-badge full">✓ Texto integral revisado</span>':'<span class="race-revision-badge pending">Resumo mecânico — revisão integral pendente</span>';
+    const extraMeta=(race.meta.alignment?stat('Tendência racial',race.meta.alignment):'')+(race.meta.languages?stat('Idiomas',race.meta.languages):'')+(race.meta.speed?stat('Deslocamento',race.meta.speed):'');
+    const subDescription=sub&&sub.description?'<div class="subrace-description"><strong>Descrição</strong><p>'+esc(sub.description)+'</p></div>':'';
+    const subEditorial=sub&&sub.editorialNote?'<div class="subrace-editorial-note"><strong>Nota editorial</strong><p>'+esc(sub.editorialNote)+'</p></div>':'';
+    const editorial=full?'Esta raça já passou pela revisão textual integral. As habilidades exibem, em português, o texto mecânico completo correspondente à fonte; os resumos curtos permanecem apenas como apoio de navegação.':'Esta raça ainda usa os resumos mecânicos da versão 5.30 enquanto aguarda revisão integral. Consulte a página indicada da fonte quando uma característica possuir condições, exceções ou escolhas internas extensas.';
+    return '<div class="race-detail '+(full?'full-text':'')+'"><div class="race-detail-actions"><button class="action-btn" onclick="navigate(\'races\')">← Todas as raças</button><div><button class="action-btn" onclick="navigate(\'ability-planner\')">Abrir Planejador de Atributos</button><button class="action-btn" onclick="GRIMORIO_RACE_BROWSER.clearChoices(\''+attr(race.id)+'\')">Limpar escolhas</button></div></div>'
+      +'<header class="race-detail-hero"><div class="race-detail-rune">'+esc(race.name.slice(0,2).toUpperCase())+'</div><div><div class="eyebrow"><span class="dot"></span>'+esc(race.source)+' · p. '+race.sourcePage+'</div><h1 class="page-title">'+esc(race.name)+'</h1><p class="lede">'+esc(race.summary)+'</p>'+revisionBadge+'</div><div class="race-choice-counter"><span>Traços de Legado</span><strong>'+selected.length+' / 2</strong><small>'+(selected.length===2?'Escolha completa':'Selecione '+(2-selected.length))+'</small></div></header>'
+      +'<div class="race-meta-grid">'+stat('Tipos de criatura',race.meta.creatureTypes)+stat('Expectativa de vida',race.meta.lifeExpectancy)+stat('Alinhamento nacional',race.meta.nationalAlignment)+stat('Origem planar',race.meta.planarOrigin)+stat('Planetouched?',race.meta.planetouched)+stat('Tamanho',race.meta.size)+stat('Regiões',race.meta.regions)+extraMeta+'</div>'
+      +loreBlock(race)
       +'<section class="race-detail-section"><div class="race-section-title"><div><span>Base racial</span><h2>Traços fixos</h2></div><span class="race-source-chip">Atributos: '+esc(race.abilityScore)+'</span></div><div class="race-trait-grid">'+race.coreTraits.map(t=>traitCard(t)).join('')+'</div></section>'
-      +'<section class="race-detail-section"><div class="race-section-title"><div><span>Escolha obrigatória</span><h2>Subraça</h2></div><span class="race-source-chip">'+race.subraces.length+' opções</span></div><div class="subrace-grid">'+race.subraces.map(s=>subraceCard(race,s,sub&&s.id===sub.id)).join('')+'</div>'+(sub?'<div class="subrace-selected-detail"><div class="race-section-title compact"><div><span>Selecionada</span><h3>'+esc(sub.name)+'</h3></div>'+(sub.ability?'<span class="race-source-chip">'+esc(sub.ability)+'</span>':'')+'</div>'+(race.originalName==='Hanyou'?'<div class="hanyou-heritage-note"><strong>Escolhas de Herança Hanyou</strong><span>Além dos Traços de Legado raciais, esta subraça pede 2 Traços de Herança positivos e 2 prejudiciais. Os prejudiciais são marcados em vermelho e são removidos progressivamente nos níveis indicados pela regra.</span></div>':'')+'<div class="race-trait-grid">'+sub.traits.map(t=>traitCard(t)).join('')+'</div></div>':'')+'</section>'
+      +'<section class="race-detail-section"><div class="race-section-title"><div><span>Escolha obrigatória</span><h2>Subraça</h2></div><span class="race-source-chip">'+race.subraces.length+' opções</span></div><div class="subrace-grid">'+race.subraces.map(s=>subraceCard(race,s,sub&&s.id===sub.id)).join('')+'</div>'+(sub?'<div class="subrace-selected-detail"><div class="race-section-title compact"><div><span>Selecionada</span><h3>'+esc(sub.name)+'</h3></div>'+(sub.ability?'<span class="race-source-chip">'+esc(sub.ability)+'</span>':'')+'</div>'+subDescription+subEditorial+selectedSubraceTraits(race,sub)+'</div>':'')+'</section>'
       +'<section class="race-detail-section legacy-section"><div class="race-section-title"><div><span>Personalização racial</span><h2>Traços de Legado</h2></div><span class="legacy-count '+(selected.length===2?'complete':'')+'">'+selected.length+' / 2 escolhidos</span></div><p class="race-section-intro">Escolha exatamente dois. Uma escolha selecionada recebe destaque dourado; ao alcançar o limite, as demais ficam temporariamente indisponíveis.</p>'
       +'<div class="mixed-blood-box"><label><input type="checkbox" '+(rs.mixed?'checked':'')+' onchange="GRIMORIO_RACE_BROWSER.toggleMixed(\''+attr(race.id)+'\')"><span><strong>Personagem de sangue misto</strong><small>Use '+esc(race.name)+' como raça dominante e combine Traços de Legado com uma raça secundária.</small></span></label>'+(rs.mixed?'<select onchange="GRIMORIO_RACE_BROWSER.setSecondary(\''+attr(race.id)+'\',this.value)"><option value="">Escolha a raça secundária…</option>'+races().filter(x=>x.id!==race.id).map(x=>'<option value="'+attr(x.id)+'" '+(secondary&&secondary.id===x.id?'selected':'')+'>'+esc(x.name)+'</option>').join('')+'</select>':'')+'</div>'
       +(rs.mixed&&secondary?'<div class="mixed-explain"><strong>Como a combinação está sendo calculada:</strong> traços fixos e subraça vêm de '+esc(race.name)+'; as duas escolhas abaixo podem vir das listas normais de '+esc(race.name)+' e '+esc(secondary.name)+', incluindo as opções especiais de Sangue Misto das duas raças quando seus requisitos específicos permitirem.</div>':'')
       +'<div class="race-trait-grid legacy-grid">'+pool.map(x=>traitCard(x.trait,{selectable:true,selected:rs.legacy.includes(x.key),disabled:rs.legacy.length>=2&&!rs.legacy.includes(x.key),origin:x.origin,mixed:x.type==='mixed',onclick:'GRIMORIO_RACE_BROWSER.toggleLegacy(\''+attr(race.id)+'\',\''+attr(x.key)+'\')'})).join('')+'</div></section>'
       +'<section class="race-build-summary"><div><span>Planejamento atual</span><h2>'+esc(race.name)+(sub?' — '+esc(sub.name):'')+'</h2><p>'+(secondary?'Sangue misto: dominante '+esc(race.name)+' + secundária '+esc(secondary.name)+'.':'Raça única.')+'</p></div><div class="race-build-chosen">'+(selected.length?selected.map(x=>'<span>'+esc(x.trait.name)+'</span>').join(''):'<span class="empty">Nenhum Traço de Legado selecionado</span>')+'</div></section>'
-      +'<div class="race-editorial-note"><strong>Nota de consulta:</strong> os cartões apresentam um resumo mecânico em português para identificação rápida. Use a página indicada da fonte quando uma característica possuir condições, exceções ou escolhas internas extensas.</div></div>';
+      +'<div class="race-editorial-note '+(full?'full':'pending')+'"><strong>Qualidade do texto:</strong> '+esc(editorial)+'</div></div>';
   }
   function renderCatalog(){return '<div id="raceCatalogRoot" class="race-browser">'+catalogInner()+'</div>';}
   window.GRIMORIO_RACE_BROWSER={renderCatalog,renderRace,setSearch,setFilter,openRace,selectSubrace,toggleMixed,setSecondary,toggleLegacy,clearChoices};
