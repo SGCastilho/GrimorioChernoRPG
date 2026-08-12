@@ -70,6 +70,12 @@
       blur: 2,
       overlay: 0.80
     },
+        'cleric': {
+      image: 'https://imgur.com/GFK6Ruu.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
   };
 
   function imgurParts(url){
