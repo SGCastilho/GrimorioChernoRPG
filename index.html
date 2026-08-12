@@ -6,21 +6,34 @@
 <meta name="color-scheme" content="dark">
 <title>Grimório D&D 5e 2014 — Livro do Jogador e Homebrews</title>
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/spotlight-cards.css">
+<link rel="stylesheet" href="css/adaptive-sidebar.css">
+<link rel="stylesheet" href="css/class-covers.css">
+<link rel="stylesheet" href="css/fluid-transitions.css">
 </head>
 <body>
 <div class="app">
   <aside class="sidebar" id="sidebar">
+    <button class="sidebar-mobile-close" type="button" onclick="toggleSidebar(false)" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="sidebar-pin-row">
+      <button class="sidebar-pin" id="sidebarPin" type="button" aria-pressed="false" aria-label="Fixar menu lateral" title="Fixar menu lateral">
+        <svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 4l6 6-3 1-3.5 3.5.5 4.5-2 2-3-6-5-3 2-2 4.5.5L10 7l1-3z"/><path d="M8.5 15.5L4 20"/></svg>
+        <span class="sidebar-pin-label">Fixar menu</span>
+      </button>
+    </div>
     <div class="brand">
       <svg class="brand-mark" viewBox="0 0 32 32" fill="none"><path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" stroke="currentColor" stroke-width="1.4"/><path d="M16 2 V30 M4 9 L28 23 M28 9 L4 23" stroke="currentColor" stroke-width="1" opacity=".5"/></svg>
-      <div><div class="brand-name">Grimório</div><div class="brand-sub">Compêndio de Campanha</div></div>
+      <div class="brand-copy"><div class="brand-name">Grimório</div><div class="brand-sub">Compêndio de Campanha</div></div>
     </div>
     <button class="search-trigger" onclick="openPalette()" aria-label="Buscar no grimório">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>Buscar no grimório…</span><span class="kbd"><span>Ctrl</span><span>K</span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span class="search-label">Buscar no grimório…</span><span class="kbd"><span>Ctrl</span><span>K</span></span>
     </button>
     <nav class="nav" id="navContent"></nav>
     <div class="sidebar-footer">
-      <button class="icon-btn" onclick="navigate('classes')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Classes</button>
-      <button class="icon-btn" onclick="navigate('spells')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z"/></svg>Magias</button>
+      <button class="icon-btn" onclick="navigate('classes')" aria-label="Classes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span class="footer-label">Classes</span></button>
+      <button class="icon-btn" onclick="navigate('spells')" aria-label="Magias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z"/></svg><span class="footer-label">Magias</span></button>
     </div>
   </aside>
   <div class="content-wrap">
@@ -28,7 +41,7 @@
     <main id="mainContent"></main>
   </div>
 </div>
-<div class="palette-overlay" id="paletteOverlay" onclick="if(event.target===this)closePalette()"><div class="palette"><div class="palette-input-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="paletteInput" placeholder="Buscar classes, subclasses ou magias…" oninput="renderPaletteResults()"><span class="esc-hint">Esc</span></div><div class="palette-results" id="paletteResults"></div></div></div>
+<div class="palette-overlay" id="paletteOverlay" onclick="if(event.target===this)closePalette()"><div class="palette"><div class="palette-input-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="paletteInput" placeholder="Buscar classes, subclasses, magias ou equipamentos…" oninput="renderPaletteResults()"><span class="esc-hint">Esc</span></div><div class="palette-results" id="paletteResults"></div></div></div>
 <div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()"><div class="modal">
   <h2 id="modalTitle">Adicionar ao grimório</h2><div class="modal-sub">Conteúdo próprio fica salvo somente neste navegador.</div>
   <div class="modal-tabs"><div class="modal-tab active" id="tabSpell" onclick="switchTab('spell')">Magia</div><div class="modal-tab" id="tabClass" onclick="switchTab('class')">Classe</div><div class="modal-tab" id="tabSubclass" onclick="switchTab('subclass')">Subclasse</div></div>
@@ -52,6 +65,11 @@
 <script src="js/config.js"></script>
 <script src="js/registry.js"></script>
 <script src="data/sources.js"></script>
+<script src="data/equipment/phb-2014-equipment.js"></script>
+<script src="data/equipment/ryoko-yokai-realms-equipment.js"></script>
+<script src="data/equipment/lyre-retia-equipment.js"></script>
+<script src="data/class-covers.js"></script>
+<script src="js/class-cover-runtime.js"></script>
 <script src="data/classes.js"></script>
 <script src="data/progression.js"></script>
 <script src="data/tasha-artificer.js"></script>
@@ -76,6 +94,7 @@
 <script src="data/ryoko-subclasses.js"></script>
 <script src="data/ryoko-optional-features.js"></script>
 <script src="data/homebrew-emissario.js"></script>
+<script src="data/homebrew-sage.js"></script>
 <script src="data/xanathar-subclasses.js"></script>
 <script src="data/tasha-subclasses.js"></script>
 <script src="data/scag-subclasses.js"></script>
@@ -91,6 +110,7 @@
 <script src="data/zagalhta-spells.js"></script>
 <script src="data/ryoko-spells.js"></script>
 <script src="data/cultivator-homebrew-spells.js"></script>
+<script src="data/homebrew-sage-spells.js"></script>
 <script src="data/export/foundry-v13-overrides.js"></script>
 <script src="data/export/foundry-class-overrides.js"></script>
 <script src="js/exporters/registry.js"></script>
@@ -102,9 +122,13 @@
 <script src="js/exporters/foundry-class-package.js"></script>
 <script src="js/ability-planner.js"></script>
 <script src="js/race-browser.js"></script>
+<script src="js/equipment-browser.js"></script>
 <script src="js/app.js"></script>
 <script src="js/ui-enhancements.js"></script>
 <script src="js/dynamic-consultation.js"></script>
+<script src="js/spotlight-cards.js"></script>
+<script src="js/adaptive-sidebar.js"></script>
+<script src="js/fluid-transitions.js"></script>
 <script src="js/exporters/foundry-export-ui.js"></script>
 <script src="js/exporters/foundry-class-export-ui.js"></script>
 </body>

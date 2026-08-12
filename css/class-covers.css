@@ -1,0 +1,57 @@
+/* Grimório v5.37.1 — capas configuráveis e resilientes nos cards de classe. */
+.class-card.has-class-cover{
+  background:linear-gradient(155deg,rgba(22,24,35,.82),rgba(15,17,26,.94));
+  border-color:color-mix(in srgb,var(--card-color,var(--gold)) 32%,var(--border));
+  text-shadow:0 1px 12px rgba(0,0,0,.58);
+}
+.class-card.has-class-cover .class-cover-media{
+  position:absolute;
+  inset:-8px;
+  width:calc(100% + 16px);
+  height:calc(100% + 16px);
+  z-index:0;
+  object-fit:cover;
+  object-position:var(--class-cover-position,center);
+  pointer-events:none;
+  filter:blur(var(--class-cover-blur,2px));
+  transform:scale(1.045);
+  opacity:0;
+  transition:opacity .24s ease;
+}
+.class-card.has-class-cover.class-cover-ready .class-cover-media{opacity:.96}
+.class-card.has-class-cover::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  border-radius:inherit;
+  background:rgba(0,0,0,var(--class-cover-overlay,.52));
+  opacity:0;
+  transition:opacity .24s ease;
+}
+.class-card.has-class-cover.class-cover-ready::before{opacity:1}
+.class-card.has-class-cover::after{z-index:2}
+.class-card.has-class-cover>*:not(.class-cover-media){position:relative;z-index:3}
+.class-card.has-class-cover .card-sigil{
+  background:color-mix(in srgb,var(--card-color,var(--gold)) 18%,rgba(12,14,22,.74));
+  border:1px solid color-mix(in srgb,var(--card-color,var(--gold)) 38%,transparent);
+  backdrop-filter:blur(6px);
+  box-shadow:0 7px 20px rgba(0,0,0,.24);
+}
+.class-card.has-class-cover h3,.class-card.has-class-cover .meta,.class-card.has-class-cover p{color:#f4f1e8}
+.class-card.has-class-cover .meta,.class-card.has-class-cover p{opacity:.9}
+.class-card.has-class-cover .tag{
+  background:rgba(13,15,23,.62);
+  border-color:rgba(255,255,255,.14);
+  color:#ddd9cf;
+  backdrop-filter:blur(4px);
+}
+.class-card.has-class-cover .tag-more{color:var(--gold);border-color:rgba(201,165,92,.45)}
+.class-card.has-class-cover .subclass-count{color:rgba(245,241,229,.72)}
+/* Se a imagem externa falhar, o card volta ao visual normal: nunca sobra apenas o overlay preto. */
+.class-card.class-cover-failed{background:var(--panel-2);text-shadow:none}
+@media (prefers-reduced-motion:reduce){
+  .class-card.has-class-cover .class-cover-media{filter:none;transition:none}
+  .class-card.has-class-cover::before{transition:none}
+}

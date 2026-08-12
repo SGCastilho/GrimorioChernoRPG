@@ -141,9 +141,9 @@ let last=-1;for(const item of order){const p=index.indexOf(item);if(p<0||p<=last
 if(!errors.some(e=>e.startsWith('index.html')))ok('Ordem de carregamento dos módulos da Fase 3');
 
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.json'),'utf8'));
-if(!/^5\.30\.[3-9]$/.test(manifest.version)||manifest.races!==34||manifest.raceSubraces!==196||manifest.racesTextReviewed<22)fail('Manifest não é compatível com a Fase 3.'); else ok(`Manifest ${manifest.version} compatível com a Fase 3`);
+const versionParts=String(manifest.version||'').split('.').map(Number);const post5303=versionParts[0]>5||(versionParts[0]===5&&(versionParts[1]>30||(versionParts[1]===30&&versionParts[2]>=3)));if(!post5303||manifest.races!==34||manifest.raceSubraces!==196||manifest.racesTextReviewed<22)fail('Manifest não é compatível com a Fase 3.'); else ok(`Manifest ${manifest.version} compatível com a Fase 3`);
 const cfg=fs.readFileSync(path.join(root,'js/config.js'),'utf8');
-if(!/APP_VERSION='5\.30\.[3-9]'/.test(cfg))fail('APP_VERSION não é compatível com 5.30.3+.'); else ok('APP_VERSION compatível com a Fase 3');
+const appVersionMatch=cfg.match(/APP_VERSION='(\d+)\.(\d+)\.(\d+)'/);const cv=appVersionMatch?appVersionMatch.slice(1).map(Number):[];const appPost5303=cv.length===3&&(cv[0]>5||(cv[0]===5&&(cv[1]>30||(cv[1]===30&&cv[2]>=3))));if(!appPost5303)fail('APP_VERSION não é compatível com 5.30.3+.'); else ok('APP_VERSION compatível com a Fase 3');
 
 finish();
 function finish(){

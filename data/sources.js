@@ -35,8 +35,8 @@
       ],
       matchIncludes: ['Livro do Jogador'],
       about: [
-        'O catálogo oficial do Livro do Jogador está incorporado localmente, incluindo as 361 magias do Capítulo 11 e as classes-base estruturadas para consulta offline.',
-        'Quando a própria fonte apresenta metadados conflitantes, o Grimório preserva a divergência documentada em vez de inventar uma regra substituta.'
+        'O catálogo oficial do Livro do Jogador está incorporado localmente, incluindo as 361 magias do Capítulo 11, as classes-base estruturadas para consulta offline e o catálogo inicial de 50 equipamentos mundanos do Capítulo 5 (37 armas, 12 armaduras e 1 escudo).',
+        'Quando a própria fonte apresenta metadados conflitantes ou grafias incomuns, o Grimório preserva a divergência documentada em vez de inventar uma regra substituta.'
       ]
     },
     {
@@ -98,6 +98,7 @@
       about: [
         'O Grimório incorpora 280 entradas de magia, quatro classes originais — Alma Favorecida, Inscritor, Cavaleiro das Pétalas e Santo da Espada — e 127 subclasses, localizadas para PT-BR.',
         'O Capítulo VII também está indexado na seção Raças e Subraças: 34 raças e 196 subraças da edição fornecida, com traços fixos, Traços de Legado, regras de Sangue Misto e referências de página em PT-BR.',
+        'O Capítulo IX — Weapons & Armor está integrado à seção Equipamentos com 22 armas, o Escudo Grande, munições especiais, propriedades de arma da 5.19, regras de tamanho de equipamento e o subsistema de armas de fogo das páginas 515–518.',
         'Os arquétipos apresentados para o Patrulheiro Revisado permanecem ligados ao Patrulheiro do Grimório com indicação de compatibilidade, e revisões Legacy/5.19 continuam identificadas como versões próprias da fonte.'
       ]
     },
@@ -161,7 +162,8 @@
         'As progressões do Dobrador e do Domador cobrem do 1º ao 20º nível e preservam Afinidades Elementais, Avatar Primordial, sistema de companheiros, treinamento, doma, receptáculos e tabelas próprias.',
         'As regras opcionais de Ataque Extra Aprimorado foram preservadas como referências opcionais, sem sobrescrever silenciosamente a progressão das classes-base do Livro do Jogador.',
         'O Capítulo 13 — Magias está integrado integralmente em PT-BR com 62 entradas. A própria fonte declara 44 magias inéditas e 18 provenientes de outras publicações Loot Tavern; como o livro não individualiza essa classificação em cada ficha, não foram inferidas procedências anteriores.',
-        'A escola opcional Biomancia foi preservada em 7 magias, incluindo a escola alternativa indicada pela fonte para campanhas que não utilizem Biomancia.'
+        'A escola opcional Biomancia foi preservada em 7 magias, incluindo a escola alternativa indicada pela fonte para campanhas que não utilizem Biomancia.',
+        'O Capítulo 6 — Equipamentos e Próteses agora possui integração da seção Equipamentos: 11 armas, 7 propriedades novas de armas e 6 equipamentos de aventura, com regras especiais e dados de fabricação preservados. As próteses permanecem reservadas para uma implementação própria por constituírem um tipo de item separado na fonte.'
       ]
     },
     {
@@ -256,6 +258,25 @@
         'Classe homebrew original fornecida pelo usuário, integrada diretamente do PDF Lutador de Rua.',
         'Inclui a progressão completa do 1º ao 20º nível, Dado de Briga, Cólera, Surtos de Cólera, Essências de Cólera e o Arquétipo de Rua Dragão de Dojima.',
         'Quando a tabela da fonte cita uma característica sem fornecer seu bloco de regras — como Ataque Extra, Incremento de Habilidade e Essência Adicional — o Grimório preserva a concessão sem importar texto mecânico de fontes externas.'
+      ]
+    },
+    {
+      id: 'sage-homebrew-source',
+      title: 'Homebrew — O Sábio',
+      shortTitle: 'O Sábio — Homebrew',
+      filterLabel: 'O Sábio — Homebrew',
+      homeLabel: 'O Sábio — Homebrew',
+      catalogLabel: 'O Sábio — Homebrew',
+      kind: 'homebrew',
+      order: 85,
+      showOnHome: true,
+      showInAbout: true,
+      aliases: ['Homebrew — O Sábio', 'O Sábio', 'Sábio', 'Sage Homebrew'],
+      matchIncludes: ['Homebrew — O Sábio', 'O Sábio'],
+      about: [
+        'Classe Sábio integrada diretamente do PDF homebrew fornecido pelo usuário, com Pontos de Erudição, Encantar Arma, Terrenos Arcanos, ferramentas de contramagia e a Doutrina Catalisador.',
+        'O PDF não contém uma tabela completa de progressão 1–20; a progressão estruturada do Grimório organiza somente níveis, escalonamentos e bônus explicitamente citados pela própria fonte, sem presumir Incrementos de Habilidade, Ataque Extra ou espaços de magia.',
+        'O catálogo arcano recebe 14 entradas da fonte: 6 truques exclusivos, 3 Terrenos de Sábio e 5 Magias de Sábio da Maestria Elemental. Terrenos e Magias de Sábio permanecem sem nível convencional porque o PDF não lhes atribui um nível de magia.'
       ]
     },
     {

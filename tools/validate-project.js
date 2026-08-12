@@ -39,6 +39,7 @@ if (errors.length) finish();
 
 const sources = registry.getSources();
 const catalogs = registry.getSpellCatalogs();
+const equipmentCatalogs = registry.getEquipmentCatalogs ? registry.getEquipmentCatalogs() : [];
 const classes = context.GRIMORIO_CLASSES || [];
 const subclasses = context.GRIMORIO_SUBCLASSES || [];
 const progressionStore = context.GRIMORIO_CLASS_PROGRESSIONS || {};
@@ -79,6 +80,35 @@ for (const catalog of catalogs) {
   }
 }
 ok(`${spellTotal} registros-base de magias/poderes validados`);
+
+if (!equipmentCatalogs.length) warn('Nenhum catálogo de equipamentos foi registrado.');
+else {
+  const equipmentCatalogIds = new Set();
+  const equipmentIds = new Map();
+  const equipmentPropertyIds = new Set(equipmentCatalogs.flatMap(catalog => Object.keys(catalog.properties || {})));
+  let equipmentTotal = 0;
+  for (const catalog of equipmentCatalogs) {
+    if (equipmentCatalogIds.has(catalog.id)) fail(`ID de catálogo de equipamentos duplicado: ${catalog.id}`);
+    equipmentCatalogIds.add(catalog.id);
+    if (!registry.getSource(catalog.sourceId)) fail(`Catálogo de equipamentos ${catalog.id} usa fonte inexistente: ${catalog.sourceId}`);
+    if (!Array.isArray(catalog.items)) { fail(`Catálogo de equipamentos ${catalog.id} não possui array items.`); continue; }
+    equipmentTotal += catalog.items.length;
+    for (const item of catalog.items) {
+      if (!item?.id) fail(`Equipamento sem id em ${catalog.id}: ${item?.name || '(sem nome)'}`);
+      if (!item?.name) fail(`Equipamento sem name em ${catalog.id}: ${item?.id || '(sem id)'}`);
+      if (!['weapon','armor','shield','gear','ammunition'].includes(item?.type)) warn(`Tipo de equipamento incomum em ${item?.id || item?.name}: ${item?.type}`);
+      if (item?.id) {
+        const previous = equipmentIds.get(item.id);
+        if (previous) fail(`ID de equipamento duplicado entre catálogos: ${item.id} (${previous} e ${catalog.id})`);
+        else equipmentIds.set(item.id, catalog.id);
+      }
+      for (const property of item?.properties || []) {
+        if (!equipmentPropertyIds.has(property.id)) fail(`Equipamento ${item.id} usa propriedade não cadastrada: ${property.id}`);
+      }
+    }
+  }
+  ok(`${equipmentTotal} equipamentos validados em ${equipmentCatalogs.length} catálogo(s)`);
+}
 
 function duplicateIds(items, label) {
   const seen = new Set();

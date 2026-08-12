@@ -1,0 +1,31 @@
+'use strict';
+const fs=require('fs');
+const path=require('path');
+const root=path.resolve(__dirname,'..');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const fail=[];
+function ok(cond,msg){if(!cond)fail.push(msg)}
+const index=read('index.html');
+const js=read('js/fluid-transitions.js');
+const css=read('css/fluid-transitions.css');
+const config=read('js/config.js');
+const manifest=JSON.parse(read('manifest.json'));
+ok(index.includes('css/fluid-transitions.css'),'CSS de transições não carregado no index.');
+ok(index.includes('js/fluid-transitions.js'),'JS de transições não carregado no index.');
+ok(index.indexOf('js/dynamic-consultation.js')<index.indexOf('js/fluid-transitions.js'),'Script de transições deve carregar depois da consulta dinâmica.');
+ok(js.includes('prefers-reduced-motion'),'JS não respeita reduced motion.');
+ok(css.includes('@media (prefers-reduced-motion:reduce)'),'CSS não respeita reduced motion.');
+ok(js.includes("document.addEventListener('toggle'"),'Transição de details não instalada.');
+ok(js.includes("wrapLocalAction('setConsultationTab')"),'Abas de consulta não integradas.');
+ok(js.includes("wrapLocalAction('setConsultationLevel')"),'Níveis de consulta não integrados.');
+ok(js.includes('ui-page-leaving')&&js.includes('ui-page-entering'),'Transição de página incompleta.');
+ok(css.includes('@keyframes grimorio-page-enter'),'Keyframe de página ausente.');
+ok(css.includes('@keyframes grimorio-detail-enter'),'Keyframe de details ausente.');
+ok(/APP_VERSION='5\.(?:3[6-9]|[4-9]\d)\./.test(config),'APP_VERSION é anterior à introdução das transições 5.36.0.');
+ok(Number(String(manifest.version).split('.')[1])>=36,'manifest é anterior à introdução das transições 5.36.0.');
+if(fail.length){console.error('FALHOU — Transições 5.36');fail.forEach(x=>console.error(' - '+x));process.exit(1)}
+console.log('OK — Transições fluidas 5.36');
+console.log('  página: saída + entrada curta');
+console.log('  consulta: abas/níveis com atualização local');
+console.log('  details: entrada suave ao abrir');
+console.log('  acessibilidade: prefers-reduced-motion');

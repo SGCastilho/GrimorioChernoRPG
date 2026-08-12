@@ -1,0 +1,99 @@
+/*
+ * Grimório v5.36 — microtransições de navegação e leitura.
+ * Implementação nativa, sem dependências. Mantém movimentos curtos para não atrasar a consulta.
+ */
+:root{
+  --ui-transition-fast:140ms;
+  --ui-transition-normal:190ms;
+  --ui-transition-slow:220ms;
+  --ui-transition-ease:cubic-bezier(.22,.61,.36,1);
+}
+
+#mainContent{
+  transition:opacity var(--ui-transition-fast) ease,transform var(--ui-transition-fast) var(--ui-transition-ease);
+  will-change:opacity,transform;
+}
+#mainContent.ui-page-leaving{
+  opacity:0;
+  transform:translateY(5px) scale(.998);
+}
+#mainContent.ui-page-entering{
+  animation:grimorio-page-enter var(--ui-transition-slow) var(--ui-transition-ease) both;
+}
+@keyframes grimorio-page-enter{
+  from{opacity:0;transform:translateY(8px) scale(.997)}
+  to{opacity:1;transform:none}
+}
+
+/* Atualizações internas: abas de classe/subclasse e filtros dinâmicos. */
+#consultation-content.ui-local-enter,
+#raceCatalogResults.ui-local-enter,
+#equipmentCatalogResults.ui-local-enter,
+.equipment-results.ui-local-enter,
+.spell-grid.ui-local-enter,
+.spell-list.ui-local-enter{
+  animation:grimorio-local-enter var(--ui-transition-normal) var(--ui-transition-ease) both;
+}
+@keyframes grimorio-local-enter{
+  from{opacity:.18;transform:translateY(5px)}
+  to{opacity:1;transform:none}
+}
+
+/* Conteúdo aberto em details: característica, referência, regra, bloco de leitura etc. */
+details[open] > :not(summary).ui-detail-enter{
+  animation:grimorio-detail-enter var(--ui-transition-normal) var(--ui-transition-ease) both;
+  transform-origin:top center;
+}
+@keyframes grimorio-detail-enter{
+  from{opacity:0;transform:translateY(-5px) scaleY(.985)}
+  to{opacity:1;transform:none}
+}
+
+/* Feedback sutil no próprio summary. */
+details > summary{
+  transition:color var(--ui-transition-fast) ease,background-color var(--ui-transition-fast) ease,border-color var(--ui-transition-fast) ease;
+}
+details[open] > summary{color:var(--text)}
+
+/* Paleta e modais também entram de forma suave, sem alterar sua lógica atual. */
+.palette-overlay.open,.modal-overlay.open,.foundry-export-overlay.open{
+  animation:grimorio-overlay-in var(--ui-transition-fast) ease both;
+}
+.palette-overlay.open .palette,.modal-overlay.open .modal,.foundry-export-overlay.open > *{
+  animation:grimorio-dialog-in var(--ui-transition-normal) var(--ui-transition-ease) both;
+}
+@keyframes grimorio-overlay-in{from{opacity:0}to{opacity:1}}
+@keyframes grimorio-dialog-in{
+  from{opacity:0;transform:translateY(8px) scale(.985)}
+  to{opacity:1;transform:none}
+}
+
+/* Cards clicáveis ganham resposta mais natural ao abrir um conteúdo. */
+.class-card,.subclass-card,.race-card,.equipment-card,.spell-card,.dashboard-card,.home-card{
+  transition:transform var(--ui-transition-fast) var(--ui-transition-ease),border-color var(--ui-transition-fast) ease,box-shadow var(--ui-transition-fast) ease,background-color var(--ui-transition-fast) ease;
+}
+.class-card:active,.subclass-card:active,.race-card:active,.equipment-card:active,.spell-card:active,.dashboard-card:active,.home-card:active{
+  transform:translateY(1px) scale(.997);
+}
+
+/* Se o navegador oferecer View Transitions, desabilita a animação automática da raiz;
+   a implementação JS continua usando o fallback curto e previsível do Grimório. */
+::view-transition-old(root),::view-transition-new(root){animation:none}
+
+@media (prefers-reduced-motion:reduce){
+  #mainContent,
+  .class-card,.subclass-card,.race-card,.equipment-card,.spell-card,.dashboard-card,.home-card,
+  details > summary{transition:none!important}
+  #mainContent.ui-page-entering,
+  #consultation-content.ui-local-enter,
+  #raceCatalogResults.ui-local-enter,
+  #equipmentCatalogResults.ui-local-enter,
+  .equipment-results.ui-local-enter,
+  .spell-grid.ui-local-enter,
+  .spell-list.ui-local-enter,
+  details[open] > :not(summary).ui-detail-enter,
+  .palette-overlay.open,.modal-overlay.open,.foundry-export-overlay.open,
+  .palette-overlay.open .palette,.modal-overlay.open .modal,.foundry-export-overlay.open > *{
+    animation:none!important;
+  }
+}

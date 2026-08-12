@@ -18,12 +18,12 @@
   },
   "phase": 2,
   "summary": {
-    "catalogs": 9,
-    "total": 1171,
+    "catalogs": 10,
+    "total": 1185,
     "exportable": 1170,
     "ready": 1168,
     "reviewRequired": 2,
-    "blocked": 1,
+    "blocked": 15,
     "warningCounts": {
       "source-duration-incomplete": 2
     },
@@ -111,6 +111,15 @@
       "ready": 1,
       "reviewRequired": 0,
       "blocked": 0
+    },
+    {
+      "id": "sage-homebrew-spells",
+      "sourceId": "sage-homebrew-source",
+      "total": 14,
+      "exportable": 0,
+      "ready": 0,
+      "reviewRequired": 0,
+      "blocked": 14
     }
   ],
   "review": [
@@ -140,6 +149,137 @@
       ],
       "warnings": [
         "Duração incompleta na fonte e preservada como Especial: \"Não informada\".",
+        "Tipo/quantidade de alvo não pôde ser determinado com segurança."
+      ]
+    },
+    {
+      "id": "sage-fire-lance",
+      "name": "Lança de Fogo",
+      "errors": [
+        "Homebrew — O Sábio não informa a escola de magia desta ficha. O Strict Spell Template exige uma das oito escolas padrão; o Grimório não infere essa classificação."
+      ],
+      "warnings": []
+    },
+    {
+      "id": "sage-ice-lance",
+      "name": "Lança de Gelo",
+      "errors": [
+        "Homebrew — O Sábio não informa a escola de magia desta ficha. O Strict Spell Template exige uma das oito escolas padrão; o Grimório não infere essa classificação."
+      ],
+      "warnings": []
+    },
+    {
+      "id": "sage-lightning",
+      "name": "Relâmpago",
+      "errors": [
+        "Homebrew — O Sábio não informa a escola de magia desta ficha. O Strict Spell Template exige uma das oito escolas padrão; o Grimório não infere essa classificação."
+      ],
+      "warnings": []
+    },
+    {
+      "id": "sage-freezing-blast",
+      "name": "Rajada Congelante",
+      "errors": [
+        "Homebrew — O Sábio não informa a escola de magia desta ficha. O Strict Spell Template exige uma das oito escolas padrão; o Grimório não infere essa classificação."
+      ],
+      "warnings": [
+        "Tipo/quantidade de alvo não pôde ser determinado com segurança."
+      ]
+    },
+    {
+      "id": "sage-stone-column",
+      "name": "Coluna de Pedra",
+      "errors": [
+        "Homebrew — O Sábio não informa a escola de magia desta ficha. O Strict Spell Template exige uma das oito escolas padrão; o Grimório não infere essa classificação."
+      ],
+      "warnings": [
+        "Tipo/quantidade de alvo não pôde ser determinado com segurança."
+      ]
+    },
+    {
+      "id": "sage-spiritual-attack",
+      "name": "Ataque Espiritual",
+      "errors": [
+        "Homebrew — O Sábio não informa a escola de magia desta ficha. O Strict Spell Template exige uma das oito escolas padrão; o Grimório não infere essa classificação."
+      ],
+      "warnings": []
+    },
+    {
+      "id": "sage-terrain-volcano",
+      "name": "Vulcão",
+      "errors": [
+        "Homebrew — O Sábio não informa escola nem nível convencional para este recurso de classe. O Strict Spell Template exige ambos; o Grimório preserva a ficha sem inventar uma classificação."
+      ],
+      "warnings": [
+        "Alcance não pôde ser normalizado automaticamente: \"1 quadrado ao redor do Sábio\".",
+        "Tipo/quantidade de alvo não pôde ser determinado com segurança."
+      ]
+    },
+    {
+      "id": "sage-terrain-deluge",
+      "name": "Dilúvio",
+      "errors": [
+        "Homebrew — O Sábio não informa escola nem nível convencional para este recurso de classe. O Strict Spell Template exige ambos; o Grimório preserva a ficha sem inventar uma classificação."
+      ],
+      "warnings": [
+        "Alcance não pôde ser normalizado automaticamente: \"1 quadrado ao redor do Sábio\".",
+        "Tipo/quantidade de alvo não pôde ser determinado com segurança."
+      ]
+    },
+    {
+      "id": "sage-terrain-hurricane",
+      "name": "Furacão",
+      "errors": [
+        "Homebrew — O Sábio não informa escola nem nível convencional para este recurso de classe. O Strict Spell Template exige ambos; o Grimório preserva a ficha sem inventar uma classificação."
+      ],
+      "warnings": [
+        "Alcance não pôde ser normalizado automaticamente: \"1 quadrado ao redor do Sábio\".",
+        "Tipo/quantidade de alvo não pôde ser determinado com segurança."
+      ]
+    },
+    {
+      "id": "sage-fire-balls",
+      "name": "Bolas de Fogo",
+      "errors": [
+        "Homebrew — O Sábio não informa escola nem nível convencional para este recurso de classe. O Strict Spell Template exige ambos; o Grimório preserva a ficha sem inventar uma classificação."
+      ],
+      "warnings": []
+    },
+    {
+      "id": "sage-fire-barrier",
+      "name": "Barreira de Fogo",
+      "errors": [
+        "Homebrew — O Sábio não informa escola nem nível convencional para este recurso de classe. O Strict Spell Template exige ambos; o Grimório preserva a ficha sem inventar uma classificação."
+      ],
+      "warnings": []
+    },
+    {
+      "id": "sage-lightning-storm",
+      "name": "Tempestade de Raios",
+      "errors": [
+        "Homebrew — O Sábio não informa escola nem nível convencional para este recurso de classe. O Strict Spell Template exige ambos; o Grimório preserva a ficha sem inventar uma classificação."
+      ],
+      "warnings": [
+        "Tipo/quantidade de alvo não pôde ser determinado com segurança."
+      ]
+    },
+    {
+      "id": "sage-ancient-spirits",
+      "name": "Espíritos Anciões",
+      "errors": [
+        "Homebrew — O Sábio não informa escola nem nível convencional para este recurso de classe. O Strict Spell Template exige ambos; o Grimório preserva a ficha sem inventar uma classificação."
+      ],
+      "warnings": [
+        "Tipo/quantidade de alvo não pôde ser determinado com segurança."
+      ]
+    },
+    {
+      "id": "sage-earth-fury",
+      "name": "Fúria da Terra",
+      "errors": [
+        "Homebrew — O Sábio não informa escola nem nível convencional para este recurso de classe. O Strict Spell Template exige ambos; o Grimório preserva a ficha sem inventar uma classificação."
+      ],
+      "warnings": [
         "Tipo/quantidade de alvo não pôde ser determinado com segurança."
       ]
     }

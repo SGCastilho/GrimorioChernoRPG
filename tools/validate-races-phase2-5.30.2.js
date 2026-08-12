@@ -73,8 +73,8 @@ const index=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const a=index.indexOf('data/lyre-races.js'),b=index.indexOf('data/lyre-races-phase2-structure.js'),c=index.indexOf('data/lyre-races-phase2-text.js'),d=index.indexOf('js/race-browser.js');
 if(!(a>=0&&a<b&&b<c&&c<d))fail('Ordem dos módulos raciais da Fase 2 no index.html está incorreta.'); else ok('Ordem de carregamento dos módulos da Fase 2');
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.json'),'utf8'));
-if(!/^5\.30\.[2-9]$/.test(manifest.version)||manifest.races!==34||manifest.raceSubraces!==196||manifest.racesTextReviewed<13)fail('Manifest não é compatível com a Fase 2.'); else ok(`Manifest ${manifest.version} compatível com a Fase 2`);
+const versionParts=String(manifest.version||'').split('.').map(Number);const post5302=versionParts[0]>5||(versionParts[0]===5&&(versionParts[1]>30||(versionParts[1]===30&&versionParts[2]>=2)));if(!post5302||manifest.races!==34||manifest.raceSubraces!==196||manifest.racesTextReviewed<13)fail('Manifest não é compatível com a Fase 2.'); else ok(`Manifest ${manifest.version} compatível com a Fase 2`);
 const cfg=fs.readFileSync(path.join(root,'js/config.js'),'utf8');
-if(!/APP_VERSION='5\.30\.[2-9]'/.test(cfg))fail('APP_VERSION não é compatível com 5.30.2+.'); else ok('APP_VERSION compatível com a Fase 2');
+const appVersionMatch=cfg.match(/APP_VERSION='(\d+)\.(\d+)\.(\d+)'/);const cv=appVersionMatch?appVersionMatch.slice(1).map(Number):[];const appPost5302=cv.length===3&&(cv[0]>5||(cv[0]===5&&(cv[1]>30||(cv[1]===30&&cv[2]>=2))));if(!appPost5302)fail('APP_VERSION não é compatível com 5.30.2+.'); else ok('APP_VERSION compatível com a Fase 2');
 finish();
 function finish(){if(errors.length){console.error('\nFalhas:');for(const e of errors)console.error('✗ '+e);process.exit(1);}console.log('\nFase 2 da revisão textual racial validada com sucesso.');}

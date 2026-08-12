@@ -181,3 +181,28 @@ window.GRIMORIO_FOUNDRY_V13_OVERRIDES = {
     }
   }
 };
+
+// Homebrew — O Sábio: as fichas do PDF não informam escola de magia 5e e,
+// para Terrenos/Magias de Sábio, também não informam nível convencional.
+// A exportação Strict Spell v2 exige ambos. Bloqueamos conscientemente em vez
+// de inventar classificações técnicas que alterariam a fonte editorial.
+(function blockSageHomebrewSpellExport() {
+  const overrides = window.GRIMORIO_FOUNDRY_V13_OVERRIDES?.spells;
+  if (!overrides) return;
+  const cantrips = [
+    'sage-fire-lance','sage-ice-lance','sage-lightning','sage-freezing-blast','sage-stone-column','sage-spiritual-attack'
+  ];
+  const unlevelled = [
+    'sage-terrain-volcano','sage-terrain-deluge','sage-terrain-hurricane','sage-fire-balls','sage-fire-barrier','sage-lightning-storm','sage-ancient-spirits','sage-earth-fury'
+  ];
+  cantrips.forEach(id => {
+    overrides[id] = {
+      blockedReason: 'Homebrew — O Sábio não informa a escola de magia desta ficha. O Strict Spell Template exige uma das oito escolas padrão; o Grimório não infere essa classificação.'
+    };
+  });
+  unlevelled.forEach(id => {
+    overrides[id] = {
+      blockedReason: 'Homebrew — O Sábio não informa escola nem nível convencional para este recurso de classe. O Strict Spell Template exige ambos; o Grimório preserva a ficha sem inventar uma classificação.'
+    };
+  });
+})();

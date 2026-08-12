@@ -33,6 +33,7 @@ function load(file) {
   'data/ryoko-subclasses.js',
   'data/ryoko-optional-features.js',
   'data/homebrew-emissario.js',
+  'data/homebrew-sage.js',
   'data/xanathar-subclasses.js',
   'data/tasha-subclasses.js',
   'data/scag-subclasses.js',
@@ -50,10 +51,10 @@ const report = api.inspectCatalog(classes, subclasses);
 const errors = [];
 
 const EXPECTED = {
-  classes: 26,
-  subclasses: 381,
-  classFeatures: 429,
-  subclassFeatures: 2048,
+  classes: 27,
+  subclasses: 382,
+  classFeatures: 440,
+  subclassFeatures: 2055,
   classTables: 33,
   subclassTables: 138,
   nativeReviewIds: new Set(['dragoneer', 'frame-pilot', 'bender-ryoko', 'tamer-ryoko', 'blood-minister-somnus']),

@@ -1,3 +1,87 @@
+## 5.38.0
+
+### Homebrew — O Sábio
+- Classe **Sábio** integrada a partir do PDF fornecido pelo usuário.
+- Doutrina **Catalisador** adicionada com 7 entradas de progressão mecânica.
+- Nova fonte `O Sábio — Homebrew` registrada no catálogo.
+- 14 entradas mágicas adicionadas: 6 truques exclusivos, 3 Terrenos Arcanos e 5 Magias de Sábio.
+- Catálogo de Magias passa a aceitar recursos **sem nível convencional**, com rótulo e filtro próprios.
+- Progressão 1–20 do Sábio é uma organização editorial dos marcos explicitamente citados pela fonte; nenhuma característica padrão ausente foi inventada.
+- Termos e lacunas não definidos no PDF são preservados com notas editoriais em vez de receber regras inferidas.
+
+## 5.37.1
+
+### Hotfix — capas de classe
+- Corrigido o caso em que uma capa externa que falhava deixava o card completamente escuro.
+- A camada preta/blur só é ativada depois que a imagem termina de carregar com sucesso.
+- Links do Imgur agora tentam automaticamente extensões diretas alternativas (`png`, `jpg`, `jpeg`, `webp`, `gif`).
+- Se todas as tentativas falharem, o card retorna ao visual padrão em vez de permanecer preto.
+- A renderização passou a usar um elemento de imagem dedicado, permitindo detectar carregamento e falha de forma confiável.
+
+## 5.37.0
+
+### Interface — fixação da sidebar e capas de classe
+- Botão de pin no topo da sidebar para manter o menu expandido no desktop.
+- Estado fixado persistente entre recarregamentos.
+- Infraestrutura centralizada de capas em `data/class-covers.js`.
+- Primeira capa aplicada ao Emissário Espiritual, com blur e overlay preto configuráveis.
+- Suporte a URLs externas e arquivos locais, com normalização automática de links Imgur.
+- Novo `css/class-covers.css`.
+
+## 5.36.0
+
+### Interface — transições fluidas
+- Adicionadas microtransições de navegação entre páginas/abas.
+- Características e outros blocos expansíveis recebem entrada suave ao abrir.
+- Adicionado feedback visual discreto em overlays e cards clicáveis.
+- Respeito a `prefers-reduced-motion` e ausência de dependências externas.
+- Novos arquivos: `css/fluid-transitions.css` e `js/fluid-transitions.js`.
+
+## 5.35.0
+
+### Interface — Sidebar adaptativa
+- Implementada navegação lateral compacta/expansível no desktop, inspirada no componente React fornecido e adaptada à stack nativa do Grimório.
+- Expansão por hover e foco de teclado; recolhimento automático ao sair da barra.
+- Rótulos e contadores são recolhidos no modo compacto, mantendo ícones e `title`/`aria-label` para orientação.
+- Mobile passa a usar sidebar em tela cheia com transição lateral, botão X e fechamento por `Esc`.
+- Compatibilidade com `prefers-reduced-motion`.
+- Novos arquivos: `css/adaptive-sidebar.css` e `js/adaptive-sidebar.js`.
+
+## 5.34.0
+
+### Interface — Spotlight Cards
+- Adicionado efeito de iluminação radial responsivo ao cursor nos principais cards do Grimório.
+- Implementação nativa, sem alterar a stack tecnológica do projeto.
+- Cores temáticas por contexto e suporte a foco de teclado.
+- Compatibilidade com `prefers-reduced-motion` e desativação automática em dispositivos touch/coarse pointer.
+- Novos arquivos: `css/spotlight-cards.css` e `js/spotlight-cards.js`.
+
+## 5.33.0
+
+### Equipamentos — Lyre / Somnus Domina 5.19
+- Integrado o Capítulo IX — Weapons & Armor de Lyre's Guide to Retia.
+- 22 armas, 1 Escudo Grande e 6 entradas de munição adicionados ao catálogo.
+- Novas propriedades da 5.19 e propriedades de armas de fogo disponíveis por tooltip e glossário.
+- Regras de tamanho de equipamento e armas de fogo adicionadas como referências complementares expansíveis.
+- Catálogo combinado: 96 itens, 70 armas, 12 armaduras, 2 escudos, 6 munições e 6 equipamentos de aventura em 3 fontes.
+
+## 5.32.0
+
+### Equipamentos — Ryoko
+- 11 armas e 6 equipamentos de aventura de Ryoko's Guide to the Yokai Realms integrados.
+- 7 propriedades próprias da fonte e dados de fabricação adicionados ao catálogo.
+
+## 5.31.0
+
+### Equipamentos — catálogo inicial
+- Adicionada a seção **Equipamentos** abaixo de **Raças e Subraças** no menu lateral.
+- Integrados os equipamentos mundanos das tabelas de Armaduras e Armas do Livro do Jogador fornecido: **37 armas, 12 armaduras e 1 escudo**.
+- Implementado registro extensível de catálogos de equipamento por fonte em `GRIMORIO_REGISTRY`.
+- Criados `data/equipment/phb-2014-equipment.js` e `js/equipment-browser.js`.
+- Propriedades de armas agora exibem suas regras por hover/foco e também em um glossário acessível.
+- Adicionados filtros por tipo, categoria e fonte, busca textual, detalhes expansíveis e suporte no Ctrl+K para equipamentos.
+- A grafia **Beste Leve** foi preservada como aparece na tabela fornecida, com **Besta Leve** mantida como alias de busca documentado.
+
 ## 5.30.6
 
 ### Raças e Subraças — hotfix da busca

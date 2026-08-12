@@ -1,6 +1,99 @@
-# Grimório D&D 5e PT-BR — versão 5.30.6
+# Grimório D&D 5e PT-BR — versão 5.38.0
+
+## 5.38.0 — Homebrew: O Sábio
+
+- Adicionada a classe **Sábio**, diretamente do PDF fornecido, com Dado de Vida d8, Inteligência como habilidade principal, Pontos de Erudição, Encantar Arma, Acervo Intelectual, Proteção Arcana, Terrenos Arcanos, Conjuração Livre, Desconcentrar, Desencantar e Espelho Mágico.
+- Adicionada a Doutrina **Catalisador**, com Conduit Arcano, Maestria Elemental, Proteger Terreno e Abracadabra; as escolhas adicionais de Maestria Elemental nos níveis 8, 10 e 12 também aparecem na progressão da subclasse.
+- O PDF não contém uma tabela completa 1–20. A progressão do Grimório organiza apenas níveis e escalonamentos explicitamente citados pela fonte; níveis sem nova concessão permanecem vazios, sem presumir ASI, Ataque Extra ou espaços de magia.
+- Adicionado catálogo **O Sábio — Homebrew** com 14 entradas: 6 truques, 3 Terrenos Arcanos e 5 Magias de Sábio.
+- Terrenos e Magias de Sábio não possuem nível de magia na fonte. O catálogo agora suporta **Sem nível / recurso de classe**, sem classificá-los artificialmente como truques ou magias de 1º–9º nível.
+- Lacunas da fonte são explicitadas nas fichas, incluindo termos não definidos como “propriedade frio”, “congelado” e “sangrando”, além das unidades “quadrado/bloco”.
+
+## 5.37.0 — Sidebar fixável e capas de classe
+
+- Adicionado botão de **pin** no topo da barra lateral. No desktop, o menu pode ser fixado aberto e permanece expandido até ser desafixado.
+- A preferência de fixação é persistida no navegador em `grimorio-sidebar-pinned-v1`.
+- Criada a infraestrutura centralizada `data/class-covers.js` para associar imagens de capa aos cards de classe sem editar cada arquivo de classe.
+- O **Emissário Espiritual** recebeu a primeira capa de teste usando a imagem fornecida, com blur e overlay preto configuráveis para preservar a legibilidade.
+- Links do Imgur são convertidos para o host direto e o carregador tenta automaticamente extensões compatíveis (`png`, `jpg`, `jpeg`, `webp`, `gif`). O overlay só aparece após o carregamento da imagem; em caso de falha total, o card volta ao visual padrão em vez de ficar preto.
+- Novo CSS `css/class-covers.css`, isolando o tratamento visual das capas dos demais estilos.
+
+### Como adicionar capas a novas classes
+
+Edite `data/class-covers.js` e acrescente uma entrada ao objeto `covers`, usando o **ID estável da classe** como chave:
+
+```js
+'barbarian': {
+  image: 'assets/class-covers/barbarian.webp',
+  position: 'center 30%',
+  blur: 3,
+  overlay: 0.55
+}
+```
+
+- `image`: URL externa ou caminho local relativo ao `index.html`.
+- `position`: equivalente ao `background-position` do CSS; ajuste para enquadrar o personagem.
+- `blur`: intensidade do desfoque, de 0 a 12.
+- `overlay`: opacidade da camada preta, de 0 a 0.9.
+
+Para descobrir o ID, consulte o campo `id` da classe no arquivo de dados correspondente. Para distribuição offline, prefira salvar a imagem dentro do próprio Grimório, por exemplo em `assets/class-covers/`, em vez de depender de uma URL externa.
+
+## 5.36.0 — Microtransições e navegação fluida
+
+- Adicionada uma camada nativa de **microtransições** para troca de páginas, abas e blocos expansíveis.
+- Navegação principal usa saída/entrada curta com opacidade e deslocamento mínimos, mantendo a consulta rápida.
+- Abas e filtros de consulta de classes/subclasses recebem animação local, sem transformar o Grimório em uma SPA ou adicionar dependências.
+- Características e demais blocos em `<details>` ganham entrada suave ao serem abertos.
+- Paleta de busca, modal de conteúdo e interfaces em overlay recebem entrada discreta e consistente.
+- Todo o sistema respeita `prefers-reduced-motion` e possui fallback defensivo para ambientes sem `matchMedia`.
+- Implementação isolada em `css/fluid-transitions.css` e `js/fluid-transitions.js`.
+
+## 5.35.0 — Sidebar adaptativa / navegação responsiva
+
+- A barra lateral agora inicia **compacta no desktop** e expande suavemente ao passar o mouse ou receber foco pelo teclado, inspirada no componente de sidebar enviado, porém implementada em HTML/CSS/JavaScript nativos.
+- No estado compacto, permanecem visíveis os ícones principais; nomes, contadores e ações textuais aparecem na expansão.
+- Subclasses da classe ativa são exibidas somente quando a barra está expandida, reduzindo ruído visual.
+- A busca **Ctrl+K** vira um botão compacto e recupera o campo completo quando a barra se expande.
+- Em telas móveis, a sidebar agora abre como um **painel em tela cheia**, com animação lateral, botão de fechar e suporte à tecla `Esc`.
+- A expansão por teclado usa `focusin/focusout`, e as animações respeitam `prefers-reduced-motion`.
+- Novos arquivos: `css/adaptive-sidebar.css` e `js/adaptive-sidebar.js`.
+
+## 5.34.0 — Spotlight Cards / refinamento visual
+
+- Implementado o conceito **GlowCard / Spotlight Card** diretamente na arquitetura existente em HTML/CSS/JavaScript, sem adicionar React, Tailwind ou shadcn.
+- O efeito acompanha o cursor de forma sutil em **Classes, Subclasses, Raças, Subraças, Planejador de Atributos, Equipamentos** e no hero do **Painel**.
+- Cards de classe/subclasse reutilizam a própria cor temática; Raças/Equipamentos usam dourado e o Painel utiliza o tom arcano.
+- O efeito também responde ao foco por teclado e é automaticamente removido para `prefers-reduced-motion` e dispositivos com ponteiro coarse/touch.
+- A implementação foi isolada em `css/spotlight-cards.css` e `js/spotlight-cards.js` para permitir evolução independente da UI.
+
+
+## 5.33.0 — Equipamentos do Lyre / Somnus Domina 5.19
+
+- Integrado o Capítulo IX — **Weapons & Armor** de *Lyre's Guide to Retia — Land of Industry*.
+- Adicionadas **22 armas**, **1 Escudo Grande** e **6 entradas de munição**, elevando o catálogo combinado para **96 equipamentos**.
+- Adicionadas as propriedades da 5.19 e propriedades específicas de armas de fogo, com tooltips em PT-BR.
+- Adicionados filtros próprios para **Armas de Fogo Simples/Marciais** e **Munições**.
+- A página Equipamentos passa a exibir regras complementares expansíveis de **Tamanhos de Equipamento** e **Armas de Fogo**, preservando proficiências, munição, recargas e multiplicadores de custo/peso da fonte.
+- O capítulo não adiciona armaduras corporais novas; a nova entrada defensiva é o **Escudo Grande** (+4 CA, For 19, desvantagem em Furtividade).
+
 
 Compêndio local em português para consulta de classes, subclasses e magias de D&D 5e 2014 e dos suplementos incorporados ao projeto.
+
+## 5.32.0 — Equipamentos do Ryoko
+
+- Integradas **11 armas** e **6 equipamentos de aventura** de *Ryoko's Guide to the Yokai Realms*.
+- Adicionadas **7 propriedades de arma** próprias da fonte, com tooltips e regras especiais.
+- Preservados dados de fabricação e regras específicas de armas como Kusarigama, Nunchaku, Tessen e Ōdzutsu.
+
+## 5.31.0 — Equipamentos
+
+- Nova opção **Equipamentos** no menu lateral, imediatamente abaixo de **Raças e Subraças**.
+- Catálogo inicial do **Livro do Jogador — D&D 5e 2014** com **50 itens**: **37 armas**, **12 armaduras** e **1 escudo**.
+- Armas exibem preço, dano, tipo de dano, peso, categoria e propriedades. Cada propriedade possui explicação por **hover** e por foco de teclado.
+- Armaduras exibem CA, peso, preço, exigência de Força e desvantagem em Furtividade quando aplicável.
+- Filtros por tipo, categoria e fonte, além de busca textual e glossário de propriedades.
+- A infraestrutura foi preparada como catálogo por fonte (`registerEquipmentCatalog`), para futuras adições de **Lyre, Ryoko e Somnus Domina**.
+- A tabela fornecida imprime **“Beste Leve”**; o nome foi preservado no catálogo, com **“Besta Leve”** como alias de busca e nota editorial.
 
 ## Como abrir
 

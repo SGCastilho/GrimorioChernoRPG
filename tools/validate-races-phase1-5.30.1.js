@@ -59,9 +59,9 @@ const catalog=api.renderCatalog();
 if(catalog.includes('Revisão textual em andamento'))fail('Aviso de revisão textual não deveria permanecer no catálogo após o hotfix de UI.'); else ok('Aviso de revisão textual removido do catálogo');
 
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.json'),'utf8'));
-if(!/^5\.30\.[1-9]$/.test(manifest.version))fail(`Manifest deveria estar em 5.30.1+; está em ${manifest.version}.`); else ok(`Manifest ${manifest.version} compatível com a Fase 1`);
+const versionParts=String(manifest.version||'').split('.').map(Number);const post5301=versionParts[0]>5||(versionParts[0]===5&&(versionParts[1]>30||(versionParts[1]===30&&versionParts[2]>=1)));if(!post5301)fail(`Manifest deveria estar em 5.30.1+; está em ${manifest.version}.`); else ok(`Manifest ${manifest.version} compatível com a Fase 1`);
 const cfg=fs.readFileSync(path.join(root,'js/config.js'),'utf8');
-if(!/APP_VERSION='5\.30\.[1-9]'/.test(cfg))fail('APP_VERSION não é compatível com 5.30.1+.'); else ok('APP_VERSION compatível com a Fase 1');
+const appVersionMatch=cfg.match(/APP_VERSION='(\d+)\.(\d+)\.(\d+)'/);const cv=appVersionMatch?appVersionMatch.slice(1).map(Number):[];const appPost5301=cv.length===3&&(cv[0]>5||(cv[0]===5&&(cv[1]>30||(cv[1]===30&&cv[2]>=1))));if(!appPost5301)fail('APP_VERSION não é compatível com 5.30.1+.'); else ok('APP_VERSION compatível com a Fase 1');
 finish();
 function finish(){
   if(errors.length){console.error('\nFalhas:');for(const e of errors)console.error('✗ '+e);process.exit(1);}

@@ -25,19 +25,20 @@ function load(file) {
   'data/zagalhta-spells.js',
   'data/ryoko-spells.js',
   'data/cultivator-homebrew-spells.js',
+  'data/homebrew-sage-spells.js',
   'data/export/foundry-v13-overrides.js',
   'js/exporters/registry.js',
   'js/exporters/foundry-v13.js'
 ].forEach(load);
 
 const EXPECTED = Object.freeze({
-  total: 1171,
+  total: 1185,
   exportable: 1170,
   ready: 1168,
   reviewRequired: 2,
-  blocked: 1,
+  blocked: 15,
   reviewIds: new Set(['lyre-divine-frost', 'lyre-tamamos-arrowfall']),
-  blockedIds: new Set(['spellblade-sanctified-charge'])
+  blockedIds: new Set(['spellblade-sanctified-charge','sage-fire-lance','sage-ice-lance','sage-lightning','sage-freezing-blast','sage-stone-column','sage-spiritual-attack','sage-terrain-volcano','sage-terrain-deluge','sage-terrain-hurricane','sage-fire-balls','sage-fire-barrier','sage-lightning-storm','sage-ancient-spirits','sage-earth-fury'])
 });
 
 const catalogs = global.GRIMORIO_REGISTRY.getSpellCatalogs();
