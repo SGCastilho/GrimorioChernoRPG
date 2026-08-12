@@ -1,3 +1,16 @@
+## 5.39.0
+
+### Navegação — Deep Links
+- Implementada infraestrutura `js/deep-links.js` para URLs canônicas e compartilháveis.
+- Links nativos adicionados a classes, subclasses, raças, subraças, magias e equipamentos.
+- Suporte a Ctrl/Cmd+clique, clique do meio, menu de contexto e abertura em nova guia.
+- Subclasses: `#/class/<classe>/subclass/<subclasse>`.
+- Subraças: `#/race/<raça>/subrace/<subraça>`.
+- Equipamentos: `#/equipment/<item>`, com expansão automática do item-alvo.
+- Adicionada ação de copiar link direto e títulos contextuais para as guias do navegador.
+- Busca Ctrl+K convertida para resultados baseados em links reais, incluindo Raças e Subraças.
+- Navegação por hash preserva recarga, Voltar e Avançar sem servidor de rotas.
+
 ## 5.38.0
 
 ### Homebrew — O Sábio

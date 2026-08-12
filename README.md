@@ -1,4 +1,16 @@
-# Grimório D&D 5e PT-BR — versão 5.38.0
+# Grimório D&D 5e PT-BR — versão 5.39.0
+
+## 5.39.0 — Navegação profunda e links nativos
+
+- Classes, subclasses, raças, subraças, magias e equipamentos passam a possuir **URLs profundas próprias** usando rotas por hash.
+- Cards e resultados principais foram convertidos em links HTML reais, habilitando **Ctrl+clique**, **Cmd+clique**, clique do meio e **Abrir link em nova guia** pelo menu do navegador.
+- Rotas de subclasses usam o formato `#/class/<classe>/subclass/<subclasse>` e subraças usam `#/race/<raça>/subrace/<subraça>`.
+- Equipamentos podem ser abertos diretamente por `#/equipment/<item>`, mantendo o item expandido e destacado no catálogo.
+- Recarregar a página preserva o conteúdo aberto; Voltar/Avançar do navegador seguem o histórico de hashes.
+- Classes, subclasses, raças/subraças, magias e equipamentos possuem ação **Copiar link** para compartilhamento direto.
+- Títulos das guias do navegador passam a refletir o conteúdo aberto.
+- A busca global `Ctrl+K` agora devolve links reais para classes, subclasses, **raças, subraças, magias e equipamentos**; seus resultados também podem ser abertos em outra guia.
+- Rotas antigas simples continuam aceitas para preservar favoritos e links existentes.
 
 ## 5.38.0 — Homebrew: O Sábio
 

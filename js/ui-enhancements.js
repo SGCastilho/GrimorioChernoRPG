@@ -238,15 +238,21 @@ renderNav = function() {
   const nav = document.getElementById('navContent');
   const activeSubclass = route.view === 'subclass' ? getSubclass(route.id) : null;
   const activeClassId = route.view === 'class' ? route.id : activeSubclass?.classId;
-  let html = '<div class="nav-section"><div class="nav-title">Início</div><a class="nav-item ' + (route.view === 'home' ? 'active' : '') + '" onclick="navigate(\'home\')" style="cursor:pointer"><svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg><span class="nav-label">Painel</span></a><a class="nav-item ' + (route.view === 'ability-planner' ? 'active' : '') + '" onclick="navigate(\'ability-planner\')" style="cursor:pointer"><svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 8h8M8 12h8M8 16h8"/><path d="M10 6v4M14 10v4M11 14v4"/></svg><span class="nav-label">Planejador de Atributos</span></a><a class="nav-item ' + ((route.view === 'races' || route.view === 'race') ? 'active' : '') + '" onclick="navigate(\'races\')" style="cursor:pointer"><svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19V8l7-4 7 4v11"/><path d="M8 10h8M8 14h8M9 19v-3h6v3"/></svg><span class="nav-label">Raças e Subraças</span></a><a class="nav-item ' + (route.view === 'equipment' ? 'active' : '') + '" onclick="navigate(\'equipment\')" style="cursor:pointer"><svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3l4 4-4 4-4-4zM13 5h8M17 5v14M13 19h8"/><path d="M4 16l5-5 4 4-5 5z"/></svg><span class="nav-label">Equipamentos</span></a></div>';
+  const navA=(view,id,label,iconHtml,active=false,style='',extra={})=>'<a href="'+attr(routeHref(view,id,extra))+'" data-grimorio-route class="nav-item '+(active?'active':'')+'" style="'+style+'">'+iconHtml+'<span class="nav-label">'+label+'</span></a>';
+  let html = '<div class="nav-section"><div class="nav-title">Início</div>'
+    +navA('home',null,'Painel','<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg>',route.view==='home')
+    +navA('ability-planner',null,'Planejador de Atributos','<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 8h8M8 12h8M8 16h8"/><path d="M10 6v4M14 10v4M11 14v4"/></svg>',route.view==='ability-planner')
+    +navA('races',null,'Raças e Subraças','<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19V8l7-4 7 4v11"/><path d="M8 10h8M8 14h8M9 19v-3h6v3"/></svg>',route.view==='races'||route.view==='race')
+    +navA('equipment',null,'Equipamentos','<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3l4 4-4 4-4-4zM13 5h8M17 5v14M13 19h8"/><path d="M4 16l5-5 4 4-5 5z"/></svg>',route.view==='equipment')
+    +'</div>';
   html += '<div class="nav-section"><div class="nav-title">Classes <span class="count">' + allClasses().length + '</span></div>';
 
   allClasses().forEach(c => {
     const active = activeClassId === c.id;
-    html += '<a class="nav-item ' + (route.view === 'class' && route.id === c.id ? 'active' : '') + '" style="cursor:pointer;' + (active ? 'color:' + attr(c.color) : '') + '" onclick="navigate(\'class\',\'' + attr(c.id) + '\')"><span class="nav-sigil" style="color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</span><span class="nav-label">' + esc(c.name) + '</span><span class="nav-subcount">' + subclassesOf(c.id).length + '</span></a>';
+    html += '<a href="'+attr(routeHref('class',c.id))+'" data-grimorio-route class="nav-item ' + (route.view === 'class' && route.id === c.id ? 'active' : '') + '" style="' + (active ? 'color:' + attr(c.color) : '') + '"><span class="nav-sigil" style="color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</span><span class="nav-label">' + esc(c.name) + '</span><span class="nav-subcount">' + subclassesOf(c.id).length + '</span></a>';
     if (active) {
       subclassesOf(c.id).forEach(s => {
-        html += '<a class="nav-item sub ' + (route.view === 'subclass' && route.id === s.id ? 'active' : '') + '" style="cursor:pointer" onclick="navigate(\'subclass\',\'' + attr(s.id) + '\')"><span class="nav-sigil" style="color:' + attr(c.color) + '"></span><span class="nav-label">' + esc(s.name) + '</span></a>';
+        html += '<a href="'+attr(routeHref('subclass',s.id,{classId:c.id}))+'" data-grimorio-route class="nav-item sub ' + (route.view === 'subclass' && route.id === s.id ? 'active' : '') + '"><span class="nav-sigil" style="color:' + attr(c.color) + '"></span><span class="nav-label">' + esc(s.name) + '</span></a>';
       });
     }
   });
@@ -255,19 +261,22 @@ renderNav = function() {
   if (pendingParents.length) {
     html += '</div><div class="nav-section"><div class="nav-title">Subclasses sem classe-base <span class="count">' + pendingParents.length + '</span></div>';
     pendingParents.forEach(s => {
-      html += '<a class="nav-item sub ' + (route.view === 'subclass' && route.id === s.id ? 'active' : '') + '" style="cursor:pointer" onclick="navigate(\'subclass\',\'' + attr(s.id) + '\')"><span class="nav-sigil" style="color:#9d465b">' + sigil('book') + '</span><span class="nav-label">' + esc((s.parentClassName || s.classId) + ' · ' + s.name) + '</span></a>';
+      html += '<a href="'+attr(routeHref('subclass',s.id,{classId:s.classId}))+'" data-grimorio-route class="nav-item sub ' + (route.view === 'subclass' && route.id === s.id ? 'active' : '') + '"><span class="nav-sigil" style="color:#9d465b">' + sigil('book') + '</span><span class="nav-label">' + esc((s.parentClassName || s.classId) + ' · ' + s.name) + '</span></a>';
     });
   }
 
-  html += '</div><div class="nav-section"><div class="nav-title">Magias <span class="count">' + allSpells().length + '</span></div><a class="nav-item ' + (route.view === 'spells' ? 'active' : '') + '" style="cursor:pointer" onclick="navigate(\'spells\')"><svg class="nav-sigil" style="color:var(--arcane)" viewBox="0 0 32 32">' + SIGILS.spell + '</svg><span class="nav-label">Catálogo de magias</span></a><a class="nav-item ' + (route.view === 'about' ? 'active' : '') + '" style="cursor:pointer" onclick="navigate(\'about\')"><svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg><span class="nav-label">Sobre e licença</span></a></div>';
+  html += '</div><div class="nav-section"><div class="nav-title">Magias <span class="count">' + allSpells().length + '</span></div>'
+    +navA('spells',null,'Catálogo de magias','<svg class="nav-sigil" style="color:var(--arcane)" viewBox="0 0 32 32">' + SIGILS.spell + '</svg>',route.view==='spells'||route.view==='spell')
+    +navA('about',null,'Sobre e licença','<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg>',route.view==='about')
+    +'</div>';
   nav.innerHTML = html;
 };
 
 classCard = function(c) {
   const subs = subclassesOf(c.id);
   const preview = subs.slice(0, 2);
-  const cover = typeof classCoverAttrs === 'function' ? classCoverAttrs(c) : {className:'',style:''};
-  return '<article class="card class-card' + cover.className + '" style="--card-color:' + attr(c.color) + ';' + cover.style + '" onclick="navigate(\'class\',\'' + attr(c.id) + '\')" role="button" tabindex="0">' + cover.media + '<div class="card-top"><div class="card-sigil" style="--sigil-bg:' + attr(c.color) + '22;--sigil-color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</div><div><h3>' + esc(c.name) + '</h3><div class="meta">' + esc(c.hitDie || '—') + ' · ' + esc(c.ability || '') + '</div></div></div><p>' + esc(cleanExcerpt(c.desc, 132)) + '</p><div class="class-card-footer"><div class="tag-row">' + preview.map(s => '<span class="tag">' + esc(s.name) + '</span>').join('') + (subs.length > 2 ? '<span class="tag tag-more">+' + (subs.length - 2) + '</span>' : '') + '</div><span class="subclass-count">' + subs.length + ' ' + (subs.length === 1 ? 'subclasse' : 'subclasses') + '</span></div></article>';
+  const cover = typeof classCoverAttrs === 'function' ? classCoverAttrs(c) : {className:'',style:'',media:''};
+  return '<a href="'+attr(routeHref('class',c.id))+'" data-grimorio-route class="card class-card' + cover.className + '" style="--card-color:' + attr(c.color) + ';' + cover.style + '">' + (cover.media||'') + '<div class="card-top"><div class="card-sigil" style="--sigil-bg:' + attr(c.color) + '22;--sigil-color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</div><div><h3>' + esc(c.name) + '</h3><div class="meta">' + esc(c.hitDie || '—') + ' · ' + esc(c.ability || '') + '</div></div></div><p>' + esc(cleanExcerpt(c.desc, 132)) + '</p><div class="class-card-footer"><div class="tag-row">' + preview.map(s => '<span class="tag">' + esc(s.name) + '</span>').join('') + (subs.length > 2 ? '<span class="tag tag-more">+' + (subs.length - 2) + '</span>' : '') + '</div><span class="subclass-count">' + subs.length + ' ' + (subs.length === 1 ? 'subclasse' : 'subclasses') + '</span></div></a>';
 };
 
 function renderReferences(c, refs) {
@@ -303,7 +312,7 @@ viewClass = function(id) {
   if (features) toc.push({ id: 'caracteristicas', label: 'Características' });
 
   const subclassIntro = (c.references || []).find(x => x.kind === 'subclassIntro');
-  const subgrid = subs.length ? '<section class="class-section anchor-section" id="subclasses"><div class="section-heading"><div><h2 class="page-title small-title">Subclasses</h2><p class="section-help">' + subs.length + ' opções disponíveis para esta classe.</p></div></div>' + (subclassIntro ? '<div class="content-panel subclass-group-intro"><div class="panel-head"><h3>' + esc(subclassIntro.title) + '</h3>' + sourceBadge(subclassIntro.page) + '</div><div class="prose">' + formatRichText(subclassIntro.text) + '</div></div>' : '') + '<div class="subclass-card-grid">' + subs.map(s => '<article class="subclass-card" style="--card-color:' + attr(c.color) + '" onclick="navigate(\'subclass\',\'' + attr(s.id) + '\')"><div class="subclass-card-top"><span class="mini-sigil" style="color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</span><div><h3>' + esc(s.name) + '</h3>' + sourceBadge(s.sourcePage) + '</div></div><p>' + esc(cleanExcerpt(s.desc, 180)) + '</p><span class="read-link">Consultar subclasse →</span></article>').join('') + '</div></section>' : '';
+  const subgrid = subs.length ? '<section class="class-section anchor-section" id="subclasses"><div class="section-heading"><div><h2 class="page-title small-title">Subclasses</h2><p class="section-help">' + subs.length + ' opções disponíveis para esta classe.</p></div></div>' + (subclassIntro ? '<div class="content-panel subclass-group-intro"><div class="panel-head"><h3>' + esc(subclassIntro.title) + '</h3>' + sourceBadge(subclassIntro.page) + '</div><div class="prose">' + formatRichText(subclassIntro.text) + '</div></div>' : '') + '<div class="subclass-card-grid">' + subs.map(s => '<a href="'+attr(routeHref('subclass',s.id,{classId:c.id}))+'" data-grimorio-route class="subclass-card" style="--card-color:' + attr(c.color) + '"><div class="subclass-card-top"><span class="mini-sigil" style="color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</span><div><h3>' + esc(s.name) + '</h3>' + sourceBadge(s.sourcePage) + '</div></div><p>' + esc(cleanExcerpt(s.desc, 180)) + '</p><span class="read-link">Consultar subclasse →</span></a>').join('') + '</div></section>' : '';
   if (subgrid) toc.push({ id: 'subclasses', label: 'Subclasses' });
 
   const refs = (c.references || []).filter(x => x.kind !== 'subclassIntro');
@@ -312,7 +321,7 @@ viewClass = function(id) {
 
   const topStats = '<div class="stat-grid class-stat-grid"><div class="stat-cell"><div class="k">Dado de vida</div><div class="v">' + esc(c.hitDie || '—') + '</div></div><div class="stat-cell"><div class="k">Habilidade principal</div><div class="v">' + esc(c.ability || '—') + '</div></div><div class="stat-cell"><div class="k">Resistências</div><div class="v">' + esc(c.saves || '—') + '</div></div><div class="stat-cell"><div class="k">Conteúdo</div><div class="v">' + c.features.length + ' características · ' + subs.length + ' subclasses</div></div></div>';
 
-  return '<div class="breadcrumb"><a onclick="navigate(\'classes\')" style="cursor:pointer">Classes</a><span>/</span><span>' + esc(c.name) + '</span></div>' +
+  return '<div class="breadcrumb">' + routeAnchor('classes',null,'Classes') + '<span>/</span><span>' + esc(c.name) + '</span></div>' +
     '<header class="class-hero"><div class="detail-header"><div class="detail-sigil" style="--sigil-bg:' + attr(c.color) + '22;--sigil-color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</div><div><div class="eyebrow" style="color:' + attr(c.color) + '"><span class="dot"></span>Classe</div><h1 class="page-title" style="margin-bottom:0">' + esc(c.name) + '</h1></div>' + foundryClassHeaderActions('class', id, subs.length) + '</div>' + classSourceLine(c) + topStats + '</header>' +
     '<div class="reader-layout">' + classToc(toc) + '<div class="reader-column">' + overview + progressionCard(c) + creation + basics + features + subgrid + referenceHtml + '</div></div>';
 };
@@ -326,7 +335,7 @@ viewSubclass = function(id) {
   const levelSummary = levels.length ? '<div class="level-strip"><span>Características nos níveis</span>' + levels.map(level => '<b>' + esc(level) + '</b>').join('') + '</div>' : '';
   const features = (s.features || []).length ? '<section class="class-section"><div class="section-heading"><div><h2 class="page-title small-title">Características da subclasse</h2><p class="section-help">' + s.features.length + ' características em ordem de progressão.</p></div>' + detailGroupTools(groupId) + '</div>' + renderFeatureSections(s.features, c?.color || '#c9a55c', groupId) + '</section>' : '';
 
-  return '<div class="breadcrumb"><a onclick="navigate(\'classes\')" style="cursor:pointer">Classes</a><span>/</span><a onclick="navigate(\'class\',\'' + attr(c?.id || '') + '\')" style="cursor:pointer">' + esc(c?.name || '?') + '</a><span>/</span><span>' + esc(s.name) + '</span></div>' +
+  return '<div class="breadcrumb">' + routeAnchor('classes',null,'Classes') + '<span>/</span>' + routeAnchor('class',c?.id||'',esc(c?.name||'?')) + '<span>/</span><span>' + esc(s.name) + '</span></div>' +
     '<header class="class-hero subclass-hero"><div class="detail-header"><div class="detail-sigil" style="--sigil-bg:' + attr(c?.color || '#c9a55c') + '22;--sigil-color:' + attr(c?.color || '#c9a55c') + '">' + sigil(c?.sigilKey || 'book') + '</div><div><div class="eyebrow" style="color:' + attr(c?.color || '#c9a55c') + '"><span class="dot"></span>Subclasse de ' + esc(c?.name || '?') + '</div><h1 class="page-title" style="margin-bottom:0">' + esc(s.name) + '</h1></div>' + foundryClassHeaderActions('subclass', id) + '</div><div class="source-line class-source-line"><span>Livro do Jogador</span>' + (s.sourcePage ? '<span>p. ' + esc(s.sourcePage) + '</span>' : '') + '</div>' + levelSummary + '</header>' +
     '<div class="content-panel subclass-intro" style="--card-color:' + attr(c?.color || '#c9a55c') + '"><div class="prose lead-prose">' + formatRichText(s.desc) + '</div></div>' + features;
 };

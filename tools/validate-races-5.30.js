@@ -78,7 +78,7 @@ if(!index.includes('data/lyre-races.js')||!index.includes('js/race-browser.js'))
 if(index.indexOf('data/lyre-races.js')>index.indexOf('js/race-browser.js')||index.indexOf('js/race-browser.js')>index.indexOf('js/app.js'))fail('Ordem de carregamento racial incorreta.'); else ok('Ordem de carregamento correta');
 for(const [name,text] of [['app.js',app],['ui-enhancements.js',ui]]){
   if(!text.includes('Raças e subraças')&&!text.includes('Raças e Subraças'))fail(`${name} não exibe Raças e Subraças no menu.`);
-  if(!text.includes("navigate(\\'races\\')")&&!text.includes("navigate('races')"))fail(`${name} não possui rota races.`);
+  if(!text.includes("navigate(\\'races\\')")&&!text.includes("navigate('races')")&&!text.includes("routeHref('races'")&&!text.includes("item('races'")&&!text.includes("navA('races'"))fail(`${name} não possui rota races.`);
 }
 if(!app.includes("route.view==='races'")||!app.includes("route.view==='race'"))fail('render() não trata as rotas races/race.'); else ok('Rotas races/race tratadas');
 

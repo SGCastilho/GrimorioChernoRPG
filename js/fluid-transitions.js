@@ -10,9 +10,9 @@
 
   function reduced(){return !!reducedMotion.matches}
   function main(){return document.getElementById('mainContent')}
-  function routeKey(view,id){return String(view||'home')+'::'+String(id||'')}
+  function routeKey(view,id,extra){const suffix=extra?.subraceId?'::subrace::'+String(extra.subraceId):extra?.parentId?'::parent::'+String(extra.parentId):'';return String(view||'home')+'::'+String(id||'')+suffix}
   function currentRouteKey(){
-    try{return routeKey(route?.view,route?.id)}catch(_){return ''}
+    try{return routeKey(route?.view,route?.id,route)}catch(_){return ''}
   }
 
   function restartClass(element,className){
@@ -46,20 +46,20 @@
   function installNavigationTransition(){
     if(typeof navigate!=='function')return;
     const baseNavigate=navigate;
-    navigate=function(view,id){
-      const targetKey=routeKey(view,id);
+    navigate=function(view,id,extra){
+      const targetKey=routeKey(view,id,extra);
       const same=currentRouteKey()===targetKey;
       if(reduced()||same){
         window.clearTimeout(navigationTimer);
         pendingNavigation=null;
-        baseNavigate(view,id);
+        baseNavigate(view,id,extra);
         if(same)window.requestAnimationFrame(animateLocalUpdate);
         return;
       }
 
       const content=main();
-      if(!content){baseNavigate(view,id);return}
-      pendingNavigation={view,id};
+      if(!content){baseNavigate(view,id,extra);return}
+      pendingNavigation={view,id,extra};
       window.clearTimeout(navigationTimer);
       content.classList.remove('ui-page-entering');
       content.classList.add('ui-page-leaving');
@@ -67,7 +67,7 @@
         const next=pendingNavigation;
         pendingNavigation=null;
         if(!next)return;
-        baseNavigate(next.view,next.id);
+        baseNavigate(next.view,next.id,next.extra);
         window.requestAnimationFrame(()=>window.requestAnimationFrame(finishPageEntry));
       },105);
     };

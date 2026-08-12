@@ -37,7 +37,7 @@ ok(coverCss.includes('--class-cover-blur'),'Blur configurável ausente');
 ok(app.includes('function classCoverAttrs'),'Helper de capa ausente no app');
 ok(app.includes('+cover.media+'),'Card base não injeta a mídia da capa');
 ok(ui.includes("class-card' + cover.className"),'Cards aprimorados não aplicam capa');
-ok(ui.includes('+ cover.media +'),'Card aprimorado não injeta a mídia da capa');
+ok(ui.includes('+ cover.media +')||ui.includes("(cover.media||'')"),'Card aprimorado não injeta a mídia da capa');
 ok(coverRuntime.includes('function loaded'),'Runtime não trata carregamento da imagem');
 ok(coverRuntime.includes('function failed'),'Runtime não trata falha/fallback da imagem');
 ok(coverData.includes("'spiritual-emissary'"),'Emissário Espiritual sem capa cadastrada');

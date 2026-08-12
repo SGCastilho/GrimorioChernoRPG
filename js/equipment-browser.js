@@ -182,17 +182,7 @@
   function openItem(id) {
     const item = allItems().find(entry => entry.id === id);
     if (!item) return;
-    state.q = item.name;
-    state.type = 'all'; state.category = 'all'; state.source = 'all';
-    if (typeof global.navigate === 'function') global.navigate('equipment');
-    setTimeout(() => {
-      const safeId = String(id).replace(/"/g, '');
-      const row = document.querySelector('[data-item-id="' + safeId + '"]');
-      if (row) {
-        row.open = true;
-        row.scrollIntoView({ behavior:'smooth', block:'center' });
-      }
-    }, 0);
+    if (typeof global.navigate === 'function') global.navigate('equipment', id);
   }
 
   function itemDetails(item) {
@@ -207,7 +197,8 @@
     const tags = item.tags?.length ? '<div class="equipment-detail-note"><strong>Características:</strong> '+item.tags.map(esc).join(' · ')+'</div>' : '';
     const manufacturing = item.manufacturing ? '<div class="equipment-manufacturing"><strong>Fabricação</strong><div><span><b>Materiais</b>'+esc(item.manufacturing.materialCost||'—')+'</span><span><b>Ferramenta</b>'+esc(item.manufacturing.tool||'—')+'</span><span><b>CD</b>'+esc(item.manufacturing.dc||'—')+'</span><span><b>Tempo</b>'+esc(item.manufacturing.time||'—')+'</span></div></div>' : '';
     const sourceNote = '<div class="equipment-detail-source">'+esc(source)+' · Fonte p. '+esc(item.sourcePage)+'</div>';
-    return '<div class="equipment-detail-body">'+description+armorInfo+shieldInfo+requirement+ammoInfo+tags+manufacturing+special+editorial+sourceNote+'</div>';
+    const routeActions = '<div class="equipment-route-actions"><a class="action-btn" href="'+attr(global.routeHref?global.routeHref('equipment',item.id):('#/equipment/'+encodeURIComponent(item.id)))+'" data-grimorio-route>Abrir link do equipamento ↗</a>'+(typeof global.shareLinkButton==='function'?global.shareLinkButton('equipment',item.id):'')+'</div>';
+    return '<div class="equipment-detail-body">'+description+armorInfo+shieldInfo+requirement+ammoInfo+tags+manufacturing+special+editorial+sourceNote+routeActions+'</div>';
   }
 
   function itemIcon(item) {
@@ -217,9 +208,10 @@
     if (item.type === 'ammunition') return '◉';
     return '⬡';
   }
-  function itemRow(item) {
-    return '<details class="equipment-item" data-item-id="'+attr(item.id)+'"><summary class="equipment-row">'
-      +'<div class="equipment-name-cell"><span class="equipment-type-icon '+attr(item.type)+'">'+itemIcon(item)+'</span><div><strong>'+esc(item.name)+'</strong><span>'+esc(categoryLabel(item))+' · '+esc(sourceLabel(item))+'</span></div></div>'
+  function itemRow(item,targetId=null) {
+    const href=global.routeHref?global.routeHref('equipment',item.id):('#/equipment/'+encodeURIComponent(item.id));
+    return '<details class="equipment-item" data-item-id="'+attr(item.id)+'" '+(targetId===item.id?'open data-route-target="true"':'')+'><summary class="equipment-row">'
+      +'<div class="equipment-name-cell"><span class="equipment-type-icon '+attr(item.type)+'">'+itemIcon(item)+'</span><div><strong><a href="'+attr(href)+'" data-grimorio-route onclick="event.stopPropagation()">'+esc(item.name)+'</a></strong><span>'+esc(categoryLabel(item))+' · '+esc(sourceLabel(item))+'</span><a class="equipment-deep-link" href="'+attr(href)+'" data-grimorio-route onclick="event.stopPropagation()">Abrir em link direto ↗</a></div></div>'
       +'<div class="equipment-metric"><small>'+metricTitle(item)+'</small><strong>'+esc(metricLabel(item))+'</strong></div>'
       +'<div class="equipment-price"><small>Preço</small><strong>'+esc(item.price || '—')+'</strong></div>'
       +'<div class="equipment-weight"><small>Peso</small><strong>'+esc(item.weight || '—')+'</strong></div>'
@@ -228,13 +220,15 @@
       +'</summary>'+itemDetails(item)+'</details>';
   }
 
-  function resultsHtml() {
-    const list = filteredItems();
+  function resultsHtml(targetId=null) {
+    let list = filteredItems();
     const all = allItems();
+    const target = targetId ? all.find(item=>item.id===targetId) : null;
+    if(target && !list.some(item=>item.id===target.id)) list=[target,...list];
     if (!list.length) return '<div class="equipment-results-line"><span><b>0</b> de '+all.length+' equipamentos</span></div><div class="equipment-empty"><b>Nenhum equipamento encontrado</b><span>Ajuste a busca ou os filtros.</span></div>';
     return '<div class="equipment-results-line"><span><b>'+list.length+'</b> de '+all.length+' equipamentos</span><span>Passe o mouse ou use Tab sobre uma propriedade para ver sua regra.</span></div>'
       +'<div class="equipment-table-head"><span>Equipamento</span><span>Dano / CA / Uso</span><span>Preço</span><span>Peso</span><span>Propriedades</span><span></span></div>'
-      +'<div class="equipment-list">'+list.map(itemRow).join('')+'</div>';
+      +'<div class="equipment-list">'+list.map(item=>itemRow(item,targetId)).join('')+'</div>';
   }
 
   function glossaryHtml() {
@@ -292,8 +286,9 @@
     }).join('');
   }
 
-  function render() {
+  function render(targetId=null) {
     const items = allItems();
+    if(targetId)setTimeout(()=>{const safeId=String(targetId).replace(/"/g,'');const row=document.querySelector('[data-item-id="'+safeId+'"]');if(row){row.open=true;row.scrollIntoView({behavior:'smooth',block:'center'});}},0);
     const weapons = items.filter(x=>x.type==='weapon').length;
     const armors = items.filter(x=>x.type==='armor').length;
     const shields = items.filter(x=>x.type==='shield').length;
@@ -307,7 +302,7 @@
       +'<label class="equipment-select"><span>Categoria</span><select id="equipmentCategoryFilter" onchange="GRIMORIO_EQUIPMENT_BROWSER.setCategory(this.value)">'+categoryOptions()+'</select></label>'
       +'<label class="equipment-select"><span>Fonte</span><select id="equipmentSourceFilter" onchange="GRIMORIO_EQUIPMENT_BROWSER.setSource(this.value)"><option value="all">Todas as fontes</option>'+sourceOptions()+'</select></label>'
       +'<button class="action-btn equipment-clear" type="button" onclick="GRIMORIO_EQUIPMENT_BROWSER.clearFilters()">Limpar filtros</button></div>'
-      +'<div id="equipmentResults">'+resultsHtml()+'</div></section>'
+      +'<div id="equipmentResults">'+resultsHtml(targetId)+'</div></section>'
       +glossaryHtml()+sourceRulesHtml()+'</div>';
   }
 

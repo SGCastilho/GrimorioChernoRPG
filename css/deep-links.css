@@ -1,0 +1,22 @@
+/* Grimório v5.39 — feedback visual para links profundos. */
+[data-grimorio-route]{-webkit-tap-highlight-color:transparent}
+.class-card[data-grimorio-route],.race-card[data-grimorio-route],.subclass-card[data-grimorio-route]{color:inherit;text-decoration:none}
+.class-card[data-grimorio-route]:focus-visible,.race-card[data-grimorio-route]:focus-visible,.subclass-card[data-grimorio-route]:focus-visible,.subrace-card[data-grimorio-route]:focus-visible,.spell-primary[data-grimorio-route]:focus-visible,.equipment-deep-link:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.spell-primary[data-grimorio-route],.spell-route-cell[data-grimorio-route]{display:block;color:inherit;text-decoration:none}
+.spell-primary[data-grimorio-route]:hover .name{color:var(--gold)}
+.spell-route-cell[data-grimorio-route]:hover{color:var(--gold)}
+.deep-link-button{display:inline-flex;align-items:center;justify-content:center;gap:.36rem;white-space:nowrap}
+.deep-link-button svg{width:13px;height:13px}
+.subrace-card{position:relative}
+.subrace-card .subrace-route-hint{display:inline-flex;align-items:center;gap:.25rem;margin-top:.55rem;font-family:var(--mono);font-size:.53rem;color:var(--gold);opacity:.78}
+.subrace-card:hover .subrace-route-hint{opacity:1}
+.equipment-name-cell strong a{color:inherit;text-decoration:none}
+.equipment-name-cell strong a:hover{color:var(--gold)}
+.equipment-deep-link{display:inline-flex;align-items:center;gap:.25rem;color:var(--gold);font-size:.62rem;font-family:var(--mono);margin-top:.15rem;width:max-content}
+.equipment-deep-link:hover{text-decoration:underline}
+.equipment-route-actions{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:.75rem}
+.route-copy-mini{border:1px solid var(--border);background:var(--bg-elev);color:var(--text-dim);border-radius:7px;padding:.42rem .58rem;font-size:.68rem}
+.route-copy-mini:hover{border-color:var(--gold);color:var(--gold)}
+.palette-item[data-grimorio-route]{text-decoration:none;color:inherit}
+.breadcrumb a[data-grimorio-route]{cursor:pointer}
+@media(max-width:620px){.deep-link-button .deep-link-label{display:none}.deep-link-button{padding:.5rem .62rem}.equipment-route-actions{width:100%}}

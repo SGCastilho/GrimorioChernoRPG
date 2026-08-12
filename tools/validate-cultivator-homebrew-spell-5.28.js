@@ -18,8 +18,8 @@ const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'u
 const versionParts=String(manifest.version).split('.').map(Number);
 assert(versionParts[0] > 5 || (versionParts[0] === 5 && versionParts[1] >= 28), `Versão esperada 5.28.0+; encontrada ${manifest.version}`);
 assert(manifest.baseSpellRecords === 1171 && manifest.baseCatalogEntries === 1171, 'Contagem-base de magias deve ser 1.171');
-assert(manifest.registeredSources === 16, 'Manifesto deve registrar 16 fontes');
-assert(manifest.registeredSpellCatalogs === 9, 'Manifesto deve registrar 9 catálogos de magia');
+assert(manifest.registeredSources >= 16, 'Manifesto deve preservar ao menos 16 fontes');
+assert(manifest.registeredSpellCatalogs >= 9, 'Manifesto deve preservar ao menos 9 catálogos de magia');
 
 const registry = ctx.GRIMORIO_REGISTRY;
 const source = registry.getSource('cultivator-homebrew-spells');

@@ -47,10 +47,10 @@ browser.clearFilters();browser.setCategory('weapon-marcial-distancia');assert(br
 const app=fs.readFileSync(path.join(root,'js/app.js'),'utf8');
 const ui=fs.readFileSync(path.join(root,'js/ui-enhancements.js'),'utf8');
 const index=fs.readFileSync(path.join(root,'index.html'),'utf8');
-assert(app.includes("navigate(\\'equipment\\')")&&app.includes("route.view==='equipment'"),'app.js contém navegação e rota Equipamentos');
-assert(ui.includes("navigate(\\'equipment\\')")&&ui.includes('Equipamentos'),'ui-enhancements mantém Equipamentos abaixo das ferramentas iniciais');
+assert((app.includes("navigate(\\'equipment\\')")||app.includes("routeHref('equipment'")||app.includes("routeHref(\'equipment\'"))&&app.includes("route.view==='equipment'"),'app.js contém navegação e rota Equipamentos');
+assert((ui.includes("navigate(\\'equipment\\')")||ui.includes("routeHref('equipment'")||ui.includes("navA('equipment'"))&&ui.includes('Equipamentos'),'ui-enhancements mantém Equipamentos abaixo das ferramentas iniciais');
 assert(index.includes('data/equipment/phb-2014-equipment.js')&&index.includes('js/equipment-browser.js'),'index carrega dados e navegador de equipamentos');
-assert(app.includes('palette-group-label">Equipamentos')&&app.includes('GRIMORIO_EQUIPMENT_BROWSER.openItem'),'Busca global Ctrl+K integra Equipamentos');
+assert(app.includes('palette-group-label">Equipamentos')&&(app.includes('GRIMORIO_EQUIPMENT_BROWSER.openItem')||app.includes("routeHref('equipment'")),'Busca global Ctrl+K integra Equipamentos');
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.json'),'utf8'));
 const cfg=fs.readFileSync(path.join(root,'js/config.js'),'utf8');
 {const vp=String(manifest.version||'').split('.').map(Number);const cm=cfg.match(/APP_VERSION='(\d+)\.(\d+)\.(\d+)'/);const valid=vp[0]>5||(vp[0]===5&&vp[1]>=31);assert(valid&&cm&&cm[1]===String(vp[0])&&cm[2]===String(vp[1])&&cm[3]===String(vp[2]),'Versão 5.31+ sincronizada');}

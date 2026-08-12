@@ -1,5 +1,5 @@
 {
-  "version": "5.38.0",
+  "version": "5.39.0",
   "classes": 27,
   "subclasses": 382,
   "classNames": [
@@ -60,8 +60,13 @@
     "Lutador de Rua": 1,
     "Sábio": 1
   },
-  "uiRevision": "Classe Sábio, Catalisador e magias homebrew — v5.38.0",
+  "uiRevision": "Navegação profunda e links nativos — v5.39.0",
   "improvements": [
+    "Navegação profunda adicionada a classes, subclasses, raças, subraças, magias e equipamentos, com URLs canônicas por hash e suporte nativo a nova guia.",
+    "Cards, sidebar, breadcrumbs e resultados Ctrl+K usam anchors HTML reais, preservando Ctrl/Cmd+clique, botão do meio e menu de contexto do navegador.",
+    "Rotas profundas sobrevivem a recarregamento e participam do histórico Voltar/Avançar; equipamentos e subraças restauram diretamente o alvo indicado pela URL.",
+    "Ações Copiar link e títulos contextuais de guia facilitam compartilhar conteúdos específicos do Grimório.",
+    "Busca Ctrl+K passa a incluir Raças e Subraças como resultados com deep links nativos.",
     "Homebrew — O Sábio integrado com classe Sábio, Doutrina Catalisador e progressão estruturada em 20 níveis baseada exclusivamente nos marcos explicitamente citados pelo PDF.",
     "Adicionados 6 truques exclusivos do Sábio, 3 Terrenos Arcanos e 5 Magias de Sábio da Maestria Elemental, totalizando 14 novas entradas no catálogo arcano.",
     "Terrenos e Magias de Sábio sem nível convencional permanecem identificados como recursos de classe, com novo filtro “Sem nível / recurso de classe” no catálogo de Magias.",
@@ -954,5 +959,17 @@
   "equipmentAmmunition": 6,
   "equipmentLyreNewProperties": 13,
   "equipmentLyreRulesSections": 2,
-  "equipmentLyreBodyArmors": 0
+  "equipmentLyreBodyArmors": 0,
+  "deepLinksIntegrated": true,
+  "deepLinkRoutes": [
+    "classes",
+    "subclasses",
+    "races",
+    "subraces",
+    "spells",
+    "equipment"
+  ],
+  "nativeNewTabSupport": true,
+  "copyDirectLink": true,
+  "browserHistoryNavigation": true
 }

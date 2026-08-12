@@ -82,7 +82,7 @@ assert(app.includes('spellLevelFilterKey'), 'Suporte de filtro especial de níve
 assert(app.includes('spellLevelLabel'), 'Suporte de rótulo de nível customizado ausente.');
 
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
-assert(manifest.version === '5.38.0', 'Manifest deve estar em 5.38.0.');
+assert(/^5\.(?:3[8-9]|[4-9]\d)\./.test(String(manifest.version||'')), 'Manifest deve estar em 5.38.0 ou versão posterior compatível.');
 assert(manifest.classes === 27, 'Manifest deve registrar 27 classes.');
 assert(manifest.subclasses === 382, 'Manifest deve registrar 382 subclasses.');
 assert(manifest.subclassCounts?.['Sábio'] === 1, 'Manifest deve registrar 1 subclasse de Sábio.');

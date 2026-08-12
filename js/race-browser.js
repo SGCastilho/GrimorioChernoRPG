@@ -73,7 +73,8 @@
   function setSearch(value){state.search=String(value||'').slice(0,80);save();applyCatalogFilters();}
   function setFilter(value){state.filter=value;save();updateFilterButtons();applyCatalogFilters();}
   function openRace(id){if(findRace(id)&&typeof window.navigate==='function')window.navigate('race',id);}
-  function selectSubrace(raceId,subraceId){const r=findRace(raceId);if(!r||!r.subraces.some(s=>s.id===subraceId))return;const rs=raceState(raceId);rs.subraceId=subraceId;setRaceState(raceId,rs);refresh();}
+  function rememberSubrace(raceId,subraceId){const r=findRace(raceId);if(!r||!r.subraces.some(s=>s.id===subraceId))return false;const rs=raceState(raceId);rs.subraceId=subraceId;setRaceState(raceId,rs);return true;}
+  function selectSubrace(raceId,subraceId){if(!rememberSubrace(raceId,subraceId))return;if(typeof window.navigate==='function')window.navigate('race',raceId,{subraceId});else refresh();}
   function toggleMixed(raceId){const r=findRace(raceId);if(!r)return;const rs=raceState(raceId);rs.mixed=!rs.mixed;if(!rs.mixed){rs.secondaryRaceId=null;rs.legacy=rs.legacy.filter(k=>k.startsWith(raceId+':legacy:'));}setRaceState(raceId,rs);refresh();}
   function setSecondary(raceId,secondaryId){const r=findRace(raceId);if(!r)return;const rs=raceState(raceId);rs.secondaryRaceId=races().some(x=>x.id===secondaryId&&x.id!==raceId)?secondaryId:null;rs.legacy=[];setRaceState(raceId,rs);refresh();}
   function legacyPool(race,rs){
@@ -94,7 +95,7 @@
     const r=findRace(raceId);if(!r)return;const rs=raceState(raceId),pool=legacyPool(r,rs);if(!pool.some(x=>x.key===key))return;
     const i=rs.legacy.indexOf(key);if(i>=0)rs.legacy.splice(i,1);else if(rs.legacy.length<2)rs.legacy.push(key);setRaceState(raceId,rs);refresh();
   }
-  function clearChoices(raceId){const r=findRace(raceId);if(!r)return;const rs=raceState(raceId);rs.legacy=[];rs.subraceId=r.subraces[0]?.id||null;rs.mixed=false;rs.secondaryRaceId=null;setRaceState(raceId,rs);refresh();}
+  function clearChoices(raceId){const r=findRace(raceId);if(!r)return;const rs=raceState(raceId);rs.legacy=[];rs.subraceId=r.subraces[0]?.id||null;rs.mixed=false;rs.secondaryRaceId=null;setRaceState(raceId,rs);if(typeof route!=='undefined'&&route.view==='race'&&route.id===raceId&&route.subraceId&&typeof window.navigate==='function')window.navigate('race',raceId);else refresh();}
 
   function traitText(t){return String((t&&t.description)|| (t&&t.summary)||'');}
   function isFullRace(race){return race&&race.textRevision==='full';}
@@ -122,7 +123,8 @@
       +'</div></div><div id="raceCatalogResults">'+catalogResultsInner()+'</div></section>';
   }
   function raceCard(r,hidden=false){
-    return '<button type="button" data-race-id="'+attr(r.id)+'" '+(hidden?'hidden style="display:none"':'')+' class="race-card" onclick="GRIMORIO_RACE_BROWSER.openRace(\''+attr(r.id)+'\')"><div class="race-card-top"><span class="race-card-rune">'+esc(r.name.slice(0,2).toUpperCase())+'</span><div><h3>'+esc(r.name)+'</h3><span>'+r.subraces.length+' subraça'+(r.subraces.length===1?'':'s')+' · '+r.legacyTraits.length+' opções de Legado</span></div></div><p>'+esc(r.summary)+'</p><div class="race-card-tags"><span>'+esc(r.meta.creatureTypes)+'</span><span>'+esc(r.meta.size)+'</span>'+(r.meta.planarOrigin&&r.meta.planarOrigin!=='—'?'<span>'+esc(r.meta.planarOrigin)+'</span>':'')+'</div><div class="race-card-foot"><span>Fonte p. '+r.sourcePage+'</span><b>Consultar →</b></div></button>';
+    const href=typeof window.routeHref==='function'?window.routeHref('race',r.id):('#/race/'+encodeURIComponent(r.id));
+    return '<a href="'+attr(href)+'" data-grimorio-route data-race-id="'+attr(r.id)+'" '+(hidden?'hidden style="display:none"':'')+' class="race-card"><div class="race-card-top"><span class="race-card-rune">'+esc(r.name.slice(0,2).toUpperCase())+'</span><div><h3>'+esc(r.name)+'</h3><span>'+r.subraces.length+' subraça'+(r.subraces.length===1?'':'s')+' · '+r.legacyTraits.length+' opções de Legado</span></div></div><p>'+esc(r.summary)+'</p><div class="race-card-tags"><span>'+esc(r.meta.creatureTypes)+'</span><span>'+esc(r.meta.size)+'</span>'+(r.meta.planarOrigin&&r.meta.planarOrigin!=='—'?'<span>'+esc(r.meta.planarOrigin)+'</span>':'')+'</div><div class="race-card-foot"><span>Fonte p. '+r.sourcePage+'</span><b>Consultar →</b></div></a>';
   }
   function traitCard(t,opts={}){
     const selected=!!opts.selected,disabled=!!opts.disabled,onclick=opts.onclick||'';
@@ -136,7 +138,8 @@
     return opts.selectable?'<button type="button" class="'+cls+'" '+(disabled?'disabled':'')+' onclick="'+onclick+'">'+body+'</button>':'<article class="'+cls+'">'+body+'</article>';
   }
   function subraceCard(race,s,selected){
-    return '<button type="button" class="subrace-card '+(selected?'selected':'')+'" onclick="GRIMORIO_RACE_BROWSER.selectSubrace(\''+attr(race.id)+'\',\''+attr(s.id)+'\')"><div class="subrace-card-head"><div><h4>'+esc(s.name)+'</h4><span>Fonte p. '+s.page+'</span></div><span class="subrace-radio">'+(selected?'●':'○')+'</span></div>'+(s.ability?'<div class="subrace-ability">'+esc(s.ability)+'</div>':'')+'<div class="subrace-trait-pills">'+s.traits.slice(0,4).map(t=>'<span>'+esc(t.name)+'</span>').join('')+(s.traits.length>4?'<span>+'+(s.traits.length-4)+' opções</span>':'')+'</div></button>';
+    const href=typeof window.routeHref==='function'?window.routeHref('race',race.id,{subraceId:s.id}):('#/race/'+encodeURIComponent(race.id)+'/subrace/'+encodeURIComponent(s.id));
+    return '<a href="'+attr(href)+'" data-grimorio-route data-race-id="'+attr(race.id)+'" data-subrace-id="'+attr(s.id)+'" class="subrace-card '+(selected?'selected':'')+'"><div class="subrace-card-head"><div><h4>'+esc(s.name)+'</h4><span>Fonte p. '+s.page+'</span></div><span class="subrace-radio">'+(selected?'●':'○')+'</span></div>'+(s.ability?'<div class="subrace-ability">'+esc(s.ability)+'</div>':'')+'<div class="subrace-trait-pills">'+s.traits.slice(0,4).map(t=>'<span>'+esc(t.name)+'</span>').join('')+(s.traits.length>4?'<span>+'+(s.traits.length-4)+' opções</span>':'')+'</div><span class="subrace-route-hint">Abrir subraça ↗</span></a>';
   }
   function selectedSubraceTraits(race,sub){
     if(!sub)return '';
@@ -162,9 +165,9 @@
     }
     return extra+'<div class="race-trait-grid">'+sub.traits.map(t=>traitCard(t)).join('')+'</div>';
   }
-  function renderRace(id){
+  function renderRace(id,forcedSubraceId=null){
     const race=findRace(id);if(!race)return '<div class="empty-state">Raça não encontrada.</div>';
-    const rs=raceState(id),sub=race.subraces.find(s=>s.id===rs.subraceId)||race.subraces[0],pool=legacyPool(race,rs),selected=pool.filter(x=>rs.legacy.includes(x.key));
+    const baseState=raceState(id),rs={...baseState,subraceId:race.subraces.some(s=>s.id===forcedSubraceId)?forcedSubraceId:baseState.subraceId},sub=race.subraces.find(s=>s.id===rs.subraceId)||race.subraces[0],pool=legacyPool(race,rs),selected=pool.filter(x=>rs.legacy.includes(x.key));
     const secondary=rs.secondaryRaceId?findRace(rs.secondaryRaceId):null;
     const full=isFullRace(race);
     const revisionBadge=full?'<span class="race-revision-badge full">✓ Texto integral revisado</span>':'<span class="race-revision-badge pending">Resumo mecânico — revisão integral pendente</span>';
@@ -172,12 +175,12 @@
     const subDescription=sub&&sub.description?'<div class="subrace-description"><strong>Descrição</strong><p>'+esc(sub.description)+'</p></div>':'';
     const subEditorial=sub&&sub.editorialNote?'<div class="subrace-editorial-note"><strong>Nota editorial</strong><p>'+esc(sub.editorialNote)+'</p></div>':'';
     const editorial=full?'Esta raça já passou pela revisão textual integral. As habilidades exibem, em português, o texto mecânico completo correspondente à fonte; os resumos curtos permanecem apenas como apoio de navegação.':'Esta raça ainda usa os resumos mecânicos da versão 5.30 enquanto aguarda revisão integral. Consulte a página indicada da fonte quando uma característica possuir condições, exceções ou escolhas internas extensas.';
-    return '<div class="race-detail '+(full?'full-text':'')+'"><div class="race-detail-actions"><button class="action-btn" onclick="navigate(\'races\')">← Todas as raças</button><div><button class="action-btn" onclick="navigate(\'ability-planner\')">Abrir Planejador de Atributos</button><button class="action-btn" onclick="GRIMORIO_RACE_BROWSER.clearChoices(\''+attr(race.id)+'\')">Limpar escolhas</button></div></div>'
+    return '<div class="race-detail '+(full?'full-text':'')+'"><div class="race-detail-actions"><a class="action-btn" href="'+attr(window.routeHref?window.routeHref('races'): '#/races')+'" data-grimorio-route>← Todas as raças</a><div>'+((typeof window.shareLinkButton==='function')?window.shareLinkButton('race',race.id,forcedSubraceId?{subraceId:forcedSubraceId}:{},forcedSubraceId?'Copiar link da subraça':'Copiar link da raça'):'')+'<a class="action-btn" href="'+attr(window.routeHref?window.routeHref('ability-planner'):'#/ability-planner')+'" data-grimorio-route>Abrir Planejador de Atributos</a><button class="action-btn" onclick="GRIMORIO_RACE_BROWSER.clearChoices(\''+attr(race.id)+'\')">Limpar escolhas</button></div></div>'
       +'<header class="race-detail-hero"><div class="race-detail-rune">'+esc(race.name.slice(0,2).toUpperCase())+'</div><div><div class="eyebrow"><span class="dot"></span>'+esc(race.source)+' · p. '+race.sourcePage+'</div><h1 class="page-title">'+esc(race.name)+'</h1><p class="lede">'+esc(race.summary)+'</p>'+revisionBadge+'</div><div class="race-choice-counter"><span>Traços de Legado</span><strong>'+selected.length+' / 2</strong><small>'+(selected.length===2?'Escolha completa':'Selecione '+(2-selected.length))+'</small></div></header>'
       +'<div class="race-meta-grid">'+stat('Tipos de criatura',race.meta.creatureTypes)+stat('Expectativa de vida',race.meta.lifeExpectancy)+stat('Alinhamento nacional',race.meta.nationalAlignment)+stat('Origem planar',race.meta.planarOrigin)+stat('Planetouched?',race.meta.planetouched)+stat('Tamanho',race.meta.size)+stat('Regiões',race.meta.regions)+extraMeta+'</div>'
       +loreBlock(race)
       +'<section class="race-detail-section"><div class="race-section-title"><div><span>Base racial</span><h2>Traços fixos</h2></div><span class="race-source-chip">Atributos: '+esc(race.abilityScore)+'</span></div><div class="race-trait-grid">'+race.coreTraits.map(t=>traitCard(t)).join('')+'</div></section>'
-      +'<section class="race-detail-section"><div class="race-section-title"><div><span>Escolha obrigatória</span><h2>Subraça</h2></div><span class="race-source-chip">'+race.subraces.length+' opções</span></div><div class="subrace-grid">'+race.subraces.map(s=>subraceCard(race,s,sub&&s.id===sub.id)).join('')+'</div>'+(sub?'<div class="subrace-selected-detail"><div class="race-section-title compact"><div><span>Selecionada</span><h3>'+esc(sub.name)+'</h3></div>'+(sub.ability?'<span class="race-source-chip">'+esc(sub.ability)+'</span>':'')+'</div>'+subDescription+subEditorial+selectedSubraceTraits(race,sub)+'</div>':'')+'</section>'
+      +'<section class="race-detail-section"><div class="race-section-title"><div><span>Escolha obrigatória</span><h2>Subraça</h2></div><span class="race-source-chip">'+race.subraces.length+' opções</span></div><div class="subrace-grid">'+race.subraces.map(s=>subraceCard(race,s,sub&&s.id===sub.id)).join('')+'</div>'+(sub?'<div class="subrace-selected-detail"><div class="race-section-title compact"><div><span>Selecionada</span><h3>'+esc(sub.name)+'</h3><a class="equipment-deep-link" href="'+attr(window.routeHref?window.routeHref('race',race.id,{subraceId:sub.id}):('#/race/'+race.id+'/subrace/'+sub.id))+'" data-grimorio-route>Abrir link da subraça ↗</a></div>'+(sub.ability?'<span class="race-source-chip">'+esc(sub.ability)+'</span>':'')+'</div>'+subDescription+subEditorial+selectedSubraceTraits(race,sub)+'</div>':'')+'</section>'
       +'<section class="race-detail-section legacy-section"><div class="race-section-title"><div><span>Personalização racial</span><h2>Traços de Legado</h2></div><span class="legacy-count '+(selected.length===2?'complete':'')+'">'+selected.length+' / 2 escolhidos</span></div><p class="race-section-intro">Escolha exatamente dois. Uma escolha selecionada recebe destaque dourado; ao alcançar o limite, as demais ficam temporariamente indisponíveis.</p>'
       +'<div class="mixed-blood-box"><label><input type="checkbox" '+(rs.mixed?'checked':'')+' onchange="GRIMORIO_RACE_BROWSER.toggleMixed(\''+attr(race.id)+'\')"><span><strong>Personagem de sangue misto</strong><small>Use '+esc(race.name)+' como raça dominante e combine Traços de Legado com uma raça secundária.</small></span></label>'+(rs.mixed?'<select onchange="GRIMORIO_RACE_BROWSER.setSecondary(\''+attr(race.id)+'\',this.value)"><option value="">Escolha a raça secundária…</option>'+races().filter(x=>x.id!==race.id).map(x=>'<option value="'+attr(x.id)+'" '+(secondary&&secondary.id===x.id?'selected':'')+'>'+esc(x.name)+'</option>').join('')+'</select>':'')+'</div>'
       +(rs.mixed&&secondary?'<div class="mixed-explain"><strong>Como a combinação está sendo calculada:</strong> traços fixos e subraça vêm de '+esc(race.name)+'; as duas escolhas abaixo podem vir das listas normais de '+esc(race.name)+' e '+esc(secondary.name)+', incluindo as opções especiais de Sangue Misto das duas raças quando seus requisitos específicos permitirem.</div>':'')
@@ -186,5 +189,5 @@
       +'<div class="race-editorial-note '+(full?'full':'pending')+'"><strong>Qualidade do texto:</strong> '+esc(editorial)+'</div></div>';
   }
   function renderCatalog(){return '<div id="raceCatalogRoot" class="race-browser">'+catalogInner()+'</div>';}
-  window.GRIMORIO_RACE_BROWSER={renderCatalog,renderRace,setSearch,setFilter,openRace,selectSubrace,toggleMixed,setSecondary,toggleLegacy,clearChoices};
+  window.GRIMORIO_RACE_BROWSER={renderCatalog,renderRace,setSearch,setFilter,openRace,rememberSubrace,selectSubrace,toggleMixed,setSecondary,toggleLegacy,clearChoices,getRace:findRace,getRaces:races};
 })();
