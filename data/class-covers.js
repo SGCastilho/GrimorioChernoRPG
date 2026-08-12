@@ -64,6 +64,12 @@
       blur: 2,
       overlay: 0.80
     },
+        'rogue': {
+      image: 'https://imgur.com/IMajcKr.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
   };
 
   function imgurParts(url){
