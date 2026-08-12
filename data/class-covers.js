@@ -46,6 +46,18 @@
       blur: 2,
       overlay: 0.80
     },
+        'sage-homebrew': {
+      image: 'https://imgur.com/8zbOnjn.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+        'spellblade': {
+      image: 'https://imgur.com/JYVOSfQ.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
   };
 
   function imgurParts(url){
