@@ -65,7 +65,7 @@
       overlay: 0.80
     },
         'rogue': {
-      image: 'https://imgur.com/IMajcKr.png',
+      image: 'https://imgur.com/yVnmUNp.png',
       position: 'center 10%',
       blur: 2,
       overlay: 0.80
