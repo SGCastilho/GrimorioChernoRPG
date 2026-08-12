@@ -1,3 +1,11 @@
+## 5.39.1
+
+### Visual — arte de cabeçalho na página da classe
+- Adicionada infraestrutura para **arte interna de cabeçalho** nas páginas de classe.
+- Implementada a primeira arte de teste para **Paladino**, com imagem local, **blur** e **overlay preto translúcido** para preservar a legibilidade.
+- Novo arquivo de configuração: `data/class-detail-art.js`.
+- Novo estilo dedicado: `css/class-detail-art.css`.
+
 ## 5.39.0
 
 ### Navegação — Deep Links

@@ -76,6 +76,48 @@
       blur: 2,
       overlay: 0.80
     },
+        'barbarian': {
+      image: 'https://imgur.com/MvlUuvQ.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+        'fighter': {
+      image: 'https://imgur.com/wib9mQw.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+        'blood-minister-somnus': {
+      image: 'https://imgur.com/ufoonu7.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+        'bard': {
+      image: 'https://imgur.com/YAmQxkE.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+        'druid': {
+      image: 'https://imgur.com/3NVGIoG.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+        'bender-ryoko': {
+      image: 'https://imgur.com/IVVrYKu.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+        'sorcerer': {
+      image: 'https://imgur.com/ZveBPje.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
   };
 
   function imgurParts(url){

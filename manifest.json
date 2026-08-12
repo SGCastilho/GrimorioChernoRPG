@@ -1,5 +1,5 @@
 {
-  "version": "5.39.0",
+  "version": "5.39.1",
   "classes": 27,
   "subclasses": 382,
   "classNames": [
@@ -60,7 +60,7 @@
     "Lutador de Rua": 1,
     "Sábio": 1
   },
-  "uiRevision": "Navegação profunda e links nativos — v5.39.0",
+  "uiRevision": "Arte de cabeçalho nas páginas de classe — v5.39.1",
   "improvements": [
     "Navegação profunda adicionada a classes, subclasses, raças, subraças, magias e equipamentos, com URLs canônicas por hash e suporte nativo a nova guia.",
     "Cards, sidebar, breadcrumbs e resultados Ctrl+K usam anchors HTML reais, preservando Ctrl/Cmd+clique, botão do meio e menu de contexto do navegador.",

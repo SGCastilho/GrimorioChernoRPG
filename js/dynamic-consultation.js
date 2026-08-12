@@ -335,6 +335,13 @@
     return renderReferences(c, refs);
   }
 
+
+  function classDetailArtAttrs(c) {
+    const api = window.GRIMORIO_CLASS_DETAIL_ART;
+    const art = api && typeof api.get === 'function' ? api.get(c?.id) : null;
+    return art ? {className:' has-class-detail-art', style:(typeof api.style==='function'?api.style(c.id):''), media:(typeof api.media==='function'?api.media(c.id):'')} : {className:'', style:'', media:''};
+  }
+
   function classTabContent(c, subs, progression, state) {
     switch (state.tab) {
       case 'progression': return renderProgressionTable(c, progression, state.level);
@@ -364,9 +371,10 @@
     const selectedRow = state.level && progression ? progression.rows.find(row => row.level === state.level) : null;
     const contentLabel = selectedRow ? 'Nível ' + state.level + ' · ' + selectedRow.proficiency : (progression ? 'Progressão do 1º ao 20º nível' : 'Classe personalizada');
     const topStats = '<div class="stat-grid class-stat-grid"><div class="stat-cell"><div class="k">Dado de vida</div><div class="v">' + esc(c.hitDie || '—') + '</div></div><div class="stat-cell"><div class="k">Habilidade principal</div><div class="v">' + esc(c.ability || '—') + '</div></div><div class="stat-cell"><div class="k">Resistências</div><div class="v">' + esc(c.saves || '—') + '</div></div><div class="stat-cell"><div class="k">Consulta atual</div><div class="v">' + esc(contentLabel) + '</div></div></div>';
+    const heroArt = classDetailArtAttrs(c);
 
     return '<div class="breadcrumb">' + routeAnchor('classes',null,'Classes') + '<span>/</span><span>' + esc(c.name) + '</span></div>' +
-      '<header class="class-hero"><div class="detail-header"><div class="detail-sigil" style="--sigil-bg:' + attr(c.color) + '22;--sigil-color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</div><div><div class="eyebrow class-type-label"><span class="dot"></span>Classe</div><h1 class="page-title" style="margin-bottom:0">' + esc(c.name) + '</h1></div>' + foundryClassHeaderActions('class', id, subs.length) + '</div>' + classSourceLine(c) + topStats + '</header>' +
+      '<header class="class-hero' + heroArt.className + '" style="' + heroArt.style + '">' + heroArt.media + '<div class="detail-header"><div class="detail-sigil" style="--sigil-bg:' + attr(c.color) + '22;--sigil-color:' + attr(c.color) + '">' + sigil(c.sigilKey || 'book') + '</div><div><div class="eyebrow class-type-label"><span class="dot"></span>Classe</div><h1 class="page-title" style="margin-bottom:0">' + esc(c.name) + '</h1></div>' + foundryClassHeaderActions('class', id, subs.length) + '</div>' + classSourceLine(c) + topStats + '</header>' +
       consultationToolbar(id, state, tabs, !!progression, 'class') +
       '<div id="consultation-content" class="consultation-content" tabindex="-1">' + classTabContent(c, subs, progression, state) + '</div>';
   };

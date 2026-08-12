@@ -1,4 +1,10 @@
-# Grimório D&D 5e PT-BR — versão 5.39.0
+# Grimório D&D 5e PT-BR — versão 5.39.1
+
+## 5.39.1 — Arte interna nas páginas de classe
+
+- A página de detalhe da classe agora pode receber uma **imagem widescreen de fundo no cabeçalho**, com desfoque e camada preta translúcida.
+- O primeiro teste foi aplicado ao **Paladino** usando um arquivo local em `assets/class-detail-art/paladin-hero.png`.
+- As classes configuradas em `data/class-detail-art.js` passam a renderizar a mídia por trás do cabeçalho principal.
 
 ## 5.39.0 — Navegação profunda e links nativos
 
