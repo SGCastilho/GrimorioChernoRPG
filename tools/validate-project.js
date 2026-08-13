@@ -137,6 +137,15 @@ else {
     }
   }
   ok(`${featTotal} talentos validados em ${featCatalogs.length} catálogo(s)`);
+
+  const featAutomation = context.GRIMORIO_FOUNDRY_FEAT_AUTOMATION;
+  if (!featAutomation?.audit) fail('Perfis de automação Foundry de Talentos não foram carregados.');
+  else {
+    const audit = featAutomation.audit(featCatalogs.flatMap(catalog => catalog.feats));
+    if (!audit.ok) audit.errors.forEach(error => fail(`Automação de Talentos: ${error}`));
+    if (audit.summary?.profiles !== featTotal) fail(`Automação de Talentos: esperado ${featTotal} perfis, encontrados ${audit.summary?.profiles}.`);
+    else ok(`${audit.summary.profiles} perfis Foundry de Talentos validados (${audit.summary.full} completos, ${audit.summary.partial} parciais)`);
+  }
 }
 
 function duplicateIds(items, label) {

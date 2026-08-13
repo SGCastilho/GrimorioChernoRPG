@@ -1,19 +1,19 @@
 'use strict';
 
-// Fase 2 — pacotes de Talentos para o Grimório Importer 0.10.0.
+// FA-1 — pacotes de Talentos com bundles v2 e resumo de automação.
 (function initFoundryFeatPackage(global) {
   const SCHEMA = 'grimorio-foundry-feat-package';
-  const SCHEMA_VERSION = 1;
-  const PROFILE_ID = 'foundry13-dnd5e533-grimorio-feat-package-v1';
+  const SCHEMA_VERSION = 2;
+  const PROFILE_ID = 'foundry13-dnd5e533-grimorio-feat-package-v2';
 
   const PROFILE = Object.freeze({
     id: PROFILE_ID,
-    label: 'Foundry VTT 13.351 · DnD5e 5.3.3 · Grimório Importer 0.10.0 · Talentos',
+    label: 'Foundry VTT 13.351 · DnD5e 5.3.3 · Grimório Feat Package v2 · FA-1',
     foundryVersion: '13.351',
     dnd5eVersion: '5.3.3',
     consumer: 'grimorio-importer',
-    minimumImporterVersion: '0.10.0',
-    format: 'grimorio-foundry-feat-package-v1',
+    minimumImporterVersion: '0.12.0',
+    format: 'grimorio-foundry-feat-package-v2',
     mediaType: 'application/json',
     fileExtension: '.json'
   });
@@ -34,6 +34,22 @@
   function registry() {
     if (!global.GRIMORIO_REGISTRY?.getFeatCatalogs) throw new Error('Registro de Talentos não está carregado.');
     return global.GRIMORIO_REGISTRY;
+  }
+
+  function automationSummary(feats) {
+    const plans = feats.map(bundle => bundle.automation).filter(Boolean);
+    return {
+      profiles: plans.length,
+      full: plans.filter(plan => plan.tier === 'full').length,
+      partial: plans.filter(plan => plan.tier === 'partial').length,
+      description: plans.filter(plan => plan.tier === 'description').length,
+      advancements: plans.reduce((sum, plan) => sum + array(plan.advancements).length, 0),
+      effects: plans.reduce((sum, plan) => sum + array(plan.effects).length, 0),
+      activities: plans.reduce((sum, plan) => sum + array(plan.activities).length, 0),
+      uses: plans.filter(plan => plan.uses).length,
+      runtime: plans.reduce((sum, plan) => sum + array(plan.runtime).length, 0),
+      limitations: plans.reduce((sum, plan) => sum + array(plan.limitations).length, 0)
+    };
   }
 
   function buildPackage({ id, name, scope, bundles, sourceIds = [] }) {
@@ -59,7 +75,8 @@
         feats: feats.length,
         sources: new Set(feats.map(bundle => bundle.source?.sourceId).filter(Boolean)).size,
         prerequisites: feats.filter(bundle => bundle.feat?.prerequisites?.length).length,
-        repeatable: feats.filter(bundle => bundle.feat?.repeatable === true).length
+        repeatable: feats.filter(bundle => bundle.feat?.repeatable === true).length,
+        automation: automationSummary(feats)
       },
       ordering: 'source-name',
       bundleIdentifiers: feats.map(bundle => bundle.identity?.identifier),
@@ -107,6 +124,7 @@
     if (pkg.schema !== SCHEMA) errors.push(`Schema incompatível: esperado ${SCHEMA}.`);
     if (pkg.schemaVersion !== SCHEMA_VERSION) errors.push(`Versão incompatível: esperado ${SCHEMA_VERSION}.`);
     if (pkg.profile?.id !== PROFILE.id) errors.push(`Perfil incompatível: esperado ${PROFILE.id}.`);
+    if (pkg.profile?.minimumImporterVersion !== PROFILE.minimumImporterVersion) errors.push(`minimumImporterVersion precisa ser ${PROFILE.minimumImporterVersion}.`);
     if (!pkg.identity?.id || !pkg.identity?.name || !pkg.identity?.scope) errors.push('Identidade do pacote incompleta.');
     if (!Array.isArray(pkg.bundles) || !pkg.bundles.length) errors.push('O pacote não contém talentos.');
     const ids = new Set();
@@ -123,10 +141,14 @@
       feats: array(pkg.bundles).length,
       sources: new Set(array(pkg.bundles).map(bundle => bundle.source?.sourceId).filter(Boolean)).size,
       prerequisites: array(pkg.bundles).filter(bundle => bundle.feat?.prerequisites?.length).length,
-      repeatable: array(pkg.bundles).filter(bundle => bundle.feat?.repeatable === true).length
+      repeatable: array(pkg.bundles).filter(bundle => bundle.feat?.repeatable === true).length,
+      automation: automationSummary(array(pkg.bundles))
     };
-    for (const [key, expected] of Object.entries(calculated)) {
-      if (Number(pkg.summary?.[key]) !== expected) errors.push(`Resumo inconsistente em ${key}: esperado ${expected}, encontrado ${pkg.summary?.[key]}.`);
+    for (const key of ['bundles', 'feats', 'sources', 'prerequisites', 'repeatable']) {
+      if (Number(pkg.summary?.[key]) !== calculated[key]) errors.push(`Resumo inconsistente em ${key}: esperado ${calculated[key]}, encontrado ${pkg.summary?.[key]}.`);
+    }
+    for (const [key, expected] of Object.entries(calculated.automation)) {
+      if (Number(pkg.summary?.automation?.[key]) !== expected) errors.push(`Resumo de automação inconsistente em ${key}: esperado ${expected}, encontrado ${pkg.summary?.automation?.[key]}.`);
     }
     return { ok: errors.length === 0, errors, warnings: [...new Set(warnings)], calculated };
   }

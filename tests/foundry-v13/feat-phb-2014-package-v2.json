@@ -1,0 +1,3808 @@
+{
+  "schema": "grimorio-foundry-feat-package",
+  "schemaVersion": 2,
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-feat-package-v2",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "minimumImporterVersion": "0.12.0"
+  },
+  "identity": {
+    "id": "catalogo-completo-talentos",
+    "name": "Grimório — Talentos",
+    "scope": "full-feat-catalog",
+    "sourceIds": [
+      "phb-2014"
+    ]
+  },
+  "summary": {
+    "bundles": 42,
+    "feats": 42,
+    "sources": 1,
+    "prerequisites": 12,
+    "repeatable": 1,
+    "automation": {
+      "profiles": 42,
+      "full": 6,
+      "partial": 36,
+      "description": 0,
+      "advancements": 28,
+      "effects": 10,
+      "activities": 22,
+      "uses": 2,
+      "runtime": 56,
+      "limitations": 37
+    }
+  },
+  "ordering": "source-name",
+  "bundleIdentifiers": [
+    "phb-2014-adepto-elemental",
+    "phb-2014-adepto-marcial",
+    "phb-2014-alerta",
+    "phb-2014-ambidestro",
+    "phb-2014-atacante-bestial",
+    "phb-2014-atirador-agucado",
+    "phb-2014-atirador-de-magia",
+    "phb-2014-atleta",
+    "phb-2014-ator",
+    "phb-2014-combatente-montado",
+    "phb-2014-conjurador-de-guerra",
+    "phb-2014-conjurador-de-ritual",
+    "phb-2014-curandeiro",
+    "phb-2014-duelista-defensivo",
+    "phb-2014-especialista-em-besta",
+    "phb-2014-especialista-em-briga",
+    "phb-2014-explorador-de-cavernas",
+    "phb-2014-imobilizador",
+    "phb-2014-iniciado-em-magia",
+    "phb-2014-investida-poderosa",
+    "phb-2014-lider-inspirador",
+    "phb-2014-maestria-em-arma-de-haste",
+    "phb-2014-maestria-em-armadura-media",
+    "phb-2014-maestria-em-armadura-pesada",
+    "phb-2014-matador-de-conjuradores",
+    "phb-2014-mente-afiada",
+    "phb-2014-mestre-de-armas",
+    "phb-2014-mestre-de-armas-grandes",
+    "phb-2014-mestre-de-escudo",
+    "phb-2014-mobilidade",
+    "phb-2014-observador",
+    "phb-2014-perito",
+    "phb-2014-poliglota",
+    "phb-2014-protecao-leve",
+    "phb-2014-protecao-moderada",
+    "phb-2014-protecao-pesada",
+    "phb-2014-resiliente",
+    "phb-2014-resistente",
+    "phb-2014-robusto",
+    "phb-2014-sentinela",
+    "phb-2014-sorrateiro",
+    "phb-2014-sortudo"
+  ],
+  "bundles": [
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-adepto-elemental",
+        "identifier": "phb-2014-adepto-elemental",
+        "name": "Adepto Elemental"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 167,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Quando você ganha esse talento, escolha um dos tipos de dano a seguir: ácido, elétrico, fogo, frio ou trovão.\n\nAs magias que você conjurar ignoram resistência a dano do tipo escolhido. Além disso, quando você rola o dano para uma magia que você conjurar que causar dano desse tipo, você pode tratar qualquer 1 num dado de dano como um 2.\n\nVocê pode escolher esse talento diversas vezes. A cada vez que o fizer, você deve escolher um tipo diferente de dano.",
+        "prerequisite": "Capacidade de conjurar pelo menos uma magia",
+        "prerequisites": [
+          {
+            "type": "spellcasting",
+            "label": "Capacidade de conjurar pelo menos uma magia"
+          }
+        ],
+        "repeatable": true,
+        "choices": [
+          {
+            "id": "damage-type",
+            "label": "Tipo de dano",
+            "options": [
+              "ácido",
+              "elétrico",
+              "fogo",
+              "frio",
+              "trovão"
+            ],
+            "uniquePerAcquisition": true
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-adepto-elemental",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "damage-type",
+            "type": "linked-choice",
+            "sourceChoiceId": "damage-type",
+            "count": 1,
+            "options": [
+              "acid",
+              "lightning",
+              "fire",
+              "cold",
+              "thunder"
+            ],
+            "label": "Tipo de dano do Adepto Elemental"
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "ignore-resistance",
+            "trigger": "spell-damage-resolution",
+            "behavior": "ignore-resistance-for-chosen-damage-type",
+            "choiceRef": "damage-type"
+          },
+          {
+            "key": "minimum-damage-die",
+            "trigger": "spell-damage-roll",
+            "behavior": "replace-damage-die-result-one-with-two",
+            "choiceRef": "damage-type"
+          }
+        ],
+        "limitations": [
+          "A escolha do tipo de dano é estruturada; ignorar resistência e elevar resultados 1 para 2 exigem runtime para não afetar tipos de dano diferentes do escolhido."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-adepto-marcial",
+        "identifier": "phb-2014-adepto-marcial",
+        "name": "Adepto Marcial"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 167,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você tem treinamento marcial que permite a você realizar manobras de combate especiais. Você ganha os seguintes benefícios:\n\n• Você aprende duas manobras, à sua escolha, das que estão disponíveis ao arquétipo Mestre de Batalha na classe guerreiro. Se a manobra que você usar obrigar um alvo a realizar um teste de resistência, a CD do teste de resistência será igual a 8 + seu bônus de proficiência + seu modificador de Força ou Destreza (à sua escolha).\n• Se você já tiver dados de superioridade, você ganha um adicional; do contrário, você terá um dado de superioridade, que é um d6. Esse dado é usado para abastecer suas manobras. Um dado de superioridade é gasto quando você o usa. Você recupera seus dados de superioridade gastos quando termina um descanso curto ou longo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "maneuvers",
+            "label": "Manobras do Mestre de Batalha",
+            "count": 2
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-adepto-marcial",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "maneuvers",
+            "type": "item-choice",
+            "sourceChoiceId": "maneuvers",
+            "count": 2,
+            "itemType": "feat",
+            "selection": "open-drag-drop",
+            "filter": {
+              "family": "battle-master-maneuver"
+            },
+            "label": "Duas manobras do Mestre de Batalha"
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": {
+          "max": "1",
+          "recovery": [
+            "sr",
+            "lr"
+          ],
+          "label": "Dado de Superioridade do talento",
+          "denomination": "d6",
+          "fallbackOnly": true
+        },
+        "runtime": [
+          {
+            "key": "superiority-resource",
+            "trigger": "feat-acquisition",
+            "behavior": "merge-or-create-superiority-die-resource",
+            "fallbackDie": "d6",
+            "additionalDice": 1,
+            "recovery": [
+              "sr",
+              "lr"
+            ],
+            "savingThrowFormula": "8 + @prof + max(@abilities.str.mod,@abilities.dex.mod)"
+          }
+        ],
+        "limitations": [
+          "Se o Actor já possuir Dados de Superioridade, o talento deve acrescentar um dado ao recurso existente; caso contrário, cria um d6 próprio. Essa fusão exige runtime."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-alerta",
+        "identifier": "phb-2014-alerta",
+        "name": "Alerta"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 167,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Sempre a espera de perigo, você ganha os seguintes benefícios:\n\n• Você recebe +5 de bônus em iniciativa.\n• Você não pode ser surpreso enquanto estiver consciente.\n• Outras criaturas não ganham vantagem nas jogadas de ataque contra você por estarem escondidas de você.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-alerta",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [
+          {
+            "key": "initiative",
+            "mechanic": "initiative-bonus",
+            "value": 5,
+            "transfer": true,
+            "label": "Alerta — +5 iniciativa"
+          }
+        ],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "cannot-be-surprised",
+            "trigger": "combat-surprise-evaluation",
+            "behavior": "prevent-surprised-while-conscious"
+          },
+          {
+            "key": "hidden-attackers",
+            "trigger": "attack-advantage-evaluation",
+            "behavior": "deny-hidden-attacker-advantage-against-owner"
+          }
+        ],
+        "limitations": [
+          "O bônus de iniciativa é passivo e seguro; as regras de surpresa e atacantes escondidos dependem do estado do combate."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-ambidestro",
+        "identifier": "phb-2014-ambidestro",
+        "name": "Ambidestro"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 167,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você dominou o estilo de luta com duas armas, ganhando os seguintes benefícios:\n\n• Você ganha +1 de bônus na CA enquanto estiver empunhando uma arma corpo-a-corpo em cada mão.\n• Você pode usar combater com duas armas mesmo que as armas de uma mão que você está empunhando não sejam leves.\n• Você pode sacar ou guardar duas armas de uma mão quando você, normalmente, seria capaz de sacar ou guardar apenas uma.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-ambidestro",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [
+          {
+            "key": "dual-wield-ac",
+            "mechanic": "conditional-ac-bonus",
+            "value": 1,
+            "transfer": false,
+            "condition": "two-melee-weapons-wielded"
+          }
+        ],
+        "activities": [
+          {
+            "key": "two-weapon-stance",
+            "type": "toggle",
+            "name": "Ambidestro — Duas Armas",
+            "activation": "special",
+            "target": "self",
+            "appliesEffect": "dual-wield-ac",
+            "condition": "Somente enquanto empunhar uma arma corpo a corpo em cada mão."
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "dual-wield-validation",
+            "trigger": "equipment-change",
+            "behavior": "validate-two-melee-weapons-and-toggle-effect"
+          }
+        ],
+        "limitations": [
+          "A permissão para combater com duas armas sem a propriedade leve e sacar/guardar duas armas permanece contextual; o +1 CA só pode ficar ativo com duas armas corpo a corpo empunhadas."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-atacante-bestial",
+        "identifier": "phb-2014-atacante-bestial",
+        "name": "Atacante Bestial"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 167,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Uma vez por turno, quando você rolar o dano para um ataque corpo-a-corpo com arma, você pode jogar novamente o dado de dano da arma e usar qualquer dos valores.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-atacante-bestial",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "reroll-weapon-damage",
+            "type": "utility",
+            "name": "Atacante Bestial — Rerrolar Dano",
+            "activation": "special",
+            "cadence": "once-per-turn",
+            "condition": "Ao rolar dano de um ataque corpo a corpo com arma."
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "weapon-damage-reroll",
+            "trigger": "melee-weapon-damage-roll",
+            "behavior": "offer-reroll-and-choose-either-result",
+            "cadence": "once-per-turn"
+          }
+        ],
+        "limitations": [
+          "O talento permite escolher qualquer um dos dois resultados; a decisão deve ocorrer no contexto da rolagem de dano."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-atirador-agucado",
+        "identifier": "phb-2014-atirador-agucado",
+        "name": "Atirador Aguçado"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 167,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você dominou o uso de armas à distância e pode realizar tiros que seriam impossíveis para outros. Você ganha os seguintes benefícios:\n\n• Atacar um alvo além da distância normal não impõem desvantagem nas suas jogadas de ataque com armas à distância.\n• Seus ataques com armas à distância ignoram meia-cobertura e três-quartos de cobertura.\n• Antes de realizar um ataque com uma arma à distância na qual você seja proficiente, você pode escolher sofrer –5 de penalidade na jogada de ataque. Se o ataque atingir, você adiciona +10 no dano do ataque.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-atirador-agucado",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "power-shot",
+            "type": "toggle",
+            "name": "Atirador Aguçado — Tiro Potente",
+            "activation": "special",
+            "attackModifier": -5,
+            "damageBonus": 10,
+            "appliesTo": "next-qualified-ranged-weapon-attack"
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "long-range",
+            "trigger": "ranged-weapon-attack",
+            "behavior": "suppress-long-range-disadvantage"
+          },
+          {
+            "key": "cover",
+            "trigger": "ranged-weapon-attack",
+            "behavior": "ignore-half-and-three-quarters-cover"
+          },
+          {
+            "key": "power-shot",
+            "trigger": "ranged-weapon-attack",
+            "behavior": "apply-minus-five-plus-ten-when-toggle-consumed"
+          }
+        ],
+        "limitations": [
+          "O -5/+10 não deve ser um efeito global; aplica-se apenas a um ataque à distância com arma no qual o personagem seja proficiente."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-atirador-de-magia",
+        "identifier": "phb-2014-atirador-de-magia",
+        "name": "Atirador de Magia"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 167,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você aprendeu técnicas para aprimorar seus ataques com certos tipos de magia, ganhando os seguintes benefícios:\n\n• Quando você conjura uma magia que requer que você realize uma jogada de ataque, o alcance da magia é dobrada.\n• Seus ataques à distância com magia ignoram meia-cobertura ou três-quartos de cobertura.\n• Você aprende um truque que requer uma jogada de ataque. Escolha o truque da lista de magias do bardo, bruxo, clérigo, druida, feiticeiro ou mago. Sua habilidade de conjuração para esse truque depende da lista de magia a qual você escolheu o truque: Carisma para bardo, bruxo ou feiticeiro; Sabedoria para clérigo ou druida; ou Inteligência para mago.",
+        "prerequisite": "Capacidade de conjurar pelo menos uma magia",
+        "prerequisites": [
+          {
+            "type": "spellcasting",
+            "label": "Capacidade de conjurar pelo menos uma magia"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "attack-cantrip",
+            "label": "Truque que requer uma jogada de ataque",
+            "count": 1,
+            "sources": [
+              "Bardo",
+              "Bruxo",
+              "Clérigo",
+              "Druida",
+              "Feiticeiro",
+              "Mago"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-atirador-de-magia",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "attack-cantrip",
+            "type": "spell-choice",
+            "sourceChoiceId": "attack-cantrip",
+            "count": 1,
+            "spellLevel": 0,
+            "requiresAttackRoll": true,
+            "lists": [
+              "bard",
+              "warlock",
+              "cleric",
+              "druid",
+              "sorcerer",
+              "wizard"
+            ],
+            "selection": "open-drag-drop",
+            "abilityByList": {
+              "bard": "cha",
+              "warlock": "cha",
+              "sorcerer": "cha",
+              "cleric": "wis",
+              "druid": "wis",
+              "wizard": "int"
+            }
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "double-range",
+            "trigger": "spell-attack-preparation",
+            "behavior": "double-range-for-spells-requiring-attack-roll"
+          },
+          {
+            "key": "cover",
+            "trigger": "ranged-spell-attack",
+            "behavior": "ignore-half-and-three-quarters-cover"
+          }
+        ],
+        "limitations": [
+          "O Grimório Importer ainda não administra um compêndio próprio de magias; a escolha do truque deve aceitar drag-and-drop de uma magia compatível."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-atleta",
+        "identifier": "phb-2014-atleta",
+        "name": "Atleta"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 168,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você passou por extenso treinamento físico para ganhar os seguintes benefícios:\n\n• Aumente seu valor de Força ou Destreza em 1, até o máximo de 20.\n• Quando você estiver caído, se levantar requer apenas 1,5 metro do seu deslocamento.\n• Escalar não custa movimento adicional a você.\n• Você pode realizar um salto em distância correndo ou um salto em altura correndo se movendo apenas um passo de ajuste de 1,5 metro, ao invés de 3 metros.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-atleta",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "ability",
+            "type": "ability-score",
+            "sourceChoiceId": "ability",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "str",
+              "dex"
+            ]
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "stand-up",
+            "trigger": "movement-cost",
+            "behavior": "reduce-standing-from-prone-cost-to-five-feet"
+          },
+          {
+            "key": "climb",
+            "trigger": "movement-cost",
+            "behavior": "remove-extra-climb-cost"
+          },
+          {
+            "key": "running-jump",
+            "trigger": "jump-calculation",
+            "behavior": "reduce-running-start-to-five-feet"
+          }
+        ],
+        "limitations": [
+          "O +1 de atributo é nativo; custos de movimento e salto dependem do controle de movimento do Foundry e exigem runtime/assistência."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-ator",
+        "identifier": "phb-2014-ator",
+        "name": "Ator"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 168,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Perito em mimica e dramaturgia, você recebe os seguintes benefícios:\n\n• Aumente seu valor de Carisma em 1, até o máximo de 20.\n• Você tem vantagem em testes de Carisma (Atuação) e Carisma (Enganação) quando você estiver tentando se passar por uma pessoa diferente.\n• Você pode imitar a articulação de outra pessoa ou os sons feitos por outras criaturas. Você deve ter ouvido a pessoa falando ou ouvido a criatura fazendo o som por, pelo menos, 1 minuto. Um sucesso num teste de Sabedoria (Intuição) resistido pelo seu teste de Carisma (Enganação) permite que um ouvinte determine que o efeito é falso.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-ator",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "charisma",
+            "type": "ability-score",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "cha"
+            ],
+            "locked": true
+          }
+        ],
+        "effects": [],
+        "activities": [
+          {
+            "key": "mimic",
+            "type": "check",
+            "name": "Ator — Imitar Voz ou Som",
+            "activation": "action",
+            "ability": "cha",
+            "skill": "deception",
+            "opposedBy": {
+              "ability": "wis",
+              "skill": "insight"
+            },
+            "condition": "O personagem deve ter ouvido a voz ou o som por pelo menos 1 minuto."
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "impersonation-advantage",
+            "trigger": "ability-check",
+            "behavior": "grant-advantage-only-when-impersonating-another-person",
+            "skills": [
+              "performance",
+              "deception"
+            ]
+          }
+        ],
+        "limitations": [
+          "A vantagem não pode ser aplicada globalmente a Atuação e Enganação; ela depende de estar se passando por outra pessoa."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-combatente-montado",
+        "identifier": "phb-2014-combatente-montado",
+        "name": "Combatente Montado"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 168,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é um oponente perigoso de se enfrentar quando está montado. Enquanto estiver montado e não estiver incapacitado, você ganha os seguintes benefícios:\n\n• Você tem vantagem nas jogadas de ataque corpo-a-corpo contra qualquer criatura desmontada que seja menor que a sua montaria.\n• Você pode forçar que um ataque direcionado a sua montaria seja direcionado a você, em seu lugar.\n• Se sua montaria for alvo de um efeito que permita a ela realizar um teste de resistência de Destreza para reduzir o dano à metade, ao invés disso, ela não sofre qualquer dano se for bem sucedida no teste de resistência, e apenas metade se falhar.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-combatente-montado",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "redirect-attack",
+            "type": "reaction",
+            "name": "Combatente Montado — Redirecionar Ataque",
+            "activation": "reaction",
+            "condition": "Um ataque é direcionado à sua montaria enquanto você está montado e não incapacitado."
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "mounted-advantage",
+            "trigger": "melee-attack-advantage",
+            "behavior": "grant-advantage-against-smaller-unmounted-target-while-mounted"
+          },
+          {
+            "key": "mount-dex-save",
+            "trigger": "mount-dexterity-save-damage",
+            "behavior": "apply-evasion-like-mount-damage-rule"
+          }
+        ],
+        "limitations": [
+          "Tamanho relativo, estado montado e dano da montaria exigem informação contextual do combate."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-conjurador-de-guerra",
+        "identifier": "phb-2014-conjurador-de-guerra",
+        "name": "Conjurador de Guerra"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 169,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você praticou a conjuração de magias no meio do combate, aprendendo técnicas que lhe concedem os seguintes benefícios:\n\n• Você tem vantagem em testes de resistência de Constituição para manter sua concentração em uma magia quando você sofrer dano.\n• Você pode realizar os componentes somáticos de uma magia mesmo quando está com armas ou um escudo em uma ou ambas as mãos.\n• Quando o movimento de uma criatura hostil provocar um ataque de oportunidade para você, você pode usar sua reação para conjurar uma magia na criatura, ao invés de realizar o ataque de oportunidade. A magia deve ter um tempo de conjuração de 1 ação e deve ter apenas uma criatura como alvo.",
+        "prerequisite": "Capacidade de conjurar pelo menos uma magia",
+        "prerequisites": [
+          {
+            "type": "spellcasting",
+            "label": "Capacidade de conjurar pelo menos uma magia"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-conjurador-de-guerra",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "opportunity-spell",
+            "type": "reaction",
+            "name": "Conjurador de Guerra — Magia de Oportunidade",
+            "activation": "reaction",
+            "condition": "Movimento de criatura hostil provoca ataque de oportunidade; a magia deve usar 1 ação e ter apenas essa criatura como alvo."
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "concentration-advantage",
+            "trigger": "concentration-save-after-damage",
+            "behavior": "grant-advantage-on-concentration-save"
+          },
+          {
+            "key": "opportunity-spell",
+            "trigger": "opportunity-attack-trigger",
+            "behavior": "allow-qualified-single-target-action-spell-instead-of-weapon-attack"
+          }
+        ],
+        "limitations": [
+          "Não é seguro conceder vantagem global em salvaguardas de Constituição; a vantagem existe somente para manter concentração após sofrer dano.",
+          "A permissão de componentes somáticos com mãos ocupadas permanece uma regra de validação de conjuração/contexto."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-conjurador-de-ritual",
+        "identifier": "phb-2014-conjurador-de-ritual",
+        "name": "Conjurador de Ritual"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 169,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você aprendeu um número de magias que você pode conjurar como rituais. Essas magias são escritas em um livro de rituais, o qual deve estar em suas mãos enquanto você conjura uma dessas magias.\n\nQuando você escolhe esse talento, você adquire um livro de rituais que contem duas magias de 1° nível, à sua escolha. Escolha uma das seguintes classes: bardo, bruxo, clérigo, druida, feiticeiro ou mago. Você deve escolher suas magias da lista de magias dessa classe e as magias escolhidas devem ter o descritor ritual. A classe que você escolheu também determina a habilidade de conjuração dessas magias: Carisma para bardo, bruxo ou feiticeiro; Sabedoria para clérigo ou druida; ou Inteligência para mago.\n\nSe você encontrar uma magia na forma escrita, como a contida em um pergaminho de magia ou o grimório de um mago, você é capaz de adicioná-la ao seu livro de rituais. A magia deve estar na lista de magias da classe escolhida, o nível da magia não pode ser maior que metade do seu nível (arredondado para cima) e deve conter o descritor ritual. O processo para copiar a magia no seu livro de rituais leva 2 horas por nível da magia e custa 50 po por nível. O custo representa os componentes materiais que você gasta para experimentar a magia até dominá-la, bem como as finas tintas utilizadas para escrevê-la.",
+        "prerequisite": "Inteligência ou Sabedoria 13 ou maior",
+        "prerequisites": [
+          {
+            "type": "ability",
+            "abilities": [
+              "Inteligência",
+              "Sabedoria"
+            ],
+            "minimum": 13,
+            "mode": "any",
+            "label": "Inteligência ou Sabedoria 13 ou maior"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "spell-list",
+            "label": "Lista de magias",
+            "count": 1,
+            "options": [
+              "Bardo",
+              "Bruxo",
+              "Clérigo",
+              "Druida",
+              "Feiticeiro",
+              "Mago"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-conjurador-de-ritual",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "spell-list",
+            "type": "linked-choice",
+            "sourceChoiceId": "spell-list",
+            "count": 1,
+            "options": [
+              "bard",
+              "warlock",
+              "cleric",
+              "druid",
+              "sorcerer",
+              "wizard"
+            ]
+          },
+          {
+            "key": "ritual-spells",
+            "type": "spell-choice",
+            "count": 2,
+            "spellLevel": 1,
+            "ritualOnly": true,
+            "sameListAs": "spell-list",
+            "selection": "open-drag-drop",
+            "acquisition": "ritual-book"
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "ritual-book-growth",
+            "trigger": "spell-drop-on-ritual-book",
+            "behavior": "validate-list-level-and-ritual-before-adding",
+            "maxSpellLevelFormula": "ceil(@details.level / 2)"
+          }
+        ],
+        "limitations": [
+          "Copiar novos rituais envolve tempo e custo em po; a automação só deve validar a elegibilidade, sem gastar recursos monetários silenciosamente."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-curandeiro",
+        "identifier": "phb-2014-curandeiro",
+        "name": "Curandeiro"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 169,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é um cirurgião capacitado, permitindo que você trate de ferimentos rapidamente, trazendo seus aliados de volta à luta. Você adquire os seguintes benefícios:\n\n• Quando você usar um kit de primeiros-socorros para estabilizar uma criatura morrendo, a criatura recupera 1 ponto de vida, ao invés disso.\n• Com uma ação, você pode gastar um uso do kit de primeiros-socorros para tratar de uma criatura e restaurar 1d6 + 4 pontos de vida mais uma quantidade de pontos de vida adicionais igual ao número total de Dados de Vida da criatura. A criatura não pode recuperar pontos de vida através desse talento novamente até ter terminado um descanso curto ou longo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-curandeiro",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "stabilize",
+            "type": "heal",
+            "name": "Curandeiro — Estabilizar",
+            "activation": "action",
+            "healing": "1",
+            "consumesExternalItem": {
+              "name": "Kit de Primeiros-Socorros",
+              "uses": 1
+            },
+            "target": "one-creature-at-0-hp"
+          },
+          {
+            "key": "treat-wounds",
+            "type": "heal",
+            "name": "Curandeiro — Tratar Ferimentos",
+            "activation": "action",
+            "healing": "1d6 + 4 + @details.level",
+            "consumesExternalItem": {
+              "name": "Kit de Primeiros-Socorros",
+              "uses": 1
+            },
+            "target": "one-creature",
+            "targetCooldown": [
+              "sr",
+              "lr"
+            ]
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "healer-kit",
+            "trigger": "activity-use",
+            "behavior": "consume-healers-kit-use-and-track-target-cooldown"
+          }
+        ],
+        "limitations": [
+          "A cura usa o total de Dados de Vida do alvo; em personagens padrão isso coincide com o nível total, mas o Importer deve preferir a quantidade real de Dados de Vida quando disponível."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-duelista-defensivo",
+        "identifier": "phb-2014-duelista-defensivo",
+        "name": "Duelista Defensivo"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 169,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Quando você estiver empunhando uma arma de acuidade com a qual você seja proficiente e outra criatura atingir você com um ataque corpo-a-corpo, você pode usar sua reação para adicionar seu bônus de proficiência a sua CA para esse ataque, potencialmente fazendo o ataque errar.",
+        "prerequisite": "Destreza 13 ou maior",
+        "prerequisites": [
+          {
+            "type": "ability",
+            "abilities": [
+              "Destreza"
+            ],
+            "minimum": 13,
+            "mode": "all",
+            "label": "Destreza 13 ou maior"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-duelista-defensivo",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [
+          {
+            "key": "proficiency-ac",
+            "mechanic": "conditional-ac-bonus",
+            "value": "@prof",
+            "transfer": false,
+            "duration": "one-triggering-attack"
+          }
+        ],
+        "activities": [
+          {
+            "key": "parry",
+            "type": "reaction",
+            "name": "Duelista Defensivo",
+            "activation": "reaction",
+            "appliesEffect": "proficiency-ac",
+            "condition": "Ao ser atingido por ataque corpo a corpo enquanto empunha arma de acuidade com a qual é proficiente."
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "parry-resolution",
+            "trigger": "melee-attack-hit",
+            "behavior": "offer-reaction-and-recalculate-hit-with-temporary-ac-bonus"
+          }
+        ],
+        "limitations": [
+          "O bônus de CA vale apenas contra o ataque que disparou a reação e não pode permanecer após sua resolução."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-especialista-em-besta",
+        "identifier": "phb-2014-especialista-em-besta",
+        "name": "Especialista em Besta"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 169,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Graças a sua pratica extensiva com bestas, você ganha os seguintes benefícios:\n\n• Você ignora a qualidade de recarga de bestas nas quais você é proficiente.\n• Estar a 1,5 metro de uma criatura hostil não impõem desvantagem nas suas jogadas de ataque à distância.\n• Quando você usa a ação de Ataque e ataca com uma arma de uma mão, você pode usar sua ação bônus para atacar com uma besta de mão carregada que você esteja empunhando.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-especialista-em-besta",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "hand-crossbow-bonus",
+            "type": "attack",
+            "name": "Especialista em Besta — Ataque Bônus",
+            "activation": "bonus",
+            "weapon": "hand-crossbow",
+            "condition": "Após usar a ação de Ataque e atacar com uma arma de uma mão."
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "ignore-loading",
+            "trigger": "weapon-attack-preparation",
+            "behavior": "ignore-loading-property-for-proficient-crossbows"
+          },
+          {
+            "key": "close-range",
+            "trigger": "ranged-attack-disadvantage",
+            "behavior": "suppress-disadvantage-from-hostile-creature-within-five-feet"
+          }
+        ],
+        "limitations": [
+          "O ataque bônus deve reutilizar uma besta de mão realmente empunhada; o Feat não cria uma arma própria."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-especialista-em-briga",
+        "identifier": "phb-2014-especialista-em-briga",
+        "name": "Especialista em Briga"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 169,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Acostumado a brigas de bar usando qualquer coisa como armas, e na falta, os punhos, você ganha os seguintes benefícios:\n\n• Aumente o valor de Força ou Constituição em 1, até o máximo de 20.\n• Seus ataques desarmados causam 1d4 de dano.\n• Quando você atinge uma criatura com um ataque desarmado ou com uma arma improvisada, no seu turno, você pode usar uma ação bônus para tentar agarrar o alvo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Constituição"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-especialista-em-briga",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "ability",
+            "type": "ability-score",
+            "sourceChoiceId": "ability",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "str",
+              "con"
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "key": "unarmed-damage",
+            "mechanic": "unarmed-damage-minimum",
+            "denomination": "d4",
+            "transfer": true
+          }
+        ],
+        "activities": [
+          {
+            "key": "grapple",
+            "type": "check",
+            "name": "Especialista em Briga — Agarrar",
+            "activation": "bonus",
+            "condition": "Após atingir uma criatura com ataque desarmado ou arma improvisada no seu turno.",
+            "check": "grapple"
+          }
+        ],
+        "uses": null,
+        "runtime": [],
+        "limitations": [
+          "A fonte fornecida não lista proficiência com armas improvisadas; nenhuma proficiência adicional é inventada pelo perfil."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-explorador-de-cavernas",
+        "identifier": "phb-2014-explorador-de-cavernas",
+        "name": "Explorador de Cavernas"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 169,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Alerta às armadilhas escondidas e portas secretas encontradas em muitas masmorras, você ganha os seguintes benefícios:\n\n• Você tem vantagem em testes de Sabedoria (Percepção) e de Inteligência (Investigação) feitos para detectar a presença de portas secretas.\n• Você tem vantagem em testes de resistência feitos para evitar ou resistir a armadilhas.\n• Você tem resistência ao dano causado por armadilhas.\n• Você pode procurar armadilhas enquanto viaja a um ritmo normal, ao invés de metade do ritmo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-explorador-de-cavernas",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "secret-doors",
+            "trigger": "secret-door-search-check",
+            "behavior": "grant-advantage-to-perception-and-investigation"
+          },
+          {
+            "key": "traps-save",
+            "trigger": "trap-saving-throw",
+            "behavior": "grant-advantage"
+          },
+          {
+            "key": "traps-damage",
+            "trigger": "trap-damage-application",
+            "behavior": "grant-resistance-to-trap-damage"
+          },
+          {
+            "key": "travel-trap-search",
+            "trigger": "travel-pace",
+            "behavior": "allow-trap-search-at-normal-pace"
+          }
+        ],
+        "limitations": [
+          "Nenhum bônus global é aplicado a Percepção, Investigação ou salvaguardas: todos os benefícios dependem de portas secretas ou armadilhas."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-imobilizador",
+        "identifier": "phb-2014-imobilizador",
+        "name": "Imobilizador"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 169,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você desenvolveu a perícia necessária para se prender a alguém em um combate engajado. Você recebe os seguintes benefícios:\n\n• Você tem vantagem nas jogadas de ataque contra uma criatura agarrada.\n• Você pode usar sua ação para tentar imobilizar uma criatura agarrada por você. Para tanto, realize outro teste de agarrar. Se você for bem sucedido, você e a criatura estarão ambos impedidos até o agarre terminar.",
+        "prerequisite": "Força 13 ou maior",
+        "prerequisites": [
+          {
+            "type": "ability",
+            "abilities": [
+              "Força"
+            ],
+            "minimum": 13,
+            "mode": "all",
+            "label": "Força 13 ou maior"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-imobilizador",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "pin",
+            "type": "check",
+            "name": "Imobilizador — Imobilizar",
+            "activation": "action",
+            "check": "grapple",
+            "target": "creature-grappled-by-owner",
+            "onSuccess": [
+              "restrained-owner",
+              "restrained-target"
+            ]
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "grappled-advantage",
+            "trigger": "attack-advantage",
+            "behavior": "grant-advantage-against-creature-grappled-by-owner"
+          },
+          {
+            "key": "pin",
+            "trigger": "grapple-check-result",
+            "behavior": "apply-restrained-to-owner-and-target-until-grapple-ends"
+          }
+        ],
+        "limitations": [
+          "A condição Impedido deve terminar quando o agarre terminar; isso exige vínculo entre os efeitos do agressor e do alvo."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-iniciado-em-magia",
+        "identifier": "phb-2014-iniciado-em-magia",
+        "name": "Iniciado em Magia"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 170,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Escolha uma classe: bardo, bruxo, clérigo, druida, feiticeiro ou mago. Você aprende dois truques da lista de magias da classe escolhida.\n\nAlém disso, escolha uma magia de 1° nível da mesma lista. Você aprende essa magia e pode conjura-la com o menor nível possível. Uma vez que a conjure, você precisa terminar um descanso longo para poder conjura-la novamente. Essa restrição aplica-se apenas à magia adquirida através desse talento.\n\nSua habilidade de conjuração depende da classe que você escolher: Carisma para bardo, bruxo ou feiticeiro; Sabedoria para clérigo ou druida; ou Inteligência para mago.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "spell-list",
+            "label": "Lista de magias",
+            "count": 1,
+            "options": [
+              "Bardo",
+              "Bruxo",
+              "Clérigo",
+              "Druida",
+              "Feiticeiro",
+              "Mago"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-iniciado-em-magia",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "spell-list",
+            "type": "linked-choice",
+            "sourceChoiceId": "spell-list",
+            "count": 1,
+            "options": [
+              "bard",
+              "warlock",
+              "cleric",
+              "druid",
+              "sorcerer",
+              "wizard"
+            ]
+          },
+          {
+            "key": "cantrips",
+            "type": "spell-choice",
+            "count": 2,
+            "spellLevel": 0,
+            "sameListAs": "spell-list",
+            "selection": "open-drag-drop",
+            "acquisition": "learn"
+          },
+          {
+            "key": "first-level-spell",
+            "type": "spell-choice",
+            "count": 1,
+            "spellLevel": 1,
+            "sameListAs": "spell-list",
+            "selection": "open-drag-drop",
+            "acquisition": "learn-and-once-per-long-rest"
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "daily-spell",
+            "trigger": "chosen-level-one-spell-use",
+            "behavior": "limit-feat-granted-cast-to-once-per-long-rest",
+            "castAtLevel": 1
+          }
+        ],
+        "limitations": [
+          "Como o Importer não administra um compêndio próprio de magias, as escolhas devem aceitar drag-and-drop e registrar qual magia de 1º nível recebe o uso 1/descanso longo."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-investida-poderosa",
+        "identifier": "phb-2014-investida-poderosa",
+        "name": "Investida Poderosa"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 170,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Quando você usa a ação de Disparada, você pode usar sua ação bônus para realizar um ataque corpo-a-corpo com arma ou para empurrar uma criatura.\n\nSe você se mover, pelo menos, 3 metros em linha reta, imediatamente antes de realizar essa ação bônus, você pode tanto ganhar +5 de bônus na jogada de dano do ataque (se você escolher realizar um ataque corpo-a-corpo e atingir) ou empurrar o alvo até 3 metros de você (se você escolher empurrar e for bem sucedido).",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-investida-poderosa",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "charge-attack",
+            "type": "attack",
+            "name": "Investida Poderosa — Ataque",
+            "activation": "bonus",
+            "damageBonus": 5,
+            "condition": "Usou Disparada e moveu pelo menos 3 m em linha reta imediatamente antes."
+          },
+          {
+            "key": "charge-shove",
+            "type": "check",
+            "name": "Investida Poderosa — Empurrar",
+            "activation": "bonus",
+            "check": "shove",
+            "pushDistance": "3 m",
+            "condition": "Usou Disparada e moveu pelo menos 3 m em linha reta imediatamente antes."
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "charge-condition",
+            "trigger": "bonus-action-availability",
+            "behavior": "validate-dash-and-ten-foot-straight-line-movement"
+          }
+        ],
+        "limitations": [
+          "O Foundry precisa conhecer o movimento realizado no turno para validar automaticamente os 3 m em linha reta."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-lider-inspirador",
+        "identifier": "phb-2014-lider-inspirador",
+        "name": "Líder Inspirador"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 170,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você pode gastar 10 minutos inspirando seus companheiros, suportando a vontade deles de lutar. Quando fizer isso, escolha até seis criaturas amigáveis (que pode incluir você) a até 9 metros de você que possam ver ou ouvir você e possam te compreender. Cada criatura ganha pontos de vida temporários igual ao seu nível + seu modificador de Carisma. Uma criatura não pode ganhar pontos de vida temporários desse talento novamente até terminar um descanso curto ou longo.",
+        "prerequisite": "Carisma 13 ou maior",
+        "prerequisites": [
+          {
+            "type": "ability",
+            "abilities": [
+              "Carisma"
+            ],
+            "minimum": 13,
+            "mode": "all",
+            "label": "Carisma 13 ou maior"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-lider-inspirador",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "inspire",
+            "type": "heal",
+            "name": "Líder Inspirador",
+            "activation": "10-minute",
+            "healingType": "temphp",
+            "healing": "@details.level + @abilities.cha.mod",
+            "target": "up-to-six-friendly-creatures-within-9m",
+            "targetCooldown": [
+              "sr",
+              "lr"
+            ]
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "target-cooldown",
+            "trigger": "activity-use",
+            "behavior": "track-per-target-short-or-long-rest-cooldown"
+          }
+        ],
+        "limitations": [
+          "A atividade pode aplicar PV temporários; compreender o personagem e o cooldown individual por alvo continuam dependentes do runtime."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-maestria-em-arma-de-haste",
+        "identifier": "phb-2014-maestria-em-arma-de-haste",
+        "name": "Maestria em Arma de Haste"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 170,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você consegue manter seus inimigos afastados utilizando armas de haste. Você ganha os seguintes benefícios:\n\n• Quando você realiza a ação de Ataque e ataca com uma glaive, alabarda ou bordão, você pode usar uma ação bônus para realizar um ataque corpo-a-corpo com a outra extremidade da arma. Esse ataque usa o mesmo modificador de habilidade do ataque primário. O dado de dano da arma para esse ataque é um d4 e o ataque causa dano de concussão.\n• Enquanto você estiver empunhando uma glaive, alabarda, lança longa ou bastão, as outras criaturas provocam um ataque de oportunidade a você quando entrarem no seu alcance.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-maestria-em-arma-de-haste",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "butt-end-attack",
+            "type": "attack",
+            "name": "Maestria em Arma de Haste — Haste Oposta",
+            "activation": "bonus",
+            "damage": "1d4",
+            "damageType": "bludgeoning",
+            "ability": "same-as-triggering-attack",
+            "qualifyingWeapons": [
+              "glaive",
+              "halberd",
+              "quarterstaff"
+            ]
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "enter-reach-oa",
+            "trigger": "creature-enters-reach",
+            "behavior": "allow-opportunity-attack-with-qualifying-polearm",
+            "qualifyingWeapons": [
+              "glaive",
+              "halberd",
+              "pike",
+              "quarterstaff"
+            ]
+          }
+        ],
+        "limitations": [
+          "A atividade precisa reutilizar o modificador da arma empunhada; o Feat não cria uma arma separada."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-maestria-em-armadura-media",
+        "identifier": "phb-2014-maestria-em-armadura-media",
+        "name": "Maestria em Armadura Média"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 170,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você praticou seus movimentos usando armaduras pesadas para ganhar os seguintes benefícios:\n\n• Vestir uma armadura média não lhe impõe desvantagem em testes de Destreza (Furtividade).\n• Quando você estiver vestindo uma armadura média, você pode adicionar 3, ao invés de 2, à sua CA, se você tiver Destreza 16 ou maior.",
+        "prerequisite": "Proficiência em armadura média",
+        "prerequisites": [
+          {
+            "type": "proficiency",
+            "category": "armor",
+            "value": "medium",
+            "label": "Proficiência em armadura média"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-maestria-em-armadura-media",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [
+          {
+            "key": "medium-armor-rules",
+            "mechanic": "conditional-armor-rule",
+            "transfer": true,
+            "armor": "medium",
+            "suppressStealthDisadvantage": true,
+            "dexterityAcCap": 3,
+            "dexterityMinimum": 16
+          }
+        ],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "medium-armor-state",
+            "trigger": "equipment-change",
+            "behavior": "apply-medium-armor-master-rules-only-while-medium-armor-equipped"
+          }
+        ],
+        "limitations": [
+          "A alteração do limite de Destreza e da Furtividade só é válida com armadura média equipada; nenhum efeito global é seguro."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-maestria-em-armadura-pesada",
+        "identifier": "phb-2014-maestria-em-armadura-pesada",
+        "name": "Maestria em Armadura Pesada"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 170,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você pode usar sua armadura para defletir ataques potencialmente fatais a outros. Você ganha os seguintes benefícios:\n\n• Aumente seu valor de Força em 1, até o máximo de 20.\n• Quando você estiver vestindo uma armadura pesada, dano de concussão, cortante e perfurante que você receba de ataques não-mágicos será reduzido em 3.",
+        "prerequisite": "Proficiência em armadura pesada",
+        "prerequisites": [
+          {
+            "type": "proficiency",
+            "category": "armor",
+            "value": "heavy",
+            "label": "Proficiência em armadura pesada"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-maestria-em-armadura-pesada",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "strength",
+            "type": "ability-score",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "str"
+            ],
+            "locked": true
+          }
+        ],
+        "effects": [
+          {
+            "key": "damage-reduction",
+            "mechanic": "conditional-damage-reduction",
+            "value": 3,
+            "damageTypes": [
+              "bludgeoning",
+              "piercing",
+              "slashing"
+            ],
+            "source": "nonmagical-attack",
+            "condition": "heavy-armor-equipped"
+          }
+        ],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "heavy-armor-damage-reduction",
+            "trigger": "damage-application",
+            "behavior": "reduce-qualified-nonmagical-attack-damage-by-three-while-heavy-armor-equipped"
+          }
+        ],
+        "limitations": [
+          "A redução não vale contra dano mágico nem contra dano que não provenha de ataque; portanto não pode ser resistência ou redução global."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-matador-de-conjuradores",
+        "identifier": "phb-2014-matador-de-conjuradores",
+        "name": "Matador de Conjuradores"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 170,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você praticou técnicas úteis em combate corpo-a-corpo contra conjuradores, ganhando os seguintes benefícios:\n\n• Quando uma criatura a até 1,5 metro de você conjurar uma magia, você pode usar sua reação para realizar um ataque corpo-a-corpo contra ela.\n• Quando você causa dano em uma criatura que está se concentrando em uma magia, a criatura terá desvantagem no teste de resistência que ela fizer para manter a concentração.\n• Você tem vantagem em testes de resistência contra magias conjuradas por criaturas a até 1,5 metro de você.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-matador-de-conjuradores",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "caster-reaction",
+            "type": "reaction",
+            "name": "Matador de Conjuradores — Ataque de Reação",
+            "activation": "reaction",
+            "condition": "Uma criatura a até 1,5 m conjura uma magia.",
+            "attack": "melee-weapon"
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "caster-reaction",
+            "trigger": "nearby-creature-casts-spell",
+            "behavior": "offer-melee-reaction-attack"
+          },
+          {
+            "key": "concentration-pressure",
+            "trigger": "owner-damages-concentrating-creature",
+            "behavior": "grant-disadvantage-on-resulting-concentration-save"
+          },
+          {
+            "key": "nearby-spell-save",
+            "trigger": "saving-throw-against-nearby-caster-spell",
+            "behavior": "grant-advantage"
+          }
+        ],
+        "limitations": [
+          "Os três benefícios dependem do conjurador, distância e/ou estado de concentração do alvo; não há Active Effect global seguro."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-mente-afiada",
+        "identifier": "phb-2014-mente-afiada",
+        "name": "Mente Afiada"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 170,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você tem uma mente que pode cronometrar o tempo e memorizar direção e detalhes com precisão absurda. Você ganha os seguintes benefícios:\n\n• Aumente seu valor de Inteligência em 1, até o máximo de 20.\n• Você sempre sabe qual a direção do norte.\n• Você sempre sabe o número de horas restantes para o próximo nascer ou pôr do sol.\n• Você pode relembrar, com precisão, qualquer coisa que você tenha visto ou ouvido no último mês.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-mente-afiada",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "intelligence",
+            "type": "ability-score",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "int"
+            ],
+            "locked": true
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [
+          "Direção do norte, tempo até nascer/pôr do sol e memória do último mês são benefícios informacionais e permanecem na descrição."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-mestre-de-armas",
+        "identifier": "phb-2014-mestre-de-armas",
+        "name": "Mestre de Armas"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 170,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você tem praticado extensamente com uma variedade de armas, ganhando os seguintes benefícios:\n\n• Aumente o valor de Força ou Destreza em 1, até o máximo de 20.\n• Você ganha proficiência com quatro armas simples ou marciais, à sua escolha.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza"
+            ]
+          },
+          {
+            "id": "weapon-proficiencies",
+            "label": "Armas simples ou marciais",
+            "count": 4
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-mestre-de-armas",
+        "tier": "full",
+        "advancements": [
+          {
+            "key": "ability",
+            "type": "ability-score",
+            "sourceChoiceId": "ability",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "str",
+              "dex"
+            ]
+          },
+          {
+            "key": "weapon-proficiencies",
+            "type": "trait-proficiency",
+            "sourceChoiceId": "weapon-proficiencies",
+            "trait": "weapon",
+            "count": 4,
+            "choicesFrom": [
+              "simple",
+              "martial"
+            ]
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-mestre-de-armas-grandes",
+        "identifier": "phb-2014-mestre-de-armas-grandes",
+        "name": "Mestre de Armas Grandes"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 171,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você aprendeu a usar o peso em sua vantagem, deixando o balanço potencializar seus golpes. Você recebe os seguintes benefícios:\n\n• No seu turno, quando você atingir um acerto crítico com uma arma corpo-a-corpo ou reduzir os pontos de vida de uma criatura a 0, você pode realizar um ataque corpo-a-corpo com arma, com uma ação bônus.\n• Antes de você realizar um ataque corpo-a-corpo com uma arma pesada na qual você seja proficiente, você pode escolher sofrer –5 de penalidade em sua jogada de ataque. Se o ataque atingir, você adiciona +10 ao dano do ataque.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-mestre-de-armas-grandes",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "power-attack",
+            "type": "toggle",
+            "name": "Mestre de Armas Grandes — Ataque Poderoso",
+            "activation": "special",
+            "attackModifier": -5,
+            "damageBonus": 10,
+            "appliesTo": "next-qualified-heavy-melee-weapon-attack"
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "bonus-attack",
+            "trigger": "melee-weapon-critical-or-kill",
+            "behavior": "offer-bonus-action-melee-weapon-attack"
+          },
+          {
+            "key": "power-attack",
+            "trigger": "heavy-melee-weapon-attack",
+            "behavior": "apply-minus-five-plus-ten-when-toggle-consumed"
+          }
+        ],
+        "limitations": [
+          "O -5/+10 deve valer somente para um ataque corpo a corpo com arma pesada na qual haja proficiência; não é bônus global."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-mestre-de-escudo",
+        "identifier": "phb-2014-mestre-de-escudo",
+        "name": "Mestre de Escudo"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 171,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você não usa escudos apenas para proteção, mas também de forma ofensiva. Você ganha os seguintes benefícios enquanto estiver empunhando um escudo:\n\n• Se você realizar a ação de Ataque no seu turno, você pode usar uma ação bônus para tentar empurrar uma criatura, a até 1,5 metro de você, com seu escudo.\n• Se você não estiver incapacitado, você pode adicionar seu bônus de CA do escudo a qualquer teste de resistência de Destreza que você fizer contra uma magia ou outro efeito nocivo que tenha você como alvo.\n• Se você for alvo de um efeito que permita realizar um teste de resistência de Destreza para sofrer apenas metade do dano, você pode usar sua reação para não sofrer dano se passar no teste de resistência, interpondo seu escudo entre você e a fonte do efeito.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-mestre-de-escudo",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "shield-shove",
+            "type": "check",
+            "name": "Mestre de Escudo — Empurrar",
+            "activation": "bonus",
+            "check": "shove",
+            "condition": "Após realizar a ação de Ataque no turno e enquanto empunhar um escudo."
+          },
+          {
+            "key": "shield-evasion",
+            "type": "reaction",
+            "name": "Mestre de Escudo — Interpor Escudo",
+            "activation": "reaction",
+            "condition": "Teste de resistência de Destreza permitiria sofrer metade do dano e o personagem passou no teste."
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "shield-save-bonus",
+            "trigger": "dexterity-save-single-target-effect",
+            "behavior": "add-equipped-shield-ac-bonus-to-save"
+          },
+          {
+            "key": "shield-evasion",
+            "trigger": "successful-dexterity-save-half-damage",
+            "behavior": "replace-half-damage-with-zero-when-reaction-used"
+          }
+        ],
+        "limitations": [
+          "Todos os benefícios exigem um escudo empunhado; o bônus de salvaguarda só vale quando a magia/efeito tem o personagem como único alvo."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-mobilidade",
+        "identifier": "phb-2014-mobilidade",
+        "name": "Mobilidade"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 171,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é excepcionalmente rápido e ágil. Você ganha os seguintes benefícios:\n\n• Seu deslocamento aumenta em 3 metros.\n• Quando você usa a ação de Disparada, mover-se através de terreno difícil não lhe custa qualquer movimento adicional neste turno.\n• Quando você realiza um ataque corpo-a-corpo contra uma criatura, você não provoca ataques de oportunidade para essa criatura pelo resto do turno, independentemente de ter atingido ou não.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-mobilidade",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [
+          {
+            "key": "speed",
+            "mechanic": "speed-bonus",
+            "value": "3 m",
+            "valueFeet": 10,
+            "transfer": true
+          }
+        ],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "dash-terrain",
+            "trigger": "movement-cost-after-dash",
+            "behavior": "ignore-difficult-terrain-extra-cost-for-turn"
+          },
+          {
+            "key": "no-opportunity-from-attacked-target",
+            "trigger": "opportunity-attack-evaluation",
+            "behavior": "suppress-opportunity-attacks-from-creatures-owner-attacked-this-turn"
+          }
+        ],
+        "limitations": [
+          "O aumento de deslocamento é passivo; os demais benefícios dependem das ações e alvos do turno."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-observador",
+        "identifier": "phb-2014-observador",
+        "name": "Observador"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 171,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Rápido em perceber os detalhes do ambiente, você ganha os seguintes benefícios:\n\n• Aumente seu valor de Inteligência ou Sabedoria em 1, até o máximo de 20.\n• Se você puder ver a boca de uma criatura enquanto ela fala um idioma que você compreende, você pode interpretar o que ela está dizendo ao ler os seus lábios.\n• Você tem +5 de bônus nos seus valores passivos de Sabedoria (Percepção) e Inteligência (Investigação).",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Inteligência",
+              "Sabedoria"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-observador",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "ability",
+            "type": "ability-score",
+            "sourceChoiceId": "ability",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "int",
+              "wis"
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "key": "passive-perception",
+            "mechanic": "skill-passive-bonus",
+            "skill": "perception",
+            "value": 5,
+            "transfer": true
+          },
+          {
+            "key": "passive-investigation",
+            "mechanic": "skill-passive-bonus",
+            "skill": "investigation",
+            "value": 5,
+            "transfer": true
+          }
+        ],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [
+          "Leitura labial depende de visão da boca e compreensão do idioma e permanece descritiva; os +5 passivos são automatizáveis."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-perito",
+        "identifier": "phb-2014-perito",
+        "name": "Perito"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você ganha proficiência em qualquer combinação de três perícias ou ferramentas, à sua escolha.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "skills-tools",
+            "label": "Perícias ou ferramentas",
+            "count": 3
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-perito",
+        "tier": "full",
+        "advancements": [
+          {
+            "key": "skills-tools",
+            "type": "trait-proficiency",
+            "sourceChoiceId": "skills-tools",
+            "count": 3,
+            "trait": "skill-or-tool",
+            "choicesFrom": [
+              "skills",
+              "tools"
+            ],
+            "combinationAllowed": true
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-poliglota",
+        "identifier": "phb-2014-poliglota",
+        "name": "Poliglota"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você estudou línguas e códigos, ganhando os seguintes benefícios:\n\n• Aumente seu valor de Inteligência em 1, até o máximo de 20.\n• Você aprende três idiomas, à sua escolha.\n• Você é capaz de criar criptogramas escritos. Outros não podem decifrar um código criado por você a não ser que você os ensine, elas sejam bem sucedidas num teste de inteligência (CD igual ao seu valor de Inteligência + seu bônus de proficiência) ou usem mágica para decifrá-lo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "languages",
+            "label": "Idiomas",
+            "count": 3
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-poliglota",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "intelligence",
+            "type": "ability-score",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "int"
+            ],
+            "locked": true
+          },
+          {
+            "key": "languages",
+            "type": "trait-proficiency",
+            "sourceChoiceId": "languages",
+            "count": 3,
+            "trait": "language",
+            "choicesFrom": [
+              "languages"
+            ]
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [
+          "A criação e decifração de criptogramas é uma regra narrativa/teste contextual e permanece na descrição."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-protecao-leve",
+        "identifier": "phb-2014-protecao-leve",
+        "name": "Proteção Leve"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você treinou até dominar o uso de armaduras leves, ganhando os seguintes benefícios:\n\n• Aumente seu valor de Força ou Destreza em 1, até o máximo de 20.\n• Você ganha proficiência com armadura leves.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-protecao-leve",
+        "tier": "full",
+        "advancements": [
+          {
+            "key": "ability",
+            "type": "ability-score",
+            "sourceChoiceId": "ability",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "str",
+              "dex"
+            ]
+          },
+          {
+            "key": "light-armor",
+            "type": "trait-proficiency",
+            "trait": "armor",
+            "add": [
+              "light"
+            ]
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-protecao-moderada",
+        "identifier": "phb-2014-protecao-moderada",
+        "name": "Proteção Moderada"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você treinou até dominar o uso de armaduras médias e escudos, ganhando os seguintes benefícios:\n\n• Aumente seu valor de Força ou Destreza em 1, até o máximo de 20.\n• Você ganha proficiência com armadura média e escudos.",
+        "prerequisite": "Proficiência em armadura leve",
+        "prerequisites": [
+          {
+            "type": "proficiency",
+            "category": "armor",
+            "value": "light",
+            "label": "Proficiência em armadura leve"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-protecao-moderada",
+        "tier": "full",
+        "advancements": [
+          {
+            "key": "ability",
+            "type": "ability-score",
+            "sourceChoiceId": "ability",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "str",
+              "dex"
+            ]
+          },
+          {
+            "key": "medium-armor",
+            "type": "trait-proficiency",
+            "trait": "armor",
+            "add": [
+              "medium"
+            ]
+          },
+          {
+            "key": "shields",
+            "type": "trait-proficiency",
+            "trait": "armor",
+            "add": [
+              "shield"
+            ]
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-protecao-pesada",
+        "identifier": "phb-2014-protecao-pesada",
+        "name": "Proteção Pesada"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você treinou até dominar o uso de armaduras pesadas, ganhando os seguintes benefícios:\n\n• Aumente seu valor de Força em 1, até o máximo de 20.\n• Você ganha proficiência com armadura pesada.",
+        "prerequisite": "Proficiência em armadura média",
+        "prerequisites": [
+          {
+            "type": "proficiency",
+            "category": "armor",
+            "value": "medium",
+            "label": "Proficiência em armadura média"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-protecao-pesada",
+        "tier": "full",
+        "advancements": [
+          {
+            "key": "strength",
+            "type": "ability-score",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "str"
+            ],
+            "locked": true
+          },
+          {
+            "key": "heavy-armor",
+            "type": "trait-proficiency",
+            "trait": "armor",
+            "add": [
+              "heavy"
+            ]
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-resiliente",
+        "identifier": "phb-2014-resiliente",
+        "name": "Resiliente"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Escolha um valor de habilidade. Você ganha os seguintes benefícios:\n\n• Aumente o valor de habilidade escolhido em 1, até o máximo de 20.\n• Você ganha proficiência em testes de resistência usando a habilidade escolhida.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Valor de habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza",
+              "Constituição",
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-resiliente",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "ability-and-save",
+            "type": "linked-choice",
+            "sourceChoiceId": "ability",
+            "count": 1,
+            "options": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "wis",
+              "cha"
+            ],
+            "grants": [
+              {
+                "type": "ability-score",
+                "amount": 1,
+                "maximum": 20,
+                "sameChoice": true
+              },
+              {
+                "type": "saving-throw-proficiency",
+                "sameChoice": true
+              }
+            ]
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [
+          "O +1 e a proficiência em salvaguarda devem apontar para a mesma habilidade; o Importer 0.12 deve materializar a escolha de forma vinculada."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-resistente",
+        "identifier": "phb-2014-resistente",
+        "name": "Resistente"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Duro e resistente, você ganha os seguintes benefícios:\n\n• Aumente seu valor de Constituição em 1, até o máximo de 20.\n• Quando você rolar um Dado de Vida para recuperar pontos de vida, o valor mínimo de pontos de vida que você recupera dessa rolagem será igual a duas vezes seu modificador de Constituição (mínimo de 2).",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-resistente",
+        "tier": "partial",
+        "advancements": [
+          {
+            "key": "constitution",
+            "type": "ability-score",
+            "amount": 1,
+            "maximum": 20,
+            "options": [
+              "con"
+            ],
+            "locked": true
+          }
+        ],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "hit-die-minimum",
+            "trigger": "hit-die-healing-roll",
+            "behavior": "enforce-minimum-healing-equal-two-times-constitution-modifier",
+            "absoluteMinimum": 2
+          }
+        ],
+        "limitations": [
+          "O mínimo é aplicado à recuperação produzida por cada Dado de Vida rolado e depende do modificador atual de Constituição."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-robusto",
+        "identifier": "phb-2014-robusto",
+        "name": "Robusto"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Seu máximo de pontos de vida aumenta em um valor igual a duas vezes seu nível quando você adquire esse talento. Toda vez que você ganhar um nível, após isso, seu máximo de pontos de vida aumenta em 2 pontos de vida adicionais.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-robusto",
+        "tier": "full",
+        "advancements": [],
+        "effects": [
+          {
+            "key": "hp-per-level",
+            "mechanic": "hp-per-level",
+            "value": 2,
+            "transfer": true,
+            "includeCurrentLevel": true
+          }
+        ],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-sentinela",
+        "identifier": "phb-2014-sentinela",
+        "name": "Sentinela"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você domina técnicas para obter vantagem a cada vez que qualquer inimigo baixar a guarda, ganhando os seguintes benefícios:\n\n• Quando você atinge uma criatura com um ataque de oportunidade, o deslocamento da criatura se torna 0 pelo resto do turno.\n• As criaturas provocam ataques de oportunidade de você mesmo se realizarem a ação de Desengajar antes de saírem do seu alcance.\n• Quando uma criatura a até 1,5 metro de você realizar um ataque contra um alvo diferente de você (e o alvo não possuir esse talento), você pode usar sua reação para realizar um ataque corpo-a-corpo com arma contra a criatura atacante.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-sentinela",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "retaliation",
+            "type": "reaction",
+            "name": "Sentinela — Retaliação",
+            "activation": "reaction",
+            "attack": "melee-weapon",
+            "condition": "Criatura a até 1,5 m ataca um alvo diferente de você e esse alvo não possui Sentinela."
+          }
+        ],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "oa-stop",
+            "trigger": "opportunity-attack-hit",
+            "behavior": "set-target-speed-to-zero-for-rest-of-turn"
+          },
+          {
+            "key": "disengage",
+            "trigger": "opportunity-attack-evaluation",
+            "behavior": "allow-opportunity-attack-despite-disengage"
+          },
+          {
+            "key": "retaliation",
+            "trigger": "nearby-creature-attacks-other-target",
+            "behavior": "offer-reaction-melee-weapon-attack"
+          }
+        ],
+        "limitations": [
+          "Os efeitos dependem de ataques de oportunidade, Desengajar e posição dos combatentes, portanto exigem runtime de combate."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-sorrateiro",
+        "identifier": "phb-2014-sorrateiro",
+        "name": "Sorrateiro"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é especialista em espreitar através das sombras. Você ganha os seguintes benefícios:\n\n• Você pode tentar se esconder quando estiver levemente obscurecido para a criatura de quem você está tentando se esconder.\n• Quando você estiver escondido de uma criatura e errar um ataque à distância contra ela, realizar esse ataque não revelará sua posição.\n• Penumbra não impõem desvantagem nos seus testes de Sabedoria (Percepção) relacionados a visão.",
+        "prerequisite": "Destreza 13 ou maior",
+        "prerequisites": [
+          {
+            "type": "ability",
+            "abilities": [
+              "Destreza"
+            ],
+            "minimum": 13,
+            "mode": "all",
+            "label": "Destreza 13 ou maior"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-sorrateiro",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [
+          {
+            "key": "light-obscurement-hide",
+            "trigger": "hide-eligibility",
+            "behavior": "allow-hide-while-lightly-obscured-from-observer"
+          },
+          {
+            "key": "miss-does-not-reveal",
+            "trigger": "hidden-ranged-attack-miss",
+            "behavior": "preserve-hidden-position"
+          },
+          {
+            "key": "dim-light-perception",
+            "trigger": "perception-check-vision-in-dim-light",
+            "behavior": "suppress-dim-light-disadvantage"
+          }
+        ],
+        "limitations": [
+          "Os três benefícios dependem de obscurecimento, estado escondido e iluminação; nenhum Active Effect global é seguro."
+        ],
+        "notes": []
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "phb-2014-sortudo",
+        "identifier": "phb-2014-sortudo",
+        "name": "Sortudo"
+      },
+      "source": {
+        "sourceId": "phb-2014",
+        "title": "Livro do Jogador — D&D 5e 2014",
+        "shortTitle": "Livro do Jogador",
+        "chapter": "Capítulo 6 — Opções de Personalização",
+        "pages": "167–172",
+        "page": 172,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você tem uma sorte inexplicável que parece surgir nos momentos exatos.\n\nVocê tem 3 pontos de sorte. A qualquer momento que você realizar uma jogada de ataque, teste de habilidade ou teste de resistência, você pode gastar um ponto de sorte para rolar um d20 adicional. Você pode escolher gastar um dos seus pontos de sorte depois de rolar o dado, mas antes de saber o resultado da jogada. Você escolhe qual dos d20s irá usar para a jogada de ataque, teste de habilidade ou teste de resistência.\n\nVocê também pode gastar um ponto de sorte quando uma jogada de ataque for feita contra você. Role um d20, e então escolha se o ataque irá usar a jogada do atacante ou a sua.\n\nSe mais de uma criatura gastar um ponto de sorte para influenciar uma mesma jogada, os pontos se cancelam mutuamente; nenhum dado adicional é rolado.\n\nVocê recupera seus pontos de sorte gastos após terminar um descanso longo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "phb-2014-sortudo",
+        "tier": "partial",
+        "advancements": [],
+        "effects": [],
+        "activities": [
+          {
+            "key": "spend-luck",
+            "type": "utility",
+            "name": "Sortudo — Gastar Ponto de Sorte",
+            "activation": "special",
+            "consumesItemUse": 1,
+            "condition": "Depois de rolar um ataque, teste ou salvaguarda e antes de saber o resultado, ou quando uma jogada de ataque é feita contra você."
+          }
+        ],
+        "uses": {
+          "max": "3",
+          "recovery": [
+            "lr"
+          ],
+          "label": "Pontos de Sorte"
+        },
+        "runtime": [
+          {
+            "key": "owner-roll",
+            "trigger": "post-d20-roll-before-outcome",
+            "behavior": "roll-additional-d20-and-let-owner-choose-result",
+            "rollTypes": [
+              "attack",
+              "ability-check",
+              "saving-throw"
+            ]
+          },
+          {
+            "key": "incoming-attack",
+            "trigger": "attack-roll-against-owner",
+            "behavior": "roll-additional-d20-and-let-owner-choose-attacker-or-luck-die"
+          },
+          {
+            "key": "mutual-cancel",
+            "trigger": "multiple-luck-points-on-same-roll",
+            "behavior": "cancel-opposing-luck-points-without-extra-die"
+          }
+        ],
+        "limitations": [
+          "O gasto de pontos é automatizável; a intervenção na rolagem exige runtime porque ocorre depois do d20 e antes do resultado ser conhecido."
+        ],
+        "notes": []
+      }
+    }
+  ]
+}

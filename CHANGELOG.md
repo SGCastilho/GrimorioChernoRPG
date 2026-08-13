@@ -1,3 +1,16 @@
+## 5.42.0
+
+### Foundry — Talentos · FA-1
+- Criado `data/export/foundry-feat-automation.js` com **42 perfis explícitos**, um para cada Talento do Livro do Jogador.
+- Novo contrato `grimorio-foundry-feat-automation-plan@1`, com tiers `full`, `partial` e `description`, além de Advancements, Activities, Effects, usos, runtime, limitações e notas.
+- Feat Bundle promovido para `grimorio-foundry-feat-bundle` **v2** e Feat Package para `grimorio-foundry-feat-package` **v2**.
+- O JSON v2 declara `minimumImporterVersion: 0.12.0`; a RC `0.11.0-rc.1` não foi alterada e permanece em feature freeze.
+- `foundry/grimorio-importer` foi sincronizado com a build **0.11.0-rc.1** já aprovada, sem alterações internas do módulo durante a FA-1.
+- Cobertura do catálogo: **6 perfis completos + 36 parciais**, totalizando **28 Advancements, 10 Effects, 22 Activities, 2 perfis com uses e 56 requisitos de runtime**.
+- Perfis condicionais evitam efeitos globais incorretos: Conjurador de Guerra, Ambidestro, Maestria em Armadura Média/Pesada, Sentinela, Sorrateiro, Sortudo e outros exigem contexto/runtime quando necessário.
+- `tools/validate-foundry-feat-automation-5.42.js` valida os 42 perfis, schemas v2, escolhas estruturadas e casos críticos como Alerta, Observador, Robusto e Sortudo.
+- `tools/validate-project.js` agora audita a cobertura dos perfis de Talentos no validador principal.
+
 ## 5.41.0
 
 ### Foundry — Talentos (Fase 2)

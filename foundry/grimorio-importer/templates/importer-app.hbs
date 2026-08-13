@@ -1,0 +1,582 @@
+<div class="grimorio-central" aria-busy="{{#if importExecution.executing}}true{{else}}false{{/if}}">
+  <aside class="grimorio-central__sidebar" aria-label="Navegação do Grimório Importer">
+    <div class="grimorio-central__brand">
+      <div class="grimorio-central__brand-icon"><i class="fa-solid fa-book-open"></i></div>
+      <div>
+        <strong>Grimório Importer</strong>
+        <span>v{{importerVersion}} · {{buildLabel}}</span>
+      </div>
+    </div>
+
+    <nav class="grimorio-central__nav">
+      {{#each sections}}
+        <button type="button"
+                class="grimorio-central__nav-item{{#if active}} is-active{{/if}}"
+                data-grimorio-section="{{id}}"
+                aria-current="{{#if active}}page{{else}}false{{/if}}"
+                aria-label="Abrir {{label}} — {{phase}}">
+          <i class="{{icon}}"></i>
+          <span>{{label}}</span>
+          {{#unless active}}<small>{{phase}}</small>{{/unless}}
+        </button>
+      {{/each}}
+    </nav>
+
+    <div class="grimorio-central__sidebar-footer">
+      <span class="grimorio-central__status-dot{{#unless runtime.compatible}} is-warning{{/unless}}"></span>
+      <span>{{runtime.stateLabel}}</span>
+    </div>
+  </aside>
+
+  <main class="grimorio-central__content" aria-labelledby="grimorio-central-panel-title">
+    <header class="grimorio-central__hero">
+      <div class="grimorio-central__hero-icon"><i class="{{panel.icon}}"></i></div>
+      <div>
+        <span class="grimorio-central__eyebrow">{{panel.eyebrow}}</span>
+        <h2 id="grimorio-central-panel-title">{{panel.title}}</h2>
+        <p>{{panel.description}}</p>
+      </div>
+    </header>
+
+    <section class="grimorio-central__workspace">
+      {{#if isImportSection}}
+        <div class="grimorio-import-flow">
+          <input class="grimorio-import-flow__file-input"
+                 type="file"
+                 accept=".json,application/json"
+                 multiple
+                 aria-label="Selecionar arquivos JSON para importação"
+                 data-grimorio-file-input>
+
+          <div class="grimorio-import-flow__dropzone" data-grimorio-dropzone role="region" aria-label="Área para arrastar arquivos JSON">
+            <div class="grimorio-import-flow__drop-icon"><i class="fa-solid fa-file-arrow-up"></i></div>
+            <div class="grimorio-import-flow__drop-copy">
+              <strong>Arraste JSONs do Grimório para esta área</strong>
+              <p>Bundles individuais e pacotes de Classes, Subclasses e Talentos são identificados automaticamente. Nenhum conteúdo é gravado durante o preflight.</p>
+            </div>
+            <button type="button" class="grimorio-import-flow__select" data-grimorio-select-files>
+              <i class="fa-solid fa-folder-open"></i>
+              Selecionar arquivos
+            </button>
+          </div>
+
+          {{#unless importSession.empty}}
+            <div class="grimorio-import-flow__summary">
+              <div class="grimorio-import-flow__summary-item">
+                <span>Arquivos</span>
+                <strong>{{importSession.summary.files}}</strong>
+              </div>
+              <div class="grimorio-import-flow__summary-item is-good">
+                <span>Válidos</span>
+                <strong>{{importSession.summary.valid}}</strong>
+              </div>
+              <div class="grimorio-import-flow__summary-item is-warning">
+                <span>Com avisos</span>
+                <strong>{{importSession.summary.warnings}}</strong>
+              </div>
+              <div class="grimorio-import-flow__summary-item is-bad">
+                <span>Inválidos</span>
+                <strong>{{importSession.summary.invalid}}</strong>
+              </div>
+              <div class="grimorio-import-flow__summary-actions">
+                <button type="button" data-grimorio-refresh-diff>
+                  <i class="fa-solid fa-arrows-rotate"></i> Atualizar diagnóstico
+                </button>
+                <button type="button" data-grimorio-clear-files>
+                  <i class="fa-solid fa-trash-can"></i> Limpar sessão
+                </button>
+              </div>
+            </div>
+
+            <div class="grimorio-import-flow__notice">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>Fluxo 0.11-D — preflight antes de qualquer escrita</strong>
+                <p>Os JSONs são validados e comparados com os compêndios reais do Grimório. A escrita só é liberada depois de um diagnóstico válido e de uma confirmação explícita do Mestre.</p>
+              </div>
+            </div>
+
+            <div class="grimorio-import-flow__diff-summary">
+              <div>
+                <span>Documentos planejados</span>
+                <strong>{{importSession.summary.documents}}</strong>
+              </div>
+              <div class="is-create">
+                <span>Novos</span>
+                <strong>{{importSession.summary.create}}</strong>
+              </div>
+              <div class="is-update">
+                <span>Atualizações</span>
+                <strong>{{importSession.summary.update}}</strong>
+              </div>
+              <div class="{{#if importSession.summary.inspectionUnavailable}}is-error{{else}}is-ready{{/if}}">
+                <span>Diagnóstico</span>
+                <strong>{{#if importSession.summary.inspectionUnavailable}}Indisponível em {{importSession.summary.inspectionUnavailable}}{{else}}Pronto{{/if}}</strong>
+              </div>
+            </div>
+
+            {{#if importExecution.hasReport}}
+              <section class="grimorio-import-report is-{{importExecution.report.state}}" role="status" aria-live="polite">
+                <header class="grimorio-import-report__header">
+                  <div class="grimorio-import-report__icon"><i class="{{importExecution.report.stateIcon}}"></i></div>
+                  <div>
+                    <span>Relatório da execução</span>
+                    <h3>{{importExecution.report.stateLabel}}</h3>
+                    <p>Resultado real retornado pelos materializadores do Grimório. O diagnóstico acima já foi atualizado para refletir o estado atual dos compêndios.</p>
+                  </div>
+                  <small>{{importExecution.report.durationLabel}}</small>
+                </header>
+                <div class="grimorio-import-report__stats">
+                  <div><span>Arquivos</span><strong>{{importExecution.report.files}}</strong></div>
+                  <div class="is-create"><span>Criados</span><strong>{{importExecution.report.created}}</strong></div>
+                  <div class="is-update"><span>Atualizados</span><strong>{{importExecution.report.updated}}</strong></div>
+                  <div class="is-failure"><span>Arquivos c/ falha</span><strong>{{importExecution.report.filesWithIssues}}</strong></div>
+                  <div><span>Pastas criadas</span><strong>{{importExecution.report.foldersCreated}}</strong></div>
+                  <div><span>Pastas atualizadas</span><strong>{{importExecution.report.foldersUpdated}}</strong></div>
+                  <div><span>Avisos</span><strong>{{importExecution.report.warningCount}}</strong></div>
+                  <div class="is-world"><span>Items no Mundo</span><strong>{{importExecution.report.worldItemsCreated}}</strong></div>
+                </div>
+                <div class="grimorio-import-report__comparison">
+                  <i class="fa-solid fa-code-compare"></i>
+                  <span>Previsão confirmada: <strong>{{importExecution.report.predictedCreate}} novos</strong> + <strong>{{importExecution.report.predictedUpdate}} atualizações</strong>.</span>
+                  <span>Execução real: <strong>{{importExecution.report.created}} criados</strong> + <strong>{{importExecution.report.updated}} atualizados</strong>.</span>
+                </div>
+                <details class="grimorio-import-report__details" open>
+                  <summary><i class="fa-solid fa-list-check"></i> Ver resultado por arquivo</summary>
+                  <div class="grimorio-import-report__rows">
+                    {{#each importExecution.report.rows}}
+                      <article class="grimorio-import-report__row is-{{status}}">
+                        <div class="grimorio-import-report__row-state"><i class="{{statusIcon}}"></i></div>
+                        <div class="grimorio-import-report__row-copy">
+                          <strong>{{title}}</strong>
+                          <span>{{typeLabel}}{{#if fileName}} · {{fileName}}{{/if}}</span>
+                          {{#if error}}<p class="is-error">{{error}}</p>{{/if}}
+                          {{#if actual.warnings.length}}
+                            <div class="grimorio-import-report__warnings">
+                              <p class="is-warning"><i class="fa-solid fa-triangle-exclamation"></i> {{actual.warnings.length}} aviso(s) retornado(s) pelo materializador.</p>
+                              {{#each actual.warnings}}<p>{{this}}</p>{{/each}}
+                            </div>
+                          {{/if}}
+                          {{#if actual.internalFailures.length}}
+                            <div class="grimorio-import-report__failures">
+                              {{#each actual.internalFailures}}<p><strong>{{name}}:</strong> {{message}}</p>{{/each}}
+                            </div>
+                          {{/if}}
+                        </div>
+                        <div class="grimorio-import-report__row-numbers">
+                          <span>{{statusLabel}}</span>
+                          <strong>{{actual.created}} criado(s)</strong>
+                          <strong>{{actual.updated}} atualizado(s)</strong>
+                        </div>
+                      </article>
+                    {{/each}}
+                  </div>
+                </details>
+              </section>
+            {{/if}}
+
+            <div class="grimorio-import-flow__cards">
+              {{#each importSession.entries}}
+                <article class="grimorio-payload-card is-{{state}}">
+                  <header class="grimorio-payload-card__header">
+                    <div class="grimorio-payload-card__type-icon"><i class="{{icon}}"></i></div>
+                    <div class="grimorio-payload-card__heading">
+                      <div class="grimorio-payload-card__fileline">
+                        <span><i class="fa-regular fa-file-code"></i> {{fileName}}</span>
+                        <small>{{fileSizeLabel}}</small>
+                      </div>
+                      <h3>{{title}}</h3>
+                      <p>{{typeLabel}}{{#if subtitle}} · {{subtitle}}{{/if}}</p>
+                    </div>
+                    <div class="grimorio-payload-card__state is-{{state}}">
+                      <i class="{{stateIcon}}"></i>
+                      <span>{{stateLabel}}</span>
+                    </div>
+                    <button type="button"
+                            class="grimorio-payload-card__remove"
+                            data-grimorio-remove-file="{{id}}"
+                            title="Remover arquivo"
+                            aria-label="Remover {{fileName}}">
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </header>
+
+                  {{#if counts.length}}
+                    <div class="grimorio-payload-card__counts">
+                      {{#each counts}}
+                        <div>
+                          <i class="{{icon}}"></i>
+                          <span>{{label}}</span>
+                          <strong>{{value}}</strong>
+                        </div>
+                      {{/each}}
+                    </div>
+                  {{/if}}
+
+                  <div class="grimorio-payload-card__body">
+                    <div class="grimorio-payload-card__meta">
+                      {{#if identifier}}
+                        <div><span>Identificador</span><code>{{identifier}}</code></div>
+                      {{/if}}
+                      {{#if schema}}
+                        <div><span>Schema</span><code>{{schema}} v{{schemaVersion}}</code></div>
+                      {{/if}}
+                      {{#if source.title}}
+                        <div><span>Fonte</span><strong>{{source.title}}</strong></div>
+                      {{/if}}
+                      {{#each details}}
+                        <div><span>{{label}}</span><strong>{{value}}</strong></div>
+                      {{/each}}
+                    </div>
+
+                    {{#if excerpt}}
+                      <div class="grimorio-payload-card__excerpt">
+                        <span>Preview do conteúdo</span>
+                        <p>{{excerpt}}</p>
+                      </div>
+                    {{/if}}
+
+                    {{#if destinations.length}}
+                      <div class="grimorio-payload-card__destinations">
+                        <span>Destino previsto</span>
+                        <div>
+                          {{#each destinations}}
+                            <span class="grimorio-payload-card__destination"><i class="fa-solid fa-box-archive"></i> {{label}}</span>
+                          {{/each}}
+                        </div>
+                      </div>
+                    {{/if}}
+
+                    {{#if compendium}}
+                      <section class="grimorio-payload-card__compendium is-{{compendium.state}}">
+                        <header>
+                          <div>
+                            <span>Preflight nos compêndios</span>
+                            <strong><i class="{{compendium.stateIcon}}"></i> {{compendium.stateLabel}}</strong>
+                          </div>
+                          {{#if compendium.available}}
+                            <small>{{compendium.total}} documento(s) planejado(s)</small>
+                          {{/if}}
+                        </header>
+
+                        {{#if compendium.available}}
+                          <div class="grimorio-payload-card__diff-counts">
+                            <div><span>Total</span><strong>{{compendium.total}}</strong></div>
+                            <div class="is-create"><span>NOVO</span><strong>{{compendium.create}}</strong></div>
+                            <div class="is-update"><span>ATUALIZAR</span><strong>{{compendium.update}}</strong></div>
+                            <div><span>Compêndios consultados</span><strong>{{compendium.packsChecked}}</strong></div>
+                          </div>
+
+                          <details class="grimorio-payload-card__document-list">
+                            <summary>
+                              <i class="fa-solid fa-list-check"></i>
+                              Ver diagnóstico por documento
+                              <small>{{compendium.total}} item(ns)</small>
+                            </summary>
+                            <div class="grimorio-payload-card__document-rows">
+                              {{#each compendium.displayDocuments}}
+                                <div class="grimorio-payload-card__document-row">
+                                  <span class="grimorio-payload-card__document-state is-{{status}}"><i class="{{statusIcon}}"></i> {{statusLabel}}</span>
+                                  <div class="grimorio-payload-card__document-name">
+                                    <strong>{{name}}</strong>
+                                    <small>{{typeLabel}}{{#if level}} · Nível {{level}}{{/if}}{{#if featureRole}} · {{featureRole}}{{/if}}</small>
+                                    {{#if isUpdate}}{{#if existingName}}<em>Existente: {{existingName}}</em>{{/if}}{{/if}}
+                                  </div>
+                                  <span class="grimorio-payload-card__document-pack"><i class="fa-solid fa-box-archive"></i> {{packLabel}}</span>
+                                </div>
+                              {{/each}}
+                              {{#if compendium.documentOverflow}}
+                                <div class="grimorio-payload-card__document-overflow">
+                                  <i class="fa-solid fa-ellipsis"></i> Mais {{compendium.documentOverflow}} documento(s) fazem parte deste pacote. A lista visual é limitada para preservar o desempenho da Central; o resumo considera todos eles.
+                                </div>
+                              {{/if}}
+                            </div>
+                          </details>
+                        {{else}}
+                          <div class="grimorio-payload-card__compendium-error">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <div>
+                              <strong>Não foi possível calcular criação/atualização.</strong>
+                              {{#each compendium.errors}}<p>{{this}}</p>{{/each}}
+                            </div>
+                          </div>
+                        {{/if}}
+                      </section>
+                    {{/if}}
+
+                    {{#if displayWarnings.length}}
+                      <details class="grimorio-payload-card__messages is-warning" open>
+                        <summary><i class="fa-solid fa-triangle-exclamation"></i> {{warnings.length}} aviso(s)</summary>
+                        <ul>
+                          {{#each displayWarnings}}<li>{{this}}</li>{{/each}}
+                          {{#if warningOverflow}}<li>… e mais {{warningOverflow}} aviso(s).</li>{{/if}}
+                        </ul>
+                      </details>
+                    {{/if}}
+
+                    {{#if displayErrors.length}}
+                      <details class="grimorio-payload-card__messages is-error" open>
+                        <summary><i class="fa-solid fa-circle-xmark"></i> {{errors.length}} erro(s)</summary>
+                        <ul>
+                          {{#each displayErrors}}<li>{{this}}</li>{{/each}}
+                          {{#if errorOverflow}}<li>… e mais {{errorOverflow}} erro(s).</li>{{/if}}
+                        </ul>
+                      </details>
+                    {{/if}}
+                  </div>
+                </article>
+              {{/each}}
+            </div>
+
+            {{#if importExecution.executing}}
+              <div class="grimorio-import-flow__execution-state" role="status" aria-live="assertive">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <div>
+                  <strong>Importação em andamento</strong>
+                  <p>Os materializadores estão sincronizando o conteúdo confirmado. Não feche a Central até a conclusão do relatório.</p>
+                </div>
+              </div>
+            {{else}}
+              {{#if importExecution.confirming}}
+                <section class="grimorio-import-confirm" role="alertdialog" aria-modal="false" aria-labelledby="grimorio-import-confirm-title">
+                  <div class="grimorio-import-confirm__icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                  <div class="grimorio-import-confirm__copy">
+                    <span>Confirmação obrigatória</span>
+                    <h3 id="grimorio-import-confirm-title">Confirmar escrita nos compêndios?</h3>
+                    <p>O diagnóstico acabou de ser atualizado. Esta operação processará <strong>{{importSession.summary.files}} arquivo(s)</strong> e sincronizará <strong>{{importSession.summary.documents}} documento(s)</strong>: <strong>{{importSession.summary.create}} novo(s)</strong> e <strong>{{importSession.summary.update}} atualização(ões)</strong>.</p>
+                    <p class="grimorio-import-confirm__safety"><i class="fa-solid fa-shield-halved"></i> Os compêndios são desbloqueados apenas durante a escrita e têm o estado de bloqueio restaurado ao final. A reimportação continua usando IDs/flags estáveis.</p>
+                  </div>
+                  <div class="grimorio-import-confirm__actions">
+                    <button type="button" data-grimorio-cancel-import><i class="fa-solid fa-xmark"></i> Cancelar</button>
+                    <button type="button" class="is-primary" data-grimorio-confirm-import><i class="fa-solid fa-check"></i> Confirmar importação</button>
+                  </div>
+                </section>
+              {{else}}
+                <div class="grimorio-import-flow__footer-action">
+                  <div>
+                    <strong>{{#if importSession.summary.canImport}}Pronto para importar{{else}}Importação bloqueada pelo preflight{{/if}}</strong>
+                    <p>{{importSession.summary.documents}} documento(s): {{importSession.summary.create}} novo(s) e {{importSession.summary.update}} atualização(ões). {{#unless importSession.summary.canImport}}Remova arquivos inválidos ou resolva compêndios indisponíveis antes de continuar.{{/unless}}</p>
+                  </div>
+                  <button type="button" data-grimorio-request-import {{#unless importSession.summary.canImport}}disabled{{/unless}} title="A Central atualizará o diagnóstico e pedirá confirmação antes de escrever.">
+                    <i class="fa-solid fa-file-import"></i>
+                    Importar conteúdo
+                    <small>confirmar</small>
+                  </button>
+                </div>
+              {{/if}}
+            {{/if}}
+          {{else}}
+            <div class="grimorio-import-flow__empty">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <div>
+                <strong>Nenhum arquivo na sessão</strong>
+                <p>Selecione um ou mais JSONs exportados pelo Grimório. A preview aparecerá aqui antes de qualquer importação.</p>
+              </div>
+            </div>
+          {{/unless}}
+        </div>
+      {{else}}
+        {{#if isStatusSection}}
+          {{#if sectionData.ready}}
+            <div class="grimorio-admin-flow">
+              <div class="grimorio-admin-toolbar">
+                <div><strong>Diagnóstico do ambiente</strong><span>Dados retornados pela mesma API usada por <code>/grimorio-status</code>.</span></div>
+                <button type="button" data-grimorio-refresh-section><i class="fa-solid fa-arrows-rotate"></i> Atualizar</button>
+              </div>
+              <div class="grimorio-admin-metrics">
+                <div class="{{#if sectionData.environmentMatches}}is-good{{else}}is-warning{{/if}}"><span>Ambiente</span><strong>{{#if sectionData.environmentMatches}}Homologado{{else}}Revisar{{/if}}</strong><small>Foundry + DnD5e</small></div>
+                <div class="{{#if sectionData.packsReadyState}}is-good{{else}}is-warning{{/if}}"><span>Compêndios</span><strong>{{sectionData.packsReady}}/{{sectionData.packsTotal}}</strong><small>disponíveis</small></div>
+                <div class="{{#if sectionData.legacy.clean}}is-good{{else}}is-warning{{/if}}"><span>Items legados</span><strong>{{sectionData.legacy.total}}</strong><small>protótipo Fase 5</small></div>
+                <div><span>Importer</span><strong>v{{importerVersion}}</strong><small>{{buildLabel}}</small></div>
+              </div>
+              <section class="grimorio-admin-card grimorio-readiness is-{{sectionData.readiness.state}}" aria-label="Prontidão da release candidate para versão final">
+                <header>
+                  <div><span>{{sectionData.readiness.phase}} · {{sectionData.readiness.buildLabel}}</span><h3>Prontidão para 0.11.0 final</h3></div>
+                  <div class="grimorio-readiness__headline"><i class="{{sectionData.readiness.stateIcon}}"></i><strong>{{sectionData.readiness.stateLabel}}</strong><small>{{sectionData.readiness.passed}}/{{sectionData.readiness.total}} verificações</small></div>
+                </header>
+                <div class="grimorio-readiness__checks">
+                  {{#each sectionData.readiness.checks}}
+                    <div class="grimorio-readiness__check is-{{state}}">
+                      <i class="{{stateIcon}}"></i>
+                      <div><strong>{{label}}</strong><small>{{detail}}</small></div>
+                      <span>{{stateLabel}}</span>
+                    </div>
+                  {{/each}}
+                </div>
+                {{#if sectionData.readiness.blockingFailures}}
+                  <p class="grimorio-admin-note is-warning"><i class="fa-solid fa-shield-halved"></i> Existem {{sectionData.readiness.blockingFailures}} bloqueio(s) antes da 0.11.0 final. Corrija os itens marcados como Bloqueio e atualize o Status.</p>
+                {{else}}
+                  <p class="grimorio-admin-note is-good"><i class="fa-solid fa-shield-halved"></i> Nenhum bloqueio técnico da Release Candidate foi detectado. Observações não bloqueantes continuam visíveis acima.</p>
+                {{/if}}
+              </section>
+              <section class="grimorio-admin-card">
+                <header><div><span>Compatibilidade</span><h3>Runtime ativo</h3></div><i class="{{#if sectionData.environmentMatches}}fa-solid fa-circle-check{{else}}fa-solid fa-triangle-exclamation{{/if}}"></i></header>
+                <div class="grimorio-runtime-grid">
+                  <div><span>Foundry ativo</span><strong>{{sectionData.activeFoundry}}</strong><small>alvo {{sectionData.targetFoundry}}</small></div>
+                  <div><span>Sistema</span><strong>{{sectionData.activeSystem}}</strong><small>DnD5e esperado</small></div>
+                  <div><span>DnD5e ativo</span><strong>{{sectionData.activeSystemVersion}}</strong><small>alvo {{sectionData.targetDnd5e}}</small></div>
+                  <div><span>Resultado</span><strong>{{#if sectionData.environmentMatches}}Perfil homologado{{else}}Fora do perfil homologado{{/if}}</strong><small>o módulo não altera versões automaticamente</small></div>
+                </div>
+              </section>
+              <section class="grimorio-admin-card">
+                <header><div><span>Armazenamento</span><h3>Disponibilidade dos compêndios</h3></div><strong>{{sectionData.packsReady}}/{{sectionData.packsTotal}}</strong></header>
+                <div class="grimorio-admin-list">
+                  {{#each sectionData.packs}}
+                    <div class="grimorio-admin-list__row {{#unless available}}is-error{{/unless}}">
+                      <i class="{{stateIcon}}"></i><div><strong>{{label}}</strong><small>{{collection}}</small></div><span>{{stateLabel}} · {{lockLabel}}</span>
+                    </div>
+                  {{/each}}
+                </div>
+              </section>
+              <section class="grimorio-admin-card {{#unless sectionData.legacy.clean}}is-warning{{/unless}}">
+                <header><div><span>Conteúdo legado</span><h3>Protótipo da Fase 5 no Mundo</h3></div><strong>{{sectionData.legacy.total}}</strong></header>
+                {{#if sectionData.legacy.clean}}
+                  <p class="grimorio-admin-note is-good"><i class="fa-solid fa-circle-check"></i> Nenhum Item legado gerenciado foi encontrado no diretório do Mundo.</p>
+                {{else}}
+                  <p class="grimorio-admin-note is-warning"><i class="fa-solid fa-triangle-exclamation"></i> Esses Items não são removidos automaticamente. Revise-os manualmente antes de excluir qualquer conteúdo.</p>
+                  <div class="grimorio-admin-chips">{{#each sectionData.legacy.byRole}}<span>{{role}} <strong>{{total}}</strong></span>{{/each}}</div>
+                {{/if}}
+              </section>
+            </div>
+          {{else}}
+            <div class="grimorio-admin-error" role="alert"><i class="fa-solid fa-circle-xmark"></i><div><strong>Status indisponível</strong><p>{{sectionData.error}}</p></div><button type="button" data-grimorio-refresh-section>Repetir</button></div>
+          {{/if}}
+        {{else}}
+          {{#if isPacksSection}}
+            {{#if sectionData.ready}}
+              <div class="grimorio-admin-flow">
+                <div class="grimorio-admin-toolbar"><div><strong>Compêndios gerenciados</strong><span>Contagens reais obtidas por <code>compendiumStatus()</code>.</span></div><button type="button" data-grimorio-refresh-section><i class="fa-solid fa-arrows-rotate"></i> Atualizar</button></div>
+                <div class="grimorio-admin-metrics">
+                  <div><span>Compêndios</span><strong>{{sectionData.total}}</strong><small>registrados</small></div>
+                  <div class="is-good"><span>Disponíveis</span><strong>{{sectionData.available}}</strong><small>carregados</small></div>
+                  <div><span>Documentos</span><strong>{{sectionData.managed}}</strong><small>gerenciados</small></div>
+                  <div><span>Política</span><strong>Compêndios</strong><small>0 Items automáticos no Mundo</small></div>
+                </div>
+                <div class="grimorio-pack-grid">
+                  {{#each sectionData.rows}}
+                    <article class="grimorio-pack-card {{#unless available}}is-error{{/unless}}">
+                      <header><div class="grimorio-pack-card__icon"><i class="fa-solid fa-box-archive"></i></div><div><span>{{role}}</span><h3>{{label}}</h3><small>{{collection}}</small></div><i class="{{stateIcon}} grimorio-pack-card__state"></i></header>
+                      {{#if available}}
+                        <div class="grimorio-pack-card__stats"><div><span>Gerenciados</span><strong>{{managed}}</strong></div><div><span>Total</span><strong>{{total}}</strong></div><div><span>Pastas</span><strong>{{managedFolders}}/{{folders}}</strong></div></div>
+                        <footer><span><i class="{{lockIcon}}"></i> {{lockLabel}}</span><span>{{stateLabel}}</span></footer>
+                      {{else}}
+                        <p><i class="fa-solid fa-triangle-exclamation"></i> Compêndio ausente. Reinstale ou atualize o módulo antes de importar conteúdo destinado a ele.</p>
+                      {{/if}}
+                    </article>
+                  {{/each}}
+                </div>
+              </div>
+            {{else}}
+              <div class="grimorio-admin-error" role="alert"><i class="fa-solid fa-circle-xmark"></i><div><strong>Compêndios indisponíveis</strong><p>{{sectionData.error}}</p></div><button type="button" data-grimorio-refresh-section>Repetir</button></div>
+            {{/if}}
+          {{else}}
+            {{#if isAutomationSection}}
+              {{#if sectionData.ready}}
+                <div class="grimorio-admin-flow">
+                  <div class="grimorio-admin-toolbar"><div><strong>Cobertura de automação</strong><span>Mesmos dados de <code>automationCoverage()</code> e <code>/grimorio-automacao</code>.</span></div><button type="button" data-grimorio-refresh-section><i class="fa-solid fa-arrows-rotate"></i> Atualizar</button></div>
+                  <div class="grimorio-admin-metrics is-six">
+                    <div><span>Perfis</span><strong>{{sectionData.profiles}}</strong><small>{{sectionData.classProfiles}} classe · {{sectionData.subclassProfiles}} subclasse</small></div>
+                    <div><span>Activities</span><strong>{{sectionData.activities}}</strong><small>ações configuradas</small></div>
+                    <div><span>Recursos</span><strong>{{sectionData.resources}}</strong><small>uses/reservas</small></div>
+                    <div><span>Active Effects</span><strong>{{sectionData.effects}}</strong><small>{{sectionData.passiveEffects}} passivos</small></div>
+                    <div><span>Classes</span><strong>{{sectionData.classes}}</strong><small>com perfil</small></div>
+                    <div><span>Subclasses</span><strong>{{sectionData.subclassBundles}}</strong><small>bundles perfilados</small></div>
+                  </div>
+                  <section class="grimorio-admin-card">
+                    <header><div><span>Níveis</span><h3>Distribuição dos perfis</h3></div><strong>Fase {{sectionData.phase}}</strong></header>
+                    <div class="grimorio-tier-grid">{{#each sectionData.tierRows}}<div class="{{className}}"><span>{{label}}</span><strong>{{total}}</strong></div>{{/each}}</div>
+                  </section>
+                  <details class="grimorio-admin-card grimorio-admin-details">
+                    <summary><i class="fa-solid fa-layer-group"></i><div><span>Cobertura por classe</span><strong>{{sectionData.byClassCount}} identificador(es)</strong></div></summary>
+                    <div class="grimorio-admin-list is-compact">{{#each sectionData.displayByClass}}<div class="grimorio-admin-list__row"><i class="fa-solid fa-gear"></i><div><strong>{{label}}</strong><small>{{identifier}}</small></div><span>{{total}} perfil(is)</span></div>{{/each}}</div>
+                    {{#if sectionData.byClassOverflow}}<p class="grimorio-admin-overflow">Mais {{sectionData.byClassOverflow}} classe(s) omitidas da lista visual.</p>{{/if}}
+                  </details>
+                </div>
+              {{else}}
+                <div class="grimorio-admin-error" role="alert"><i class="fa-solid fa-circle-xmark"></i><div><strong>Automação indisponível</strong><p>{{sectionData.error}}</p></div><button type="button" data-grimorio-refresh-section>Repetir</button></div>
+              {{/if}}
+            {{else}}
+              {{#if isAuditSection}}
+                {{#if sectionData.ready}}
+                  <div class="grimorio-admin-flow">
+                    <div class="grimorio-admin-toolbar"><div><strong>Auditoria das Características</strong><span>Leitura dos Items materializados em Grimório — Características.</span></div><button type="button" data-grimorio-refresh-section><i class="fa-solid fa-arrows-rotate"></i> Reexecutar auditoria</button></div>
+                    <div class="grimorio-admin-metrics is-six">
+                      <div><span>Gerenciadas</span><strong>{{sectionData.managed}}</strong><small>características</small></div>
+                      <div class="is-good"><span>Perfiladas</span><strong>{{sectionData.profiled}}</strong><small>{{sectionData.profiledPercent}}</small></div>
+                      <div class="is-warning"><span>Candidatos altos</span><strong>{{sectionData.candidateHigh}}</strong><small>prioridade</small></div>
+                      <div class="is-warning"><span>Candidatos médios</span><strong>{{sectionData.candidateMedium}}</strong><small>revisão</small></div>
+                      <div><span>Textuais</span><strong>{{sectionData.textual}}</strong><small>descrição</small></div>
+                      <div><span>Sem auditoria</span><strong>{{sectionData.withoutAudit}}</strong><small>sem classificação</small></div>
+                    </div>
+                    <section class="grimorio-admin-card"><header><div><span>Perfis aplicados</span><h3>Tier mecânico materializado</h3></div><strong>{{sectionData.profiled}}/{{sectionData.managed}}</strong></header><div class="grimorio-tier-grid"><div class="is-good"><span>Completa</span><strong>{{sectionData.full}}</strong></div><div class="is-warning"><span>Parcial</span><strong>{{sectionData.partial}}</strong></div><div><span>Descrição</span><strong>{{sectionData.description}}</strong></div></div></section>
+                    <details class="grimorio-admin-card grimorio-admin-details">
+                      <summary><i class="fa-solid fa-table-list"></i><div><span>Auditoria por bundle</span><strong>{{sectionData.bundleCount}} bundle(s)</strong></div></summary>
+                      <div class="grimorio-audit-table"><div class="grimorio-audit-table__head"><span>Bundle</span><span>Total</span><span>Perfiladas</span><span>Alta</span><span>Média</span><span>Textual</span></div>{{#each sectionData.displayBundles}}<div class="grimorio-audit-table__row"><div><strong>{{label}}</strong><small>{{id}}</small></div><span>{{total}}</span><span>{{profiled}}</span><span>{{candidateHigh}}</span><span>{{candidateMedium}}</span><span>{{textual}}</span></div>{{/each}}</div>
+                      {{#if sectionData.bundleOverflow}}<p class="grimorio-admin-overflow">Mais {{sectionData.bundleOverflow}} bundle(s) omitidos da lista visual; o resumo considera todos.</p>{{/if}}
+                    </details>
+                  </div>
+                {{else}}
+                  <div class="grimorio-admin-error" role="alert"><i class="fa-solid fa-circle-xmark"></i><div><strong>Auditoria indisponível</strong><p>{{sectionData.error}}</p></div><button type="button" data-grimorio-refresh-section>Repetir</button></div>
+                {{/if}}
+              {{else}}
+                {{#if isSpecialSection}}
+                  {{#if sectionData.ready}}
+                    <div class="grimorio-admin-flow">
+                      <div class="grimorio-special-actor">
+                        <div class="grimorio-special-actor__icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <div><span>Actor atual</span><h3>{{sectionData.actorName}}</h3><small>{{sectionData.sourceLabel}}{{#if sectionData.actorId}} · {{sectionData.actorId}}{{/if}}</small></div>
+                        <div class="grimorio-special-actor__actions"><button type="button" data-grimorio-refresh-section><i class="fa-solid fa-arrows-rotate"></i> Verificar novamente</button><button type="button" class="is-primary" data-grimorio-configure-special {{#unless sectionData.canConfigure}}disabled{{/unless}}><i class="fa-solid fa-wand-magic-sparkles"></i> Configurar Classes Especiais</button></div>
+                      </div>
+                      <div class="grimorio-admin-metrics"><div><span>Classes especiais</span><strong>{{sectionData.classCount}}</strong><small>detectadas</small></div><div class="is-good"><span>Configuradas/suportadas</span><strong>{{sectionData.configuredCount}}</strong><small>estado atual</small></div><div><span>Seleção</span><strong>{{sectionData.sourceLabel}}</strong><small>prioridade: token único</small></div><div><span>Ação</span><strong>Assistida</strong><small>mesmo runtime do comando</small></div></div>
+                      {{#if sectionData.classCount}}
+                        <div class="grimorio-special-grid">{{#each sectionData.classes}}<article class="grimorio-special-card {{stateClass}}"><header><div><span>{{identifier}}</span><h3>{{label}}</h3></div><strong>{{stateLabel}}</strong></header><p>{{detail}}</p><div class="grimorio-special-card__meta"><span><i class="fa-solid fa-dice-d20"></i> Dado de Vida: <strong>{{hdLabel}}</strong></span><span><i class="fa-solid fa-wand-magic-sparkles"></i> Conjuração: <strong>{{abilityLabel}}</strong></span></div></article>{{/each}}</div>
+                      {{else}}
+                        <div class="grimorio-admin-empty"><i class="fa-solid fa-circle-info"></i><div><strong>Nenhuma classe especial detectada</strong><p>O Actor selecionado não possui Cavaleiro Dracônico, Piloto de Frame, Dobrador, Domador ou Ministro de Sangue.</p></div></div>
+                      {{/if}}
+                    </div>
+                  {{else}}
+                    <div class="grimorio-admin-error" role="alert"><i class="fa-solid fa-user-slash"></i><div><strong>Actor indisponível</strong><p>{{sectionData.error}}</p><small>Selecione exatamente um Token ou atribua um personagem ao usuário Mestre.</small></div><button type="button" data-grimorio-refresh-section>Verificar novamente</button></div>
+                  {{/if}}
+                {{else}}
+                  {{#if isHelpSection}}
+                    <div class="grimorio-admin-flow">
+                      <div class="grimorio-admin-note"><i class="fa-solid fa-circle-info"></i><span>A Central 0.11.0 RC é a interface principal do módulo. Os comandos continuam preservados, mas agora funcionam como atalhos que abrem diretamente a seção visual equivalente.</span></div>
+                      <section class="grimorio-admin-card"><header><div><span>Paridade</span><h3>Central ↔ comandos</h3></div><strong>{{buildLabel}}</strong></header><div class="grimorio-help-grid">{{#each sectionData.visualRows}}<div><strong>{{section}}</strong><p>{{action}}</p><code>{{command}}</code></div>{{/each}}</div></section>
+                      <details class="grimorio-admin-card grimorio-admin-details" open><summary><i class="fa-solid fa-terminal"></i><div><span>Comandos preservados</span><strong>{{sectionData.commandCount}} comandos/aliases</strong></div></summary><div class="grimorio-command-list">{{#each sectionData.commands}}<div><code>{{command}}</code><span>{{description}}</span></div>{{/each}}</div></details>
+                      <section class="grimorio-admin-card"><header><div><span>Segurança</span><h3>Políticas da Central</h3></div><i class="fa-solid fa-shield-halved"></i></header><div class="grimorio-safety-list">{{#each sectionData.safety}}<p><i class="fa-solid fa-check"></i>{{this}}</p>{{/each}}</div></section>
+                      <section class="grimorio-admin-card"><header><div><span>{{sectionData.consolidation.phase}}</span><h3>{{sectionData.consolidation.title}}</h3></div><i class="fa-solid fa-clipboard-check"></i></header><div class="grimorio-safety-list">{{#each sectionData.consolidation.items}}<p><i class="fa-solid fa-check"></i>{{this}}</p>{{/each}}</div></section>
+                      <section class="grimorio-admin-card"><header><div><span>API pública</span><h3>Abertura da Central</h3></div><i class="fa-solid fa-code"></i></header><pre class="grimorio-code-block">game.modules.get("grimorio-importer").api.openImporter()
+game.modules.get("grimorio-importer").api.openImporter({ section: "packs" })
+game.modules.get("grimorio-importer").api.commandRoutingSupport()
+game.modules.get("grimorio-importer").api.releaseReadinessSupport()
+game.modules.get("grimorio-importer").api.releaseReadiness()</pre></section>
+                    </div>
+                  {{else}}
+                    <div class="grimorio-admin-error" role="alert"><i class="fa-solid fa-circle-xmark"></i><div><strong>Seção desconhecida</strong><p>Não foi possível preparar esta seção da Central.</p></div></div>
+                  {{/if}}
+                {{/if}}
+              {{/if}}
+            {{/if}}
+          {{/if}}
+        {{/if}}
+      {{/if}}
+    </section>
+
+    <footer class="grimorio-central__runtime">
+      <div>
+        <span>Foundry</span>
+        <strong>{{runtime.foundryVersion}}</strong>
+        <small>alvo {{runtime.targetFoundry}}</small>
+      </div>
+      <div>
+        <span>Sistema</span>
+        <strong>{{runtime.systemId}} {{runtime.systemVersion}}</strong>
+        <small>alvo DnD5e {{runtime.targetDnd5e}}</small>
+      </div>
+      <div class="grimorio-central__runtime-state{{#unless runtime.compatible}} is-warning{{/unless}}">
+        <i class="{{runtime.stateIcon}}"></i>
+        <strong>{{runtime.stateLabel}}</strong>
+      </div>
+    </footer>
+  </main>
+</div>

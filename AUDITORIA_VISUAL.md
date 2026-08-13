@@ -1,3 +1,16 @@
+## v5.42.0 — FA-1 · Automação Foundry de Talentos
+- Abrir `#/feats`, escolher um Talento e usar **Exportar Foundry**. O modal deve identificar **Feat Bundle v2** e **Contrato FA-1**.
+- Confirmar que o resumo do modal mostra contagens de **Advancements, Activities, Effects, Uses e Runtime**, além do tier de cobertura.
+- Exportar **Alerta** e conferir no JSON: `schemaVersion: 2`, `minimumImporterVersion: 0.12.0` e `automation.effects` com `initiative-bonus` de valor 5.
+- Exportar **Conjurador de Guerra** e confirmar que não há Effect global de Constituição; a vantagem de concentração deve aparecer em `automation.runtime` como gatilho `concentration-save-after-damage`.
+- Exportar **Observador** e confirmar dois efeitos `skill-passive-bonus`, um para Percepção e outro para Investigação, ambos +5.
+- Exportar **Robusto** e confirmar tier `full` com efeito `hp-per-level` de valor 2.
+- Exportar **Sortudo** e confirmar `uses.max = 3`, recuperação `lr` e três requisitos de runtime para as intervenções de d20.
+- Exportar o catálogo completo e confirmar **42 perfis**, sendo **6 full / 36 partial**, com 28 Advancements, 10 Effects, 22 Activities, 2 Uses e 56 runtimes.
+- O modal deve avisar explicitamente que o schema v2 será materializado pelo Grimório Importer **0.12.0+**; a RC 0.11 não deve ser apresentada como compatível com este JSON.
+
+# Auditoria visual — Grimório 5.42.0
+
 ## v5.41.0 — Exportação Foundry de Talentos
 - Abrir `#/feats` e confirmar a barra **Foundry VTT · Talentos** acima do catálogo.
 - Abrir um talento e confirmar o botão **Exportar Foundry** junto às ações de link.

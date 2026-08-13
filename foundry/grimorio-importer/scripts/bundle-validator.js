@@ -1,4 +1,5 @@
 import { READY_CLASS_IDENTIFIERS, REVIEW_CLASS_IDENTIFIERS, SPECIAL_CLASS_IDENTIFIERS } from "./class-profiles.js";
+import { IMPORTER_VERSION } from "./version.js";
 
 export const BUNDLE_SCHEMA = "grimorio-foundry-class-bundle";
 export const BUNDLE_SCHEMA_VERSION = 1;
@@ -41,7 +42,7 @@ export function validateBundle(bundle, runtime = {}) {
     }
     if (bundle.nativeMapping?.status !== "ready" && !SPECIAL_CLASS_ALLOWLIST.has(identifier)) {
       if (READY_CLASS_ALLOWLIST.has(identifier)) {
-        warnings.push(`O bundle sinaliza mapeamento nativo em revisão, mas o Grimório Importer 0.10.0 possui perfil local homologado para ${bundle.identity?.name ?? identifier}. O perfil local será usado.`);
+        warnings.push(`O bundle sinaliza mapeamento nativo em revisão, mas o Grimório Importer ${IMPORTER_VERSION} possui perfil local homologado para ${bundle.identity?.name ?? identifier}. O perfil local será usado.`);
       } else {
         errors.push(`A classe ${bundle.identity?.name ?? identifier ?? "desconhecida"} não possui mapeamento nativo pronto nem perfil especial da Fase 8.`);
       }

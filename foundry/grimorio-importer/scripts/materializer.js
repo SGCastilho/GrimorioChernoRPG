@@ -3,9 +3,9 @@ import { MODULE_ID, PACKS, defaultPackRuntime, withWritablePacks } from "./pack-
 import { classProfile } from "./class-profiles.js";
 import { dragoneerConceptProfile, SPECIAL_CLASS_RUNTIME } from "./special-class-profiles.js";
 import { applyFeatureAutomation } from "./feature-automation.js";
+import { IMPORTER_VERSION } from "./version.js";
 
-export { MODULE_ID };
-export const IMPORTER_VERSION = "0.10.0";
+export { MODULE_ID, IMPORTER_VERSION };
 
 const ABILITIES = ["str", "dex", "con", "int", "wis", "cha"];
 const ALNUM = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -627,6 +627,40 @@ function featureStoragePlan(bundle, feature, profile) {
   return null;
 }
 
+export function plannedFeatureStorage(bundle) {
+  const profile = bundle?.kind === "class" ? classProfile(bundle?.identity?.identifier) : null;
+  return (bundle?.features ?? [])
+    .map(feature => ({ feature, storagePlan: featureStoragePlan(bundle, feature, profile) }))
+    .filter(entry => Boolean(entry.storagePlan));
+}
+
+export function plannedBundleDocuments(bundle) {
+  const role = bundle?.kind === "subclass" ? "subclass" : "class";
+  const parentPackKey = role === "subclass" ? "subclasses" : "classes";
+  const grimorioId = String(bundle?.identity?.grimorioId ?? "");
+  const parent = {
+    key: `${parentPackKey}:${role}:${grimorioId}`,
+    packKey: parentPackKey,
+    role,
+    grimorioId,
+    featureKey: "",
+    name: String(bundle?.identity?.name ?? ""),
+    typeLabel: role === "subclass" ? "Subclasse" : "Classe"
+  };
+  const features = plannedFeatureStorage(bundle).map(({ feature, storagePlan }) => ({
+    key: `features:feature:${grimorioId}:${String(feature?.key ?? "")}`,
+    packKey: "features",
+    role: "feature",
+    grimorioId,
+    featureKey: String(feature?.key ?? ""),
+    name: featureDisplayName(feature?.name),
+    typeLabel: "Característica",
+    level: Number(storagePlan?.level ?? feature?.level ?? 0) || null,
+    featureRole: String(storagePlan?.featureRole ?? "")
+  }));
+  return [parent, ...features];
+}
+
 export function legacyWorldPrototypeStatus(runtime = defaultRuntime()) {
   const items = typeof runtime.listWorldItems === "function" ? runtime.listWorldItems() : [];
   const managed = items.filter(doc => flag(doc, "documentRole") && flag(doc, "storage") !== "compendium");
@@ -656,9 +690,7 @@ export async function materializeBundle(bundle, runtime = defaultRuntime()) {
       featuresCreated: 0, featuresUpdated: 0, parentCreated: 0, parentUpdated: 0, worldItemsCreated: 0, choiceOptions: 0,
       foldersCreated: 0, foldersUpdated: 0
     };
-    const plannedFeatures = (bundle.features ?? [])
-      .map(feature => ({ feature, storagePlan: featureStoragePlan(bundle, feature, profile) }))
-      .filter(entry => Boolean(entry.storagePlan));
+    const plannedFeatures = plannedFeatureStorage(bundle);
     const folderPlan = plannedFeatures.length ? await ensureFeatureFolder(runtime, bundle) : { folderId: null, foldersCreated: 0, foldersUpdated: 0 };
     stats.foldersCreated += folderPlan.foldersCreated;
     stats.foldersUpdated += folderPlan.foldersUpdated;

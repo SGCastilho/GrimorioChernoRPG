@@ -1,6 +1,11 @@
 {
   "name": "grimorio-importer",
-  "version": "0.10.0",
+  "version": "0.11.0-rc.1",
   "private": true,
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "test": "node tests/run-all.mjs",
+    "test:release": "node tests/validate-rc-011.mjs",
+    "test:rc": "node tests/validate-rc-011.mjs"
+  }
 }

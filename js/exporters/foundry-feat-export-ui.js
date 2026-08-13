@@ -1,8 +1,8 @@
 'use strict';
 
-// Fase 2 — UI de exportação de Talentos para Grimório Importer 0.10.0.
+// FA-1 — UI de exportação dos Feat Bundles v2 com diagnóstico de automação.
 (function initFoundryFeatExportUI(global) {
-  const UI_VERSION = '1.0.0';
+  const UI_VERSION = '2.0.0';
   let state = null;
 
   function bundleApi() {
@@ -35,7 +35,7 @@
 
   function profileHtml() {
     const p = packageApi().profile;
-    return '<div class="foundry-profile"><span class="foundry-profile-dot"></span><div><strong>Perfil homologado</strong><span>'+escapeHtml(p.label)+'</span></div></div>';
+    return '<div class="foundry-profile"><span class="foundry-profile-dot"></span><div><strong>Contrato FA-1</strong><span>'+escapeHtml(p.label)+'</span></div></div>';
   }
 
   function issueHtml(errors, warnings, info = []) {
@@ -48,15 +48,28 @@
     return groups.map(([kind,title,items]) => '<div class="foundry-issue-group '+kind+'"><strong>'+escapeHtml(title)+'</strong><ul>'+items.map(item=>'<li>'+escapeHtml(item)+'</li>').join('')+'</ul></div>').join('');
   }
 
+  function automationOf(summary) { return summary?.automation || {}; }
   function summaryGrid(summary) {
+    const a = automationOf(summary);
     const rows = [
-      ['Bundles', summary.bundles ?? 1],
       ['Talentos', summary.feats ?? 1],
-      ['Fontes', summary.sources ?? 1],
-      ['Com pré-requisito', summary.prerequisites ?? 0],
-      ['Repetíveis', summary.repeatable ?? 0]
+      ['Advancements', a.advancements ?? 0],
+      ['Activities', a.activities ?? 0],
+      ['Effects', a.effects ?? 0],
+      ['Uses', a.uses ?? 0],
+      ['Runtime', a.runtime ?? 0]
     ];
     return '<div class="foundry-batch-summary">'+rows.map(([label,value])=>'<div><strong>'+escapeHtml(value)+'</strong><span>'+escapeHtml(label)+'</span></div>').join('')+'</div>';
+  }
+
+  function automationTierHtml(summary) {
+    const a = automationOf(summary);
+    return '<div class="foundry-batch-summary">'+[
+      ['Cobertura completa', a.full ?? 0],
+      ['Cobertura parcial', a.partial ?? 0],
+      ['Somente descrição', a.description ?? 0],
+      ['Limitações explícitas', a.limitations ?? 0]
+    ].map(([label,value])=>'<div><strong>'+escapeHtml(value)+'</strong><span>'+escapeHtml(label)+'</span></div>').join('')+'</div>';
   }
 
   function actionButtons(disabled, label) {
@@ -66,19 +79,38 @@
       '</div>';
   }
 
+  function planSummary(bundle) {
+    const plan = bundle.automation || {};
+    return {
+      profiles: 1,
+      full: plan.tier === 'full' ? 1 : 0,
+      partial: plan.tier === 'partial' ? 1 : 0,
+      description: plan.tier === 'description' ? 1 : 0,
+      advancements: plan.advancements?.length || 0,
+      effects: plan.effects?.length || 0,
+      activities: plan.activities?.length || 0,
+      uses: plan.uses ? 1 : 0,
+      runtime: plan.runtime?.length || 0,
+      limitations: plan.limitations?.length || 0
+    };
+  }
+
   function buildFeatState(featId) {
     const feat = browserApi().getFeat(featId);
     if (!feat) throw new Error('Talento não encontrado.');
     const analysis = bundleApi().inspectFeat(feat);
     if (!analysis.ok) {
-      return {kind:'feat', featId, name:feat.name, ok:false, errors:analysis.errors, warnings:analysis.warnings, json:'', filename:'', summary:{bundles:0,feats:0,sources:0,prerequisites:0,repeatable:0}, info:[]};
+      return {kind:'feat', featId, name:feat.name, ok:false, errors:analysis.errors, warnings:analysis.warnings, json:'', filename:'', summary:{feats:0,automation:{}}, info:[]};
     }
     const bundle = analysis.bundle;
     return {
       kind:'feat', featId, name:feat.name, ok:true, errors:analysis.errors, warnings:analysis.warnings,
-      value:bundle, json:bundleApi().stringify(bundle), filename:`grimorio-${slug(feat.name)}-talento-foundry.json`,
-      summary:{bundles:1,feats:1,sources:1,prerequisites:bundle.feat.prerequisites.length?1:0,repeatable:bundle.feat.repeatable?1:0},
-      info:['O talento será sincronizado como Item nativo do tipo feat em Grimório — Talentos.','Pré-requisitos e escolhas são preservados no Item e nas flags do Grimório; mecânicas condicionais permanecem em descrição nesta fase.']
+      value:bundle, json:bundleApi().stringify(bundle), filename:`grimorio-${slug(feat.name)}-talento-foundry-v2.json`,
+      summary:{bundles:1,feats:1,sources:1,prerequisites:bundle.feat.prerequisites.length?1:0,repeatable:bundle.feat.repeatable?1:0,automation:planSummary(bundle)},
+      info:[
+        `Plano de automação: ${bundle.automation.tier}. O JSON transporta Advancements, Activities, Effects, usos, runtime e limitações conforme aplicável.`,
+        'Este é o contrato FA-1. A materialização mecânica do bundle v2 requer Grimório Importer 0.12.0 ou superior; a RC 0.11 não consome este schema.'
+      ]
     };
   }
 
@@ -87,23 +119,26 @@
     const validation = packageApi().validatePackage(pkg);
     return {
       kind:'feat-package', name:'Catálogo completo de Talentos', ok:validation.ok, errors:validation.errors, warnings:validation.warnings,
-      value:pkg, json:packageApi().stringify(pkg), filename:'grimorio-talentos-foundry-v13.json', summary:pkg.summary,
-      info:['O Grimório Importer 0.10.0 sincroniza os Talentos por IDs estáveis e preserva os UUIDs em reimportações.','Nenhum Item é criado automaticamente no diretório do Mundo; o destino é o compêndio Grimório — Talentos.']
+      value:pkg, json:packageApi().stringify(pkg), filename:'grimorio-talentos-foundry-v13-v2.json', summary:pkg.summary,
+      info:[
+        'Os 42 Talentos possuem perfil de automação explícito no bundle v2; nenhum talento depende de inferência de texto no Importer.',
+        'O pacote requer Grimório Importer 0.12.0+ para materializar a automação. A versão 0.11.0-rc.1 deve permanecer congelada durante a FA-1.'
+      ]
     };
   }
 
   function render(s) {
-    const status = s.ok ? (s.warnings?.length ? ['review','Pronto com observações','O arquivo é importável; confira as observações antes de usar.'] : ['ready','Pronto','A exportação passou pela validação estrutural.']) : ['blocked','Bloqueado','O Grimório não possui dados suficientes para gerar um JSON válido.'];
+    const status = s.ok ? (s.warnings?.length ? ['review','Contrato pronto com observações','O JSON v2 é estruturalmente válido; confira as observações antes da FA-2.'] : ['ready','Contrato FA-1 pronto','O JSON v2 passou pela validação estrutural e de automação.']) : ['blocked','Bloqueado','O Grimório não possui dados suficientes para gerar um JSON v2 válido.'];
     const isPackage = s.kind === 'feat-package';
-    return '<div class="foundry-export-eyebrow">Foundry VTT · '+(isPackage?'Pacote de Talentos':'Bundle de Talento')+'</div>'+
+    return '<div class="foundry-export-eyebrow">Foundry VTT · '+(isPackage?'Feat Package v2':'Feat Bundle v2')+'</div>'+
       '<h2 id="foundryFeatExportTitle">'+escapeHtml(s.name)+'</h2>'+
-      '<p class="foundry-export-lede">'+(isPackage?'Um único JSON com o catálogo de Talentos para importação em lote.':'JSON de transporte de um Talento para o Grimório Importer 0.10.0.')+'</p>'+
+      '<p class="foundry-export-lede">'+(isPackage?'Um único JSON com os 42 planos de automação de Talentos para a futura materialização no Importer 0.12+.':'JSON de transporte do Talento com contrato declarativo de automação FA-1.')+'</p>'+
       profileHtml()+
       '<div class="foundry-status-card '+status[0]+'"><span class="foundry-status-pill">'+status[1]+'</span><p>'+status[2]+'</p></div>'+
-      summaryGrid(s.summary)+
+      summaryGrid(s.summary)+automationTierHtml(s.summary)+
       '<section class="foundry-export-section"><h3>Diagnóstico</h3>'+issueHtml(s.errors,s.warnings,s.info)+'</section>'+
-      actionButtons(!s.ok, isPackage ? `${s.summary.feats} talentos` : 'talento')+
-      '<p class="foundry-export-footnote">No Foundry, use <code>/grimorio-import</code> e selecione este JSON.</p>';
+      actionButtons(!s.ok, isPackage ? `${s.summary.feats} talentos` : 'talento v2')+
+      '<p class="foundry-export-footnote">FA-1 gera o contrato. A importação mecânica deste schema será habilitada no Grimório Importer 0.12+ durante a FA-2.</p>';
   }
 
   function openState(next) {
@@ -123,8 +158,8 @@
     if (navigator.clipboard?.writeText && window.isSecureContext) { await navigator.clipboard.writeText(text); return; }
     const textarea=document.createElement('textarea');textarea.value=text;textarea.setAttribute('readonly','');textarea.style.position='fixed';textarea.style.opacity='0';document.body.appendChild(textarea);textarea.select();const ok=document.execCommand('copy');textarea.remove();if(!ok)throw new Error('O navegador não permitiu copiar automaticamente.');
   }
-  async function copyJson(){if(!state?.json)return;try{await writeClipboard(state.json);if(typeof showToast==='function')showToast('JSON Foundry do Talento copiado.');}catch(error){console.error(error);if(typeof showToast==='function')showToast(error.message||'Falha ao copiar JSON.');}}
-  function downloadJson(){if(!state?.json)return;const blob=new Blob([state.json],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=state.filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);if(typeof showToast==='function')showToast('JSON Foundry de Talentos gerado.');}
+  async function copyJson(){if(!state?.json)return;try{await writeClipboard(state.json);if(typeof showToast==='function')showToast('JSON Foundry v2 do Talento copiado.');}catch(error){console.error(error);if(typeof showToast==='function')showToast(error.message||'Falha ao copiar JSON.');}}
+  function downloadJson(){if(!state?.json)return;const blob=new Blob([state.json],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=state.filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);if(typeof showToast==='function')showToast('JSON Foundry v2 de Talentos gerado.');}
 
   if (typeof document !== 'undefined') document.addEventListener('keydown',event=>{if(event.key==='Escape'&&document.getElementById('foundryFeatExportOverlay')?.classList.contains('open'))close();});
 

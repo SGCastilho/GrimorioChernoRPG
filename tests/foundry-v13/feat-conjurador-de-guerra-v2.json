@@ -1,0 +1,84 @@
+{
+  "schema": "grimorio-foundry-feat-bundle",
+  "schemaVersion": 2,
+  "kind": "feat",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "minimumImporterVersion": "0.12.0"
+  },
+  "identity": {
+    "grimorioId": "phb-2014-conjurador-de-guerra",
+    "identifier": "phb-2014-conjurador-de-guerra",
+    "name": "Conjurador de Guerra"
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — D&D 5e 2014",
+    "shortTitle": "Livro do Jogador",
+    "chapter": "Capítulo 6 — Opções de Personalização",
+    "pages": "167–172",
+    "page": 169,
+    "rules": "2014"
+  },
+  "feat": {
+    "description": "Você praticou a conjuração de magias no meio do combate, aprendendo técnicas que lhe concedem os seguintes benefícios:\n\n• Você tem vantagem em testes de resistência de Constituição para manter sua concentração em uma magia quando você sofrer dano.\n• Você pode realizar os componentes somáticos de uma magia mesmo quando está com armas ou um escudo em uma ou ambas as mãos.\n• Quando o movimento de uma criatura hostil provocar um ataque de oportunidade para você, você pode usar sua reação para conjurar uma magia na criatura, ao invés de realizar o ataque de oportunidade. A magia deve ter um tempo de conjuração de 1 ação e deve ter apenas uma criatura como alvo.",
+    "prerequisite": "Capacidade de conjurar pelo menos uma magia",
+    "prerequisites": [
+      {
+        "type": "spellcasting",
+        "label": "Capacidade de conjurar pelo menos uma magia"
+      }
+    ],
+    "repeatable": false,
+    "choices": [],
+    "foundryPlan": {
+      "itemType": "feat",
+      "featureType": "feat",
+      "storage": "grimorio-feats",
+      "automation": "declarative-feat-automation-v1"
+    }
+  },
+  "automation": {
+    "schema": "grimorio-foundry-feat-automation-plan",
+    "schemaVersion": 1,
+    "target": {
+      "foundryVersion": "13.351",
+      "dnd5eVersion": "5.3.3",
+      "minimumImporterVersion": "0.12.0"
+    },
+    "profileId": "phb-2014-conjurador-de-guerra",
+    "tier": "partial",
+    "advancements": [],
+    "effects": [],
+    "activities": [
+      {
+        "key": "opportunity-spell",
+        "type": "reaction",
+        "name": "Conjurador de Guerra — Magia de Oportunidade",
+        "activation": "reaction",
+        "condition": "Movimento de criatura hostil provoca ataque de oportunidade; a magia deve usar 1 ação e ter apenas essa criatura como alvo."
+      }
+    ],
+    "uses": null,
+    "runtime": [
+      {
+        "key": "concentration-advantage",
+        "trigger": "concentration-save-after-damage",
+        "behavior": "grant-advantage-on-concentration-save"
+      },
+      {
+        "key": "opportunity-spell",
+        "trigger": "opportunity-attack-trigger",
+        "behavior": "allow-qualified-single-target-action-spell-instead-of-weapon-attack"
+      }
+    ],
+    "limitations": [
+      "Não é seguro conceder vantagem global em salvaguardas de Constituição; a vantagem existe somente para manter concentração após sofrer dano.",
+      "A permissão de componentes somáticos com mãos ocupadas permanece uma regra de validação de conjuração/contexto."
+    ],
+    "notes": []
+  }
+}

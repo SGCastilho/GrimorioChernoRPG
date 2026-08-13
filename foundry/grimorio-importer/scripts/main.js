@@ -6,6 +6,16 @@ import { registerSpecialRuntimeHooks, specialActorStatus, configureActorSpecialC
 import { phase11Support, phase12Support, automationCoverage } from "./feature-automation.js";
 import { validateFeatBundle, validateFeatPackage, isFeatBundle, isFeatPackage, featSupport } from "./feat-validator.js";
 import { materializeFeatBundle } from "./feat-materializer.js";
+import { openImporter } from "./ui/importer-app.js";
+import { registerImporterSceneControl } from "./ui/scene-control.js";
+import { previewPayload, classifyPayload, preflightSupport } from "./ui/payload-preflight.js";
+import { inspectPayloadCompendiums, plannedPayloadDocuments, compendiumPreflightSupport } from "./ui/compendium-preflight.js";
+import { importExecutionSupport } from "./ui/import-executor.js";
+import { centralParitySupport } from "./ui/central-support.js";
+import { commandRoutingSupport, resolveGrimorioCommand, routeGrimorioCommand } from "./ui/command-router.js";
+import { evaluateReleaseReadiness, releaseReadinessSupport } from "./ui/release-readiness.js";
+import { selectedActor } from "./actor-selection.js";
+import { IMPORTER_BUILD } from "./version.js";
 
 
 export function phase10Support() {
@@ -31,9 +41,10 @@ export async function status() {
   const runtime = runtimeInfo();
   const support = phase8Support();
   const packs = packAvailability(defaultPackRuntime());
-  return {
+  const info = {
     module: MODULE_ID,
     importerVersion: IMPORTER_VERSION,
+    importerBuild: IMPORTER_BUILD,
     activeFoundry: runtime.foundryVersion,
     activeSystem: runtime.systemId,
     activeSystemVersion: runtime.systemVersion,
@@ -45,12 +56,33 @@ export async function status() {
     phase11Support: phase11Support(),
     phase12Support: phase12Support(),
     featSupport: featSupport(),
+    preflightSupport: preflightSupport(),
+    compendiumPreflightSupport: compendiumPreflightSupport(),
+    importExecutionSupport: importExecutionSupport(),
+    centralParitySupport: centralParitySupport(),
+    commandRoutingSupport: commandRoutingSupport(),
     automationCoverage: automationCoverage(),
     environmentMatches: runtime.systemId === "dnd5e" && runtime.systemVersion === TARGET_DND5E && runtime.foundryVersion === TARGET_FOUNDRY,
     packs,
     packsReady: packs.every(pack => pack.available),
     legacyWorldPrototype: legacyWorldPrototypeStatus(defaultPackRuntime())
   };
+  return Object.freeze({
+    ...info,
+    releaseReadinessSupport: releaseReadinessSupport(),
+    releaseReadiness: evaluateReleaseReadiness({
+      statusInfo: info,
+      centralSupport: info.centralParitySupport,
+      commandSupport: info.commandRoutingSupport,
+      preflightSupport: info.preflightSupport,
+      compendiumSupport: info.compendiumPreflightSupport,
+      executionSupport: info.importExecutionSupport
+    })
+  });
+}
+
+export async function releaseReadiness() {
+  return (await status()).releaseReadiness;
 }
 
 export async function compendiumStatus() {
@@ -138,21 +170,21 @@ export async function importFeatBundles(bundles, { continueOnError = true, notif
   return { imported: results.length, failed: failures.length, results, failures };
 }
 
-export async function importFeatPackage(pkg, { continueOnError = true } = {}) {
+export async function importFeatPackage(pkg, { continueOnError = true, notify = true } = {}) {
   if (!game.user?.isGM) throw new Error("Somente um Mestre pode importar pacotes de Talentos do Grimório.");
   const validation = validateFeatPackage(pkg, runtimeInfo());
   if (!validation.ok) throw new Error(validation.errors.join("\n"));
   const bundles = [...pkg.bundles].sort((a, b) => (a.source?.sourceId ?? "").localeCompare(b.source?.sourceId ?? "") || (a.identity?.name ?? "").localeCompare(b.identity?.name ?? "", "pt-BR"));
-  ui.notifications.info(`Grimório Importer: iniciando ${pkg.identity?.name ?? "pacote de Talentos"} (${bundles.length} Talentos).`);
+  if (notify) ui.notifications.info(`Grimório Importer: iniciando ${pkg.identity?.name ?? "pacote de Talentos"} (${bundles.length} Talentos).`);
   const packRuntime = defaultPackRuntime();
   const result = await withWritablePacks(packRuntime, ["feats"], async () =>
     await importFeatBundles(bundles, { continueOnError, notifyEach: false, notifySummary: false })
   );
   result.package = { id: pkg.identity?.id, name: pkg.identity?.name, scope: pkg.identity?.scope, summary: pkg.summary };
   result.warnings = validation.warnings;
-  if (result.failed) ui.notifications.warn(`Grimório Importer: pacote de Talentos concluído com ${result.imported} importado(s) e ${result.failed} falha(s).`);
-  else ui.notifications.info(`Grimório Importer: ${pkg.identity?.name ?? "pacote de Talentos"} concluído — ${result.imported} Talento(s) sincronizados.`);
-  if (validation.warnings.length) ui.notifications.warn(`Pacote de Talentos com ${validation.warnings.length} observação(ões). Consulte o console.`);
+  if (notify && result.failed) ui.notifications.warn(`Grimório Importer: pacote de Talentos concluído com ${result.imported} importado(s) e ${result.failed} falha(s).`);
+  else if (notify) ui.notifications.info(`Grimório Importer: ${pkg.identity?.name ?? "pacote de Talentos"} concluído — ${result.imported} Talento(s) sincronizados.`);
+  if (notify && validation.warnings.length) ui.notifications.warn(`Pacote de Talentos com ${validation.warnings.length} observação(ões). Consulte o console.`);
   console.info(`[${MODULE_ID}] Pacote de Talentos importado`, { validation, result });
   return result;
 }
@@ -188,41 +220,42 @@ export async function importBundles(bundles, { continueOnError = true, notifyEac
   return { imported: results.length, failed: failures.length, results, failures };
 }
 
-export async function importPackage(pkg, { continueOnError = true } = {}) {
+export async function importPackage(pkg, { continueOnError = true, notify = true } = {}) {
   if (!game.user?.isGM) throw new Error("Somente um Mestre pode importar pacotes do Grimório.");
   const validation = validatePackage(pkg, runtimeInfo());
   if (!validation.ok) throw new Error(validation.errors.join("\n"));
   const bundles = [...pkg.bundles].sort((a, b) => (a.kind === b.kind ? 0 : a.kind === "class" ? -1 : 1));
-  ui.notifications.info(`Grimório Importer: iniciando ${pkg.identity?.name ?? "pacote"} (${bundles.length} bundles).`);
+  if (notify) ui.notifications.info(`Grimório Importer: iniciando ${pkg.identity?.name ?? "pacote"} (${bundles.length} bundles).`);
   const packRuntime = defaultPackRuntime();
   const result = await withWritablePacks(packRuntime, ["classes", "subclasses", "features"], async () =>
     await importBundles(bundles, { continueOnError, notifyEach: false, notifySummary: false })
   );
   result.package = { id: pkg.identity?.id, name: pkg.identity?.name, scope: pkg.identity?.scope, summary: pkg.summary };
   result.warnings = validation.warnings;
-  if (result.failed) ui.notifications.warn(`Grimório Importer: pacote concluído com ${result.imported} importado(s) e ${result.failed} falha(s).`);
-  else ui.notifications.info(`Grimório Importer: ${pkg.identity?.name ?? "pacote"} concluído — ${result.imported} bundle(s) sincronizados.`);
-  if (validation.warnings.length) ui.notifications.warn(`Pacote com ${validation.warnings.length} observação(ões). Consulte o console.`);
+  if (notify && result.failed) ui.notifications.warn(`Grimório Importer: pacote concluído com ${result.imported} importado(s) e ${result.failed} falha(s).`);
+  else if (notify) ui.notifications.info(`Grimório Importer: ${pkg.identity?.name ?? "pacote"} concluído — ${result.imported} bundle(s) sincronizados.`);
+  if (notify && validation.warnings.length) ui.notifications.warn(`Pacote com ${validation.warnings.length} observação(ões). Consulte o console.`);
   console.info(`[${MODULE_ID}] Pacote importado`, { validation, result });
   return result;
 }
 
-export async function importPayload(payload) {
-  if (isPackage(payload)) return await importPackage(payload);
-  if (isBundle(payload)) return await importBundle(payload);
-  if (isFeatPackage(payload)) return await importFeatPackage(payload);
-  if (isFeatBundle(payload)) return await importFeatBundle(payload);
+export async function importPayload(payload, { notify = true, continueOnError = true } = {}) {
+  if (isPackage(payload)) return await importPackage(payload, { continueOnError, notify });
+  if (isBundle(payload)) return await importBundle(payload, { notify });
+  if (isFeatPackage(payload)) return await importFeatPackage(payload, { continueOnError, notify });
+  if (isFeatBundle(payload)) return await importFeatBundle(payload, { notify });
   throw new Error("JSON não reconhecido: esperado bundle ou pacote Foundry de classe/subclasse ou Talento do Grimório.");
 }
 
-export async function importPayloads(payloads, { continueOnError = true } = {}) {
+export async function importPayloads(payloads, { continueOnError = true, notifyEach = true, notifySummary = true } = {}) {
   const list = Array.isArray(payloads) ? payloads : [payloads];
   const results = []; const failures = [];
   for (let index = 0; index < list.length; index += 1) {
-    try { results.push(await importPayload(list[index])); }
+    try { results.push(await importPayload(list[index], { notify: notifyEach, continueOnError })); }
     catch (error) { failures.push({ index, error }); console.error(`[${MODULE_ID}] Falha ao importar payload`, { index, error }); if (!continueOnError) throw error; }
   }
-  if (failures.length) ui.notifications.warn(`Grimório Importer: ${results.length} arquivo(s) processado(s), ${failures.length} falha(s).`);
+  if (notifySummary && failures.length) ui.notifications.warn(`Grimório Importer: ${results.length} arquivo(s) processado(s), ${failures.length} falha(s).`);
+  else if (notifySummary && list.length > 1 && !notifyEach) ui.notifications.info(`Grimório Importer: ${results.length} arquivo(s) processado(s).`);
   return { processed: results.length, failed: failures.length, results, failures };
 }
 
@@ -307,13 +340,6 @@ async function showAutomationAudit() {
   }
 }
 
-function selectedActor() {
-  const controlled = globalThis.canvas?.tokens?.controlled ?? [];
-  if (controlled.length === 1 && controlled[0]?.actor) return controlled[0].actor;
-  if (controlled.length > 1) throw new Error("Selecione apenas um token para configurar classes especiais.");
-  return game.user?.character ?? null;
-}
-
 function showSpecialStatus() {
   try {
     const actor = selectedActor();
@@ -346,6 +372,7 @@ async function configureSelectedActor() {
 }
 
 registerSpecialRuntimeHooks();
+registerImporterSceneControl();
 
 Hooks.once("ready", () => {
   const mod = game.modules.get(MODULE_ID);
@@ -360,6 +387,19 @@ Hooks.once("ready", () => {
       importFeatBundles,
       importFeatPackage,
       openBundleFilePicker,
+      openImporter,
+      previewPayload,
+      classifyPayload,
+      preflightSupport,
+      inspectPayloadCompendiums,
+      plannedPayloadDocuments,
+      compendiumPreflightSupport,
+      importExecutionSupport,
+      centralParitySupport,
+      commandRoutingSupport,
+      releaseReadinessSupport,
+      evaluateReleaseReadiness,
+      releaseReadiness,
       validateBundle,
       validatePackage,
       validateFeatBundle,
@@ -387,22 +427,15 @@ Hooks.once("ready", () => {
   }
   const packs = packAvailability(defaultPackRuntime());
   if (game.user?.isGM && packs.some(pack => !pack.available)) ui.notifications.error("Grimório Importer: um ou mais compêndios não foram carregados. Verifique a instalação do módulo.");
-  console.info(`[${MODULE_ID}] Pronto — 0.10.0 com Talentos + automação Fase 12. Foundry ${game.version}; ${game.system?.id} ${game.system?.version}.`, { packs, feats: featSupport(), automation: automationCoverage() });
+  console.info(`[${MODULE_ID}] Pronto — ${IMPORTER_VERSION} com Release Candidate RC.1 consolidada + comandos Central-first + importação confirmada + Talentos + automação Fase 12. Foundry ${game.version}; ${game.system?.id} ${game.system?.version}.`, { packs, feats: featSupport(), preflight: compendiumPreflightSupport(), execution: importExecutionSupport(), central: centralParitySupport(), commandRouting: commandRoutingSupport(), release: releaseReadinessSupport(), automation: automationCoverage() });
 });
 
 Hooks.on("chatMessage", (_chatLog, message) => {
-  const command = String(message ?? "").trim().toLowerCase();
-  if (command === "/grimorio-import" || command === "/grimorio-import-batch" || command === "/grimorio-import-package" || command === "/grimorio-import-feats") { openBundleFilePicker(); return false; }
-  if (command === "/grimorio-status") { void showStatus(); return false; }
-  if (command === "/grimorio-packs") { void showPacks(); return false; }
-  if (command === "/grimorio-world-preview") { showWorldPrototype(); return false; }
-  if (command === "/grimorio-automacao") { showAutomation(); return false; }
-  if (command === "/grimorio-auditoria-automacao") { void showAutomationAudit(); return false; }
-  if (command === "/grimorio-special") { showSpecialStatus(); return false; }
-  if (command === "/grimorio-configurar") { void configureSelectedActor(); return false; }
-  if (command === "/grimorio-help") {
-    ui.notifications.info("Comandos: /grimorio-import (classes, subclasses ou Talentos; um ou vários JSON), /grimorio-import-feats, /grimorio-import-batch, /grimorio-import-package, /grimorio-status, /grimorio-packs, /grimorio-automacao, /grimorio-auditoria-automacao, /grimorio-world-preview, /grimorio-special, /grimorio-configurar. Talentos 0.10.0: compêndio próprio e reimportação estável. Fase 12: Activities/recursos/Active Effects em classes e subclasses.");
-    return false;
-  }
-  return true;
+  const route = resolveGrimorioCommand(message);
+  if (!route) return true;
+  void routeGrimorioCommand(message, { openImporter }).catch(error => {
+    console.error(`[${MODULE_ID}] Falha ao rotear comando para a Central`, { command: route.command, error });
+    ui.notifications.error(`Grimório Importer: ${error?.message ?? error}`);
+  });
+  return false;
 });

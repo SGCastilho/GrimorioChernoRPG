@@ -1,6 +1,183 @@
-# Grimório Importer — v0.10.0
+# Grimório Importer — v0.11.0-rc.1
 
 Módulo complementar do **Grimório D&D 5e PT-BR** para **Foundry VTT 13.351 + DnD5e 5.3.3**.
+
+
+
+## Release Candidate RC.1 — Feature freeze e validação final
+
+A `0.11.0-rc.1` congela o conjunto funcional desenvolvido nas fases **0.11-A–G**. A partir desta build, mudanças antes da `0.11.0` final devem se limitar a correções de regressão, compatibilidade, acessibilidade, documentação e empacotamento; novos fluxos funcionais ficam fora do escopo da RC.
+
+- Versão sincronizada em `module.json`, `package.json` e `scripts/version.js`: **0.11.0-rc.1**.
+- `IMPORTER_BUILD` centraliza canal `release-candidate`, rótulo `RC.1`, alvo `0.11.0` e `featureFreeze: true`.
+- A aba **Status** passa a mostrar **Prontidão para 0.11.0 final** com 10 verificações, incluindo um novo gate bloqueante de feature freeze/Canal RC.
+- O campo legado `readyForRc` permanece como alias compatível; a RC acrescenta `readyForFinal`.
+- Nenhum schema, materializador, perfil de automação, compêndio, contrato de identidade ou regra de reimportação foi alterado.
+- `npm test` executa toda a regressão histórica e a validação RC.
+- `npm run test:rc` e `npm run test:release` executam `tests/validate-rc-011.mjs`, que valida versão, manifestos, feature freeze, gate final, Central, comandos e ausência de referências alpha ativas no runtime.
+
+### Critério para promover a RC para 0.11.0
+
+A RC só deve virar `0.11.0` quando: `npm test` permanecer verde, `npm run test:release` passar, a aba **Status** não apresentar bloqueios no Foundry VTT **13.351 / DnD5e 5.3.3**, e os fluxos visuais de Importar/Status/Compêndios/Automação/Auditoria/Actor Especial/Ajuda forem validados no ambiente real.
+
+```bash
+npm test
+npm run test:release
+```
+
+## Build 0.11-G — Consolidação e prontidão para RC
+
+A 0.11-G não introduz um novo tipo de conteúdo nem um novo materializador. Ela consolida as fases A–F e adiciona um gate observável para decidir quando a Central está tecnicamente pronta para virar Release Candidate.
+
+- A aba **Status** possui agora **Prontidão para RC**, com 9 verificações independentes.
+- Bloqueiam a RC: ambiente fora de Foundry 13.351 / DnD5e 5.3.3, compêndio gerenciado ausente, quebra da paridade das sete áreas, preflight que permita escrita, identidade instável, ausência de confirmação explícita, política diferente de 0 Items no Mundo ou comandos que deixem de passar pela Central.
+- Items legados do protótipo da Fase 5 aparecem como **observação não bloqueante**, pois sua remoção continua manual.
+- APIs novas: `releaseReadinessSupport()`, `releaseReadiness()` e o resultado `releaseReadiness` retornado por `status()`.
+- A navegação lateral aceita `↑`, `↓`, `Home` e `End`; estados críticos usam `aria-live`/`role=alert`, e a confirmação é identificada como `alertdialog`.
+- A folha de estilos respeita `prefers-reduced-motion` e reforça foco visível para navegação por teclado.
+- `npm test` executa a suíte agregada: Talentos, Lutador de Rua/Dragão de Dojima e 0.11-A/B/C/D/E/F/G.
+- `npm run test:release` executa apenas o gate/regressão 0.11-G.
+- Nenhum materializador, schema ou regra de reimportação foi alterado nesta fase.
+
+### Teste consolidado
+
+```bash
+npm test
+```
+
+A build só deve avançar para RC depois de a suíte permanecer verde e o gate visual da aba Status não apresentar bloqueios no Foundry real homologado.
+
+## Build 0.11-F — Comandos como atalhos da Central
+
+A Central passa a ser o caminho principal também quando um comando de chat é utilizado. Os **12 comandos/aliases existentes continuam reconhecidos**, mas o hook de chat não executa mais importações ou painéis administrativos diretamente: ele roteia o comando para a seção visual equivalente.
+
+- `/grimorio-import`, `/grimorio-import-batch`, `/grimorio-import-package` e `/grimorio-import-feats` abrem **Importar** e acionam o seletor visual de JSONs. A seleção entra na sessão 0.11-B/C/D, portanto continua exigindo validação, diff `NOVO/ATUALIZAR` e confirmação explícita antes de qualquer escrita.
+- `/grimorio-status` abre **Status**; `/grimorio-packs`, **Compêndios**; `/grimorio-automacao`, **Automação**; `/grimorio-auditoria-automacao`, **Auditoria**; `/grimorio-special`, **Actor Especial**; e `/grimorio-help`, **Ajuda**.
+- `/grimorio-world-preview` abre **Status**, onde o conteúdo legado da Fase 5 já é apresentado.
+- `/grimorio-configurar` abre **Actor Especial** e executa a mesma configuração assistida exposta pelo botão visual da seção.
+- Adicionado `scripts/ui/command-router.js` com resolução centralizada, normalização e mapa dos 12 comandos.
+- Nova API `commandRoutingSupport()` documenta o contrato Central-first da 0.11-F.
+- `openImporter()` aceita `promptFiles`, `action` e `source`; a Central também expõe internamente `promptImportFiles()` para o seletor disparado pelos aliases de importação.
+- A API legada `openBundleFilePicker()` foi preservada para macros/integrações externas que dependam do comportamento direto anterior, porém **nenhum comando de chat a utiliza mais**.
+- Nenhum materializador, schema, compêndio ou regra de reimportação foi alterado nesta fase.
+
+## Build 0.11-E — Paridade administrativa da Central
+
+A Central deixa de concentrar apenas a importação e passa a expor visualmente as funções administrativas que já existiam por comandos de chat, reutilizando as mesmas APIs internas do módulo.
+
+- **Status** mostra Foundry/DnD5e ativos e alvos homologados, disponibilidade dos quatro compêndios e Items legados do protótipo da Fase 5.
+- **Compêndios** mostra documentos totais/gerenciados, pastas e estado de bloqueio de Classes, Subclasses, Características e Talentos.
+- **Automação** apresenta os mesmos dados de `automationCoverage()`: perfis, Activities, recursos, Active Effects, tiers e cobertura por classe.
+- **Auditoria** executa `automationCompendiumAudit()` e exibe perfiladas, candidatos altos/médios, textuais, sem auditoria e detalhamento por bundle.
+- **Actor Especial** usa a mesma seleção de Actor dos comandos: um Token controlado tem prioridade; sem Token, usa o personagem atribuído ao Mestre. A configuração chama `configureActorSpecialClasses()` sem duplicar o runtime especial.
+- **Ajuda** documenta a equivalência entre as áreas visuais e todos os comandos `/grimorio-*`, que continuam preservados.
+- Painéis administrativos são carregados sob demanda e podem ser atualizados pela própria Central.
+- Adicionadas `actor-selection.js` e `central-support.js`; a API pública passa a expor `centralParitySupport()`.
+- A importação 0.11-D permanece inalterada: preflight, confirmação explícita, materializadores existentes e relatório visual.
+
+### Teste da paridade visual
+
+```bash
+node tests/validate-ui-011e.mjs
+```
+
+O teste cobre seleção compartilhada de Actor, contrato de paridade, presença das seis áreas administrativas, chamadas às APIs existentes e preservação dos comandos.
+
+
+## Build 0.11-D — Execução confirmada e relatório visual
+
+A Central fecha agora o ciclo de importação visual: depois do preflight 0.11-C, o Mestre pode confirmar explicitamente a escrita e acompanhar o resultado real retornado pelos materializadores existentes.
+
+- O botão **Importar conteúdo** só é habilitado quando todos os arquivos da sessão são válidos e o diagnóstico dos compêndios está disponível.
+- Antes da confirmação, a Central refaz o snapshot dos compêndios para reduzir o risco de executar sobre um diagnóstico desatualizado.
+- A confirmação é exibida dentro da própria Application e informa arquivos, documentos planejados, NOVOS e ATUALIZAÇÕES.
+- A execução reutiliza `importPayload()` e, portanto, os mesmos validadores/materializadores já utilizados pelos comandos de chat.
+- Notificações individuais são silenciadas durante o fluxo visual; a Central apresenta um relatório único e uma notificação-resumo ao final.
+- O relatório separa documentos **criados** e **atualizados**, pastas criadas/atualizadas, avisos, falhas por arquivo e falhas internas de pacotes.
+- A previsão 0.11-C é exibida ao lado das estatísticas reais retornadas pelos materializadores.
+- Após a execução, o diagnóstico é recalculado automaticamente; conteúdo recém-criado passa a aparecer como `ATUALIZAR` sem selecionar novamente os arquivos.
+- O estado original de bloqueio dos compêndios continua sendo restaurado por `withWritablePacks()`, inclusive em caso de erro.
+- A Central continua GM-only e a expectativa permanece **0 Items criados no Mundo**: Classes, Subclasses, Características e Talentos são sincronizados nos compêndios gerenciados.
+- Nova API de suporte: `importExecutionSupport()`.
+- Os comandos `/grimorio-import*` permanecem funcionais e compatíveis.
+
+### Teste da execução visual
+
+```bash
+node tests/validate-ui-011d.mjs
+```
+
+O teste cobre confirmação como requisito de contrato, agregação de resultados reais, pacotes parcialmente bem-sucedidos, falha isolada de arquivo, avisos, contagem de pastas, comparação previsão/execução e garantia de `worldItemsCreated: 0`.
+
+
+## Build 0.11-C — Diff real de criação/atualização, ainda somente leitura
+
+A Central agora compara cada payload válido com os quatro compêndios reais do módulo antes da importação. O objetivo desta build é responder com segurança **o que será criado e o que será atualizado**, sem modificar nenhum documento.
+
+- Consulta **Grimório — Classes**, **Grimório — Subclasses**, **Grimório — Características** e **Grimório — Talentos**.
+- Matching idêntico ao fluxo de reimportação: `documentRole + grimorioId`; Características acrescentam `featureKey`. Nomes não são usados como identidade.
+- Classes/Subclasses usam o mesmo `plannedFeatureStorage()` do materializador, evitando contar ASIs/placeholders sintéticos que não geram Items próprios.
+- Cada card mostra o resumo `NOVO` / `ATUALIZAR` e permite abrir **Ver diagnóstico por documento**.
+- O diagnóstico lista nome, tipo, nível/função quando aplicável e o compêndio alvo. Para atualizações, a preview também conserva o UUID/ID existente internamente para auditoria.
+- Catálogos como os 42 Talentos podem ser vistos integralmente. Para pacotes muito grandes, o resumo considera todos os documentos, enquanto a lista visual mostra até 80 linhas para não degradar a Application.
+- O botão **Atualizar diagnóstico** refaz a consulta sem reler os arquivos, útil quando os compêndios mudam enquanto a Central permanece aberta.
+- Compêndio ausente é apresentado como diagnóstico indisponível e não provoca nenhuma criação automática.
+- APIs novas: `inspectPayloadCompendiums(payload)`, `plannedPayloadDocuments(payload)` e `compendiumPreflightSupport()`.
+- `preflightSupport()` agora reporta a etapa 0.11-C e preserva `basePhase: 0.11-B`.
+- **`writeOperations` continua `false`.** A confirmação e execução visual da importação permanecem reservadas à 0.11-D.
+- Os comandos `/grimorio-import*` continuam funcionando como antes durante esta alpha.
+
+### Teste do diff com compêndios
+
+```bash
+node tests/validate-ui-011c.mjs
+```
+
+O teste cobre Talento novo/existente, catálogo com mistura de 28 criações + 14 atualizações, Classe com Características parcialmente existentes, exclusão de features sintéticas, pacote Classe/Subclasse, compêndio ausente, refresh do diagnóstico e garantia de zero operações de escrita.
+
+
+## Build 0.11-B — Seleção, preflight e preview somente leitura
+
+A aba **Importar** da Central agora recebe arquivos reais e executa uma análise completa antes de qualquer escrita nos compêndios.
+
+- Seleção de múltiplos JSONs pelo botão **Selecionar arquivos**.
+- Drag-and-drop de um ou vários arquivos diretamente na Central.
+- Sessão persistente enquanto a Application estiver aberta, com remoção individual e limpeza completa.
+- Arquivos duplicados na mesma sessão são ignorados pelo nome/tamanho/data de modificação.
+- Leitura segura de JSON, incluindo mensagem visual para arquivo vazio ou JSON malformado.
+- Classificação automática de cinco formatos: bundle de Classe, bundle de Subclasse, pacote de Classes/Subclasses, bundle de Talento e pacote de Talentos.
+- O preflight reutiliza `validateBundle`, `validatePackage`, `validateFeatBundle` e `validateFeatPackage`; não existe uma segunda regra de validação na UI.
+- Preview visual de identidade, fonte, página, contagens relevantes, pré-requisitos, escolhas e compêndios de destino.
+- Erros bloqueantes e avisos são apresentados na própria janela, sem exigir consulta ao console.
+- API pública `previewPayload(payload)` para integrações que precisem obter a mesma classificação/validação da Central.
+- API pública `preflightSupport()` nasceu nesta etapa; na alpha.3 ela reporta 0.11-C e mantém `basePhase: 0.11-B` para registrar esta fundação.
+- **Nenhuma operação de escrita foi introduzida nesta etapa.** A alpha.3 acrescenta a distinção real `NOVO/ATUALIZAR`; a execução confirmada continua reservada à 0.11-D.
+- Os comandos `/grimorio-import*` continuam preservando o comportamento anterior nesta alpha; portanto, para testar o novo fluxo somente leitura, use o botão visual da Central.
+
+### Teste do preflight
+
+```bash
+node tests/validate-ui-011b.mjs
+```
+
+O teste cobre Classe, Subclasse, pacote de Classe, Talento, catálogo de 42 Talentos, schema desconhecido, JSON malformado, deduplicação de arquivos e garantia de `writeOperations: false`.
+
+
+## Build 0.11-A — Fundação da Central visual
+
+Esta build inaugura a interface visual do Grimório Importer sem alterar a lógica de importação consolidada na 0.10.0.
+
+- Nova janela **Grimório Importer — Central**, construída sobre `ApplicationV2` + `HandlebarsApplicationMixin`.
+- Navegação lateral preparada para Importar, Status, Compêndios, Automação, Auditoria, Actor Especial e Ajuda.
+- Acesso GM-only por um botão de livro nos **controles de Token** do Foundry.
+- API pública `game.modules.get("grimorio-importer").api.openImporter()`.
+- Instância única: reabrir a Central traz a janela existente para frente, em vez de multiplicar janelas.
+- Janela movível, redimensionável e minimizável pelo frame nativo do Foundry.
+- Snapshot visual do ambiente ativo (Foundry/DnD5e e perfil homologado).
+- A área Importar já reserva o espaço para seleção, preflight e preview que serão implementados na **0.11-B**.
+- Todos os comandos `/grimorio-*` e materializadores 0.10.0 permanecem operacionais e inalterados nesta subfase.
+
+> Esta é uma build de desenvolvimento da Fase 3. Ela deve ser instalada sobre a 0.10.0 apenas para validar o shell visual e o acesso à Central antes da implementação do preflight.
 
 ## Atualização 0.10.0 — Talentos
 
@@ -199,19 +376,22 @@ Copie a pasta `grimorio-importer` para `Data/modules/`, ative o módulo no Mundo
 
 ## Comandos
 
-- `/grimorio-import` — seleciona um ou vários JSONs; aceita bundle individual ou pacote.
-- `/grimorio-import-batch` — alias explícito para seleção múltipla.
-- `/grimorio-import-package` — alias explícito para pacotes JSON.
-- `/grimorio-status`
-- `/grimorio-packs`
-- `/grimorio-automacao` — mostra a cobertura atual da automação mecânica da Fase 12.
-- `/grimorio-auditoria-automacao` — audita as características gerenciadas atualmente no compêndio.
-- `/grimorio-world-preview`
-- `/grimorio-special` — mostra o estado das classes especiais do Actor selecionado.
-- `/grimorio-configurar` — reexecuta configurações especiais do Actor selecionado.
-- `/grimorio-help`
+Na 0.11-F, os comandos abaixo são **atalhos para a Central visual**:
 
-Para `/grimorio-special` e `/grimorio-configurar`, o módulo usa um único token controlado; se não houver token controlado, usa o personagem atribuído ao usuário.
+- `/grimorio-import` — abre **Importar** e o seletor de JSONs.
+- `/grimorio-import-batch` — mesmo fluxo visual, com seleção múltipla.
+- `/grimorio-import-package` — abre o mesmo fluxo visual; o tipo de pacote continua sendo detectado automaticamente.
+- `/grimorio-import-feats` — abre o mesmo fluxo visual para JSONs de Talentos.
+- `/grimorio-status` — abre **Status**.
+- `/grimorio-packs` — abre **Compêndios**.
+- `/grimorio-automacao` — abre **Automação**.
+- `/grimorio-auditoria-automacao` — abre **Auditoria**.
+- `/grimorio-world-preview` — abre **Status**, incluindo a área de conteúdo legado.
+- `/grimorio-special` — abre **Actor Especial**.
+- `/grimorio-configurar` — abre **Actor Especial** e executa a configuração assistida.
+- `/grimorio-help` — abre **Ajuda**.
+
+Para `/grimorio-special` e `/grimorio-configurar`, o módulo usa um único token controlado; se não houver token controlado, usa o personagem atribuído ao usuário. A API legada `openBundleFilePicker()` continua disponível para integrações externas, mas os comandos de chat não executam mais importação direta por ela.
 
 ## API
 
@@ -219,7 +399,7 @@ Para `/grimorio-special` e `/grimorio-configurar`, o módulo usa um único token
 game.modules.get("grimorio-importer").api
 ```
 
-A Fase 12 expõe `phase12Support`, `automationCoverage` e `automationCompendiumAudit`. `phase11Support` permanece como camada de compatibilidade, assim como `phase10Support`, `importPackage`, `importPayload`, `importPayloads`, `validatePackage`, `phase9PackageSupport` e as APIs especiais da Fase 8.
+A Fase 0.11-F expõe `openImporter`, `centralParitySupport` e `commandRoutingSupport` para a camada visual/roteamento. A Fase 12 continua expondo `phase12Support`, `automationCoverage` e `automationCompendiumAudit`. `phase11Support` permanece como camada de compatibilidade, assim como `phase10Support`, `importPackage`, `importPayload`, `importPayloads`, `validatePackage`, `phase9PackageSupport` e as APIs especiais da Fase 8.
 
 ## Observações de fidelidade
 

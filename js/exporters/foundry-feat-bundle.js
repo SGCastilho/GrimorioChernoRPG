@@ -1,24 +1,24 @@
 'use strict';
 
-// Fase 2 — transporte de Talentos do Grimório para o Grimório Importer.
+// FA-1 — Grimório Feat Bundle v2 com contrato declarativo de automação.
 (function initFoundryFeatBundle(global) {
   const SCHEMA = 'grimorio-foundry-feat-bundle';
-  const SCHEMA_VERSION = 1;
-  const PROFILE_ID = 'foundry13-dnd5e533-grimorio-feat-bundle-v1';
+  const SCHEMA_VERSION = 2;
+  const PROFILE_ID = 'foundry13-dnd5e533-grimorio-feat-bundle-v2';
 
   const PROFILE = Object.freeze({
     id: PROFILE_ID,
-    label: 'Foundry VTT 13.351 · DnD5e 5.3.3 · Grimório Feat Bundle v1',
+    label: 'Foundry VTT 13.351 · DnD5e 5.3.3 · Grimório Feat Bundle v2 · FA-1',
     foundryVersion: '13.351',
     dnd5eVersion: '5.3.3',
     consumer: 'grimorio-importer',
-    minimumImporterVersion: '0.10.0',
-    format: 'grimorio-foundry-feat-bundle-v1',
+    minimumImporterVersion: '0.12.0',
+    format: 'grimorio-foundry-feat-bundle-v2',
     mediaType: 'application/json',
     fileExtension: '.json',
     compatibility: {
-      status: 'homologated-transport',
-      note: 'O bundle materializa um Item de Talento nativo no compêndio do Grimório Importer. Efeitos condicionais e escolhas permanecem fiéis ao texto quando não houver automação segura.'
+      status: 'automation-contract-ready',
+      note: 'O bundle v2 transporta um plano declarativo de Advancements, Activities, Active Effects, usos e runtime. A materialização desses campos será implementada no Grimório Importer 0.12+.'
     }
   });
 
@@ -36,6 +36,11 @@
   function registry() {
     const value = global.GRIMORIO_REGISTRY;
     if (!value?.getFeatCatalogs || !value?.getSource) throw new Error('Registro de talentos do Grimório não está carregado.');
+    return value;
+  }
+  function automationApi() {
+    const value = global.GRIMORIO_FOUNDRY_FEAT_AUTOMATION;
+    if (!value?.buildPlan || !value?.validatePlan) throw new Error('Perfis de automação Foundry dos Talentos não estão carregados.');
     return value;
   }
 
@@ -74,6 +79,7 @@
     if (!entry) throw new Error(`Talento não encontrado: ${typeof featOrId === 'object' ? featOrId?.id : featOrId}`);
     const feat = entry.feat;
     const source = sourceMetadata(entry);
+    const automation = automationApi().buildPlan(feat);
     return {
       schema: SCHEMA,
       schemaVersion: SCHEMA_VERSION,
@@ -101,9 +107,10 @@
           itemType: 'feat',
           featureType: 'feat',
           storage: 'grimorio-feats',
-          automation: 'conservative-description-first'
+          automation: 'declarative-feat-automation-v1'
         }
-      }
+      },
+      automation
     };
   }
 
@@ -124,7 +131,14 @@
     if (!Array.isArray(bundle.feat?.prerequisites)) errors.push('prerequisites precisa ser um array.');
     if (!Array.isArray(bundle.feat?.choices)) errors.push('choices precisa ser um array.');
     if (bundle.feat?.prerequisite && !bundle.feat.prerequisites.length) warnings.push('Há pré-requisito textual sem representação estruturada.');
-    return { ok: errors.length === 0, errors, warnings };
+
+    const feat = findEntry(bundle.identity?.grimorioId)?.feat || null;
+    const automationValidation = automationApi().validatePlan(bundle.automation, feat);
+    automationValidation.errors.forEach(error => errors.push(`Automação: ${error}`));
+    automationValidation.warnings.forEach(warning => warnings.push(`Automação: ${warning}`));
+
+    if (bundle.profile?.minimumImporterVersion !== PROFILE.minimumImporterVersion) errors.push(`minimumImporterVersion precisa ser ${PROFILE.minimumImporterVersion}.`);
+    return { ok: errors.length === 0, errors, warnings: [...new Set(warnings)] };
   }
 
   function inspectFeat(featOrId) {

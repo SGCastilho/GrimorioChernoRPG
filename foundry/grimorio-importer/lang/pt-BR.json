@@ -12,5 +12,14 @@
   "GRIMORIO_IMPORTER.Phase10": "Fase 10 — Exportação granular de classes e subclasses",
   "GRIMORIO_IMPORTER.Phase11": "Fase 11 — Fundação de Activities e Active Effects",
   "GRIMORIO_IMPORTER.Phase12": "Fase 12 — Expansão e auditoria de automação",
-  "GRIMORIO_IMPORTER.AutomationAudit": "Auditoria de automação"
+  "GRIMORIO_IMPORTER.AutomationAudit": "Auditoria de automação",
+  "GRIMORIO_IMPORTER.Central.Title": "Grimório Importer — Central",
+  "GRIMORIO_IMPORTER.Central.Open": "Abrir Central do Grimório Importer",
+  "GRIMORIO_IMPORTER.Central.Import": "Importar",
+  "GRIMORIO_IMPORTER.Central.Status": "Status",
+  "GRIMORIO_IMPORTER.Central.Packs": "Compêndios",
+  "GRIMORIO_IMPORTER.Central.Automation": "Automação",
+  "GRIMORIO_IMPORTER.Central.Audit": "Auditoria",
+  "GRIMORIO_IMPORTER.Central.Special": "Actor Especial",
+  "GRIMORIO_IMPORTER.Central.Help": "Ajuda"
 }
