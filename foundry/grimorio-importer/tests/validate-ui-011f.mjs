@@ -15,7 +15,7 @@ const {
   commandRoutingSupport
 } = await import("../scripts/ui/command-router.js");
 
-assert.equal(IMPORTER_VERSION, "0.11.0-rc.1");
+assert.equal(IMPORTER_VERSION, "0.12.0");
 
 const support = commandRoutingSupport();
 assert.equal(support.phase, "0.11-F");
@@ -78,7 +78,7 @@ const unknown = await routeGrimorioCommand("texto comum", { openImporter: async 
 assert.equal(unknown.handled, false);
 
 const parity = centralParitySupport();
-assert.equal(parity.phase, "0.11.0-RC");
+assert.equal(parity.phase, "0.12.0 Stable");
 assert.equal(parity.basePhase, "0.11-G");
 assert.equal(parity.chatCommandsRouteToCentral, true);
 assert.equal(parity.importCommandsUseVisualPreflight, true);
@@ -95,7 +95,7 @@ const mainSource = await fs.readFile(path.join(root, "scripts/main.js"), "utf8")
 assert.match(mainSource, /commandRoutingSupport/);
 assert.match(mainSource, /resolveGrimorioCommand/);
 assert.match(mainSource, /routeGrimorioCommand/);
-assert.match(mainSource, /Release Candidate RC\.1 consolidada/);
+assert.match(mainSource, /automação de Talentos 42\/42 homologada/);
 assert.match(mainSource, /openBundleFilePicker,/); // API legada preservada
 const chatHook = mainSource.slice(mainSource.indexOf('Hooks.on("chatMessage"'));
 assert.match(chatHook, /resolveGrimorioCommand\(message\)/);
@@ -107,7 +107,7 @@ const moduleJson = JSON.parse(await fs.readFile(path.join(root, "module.json"), 
 const packageJson = JSON.parse(await fs.readFile(path.join(root, "package.json"), "utf8"));
 assert.equal(moduleJson.version, IMPORTER_VERSION);
 assert.equal(packageJson.version, IMPORTER_VERSION);
-assert.match(moduleJson.description, /Release Candidate 0\.11\.0-rc\.1/);
+assert.match(moduleJson.description, /versão estável 0\.12\.0/);
 
 console.log("GRIMORIO_IMPORTER_011F_COMMAND_ROUTING_OK", JSON.stringify({
   version: IMPORTER_VERSION,

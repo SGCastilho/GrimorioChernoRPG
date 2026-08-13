@@ -11,7 +11,7 @@ const { executeImportEntries, summarizeImportResult, importExecutionSupport } = 
 const { ImporterSession } = await import("../scripts/ui/importer-session.js");
 const { withWritablePacks } = await import("../scripts/pack-storage.js");
 
-assert.equal(IMPORTER_VERSION, "0.11.0-rc.1");
+assert.equal(IMPORTER_VERSION, "0.12.0");
 
 const single = summarizeImportResult({
   stats: { featsCreated: 1, featsUpdated: 0, foldersCreated: 1, foldersUpdated: 0, worldItemsCreated: 0 },

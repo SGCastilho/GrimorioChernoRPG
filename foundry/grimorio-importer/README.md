@@ -1,6 +1,84 @@
-# Grimório Importer — v0.11.0-rc.1
+# Grimório Importer — v0.12.0
 
 Módulo complementar do **Grimório D&D 5e PT-BR** para **Foundry VTT 13.351 + DnD5e 5.3.3**.
+
+## 0.12.0 Stable — automação de Talentos 42/42
+
+A `0.12.0` é a versão estável que consolida as fases **FA-1–FA-5**. O comportamento mecânico homologado na `0.12.0-alpha.3` e auditado na `0.12.0-alpha.4` foi congelado para release: nenhum materializador, runtime ou regra de identidade foi promovido ou aproximado durante a estabilização.
+
+### Estado consolidado
+
+| Métrica | Resultado |
+| --- | ---: |
+| Talentos PHB 2014 auditados | **42/42** |
+| Advancements nativos | **26** |
+| Escolhas assistidas | **3** |
+| Activities | **22** |
+| Active Effects | **10** |
+| Uses | **2** |
+| Runtime records | **56/56** |
+| Talentos ausentes/divergentes no baseline | **0** |
+
+A cobertura permanece deliberadamente conservadora: regras que dependem de cobertura, iluminação, posição, origem exata de uma rolagem ou decisão pós-rolagem continuam assistidas quando o DnD5e 5.3.3 não fornece contexto suficiente para uma automação fiel.
+
+**Grimório 5.44.0 — Lyre.** O site passa a exportar também um pacote v2 com os 28 talentos de *Lyre's Guide to Retia — Land of Industry* (p. 331–335). Eles entram com perfis explícitos `description`: o módulo 0.12.0 aceita, valida e materializa o conteúdo no compêndio de Talentos sem inferir automações para subsistemas próprios da 5.19. O fixture de regressão é `examples/feats/lyre-retia-feats-package-v2.json`, validado por `tests/validate-feats-lyre-544.mjs`.
+
+**Grimório 5.43.0 — Ryoko.** O site passa a exportar também um pacote v2 com 39 talentos de *Ryoko's Guide to the Yokai Realms*. Esses talentos entram com perfis explícitos `description`: o módulo 0.12.0 aceita, valida e materializa o conteúdo no compêndio de Talentos, mas não inventa automação para Ataques de Combo, Maestria Avançada de Armas, próteses, familiares ou traços raciais. Um fixture de regressão está disponível em `examples/feats/ryoko-yokai-realms-feats-package-v2.json`. A validação dedicada é `tests/validate-feats-ryoko-543.mjs`.
+
+### Contratos preservados
+
+- Feat Bundle/Package v1 continuam aceitos em modo legado.
+- Feat Bundle/Package v2 do Grimório 5.42.0 materializam Advancements, Activities, Effects, Uses, escolhas e runtime seguro.
+- Reimportação usa `grimorioId` e preserva documentos/UUIDs em vez de duplicar conteúdo.
+- Classes, Subclasses, Características e Talentos permanecem nos quatro compêndios gerenciados.
+- Nenhum Item gerenciado é criado automaticamente no Mundo.
+- A Central continua GM-only, com preflight `NOVO/ATUALIZAR`, confirmação explícita e relatório visual.
+- Os 12 comandos `/grimorio-*` continuam roteados para a Central.
+
+### Gate da versão estável
+
+A aba **Status** exibe **Integridade da versão 0.12.0 Stable** com 11 verificações: ambiente homologado, quatro compêndios, sete áreas da Central, preflight sem escrita, identidade estável, confirmação explícita, política de zero World Items, comandos Central-first, auditoria 42/42, canal stable/feature freeze e conteúdo legado no Mundo.
+
+Itens legados continuam sendo observação não bloqueante; os demais contratos são bloqueantes.
+
+### APIs principais 0.12
+
+```js
+game.modules.get("grimorio-importer").api.featAutomationSupport()
+game.modules.get("grimorio-importer").api.featChoiceSupport()
+game.modules.get("grimorio-importer").api.featRuntimeSupport()
+game.modules.get("grimorio-importer").api.featAuditSupport()
+game.modules.get("grimorio-importer").api.featCompendiumAudit()
+game.modules.get("grimorio-importer").api.releaseReadiness()
+```
+
+`readyForStable` é o indicador atual do gate; `readyForFinal` e `readyForRc` permanecem como aliases de compatibilidade.
+
+### Testes
+
+```bash
+npm test
+npm run test:stable
+npm run test:release
+```
+
+Consulte também:
+
+- `RELEASE_NOTES_0.12.0.md` — resumo da release estável;
+- `STABLE_RELEASE_CHECKLIST.md` — checklist de instalação/homologação;
+- `FA5_AUTOMATION_AUDIT.md` — matriz 42/42;
+- `FA5_TEST_CHECKLIST.md` — spot checks de automação.
+
+## Histórico 0.12 — Talentos Foundry
+
+- **FA-2 / 0.12.0-alpha.1:** consumo do Feat Bundle v2 e primeira materialização nativa segura — 16 planos de Advancement, 7 Effects, 22 Activities e 2 Uses.
+- **FA-3 / 0.12.0-alpha.2:** resolução dos 12 planos de Advancement restantes — 28/28 planos, 26 documentos nativos e 3 escolhas vinculadas assistidas.
+- **FA-4 / 0.12.0-alpha.3:** cobertura runtime 56/56, 10/10 Effects materializados e hooks seguros para condições que o DnD5e expõe de forma confiável.
+- **FA-5 / 0.12.0-alpha.4:** auditoria mecânica 42/42 sobre os documentos materializados, gate de 11 verificações e preparação para RC sem alterar a mecânica FA-4.
+
+Os detalhes históricos permanecem no `CHANGELOG.md` e nas checklists `FA2_TEST_CHECKLIST.md`, `FA3_TEST_CHECKLIST.md`, `FA4_TEST_CHECKLIST.md` e `FA5_TEST_CHECKLIST.md`.
+
+## Histórico 0.11 — Central visual e Release Candidate
 
 
 

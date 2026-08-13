@@ -1968,7 +1968,7 @@
   .grimorio-command-list > div { grid-template-columns:1fr; gap:.2rem; }
 }
 
-/* Grimório Importer 0.11.0 RC — feature freeze, gate final e acessibilidade */
+/* Grimório Importer 0.12 FA-2 — gate de desenvolvimento e acessibilidade preservada */
 .grimorio-importer-app :is(button, summary, [tabindex]):focus-visible {
   outline: 2px solid var(--gi-accent);
   outline-offset: 2px;
@@ -2104,3 +2104,27 @@
     animation-iteration-count: 1 !important;
   }
 }
+
+/* FA-5 — auditoria mecânica 42/42 dos Talentos */
+.grimorio-feat-audit-details { margin-top: .7rem; overflow: hidden; }
+.grimorio-feat-audit-table { min-width: 760px; overflow: auto; }
+.grimorio-feat-audit-table__head,
+.grimorio-feat-audit-table__row {
+  display: grid;
+  grid-template-columns: minmax(240px,1.5fr) minmax(130px,.7fr) minmax(120px,.7fr) minmax(150px,.8fr) minmax(48px,.3fr);
+  gap: .5rem;
+  align-items: center;
+  padding: .46rem .65rem;
+}
+.grimorio-feat-audit-table__head { color:#748399; background:rgba(255,255,255,.025); font-size:.51rem; font-weight:800; text-transform:uppercase; }
+.grimorio-feat-audit-table__row { border-top:1px solid rgba(255,255,255,.04); color:#aeb9c7; font-size:.56rem; }
+.grimorio-feat-audit-table__row.is-good { background:rgba(116,198,157,.025); }
+.grimorio-feat-audit-table__row.is-warning { background:rgba(218,177,93,.025); }
+.grimorio-feat-audit-table__row.is-error { background:rgba(216,120,126,.04); }
+.grimorio-feat-audit-table__row strong,
+.grimorio-feat-audit-table__row small { display:block; }
+.grimorio-feat-audit-table__row strong { color:#dbe4ee; font-size:.59rem; }
+.grimorio-feat-audit-table__row small { margin-top:.05rem; color:#657487; font-size:.49rem; overflow-wrap:anywhere; }
+.grimorio-feat-audit-table__row code { font-size:.51rem; white-space:nowrap; }
+.grimorio-feat-audit-table__issues { padding:.35rem .75rem .55rem 1.3rem; border-top:1px dashed rgba(216,120,126,.16); color:#d7a3a7; background:rgba(216,120,126,.025); }
+.grimorio-feat-audit-table__issues p { margin:.15rem 0; font-size:.54rem; }

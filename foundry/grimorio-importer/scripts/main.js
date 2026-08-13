@@ -5,6 +5,10 @@ import { PACKS, packAvailability, packContentsStatus, defaultPackRuntime, withWr
 import { registerSpecialRuntimeHooks, specialActorStatus, configureActorSpecialClasses, applySpellcastingAbility, applyDragoneerConcept, rewriteBloodMinisterHpFormula } from "./special-runtime.js";
 import { phase11Support, phase12Support, automationCoverage } from "./feature-automation.js";
 import { validateFeatBundle, validateFeatPackage, isFeatBundle, isFeatPackage, featSupport } from "./feat-validator.js";
+import { featAutomationSupport } from "./feat-automation.js";
+import { registerFeatChoiceHooks, featChoiceSupport, configureFeatChoices, pendingFeatChoices, validateResilientLinkage } from "./feat-choice-runtime.js";
+import { registerFeatRuntimeHooks, featRuntimeSupport, runtimeCoverageForActor, validateFeatRuntimeCoverage, syncConditionalFeatEffects } from "./feat-runtime.js";
+import { featAuditSupport, featCompendiumAudit, auditFeatDocuments } from "./feat-audit.js";
 import { materializeFeatBundle } from "./feat-materializer.js";
 import { openImporter } from "./ui/importer-app.js";
 import { registerImporterSceneControl } from "./ui/scene-control.js";
@@ -56,6 +60,9 @@ export async function status() {
     phase11Support: phase11Support(),
     phase12Support: phase12Support(),
     featSupport: featSupport(),
+    featAutomationSupport: featAutomationSupport(),
+    featRuntimeSupport: featRuntimeSupport(),
+    featAuditSupport: featAuditSupport(),
     preflightSupport: preflightSupport(),
     compendiumPreflightSupport: compendiumPreflightSupport(),
     importExecutionSupport: importExecutionSupport(),
@@ -67,11 +74,13 @@ export async function status() {
     packsReady: packs.every(pack => pack.available),
     legacyWorldPrototype: legacyWorldPrototypeStatus(defaultPackRuntime())
   };
+  const featAudit = await featCompendiumAudit(defaultPackRuntime());
   return Object.freeze({
     ...info,
+    featAudit,
     releaseReadinessSupport: releaseReadinessSupport(),
     releaseReadiness: evaluateReleaseReadiness({
-      statusInfo: info,
+      statusInfo: { ...info, featAudit },
       centralSupport: info.centralParitySupport,
       commandSupport: info.commandRoutingSupport,
       preflightSupport: info.preflightSupport,
@@ -372,6 +381,8 @@ async function configureSelectedActor() {
 }
 
 registerSpecialRuntimeHooks();
+registerFeatChoiceHooks();
+registerFeatRuntimeHooks();
 registerImporterSceneControl();
 
 Hooks.once("ready", () => {
@@ -416,6 +427,18 @@ Hooks.once("ready", () => {
       phase11Support,
       phase12Support,
       featSupport,
+      featAutomationSupport,
+      featChoiceSupport,
+      featRuntimeSupport,
+      featAuditSupport,
+      featCompendiumAudit,
+      auditFeatDocuments,
+      runtimeCoverageForActor,
+      validateFeatRuntimeCoverage,
+      syncConditionalFeatEffects,
+      configureFeatChoices,
+      pendingFeatChoices,
+      validateResilientLinkage,
       automationCoverage,
       automationCompendiumAudit,
       specialActorStatus,
@@ -427,7 +450,7 @@ Hooks.once("ready", () => {
   }
   const packs = packAvailability(defaultPackRuntime());
   if (game.user?.isGM && packs.some(pack => !pack.available)) ui.notifications.error("Grimório Importer: um ou mais compêndios não foram carregados. Verifique a instalação do módulo.");
-  console.info(`[${MODULE_ID}] Pronto — ${IMPORTER_VERSION} com Release Candidate RC.1 consolidada + comandos Central-first + importação confirmada + Talentos + automação Fase 12. Foundry ${game.version}; ${game.system?.id} ${game.system?.version}.`, { packs, feats: featSupport(), preflight: compendiumPreflightSupport(), execution: importExecutionSupport(), central: centralParitySupport(), commandRouting: commandRoutingSupport(), release: releaseReadinessSupport(), automation: automationCoverage() });
+  console.info(`[${MODULE_ID}] Pronto — ${IMPORTER_VERSION} Stable · automação de Talentos 42/42 homologada, auditoria mecânica ativa e feature freeze de release. Foundry ${game.version}; ${game.system?.id} ${game.system?.version}.`, { packs, feats: featSupport(), featAutomation: featAutomationSupport(), featChoices: featChoiceSupport(), featRuntime: featRuntimeSupport(), featAudit: featAuditSupport(), preflight: compendiumPreflightSupport(), execution: importExecutionSupport(), central: centralParitySupport(), commandRouting: commandRoutingSupport(), stable: releaseReadinessSupport(), automation: automationCoverage() });
 });
 
 Hooks.on("chatMessage", (_chatLog, message) => {

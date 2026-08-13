@@ -98,6 +98,7 @@
       about: [
         'O Grimório incorpora 280 entradas de magia, quatro classes originais — Alma Favorecida, Inscritor, Cavaleiro das Pétalas e Santo da Espada — e 127 subclasses, localizadas para PT-BR.',
         'O Capítulo VII também está indexado na seção Raças e Subraças: 34 raças e 196 subraças da edição fornecida, com traços fixos, Traços de Legado, regras de Sangue Misto e referências de página em PT-BR.',
+        'O Capítulo VII — Feats of Somnus Domina está integrado integralmente à seção Talentos com 28 entradas das páginas 331–335, traduzidas para PT-BR e preservando nome original, pré-requisitos, escolhas, repetibilidade e página de origem.',
         'O Capítulo IX — Weapons & Armor está integrado à seção Equipamentos com 22 armas, o Escudo Grande, munições especiais, propriedades de arma da 5.19, regras de tamanho de equipamento e o subsistema de armas de fogo das páginas 515–518.',
         'Os arquétipos apresentados para o Patrulheiro Revisado permanecem ligados ao Patrulheiro do Grimório com indicação de compatibilidade, e revisões Legacy/5.19 continuam identificadas como versões próprias da fonte.'
       ]
@@ -163,7 +164,8 @@
         'As regras opcionais de Ataque Extra Aprimorado foram preservadas como referências opcionais, sem sobrescrever silenciosamente a progressão das classes-base do Livro do Jogador.',
         'O Capítulo 13 — Magias está integrado integralmente em PT-BR com 62 entradas. A própria fonte declara 44 magias inéditas e 18 provenientes de outras publicações Loot Tavern; como o livro não individualiza essa classificação em cada ficha, não foram inferidas procedências anteriores.',
         'A escola opcional Biomancia foi preservada em 7 magias, incluindo a escola alternativa indicada pela fonte para campanhas que não utilizem Biomancia.',
-        'O Capítulo 6 — Equipamentos e Próteses agora possui integração da seção Equipamentos: 11 armas, 7 propriedades novas de armas e 6 equipamentos de aventura, com regras especiais e dados de fabricação preservados. As próteses permanecem reservadas para uma implementação própria por constituírem um tipo de item separado na fonte.'
+        'O Capítulo 6 — Equipamentos e Próteses agora possui integração da seção Equipamentos: 11 armas, 7 propriedades novas de armas e 6 equipamentos de aventura, com regras especiais e dados de fabricação preservados. As próteses permanecem reservadas para uma implementação própria por constituírem um tipo de item separado na fonte.',
+        'O Capítulo 10 — Antecedentes e Talentos recebeu integração integral das seções Talentos e Talentos Raciais: 39 talentos em PT-BR (26 gerais e 13 raciais), preservando nomes originais, pré-requisitos, escolhas, repetibilidade e páginas 216–223.'
       ]
     },
     {

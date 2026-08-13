@@ -1,8 +1,8 @@
 {
   "id": "grimorio-importer",
   "title": "Grimório Importer",
-  "description": "Importador visual e por comandos de classes, subclasses e Talentos do Grimório. Release Candidate 0.11.0-rc.1 com Central visual consolidada, preflight, confirmação, relatórios, paridade administrativa e gate para a 0.11.0 final, alvo Foundry VTT 13.351 / DnD5e 5.3.3.",
-  "version": "0.11.0-rc.1",
+  "description": "Importador visual e por comandos de classes, subclasses e Talentos do Grimório. A versão estável 0.12.0 consolida as fases FA-1–FA-5 com Feat Bundle v2, Advancements, Activities, Active Effects, Uses, escolhas assistidas, runtime seguro e auditoria mecânica 42/42. Alvo Foundry VTT 13.351 / DnD5e 5.3.3.",
+  "version": "0.12.0",
   "authors": [
     {
       "name": "Projeto Grimório D&D 5e PT-BR"

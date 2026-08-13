@@ -1,4 +1,80 @@
-# Changelog — Grimório Importer
+# Changelog
+
+## 0.12.0 — Stable / consolidação FA-1–FA-5
+
+- Promovida a linha 0.12 para a versão estável **0.12.0** após homologação das fases FA-1–FA-5.
+- `module.json`, `package.json` e `scripts/version.js` sincronizados em `0.12.0`.
+- `IMPORTER_BUILD` passa a `channel: stable`, `featureFreeze: true`, `phase: 0.12.0 Stable`.
+- O gate do Status passa de preparação para RC para **Integridade da versão 0.12.0 Stable**, mantendo 11 verificações bloqueantes/não bloqueantes.
+- `releaseReadiness` acrescenta `readyForStable`; `readyForFinal` e `readyForRc` continuam como aliases compatíveis.
+- Auditoria 42/42 acrescenta `readyForStable`, preservando `readyForRc` para compatibilidade.
+- `centralParitySupport()` passa a reportar `stableBuild`, `finalReadinessGate` e `stableIntegrityGate`.
+- Adicionados `tests/validate-stable-012.mjs`, `npm run test:stable` e `npm run test:release`.
+- Adicionados `RELEASE_NOTES_0.12.0.md` e `STABLE_RELEASE_CHECKLIST.md`.
+- Os arquivos mecânicos centrais de Talentos e materialização permanecem byte a byte idênticos à `0.12.0-alpha.4`; a promoção Stable altera apenas metadados, gate, documentação e testes de release.
+
+## 0.12.0-alpha.4 — FA-5 / auditoria mecânica 42/42 e preparação para RC
+
+- `IMPORTER_BUILD.phase` passa a `FA-5`; versão sincronizada em `module.json`, `package.json` e `scripts/version.js` como `0.12.0-alpha.4`.
+- Adicionado `scripts/feat-audit-baseline.js` com baseline explícito dos **42 Talentos** produzido a partir do Grimório D&D 5.42.0 / PHB 2014 / Feat Bundle v2.
+- Adicionado `scripts/feat-audit.js`, que audita os Items efetivamente materializados por identidade estável e compara chaves exatas de Advancement, Activity e Effect, Uses, runtime, escolhas assistidas, schema/tier e itens diferidos.
+- Auditoria agregada aprovada em **42/42**, com **26 Advancements, 22 Activities, 10 Active Effects, 2 Uses, 56 runtime records e 3 escolhas assistidas**.
+- A classificação de cobertura fica em **6 Nativa, 7 Runtime/Activity, 25 Assistida e 4 Nativa + textual**; `42/42 verificados` não significa que regras contextuais tenham sido transformadas em automações aproximadas.
+- Detecção bloqueante adicionada para Talento ausente, `grimorioId` duplicado, Item extra gerenciado, schema/role/identidade divergente, Activity/Advancement/Effect removido, contagens divergentes ou qualquer elemento ainda `deferred`.
+- Testes negativos removem deliberadamente uma Activity de Atirador Aguçado, duplicam um `grimorioId` e omitem um Talento; todos os cenários bloqueiam `readyForRc`.
+- A aba **Auditoria** da Central passa a integrar a auditoria 42/42 com tabela por Talento, estado, categoria de cobertura, contagens mecânicas e divergências.
+- A aba **Status** integra a auditoria ao gate de desenvolvimento, que passa a ter **11 verificações** para preparação da `0.12.0 RC`.
+- Novas APIs: `featAuditSupport()`, `featCompendiumAudit()` e `auditFeatDocuments()`.
+- Adicionados `FA5_AUTOMATION_AUDIT.md` e `FA5_TEST_CHECKLIST.md`.
+- Adicionado `tests/validate-feat-audit-012.mjs` e `npm run test:fa5`; a suíte agregada passa a executar **13 testes**.
+- Os arquivos mecânicos centrais da FA-4 (`feat-automation.js`, `feat-choice-runtime.js`, `feat-runtime.js`, `feat-materializer.js`, `pack-storage.js`, `materializer.js`) permaneceram byte a byte idênticos à `0.12.0-alpha.3`; a FA-5 é uma fase de auditoria/consolidação, não de promoção mecânica.
+- Feat Bundle v1/v2, reimportação por `grimorioId`, preservação de UUIDs, restauração de locks e política de zero World Items continuam inalterados.
+
+## 0.12.0-alpha.3 — FA-4 / runtime seguro dos Talentos
+
+- `IMPORTER_BUILD.phase` passa a `FA-4`; versão sincronizada em `module.json`, `package.json` e `scripts/version.js` como `0.12.0-alpha.3`.
+- Adicionado `scripts/feat-runtime.js`, motor de cobertura runtime com **56 registros reconhecidos / 53 comportamentos únicos** e política `safe-hook-first+guarded-assistance`.
+- Os **3 Active Effects condicionais** anteriormente diferidos passam a ser materializados como marcadores `runtimeManaged`, sem `changes` globais inseguros.
+- Conjurador de Guerra passa a aplicar vantagem somente no hook de concentração; Resistente aplica o mínimo de cura no hook de Dado de Vida; Maestria em Armadura Pesada aplica redução de dano somente quando armadura pesada e ataque não mágico qualificado podem ser confirmados.
+- Ambidestro e Maestria em Armadura Média passam a sincronizar Effects de CA no Actor conforme equipamento/atributo detectados; a regra de Furtividade da armadura média permanece guardada em vez de cancelar desvantagens de outras origens.
+- Curandeiro passa a validar/consumir Kit de Primeiros-Socorros e controlar cooldown por alvo através das Activities e descanso.
+- Sortudo preserva Uses `3/LR` e recebe rolagem `1d20` na Activity de gasto de sorte; a escolha entre resultados permanece assistida e auditável.
+- Os demais comportamentos situacionais recebem estratégia explícita `automatic`, `guarded`, `activity`, `assisted` ou `description`; nenhum dos 56 registros permanece classificado como `unsupported`.
+- `feat-automation.js` avança para compiler v3 / FA-4, materializando **10 Effects, 22 Activities, 2 Uses e 56 descriptors runtime**, mantendo os 28 planos de Advancement já resolvidos pela FA-3.
+- `main.js` registra os hooks FA-4 e expõe `featRuntimeSupport()`, `runtimeCoverageForActor()`, `validateFeatRuntimeCoverage()` e `syncConditionalFeatEffects()` na API pública.
+- Central/Status/Ajuda passam a mostrar fase FA-4 e resumo da cobertura runtime.
+- Adicionado `tests/validate-feat-runtime-012.mjs` e `npm run test:fa4`; regressão agregada passa a executar **12 testes**.
+- Feat Bundle/Package v1 continuam compatíveis; reimportação por `grimorioId`, UUIDs, restauração de locks e política de zero World Items permanecem inalteradas.
+
+## 0.12.0-alpha.2 — FA-3 / escolhas abertas e vinculadas de Talentos
+
+- `IMPORTER_BUILD.phase` passa a `FA-3`; versão sincronizada em `module.json`, `package.json` e `scripts/version.js`.
+- Os **12 Advancements diferidos pela FA-2** são resolvidos; cobertura lógica passa de 16/28 para **28/28**, com **26 documentos nativos** e **3 escolhas vinculadas assistidas**.
+- `Trait Advancement` passa a materializar escolhas abertas de armas, perícias/ferramentas, idiomas e salvaguardas.
+- `ItemChoice Advancement` com `allowDrops: true` passa a materializar manobras e escolhas de magia, preservando quantidade e constraints declarativas nas flags.
+- Adepto Elemental, Conjurador de Ritual e Iniciado em Magia recebem configuração assistida de escolha vinculada no Actor via `scripts/feat-choice-runtime.js`.
+- Resiliente passa a usar ASI + Trait de salvaguarda vinculados; `dnd5e.preAdvancementManagerComplete` bloqueia payloads em que as duas escolhas divergem quando ambas estão disponíveis.
+- Expostas APIs `featChoiceSupport()`, `configureFeatChoices()`, `pendingFeatChoices()` e `validateResilientLinkage()`.
+- `feat-materializer.js` passa a reportar `advancementDocumentsMaterialized` e `assistedChoicesMaterialized`; warnings distinguem escolhas assistidas de runtime FA-4.
+- A Central/Status/Ajuda foram atualizadas para FA-3. Os **3 Effects condicionais** e **56 requisitos runtime** continuam explicitamente reservados para FA-4.
+- Adicionado `tests/validate-feat-choices-012.mjs`; suíte FA-2 foi atualizada para verificar 28 planos resolvidos, 26 documentos nativos, 3 escolhas assistidas e zero Advancements diferidos.
+
+## 0.12.0-alpha.1 — FA-2 / Feat Bundle v2 e automação nativa segura
+
+- Aberta a linha 0.12 a partir da 0.11.0-rc.1, com `IMPORTER_BUILD.phase = FA-2`, canal `development` e `featureFreeze: false`.
+- Feat Bundle/Package v2 passam a ser suportados em paralelo ao transporte v1 legado.
+- Adicionado `scripts/feat-automation.js`, compilador do contrato `grimorio-foundry-feat-automation-plan@1`.
+- Materialização FA-2 dos 42 Talentos: **16 Advancements**, **7 Active Effects**, **22 Activities** e **2 recursos Uses**.
+- Diferidos de forma explícita: **12 Advancements** de escolhas abertas (FA-3), **3 Effects condicionais** e **56 requisitos de runtime** (FA-4).
+- Active Effects seguros cobrem iniciativa, CA assistida não-transferível, deslocamento, bônus passivos de perícia e PV por nível; efeitos dependentes de equipamento/origem de dano não são aplicados globalmente.
+- Ability Score Improvement e concessões fixas de proficiência em armadura são materializadas como Advancements nativos; ItemChoice/SpellChoice/linked-choice/open Trait permanecem declarativos.
+- Activities de cura são `heal`; demais ações condicionais são Activities `utility` assistidas com ativação, condição, consumo e vínculo a Effect quando aplicável.
+- `feat-materializer.js` passa a armazenar metadados completos de automação e estatísticas materializadas/diferidas nas flags do Item.
+- `feat-validator.js` valida Bundle/Package v2 e `summary.automation`, preservando v1.
+- Preview da Central exibe counts de Advancements, Activities, Effects e Runtime para Talentos v2.
+- Gate do Status foi convertido de gate de RC 0.11 para **Estado da FA-2 / 0.12.0**.
+- Adicionado `tests/validate-feat-automation-012.mjs`; suíte agregada permanece com regressões da Central, Talentos v1 e Lutador de Rua/Dragão de Dojima.
+- Reimportação dos 42 Talentos v2 preserva UUIDs e pasta; locks são restaurados e nenhum Item gerenciado é criado no Mundo.
 
 ## 0.11.0-rc.1 — Release Candidate / feature freeze e gate para versão final
 

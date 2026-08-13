@@ -144,7 +144,7 @@ else {
     const audit = featAutomation.audit(featCatalogs.flatMap(catalog => catalog.feats));
     if (!audit.ok) audit.errors.forEach(error => fail(`Automação de Talentos: ${error}`));
     if (audit.summary?.profiles !== featTotal) fail(`Automação de Talentos: esperado ${featTotal} perfis, encontrados ${audit.summary?.profiles}.`);
-    else ok(`${audit.summary.profiles} perfis Foundry de Talentos validados (${audit.summary.full} completos, ${audit.summary.partial} parciais)`);
+    else ok(`${audit.summary.profiles} perfis Foundry de Talentos validados (${audit.summary.full} completos, ${audit.summary.partial} parciais, ${audit.summary.description} descritivos)`);
   }
 }
 

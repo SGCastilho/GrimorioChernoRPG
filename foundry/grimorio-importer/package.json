@@ -1,11 +1,15 @@
 {
   "name": "grimorio-importer",
-  "version": "0.11.0-rc.1",
+  "version": "0.12.0",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "node tests/run-all.mjs",
-    "test:release": "node tests/validate-rc-011.mjs",
-    "test:rc": "node tests/validate-rc-011.mjs"
+    "test:fa2": "node tests/validate-feat-automation-012.mjs",
+    "test:fa3": "node tests/validate-feat-choices-012.mjs",
+    "test:fa4": "node tests/validate-feat-runtime-012.mjs",
+    "test:fa5": "node tests/validate-feat-audit-012.mjs",
+    "test:stable": "node tests/validate-stable-012.mjs",
+    "test:release": "node tests/validate-stable-012.mjs"
   }
 }

@@ -414,7 +414,276 @@
         runtime('mutual-cancel', 'multiple-luck-points-on-same-roll', 'cancel-opposing-luck-points-without-extra-die')
       ],
       limitations: ['O gasto de pontos é automatizável; a intervenção na rolagem exige runtime porque ocorre depois do d20 e antes do resultado ser conhecido.']
+    }),
+
+    profile('ryoko-yokai-realms-boon-of-ashura', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-boon-of-the-jorogumo', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-boon-of-the-komainu', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-boon-of-the-nue', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-boon-of-the-omukade', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-boon-of-the-wanyudo', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-cantrip-combatant', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-combo-striker', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-dedicated-combatant', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-double-throw', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-elemental-fighting', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-elemental-initiate', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-extra-attack-tactician', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-fearsome-flourisher', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-focused-discipline', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-kaiju-hunter', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-kusarigama-master', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-magic-of-the-blade', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-martial-initiate', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-multidisciplinary', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-prosthesis-adept', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-prosthesis-fighting', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-prosthesis-master', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-spirit-bonded', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-tengu-training', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-tessen-master', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-adaptive-colouration', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-draconic-fury', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-enkohs-might', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-gift-of-the-lion-turtle', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-hanamori-physiology', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-haniwa-soulbinding', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-isetsu-magic', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-karasu-trickery', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-kitsunes-blessing', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-oni-regeneration', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-seasonal-determinism', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-shadowmage', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('ryoko-yokai-realms-springtail-agility', TIER.DESCRIPTION, {
+      notes: ['Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-arcane-specialist', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-berserker', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-celestial-allowance', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-complete-armor-master', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-critical-flourish', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-damning-rebuke', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-death-stroke', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-fatigue-resistance', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-fighting-style-advancement', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-firearm-expert', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-ingrained-expertise', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-light-armor-master', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-light-weapon-master', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-lions-war-cry', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-multi-casting', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-piercing-reach', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-promise-of-certainty', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-promise-of-companionship', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-promise-of-efficacy', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-promise-of-levity', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-promise-of-planar-defense', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-promise-of-understanding', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-ranged-weapon-master', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-sign-casting', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-spell-sufferance', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-survival-master', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-tacticians-command', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
+    }),
+
+    profile('lyre-unshakable', TIER.DESCRIPTION, {
+      notes: ['Talento de Lyre preservado integralmente no Item; automação mecânica específica da 5.19 ainda não foi homologada e não é inferida a partir do texto.']
     })
+
   ]);
 
   const BY_ID = new Map(PROFILES.map(item => [item.featId, item]));

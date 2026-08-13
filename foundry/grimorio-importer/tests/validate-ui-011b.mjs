@@ -153,7 +153,7 @@ assert.match(template, /Fluxo 0\.11-D/);
 assert.match(template, /Importar conteúdo/);
 
 console.log("GRIMORIO_IMPORTER_011B_PREFLIGHT_OK", JSON.stringify({
-  version: "0.11.0-rc.1",
+  version: "0.12.0",
   regression: "0.11-B",
   formats: support.formats,
   featCatalog: 42,

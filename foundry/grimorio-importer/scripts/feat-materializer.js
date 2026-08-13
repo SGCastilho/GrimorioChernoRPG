@@ -1,4 +1,5 @@
 import { validateFeatBundle } from "./feat-validator.js";
+import { applyFeatAutomation, featAutomationSupport } from "./feat-automation.js";
 import { TARGET_DND5E, TARGET_FOUNDRY } from "./bundle-validator.js";
 import { IMPORTER_VERSION, textToHtml } from "./materializer.js";
 import { MODULE_ID, PACKS, defaultPackRuntime, withWritablePacks } from "./pack-storage.js";
@@ -25,7 +26,7 @@ function normalizedMetadata(bundle) {
 
 export function buildFeatSource(bundle,{folderId=null}={}) {
   const metadata=normalizedMetadata(bundle);
-  return {
+  const source = {
     name: bundle.identity.name,
     type: "feat",
     folder: folderId,
@@ -39,6 +40,7 @@ export function buildFeatSource(bundle,{folderId=null}={}) {
       activities: {},
       uses: {spent:0,max:"",recovery:[]}
     },
+    effects: [],
     flags: {
       [MODULE_ID]: {
         grimorioId: bundle.identity.grimorioId,
@@ -56,16 +58,12 @@ export function buildFeatSource(bundle,{folderId=null}={}) {
         choices: metadata.choices,
         storage: "compendium",
         packKey: "feats",
-        packCollection: PACKS.feats.collection,
-        automation: {
-          tier: "description",
-          applied: false,
-          policy: "conservative-description-first",
-          reason: "Mecânicas condicionais do Talento são preservadas em texto na Fase 2; automações futuras exigem perfil explícito."
-        }
+        packCollection: PACKS.feats.collection
       }
     }
   };
+  source.flags[MODULE_ID].automation = applyFeatAutomation(source, bundle);
+  return source;
 }
 
 function managedSourceFolder(bundle) {
@@ -140,14 +138,41 @@ export async function materializeFeatBundle(bundle,runtime=defaultFeatRuntime())
     const folder=await ensureSourceFolder(runtime,bundle);
     const source=buildFeatSource(bundle,{folderId:folder.folderId});
     const result=await upsertFeat(runtime,items,bundle,source);
+    const automation = source.flags?.[MODULE_ID]?.automation ?? {};
+    const deferred = automation.deferred ?? {};
+    const warnings = [...validation.warnings];
+    if (automation.applied && Number(automation.materialized?.assistedChoices ?? 0) > 0) {
+      warnings.push(`FA-4: ${Number(automation.materialized.assistedChoices)} escolha(s) vinculada(s) será(ão) configurada(s) no Actor durante a aquisição do Talento.`);
+    }
+    if (automation.applied && (Number(deferred.advancements ?? 0) || Number(deferred.effects ?? 0) || Number(deferred.runtime ?? 0))) {
+      warnings.push(`FA-4: ${Number(deferred.advancements ?? 0)} Advancement(s), ${Number(deferred.effects ?? 0)} Effect(s) e ${Number(deferred.runtime ?? 0)} requisito(s) permanecem sem materialização.`);
+    }
     return {
       ok:true,
       bundle:{kind:"feat",grimorioId:bundle.identity.grimorioId,name:bundle.identity.name},
       target:{foundry:TARGET_FOUNDRY,dnd5e:TARGET_DND5E},
       storage:{mode:"compendium",featPack:PACKS.feats.collection,sourceFolderId:folder.folderId,worldItemsCreated:0},
       item:result.doc,
-      stats:{featsCreated:result.created?1:0,featsUpdated:result.created?0:1,foldersCreated:folder.created,foldersUpdated:folder.updated,worldItemsCreated:0},
-      warnings:[...validation.warnings]
+      automation,
+      automationSupport:featAutomationSupport(),
+      stats:{
+        featsCreated:result.created?1:0,
+        featsUpdated:result.created?0:1,
+        foldersCreated:folder.created,
+        foldersUpdated:folder.updated,
+        worldItemsCreated:0,
+        advancementsMaterialized:Number(automation.materialized?.advancements ?? 0),
+        advancementDocumentsMaterialized:Number(automation.materialized?.advancementDocuments ?? automation.materialized?.advancements ?? 0),
+        assistedChoicesMaterialized:Number(automation.materialized?.assistedChoices ?? 0),
+        activitiesMaterialized:Number(automation.materialized?.activities ?? 0),
+        effectsMaterialized:Number(automation.materialized?.effects ?? 0),
+        usesMaterialized:Number(automation.materialized?.uses ?? 0),
+        advancementsDeferred:Number(deferred.advancements ?? 0),
+        effectsDeferred:Number(deferred.effects ?? 0),
+        runtimeMaterialized:Number(automation.materialized?.runtime ?? 0),
+        runtimeDeferred:Number(deferred.runtime ?? 0)
+      },
+      warnings:[...new Set(warnings)]
     };
   });
 }

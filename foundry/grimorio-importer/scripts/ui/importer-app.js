@@ -119,8 +119,33 @@ function formatStatusData(info) {
       byRole,
       clean: Number(info?.legacyWorldPrototype?.total ?? 0) === 0
     },
+    featRuntime: {
+      phase: info?.featRuntimeSupport?.phase ?? "—",
+      records: Number(info?.featRuntimeSupport?.runtimeRecordsExpectedFromPhb2014 ?? 0),
+      behaviors: Number(info?.featRuntimeSupport?.behaviorDefinitions ?? 0),
+      automatic: Number(info?.featRuntimeSupport?.behaviorModes?.automatic ?? 0),
+      guarded: Number(info?.featRuntimeSupport?.behaviorModes?.guarded ?? 0),
+      activity: Number(info?.featRuntimeSupport?.behaviorModes?.activity ?? 0),
+      assisted: Number(info?.featRuntimeSupport?.behaviorModes?.assisted ?? 0),
+      description: Number(info?.featRuntimeSupport?.behaviorModes?.description ?? 0),
+      policy: info?.featRuntimeSupport?.policy ?? "—"
+    },
+    featAudit: {
+      phase: info?.featAudit?.phase ?? "—",
+      expected: Number(info?.featAudit?.expected ?? 42),
+      managed: Number(info?.featAudit?.managed ?? 0),
+      verified: Number(info?.featAudit?.verified ?? 0),
+      failed: Number(info?.featAudit?.failed ?? 0),
+      native: Number(info?.featAudit?.native ?? 0),
+      runtime: Number(info?.featAudit?.runtime ?? 0),
+      assisted: Number(info?.featAudit?.assisted ?? 0),
+      narrative: Number(info?.featAudit?.narrative ?? 0),
+      readyForStable: Boolean(info?.featAudit?.readyForStable ?? info?.featAudit?.readyForRc),
+      readyForRc: Boolean(info?.featAudit?.readyForRc)
+    },
     readiness: info?.releaseReadiness ?? {
       phase: IMPORTER_BUILD.phase,
+      readyForTesting: false,
       readyForFinal: false,
       readyForRc: false,
       state: "blocked",
@@ -167,22 +192,36 @@ function formatAutomationData(coverage) {
   });
 }
 
-function formatAuditData(audit) {
+function formatAuditData(audit, featAudit = null) {
   const rows = Object.entries(audit?.byBundle ?? {}).map(([id, row]) => ({
     id,
     label: humanizeIdentifier(id),
     ...row,
     pending: Number(row.candidateHigh ?? 0) + Number(row.candidateMedium ?? 0) + Number(row.textual ?? 0)
   })).sort((a, b) => (b.candidateHigh - a.candidateHigh) || (b.candidateMedium - a.candidateMedium) || (b.total - a.total) || a.label.localeCompare(b.label, "pt-BR"));
+  const featRows=(featAudit?.rows ?? []).map(row => ({
+    ...row,
+    issueCount: Number(row?.issues?.length ?? 0),
+    stateClass: row?.state === "pass" ? "is-good" : (row?.state === "warning" ? "is-warning" : "is-error"),
+    mechanicSummary: `A${Number(row?.actual?.advancements ?? 0)} · C${Number(row?.actual?.activities ?? 0)} · E${Number(row?.actual?.effects ?? 0)} · U${Number(row?.actual?.uses ?? 0)} · R${Number(row?.actual?.runtime ?? 0)}`
+  }));
   return Object.freeze({
     ready: true,
     ...audit,
     profiledPercent: percent(audit?.profiled, audit?.managed),
     bundleCount: rows.length,
     displayBundles: rows.slice(0, 160),
-    bundleOverflow: Math.max(0, rows.length - 160)
+    bundleOverflow: Math.max(0, rows.length - 160),
+    featAudit: featAudit ? {
+      ...featAudit,
+      coverageVerified: percent(featAudit.verified, featAudit.expected),
+      displayRows: featRows,
+      stateLabel: (featAudit.readyForStable ?? featAudit.readyForRc) ? "42/42 verificados" : "Revisão necessária",
+      stateClass: (featAudit.readyForStable ?? featAudit.readyForRc) ? "is-good" : "is-warning"
+    } : null
   });
 }
+
 
 const ABILITY_LABELS = Object.freeze({ int: "Inteligência", wis: "Sabedoria", cha: "Carisma" });
 const SPECIAL_LABELS = Object.freeze({
@@ -271,15 +310,15 @@ function helpData() {
       "Reimportações usam IDs/flags estáveis e preservam documentos existentes.",
       "Classes, Subclasses, Características e Talentos são sincronizados nos compêndios; nenhum Item gerenciado é criado automaticamente no Mundo.",
       "Os comandos de chat permanecem disponíveis como atalhos para as seções equivalentes da Central.",
-      "A Release Candidate congela funcionalidades e usa o gate do Status para validar a prontidão da versão 0.11.0 final."
+      "A versão 0.12.0 está estável e em feature freeze: a auditoria 42/42 permanece ativa para verificar Talentos, preflight, identidade estável e integridade dos compêndios sem alterar a mecânica homologada nas FA-1–FA-5."
     ],
     consolidation: {
       phase: IMPORTER_BUILD.phase,
-      title: "Release Candidate e feature freeze",
+      title: "0.12.0 Stable — Auditoria 42/42 de Talentos",
       items: [
-        "Funcionalidades A–G congeladas: a RC aceita apenas correções de regressão e compatibilidade até a 0.11.0 final.",
-        "Gate do Status valida ambiente, quatro compêndios, preflight, identidade estável, confirmação, comandos Central-first e feature freeze.",
-        "Bateria agregada inclui fases A–G, Talentos, Lutador de Rua/Dragão de Dojima e validação específica do pacote RC."
+        "Feat Bundle/Package v2 são aceitos em paralelo aos bundles v1 legados.",
+        "Os 42 Talentos continuam verificados individualmente quanto a identidade, Bundle v2, Advancements, Activities, Effects, Uses, runtime, escolhas assistidas e zero itens diferidos.",
+        "O runtime aplica automaticamente apenas condições verificáveis com segurança (como concentração de Conjurador de Guerra, Resistente e redução qualificada da Maestria em Armadura Pesada) e mantém assistência guardada nos demais casos contextuais."
       ]
     }
   });
@@ -354,7 +393,10 @@ export class GrimorioImporterApp extends HandlebarsApplicationMixin(ApplicationV
       if (section === "status") data = formatStatusData(await api.status());
       else if (section === "packs") data = formatPacksData(await api.compendiumStatus());
       else if (section === "automation") data = formatAutomationData(api.automationCoverage());
-      else if (section === "audit") data = formatAuditData(await api.automationCompendiumAudit());
+      else if (section === "audit") {
+        const [featureAudit, featAudit] = await Promise.all([api.automationCompendiumAudit(), api.featCompendiumAudit()]);
+        data = formatAuditData(featureAudit, featAudit);
+      }
       else if (section === "special") {
         const selection = selectedActorSelection();
         if (!selection.actor) throw new Error("Nenhum Actor selecionado e nenhum personagem atribuído ao usuário.");

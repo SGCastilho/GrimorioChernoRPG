@@ -13,10 +13,11 @@ const assert=(value,message)=>{if(!value)throw new Error(message);};
 const pkg=JSON.parse(fs.readFileSync(path.join(root,"examples","feats","phb-2014-feats-package.json"),"utf8"));
 const runtimeInfo={foundryVersion:"13.351",systemId:"dnd5e",systemVersion:"5.3.3"};
 
-assert(/^0\.11\.0-(?:alpha\.\d+|rc\.\d+)$/.test(IMPORTER_VERSION),`IMPORTER_VERSION inesperado: ${IMPORTER_VERSION}`);
+assert(/^0\.(?:11\.0-(?:alpha\.\d+|rc\.\d+)|12\.0(?:-alpha\.\d+)?)$/.test(IMPORTER_VERSION),`IMPORTER_VERSION inesperado: ${IMPORTER_VERSION}`);
 assert(PACKS.feats?.collection==="grimorio-importer.grimorio-feats","Compêndio de Talentos não registrado");
 const support=featSupport();
 assert(support.itemType==="feat" && support.compendiumOnly===true && support.reimportByFlags===true,"Contrato de Talentos incompleto");
+assert(support.supportedBundleSchemaVersions.includes(1) && support.supportedPackageSchemaVersions.includes(1),"Compatibilidade legada v1 removida");
 const validation=validateFeatPackage(pkg,runtimeInfo);
 assert(validation.ok,`Pacote de Talentos rejeitado: ${validation.errors.join("; ")}`);
 assert(pkg.summary.bundles===42 && pkg.summary.feats===42,"Pacote deveria conter 42 Talentos");
@@ -104,5 +105,6 @@ console.log("GRIMORIO_IMPORTER_010_FEATS_OK",JSON.stringify({
   sourceFolders:packs.feats.folders.length,
   otherPacksUntouched:true,
   reimportStable:true,
-  automationPolicy:support.automationPolicy
+  automationPolicy:flag(alerta).automation?.policy,
+  currentAutomationPolicy:support.automationPolicy
 },null,2));

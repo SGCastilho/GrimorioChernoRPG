@@ -130,10 +130,11 @@ function featBundlePreview(payload, validation) {
   const prerequisites = asArray(payload.feat?.prerequisites);
   const choices = asArray(payload.feat?.choices);
   const prerequisite = String(payload.feat?.prerequisite ?? "").trim();
+  const automation = payload.automation ?? null;
   return {
     family: "feat-content",
     type: "feat-bundle",
-    typeLabel: "Talento",
+    typeLabel: Number(payload.schemaVersion) >= 2 ? "Talento · Bundle v2" : "Talento",
     icon: "fa-solid fa-medal",
     title: String(payload.identity?.name ?? "Talento sem nome"),
     identifier: String(payload.identity?.grimorioId ?? payload.identity?.identifier ?? ""),
@@ -141,12 +142,17 @@ function featBundlePreview(payload, validation) {
     subtitle: source.title,
     excerpt: textExcerpt(payload.feat?.description),
     counts: [
+      count("Advancements", asArray(automation?.advancements).length, "fa-solid fa-arrow-up-right-dots"),
+      count("Activities", asArray(automation?.activities).length, "fa-solid fa-bolt"),
+      count("Effects", asArray(automation?.effects).length, "fa-solid fa-wand-magic-sparkles"),
+      count("Runtime", asArray(automation?.runtime).length, "fa-solid fa-code"),
       count("Pré-requisitos", prerequisites.length, "fa-solid fa-list-check"),
       count("Escolhas", choices.length, "fa-solid fa-code-branch")
     ],
     details: [
       ...(prerequisite ? [{ label: "Pré-requisito", value: prerequisite }] : []),
       { label: "Repetível", value: payload.feat?.repeatable === true ? "Sim" : "Não" },
+      ...(automation ? [{ label: "Automação", value: `${automation.tier ?? "—"} · ${automation.schema ?? "plano"} v${automation.schemaVersion ?? "—"}` }] : [{ label: "Automação", value: "Legado v1 · description-first" }]),
       ...(source.page ? [{ label: "Página", value: String(source.page) }] : [])
     ],
     destinations: destination(["feats"]),
@@ -156,6 +162,7 @@ function featBundlePreview(payload, validation) {
 
 function featPackagePreview(payload, validation) {
   const calculated = validation.calculated ?? {};
+  const automation = calculated.automation ?? payload.summary?.automation ?? {};
   const source = packageSources(payload);
   const scope = String(payload.identity?.scope ?? "");
   return {
@@ -168,13 +175,24 @@ function featPackagePreview(payload, validation) {
     source: { title: source.title, page: null, pages: "" },
     subtitle: source.title || `${calculated.feats ?? asArray(payload.bundles).length} Talentos`,
     excerpt: "",
-    counts: [
+    counts: Number(payload.schemaVersion) >= 2 ? [
+      count("Talentos", calculated.feats, "fa-solid fa-medal"),
+      count("Advancements", automation.advancements, "fa-solid fa-arrow-up-right-dots"),
+      count("Activities", automation.activities, "fa-solid fa-bolt"),
+      count("Effects", automation.effects, "fa-solid fa-wand-magic-sparkles"),
+      count("Runtime", automation.runtime, "fa-solid fa-code"),
+      count("Repetíveis", calculated.repeatable, "fa-solid fa-repeat")
+    ] : [
       count("Talentos", calculated.feats, "fa-solid fa-medal"),
       count("Fontes", calculated.sources, "fa-solid fa-book"),
       count("Com pré-requisito", calculated.prerequisites, "fa-solid fa-list-check"),
       count("Repetíveis", calculated.repeatable, "fa-solid fa-repeat")
     ],
-    details: [{ label: "Escopo", value: scope || "—" }],
+    details: [
+      { label: "Escopo", value: scope || "—" },
+      { label: "Schema", value: `Feat Package v${payload.schemaVersion ?? "—"}` },
+      ...(Number(payload.schemaVersion) >= 2 ? [{ label: "Perfis FA-1", value: `${automation.profiles ?? 0} · ${automation.full ?? 0} full / ${automation.partial ?? 0} partial` }] : [])
+    ],
     destinations: destination(["feats"]),
     validation
   };

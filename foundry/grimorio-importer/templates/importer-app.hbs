@@ -389,9 +389,9 @@
                 <div class="{{#if sectionData.legacy.clean}}is-good{{else}}is-warning{{/if}}"><span>Items legados</span><strong>{{sectionData.legacy.total}}</strong><small>protótipo Fase 5</small></div>
                 <div><span>Importer</span><strong>v{{importerVersion}}</strong><small>{{buildLabel}}</small></div>
               </div>
-              <section class="grimorio-admin-card grimorio-readiness is-{{sectionData.readiness.state}}" aria-label="Prontidão da release candidate para versão final">
+              <section class="grimorio-admin-card grimorio-readiness is-{{sectionData.readiness.state}}" aria-label="Integridade técnica da versão estável 0.12.0">
                 <header>
-                  <div><span>{{sectionData.readiness.phase}} · {{sectionData.readiness.buildLabel}}</span><h3>Prontidão para 0.11.0 final</h3></div>
+                  <div><span>{{sectionData.readiness.phase}} · {{sectionData.readiness.buildLabel}}</span><h3>Integridade da versão 0.12.0 Stable</h3></div>
                   <div class="grimorio-readiness__headline"><i class="{{sectionData.readiness.stateIcon}}"></i><strong>{{sectionData.readiness.stateLabel}}</strong><small>{{sectionData.readiness.passed}}/{{sectionData.readiness.total}} verificações</small></div>
                 </header>
                 <div class="grimorio-readiness__checks">
@@ -404,9 +404,9 @@
                   {{/each}}
                 </div>
                 {{#if sectionData.readiness.blockingFailures}}
-                  <p class="grimorio-admin-note is-warning"><i class="fa-solid fa-shield-halved"></i> Existem {{sectionData.readiness.blockingFailures}} bloqueio(s) antes da 0.11.0 final. Corrija os itens marcados como Bloqueio e atualize o Status.</p>
+                  <p class="grimorio-admin-note is-warning"><i class="fa-solid fa-shield-halved"></i> Existem {{sectionData.readiness.blockingFailures}} bloqueio(s) de integridade na versão estável. Corrija os itens marcados como Bloqueio e atualize o Status.</p>
                 {{else}}
-                  <p class="grimorio-admin-note is-good"><i class="fa-solid fa-shield-halved"></i> Nenhum bloqueio técnico da Release Candidate foi detectado. Observações não bloqueantes continuam visíveis acima.</p>
+                  <p class="grimorio-admin-note is-good"><i class="fa-solid fa-shield-halved"></i> Nenhum bloqueio técnico da versão estável foi detectado. Observações não bloqueantes continuam visíveis acima.</p>
                 {{/if}}
               </section>
               <section class="grimorio-admin-card">
@@ -417,6 +417,26 @@
                   <div><span>DnD5e ativo</span><strong>{{sectionData.activeSystemVersion}}</strong><small>alvo {{sectionData.targetDnd5e}}</small></div>
                   <div><span>Resultado</span><strong>{{#if sectionData.environmentMatches}}Perfil homologado{{else}}Fora do perfil homologado{{/if}}</strong><small>o módulo não altera versões automaticamente</small></div>
                 </div>
+              </section>
+              <section class="grimorio-admin-card">
+                <header><div><span>FA-4</span><h3>Runtime de Talentos</h3></div><strong>{{sectionData.featRuntime.records}} registros</strong></header>
+                <div class="grimorio-runtime-grid">
+                  <div><span>Behaviors únicos</span><strong>{{sectionData.featRuntime.behaviors}}</strong><small>56 registros declarados no PHB</small></div>
+                  <div><span>Automáticos</span><strong>{{sectionData.featRuntime.automatic}}</strong><small>hooks com contexto confiável</small></div>
+                  <div><span>Guardados/Activity</span><strong>{{sectionData.featRuntime.guarded}} + {{sectionData.featRuntime.activity}}</strong><small>validação ou ação assistida</small></div>
+                  <div><span>Assistidos</span><strong>{{sectionData.featRuntime.assisted}}</strong><small>sem aproximação global</small></div>
+                </div>
+                <p class="grimorio-admin-note"><i class="fa-solid fa-code-branch"></i> Política: <code>{{sectionData.featRuntime.policy}}</code>. Regras de iluminação, cobertura, posição e decisões pós-rolagem continuam assistidas quando o DnD5e não expõe contexto suficiente com segurança.</p>
+              </section>
+              <section class="grimorio-admin-card {{#if sectionData.featAudit.readyForStable}}is-good{{else}}is-warning{{/if}}">
+                <header><div><span>0.12.0 Stable</span><h3>Auditoria 42/42 dos Talentos</h3></div><strong>{{sectionData.featAudit.verified}}/{{sectionData.featAudit.expected}}</strong></header>
+                <div class="grimorio-runtime-grid">
+                  <div><span>Gerenciados</span><strong>{{sectionData.featAudit.managed}}</strong><small>esperados {{sectionData.featAudit.expected}}</small></div>
+                  <div><span>Verificados</span><strong>{{sectionData.featAudit.verified}}</strong><small>estrutura e automação</small></div>
+                  <div><span>Falhas</span><strong>{{sectionData.featAudit.failed}}</strong><small>bloqueiam integridade estável</small></div>
+                  <div><span>Cobertura</span><strong>{{sectionData.featAudit.native}} nativa · {{sectionData.featAudit.runtime}} runtime</strong><small>{{sectionData.featAudit.assisted}} assistida(s)</small></div>
+                </div>
+                <p class="grimorio-admin-note {{#if sectionData.featAudit.readyForStable}}is-good{{else}}is-warning{{/if}}"><i class="fa-solid fa-clipboard-check"></i> {{#if sectionData.featAudit.readyForStable}}O catálogo PHB 2014 importado corresponde integralmente ao baseline da 5.42.0.{{else}}A auditoria detectou Talentos ausentes ou divergências. Abra a aba Auditoria para detalhes.{{/if}}</p>
               </section>
               <section class="grimorio-admin-card">
                 <header><div><span>Armazenamento</span><h3>Disponibilidade dos compêndios</h3></div><strong>{{sectionData.packsReady}}/{{sectionData.packsTotal}}</strong></header>
@@ -499,7 +519,46 @@
               {{#if isAuditSection}}
                 {{#if sectionData.ready}}
                   <div class="grimorio-admin-flow">
-                    <div class="grimorio-admin-toolbar"><div><strong>Auditoria das Características</strong><span>Leitura dos Items materializados em Grimório — Características.</span></div><button type="button" data-grimorio-refresh-section><i class="fa-solid fa-arrows-rotate"></i> Reexecutar auditoria</button></div>
+                    <div class="grimorio-admin-toolbar"><div><strong>Auditoria integrada</strong><span>Talentos 42/42 + Características materializadas nos compêndios gerenciados.</span></div><button type="button" data-grimorio-refresh-section><i class="fa-solid fa-arrows-rotate"></i> Reexecutar auditoria</button></div>
+                    {{#if sectionData.featAudit}}
+                      <section class="grimorio-admin-card {{sectionData.featAudit.stateClass}}">
+                        <header><div><span>0.12.0 Stable · Talentos</span><h3>Auditoria mecânica PHB 2014</h3></div><strong>{{sectionData.featAudit.stateLabel}}</strong></header>
+                        <div class="grimorio-admin-metrics is-six">
+                          <div><span>Esperados</span><strong>{{sectionData.featAudit.expected}}</strong><small>baseline 5.42.0</small></div>
+                          <div class="is-good"><span>Verificados</span><strong>{{sectionData.featAudit.verified}}</strong><small>{{sectionData.featAudit.coverageVerified}}</small></div>
+                          <div class="{{#if sectionData.featAudit.failed}}is-warning{{/if}}"><span>Falhas</span><strong>{{sectionData.featAudit.failed}}</strong><small>divergências</small></div>
+                          <div><span>Nativa</span><strong>{{sectionData.featAudit.native}}</strong><small>sem assistência</small></div>
+                          <div><span>Runtime</span><strong>{{sectionData.featAudit.runtime}}</strong><small>hooks/Activities</small></div>
+                          <div class="is-warning"><span>Assistida/Textual</span><strong>{{sectionData.featAudit.assisted}}</strong><small>{{sectionData.featAudit.narrative}} textual(is)</small></div>
+                        </div>
+                        <div class="grimorio-runtime-grid">
+                          <div><span>Advancements</span><strong>{{sectionData.featAudit.totals.actual.advancements}}/{{sectionData.featAudit.totals.expected.advancements}}</strong><small>documentos nativos</small></div>
+                          <div><span>Activities</span><strong>{{sectionData.featAudit.totals.actual.activities}}/{{sectionData.featAudit.totals.expected.activities}}</strong><small>ações materializadas</small></div>
+                          <div><span>Effects</span><strong>{{sectionData.featAudit.totals.actual.effects}}/{{sectionData.featAudit.totals.expected.effects}}</strong><small>Effects gerenciados</small></div>
+                          <div><span>Runtime</span><strong>{{sectionData.featAudit.totals.actual.runtime}}/{{sectionData.featAudit.totals.expected.runtime}}</strong><small>registros conhecidos</small></div>
+                        </div>
+                        <details class="grimorio-admin-details grimorio-feat-audit-details" open>
+                          <summary><i class="fa-solid fa-list-check"></i><div><span>Talento por Talento</span><strong>{{sectionData.featAudit.verified}} verificado(s)</strong></div></summary>
+                          <div class="grimorio-feat-audit-table">
+                            <div class="grimorio-feat-audit-table__head"><span>Talento</span><span>Estado</span><span>Cobertura</span><span>Mecânicas</span><span>Issues</span></div>
+                            {{#each sectionData.featAudit.displayRows}}
+                              <div class="grimorio-feat-audit-table__row {{stateClass}}">
+                                <div><strong>{{name}}</strong><small>{{grimorioId}}</small></div>
+                                <span><i class="{{stateIcon}}"></i> {{stateLabel}}</span>
+                                <span>{{coverageLabel}}</span>
+                                <span><code>{{mechanicSummary}}</code></span>
+                                <span>{{issueCount}}</span>
+                              </div>
+                              {{#if issues.length}}
+                                <div class="grimorio-feat-audit-table__issues">{{#each issues}}<p><strong>{{code}}</strong> — {{detail}}</p>{{/each}}</div>
+                              {{/if}}
+                            {{/each}}
+                          </div>
+                        </details>
+                        <p class="grimorio-admin-note"><i class="fa-solid fa-circle-info"></i> “Assistida” não é falha: indica regra dependente de contexto humano ou escolha pós-rolagem. A versão estável sinaliza apenas divergências estruturais/mecânicas contra o baseline aprovado.</p>
+                      </section>
+                    {{/if}}
+                    <section class="grimorio-admin-card"><header><div><span>Características</span><h3>Auditoria legada de classes/subclasses</h3></div><strong>{{sectionData.profiled}}/{{sectionData.managed}}</strong></header></section>
                     <div class="grimorio-admin-metrics is-six">
                       <div><span>Gerenciadas</span><strong>{{sectionData.managed}}</strong><small>características</small></div>
                       <div class="is-good"><span>Perfiladas</span><strong>{{sectionData.profiled}}</strong><small>{{sectionData.profiledPercent}}</small></div>
@@ -540,7 +599,7 @@
                 {{else}}
                   {{#if isHelpSection}}
                     <div class="grimorio-admin-flow">
-                      <div class="grimorio-admin-note"><i class="fa-solid fa-circle-info"></i><span>A Central 0.11.0 RC é a interface principal do módulo. Os comandos continuam preservados, mas agora funcionam como atalhos que abrem diretamente a seção visual equivalente.</span></div>
+                      <div class="grimorio-admin-note"><i class="fa-solid fa-circle-info"></i><span>A Central 0.12 continua sendo a interface principal do módulo. A FA-4 ativa o runtime seguro dos Talentos, preserva os Advancements/Activities/Effects/Uses da FA-2/FA-3 e mantém compatibilidade com bundles v1.</span></div>
                       <section class="grimorio-admin-card"><header><div><span>Paridade</span><h3>Central ↔ comandos</h3></div><strong>{{buildLabel}}</strong></header><div class="grimorio-help-grid">{{#each sectionData.visualRows}}<div><strong>{{section}}</strong><p>{{action}}</p><code>{{command}}</code></div>{{/each}}</div></section>
                       <details class="grimorio-admin-card grimorio-admin-details" open><summary><i class="fa-solid fa-terminal"></i><div><span>Comandos preservados</span><strong>{{sectionData.commandCount}} comandos/aliases</strong></div></summary><div class="grimorio-command-list">{{#each sectionData.commands}}<div><code>{{command}}</code><span>{{description}}</span></div>{{/each}}</div></details>
                       <section class="grimorio-admin-card"><header><div><span>Segurança</span><h3>Políticas da Central</h3></div><i class="fa-solid fa-shield-halved"></i></header><div class="grimorio-safety-list">{{#each sectionData.safety}}<p><i class="fa-solid fa-check"></i>{{this}}</p>{{/each}}</div></section>
@@ -549,7 +608,8 @@
 game.modules.get("grimorio-importer").api.openImporter({ section: "packs" })
 game.modules.get("grimorio-importer").api.commandRoutingSupport()
 game.modules.get("grimorio-importer").api.releaseReadinessSupport()
-game.modules.get("grimorio-importer").api.releaseReadiness()</pre></section>
+game.modules.get("grimorio-importer").api.releaseReadiness()
+game.modules.get("grimorio-importer").api.featChoiceSupport()</pre></section>
                     </div>
                   {{else}}
                     <div class="grimorio-admin-error" role="alert"><i class="fa-solid fa-circle-xmark"></i><div><strong>Seção desconhecida</strong><p>Não foi possível preparar esta seção da Central.</p></div></div>

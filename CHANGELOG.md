@@ -1,3 +1,33 @@
+## 5.44.0
+
+### Conteúdo — Talentos · Lyre's Guide to Retia — Land of Industry
+- Integrados integralmente os **28 talentos** da seção *Feats of Somnus Domina* do Capítulo VII, páginas 331–335 da edição fornecida.
+- Todos os nomes, pré-requisitos e textos mecânicos foram traduzidos para **português brasileiro**, preservando `originalName`, aliases, página da fonte, escolhas estruturadas e repetibilidade.
+- O catálogo de Talentos passa de **81 para 109 entradas** e de **2 para 3 catálogos**, mantendo PHB 2014, Ryoko e Lyre separados por fonte.
+- Distâncias foram localizadas para o padrão métrico do Grimório, preservando a equivalência mecânica da fonte.
+- A nota editorial de **Conjuração por Sinais** para personagens incapazes de falar desde a criação foi preservada junto ao talento, conforme a composição visual da página original.
+
+### Foundry — Talentos de Lyre
+- Os 28 talentos recebem **perfis explícitos `description`** no contrato `grimorio-foundry-feat-automation-plan@1`.
+- Feat Bundle/Package v2 permanecem compatíveis com **Foundry VTT 13.351 + DnD5e 5.3.3 + Grimório Importer 0.12.0+**.
+- Nenhuma automação mecânica específica da 5.19 é inferida do texto; subsistemas e condições próprios de Lyre permanecem descritivos até homologação específica.
+- A cobertura total passa a **109 perfis: 6 full, 36 partial e 67 description**; os totais previamente homologados de Advancements, Effects, Activities, uses e runtime permanecem inalterados.
+
+## 5.43.0
+
+### Conteúdo — Talentos · Ryoko's Guide to the Yokai Realms
+- Integrados os **39 talentos** do Capítulo 10 de *Ryoko's Guide to the Yokai Realms*: **26 talentos gerais** das páginas 216–220 e **13 talentos raciais** das páginas 221–223.
+- Todos os nomes e textos mecânicos foram traduzidos para **português brasileiro**, preservando `originalName`, página da fonte, pré-requisitos, escolhas explícitas e regras de repetibilidade.
+- O catálogo de Talentos passa de **42 para 81 entradas** e de **1 para 2 catálogos**, mantendo o Livro do Jogador 2014 e Ryoko separados por fonte.
+- A busca de Talentos passa a reconhecer também `originalName`, aliases, categoria e pré-requisito original, permitindo localizar as novas entradas pelo nome em inglês ou em PT-BR.
+- Distâncias dos talentos foram localizadas para o padrão métrico já adotado pelo Grimório, sem alterar proporções mecânicas da fonte.
+
+### Foundry — Talentos de Ryoko
+- Os 39 talentos recebem **perfis explícitos `description`** no contrato `grimorio-foundry-feat-automation-plan@1`.
+- Feat Bundle/Package v2 continuam compatíveis com **Foundry VTT 13.351 + DnD5e 5.3.3 + Grimório Importer 0.12.0+** e passam a exportar os 81 talentos.
+- Nenhuma automação mecânica de Ryoko é inferida a partir do texto: sistemas próprios como Ataques de Combo, Maestria Avançada de Armas, próteses, traços raciais e familiares permanecem descritivos até homologação específica.
+- A cobertura total passa a **81 perfis: 6 full, 36 partial e 39 description**; os totais de Advancements, Effects, Activities, uses e runtime previamente homologados para o PHB permanecem inalterados.
+
 ## 5.42.0
 
 ### Foundry — Talentos · FA-1

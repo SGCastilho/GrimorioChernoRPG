@@ -7,7 +7,9 @@ export function centralParitySupport() {
     buildLabel: IMPORTER_BUILD.label,
     channel: IMPORTER_BUILD.channel,
     targetVersion: IMPORTER_BUILD.targetVersion,
-    releaseCandidate: true,
+    releaseCandidate: IMPORTER_BUILD.channel === "release-candidate",
+    developmentBuild: IMPORTER_BUILD.channel === "development",
+    stableBuild: IMPORTER_BUILD.channel === "stable",
     featureFreeze: IMPORTER_BUILD.featureFreeze,
     visualSections: Object.freeze(["import", "status", "packs", "automation", "audit", "special", "help"]),
     commandParity: true,
@@ -25,7 +27,9 @@ export function centralParitySupport() {
     refreshablePanels: true,
     gmOnly: true,
     releaseReadinessGate: true,
+    developmentReadinessGate: false,
     finalReadinessGate: true,
+    stableIntegrityGate: true,
     accessibilityPass: true,
     regressionSuite: true
   });

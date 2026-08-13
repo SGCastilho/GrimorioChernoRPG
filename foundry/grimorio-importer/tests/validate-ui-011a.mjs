@@ -86,7 +86,7 @@ const denied = await appModule.openImporter();
 assert.equal(denied, null, "Jogadores não devem conseguir abrir a Central pela API");
 
 console.log("GRIMORIO_IMPORTER_011A_UI_OK", JSON.stringify({
-  version: "0.11.0-rc.1",
+  version: "0.12.0",
   regression: "0.11-A",
   sections: appModule.IMPORTER_SECTIONS.length,
   singleton: true,

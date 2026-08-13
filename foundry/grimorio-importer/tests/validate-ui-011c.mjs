@@ -53,7 +53,7 @@ function inspectionRuntime(seed = {}, missing = []) {
   };
 }
 
-assert.equal(IMPORTER_VERSION, "0.11.0-rc.1");
+assert.equal(IMPORTER_VERSION, "0.12.0");
 
 let snapshotReads = 0;
 const snapshotSource = {

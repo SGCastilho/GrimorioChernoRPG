@@ -10,10 +10,10 @@ const { IMPORTER_VERSION } = await import("../scripts/version.js");
 const { centralParitySupport } = await import("../scripts/ui/central-support.js");
 const { selectedActor, selectedActorSelection } = await import("../scripts/actor-selection.js");
 
-assert.equal(IMPORTER_VERSION, "0.11.0-rc.1");
+assert.equal(IMPORTER_VERSION, "0.12.0");
 
 const support = centralParitySupport();
-assert.equal(support.phase, "0.11.0-RC");
+assert.equal(support.phase, "0.12.0 Stable");
 assert.equal(support.basePhase, "0.11-G");
 assert.equal(support.commandParity, true);
 assert.equal(support.commandsPreserved, true);
@@ -56,7 +56,7 @@ for (const phrase of [
   "Diagnóstico do ambiente",
   "Compêndios gerenciados",
   "Cobertura de automação",
-  "Auditoria das Características",
+  "Auditoria integrada",
   "Actor atual",
   "Central ↔ comandos",
   "data-grimorio-refresh-section",
@@ -111,6 +111,7 @@ const mockedApi = {
   async compendiumStatus() { return [{ key: "classes", label: "Grimório — Classes", collection: "grimorio-importer.grimorio-classes", role: "class", available: true, locked: true, total: 1, managed: 1, folders: 0, managedFolders: 0 }]; },
   automationCoverage() { return { phase: "12", profiles: 99, classProfiles: 86, subclassProfiles: 13, classes: 26, subclassBundles: 13, activities: 121, resources: 39, effects: 11, passiveEffects: 5, activityEffects: 6, byTier: { full: 12, partial: 86, description: 1 }, byClass: { barbarian: 3 } }; },
   async automationCompendiumAudit() { return { managed: 100, profiled: 20, full: 5, partial: 14, description: 1, candidateHigh: 10, candidateMedium: 20, textual: 50, withoutAudit: 0, byBundle: { barbarian: { total: 10, profiled: 3, candidateHigh: 1, candidateMedium: 2, textual: 4 } } }; },
+  async featCompendiumAudit() { return { phase:"FA-5", expected:42, managed:42, verified:42, failed:0, native:6, runtime:7, assisted:25, narrative:4, readyForStable:true, readyForRc:true, totals:{expected:{advancements:26,activities:22,effects:10,uses:2,runtime:56,assistedChoices:3},actual:{advancements:26,activities:22,effects:10,uses:2,runtime:56,assistedChoices:3}}, rows:[] }; },
   specialActorStatus(actor) { return { actor: actor.name, classes: [{ identifier: "bender", name: "Dobrador", hd: "d8", spellcasting: { ability: "wis" }, configuration: { configured: true, spellcastingAbility: "wis" } }] }; },
   async configureActorSpecialClasses() { return [{ identifier: "bender", configured: true }]; }
 };

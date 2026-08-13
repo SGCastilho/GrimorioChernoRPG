@@ -1,0 +1,2893 @@
+{
+  "schema": "grimorio-foundry-feat-package",
+  "schemaVersion": 2,
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-feat-package-v2",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "minimumImporterVersion": "0.12.0"
+  },
+  "identity": {
+    "id": "ryoko-yokai-realms-feats",
+    "name": "Ryoko's Guide to the Yokai Realms — Talentos",
+    "scope": "source-catalog",
+    "sourceIds": [
+      "ryoko-yokai-realms"
+    ]
+  },
+  "summary": {
+    "bundles": 39,
+    "feats": 39,
+    "sources": 1,
+    "prerequisites": 22,
+    "repeatable": 2,
+    "automation": {
+      "profiles": 39,
+      "full": 0,
+      "partial": 0,
+      "description": 39,
+      "advancements": 0,
+      "effects": 0,
+      "activities": 0,
+      "uses": 0,
+      "runtime": 0,
+      "limitations": 0
+    }
+  },
+  "ordering": "source-name",
+  "bundleIdentifiers": [
+    "ryoko-yokai-realms-prosthesis-adept",
+    "ryoko-yokai-realms-springtail-agility",
+    "ryoko-yokai-realms-double-throw",
+    "ryoko-yokai-realms-kitsunes-blessing",
+    "ryoko-yokai-realms-kaiju-hunter",
+    "ryoko-yokai-realms-adaptive-colouration",
+    "ryoko-yokai-realms-prosthesis-fighting",
+    "ryoko-yokai-realms-elemental-fighting",
+    "ryoko-yokai-realms-cantrip-combatant",
+    "ryoko-yokai-realms-dedicated-combatant",
+    "ryoko-yokai-realms-boon-of-the-jorogumo",
+    "ryoko-yokai-realms-gift-of-the-lion-turtle",
+    "ryoko-yokai-realms-boon-of-ashura",
+    "ryoko-yokai-realms-boon-of-the-komainu",
+    "ryoko-yokai-realms-boon-of-the-nue",
+    "ryoko-yokai-realms-boon-of-the-omukade",
+    "ryoko-yokai-realms-boon-of-the-wanyudo",
+    "ryoko-yokai-realms-seasonal-determinism",
+    "ryoko-yokai-realms-focused-discipline",
+    "ryoko-yokai-realms-hanamori-physiology",
+    "ryoko-yokai-realms-fearsome-flourisher",
+    "ryoko-yokai-realms-draconic-fury",
+    "ryoko-yokai-realms-combo-striker",
+    "ryoko-yokai-realms-elemental-initiate",
+    "ryoko-yokai-realms-martial-initiate",
+    "ryoko-yokai-realms-magic-of-the-blade",
+    "ryoko-yokai-realms-isetsu-magic",
+    "ryoko-yokai-realms-shadowmage",
+    "ryoko-yokai-realms-kusarigama-master",
+    "ryoko-yokai-realms-prosthesis-master",
+    "ryoko-yokai-realms-tessen-master",
+    "ryoko-yokai-realms-multidisciplinary",
+    "ryoko-yokai-realms-enkohs-might",
+    "ryoko-yokai-realms-oni-regeneration",
+    "ryoko-yokai-realms-extra-attack-tactician",
+    "ryoko-yokai-realms-karasu-trickery",
+    "ryoko-yokai-realms-tengu-training",
+    "ryoko-yokai-realms-haniwa-soulbinding",
+    "ryoko-yokai-realms-spirit-bonded"
+  ],
+  "bundles": [
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-prosthesis-adept",
+        "identifier": "ryoko-yokai-realms-prosthesis-adept",
+        "name": "Adepto de Próteses"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 219,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você pode fazer ajustes em sua prótese, manipulando seu funcionamento ao longo de uma hora, o que pode ser feito como parte de um descanso curto ou longo. Ao fazer isso, você a aprimora adicionando uma das propriedades a seguir:\n\n• Explosão (Blast; 1d6 de trovão, 6 m). A prótese recebe o golpe superior Piercing Shot (Disparo Perfurante).\n• Gancho (Hookshot; 9 m).\n• Integrada (Integrated; qualquer).\n• Lançamento (Launch; 1d6*, 9 m). A prótese recebe o golpe superior Battery Strike (Ataque em Bateria).\n• Corpo a Corpo (Melee; 1d8*, 1,5 m). A prótese recebe o golpe superior Reeling Blow (Golpe Desconcertante).\n• Mobilidade (Mobility; escalada ou natação, 9 m).\n\nA modificação permanece até você voltar a fazer ajustes em sua prótese.\n\n*Concussão, perfurante ou cortante, à sua escolha quando realizar esta modificação.*",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-prosthesis-adept",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-springtail-agility",
+        "identifier": "ryoko-yokai-realms-springtail-agility",
+        "name": "Agilidade Cauda-de-Mola"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 223,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é incomumente ágil e habilidoso, mesmo em comparação com seus parentes cauda-de-mola, recebendo os seguintes benefícios:\n\n• Aumente seu valor de Destreza em 1, até o máximo de 20.\n• Como uma ação bônus, você pode saltar uma quantidade de metros igual a 1,5 vezes seu bônus de proficiência. Esse salto não consome seu deslocamento, mas seu deslocamento deve ser maior que 0, e o salto não provoca ataques de oportunidade. Você pode usar este benefício um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.",
+        "prerequisite": "Enkoh (Cauda-de-Mola)",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "enkoh",
+            "label": "Enkoh"
+          },
+          {
+            "type": "subrace",
+            "value": "springtail",
+            "label": "Cauda-de-Mola (springtail)"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-springtail-agility",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-double-throw",
+        "identifier": "ryoko-yokai-realms-double-throw",
+        "name": "Arremesso Duplo"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 217,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você desenvolveu técnicas especiais para arremessar várias armas de uma vez, recebendo os seguintes benefícios:\n\n• Aumente seu valor de Força ou Destreza em 1, até o máximo de 20.\n• Uma vez em cada um dos seus turnos, quando você realiza um ataque à distância com arma usando uma arma que possua as propriedades Leve e Arremesso e não tenha desvantagem na jogada de ataque, pode escolher arremessar duas armas com um único movimento do pulso. Se fizer isso, realize uma jogada de ataque separada com desvantagem para cada arma. Se você tinha vantagem no ataque original, não sofre desvantagem nos dois ataques realizados usando este talento. Esses ataques podem ter alvos diferentes.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-double-throw",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-kitsunes-blessing",
+        "identifier": "ryoko-yokai-realms-kitsunes-blessing",
+        "name": "Bênção da Kitsune"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 222,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você possui magia natural além daquela de uma kitsune típica. Você recebe os seguintes benefícios:\n\n• Você pode conjurar magias enquanto estiver transformado usando seu traço Metamorfo (Shapeshifter) sem exigir componentes materiais, a menos que eles tenham um custo em ouro.\n• Enquanto estiver transformado usando seu traço Metamorfo, você pode usar a mordida de sua forma de raposa para realizar ataques desarmados, usando Força ou Destreza para suas jogadas de ataque e dano. Quando acerta com ela, o ataque causa dano perfurante igual a 1d6 + seu modificador de Força ou Destreza, à sua escolha.\n• Você recebe a ação Ataques Múltiplos (Multiattack). Enquanto estiver transformado usando seu traço Metamorfo, pode usar uma ação para realizar um número de ataques desarmados igual à metade do seu bônus de proficiência, arredondado para cima.\n• Enquanto estiver transformado usando seu traço Metamorfo, sua CA é igual a 12 + seu modificador de Destreza.",
+        "prerequisite": "Kitsune",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "kitsune",
+            "label": "Kitsune"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-kitsunes-blessing",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-kaiju-hunter",
+        "identifier": "ryoko-yokai-realms-kaiju-hunter",
+        "name": "Caçador de Kaiju"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 218,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é experiente nas técnicas de combate contra criaturas colossais, recebendo os seguintes benefícios:\n\n• Montar uma criatura custa apenas 1,5 metro do seu deslocamento, em vez de metade do seu deslocamento.\n• Você pode se firmar* gastando apenas 1,5 metro do seu deslocamento, em vez de metade do seu deslocamento.\n• Você tem vantagem em testes de habilidade para identificar áreas vulneráveis**.\n• Você ignora o terreno difícil causado por se mover sobre uma criatura que seja mais de duas categorias de tamanho maior que você.\n• Imediatamente depois que uma criatura que você possa ver, que seja pelo menos uma categoria de tamanho maior que você, acertar ou errar você com uma jogada de ataque corpo a corpo, você pode usar sua reação para realizar um ataque com arma contra essa criatura.\n\n*Consulte a página 8. **Consulte a página 6.*",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-kaiju-hunter",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-adaptive-colouration",
+        "identifier": "ryoko-yokai-realms-adaptive-colouration",
+        "name": "Coloração Adaptativa"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 221,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é capaz de alterar sua coloração, uma habilidade rara possuída por poucos de sua espécie, recebendo os seguintes benefícios:\n\n• Você tem vantagem em testes de Furtividade realizados para evitar ser visto.\n• Ao escolher este talento, escolha uma cor de seu traço Cor do Dragão Koi (Koi Dragon Colour). Quando usa seu traço Dragão Adormecido (Slumbering Dragon) ou Sopro Encorajador (Heartening Breath), você pode escolher fortalecer testes de habilidade, jogadas de ataque e testes de resistência associados à sua coloração primária ou à cor escolhida com este talento.",
+        "prerequisite": "Tatsumi",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "tatsumi",
+            "label": "Tatsumi"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "koi-dragon-colour",
+            "label": "Cor do Dragão Koi adicional",
+            "count": 1
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-adaptive-colouration",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-prosthesis-fighting",
+        "identifier": "ryoko-yokai-realms-prosthesis-fighting",
+        "name": "Combate com Próteses"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 220,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é um mestre em empunhar próteses em batalha, recebendo os seguintes benefícios:\n\n• A distância dos ataques que você realiza usando a propriedade Explosão (Blast) ou Lançamento (Launch) de uma prótese aumenta em 3 metros.\n• O alcance de quaisquer ataques corpo a corpo que você realiza usando próteses com a propriedade Corpo a Corpo (Melee) aumenta em 1,5 metro.\n• Você causa um dado adicional de dano quando acerta um alvo usando a propriedade Explosão (Blast), Lançamento (Launch) ou Corpo a Corpo (Melee) de uma prótese.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-prosthesis-fighting",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-elemental-fighting",
+        "identifier": "ryoko-yokai-realms-elemental-fighting",
+        "name": "Combate Elemental"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 217,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você estudou os movimentos meticulosos e as artes mágicas da dobra elemental a ponto de conseguir canalizar rajadas rudimentares, porém potentes, de energia elemental através do próprio corpo.\n\nAo escolher este talento, escolha um tipo de dano entre ácido, frio, fogo, elétrico e trovão. Quando realiza um ataque desarmado, você pode escolher que o ataque cause dano do tipo escolhido igual a 1d8 + seu modificador de Força, em vez do dano de concussão normal de um ataque desarmado. O dano que você causa dessa forma ignora resistência.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "damage-type",
+            "label": "Tipo de dano",
+            "count": 1,
+            "options": [
+              "ácido",
+              "frio",
+              "fogo",
+              "elétrico",
+              "trovão"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-elemental-fighting",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-cantrip-combatant",
+        "identifier": "ryoko-yokai-realms-cantrip-combatant",
+        "name": "Combatente de Truques"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 217,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você dominou a arte de combinar golpes com armas e conjuração, recebendo os seguintes benefícios:\n\n• Aumente um valor de habilidade à sua escolha em 1, até o máximo de 20.\n• Quando você usa uma ação para conjurar um truque que exige que realize um ataque desarmado ou um ataque corpo a corpo com uma arma que esteja empunhando como parte da conjuração da magia, você pode realizar um ataque com arma como uma ação bônus nesse turno.",
+        "prerequisite": "Uma característica de classe que permita atacar mais de uma vez ao realizar a ação Atacar em seu turno e a capacidade de conjurar pelo menos um truque",
+        "prerequisites": [
+          {
+            "type": "feature",
+            "label": "Uma característica de classe que permita atacar mais de uma vez ao realizar a ação Atacar em seu turno"
+          },
+          {
+            "type": "spellcasting",
+            "label": "Capacidade de conjurar pelo menos um truque"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza",
+              "Constituição",
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-cantrip-combatant",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-dedicated-combatant",
+        "identifier": "ryoko-yokai-realms-dedicated-combatant",
+        "name": "Combatente Dedicado"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 217,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Seu compromisso fervoroso com o treinamento de combate coloca sua Maestria Avançada de Armas no mesmo patamar dos especialistas mais dedicados. Você pode calcular seu nível marcial* usando seu nível completo em qualquer classe considerada semimarcial e metade dos seus níveis em qualquer classe considerada não marcial.\n\n*Consulte Maestria Avançada de Armas, página 83.*",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-dedicated-combatant",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-boon-of-the-jorogumo",
+        "identifier": "ryoko-yokai-realms-boon-of-the-jorogumo",
+        "name": "Dádiva da Jorōgumo"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 216,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "A jorōgumo é uma yokai aracnídea metamorfa que vive entre Humanoides, seduzindo e devorando suas vítimas. Você possui um fragmento de seu poder aterrorizante, recebendo os seguintes benefícios:\n\n• Você ganha proficiência, à sua escolha, em Enganação ou Persuasão.\n• Você pode conjurar a magia Disfarçar-se um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.\n• Você possui deslocamento de escalada igual ao seu deslocamento de caminhada. Além disso, pode se mover para cima, para baixo e através de superfícies verticais e de cabeça para baixo em tetos, mantendo as mãos livres.\n• Você ignora terreno difícil causado por teias.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "skill",
+            "label": "Proficiência em perícia",
+            "count": 1,
+            "options": [
+              "Enganação",
+              "Persuasão"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-boon-of-the-jorogumo",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-gift-of-the-lion-turtle",
+        "identifier": "ryoko-yokai-realms-gift-of-the-lion-turtle",
+        "name": "Dádiva da Tartaruga-Leão"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 221,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Algumas tartarugas-leão, como você, são abençoadas com domínio incomum sobre suas capacidades telepáticas. Seu controle sobre esse poder concede os seguintes benefícios:\n\n• Aumente um valor de habilidade à sua escolha em 1, até o máximo de 20.\n• Você pode conjurar as magias Detectar Pensamentos e Sugestão sem gastar um espaço de magia. Depois de conjurar Detectar Pensamentos ou Sugestão com este talento, você não pode conjurar essa mesma magia novamente por meio dele até terminar um descanso longo. Você também pode conjurar qualquer uma dessas magias usando quaisquer espaços de magia que possua do nível apropriado. Inteligência, Sabedoria ou Carisma é sua habilidade de conjuração para essas magias quando você as conjura com este talento, à sua escolha quando selecionar o talento.",
+        "prerequisite": "Ryokido",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "ryokido",
+            "label": "Ryokido"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza",
+              "Constituição",
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          },
+          {
+            "id": "spellcasting-ability",
+            "label": "Habilidade de conjuração",
+            "count": 1,
+            "options": [
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-gift-of-the-lion-turtle",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-boon-of-ashura",
+        "identifier": "ryoko-yokai-realms-boon-of-ashura",
+        "name": "Dádiva de Ashura"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 216,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Seja por dádiva, roubo ou pelo acaso providencial da magia selvagem, você passou a possuir um fragmento do poder de Ashura, o poderoso deus-demônio de três cabeças da paixão e da fúria. Você recebe os seguintes benefícios:\n\n• Aumente seu valor de Força ou Constituição em 1, até o máximo de 20.\n• Você pode realizar uma reação adicional em uma rodada, mas só pode realizar uma reação em um mesmo turno. Você pode realizar uma reação adicional dessa forma um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Constituição"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-boon-of-ashura",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-boon-of-the-komainu",
+        "identifier": "ryoko-yokai-realms-boon-of-the-komainu",
+        "name": "Dádiva do Komainu"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 216,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Os komainu de pele pétrea permanecem em vigília nos santuários por todo o reino, protegendo aquilo que é sagrado de saques e pilhagens. Você passou a possuir um fragmento do poder desses yokai cães-leões, recebendo os seguintes benefícios:\n\n• Como uma ação, você pode inflamar ao redor do pescoço uma juba brilhante de energia radiante, que permanece até você dispensá-la como uma ação bônus ou ficar inconsciente. Enquanto a juba estiver acesa, você emite meia-luz em um raio de 3 metros, e uma criatura que você esteja agarrando sofre 2d4 de dano radiante no início do turno dela.\n• Como uma ação bônus, você pode endurecer seu corpo, transformando-o em pedra. Até o início do seu próximo turno, você recebe +2 de bônus na CA enquanto não estiver usando armadura pesada, tem vantagem em testes de resistência de Constituição e desvantagem em testes de resistência de Destreza. Você pode usar este benefício um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-boon-of-the-komainu",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-boon-of-the-nue",
+        "identifier": "ryoko-yokai-realms-boon-of-the-nue",
+        "name": "Dádiva do Nue"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 216,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "O nue é um caçador quimérico feroz, tido por rumores como o primeiro yokai. Seu poder é caótico, e uma centelha desse caos reside em você. Sua ligação com o nue concede os seguintes benefícios:\n\n• No início do seu turno, você pode rolar um d6. Se o resultado do dado for par, você recebe um bônus igual ao resultado na próxima jogada de ataque, teste de habilidade ou teste de resistência que realizar antes do fim deste turno. Se o resultado for ímpar, você sofre dano de veneno igual ao resultado, que não pode ser reduzido nem evitado de forma alguma. Você pode usar esta característica um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso curto ou longo.\n• Como uma ação bônus, você pode conceder a si mesmo deslocamento de voo igual ao seu deslocamento de caminhada até o fim do seu turno. Você cai se terminar o turno no ar sem nada sustentando-o. Você pode usar este benefício um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso curto ou longo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-boon-of-the-nue",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-boon-of-the-omukade",
+        "identifier": "ryoko-yokai-realms-boon-of-the-omukade",
+        "name": "Dádiva do Ōmukade"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 216,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "O ōmukade é um caçador de dragões — um yokai centopeia colossal com uma carapaça resistente e resistência aos elementos. Sua ligação com o ōmukade concede os seguintes benefícios:\n\n• Aumente seu valor de Constituição em 1, até o máximo de 20.\n• Ao escolher este talento, escolha um tipo de dano entre ácido, frio, fogo, elétrico, veneno e trovão. Você ganha resistência a esse tipo de dano e, quando sofre dano desse tipo, pode usar uma reação para ficar fortalecido. Ao fazer isso, a primeira rolagem de dano que realizar dentro do próximo minuto causa 1d8 de dano adicional do tipo escolhido. Esse dano aumenta em 1d8 quando você alcança o 5º nível (2d8), o 11º nível (3d8) e o 17º nível (4d8). Você pode usar esta reação um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "damage-type",
+            "label": "Tipo de dano",
+            "count": 1,
+            "options": [
+              "ácido",
+              "frio",
+              "fogo",
+              "elétrico",
+              "veneno",
+              "trovão"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-boon-of-the-omukade",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-boon-of-the-wanyudo",
+        "identifier": "ryoko-yokai-realms-boon-of-the-wanyudo",
+        "name": "Dádiva do Wanyūdō"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 217,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Frenético, fanático e abrasadoramente veloz, o wanyūdō é um yokai corruptor que assume a forma de uma grande roda flamejante. Sua ligação com ele concede os seguintes benefícios:\n\n• Seu deslocamento aumenta em 3 metros.\n• Quando você estiver caído, levantar-se custa apenas 1,5 metro do seu deslocamento.\n• Se você se mover pelo menos 3 metros em linha reta na direção de uma criatura e estiver ao alcance dela, pode usar imediatamente uma ação bônus para tentar uma investida esmagadora contra essa criatura. Faça um teste de Força (Atletismo), resistido pelo teste de Força (Atletismo) ou Destreza (Acrobacia) do alvo, à escolha dele. Quem perder a disputa fica caído. Você pode usar este benefício um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso curto ou longo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-boon-of-the-wanyudo",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-seasonal-determinism",
+        "identifier": "ryoko-yokai-realms-seasonal-determinism",
+        "name": "Determinismo Sazonal"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 223,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "O estado do mundo no momento de seu nascimento deixou uma marca indelével em seu corpo. Escolha uma das estações em que você nasceu; você recebe os benefícios associados:\n\nPrimavera. Seu valor de Destreza aumenta em 1, até o máximo de 20. Além disso, seu deslocamento aumenta em 1,5 metro e você pode usar uma ação bônus para se preparar para se mover com um floreio ágil. Ao fazer isso, a próxima jogada de ataque realizada contra você antes do início do seu próximo turno tem desvantagem.\n\nVerão. Seu valor de Carisma aumenta em 1, até o máximo de 20. Além disso, você pode usar uma ação bônus para conceder a si mesmo vantagem na próxima jogada de ataque ou teste de habilidade que realizar antes do início do seu próximo turno. Você pode usar essa ação bônus um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.\n\nOutono. Seu valor de Sabedoria aumenta em 1, até o máximo de 20. Além disso, você possui visão no escuro com alcance de 9 metros e pode realizar a ação Esconder-se como uma ação bônus enquanto estiver em meia-luz ou escuridão. Se já possuir visão no escuro, seu alcance aumenta em 9 metros.\n\nInverno. Seu valor de Constituição aumenta em 1, até o máximo de 20. Além disso, quando cria um frasco mágico de água com seu traço Magia da Água (Water Magic), você pode escolher a opção a seguir como um efeito:\n\n• A água congela e crepita com magia de evocação. Quando uma criatura segurando o frasco realiza a ação Atacar, ela pode usar um ataque para arremessar o frasco contra um alvo a até 6 metros dela. A criatura realiza um ataque à distância contra o alvo, tratando o frasco como uma arma improvisada. Em um acerto, o frasco se estilhaça e o alvo sofre 1d8 de dano de frio. Se o alvo for uma criatura, seu deslocamento também é reduzido em 3 metros até o fim do próximo turno dela. A cruel magia de evocação que você imbui no frasco aumenta em potência conforme você sobe de nível. O dano de frio causado pelo frasco aumenta em 1d8 quando você alcança o 5º nível (2d8), o 11º nível (3d8) e o 17º nível (4d8).",
+        "prerequisite": "Fuyōren",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "fuyoren",
+            "label": "Fuyōren"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "season",
+            "label": "Estação do nascimento",
+            "count": 1,
+            "options": [
+              "Primavera",
+              "Verão",
+              "Outono",
+              "Inverno"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-seasonal-determinism",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-focused-discipline",
+        "identifier": "ryoko-yokai-realms-focused-discipline",
+        "name": "Disciplina Focada"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 218,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Sua diligência e seu treinamento focado concederam a você os seguintes benefícios:\n\n• Escolha uma proficiência em perícia concedida por sua classe. Seu bônus de proficiência é dobrado para testes de habilidade realizados usando essa perícia.\n• Escolha uma proficiência em teste de resistência concedida por sua classe. Sempre que realizar esse teste de resistência, você pode tratar uma rolagem de 9 ou menos no d20 como 10.\n\nSe você perder este talento por deixar de atender ao seu pré-requisito, recebe o talento Multidisciplinar em seu lugar.",
+        "prerequisite": "4º nível; não ser um personagem multiclasse",
+        "prerequisites": [
+          {
+            "type": "level",
+            "minimum": 4,
+            "label": "4º nível"
+          },
+          {
+            "type": "character-structure",
+            "value": "single-class",
+            "label": "Não ser um personagem multiclasse"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "class-skill",
+            "label": "Perícia concedida por sua classe",
+            "count": 1
+          },
+          {
+            "id": "class-saving-throw",
+            "label": "Teste de resistência concedido por sua classe",
+            "count": 1
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-focused-discipline",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-hanamori-physiology",
+        "identifier": "ryoko-yokai-realms-hanamori-physiology",
+        "name": "Fisiologia Hanamori"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 221,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Sua fisiologia hanamori hiperativa faz com que seu corpo se adapte instantaneamente às mudanças do ambiente, recebendo os seguintes benefícios:\n\n• Você tem vantagem em testes de resistência para evitar exaustão causada pelo ambiente, como calor ou frio extremos.\n• Quando sofre dano de ácido, frio, fogo, elétrico ou trovão, você pode usar sua reação para ganhar resistência a esse tipo de dano, inclusive contra o dano desencadeador, até o fim do seu próximo turno. Você pode usar este benefício um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.",
+        "prerequisite": "Hanamori",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "hanamori",
+            "label": "Hanamori"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-hanamori-physiology",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-fearsome-flourisher",
+        "identifier": "ryoko-yokai-realms-fearsome-flourisher",
+        "name": "Floreador Temível"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 218,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Sua velocidade com o nunchaku é capaz de incutir medo em seus inimigos:\n\n• Quando você realiza a ação Atacar e ataca com um nunchaku, pode usar uma ação bônus para realizar um ataque adicional com o nunchaku. Esse ataque usa o mesmo modificador de habilidade do ataque principal, e o dado de dano da arma para esse ataque é um d4.\n• Quando realiza a ação especial Floreio com um nunchaku, você pode usar uma ação bônus para torná-la especialmente intimidadora contra uma criatura ao seu alcance. Se você não falhar no teste de Destreza para florear a arma, seu alvo deve obter sucesso em um teste de resistência de Sabedoria ou ficará amedrontado por você até o início do seu próximo turno. A CD do teste de resistência é igual a 8 + seu modificador de Destreza. Se você for proficiente na perícia Intimidação, pode adicionar seu bônus de proficiência à CD.",
+        "prerequisite": "Proficiência com nunchaku",
+        "prerequisites": [
+          {
+            "type": "proficiency",
+            "category": "weapon",
+            "value": "nunchaku",
+            "label": "Proficiência com nunchaku"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-fearsome-flourisher",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-draconic-fury",
+        "identifier": "ryoko-yokai-realms-draconic-fury",
+        "name": "Fúria Dracônica"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 221,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você aprendeu a canalizar sua energia dracônica em uma arma de sopro destrutiva, recebendo os seguintes benefícios:\n\n• Aumente seu valor de Constituição em 1, até o máximo de 20.\n• Ao escolher este talento, escolha um tipo de dano entre ácido, frio, fogo, elétrico, veneno e trovão. Quando usa seu traço Sopro Encorajador (Heartening Breath), você pode optar por expelir, em vez disso, um cone de energia destrutiva de 9 metros. Cada criatura na área deve realizar um teste de resistência de Destreza (CD = 8 + seu modificador de Constituição + seu bônus de proficiência), sofrendo 1d12 de dano do tipo escolhido em caso de falha, ou metade desse dano em caso de sucesso. Esse dano aumenta em 1d12 quando você alcança o 5º nível (2d12), o 11º nível (3d12) e o 17º nível (4d12).",
+        "prerequisite": "Tatsumi (ryūjin)",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "tatsumi",
+            "label": "Tatsumi"
+          },
+          {
+            "type": "subrace",
+            "value": "ryujin",
+            "label": "Ryūjin"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "damage-type",
+            "label": "Tipo de dano",
+            "count": 1,
+            "options": [
+              "ácido",
+              "frio",
+              "fogo",
+              "elétrico",
+              "veneno",
+              "trovão"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-draconic-fury",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-combo-striker",
+        "identifier": "ryoko-yokai-realms-combo-striker",
+        "name": "Golpeador de Combo"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 217,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é experiente na arte do combate colaborativo e dos golpes em combinação, recebendo os seguintes benefícios:\n\n• Aumente um valor de habilidade à sua escolha em 1, até o máximo de 20.\n• Você pode colaborar em um Ataque de Combo, mesmo que já tenha colaborado em um desde seu último descanso longo. Depois de usar este benefício, você não pode usá-lo novamente até terminar um descanso longo.\n• Quando você inicia um Ataque de Combo, uma criatura voluntária à sua escolha que você possa ver pode colaborar nesse combo sem que isso a impeça de colaborar em outro Ataque de Combo antes de terminar um descanso longo. Depois de usar este benefício, você não pode usá-lo novamente até terminar um descanso longo.\n\n*Consulte Ataques de Combo, página 43.*",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza",
+              "Constituição",
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-combo-striker",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-elemental-initiate",
+        "identifier": "ryoko-yokai-realms-elemental-initiate",
+        "name": "Iniciado Elemental"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 218,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você adquiriu uma parcela da ligação de um Dobrador com um elemento. Escolha um dos quatro elementos da característica Afinidade Elemental do Dobrador: ar, terra, fogo ou água. Você recebe os seguintes benefícios:\n\n• Você aprende um truque e uma magia de 1º nível da lista de magias do elemento escolhido. Você pode conjurar a magia de 1º nível sem gastar um espaço de magia e deve terminar um descanso longo antes de poder conjurá-la dessa forma novamente. Você também pode conjurar a magia usando quaisquer espaços de magia que possua. Sua habilidade de conjuração para as magias deste talento é Inteligência, Sabedoria ou Carisma, à sua escolha quando selecionar este talento.\n• Ao escolher este talento, escolha um tipo de dano associado ao elemento escolhido. Quando sofrer dano desse tipo, você pode usar uma reação para ganhar resistência a esse tipo de dano, inclusive contra o dano desencadeador, até o início do seu próximo turno.\n\nVocê pode escolher este talento diversas vezes.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": true,
+        "choices": [
+          {
+            "id": "element",
+            "label": "Elemento",
+            "count": 1,
+            "options": [
+              "ar",
+              "terra",
+              "fogo",
+              "água"
+            ]
+          },
+          {
+            "id": "spellcasting-ability",
+            "label": "Habilidade de conjuração",
+            "count": 1,
+            "options": [
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          },
+          {
+            "id": "damage-type",
+            "label": "Tipo de dano associado ao elemento",
+            "count": 1
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-elemental-initiate",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-martial-initiate",
+        "identifier": "ryoko-yokai-realms-martial-initiate",
+        "name": "Iniciado Marcial"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 219,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você estudou extensivamente a arte do combate, aperfeiçoando sua habilidade com uma arma favorita. Você recebe os seguintes benefícios:\n\n• Aumente um valor de habilidade à sua escolha em 1, até o máximo de 20.\n• Você aprende duas técnicas avançadas de grau 1 à sua escolha de qualquer árvore de técnicas*. Você deve atender aos pré-requisitos dessas técnicas para aprendê-las.\n\n*Consulte Maestria Avançada de Armas, página 83.*",
+        "prerequisite": "4º nível",
+        "prerequisites": [
+          {
+            "type": "level",
+            "minimum": 4,
+            "label": "4º nível"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza",
+              "Constituição",
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          },
+          {
+            "id": "advanced-techniques",
+            "label": "Técnicas avançadas de grau 1",
+            "count": 2
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-martial-initiate",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-magic-of-the-blade",
+        "identifier": "ryoko-yokai-realms-magic-of-the-blade",
+        "name": "Magia da Lâmina"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 219,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você possui o poder de sincronizar magia e esgrima, recebendo os seguintes benefícios:\n\n• Aumente um valor de habilidade à sua escolha em 1, até o máximo de 20.\n• Você aprende dois truques que exigem que realize um ataque desarmado ou um ataque corpo a corpo com uma arma que esteja empunhando como parte da conjuração da magia. Sua habilidade de conjuração para essas magias é Inteligência, Sabedoria ou Carisma, à sua escolha quando selecionar este talento.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza",
+              "Constituição",
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          },
+          {
+            "id": "cantrips",
+            "label": "Truques compatíveis",
+            "count": 2
+          },
+          {
+            "id": "spellcasting-ability",
+            "label": "Habilidade de conjuração",
+            "count": 1,
+            "options": [
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-magic-of-the-blade",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-isetsu-magic",
+        "identifier": "ryoko-yokai-realms-isetsu-magic",
+        "name": "Magia Isetsu"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 222,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Sua ligação com o oceano permite que você empunhe uma parcela de magia aquática, recebendo os seguintes benefícios:\n\n• Aumente um valor de habilidade à sua escolha em 1, até o máximo de 20.\n• Você aprende o truque Chicote de Água*.\n• Você pode conjurar as magias Correnteza* e Respirar na Água sem gastar um espaço de magia. Depois de conjurar Correnteza ou Respirar na Água com este talento, você não pode conjurar essa mesma magia novamente por meio dele até terminar um descanso longo. Você também pode conjurar qualquer uma dessas magias usando quaisquer espaços de magia que possua do nível apropriado.\n\nInteligência, Sabedoria ou Carisma é sua habilidade de conjuração para essas magias quando você as conjura com este talento, à sua escolha quando selecionar o talento.\n\n*Consulte o Capítulo 13 — Magias.*",
+        "prerequisite": "Isetsu",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "isetsu",
+            "label": "Isetsu"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza",
+              "Constituição",
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          },
+          {
+            "id": "spellcasting-ability",
+            "label": "Habilidade de conjuração",
+            "count": 1,
+            "options": [
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-isetsu-magic",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-shadowmage",
+        "identifier": "ryoko-yokai-realms-shadowmage",
+        "name": "Mago das Sombras"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 223,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "A magia yokai que flui por suas veias permite que você recorra a uma reserva de magia mais ampla do que a habitual para a maioria dos hanataka, recebendo os seguintes benefícios:\n\n• Aumente seu valor de Inteligência, Sabedoria ou Carisma em 1, até o máximo de 20.\n• Você aprende dois truques à sua escolha da lista de magias de Druida ou Feiticeiro. Você pode conjurar esses truques sem quaisquer componentes de magia enquanto estiver em meia-luz ou escuridão. Sua habilidade de conjuração para essas magias é o valor de habilidade que você aumentou com este talento.",
+        "prerequisite": "Tengu (hanataka)",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "tengu",
+            "label": "Tengu"
+          },
+          {
+            "type": "subrace",
+            "value": "hanataka",
+            "label": "Hanataka"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade e habilidade de conjuração",
+            "count": 1,
+            "options": [
+              "Inteligência",
+              "Sabedoria",
+              "Carisma"
+            ]
+          },
+          {
+            "id": "cantrips",
+            "label": "Truques de Druida ou Feiticeiro",
+            "count": 2,
+            "sources": [
+              "Druida",
+              "Feiticeiro"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-shadowmage",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-kusarigama-master",
+        "identifier": "ryoko-yokai-realms-kusarigama-master",
+        "name": "Mestre da Kusarigama"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 218,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você dominou o uso da kusarigama, aprendendo técnicas adicionais para derrubar e importunar seus inimigos. Você adiciona seu modificador de habilidade à rolagem de dano realizada com o contrapeso de uma kusarigama. Além disso, quando realiza esse ataque contra um alvo Médio ou menor, pode escolher não causar dano. Se fizer isso, o alvo realiza um teste de Força (Atletismo) ou Destreza (Acrobacia), à escolha dele, resistido pela sua jogada de ataque. Se o alvo perder a disputa, escolha um dos efeitos a seguir:\n\n• O alvo é desarmado de um objeto à sua escolha que esteja segurando; o objeto é puxado em sua direção e cai aos seus pés.\n• O alvo fica caído.\n• O alvo é puxado 1,5 metro em sua direção. Se isso o deixar ao seu alcance, ele fica agarrado por você. Enquanto uma criatura estiver agarrada dessa forma, você não pode realizar ataques usando o contrapeso da kusarigama.",
+        "prerequisite": "Proficiência com kusarigama",
+        "prerequisites": [
+          {
+            "type": "proficiency",
+            "category": "weapon",
+            "value": "kusarigama",
+            "label": "Proficiência com kusarigama"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-kusarigama-master",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-prosthesis-master",
+        "identifier": "ryoko-yokai-realms-prosthesis-master",
+        "name": "Mestre de Próteses"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 220,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você praticou extensivamente com próteses mágicas, treinando mente e corpo para manejar a magia delas com a mesma naturalidade com que respira. Você recebe os seguintes benefícios:\n\n• Você é considerado proficiente com quaisquer ataques realizados usando uma prótese.\n• Você pode se sintonizar com uma prótese mágica sem que ela conte no número de itens mágicos com os quais pode se sintonizar.",
+        "prerequisite": "8º nível",
+        "prerequisites": [
+          {
+            "type": "level",
+            "minimum": 8,
+            "label": "8º nível"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-prosthesis-master",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-tessen-master",
+        "identifier": "ryoko-yokai-realms-tessen-master",
+        "name": "Mestre do Tessen"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 220,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você aprendeu a manipular o tessen de novas maneiras, usando suas hastes pontiagudas como armas e arremessando-o contra inimigos à distância. Você recebe os seguintes benefícios:\n\n• Aumente seu valor de Força ou Destreza em 1, até o máximo de 20.\n• Para você, um tessen possui as propriedades Adaptável (Perfurante) e Arremesso (distância 6/18 m).\n• Enquanto empunha um tessen, você recebe uma reação adicional que pode realizar uma vez durante cada rodada. Essa reação só pode ser usada para tentar desviar um projétil com a propriedade Especial: Escudo de Leque do tessen, e você não pode usá-la no mesmo turno em que realiza sua reação normal.",
+        "prerequisite": "Proficiência com tessen",
+        "prerequisites": [
+          {
+            "type": "proficiency",
+            "category": "weapon",
+            "value": "tessen",
+            "label": "Proficiência com tessen"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-tessen-master",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-multidisciplinary",
+        "identifier": "ryoko-yokai-realms-multidisciplinary",
+        "name": "Multidisciplinar"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 219,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é hábil em extrair recursos de disciplinas diferentes para empregar uma variedade de táticas, tanto em batalha quanto fora dela. Quando escolhe este talento e a cada vez que ganha seu 1º nível em uma nova classe, escolha um dos benefícios a seguir:\n\n• Você ganha proficiência em uma perícia e em um tipo de ferramentas de artesão à sua escolha.\n• Escolha uma proficiência em teste de resistência que a classe na qual você passou a ter níveis normalmente concederia no 1º nível. Você se torna proficiente nesse teste de resistência.",
+        "prerequisite": "Ser um personagem multiclasse",
+        "prerequisites": [
+          {
+            "type": "character-structure",
+            "value": "multiclass",
+            "label": "Ser um personagem multiclasse"
+          }
+        ],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "multidisciplinary-benefit",
+            "label": "Benefício ao adquirir o talento ou entrar em uma nova classe",
+            "count": 1,
+            "options": [
+              "Proficiência em 1 perícia e 1 ferramenta de artesão",
+              "Proficiência em 1 teste de resistência da nova classe"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-multidisciplinary",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-enkohs-might",
+        "identifier": "ryoko-yokai-realms-enkohs-might",
+        "name": "Poderio do Enkoh"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 221,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você possui força explosiva, impressionante até mesmo em comparação com seus parentes corpulentos, recebendo os seguintes benefícios:\n\n• Aumente seu valor de Força em 1, até o máximo de 20.\n• Como uma ação bônus, você pode tentar empurrar uma criatura que não seja mais que uma categoria de tamanho maior que você e esteja ao seu alcance. Faça um teste de Força (Atletismo), resistido pelo teste de Força (Atletismo) ou Destreza (Acrobacia) do alvo, à escolha dele. Se vencer a disputa, você derruba o alvo ou o empurra até 4,5 metros para longe. Você pode usar este talento um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.",
+        "prerequisite": "Enkoh (Corpulento)",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "enkoh",
+            "label": "Enkoh"
+          },
+          {
+            "type": "subrace",
+            "value": "hulking",
+            "label": "Corpulento (hulking)"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-enkohs-might",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-oni-regeneration",
+        "identifier": "ryoko-yokai-realms-oni-regeneration",
+        "name": "Regeneração Oni"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 222,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "A incrível fortitude e longevidade de seus ancestrais fluem por você, recebendo os seguintes benefícios:\n\n• Aumente seu valor de Constituição em 1, até o máximo de 20.\n• Como uma reação quando sofre dano, você pode gastar uma quantidade de seus Dados de Vida de até seu bônus de proficiência para curar a si mesmo. Role os dados, adicione seu modificador de Constituição e recupere uma quantidade de pontos de vida igual ao total, com um mínimo de 1. Você pode usar este benefício um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.",
+        "prerequisite": "Oniborne",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "oniborne",
+            "label": "Oniborne"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-oni-regeneration",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-extra-attack-tactician",
+        "identifier": "ryoko-yokai-realms-extra-attack-tactician",
+        "name": "Tático de Ataque Extra"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 218,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você estudou os estilos de luta de outros combatentes e aprendeu a imitar suas técnicas, recebendo os seguintes benefícios:\n\n• Aumente seu valor de Força ou Destreza em 1, até o máximo de 20.\n• Escolha uma classe entre Bárbaro, Dobrador, Guerreiro, Monge, Paladino e Patrulheiro. Você pode usar o benefício de 7º nível da característica Ataque Extra Aprimorado dessa classe um número de vezes igual ao seu bônus de proficiência, recuperando todos os usos gastos ao terminar um descanso longo. Você só pode se beneficiar de uma característica Ataque Extra Aprimorado por turno; escolha quando realizar seu primeiro ataque.\n\nVocê pode escolher este talento diversas vezes.",
+        "prerequisite": "Característica Ataque Extra Aprimorado",
+        "prerequisites": [
+          {
+            "type": "feature",
+            "value": "improved-extra-attack",
+            "label": "Característica Ataque Extra Aprimorado"
+          }
+        ],
+        "repeatable": true,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Força",
+              "Destreza"
+            ]
+          },
+          {
+            "id": "class",
+            "label": "Classe cujo benefício de Ataque Extra Aprimorado será usado",
+            "count": 1,
+            "options": [
+              "Bárbaro",
+              "Dobrador",
+              "Guerreiro",
+              "Monge",
+              "Paladino",
+              "Patrulheiro"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-extra-attack-tactician",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-karasu-trickery",
+        "identifier": "ryoko-yokai-realms-karasu-trickery",
+        "name": "Trapaça Karasu"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 222,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você é um virtuose da travessura e da trapaça mesmo entre os karasu, recebendo os seguintes benefícios:\n\n• Aumente seu valor de Carisma em 1, até o máximo de 20.\n• Sempre que você e pelo menos uma outra criatura que possa ver realizarem um teste de habilidade ou teste de resistência ao mesmo tempo — como ao rolar iniciativa, realizar um teste resistido ou fazer um teste de resistência contra uma área de efeito —, você pode trocar seu resultado no d20 pelo da outra criatura. Você recebe o resultado dela e ela recebe o seu. Depois de usar este benefício, você não pode usá-lo novamente até terminar um descanso curto ou longo.",
+        "prerequisite": "Tengu (karasu)",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "tengu",
+            "label": "Tengu"
+          },
+          {
+            "type": "subrace",
+            "value": "karasu",
+            "label": "Karasu"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-karasu-trickery",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-tengu-training",
+        "identifier": "ryoko-yokai-realms-tengu-training",
+        "name": "Treinamento Tengu"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 220,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "A tutela de um tengu hanataka, ou incontáveis horas de estudo cuidadoso de tratados hanataka sobre combate, concedeu a você os seguintes benefícios:\n\n• Aumente seu valor de Destreza ou Sabedoria em 1, até o máximo de 20.\n• Você ganha proficiência com uma arma de Acuidade à sua escolha.\n• Como uma reação, quando uma criatura erra você com um ataque corpo a corpo enquanto você estiver segurando uma arma de Acuidade, pode realizar um ataque com essa arma contra a criatura. Você pode usar este benefício um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "ability",
+            "label": "Aumento no Valor de Habilidade",
+            "count": 1,
+            "options": [
+              "Destreza",
+              "Sabedoria"
+            ]
+          },
+          {
+            "id": "finesse-weapon",
+            "label": "Arma com Acuidade",
+            "count": 1
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-tengu-training",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-haniwa-soulbinding",
+        "identifier": "ryoko-yokai-realms-haniwa-soulbinding",
+        "name": "Vinculação de Alma Haniwa"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 222,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Sua magia inata de criação é potente o bastante para que você possa derramar mais de sua essência em seu companheiro de argila. Quando cria um companheiro, ele pode usar um dos seguintes blocos de estatísticas no lugar de um dos listados no traço Companheiro de Argila (Clay Companion): urso-negro, cabra gigante, polvo gigante ou cavalo de guerra.\n\nAo alcançar o 5º nível, você pode criar Companheiros de Argila que usem os blocos de estatísticas de lobo atroz, aranha gigante e sapo gigante.",
+        "prerequisite": "Haniwa",
+        "prerequisites": [
+          {
+            "type": "race",
+            "value": "haniwa",
+            "label": "Haniwa"
+          }
+        ],
+        "repeatable": false,
+        "choices": [],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-haniwa-soulbinding",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    },
+    {
+      "schema": "grimorio-foundry-feat-bundle",
+      "schemaVersion": 2,
+      "kind": "feat",
+      "profile": {
+        "id": "foundry13-dnd5e533-grimorio-feat-bundle-v2",
+        "foundryVersion": "13.351",
+        "dnd5eVersion": "5.3.3",
+        "consumer": "grimorio-importer",
+        "minimumImporterVersion": "0.12.0"
+      },
+      "identity": {
+        "grimorioId": "ryoko-yokai-realms-spirit-bonded",
+        "identifier": "ryoko-yokai-realms-spirit-bonded",
+        "name": "Vinculado a um Espírito"
+      },
+      "source": {
+        "sourceId": "ryoko-yokai-realms",
+        "title": "Ryoko's Guide to the Yokai Realms",
+        "shortTitle": "Ryoko's Guide to the Yokai Realms",
+        "chapter": "Capítulo 10 — Antecedentes e Talentos",
+        "pages": "216–223",
+        "page": 220,
+        "rules": "2014"
+      },
+      "feat": {
+        "description": "Você formou uma amizade com um espírito que deseja agir como seu familiar.\n\nVocê aprende a magia Convocar Familiar e pode conjurá-la sem componentes nem gastar um espaço de magia. Quando a conjura dessa forma, seu familiar ignora a restrição que o impede de atacar. Depois de conjurar a magia com este talento, você não pode fazê-lo novamente até terminar um descanso longo.\n\nAo escolher este talento, escolha uma das seguintes formas de familiar: bancho-gama, betobeto-kun, kawawappa, ko-inari ou senryōka*. Você pode convocar seu familiar na forma escolhida ou em uma das formas listadas na descrição da magia.\n\nQuando convoca seu familiar na forma escolhida, ele recebe pontos de vida temporários iguais ao seu nível e a melhoria de 1º nível da árvore de melhorias dele. Quando você alcança o 5º nível, esses pontos de vida temporários são dobrados e você também pode conceder a ele uma das melhorias de 3º nível de sua árvore de melhorias.\n\n*Consulte Familiares, página 225.*",
+        "prerequisite": "",
+        "prerequisites": [],
+        "repeatable": false,
+        "choices": [
+          {
+            "id": "familiar-form",
+            "label": "Forma especial do familiar",
+            "count": 1,
+            "options": [
+              "bancho-gama",
+              "betobeto-kun",
+              "kawawappa",
+              "ko-inari",
+              "senryōka"
+            ]
+          }
+        ],
+        "foundryPlan": {
+          "itemType": "feat",
+          "featureType": "feat",
+          "storage": "grimorio-feats",
+          "automation": "declarative-feat-automation-v1"
+        }
+      },
+      "automation": {
+        "schema": "grimorio-foundry-feat-automation-plan",
+        "schemaVersion": 1,
+        "target": {
+          "foundryVersion": "13.351",
+          "dnd5eVersion": "5.3.3",
+          "minimumImporterVersion": "0.12.0"
+        },
+        "profileId": "ryoko-yokai-realms-spirit-bonded",
+        "tier": "description",
+        "advancements": [],
+        "effects": [],
+        "activities": [],
+        "uses": null,
+        "runtime": [],
+        "limitations": [],
+        "notes": [
+          "Talento de Ryoko preservado integralmente no Item; automação mecânica específica ainda não foi homologada e não é inferida a partir do texto."
+        ]
+      }
+    }
+  ]
+}
