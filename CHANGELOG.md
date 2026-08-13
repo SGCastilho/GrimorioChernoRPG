@@ -1,3 +1,14 @@
+## 5.40.0
+
+### Conteúdo — Talentos
+- Criado catálogo nativo de **Talentos** no registro central do Grimório.
+- Incorporados **42 talentos** do Capítulo 6 do Livro do Jogador 2014, com texto integral, pré-requisitos estruturados e páginas de referência.
+- Nova rota de catálogo `#/feats` e rotas individuais `#/feat/<id>`.
+- Novo botão **Talentos** abaixo de **Equipamentos** na sidebar principal e na camada `ui-enhancements`.
+- Busca Ctrl+K ampliada para localizar talentos por nome, pré-requisito e texto.
+- Interface de talentos adiciona busca, filtros, links diretos, títulos contextuais e integração com as microtransições/Spotlight existentes.
+- O módulo `foundry/grimorio-importer` permanece inalterado nesta fase.
+
 ## 5.39.1
 
 ### Visual — arte de cabeçalho na página da classe

@@ -31,6 +31,7 @@
       if(route?.view==='class'||route?.view==='subclass') target=document.getElementById('consultation-content');
       else if(route?.view==='races') target=document.getElementById('raceCatalogResults');
       else if(route?.view==='equipment') target=document.getElementById('equipmentResults')||document.querySelector('.equipment-results');
+      else if(route?.view==='feats'||route?.view==='feat') target=document.getElementById('featResults')||document.querySelector('.feat-list');
       else if(route?.view==='spells') target=document.querySelector('.spell-grid,.spell-list,.spells-grid');
     }catch(_){/* ambiente de teste sem route */}
     if(target)restartClass(target,'ui-local-enter');

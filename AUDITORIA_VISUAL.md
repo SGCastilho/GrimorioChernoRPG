@@ -1,4 +1,4 @@
-# Auditoria visual — Grimório 5.36.0
+# Auditoria visual — Grimório 5.40.0
 
 ## Microtransições
 - Troca de página: fade curto + deslocamento vertical mínimo.
@@ -40,3 +40,15 @@
 - Conferir os botões **Copiar link** de classe, subclasse, magia, raça/subraça e equipamento.
 - Abrir `Ctrl+K` e confirmar que Classes, Subclasses, Raças, Subraças, Magias e Equipamentos são anchors reais e aceitam nova guia.
 - Confirmar que o título da guia muda conforme classe, subclasse, raça/subraça, magia ou equipamento aberto.
+
+
+## v5.40.0 — Talentos
+- Confirmar que **Talentos** aparece imediatamente abaixo de **Equipamentos** na sidebar, tanto expandida quanto compacta.
+- Abrir `#/feats` e confirmar o cabeçalho, os quatro indicadores e a listagem dos **42 talentos** do Livro do Jogador.
+- Testar busca por nome, texto e pré-requisito; os resultados devem incluir correspondências tanto no nome quanto no corpo da regra.
+- Testar filtros **Sem pré-requisito**, **Atributo mínimo**, **Conjuração** e **Proficiência** e depois limpar os filtros.
+- Abrir `#/feat/phb-2014-alerta` diretamente e confirmar que o talento fica expandido e visível, com título contextual na guia.
+- Confirmar que `Adepto Elemental` exibe a marca **Repetível** e a escolha de tipo de dano sem transformar a escolha em automação.
+- Usar **Ctrl+K** para localizar talentos e confirmar que o resultado é um link nativo, aceitando Ctrl/Cmd+clique e nova guia.
+- Conferir a ação de link direto/copiar link nos talentos e o histórico Voltar/Avançar entre catálogo e detalhe.
+- Em viewport móvel, confirmar que filtros e metadados empilham sem overflow horizontal e que a sidebar continua utilizável.

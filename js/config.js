@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION='5.39.1';
+const APP_VERSION='5.40.0';
 const STORAGE_KEY='grimorio-campanha-v2';
 const SRD_CACHE_KEY='grimorio-srd-2014-cache-v3-ptbr';
 const SRD_SOURCE='https://raw.githubusercontent.com/5e-bits/5e-database/main/src/2014/en/5e-SRD-Spells.json';
@@ -30,6 +30,7 @@ const SIGILS={
  spell:'<path d="M16 3l2.5 9.5L28 15l-9.5 2.5L16 27l-2.5-9.5L4 15l9.5-2.5z" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linejoin="round"/>',
  book:'<path d="M6 5h20v22H6zM16 5v22M9 11h4m-4 5h4m6-5h4m-4 5h4" stroke="currentColor" stroke-width="1.3" fill="none"/>',
  equipment:'<path d="M8 4l5 5-5 5-5-5zM17 5h10M22 5v22M17 27h10" stroke="currentColor" stroke-width="1.35" fill="none" stroke-linejoin="round"/><path d="M6 22l7-7 5 5-7 7z" stroke="currentColor" stroke-width="1.35" fill="none" stroke-linejoin="round"/>',
+ feat:'<path d="M16 3l3.5 7.1 7.8 1.1-5.6 5.5 1.3 7.8-7-3.7-7 3.7 1.3-7.8-5.6-5.5 7.8-1.1z" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linejoin="round"/><path d="M12.2 23l-1.4 5 5.2-2.6 5.2 2.6-1.4-5" stroke="currentColor" stroke-width="1.1" fill="none"/>',
 
  'school-abjuration':'<path d="M16 4l9 5v8c0 6.5-3.8 10.2-9 13-5.2-2.8-9-6.5-9-13V9zM16 10v11M11 15h10" stroke="currentColor" stroke-width="1.45" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
  'school-conjuration':'<path d="M16 4a8 8 0 0 1 8 8c0 6-5 11-8 16-3-5-8-10-8-16a8 8 0 0 1 8-8z" stroke="currentColor" stroke-width="1.35" fill="none"/><path d="M16 9v6M13 12h6" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/><circle cx="16" cy="12" r="10.5" stroke="currentColor" stroke-width="1.05" fill="none" opacity=".5"/>',

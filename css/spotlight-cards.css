@@ -11,7 +11,9 @@
   .ability-budget-card,
   .ability-summary-card,
   .equipment-row,
-  .equipment-glossary-grid article
+  .equipment-glossary-grid article,
+  .feat-hero,
+  .feat-summary
 ){
   --spot-x:50%;
   --spot-y:50%;
@@ -31,7 +33,8 @@
   .race-rule-card,
   .ability-budget-card,
   .ability-summary-card,
-  .equipment-glossary-grid article
+  .equipment-glossary-grid article,
+  .feat-hero
 ){overflow:hidden}
 
 :is(
@@ -44,7 +47,9 @@
   .ability-budget-card,
   .ability-summary-card,
   .equipment-row,
-  .equipment-glossary-grid article
+  .equipment-glossary-grid article,
+  .feat-hero,
+  .feat-summary
 )::after{
   content:"";
   position:absolute;
@@ -75,7 +80,9 @@
   .ability-budget-card,
   .ability-summary-card,
   .equipment-row,
-  .equipment-glossary-grid article
+  .equipment-glossary-grid article,
+  .feat-hero,
+  .feat-summary
 )[data-spotlight-active="true"]::after,
 :is(
   .hero,
@@ -87,7 +94,9 @@
   .ability-budget-card,
   .ability-summary-card,
   .equipment-row,
-  .equipment-glossary-grid article
+  .equipment-glossary-grid article,
+  .feat-hero,
+  .feat-summary
 )[data-spotlight-active="keyboard"]::after{
   opacity:1;
 }
@@ -103,7 +112,9 @@
   .ability-budget-card,
   .ability-summary-card,
   .equipment-row,
-  .equipment-glossary-grid article
+  .equipment-glossary-grid article,
+  .feat-hero,
+  .feat-summary
 )>*{
   position:relative;
   z-index:1;
@@ -117,23 +128,26 @@
 .ability-summary-card{--spot-color:var(--arcane);--spot-opacity:12%;--spot-border-opacity:34%}
 .equipment-row{--spot-color:var(--gold);--spot-opacity:7.5%;--spot-border-opacity:18%}
 .equipment-glossary-grid article{--spot-color:var(--arcane);--spot-opacity:10%;--spot-border-opacity:24%}
+.feat-hero{--spot-color:var(--arcane);--spot-opacity:10%;--spot-border-opacity:28%}
+.feat-summary{--spot-color:var(--gold);--spot-opacity:7.5%;--spot-border-opacity:18%}
 
 /* O brilho não substitui os estados funcionais existentes. */
 .race-card:hover,.class-card:hover,.subclass-card:hover{will-change:transform}
 .equipment-row[data-spotlight-active="true"]{background:rgba(255,255,255,.012)}
 .equipment-item[open]>.equipment-row[data-spotlight-active="true"]{background:rgba(222,178,77,.022)}
+.feat-item[open]>.feat-summary[data-spotlight-active="true"]{background:rgba(201,165,92,.022)}
 
 /* Usuários que pedem menos movimento e dispositivos touch recebem a UI estática. */
 @media (prefers-reduced-motion:reduce){
   :is(
     .hero,.class-card,.subclass-card,.race-card,.subrace-card,.race-rule-card,
-    .ability-budget-card,.ability-summary-card,.equipment-row,.equipment-glossary-grid article
+    .ability-budget-card,.ability-summary-card,.equipment-row,.equipment-glossary-grid article,.feat-hero,.feat-summary
   )::after{display:none!important;transition:none!important}
 }
 
 @media (hover:none),(pointer:coarse){
   :is(
     .hero,.class-card,.subclass-card,.race-card,.subrace-card,.race-rule-card,
-    .ability-budget-card,.ability-summary-card,.equipment-row,.equipment-glossary-grid article
+    .ability-budget-card,.ability-summary-card,.equipment-row,.equipment-glossary-grid article,.feat-hero,.feat-summary
   )::after{display:none!important}
 }

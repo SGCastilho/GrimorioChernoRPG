@@ -11,7 +11,9 @@
     '.ability-budget-card',
     '.ability-summary-card',
     '.equipment-row',
-    '.equipment-glossary-grid article'
+    '.equipment-glossary-grid article',
+    '.feat-hero',
+    '.feat-summary'
   ].join(',');
 
   const root = typeof window !== 'undefined' ? window : globalThis;

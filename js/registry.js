@@ -7,6 +7,7 @@
   const sources = new Map();
   const spellCatalogs = new Map();
   const equipmentCatalogs = new Map();
+  const featCatalogs = new Map();
 
   function normalize(value) {
     return String(value || '')
@@ -142,6 +143,46 @@
     return Array.from(equipmentCatalogs.values()).sort((a, b) => (a.order || 1000) - (b.order || 1000) || a.id.localeCompare(b.id));
   }
 
+
+  function registerFeatCatalog(definition) {
+    if (!definition || typeof definition !== 'object') throw new TypeError('Catálogo de talentos inválido.');
+    const id = String(definition.id || '').trim();
+    const sourceId = String(definition.sourceId || '').trim();
+    const feats = definition.feats;
+    if (!id || !sourceId) throw new Error('Todo catálogo de talentos precisa de id e sourceId.');
+    if (featCatalogs.has(id)) throw new Error('ID de catálogo de talentos já registrado: ' + id);
+    if (!Array.isArray(feats)) throw new Error('O catálogo "' + id + '" precisa fornecer um array feats.');
+    if (!getSource(sourceId)) throw new Error('O catálogo "' + id + '" referencia a fonte não registrada "' + sourceId + '".');
+
+    const catalog = {
+      order: getSource(sourceId)?.order || 1000,
+      ...definition,
+      id,
+      sourceId,
+      feats
+    };
+    featCatalogs.set(id, catalog);
+    return catalog;
+  }
+
+  function getFeatCatalogs() {
+    return Array.from(featCatalogs.values()).sort((a, b) => (a.order || 1000) - (b.order || 1000) || a.id.localeCompare(b.id));
+  }
+
+  function featStats() {
+    return getFeatCatalogs().map(catalog => {
+      const source = getSource(catalog.sourceId);
+      return {
+        id: catalog.id,
+        sourceId: catalog.sourceId,
+        count: catalog.feats.length,
+        prerequisiteCount: catalog.feats.filter(feat => Array.isArray(feat?.prerequisites) && feat.prerequisites.length).length,
+        repeatableCount: catalog.feats.filter(feat => feat?.repeatable === true).length,
+        label: catalog.label || source?.catalogLabel || source?.homeLabel || source?.shortTitle || source?.title || catalog.id
+      };
+    });
+  }
+
   function equipmentStats() {
     return getEquipmentCatalogs().map(catalog => {
       const source = getSource(catalog.sourceId);
@@ -238,6 +279,9 @@
     registerEquipmentCatalog,
     getEquipmentCatalogs,
     equipmentStats,
+    registerFeatCatalog,
+    getFeatCatalogs,
+    featStats,
     findCatalogForSpell,
     spellPrimarySource,
     spellGroupLabel,

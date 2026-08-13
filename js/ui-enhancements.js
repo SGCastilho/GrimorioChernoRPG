@@ -244,6 +244,7 @@ renderNav = function() {
     +navA('ability-planner',null,'Planejador de Atributos','<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 8h8M8 12h8M8 16h8"/><path d="M10 6v4M14 10v4M11 14v4"/></svg>',route.view==='ability-planner')
     +navA('races',null,'Raças e Subraças','<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19V8l7-4 7 4v11"/><path d="M8 10h8M8 14h8M9 19v-3h6v3"/></svg>',route.view==='races'||route.view==='race')
     +navA('equipment',null,'Equipamentos','<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3l4 4-4 4-4-4zM13 5h8M17 5v14M13 19h8"/><path d="M4 16l5-5 4 4-5 5z"/></svg>',route.view==='equipment')
+    +navA('feats',null,'Talentos','<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5.1 5.6.8-4.1 4 1 5.6-5-2.6-5 2.6 1-5.6-4.1-4 5.6-.8z"/><path d="M9.2 18.2L8 22l4-2 4 2-1.2-3.8"/></svg>',route.view==='feats'||route.view==='feat')
     +'</div>';
   html += '<div class="nav-section"><div class="nav-title">Classes <span class="count">' + allClasses().length + '</span></div>';
 

@@ -1,4 +1,16 @@
-# Grimório D&D 5e PT-BR — versão 5.39.1
+# Grimório D&D 5e PT-BR — versão 5.40.0
+
+## 5.40.0 — Talentos
+
+- Nova seção **Talentos** no menu lateral, posicionada imediatamente abaixo de **Equipamentos**.
+- Adicionados os **42 talentos** do Capítulo 6 do *Livro do Jogador — D&D 5e 2014*, preservando texto integral em PT-BR, pré-requisitos e páginas impressas da fonte.
+- Criada arquitetura de catálogos por fonte com `registerFeatCatalog()` / `getFeatCatalogs()`, permitindo incorporar novos livros sem alterar a lógica da página.
+- A página `#/feats` possui busca, filtro por tipo de pré-requisito e filtro por fonte.
+- Cada talento possui deep link em `#/feat/<id>`, abertura automática do registro-alvo, título contextual da guia e ação para copiar link.
+- A busca global **Ctrl+K** passa a incluir Talentos.
+- `Adepto Elemental` é marcado como repetível; escolhas estruturadas de talentos são registradas como metadados, sem criar automações ou regras ausentes da fonte.
+- Adicionados `data/feats/phb-2014-feats.js`, `js/feat-browser.js` e `tools/validate-feats-5.40.js`.
+
 
 ## 5.39.1 — Arte interna nas páginas de classe
 

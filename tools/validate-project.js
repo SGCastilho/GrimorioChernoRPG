@@ -40,6 +40,7 @@ if (errors.length) finish();
 const sources = registry.getSources();
 const catalogs = registry.getSpellCatalogs();
 const equipmentCatalogs = registry.getEquipmentCatalogs ? registry.getEquipmentCatalogs() : [];
+const featCatalogs = registry.getFeatCatalogs ? registry.getFeatCatalogs() : [];
 const classes = context.GRIMORIO_CLASSES || [];
 const subclasses = context.GRIMORIO_SUBCLASSES || [];
 const progressionStore = context.GRIMORIO_CLASS_PROGRESSIONS || {};
@@ -108,6 +109,34 @@ else {
     }
   }
   ok(`${equipmentTotal} equipamentos validados em ${equipmentCatalogs.length} catálogo(s)`);
+}
+
+
+if (!featCatalogs.length) warn('Nenhum catálogo de talentos foi registrado.');
+else {
+  const featCatalogIds = new Set();
+  const featIds = new Map();
+  let featTotal = 0;
+  for (const catalog of featCatalogs) {
+    if (featCatalogIds.has(catalog.id)) fail(`ID de catálogo de talentos duplicado: ${catalog.id}`);
+    featCatalogIds.add(catalog.id);
+    if (!registry.getSource(catalog.sourceId)) fail(`Catálogo de talentos ${catalog.id} usa fonte inexistente: ${catalog.sourceId}`);
+    if (!Array.isArray(catalog.feats)) { fail(`Catálogo de talentos ${catalog.id} não possui array feats.`); continue; }
+    featTotal += catalog.feats.length;
+    for (const feat of catalog.feats) {
+      if (!feat?.id) fail(`Talento sem id em ${catalog.id}: ${feat?.name || '(sem nome)'}`);
+      if (!feat?.name) fail(`Talento sem name em ${catalog.id}: ${feat?.id || '(sem id)'}`);
+      if (!feat?.description) fail(`Talento sem descrição em ${catalog.id}: ${feat?.id || feat?.name || '(sem id)'}`);
+      if (!feat?.sourcePage) warn(`Talento sem página em ${catalog.id}: ${feat?.id || feat?.name || '(sem id)'}`);
+      if (feat?.id) {
+        const previous = featIds.get(feat.id);
+        if (previous) fail(`ID de talento duplicado entre catálogos: ${feat.id} (${previous} e ${catalog.id})`);
+        else featIds.set(feat.id, catalog.id);
+      }
+      if (feat?.prerequisite && !(feat.prerequisites || []).length) warn(`Talento ${feat.id} possui pré-requisito textual sem estrutura.`);
+    }
+  }
+  ok(`${featTotal} talentos validados em ${featCatalogs.length} catálogo(s)`);
 }
 
 function duplicateIds(items, label) {
