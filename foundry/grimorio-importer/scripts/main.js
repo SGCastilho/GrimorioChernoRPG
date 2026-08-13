@@ -4,6 +4,8 @@ import { materializeBundle, legacyWorldPrototypeStatus, MODULE_ID, IMPORTER_VERS
 import { PACKS, packAvailability, packContentsStatus, defaultPackRuntime, withWritablePacks } from "./pack-storage.js";
 import { registerSpecialRuntimeHooks, specialActorStatus, configureActorSpecialClasses, applySpellcastingAbility, applyDragoneerConcept, rewriteBloodMinisterHpFormula } from "./special-runtime.js";
 import { phase11Support, phase12Support, automationCoverage } from "./feature-automation.js";
+import { validateFeatBundle, validateFeatPackage, isFeatBundle, isFeatPackage, featSupport } from "./feat-validator.js";
+import { materializeFeatBundle } from "./feat-materializer.js";
 
 
 export function phase10Support() {
@@ -42,6 +44,7 @@ export async function status() {
     phase10Support: phase10Support(),
     phase11Support: phase11Support(),
     phase12Support: phase12Support(),
+    featSupport: featSupport(),
     automationCoverage: automationCoverage(),
     environmentMatches: runtime.systemId === "dnd5e" && runtime.systemVersion === TARGET_DND5E && runtime.foundryVersion === TARGET_FOUNDRY,
     packs,
@@ -100,6 +103,60 @@ function notifyResult(result) {
   if (storage?.portableItemGrants) console.info(`[${MODULE_ID}] Item Grants usam UUIDs de compêndio portáveis.`);
 }
 
+function notifyFeatResult(result) {
+  const { stats, bundle } = result;
+  const action = stats.featsCreated ? "criado" : "atualizado";
+  ui.notifications.info(`${bundle.name} ${action} em ${PACKS.feats.label}.`);
+  if (result.warnings?.length) ui.notifications.warn(`${bundle.name}: ${result.warnings.length} observação(ões). Consulte o console.`);
+  console.info(`[${MODULE_ID}] Talento sincronizado em compêndio`, result);
+}
+
+export async function importFeatBundle(bundle, { notify = true } = {}) {
+  if (!game.user?.isGM) throw new Error("Somente um Mestre pode importar Talentos do Grimório.");
+  const validation = validateFeatBundle(bundle, runtimeInfo());
+  if (!validation.ok) throw new Error(validation.errors.join("\n"));
+  const result = await materializeFeatBundle(bundle);
+  result.warnings = [...new Set([...(validation.warnings ?? []), ...(result.warnings ?? [])])];
+  if (notify) notifyFeatResult(result);
+  return result;
+}
+
+export async function importFeatBundles(bundles, { continueOnError = true, notifyEach = true, notifySummary = true } = {}) {
+  if (!game.user?.isGM) throw new Error("Somente um Mestre pode importar Talentos do Grimório.");
+  const list = Array.isArray(bundles) ? bundles : [bundles];
+  const results = []; const failures = [];
+  for (let index = 0; index < list.length; index += 1) {
+    try { results.push(await importFeatBundle(list[index], { notify: notifyEach })); }
+    catch (error) {
+      const failure = { index, name: list[index]?.identity?.name ?? `Talento ${index + 1}`, error };
+      failures.push(failure); console.error(`[${MODULE_ID}] Falha no lote de Talentos`, failure);
+      if (!continueOnError) throw error;
+    }
+  }
+  if (notifySummary && failures.length) ui.notifications.warn(`Grimório Importer: ${results.length} Talento(s) importado(s), ${failures.length} falha(s). Veja o console.`);
+  else if (notifySummary && list.length > 1) ui.notifications.info(`Grimório Importer: lote de Talentos concluído com ${results.length} bundle(s).`);
+  return { imported: results.length, failed: failures.length, results, failures };
+}
+
+export async function importFeatPackage(pkg, { continueOnError = true } = {}) {
+  if (!game.user?.isGM) throw new Error("Somente um Mestre pode importar pacotes de Talentos do Grimório.");
+  const validation = validateFeatPackage(pkg, runtimeInfo());
+  if (!validation.ok) throw new Error(validation.errors.join("\n"));
+  const bundles = [...pkg.bundles].sort((a, b) => (a.source?.sourceId ?? "").localeCompare(b.source?.sourceId ?? "") || (a.identity?.name ?? "").localeCompare(b.identity?.name ?? "", "pt-BR"));
+  ui.notifications.info(`Grimório Importer: iniciando ${pkg.identity?.name ?? "pacote de Talentos"} (${bundles.length} Talentos).`);
+  const packRuntime = defaultPackRuntime();
+  const result = await withWritablePacks(packRuntime, ["feats"], async () =>
+    await importFeatBundles(bundles, { continueOnError, notifyEach: false, notifySummary: false })
+  );
+  result.package = { id: pkg.identity?.id, name: pkg.identity?.name, scope: pkg.identity?.scope, summary: pkg.summary };
+  result.warnings = validation.warnings;
+  if (result.failed) ui.notifications.warn(`Grimório Importer: pacote de Talentos concluído com ${result.imported} importado(s) e ${result.failed} falha(s).`);
+  else ui.notifications.info(`Grimório Importer: ${pkg.identity?.name ?? "pacote de Talentos"} concluído — ${result.imported} Talento(s) sincronizados.`);
+  if (validation.warnings.length) ui.notifications.warn(`Pacote de Talentos com ${validation.warnings.length} observação(ões). Consulte o console.`);
+  console.info(`[${MODULE_ID}] Pacote de Talentos importado`, { validation, result });
+  return result;
+}
+
 export async function importBundle(bundle, { notify = true } = {}) {
   if (!game.user?.isGM) throw new Error("Somente um Mestre pode importar bundles do Grimório.");
   const validation = validateBundle(bundle, runtimeInfo());
@@ -153,7 +210,9 @@ export async function importPackage(pkg, { continueOnError = true } = {}) {
 export async function importPayload(payload) {
   if (isPackage(payload)) return await importPackage(payload);
   if (isBundle(payload)) return await importBundle(payload);
-  throw new Error("JSON não reconhecido: esperado bundle ou pacote Foundry do Grimório.");
+  if (isFeatPackage(payload)) return await importFeatPackage(payload);
+  if (isFeatBundle(payload)) return await importFeatBundle(payload);
+  throw new Error("JSON não reconhecido: esperado bundle ou pacote Foundry de classe/subclasse ou Talento do Grimório.");
 }
 
 export async function importPayloads(payloads, { continueOnError = true } = {}) {
@@ -197,7 +256,9 @@ export function openBundleFilePicker() {
 async function showStatus() {
   const info = await status();
   const state = info.environmentMatches ? "compatível" : "fora do perfil homologado";
-  const packs = info.packsReady ? "3/3 compêndios disponíveis" : `${info.packs.filter(p => p.available).length}/3 compêndios disponíveis`;
+  const totalPacks = info.packs.length;
+  const readyPacks = info.packs.filter(p => p.available).length;
+  const packs = `${readyPacks}/${totalPacks} compêndios disponíveis`;
   const automation = info.automationCoverage;
   ui.notifications.info(`Grimório Importer ${IMPORTER_VERSION}: ${state}; ${packs}. Fase 12: ${automation.profiles} perfis (${automation.classProfiles} de classe + ${automation.subclassProfiles} de subclasse), ${automation.activities} Activities e ${automation.effects} Active Effects.`);
   if (info.legacyWorldPrototype.total) ui.notifications.warn(`Há ${info.legacyWorldPrototype.total} Item(s) do protótipo da Fase 5 no Mundo. Eles não são alterados automaticamente.`);
@@ -295,9 +356,14 @@ Hooks.once("ready", () => {
       importPackage,
       importPayload,
       importPayloads,
+      importFeatBundle,
+      importFeatBundles,
+      importFeatPackage,
       openBundleFilePicker,
       validateBundle,
       validatePackage,
+      validateFeatBundle,
+      validateFeatPackage,
       status,
       compendiumStatus,
       worldPrototypeStatus,
@@ -309,6 +375,7 @@ Hooks.once("ready", () => {
       phase10Support,
       phase11Support,
       phase12Support,
+      featSupport,
       automationCoverage,
       automationCompendiumAudit,
       specialActorStatus,
@@ -320,12 +387,12 @@ Hooks.once("ready", () => {
   }
   const packs = packAvailability(defaultPackRuntime());
   if (game.user?.isGM && packs.some(pack => !pack.available)) ui.notifications.error("Grimório Importer: um ou mais compêndios não foram carregados. Verifique a instalação do módulo.");
-  console.info(`[${MODULE_ID}] Pronto — Fase 12. Foundry ${game.version}; ${game.system?.id} ${game.system?.version}.`, { packs, automation: automationCoverage() });
+  console.info(`[${MODULE_ID}] Pronto — 0.10.0 com Talentos + automação Fase 12. Foundry ${game.version}; ${game.system?.id} ${game.system?.version}.`, { packs, feats: featSupport(), automation: automationCoverage() });
 });
 
 Hooks.on("chatMessage", (_chatLog, message) => {
   const command = String(message ?? "").trim().toLowerCase();
-  if (command === "/grimorio-import" || command === "/grimorio-import-batch" || command === "/grimorio-import-package") { openBundleFilePicker(); return false; }
+  if (command === "/grimorio-import" || command === "/grimorio-import-batch" || command === "/grimorio-import-package" || command === "/grimorio-import-feats") { openBundleFilePicker(); return false; }
   if (command === "/grimorio-status") { void showStatus(); return false; }
   if (command === "/grimorio-packs") { void showPacks(); return false; }
   if (command === "/grimorio-world-preview") { showWorldPrototype(); return false; }
@@ -334,7 +401,7 @@ Hooks.on("chatMessage", (_chatLog, message) => {
   if (command === "/grimorio-special") { showSpecialStatus(); return false; }
   if (command === "/grimorio-configurar") { void configureSelectedActor(); return false; }
   if (command === "/grimorio-help") {
-    ui.notifications.info("Comandos: /grimorio-import (um ou vários JSON), /grimorio-import-batch, /grimorio-import-package, /grimorio-status, /grimorio-packs, /grimorio-automacao, /grimorio-auditoria-automacao, /grimorio-world-preview, /grimorio-special, /grimorio-configurar. Fase 12: expansão de Activities/recursos/Active Effects e auditoria de candidatos em classes e subclasses.");
+    ui.notifications.info("Comandos: /grimorio-import (classes, subclasses ou Talentos; um ou vários JSON), /grimorio-import-feats, /grimorio-import-batch, /grimorio-import-package, /grimorio-status, /grimorio-packs, /grimorio-automacao, /grimorio-auditoria-automacao, /grimorio-world-preview, /grimorio-special, /grimorio-configurar. Talentos 0.10.0: compêndio próprio e reimportação estável. Fase 12: Activities/recursos/Active Effects em classes e subclasses.");
     return false;
   }
   return true;

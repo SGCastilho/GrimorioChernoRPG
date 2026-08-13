@@ -5,7 +5,7 @@ import { dragoneerConceptProfile, SPECIAL_CLASS_RUNTIME } from "./special-class-
 import { applyFeatureAutomation } from "./feature-automation.js";
 
 export { MODULE_ID };
-export const IMPORTER_VERSION = "0.9.3";
+export const IMPORTER_VERSION = "0.10.0";
 
 const ABILITIES = ["str", "dex", "con", "int", "wis", "cha"];
 const ALNUM = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

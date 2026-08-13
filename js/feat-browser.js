@@ -94,7 +94,9 @@
 
   function detailActions(feat) {
     const href = global.routeHref ? global.routeHref('feat', feat.id) : '#/feat/'+encodeURIComponent(feat.id);
-    return '<div class="feat-route-actions"><a class="action-btn" href="'+attr(href)+'" data-grimorio-route>Abrir link do talento ↗</a>'+(typeof global.shareLinkButton === 'function' ? global.shareLinkButton('feat', feat.id) : '')+'</div>';
+    return '<div class="feat-route-actions"><a class="action-btn" href="'+attr(href)+'" data-grimorio-route>Abrir link do talento ↗</a>'
+      +(typeof global.shareLinkButton === 'function' ? global.shareLinkButton('feat', feat.id) : '')
+      +'<button class="action-btn foundry-export-trigger" type="button" onclick="openFoundryFeatExport(\''+attr(feat.id)+'\')"><span class="foundry-export-icon">⇩</span> Exportar Foundry</button></div>';
   }
 
   function featCard(feat, targetId=null) {
@@ -150,6 +152,7 @@
       if (row) { row.open = true; row.scrollIntoView({behavior:'smooth', block:'center'}); }
     }, 0);
     return '<div class="feat-browser"><header class="feat-hero"><div><div class="eyebrow"><span class="dot"></span>Opções de personalização</div><h1 class="page-title">Talentos</h1><p class="lede">Consulte os talentos adicionados ao Grimório com texto integral, pré-requisitos e referência de página. O catálogo é organizado por fonte para receber novos livros sem misturar procedências.</p></div><div class="feat-hero-stats"><div><strong>'+feats.length+'</strong><span>talentos</span></div><div><strong>'+withPrerequisite+'</strong><span>com pré-requisito</span></div><div><strong>'+repeatable+'</strong><span>repetível</span></div><div><strong>'+sources+'</strong><span>fonte</span></div></div></header>'
+      +'<div class="foundry-batch-toolbar foundry-feat-catalog-toolbar"><div><strong>Foundry VTT · Talentos</strong><span>Exporte um talento individual ou os '+feats.length+' talentos integrados em um único pacote para o Grimório Importer.</span></div><button class="action-btn foundry-export-trigger" type="button" onclick="openFoundryFeatCatalogExport()"><span class="foundry-export-icon">⇩</span> Exportar catálogo <b>'+feats.length+'</b></button></div>'
       +'<section class="feat-panel"><div class="feat-toolbar"><label class="feat-search"><span aria-hidden="true">⌕</span><input id="featSearch" value="'+attr(state.q)+'" oninput="GRIMORIO_FEAT_BROWSER.setSearch(this.value)" placeholder="Buscar talento, pré-requisito ou efeito..."></label>'
       +'<label class="feat-select"><span>Pré-requisito</span><select id="featPrerequisiteFilter" onchange="GRIMORIO_FEAT_BROWSER.setPrerequisite(this.value)"><option value="all">Todos</option><option value="none">Sem pré-requisito</option><option value="ability">Atributo mínimo</option><option value="spellcasting">Conjuração</option><option value="proficiency">Proficiência</option><option value="other">Outro</option></select></label>'
       +'<label class="feat-select"><span>Fonte</span><select id="featSourceFilter" onchange="GRIMORIO_FEAT_BROWSER.setSource(this.value)"><option value="all">Todas as fontes</option>'+sourceOptions()+'</select></label>'

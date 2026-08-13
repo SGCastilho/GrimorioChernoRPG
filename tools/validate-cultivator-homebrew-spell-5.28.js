@@ -51,7 +51,7 @@ assert(analysis.document.preparation.method === 'ritual', 'Foundry deve preserva
 assert(analysis.document.range.units === 'm' && analysis.document.range.value === 9, 'Foundry deve preservar alcance de 9 m');
 
 const importerManifest = JSON.parse(fs.readFileSync(path.join(root, 'foundry/grimorio-importer/module.json'), 'utf8'));
-assert(importerManifest.version === '0.9.3', 'Importer embutido deve estar sincronizado em 0.9.3');
+assert(importerManifest.version === '0.10.0', 'Importer embutido deve estar sincronizado em 0.10.0');
 const classOverrides = fs.readFileSync(path.join(root, 'data/export/foundry-class-overrides.js'), 'utf8');
 assert(!classOverrides.includes('0.9.2 ainda não possui CLASS_PROFILE nativo para Lutador de Rua'), 'Aviso obsoleto do Lutador de Rua ainda está presente');
 

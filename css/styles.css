@@ -443,8 +443,8 @@ body.foundry-export-open{overflow:hidden}
 @media(max-width:480px){.foundry-batch-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.foundry-export-actions{flex-direction:column}.foundry-export-actions button{width:100%;justify-content:center}.foundry-export-footnote{text-align:left}}
 /* Foundry VTT — Fase 9: exportação de classes/subclasses */
 .foundry-class-actions{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 4px auto;justify-content:flex-end}
-.foundry-class-actions .foundry-export-trigger b,.foundry-class-catalog-toolbar .foundry-export-trigger b{display:inline-flex;min-width:1.75em;justify-content:center;padding:.08rem .4rem;border-radius:999px;background:rgba(255,255,255,.08);font-size:.78rem}
-.foundry-class-catalog-toolbar{margin:20px 0 18px}
+.foundry-class-actions .foundry-export-trigger b,.foundry-class-catalog-toolbar .foundry-export-trigger b,.foundry-feat-catalog-toolbar .foundry-export-trigger b{display:inline-flex;min-width:1.75em;justify-content:center;padding:.08rem .4rem;border-radius:999px;background:rgba(255,255,255,.08);font-size:.78rem}
+.foundry-class-catalog-toolbar,.foundry-feat-catalog-toolbar{margin:20px 0 18px}
 @media(max-width:760px){.foundry-class-actions{justify-content:stretch;margin-left:0;width:100%}.foundry-class-actions .action-btn{flex:1;justify-content:center}}
 @media(max-width:480px){.foundry-class-actions{flex-direction:column}.foundry-class-actions .action-btn{width:100%}}
 

@@ -1,4 +1,15 @@
-# Auditoria visual — Grimório 5.40.0
+## v5.41.0 — Exportação Foundry de Talentos
+- Abrir `#/feats` e confirmar a barra **Foundry VTT · Talentos** acima do catálogo.
+- Abrir um talento e confirmar o botão **Exportar Foundry** junto às ações de link.
+- Exportar **Alerta** individualmente e confirmar modal com 1 bundle/1 talento e destino `Grimório — Talentos`.
+- Exportar o catálogo completo e confirmar o resumo **42 talentos / 1 fonte / 12 com pré-requisito / 1 repetível**.
+- No Foundry 13.351 + DnD5e 5.3.3, instalar o `grimorio-importer` 0.10.0 e confirmar quatro compêndios: Classes, Subclasses, Características e Talentos.
+- Importar `examples/feats/phb-2014-feats-package.json` com `/grimorio-import` e confirmar 42 Items `feat` dentro da pasta **Livro do Jogador**.
+- Reimportar o mesmo pacote e confirmar ausência de duplicações e preservação dos UUIDs.
+- Confirmar que Classes/Subclasses/Características e diretório de Items do Mundo não recebem documentos durante a importação de Talentos.
+- Conferir `Conjurador de Guerra` (requirements), `Adepto Elemental` (repeatable + escolha de dano) e `Alerta` (p. 167).
+
+# Auditoria visual — Grimório 5.41.0
 
 ## Microtransições
 - Troca de página: fade curto + deslocamento vertical mínimo.

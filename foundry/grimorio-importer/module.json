@@ -1,8 +1,8 @@
 {
   "id": "grimorio-importer",
   "title": "Grimório Importer",
-  "description": "Importador de classes e subclasses do Grimório para compêndios nativos DnD5e, com Advancements portáveis, pacotes JSON, automação mecânica conservadora e organização hierárquica das características por classe/subclasse. Fase 12.2 para Foundry VTT 13.351, com suporte nativo ao Lutador de Rua e Dragão de Dojima.",
-  "version": "0.9.3",
+  "description": "Importador de classes, subclasses e Talentos do Grimório para compêndios nativos DnD5e, com reimportação por IDs estáveis, Advancements portáveis e automação mecânica conservadora. Fase 2 de Talentos para Foundry VTT 13.351 / DnD5e 5.3.3.",
+  "version": "0.10.0",
   "authors": [
     {
       "name": "Projeto Grimório D&D 5e PT-BR"
@@ -78,6 +78,18 @@
         "TRUSTED": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "grimorio-feats",
+      "label": "Grimório — Talentos",
+      "system": "dnd5e",
+      "path": "./packs/grimorio-feats",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "TRUSTED": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -87,7 +99,8 @@
       "packs": [
         "grimorio-classes",
         "grimorio-subclasses",
-        "grimorio-features"
+        "grimorio-features",
+        "grimorio-feats"
       ]
     }
   ],

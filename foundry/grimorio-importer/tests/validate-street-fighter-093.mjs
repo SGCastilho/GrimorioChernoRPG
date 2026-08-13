@@ -16,14 +16,14 @@ const classBundle = readJson(path.join(root, "examples", "street-fighter", "clas
 const subclassBundle = readJson(path.join(root, "examples", "street-fighter", "subclass-dragon-dojima.json"));
 const runtimeInfo = { foundryVersion: "13.351", systemId: "dnd5e", systemVersion: "5.3.3" };
 
-assert(IMPORTER_VERSION === "0.9.3", `IMPORTER_VERSION inesperado: ${IMPORTER_VERSION}`);
+assert(IMPORTER_VERSION === "0.10.0", `IMPORTER_VERSION inesperado: ${IMPORTER_VERSION}`);
 assert(READY_CLASS_IDENTIFIERS.length === 26 && READY_CLASS_IDENTIFIERS.includes("street-fighter"), "Lutador de Rua não entrou na allowlist de 26 classes");
 assert(Object.keys(CLASS_PROFILES).length === 26 && classProfile("street-fighter"), "CLASS_PROFILE do Lutador de Rua ausente");
 assert(phase8Support().counts.subclasses === 381, "Contagem de subclasses deveria ser 381");
 
 const classValidation = validateBundle(classBundle, runtimeInfo);
 assert(classValidation.ok, `Bundle da classe rejeitado: ${classValidation.errors.join("; ")}`);
-assert(classValidation.warnings.some(w => /0\.9\.3/.test(w) && /perfil local homologado/i.test(w)), "Bundle 5.27 com aviso obsoleto do 0.9.2 deveria ser aceito com warning do perfil local 0.9.3");
+assert(classValidation.warnings.some(w => /0\.10\.0/.test(w) && /perfil local homologado/i.test(w)), "Bundle 5.27 com aviso obsoleto do 0.9.2 deveria ser aceito com warning do perfil local 0.10.0");
 const subValidation = validateBundle(subclassBundle, runtimeInfo);
 assert(subValidation.ok, `Bundle do Dragão de Dojima rejeitado: ${subValidation.errors.join("; ")}`);
 

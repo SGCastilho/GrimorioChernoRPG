@@ -1,6 +1,30 @@
-# Grimório Importer — v0.9.3
+# Grimório Importer — v0.10.0
 
 Módulo complementar do **Grimório D&D 5e PT-BR** para **Foundry VTT 13.351 + DnD5e 5.3.3**.
+
+## Atualização 0.10.0 — Talentos
+
+O importador passa a consumir os bundles/pacotes de Talentos produzidos pelo Grimório 5.41.0.
+
+- Novo compêndio **Grimório — Talentos** (`grimorio-importer.grimorio-feats`).
+- Suporte aos schemas `grimorio-foundry-feat-bundle` v1 e `grimorio-foundry-feat-package` v1.
+- O catálogo inicial contém os **42 Talentos do Livro do Jogador 2014**.
+- Cada entrada é criada como Item DnD5e `feat`, preservando descrição, fonte/página, pré-requisito textual, `system.identifier`, escolhas estruturadas e repetibilidade.
+- Os Talentos são organizados em pastas de fonte. A primeira é **Livro do Jogador**.
+- O matching usa `flags.grimorio-importer.grimorioId`; reimportar atualiza o Item existente e preserva o UUID.
+- Nenhum Talento é criado automaticamente no diretório de Items do Mundo.
+- A política de automação é **conservative-description-first**: regras condicionais permanecem no texto até existir um perfil mecânico explícito e testado.
+- `/grimorio-import` detecta automaticamente JSONs de classes/subclasses e de Talentos; `/grimorio-import-feats` é um alias conveniente.
+- `package.json`, `module.json` e `IMPORTER_VERSION` estão sincronizados em **0.10.0**.
+
+### Teste da integração de Talentos
+
+```bash
+node tests/validate-feats-010.mjs
+```
+
+O teste materializa os 42 Talentos em um runtime simulado, valida o compêndio/pasta, confere metadados representativos e executa uma segunda importação para provar idempotência/estabilidade dos UUIDs.
+
 
 ## Atualização 0.9.3 — Lutador de Rua
 
@@ -171,7 +195,7 @@ A fonte utiliza **2d4 Dados de Vida por nível**. O DnD5e representa uma classe 
 
 ## Instalação
 
-Copie a pasta `grimorio-importer` para `Data/modules/`, ative o módulo no Mundo e mantenha os três compêndios declarados em `module.json`.
+Copie a pasta `grimorio-importer` para `Data/modules/`, ative o módulo no Mundo e mantenha os quatro compêndios declarados em `module.json` (Classes, Subclasses, Características e Talentos).
 
 ## Comandos
 

@@ -21,6 +21,13 @@ export const PACKS = Object.freeze({
     collection: `${MODULE_ID}.grimorio-features`,
     label: "Grimório — Características",
     role: "feature"
+  }),
+  feats: Object.freeze({
+    key: "feats",
+    name: "grimorio-feats",
+    collection: `${MODULE_ID}.grimorio-feats`,
+    label: "Grimório — Talentos",
+    role: "feat"
   })
 });
 

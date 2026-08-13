@@ -69,8 +69,8 @@ function loadAppAt(hash, fullRenderStack = false) {
 (async () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
   const moduleManifest = JSON.parse(fs.readFileSync(path.join(root, 'foundry/grimorio-importer/module.json'), 'utf8'));
-  assert(['5.22.1','5.23.0','5.24.0','5.25.0','5.25.1','5.26.0','5.27.0','5.28.0'].includes(manifest.version), 'manifest.json deve preservar a integração granular da Fase 10');
-  assert(['0.6.0','0.7.0','0.8.0','0.9.0','0.9.1','0.9.2','0.9.3'].includes(moduleManifest.version), 'Grimório Importer deve preservar suporte da Fase 10');
+  assert(['5.22.1','5.23.0','5.24.0','5.25.0','5.25.1','5.26.0','5.27.0','5.28.0','5.41.0'].includes(manifest.version), 'manifest.json deve preservar a integração granular da Fase 10');
+  assert(['0.6.0','0.7.0','0.8.0','0.9.0','0.9.1','0.9.2','0.9.3','0.10.0'].includes(moduleManifest.version), 'Grimório Importer deve preservar suporte da Fase 10');
   assert(Number(manifest.foundryClassImporter?.phase) >= 10, 'Manifest deve preservar suporte da Fase 10');
   assert(manifest.foundryClassImporter?.realFoundryPhase9PackageFlowValidated === true, 'Homologação real da Fase 9 não registrada');
 

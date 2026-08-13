@@ -1,5 +1,19 @@
 # Changelog — Grimório Importer
 
+## 0.10.0 — Talentos
+
+- Adicionado compêndio `grimorio-feats` / **Grimório — Talentos**.
+- Adicionados `feat-validator.js` e `feat-materializer.js`.
+- Adicionado suporte aos schemas de bundle/pacote de Talentos v1.
+- Talentos são materializados como Items DnD5e `feat`, com texto/fonte/requisitos e flags estruturadas.
+- Reimportação por `grimorioId` atualiza sem duplicar e preserva UUIDs.
+- Pastas de fonte são gerenciadas por flags e reutilizadas em reimportações.
+- Dispatcher `/grimorio-import` passa a reconhecer payloads de Talentos; adicionado alias `/grimorio-import-feats`.
+- Mantida automação conservadora: nenhuma mecânica contextual é inferida a partir da descrição.
+- Adicionados exemplos do PHB 2014 e teste `validate-feats-010.mjs`.
+- Regressão de classes/subclasses 0.9.3 preservada.
+- `module.json`, `package.json` e `IMPORTER_VERSION` sincronizados em 0.10.0.
+
 ## 0.9.3 — Lutador de Rua
 
 - Adicionado `street-fighter` à lista de classes homologadas e criado `CLASS_PROFILE` dedicado.

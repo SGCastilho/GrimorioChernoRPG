@@ -1,0 +1,39 @@
+{
+  "schema": "grimorio-foundry-feat-bundle",
+  "schemaVersion": 1,
+  "kind": "feat",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-feat-bundle-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "minimumImporterVersion": "0.10.0"
+  },
+  "identity": {
+    "grimorioId": "phb-2014-alerta",
+    "identifier": "phb-2014-alerta",
+    "name": "Alerta"
+  },
+  "source": {
+    "sourceId": "phb-2014",
+    "title": "Livro do Jogador — D&D 5e 2014",
+    "shortTitle": "Livro do Jogador",
+    "chapter": "Capítulo 6 — Opções de Personalização",
+    "pages": "167–172",
+    "page": 167,
+    "rules": "2014"
+  },
+  "feat": {
+    "description": "Sempre a espera de perigo, você ganha os seguintes benefícios:\n\n• Você recebe +5 de bônus em iniciativa.\n• Você não pode ser surpreso enquanto estiver consciente.\n• Outras criaturas não ganham vantagem nas jogadas de ataque contra você por estarem escondidas de você.",
+    "prerequisite": "",
+    "prerequisites": [],
+    "repeatable": false,
+    "choices": [],
+    "foundryPlan": {
+      "itemType": "feat",
+      "featureType": "feat",
+      "storage": "grimorio-feats",
+      "automation": "conservative-description-first"
+    }
+  }
+}

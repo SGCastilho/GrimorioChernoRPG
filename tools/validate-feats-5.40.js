@@ -62,8 +62,8 @@ try {
   ok((rendered.match(/class=\"feat-item\"/g)||[]).length===42,'renderização inicial produz 42 cards de talento');
   ok(rendered.includes('phb-2014-alerta')&&rendered.includes('Adepto Elemental'),'renderização inclui IDs estáveis e talentos do PHB');
 } catch(error) { errors.push('feat-browser runtime: '+error.message); }
-ok(config.includes("APP_VERSION='5.40.0'"),'APP_VERSION é 5.40.0');
-ok(manifest.version==='5.40.0'&&manifest.feats===42,'manifest está sincronizado com 5.40.0 e 42 talentos');
+ok(config.includes("APP_VERSION='5.41.0'"),'APP_VERSION atual é 5.41.0');
+ok(manifest.version==='5.41.0'&&manifest.feats===42,'manifest atual está sincronizado com 5.41.0 e 42 talentos');
 ok(manifest.featsIntegrated===true&&manifest.featCatalogs===1&&manifest.featPrerequisites===12,'manifest registra a integração estrutural de talentos');
 ok(Array.isArray(manifest.deepLinkRoutes)&&manifest.deepLinkRoutes.includes('feats'),'manifest inclui Talentos nas rotas profundas');
 

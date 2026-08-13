@@ -1,4 +1,17 @@
-# Grimório D&D 5e PT-BR — versão 5.40.0
+# Grimório D&D 5e PT-BR — versão 5.41.0
+
+## 5.41.0 — Talentos no Grimório Importer
+
+- **Talentos** agora possuem exportação Foundry individual e em lote diretamente pela página `#/feats`.
+- O transporte usa `grimorio-foundry-feat-bundle` v1 para um talento e `grimorio-foundry-feat-package` v1 para catálogos.
+- O módulo `foundry/grimorio-importer` foi atualizado para **0.10.0**, mantendo o alvo Foundry VTT 13.351 + DnD5e 5.3.3.
+- Novo compêndio **Grimório — Talentos** (`grimorio-importer.grimorio-feats`).
+- Cada talento vira um Item DnD5e `feat` com texto, fonte, página, pré-requisito textual, `system.identifier` e flags de identidade/reimportação.
+- Os metadados estruturados de pré-requisitos, escolhas e `repeatable` são preservados nas flags do módulo. Nesta fase, efeitos contextuais não são transformados automaticamente em Active Effects.
+- A reimportação atualiza pelo `grimorioId`, evita duplicações e preserva UUIDs. Uma pasta por fonte organiza o compêndio para novos livros futuros.
+- `/grimorio-import` reconhece classes/subclasses e Talentos; `/grimorio-import-feats` funciona como alias para o mesmo seletor de JSON.
+- Novos testes: `tools/validate-foundry-feats-5.41.js` e `foundry/grimorio-importer/tests/validate-feats-010.mjs`.
+
 
 ## 5.40.0 — Talentos
 

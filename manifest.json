@@ -1,5 +1,5 @@
 {
-  "version": "5.40.0",
+  "version": "5.41.0",
   "classes": 27,
   "subclasses": 382,
   "classNames": [
@@ -60,8 +60,11 @@
     "Lutador de Rua": 1,
     "Sábio": 1
   },
-  "uiRevision": "Catálogo de Talentos — v5.40.0",
+  "uiRevision": "Importação Foundry de Talentos — v5.41.0",
   "improvements": [
+    "Talentos agora podem ser exportados individualmente ou em catálogo completo para o Grimório Importer.",
+    "Grimório Importer 0.10.0 adiciona o compêndio Grimório — Talentos e reimportação estável por IDs do Grimório.",
+    "Talentos são materializados como Items nativos feat com fonte, página, requisitos e metadados de escolhas/repetibilidade.",
     "Nova seção Talentos adicionada imediatamente abaixo de Equipamentos na navegação lateral.",
     "Catálogo do Livro do Jogador 2014 incorporado com 42 talentos do Capítulo 6, texto integral em PT-BR, página de origem e pré-requisitos estruturados.",
     "Talentos possuem busca, filtros por tipo de pré-requisito e fonte, além de deep links individuais em #/feat/<id>.",
@@ -704,7 +707,7 @@
   "foundryClassImporter": {
     "phase": 12,
     "moduleId": "grimorio-importer",
-    "moduleVersion": "0.9.3",
+    "moduleVersion": "0.10.0",
     "foundry": "13.351",
     "dnd5e": "5.3.3",
     "bundleSchema": "grimorio-foundry-class-bundle@1",
@@ -770,7 +773,8 @@
     "packs": [
       "grimorio-importer.grimorio-classes",
       "grimorio-importer.grimorio-subclasses",
-      "grimorio-importer.grimorio-features"
+      "grimorio-importer.grimorio-features",
+      "grimorio-importer.grimorio-feats"
     ],
     "portableItemGrants": true,
     "worldItemsCreated": false,
@@ -897,8 +901,8 @@
     "streetFighterAutomationProfiles": 27
   },
   "foundryImporter": {
-    "version": "0.9.3",
-    "phase": "12"
+    "version": "0.10.0",
+    "phase": "Talentos — Fase 2"
   },
   "cultivatorClassIntegrated": true,
   "cultivatorSourceTitle": "D&D Wiki — Cultivator (5e Class)",
@@ -985,5 +989,11 @@
   "featPrerequisites": 12,
   "featRepeatable": 1,
   "featSource": "Livro do Jogador — D&D 5e 2014",
-  "featSourcePages": "167–172"
+  "featSourcePages": "167–172",
+  "foundryFeatExport": true,
+  "foundryFeatBundleSchema": "grimorio-foundry-feat-bundle-v1",
+  "foundryFeatPackageSchema": "grimorio-foundry-feat-package-v1",
+  "foundryFeatImporterPack": "grimorio-importer.grimorio-feats",
+  "foundryFeatCount": 42,
+  "foundryFeatReimportStable": true
 }

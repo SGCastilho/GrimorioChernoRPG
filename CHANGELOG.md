@@ -1,3 +1,15 @@
+## 5.41.0
+
+### Foundry — Talentos (Fase 2)
+- Adicionados exportadores JSON de **Talento individual** e **catálogo completo** usando os schemas `grimorio-foundry-feat-bundle` v1 e `grimorio-foundry-feat-package` v1.
+- A página `#/feats` ganhou ações **Exportar Foundry** por talento e uma exportação em lote dos 42 talentos.
+- O `grimorio-importer` foi atualizado para **0.10.0** e passa a declarar um quarto compêndio: **Grimório — Talentos**.
+- Talentos são materializados como Items nativos DnD5e do tipo `feat`, com descrição, fonte/página, requisitos, identifier e flags estáveis do Grimório.
+- Pré-requisitos estruturados, escolhas e repetibilidade são preservados como metadados; mecânicas condicionais permanecem descritivas até receberem automação explícita e homologada.
+- Reimportações localizam o Item por `grimorioId`, atualizam o documento existente e preservam seu UUID.
+- Talentos são organizados por pasta de fonte dentro do compêndio e não criam Items automaticamente no diretório do Mundo.
+- Adicionados exemplos de transporte e testes de regressão para os 42 talentos do PHB 2014.
+
 ## 5.40.0
 
 ### Conteúdo — Talentos
