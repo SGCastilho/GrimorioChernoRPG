@@ -1,3 +1,18 @@
+## 5.45.0
+
+### Conteúdo — Raças e Subraças · Somnus Domina — Blade, Bone, & Benefit
+- Integrado integralmente o **Capítulo VII — Races & Subraces** da edição fornecida, páginas 25–62: **3 raças novas**, cada uma com **3 subraças**, e **81 subraças adicionais** para raças publicadas anteriormente, totalizando **90 novas subraças**.
+- Adicionadas as raças **Animus**, **Drackal** e **Noxiamorfo (Noxiamorph)**, com traços raciais fixos, Traços de Legado, regras de Sangue Misto, Bloodline Traits e as três subraças de cada raça traduzidos integralmente para PT-BR.
+- As 81 subraças adicionais foram vinculadas às respectivas raças-base de *Lyre's Guide to Retia* sem duplicar as raças existentes; cada entrada preserva `originalName`, fonte, página e texto mecânico integral.
+- O catálogo racial passa de **34 para 37 raças** e de **196 para 286 subraças**. Os **928 registros mecânicos** anteriores passam a **1.266 registros** após a integração.
+- A interface de subraças passa a exibir a fonte específica da própria subraça quando ela difere da fonte da raça-base, permitindo que opções de Blade, Bone, & Benefit apareçam corretamente dentro das raças de Lyre.
+- Distâncias no conteúdo traduzido foram localizadas para o padrão métrico do Grimório, mantendo a equivalência mecânica da fonte.
+- Mantida a arquitetura racial existente (`GRIMORIO_RACES` / `GRIMORIO_RACE_RULES`); não foi criada uma rota Foundry para raças, pois o Grimório Importer 0.12.0 ainda não possui contrato de importação para essa categoria.
+
+### Validação
+- Criado `tools/validate-blade-bone-benefit-races-5.45.js` para conferir as 3 raças novas, as 90 subraças da fonte, páginas, nomes originais, textos mecânicos, grupos especiais de Hanyou e integração no `index.html`.
+- `tools/validate-project.js` passa a validar também IDs e estrutura básica do catálogo racial no gate geral do projeto.
+
 ## 5.44.0
 
 ### Conteúdo — Talentos · Lyre's Guide to Retia — Land of Industry

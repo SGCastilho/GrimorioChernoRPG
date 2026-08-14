@@ -148,6 +148,33 @@ else {
   }
 }
 
+const races = context.GRIMORIO_RACES || [];
+if (!races.length) warn('Nenhuma raça foi carregada.');
+else {
+  duplicateIds(races, 'raças');
+  let raceSubraceTotal = 0;
+  let raceTraitTotal = 0;
+  for (const race of races) {
+    if (!race?.name) fail(`Raça sem name: ${race?.id || '(sem id)'}`);
+    if (!Array.isArray(race?.subraces)) fail(`Raça ${race?.id || race?.name} não possui array subraces.`);
+    const subIds = new Set();
+    for (const subrace of race?.subraces || []) {
+      raceSubraceTotal += 1;
+      if (!subrace?.id) fail(`Subraça sem id em ${race.id}: ${subrace?.name || '(sem nome)'}`);
+      if (!subrace?.name) fail(`Subraça sem name em ${race.id}: ${subrace?.id || '(sem id)'}`);
+      if (subrace?.id && subIds.has(subrace.id)) fail(`ID de subraça duplicado em ${race.id}: ${subrace.id}`);
+      if (subrace?.id) subIds.add(subrace.id);
+      if (!Array.isArray(subrace?.traits)) fail(`Subraça ${race.id}/${subrace?.id || subrace?.name} não possui array traits.`);
+      raceTraitTotal += (subrace?.traits || []).length;
+    }
+    for (const bucket of ['coreTraits', 'legacyTraits', 'mixedBloodTraits']) {
+      if (!Array.isArray(race?.[bucket])) fail(`Raça ${race.id} não possui array ${bucket}.`);
+      raceTraitTotal += (race?.[bucket] || []).length;
+    }
+  }
+  ok(`${races.length} raças e ${raceSubraceTotal} subraças validadas (${raceTraitTotal} registros mecânicos)`);
+}
+
 function duplicateIds(items, label) {
   const seen = new Set();
   for (const item of items) {

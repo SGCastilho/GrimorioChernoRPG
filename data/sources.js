@@ -116,6 +116,8 @@
       aliases: ['Blade, Bone, & Benefit', 'Somnus Domina - Blade, Bone, & Benefit'],
       matchIncludes: ['Blade, Bone, & Benefit'],
       about: [
+        'O Capítulo VII — Raças e Subraças está integrado em PT-BR: 3 raças novas (Animus, Drackal e Noxiamorfo), cada uma com 3 subraças, além de 81 subraças adicionais para raças já publicadas em Lyre, totalizando 90 novas subraças nas páginas 25–62.',
+        'As novas opções raciais preservam o sistema de Traços de Legado da 5.19, traços de Sangue Misto, Bloodline Traits, aumentos de atributo, páginas e nomes originais em inglês; distâncias mecânicas foram localizadas para metros no texto do Grimório.',
         'O Capítulo IX está integrado com a classe Ministro de Sangue, sua progressão completa do 1º ao 20º nível e as oito Seitas Genéticas apresentadas pela fonte.',
         'O índice efetivo do Capítulo X enumera 55 subclasses, todas incorporadas em PT-BR. O sumário geral do livro anuncia 59; o Grimório preserva essa divergência documental e não inventa quatro entradas ausentes do índice.',
         'As três subclasses de Cavaleiro Dracônico do Capítulo X — Golpeador Sombrio, Véu da Fortuna e Cavaleiro da Escama Fásica — agora estão vinculadas à classe-base integrada a partir de Zagalhta’s Exolunar Collection.',
