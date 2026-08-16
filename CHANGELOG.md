@@ -1,3 +1,19 @@
+## 5.46.0
+
+### Conteúdo — Raças e Subraças · Somnus Domina — Zagalhta's Exolunar Collection
+- Auditado integralmente o bloco racial do **Capítulo 5 — Character Options** da edição fornecida: regras raciais nas páginas 61–62, cinco raças-base nas páginas 63–76 e subraças adicionais nas páginas 77–110.
+- Adicionadas **5 raças-base** em PT-BR: **Metamorfo (Changeling)**, **Galvan**, **Protovida (Protolife)**, **Scourage** e **Sunling**, preservando lore, traços fixos, Traços de Legado, Sangue Misto, nomes originais e páginas.
+- A fonte adiciona **82 novas subraças**: **15** vinculadas às novas raças e **67** opções exolunares para **31 raças-base** já existentes. Metamorfo permanece sem subraças, como declarado explicitamente pelo livro.
+- Integrados os cinco **Traços de Legado Exolunares Universais** da página 62: Pulmões Cósmicos, Salto Gravitacional, Resistência Espacial, Magia do Vazio e Movimento 0-G.
+- Estruturas especiais foram preservadas: Heranças positivas/prejudiciais de Hanyou, Magia Elemental de Primordia, Legado Amaldiçoado de Hádislin, magias de Firbolg e a tabela d12 de mutações do Orc Mutaliate.
+- O catálogo racial passa de **37 para 42 raças**, de **286 para 368 subraças** e de **1.266 para 1.615 registros mecânicos**.
+- A interface racial agora representa corretamente uma raça sem subraças e torna visível a existência dos Traços de Legado Exolunares Universais.
+- Mantida a arquitetura `GRIMORIO_RACES` / `GRIMORIO_RACE_RULES`; não foi criada exportação Foundry para raças, pois o Grimório Importer 0.12.0 não possui contrato para essa categoria.
+
+### Validação
+- Criado `tools/validate-zagalhta-races-5.46.js` para conferir as cinco raças-base, as 82 subraças da fonte, as 67 associações com raças preexistentes, páginas, provenance, estruturas especiais e ordem de carregamento.
+- O gate geral `tools/validate-project.js` permanece sem avisos após a expansão.
+
 ## 5.45.0
 
 ### Conteúdo — Raças e Subraças · Somnus Domina — Blade, Bone, & Benefit

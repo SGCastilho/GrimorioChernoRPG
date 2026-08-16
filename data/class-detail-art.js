@@ -67,6 +67,109 @@
       overlay: 0.80
     },
     
+    'warlock': {
+      image: 'https://imgur.com/FOKlsbz.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'cleric': {
+      image: 'https://imgur.com/rX5MT5P.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'rogue': {
+      image: 'https://imgur.com/3Roh6zI.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'wizard': {
+      image: 'https://imgur.com/R57iD3e.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'monk': {
+      image: 'https://imgur.com/nSCERnq.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'ranger': {
+      image: 'https://imgur.com/icLUFq0.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'artificer': {
+      image: 'https://imgur.com/dz7vWh1.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'cultivator-dandwiki': {
+      image: 'https://imgur.com/RyjaPJK.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'tamer-ryoko': {
+      image: 'https://imgur.com/XrkEiEB.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'spellblade': {
+      image: 'https://imgur.com/rJLKFKQ.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'sage-homebrew': {
+      image: 'https://imgur.com/PMcUHdz.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'dragoneer': {
+      image: 'https://imgur.com/m9mZDyk.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'frame-pilot': {
+      image: 'https://imgur.com/CosNKDp.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'favored-soul-retia': {
+      image: 'https://imgur.com/nFqQZ3a.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'inscriptor-retia': {
+      image: 'https://imgur.com/BJggrrw.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'petal-knight-retia': {
+      image: 'https://imgur.com/OVU2QNm.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'sword-saint-retia': {
+      image: 'https://imgur.com/42s3LjJ.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+
   };
 
   function clamp(value,min,max,fallback){

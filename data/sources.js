@@ -139,6 +139,9 @@
       aliases: ["Zagalhta's Exolunar Collection", 'Zagalhta’s Exolunar Collection', 'Somnus Domina — Zagalhta’s Exolunar Collection'],
       matchIncludes: ["Zagalhta's Exolunar Collection", 'Zagalhta’s Exolunar Collection'],
       about: [
+        'O Capítulo 5 — Character Options passa a incluir integralmente as opções raciais da fonte: 5 raças-base (Metamorfo/Changeling, Galvan, Protovida/Protolife, Scourage e Sunling), 15 subraças próprias dessas raças e 67 subraças adicionais para povos já existentes, totalizando 82 novas subraças em PT-BR.',
+        'As regras raciais exolunares da 5.19 foram preservadas, incluindo Traços de Legado, Sangue Misto e os cinco Traços de Legado Exolunares Universais da página 62: Pulmões Cósmicos, Salto Gravitacional, Resistência Espacial, Magia do Vazio e Movimento 0-G.',
+        'Metamorfo é preservado sem subraças, conforme a própria fonte declara; Galvan possui 4 subraças, Protovida 3, Scourage 4 e Sunling 4. As subraças adicionais mantêm a fonte e página próprias mesmo quando anexadas a uma raça-base publicada em Lyre.',
         'O Capítulo 6 está integrado com duas classes completas em PT-BR: Cavaleiro Dracônico (Dragoneer) e Piloto de Frame (Frame Pilot), ambas com progressão estruturada do 1º ao 20º nível.',
         'O Cavaleiro Dracônico preserva sua arquitetura modular: nove Conceitos Centrais alteram Dados de Vida, salvaguardas, proficiências e progressão de conjuração. A classe também mantém os 19 Tipos de Encarnação e suas regras próprias.',
         'O Piloto de Frame preserva o subsistema de pilotagem da fonte e inclui cinco Designações Tecnológicas: Coordenador, Escaramuçador, Soldado de Assalto, Tecnocarregador e Manipulador de Vórtice.',

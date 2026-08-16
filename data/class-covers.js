@@ -35,7 +35,7 @@
       overlay: 0.80
     },
         'monk': {
-      image: 'https://imgur.com/RAqzs08.png',
+      image: 'https://i.imgur.com/iGTvNiD.png',
       position: 'center 10%',
       blur: 2,
       overlay: 0.80
@@ -118,6 +118,61 @@
       blur: 2,
       overlay: 0.80
     },
+    'wizard': {
+      image: 'https://imgur.com/Kk9xnGp.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'ranger': {
+      image: 'https://imgur.com/ss2W8ut.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'cultivator-dandwiki': {
+      image: 'https://imgur.com/FaaGJ15.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'tamer-ryoko': {
+      image: 'https://imgur.com/4pSzY00.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'dragoneer': {
+      image: 'https://imgur.com/v3CLrkA.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'frame-pilot': {
+      image: 'https://imgur.com/6bZEFWr.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'favored-soul-retia': {
+      image: 'https://imgur.com/XTuYXRu.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'inscriptor-retia': {
+      image: 'https://imgur.com/pYiay6C.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+    'sword-saint-retia': {
+      image: 'https://imgur.com/42s3LjJ.png',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+
   };
 
   function imgurParts(url){

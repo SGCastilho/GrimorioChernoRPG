@@ -1,5 +1,5 @@
 {
-  "version": "5.45.0",
+  "version": "5.46.0",
   "classes": 27,
   "subclasses": 382,
   "classNames": [
@@ -60,8 +60,12 @@
     "Lutador de Rua": 1,
     "Sábio": 1
   },
-  "uiRevision": "Raças de Blade, Bone, & Benefit — v5.45.0",
+  "uiRevision": "Raças de Zagalhta's Exolunar Collection — v5.46.0",
   "improvements": [
+    "Zagalhta's Exolunar Collection: o Capítulo 5 — Character Options integra 5 raças-base em PT-BR (Metamorfo/Changeling, Galvan, Protovida/Protolife, Scourage e Sunling) e 82 novas subraças.",
+    "Das 82 subraças, 15 pertencem às novas raças e 67 são opções exolunares anexadas a 31 raças-base já publicadas, preservando originalName, fonte, página, Bloodline Trait e mecânicas integrais.",
+    "O catálogo racial passa a 42 raças, 368 subraças e 1.615 registros mecânicos; Metamorfo permanece corretamente com zero subraças, conforme a fonte.",
+    "As regras raciais exolunares incluem os cinco Traços de Legado Universais da página 62 e mantêm a arquitetura GRIMORIO_RACES/GRIMORIO_RACE_RULES sem criar uma rota Foundry inexistente para raças.",
     "Blade, Bone, & Benefit: o Capítulo VII — Races & Subraces (p. 25–62) foi integrado em PT-BR com 3 raças novas e 90 novas subraças.",
     "Animus, Drackal e Noxiamorfo foram adicionados com seus traços fixos, Traços de Legado, Sangue Misto e três subraças cada; outras 81 subraças foram anexadas às raças-base de Lyre.",
     "O catálogo racial passa a 37 raças, 286 subraças e 1.266 registros mecânicos; a interface agora preserva a fonte específica das subraças adicionadas por livros posteriores.",
@@ -957,15 +961,15 @@
   ],
   "abilityPlannerPersistence": "localStorage",
   "racesIntegrated": true,
-  "races": 37,
-  "raceSubraces": 286,
+  "races": 42,
+  "raceSubraces": 368,
   "racialLegacyTraitSystem": true,
   "racialLegacyTraitChoices": 2,
   "racialMixedBloodPlanner": true,
-  "racialSource": "Lyre's Guide to Retia — Land of Industry + Somnus Domina — Blade, Bone, & Benefit",
-  "racialSourcePages": "Lyre 193–318; Blade, Bone, & Benefit 25–62",
-  "raceTraitRecords": 1266,
-  "racesTextReviewed": 37,
+  "racialSource": "Lyre's Guide to Retia — Land of Industry + Somnus Domina — Blade, Bone, & Benefit + Somnus Domina — Zagalhta's Exolunar Collection",
+  "racialSourcePages": "Lyre 193–318; Blade, Bone, & Benefit 25–62; Zagalhta 61–110 (raças 63–76; subraças 77–110)",
+  "raceTraitRecords": 1615,
+  "racesTextReviewed": 42,
   "equipmentIntegrated": true,
   "equipmentCatalogs": 3,
   "equipmentItems": 96,
@@ -1044,5 +1048,9 @@
   "featRyokoRacial": 13,
   "foundryFeatImporterStable": "0.12.0",
   "featLyreCount": 28,
-  "featLyreGeneral": 28
+  "featLyreGeneral": 28,
+  "raceZagalhtaNewRaces": 5,
+  "raceZagalhtaSubraces": 82,
+  "raceZagalhtaAdditionalSubraces": 67,
+  "raceZagalhtaUniversalLegacyTraits": 5
 }
