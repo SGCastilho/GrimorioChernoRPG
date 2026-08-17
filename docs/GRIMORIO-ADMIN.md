@@ -1,12 +1,12 @@
-# Grimório Admin 5.51.0
+# Grimório Admin 5.52.0
 
-O Grimório Admin é um CMS Git-backed para Cover e Detail Art das classes. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
+O Grimório Admin é um CMS Git-backed para Cover e Detail Art das classes, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
 
 ## Arquitetura do MVP
 
 ```text
 /admin (HTML/CSS/JS sem secrets)
-  → /api/admin/login | session | logout | class-art
+  → /api/admin/login | session | logout | class-art | history
   → sessão HMAC + CSRF + validação server-side
   → editor estrutural AST Acorn
   → RepositoryService
@@ -18,6 +18,14 @@ O Grimório Admin é um CMS Git-backed para Cover e Detail Art das classes. O na
 A allowlist server-side fixa liga o editor somente a `data/class-covers.js` e `data/class-detail-art.js`. O cliente não envia caminhos. A transformação substitui apenas os valores literais da entrada escolhida, reanalisa o JavaScript e confirma que outros IDs e campos não mudaram.
 
 As classes vêm de `manifest.classIndex`, que o gate do projeto valida contra `GRIMORIO_CLASSES`. Não existe uma lista manual própria do Admin.
+
+## Histórico read-only
+
+Em Production com modo `github`, `/admin/history` consulta os 100 commits mais recentes da branch configurada e retorna até 50 commits cujo assunto começa com `Grimório Admin:`. A filtragem e a redução dos campos acontecem no servidor; o navegador recebe somente SHA, assunto, autor sem e-mail, data, estado de verificação e URL construída para o repositório configurado.
+
+O endpoint `GET /api/admin/history` exige sessão administrativa. A operação de listagem requer apenas `Contents: Read`, já incluída na permissão `Contents: Read and write` usada pelo editor. Nenhuma variável ou permissão adicional é necessária.
+
+Development e Preview em modo `mock` não consultam o GitHub e não fabricam dados de histórico. A página mostra esse estado explicitamente.
 
 ## Variáveis de ambiente
 
@@ -108,6 +116,8 @@ GRIMORIO_ADMIN_WRITE_MODE=mock
 
 Abra `http://127.0.0.1:3000/admin`, faça login, selecione uma classe e teste o preview. Salvar deve informar “Simulação concluída”; nenhum mapa deve mudar no disco e, após recarregar, os valores originais devem retornar.
 
+Em `/admin/history`, o ambiente local deve informar que a consulta está desativada no modo mock.
+
 Validações:
 
 ```sh
@@ -129,13 +139,14 @@ O primeiro commit real deve ser feito somente depois da revisão do código e da
 6. confirme que somente a entrada e os campos escolhidos mudaram;
 7. acompanhe o deployment automático da Vercel;
 8. confirme a imagem no site público;
-9. se necessário, reverta pelo histórico normal do GitHub.
+9. abra `/admin/history` e confirme que o novo commit aparece na listagem;
+10. se necessário, reverta pelo histórico normal do GitHub.
 
 ## Limitações atuais
 
 - um administrador e uma senha, sem papéis ou recuperação de senha;
 - sem upload binário: apenas URL HTTPS permitida ou arquivo `assets/` já versionado;
-- histórico é um placeholder, sem consulta de commits;
+- histórico sem paginação: considera os 100 commits mais recentes da branch e exibe até 50 commits administrativos;
 - sem fluxo por pull request para branch protegida;
 - sem rate limit distribuído; recomenda-se configurar Vercel Firewall para limitar tentativas de login;
 - próximos editores devem criar validadores e serializadores próprios, reutilizando autenticação, cliente API e `RepositoryService`.

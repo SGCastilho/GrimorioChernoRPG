@@ -1,3 +1,13 @@
+## 5.52.0
+
+### Grimório Admin — Histórico Git-backed
+- Implementada a área `/admin/history` com consulta read-only dos commits recentes criados pelo Grimório Admin.
+- A listagem usa a branch configurada, filtra no servidor mensagens iniciadas por `Grimório Admin:` e expõe somente SHA, assunto, autor, data, verificação e link seguro do commit.
+- O modo mock permanece offline e informa claramente que Development e Preview não consultam o GitHub.
+- A API `GET /api/admin/history` exige sessão administrativa e reutiliza a permissão existente `Contents: Read and write`, sem novos secrets ou privilégios.
+- Adicionados estados de carregamento, vazio e falha, atualização manual, layout responsivo e testes de autenticação, filtragem e sanitização da resposta GitHub.
+- Conteúdos, IDs, mapas de arte e `foundry/grimorio-importer` permanecem inalterados.
+
 ## 5.51.0
 
 ### Grimório Admin — MVP Git-backed

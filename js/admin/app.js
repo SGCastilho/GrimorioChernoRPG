@@ -1,5 +1,6 @@
 import { adminRequest, AdminApiError, setCsrfToken } from './api-client.js';
 import { renderClassArtEditor } from './class-art-editor.js';
+import { renderHistoryView } from './history-view.js';
 import { registerRoute, startRouter } from './router.js';
 
 const shell = document.querySelector('#admin-app');
@@ -126,10 +127,10 @@ function renderDashboard() {
     editor.href = '/admin/class-art';
     editor.dataset.adminRoute = '';
     editor.append(element('span', 'admin-card-kicker', 'MVP'), element('h2', '', 'Artes de Classes'), element('p', '', 'Cover e Detail Art das 27 classes, com preview, confirmação e controle de conflito.'));
-    const history = element('a', 'admin-dashboard-card admin-dashboard-card-muted');
+    const history = element('a', 'admin-dashboard-card');
     history.href = '/admin/history';
     history.dataset.adminRoute = '';
-    history.append(element('span', 'admin-card-kicker', 'Preparado'), element('h2', '', 'Histórico'), element('p', '', 'Área reservada para listar commits do Grimório Admin em uma fase futura.'));
+    history.append(element('span', 'admin-card-kicker', 'Auditoria'), element('h2', '', 'Histórico'), element('p', '', 'Consulte os commits recentes criados pelo Grimório Admin diretamente no GitHub.'));
     grid.append(editor, history);
     const mode = element('p', `admin-mode admin-mode-${session.mode}`, session.mode === 'github' ? 'Production: escrita GitHub habilitada' : 'Ambiente seguro: modo mock');
     content.append(grid, mode);
@@ -146,10 +147,8 @@ function renderArt() {
 
 function renderHistory() {
   return requireSession(async () => {
-    setTitle('Histórico');
-    const content = element('section', 'admin-empty');
-    content.append(element('p', 'admin-eyebrow', 'Próximo módulo'), element('h1', '', 'Histórico'), element('p', 'admin-lede', 'Esta rota está preparada para uma futura listagem dos commits criados pelo Grimório Admin. Nenhuma consulta adicional ao GitHub é feita neste MVP.'));
-    adminLayout(content);
+    const main = adminLayout(element('p', 'admin-loading', 'Carregando histórico…'));
+    await renderHistoryView(main, setTitle);
   });
 }
 

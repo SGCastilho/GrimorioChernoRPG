@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { authenticate, createSession, csrfToken, hashPassword, sessionCookie, verifyPassword } from '../../api/_lib/admin/auth.mjs';
 import { GET as classArtGet, POST as classArtPost } from '../../api/admin/class-art.mjs';
+import { GET as historyGet } from '../../api/admin/history.mjs';
 import { POST as login } from '../../api/admin/login.mjs';
 import { POST as logout } from '../../api/admin/logout.mjs';
 import { GET as getSession } from '../../api/admin/session.mjs';
@@ -53,6 +54,11 @@ test('login, consulta de sessão, CSRF e logout funcionam ponta a ponta', async 
   assert.match(cookie, /HttpOnly/);
   const sessionResponse = await getSession(new Request(`${origin}/api/admin/session`, { headers: { cookie } }));
   assert.equal((await sessionResponse.json()).authenticated, true);
+  const historyResponse = await historyGet(new Request(`${origin}/api/admin/history`, { headers: { cookie } }));
+  const historyBody = await historyResponse.json();
+  assert.equal(historyResponse.status, 200);
+  assert.equal(historyBody.available, false);
+  assert.deepEqual(historyBody.commits, []);
   const rejected = await logout(new Request(`${origin}/api/admin/logout`, { method: 'POST', headers: { origin, cookie, 'x-csrf-token': 'invalid' }, body: '{}' }));
   assert.equal(rejected.status, 403);
   const accepted = await logout(new Request(`${origin}/api/admin/logout`, { method: 'POST', headers: { origin, cookie, 'x-csrf-token': body.csrfToken }, body: '{}' }));
@@ -66,6 +72,8 @@ test('sessão ausente é pública, mas APIs de escrita bloqueiam anônimo, CSRF 
   assert.equal((await publicSession.json()).authenticated, false);
   const anonymous = await classArtGet(new Request(`${origin}/api/admin/class-art`));
   assert.equal(anonymous.status, 401);
+  const anonymousHistory = await historyGet(new Request(`${origin}/api/admin/history`));
+  assert.equal(anonymousHistory.status, 401);
   const created = createSession();
   const cookie = sessionCookie(created.token);
   const invalidCsrf = await classArtPost(new Request(`${origin}/api/admin/class-art`, { method: 'POST', headers: { origin, cookie, 'x-csrf-token': 'invalid' }, body: '{}' }));

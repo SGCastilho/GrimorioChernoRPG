@@ -11,7 +11,8 @@ const functions = new Map([
   ['/api/admin/login', await import('../api/admin/login.mjs')],
   ['/api/admin/logout', await import('../api/admin/logout.mjs')],
   ['/api/admin/session', await import('../api/admin/session.mjs')],
-  ['/api/admin/class-art', await import('../api/admin/class-art.mjs')]
+  ['/api/admin/class-art', await import('../api/admin/class-art.mjs')],
+  ['/api/admin/history', await import('../api/admin/history.mjs')]
 ]);
 const mime = {
   '.html': 'text/html; charset=utf-8',

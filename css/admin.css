@@ -300,6 +300,43 @@ h1 { margin-bottom: .8rem; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.0
 
 .admin-empty { max-width: 760px; }
 
+.admin-history { display: grid; gap: 1.25rem; }
+.admin-history-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .9rem 1rem;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: .7rem;
+  background: rgba(255,255,255,.035);
+}
+.admin-history-toolbar p { margin: 0; color: var(--admin-muted); overflow-wrap: anywhere; }
+.admin-history-list { display: grid; gap: .8rem; margin: 0; padding: 0; list-style: none; }
+.admin-history-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: .75rem 1rem;
+  align-items: center;
+  padding: 1.15rem;
+  border: 1px solid var(--admin-line);
+  border-radius: .8rem;
+  background: linear-gradient(135deg, rgba(23,31,45,.88), rgba(13,18,27,.9));
+}
+.admin-history-item-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; min-width: 0; }
+.admin-history-item h2 { margin: 0; overflow-wrap: anywhere; font-size: 1.05rem; line-height: 1.35; }
+.admin-history-sha { flex: none; color: var(--admin-gold-bright); font-size: .78rem; }
+.admin-history-meta { grid-column: 1; margin: 0; color: var(--admin-muted); font-size: .83rem; }
+.admin-history-item > a { grid-column: 2; grid-row: 1 / span 2; text-decoration: none; }
+.admin-history-notice {
+  padding: 1.3rem;
+  border: 1px solid var(--admin-line);
+  border-radius: .8rem;
+  background: rgba(17,23,34,.82);
+}
+.admin-history-notice h2 { margin-bottom: .5rem; }
+.admin-history-notice p { margin: 0; color: var(--admin-muted); line-height: 1.55; }
+
 @media (max-width: 800px) {
   .admin-header { grid-template-columns: 1fr auto; }
   .admin-nav { grid-column: 1 / -1; justify-content: flex-start; order: 3; overflow-x: auto; padding-top: .4rem; }
@@ -316,6 +353,9 @@ h1 { margin-bottom: .8rem; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.0
   .admin-diff-list { grid-template-columns: 1fr; gap: .25rem; }
   .admin-diff-list dd { margin-bottom: .7rem; }
   .admin-dialog-actions { flex-direction: column-reverse; }
+  .admin-history-toolbar, .admin-history-item, .admin-history-item-heading { align-items: stretch; flex-direction: column; }
+  .admin-history-item { display: flex; }
+  .admin-history-item > a { width: 100%; text-align: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {

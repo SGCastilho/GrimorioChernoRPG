@@ -16,16 +16,20 @@ const required = [
   'css/admin.css',
   'js/admin/app.js',
   'js/admin/class-art-editor.js',
+  'js/admin/history-view.js',
   'api/admin/login.mjs',
   'api/admin/logout.mjs',
   'api/admin/session.mjs',
   'api/admin/class-art.mjs',
+  'api/admin/history.mjs',
   'api/_lib/admin/auth.mjs',
   'api/_lib/admin/class-art-service.mjs',
+  'api/_lib/admin/history-service.mjs',
   'api/_lib/admin/art-source.mjs',
   'api/_lib/admin/repository.mjs',
   'tests/admin/auth-api.test.mjs',
   'tests/admin/repository-service.test.mjs',
+  'tests/admin/history.test.mjs',
   'docs/GRIMORIO-ADMIN.md',
   '.env.example',
   'vercel.json',
@@ -38,7 +42,7 @@ const manifest = JSON.parse(read('manifest.json'));
 const packageJson = JSON.parse(read('package.json'));
 const packageLock = exists('package-lock.json') ? JSON.parse(read('package-lock.json')) : {};
 const vercel = JSON.parse(read('vercel.json'));
-check(manifest.version === '5.51.0' && packageJson.version === '5.51.0' && packageLock.version === '5.51.0' && read('js/config.js').includes("APP_VERSION='5.51.0'"), 'versão 5.51.0 sincronizada');
+check(manifest.version === '5.52.0' && packageJson.version === '5.52.0' && packageLock.version === '5.52.0' && read('js/config.js').includes("APP_VERSION='5.52.0'"), 'versão 5.52.0 sincronizada');
 check(packageJson.dependencies?.acorn === '8.18.0', 'Acorn 8.18.0 fixado como dependência de produção');
 check(Array.isArray(manifest.classIndex) && manifest.classIndex.length === manifest.classes && manifest.classes === 27, 'manifest.classIndex preserva as 27 classes reais');
 
@@ -54,20 +58,23 @@ const serverFiles = [
   'api/_lib/admin/validation.mjs',
   'api/_lib/admin/art-source.mjs',
   'api/_lib/admin/repository.mjs',
-  'api/_lib/admin/class-art-service.mjs'
+  'api/_lib/admin/class-art-service.mjs',
+  'api/_lib/admin/history-service.mjs'
 ];
 const serverSource = serverFiles.map(read).join('\n');
 check(serverSource.includes("path: 'data/class-covers.js'") && serverSource.includes("path: 'data/class-detail-art.js'"), 'allowlist fixa contém os dois mapas de classe');
 check(!/\beval\s*\(|\bnew Function\s*\(|node:vm/.test(serverSource), 'backend não usa avaliação dinâmica');
 check(serverSource.includes('force: false') && serverSource.includes("writeMode() === 'github'"), 'commit sem force e modo real fail-closed');
 check(serverSource.includes("'X-GitHub-Api-Version': '2026-03-10'"), 'versão GitHub REST fixada');
+check(serverSource.includes('/commits?sha=') && serverSource.includes("message.startsWith('Grimório Admin:')"), 'histórico GitHub é filtrado no servidor');
 
-const publicFiles = ['admin/index.html', 'css/admin.css', 'js/admin/api-client.js', 'js/admin/app.js', 'js/admin/class-art-editor.js', 'js/admin/confirm-dialog.js', 'js/admin/router.js'];
+const publicFiles = ['admin/index.html', 'css/admin.css', 'js/admin/api-client.js', 'js/admin/app.js', 'js/admin/class-art-editor.js', 'js/admin/history-view.js', 'js/admin/confirm-dialog.js', 'js/admin/router.js'];
 const publicSource = publicFiles.map(read).join('\n');
 for (const forbidden of ['GITHUB_TOKEN', 'GRIMORIO_ADMIN_PASSWORD_HASH', 'GRIMORIO_SESSION_SECRET', 'localStorage', 'sessionStorage']) {
   check(!publicSource.includes(forbidden), `frontend não contém ${forbidden}`);
 }
 check(publicSource.includes('Pré-visualizar') && publicSource.includes('Confirmar e salvar') && publicSource.includes('scale'), 'preview, confirmação e scale presentes');
+check(publicSource.includes('Abrir commit no GitHub') && publicSource.includes("adminRequest('history')"), 'interface de histórico read-only presente');
 check(!publicSource.includes('data/class-covers.js') && !publicSource.includes('data/class-detail-art.js'), 'frontend não escolhe paths de arquivos');
 
 const rewrites = vercel.rewrites || [];
@@ -83,7 +90,7 @@ check(read('docs/GRIMORIO-ADMIN.md').includes('Contents: Read and write') && rea
 for (const item of passed) console.log(`✓ ${item}`);
 if (errors.length) {
   for (const item of errors) console.error(`✗ ${item}`);
-  console.error(`Admin 5.51.0 reprovado: ${errors.length} erro(s).`);
+  console.error(`Admin 5.52.0 reprovado: ${errors.length} erro(s).`);
   process.exit(1);
 }
-console.log(`Admin 5.51.0 aprovado: ${passed.length} verificações, 0 erros, 0 avisos.`);
+console.log(`Admin 5.52.0 aprovado: ${passed.length} verificações, 0 erros, 0 avisos.`);

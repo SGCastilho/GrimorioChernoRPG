@@ -7,6 +7,8 @@ import { sourceHash } from './art-source.mjs';
 const encodedPath = value => String(value).split('/').map(encodeURIComponent).join('/');
 
 export class MockRepositoryService {
+  historyAvailable = false;
+
   async readSnapshot() {
     const files = {};
     for (const filePath of REPOSITORY_FILES) {
@@ -25,9 +27,15 @@ export class MockRepositoryService {
       files: Object.fromEntries(Object.entries(files).map(([filePath, content]) => [filePath, `mock-${sourceHash(content)}`]))
     };
   }
+
+  async listAdminCommits() {
+    return { branch: null, repository: null, commits: [] };
+  }
 }
 
 export class GitHubRepositoryService {
+  historyAvailable = true;
+
   constructor(config = githubConfig(), fetchImplementation = globalThis.fetch) {
     this.config = config;
     this.fetch = fetchImplementation;
@@ -100,6 +108,37 @@ export class GitHubRepositoryService {
       commitUrl: commit.html_url || `https://github.com/${this.config.owner}/${this.config.repo}/commit/${commit.sha}`,
       message,
       files: Object.fromEntries(blobEntries.map(({ filePath, sha }) => [filePath, sha]))
+    };
+  }
+
+  async listAdminCommits({ limit = 50 } = {}) {
+    const maximum = Number.isInteger(limit) ? Math.min(Math.max(limit, 1), 50) : 50;
+    const data = await this.request(`/commits?sha=${encodeURIComponent(this.config.branch)}&per_page=100`);
+    if (!Array.isArray(data)) fail(502, 'INVALID_GITHUB_RESPONSE', 'O GitHub retornou um histórico em formato inesperado.');
+    const commits = [];
+    for (const item of data) {
+      const sha = String(item?.sha || '');
+      const message = String(item?.commit?.message || '').split(/\r?\n/, 1)[0].trim();
+      if (!/^[0-9a-f]{7,64}$/i.test(sha) || !message.startsWith('Grimório Admin:')) continue;
+      const rawDate = item?.commit?.committer?.date || item?.commit?.author?.date;
+      const timestamp = Date.parse(rawDate);
+      if (!Number.isFinite(timestamp)) continue;
+      const author = String(item?.author?.login || item?.commit?.author?.name || item?.commit?.committer?.name || 'GitHub').trim().slice(0, 100) || 'GitHub';
+      commits.push({
+        sha,
+        shortSha: sha.slice(0, 7),
+        message: message.slice(0, 200),
+        author,
+        committedAt: new Date(timestamp).toISOString(),
+        verified: item?.commit?.verification?.verified === true,
+        url: `https://github.com/${encodeURIComponent(this.config.owner)}/${encodeURIComponent(this.config.repo)}/commit/${sha}`
+      });
+      if (commits.length >= maximum) break;
+    }
+    return {
+      branch: this.config.branch,
+      repository: `${this.config.owner}/${this.config.repo}`,
+      commits
     };
   }
 }
