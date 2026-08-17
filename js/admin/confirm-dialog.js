@@ -5,13 +5,13 @@ function element(name, className, text) {
   return node;
 }
 
-export function confirmChanges(className, differences) {
+export function confirmChanges(className, differences, entityLabel = 'Classe') {
   return new Promise(resolve => {
     const previouslyFocused = document.activeElement;
     const dialog = element('dialog', 'admin-dialog');
     const form = element('form');
     form.method = 'dialog';
-    form.append(element('h2', '', 'Confirmar alteração?'), element('p', '', `Classe: ${className}`));
+    form.append(element('h2', '', 'Confirmar alteração?'), element('p', '', `${entityLabel}: ${className}`));
     const list = element('dl', 'admin-diff-list');
     for (const difference of differences) {
       const label = element('dt', '', difference.label);

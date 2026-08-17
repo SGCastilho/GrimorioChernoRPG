@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { githubConfig, REPOSITORY_FILES, writeMode } from './config.mjs';
+import { ALLOWED_REPOSITORY_FILES, githubConfig, REPOSITORY_FILES, writeMode } from './config.mjs';
 import { fail } from './errors.mjs';
 import { sourceHash } from './art-source.mjs';
 
@@ -9,9 +9,10 @@ const encodedPath = value => String(value).split('/').map(encodeURIComponent).jo
 export class MockRepositoryService {
   historyAvailable = false;
 
-  async readSnapshot() {
+  async readSnapshot(filePaths = REPOSITORY_FILES) {
+    if (!Array.isArray(filePaths) || filePaths.some(filePath => !ALLOWED_REPOSITORY_FILES.has(filePath))) fail(500, 'INVALID_FILE_ALLOWLIST', 'A allowlist interna de arquivos é inválida.');
     const files = {};
-    for (const filePath of REPOSITORY_FILES) {
+    for (const filePath of filePaths) {
       const content = await readFile(path.join(process.cwd(), filePath), 'utf8');
       files[filePath] = { content, sha: `mock-${sourceHash(content)}` };
     }
@@ -69,12 +70,13 @@ export class GitHubRepositoryService {
     return response.json();
   }
 
-  async readSnapshot() {
+  async readSnapshot(filePaths = REPOSITORY_FILES) {
+    if (!Array.isArray(filePaths) || filePaths.some(filePath => !ALLOWED_REPOSITORY_FILES.has(filePath))) fail(500, 'INVALID_FILE_ALLOWLIST', 'A allowlist interna de arquivos é inválida.');
     const branchPath = encodedPath(this.config.branch);
     const reference = await this.request(`/git/ref/heads/${branchPath}`);
     const headSha = reference.object.sha;
     const commit = await this.request(`/git/commits/${encodeURIComponent(headSha)}`);
-    const entries = await Promise.all(REPOSITORY_FILES.map(async filePath => {
+    const entries = await Promise.all(filePaths.map(async filePath => {
       const data = await this.request(`/contents/${encodedPath(filePath)}?ref=${encodeURIComponent(headSha)}`);
       if (data.type !== 'file' || data.encoding !== 'base64') fail(502, 'INVALID_GITHUB_RESPONSE', 'O GitHub retornou um arquivo em formato inesperado.');
       return [filePath, { content: Buffer.from(String(data.content).replace(/\s/g, ''), 'base64').toString('utf8'), sha: data.sha }];

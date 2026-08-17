@@ -1,4 +1,5 @@
 import { ART_FILES, imageHosts } from './config.mjs';
+import { CLASS_METADATA_FIELDS, SOURCE_METADATA_FIELDS, SUBCLASS_METADATA_FIELDS } from './metadata-source.mjs';
 import { fail } from './errors.mjs';
 
 function exactKeys(value, allowed, label) {
@@ -73,4 +74,57 @@ export function validateSavePayload(payload, classIds) {
   return payload;
 }
 
-export const validationInternals = Object.freeze({ validImage, validPosition });
+function validText(value, minimum, maximum) {
+  return typeof value === 'string' && value.length >= minimum && value.length <= maximum && value.trim() === value && !/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(value);
+}
+
+function validateMetadataFields(type, changes, current) {
+  const allowed = type === 'class' ? CLASS_METADATA_FIELDS : SUBCLASS_METADATA_FIELDS;
+  exactKeys(changes, [...allowed, 'source'], 'changes');
+  if (!Object.keys(changes).length) fail(400, 'EMPTY_CHANGES', 'Nenhuma alteração foi informada.');
+  const limits = {
+    name: [1, 100], originalName: [0, 100], desc: [1, 16000], hitDie: [2, 4], ability: [1, 200], saves: [1, 300],
+    armor: [1, 1000], weapons: [1, 1000], tools: [1, 1000], skills: [1, 1500], sigilKey: [1, 64], color: [7, 7]
+  };
+  for (const [field, value] of Object.entries(changes)) {
+    if (field === 'source') continue;
+    let valid = false;
+    if (field === 'tablePage') valid = Number.isInteger(value) && value >= 1 && value <= 9999;
+    else if (field === 'sourcePage') valid = (Number.isInteger(value) && value >= 1 && value <= 9999) || (validText(value, 1, 20) && /^\d+(?:[–-]\d+)?$/.test(value));
+    else if (field === 'hitDie') valid = /^d(?:4|6|8|10|12|20)$/.test(value);
+    else if (field === 'sigilKey') valid = validText(value, ...limits[field]) && /^[A-Za-z0-9-]+$/.test(value);
+    else if (field === 'color') valid = /^#[0-9a-fA-F]{6}$/.test(value);
+    else if (limits[field]) valid = validText(value, ...limits[field]);
+    if (!valid) fail(400, 'INVALID_VALUE', `Valor inválido para ${field}.`);
+  }
+  if (changes.source !== undefined) {
+    exactKeys(changes.source, SOURCE_METADATA_FIELDS, 'changes.source');
+    if (!Object.keys(changes.source).length) fail(400, 'EMPTY_CHANGES', 'Nenhuma alteração de fonte foi informada.');
+    for (const [field, value] of Object.entries(changes.source)) {
+      const maximum = field === 'title' ? 250 : field === 'chapter' ? 200 : 60;
+      if (!validText(value, 1, maximum)) fail(400, 'INVALID_VALUE', `Valor inválido para source.${field}.`);
+    }
+    const effective = { ...current.metadata.source, ...changes.source };
+    const previouslyAbsent = SOURCE_METADATA_FIELDS.every(field => !current.metadata.source[field]);
+    if (previouslyAbsent && SOURCE_METADATA_FIELDS.some(field => !effective[field])) fail(400, 'INCOMPLETE_SOURCE', 'Ao adicionar uma fonte, informe título, páginas e capítulo.');
+  }
+}
+
+export function validateMetadataSavePayload(payload, registry) {
+  exactKeys(payload, ['entityType', 'entityId', 'changes', 'expected'], 'payload');
+  if (!['class', 'subclass'].includes(payload.entityType)) fail(400, 'INVALID_ENTITY_TYPE', 'Tipo de entidade não permitido.');
+  if (typeof payload.entityId !== 'string' || !/^[a-z0-9][a-z0-9-]{0,99}$/.test(payload.entityId)) fail(400, 'UNKNOWN_ENTITY', 'A entidade informada não existe no Grimório.');
+  const collection = payload.entityType === 'class' ? registry.classes : registry.subclasses;
+  const current = collection.get(payload.entityId);
+  if (!current) fail(400, 'UNKNOWN_ENTITY', 'A entidade informada não existe no Grimório.');
+  validateMetadataFields(payload.entityType, payload.changes, current);
+  exactKeys(payload.expected, ['entryHash'], 'expected');
+  if (typeof payload.expected.entryHash !== 'string' || !/^[0-9a-f]{64}$/i.test(payload.expected.entryHash)) fail(400, 'INVALID_REVISION', 'A revisão esperada é inválida.');
+  if (payload.changes.name) {
+    const peers = payload.entityType === 'class' ? [...registry.classes.values()] : [...registry.subclasses.values()].filter(item => item.classId === current.classId);
+    if (peers.some(item => item.id !== current.id && item.metadata.name.toLocaleLowerCase('pt-BR') === payload.changes.name.toLocaleLowerCase('pt-BR'))) fail(400, 'DUPLICATE_NAME', 'Já existe uma entidade desse grupo com esse nome.');
+  }
+  return { ...payload, current };
+}
+
+export const validationInternals = Object.freeze({ validImage, validPosition, validText });

@@ -12,6 +12,7 @@ const functions = new Map([
   ['/api/admin/logout', await import('../api/admin/logout.mjs')],
   ['/api/admin/session', await import('../api/admin/session.mjs')],
   ['/api/admin/class-art', await import('../api/admin/class-art.mjs')],
+  ['/api/admin/class-metadata', await import('../api/admin/class-metadata.mjs')],
   ['/api/admin/history', await import('../api/admin/history.mjs')]
 ]);
 const mime = {
@@ -32,7 +33,7 @@ async function webRequest(request, url) {
   let total = 0;
   for await (const chunk of request) {
     total += chunk.length;
-    if (total > 32 * 1024) throw new Error('Payload local excede 32 KiB.');
+    if (total > 80 * 1024) throw new Error('Payload local excede 80 KiB.');
     chunks.push(chunk);
   }
   const body = chunks.length ? Buffer.concat(chunks) : undefined;

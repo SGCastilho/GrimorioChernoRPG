@@ -144,7 +144,7 @@ h1 { margin-bottom: .8rem; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.0
 
 .admin-field { display: grid; gap: .45rem; }
 .admin-field > span { color: #d7dce5; font-size: .86rem; font-weight: 700; }
-.admin-field input, .admin-field select {
+.admin-field input, .admin-field select, .admin-field textarea {
   width: 100%;
   min-height: 44px;
   padding: .65rem .75rem;
@@ -153,7 +153,8 @@ h1 { margin-bottom: .8rem; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.0
   border-radius: .5rem;
   background: #0b1019;
 }
-.admin-field input:hover, .admin-field select:hover { border-color: rgba(210,173,103,.5); }
+.admin-field textarea { min-height: 6rem; resize: vertical; line-height: 1.5; }
+.admin-field input:hover, .admin-field select:hover, .admin-field textarea:hover { border-color: rgba(210,173,103,.5); }
 .admin-field input:invalid:not(:placeholder-shown) { border-color: rgba(224,120,120,.72); }
 
 .admin-button {
@@ -215,6 +216,9 @@ h1 { margin-bottom: .8rem; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.0
 }
 
 .admin-art-form { display: grid; gap: 1.4rem; }
+.admin-selector-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.admin-metadata-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
+.admin-protected-id { margin: -.3rem 0 0; padding: .65rem .8rem; color: var(--admin-muted); border-left: 3px solid var(--admin-gold); background: rgba(210,173,103,.06); overflow-wrap: anywhere; }
 .admin-class-select { width: min(420px, 100%); }
 .admin-editor-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 
@@ -340,7 +344,7 @@ h1 { margin-bottom: .8rem; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.0
 @media (max-width: 800px) {
   .admin-header { grid-template-columns: 1fr auto; }
   .admin-nav { grid-column: 1 / -1; justify-content: flex-start; order: 3; overflow-x: auto; padding-top: .4rem; }
-  .admin-editor-grid, .admin-preview-grid, .admin-dashboard-grid { grid-template-columns: 1fr; }
+  .admin-editor-grid, .admin-preview-grid, .admin-dashboard-grid, .admin-selector-grid, .admin-metadata-fields { grid-template-columns: 1fr; }
   .admin-page-heading { flex-direction: column; gap: .8rem; }
 }
 

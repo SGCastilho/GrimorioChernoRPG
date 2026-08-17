@@ -1,3 +1,14 @@
+## 5.53.0
+
+### Grimório Admin — Metadados de Classes e Subclasses
+- Adicionado `/admin/class-metadata` para editar metadados escalares das 27 classes e 382 subclasses reais, descobertas estruturalmente nos arquivos do Grimório.
+- Classes expõem apresentação, dado de vida, habilidade, salvaguardas, proficiências, sigilo, cor, página e fonte; subclasses expõem nomes, descrição, página e fonte.
+- IDs, `classId`, aliases, features, progressões, tabelas, referências, automações e Foundry permanecem fora da allowlist e não podem ser enviados pelo cliente.
+- O backend analisa 22 arquivos permitidos com Acorn, localiza a entidade por AST, substitui somente valores literais autorizados, reanalisa a saída e confirma preservação das demais entidades.
+- Mudanças de nome de classe sincronizam `manifest.classIndex`, `manifest.classNames` e `manifest.subclassCounts` no mesmo commit, sem alterar outros campos do manifesto.
+- Adicionados conflito por hash da entidade, confirmação visual das diferenças, aviso de mudanças não salvas, modo mock e estados sanitizados de erro/sucesso.
+- Incluídos testes para classes, subclasses, fonte ausente, manifesto derivado, validações, caminhos arbitrários, conflito, autenticação e CSRF.
+
 ## 5.52.0
 
 ### Grimório Admin — Histórico Git-backed

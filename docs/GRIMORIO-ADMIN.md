@@ -1,12 +1,12 @@
-# Grimório Admin 5.52.0
+# Grimório Admin 5.53.0
 
-O Grimório Admin é um CMS Git-backed para Cover e Detail Art das classes, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
+O Grimório Admin é um CMS Git-backed para artes e metadados de classes/subclasses, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
 
 ## Arquitetura do MVP
 
 ```text
 /admin (HTML/CSS/JS sem secrets)
-  → /api/admin/login | session | logout | class-art | history
+  → /api/admin/login | session | logout | class-art | class-metadata | history
   → sessão HMAC + CSRF + validação server-side
   → editor estrutural AST Acorn
   → RepositoryService
@@ -15,9 +15,19 @@ O Grimório Admin é um CMS Git-backed para Cover e Detail Art das classes, com 
   → GitHub Git Data API: blobs → árvore → commit → ref force:false
 ```
 
-A allowlist server-side fixa liga o editor somente a `data/class-covers.js` e `data/class-detail-art.js`. O cliente não envia caminhos. A transformação substitui apenas os valores literais da entrada escolhida, reanalisa o JavaScript e confirma que outros IDs e campos não mudaram.
+A allowlist server-side fixa liga cada editor somente aos arquivos conhecidos. O cliente nunca envia caminhos. A transformação substitui apenas valores literais autorizados, reanalisa o JavaScript e confirma que outras entidades e campos não mudaram.
 
 As classes vêm de `manifest.classIndex`, que o gate do projeto valida contra `GRIMORIO_CLASSES`. Não existe uma lista manual própria do Admin.
+
+## Metadados de classes e subclasses
+
+`/admin/class-metadata` descobre as 27 classes e 382 subclasses diretamente nos 22 arquivos de conteúdo autorizados. O módulo não aceita paths, IDs novos nem alterações estruturais.
+
+- Classes: nome, nome original, descrição, dado de vida, habilidade principal, salvaguardas, armaduras, armas, ferramentas, perícias, chave de sigilo, cor, página da tabela e fonte.
+- Subclasses: nome, nome original, descrição, página principal e fonte.
+- Protegidos: `id`, `classId`, aliases, features, progressões, tabelas, referências, automações, exporters e Foundry.
+
+Ao renomear uma classe, o servidor sincroniza os três índices derivados do manifesto (`classIndex`, `classNames` e `subclassCounts`) no mesmo commit. Uma subclasse legada sem bloco `source` pode recebê-lo somente se título, páginas e capítulo forem preenchidos juntos.
 
 ## Histórico read-only
 
@@ -96,7 +106,7 @@ Configure hash, segredo e `GRIMORIO_ADMIN_WRITE_MODE=mock`. Não disponibilize `
 
 Use `.env.local`, nunca versionado, com hash, segredo e `GRIMORIO_ADMIN_WRITE_MODE=mock`. Tokens GitHub não são necessários.
 
-O `vercel.json` registra rewrites de `/admin`, cabeçalhos de segurança e inclusão dos três arquivos lidos pelas Functions. Não existe banco de dados nem segunda fonte de conteúdo.
+O `vercel.json` registra rewrites de `/admin`, cabeçalhos de segurança e inclusão dos arquivos allowlisted lidos pelas Functions. Não existe banco de dados nem segunda fonte de conteúdo.
 
 ## Teste local
 
@@ -114,7 +124,7 @@ GRIMORIO_SESSION_SECRET=um-segredo-local-com-32-ou-mais-caracteres
 GRIMORIO_ADMIN_WRITE_MODE=mock
 ```
 
-Abra `http://127.0.0.1:3000/admin`, faça login, selecione uma classe e teste o preview. Salvar deve informar “Simulação concluída”; nenhum mapa deve mudar no disco e, após recarregar, os valores originais devem retornar.
+Abra `http://127.0.0.1:3000/admin`, faça login e teste Artes ou Metadados. Salvar deve informar “Simulação concluída”; nenhum arquivo deve mudar no disco e, após recarregar, os valores originais devem retornar.
 
 Em `/admin/history`, o ambiente local deve informar que a consulta está desativada no modo mock.
 
@@ -149,4 +159,5 @@ O primeiro commit real deve ser feito somente depois da revisão do código e da
 - histórico sem paginação: considera os 100 commits mais recentes da branch e exibe até 50 commits administrativos;
 - sem fluxo por pull request para branch protegida;
 - sem rate limit distribuído; recomenda-se configurar Vercel Firewall para limitar tentativas de login;
+- aliases, features, progressões, tabelas e referências ainda não são editáveis;
 - próximos editores devem criar validadores e serializadores próprios, reutilizando autenticação, cliente API e `RepositoryService`.

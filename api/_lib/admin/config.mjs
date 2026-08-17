@@ -20,6 +20,34 @@ export const REPOSITORY_FILES = Object.freeze([
   'manifest.json'
 ]);
 
+export const METADATA_CONTENT_FILES = Object.freeze([
+  'data/classes.js',
+  'data/tasha-artificer.js',
+  'data/lyre-classes.js',
+  'data/zagalhta-classes.js',
+  'data/ryoko-classes.js',
+  'data/blade-bone-benefit-classes.js',
+  'data/homebrew-emissario.js',
+  'data/homebrew-sage.js',
+  'data/homebrew-spellblade-class.js',
+  'data/cultivator-class.js',
+  'data/homebrew-street-fighter.js',
+  'data/lyre-subclasses.js',
+  'data/zagalhta-specializations.js',
+  'data/zagalhta-subclasses-standard.js',
+  'data/zagalhta-subclasses-standard-2.js',
+  'data/zagalhta-subclasses-standard-3.js',
+  'data/blade-bone-benefit-subclasses.js',
+  'data/ryoko-subclasses.js',
+  'data/xanathar-subclasses.js',
+  'data/tasha-subclasses.js',
+  'data/scag-subclasses.js',
+  'data/homebrew-paladin-bahamut.js'
+]);
+
+export const METADATA_REPOSITORY_FILES = Object.freeze([...METADATA_CONTENT_FILES, 'manifest.json']);
+export const ALLOWED_REPOSITORY_FILES = new Set([...REPOSITORY_FILES, ...METADATA_REPOSITORY_FILES]);
+
 export const isProduction = () => process.env.VERCEL_ENV === 'production';
 export const cookieName = () => isProduction() ? '__Host-grimorio_admin' : 'grimorio_admin_dev';
 
