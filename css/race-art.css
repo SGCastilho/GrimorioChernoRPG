@@ -1,0 +1,59 @@
+/* Grimório v5.49.0 — banners, hero dividido e lightbox das raças. */
+.race-card{padding:0}
+.race-card-body{display:flex;flex:1;flex-direction:column;padding:1.05rem}
+.race-card-body>p{flex:1;margin:.8rem 0;color:var(--text-dim);font-size:.76rem;line-height:1.56}
+.race-card-media{position:relative;isolation:isolate;overflow:hidden;flex:0 0 auto;width:100%;aspect-ratio:16/5;border-bottom:1px solid var(--border);background:linear-gradient(135deg,rgba(222,178,77,.075),rgba(115,147,208,.04) 54%,rgba(0,0,0,.16))}
+.race-art-placeholder{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden;color:rgba(222,178,77,.65);font-family:var(--serif);font-size:1.15rem;font-weight:700;letter-spacing:.08em}
+.race-art-placeholder::before,.race-art-placeholder::after{content:"";position:absolute;pointer-events:none;border:1px solid rgba(222,178,77,.09);transform:rotate(30deg)}
+.race-art-placeholder::before{width:112px;height:112px;border-radius:24px}
+.race-art-placeholder::after{width:180px;height:180px;border-radius:50%;box-shadow:0 0 0 28px rgba(222,178,77,.018)}
+.race-art-placeholder span{position:relative;z-index:1;display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(222,178,77,.24);border-radius:14px;background:rgba(8,11,18,.48);text-shadow:0 2px 12px rgba(0,0,0,.65)}
+.race-cover-media{position:absolute;inset:0;z-index:2;width:100%;height:100%;object-fit:cover;object-position:var(--race-cover-position,center);opacity:0;transition:opacity .22s ease}
+.race-card-media.race-art-ready .race-cover-media{opacity:1}
+
+.race-detail-hero{grid-template-columns:minmax(0,1.15fr) minmax(340px,.85fr);gap:0;align-items:stretch;padding:0;min-height:360px}
+.race-detail-hero::after{z-index:0}
+.race-detail-copy{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;gap:1.35rem;padding:2rem 2.15rem}
+.race-detail-identity{display:flex;align-items:flex-start;gap:1rem}
+.race-detail-identity .race-detail-rune{margin-top:.15rem}
+.race-detail-copy .race-choice-counter{align-self:flex-start;display:grid;grid-template-columns:auto auto;grid-template-areas:"label count" "hint count";column-gap:1rem;min-width:245px;padding:.78rem 1rem;text-align:left}
+.race-detail-copy .race-choice-counter span{grid-area:label}.race-detail-copy .race-choice-counter strong{grid-area:count;align-self:center;margin:0}.race-detail-copy .race-choice-counter small{grid-area:hint}
+.race-detail-art-panel{position:relative;z-index:2;display:block;overflow:hidden;min-width:0;min-height:360px;padding:0;border:0;border-left:1px solid var(--border);background:linear-gradient(145deg,rgba(222,178,77,.06),rgba(6,9,18,.75));color:inherit;text-align:initial}
+.race-detail-art-panel.has-race-art{border-left:0;background:transparent}
+button.race-detail-art-panel{cursor:zoom-in}
+button.race-detail-art-panel:focus-visible{outline:2px solid var(--gold);outline-offset:-4px}
+.race-detail-art-panel .race-art-placeholder span{width:76px;height:76px;border-radius:20px;font-size:1.5rem}
+.race-detail-art-panel.race-art-ready .race-art-placeholder{opacity:0}
+.race-detail-art-media{position:absolute;inset:0;z-index:2;width:100%;height:100%;object-fit:cover;object-position:var(--race-detail-art-position,center);transform:scale(var(--race-detail-art-scale,1));opacity:0;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.12) 8%,rgba(0,0,0,.72) 30%,#000 48%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.12) 8%,rgba(0,0,0,.72) 30%,#000 48%,#000 100%);transition:opacity .22s ease,transform .28s ease}
+.race-detail-art-panel.race-art-ready .race-detail-art-media{opacity:1}
+button.race-detail-art-panel.race-art-ready:hover .race-detail-art-media{transform:scale(calc(var(--race-detail-art-scale,1) + .025))}
+.race-detail-art-zoom{position:absolute;right:.75rem;bottom:.75rem;z-index:3;padding:.35rem .55rem;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(5,8,15,.72);backdrop-filter:blur(5px);color:#f4f1e8;font-family:var(--mono);font-size:.55rem;opacity:0;transition:opacity .2s ease}
+.race-detail-art-panel.race-art-ready .race-detail-art-zoom{opacity:1}
+
+.race-art-dialog{width:min(96vw,1500px);max-width:none;padding:0;border:1px solid rgba(222,178,77,.3);border-radius:14px;background:#070a10;color:var(--text);box-shadow:0 28px 100px rgba(0,0,0,.72)}
+.race-art-dialog::backdrop{background:rgba(0,0,0,.84);backdrop-filter:blur(5px)}
+.race-art-dialog-shell{position:relative;padding:1rem}
+.race-art-dialog figure{display:grid;gap:.7rem;margin:0}
+.race-art-dialog img{display:block;width:100%;max-height:82vh;object-fit:contain;border-radius:9px;background:#05070c}
+.race-art-dialog figcaption{font-family:var(--mono);font-size:.65rem;color:var(--text-faint);text-align:center}
+.race-art-dialog-close{position:absolute;top:1.55rem;right:1.55rem;z-index:2;display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(255,255,255,.2);border-radius:50%;background:rgba(5,8,15,.78);color:#fff;font-size:1.55rem;cursor:pointer}
+.race-art-dialog-close:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+@media(max-width:920px){
+  .race-detail-hero{grid-template-columns:1fr}
+  .race-detail-art-panel{min-height:0;aspect-ratio:16/9;border-top:1px solid var(--border);border-left:0}
+  .race-detail-art-panel.has-race-art{border-top:0}
+  .race-detail-art-media{-webkit-mask-image:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.72) 18%,#000 32%,#000 100%);mask-image:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.72) 18%,#000 32%,#000 100%)}
+}
+@media(max-width:610px){
+  .race-card-media{aspect-ratio:16/5}
+  .race-detail-copy{padding:1.15rem}
+  .race-detail-identity{display:block}.race-detail-identity .race-detail-rune{display:none}
+  .race-detail-copy .race-choice-counter{min-width:0;width:100%}
+  .race-detail-art-panel{aspect-ratio:4/3}
+  .race-art-dialog-shell{padding:.5rem}.race-art-dialog-close{top:1rem;right:1rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .race-cover-media,.race-detail-art-media,.race-detail-art-zoom{transition:none!important}
+  button.race-detail-art-panel.race-art-ready:hover .race-detail-art-media{transform:scale(var(--race-detail-art-scale,1))}
+}

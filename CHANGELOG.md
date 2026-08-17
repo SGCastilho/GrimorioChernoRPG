@@ -1,3 +1,24 @@
+## 5.47.0
+
+### Conteúdo — Antecedentes · Livro do Jogador 2014
+- Adicionada a seção **Antecedentes** imediatamente depois de **Raças e Subraças**, com 18 entradas do Capítulo 4: 13 antecedentes-base e 5 variações independentes.
+- Integrados Acólito, Artesão de Guilda, Artista, Charlatão, Criminoso, Eremita, Forasteiro, Herói do Povo, Marinheiro, Nobre, Órfão, Sábio e Soldado, além de Mercador de Guilda, Gladiador, Espião, Pirata e Cavaleiro.
+- Cada ficha reúne procedência, páginas impressas, perícias, ferramentas, idiomas, equipamento, característica, tabelas auxiliares e tabelas completas de traços, ideais, vínculos e defeitos.
+- Variações usam `variantOf` e alterações explícitas; a interface resolve a herança antes de exibir e pesquisar, identificando tabelas herdadas.
+- Incluídas as regras gerais de proficiências, idiomas, equipamento, características sugeridas e personalização de antecedentes das páginas 127–128. Inspiração permanece fora da seção.
+
+### Interface e arquitetura
+- Adicionadas as rotas `#/backgrounds` e `#/background/<id>`, título contextual da guia, copiar link e navegação nativa Voltar/Avançar.
+- O catálogo oferece busca textual e filtros por tipo, perícia e fonte, com contadores de entradas, bases, variações e fontes.
+- A busca Ctrl/Cmd+K reconhece nomes em português e inglês, perícias, ferramentas, característica, equipamento e conteúdo das tabelas.
+- Os itens estáticos da navegação foram centralizados em `js/static-nav.js`, removendo a lista duplicada entre a interface base e `ui-enhancements`.
+- Adicionados estilos responsivos, tabelas com rolagem horizontal segura, semântica de tabela e integração com Spotlight Cards e `prefers-reduced-motion`.
+- Não foi adicionada exportação Foundry nem formulário de antecedente próprio nesta versão.
+
+### Validação
+- O validador unificado agora verifica fontes, IDs, páginas, campos obrigatórios, duplicações, tabelas e resolução das variações.
+- Criado `tools/validate-backgrounds-5.47.js` para confirmar 18 entradas, 13 bases, 5 variações, 16 perícias e as cinco substituições mecânicas.
+
 ## 5.46.0
 
 ### Conteúdo — Raças e Subraças · Somnus Domina — Zagalhta's Exolunar Collection
@@ -761,3 +782,29 @@
 - Preservadas e documentadas inconsistências internas de nomenclatura entre a tabela e o texto da Égide.
 - Adicionada atribuição CC-BY-4.0 de KibblesTasty.
 - Corrigido o carregamento do catálogo Spell Compendium no HTML principal.
+## 5.48.0
+
+- Adicionado o Grimório Admin em `/admin`, com login server-side, sessão assinada de 8 horas em cookie HttpOnly, proteção CSRF, logout e cabeçalhos de segurança.
+- Novo editor de Cover e Detail Art para as 27 classes, com preview sem persistência, detecção de alterações, confirmação por diferenças e suporte avançado a `scale`.
+- Vercel Functions passam a editar estruturalmente `data/class-covers.js` e `data/class-detail-art.js` por AST, com allowlist fixa e verificação de preservação das demais entradas.
+- Escrita GitHub usa blobs, árvore, commit único e atualização de referência sem force; conflitos na mesma entrada retornam resposta explícita sem sobrescrita silenciosa.
+- Modo `mock` fail-closed valida todo o fluxo sem gravar arquivos nem chamar o GitHub; escrita real só é habilitada explicitamente em Production.
+- Incluídos testes nativos Node, validador de integração Admin/Vercel, documentação de deploy e utilitário para gerar hashes scrypt de senha.
+## 5.49.0
+
+### Interface — imagens de raças
+
+- Adicionados banners uniformes aos cards das 42 raças; entradas sem ilustração usam placeholder com iniciais e textura do Grimório.
+- A página interna de raça passa a usar hero dividido, mantendo conteúdo e escolhas à esquerda e arte ampliável à direita.
+- A transição entre texto e Detail Art usa um fade horizontal no desktop e vertical em telas compactas, eliminando o corte seco da ilustração.
+- O piloto Arhcoon usa a imagem local `assets/race-art/arhcoon.png` na capa e no detalhe, com foco específico para cada contexto.
+- Imagens raciais possuem texto alternativo, carregamento resiliente, fallback para falha de rede, lightbox por `dialog`, restauração de foco e suporte a `prefers-reduced-motion`.
+- Criados `data/race-covers.js`, `data/race-detail-art.js`, `css/race-art.css` e `js/race-art-runtime.js`.
+
+### Admin — Artes de Raças
+
+- Nova rota `/admin/race-art` e endpoint `/api/admin/race-art` para editar Cover e Detail Art das 42 raças.
+- Adicionado `manifest.raceIndex` como índice canônico validado contra `GRIMORIO_RACES`.
+- O editor aceita somente paths `assets/` ou URLs HTTPS autorizadas; imagens exigem descrição acessível e não há upload binário.
+- Edição AST, allowlist, hashes por entrada, conflito `409`, modo mock e commit GitHub atômico sem `force` foram preservados.
+- Adicionados testes de serviço/validação e gates `validate-race-art-5.49.js` e `validate-admin-5.49.mjs`.

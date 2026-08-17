@@ -76,3 +76,23 @@
 - Usar **Ctrl+K** para localizar talentos e confirmar que o resultado é um link nativo, aceitando Ctrl/Cmd+clique e nova guia.
 - Conferir a ação de link direto/copiar link nos talentos e o histórico Voltar/Avançar entre catálogo e detalhe.
 - Em viewport móvel, confirmar que filtros e metadados empilham sem overflow horizontal e que a sidebar continua utilizável.
+# Auditoria visual — Grimório 5.47.0
+
+## Antecedentes do Livro do Jogador
+- Confirmar que **Antecedentes** aparece imediatamente depois de **Raças e Subraças** na sidebar expandida e compacta.
+- Abrir `#/backgrounds` e conferir os contadores **18 entradas / 13 bases / 5 variações / 1 fonte**.
+- Testar a busca do catálogo por nome PT-BR e inglês, perícia, ferramenta, equipamento e característica; testar também os filtros de tipo, perícia e fonte.
+- Abrir uma ficha-base e conferir breadcrumb, procedência, proficiências, idiomas, equipamento, característica, tabelas auxiliares e as quatro tabelas de características sugeridas.
+- Abrir Mercador de Guilda, Gladiador, Espião, Pirata e Cavaleiro; conferir badge, link para o antecedente-base, alterações mecânicas e indicação das tabelas herdadas.
+- Recarregar `#/background/pirata`, usar Voltar/Avançar e confirmar que rota, título da guia e conteúdo permanecem sincronizados.
+- Usar Ctrl/Cmd+clique e menu de contexto nos cards; confirmar que o destino abre em nova guia e que **Copiar link** gera a URL profunda correta.
+- Na busca Ctrl/Cmd+K, procurar `Guild Merchant`, `ferramentas de navegador`, `Má Reputação`, `Retentores` e texto de uma tabela sugerida.
+- Em 1440 px, 1024 px, 768 px e 360 px, confirmar ausência de overflow da página. Tabelas extensas devem rolar apenas dentro de seu contêiner.
+- Navegar por teclado por filtros, cards, breadcrumb, copiar link e regiões roláveis; confirmar cabeçalhos e escopos das tabelas.
+- Ativar `prefers-reduced-motion` e confirmar que cards não se deslocam nem exibem Spotlight animado.
+
+### Resultado automatizado — 17/08/2026
+- Catálogo carregado com 18 cards e contadores 18/13/5/1; nenhuma mensagem de erro ou aviso no console.
+- Ordem da navegação confirmada: Painel, Planejador de Atributos, Raças e Subraças, Antecedentes, Equipamentos e Talentos.
+- Busca local, filtro das cinco variações, busca Ctrl/Cmd+K por conteúdo herdado, rota direta, título, copiar link e histórico Voltar/Avançar aprovados.
+- Viewport de 360 px aprovado sem overflow da página: largura de conteúdo 350 px; tabelas de 460 px permaneceram contidas em regiões roláveis de 316 px.

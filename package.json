@@ -1,0 +1,19 @@
+{
+  "name": "grimorio-cherno-rpg",
+  "version": "5.49.0",
+  "private": true,
+  "description": "Grimório D&D estático com painel administrativo Git-backed.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "admin:hash-password": "node tools/hash-admin-password.mjs",
+    "admin:dev": "node --env-file-if-exists=.env.local tools/dev-admin-server.mjs",
+    "test:admin": "node --test --test-isolation=none tests/admin/*.test.mjs",
+    "validate:admin": "node tools/validate-admin-5.49.mjs",
+    "validate": "node tools/validate-project.js && node tools/validate-backgrounds-5.47.js && node tools/validate-sidebar-pin-covers-5.37.js && node tools/validate-deep-links-5.39.js && node tools/validate-race-art-5.49.js && npm run test:admin && npm run validate:admin"
+  },
+  "dependencies": {
+    "acorn": "8.15.0"
+  }
+}
