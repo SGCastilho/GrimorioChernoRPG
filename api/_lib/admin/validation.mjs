@@ -1,5 +1,6 @@
 import { ART_FILES, imageHosts } from './config.mjs';
 import { CLASS_METADATA_FIELDS, SOURCE_METADATA_FIELDS, SUBCLASS_METADATA_FIELDS } from './metadata-source.mjs';
+import { FEAT_FIELDS } from './feat-source.mjs';
 import { fail } from './errors.mjs';
 
 function exactKeys(value, allowed, label) {
@@ -124,6 +125,80 @@ export function validateMetadataSavePayload(payload, registry) {
     const peers = payload.entityType === 'class' ? [...registry.classes.values()] : [...registry.subclasses.values()].filter(item => item.classId === current.classId);
     if (peers.some(item => item.id !== current.id && item.metadata.name.toLocaleLowerCase('pt-BR') === payload.changes.name.toLocaleLowerCase('pt-BR'))) fail(400, 'DUPLICATE_NAME', 'Já existe uma entidade desse grupo com esse nome.');
   }
+  return { ...payload, current };
+}
+
+const PREREQUISITE_TYPES = new Set(['spellcasting', 'ability', 'proficiency', 'feature', 'level', 'character-structure', 'race', 'subrace', 'class', 'feat', 'or', 'spellcasting-ability', 'class-level']);
+const PREREQUISITE_FIELDS = Object.freeze(['type', 'label', 'abilities', 'minimum', 'mode', 'category', 'value', 'values', 'options', 'minimumSpellLevel', 'requiresSpellSlots']);
+const CHOICE_FIELDS = Object.freeze(['id', 'label', 'count', 'options', 'sources', 'uniquePerAcquisition']);
+
+function stringArray(value, maximumItems = 30) {
+  return Array.isArray(value) && value.length <= maximumItems && value.every(item => validText(item, 1, 150));
+}
+
+function validatePrerequisite(item, depth = 0) {
+  if (depth > 2) fail(400, 'INVALID_VALUE', 'Pré-requisito aninhado além do limite permitido.');
+  exactKeys(item, PREREQUISITE_FIELDS, 'prerequisites[]');
+  if (!PREREQUISITE_TYPES.has(item.type) || !validText(item.label, 1, 500)) fail(400, 'INVALID_VALUE', 'Pré-requisito estruturado inválido.');
+  for (const field of ['category', 'value']) if (item[field] !== undefined && !validText(item[field], 1, 100)) fail(400, 'INVALID_VALUE', `Valor inválido em prerequisites[].${field}.`);
+  for (const field of ['abilities', 'values']) if (item[field] !== undefined && !stringArray(item[field], 20)) fail(400, 'INVALID_VALUE', `Valor inválido em prerequisites[].${field}.`);
+  if (item.mode !== undefined && !['any', 'all'].includes(item.mode)) fail(400, 'INVALID_VALUE', 'Modo de pré-requisito inválido.');
+  if (item.minimum !== undefined && (!Number.isInteger(item.minimum) || item.minimum < 1 || item.minimum > 30)) fail(400, 'INVALID_VALUE', 'Mínimo de pré-requisito inválido.');
+  if (item.minimumSpellLevel !== undefined && (!Number.isInteger(item.minimumSpellLevel) || item.minimumSpellLevel < 0 || item.minimumSpellLevel > 9)) fail(400, 'INVALID_VALUE', 'Nível mínimo de magia inválido.');
+  if (item.requiresSpellSlots !== undefined && typeof item.requiresSpellSlots !== 'boolean') fail(400, 'INVALID_VALUE', 'Indicador de espaços de magia inválido.');
+  if (item.options !== undefined) {
+    if (item.type !== 'or' || !Array.isArray(item.options) || !item.options.length || item.options.length > 10) fail(400, 'INVALID_VALUE', 'Opções de pré-requisito inválidas.');
+    for (const option of item.options) validatePrerequisite(option, depth + 1);
+  }
+}
+
+function validateChoice(item) {
+  exactKeys(item, CHOICE_FIELDS, 'choices[]');
+  if (!validText(item.id, 1, 80) || !/^[A-Za-z0-9][A-Za-z0-9-]*$/.test(item.id) || !validText(item.label, 1, 200)) fail(400, 'INVALID_VALUE', 'Escolha estruturada inválida.');
+  if (item.count !== undefined && (!Number.isInteger(item.count) || item.count < 1 || item.count > 20)) fail(400, 'INVALID_VALUE', 'Quantidade de escolha inválida.');
+  for (const field of ['options', 'sources']) if (item[field] !== undefined && !stringArray(item[field], 100)) fail(400, 'INVALID_VALUE', `Valor inválido em choices[].${field}.`);
+  if (item.uniquePerAcquisition !== undefined && typeof item.uniquePerAcquisition !== 'boolean') fail(400, 'INVALID_VALUE', 'Indicador de escolha única inválido.');
+  if (item.count === undefined && !item.options?.length && !item.sources?.length) fail(400, 'INVALID_VALUE', 'A escolha precisa de quantidade, opções ou fontes.');
+}
+
+function validateFeatFields(changes, current) {
+  exactKeys(changes, FEAT_FIELDS, 'changes');
+  if (!Object.keys(changes).length) fail(400, 'EMPTY_CHANGES', 'Nenhuma alteração foi informada.');
+  for (const [field, value] of Object.entries(changes)) {
+    let valid = false;
+    if (field === 'name') valid = validText(value, 1, 120);
+    else if (field === 'originalName' || field === 'category') valid = validText(value, 0, 120);
+    else if (field === 'description') valid = validText(value, 1, 20000);
+    else if (field === 'prerequisite' || field === 'originalPrerequisite') valid = validText(value, 0, 1000);
+    else if (field === 'sourcePage') valid = Number.isInteger(value) && value >= 1 && value <= 9999;
+    else if (field === 'repeatable') valid = typeof value === 'boolean';
+    else if (field === 'aliases') valid = stringArray(value, 20) && new Set(value.map(item => item.toLocaleLowerCase('pt-BR'))).size === value.length;
+    else if (field === 'prerequisites') {
+      valid = Array.isArray(value) && value.length <= 10;
+      if (valid) for (const item of value) validatePrerequisite(item);
+    } else if (field === 'choices') {
+      valid = Array.isArray(value) && value.length <= 20;
+      if (valid) {
+        for (const item of value) validateChoice(item);
+        valid = new Set(value.map(item => item.id)).size === value.length;
+      }
+    }
+    if (!valid) fail(400, 'INVALID_VALUE', `Valor inválido para ${field}.`);
+  }
+  const effectiveText = changes.prerequisite ?? current.metadata.prerequisite;
+  const effectiveStructured = changes.prerequisites ?? current.metadata.prerequisites;
+  if (Boolean(effectiveText) !== Boolean(effectiveStructured.length)) fail(400, 'INCONSISTENT_PREREQUISITES', 'O texto e a estrutura de pré-requisitos devem ser preenchidos ou removidos juntos.');
+}
+
+export function validateFeatSavePayload(payload, registry) {
+  exactKeys(payload, ['featId', 'changes', 'expected'], 'payload');
+  if (typeof payload.featId !== 'string' || !/^[a-z0-9][a-z0-9-]{0,119}$/.test(payload.featId)) fail(400, 'UNKNOWN_FEAT', 'O talento informado não existe no Grimório.');
+  const current = registry.feats.get(payload.featId);
+  if (!current) fail(400, 'UNKNOWN_FEAT', 'O talento informado não existe no Grimório.');
+  validateFeatFields(payload.changes, current);
+  exactKeys(payload.expected, ['entryHash'], 'expected');
+  if (typeof payload.expected.entryHash !== 'string' || !/^[0-9a-f]{64}$/i.test(payload.expected.entryHash)) fail(400, 'INVALID_REVISION', 'A revisão esperada é inválida.');
+  if (payload.changes.name && [...registry.feats.values()].some(item => item.id !== current.id && item.metadata.name.toLocaleLowerCase('pt-BR') === payload.changes.name.toLocaleLowerCase('pt-BR'))) fail(400, 'DUPLICATE_NAME', 'Já existe um talento com esse nome.');
   return { ...payload, current };
 }
 

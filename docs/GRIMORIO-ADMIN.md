@@ -1,12 +1,12 @@
-# Grimório Admin 5.53.0
+# Grimório Admin 5.54.0
 
-O Grimório Admin é um CMS Git-backed para artes e metadados de classes/subclasses, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
+O Grimório Admin é um CMS Git-backed para artes, metadados de classes/subclasses e talentos, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
 
 ## Arquitetura do MVP
 
 ```text
 /admin (HTML/CSS/JS sem secrets)
-  → /api/admin/login | session | logout | class-art | class-metadata | history
+  → /api/admin/login | session | logout | class-art | class-metadata | feat | history
   → sessão HMAC + CSRF + validação server-side
   → editor estrutural AST Acorn
   → RepositoryService
@@ -28,6 +28,18 @@ As classes vêm de `manifest.classIndex`, que o gate do projeto valida contra `G
 - Protegidos: `id`, `classId`, aliases, features, progressões, tabelas, referências, automações, exporters e Foundry.
 
 Ao renomear uma classe, o servidor sincroniza os três índices derivados do manifesto (`classIndex`, `classNames` e `subclassCounts`) no mesmo commit. Uma subclasse legada sem bloco `source` pode recebê-lo somente se título, páginas e capítulo forem preenchidos juntos.
+
+## Editor de talentos
+
+`/admin/feats` carrega os três catálogos registrados diretamente dos arquivos reais:
+
+- `data/feats/phb-2014-feats.js` — 42 talentos;
+- `data/feats/ryoko-yokai-realms-feats.js` — 39 talentos;
+- `data/feats/lyre-retia-feats.js` — 28 talentos.
+
+O cliente envia somente o ID do talento, campos alterados e hash da revisão. O path é resolvido pela allowlist no servidor. São editáveis nome, nome original, aliases, categoria, página, descrição, pré-requisitos, repetibilidade e escolhas. `id`, `sourceId`, catálogo e os perfis de automação Foundry não são editáveis.
+
+Os campos avançados `prerequisites` e `choices` são exibidos como arrays JSON para preservar todas as variações existentes. O servidor aplica um esquema estrito, limita tamanhos/profundidade, recusa chaves desconhecidas e exige que o texto de pré-requisito e sua estrutura sejam adicionados ou removidos juntos. O preview é exclusivamente local e não persiste dados.
 
 ## Histórico read-only
 
@@ -159,5 +171,6 @@ O primeiro commit real deve ser feito somente depois da revisão do código e da
 - histórico sem paginação: considera os 100 commits mais recentes da branch e exibe até 50 commits administrativos;
 - sem fluxo por pull request para branch protegida;
 - sem rate limit distribuído; recomenda-se configurar Vercel Firewall para limitar tentativas de login;
-- aliases, features, progressões, tabelas e referências ainda não são editáveis;
+- features, progressões, tabelas e referências de classes ainda não são editáveis;
+- o editor de talentos não modifica os perfis de automação Foundry; alterações mecânicas devem respeitar o contrato já existente do exporter;
 - próximos editores devem criar validadores e serializadores próprios, reutilizando autenticação, cliente API e `RepositoryService`.

@@ -1,3 +1,14 @@
+## 5.54.0
+
+### Grimório Admin — Editor de Talentos
+- Adicionado `/admin/feats` para editar os 109 talentos reais dos catálogos PHB 2014, Ryoko e Lyre.
+- O editor permite nome, nome original, aliases, categoria, página, descrição, pré-requisitos textuais/estruturados, repetibilidade e escolhas estruturadas.
+- Pré-requisitos e escolhas avançadas usam JSON com esquema estrito no servidor; chaves desconhecidas, profundidade excessiva, IDs duplicados e valores fora dos limites são recusados.
+- `id`, `sourceId`, catálogo, paths e automações Foundry permanecem protegidos e não podem ser enviados pelo frontend.
+- O backend localiza o array literal `feats` com Acorn, altera somente a entrada solicitada, reanalisa o arquivo e confirma preservação byte a byte dos outros talentos.
+- Adicionados preview sem persistência, confirmação de diferenças, bloqueio de mudanças não salvas, conflito por hash e feedback de modo mock/GitHub.
+- Incluídos testes de preservação, inserção de campos opcionais, estruturas avançadas, autenticação, CSRF, conflito e tentativas de editar arquivo/campo arbitrário.
+
 ## 5.53.0
 
 ### Grimório Admin — Metadados de Classes e Subclasses

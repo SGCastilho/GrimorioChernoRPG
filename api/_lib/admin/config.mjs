@@ -46,7 +46,15 @@ export const METADATA_CONTENT_FILES = Object.freeze([
 ]);
 
 export const METADATA_REPOSITORY_FILES = Object.freeze([...METADATA_CONTENT_FILES, 'manifest.json']);
-export const ALLOWED_REPOSITORY_FILES = new Set([...REPOSITORY_FILES, ...METADATA_REPOSITORY_FILES]);
+
+export const FEAT_CONTENT_FILES = Object.freeze([
+  'data/feats/phb-2014-feats.js',
+  'data/feats/ryoko-yokai-realms-feats.js',
+  'data/feats/lyre-retia-feats.js'
+]);
+
+export const FEAT_REPOSITORY_FILES = Object.freeze([...FEAT_CONTENT_FILES, 'manifest.json']);
+export const ALLOWED_REPOSITORY_FILES = new Set([...REPOSITORY_FILES, ...METADATA_REPOSITORY_FILES, ...FEAT_REPOSITORY_FILES]);
 
 export const isProduction = () => process.env.VERCEL_ENV === 'production';
 export const cookieName = () => isProduction() ? '__Host-grimorio_admin' : 'grimorio_admin_dev';

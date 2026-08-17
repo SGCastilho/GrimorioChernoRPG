@@ -217,8 +217,20 @@ h1 { margin-bottom: .8rem; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.0
 
 .admin-art-form { display: grid; gap: 1.4rem; }
 .admin-selector-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.admin-selector-grid-two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .admin-metadata-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
 .admin-protected-id { margin: -.3rem 0 0; padding: .65rem .8rem; color: var(--admin-muted); border-left: 3px solid var(--admin-gold); background: rgba(210,173,103,.06); overflow-wrap: anywhere; }
+.admin-check-field { display: flex; align-items: center; gap: .65rem; padding: .75rem; border: 1px solid var(--admin-line); border-radius: .5rem; background: rgba(255,255,255,.025); }
+.admin-check-field input { width: 1.1rem; height: 1.1rem; margin: 0; accent-color: var(--admin-gold); }
+.admin-code-input { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .82rem; tab-size: 2; }
+.admin-feat-preview { padding: 1.2rem; border: 1px solid var(--admin-line); border-radius: .75rem; background: linear-gradient(135deg, var(--admin-panel-soft), var(--admin-panel)); }
+.admin-feat-preview h2 { margin: 0; color: var(--admin-gold-bright); }
+.admin-feat-preview-original { margin: .3rem 0 .7rem; color: var(--admin-muted); font-size: .88rem; }
+.admin-feat-preview-badges { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: .85rem; }
+.admin-feat-preview-badges span { padding: .25rem .5rem; color: var(--admin-muted); border: 1px solid var(--admin-line); border-radius: 999px; font-size: .76rem; }
+.admin-feat-preview-prerequisite { padding: .55rem .7rem; color: #f0cf8e; border-left: 3px solid var(--admin-gold); background: rgba(210,173,103,.06); }
+.admin-feat-preview-description { color: #dce1ea; line-height: 1.6; white-space: pre-line; }
+.admin-feat-preview-choices { margin-bottom: 0; color: var(--admin-muted); font-size: .86rem; }
 .admin-class-select { width: min(420px, 100%); }
 .admin-editor-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 

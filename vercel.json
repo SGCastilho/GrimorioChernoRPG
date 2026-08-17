@@ -37,7 +37,7 @@
   ],
   "functions": {
     "api/admin/*.mjs": {
-      "includeFiles": "{manifest.json,data/class-covers.js,data/class-detail-art.js,data/classes.js,data/tasha-artificer.js,data/lyre-classes.js,data/zagalhta-classes.js,data/ryoko-classes.js,data/blade-bone-benefit-classes.js,data/homebrew-emissario.js,data/homebrew-sage.js,data/homebrew-spellblade-class.js,data/cultivator-class.js,data/homebrew-street-fighter.js,data/lyre-subclasses.js,data/zagalhta-specializations.js,data/zagalhta-subclasses-standard.js,data/zagalhta-subclasses-standard-2.js,data/zagalhta-subclasses-standard-3.js,data/blade-bone-benefit-subclasses.js,data/ryoko-subclasses.js,data/xanathar-subclasses.js,data/tasha-subclasses.js,data/scag-subclasses.js,data/homebrew-paladin-bahamut.js}",
+      "includeFiles": "{manifest.json,data/class-covers.js,data/class-detail-art.js,data/classes.js,data/tasha-artificer.js,data/lyre-classes.js,data/zagalhta-classes.js,data/ryoko-classes.js,data/blade-bone-benefit-classes.js,data/homebrew-emissario.js,data/homebrew-sage.js,data/homebrew-spellblade-class.js,data/cultivator-class.js,data/homebrew-street-fighter.js,data/lyre-subclasses.js,data/zagalhta-specializations.js,data/zagalhta-subclasses-standard.js,data/zagalhta-subclasses-standard-2.js,data/zagalhta-subclasses-standard-3.js,data/blade-bone-benefit-subclasses.js,data/ryoko-subclasses.js,data/xanathar-subclasses.js,data/tasha-subclasses.js,data/scag-subclasses.js,data/homebrew-paladin-bahamut.js,data/feats/phb-2014-feats.js,data/feats/ryoko-yokai-realms-feats.js,data/feats/lyre-retia-feats.js}",
       "maxDuration": 30
     }
   }

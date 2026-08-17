@@ -5,6 +5,11 @@ function element(name, className, text) {
   return node;
 }
 
+function displayValue(value) {
+  const text = value && typeof value === 'object' ? JSON.stringify(value) : String(value);
+  return text.length > 600 ? `${text.slice(0, 597)}…` : text;
+}
+
 export function confirmChanges(className, differences, entityLabel = 'Classe') {
   return new Promise(resolve => {
     const previouslyFocused = document.activeElement;
@@ -16,7 +21,7 @@ export function confirmChanges(className, differences, entityLabel = 'Classe') {
     for (const difference of differences) {
       const label = element('dt', '', difference.label);
       const values = element('dd');
-      values.append(element('del', '', String(difference.before)), document.createTextNode(' → '), element('ins', '', String(difference.after)));
+      values.append(element('del', '', displayValue(difference.before)), document.createTextNode(' → '), element('ins', '', displayValue(difference.after)));
       list.append(label, values);
     }
     const actions = element('div', 'admin-dialog-actions');

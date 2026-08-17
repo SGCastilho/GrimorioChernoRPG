@@ -4,6 +4,7 @@ import { authenticate, createSession, csrfToken, hashPassword, sessionCookie, ve
 import { GET as classArtGet, POST as classArtPost } from '../../api/admin/class-art.mjs';
 import { GET as historyGet } from '../../api/admin/history.mjs';
 import { GET as metadataGet, POST as metadataPost } from '../../api/admin/class-metadata.mjs';
+import { GET as featGet, POST as featPost } from '../../api/admin/feat.mjs';
 import { POST as login } from '../../api/admin/login.mjs';
 import { POST as logout } from '../../api/admin/logout.mjs';
 import { GET as getSession } from '../../api/admin/session.mjs';
@@ -77,12 +78,16 @@ test('sessão ausente é pública, mas APIs de escrita bloqueiam anônimo, CSRF 
   assert.equal(anonymousHistory.status, 401);
   const anonymousMetadata = await metadataGet(new Request(`${origin}/api/admin/class-metadata`));
   assert.equal(anonymousMetadata.status, 401);
+  const anonymousFeat = await featGet(new Request(`${origin}/api/admin/feat`));
+  assert.equal(anonymousFeat.status, 401);
   const created = createSession();
   const cookie = sessionCookie(created.token);
   const invalidCsrf = await classArtPost(new Request(`${origin}/api/admin/class-art`, { method: 'POST', headers: { origin, cookie, 'x-csrf-token': 'invalid' }, body: '{}' }));
   assert.equal(invalidCsrf.status, 403);
   const invalidMetadataCsrf = await metadataPost(new Request(`${origin}/api/admin/class-metadata`, { method: 'POST', headers: { origin, cookie, 'x-csrf-token': 'invalid' }, body: '{}' }));
   assert.equal(invalidMetadataCsrf.status, 403);
+  const invalidFeatCsrf = await featPost(new Request(`${origin}/api/admin/feat`, { method: 'POST', headers: { origin, cookie, 'x-csrf-token': 'invalid' }, body: '{}' }));
+  assert.equal(invalidFeatCsrf.status, 403);
   const oversized = await classArtPost(new Request(`${origin}/api/admin/class-art`, {
     method: 'POST',
     headers: { origin, cookie, 'x-csrf-token': csrfToken(created.payload) },
