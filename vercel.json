@@ -37,11 +37,7 @@
   ],
   "functions": {
     "api/admin/*.mjs": {
-      "includeFiles": [
-        "data/class-covers.js",
-        "data/class-detail-art.js",
-        "manifest.json"
-      ],
+      "includeFiles": "{manifest.json,data/class-covers.js,data/class-detail-art.js}",
       "maxDuration": 30
     }
   }

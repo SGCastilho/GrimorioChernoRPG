@@ -72,8 +72,8 @@ check(!publicSource.includes('data/class-covers.js') && !publicSource.includes('
 
 const rewrites = vercel.rewrites || [];
 check(rewrites.some(item => item.source === '/admin' && item.destination === '/admin/index.html') && rewrites.some(item => item.source === '/admin/:path*'), 'rewrites administrativos configurados');
-const included = vercel.functions?.['api/admin/*.mjs']?.includeFiles || [];
-check(included.includes('data/class-covers.js') && included.includes('data/class-detail-art.js') && included.includes('manifest.json'), 'Vercel inclui somente os dados necessários às Functions');
+const included = vercel.functions?.['api/admin/*.mjs']?.includeFiles;
+check(typeof included === 'string' && included === '{manifest.json,data/class-covers.js,data/class-detail-art.js}', 'Vercel usa glob string para incluir somente os dados necessários às Functions');
 check(JSON.stringify(vercel).includes("frame-ancestors 'none'") && JSON.stringify(vercel).includes('no-store'), 'CSP e cache privado configurados');
 
 const envExample = read('.env.example');
