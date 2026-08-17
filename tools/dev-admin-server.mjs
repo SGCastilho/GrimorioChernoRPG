@@ -14,6 +14,7 @@ const functions = new Map([
   ['/api/admin/class-art', await import('../api/admin/class-art.mjs')],
   ['/api/admin/class-metadata', await import('../api/admin/class-metadata.mjs')],
   ['/api/admin/feat', await import('../api/admin/feat.mjs')],
+  ['/api/admin/race', await import('../api/admin/race.mjs')],
   ['/api/admin/history', await import('../api/admin/history.mjs')]
 ]);
 const mime = {

@@ -1,12 +1,12 @@
-# Grimório Admin 5.54.0
+# Grimório Admin 5.55.0
 
-O Grimório Admin é um CMS Git-backed para artes, metadados de classes/subclasses e talentos, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
+O Grimório Admin é um CMS Git-backed para artes, metadados de classes/subclasses, talentos e raças/subraças, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
 
 ## Arquitetura do MVP
 
 ```text
 /admin (HTML/CSS/JS sem secrets)
-  → /api/admin/login | session | logout | class-art | class-metadata | feat | history
+  → /api/admin/login | session | logout | class-art | class-metadata | feat | race | history
   → sessão HMAC + CSRF + validação server-side
   → editor estrutural AST Acorn
   → RepositoryService
@@ -40,6 +40,16 @@ Ao renomear uma classe, o servidor sincroniza os três índices derivados do man
 O cliente envia somente o ID do talento, campos alterados e hash da revisão. O path é resolvido pela allowlist no servidor. São editáveis nome, nome original, aliases, categoria, página, descrição, pré-requisitos, repetibilidade e escolhas. `id`, `sourceId`, catálogo e os perfis de automação Foundry não são editáveis.
 
 Os campos avançados `prerequisites` e `choices` são exibidos como arrays JSON para preservar todas as variações existentes. O servidor aplica um esquema estrito, limita tamanhos/profundidade, recusa chaves desconhecidas e exige que o texto de pré-requisito e sua estrutura sejam adicionados ou removidos juntos. O preview é exclusivamente local e não persiste dados.
+
+## Editor de raças e subraças
+
+`/admin/races` carrega as 42 raças e 368 subraças dos nove arquivos raciais autorizados. O editor não mantém índice manual: as entidades, vínculos e proprietários dos campos são descobertos estruturalmente por AST.
+
+- Raças: nome, nome original, página, resumo, aumento de atributos, tipos de criatura, expectativa de vida, alinhamento nacional, origem planar, planetouched, regiões, tamanho, tendência, idiomas e deslocamento.
+- Subraças: nome, página, aumento de atributos e descrição.
+- Protegidos: `id`, `raceId`, nome original das subraças que geram ID, fonte, `sourceId`, revisão textual, lore, traços fixos, Traços de Legado, Sangue Misto, heranças, magias e estruturas especiais.
+
+O catálogo racial é composto por camadas. Lyre define a base e aplica revisões nas Fases 2–4; Blade usa a fábrica `S(...)`; Zagalhta usa objetos literais e anexos agrupados por raça. O backend reconhece essas formas sem `eval`, grava cada valor no arquivo que realmente prevalece em runtime, reanalisa todos os arquivos e confirma que nenhuma outra entidade mudou. Uma alteração que atinja base e fase gera um único commit. Ao renomear uma raça, `manifest.raceIndex` é sincronizado no mesmo commit.
 
 ## Histórico read-only
 
@@ -173,4 +183,5 @@ O primeiro commit real deve ser feito somente depois da revisão do código e da
 - sem rate limit distribuído; recomenda-se configurar Vercel Firewall para limitar tentativas de login;
 - features, progressões, tabelas e referências de classes ainda não são editáveis;
 - o editor de talentos não modifica os perfis de automação Foundry; alterações mecânicas devem respeitar o contrato já existente do exporter;
+- o editor racial não altera traços, regras globais ou estruturas especiais; mudanças mecânicas continuam sendo feitas e validadas diretamente nos arquivos de conteúdo;
 - próximos editores devem criar validadores e serializadores próprios, reutilizando autenticação, cliente API e `RepositoryService`.

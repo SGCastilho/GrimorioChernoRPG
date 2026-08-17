@@ -54,7 +54,21 @@ export const FEAT_CONTENT_FILES = Object.freeze([
 ]);
 
 export const FEAT_REPOSITORY_FILES = Object.freeze([...FEAT_CONTENT_FILES, 'manifest.json']);
-export const ALLOWED_REPOSITORY_FILES = new Set([...REPOSITORY_FILES, ...METADATA_REPOSITORY_FILES, ...FEAT_REPOSITORY_FILES]);
+
+export const RACE_CONTENT_FILES = Object.freeze([
+  'data/lyre-races.js',
+  'data/lyre-races-phase2-structure.js',
+  'data/lyre-races-phase2-text.js',
+  'data/lyre-races-phase3-structure.js',
+  'data/lyre-races-phase3-text.js',
+  'data/lyre-races-phase4-structure.js',
+  'data/lyre-races-phase4-text.js',
+  'data/blade-bone-benefit-races.js',
+  'data/zagalhta-exolunar-races.js'
+]);
+
+export const RACE_REPOSITORY_FILES = Object.freeze([...RACE_CONTENT_FILES, 'manifest.json']);
+export const ALLOWED_REPOSITORY_FILES = new Set([...REPOSITORY_FILES, ...METADATA_REPOSITORY_FILES, ...FEAT_REPOSITORY_FILES, ...RACE_REPOSITORY_FILES]);
 
 export const isProduction = () => process.env.VERCEL_ENV === 'production';
 export const cookieName = () => isProduction() ? '__Host-grimorio_admin' : 'grimorio_admin_dev';

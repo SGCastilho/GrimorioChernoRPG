@@ -231,6 +231,13 @@ h1 { margin-bottom: .8rem; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.0
 .admin-feat-preview-prerequisite { padding: .55rem .7rem; color: #f0cf8e; border-left: 3px solid var(--admin-gold); background: rgba(210,173,103,.06); }
 .admin-feat-preview-description { color: #dce1ea; line-height: 1.6; white-space: pre-line; }
 .admin-feat-preview-choices { margin-bottom: 0; color: var(--admin-muted); font-size: .86rem; }
+.admin-race-preview { padding: 1.25rem; border: 1px solid var(--admin-line); border-radius: .8rem; background: linear-gradient(135deg, var(--admin-panel-soft), var(--admin-panel)); }
+.admin-race-preview h2 { margin: 0; color: var(--admin-gold-bright); }
+.admin-race-preview-meta { margin: .35rem 0 .9rem; color: var(--admin-muted); font-size: .86rem; }
+.admin-race-preview-text { color: #dce1ea; line-height: 1.6; white-space: pre-line; }
+.admin-race-preview-ability { padding: .65rem .75rem; color: #f0cf8e; border-left: 3px solid var(--admin-gold); background: rgba(210,173,103,.06); }
+.admin-race-preview-badges { display: flex; flex-wrap: wrap; gap: .45rem; }
+.admin-race-preview-badges span { padding: .28rem .52rem; color: var(--admin-muted); border: 1px solid var(--admin-line); border-radius: 999px; font-size: .76rem; }
 .admin-class-select { width: min(420px, 100%); }
 .admin-editor-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 

@@ -1,6 +1,7 @@
 import { ART_FILES, imageHosts } from './config.mjs';
 import { CLASS_METADATA_FIELDS, SOURCE_METADATA_FIELDS, SUBCLASS_METADATA_FIELDS } from './metadata-source.mjs';
 import { FEAT_FIELDS } from './feat-source.mjs';
+import { RACE_FIELDS, RACE_META_FIELDS, SUBRACE_FIELDS } from './race-source.mjs';
 import { fail } from './errors.mjs';
 
 function exactKeys(value, allowed, label) {
@@ -199,6 +200,53 @@ export function validateFeatSavePayload(payload, registry) {
   exactKeys(payload.expected, ['entryHash'], 'expected');
   if (typeof payload.expected.entryHash !== 'string' || !/^[0-9a-f]{64}$/i.test(payload.expected.entryHash)) fail(400, 'INVALID_REVISION', 'A revisão esperada é inválida.');
   if (payload.changes.name && [...registry.feats.values()].some(item => item.id !== current.id && item.metadata.name.toLocaleLowerCase('pt-BR') === payload.changes.name.toLocaleLowerCase('pt-BR'))) fail(400, 'DUPLICATE_NAME', 'Já existe um talento com esse nome.');
+  return { ...payload, current };
+}
+
+function validateRaceFields(type, changes, current) {
+  const allowed = type === 'race' ? [...RACE_FIELDS, 'meta'] : SUBRACE_FIELDS;
+  exactKeys(changes, allowed, 'changes');
+  if (!Object.keys(changes).length) fail(400, 'EMPTY_CHANGES', 'Nenhuma alteração foi informada.');
+  const limits = type === 'race'
+    ? { name: [1, 120], originalName: [1, 120], summary: [1, 4000], abilityScore: [1, 1000] }
+    : { name: [1, 120], ability: [1, 500], description: [1, 16000] };
+  for (const [field, value] of Object.entries(changes)) {
+    if (field === 'meta') continue;
+    const valid = field === 'sourcePage' || field === 'page'
+      ? Number.isInteger(value) && value >= 1 && value <= 9999
+      : limits[field] && validText(value, ...limits[field]);
+    if (!valid) fail(400, 'INVALID_VALUE', `Valor inválido para ${field}.`);
+  }
+  if (changes.meta !== undefined) {
+    if (type !== 'race') fail(400, 'INVALID_FIELD', 'Metadados raciais não são permitidos para subraças.');
+    exactKeys(changes.meta, RACE_META_FIELDS, 'changes.meta');
+    if (!Object.keys(changes.meta).length) fail(400, 'EMPTY_CHANGES', 'Nenhuma alteração de metadados raciais foi informada.');
+    const maxima = { creatureTypes: 200, lifeExpectancy: 300, nationalAlignment: 200, planarOrigin: 300, planetouched: 200, regions: 500, size: 300, alignment: 1000, languages: 500, speed: 300 };
+    for (const [field, value] of Object.entries(changes.meta)) if (!validText(value, 1, maxima[field])) fail(400, 'INVALID_VALUE', `Valor inválido para meta.${field}.`);
+  }
+  const effective = { ...current.metadata, ...changes, meta: { ...current.metadata.meta, ...(changes.meta || {}) } };
+  if (JSON.stringify(effective) === JSON.stringify(current.metadata)) fail(400, 'NO_CHANGES', 'Os valores informados são iguais aos atuais.');
+}
+
+export function validateRaceSavePayload(payload, registry) {
+  exactKeys(payload, ['entityType', 'raceId', 'subraceId', 'changes', 'expected'], 'payload');
+  if (!['race', 'subrace'].includes(payload.entityType)) fail(400, 'INVALID_ENTITY_TYPE', 'Tipo de entidade racial não permitido.');
+  if (typeof payload.raceId !== 'string' || !/^[a-z0-9][a-z0-9-]{0,119}$/.test(payload.raceId)) fail(400, 'UNKNOWN_RACE_ENTITY', 'A raça ou subraça informada não existe no Grimório.');
+  const race = registry.races.get(payload.raceId);
+  if (!race) fail(400, 'UNKNOWN_RACE_ENTITY', 'A raça ou subraça informada não existe no Grimório.');
+  let current = race;
+  if (payload.entityType === 'subrace') {
+    if (typeof payload.subraceId !== 'string' || !/^[a-z0-9][a-z0-9-]{0,159}$/.test(payload.subraceId)) fail(400, 'UNKNOWN_RACE_ENTITY', 'A raça ou subraça informada não existe no Grimório.');
+    current = [...registry.subraces.values()].find(item => item.raceId === payload.raceId && item.id === payload.subraceId);
+    if (!current) fail(400, 'UNKNOWN_RACE_ENTITY', 'A raça ou subraça informada não existe no Grimório.');
+  } else if (payload.subraceId !== undefined) fail(400, 'INVALID_FIELD', 'subraceId não é permitido ao editar uma raça.');
+  validateRaceFields(payload.entityType, payload.changes, current);
+  exactKeys(payload.expected, ['entryHash'], 'expected');
+  if (typeof payload.expected.entryHash !== 'string' || !/^[0-9a-f]{64}$/i.test(payload.expected.entryHash)) fail(400, 'INVALID_REVISION', 'A revisão esperada é inválida.');
+  if (payload.changes.name) {
+    const peers = payload.entityType === 'race' ? [...registry.races.values()] : [...registry.subraces.values()].filter(item => item.raceId === payload.raceId);
+    if (peers.some(item => item.id !== current.id && item.metadata.name.toLocaleLowerCase('pt-BR') === payload.changes.name.toLocaleLowerCase('pt-BR'))) fail(400, 'DUPLICATE_NAME', 'Já existe uma entidade racial desse grupo com esse nome.');
+  }
   return { ...payload, current };
 }
 

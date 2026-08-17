@@ -3,6 +3,7 @@ import { renderClassArtEditor } from './class-art-editor.js';
 import { renderHistoryView } from './history-view.js';
 import { renderMetadataEditor } from './metadata-editor.js';
 import { renderFeatEditor } from './feat-editor.js';
+import { renderRaceEditor } from './race-editor.js';
 import { registerRoute, startRouter } from './router.js';
 
 const shell = document.querySelector('#admin-app');
@@ -32,7 +33,7 @@ function adminLayout(content) {
   brand.dataset.adminRoute = '';
   const nav = element('nav', 'admin-nav');
   nav.setAttribute('aria-label', 'Administração');
-  for (const [href, text] of [['/admin', 'Dashboard'], ['/admin/class-art', 'Artes de Classes'], ['/admin/class-metadata', 'Metadados'], ['/admin/feats', 'Talentos'], ['/admin/history', 'Histórico']]) {
+  for (const [href, text] of [['/admin', 'Dashboard'], ['/admin/class-art', 'Artes de Classes'], ['/admin/class-metadata', 'Metadados'], ['/admin/feats', 'Talentos'], ['/admin/races', 'Raças'], ['/admin/history', 'Histórico']]) {
     const link = element('a', '', text);
     link.href = href;
     link.dataset.adminRoute = '';
@@ -137,11 +138,15 @@ function renderDashboard() {
     feats.href = '/admin/feats';
     feats.dataset.adminRoute = '';
     feats.append(element('span', 'admin-card-kicker', 'Conteúdo'), element('h2', '', 'Talentos'), element('p', '', 'Edite os 109 talentos dos catálogos PHB, Ryoko e Lyre com estruturas avançadas validadas.'));
+    const races = element('a', 'admin-dashboard-card');
+    races.href = '/admin/races';
+    races.dataset.adminRoute = '';
+    races.append(element('span', 'admin-card-kicker', 'Conteúdo'), element('h2', '', 'Raças e Subraças'), element('p', '', 'Edite metadados e textos das 42 raças e 368 subraças sem tocar em IDs, vínculos ou regras mecânicas.'));
     const history = element('a', 'admin-dashboard-card');
     history.href = '/admin/history';
     history.dataset.adminRoute = '';
     history.append(element('span', 'admin-card-kicker', 'Auditoria'), element('h2', '', 'Histórico'), element('p', '', 'Consulte os commits recentes criados pelo Grimório Admin diretamente no GitHub.'));
-    grid.append(editor, metadata, feats, history);
+    grid.append(editor, metadata, feats, races, history);
     const mode = element('p', `admin-mode admin-mode-${session.mode}`, session.mode === 'github' ? 'Production: escrita GitHub habilitada' : 'Ambiente seguro: modo mock');
     content.append(grid, mode);
     adminLayout(content);
@@ -176,10 +181,18 @@ function renderFeats() {
   });
 }
 
+function renderRaces() {
+  return requireSession(async () => {
+    const main = adminLayout(element('p', 'admin-loading', 'Carregando editor…'));
+    await renderRaceEditor(main, setTitle);
+  });
+}
+
 registerRoute('/admin', renderDashboard);
 registerRoute('/admin/class-art', renderArt);
 registerRoute('/admin/class-metadata', renderMetadata);
 registerRoute('/admin/feats', renderFeats);
+registerRoute('/admin/races', renderRaces);
 registerRoute('/admin/history', renderHistory);
 
 try {

@@ -1,3 +1,14 @@
+## 5.55.0
+
+### Grimório Admin — Editor de Raças e Subraças
+- Adicionado `/admin/races` para editar metadados das 42 raças e textos das 368 subraças reais do Grimório.
+- Raças expõem nome, nome original, página, resumo, aumento de atributos e os dez campos de ficha racial; subraças expõem nome, página, aumento de atributos e descrição.
+- IDs, vínculos, fontes, traços, Traços de Legado, Sangue Misto, regras globais, heranças, magias raciais, estruturas especiais e Foundry permanecem protegidos.
+- O parser Acorn reconhece definições literais, subraças geradas pela fábrica `S(...)`, anexos por raça e as sobreposições textuais das Fases 2–4 sem executar o conteúdo JavaScript.
+- Cada campo é gravado no arquivo que efetivamente o fornece em runtime; descrições de Lyre são atualizadas no mapa de fase, enquanto Blade e Zagalhta preservam seus formatos próprios.
+- Renomear uma raça sincroniza somente sua entrada em `manifest.raceIndex` no mesmo commit; alterações que cruzam base e fase são reunidas em um único commit GitHub.
+- Adicionados preview local, confirmação de diferenças, conflito por hash, modo mock, mensagens sanitizadas e testes de preservação das demais 41 raças e 367 subraças.
+
 ## 5.54.0
 
 ### Grimório Admin — Editor de Talentos

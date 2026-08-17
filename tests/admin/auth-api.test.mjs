@@ -5,6 +5,7 @@ import { GET as classArtGet, POST as classArtPost } from '../../api/admin/class-
 import { GET as historyGet } from '../../api/admin/history.mjs';
 import { GET as metadataGet, POST as metadataPost } from '../../api/admin/class-metadata.mjs';
 import { GET as featGet, POST as featPost } from '../../api/admin/feat.mjs';
+import { GET as raceGet, POST as racePost } from '../../api/admin/race.mjs';
 import { POST as login } from '../../api/admin/login.mjs';
 import { POST as logout } from '../../api/admin/logout.mjs';
 import { GET as getSession } from '../../api/admin/session.mjs';
@@ -80,6 +81,8 @@ test('sessão ausente é pública, mas APIs de escrita bloqueiam anônimo, CSRF 
   assert.equal(anonymousMetadata.status, 401);
   const anonymousFeat = await featGet(new Request(`${origin}/api/admin/feat`));
   assert.equal(anonymousFeat.status, 401);
+  const anonymousRace = await raceGet(new Request(`${origin}/api/admin/race`));
+  assert.equal(anonymousRace.status, 401);
   const created = createSession();
   const cookie = sessionCookie(created.token);
   const invalidCsrf = await classArtPost(new Request(`${origin}/api/admin/class-art`, { method: 'POST', headers: { origin, cookie, 'x-csrf-token': 'invalid' }, body: '{}' }));
@@ -88,12 +91,20 @@ test('sessão ausente é pública, mas APIs de escrita bloqueiam anônimo, CSRF 
   assert.equal(invalidMetadataCsrf.status, 403);
   const invalidFeatCsrf = await featPost(new Request(`${origin}/api/admin/feat`, { method: 'POST', headers: { origin, cookie, 'x-csrf-token': 'invalid' }, body: '{}' }));
   assert.equal(invalidFeatCsrf.status, 403);
+  const invalidRaceCsrf = await racePost(new Request(`${origin}/api/admin/race`, { method: 'POST', headers: { origin, cookie, 'x-csrf-token': 'invalid' }, body: '{}' }));
+  assert.equal(invalidRaceCsrf.status, 403);
   const oversized = await classArtPost(new Request(`${origin}/api/admin/class-art`, {
     method: 'POST',
     headers: { origin, cookie, 'x-csrf-token': csrfToken(created.payload) },
     body: JSON.stringify({ padding: 'x'.repeat(17 * 1024) })
   }));
   assert.equal(oversized.status, 413);
+  const oversizedRace = await racePost(new Request(`${origin}/api/admin/race`, {
+    method: 'POST',
+    headers: { origin, cookie, 'x-csrf-token': csrfToken(created.payload) },
+    body: JSON.stringify({ padding: 'x'.repeat(33 * 1024) })
+  }));
+  assert.equal(oversizedRace.status, 413);
 });
 
 test('origem ausente e credencial incorreta não autenticam', async () => {
