@@ -808,3 +808,12 @@
 - O editor aceita somente paths `assets/` ou URLs HTTPS autorizadas; imagens exigem descrição acessível e não há upload binário.
 - Edição AST, allowlist, hashes por entrada, conflito `409`, modo mock e commit GitHub atômico sem `force` foram preservados.
 - Adicionados testes de serviço/validação e gates `validate-race-art-5.49.js` e `validate-admin-5.49.mjs`.
+
+## 5.50.1
+
+### Infraestrutura — retorno ao site estático
+
+- O Painel Administrativo Git-backed foi retirado temporariamente, incluindo login, APIs de escrita, integração GitHub, rewrites e variáveis da Vercel.
+- O Grimório volta a ser publicado como site inteiramente estático, sem backend, secrets ou criação de commits pelo navegador.
+- Covers e Detail Arts de classes e raças continuam preservados nos mapas JavaScript e podem ser atualizados diretamente no repositório.
+- Todas as artes raciais e informações adicionadas na série 5.50 foram mantidas sem alterações.
