@@ -41,6 +41,7 @@ const sources = registry.getSources();
 const catalogs = registry.getSpellCatalogs();
 const equipmentCatalogs = registry.getEquipmentCatalogs ? registry.getEquipmentCatalogs() : [];
 const featCatalogs = registry.getFeatCatalogs ? registry.getFeatCatalogs() : [];
+const backgroundCatalogs = registry.getBackgroundCatalogs ? registry.getBackgroundCatalogs() : [];
 const classes = context.GRIMORIO_CLASSES || [];
 const subclasses = context.GRIMORIO_SUBCLASSES || [];
 const progressionStore = context.GRIMORIO_CLASS_PROGRESSIONS || {};
@@ -146,6 +147,52 @@ else {
     if (audit.summary?.profiles !== featTotal) fail(`Automação de Talentos: esperado ${featTotal} perfis, encontrados ${audit.summary?.profiles}.`);
     else ok(`${audit.summary.profiles} perfis Foundry de Talentos validados (${audit.summary.full} completos, ${audit.summary.partial} parciais, ${audit.summary.description} descritivos)`);
   }
+}
+
+if (!backgroundCatalogs.length) warn('Nenhum catálogo de antecedentes foi registrado.');
+else {
+  const catalogIds = new Set();
+  const ids = new Map();
+  let total = 0;
+  for (const catalog of backgroundCatalogs) {
+    if (catalogIds.has(catalog.id)) fail(`ID de catálogo de antecedentes duplicado: ${catalog.id}`);
+    catalogIds.add(catalog.id);
+    if (!registry.getSource(catalog.sourceId)) fail(`Catálogo de antecedentes ${catalog.id} usa fonte inexistente: ${catalog.sourceId}`);
+    if (!catalog.chapter || !catalog.pages) fail(`Catálogo de antecedentes ${catalog.id} precisa de capítulo e intervalo de páginas.`);
+    if (!Array.isArray(catalog.backgrounds)) { fail(`Catálogo de antecedentes ${catalog.id} não possui array backgrounds.`); continue; }
+    total += catalog.backgrounds.length;
+    for (const background of catalog.backgrounds) {
+      if (!background?.id) fail(`Antecedente sem id em ${catalog.id}: ${background?.name || '(sem nome)'}`);
+      if (!background?.name || !background?.originalName) fail(`Antecedente sem nome PT-BR/original em ${catalog.id}: ${background?.id || '(sem id)'}`);
+      if (!background?.description) fail(`Antecedente sem descrição em ${catalog.id}: ${background?.id || '(sem id)'}`);
+      if (!background?.sourcePages || !/^\d+(?:[–-]\d+)?$/.test(String(background.sourcePages))) fail(`Antecedente com páginas inválidas em ${catalog.id}: ${background?.id || '(sem id)'} (${background?.sourcePages || 'ausentes'})`);
+      if (background?.id) {
+        const previous = ids.get(background.id);
+        if (previous) fail(`ID de antecedente duplicado entre catálogos: ${background.id} (${previous} e ${catalog.id})`);
+        else ids.set(background.id,catalog.id);
+      }
+      if (background?.variantOf && !background?.overrides) fail(`Variação ${background.id} não declara overrides explícitos.`);
+    }
+  }
+  const browser = context.GRIMORIO_BACKGROUND_BROWSER;
+  if (!browser?.getBackgrounds) fail('Navegador de antecedentes não foi carregado para resolver variações.');
+  else {
+    let resolved = [];
+    try { resolved = browser.getBackgrounds(); } catch (error) { fail(`Falha ao resolver variações de antecedentes: ${error.message}`); }
+    if (resolved.length !== total) fail(`Resolução de antecedentes retornou ${resolved.length} de ${total} entradas.`);
+    for (const background of resolved) {
+      if (background.resolutionError) fail(`${background.id}: ${background.resolutionError}`);
+      for (const field of ['skills','tools','auxiliaryTables']) if (!Array.isArray(background[field])) fail(`Antecedente resolvido ${background.id} não possui array ${field}.`);
+      for (const field of ['equipment','feature','suggested','languages']) if (!background[field]) fail(`Antecedente resolvido ${background.id} não possui ${field}.`);
+      if (background.feature && (!background.feature.name || !background.feature.text)) fail(`Antecedente ${background.id} possui característica incompleta.`);
+      for (const key of ['traits','ideals','bonds','flaws']) {
+        const table = background.suggested?.[key];
+        const expected = key === 'traits' ? 8 : 6;
+        if (!table || !Array.isArray(table.rows) || table.rows.length !== expected) fail(`Antecedente ${background.id}: tabela ${key} deve possuir ${expected} linhas.`);
+      }
+    }
+  }
+  ok(`${total} antecedentes validados em ${backgroundCatalogs.length} catálogo(s)`);
 }
 
 const races = context.GRIMORIO_RACES || [];

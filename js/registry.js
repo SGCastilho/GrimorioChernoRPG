@@ -8,6 +8,7 @@
   const spellCatalogs = new Map();
   const equipmentCatalogs = new Map();
   const featCatalogs = new Map();
+  const backgroundCatalogs = new Map();
 
   function normalize(value) {
     return String(value || '')
@@ -169,6 +170,39 @@
     return Array.from(featCatalogs.values()).sort((a, b) => (a.order || 1000) - (b.order || 1000) || a.id.localeCompare(b.id));
   }
 
+  function registerBackgroundCatalog(definition) {
+    if (!definition || typeof definition !== 'object') throw new TypeError('Catálogo de antecedentes inválido.');
+    const id = String(definition.id || '').trim();
+    const sourceId = String(definition.sourceId || '').trim();
+    const backgrounds = definition.backgrounds;
+    if (!id || !sourceId) throw new Error('Todo catálogo de antecedentes precisa de id e sourceId.');
+    if (backgroundCatalogs.has(id)) throw new Error('ID de catálogo de antecedentes já registrado: ' + id);
+    if (!Array.isArray(backgrounds)) throw new Error('O catálogo "' + id + '" precisa fornecer um array backgrounds.');
+    if (!getSource(sourceId)) throw new Error('O catálogo "' + id + '" referencia a fonte não registrada "' + sourceId + '".');
+    const catalog = { order: getSource(sourceId)?.order || 1000, ...definition, id, sourceId, backgrounds };
+    backgroundCatalogs.set(id, catalog);
+    return catalog;
+  }
+
+  function getBackgroundCatalogs() {
+    return Array.from(backgroundCatalogs.values()).sort((a, b) => (a.order || 1000) - (b.order || 1000) || a.id.localeCompare(b.id));
+  }
+
+  function backgroundStats() {
+    return getBackgroundCatalogs().map(catalog => {
+      const source = getSource(catalog.sourceId);
+      const bases = catalog.backgrounds.filter(background => !background?.variantOf).length;
+      return {
+        id: catalog.id,
+        sourceId: catalog.sourceId,
+        count: catalog.backgrounds.length,
+        bases,
+        variants: catalog.backgrounds.length - bases,
+        label: catalog.label || source?.catalogLabel || source?.homeLabel || source?.shortTitle || source?.title || catalog.id
+      };
+    });
+  }
+
   function featStats() {
     return getFeatCatalogs().map(catalog => {
       const source = getSource(catalog.sourceId);
@@ -282,6 +316,9 @@
     registerFeatCatalog,
     getFeatCatalogs,
     featStats,
+    registerBackgroundCatalog,
+    getBackgroundCatalogs,
+    backgroundStats,
     findCatalogForSpell,
     spellPrimarySource,
     spellGroupLabel,

@@ -1,0 +1,85 @@
+import { adminRequest, AdminApiError } from './api-client.js';
+import { confirmChanges } from './confirm-dialog.js';
+
+const labels = {
+  'cover.image':'Cover · Imagem', 'cover.alt':'Cover · Descrição acessível', 'cover.position':'Cover · Position',
+  'detailArt.image':'Detail Art · Imagem', 'detailArt.alt':'Detail Art · Descrição acessível', 'detailArt.position':'Detail Art · Position', 'detailArt.scale':'Detail Art · Scale'
+};
+
+function node(name,className,text){const result=document.createElement(name);if(className)result.className=className;if(text!==undefined)result.textContent=text;return result;}
+function field(form,kind,name,label,type='text',attributes={}){
+  const wrapper=node('label','admin-field');wrapper.append(node('span','',label));
+  const input=document.createElement('input');input.name=`${kind}.${name}`;input.type=type;
+  for(const [key,value] of Object.entries(attributes))input.setAttribute(key,value);
+  wrapper.append(input);form.append(wrapper);return input;
+}
+function artSection(title,kind,includeScale){
+  const section=node('section','admin-form-section');section.append(node('h2','',title));
+  const grid=node('div','admin-field-grid admin-race-field-grid');
+  const inputs={
+    image:field(grid,kind,'image','Imagem','text',{maxlength:'2048',placeholder:'https://imgur.com/… ou assets/…'}),
+    alt:field(grid,kind,'alt','Descrição acessível','text',{maxlength:'240',placeholder:'Descreva a personagem e a cena'}),
+    position:field(grid,kind,'position','Position','text',{maxlength:'40',placeholder:'center ou 73% 25%'})
+  };
+  section.append(grid);
+  if(includeScale){
+    const advanced=node('details','admin-advanced');advanced.append(node('summary','','Configurações avançadas'));
+    const advancedGrid=node('div','admin-field-grid');inputs.scale=field(advancedGrid,kind,'scale','Scale','number',{min:'1',max:'1.25',step:'0.01'});advanced.append(advancedGrid);section.append(advanced);
+  }
+  return {section,inputs};
+}
+function clone(value){return JSON.parse(JSON.stringify(value));}
+
+export async function renderRaceArtEditor(main,setTitle){
+  setTitle('Artes de Raças');main.replaceChildren(node('p','admin-loading','Carregando as 42 raças…'));
+  let catalog;
+  try{catalog=await adminRequest('race-art');}catch(error){renderFatal(main,error);return;}
+
+  let selected=catalog.races[0],original=clone(selected),busy=false;
+  const page=node('div','admin-page'),heading=node('div','admin-page-heading'),titleGroup=node('div');
+  titleGroup.append(node('p','admin-eyebrow','Conteúdo Git-backed'),node('h1','','Artes de Raças'),node('p','admin-lead','Edite banners e ilustrações internas das 42 raças com placeholder seguro e preview antes do commit.'));
+  const mode=node('span',`admin-mode admin-mode-${catalog.mode}`,catalog.mode==='github'?'GitHub · escrita real':'Mock · sem persistência');heading.append(titleGroup,mode);
+  const picker=node('label','admin-picker');picker.append(node('span','','Raça'));const select=document.createElement('select');
+  for(const item of catalog.races){const option=document.createElement('option');option.value=item.id;option.textContent=item.name;select.append(option);}picker.append(select);
+
+  const form=node('form','admin-art-form');form.noValidate=true;
+  const cover=artSection('Cover · banner do catálogo','cover',false),detail=artSection('Detail Art · página interna','detailArt',true);form.append(cover.section,detail.section);
+  const previews=node('section','admin-preview-section');previews.append(node('h2','','Pré-visualização'));
+  const previewGrid=node('div','admin-preview-grid admin-race-preview-grid'),coverPreview=previewCard('Cover','cover'),detailPreview=previewCard('Detail Art','detail');
+  previewGrid.append(coverPreview.card,detailPreview.card);previews.append(previewGrid);
+  const feedback=node('div','admin-feedback');feedback.setAttribute('role','status');feedback.setAttribute('aria-live','polite');
+  const reload=node('button','admin-button admin-button-quiet','Recarregar do GitHub');reload.type='button';reload.hidden=true;
+  const actions=node('div','admin-actions'),previewButton=node('button','admin-button admin-button-secondary','Pré-visualizar'),saveButton=node('button','admin-button admin-button-primary','Salvar');
+  previewButton.type='button';saveButton.type='submit';saveButton.disabled=true;actions.append(previewButton,saveButton);form.append(previews,feedback,reload,actions);page.append(heading,picker,form);main.replaceChildren(page);
+
+  const allInputs={cover:cover.inputs,detailArt:detail.inputs};
+  const populate=()=>{for(const kind of ['cover','detailArt'])for(const [key,input]of Object.entries(allInputs[kind]))input.value=selected[kind][key];original=clone(selected);feedback.textContent='';reload.hidden=true;updateButtons();applyPreview();};
+  const values=()=>({cover:{image:cover.inputs.image.value.trim(),alt:cover.inputs.alt.value.trim(),position:cover.inputs.position.value.trim()},detailArt:{image:detail.inputs.image.value.trim(),alt:detail.inputs.alt.value.trim(),position:detail.inputs.position.value.trim(),scale:Number(detail.inputs.scale.value)}});
+  const differences=()=>{const current=values(),result=[];for(const kind of ['cover','detailArt'])for(const fieldName of Object.keys(current[kind]))if(current[kind][fieldName]!==original[kind][fieldName])result.push({kind,field:fieldName,label:labels[`${kind}.${fieldName}`],before:original[kind][fieldName],after:current[kind][fieldName]});return result;};
+  function validCurrent(){const current=values();return ['cover','detailArt'].every(kind=>!current[kind].image||current[kind].alt.length>0);}
+  function updateButtons(){saveButton.disabled=busy||differences().length===0||!validCurrent();select.disabled=busy;previewButton.disabled=busy;}
+  function applyPreview(){const current=values();setPreview(coverPreview,current.cover,selected.name);setPreview(detailPreview,current.detailArt,selected.name);feedback.className='admin-feedback';feedback.textContent=validCurrent()?'Preview aplicado apenas nesta tela. Nada foi salvo.':'Informe uma descrição acessível para cada imagem cadastrada.';}
+  form.addEventListener('input',updateButtons);previewButton.addEventListener('click',applyPreview);
+  select.addEventListener('change',()=>{if(differences().length&&!window.confirm('Descartar as alterações não salvas desta raça?')){select.value=selected.id;return;}selected=catalog.races.find(item=>item.id===select.value);populate();});
+  form.addEventListener('submit',async event=>{
+    event.preventDefault();const diff=differences();if(!diff.length||busy||!validCurrent()||!(await confirmChanges(selected.name,diff)))return;
+    busy=true;updateButtons();feedback.className='admin-feedback';feedback.textContent='Salvando…';const changes={};for(const item of diff){changes[item.kind]||={};changes[item.kind][item.field]=item.after;}
+    try{
+      const result=await adminRequest('race-art',{method:'POST',body:{raceId:selected.id,changes,expected:{coverFileSha:catalog.revisions.coverFileSha,coverEntryHash:selected.revisions.coverEntryHash,detailFileSha:catalog.revisions.detailFileSha,detailEntryHash:selected.revisions.detailEntryHash}}});
+      const index=catalog.races.findIndex(item=>item.id===selected.id);catalog.races[index]=result.race;selected=result.race;catalog.revisions=result.revisions;original=clone(selected);feedback.className='admin-feedback admin-feedback-success';feedback.textContent=result.mode==='github'?'Commit criado. As artes aparecerão após o próximo deployment da Vercel.':'Simulação concluída. O modo mock validou a alteração em memória, sem commit.';
+    }catch(error){feedback.className='admin-feedback admin-feedback-error';feedback.textContent=friendlyError(error);reload.hidden=error instanceof AdminApiError&&error.status===409;}finally{busy=false;updateButtons();}
+  });
+  reload.addEventListener('click',()=>renderRaceArtEditor(main,setTitle));
+  window.onbeforeunload=event=>{if(differences().length){event.preventDefault();event.returnValue='';}};window.GRIMORIO_ADMIN_HAS_UNSAVED=()=>differences().length>0;populate();
+}
+
+function previewCard(label,kind){
+  const card=node('article',`admin-preview-card admin-race-preview-card admin-race-preview-${kind}`),visual=node('div','admin-preview-visual'),placeholder=node('div','admin-race-preview-placeholder');
+  placeholder.append(node('span','','RA'));visual.append(placeholder,node('span','admin-race-preview-label',label));card.append(visual);return{card,visual,placeholder};
+}
+function setPreview(preview,settings,raceName){
+  const initials=String(raceName||'RA').slice(0,2).toUpperCase(),source=settings.image.startsWith('assets/')?'/'+settings.image:settings.image,url=source?`url("${source.replace(/["\\]/g,'\\$&')}")`:'none';
+  preview.placeholder.querySelector('span').textContent=initials;preview.visual.style.backgroundImage=url;preview.visual.style.backgroundPosition=settings.position;preview.visual.style.transform=preview.card.classList.contains('admin-race-preview-detail')?`scale(${settings.scale||1})`:'none';preview.card.classList.toggle('has-image',!!settings.image);
+}
+function friendlyError(error){if(!(error instanceof AdminApiError))return'Falha inesperada ao salvar.';const labels={UNAUTHENTICATED:'Falha de autenticação. Entre novamente.',CONFLICT:'Conflito de versão: a mesma entrada mudou no GitHub.',GITHUB_UNAVAILABLE:'GitHub indisponível.',FILE_NOT_FOUND:'Arquivo não encontrado.',INVALID_VALUE:'Falha de validação: revise imagem, descrição, foco e escala.'};return labels[error.code]||error.message;}
+function renderFatal(main,error){const page=node('section','admin-empty');page.append(node('h1','','Não foi possível abrir o editor'),node('p','',friendlyError(error)));main.replaceChildren(page);}

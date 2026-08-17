@@ -13,7 +13,9 @@
   .equipment-row,
   .equipment-glossary-grid article,
   .feat-hero,
-  .feat-summary
+  .feat-summary,
+  .background-hero,
+  .background-card
 ){
   --spot-x:50%;
   --spot-y:50%;
@@ -34,7 +36,9 @@
   .ability-budget-card,
   .ability-summary-card,
   .equipment-glossary-grid article,
-  .feat-hero
+  .feat-hero,
+  .background-hero,
+  .background-card
 ){overflow:hidden}
 
 :is(
@@ -49,7 +53,9 @@
   .equipment-row,
   .equipment-glossary-grid article,
   .feat-hero,
-  .feat-summary
+  .feat-summary,
+  .background-hero,
+  .background-card
 )::after{
   content:"";
   position:absolute;
@@ -82,7 +88,9 @@
   .equipment-row,
   .equipment-glossary-grid article,
   .feat-hero,
-  .feat-summary
+  .feat-summary,
+  .background-hero,
+  .background-card
 )[data-spotlight-active="true"]::after,
 :is(
   .hero,
@@ -96,7 +104,9 @@
   .equipment-row,
   .equipment-glossary-grid article,
   .feat-hero,
-  .feat-summary
+  .feat-summary,
+  .background-hero,
+  .background-card
 )[data-spotlight-active="keyboard"]::after{
   opacity:1;
 }
@@ -114,7 +124,9 @@
   .equipment-row,
   .equipment-glossary-grid article,
   .feat-hero,
-  .feat-summary
+  .feat-summary,
+  .background-hero,
+  .background-card
 )>*{
   position:relative;
   z-index:1;
@@ -130,6 +142,8 @@
 .equipment-glossary-grid article{--spot-color:var(--arcane);--spot-opacity:10%;--spot-border-opacity:24%}
 .feat-hero{--spot-color:var(--arcane);--spot-opacity:10%;--spot-border-opacity:28%}
 .feat-summary{--spot-color:var(--gold);--spot-opacity:7.5%;--spot-border-opacity:18%}
+.background-hero{--spot-color:var(--gold);--spot-opacity:11%;--spot-border-opacity:28%}
+.background-card{--spot-color:var(--gold);--spot-opacity:9%;--spot-border-opacity:24%}
 
 /* O brilho não substitui os estados funcionais existentes. */
 .race-card:hover,.class-card:hover,.subclass-card:hover{will-change:transform}
@@ -141,13 +155,13 @@
 @media (prefers-reduced-motion:reduce){
   :is(
     .hero,.class-card,.subclass-card,.race-card,.subrace-card,.race-rule-card,
-    .ability-budget-card,.ability-summary-card,.equipment-row,.equipment-glossary-grid article,.feat-hero,.feat-summary
+    .ability-budget-card,.ability-summary-card,.equipment-row,.equipment-glossary-grid article,.feat-hero,.feat-summary,.background-hero,.background-card
   )::after{display:none!important;transition:none!important}
 }
 
 @media (hover:none),(pointer:coarse){
   :is(
     .hero,.class-card,.subclass-card,.race-card,.subrace-card,.race-rule-card,
-    .ability-budget-card,.ability-summary-card,.equipment-row,.equipment-glossary-grid article,.feat-hero,.feat-summary
+    .ability-budget-card,.ability-summary-card,.equipment-row,.equipment-glossary-grid article,.feat-hero,.feat-summary,.background-hero,.background-card
   )::after{display:none!important}
 }

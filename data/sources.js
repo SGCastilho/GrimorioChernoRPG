@@ -35,7 +35,7 @@
       ],
       matchIncludes: ['Livro do Jogador'],
       about: [
-        'O catálogo oficial do Livro do Jogador está incorporado localmente, incluindo as 361 magias do Capítulo 11, as classes-base estruturadas para consulta offline, os 42 talentos do Capítulo 6 e o catálogo inicial de 50 equipamentos mundanos do Capítulo 5 (37 armas, 12 armaduras e 1 escudo).',
+        'O catálogo oficial do Livro do Jogador está incorporado localmente, incluindo as 361 magias do Capítulo 11, as classes-base estruturadas para consulta offline, os 42 talentos do Capítulo 6, os 18 antecedentes e variações do Capítulo 4 e o catálogo inicial de 50 equipamentos mundanos do Capítulo 5 (37 armas, 12 armaduras e 1 escudo).',
         'Quando a própria fonte apresenta metadados conflitantes ou grafias incomuns, o Grimório preserva a divergência documentada em vez de inventar uma regra substituta.'
       ]
     },

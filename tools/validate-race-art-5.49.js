@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+'use strict';
+const fs=require('fs');
+const path=require('path');
+const vm=require('vm');
+const root=path.resolve(__dirname,'..');
+const read=relative=>fs.readFileSync(path.join(root,relative),'utf8');
+const errors=[];
+const ok=(condition,message)=>condition?console.log('✓ '+message):errors.push(message);
+
+const manifest=JSON.parse(read('manifest.json'));
+const index=read('index.html'),browserSource=read('js/race-browser.js'),runtime=read('js/race-art-runtime.js'),css=read('css/race-art.css');
+ok(manifest.version==='5.49.0','manifesto está na versão 5.49.0');
+ok(Array.isArray(manifest.raceIndex)&&manifest.raceIndex.length===42,'manifest.raceIndex possui 42 raças');
+ok(index.includes('data/race-covers.js')&&index.includes('data/race-detail-art.js')&&index.includes('js/race-art-runtime.js')&&index.includes('css/race-art.css'),'recursos raciais carregados no index');
+
+const context={console};context.window=context;vm.createContext(context);
+for(const file of ['data/race-covers.js','data/race-detail-art.js'])vm.runInContext(read(file),context,{filename:file});
+const covers=context.GRIMORIO_RACE_COVERS,details=context.GRIMORIO_RACE_DETAIL_ART_DATA;
+ok(Object.keys(covers||{}).length===42&&Object.keys(details||{}).length===42,'mapas Cover e Detail Art possuem 42 entradas');
+ok(manifest.raceIndex.every(item=>covers[item.id]&&details[item.id]),'todos os IDs do manifesto existem nos dois mapas');
+ok(covers.arhcoon.image==='assets/race-art/arhcoon.png'&&covers.arhcoon.position==='73% 25%','Cover do Arhcoon configurada');
+ok(details.arhcoon.image==='assets/race-art/arhcoon.png'&&details.arhcoon.position==='right center'&&details.arhcoon.scale===1.12,'Detail Art do Arhcoon configurada');
+ok(Boolean(covers.arhcoon.alt)&&covers.arhcoon.alt===details.arhcoon.alt,'descrição acessível do Arhcoon consistente');
+ok(manifest.raceIndex.filter(item=>covers[item.id].image||details[item.id].image).length===1,'somente Arhcoon possui arte real no piloto');
+
+const asset=fs.readFileSync(path.join(root,'assets/race-art/arhcoon.png'));
+ok(asset.length===1942882&&asset.readUInt32BE(16)===1672&&asset.readUInt32BE(20)===941,'asset do Arhcoon preserva bytes e dimensões esperados');
+ok(browserSource.includes('race-card-media')&&browserSource.includes('race-detail-art-panel')&&browserSource.includes('openDetail'),'catálogo e detalhe injetam banner, painel e ampliação');
+ok(runtime.includes('showModal')&&runtime.includes("event.target===dialog")&&runtime.includes("addEventListener('cancel'")&&runtime.includes("event.key==='Escape'")&&runtime.includes("addEventListener('close'")&&runtime.includes('returnFocus'),'lightbox fecha com backdrop/Escape e restaura foco');
+ok(runtime.includes('coverFailed')&&runtime.includes('detailFailed')&&runtime.includes('nextCandidate'),'fallback resiliente implementado');
+ok(css.includes('.race-art-placeholder')&&css.includes('-webkit-mask-image:linear-gradient(90deg')&&css.includes('-webkit-mask-image:linear-gradient(180deg')&&css.includes('@media(max-width:920px)')&&css.includes('@media(prefers-reduced-motion:reduce)'),'placeholder, fade responsivo e movimento reduzido estilizados');
+
+if(errors.length){for(const error of errors)console.error('✗ '+error);console.error(`Arte racial 5.49.0 reprovada: ${errors.length} erro(s).`);process.exit(1);}
+console.log('Arte racial 5.49.0 aprovada: 42 raças, piloto Arhcoon e fallback verificados.');
