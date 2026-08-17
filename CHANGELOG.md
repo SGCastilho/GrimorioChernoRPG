@@ -1,3 +1,15 @@
+## 5.51.0
+
+### Grimório Admin — MVP Git-backed
+- Reintroduzido `/admin` com Login, Dashboard, editor de Artes de Classes e rota reservada para Histórico.
+- Sessão administrativa stateless de oito horas em cookie HttpOnly/SameSite Strict/Secure em Production, senha protegida por scrypt, invalidação por rotação e proteção CSRF.
+- Editor de Cover e Detail Art para as 27 classes, derivadas de `manifest.classIndex`, com preview temporário, confirmação por diferenças e suporte a `scale`.
+- Vercel Functions validam payloads e editam estruturalmente apenas `data/class-covers.js` e `data/class-detail-art.js` usando AST Acorn, com reanálise e verificação de preservação das demais entradas.
+- Persistência Production usa GitHub Git Data API para criar blobs, árvore e commit único, atualizando a referência sem force e retornando conflito explícito.
+- Development e Preview permanecem em modo `mock`, sem escrita no disco ou no GitHub; escrita real exige configuração explícita em Production.
+- Adicionados testes de autenticação, validação, transformação, conflito e integração GitHub mockada, além de documentação completa para GitHub, Vercel e desenvolvimento local.
+- O conteúdo existente, os IDs, exporters e `foundry/grimorio-importer` permanecem inalterados.
+
 ## 5.47.0
 
 ### Conteúdo — Antecedentes · Livro do Jogador 2014
