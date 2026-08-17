@@ -1,3 +1,11 @@
+## 5.55.1
+
+### Deploy — Compatibilidade com o schema da Vercel
+- Corrigido `functions.api/admin/*.mjs.includeFiles`, cujo valor ultrapassava o limite de 256 caracteres aceito pelo schema da Vercel.
+- A configuração agora usa o glob curto `{manifest.json,data/**/*.js}`; os dados JavaScript ocupam cerca de 5,84 MiB e permanecem bem abaixo do limite de bundle das Functions.
+- A inclusão no bundle não amplia permissões: leitura e escrita continuam restritas pela allowlist explícita de `RepositoryService`.
+- O gate Admin passa a verificar tanto o glob esperado quanto o limite máximo de 256 caracteres.
+
 ## 5.55.0
 
 ### Grimório Admin — Editor de Raças e Subraças

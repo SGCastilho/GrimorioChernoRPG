@@ -60,7 +60,7 @@ const manifest = JSON.parse(read('manifest.json'));
 const packageJson = JSON.parse(read('package.json'));
 const packageLock = exists('package-lock.json') ? JSON.parse(read('package-lock.json')) : {};
 const vercel = JSON.parse(read('vercel.json'));
-check(manifest.version === '5.55.0' && packageJson.version === '5.55.0' && packageLock.version === '5.55.0' && read('js/config.js').includes("APP_VERSION='5.55.0'"), 'versão 5.55.0 sincronizada');
+check(manifest.version === '5.55.1' && packageJson.version === '5.55.1' && packageLock.version === '5.55.1' && read('js/config.js').includes("APP_VERSION='5.55.1'"), 'versão 5.55.1 sincronizada');
 check(packageJson.dependencies?.acorn === '8.18.0', 'Acorn 8.18.0 fixado como dependência de produção');
 check(Array.isArray(manifest.classIndex) && manifest.classIndex.length === manifest.classes && manifest.classes === 27, 'manifest.classIndex preserva as 27 classes reais');
 
@@ -114,7 +114,7 @@ check(!publicSource.includes('data/class-covers.js') && !publicSource.includes('
 const rewrites = vercel.rewrites || [];
 check(rewrites.some(item => item.source === '/admin' && item.destination === '/admin/index.html') && rewrites.some(item => item.source === '/admin/:path*'), 'rewrites administrativos configurados');
 const included = vercel.functions?.['api/admin/*.mjs']?.includeFiles;
-check(typeof included === 'string' && included.startsWith('{manifest.json,') && included.includes('data/classes.js') && included.includes('data/lyre-subclasses.js') && included.includes('data/homebrew-paladin-bahamut.js') && included.includes('data/feats/phb-2014-feats.js') && included.includes('data/feats/lyre-retia-feats.js') && included.includes('data/lyre-races-phase4-text.js') && included.includes('data/zagalhta-exolunar-races.js'), 'Vercel usa glob string para incluir todos os dados allowlisted nas Functions');
+check(included === '{manifest.json,data/**/*.js}' && included.length <= 256, 'Vercel usa glob curto e válido para incluir manifesto e dados nas Functions');
 check(JSON.stringify(vercel).includes("frame-ancestors 'none'") && JSON.stringify(vercel).includes('no-store'), 'CSP e cache privado configurados');
 
 const envExample = read('.env.example');
@@ -124,7 +124,7 @@ check(read('docs/GRIMORIO-ADMIN.md').includes('Contents: Read and write') && rea
 for (const item of passed) console.log(`✓ ${item}`);
 if (errors.length) {
   for (const item of errors) console.error(`✗ ${item}`);
-  console.error(`Admin 5.55.0 reprovado: ${errors.length} erro(s).`);
+  console.error(`Admin 5.55.1 reprovado: ${errors.length} erro(s).`);
   process.exit(1);
 }
-console.log(`Admin 5.55.0 aprovado: ${passed.length} verificações, 0 erros, 0 avisos.`);
+console.log(`Admin 5.55.1 aprovado: ${passed.length} verificações, 0 erros, 0 avisos.`);

@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION='5.55.0';
+const APP_VERSION='5.55.1';
 const STORAGE_KEY='grimorio-campanha-v2';
 const SRD_CACHE_KEY='grimorio-srd-2014-cache-v3-ptbr';
 const SRD_SOURCE='https://raw.githubusercontent.com/5e-bits/5e-database/main/src/2014/en/5e-SRD-Spells.json';

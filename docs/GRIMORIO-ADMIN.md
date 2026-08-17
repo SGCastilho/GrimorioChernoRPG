@@ -1,4 +1,4 @@
-# Grimório Admin 5.55.0
+# Grimório Admin 5.55.1
 
 O Grimório Admin é um CMS Git-backed para artes, metadados de classes/subclasses, talentos e raças/subraças, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
 
