@@ -23,8 +23,6 @@
     if(v==='classes')return '#/classes';
     if(v==='ability-planner')return '#/ability-planner';
     if(v==='races')return '#/races';
-    if(v==='backgrounds')return '#/backgrounds';
-    if(v==='background')return '#/background/'+enc(id);
     if(v==='race'){
       const base='#/race/'+enc(id);
       return extra.subraceId?base+'/subrace/'+enc(extra.subraceId):base;
@@ -63,8 +61,6 @@
     if(first==='spells')return {view:'spells',id:null};
     if(first==='race')return {view:'race',id:parts[1]||null};
     if(first==='races')return {view:'races',id:null};
-    if(first==='background')return {view:'background',id:parts[1]||null};
-    if(first==='backgrounds')return {view:'backgrounds',id:null};
     if(first==='classes')return {view:'classes',id:null};
     if(first==='ability-planner')return {view:'ability-planner',id:null};
     if(first==='about')return {view:'about',id:null};

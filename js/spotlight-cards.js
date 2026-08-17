@@ -13,9 +13,7 @@
     '.equipment-row',
     '.equipment-glossary-grid article',
     '.feat-hero',
-    '.feat-summary',
-    '.background-hero',
-    '.background-card'
+    '.feat-summary'
   ].join(',');
 
   const root = typeof window !== 'undefined' ? window : globalThis;

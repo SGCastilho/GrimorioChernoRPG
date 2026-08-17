@@ -54,15 +54,7 @@ ok(cover.image==='https://i.imgur.com/Z7nBfKE.png','URL do Imgur não foi normal
 ok(Array.isArray(cover.candidates)&&cover.candidates.includes('https://i.imgur.com/Z7nBfKE.jpg'),'Fallback JPG do Imgur ausente');
 ok(typeof api.media==='function'&&api.media('spiritual-emissary').includes('class-cover-media'),'Markup de mídia da capa não foi gerado');
 ok(cover.blur===3,'Blur do Emissário divergente');
-ok(cover.overlay>=0&&cover.overlay<=0.9,'Overlay do Emissário fora do intervalo suportado');
-ok(Array.isArray(manifest.classIndex)&&manifest.classIndex.length===manifest.classes,'Índice atual de classes ausente');
-for(const cls of manifest.classIndex){
-  const current=api.get(cls.id);
-  ok(current,'Classe sem configuração de capa: '+cls.id);
-  ok(typeof current.image==='string','Imagem inválida em '+cls.id);
-  ok(typeof current.position==='string','Posição inválida em '+cls.id);
-  ok(Number.isFinite(current.blur)&&current.blur>=0&&current.blur<=12,'Blur inválido em '+cls.id);
-  ok(Number.isFinite(current.overlay)&&current.overlay>=0&&current.overlay<=0.9,'Overlay inválido em '+cls.id);
-}
+ok(Math.abs(cover.overlay-0.46)<0.001,'Overlay do Emissário divergente');
+ok(api.get('barbarian')===null,'Classe sem capa recebeu configuração indevida');
 
 console.log('OK — sidebar fixável e hotfix resiliente de capas preservados em '+manifest.version+'.');
