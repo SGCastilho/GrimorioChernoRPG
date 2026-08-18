@@ -23,9 +23,9 @@
       overlay: 0.80
     },
         'paladin': {
-      image: 'https://imgur.com/vYlfDmD.png',
-      position: 'center 10%',
-      blur: 2,
+      image: "assets/class-detail-art/paladin-hero.png",
+      position: "center 20%",
+      blur: 1,
       overlay: 0.80
     },
         'warlock': {
