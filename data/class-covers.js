@@ -23,8 +23,8 @@
       overlay: 0.80
     },
         'paladin': {
-      image: "assets/class-detail-art/paladin-hero.png",
-      position: "center 20%",
+      image: "https://imgur.com/vYlfDmD.png",
+      position: "center 10%",
       blur: 1,
       overlay: 0.80
     },
