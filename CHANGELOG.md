@@ -1,3 +1,19 @@
+## 5.56.0
+
+### Grimório Admin — Editor de Magias
+- Adicionado `/admin/spells` para editar 1.185 registros reais distribuídos nos dez catálogos registrados do Grimório.
+- O índice inicial é leve e não envia descrições integrais; cada detalhe lê sob demanda somente o catálogo associado por allowlist server-side, sem aceitar paths do navegador.
+- São editáveis apresentação, nível/escola, conjuração, classes, ritual, concentração, textos, página, nota editorial e marcadores; IDs, proveniência, aliases, versões legadas, listas derivadas, exporters e Foundry permanecem protegidos.
+- O parser Acorn reconhece os nove arrays literais e o catálogo do Sábio com `...common`; uma edição em campo compartilhado materializa uma sobrescrita apenas na magia escolhida.
+- A transformação substitui somente propriedades autorizadas, reanalisa o arquivo e confirma preservação byte a byte de todas as outras magias do catálogo.
+- Adicionados busca por catálogo, nome/original/ID/escola, preview local, confirmação, conflito por hash, feedback mock/GitHub e validações específicas para os campos de magia.
+- Incluídos testes de 1.185 registros, campos herdados, edição isolada, autenticação, CSRF, payload excessivo, catálogo/path arbitrário e ausência de persistência no modo mock.
+
+### Production e Vercel
+- O fluxo real para Artes, Metadados, Talentos, Raças e Magias permanece habilitável exclusivamente por `GRIMORIO_ADMIN_WRITE_MODE=github` no ambiente Production da Vercel; Preview e Development continuam forçados a `mock`.
+- Mantido `functions.api/admin/*.mjs.includeFiles` como o glob único `{manifest.json,data/**/*.js}`, com 28 caracteres.
+- O gate 5.56.0 verifica explicitamente o tipo, conteúdo e comprimento do glob para impedir a recorrência do erro de schema da Vercel acima de 256 caracteres.
+
 ## 5.55.1
 
 ### Deploy — Compatibilidade com o schema da Vercel

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { ClassArtService } from '../../api/_lib/admin/class-art-service.mjs';
-import { GitHubRepositoryService, MockRepositoryService } from '../../api/_lib/admin/repository.mjs';
+import { GitHubRepositoryService, MockRepositoryService, repositoryService } from '../../api/_lib/admin/repository.mjs';
 
 process.env.GRIMORIO_ADMIN_WRITE_MODE = 'mock';
 process.env.VERCEL_ENV = 'development';
@@ -97,4 +97,24 @@ test('erros upstream são sanitizados e conflitos permanecem explícitos', async
   await assert.rejects(() => conflict.request('/git/refs/heads/main'), error => error.status === 409 && error.code === 'CONFLICT');
   const missing = new GitHubRepositoryService({ token: 'x', owner: 'o', repo: 'r', branch: 'main' }, async () => new Response('{}', { status: 404 }));
   await assert.rejects(() => missing.request('/contents/missing'), error => error.status === 404 && error.code === 'FILE_NOT_FOUND');
+});
+
+test('escrita GitHub só é ativada explicitamente em Production', () => {
+  const names = ['VERCEL_ENV', 'GRIMORIO_ADMIN_WRITE_MODE', 'GITHUB_TOKEN', 'GITHUB_OWNER', 'GITHUB_REPO', 'GITHUB_BRANCH'];
+  const previous = Object.fromEntries(names.map(name => [name, process.env[name]]));
+  try {
+    process.env.GRIMORIO_ADMIN_WRITE_MODE = 'github';
+    process.env.GITHUB_TOKEN = 'test-token-never-sent';
+    process.env.GITHUB_OWNER = 'owner';
+    process.env.GITHUB_REPO = 'repo';
+    process.env.GITHUB_BRANCH = 'main';
+    process.env.VERCEL_ENV = 'preview';
+    assert.ok(repositoryService() instanceof MockRepositoryService);
+    process.env.VERCEL_ENV = 'development';
+    assert.ok(repositoryService() instanceof MockRepositoryService);
+    process.env.VERCEL_ENV = 'production';
+    assert.ok(repositoryService() instanceof GitHubRepositoryService);
+  } finally {
+    for (const name of names) previous[name] === undefined ? delete process.env[name] : process.env[name] = previous[name];
+  }
 });

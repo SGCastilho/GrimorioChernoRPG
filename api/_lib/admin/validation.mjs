@@ -2,6 +2,7 @@ import { ART_FILES, imageHosts } from './config.mjs';
 import { CLASS_METADATA_FIELDS, SOURCE_METADATA_FIELDS, SUBCLASS_METADATA_FIELDS } from './metadata-source.mjs';
 import { FEAT_FIELDS } from './feat-source.mjs';
 import { RACE_FIELDS, RACE_META_FIELDS, SUBRACE_FIELDS } from './race-source.mjs';
+import { SPELL_FIELDS } from './spell-source.mjs';
 import { fail } from './errors.mjs';
 
 function exactKeys(value, allowed, label) {
@@ -247,6 +248,41 @@ export function validateRaceSavePayload(payload, registry) {
     const peers = payload.entityType === 'race' ? [...registry.races.values()] : [...registry.subraces.values()].filter(item => item.raceId === payload.raceId);
     if (peers.some(item => item.id !== current.id && item.metadata.name.toLocaleLowerCase('pt-BR') === payload.changes.name.toLocaleLowerCase('pt-BR'))) fail(400, 'DUPLICATE_NAME', 'Já existe uma entidade racial desse grupo com esse nome.');
   }
+  return { ...payload, current };
+}
+
+function validateSpellFields(changes, current) {
+  exactKeys(changes, SPELL_FIELDS, 'changes');
+  if (!Object.keys(changes).length) fail(400, 'EMPTY_CHANGES', 'Nenhuma alteração foi informada.');
+  const limits = {
+    name: [1, 160], originalName: [0, 160], levelLabel: [0, 120], school: [1, 100],
+    time: [1, 300], range: [1, 300], comp: [1, 2000], material: [0, 4000],
+    duration: [1, 300], classes: [1, 1000], desc: [1, 50000], higher: [0, 20000],
+    sourceNote: [0, 10000]
+  };
+  for (const [field, value] of Object.entries(changes)) {
+    let valid = false;
+    if (field === 'level') valid = value === null || (Number.isInteger(value) && value >= 0 && value <= 9);
+    else if (field === 'sourcePage') valid = value === null || (Number.isInteger(value) && value >= 1 && value <= 9999);
+    else if (field === 'ritual' || field === 'concentration') valid = typeof value === 'boolean';
+    else if (field === 'traits') valid = stringArray(value, 50) && new Set(value.map(item => item.toLocaleLowerCase('pt-BR'))).size === value.length;
+    else if (limits[field]) valid = validText(value, ...limits[field]);
+    if (!valid) fail(400, 'INVALID_VALUE', `Valor inválido para ${field}.`);
+  }
+  const effective = { ...current.metadata, ...changes };
+  if (effective.level === null && !effective.levelLabel) fail(400, 'INCOMPLETE_SPELL_LEVEL', 'Magias sem nível convencional precisam de um rótulo de nível.');
+  if (JSON.stringify(effective) === JSON.stringify(current.metadata)) fail(400, 'NO_CHANGES', 'Os valores informados são iguais aos atuais.');
+}
+
+export function validateSpellSavePayload(payload, registry) {
+  exactKeys(payload, ['spellId', 'catalogId', 'changes', 'expected'], 'payload');
+  if (typeof payload.catalogId !== 'string' || !/^[a-z0-9][a-z0-9-]{0,159}$/.test(payload.catalogId)) fail(400, 'UNKNOWN_SPELL_CATALOG', 'O catálogo de magias informado não existe no Grimório.');
+  if (typeof payload.spellId !== 'string' || !/^[a-z0-9][a-z0-9-]{0,159}$/.test(payload.spellId)) fail(400, 'UNKNOWN_SPELL', 'A magia informada não existe no Grimório.');
+  const current = registry.spells.get(payload.spellId);
+  if (!current || current.catalog.id !== payload.catalogId) fail(400, 'UNKNOWN_SPELL', 'A magia informada não existe no catálogo selecionado.');
+  validateSpellFields(payload.changes, current);
+  exactKeys(payload.expected, ['entryHash'], 'expected');
+  if (typeof payload.expected.entryHash !== 'string' || !/^[0-9a-f]{64}$/i.test(payload.expected.entryHash)) fail(400, 'INVALID_REVISION', 'A revisão esperada é inválida.');
   return { ...payload, current };
 }
 

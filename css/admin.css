@@ -261,6 +261,20 @@ h1 { margin-bottom: .8rem; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.0
 .admin-fieldset-help { margin-bottom: .1rem; color: var(--admin-muted); font-size: .86rem; line-height: 1.5; }
 .admin-section-title { margin: .7rem 0 -.4rem; font-size: 1.35rem; }
 
+.admin-spell-selectors { grid-template-columns: minmax(190px, .8fr) minmax(220px, 1fr) minmax(260px, 1.25fr); }
+.admin-spell-preview {
+  padding: 1.35rem;
+  border: 1px solid var(--admin-line);
+  border-radius: .85rem;
+  background: linear-gradient(145deg, rgba(23,31,45,.92), rgba(12,17,25,.94));
+}
+.admin-spell-preview h2 { margin-bottom: .2rem; font-family: Georgia, "Times New Roman", serif; font-size: 1.7rem; }
+.admin-spell-preview-original { margin: 0 0 .8rem; color: var(--admin-muted); font-style: italic; }
+.admin-spell-preview-grid { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: .35rem 1rem; margin: 1rem 0; }
+.admin-spell-preview-grid dt { color: var(--admin-gold-bright); font-weight: 700; }
+.admin-spell-preview-grid dd { margin: 0; overflow-wrap: anywhere; }
+.admin-spell-preview-text { margin-top: 1rem; white-space: pre-wrap; line-height: 1.65; }
+
 .admin-preview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .admin-preview-card {
   overflow: hidden;
@@ -363,7 +377,7 @@ h1 { margin-bottom: .8rem; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.0
 @media (max-width: 800px) {
   .admin-header { grid-template-columns: 1fr auto; }
   .admin-nav { grid-column: 1 / -1; justify-content: flex-start; order: 3; overflow-x: auto; padding-top: .4rem; }
-  .admin-editor-grid, .admin-preview-grid, .admin-dashboard-grid, .admin-selector-grid, .admin-metadata-fields { grid-template-columns: 1fr; }
+  .admin-editor-grid, .admin-preview-grid, .admin-dashboard-grid, .admin-selector-grid, .admin-metadata-fields, .admin-spell-selectors { grid-template-columns: 1fr; }
   .admin-page-heading { flex-direction: column; gap: .8rem; }
 }
 

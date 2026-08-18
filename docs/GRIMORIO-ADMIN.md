@@ -1,12 +1,12 @@
-# Grimório Admin 5.55.1
+# Grimório Admin 5.56.0
 
-O Grimório Admin é um CMS Git-backed para artes, metadados de classes/subclasses, talentos e raças/subraças, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
+O Grimório Admin é um CMS Git-backed para artes, metadados de classes/subclasses, talentos, raças/subraças e magias, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
 
 ## Arquitetura do MVP
 
 ```text
 /admin (HTML/CSS/JS sem secrets)
-  → /api/admin/login | session | logout | class-art | class-metadata | feat | race | history
+  → /api/admin/login | session | logout | class-art | class-metadata | feat | race | spell | history
   → sessão HMAC + CSRF + validação server-side
   → editor estrutural AST Acorn
   → RepositoryService
@@ -50,6 +50,16 @@ Os campos avançados `prerequisites` e `choices` são exibidos como arrays JSON 
 - Protegidos: `id`, `raceId`, nome original das subraças que geram ID, fonte, `sourceId`, revisão textual, lore, traços fixos, Traços de Legado, Sangue Misto, heranças, magias e estruturas especiais.
 
 O catálogo racial é composto por camadas. Lyre define a base e aplica revisões nas Fases 2–4; Blade usa a fábrica `S(...)`; Zagalhta usa objetos literais e anexos agrupados por raça. O backend reconhece essas formas sem `eval`, grava cada valor no arquivo que realmente prevalece em runtime, reanalisa todos os arquivos e confirma que nenhuma outra entidade mudou. Uma alteração que atinja base e fase gera um único commit. Ao renomear uma raça, `manifest.raceIndex` é sincronizado no mesmo commit.
+
+## Editor de magias
+
+`/admin/spells` indexa 1.185 registros nos dez catálogos registrados, diretamente dos arquivos que o site público carrega. A consulta inicial retorna somente nomes, IDs protegidos, nível, escola e catálogo; a descrição integral é obtida sob demanda apenas do arquivo allowlisted do catálogo selecionado. O navegador envia `spellId` e `catalogId`, nunca um path.
+
+São editáveis nome, nome original, nível, rótulo especial de nível, escola, tempo, alcance, componentes, material, duração, classes, ritual, concentração, descrição, níveis superiores, página, nota editorial e marcadores. Permanecem protegidos `id`, `source`, `sourceTitle`, `category`, `sourceId`, catálogo, aliases, outras fontes, versões legadas, listas derivadas de classe, exporters e Foundry.
+
+Nove catálogos usam arrays literais; o catálogo do Sábio compartilha escola, classes e proveniência com `...common`. Quando um desses campos é alterado, o serializador cria uma propriedade explícita somente na magia selecionada. O bloco compartilhado e as outras 13 entradas não são modificados. Depois da substituição, o arquivo é analisado novamente e todas as demais magias são comparadas byte a byte.
+
+Magias sem nível convencional aceitam `level: null`, mas exigem um rótulo especial. Descrições suportam até 50.000 caracteres, o payload total permanece limitado a 96 KiB e listas de marcadores são validadas e deduplicadas. Preview, confirmação e conflito por hash seguem o mesmo fluxo dos demais editores.
 
 ## Histórico read-only
 
@@ -101,7 +111,7 @@ Configure `GITHUB_BRANCH` com a mesma Production Branch do projeto Vercel. A API
 
 Há duas proteções contra concorrência:
 
-1. o hash da entrada impede salvar se a mesma classe mudou depois que o editor foi aberto;
+1. o hash da entrada impede salvar se a mesma entidade mudou depois que o editor foi aberto;
 2. a atualização fast-forward impede sobrescrever um commit criado durante a requisição.
 
 Branches com regra que proíbe commits diretos recusarão a operação. Fluxo por pull request não faz parte deste MVP.
@@ -120,6 +130,8 @@ Em **Settings → Environment Variables**, configure por ambiente:
 4. Confirme que a Production Branch é a mesma de `GITHUB_BRANCH`.
 5. Troque para `GRIMORIO_ADMIN_WRITE_MODE=github` e faça novo deployment.
 
+O repositório 5.56.0 já contém todo o caminho de escrita real para Artes, Metadados, Talentos, Raças e Magias. A ativação final não é feita em arquivo versionado: edite a variável **Production** na Vercel de `mock` para `github` e redeploy. Depois do login, o Dashboard deve mostrar **Production: escrita GitHub habilitada**. Se ainda mostrar **modo mock**, a variável foi aplicada ao ambiente errado ou o deployment não foi recriado.
+
 ### Preview
 
 Configure hash, segredo e `GRIMORIO_ADMIN_WRITE_MODE=mock`. Não disponibilize `GITHUB_TOKEN` para Preview.
@@ -128,7 +140,7 @@ Configure hash, segredo e `GRIMORIO_ADMIN_WRITE_MODE=mock`. Não disponibilize `
 
 Use `.env.local`, nunca versionado, com hash, segredo e `GRIMORIO_ADMIN_WRITE_MODE=mock`. Tokens GitHub não são necessários.
 
-O `vercel.json` registra rewrites de `/admin`, cabeçalhos de segurança e inclusão dos arquivos allowlisted lidos pelas Functions. Não existe banco de dados nem segunda fonte de conteúdo.
+O `vercel.json` registra rewrites de `/admin`, cabeçalhos de segurança e o único glob curto `{manifest.json,data/**/*.js}` para incluir os arquivos lidos pelas Functions. Esse valor tem 28 caracteres e o gate de release rejeita qualquer regressão para uma lista `includeFiles` maior que o limite de 256 caracteres da Vercel. Não existe banco de dados nem segunda fonte de conteúdo.
 
 ## Teste local
 
@@ -165,9 +177,9 @@ O primeiro commit real deve ser feito somente depois da revisão do código e da
 
 1. acesse `/admin` no domínio de Production;
 2. faça login e confirme o selo “Escrita GitHub”;
-3. escolha uma classe e altere um único valor de forma intencional;
+3. escolha uma entidade — de preferência uma arte ou magia de teste — e altere um único valor de forma intencional;
 4. confira o resumo antiga → nova e confirme;
-5. verifique a mensagem `Grimório Admin: atualiza artes de <classId>` no GitHub;
+5. verifique no GitHub a mensagem `Grimório Admin: atualiza ... <id>` correspondente;
 6. confirme que somente a entrada e os campos escolhidos mudaram;
 7. acompanhe o deployment automático da Vercel;
 8. confirme a imagem no site público;
@@ -184,4 +196,5 @@ O primeiro commit real deve ser feito somente depois da revisão do código e da
 - features, progressões, tabelas e referências de classes ainda não são editáveis;
 - o editor de talentos não modifica os perfis de automação Foundry; alterações mecânicas devem respeitar o contrato já existente do exporter;
 - o editor racial não altera traços, regras globais ou estruturas especiais; mudanças mecânicas continuam sendo feitas e validadas diretamente nos arquivos de conteúdo;
-- próximos editores devem criar validadores e serializadores próprios, reutilizando autenticação, cliente API e `RepositoryService`.
+- o editor de magias protege aliases, outras fontes e versões históricas; essas estruturas não são alteráveis nesta versão;
+- novos editores devem criar validadores e serializadores próprios, reutilizando autenticação, cliente API e `RepositoryService`.

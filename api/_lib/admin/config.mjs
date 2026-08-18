@@ -68,7 +68,24 @@ export const RACE_CONTENT_FILES = Object.freeze([
 ]);
 
 export const RACE_REPOSITORY_FILES = Object.freeze([...RACE_CONTENT_FILES, 'manifest.json']);
-export const ALLOWED_REPOSITORY_FILES = new Set([...REPOSITORY_FILES, ...METADATA_REPOSITORY_FILES, ...FEAT_REPOSITORY_FILES, ...RACE_REPOSITORY_FILES]);
+
+export const SPELL_CATALOG_FILES = Object.freeze({
+  'phb-2014-spells': 'data/phb-spells.js',
+  'xanathar-spells': 'data/xanathar-spells.js',
+  'tasha-spells': 'data/tasha-spells.js',
+  'kibbles-spell-compendium': 'data/spellblade-spells.js',
+  'lyre-spells': 'data/lyre-spells.js',
+  'blade-bone-benefit-spells': 'data/blade-bone-benefit-spells.js',
+  'zagalhta-spells': 'data/zagalhta-spells.js',
+  'ryoko-spells': 'data/ryoko-spells.js',
+  'cultivator-homebrew-spells': 'data/cultivator-homebrew-spells.js',
+  'sage-homebrew-spells': 'data/homebrew-sage-spells.js'
+});
+
+export const SPELL_CONTENT_FILES = Object.freeze(Object.values(SPELL_CATALOG_FILES));
+
+export const SPELL_REPOSITORY_FILES = Object.freeze([...SPELL_CONTENT_FILES, 'manifest.json']);
+export const ALLOWED_REPOSITORY_FILES = new Set([...REPOSITORY_FILES, ...METADATA_REPOSITORY_FILES, ...FEAT_REPOSITORY_FILES, ...RACE_REPOSITORY_FILES, ...SPELL_REPOSITORY_FILES]);
 
 export const isProduction = () => process.env.VERCEL_ENV === 'production';
 export const cookieName = () => isProduction() ? '__Host-grimorio_admin' : 'grimorio_admin_dev';
