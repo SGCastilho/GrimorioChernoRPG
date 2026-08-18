@@ -6,11 +6,11 @@ import { MockRepositoryService } from '../../api/_lib/admin/repository.mjs';
 process.env.GRIMORIO_ADMIN_WRITE_MODE = 'mock';
 process.env.VERCEL_ENV = 'development';
 
-test('lista e simula 42 raças e 368 subraças sem persistir no disco', async () => {
+test('lista e simula 46 raças e 382 subraças sem persistir no disco', async () => {
   const service = new RaceService(new MockRepositoryService());
   const catalog = await service.list();
-  assert.equal(catalog.races.length, 42);
-  assert.equal(catalog.subraces.length, 368);
+  assert.equal(catalog.races.length, 46);
+  assert.equal(catalog.subraces.length, 382);
   const current = catalog.subraces.find(item => item.raceId === 'arhcoon' && item.id === 'city-arhcoon');
   const saved = await service.save({ entityType: 'subrace', raceId: current.raceId, subraceId: current.id, changes: { description: 'Descrição editada.' }, expected: current.revision });
   assert.equal(saved.entity.description, 'Descrição editada.');

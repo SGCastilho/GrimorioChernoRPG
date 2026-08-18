@@ -18,10 +18,10 @@
   },
   "phase": 2,
   "summary": {
-    "catalogs": 10,
-    "total": 1185,
-    "exportable": 1170,
-    "ready": 1168,
+    "catalogs": 11,
+    "total": 1208,
+    "exportable": 1193,
+    "ready": 1191,
     "reviewRequired": 2,
     "blocked": 15,
     "warningCounts": {
@@ -82,6 +82,15 @@
       "total": 62,
       "exportable": 62,
       "ready": 62,
+      "reviewRequired": 0,
+      "blocked": 0
+    },
+    {
+      "id": "paraprismatic-tempest-spells",
+      "sourceId": "paraprismatic-tempest",
+      "total": 23,
+      "exportable": 23,
+      "ready": 23,
       "reviewRequired": 0,
       "blocked": 0
     },

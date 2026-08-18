@@ -1,4 +1,4 @@
-# Grimório Admin 5.56.0
+# Grimório Admin 5.60.0
 
 O Grimório Admin é um CMS Git-backed para artes, metadados de classes/subclasses, talentos, raças/subraças e magias, com histórico read-only dos commits administrativos. O navegador nunca recebe hash de senha, segredo de sessão ou token do GitHub. Em Production, uma gravação válida cria um commit no repositório configurado; o GitHub permanece como fonte de verdade e a Vercel publica o commit no deployment seguinte.
 
@@ -21,7 +21,7 @@ As classes vêm de `manifest.classIndex`, que o gate do projeto valida contra `G
 
 ## Metadados de classes e subclasses
 
-`/admin/class-metadata` descobre as 27 classes e 382 subclasses diretamente nos 22 arquivos de conteúdo autorizados. O módulo não aceita paths, IDs novos nem alterações estruturais.
+`/admin/class-metadata` descobre as 27 classes e 400 subclasses diretamente nos 23 arquivos de conteúdo autorizados. O módulo não aceita paths, IDs novos nem alterações estruturais.
 
 - Classes: nome, nome original, descrição, dado de vida, habilidade principal, salvaguardas, armaduras, armas, ferramentas, perícias, chave de sigilo, cor, página da tabela e fonte.
 - Subclasses: nome, nome original, descrição, página principal e fonte.
@@ -43,7 +43,7 @@ Os campos avançados `prerequisites` e `choices` são exibidos como arrays JSON 
 
 ## Editor de raças e subraças
 
-`/admin/races` carrega as 42 raças e 368 subraças dos nove arquivos raciais autorizados. O editor não mantém índice manual: as entidades, vínculos e proprietários dos campos são descobertos estruturalmente por AST.
+`/admin/races` carrega as 46 raças e 382 subraças dos dez arquivos raciais autorizados. O editor não mantém índice manual: as entidades, vínculos e proprietários dos campos são descobertos estruturalmente por AST.
 
 - Raças: nome, nome original, página, resumo, aumento de atributos, tipos de criatura, expectativa de vida, alinhamento nacional, origem planar, planetouched, regiões, tamanho, tendência, idiomas e deslocamento.
 - Subraças: nome, página, aumento de atributos e descrição.
@@ -53,7 +53,7 @@ O catálogo racial é composto por camadas. Lyre define a base e aplica revisõe
 
 ## Editor de magias
 
-`/admin/spells` indexa 1.185 registros nos dez catálogos registrados, diretamente dos arquivos que o site público carrega. A consulta inicial retorna somente nomes, IDs protegidos, nível, escola e catálogo; a descrição integral é obtida sob demanda apenas do arquivo allowlisted do catálogo selecionado. O navegador envia `spellId` e `catalogId`, nunca um path.
+`/admin/spells` indexa 1.208 registros nos onze catálogos registrados, diretamente dos arquivos que o site público carrega. A consulta inicial retorna somente nomes, IDs protegidos, nível, escola e catálogo; a descrição integral é obtida sob demanda apenas do arquivo allowlisted do catálogo selecionado. O navegador envia `spellId` e `catalogId`, nunca um path.
 
 São editáveis nome, nome original, nível, rótulo especial de nível, escola, tempo, alcance, componentes, material, duração, classes, ritual, concentração, descrição, níveis superiores, página, nota editorial e marcadores. Permanecem protegidos `id`, `source`, `sourceTitle`, `category`, `sourceId`, catálogo, aliases, outras fontes, versões legadas, listas derivadas de classe, exporters e Foundry.
 
@@ -130,7 +130,7 @@ Em **Settings → Environment Variables**, configure por ambiente:
 4. Confirme que a Production Branch é a mesma de `GITHUB_BRANCH`.
 5. Troque para `GRIMORIO_ADMIN_WRITE_MODE=github` e faça novo deployment.
 
-O repositório 5.56.0 já contém todo o caminho de escrita real para Artes, Metadados, Talentos, Raças e Magias. A ativação final não é feita em arquivo versionado: edite a variável **Production** na Vercel de `mock` para `github` e redeploy. Depois do login, o Dashboard deve mostrar **Production: escrita GitHub habilitada**. Se ainda mostrar **modo mock**, a variável foi aplicada ao ambiente errado ou o deployment não foi recriado.
+O repositório 5.60.0 já contém todo o caminho de escrita real para Artes, Metadados, Talentos, Raças e Magias. A ativação final não é feita em arquivo versionado: edite a variável **Production** na Vercel de `mock` para `github` e redeploy. Depois do login, o Dashboard deve mostrar **Production: escrita GitHub habilitada**. Se ainda mostrar **modo mock**, a variável foi aplicada ao ambiente errado ou o deployment não foi recriado.
 
 ### Preview
 

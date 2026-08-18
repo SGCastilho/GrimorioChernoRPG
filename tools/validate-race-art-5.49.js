@@ -12,13 +12,13 @@ const manifest=JSON.parse(read('manifest.json'));
 const index=read('index.html'),browserSource=read('js/race-browser.js'),runtime=read('js/race-art-runtime.js'),css=read('css/race-art.css');
 const versionAtLeast=(value,target)=>{const a=String(value||'').split('.').map(Number),b=String(target).split('.').map(Number);for(let i=0;i<Math.max(a.length,b.length);i++){const x=a[i]||0,y=b[i]||0;if(x!==y)return x>y}return true};
 ok(versionAtLeast(manifest.version,'5.49.0'),'manifesto está na versão 5.49.0+');
-ok(Array.isArray(manifest.raceIndex)&&manifest.raceIndex.length===42,'manifest.raceIndex possui 42 raças');
+ok(Array.isArray(manifest.raceIndex)&&manifest.raceIndex.length===manifest.races,`manifest.raceIndex possui ${manifest.races} raças`);
 ok(index.includes('data/race-covers.js')&&index.includes('data/race-detail-art.js')&&index.includes('js/race-art-runtime.js')&&index.includes('css/race-art.css'),'recursos raciais carregados no index');
 
 const context={console};context.window=context;vm.createContext(context);
 for(const file of ['data/race-covers.js','data/race-detail-art.js'])vm.runInContext(read(file),context,{filename:file});
 const covers=context.GRIMORIO_RACE_COVERS,details=context.GRIMORIO_RACE_DETAIL_ART_DATA;
-ok(Object.keys(covers||{}).length===42&&Object.keys(details||{}).length===42,'mapas Cover e Detail Art possuem 42 entradas');
+ok(Object.keys(covers||{}).length===manifest.races&&Object.keys(details||{}).length===manifest.races,`mapas Cover e Detail Art possuem ${manifest.races} entradas`);
 ok(manifest.raceIndex.every(item=>covers[item.id]&&details[item.id]),'todos os IDs do manifesto existem nos dois mapas');
 ok(covers.arhcoon.image==='assets/race-art/arhcoon.png'&&typeof covers.arhcoon.position==='string','Cover do Arhcoon configurada');
 ok(details.arhcoon.image==='assets/race-art/arhcoon.png'&&typeof details.arhcoon.position==='string'&&details.arhcoon.scale>=1&&details.arhcoon.scale<=1.25,'Detail Art do Arhcoon configurada');
@@ -40,4 +40,4 @@ ok(runtime.includes('coverFailed')&&runtime.includes('detailFailed')&&runtime.in
 ok(css.includes('.race-art-placeholder')&&css.includes('-webkit-mask-image:linear-gradient(90deg')&&css.includes('-webkit-mask-image:linear-gradient(180deg')&&css.includes('@media(max-width:920px)')&&css.includes('@media(prefers-reduced-motion:reduce)'),'placeholder, fade responsivo e movimento reduzido estilizados');
 
 if(errors.length){for(const error of errors)console.error('✗ '+error);console.error(`Arte racial 5.49.0 reprovada: ${errors.length} erro(s).`);process.exit(1);}
-console.log(`Arte racial 5.49.0+ aprovada: 42 raças, ${configuredCovers.length} covers, ${configuredDetails.length} details e fallback verificados.`);
+console.log(`Arte racial 5.49.0+ aprovada: ${manifest.races} raças, ${configuredCovers.length} covers, ${configuredDetails.length} details e fallback verificados.`);

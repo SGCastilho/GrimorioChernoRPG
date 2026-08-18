@@ -1,7 +1,7 @@
 {
-  "version": "5.56.0",
+  "version": "5.60.0",
   "classes": 27,
-  "subclasses": 382,
+  "subclasses": 400,
   "classNames": [
     "Alma Favorecida",
     "Artífice",
@@ -32,66 +32,151 @@
     "Sábio"
   ],
   "classIndex": [
-    { "id": "barbarian", "name": "Bárbaro" },
-    { "id": "bard", "name": "Bardo" },
-    { "id": "warlock", "name": "Bruxo" },
-    { "id": "cleric", "name": "Clérigo" },
-    { "id": "druid", "name": "Druida" },
-    { "id": "sorcerer", "name": "Feiticeiro" },
-    { "id": "fighter", "name": "Guerreiro" },
-    { "id": "rogue", "name": "Ladino" },
-    { "id": "wizard", "name": "Mago" },
-    { "id": "monk", "name": "Monge" },
-    { "id": "paladin", "name": "Paladino" },
-    { "id": "ranger", "name": "Patrulheiro" },
-    { "id": "artificer", "name": "Artífice" },
-    { "id": "favored-soul-retia", "name": "Alma Favorecida" },
-    { "id": "inscriptor-retia", "name": "Inscritor" },
-    { "id": "petal-knight-retia", "name": "Cavaleiro das Pétalas" },
-    { "id": "sword-saint-retia", "name": "Santo da Espada" },
-    { "id": "dragoneer", "name": "Cavaleiro Dracônico" },
-    { "id": "frame-pilot", "name": "Piloto de Frame" },
-    { "id": "bender-ryoko", "name": "Dobrador" },
-    { "id": "tamer-ryoko", "name": "Domador" },
-    { "id": "blood-minister-somnus", "name": "Ministro de Sangue" },
-    { "id": "spiritual-emissary", "name": "Emissário Espiritual" },
-    { "id": "sage-homebrew", "name": "Sábio" },
-    { "id": "spellblade", "name": "Spellblade" },
-    { "id": "cultivator-dandwiki", "name": "Cultivador" },
-    { "id": "street-fighter-homebrew", "name": "Lutador de Rua" }
+    {
+      "id": "barbarian",
+      "name": "Bárbaro"
+    },
+    {
+      "id": "bard",
+      "name": "Bardo"
+    },
+    {
+      "id": "warlock",
+      "name": "Bruxo"
+    },
+    {
+      "id": "cleric",
+      "name": "Clérigo"
+    },
+    {
+      "id": "druid",
+      "name": "Druida"
+    },
+    {
+      "id": "sorcerer",
+      "name": "Feiticeiro"
+    },
+    {
+      "id": "fighter",
+      "name": "Guerreiro"
+    },
+    {
+      "id": "rogue",
+      "name": "Ladino"
+    },
+    {
+      "id": "wizard",
+      "name": "Mago"
+    },
+    {
+      "id": "monk",
+      "name": "Monge"
+    },
+    {
+      "id": "paladin",
+      "name": "Paladino"
+    },
+    {
+      "id": "ranger",
+      "name": "Patrulheiro"
+    },
+    {
+      "id": "artificer",
+      "name": "Artífice"
+    },
+    {
+      "id": "favored-soul-retia",
+      "name": "Alma Favorecida"
+    },
+    {
+      "id": "inscriptor-retia",
+      "name": "Inscritor"
+    },
+    {
+      "id": "petal-knight-retia",
+      "name": "Cavaleiro das Pétalas"
+    },
+    {
+      "id": "sword-saint-retia",
+      "name": "Santo da Espada"
+    },
+    {
+      "id": "dragoneer",
+      "name": "Cavaleiro Dracônico"
+    },
+    {
+      "id": "frame-pilot",
+      "name": "Piloto de Frame"
+    },
+    {
+      "id": "bender-ryoko",
+      "name": "Dobrador"
+    },
+    {
+      "id": "tamer-ryoko",
+      "name": "Domador"
+    },
+    {
+      "id": "blood-minister-somnus",
+      "name": "Ministro de Sangue"
+    },
+    {
+      "id": "spiritual-emissary",
+      "name": "Emissário Espiritual"
+    },
+    {
+      "id": "sage-homebrew",
+      "name": "Sábio"
+    },
+    {
+      "id": "spellblade",
+      "name": "Spellblade"
+    },
+    {
+      "id": "cultivator-dandwiki",
+      "name": "Cultivador"
+    },
+    {
+      "id": "street-fighter-homebrew",
+      "name": "Lutador de Rua"
+    }
   ],
   "subclassCounts": {
-    "Bárbaro": 17,
-    "Bardo": 19,
-    "Bruxo": 22,
-    "Clérigo": 31,
-    "Druida": 17,
-    "Feiticeiro": 19,
-    "Guerreiro": 20,
-    "Ladino": 21,
-    "Mago": 22,
-    "Monge": 19,
-    "Paladino": 20,
-    "Patrulheiro": 21,
+    "Bárbaro": 18,
+    "Bardo": 20,
+    "Bruxo": 23,
+    "Clérigo": 32,
+    "Druida": 18,
+    "Feiticeiro": 21,
+    "Guerreiro": 21,
+    "Ladino": 22,
+    "Mago": 23,
+    "Monge": 20,
+    "Paladino": 21,
+    "Patrulheiro": 22,
+    "Artífice": 4,
     "Alma Favorecida": 30,
-    "Inscritor": 17,
-    "Cavaleiro das Pétalas": 19,
-    "Santo da Espada": 19,
-    "Cavaleiro Dracônico": 12,
+    "Inscritor": 18,
+    "Cavaleiro das Pétalas": 20,
+    "Santo da Espada": 20,
+    "Ministro de Sangue": 9,
+    "Cavaleiro Dracônico": 13,
     "Piloto de Frame": 5,
-    "Ministro de Sangue": 8,
     "Dobrador": 4,
     "Domador": 1,
     "Emissário Espiritual": 1,
-    "Artífice": 4,
+    "Sábio": 1,
     "Spellblade": 9,
     "Cultivador": 3,
-    "Lutador de Rua": 1,
-    "Sábio": 1
+    "Lutador de Rua": 1
   },
   "uiRevision": "Arte racial estática — v5.50.1",
   "improvements": [
-    "As 42 raças recebem banners uniformes no catálogo e hero dividido nas páginas internas, com placeholder consistente quando ainda não existe ilustração.",
+    "Paraprismatic Tempest — 18 Convergent Subclasses integradas integralmente em PT-BR, incluindo tabelas, Agente Primordial e Invocações do Cataclísmico.",
+    "Paraprismatic Tempest: as 14 Subraças Convergentes das páginas 43–48 foram integradas integralmente, elevando o catálogo a 46 raças e 382 subraças.",
+    "Arhcoon Azeban, Guardieth, Dragonkin Elemental, Destruição, Pyrline, Guairneán, Emberash, Berilo, Prismette, Linhagem Exterior, Burjelle, Kobold Pele de Prata, Travessia e Osso de Cinzas preservam Bloodline Trait, ASI, fonte, página e mecânicas completas.",
+    "O navegador racial passa a exibir explicitamente o Bloodline Trait de cada subraça e aceita regras de Herança Hanyou específicas por subraça; Emberash preserva e sinaliza a inconsistência editorial entre escolher 1 traço prejudicial e a referência posterior a um segundo traço.",
+    "As 46 raças recebem banners uniformes no catálogo e hero dividido nas páginas internas, com placeholder consistente quando ainda não existe ilustração.",
     "Arhcoon inaugura a infraestrutura de Cover e Detail Art racial com asset local, foco independente, ampliação acessível e fallback resiliente.",
     "Livro do Jogador 2014: 13 antecedentes-base e 5 variações independentes integrados em PT-BR, com fichas, tabelas, filtros, busca global e links profundos.",
     "As variações Mercador de Guilda, Gladiador, Espião, Pirata e Cavaleiro resolvem herança de dados e preservam suas substituições mecânicas explícitas.",
@@ -532,7 +617,7 @@
   "scagSpellEntriesAdded": 0,
   "scagSpellDeduplicationStrategy": "As quatro magias foram integradas como versões originais das entradas revisadas já existentes em Tasha, preservando nomes e regras de Costa da Espada sem duplicar linhas no catálogo.",
   "lyreSpells": 280,
-  "baseSpellRecords": 1171,
+  "baseSpellRecords": 1208,
   "lyreClassesIntegrated": true,
   "lyreSubclassesIntegrated": true,
   "lyreOriginalClasses": 4,
@@ -558,8 +643,8 @@
   "sourceRegistry": true,
   "sourceRegistryFile": "data/sources.js",
   "registryEngineFile": "js/registry.js",
-  "registeredSources": 17,
-  "registeredSpellCatalogs": 10,
+  "registeredSources": 18,
+  "registeredSpellCatalogs": 11,
   "validationScript": "tools/validate-project.js",
   "bladeBoneBenefitSpellDescriptions": 108,
   "bladeBoneBenefitNewSpellEntries": 48,
@@ -723,10 +808,10 @@
     "downloadYaml": true,
     "preflightValidation": true,
     "readiness": {
-      "spellCatalogs": 10,
-      "spellsTotal": 1185,
-      "exportable": 1170,
-      "ready": 1168,
+      "spellCatalogs": 11,
+      "spellsTotal": 1208,
+      "exportable": 1193,
+      "ready": 1191,
       "reviewRequired": 2,
       "blocked": 15
     },
@@ -742,12 +827,12 @@
       "classBundlesReady": 27,
       "classesNativeReady": 22,
       "classesNativeReview": 5,
-      "subclassesTotal": 382,
-      "subclassBundlesReady": 382,
+      "subclassesTotal": 400,
+      "subclassBundlesReady": 400,
       "classFeatures": 440,
-      "subclassFeatures": 2055,
+      "subclassFeatures": 2150,
       "classTables": 33,
-      "subclassTables": 138,
+      "subclassTables": 146,
       "progressionEvents": 611,
       "unlevelledClassOptions": 29,
       "legacySubclassesMissingSourceMetadata": 41,
@@ -995,62 +1080,204 @@
   ],
   "abilityPlannerPersistence": "localStorage",
   "racesIntegrated": true,
-  "races": 42,
+  "races": 46,
   "raceIndex": [
-    { "id": "arhcoon", "name": "Arhcoon" },
-    { "id": "beast-tribe", "name": "Tribo Bestial" },
-    { "id": "birdfolk", "name": "Povo-Pássaro" },
-    { "id": "capy-hado", "name": "Capy’hado" },
-    { "id": "dragonkin", "name": "Dragonkin" },
-    { "id": "dwarf", "name": "Anão" },
-    { "id": "elf", "name": "Elfo" },
-    { "id": "enaretos", "name": "Enáretos" },
-    { "id": "feralus", "name": "Feralus" },
-    { "id": "firbolg", "name": "Firbolg" },
-    { "id": "flooflin", "name": "Flooflin" },
-    { "id": "framebilt", "name": "Framebilt" },
-    { "id": "gnome", "name": "Gnomo" },
-    { "id": "goblin", "name": "Goblin" },
-    { "id": "goliath", "name": "Golias" },
-    { "id": "hadislin", "name": "Hádislin" },
-    { "id": "halfling", "name": "Halfling" },
-    { "id": "hanyou", "name": "Hanyou" },
-    { "id": "hobgoblin", "name": "Hobgoblin" },
-    { "id": "human", "name": "Humano" },
-    { "id": "ilthrak-yar", "name": "Ilthrak-yar" },
-    { "id": "kaijou", "name": "Kaijou" },
-    { "id": "kits-adria", "name": "Kits’adria" },
-    { "id": "kobold", "name": "Kobold" },
-    { "id": "kua-hono", "name": "Kua Hono" },
-    { "id": "merfolk", "name": "Povo do Mar" },
-    { "id": "minotaur", "name": "Minotauro" },
-    { "id": "nephilim", "name": "Nefilim" },
-    { "id": "orc", "name": "Orc" },
-    { "id": "petratara", "name": "Pétratára" },
-    { "id": "primordia", "name": "Primordia" },
-    { "id": "tarnished", "name": "Maculado" },
-    { "id": "trealtin", "name": "Trealtin" },
-    { "id": "vanquis", "name": "Vanquis" },
-    { "id": "animus", "name": "Animus" },
-    { "id": "drackal", "name": "Drackal" },
-    { "id": "noxiamorph", "name": "Noxiamorfo" },
-    { "id": "changeling", "name": "Metamorfo" },
-    { "id": "galvan", "name": "Galvan" },
-    { "id": "protolife", "name": "Protovida" },
-    { "id": "scourage", "name": "Scourage" },
-    { "id": "sunling", "name": "Sunling" }
+    {
+      "id": "arhcoon",
+      "name": "Arhcoon"
+    },
+    {
+      "id": "beast-tribe",
+      "name": "Tribo Bestial"
+    },
+    {
+      "id": "birdfolk",
+      "name": "Povo-Pássaro"
+    },
+    {
+      "id": "capy-hado",
+      "name": "Capy’hado"
+    },
+    {
+      "id": "dragonkin",
+      "name": "Dragonkin"
+    },
+    {
+      "id": "dwarf",
+      "name": "Anão"
+    },
+    {
+      "id": "elf",
+      "name": "Elfo"
+    },
+    {
+      "id": "enaretos",
+      "name": "Enáretos"
+    },
+    {
+      "id": "feralus",
+      "name": "Feralus"
+    },
+    {
+      "id": "firbolg",
+      "name": "Firbolg"
+    },
+    {
+      "id": "flooflin",
+      "name": "Flooflin"
+    },
+    {
+      "id": "framebilt",
+      "name": "Framebilt"
+    },
+    {
+      "id": "gnome",
+      "name": "Gnomo"
+    },
+    {
+      "id": "goblin",
+      "name": "Goblin"
+    },
+    {
+      "id": "goliath",
+      "name": "Golias"
+    },
+    {
+      "id": "hadislin",
+      "name": "Hádislin"
+    },
+    {
+      "id": "halfling",
+      "name": "Halfling"
+    },
+    {
+      "id": "hanyou",
+      "name": "Hanyou"
+    },
+    {
+      "id": "hobgoblin",
+      "name": "Hobgoblin"
+    },
+    {
+      "id": "human",
+      "name": "Humano"
+    },
+    {
+      "id": "ilthrak-yar",
+      "name": "Ilthrak-yar"
+    },
+    {
+      "id": "kaijou",
+      "name": "Kaijou"
+    },
+    {
+      "id": "kits-adria",
+      "name": "Kits’adria"
+    },
+    {
+      "id": "kobold",
+      "name": "Kobold"
+    },
+    {
+      "id": "kua-hono",
+      "name": "Kua Hono"
+    },
+    {
+      "id": "merfolk",
+      "name": "Povo do Mar"
+    },
+    {
+      "id": "minotaur",
+      "name": "Minotauro"
+    },
+    {
+      "id": "nephilim",
+      "name": "Nefilim"
+    },
+    {
+      "id": "orc",
+      "name": "Orc"
+    },
+    {
+      "id": "petratara",
+      "name": "Pétratára"
+    },
+    {
+      "id": "primordia",
+      "name": "Primordia"
+    },
+    {
+      "id": "tarnished",
+      "name": "Maculado"
+    },
+    {
+      "id": "trealtin",
+      "name": "Trealtin"
+    },
+    {
+      "id": "vanquis",
+      "name": "Vanquis"
+    },
+    {
+      "id": "animus",
+      "name": "Animus"
+    },
+    {
+      "id": "drackal",
+      "name": "Drackal"
+    },
+    {
+      "id": "noxiamorph",
+      "name": "Noxiamorfo"
+    },
+    {
+      "id": "changeling",
+      "name": "Metamorfo"
+    },
+    {
+      "id": "galvan",
+      "name": "Galvan"
+    },
+    {
+      "id": "protolife",
+      "name": "Protovida"
+    },
+    {
+      "id": "scourage",
+      "name": "Scourage"
+    },
+    {
+      "id": "sunling",
+      "name": "Sunling"
+    },
+    {
+      "id": "bouyan",
+      "name": "Bouyan"
+    },
+    {
+      "id": "horma",
+      "name": "Horma"
+    },
+    {
+      "id": "silvistar",
+      "name": "Silvistar"
+    },
+    {
+      "id": "tinderbine",
+      "name": "Tinderbine"
+    }
   ],
   "raceArtIntegrated": true,
-  "raceArtEntries": 42,
+  "raceArtEntries": 46,
   "raceArtIllustrated": 1,
-  "raceSubraces": 368,
+  "raceSubraces": 382,
   "racialLegacyTraitSystem": true,
   "racialLegacyTraitChoices": 2,
   "racialMixedBloodPlanner": true,
-  "racialSource": "Lyre's Guide to Retia — Land of Industry + Somnus Domina — Blade, Bone, & Benefit + Somnus Domina — Zagalhta's Exolunar Collection",
-  "racialSourcePages": "Lyre 193–318; Blade, Bone, & Benefit 25–62; Zagalhta 61–110 (raças 63–76; subraças 77–110)",
-  "raceTraitRecords": 1615,
-  "racesTextReviewed": 42,
+  "racialSource": "Lyre's Guide to Retia — Land of Industry + Somnus Domina — Blade, Bone, & Benefit + Somnus Domina — Zagalhta's Exolunar Collection + Somnus Domina — Paraprismatic Tempest",
+  "racialSourcePages": "Lyre 193–318; Blade, Bone, & Benefit 25–62; Zagalhta 61–110 (raças 63–76; subraças 77–110); Paraprismatic Tempest 37–48 (4 raças-base e 14 subraças convergentes)",
+  "raceTraitRecords": 1743,
+  "racesTextReviewed": 46,
   "equipmentIntegrated": true,
   "equipmentCatalogs": 3,
   "equipmentItems": 96,
@@ -1138,5 +1365,20 @@
   "backgroundBases": 13,
   "backgroundVariants": 5,
   "backgroundSkills": 16,
-  "backgroundSources": 1
+  "backgroundSources": 1,
+  "paraprismaticTempestIntegrated": true,
+  "paraprismaticTempestSourceTitle": "Somnus Domina — Paraprismatic Tempest",
+  "paraprismaticTempestRaces": 4,
+  "paraprismaticTempestSubraces": 14,
+  "paraprismaticTempestSubclasses": 18,
+  "paraprismaticTempestSubclassFeatures": 95,
+  "paraprismaticTempestSubclassTables": 8,
+  "paraprismaticTempestSubclassParents": 17,
+  "paraprismaticTempestSpellsIntegrated": true,
+  "paraprismaticTempestSubclassReferences": 4,
+  "paraprismaticTempestSpellStatBlocks": 25,
+  "paraprismaticTempestSpellCatalogEntries": 23,
+  "paraprismaticTempestSpellReprintsLinked": 2,
+  "paraprismaticTempestSpellGroups": 5,
+  "paraprismaticTempestSpellGroupMemberships": 139
 }

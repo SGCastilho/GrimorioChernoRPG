@@ -44,7 +44,11 @@
     'galvan': { image:'', alt:'', position:'right center', scale:1 },
     'protolife': { image:'', alt:'', position:'right center', scale:1 },
     'scourage': { image:'', alt:'', position:'right center', scale:1 },
-    'sunling': { image:'', alt:'', position:'right center', scale:1 }
+    'sunling': { image:'', alt:'', position:'right center', scale:1 },
+    'bouyan': { image:'', alt:'', position:'right center', scale:1 },
+    'horma': { image:'', alt:'', position:'right center', scale:1 },
+    'silvistar': { image:'', alt:'', position:'right center', scale:1 },
+    'tinderbine': { image:'', alt:'', position:'right center', scale:1 }
   };
 
   function clamp(value,min,max,fallback){const number=Number(value);return Number.isFinite(number)?Math.max(min,Math.min(max,number)):fallback;}

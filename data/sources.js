@@ -151,6 +151,27 @@
       ]
     },
     {
+      id: 'paraprismatic-tempest',
+      title: 'Somnus Domina — Paraprismatic Tempest',
+      shortTitle: 'Paraprismatic Tempest',
+      filterLabel: 'Paraprismatic Tempest',
+      homeLabel: 'Paraprismatic Tempest',
+      catalogLabel: 'Paraprismatic Tempest',
+      order: 57.5,
+      showOnHome: true,
+      showInAbout: true,
+      aliases: ['Paraprismatic Tempest', 'Somnus Domina - Paraprismatic Tempest', 'Somnus Domina — Paraprismatic Tempest', 'Splash Book 04'],
+      matchIncludes: ['Paraprismatic Tempest'],
+      about: [
+        'O capítulo Planar Races está integrado com quatro mono-raças (Bouyan, Horma, Silvistar e Tinderbine), os seis Traços de Legado Planares opcionais e as 14 Subraças Convergentes das páginas 43–48, preservando Sangue Misto, Bloodline Traits e divergências editoriais da fonte.',
+        'A divergência de tamanho do Silvistar foi mantida explicitamente: o cabeçalho racial indica Pequeno/Médio, enquanto o traço Tamanho declara Médio/Grande. Nenhuma das duas leituras foi silenciosamente escolhida como correção.',
+        'Convergent Subclasses está integrado integralmente com 18 subclasses para 17 classes, incluindo tabelas de conjuração, Magias de Capítulo, Magias de Juramento, Opções de Magias da Tempestade, parâmetros do Lord Guardian, o modelo completo do Primordial Agent e as oito Eldritch Invocations exclusivas do Cataclysmic.',
+        'A tabela de Tempest Spell Options foi vinculada ao Caminho da Tempestade, pois Elemental Mastery a referencia explicitamente na página 26; sua continuação gráfica aparece na página 27 junto ao início do Paladino.',
+        'Tempestuous Spells está integrado com cinco Spell Groups, 23 entradas próprias/revisadas e duas reimpressões mecanicamente equivalentes vinculadas às entradas existentes (Cross Handle e Manipulate Earth), representando os 25 blocos das pp. 51–60 sem duplicar regras idênticas.',
+        'As versões 5.19 de Freezing Sphere, Lightning Bolt e das quatro Investitures permanecem separadas das versões oficiais quando necessário para preservar escalonamentos e alterações mecânicas; Magma Wave também permanece separada da reimpressão de Zagalhta porque o gatilho de At Higher Levels diverge entre as fontes.'
+      ]
+    },
+    {
       id: 'ryoko-yokai-realms',
       title: "Ryoko's Guide to the Yokai Realms",
       shortTitle: "Ryoko's Guide to the Yokai Realms",

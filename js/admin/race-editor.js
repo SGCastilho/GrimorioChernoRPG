@@ -68,7 +68,7 @@ function inputFor(definition) {
 
 export async function renderRaceEditor(main, setTitle) {
   setTitle('Raças e Subraças');
-  main.replaceChildren(node('p', 'admin-loading', 'Carregando 42 raças e 368 subraças…'));
+  main.replaceChildren(node('p', 'admin-loading', 'Carregando 46 raças e 382 subraças…'));
   let catalog;
   try { catalog = await adminRequest('race'); }
   catch (error) {

@@ -150,6 +150,16 @@ window.GRIMORIO_FOUNDRY_V13_OVERRIDES = {
       area: { shape: 'line', size: 12, units: 'm', count: 1, width: 6, height: 'n/a', contiguous: 'n/a' },
       compatibilityNotes: ['A linha da ficha informa alcance de 9 metros, mas o corpo da regra especifica uma linha de 12 metros por 6 metros; a AREA usa as dimensões descritas no efeito e a redação original permanece na descrição.']
     },
+    'paraprismatic-dust-twister': {
+      target: { type: 'space', count: 1, choice: true, special: 'Um cubo de ar desocupado de 1,5 metro dentro do alcance onde o redemoinho surge.' },
+      area: { shape: 'cube', size: 5, units: 'ft', count: 1, width: 'n/a', height: 'n/a', contiguous: 'n/a' }
+    },
+    'paraprismatic-magma-wave': {
+      range: { units: 'self', value: 'n/a' },
+      target: { type: 'space', count: 1, choice: false, special: 'Linha originada no conjurador. O texto da magia define 12 metros de comprimento por 6 metros de largura.' },
+      area: { shape: 'line', size: 12, units: 'm', count: 1, width: 6, height: 'n/a', contiguous: 'n/a' },
+      compatibilityNotes: ['Paraprismatic Tempest imprime alcance como linha de 9 metros, enquanto a descrição define uma onda de 12 metros por 6 metros; a AREA técnica usa as dimensões do efeito e a discrepância permanece registrada na descrição editorial.']
+    },
     'spellblade-instant-bulwark': {
       target: { type: 'space', count: 1, choice: true, special: 'Um espaço apropriado dentro do alcance onde a muralha de terra irrompe.' },
       area: { shape: 'wall', size: 15, units: 'ft', count: 1, width: 'n/a', height: 10, contiguous: 'n/a' }
