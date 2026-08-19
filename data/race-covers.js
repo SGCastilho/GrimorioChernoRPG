@@ -45,10 +45,10 @@
     'protolife': { image:'https://i.imgur.com/eIsk4gp.png', alt:'', position:'70% 10%' },
     'scourage': { image:'https://i.imgur.com/BCicTb1.png', alt:'', position:'70% 10%' },
     'sunling': { image:'https://i.imgur.com/WHbRA0G.png', alt:'', position:'70% 10%' },
-    'bouyan': { image:'', alt:'', position:'70% 10%' },
-    'horma': { image:'', alt:'', position:'70% 10%' },
-    'silvistar': { image:'', alt:'', position:'70% 10%' },
-    'tinderbine': { image:'', alt:'', position:'70% 10%' }
+    'bouyan': { image:'https://imgur.com/e0n72Ye.png', alt:'', position:'70% 10%' },
+    'horma': { image:'https://imgur.com/OZ1ck4N.png', alt:'', position:'70% 10%' },
+    'silvistar': { image:'https://imgur.com/AUdvumH.png', alt:'', position:'70% 10%' },
+    'tinderbine': { image:'https://imgur.com/jXtb1zP.png', alt:'', position:'70% 10%' }
   };
 
   function imgurParts(url){
