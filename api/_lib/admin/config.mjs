@@ -38,6 +38,7 @@ export const METADATA_CONTENT_FILES = Object.freeze([
   'data/zagalhta-subclasses-standard-2.js',
   'data/zagalhta-subclasses-standard-3.js',
   'data/blade-bone-benefit-subclasses.js',
+  'data/paraprismatic-tempest-subclasses.js',
   'data/ryoko-subclasses.js',
   'data/xanathar-subclasses.js',
   'data/tasha-subclasses.js',
@@ -64,7 +65,8 @@ export const RACE_CONTENT_FILES = Object.freeze([
   'data/lyre-races-phase4-structure.js',
   'data/lyre-races-phase4-text.js',
   'data/blade-bone-benefit-races.js',
-  'data/zagalhta-exolunar-races.js'
+  'data/zagalhta-exolunar-races.js',
+  'data/paraprismatic-tempest-races.js'
 ]);
 
 export const RACE_REPOSITORY_FILES = Object.freeze([...RACE_CONTENT_FILES, 'manifest.json']);
@@ -77,6 +79,7 @@ export const SPELL_CATALOG_FILES = Object.freeze({
   'lyre-spells': 'data/lyre-spells.js',
   'blade-bone-benefit-spells': 'data/blade-bone-benefit-spells.js',
   'zagalhta-spells': 'data/zagalhta-spells.js',
+  'paraprismatic-tempest-spells': 'data/paraprismatic-tempest-spells.js',
   'ryoko-spells': 'data/ryoko-spells.js',
   'cultivator-homebrew-spells': 'data/cultivator-homebrew-spells.js',
   'sage-homebrew-spells': 'data/homebrew-sage-spells.js'

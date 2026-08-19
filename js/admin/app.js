@@ -134,7 +134,7 @@ function renderDashboard() {
     const metadata = element('a', 'admin-dashboard-card');
     metadata.href = '/admin/class-metadata';
     metadata.dataset.adminRoute = '';
-    metadata.append(element('span', 'admin-card-kicker', 'Conteúdo'), element('h2', '', 'Metadados'), element('p', '', 'Edite campos permitidos das 27 classes e 382 subclasses sem tocar em IDs, progressões ou features.'));
+    metadata.append(element('span', 'admin-card-kicker', 'Conteúdo'), element('h2', '', 'Metadados'), element('p', '', 'Edite campos permitidos das 27 classes e 400 subclasses sem tocar em IDs, progressões ou features.'));
     const feats = element('a', 'admin-dashboard-card');
     feats.href = '/admin/feats';
     feats.dataset.adminRoute = '';
@@ -142,11 +142,11 @@ function renderDashboard() {
     const races = element('a', 'admin-dashboard-card');
     races.href = '/admin/races';
     races.dataset.adminRoute = '';
-    races.append(element('span', 'admin-card-kicker', 'Conteúdo'), element('h2', '', 'Raças e Subraças'), element('p', '', 'Edite metadados e textos das 42 raças e 368 subraças sem tocar em IDs, vínculos ou regras mecânicas.'));
+    races.append(element('span', 'admin-card-kicker', 'Conteúdo'), element('h2', '', 'Raças e Subraças'), element('p', '', 'Edite metadados e textos das 46 raças e 382 subraças sem tocar em IDs, vínculos ou regras mecânicas.'));
     const spells = element('a', 'admin-dashboard-card');
     spells.href = '/admin/spells';
     spells.dataset.adminRoute = '';
-    spells.append(element('span', 'admin-card-kicker', 'Conteúdo'), element('h2', '', 'Magias'), element('p', '', 'Edite os 1.185 registros dos dez catálogos com índice leve, preview e persistência Git-backed.'));
+    spells.append(element('span', 'admin-card-kicker', 'Conteúdo'), element('h2', '', 'Magias'), element('p', '', 'Edite os 1.208 registros dos onze catálogos com índice leve, preview e persistência Git-backed.'));
     const history = element('a', 'admin-dashboard-card');
     history.href = '/admin/history';
     history.dataset.adminRoute = '';

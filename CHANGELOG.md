@@ -1,3 +1,49 @@
+## 5.60.0
+
+- **Somnus Domina — Paraprismatic Tempest / Tempestuous Spells:** integrados os 25 blocos de magia das pp. 51–60 sem duplicar reimpressões mecanicamente equivalentes: 23 entradas próprias/revisadas em `data/paraprismatic-tempest-spells.js` e 2 reimpressões vinculadas às entradas existentes (`Cross Handle` e `Manipulate Earth`).
+- Catalogados os **5 Spell Groups** do capítulo — Elemental Confluence, Burning Rites, Harvest Tradition, Torrential Arcanics e Twisting Gale Path — com **139 associações** e **136 nomes únicos**, preservando a discrepância editorial `Harvest Manual`/`Harvest Tradition`.
+- Preservadas como versões próprias as revisões 5.19 de **Freezing Sphere, Lightning Bolt, Investiture of Air, Investiture of Earth, Investiture of Fire e Investiture of Frost**, sem sobrescrever versões oficiais.
+- **Conjure Elemental Avatar** inclui o bloco completo `Elemental Avatar Template` da p. 53 tanto em texto consultável quanto em estrutura auxiliar.
+- Preservadas divergências da fonte: `Tempest Ward` lista ácido, frio, fogo, elétrico e **trovejante** (e não veneno); `Magma Wave` mantém Range de 30 pés no cabeçalho e área de 40 × 20 pés no corpo; sua progressão usa “cada nível acima do 4º”, distinta da reimpressão em Zagalhta.
+- O catálogo de magias passa de **1.185 para 1.208 registros**, distribuídos em **11 catálogos**. O filtro de fonte de Paraprismatic Tempest representa 25 magias contando as duas reimpressões vinculadas.
+- Exportação Foundry v13: as 23 novas entradas estão **23/23 prontas**, com overrides técnicos apenas para representação de área de `Dust Twister` e `Magma Wave`. O catálogo global passa a 1.208 entradas: **1.193 exportáveis, 1.191 prontas, 2 em revisão e 15 bloqueadas**, sem novos bloqueios.
+- Grimório Admin: novo catálogo adicionado à allowlist e contadores atualizados para 1.208 magias / 11 catálogos.
+
+## 5.59.0
+
+- **Somnus Domina — Paraprismatic Tempest / Convergent Subclasses:** integradas integralmente as 18 subclasses das pp. 17–36 para 17 classes-base: Caminho do Demoníaco, Colégio dos Planos, Flagelo do Sangue Planar, Domínio Elemental, Guardião Soberano, Círculo dos Guardiões, Cavaleiro Eidólico, Diário de Guerra, Caminho da Tempestade, Juramento do Banimento, Garra do Diabo, Predador Prismático, Lâmina de Geada, Guardião da Chama, Alma de Carvalho, Caminho do Geomante, Cataclísmico e Elementalista.
+- Preservadas **95 características de progressão**, **4 blocos complementares sem nível** e **8 tabelas estruturadas**, incluindo a progressão completa de conjuração do Cavaleiro Eidólico, Magias de Capítulo do Diário de Guerra, Magias do Juramento, Opções de Magias da Tempestade, parâmetros do Guardião Soberano, Relíquia Sagrada do Geomante, modelo do Agente Primordial e as 8 Invocações Místicas exclusivas do Cataclísmico.
+- `Tempest Spell Options` foi vinculada ao **Caminho da Tempestade**, pois `Elemental Mastery` a referencia explicitamente na p. 26; sua continuação gráfica aparece na p. 27 ao lado da abertura do Paladino.
+- Preservadas discrepâncias editoriais da fonte, incluindo `Flamkeeper` no índice como alias de `Flamekeeper` e o rótulo `Prismatic Predator feature` em `Planar Studies`, sem criar entidades duplicadas.
+- Novo módulo `data/paraprismatic-tempest-subclasses.js`, carregado pelo `index.html` e autorizado no Grimório Admin para edição de metadados.
+- O exporter Foundry de subclasses foi corrigido para preservar também os blocos `references` já usados pelo Grimório, evitando perder regras complementares sem nível nos bundles.
+- O catálogo passa a **27 classes / 400 subclasses**. O exporter Foundry de classes gera os 400 bundles estruturalmente. O `grimorio-importer` permanece **inalterado na 0.12.0 Stable/feature freeze**, portanto estas 18 novas subclasses não são promovidas nesta fase como parte da homologação congelada do módulo; o `Lord Guardian`, em particular, ainda exige um novo perfil especial de runtime do Cavaleiro Dracônico para aplicar seus parâmetros de classe ao Actor com fidelidade.
+- Adicionado o gate `tools/validate-paraprismatic-content-5.59.js`; o validador de bundles Foundry foi atualizado para 400 subclasses, 2.150 características e 146 tabelas.
+
+## 5.58.0
+
+### Conteúdo — Paraprismatic Tempest · Subraças Convergentes
+- Integradas integralmente as 14 Subraças Convergentes das páginas impressas 43–48: Arhcoon Azeban, Guardieth, Dragonkin Elemental, Destruição, Pyrline, Guairneán, Emberash, Berilo, Prismette, Linhagem Exterior, Burjelle, Kobold Pele de Prata, Travessia e Osso de Cinzas.
+- Cada subraça preserva `originalName`, fonte, página, aumento de atributo, `Bloodline Trait` e todas as características mecânicas em PT-BR, com distâncias convertidas para metros sem alterar as relações originais.
+- O catálogo racial passa de 368 para 382 subraças e de 1.690 para 1.743 registros mecânicos; as quatro raças-base de Paraprismatic Tempest permanecem mono-raças.
+- O detalhe de subraça passa a exibir explicitamente o `Bloodline Trait` e seu nome original, evitando que a informação de Sangue Misto fique apenas armazenada nos dados.
+- A camada especial de Herança Hanyou agora aceita quantidades específicas por subraça e múltiplos cartões de regra. Emberash segue a instrução explícita da fonte de escolher 2 traços positivos e 1 prejudicial, mantendo uma nota sobre a frase conflitante que menciona a remoção de um “segundo” traço no 13º nível.
+- Berilo registra a tensão entre a regra geral de Bloodline Trait das Subraças Convergentes e a proibição de Traços de Hádislin Cristalinos na regra de Sangue Misto de Lyre, sem reconciliar silenciosamente as duas fontes.
+- `foundry/grimorio-importer` permanece inalterado, pois a linha 0.12.0 não possui contrato de importação de raças/subraças.
+
+## 5.57.0
+
+### Conteúdo — Paraprismatic Tempest · Raças Planares (Fase 1)
+- Registrada a fonte **Somnus Domina — Paraprismatic Tempest (Splash Book 04)** e iniciada sua integração pelo capítulo **Planar Races**.
+- Adicionadas integralmente em PT-BR as quatro mono-raças das páginas 38–42: **Bouyan, Horma, Silvistar e Tinderbine**, com lore, aumentos de atributo, traços fixos, seis Traços de Legado próprios por raça e opções de Sangue Misto.
+- Preservado o **Traço de Legado Adicional** das quatro raças: quando a raça é dominante/primária, o construtor permite uma terceira escolha, mas o espaço adicional só aceita um Traço de Legado da própria raça dominante.
+- Adicionados os seis **Traços de Legado Planares** opcionais da página 37 em uma seção própria do catálogo: Geomentalista Adepto, Resistência Energética, Viajante Planar, Repreensão Prismática, Energia Sobrenatural e Núcleo Elemental Unificado.
+- A inconsistência de tamanho do **Silvistar** foi preservada e sinalizada: o cabeçalho da fonte diz Pequeno/Médio, enquanto o traço Tamanho diz Médio/Grande; o Grimório não escolhe silenciosamente uma correção.
+- As quatro raças foram adicionadas aos mapas de arte com placeholders, ao manifesto e à allowlist racial do Grimório Admin. O total passa de **42 para 46 raças**, mantendo **368 subraças** nesta fase.
+- As 14 Convergent Subraces, subclasses e magias de Paraprismatic Tempest permanecem fora desta fase e serão adicionadas separadamente.
+- Corrigido o comando `test:admin` para o Node 22.x declarado pelo projeto, removendo a flag `--test-isolation=none` que não é reconhecida no runtime homologado.
+- Corrigida a referência visual existente do Kobold para o asset real `assets/race-art/kobld.png`, permitindo que o validador de arte racial volte a fechar sem erro.
+
 ## 5.56.0
 
 ### Grimório Admin — Editor de Magias

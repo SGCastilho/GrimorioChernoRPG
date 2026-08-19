@@ -30,6 +30,7 @@ function load(file) {
   'data/zagalhta-subclasses-standard-3.js',
   'data/zagalhta-compulsions.js',
   'data/blade-bone-benefit-subclasses.js',
+  'data/paraprismatic-tempest-subclasses.js',
   'data/ryoko-subclasses.js',
   'data/ryoko-optional-features.js',
   'data/homebrew-emissario.js',
@@ -52,11 +53,11 @@ const errors = [];
 
 const EXPECTED = {
   classes: 27,
-  subclasses: 382,
+  subclasses: 400,
   classFeatures: 440,
-  subclassFeatures: 2055,
+  subclassFeatures: 2150,
   classTables: 33,
-  subclassTables: 138,
+  subclassTables: 146,
   nativeReviewIds: new Set(['dragoneer', 'frame-pilot', 'bender-ryoko', 'tamer-ryoko', 'blood-minister-somnus']),
   unlevelledClassFeatures: 49,
   subclassesMissingSource: 41
@@ -100,6 +101,7 @@ for (const item of nativeReview) assert(EXPECTED.nativeReviewIds.has(item.bundle
 for (const id of EXPECTED.nativeReviewIds) assert(nativeReview.some(item => item.bundle.identity.grimorioId === id), `Revisão nativa esperada ausente: ${id}.`);
 
 const subclassIds = new Set();
+let paraprismaticReferenceBundles = 0;
 for (const analysis of report.subclasses.analyses) {
   const bundle = analysis.bundle;
   if (!analysis.ok) {
@@ -111,7 +113,10 @@ for (const analysis of report.subclasses.analyses) {
   const parent = classes.find(item => item.id === bundle.parentClass.grimorioId);
   assert(Boolean(parent), `${bundle.identity.grimorioId}: classe-base inexistente.`);
   if (parent) assert(bundle.parentClass.identifier === api.identifiers.classIdentifier(parent), `${bundle.identity.grimorioId}: classIdentifier não corresponde à classe-base.`);
+  if (bundle.source?.title === 'Somnus Domina — Paraprismatic Tempest' && (bundle.subclass?.references||[]).length) paraprismaticReferenceBundles++;
 }
+
+assert(paraprismaticReferenceBundles === 4, `Paraprismatic Tempest: esperados 4 bundles de subclasse com referências complementares; obtidos ${paraprismaticReferenceBundles}.`);
 
 const unlevelledClassFeatures = report.classes.analyses.reduce((sum, item) => sum + (item.bundle?.features || []).filter(feature => feature.level === null).length, 0);
 const subclassesMissingSource = report.subclasses.analyses.filter(item => !item.bundle?.source?.title).length;

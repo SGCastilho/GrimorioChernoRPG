@@ -344,7 +344,7 @@
       selectionLevel: levels.length ? Math.min(...levels) : null,
       description: cleanText(subclass.desc),
       tables: normalizeTables(subclass.tables),
-      references: normalizeReferences(subclass.otherSources),
+      references: normalizeReferences((subclass.references && subclass.references.length) ? subclass.references : subclass.otherSources),
       sourcePage: Number.isFinite(Number(subclass.sourcePage)) ? Number(subclass.sourcePage) : null
     };
     bundle.features = features;

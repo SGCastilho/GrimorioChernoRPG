@@ -7,11 +7,11 @@ import { editSpellSource, parseSpellFiles, parseSpellSource } from '../../api/_l
 const files = {};
 for (const path of SPELL_CONTENT_FILES) files[path] = { content: await readFile(new URL(`../../${path}`, import.meta.url), 'utf8') };
 
-test('mapeia dez catálogos e 1.185 registros reais sem executar JavaScript', () => {
+test('mapeia onze catálogos e 1.208 registros reais sem executar JavaScript', () => {
   const registry = parseSpellFiles(files);
-  assert.equal(registry.catalogs.length, 10);
-  assert.equal(registry.spells.size, 1185);
-  assert.deepEqual(registry.catalogs.map(item => item.spellIds.length), [361, 95, 21, 241, 280, 48, 62, 62, 1, 14]);
+  assert.equal(registry.catalogs.length, 11);
+  assert.equal(registry.spells.size, 1208);
+  assert.deepEqual(registry.catalogs.map(item => item.spellIds.length), [361, 95, 21, 241, 280, 48, 62, 23, 62, 1, 14]);
   assert.equal(registry.spells.get('sage-fire-lance').metadata.school, 'Escola não informada');
 });
 

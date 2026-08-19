@@ -23,6 +23,7 @@ function load(file) {
   'data/lyre-spells.js',
   'data/blade-bone-benefit-spells.js',
   'data/zagalhta-spells.js',
+  'data/paraprismatic-tempest-spells.js',
   'data/ryoko-spells.js',
   'data/cultivator-homebrew-spells.js',
   'data/homebrew-sage-spells.js',
@@ -32,9 +33,9 @@ function load(file) {
 ].forEach(load);
 
 const EXPECTED = Object.freeze({
-  total: 1185,
-  exportable: 1170,
-  ready: 1168,
+  total: 1208,
+  exportable: 1193,
+  ready: 1191,
   reviewRequired: 2,
   blocked: 15,
   reviewIds: new Set(['lyre-divine-frost', 'lyre-tamamos-arrowfall']),

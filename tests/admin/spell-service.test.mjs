@@ -9,9 +9,9 @@ process.env.VERCEL_ENV = 'development';
 test('lista índice leve, abre detalhe e simula alteração sem persistir', async () => {
   const service = new SpellService(new MockRepositoryService());
   const index = await service.list();
-  assert.equal(index.total, 1185);
-  assert.equal(index.catalogs.length, 10);
-  assert.equal(index.spells.length, 1185);
+  assert.equal(index.total, 1208);
+  assert.equal(index.catalogs.length, 11);
+  assert.equal(index.spells.length, 1208);
   assert.equal('desc' in index.spells[0], false);
   const opened = (await service.get('sage-fire-lance', 'sage-homebrew-spells')).spell;
   const saved = await service.save({ spellId: opened.id, catalogId: opened.catalogId, changes: { school: 'Evocação' }, expected: opened.revision });

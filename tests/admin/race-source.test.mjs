@@ -9,10 +9,10 @@ for (const path of RACE_CONTENT_FILES) files[path] = { content: await readFile(n
 
 const findSubrace = (registry, raceId, subraceId) => [...registry.subraces.values()].find(item => item.raceId === raceId && item.id === subraceId);
 
-test('mapeia as 42 raças e 368 subraças com sobreposições efetivas', () => {
+test('mapeia as 46 raças e 382 subraças com sobreposições efetivas', () => {
   const registry = parseRaceFiles(files);
-  assert.equal(registry.races.size, 42);
-  assert.equal(registry.subraces.size, 368);
+  assert.equal(registry.races.size, 46);
+  assert.equal(registry.subraces.size, 382);
   assert.equal(registry.races.get('arhcoon').metadata.meta.speed, '9 m (30 pés)');
   assert.match(findSubrace(registry, 'arhcoon', 'city-arhcoon').metadata.description, /Arhcoons urbanos/);
   assert.equal([...registry.subraces.values()].filter(item => !item.metadata.description).length, 0);

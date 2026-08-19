@@ -7,10 +7,10 @@ import { editManifestClassName, editMetadataSource, parseMetadataFiles, parseMet
 const files = {};
 for (const path of METADATA_CONTENT_FILES) files[path] = { content: await readFile(new URL(`../../${path}`, import.meta.url), 'utf8') };
 
-test('mapeia as 27 classes e 382 subclasses reais sem lista enviada pelo cliente', () => {
+test('mapeia as 27 classes e 400 subclasses reais sem lista enviada pelo cliente', () => {
   const registry = parseMetadataFiles(files);
   assert.equal(registry.classes.size, 27);
-  assert.equal(registry.subclasses.size, 382);
+  assert.equal(registry.subclasses.size, 400);
   assert.equal(registry.classes.get('sorcerer').metadata.name, 'Feiticeiro');
   assert.equal(registry.subclasses.get('spellblade-battlemage').classId, 'spellblade');
 });

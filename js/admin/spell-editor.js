@@ -80,7 +80,7 @@ function spellPreview() {
 
 export async function renderSpellEditor(main, setTitle) {
   setTitle('Magias');
-  main.replaceChildren(node('p', 'admin-loading', 'Carregando o índice de 1.185 magias…'));
+  main.replaceChildren(node('p', 'admin-loading', 'Carregando o índice de 1.208 magias…'));
   let catalog;
   try { catalog = await adminRequest('spell'); }
   catch (error) {
@@ -98,7 +98,7 @@ export async function renderSpellEditor(main, setTitle) {
   const page = node('section', 'admin-editor admin-spell-editor');
   const heading = node('div', 'admin-page-heading');
   const headingText = node('div');
-  headingText.append(node('p', 'admin-eyebrow', 'CMS Git-backed'), node('h1', '', 'Editor de Magias'), node('p', 'admin-lede', `Edite ${catalog.total.toLocaleString('pt-BR')} registros dos dez catálogos reais. IDs, fonte, catálogo, aliases, versões históricas e automações Foundry permanecem protegidos.`));
+  headingText.append(node('p', 'admin-eyebrow', 'CMS Git-backed'), node('h1', '', 'Editor de Magias'), node('p', 'admin-lede', `Edite ${catalog.total.toLocaleString('pt-BR')} registros dos onze catálogos reais. IDs, fonte, catálogo, aliases, versões históricas e automações Foundry permanecem protegidos.`));
   heading.append(headingText, node('span', `admin-mode admin-mode-${catalog.mode}`, catalog.mode === 'github' ? 'Escrita GitHub' : 'Modo mock'));
 
   const form = node('form', 'admin-art-form');

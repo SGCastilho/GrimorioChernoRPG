@@ -26,7 +26,7 @@
     'ilthrak-yar': { image:'assets/race-art/ilthrak-ayr.png', alt:'', position:'70% 10%' },
     'kaijou': { image:'assets/race-art/kaijou.png', alt:'', position:'70% 10%' },
     'kits-adria': { image:'assets/race-art/kitsadria.png', alt:'', position:'70% 10%' },
-    'kobold': { image:'assets/race-art/kobold.png', alt:'', position:'70% 10%' },
+    'kobold': { image:'assets/race-art/kobld.png', alt:'', position:'70% 10%' },
     'kua-hono': { image:'assets/race-art/kua hono.png', alt:'', position:'70% 10%' },
     'merfolk': { image:'assets/race-art/povodomar.png', alt:'', position:'70% 10%' },
     'minotaur': { image:'assets/race-art/minotauro.png', alt:'', position:'70% 10%' },
@@ -44,7 +44,11 @@
     'galvan': { image:'', alt:'', position:'70% 10%' },
     'protolife': { image:'', alt:'', position:'70% 10%' },
     'scourage': { image:'', alt:'', position:'70% 10%' },
-    'sunling': { image:'', alt:'', position:'70% 10%' }
+    'sunling': { image:'', alt:'', position:'70% 10%' },
+    'bouyan': { image:'', alt:'', position:'70% 10%' },
+    'horma': { image:'', alt:'', position:'70% 10%' },
+    'silvistar': { image:'', alt:'', position:'70% 10%' },
+    'tinderbine': { image:'', alt:'', position:'70% 10%' }
   };
 
   function imgurParts(url){
