@@ -1,3 +1,81 @@
+## 5.67.0
+
+- **Race Build RB-8 — Aplicação ao Actor e homologação:** Grimório Importer promovido para `0.13.0-beta.1`; Race Builds materializados podem agora ser aplicados a um Actor `character` usando o `AdvancementManager` nativo do DnD5e 5.3.3.
+- Adicionado `scripts/race-actor-application.js` com inspeção de Race Items, no-op idempotente para o mesmo build, bloqueio de múltiplas raças e validação estrita do runtime Foundry 13.351 / DnD5e 5.3.3.
+- Substituição de raça exige confirmação explícita. A Race existente é revertida/removida com `AdvancementManager.forDeletedItem` antes de iniciar `forNewItem`; cancelamento interrompe o pipeline.
+- A Central passa a exibir **Aplicar ao Actor** nos Race Builds válidos e identifica o Actor-alvo pelo Token controlado ou personagem atribuído ao usuário.
+- A aplicação é bloqueada se Advancements estiverem desabilitados no sistema, se o Actor não for `character`, se o runtime estiver fora do perfil alvo ou se houver mais de um Race Item.
+- Zero World Items gerenciados continuam sendo criados; a persistência fora dos compêndios ocorre somente como Items embutidos no Actor-alvo pelo workflow de Advancement.
+- Adicionados `docs/RACE_BUILD_RB8.md`, fixtures RB-8 e `tests/validate-race-actor-013.mjs`. A linha permanece Beta enquanto a homologação in-app real não for concluída.
+
+## 5.66.0
+
+- **Race Build RB-7 — Automação Racial e Casos Especiais:** Grimório Importer promovido para `0.13.0-alpha.3`; a materialização RB-6 passa a compilar cada Característica Racial em `native`, `native-choice`, `assisted`, `runtime` ou `description`.
+- Adicionado `scripts/race-automation.js` com Active Effects estáticos conservadores para resistência/imunidade/vulnerabilidade, imunidade de condição e Especialização fixa; escolhas/condições temporárias não são convertidas em efeitos permanentes.
+- Trait Advancements passam a representar proficiências e pools explícitos de perícia/arma/ferramenta/idioma quando seguros; decisões dependentes das proficiências atuais do Actor continuam `assisted`.
+- Projeção racial ampliada para movimento e sentidos estáticos selecionados; Belabored Flight, teleporte, movimento temporário, senses condicionais/PB e transformações permanecem fora da automação nativa.
+- Uses simples (`@prof`, metade de PB, 1/LR, Short/Long Rest) e Activities `utility` de ação/ação bônus/reação são materializados apenas para ativação/consumo; efeitos complexos continuam regidos pelo texto.
+- Mecânicas contextuais recebem descritores runtime (`conditional-rule`, `proficiency-scaling`, `critical-trigger`, `teleport`, `transformation`) sem registrar hooks globais e sem tocar em Actors.
+- Adicionada auditoria integral `tools/audit-race-automation-rb7.mjs`: 1.743 registros classificados em 398 `native`, 19 `native-choice`, 3 `assisted`, 751 `runtime` e 572 `description`; gate também detecta resistência escolhível materializada indevidamente.
+- Adicionados fixtures RB-7, `docs/RACE_BUILD_RB7.md`, teste dedicado de automação e regressão RB-7. Aplicação direta ao Actor permanece para a RB-8.
+
+## 5.65.0
+
+- **Race Build RB-6 — Materialização Nativa:** Grimório Importer promovido para `0.13.0-alpha.2`; Race Builds válidos deixam de ser preflight-only e passam a criar/atualizar Items nos compêndios **Grimório — Raças** e **Grimório — Características Raciais**.
+- Adicionado `scripts/race-materializer.js` com reimportação idempotente: Race usa `identity.grimorioId`; Característica Racial usa `feature.key`; UUIDs são preservados e características compartilhadas são reutilizadas entre builds.
+- Race Items são `Item.type = race` e recebem projeções conservadoras do DnD5e 5.3.3: `movement`, `senses.ranges`, `type`, Advancements de Size/ASI fixo/idioma seguro e `ItemGrant` para as características do build.
+- Características Raciais são materializadas como `Item.type = feat` description-first, com fonte/página/identidade, sem Active Effects/Activities inferidos a partir da prosa.
+- O Advancement de idioma usa o identificador oficial legado `languages:standard:common`; escolhas abertas sem pool inequivocamente transportável ficam assistidas em vez de usar wildcard inventado.
+- Campos removidos pelo schema específico de Race do DnD5e 5.3.3 (`movement.bonus`, `movement.special`, `type.swarm`) não são serializados. `system.advancement` permanece objeto conforme a breaking change do DnD5e 5.3.
+- Packs raciais são destravados somente durante a transação e têm o lock original restaurado; a expectativa continua sendo **0 Items gerenciados no Mundo**.
+- Aplicação direta ao Actor, substituição de raça existente e automação contextual ficam fora da RB-6; próxima etapa: RB-7.
+- Adicionados fixtures atuais `human-woodlander-rb6.json` / `hanyou-emberash-rb6.json`, documentação `docs/RACE_BUILD_RB6.md`, gate do materializador e regressão de reimportação/UUID/locks.
+
+## 5.64.0
+
+- **Race Build RB-5 — Grimório Importer 0.13.x:** o módulo passa para `0.13.0-alpha.1` em canal de desenvolvimento e reconhece `grimorio-foundry-race-build-bundle@1` sem materializar conteúdo racial.
+- Adicionados `scripts/race-validator.js` e `scripts/race-support.js`: validação recalcula `selectionHash`, `contentHash` e `grimorioId`, confere proveniência/identidade e rejeita estruturas Foundry arbitrárias transportadas pelo site.
+- A Central identifica Race Builds, mostra preview dedicado e calcula o preflight `NOVO`/`ATUALIZAR`; Race Builds são marcados como **preflight-only** e não entram na fila executável da RB-5.
+- Preparados dois novos compêndios do módulo: **Grimório — Raças** (`grimorio-races`) e **Grimório — Características Raciais** (`grimorio-racial-features`), elevando a infraestrutura gerenciada para seis packs.
+- O plano racial usa `identity.grimorioId` para o Race Item e a `key` estável de cada característica para reutilização no compêndio racial. Nenhum `race-materializer.js`, Item Grant, automação racial ou aplicação ao Actor é introduzido nesta fase.
+- Adicionado gate `foundry/grimorio-importer/tests/validate-race-preflight-013.mjs` e gate integrado `tools/validate-race-build-rb5-5.64.js`.
+
+## 5.63.0
+
+- **Race Build RB-4 — Exportação JSON:** o Race Browser passa a exibir **Exportar para Foundry** quando o motor RB-3 retorna `canExport=true`; builds incompletos ou inválidos mantêm o botão desabilitado com o primeiro bloqueio estrutural visível.
+- Adicionado `js/exporters/foundry-race-export-ui.js`, com prévia da composição racial, características por bucket, escolhas dependentes do Actor, avisos da fonte, hashes, inspeção do JSON, cópia e download.
+- O contrato `grimorio-foundry-race-build-bundle@1` permanece estável. Em RB-4, `readiness.exportEnabled` acompanha `canExport` e `foundryPlan.status` passa a `awaiting-importer`.
+- O JSON continua declarativo e protegido contra `system`, `effects`, `flags`, macros, hooks ou outros caminhos arbitrários de documento Foundry.
+- O `grimorio-importer` permanece congelado em **0.12.0 Stable / 4 packs** e não consome o JSON nesta fase; a integração racial do módulo começa em RB-5.
+- Adicionado gate `tools/validate-race-build-rb4-5.63.js`, incluindo regressão de RB-3, UI de exportação, serialização determinística, botão habilitado/desabilitado e checksum do Importer.
+- Adicionadas fixtures `examples/races/human-woodlander-rb4.json` e `examples/races/hanyou-emberash-rb4.json` para o preflight racial da futura RB-5.
+
+## 5.62.0
+
+- **Race Build RB-3 — Motor de Elegibilidade Racial:** adicionado `data/race-build-eligibility-rules.js` e promovido `GRIMORIO_RACE_BUILD_RESOLVER` para resolver composição racial complexa sem interpretar texto na futura camada Foundry.
+- Sangue Misto passa a seguir o contrato auditado: Traços de Legado normais podem vir da dominante e da secundária; Traços de Sangue Misto são oferecidos apenas pela raça secundária, salvo exceções específicas da fonte.
+- Implementados Bloodline Traits com escolha concreta por subraça, requisitos especiais de Tribo Bestial e Vanquis, tipos de criatura adicionais e traços automáticos da raça secundária.
+- Hanyou dominante resolve ASI tradicional, tamanho e Herança; Hanyou secundário automatiza Linhagem, reserva um slot de Legado e exige 1 Herança positiva + 1 prejudicial da mesma subraça. Emberash mantém seu override 2+1 quando dominante.
+- Sangue Versátil passa a transformar o slot quando Humano é a raça secundária, concedendo exatamente dois Traços de Legado normais de dominante/secundária sem materializar o wrapper como característica final.
+- Integradas escolhas estruturais de ASI/tamanho, Persona Anterior do Vanquis, Corpo Remendado do Amálgama, Bênção da Terra + Magia Firbolg, Legado Amaldiçoado/Magia Elemental acoplados e os dois resultados iniciais de Mutações do Mutaliate.
+- A divergência de tamanho do Silvistar usa o traço mecânico Médio/Grande como autoridade operacional e continua sinalizada; Merfolk Shoreline permanece bloqueado porque a fonte não especifica qual atributo recebe +1.
+- `canExport` agora é calculado pelo motor RB-3. O botão/download de exportação continua deliberadamente ausente e `exportEnabled=false` até RB-4.
+- `Race Build Bundle v1` preserva os novos buckets (`secondaryHeritage`, `bloodline`, `extraLegacy`, `mutations`, `automaticSecondary`) e facts estruturados, mantendo transporte Foundry-agnostic e proteção contra `system`, `effects`, `flags`, macros e hooks.
+- Adicionado gate `tools/validate-race-build-rb3-5.62.js`; `foundry/grimorio-importer` permanece byte-a-byte inalterado em 0.12.0 Stable / quatro compêndios.
+
+## 5.61.0
+
+- **Race Build RB-1:** criado o contrato declarativo `grimorio-foundry-race-build-bundle@1`, com profile `foundry13-dnd5e533-grimorio-race-build-v1`, identidade determinística, `selectionHash`, `contentHash`, proveniência e buckets resolvidos de características raciais.
+- O Race Build Bundle é deliberadamente **Foundry-agnostic no transporte**: `system`, `effects`, `flags`, `changes`, macros, hooks e outras estruturas arbitrárias de documento são proibidas; a materialização fica reservada ao futuro `grimorio-importer` 0.13.x+.
+- **Race Builder RB-2:** armazenamento promovido de `grimorio-race-builder-v1` para `grimorio-race-builder-v2`, com migração automática não destrutiva das escolhas existentes e novo schema `grimorio-race-builder-state@2`.
+- Adicionado `js/race-build-resolver.js` como fonte normativa única para estado, pools, limites, Herança, seleção de Legados e readiness. A UI deixa de assumir silenciosamente a primeira subraça: raças com subraças agora exigem uma escolha explícita para o build ficar completo.
+- O estado v2 passa a preservar `heritage`, `bloodlineChoices`, `abilityChoices`, `traitChoices`, `specialChoices`, `extraLegacy` e pools opcionais, preparando regras complexas sem inferi-las antecipadamente.
+- Hanyou passa a permitir seleção/persistência real de Traços de Herança positivos e prejudiciais; overrides de subraça são respeitados, inclusive Emberash com 2 positivos + 1 prejudicial.
+- O resolvedor já valida o terceiro Traço de Legado dominante de Bouyan, Horma, Silvistar e Tinderbine, impedindo que o slot adicional seja preenchido por uma opção externa à lista normal da raça dominante.
+- Regras ainda não auditadas integralmente — Sangue Misto específico, Sangue Versátil, Bloodline Traits, ASI variável e exceções raciais especiais — são marcadas como pendências explícitas de **RB-3**, sem correção ou automação por inferência.
+- Adicionado gate `tools/validate-race-build-rb12-5.61.js` cobrindo migração v1→v2, Humano, Hanyou, Emberash, Bouyan, hashes determinísticos, segurança do transporte e congelamento do módulo.
+- `foundry/grimorio-importer` permanece **inalterado em 0.12.0 Stable**, com os quatro compêndios atuais; nenhum pack racial, materializador ou botão funcional de exportação foi introduzido nesta fase.
+
 ## 5.60.0
 
 - **Somnus Domina — Paraprismatic Tempest / Tempestuous Spells:** integrados os 25 blocos de magia das pp. 51–60 sem duplicar reimpressões mecanicamente equivalentes: 23 entradas próprias/revisadas em `data/paraprismatic-tempest-spells.js` e 2 reimpressões vinculadas às entradas existentes (`Cross Handle` e `Manipulate Earth`).

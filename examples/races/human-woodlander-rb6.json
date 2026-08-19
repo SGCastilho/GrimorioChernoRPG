@@ -1,0 +1,337 @@
+{
+  "schema": "grimorio-foundry-race-build-bundle",
+  "schemaVersion": 1,
+  "kind": "race-build",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-race-build-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "consumerLine": "0.13.x+"
+  },
+  "identity": {
+    "grimorioId": "race-build:human:woodlander:rb1-2957aa85ff817b21",
+    "selectionHash": "rb1-2957aa85ff817b21",
+    "contentHash": "rb1-d843f5e8fc08b0e4",
+    "primaryRaceId": "human",
+    "subraceId": "woodlander",
+    "secondaryRaceId": null
+  },
+  "source": {
+    "primaryRace": {
+      "sourceId": "lyre",
+      "title": "Lyre’s Guide to Retia — Land of Industry",
+      "page": 273,
+      "pages": "",
+      "chapter": ""
+    },
+    "subrace": {
+      "sourceId": "lyre",
+      "title": "Lyre’s Guide to Retia — Land of Industry",
+      "page": 275,
+      "pages": "",
+      "chapter": ""
+    },
+    "secondaryRace": null
+  },
+  "selection": {
+    "primaryRaceId": "human",
+    "subraceId": "woodlander",
+    "mixed": false,
+    "secondaryRaceId": null,
+    "legacy": [
+      "human:legacy:bound-luck",
+      "human:legacy:combat-training"
+    ],
+    "heritage": {
+      "positive": [],
+      "detrimental": [],
+      "lineage": []
+    },
+    "bloodlineChoices": {},
+    "abilityMode": "source",
+    "abilityChoices": {},
+    "traitChoices": {},
+    "specialChoices": {},
+    "extraLegacy": [],
+    "optionalPools": {
+      "exolunar": false,
+      "paraprismatic": false
+    }
+  },
+  "resolved": {
+    "primaryRace": {
+      "grimorioId": "human",
+      "name": "Humano",
+      "originalName": "Human",
+      "abilityScore": "Sabedoria +2; atributo da subraça +1. Alternativamente, com autorização do Mestre: +2/+1 ou +1/+1/+1.",
+      "meta": {
+        "creatureTypes": "Humanoide",
+        "lifeExpectancy": "60–80 anos",
+        "nationalAlignment": "Industrial",
+        "planarOrigin": "—",
+        "planetouched": "Não",
+        "regions": "The Land Away, Mot",
+        "size": "Médio",
+        "alignment": "Sem tendência típica",
+        "languages": "Comum + 1 idioma adicional à escolha",
+        "speed": "9 m (30 pés)"
+      }
+    },
+    "subrace": {
+      "grimorioId": "woodlander",
+      "name": "Habitante das Florestas",
+      "originalName": "Woodlander",
+      "ability": "Destreza +1",
+      "bloodlineTrait": "",
+      "originalBloodlineTrait": "",
+      "editorialNote": ""
+    },
+    "secondaryRace": null,
+    "limits": {
+      "legacy": {
+        "base": 2,
+        "bonus": 0,
+        "total": 2,
+        "selected": 2,
+        "reservedSecondarySlots": 0,
+        "effectiveSelectedSlots": 2,
+        "remaining": 0,
+        "primaryNormalSelected": 2,
+        "nonBonusSelected": 0
+      },
+      "heritage": {
+        "positive": 0,
+        "detrimental": 0,
+        "lineage": 0,
+        "removeDetrimentalAt": [],
+        "secondaryBloodlineAutomatic": false,
+        "secondaryLegacySlotsUsed": 0,
+        "selected": {
+          "positive": 0,
+          "detrimental": 0,
+          "lineage": 0
+        }
+      },
+      "secondaryHeritage": null
+    },
+    "facts": {
+      "creatureTypes": [
+        "Humanoide"
+      ],
+      "size": {
+        "requirement": {
+          "required": false,
+          "options": [
+            "medium"
+          ],
+          "source": "meta",
+          "choiceKey": "race:size",
+          "fixed": "medium"
+        },
+        "selected": "medium"
+      },
+      "ability": {
+        "mode": "source",
+        "subrace": {
+          "requirement": {
+            "kind": "fixed",
+            "required": false,
+            "options": [
+              "dex"
+            ],
+            "raw": "Destreza +1"
+          },
+          "selected": null
+        },
+        "hanyou": null
+      },
+      "formerPersona": null,
+      "subraceDriven": []
+    },
+    "features": {
+      "core": [
+        {
+          "key": "core:human:base:ingrained-skill",
+          "role": "core",
+          "grimorioTraitId": "ingrained-skill",
+          "name": "Perícia Enraizada",
+          "originalName": "Ingrained Skill",
+          "description": "Escolha dois atributos em cujos testes de resistência você não tenha proficiência. Quando realizar um teste de resistência com um desses atributos e não adicionar seu bônus de proficiência à jogada, você pode adicionar metade do seu bônus de proficiência, arredondado para baixo, ao resultado.\n\nSe posteriormente ganhar proficiência em testes de resistência de um dos atributos escolhidos, você pode substituir esse atributo por outro ao qual esta característica possa se aplicar.",
+          "page": 274,
+          "source": {
+            "sourceId": "lyre",
+            "title": "Lyre’s Guide to Retia — Land of Industry",
+            "page": 274,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "human",
+            "subraceId": null,
+            "origin": "dominant"
+          },
+          "heritageRole": null
+        }
+      ],
+      "subrace": [
+        {
+          "key": "subrace:human:woodlander:bonus-proficiency",
+          "role": "subrace",
+          "grimorioTraitId": "bonus-proficiency",
+          "name": "Proficiência Bônus",
+          "originalName": "Bonus Proficiency",
+          "description": "Você ganha proficiência na perícia Sobrevivência ou Furtividade, à sua escolha quando recebe esta característica.",
+          "page": 275,
+          "source": {
+            "sourceId": "lyre",
+            "title": "Lyre’s Guide to Retia — Land of Industry",
+            "page": 275,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "human",
+            "subraceId": "woodlander",
+            "origin": "dominant"
+          },
+          "heritageRole": null
+        },
+        {
+          "key": "subrace:human:woodlander:darkvision",
+          "role": "subrace",
+          "grimorioTraitId": "darkvision",
+          "name": "Visão no Escuro",
+          "originalName": "Darkvision",
+          "description": "Acostumado a caçar em situações de pouca luz, você possui Visão no Escuro a 18 metros (60 pés), podendo enxergar na escuridão como se fosse penumbra e na penumbra como se fosse luz plena.",
+          "page": 275,
+          "source": {
+            "sourceId": "lyre",
+            "title": "Lyre’s Guide to Retia — Land of Industry",
+            "page": 275,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "human",
+            "subraceId": "woodlander",
+            "origin": "dominant"
+          },
+          "heritageRole": null
+        },
+        {
+          "key": "subrace:human:woodlander:terrain-adept",
+          "role": "subrace",
+          "grimorioTraitId": "terrain-adept",
+          "name": "Adepto do Terreno",
+          "originalName": "Terrain Adept",
+          "description": "Você pode realizar a ação Esconder-se como uma ação bônus desde que exista algum tipo de cobertura natural ao seu redor, mesmo que normalmente ela não fosse suficiente para permitir que você se escondesse.\n\nQuando se mover através de qualquer forma de terreno difícil — ou terreno que custe 2 metros de deslocamento para cada 1 metro percorrido —, um trecho contínuo do seu movimento não sofre essa penalidade. A quantidade de deslocamento por turno que recebe esse benefício é igual a 1,5 metro multiplicado pelo seu bônus de proficiência.",
+          "page": 275,
+          "source": {
+            "sourceId": "lyre",
+            "title": "Lyre’s Guide to Retia — Land of Industry",
+            "page": 275,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "human",
+            "subraceId": "woodlander",
+            "origin": "dominant"
+          },
+          "heritageRole": null
+        }
+      ],
+      "legacy": [
+        {
+          "key": "human:legacy:bound-luck",
+          "role": "legacy",
+          "grimorioTraitId": "bound-luck",
+          "name": "Sorte Vinculada",
+          "originalName": "Bound Luck",
+          "description": "Quando você obtém um 1 natural em uma jogada de ataque, teste de atributo ou teste de resistência, ganha 1 ponto de Sorte Vinculada. Você pode gastar 1 ponto de Sorte Vinculada para rolar um d20 adicional em uma jogada de ataque, teste de atributo ou teste de resistência, mantendo o resultado de d20 que preferir.\n\nAo concluir um Descanso Curto ou Longo, você perde todos os pontos de Sorte Vinculada. Você só pode possuir uma quantidade de pontos de Sorte Vinculada igual à metade do seu bônus de proficiência, arredondado para baixo, por vez.",
+          "page": 274,
+          "source": {
+            "sourceId": "lyre",
+            "title": "Lyre’s Guide to Retia — Land of Industry",
+            "page": 274,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "human",
+            "subraceId": null,
+            "origin": "dominant"
+          },
+          "heritageRole": null
+        },
+        {
+          "key": "human:legacy:combat-training",
+          "role": "legacy",
+          "grimorioTraitId": "combat-training",
+          "name": "Treinamento de Combate",
+          "originalName": "Combat Training",
+          "description": "Você ganha proficiência com três armas à sua escolha. Além disso, ganha a primeira opção da lista abaixo, de cima para baixo, na qual ainda não seja proficiente:\n\n• Armaduras leves;\n• Armaduras médias;\n• Todas as armas simples e marciais;\n• Escudos;\n• Armaduras pesadas.",
+          "page": 274,
+          "source": {
+            "sourceId": "lyre",
+            "title": "Lyre’s Guide to Retia — Land of Industry",
+            "page": 274,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "human",
+            "subraceId": null,
+            "origin": "dominant"
+          },
+          "heritageRole": null
+        }
+      ],
+      "mixed": [],
+      "heritage": [],
+      "secondaryHeritage": [],
+      "bloodline": [],
+      "extraLegacy": [],
+      "mutations": [],
+      "automaticSecondary": []
+    }
+  },
+  "readiness": {
+    "status": "ready",
+    "modeledReady": true,
+    "errors": [],
+    "warnings": [],
+    "pending": [],
+    "eligibilityEngine": "rb3",
+    "canExport": true,
+    "pendingFoundryChoices": [
+      {
+        "key": "ingrained-skill",
+        "traitId": "ingrained-skill",
+        "name": "Perícia Enraizada",
+        "reason": "A escolha depende do contexto do Actor ou é melhor resolvida pelo Advancement do DnD5e."
+      },
+      {
+        "key": "bonus-proficiency",
+        "traitId": "bonus-proficiency",
+        "name": "Proficiência Bônus",
+        "reason": "A escolha depende do contexto do Actor ou é melhor resolvida pelo Advancement do DnD5e."
+      },
+      {
+        "key": "human:legacy:combat-training",
+        "traitId": "combat-training",
+        "name": "Treinamento de Combate",
+        "reason": "A escolha depende do contexto do Actor ou é melhor resolvida pelo Advancement do DnD5e."
+      }
+    ],
+    "exportEnabled": true
+  },
+  "foundryPlan": {
+    "status": "materialization-supported",
+    "consumer": "grimorio-importer",
+    "targetLine": "0.13.x+",
+    "itemType": "race",
+    "note": "RB-6: o Grimório Importer 0.13.x reconhece, valida e materializa Race/Características Raciais nos compêndios gerenciados. A aplicação direta ao Actor permanece para fase posterior."
+  }
+}

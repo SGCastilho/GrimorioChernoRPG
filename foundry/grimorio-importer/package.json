@@ -1,6 +1,6 @@
 {
   "name": "grimorio-importer",
-  "version": "0.12.0",
+  "version": "0.13.0-beta.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,6 +10,10 @@
     "test:fa4": "node tests/validate-feat-runtime-012.mjs",
     "test:fa5": "node tests/validate-feat-audit-012.mjs",
     "test:stable": "node tests/validate-stable-012.mjs",
-    "test:release": "node tests/validate-stable-012.mjs"
+    "test:release": "node tests/validate-race-actor-013.mjs && node tests/validate-race-automation-013.mjs && node tests/validate-race-materializer-013.mjs && node tests/validate-race-preflight-013.mjs",
+    "test:development": "node tests/validate-race-actor-013.mjs && node tests/validate-race-automation-013.mjs && node tests/validate-race-materializer-013.mjs && node tests/validate-race-preflight-013.mjs",
+    "test:rb6": "node tests/validate-race-materializer-013.mjs && node tests/validate-race-preflight-013.mjs",
+    "test:rb7": "node tests/validate-race-automation-013.mjs && node tests/validate-race-materializer-013.mjs && node tests/validate-race-preflight-013.mjs",
+    "test:rb8": "node tests/validate-race-actor-013.mjs && node tests/validate-race-automation-013.mjs && node tests/validate-race-materializer-013.mjs && node tests/validate-race-preflight-013.mjs"
   }
 }

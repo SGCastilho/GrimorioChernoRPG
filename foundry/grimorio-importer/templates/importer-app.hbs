@@ -111,7 +111,7 @@
               </div>
               <div class="{{#if importSession.summary.inspectionUnavailable}}is-error{{else}}is-ready{{/if}}">
                 <span>Diagnóstico</span>
-                <strong>{{#if importSession.summary.inspectionUnavailable}}Indisponível em {{importSession.summary.inspectionUnavailable}}{{else}}Pronto{{/if}}</strong>
+                <strong>{{#if importSession.summary.inspectionUnavailable}}Indisponível em {{importSession.summary.inspectionUnavailable}}{{else}}{{#if importSession.summary.executionBlocked}}Preflight-only: {{importSession.summary.executionBlocked}}{{else}}Pronto{{/if}}{{/if}}</strong>
               </div>
             </div>
 
@@ -304,6 +304,39 @@
                       </section>
                     {{/if}}
 
+                    {{#if isRaceBuild}}
+                      <section class="grimorio-payload-card__actor-apply">
+                        <div class="grimorio-payload-card__actor-copy">
+                          <span><i class="fa-solid fa-user-shield"></i> RB-8 · Aplicação ao Actor</span>
+                          <strong>{{@root.raceActorTarget.name}}</strong>
+                          <small>{{@root.raceActorTarget.sourceLabel}}</small>
+                          {{#if @root.raceActorTarget.error}}<p class="is-error">{{@root.raceActorTarget.error}}</p>{{/if}}
+                          <p>A raça será materializada/atualizada nos compêndios e aplicada ao Actor pelo AdvancementManager do DnD5e. Se já houver uma raça diferente, uma confirmação explícita será exigida antes da substituição.</p>
+                        </div>
+                        <button type="button" class="is-primary" data-grimorio-apply-race="{{id}}" {{#unless actorApplyEnabled}}disabled{{/unless}}>
+                          {{#if actorApplying}}<i class="fa-solid fa-spinner fa-spin"></i> Aplicando…{{else}}<i class="fa-solid fa-dna"></i> Aplicar ao Actor{{/if}}
+                        </button>
+                        {{#if actorResult}}
+                          <div class="grimorio-payload-card__actor-result {{#if actorResult.ok}}is-good{{else}}is-warning{{/if}}">
+                            {{#if actorResult.ok}}
+                              <i class="fa-solid fa-circle-check"></i>
+                              <span>{{#if actorResult.state}}{{actorResult.state}}{{else}}Aplicação concluída{{/if}}{{#if actorResult.replaced}} · raça anterior substituída{{/if}}</span>
+                            {{else}}
+                              <i class="fa-solid fa-triangle-exclamation"></i>
+                              <span>{{#if actorResult.error}}{{actorResult.error}}{{else}}Aplicação cancelada ou não concluída.{{/if}}</span>
+                            {{/if}}
+                          </div>
+                        {{/if}}
+                      </section>
+                    {{/if}}
+
+                    {{#if executionBlockReason}}
+                      <div class="grimorio-payload-card__compendium-error">
+                        <i class="fa-solid fa-flask"></i>
+                        <div><strong>Race Build não executável</strong><p>{{executionBlockReason}}</p></div>
+                      </div>
+                    {{/if}}
+
                     {{#if displayWarnings.length}}
                       <details class="grimorio-payload-card__messages is-warning" open>
                         <summary><i class="fa-solid fa-triangle-exclamation"></i> {{warnings.length}} aviso(s)</summary>
@@ -355,7 +388,7 @@
                 <div class="grimorio-import-flow__footer-action">
                   <div>
                     <strong>{{#if importSession.summary.canImport}}Pronto para importar{{else}}Importação bloqueada pelo preflight{{/if}}</strong>
-                    <p>{{importSession.summary.documents}} documento(s): {{importSession.summary.create}} novo(s) e {{importSession.summary.update}} atualização(ões). {{#unless importSession.summary.canImport}}Remova arquivos inválidos ou resolva compêndios indisponíveis antes de continuar.{{/unless}}</p>
+                    <p>{{importSession.summary.documents}} documento(s): {{importSession.summary.create}} novo(s) e {{importSession.summary.update}} atualização(ões). {{#unless importSession.summary.canImport}}Remova arquivos inválidos, resolva compêndios indisponíveis ou remova arquivos inválidos ou resolva compêndios indisponíveis antes de continuar.{{/unless}}</p>
                   </div>
                   <button type="button" data-grimorio-request-import {{#unless importSession.summary.canImport}}disabled{{/unless}} title="A Central atualizará o diagnóstico e pedirá confirmação antes de escrever.">
                     <i class="fa-solid fa-file-import"></i>
@@ -389,9 +422,9 @@
                 <div class="{{#if sectionData.legacy.clean}}is-good{{else}}is-warning{{/if}}"><span>Items legados</span><strong>{{sectionData.legacy.total}}</strong><small>protótipo Fase 5</small></div>
                 <div><span>Importer</span><strong>v{{importerVersion}}</strong><small>{{buildLabel}}</small></div>
               </div>
-              <section class="grimorio-admin-card grimorio-readiness is-{{sectionData.readiness.state}}" aria-label="Integridade técnica da versão estável 0.12.0">
+              <section class="grimorio-admin-card grimorio-readiness is-{{sectionData.readiness.state}}" aria-label="Prontidão técnica da linha 0.13.x em desenvolvimento">
                 <header>
-                  <div><span>{{sectionData.readiness.phase}} · {{sectionData.readiness.buildLabel}}</span><h3>Integridade da versão 0.12.0 Stable</h3></div>
+                  <div><span>{{sectionData.readiness.phase}} · {{sectionData.readiness.buildLabel}}</span><h3>Prontidão de homologação · RB-8</h3></div>
                   <div class="grimorio-readiness__headline"><i class="{{sectionData.readiness.stateIcon}}"></i><strong>{{sectionData.readiness.stateLabel}}</strong><small>{{sectionData.readiness.passed}}/{{sectionData.readiness.total}} verificações</small></div>
                 </header>
                 <div class="grimorio-readiness__checks">
@@ -404,9 +437,9 @@
                   {{/each}}
                 </div>
                 {{#if sectionData.readiness.blockingFailures}}
-                  <p class="grimorio-admin-note is-warning"><i class="fa-solid fa-shield-halved"></i> Existem {{sectionData.readiness.blockingFailures}} bloqueio(s) de integridade na versão estável. Corrija os itens marcados como Bloqueio e atualize o Status.</p>
+                  <p class="grimorio-admin-note is-warning"><i class="fa-solid fa-shield-halved"></i> Existem {{sectionData.readiness.blockingFailures}} bloqueio(s) no gate RB-8. Corrija os itens marcados como Bloqueio e atualize o Status.</p>
                 {{else}}
-                  <p class="grimorio-admin-note is-good"><i class="fa-solid fa-shield-halved"></i> Nenhum bloqueio técnico da versão estável foi detectado. Observações não bloqueantes continuam visíveis acima.</p>
+                  <p class="grimorio-admin-note is-good"><i class="fa-solid fa-shield-halved"></i> Nenhum bloqueio estrutural da RB-8 foi detectado. A aplicação ao Actor está disponível no perfil Foundry 13.351 / DnD5e 5.3.3; a homologação in-app ainda deve ser concluída antes de promover a linha 0.13 a estável.</p>
                 {{/if}}
               </section>
               <section class="grimorio-admin-card">

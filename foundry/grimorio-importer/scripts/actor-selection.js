@@ -8,7 +8,7 @@ export function selectedActorSelection() {
       tokenCount: 1
     });
   }
-  if (controlled.length > 1) throw new Error("Selecione apenas um token para configurar classes especiais.");
+  if (controlled.length > 1) throw new Error("Selecione apenas um token para definir o Actor-alvo.");
   const actor = globalThis.game?.user?.character ?? null;
   return Object.freeze({
     actor,

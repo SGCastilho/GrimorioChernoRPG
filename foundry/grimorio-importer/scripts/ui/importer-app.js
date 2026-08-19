@@ -46,7 +46,7 @@ function panelCopy(section) {
     packs: {
       eyebrow: "Armazenamento",
       title: "Compêndios gerenciados",
-      description: "Visão dos quatro compêndios gerenciados, contagens, pastas e estado de bloqueio.",
+      description: "Visão dos seis compêndios gerenciados, incluindo Raças e Características Raciais materializáveis e aplicáveis ao Actor na RB-8.",
       icon: "fa-solid fa-box-archive"
     },
     automation: {
@@ -63,8 +63,8 @@ function panelCopy(section) {
     },
     special: {
       eyebrow: "Actors",
-      title: "Classes especiais do Actor",
-      description: "Actor selecionado, classes especiais detectadas, parâmetros atuais e configuração assistida pelo mesmo runtime dos comandos.",
+      title: "Configuração do Actor",
+      description: "Actor selecionado, classes especiais e suporte à aplicação racial RB-8. A substituição de raça nunca ocorre silenciosamente.",
       icon: "fa-solid fa-user-gear"
     },
     help: {
@@ -297,7 +297,7 @@ function helpData() {
     visualRows: [
       { section: "Importar", action: "Selecionar/arrastar JSONs, preflight, confirmação e relatório", command: "/grimorio-import" },
       { section: "Status", action: "Ambiente, disponibilidade dos compêndios e conteúdo legado", command: "/grimorio-status · /grimorio-world-preview" },
-      { section: "Compêndios", action: "Contagens, pastas e estado dos quatro compêndios", command: "/grimorio-packs" },
+      { section: "Compêndios", action: "Contagens, pastas e estado dos seis compêndios", command: "/grimorio-packs" },
       { section: "Automação", action: "Cobertura dos perfis e mecânicas materializadas", command: "/grimorio-automacao" },
       { section: "Auditoria", action: "Classificação das Características nos compêndios", command: "/grimorio-auditoria-automacao" },
       { section: "Actor Especial", action: "Diagnóstico e configuração das cinco classes especiais", command: "/grimorio-special · /grimorio-configurar" }
@@ -308,9 +308,9 @@ function helpData() {
       "A Central é exclusiva para Mestres.",
       "A importação visual exige preflight válido e confirmação explícita.",
       "Reimportações usam IDs/flags estáveis e preservam documentos existentes.",
-      "Classes, Subclasses, Características e Talentos são sincronizados nos compêndios; nenhum Item gerenciado é criado automaticamente no Mundo.",
+      "Classes, Subclasses, Características, Talentos, Raças e Características Raciais são sincronizados nos compêndios; nenhum Item gerenciado é criado automaticamente no Mundo.",
       "Os comandos de chat permanecem disponíveis como atalhos para as seções equivalentes da Central.",
-      "A versão 0.12.0 está estável e em feature freeze: a auditoria 42/42 permanece ativa para verificar Talentos, preflight, identidade estável e integridade dos compêndios sem alterar a mecânica homologada nas FA-1–FA-5."
+      "A linha 0.13.x está em desenvolvimento. A RB-7 adiciona automação racial conservadora sobre a materialização em compêndios, sem aplicação direta ao Actor; as mecânicas homologadas da 0.12.0 permanecem preservadas."
     ],
     consolidation: {
       phase: IMPORTER_BUILD.phase,
@@ -351,6 +351,8 @@ export class GrimorioImporterApp extends HandlebarsApplicationMixin(ApplicationV
   #executing = false;
   #report = null;
   #sectionData = new Map();
+  #raceActorResults = new Map();
+  #raceActorApplying = new Set();
 
   get activeSection() {
     return this.#activeSection;
@@ -440,6 +442,48 @@ export class GrimorioImporterApp extends HandlebarsApplicationMixin(ApplicationV
       console.error(`[${MODULE_ID}] Falha ao configurar Actor pela Central`, error);
       globalThis.ui?.notifications?.error?.(`Grimório Importer: ${error?.message ?? error}`);
       return null;
+    }
+  }
+
+  async applyRaceEntryToSelectedActor(entryId) {
+    if (!globalThis.game?.user?.isGM) {
+      globalThis.ui?.notifications?.warn?.("Somente um Mestre pode aplicar uma raça ao Actor.");
+      return null;
+    }
+    const id = String(entryId ?? "");
+    if (!id || this.#raceActorApplying.has(id)) return null;
+    const entry = this.#session.entries.find(row => row.id === id);
+    if (!entry?.preview?.valid || entry.preview.type !== "race-build" || !entry.preview.payload) {
+      globalThis.ui?.notifications?.warn?.("Race Build inválido ou indisponível na sessão.");
+      return null;
+    }
+    try {
+      const selection = selectedActorSelection();
+      if (!selection.actor) throw new Error("Nenhum Actor selecionado e nenhum personagem atribuído ao usuário.");
+      const api = moduleApi();
+      if (!api?.applyRaceBuildToActor) throw new Error("API de aplicação racial RB-8 indisponível.");
+      this.#raceActorApplying.add(id);
+      this.#raceActorResults.delete(id);
+      if (this.rendered) await this.render();
+      const result = await api.applyRaceBuildToActor(entry.preview.payload, { actor: selection.actor });
+      this.#raceActorResults.set(id, result);
+      if (result?.state === "already-applied") {
+        globalThis.ui?.notifications?.info?.(`${selection.actor.name}: esta Race Build já está aplicada e atualizada.`);
+      } else if (result?.cancelled) {
+        globalThis.ui?.notifications?.warn?.(`${selection.actor.name}: aplicação racial cancelada sem substituir a raça do Actor.`);
+      } else if (result?.ok) {
+        globalThis.ui?.notifications?.info?.(`${selection.actor.name}: ${result.raceName} aplicada com sucesso${result.replaced ? " após substituir a raça anterior" : ""}.`);
+      }
+      console.info(`[${MODULE_ID}] Aplicação racial RB-8 pela Central`, result);
+      return result;
+    } catch (error) {
+      console.error(`[${MODULE_ID}] Falha ao aplicar Race Build ao Actor`, error);
+      this.#raceActorResults.set(id, { ok: false, state: "failed", error: String(error?.message ?? error) });
+      globalThis.ui?.notifications?.error?.(`Grimório Importer: ${error?.message ?? error}`);
+      return null;
+    } finally {
+      this.#raceActorApplying.delete(id);
+      if (this.rendered) await this.render();
     }
   }
 
@@ -598,6 +642,20 @@ export class GrimorioImporterApp extends HandlebarsApplicationMixin(ApplicationV
     const runtime = runtimeSnapshot();
     const activePanel = panelCopy(this.#activeSection);
     const sectionData = await this.#ensureSectionData(this.#activeSection);
+    const importContext = this.#session.context();
+    let raceActorTarget = { available: false, name: "Nenhum Actor disponível", sourceLabel: "Selecione um token ou atribua um personagem ao usuário", error: "" };
+    try {
+      const selection = selectedActorSelection();
+      raceActorTarget = { available: Boolean(selection.actor), name: selection.actor?.name ?? "Nenhum Actor disponível", sourceLabel: selection.sourceLabel, error: "" };
+    } catch (error) {
+      raceActorTarget = { available: false, name: "Seleção inválida", sourceLabel: "Actor-alvo", error: String(error?.message ?? error) };
+    }
+    importContext.entries = importContext.entries.map(entry => ({
+      ...entry,
+      actorApplying: this.#raceActorApplying.has(entry.id),
+      actorResult: this.#raceActorResults.get(entry.id) ?? null,
+      actorApplyEnabled: Boolean(entry.isRaceBuild && entry.valid && raceActorTarget.available && runtime.compatible && !this.#executing && !this.#raceActorApplying.has(entry.id))
+    }));
     return {
       ...context,
       moduleId: MODULE_ID,
@@ -619,7 +677,8 @@ export class GrimorioImporterApp extends HandlebarsApplicationMixin(ApplicationV
         active: section.id === this.#activeSection
       })),
       panel: activePanel,
-      importSession: this.#session.context(),
+      importSession: importContext,
+      raceActorTarget,
       importExecution: {
         support: importExecutionSupport(),
         confirming: this.#confirmation,
@@ -706,6 +765,12 @@ export class GrimorioImporterApp extends HandlebarsApplicationMixin(ApplicationV
       button.addEventListener("click", event => {
         event.preventDefault();
         void this.removeImportFile(button.dataset.grimorioRemoveFile);
+      });
+    }
+    for (const button of htmlElement.querySelectorAll("[data-grimorio-apply-race]")) {
+      button.addEventListener("click", event => {
+        event.preventDefault();
+        void this.applyRaceEntryToSelectedActor(button.dataset.grimorioApplyRace);
       });
     }
 

@@ -89,7 +89,7 @@ export class ImporterSession {
   }
 
   executableEntries() {
-    return this.#entries.filter(entry => entry.preview?.valid && entry.preview?.payload && entry.preview?.compendium?.available);
+    return this.#entries.filter(entry => entry.preview?.valid && entry.preview?.executable !== false && entry.preview?.payload && entry.preview?.compendium?.available);
   }
 
   clear() {
@@ -185,8 +185,10 @@ export class ImporterSession {
     const create = entries.reduce((sum, entry) => sum + (entry.preview.compendium?.available ? Number(entry.preview.compendium.create ?? 0) : 0), 0);
     const update = entries.reduce((sum, entry) => sum + (entry.preview.compendium?.available ? Number(entry.preview.compendium.update ?? 0) : 0), 0);
     const diffReady = valid > 0 && inspected === valid && inspectionUnavailable === 0;
+    const executionBlocked = entries.filter(entry => entry.preview?.valid && entry.preview?.executable === false).length;
+    const executable = entries.filter(entry => entry.preview?.valid && entry.preview?.executable !== false && entry.preview?.payload && entry.preview?.compendium?.available).length;
 
-    const canImport = entries.length > 0 && valid > 0 && invalid === 0 && diffReady;
+    const canImport = entries.length > 0 && valid > 0 && invalid === 0 && diffReady && executionBlocked === 0;
 
     return Object.freeze({
       files: entries.length,
@@ -200,6 +202,8 @@ export class ImporterSession {
       inspected,
       inspectionUnavailable,
       diffReady,
+      executionBlocked,
+      executable,
       canImport,
       documents,
       create,

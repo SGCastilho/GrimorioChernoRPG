@@ -16,7 +16,7 @@ const classBundle = readJson(path.join(root, "examples", "street-fighter", "clas
 const subclassBundle = readJson(path.join(root, "examples", "street-fighter", "subclass-dragon-dojima.json"));
 const runtimeInfo = { foundryVersion: "13.351", systemId: "dnd5e", systemVersion: "5.3.3" };
 
-assert(/^0\.(?:11\.0-(?:alpha\.\d+|rc\.\d+)|12\.0(?:-alpha\.\d+)?)$/.test(IMPORTER_VERSION), `IMPORTER_VERSION inesperado: ${IMPORTER_VERSION}`);
+assert(/^0\.(?:11\.0-(?:alpha\.\d+|rc\.\d+)|12\.0(?:-alpha\.\d+)?|13\.0-(?:alpha\.\d+|beta\.\d+))$/.test(IMPORTER_VERSION), `IMPORTER_VERSION inesperado: ${IMPORTER_VERSION}`);
 assert(READY_CLASS_IDENTIFIERS.length === 26 && READY_CLASS_IDENTIFIERS.includes("street-fighter"), "Lutador de Rua não entrou na allowlist de 26 classes");
 assert(Object.keys(CLASS_PROFILES).length === 26 && classProfile("street-fighter"), "CLASS_PROFILE do Lutador de Rua ausente");
 assert(phase8Support().counts.subclasses === 381, "Contagem de subclasses deveria ser 381");

@@ -27,9 +27,9 @@ export function centralParitySupport() {
     refreshablePanels: true,
     gmOnly: true,
     releaseReadinessGate: true,
-    developmentReadinessGate: false,
-    finalReadinessGate: true,
-    stableIntegrityGate: true,
+    developmentReadinessGate: true,
+    finalReadinessGate: false,
+    stableIntegrityGate: false,
     accessibilityPass: true,
     regressionSuite: true
   });

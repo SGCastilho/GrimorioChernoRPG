@@ -1,5 +1,7 @@
 import { isBundle, isPackage } from "../package-validator.js";
 import { isFeatBundle, isFeatPackage } from "../feat-validator.js";
+import { isRaceBuildBundle } from "../race-validator.js";
+import { plannedRaceBuildDocuments, raceBuildDisplayName } from "../race-support.js";
 import { plannedBundleDocuments } from "../materializer.js";
 import { MODULE_ID, PACKS, defaultPackRuntime } from "../pack-storage.js";
 
@@ -33,6 +35,7 @@ function featDocument(bundle) {
 
 function bundlePlans(bundle) {
   if (isFeatBundle(bundle)) return [featDocument(bundle)];
+  if (isRaceBuildBundle(bundle)) return plannedRaceBuildDocuments(bundle);
   if (isBundle(bundle)) return plannedBundleDocuments(bundle);
   return [];
 }
@@ -40,14 +43,14 @@ function bundlePlans(bundle) {
 export function plannedPayloadDocuments(payload) {
   let bundles = [];
   if (isPackage(payload) || isFeatPackage(payload)) bundles = asArray(payload.bundles);
-  else if (isBundle(payload) || isFeatBundle(payload)) bundles = [payload];
+  else if (isBundle(payload) || isFeatBundle(payload) || isRaceBuildBundle(payload)) bundles = [payload];
   else return [];
 
   const rows = [];
   for (const bundle of bundles) {
     const bundleId = String(bundle?.identity?.grimorioId ?? bundle?.identity?.id ?? "");
-    const bundleName = String(bundle?.identity?.name ?? "Conteúdo sem nome");
-    const bundleKind = isFeatBundle(bundle) ? "feat" : String(bundle?.kind ?? "");
+    const bundleName = isRaceBuildBundle(bundle) ? raceBuildDisplayName(bundle) : String(bundle?.identity?.name ?? "Conteúdo sem nome");
+    const bundleKind = isFeatBundle(bundle) ? "feat" : isRaceBuildBundle(bundle) ? "race-build" : String(bundle?.kind ?? "");
     for (const document of bundlePlans(bundle)) {
       rows.push({
         ...document,
@@ -256,14 +259,15 @@ export async function inspectPayloadCompendiums(payload, runtime = defaultCompen
 
 export function compendiumPreflightSupport() {
   return Object.freeze({
-    phase: "0.11-C",
+    phase: "RB-8",
     writeOperations: false,
-    identityMatching: "flags.grimorio-importer.documentRole + grimorioId (+ featureKey para Características)",
+    identityMatching: "flags.grimorio-importer.documentRole + grimorioId (+ featureKey para Características de classe; key estável para Características Raciais)",
     destinationPacks: Object.values(PACKS).map(pack => pack.collection),
     statuses: ["create", "update"],
     packageSummary: true,
     documentPreviewLimit: MAX_DISPLAY_DOCUMENTS,
     refreshable: true,
-    snapshotReads: true
+    snapshotReads: true,
+    raceBuildPreflightOnly: false
   });
 }

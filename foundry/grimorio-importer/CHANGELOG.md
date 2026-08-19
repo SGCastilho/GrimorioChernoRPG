@@ -1,3 +1,50 @@
+## 0.13.0-beta.1 — RB-8 / Aplicação ao Actor e homologação
+
+- Adicionado `scripts/race-actor-application.js` com aplicação de Race Builds a Actors `character` via `AdvancementManager.forNewItem`.
+- Substituição segura usa `AdvancementManager.forDeletedItem` e exige confirmação explícita antes de qualquer remoção.
+- Race Build idêntico (`grimorioId` + `contentHash`) é no-op; múltiplos Race Items bloqueiam o workflow.
+- `dnd5e.disableAdvancements`, runtime divergente, usuário não-GM ou Actor não-character bloqueiam a aplicação.
+- A Central ganhou ação **Aplicar ao Actor** por Race Build, usando Token único controlado ou personagem atribuído ao usuário como alvo.
+- Cancelar confirmação, remoção ou aplicação impede a continuação do pipeline.
+- Compêndios continuam idempotentes e nenhuma coleção `game.items` é usada como armazenamento intermediário.
+- Readiness RB-8 inclui gate não bloqueante de homologação in-app; RC/Stable permanecem indisponíveis até teste em Foundry 13.351 / DnD5e 5.3.3 real.
+
+## 0.13.0-alpha.3 — RB-7 / Automação Racial e Casos Especiais
+
+- Adicionado `scripts/race-automation.js` com compiler versionado `grimorio-foundry-race-automation-plan@1` e tiers `native`, `native-choice`, `assisted`, `runtime` e `description`.
+- Características estáticas inequívocas podem receber Active Effects transferíveis para resistência/imunidade/vulnerabilidade, imunidade de condição e Especialização fixa em perícia. Alternativas e regras temporárias/condicionais são deliberadamente excluídas.
+- Trait Advancements suportam proficiências fixas e escolhas explícitas de perícia, arma, ferramenta e idioma; escolhas dependentes do estado atual do Actor ficam assistidas.
+- Race Items passam a agregar projeções seguras de movimento/sentidos originadas das características selecionadas; Belabored Flight e movimento condicional não são achatados em deslocamentos permanentes.
+- Uses simples por descanso/PB e Activities utilitárias para ação/ação bônus/reação são materializados sem inventar dano, alvo, CD, movimento ou condições.
+- Regras com gatilhos, escala por PB fora de Uses, críticos, teleporte e transformações são preservadas em `runtime` descriptors. A RB-7 não registra hooks globais.
+- `race-materializer.js` integra o plano ao Feature Item e ao Race Item, mantém ItemGrant/ASI/Size/idiomas da RB-6 e registra métricas de cobertura de automação.
+- Auditoria de catálogo percorre 1.743 registros: 398 `native`, 19 `native-choice`, 3 `assisted`, 751 `runtime` e 572 `description`; 150 Effects, 72 Trait Advancements, 54 projeções de movimento, 61 sentidos, 223 Uses e 195 Activities candidatos.
+- Adicionados `docs/RACE_BUILD_RB7.md`, fixtures RB-7 e `tests/validate-race-automation-013.mjs`. Aplicação direta ao Actor continua desabilitada e reservada à RB-8.
+
+## 0.13.0-alpha.2 — RB-6 / Materialização Racial Nativa
+
+- Adicionado `scripts/race-materializer.js`: Race Builds validados agora criam/atualizam `race` em **Grimório — Raças** e `feat` em **Grimório — Características Raciais**.
+- Características são materializadas primeiro e seus UUIDs de compêndio alimentam um `ItemGrant` nativo do Race Item.
+- Reimportação por `documentRole + grimorioId` preserva UUIDs; características usam `feature.key` global e não gravam origem dominante/secundária volátil.
+- Projeções nativas conservadoras: deslocamento-base métrico, Visão no Escuro estática, tipo de criatura nativo/custom, Size, ASI fixo e grant seguro de idiomas.
+- `system.advancement` é objeto; os campos desabilitados pelo Race Data Model do DnD5e 5.3.3 não são emitidos.
+- Idioma Comum usa `languages:standard:common`; escolhas abertas ficam assistidas quando não há pool inequivocamente seguro no payload.
+- A Central volta a marcar Race Builds como executáveis depois do preflight e reutiliza o fluxo existente de confirmação/relatório.
+- O lock dos dois packs raciais é restaurado mesmo em falha e a materialização continua criando zero World Items gerenciados.
+- Adicionados `docs/RACE_BUILD_RB6.md`, fixtures RB-6 e `tests/validate-race-materializer-013.mjs`.
+- Aplicação direta ao Actor permanece desabilitada; automação contextual é reservada à RB-7.
+
+## 0.13.0-alpha.1 — RB-5 / reconhecimento e preflight racial
+
+- Aberta a linha **0.13.x** a partir da 0.12.0 Stable; canal `development`, `featureFreeze: false`, alvo final 0.13.0.
+- O Importer reconhece e valida `grimorio-foundry-race-build-bundle@1` / profile `foundry13-dnd5e533-grimorio-race-build-v1`.
+- `race-validator.js` recalcula `selectionHash`, `contentHash` e `grimorioId`, exige build liberado pelo RB-3/RB-4 e rejeita transporte de `system`, `effects`, `flags`, macros, hooks ou outras estruturas arbitrárias.
+- Adicionados os destinos **Grimório — Raças** e **Grimório — Características Raciais**, totalizando seis compêndios declarados no módulo.
+- A Central exibe Race Builds, características resolvidas e escolhas pendentes do Actor; o compendium preflight calcula `NOVO`/`ATUALIZAR` usando os dois packs raciais.
+- Race Builds são deliberadamente `executable=false` na RB-5. A Central não permite confirmar escrita quando a sessão contém conteúdo racial preflight-only.
+- Não existe `race-materializer.js` nesta fase; Item Race, Item Grant Advancements, automação e aplicação ao Actor ficam reservados à RB-6.
+- Adicionado `tests/validate-race-preflight-013.mjs` e documentação `docs/RACE_BUILD_RB5.md`.
+
 # Changelog
 
 ## 0.12.0 — Stable / consolidação FA-1–FA-5

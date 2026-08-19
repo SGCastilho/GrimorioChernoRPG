@@ -13,8 +13,8 @@ function unique(values) {
 
 function statsFromBundleResult(result = {}) {
   const stats = result?.stats ?? {};
-  const created = number(stats.parentCreated) + number(stats.featuresCreated) + number(stats.featsCreated);
-  const updated = number(stats.parentUpdated) + number(stats.featuresUpdated) + number(stats.featsUpdated);
+  const created = number(stats.parentCreated) + number(stats.featuresCreated) + number(stats.featsCreated) + number(stats.racesCreated) + number(stats.racialFeaturesCreated);
+  const updated = number(stats.parentUpdated) + number(stats.featuresUpdated) + number(stats.featsUpdated) + number(stats.racesUpdated) + number(stats.racialFeaturesUpdated);
   return {
     created,
     updated,

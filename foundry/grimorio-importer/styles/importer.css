@@ -1,0 +1,22 @@
+
+/* RB-8 · aplicação racial ao Actor */
+.grimorio-payload-card__actor-apply {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: .75rem 1rem;
+  align-items: center;
+  margin-top: .8rem;
+  padding: .85rem;
+  border: 1px solid color-mix(in srgb, var(--color-border-light-primary, #777) 55%, transparent);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--color-bg-option, #222) 70%, transparent);
+}
+.grimorio-payload-card__actor-copy { display: grid; gap: .2rem; min-width: 0; }
+.grimorio-payload-card__actor-copy > span { font-size: .75rem; text-transform: uppercase; opacity: .78; }
+.grimorio-payload-card__actor-copy > strong { font-size: 1rem; }
+.grimorio-payload-card__actor-copy > small { opacity: .72; }
+.grimorio-payload-card__actor-copy > p { grid-column: 1 / -1; margin: .25rem 0 0; font-size: .82rem; opacity: .82; }
+.grimorio-payload-card__actor-apply > button { min-width: 160px; }
+.grimorio-payload-card__actor-result { grid-column: 1 / -1; display: flex; gap: .45rem; align-items: center; font-size: .82rem; }
+.grimorio-payload-card__actor-result.is-good { color: var(--color-level-success, #2d9b58); }
+.grimorio-payload-card__actor-result.is-warning { color: var(--color-level-warning, #c78b2a); }

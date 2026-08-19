@@ -20,6 +20,11 @@ import { commandRoutingSupport, resolveGrimorioCommand, routeGrimorioCommand } f
 import { evaluateReleaseReadiness, releaseReadinessSupport } from "./ui/release-readiness.js";
 import { selectedActor } from "./actor-selection.js";
 import { IMPORTER_BUILD } from "./version.js";
+import { validateRaceBuildBundle, isRaceBuildBundle, raceBuildValidatorSupport } from "./race-validator.js";
+import { raceBuildSupport } from "./race-support.js";
+import { materializeRaceBuild, raceMaterializerSupport } from "./race-materializer.js";
+import { raceAutomationSupport } from "./race-automation.js";
+import { applyRaceBuildToActor, inspectActorRace, raceActorApplicationSupport } from "./race-actor-application.js";
 
 
 export function phase10Support() {
@@ -63,6 +68,11 @@ export async function status() {
     featAutomationSupport: featAutomationSupport(),
     featRuntimeSupport: featRuntimeSupport(),
     featAuditSupport: featAuditSupport(),
+    raceBuildValidatorSupport: raceBuildValidatorSupport(),
+    raceBuildSupport: raceBuildSupport(),
+    raceMaterializerSupport: raceMaterializerSupport(),
+    raceAutomationSupport: raceAutomationSupport(),
+    raceActorApplicationSupport: raceActorApplicationSupport(),
     preflightSupport: preflightSupport(),
     compendiumPreflightSupport: compendiumPreflightSupport(),
     importExecutionSupport: importExecutionSupport(),
@@ -248,12 +258,31 @@ export async function importPackage(pkg, { continueOnError = true, notify = true
   return result;
 }
 
+function notifyRaceResult(result) {
+  const { stats, bundle } = result;
+  const action = stats.racesCreated ? "criada" : "atualizada";
+  ui.notifications.info(`${bundle.name} ${action} em ${PACKS.races.label}. Características raciais: ${stats.racialFeaturesCreated} criadas, ${stats.racialFeaturesUpdated} atualizadas.`);
+  if (result.warnings?.length) ui.notifications.warn(`${bundle.name}: ${result.warnings.length} observação(ões). Consulte o console.`);
+  console.info(`[${MODULE_ID}] Race Build materializado em compêndios`, result);
+}
+
+export async function importRaceBuild(bundle, { notify = true } = {}) {
+  if (!game.user?.isGM) throw new Error("Somente um Mestre pode importar Raças do Grimório.");
+  const validation = validateRaceBuildBundle(bundle, runtimeInfo());
+  if (!validation.ok) throw new Error(validation.errors.join("\n"));
+  const result = await materializeRaceBuild(bundle);
+  result.warnings = [...new Set([...(validation.warnings ?? []), ...(result.warnings ?? [])])];
+  if (notify) notifyRaceResult(result);
+  return result;
+}
+
 export async function importPayload(payload, { notify = true, continueOnError = true } = {}) {
   if (isPackage(payload)) return await importPackage(payload, { continueOnError, notify });
   if (isBundle(payload)) return await importBundle(payload, { notify });
   if (isFeatPackage(payload)) return await importFeatPackage(payload, { continueOnError, notify });
   if (isFeatBundle(payload)) return await importFeatBundle(payload, { notify });
-  throw new Error("JSON não reconhecido: esperado bundle ou pacote Foundry de classe/subclasse ou Talento do Grimório.");
+  if (isRaceBuildBundle(payload)) return await importRaceBuild(payload, { notify });
+  throw new Error("JSON não reconhecido: esperado bundle/pacote de classe, subclasse, Talento ou Race Build do Grimório.");
 }
 
 export async function importPayloads(payloads, { continueOnError = true, notifyEach = true, notifySummary = true } = {}) {
@@ -397,6 +426,7 @@ Hooks.once("ready", () => {
       importFeatBundle,
       importFeatBundles,
       importFeatPackage,
+      importRaceBuild,
       openBundleFilePicker,
       openImporter,
       previewPayload,
@@ -435,6 +465,15 @@ Hooks.once("ready", () => {
       auditFeatDocuments,
       runtimeCoverageForActor,
       validateFeatRuntimeCoverage,
+      validateRaceBuildBundle,
+      isRaceBuildBundle,
+      raceBuildValidatorSupport,
+      raceBuildSupport,
+      raceMaterializerSupport,
+      raceAutomationSupport,
+      raceActorApplicationSupport,
+      inspectActorRace,
+      applyRaceBuildToActor,
       syncConditionalFeatEffects,
       configureFeatChoices,
       pendingFeatChoices,
@@ -450,7 +489,7 @@ Hooks.once("ready", () => {
   }
   const packs = packAvailability(defaultPackRuntime());
   if (game.user?.isGM && packs.some(pack => !pack.available)) ui.notifications.error("Grimório Importer: um ou mais compêndios não foram carregados. Verifique a instalação do módulo.");
-  console.info(`[${MODULE_ID}] Pronto — ${IMPORTER_VERSION} Stable · automação de Talentos 42/42 homologada, auditoria mecânica ativa e feature freeze de release. Foundry ${game.version}; ${game.system?.id} ${game.system?.version}.`, { packs, feats: featSupport(), featAutomation: featAutomationSupport(), featChoices: featChoiceSupport(), featRuntime: featRuntimeSupport(), featAudit: featAuditSupport(), preflight: compendiumPreflightSupport(), execution: importExecutionSupport(), central: centralParitySupport(), commandRouting: commandRoutingSupport(), stable: releaseReadinessSupport(), automation: automationCoverage() });
+  console.info(`[${MODULE_ID}] Pronto — ${IMPORTER_VERSION} · RB-8 aplicação racial ao Actor ativa em modo de homologação; Automação de Talentos 42/42 permanece homologada. Foundry ${game.version}; ${game.system?.id} ${game.system?.version}.`, { packs, feats: featSupport(), featAutomation: featAutomationSupport(), featChoices: featChoiceSupport(), featRuntime: featRuntimeSupport(), featAudit: featAuditSupport(), preflight: compendiumPreflightSupport(), execution: importExecutionSupport(), central: centralParitySupport(), commandRouting: commandRoutingSupport(), stable: releaseReadinessSupport(), automation: automationCoverage() });
 });
 
 Hooks.on("chatMessage", (_chatLog, message) => {

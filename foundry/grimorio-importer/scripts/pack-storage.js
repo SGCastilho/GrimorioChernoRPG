@@ -28,6 +28,20 @@ export const PACKS = Object.freeze({
     collection: `${MODULE_ID}.grimorio-feats`,
     label: "Grimório — Talentos",
     role: "feat"
+  }),
+  races: Object.freeze({
+    key: "races",
+    name: "grimorio-races",
+    collection: `${MODULE_ID}.grimorio-races`,
+    label: "Grimório — Raças",
+    role: "race"
+  }),
+  racialFeatures: Object.freeze({
+    key: "racialFeatures",
+    name: "grimorio-racial-features",
+    collection: `${MODULE_ID}.grimorio-racial-features`,
+    label: "Grimório — Características Raciais",
+    role: "racial-feature"
   })
 });
 

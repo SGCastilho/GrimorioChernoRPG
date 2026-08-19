@@ -1,0 +1,430 @@
+{
+  "schema": "grimorio-foundry-race-build-bundle",
+  "schemaVersion": 1,
+  "kind": "race-build",
+  "profile": {
+    "id": "foundry13-dnd5e533-grimorio-race-build-v1",
+    "foundryVersion": "13.351",
+    "dnd5eVersion": "5.3.3",
+    "consumer": "grimorio-importer",
+    "consumerLine": "0.13.x+"
+  },
+  "identity": {
+    "grimorioId": "race-build:hanyou:emberash:rb1-0f946d9a43f08326",
+    "selectionHash": "rb1-0f946d9a43f08326",
+    "contentHash": "rb1-bbac2c021a5fcd56",
+    "primaryRaceId": "hanyou",
+    "subraceId": "emberash",
+    "secondaryRaceId": null
+  },
+  "source": {
+    "primaryRace": {
+      "sourceId": "lyre",
+      "title": "Lyre’s Guide to Retia — Land of Industry",
+      "page": 263,
+      "pages": "",
+      "chapter": ""
+    },
+    "subrace": {
+      "sourceId": "paraprismatic-tempest",
+      "title": "Somnus Domina — Paraprismatic Tempest",
+      "page": 46,
+      "pages": "",
+      "chapter": ""
+    },
+    "secondaryRace": null
+  },
+  "selection": {
+    "primaryRaceId": "hanyou",
+    "subraceId": "emberash",
+    "mixed": false,
+    "secondaryRaceId": null,
+    "legacy": [
+      "hanyou:legacy:darkvision",
+      "hanyou:legacy:fiendish-lunge"
+    ],
+    "heritage": {
+      "positive": [
+        "subrace:hanyou:emberash:heritage:positive:advanced-resilience",
+        "subrace:hanyou:emberash:heritage:positive:smoke-sabotage"
+      ],
+      "detrimental": [
+        "subrace:hanyou:emberash:heritage:detrimental:ash-dissolution"
+      ],
+      "lineage": []
+    },
+    "bloodlineChoices": {},
+    "abilityMode": "source",
+    "abilityChoices": {
+      "hanyou": {
+        "minus": "con",
+        "plus": [
+          "str",
+          "dex"
+        ]
+      }
+    },
+    "traitChoices": {
+      "race:size": "small"
+    },
+    "specialChoices": {},
+    "extraLegacy": [],
+    "optionalPools": {
+      "exolunar": false,
+      "paraprismatic": false
+    }
+  },
+  "resolved": {
+    "primaryRace": {
+      "grimorioId": "hanyou",
+      "name": "Hanyou",
+      "originalName": "Hanyou",
+      "abilityScore": "Regra tradicional: +2 em dois atributos diferentes e −2 em um terceiro; a fonte também permite, com autorização do Mestre, usar +2/+1 ou +1/+1/+1.",
+      "meta": {
+        "creatureTypes": "Corruptor (Yokai), Humanoide",
+        "lifeExpectancy": "300+ anos ou 1,5× a linhagem parental",
+        "nationalAlignment": "Outro",
+        "planarOrigin": "Reino das Sombras",
+        "planetouched": "Sim",
+        "regions": "Isolados",
+        "size": "Pequeno ou Médio",
+        "alignment": "Quase nunca Leais; frequentemente Neutros e solitários, embora o caminho para o mal seja comum",
+        "languages": "Comum + 1 idioma adicional",
+        "speed": "9 m (30 pés)"
+      }
+    },
+    "subrace": {
+      "grimorioId": "emberash",
+      "name": "Emberash",
+      "originalName": "Emberash",
+      "ability": "Nenhum",
+      "bloodlineTrait": "Incenso Tempestuoso e Fraqueza do Incenso",
+      "originalBloodlineTrait": "Tempest Incense & Incense Weakness",
+      "editorialNote": "Inconsistência preservada da fonte: a instrução de Heritage Traits (Detrimental) manda escolher 1 traço prejudicial, mas a mesma frase prevê remover “o segundo” no 13º nível. O Grimório mantém a escolha explícita de 1 e registra a referência conflitante, sem inventar um segundo traço obrigatório."
+    },
+    "secondaryRace": null,
+    "limits": {
+      "legacy": {
+        "base": 2,
+        "bonus": 0,
+        "total": 2,
+        "selected": 2,
+        "reservedSecondarySlots": 0,
+        "effectiveSelectedSlots": 2,
+        "remaining": 0,
+        "primaryNormalSelected": 2,
+        "nonBonusSelected": 0
+      },
+      "heritage": {
+        "positive": 2,
+        "detrimental": 1,
+        "lineage": 0,
+        "removeDetrimentalAt": [
+          8,
+          13
+        ],
+        "secondaryBloodlineAutomatic": true,
+        "secondaryLegacySlotsUsed": 1,
+        "selected": {
+          "positive": 2,
+          "detrimental": 1,
+          "lineage": 0
+        }
+      },
+      "secondaryHeritage": null
+    },
+    "facts": {
+      "creatureTypes": [
+        "Corruptor (Yokai)",
+        "Humanoide"
+      ],
+      "size": {
+        "requirement": {
+          "required": true,
+          "options": [
+            "small",
+            "medium"
+          ],
+          "source": "meta",
+          "choiceKey": "race:size",
+          "fixed": null
+        },
+        "selected": "small"
+      },
+      "ability": {
+        "mode": "source",
+        "subrace": {
+          "requirement": {
+            "kind": "none",
+            "required": false,
+            "options": [],
+            "raw": "Nenhum"
+          },
+          "selected": null
+        },
+        "hanyou": {
+          "requirement": {
+            "kind": "hanyou-source",
+            "required": true,
+            "plusCount": 2,
+            "minusCount": 1,
+            "options": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "plus": [
+            "str",
+            "dex"
+          ],
+          "minus": "con"
+        }
+      },
+      "formerPersona": null,
+      "subraceDriven": []
+    },
+    "features": {
+      "core": [
+        {
+          "key": "core:hanyou:base:demonic-regeneration",
+          "role": "core",
+          "grimorioTraitId": "demonic-regeneration",
+          "name": "Regeneração Demoníaca",
+          "originalName": "Demonic Regeneration",
+          "description": "Ao concluir um Descanso Longo, você recupera todos os seus Dados de Vida, em vez de apenas metade. Além disso, como uma ação, pode gastar qualquer quantidade de Dados de Vida e recuperar pontos de vida iguais ao seu bônus de proficiência para cada Dado de Vida gasto desta maneira.",
+          "page": 264,
+          "source": {
+            "sourceId": "lyre",
+            "title": "Lyre’s Guide to Retia — Land of Industry",
+            "page": 264,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "hanyou",
+            "subraceId": null,
+            "origin": "dominant"
+          },
+          "heritageRole": null
+        },
+        {
+          "key": "core:hanyou:base:thermal-vision",
+          "role": "core",
+          "grimorioTraitId": "thermal-vision",
+          "name": "Visão Térmica",
+          "originalName": "Thermal Vision",
+          "description": "Você detecta fontes de calor a até 9 metros (30 pés). Dentro desse alcance e desde que tenha linha de visão, consegue perceber criaturas que produzam calor corporal mesmo se estiverem Invisíveis e ignora ilusões dessas criaturas como se possuísse Visão às Cegas. Criaturas sem sangue ou que não produzam calor como seres vivos — normalmente mortos-vivos, construtos sem fogo ou calor, elementais não ligados a fogo, gosmas e semelhantes — não são percebidas por esta visão.",
+          "page": 264,
+          "source": {
+            "sourceId": "lyre",
+            "title": "Lyre’s Guide to Retia — Land of Industry",
+            "page": 264,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "hanyou",
+            "subraceId": null,
+            "origin": "dominant"
+          },
+          "heritageRole": null
+        }
+      ],
+      "subrace": [
+        {
+          "key": "subrace:hanyou:emberash:heritage:lineage:incense-weakness",
+          "role": "subrace",
+          "grimorioTraitId": "incense-weakness",
+          "name": "Fraqueza do Incenso",
+          "originalName": "Incense Weakness",
+          "description": "Quando usa Incenso Tempestuoso para mudar o tipo de dano ao qual é resistente, você se torna vulnerável a outro tipo de dano de acordo com a resistência escolhida. Isso funciona como um Traço de Herança prejudicial e pode ser removido quando você removeria um deles. As correspondências são: • ácido — fraqueza a elétrico; • frio — fraqueza a fogo; • fogo — fraqueza a ácido; • elétrico — fraqueza a frio; • veneno — fraqueza a elétrico.",
+          "page": 46,
+          "source": {
+            "sourceId": "paraprismatic-tempest",
+            "title": "Somnus Domina — Paraprismatic Tempest",
+            "page": 46,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "hanyou",
+            "subraceId": "emberash",
+            "origin": "dominant"
+          },
+          "heritageRole": "lineage"
+        },
+        {
+          "key": "subrace:hanyou:emberash:heritage:lineage:tempest-incense",
+          "role": "subrace",
+          "grimorioTraitId": "tempest-incense",
+          "name": "Incenso Tempestuoso",
+          "originalName": "Tempest Incense",
+          "description": "Sempre que conclui um Descanso, você pode ajustar a composição do seu corpo para torná-lo resistente a um tipo de dano tempestuoso. Essa resistência permanece até a próxima vez que você usar esta característica. Ao fazer isso, seu corpo assume o aroma de uma paisagem associada a esse tipo de energia.",
+          "page": 47,
+          "source": {
+            "sourceId": "paraprismatic-tempest",
+            "title": "Somnus Domina — Paraprismatic Tempest",
+            "page": 47,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "hanyou",
+            "subraceId": "emberash",
+            "origin": "dominant"
+          },
+          "heritageRole": "lineage"
+        }
+      ],
+      "legacy": [
+        {
+          "key": "hanyou:legacy:darkvision",
+          "role": "legacy",
+          "grimorioTraitId": "darkvision",
+          "name": "Visão no Escuro",
+          "originalName": "Darkvision",
+          "description": "Você possui Visão no Escuro a 18 metros (60 pés). Dentro desse alcance, enxerga em penumbra como se fosse luz plena e na escuridão como se fosse penumbra, distinguindo cores apenas em tons de cinza.",
+          "page": 264,
+          "source": {
+            "sourceId": "lyre",
+            "title": "Lyre’s Guide to Retia — Land of Industry",
+            "page": 264,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "hanyou",
+            "subraceId": null,
+            "origin": "dominant"
+          },
+          "heritageRole": null
+        },
+        {
+          "key": "hanyou:legacy:fiendish-lunge",
+          "role": "legacy",
+          "grimorioTraitId": "fiendish-lunge",
+          "name": "Investida Corruptora",
+          "originalName": "Fiendish Lunge",
+          "description": "Você pode realizar saltos em altura e em distância a partir de uma posição parada usando a distância completa como se tivesse tomado impulso. Além disso, um número de vezes por Descanso Longo igual ao seu bônus de proficiência, pode usar uma ação bônus para saltar em direção a uma criatura a uma distância de até metade do seu deslocamento, terminando no espaço desocupado mais próximo adjacente a ela. Até o fim do turno, você tem vantagem em todos os ataques corpo a corpo com arma contra essa criatura. Este traço só pode ser usado uma vez por turno.",
+          "page": 264,
+          "source": {
+            "sourceId": "lyre",
+            "title": "Lyre’s Guide to Retia — Land of Industry",
+            "page": 264,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "hanyou",
+            "subraceId": null,
+            "origin": "dominant"
+          },
+          "heritageRole": null
+        }
+      ],
+      "mixed": [],
+      "heritage": [
+        {
+          "key": "subrace:hanyou:emberash:heritage:detrimental:ash-dissolution",
+          "role": "heritage",
+          "grimorioTraitId": "ash-dissolution",
+          "name": "Dissolução em Cinzas",
+          "originalName": "Ash Dissolution",
+          "description": "Quando você fica submerso em líquido, seu corpo começa a se diluir. Seu deslocamento é reduzido para 3 metros, e você sofre 1d8 de dano sem tipo no início de cada um dos seus turnos enquanto permanecer submerso, ou quando ficar submerso pela primeira vez no seu turno.",
+          "page": 46,
+          "source": {
+            "sourceId": "paraprismatic-tempest",
+            "title": "Somnus Domina — Paraprismatic Tempest",
+            "page": 46,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "hanyou",
+            "subraceId": "emberash",
+            "origin": "dominant"
+          },
+          "heritageRole": "detrimental"
+        },
+        {
+          "key": "subrace:hanyou:emberash:heritage:positive:advanced-resilience",
+          "role": "heritage",
+          "grimorioTraitId": "advanced-resilience",
+          "name": "Resiliência Avançada",
+          "originalName": "Advanced Resilience",
+          "description": "Quando usa Incenso Tempestuoso para receber uma resistência, você pode escolher um tipo adicional de dano tempestuoso ao qual se tornar resistente; esse tipo não pode ser um ao qual você esteja vulnerável por Fraqueza do Incenso. Você não recebe, para esse segundo tipo, a fraqueza correspondente de Fraqueza do Incenso.",
+          "page": 46,
+          "source": {
+            "sourceId": "paraprismatic-tempest",
+            "title": "Somnus Domina — Paraprismatic Tempest",
+            "page": 46,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "hanyou",
+            "subraceId": "emberash",
+            "origin": "dominant"
+          },
+          "heritageRole": "positive"
+        },
+        {
+          "key": "subrace:hanyou:emberash:heritage:positive:smoke-sabotage",
+          "role": "heritage",
+          "grimorioTraitId": "smoke-sabotage",
+          "name": "Sabotagem de Fumaça",
+          "originalName": "Smoke Sabotage",
+          "description": "Quando for atacado por uma criatura a até 3 metros, você pode produzir uma explosão de fumaça e vapores que a força a realizar um teste de resistência de Constituição, cuja CD usa Constituição, Sabedoria ou Carisma. Em caso de falha, o ataque erra e é desperdiçado, e a criatura não pode atacá-lo novamente durante aquele turno. Você pode fazer isso um número de vezes por Descanso Longo igual ao seu bônus de proficiência. Isso não exige uma reação, mas você não pode estar Incapacitado ao usá-lo.",
+          "page": 46,
+          "source": {
+            "sourceId": "paraprismatic-tempest",
+            "title": "Somnus Domina — Paraprismatic Tempest",
+            "page": 46,
+            "pages": "",
+            "chapter": ""
+          },
+          "owner": {
+            "raceId": "hanyou",
+            "subraceId": "emberash",
+            "origin": "dominant"
+          },
+          "heritageRole": "positive"
+        }
+      ],
+      "secondaryHeritage": [],
+      "bloodline": [],
+      "extraLegacy": [],
+      "mutations": [],
+      "automaticSecondary": []
+    }
+  },
+  "readiness": {
+    "status": "ready",
+    "modeledReady": true,
+    "errors": [],
+    "warnings": [
+      {
+        "code": "subrace.editorial-note",
+        "message": "Inconsistência preservada da fonte: a instrução de Heritage Traits (Detrimental) manda escolher 1 traço prejudicial, mas a mesma frase prevê remover “o segundo” no 13º nível. O Grimório mantém a escolha explícita de 1 e registra a referência conflitante, sem inventar um segundo traço obrigatório.",
+        "path": "subraceId",
+        "severity": "warning"
+      }
+    ],
+    "pending": [],
+    "eligibilityEngine": "rb3",
+    "canExport": true,
+    "pendingFoundryChoices": [],
+    "exportEnabled": true
+  },
+  "foundryPlan": {
+    "status": "materialization-supported",
+    "consumer": "grimorio-importer",
+    "targetLine": "0.13.x+",
+    "itemType": "race",
+    "note": "RB-7: o Grimório Importer 0.13.0-alpha.3 reconhece, valida e materializa Race/Características Raciais, aplicando automação conservadora segura e preservando mecânicas contextuais como assisted/runtime/description. A aplicação direta ao Actor permanece para a RB-8."
+  }
+}

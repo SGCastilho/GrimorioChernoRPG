@@ -2,8 +2,10 @@ import { validateBundle, TARGET_DND5E, TARGET_FOUNDRY } from "../bundle-validato
 import { validatePackage, isPackage, isBundle } from "../package-validator.js";
 import { validateFeatBundle, validateFeatPackage, isFeatBundle, isFeatPackage } from "../feat-validator.js";
 import { PACKS } from "../pack-storage.js";
+import { validateRaceBuildBundle, isRaceBuildBundle } from "../race-validator.js";
+import { raceBuildDisplayName, resolvedRaceFeatures } from "../race-support.js";
 
-const UNKNOWN_ERROR = "JSON não reconhecido: esperado bundle ou pacote Foundry de classe/subclasse ou Talento do Grimório.";
+const UNKNOWN_ERROR = "JSON não reconhecido: esperado bundle/pacote de classe, subclasse, Talento ou Race Build do Grimório.";
 
 function asArray(value) {
   return Array.isArray(value) ? value : [];
@@ -198,6 +200,43 @@ function featPackagePreview(payload, validation) {
   };
 }
 
+
+function raceBuildPreview(payload, validation) {
+  const primary = payload.resolved?.primaryRace ?? {};
+  const subrace = payload.resolved?.subrace ?? null;
+  const secondary = payload.resolved?.secondaryRace ?? null;
+  const features = resolvedRaceFeatures(payload);
+  const pending = asArray(payload.readiness?.pendingFoundryChoices);
+  const source = sourceView(payload.source?.primaryRace);
+  return {
+    family: "race-content",
+    type: "race-build",
+    isRaceBuild: true,
+    typeLabel: "Raça · Race Build v1",
+    icon: "fa-solid fa-dna",
+    title: raceBuildDisplayName(payload),
+    identifier: String(payload.identity?.grimorioId ?? ""),
+    source,
+    subtitle: secondary ? `Sangue Misto com ${secondary.name ?? secondary.grimorioId}` : (subrace?.name ?? source.title),
+    excerpt: textExcerpt(primary.abilityScore || primary.meta?.creatureTypes || "Construção racial resolvida pelo Grimório."),
+    counts: [
+      count("Características", features.length, "fa-solid fa-puzzle-piece"),
+      count("Escolhas no Actor", pending.length, "fa-solid fa-code-branch")
+    ],
+    details: [
+      { label: "Raça dominante", value: String(primary.name ?? payload.identity?.primaryRaceId ?? "—") },
+      ...(subrace ? [{ label: "Subraça", value: String(subrace.name ?? subrace.grimorioId) }] : []),
+      ...(secondary ? [{ label: "Raça secundária", value: String(secondary.name ?? secondary.grimorioId) }] : []),
+      { label: "Selection Hash", value: String(payload.identity?.selectionHash ?? "—") },
+      { label: "Content Hash", value: String(payload.identity?.contentHash ?? "—") }
+    ],
+    destinations: destination(["races", "racialFeatures"]),
+    executable: true,
+    executionBlockReason: "",
+    validation
+  };
+}
+
 function unknownPreview(payload) {
   const validation = { ok: false, errors: [UNKNOWN_ERROR], warnings: [] };
   return {
@@ -222,6 +261,7 @@ export function classifyPayload(payload) {
   if (isBundle(payload)) return payload.kind === "subclass" ? "subclass-bundle" : "class-bundle";
   if (isFeatPackage(payload)) return "feat-package";
   if (isFeatBundle(payload)) return "feat-bundle";
+  if (isRaceBuildBundle(payload)) return "race-build";
   return "unknown";
 }
 
@@ -234,6 +274,7 @@ export function previewPayload(payload, runtime = {}) {
   else if (type === "class-bundle" || type === "subclass-bundle") preview = classBundlePreview(payload, validateBundle(payload, activeRuntime));
   else if (type === "feat-package") preview = featPackagePreview(payload, validateFeatPackage(payload, activeRuntime));
   else if (type === "feat-bundle") preview = featBundlePreview(payload, validateFeatBundle(payload, activeRuntime));
+  else if (type === "race-build") preview = raceBuildPreview(payload, validateRaceBuildBundle(payload, activeRuntime));
   else preview = unknownPreview(payload);
 
   const errors = truncateMessages(preview.validation?.errors);
@@ -245,6 +286,8 @@ export function previewPayload(payload, runtime = {}) {
     schemaVersion: payload?.schemaVersion ?? null,
     profileId: String(payload?.profile?.id ?? ""),
     valid,
+    executable: preview.executable !== false,
+    executionBlockReason: String(preview.executionBlockReason ?? ""),
     state: valid ? (warnings.total ? "warning" : "valid") : "invalid",
     stateLabel: valid ? (warnings.total ? "Válido com avisos" : "Válido") : "Inválido",
     stateIcon: valid ? (warnings.total ? "fa-solid fa-triangle-exclamation" : "fa-solid fa-circle-check") : "fa-solid fa-circle-xmark",
@@ -270,11 +313,12 @@ export function preflightSupport() {
     writeOperations: false,
     multipleFiles: true,
     dragAndDrop: true,
-    formats: ["class-bundle", "subclass-bundle", "class-package", "feat-bundle", "feat-package"],
+    formats: ["class-bundle", "subclass-bundle", "class-package", "feat-bundle", "feat-package", "race-build"],
     validationBeforeWrite: true,
     compendiumInspection: true,
     createUpdateDiff: true,
     targetFoundry: TARGET_FOUNDRY,
-    targetDnd5e: TARGET_DND5E
+    targetDnd5e: TARGET_DND5E,
+    raceBuildPreflightOnly: false
   });
 }

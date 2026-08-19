@@ -1,3 +1,21 @@
+# RB-8 · Aplicação ao Actor e Homologação (0.13.0-beta.1)
+
+A RB-8 fecha o fluxo racial: um Race Build validado/materializado pode ser aplicado a um Actor `character` através do `AdvancementManager` nativo do DnD5e. A substituição de uma raça existente exige confirmação explícita; múltiplos Race Items, Advancements desabilitados ou runtime fora de Foundry 13.351 / DnD5e 5.3.3 bloqueiam a operação.
+
+A linha permanece **Beta**: os testes automatizados cobrem contratos, ordem de substituição, cancelamento e idempotência, mas a promoção para RC/Stable depende do checklist de homologação real em `docs/RACE_BUILD_RB8.md`.
+
+---
+
+# RB-7 · Automação Racial e Casos Especiais (0.13.0-alpha.3)
+
+A linha **0.13.x** mantém a materialização do `Race Build Bundle v1` e adiciona um compiler conservador de automação racial. Cada característica é classificada como `native`, `native-choice`, `assisted`, `runtime` ou `description`; somente mecânicas estáticas/inequívocas são convertidas em estruturas nativas do DnD5e 5.3.3.
+
+A RB-7 pode materializar Active Effects seguros, Trait Advancements, projeções estáticas de movimento/sentidos, Uses simples e Activities utilitárias. Regras contextuais recebem metadados `assisted`/`runtime` em vez de hooks aproximados. **Não há aplicação direta ao Actor nem hooks globais nesta fase.**
+
+A reimportação continua idempotente por `grimorioId`/`feature.key`, preserva UUIDs, restaura locks e cria zero Items gerenciados no Mundo.
+
+Consulte `docs/RACE_BUILD_RB7.md` para os tiers, limites e auditoria; `docs/RACE_BUILD_RB6.md` documenta a materialização-base.
+
 # Grimório Importer — v0.12.0
 
 Módulo complementar do **Grimório D&D 5e PT-BR** para **Foundry VTT 13.351 + DnD5e 5.3.3**.
@@ -30,7 +48,7 @@ A cobertura permanece deliberadamente conservadora: regras que dependem de cober
 - Feat Bundle/Package v1 continuam aceitos em modo legado.
 - Feat Bundle/Package v2 do Grimório 5.42.0 materializam Advancements, Activities, Effects, Uses, escolhas e runtime seguro.
 - Reimportação usa `grimorioId` e preserva documentos/UUIDs em vez de duplicar conteúdo.
-- Classes, Subclasses, Características e Talentos permanecem nos quatro compêndios gerenciados.
+- Classes, Subclasses, Características e Talentos permanecem preservados; a RB-5 adiciona dois compêndios raciais, totalizando seis compêndios gerenciados.
 - Nenhum Item gerenciado é criado automaticamente no Mundo.
 - A Central continua GM-only, com preflight `NOVO/ATUALIZAR`, confirmação explícita e relatório visual.
 - Os 12 comandos `/grimorio-*` continuam roteados para a Central.
@@ -143,7 +161,7 @@ A Central passa a ser o caminho principal também quando um comando de chat é u
 
 A Central deixa de concentrar apenas a importação e passa a expor visualmente as funções administrativas que já existiam por comandos de chat, reutilizando as mesmas APIs internas do módulo.
 
-- **Status** mostra Foundry/DnD5e ativos e alvos homologados, disponibilidade dos quatro compêndios e Items legados do protótipo da Fase 5.
+- **Status** mostra Foundry/DnD5e ativos e alvos homologados, disponibilidade dos seis compêndios e Items legados do protótipo da Fase 5.
 - **Compêndios** mostra documentos totais/gerenciados, pastas e estado de bloqueio de Classes, Subclasses, Características e Talentos.
 - **Automação** apresenta os mesmos dados de `automationCoverage()`: perfis, Activities, recursos, Active Effects, tiers e cobertura por classe.
 - **Auditoria** executa `automationCompendiumAudit()` e exibe perfiladas, candidatos altos/médios, textuais, sem auditoria e detalhamento por bundle.
@@ -190,7 +208,7 @@ O teste cobre confirmação como requisito de contrato, agregação de resultado
 
 ## Build 0.11-C — Diff real de criação/atualização, ainda somente leitura
 
-A Central agora compara cada payload válido com os quatro compêndios reais do módulo antes da importação. O objetivo desta build é responder com segurança **o que será criado e o que será atualizado**, sem modificar nenhum documento.
+A Central agora compara cada payload válido com os seis compêndios reais do módulo antes da importação. O objetivo desta build é responder com segurança **o que será criado e o que será atualizado**, sem modificar nenhum documento.
 
 - Consulta **Grimório — Classes**, **Grimório — Subclasses**, **Grimório — Características** e **Grimório — Talentos**.
 - Matching idêntico ao fluxo de reimportação: `documentRole + grimorioId`; Características acrescentam `featureKey`. Nomes não são usados como identidade.
@@ -450,7 +468,7 @@ A fonte utiliza **2d4 Dados de Vida por nível**. O DnD5e representa uma classe 
 
 ## Instalação
 
-Copie a pasta `grimorio-importer` para `Data/modules/`, ative o módulo no Mundo e mantenha os quatro compêndios declarados em `module.json` (Classes, Subclasses, Características e Talentos).
+Copie a pasta `grimorio-importer` para `Data/modules/`, ative o módulo no Mundo e mantenha os seis compêndios declarados em `module.json` (Classes, Subclasses, Características, Talentos, Raças e Características Raciais).
 
 ## Comandos
 
