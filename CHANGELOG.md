@@ -1,3 +1,9 @@
+## 5.69.1
+
+- **Raças e Subraças — redução de densidade visual:** os blocos “Construção racial em Somnus Domina” e “Traços de Legado Planares” agora são painéis recolhíveis, fechados por padrão e expansíveis por clique.
+- O comportamento usa `details/summary` nativo, preservando acessibilidade por teclado e sem alterar qualquer regra do Race Builder, Sangue Misto, Legados ou exportação Foundry.
+- Adicionado gate `validate-race-collapsibles-5.69.1.js` para impedir regressões que voltem a abrir esses painéis por padrão.
+
 ## 5.69.0
 
 - **Maestrias de Armas Avançadas:** nova aba dedicada ao Capítulo 7 de *Ryoko's Guide to the Yokai Realms*, com explicação de Nível Marcial, CD Marcial, progressão e regras de Golpes Superiores.
