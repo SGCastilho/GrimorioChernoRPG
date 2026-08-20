@@ -10,7 +10,7 @@ A RB-8 não transforma os compêndios em World Items. Os únicos Items fora dos 
 
 - Foundry VTT 13.351
 - DnD5e 5.3.3
-- Grimório Importer 0.13.0-beta.1
+- Grimório Importer 0.13.0-rc.1
 - usuário Mestre
 - Actor `character`
 - setting `dnd5e.disableAdvancements = false`
@@ -56,6 +56,7 @@ Se não existem steps, a criação/exclusão embutida é feita diretamente com `
 4. reverter e remover a Race atual;
 5. somente após a conclusão, iniciar `forNewItem` da nova Race;
 6. concluir escolhas nativas/assistidas do AdvancementManager.
+7. se a aplicação da nova Race for cancelada/falhar depois da remoção, iniciar rollback assistido usando o source da Race anterior capturado antes da substituição.
 
 Cancelar a confirmação não altera o Actor nem materializa o build apenas para tentar a substituição.
 
@@ -76,4 +77,4 @@ Os testes automatizados simulam Actor, compêndios e AdvancementManager. Antes d
 11. validar `system.details.race` após criação/exclusão;
 12. reiniciar Mundo e repetir reimportação para confirmar persistência/UUIDs.
 
-Enquanto esse checklist não estiver concluído, `raceBuildActorRuntimeHomologated` permanece `false` e o Status deve mostrar uma observação de homologação.
+No RC.1, execute o checklist e use **Central → Status → Registrar checklist**. O registro é world-scoped e só é aceito no runtime exato Foundry 13.351 / DnD5e 5.3.3. Enquanto os 12 itens não estiverem completos, `readyForStable` permanece `false`. O módulo não se auto-certifica.

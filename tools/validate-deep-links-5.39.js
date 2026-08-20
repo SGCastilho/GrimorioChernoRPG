@@ -21,12 +21,15 @@ ok(r.href('equipment','longsword')==='#/equipment/longsword','rota de equipament
 ok(r.href('backgrounds')==='#/backgrounds','rota de antecedentes incorreta');
 ok(r.href('background','acolyte')==='#/background/acolyte','rota de antecedente incorreta');
 ok(r.href('feats')==='#/feats'&&r.href('feat','alert')==='#/feat/alert','rotas de talentos incorretas');
+ok(r.href('weapon-masteries')==='#/weapon-masteries','rota de Maestrias de Armas incorreta');
 let parsed=r.parse('#/class/sage/subclass/catalyst');
 ok(parsed.view==='subclass'&&parsed.id==='catalyst'&&parsed.parentId==='sage','parse de subclasse incorreto');
 parsed=r.parse('#/race/hanyou/subrace/fox');
 ok(parsed.view==='race'&&parsed.id==='hanyou'&&parsed.subraceId==='fox','parse de subraça incorreto');
 parsed=r.parse('#/subclass/legacy-id');
 ok(parsed.view==='subclass'&&parsed.id==='legacy-id','compatibilidade de rota antiga de subclasse ausente');
+parsed=r.parse('#/weapon-masteries');
+ok(parsed.view==='weapon-masteries'&&!parsed.id,'parse de Maestrias de Armas incorreto');
 
 const app=read('js/app.js');
 const race=read('js/race-browser.js');
@@ -69,4 +72,4 @@ ok(versionAtLeast(configVersion,'5.39.0'),'versão do config deve ser 5.39.0+');
 ok(versionAtLeast(manifest.version,'5.39.0'),'versão do manifest deve ser 5.39.0+');
 ok(manifest.deepLinksIntegrated===true&&manifest.nativeNewTabSupport===true,'flags de deep links ausentes no manifest');
 console.log('Deep Links v5.39+: OK');
-console.log('Rotas verificadas: classe, subclasse, raça, subraça, magia, equipamento, antecedente e talento.');
+console.log('Rotas verificadas: classe, subclasse, raça, subraça, magia, equipamento, antecedente, talento e Maestrias de Armas.');

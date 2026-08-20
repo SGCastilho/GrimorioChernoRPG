@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/race-art.css">
 <link rel="stylesheet" href="css/fluid-transitions.css">
 <link rel="stylesheet" href="css/deep-links.css">
+<link rel="stylesheet" href="css/weapon-masteries.css">
 </head>
 <body>
 <div class="app">
@@ -44,7 +45,7 @@
     <main id="mainContent"></main>
   </div>
 </div>
-<div class="palette-overlay" id="paletteOverlay" onclick="if(event.target===this)closePalette()"><div class="palette"><div class="palette-input-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="paletteInput" placeholder="Buscar classes, subclasses, magias, antecedentes, equipamentos ou talentos…" oninput="renderPaletteResults()"><span class="esc-hint">Esc</span></div><div class="palette-results" id="paletteResults"></div></div></div>
+<div class="palette-overlay" id="paletteOverlay" onclick="if(event.target===this)closePalette()"><div class="palette"><div class="palette-input-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="paletteInput" placeholder="Buscar classes, subclasses, magias, raças, equipamentos, talentos ou maestrias…" oninput="renderPaletteResults()"><span class="esc-hint">Esc</span></div><div class="palette-results" id="paletteResults"></div></div></div>
 <div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()"><div class="modal">
   <h2 id="modalTitle">Adicionar ao grimório</h2><div class="modal-sub">Conteúdo próprio fica salvo somente neste navegador.</div>
   <div class="modal-tabs"><div class="modal-tab active" id="tabSpell" onclick="switchTab('spell')">Magia</div><div class="modal-tab" id="tabClass" onclick="switchTab('class')">Classe</div><div class="modal-tab" id="tabSubclass" onclick="switchTab('subclass')">Subclasse</div></div>
@@ -75,6 +76,7 @@
 <script src="data/equipment/phb-2014-equipment.js"></script>
 <script src="data/equipment/ryoko-yokai-realms-equipment.js"></script>
 <script src="data/equipment/lyre-retia-equipment.js"></script>
+<script src="data/ryoko-advanced-weapon-masteries.js"></script>
 <script src="data/class-covers.js"></script>
 <script src="data/class-detail-art.js"></script>
 <script src="js/class-cover-runtime.js"></script>
@@ -146,6 +148,7 @@
 <script src="js/static-nav.js"></script>
 <script src="js/race-browser.js"></script>
 <script src="js/equipment-browser.js"></script>
+<script src="js/weapon-mastery-browser.js"></script>
 <script src="js/feat-browser.js"></script>
 <script src="js/background-browser.js"></script>
 <script src="js/deep-links.js"></script>

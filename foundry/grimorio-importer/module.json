@@ -1,8 +1,8 @@
 {
   "id": "grimorio-importer",
   "title": "Grimório Importer",
-  "description": "Importador oficial do Grimório para Foundry VTT. A linha 0.13.x implementa o pipeline racial: RB-8 materializa Race Builds, aplica automação racial conservadora e permite aplicar/substituir a raça em um Actor character através do AdvancementManager nativo, sempre com confirmação explícita de substituição. A homologação in-app ainda é obrigatória antes de RC/Stable. Mantém classes, subclasses e Talentos homologados da 0.12.0. Alvo Foundry VTT 13.351 / DnD5e 5.3.3.",
-  "version": "0.13.0-beta.1",
+  "description": "Importador oficial do Grimório para Foundry VTT. A linha 0.13.0 RC consolida o pipeline racial RB-1–RB-8: Race Build Bundle v1, preflight, materialização nativa, automação conservadora e aplicação/substituição explícita no Actor via AdvancementManager. RC.1 entra em feature freeze e inclui gate de homologação in-app para promoção Stable. Alvo Foundry VTT 13.351 / DnD5e 5.3.3.",
+  "version": "0.13.0-rc.1",
   "authors": [
     {
       "name": "Projeto Grimório D&D 5e PT-BR"

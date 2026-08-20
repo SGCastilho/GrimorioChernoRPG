@@ -191,6 +191,7 @@
         'O Capítulo 13 — Magias está integrado integralmente em PT-BR com 62 entradas. A própria fonte declara 44 magias inéditas e 18 provenientes de outras publicações Loot Tavern; como o livro não individualiza essa classificação em cada ficha, não foram inferidas procedências anteriores.',
         'A escola opcional Biomancia foi preservada em 7 magias, incluindo a escola alternativa indicada pela fonte para campanhas que não utilizem Biomancia.',
         'O Capítulo 6 — Equipamentos e Próteses agora possui integração da seção Equipamentos: 11 armas, 7 propriedades novas de armas e 6 equipamentos de aventura, com regras especiais e dados de fabricação preservados. As próteses permanecem reservadas para uma implementação própria por constituírem um tipo de item separado na fonte.',
+        'O Capítulo 7 — Maestrias de Armas Avançadas está integrado em uma aba própria com cálculo de Nível Marcial, progressão de 2º a 20º, 12 árvores de propriedades, 94 Técnicas Avançadas e 11 Golpes Superiores, incluindo um planejador que valida tiers e pré-requisitos.',
         'O Capítulo 10 — Antecedentes e Talentos recebeu integração integral das seções Talentos e Talentos Raciais: 39 talentos em PT-BR (26 gerais e 13 raciais), preservando nomes originais, pré-requisitos, escolhas, repetibilidade e páginas 216–223.'
       ]
     },

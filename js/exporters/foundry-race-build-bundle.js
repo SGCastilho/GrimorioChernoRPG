@@ -22,7 +22,7 @@
     compatibility: {
       status: 'actor-application-ready',
       importerStatus: 'rb8-actor-application',
-      note: 'O Grimório Importer 0.13.0-beta.1 reconhece, valida e materializa este contrato e pode aplicá-lo a um Actor character via AdvancementManager. Se o Actor já possuir outra raça, a substituição exige confirmação explícita. A homologação in-app ainda é obrigatória antes de RC/Stable.'
+      note: 'O Grimório Importer 0.13.0-rc.1 reconhece, valida e materializa este contrato e pode aplicá-lo a um Actor character via AdvancementManager. Se o Actor já possuir outra raça, a substituição exige confirmação explícita. A homologação in-app continua obrigatória antes da promoção Stable; RC.1 é a build destinada a esse teste.'
     }
   });
 
@@ -336,7 +336,7 @@
         consumer: 'grimorio-importer',
         targetLine: '0.13.x+',
         itemType: 'race',
-        note: 'RB-8: o Grimório Importer 0.13.0-beta.1 materializa Race/Características Raciais e pode aplicar a raça ao Actor através do AdvancementManager, preservando escolhas nativas/assistidas e exigindo confirmação explícita ao substituir uma raça existente.'
+        note: 'RB-8: o Grimório Importer 0.13.0-rc.1 materializa Race/Características Raciais e pode aplicar a raça ao Actor através do AdvancementManager, preservando escolhas nativas/assistidas e exigindo confirmação explícita ao substituir uma raça existente.'
       }
     };
   }

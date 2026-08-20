@@ -34,6 +34,7 @@
       return raceId?'#/race/'+enc(raceId)+'/subrace/'+enc(id):'#/races';
     }
     if(v==='equipment')return id?'#/equipment/'+enc(id):'#/equipment';
+    if(v==='weapon-masteries')return '#/weapon-masteries';
     if(v==='feats')return '#/feats';
     if(v==='feat')return '#/feat/'+enc(id);
     if(v==='spells')return '#/spells';
@@ -55,6 +56,7 @@
     if(first==='class'&&parts[1]&&parts[2]==='subclass'&&parts[3])return {view:'subclass',id:parts[3],parentId:parts[1],classId:parts[1]};
     if(first==='race'&&parts[1]&&parts[2]==='subrace'&&parts[3])return {view:'race',id:parts[1],subraceId:parts[3]};
     if(first==='equipment')return {view:'equipment',id:parts[1]||null};
+    if(first==='weapon-masteries')return {view:'weapon-masteries',id:null};
     if(first==='feat')return {view:'feat',id:parts[1]||null};
     if(first==='feats')return {view:'feats',id:null};
     if(first==='class')return {view:'class',id:parts[1]||null};

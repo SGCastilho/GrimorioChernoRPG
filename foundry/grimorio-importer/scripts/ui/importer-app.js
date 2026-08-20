@@ -130,6 +130,9 @@ function formatStatusData(info) {
       description: Number(info?.featRuntimeSupport?.behaviorModes?.description ?? 0),
       policy: info?.featRuntimeSupport?.policy ?? "—"
     },
+    homologation: {
+      homologated: Boolean(info?.raceRuntimeHomologation?.homologated), recorded: Boolean(info?.raceRuntimeHomologation?.recorded), completed: Number(info?.raceRuntimeHomologation?.completed ?? 0), required: Number(info?.raceRuntimeHomologation?.required ?? 12), checklistVersion: Number(info?.raceRuntimeHomologation?.checklistVersion ?? 1), completedAt: info?.raceRuntimeHomologation?.report?.completedAt ?? "", recordedWithVersion: info?.raceRuntimeHomologation?.report?.recordedWithVersion ?? "", notes: info?.raceRuntimeHomologation?.report?.notes ?? "", canRecord: Boolean(info?.environmentMatches), stateLabel: info?.raceRuntimeHomologation?.homologated ? "Homologada" : "Pendente", stateClass: info?.raceRuntimeHomologation?.homologated ? "is-good" : "is-warning"
+    },
     featAudit: {
       phase: info?.featAudit?.phase ?? "—",
       expected: Number(info?.featAudit?.expected ?? 42),
@@ -310,7 +313,7 @@ function helpData() {
       "Reimportações usam IDs/flags estáveis e preservam documentos existentes.",
       "Classes, Subclasses, Características, Talentos, Raças e Características Raciais são sincronizados nos compêndios; nenhum Item gerenciado é criado automaticamente no Mundo.",
       "Os comandos de chat permanecem disponíveis como atalhos para as seções equivalentes da Central.",
-      "A linha 0.13.x está em desenvolvimento. A RB-7 adiciona automação racial conservadora sobre a materialização em compêndios, sem aplicação direta ao Actor; as mecânicas homologadas da 0.12.0 permanecem preservadas."
+      "A linha 0.13.0 está em RC.1 e feature freeze. A aplicação racial RB-8 está ativa; a promoção Stable exige registrar o checklist in-app no perfil Foundry 13.351 / DnD5e 5.3.3."
     ],
     consolidation: {
       phase: IMPORTER_BUILD.phase,
@@ -637,6 +640,25 @@ export class GrimorioImporterApp extends HandlebarsApplicationMixin(ApplicationV
     }
   }
 
+  async recordRaceRuntimeHomologation() {
+    if (!globalThis.game?.user?.isGM) { globalThis.ui?.notifications?.warn?.("Somente um Mestre pode registrar a homologação runtime."); return null; }
+    const api=moduleApi(); if(!api?.raceRuntimeHomologationSupport||!api?.recordRaceRuntimeHomologation) throw new Error("API de homologação runtime indisponível.");
+    const support=api.raceRuntimeHomologationSupport(); const escape=value=>globalThis.foundry?.utils?.escapeHTML?.(String(value??""))??String(value??"");
+    const checklist=(support.checks??[]).map(row=>`<label class="grimorio-homologation-check"><input type="checkbox" name="homologation-${escape(row.id)}"> <span>${escape(row.label)}</span></label>`).join("");
+    const content=`<div class="grimorio-homologation-dialog"><p>Marque somente os testes executados nesta instância. O registro não se auto-certifica e é obrigatório para o gate Stable.</p><div class="grimorio-homologation-dialog__checks">${checklist}</div><label>Observações (opcional)<textarea name="homologation-notes" rows="4"></textarea></label></div>`;
+    const DialogV2=globalThis.foundry?.applications?.api?.DialogV2; if(!DialogV2?.wait) throw new Error("DialogV2.wait indisponível no Foundry ativo.");
+    const result=await DialogV2.wait({window:{title:"Registrar homologação · Grimório Importer 0.13"},content,modal:true,rejectClose:false,buttons:[{label:"Cancelar",action:"cancel",icon:"fa-solid fa-xmark"},{label:"Registrar checklist",action:"save",icon:"fa-solid fa-floppy-disk",default:true,callback:(_event,_button,dialog)=>{const root=dialog?.element; const checks=Object.fromEntries((support.checks??[]).map(row=>[row.id,Boolean(root?.querySelector?.(`[name="homologation-${row.id}"]`)?.checked)])); const notes=String(root?.querySelector?.('[name="homologation-notes"]')?.value??"").trim(); return {checks,notes};}}]});
+    if(!result||result==="cancel") return null;
+    try { const status=await api.recordRaceRuntimeHomologation(result); this.#sectionData.delete("status"); if(this.rendered) await this.render(); globalThis.ui?.notifications?.info?.("Homologação runtime registrada. Atualize o Status para conferir o gate Stable."); return status; }
+    catch(error){globalThis.ui?.notifications?.error?.(`Homologação não registrada: ${error?.message??error}`); return null;}
+  }
+
+  async clearRaceRuntimeHomologation() {
+    if(!globalThis.game?.user?.isGM) return null; const api=moduleApi(); if(!api?.clearRaceRuntimeHomologation) throw new Error("API de homologação runtime indisponível.");
+    const DialogV2=globalThis.foundry?.applications?.api?.DialogV2; const confirmed=DialogV2?.confirm?await DialogV2.confirm({window:{title:"Limpar homologação runtime?"},content:"<p>O gate Stable voltará ao estado pendente até um novo checklist completo ser registrado.</p>",modal:true,rejectClose:false}):false;
+    if(!confirmed) return null; const status=await api.clearRaceRuntimeHomologation(); this.#sectionData.delete("status"); if(this.rendered) await this.render(); return status;
+  }
+
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
     const runtime = runtimeSnapshot();
@@ -724,6 +746,8 @@ export class GrimorioImporterApp extends HandlebarsApplicationMixin(ApplicationV
       event.preventDefault();
       void this.refreshActiveSection();
     });
+    htmlElement.querySelector("[data-grimorio-record-homologation]")?.addEventListener("click", event => { event.preventDefault(); void this.recordRaceRuntimeHomologation(); });
+    htmlElement.querySelector("[data-grimorio-clear-homologation]")?.addEventListener("click", event => { event.preventDefault(); void this.clearRaceRuntimeHomologation(); });
     htmlElement.querySelector("[data-grimorio-configure-special]")?.addEventListener("click", event => {
       event.preventDefault();
       void this.configureSelectedSpecialActor();

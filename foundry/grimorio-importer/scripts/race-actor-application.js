@@ -197,6 +197,18 @@ async function addRace(actor, raceDoc, runtime) {
   return { completed: true, method: "direct-no-advancement", created: created?.[0] ?? null };
 }
 
+async function restorePreviousRace(actor, source, runtime) {
+  if (!source) return { completed:false, skipped:true, method:null };
+  const manager = runtime.AdvancementManager.forNewItem(actor, structuredClone(source), { automaticApplication: false, showVisualizer: false });
+  if (manager?.steps?.length) {
+    const outcome = await runtime.runAdvancementManager(manager);
+    if (!outcome?.completed) return { completed:false, cancelled:true, method:"advancement-manager" };
+    return { completed:true, method:"advancement-manager" };
+  }
+  const created = await runtime.createEmbeddedItems(actor, [structuredClone(source)]);
+  return { completed:true, method:"direct-no-advancement", created:created?.[0] ?? null };
+}
+
 export async function applyRaceBuildToActor(bundle, {
   actor,
   runtime = defaultRaceActorRuntime(),
@@ -226,6 +238,7 @@ export async function applyRaceBuildToActor(bundle, {
     }
   }
 
+  const previousRaceSource = inspection.current ? cloneSource(inspection.current) : null;
   const materialized = materialize ? await runtime.materializeRaceBuild(bundle) : null;
   const raceDoc = materialized?.item;
   if (!raceDoc) throw new Error("A Race Build não possui um Item de Raça materializado para aplicação ao Actor.");
@@ -236,8 +249,24 @@ export async function applyRaceBuildToActor(bundle, {
     if (!replacement.completed) return Object.freeze({ ok: false, phase: RACE_ACTOR_PHASE, state: "removal-cancelled", cancelled: true, actorId: actor.id, actorName: actor.name, actorApplication: false, worldItemsCreated: 0 });
   }
 
-  const applied = await addRace(actor, raceDoc, runtime);
-  if (!applied.completed) return Object.freeze({ ok: false, phase: RACE_ACTOR_PHASE, state: "application-cancelled", cancelled: true, actorId: actor.id, actorName: actor.name, actorApplication: false, worldItemsCreated: 0 });
+  let applied;
+  try {
+    applied = await addRace(actor, raceDoc, runtime);
+  } catch (error) {
+    if (replacement && previousRaceSource) {
+      const rollback = await restorePreviousRace(actor, previousRaceSource, runtime);
+      if (rollback.completed) return Object.freeze({ ok:false, phase:RACE_ACTOR_PHASE, state:"application-failed-restored", error:String(error?.message ?? error), actorId:actor.id, actorName:actor.name, restored:true, rollbackMethod:rollback.method, actorApplication:false, worldItemsCreated:0 });
+      throw new Error(`Falha ao aplicar a nova raça e o rollback da raça anterior não foi concluído: ${error?.message ?? error}`);
+    }
+    throw error;
+  }
+  if (!applied.completed) {
+    if (replacement && previousRaceSource) {
+      const rollback = await restorePreviousRace(actor, previousRaceSource, runtime);
+      return Object.freeze({ ok:false, phase:RACE_ACTOR_PHASE, state:rollback.completed ? "application-cancelled-restored" : "application-cancelled-rollback-required", cancelled:true, actorId:actor.id, actorName:actor.name, restored:Boolean(rollback.completed), rollbackMethod:rollback.method ?? null, actorApplication:false, worldItemsCreated:0 });
+    }
+    return Object.freeze({ ok: false, phase: RACE_ACTOR_PHASE, state: "application-cancelled", cancelled: true, actorId: actor.id, actorName: actor.name, actorApplication: false, worldItemsCreated: 0 });
+  }
 
   inspection = inspectActorRace(actor, bundle);
   return Object.freeze({
@@ -270,6 +299,7 @@ export function raceActorApplicationSupport() {
     newItemFactory: "AdvancementManager.forNewItem",
     deletionFactory: "AdvancementManager.forDeletedItem",
     replacementConfirmation: "required",
+    replacementRollback: "advancement-manager",
     multipleRacePolicy: "block",
     sameBuildPolicy: "idempotent-noop",
     disabledAdvancementsPolicy: "block",

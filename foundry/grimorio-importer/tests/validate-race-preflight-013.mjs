@@ -22,10 +22,10 @@ const { evaluateReleaseReadiness, releaseReadinessSupport } = await import("../s
 const { raceAutomationSupport } = await import("../scripts/race-automation.js");
 const { raceActorApplicationSupport } = await import("../scripts/race-actor-application.js");
 
-assert.equal(IMPORTER_VERSION, "0.13.0-beta.1");
-assert.equal(IMPORTER_BUILD.phase, "RB-8");
-assert.equal(IMPORTER_BUILD.channel, "development");
-assert.equal(IMPORTER_BUILD.featureFreeze, false);
+assert.equal(IMPORTER_VERSION, "0.13.0-rc.1");
+assert.equal(IMPORTER_BUILD.phase, "0.13.0 RC.1");
+assert.equal(IMPORTER_BUILD.channel, "release-candidate");
+assert.equal(IMPORTER_BUILD.featureFreeze, true);
 assert.equal(IMPORTER_BUILD.targetVersion, "0.13.0");
 
 const moduleJson = JSON.parse(await fs.readFile(path.join(importerRoot, "module.json"), "utf8"));
@@ -123,7 +123,9 @@ const statusInfo = {
   raceBuildSupport:support,
   raceBuildValidatorSupport:validatorSupport,
   raceAutomationSupport:raceAutomationSupport(),
-  raceActorApplicationSupport:raceActorApplicationSupport()
+  raceActorApplicationSupport:raceActorApplicationSupport(),
+  raceRuntimeHomologation:{homologated:false,completed:0,required:12,checklistVersion:1},
+  raceActorHomologated:false
 };
 const readiness = evaluateReleaseReadiness({
   statusInfo,
@@ -136,9 +138,11 @@ const readiness = evaluateReleaseReadiness({
 assert.equal(readiness.readyForTesting, true);
 assert.equal(readiness.readyForStable, false);
 assert.equal(readiness.blockingFailures, 0);
-assert.equal(releaseReadinessSupport().developmentGateAvailable, true);
-assert.equal(centralParitySupport().developmentBuild, true);
-assert.equal(centralParitySupport().featureFreeze, false);
+assert.equal(releaseReadinessSupport().developmentGateAvailable, false);
+assert.equal(releaseReadinessSupport().rcGateAvailable, true);
+assert.equal(centralParitySupport().developmentBuild, false);
+assert.equal(centralParitySupport().releaseCandidate, true);
+assert.equal(centralParitySupport().featureFreeze, true);
 
 await fs.access(path.join(importerRoot, "scripts/race-materializer.js"));
 const mainSource = await fs.readFile(path.join(importerRoot, "scripts/main.js"), "utf8");

@@ -1,3 +1,12 @@
+## 0.13.0-rc.1 — Release Candidate / consolidação RB-1–RB-8
+
+- Pipeline racial entra em `featureFreeze: true`; canal `release-candidate`, candidato `RC.1`.
+- `release-homologation.js` adiciona checklist manual 12/12 world-scoped; o módulo não se auto-certifica.
+- `releaseReadiness` separa `readyForRc` e `readyForStable`.
+- Central permite registrar/limpar a homologação na aba Status somente no runtime alvo.
+- Substituição racial recebe rollback assistido da Race anterior quando a nova aplicação é cancelada/falha após remoção.
+- Race Build Bundle v1 permanece compatível.
+
 ## 0.13.0-beta.1 — RB-8 / Aplicação ao Actor e homologação
 
 - Adicionado `scripts/race-actor-application.js` com aplicação de Race Builds a Actors `character` via `AdvancementManager.forNewItem`.

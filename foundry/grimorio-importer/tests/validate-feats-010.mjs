@@ -13,7 +13,7 @@ const assert=(value,message)=>{if(!value)throw new Error(message);};
 const pkg=JSON.parse(fs.readFileSync(path.join(root,"examples","feats","phb-2014-feats-package.json"),"utf8"));
 const runtimeInfo={foundryVersion:"13.351",systemId:"dnd5e",systemVersion:"5.3.3"};
 
-assert(/^0\.(?:11\.0-(?:alpha\.\d+|rc\.\d+)|12\.0(?:-alpha\.\d+)?|13\.0-(?:alpha\.\d+|beta\.\d+))$/.test(IMPORTER_VERSION),`IMPORTER_VERSION inesperado: ${IMPORTER_VERSION}`);
+assert(/^0\.(?:11\.0-(?:alpha\.\d+|rc\.\d+)|12\.0(?:-alpha\.\d+)?|13\.0-(?:alpha\.\d+|beta\.\d+|rc\.\d+))$/.test(IMPORTER_VERSION),`IMPORTER_VERSION inesperado: ${IMPORTER_VERSION}`);
 assert(PACKS.feats?.collection==="grimorio-importer.grimorio-feats","Compêndio de Talentos não registrado");
 const support=featSupport();
 assert(support.itemType==="feat" && support.compendiumOnly===true && support.reimportByFlags===true,"Contrato de Talentos incompleto");

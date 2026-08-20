@@ -1,3 +1,18 @@
+## 5.69.0
+
+- **Maestrias de Armas Avançadas:** nova aba dedicada ao Capítulo 7 de *Ryoko's Guide to the Yokai Realms*, com explicação de Nível Marcial, CD Marcial, progressão e regras de Golpes Superiores.
+- Integradas **12 árvores**, **94 Técnicas Avançadas**, **11 Golpes Superiores** e a tabela de progressão de 2º a 20º Nível Marcial.
+- Adicionado planejador persistente com cálculo de Nível Marcial, declaração de proficiência por propriedade, validação de tiers/pré-requisitos e seleção de Técnicas Conhecidas.
+- As duas tabelas de arte racial foram substituídas pelos arquivos fornecidos pelo usuário, preservando integralmente as edições manuais de capas e artes internas; as 46 raças agora possuem arte configurada.
+- Grimório Importer permanece em **0.13.0-rc.1**, sem mudanças nesta fase.
+
+## 5.68.0
+
+- **Grimório Importer 0.13.0 RC.1:** linha racial RB-1–RB-8 em feature freeze.
+- Gate runtime 12/12 separa prontidão RC de elegibilidade Stable.
+- Substituição racial recebe rollback assistido da Race anterior.
+- Race Build Bundle v1 permanece estável.
+
 ## 5.67.0
 
 - **Race Build RB-8 — Aplicação ao Actor e homologação:** Grimório Importer promovido para `0.13.0-beta.1`; Race Builds materializados podem agora ser aplicados a um Actor `character` usando o `AdvancementManager` nativo do DnD5e 5.3.3.

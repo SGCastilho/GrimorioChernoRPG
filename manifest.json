@@ -1,5 +1,5 @@
 {
-  "version": "5.67.0",
+  "version": "5.69.0",
   "classes": 27,
   "subclasses": 400,
   "classNames": [
@@ -172,6 +172,9 @@
   },
   "uiRevision": "Arte racial estática — v5.50.1",
   "improvements": [
+    "Grimório Importer 0.13.0-rc.1: pipeline racial RB-1–RB-8 entra em feature freeze com gate de release separado entre RC e Stable.",
+    "RC.1 adiciona registro estruturado de homologação in-app no Foundry 13.351 / DnD5e 5.3.3; o módulo não se auto-certifica e Stable permanece bloqueado sem checklist manual completo.",
+    "Substituição racial ganha rollback assistido via AdvancementManager: se a aplicação da nova raça for cancelada após a remoção da anterior, o Importer inicia restauração da Race anterior antes de encerrar o fluxo.",
     "RB-7: o Grimório Importer 0.13.0-alpha.3 mantém Race/Características Raciais nos compêndios e compila automação conservadora em native, native-choice, assisted, runtime ou description.",
     "RB-7 materializa apenas efeitos estáticos inequívocos, Trait Advancements seguros, movimento/sentidos estáticos, Uses simples e Activities utilitárias; escolhas e estados condicionais não são transformados em benefícios permanentes.",
     "A auditoria RB-7 percorre os 1.743 registros mecânicos raciais e bloqueia padrões inseguros, como resistência escolhível convertida simultaneamente em múltiplos efeitos.",
@@ -862,8 +865,8 @@
       "schema": "grimorio-foundry-race-build-bundle",
       "schemaVersion": 1,
       "profileId": "foundry13-dnd5e533-grimorio-race-build-v1",
-      "phase": "RB-8",
-      "importerVersion": "0.13.0-beta.1",
+      "phase": "0.13.0 RC.1",
+      "importerVersion": "0.13.0-rc.1",
       "materialization": true,
       "actorApplication": true,
       "racePack": "grimorio-importer.grimorio-races",
@@ -874,7 +877,10 @@
       "actorApplicationPhase": "RB-8",
       "replacementConfirmation": "required",
       "advancementManager": true,
-      "runtimeHomologationRequired": true
+      "runtimeHomologationRequired": true,
+      "releaseChannel": "release-candidate",
+      "featureFreeze": true,
+      "runtimeHomologationRecorded": false
     }
   },
   "foundryClassImporter": {
@@ -1299,7 +1305,7 @@
   ],
   "raceArtIntegrated": true,
   "raceArtEntries": 46,
-  "raceArtIllustrated": 1,
+  "raceArtIllustrated": 46,
   "raceSubraces": 382,
   "racialLegacyTraitSystem": true,
   "racialLegacyTraitChoices": 2,
@@ -1340,7 +1346,8 @@
     "subraces",
     "spells",
     "equipment",
-    "feats"
+    "feats",
+    "weapon-masteries"
   ],
   "nativeNewTabSupport": true,
   "copyDirectLink": true,
@@ -1416,10 +1423,10 @@
   "raceBuildBundleProfile": "foundry13-dnd5e533-grimorio-race-build-v1",
   "raceBuildBuilderStateSchema": "grimorio-race-builder-state@2",
   "raceBuildResolutionSchema": "grimorio-race-build-resolution@1",
-  "raceBuildPhase": "RB-8",
+  "raceBuildPhase": "0.13.0 RC.1",
   "raceBuildResolverIntegrated": true,
   "raceBuildFoundryExportEnabled": true,
-  "raceBuildFoundryConsumer": "grimorio-importer 0.13.0-beta.1",
+  "raceBuildFoundryConsumer": "grimorio-importer 0.13.0-rc.1",
   "raceBuildFoundryImporterModified": true,
   "raceBuildEligibilityIntegrated": true,
   "raceBuildEligibilitySchema": "grimorio-race-build-eligibility-rules@1",
@@ -1430,7 +1437,7 @@
   "raceBuildTransportStatus": "materialization-supported",
   "raceBuildExportFixtures": 8,
   "raceBuildMaterializationIntegrated": true,
-  "raceBuildMaterializer": "grimorio-importer 0.13.0-beta.1",
+  "raceBuildMaterializer": "grimorio-importer 0.13.0-rc.1",
   "raceBuildActorApplication": true,
   "raceBuildCompendiumPacks": 2,
   "raceBuildAutomationIntegrated": true,
@@ -1455,5 +1462,19 @@
   "raceBuildActorReplacementConfirmation": "required",
   "raceBuildActorMultipleRacePolicy": "block",
   "raceBuildActorAdvancementManager": true,
-  "raceBuildActorRuntimeHomologated": false
+  "raceBuildActorRuntimeHomologated": false,
+  "raceBuildReleaseChannel": "release-candidate",
+  "raceBuildReleaseCandidate": "RC.1",
+  "raceBuildFeatureFreeze": true,
+  "raceBuildStableEligible": false,
+  "advancedWeaponMasteriesIntegrated": true,
+  "advancedWeaponMasteriesSourceTitle": "Ryoko's Guide to the Yokai Realms",
+  "advancedWeaponMasteriesSourcePages": "83–115",
+  "advancedWeaponMasteryTrees": 12,
+  "advancedWeaponMasteryTechniques": 94,
+  "advancedWeaponMasterySuperiorStrikes": 11,
+  "advancedWeaponMasteryProgressionRows": 10,
+  "advancedWeaponMasteryPlanner": true,
+  "advancedWeaponMasteryPersistence": "localStorage",
+  "advancedWeaponMasteryBuilderSchema": "grimorio-advanced-weapon-mastery-builder-v1"
 }

@@ -1,8 +1,16 @@
-# RB-8 · Aplicação ao Actor e Homologação (0.13.0-beta.1)
+# 0.13.0 RC.1 · Pipeline Racial em Feature Freeze
+
+A linha **0.13.0-rc.1** consolida RB-1–RB-8 e entra em `featureFreeze: true`. Race Builds podem ser validados, materializados nos dois compêndios raciais e aplicados a Actors `character` via `AdvancementManager`. A promoção Stable não é automática: a aba Status registra um checklist manual 12/12.
+
+Consulte `RELEASE_NOTES_0.13.0-RC1.md`, `RC_RELEASE_CHECKLIST_0.13.0.md` e `STABLE_PROMOTION_CHECKLIST_0.13.0.md`.
+
+---
+
+# Histórico · RB-8 / 0.13.0-beta.1
 
 A RB-8 fecha o fluxo racial: um Race Build validado/materializado pode ser aplicado a um Actor `character` através do `AdvancementManager` nativo do DnD5e. A substituição de uma raça existente exige confirmação explícita; múltiplos Race Items, Advancements desabilitados ou runtime fora de Foundry 13.351 / DnD5e 5.3.3 bloqueiam a operação.
 
-A linha permanece **Beta**: os testes automatizados cobrem contratos, ordem de substituição, cancelamento e idempotência, mas a promoção para RC/Stable depende do checklist de homologação real em `docs/RACE_BUILD_RB8.md`.
+A beta foi sucedida pela `0.13.0-rc.1`. Este bloco é mantido como histórico da RB-8.
 
 ---
 

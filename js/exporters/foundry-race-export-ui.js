@@ -169,9 +169,9 @@
   function renderState(state) {
     const status = statusFor(state);
     const b = state.bundle;
-    return '<div class="foundry-export-eyebrow">Foundry VTT · RB-8 · Race Build Bundle v1</div>'+
+    return '<div class="foundry-export-eyebrow">Foundry VTT · 0.13.0 RC.1 · Race Build Bundle v1</div>'+
       '<h2 id="foundryRaceExportTitle">'+esc(b.resolved?.primaryRace?.name || state.race.name)+(b.resolved?.subrace?.name?' — '+esc(b.resolved.subrace.name):'')+'</h2>'+
-      '<p class="foundry-export-lede">Prévia do JSON declarativo produzido pelo Grimório. O Grimório Importer 0.13.0-beta.1 valida este arquivo, materializa a Raça e suas Características Raciais e pode aplicá-lo diretamente a um Actor character pelo workflow de Advancements do DnD5e.</p>'+
+      '<p class="foundry-export-lede">Prévia do JSON declarativo produzido pelo Grimório. O Grimório Importer 0.13.0-rc.1 valida este arquivo, materializa a Raça e suas Características Raciais e pode aplicá-lo diretamente a um Actor character pelo workflow de Advancements do DnD5e.</p>'+
       profileHtml()+
       '<div class="foundry-status-card '+status[0]+'"><span class="foundry-status-pill">'+esc(status[1])+'</span><p>'+esc(status[2])+'</p></div>'+
       identityGrid(state)+
@@ -185,7 +185,7 @@
       '</section>'+
       '<details class="foundry-race-json-preview"><summary>Inspecionar JSON que será exportado</summary><pre>'+esc(bundleApi().stringify(b))+'</pre></details>'+
       actionButtons(state)+
-      '<p class="foundry-export-footnote">Destino: <code>grimorio-importer 0.13.0-beta.1</code>. A materialização permanece nos compêndios gerenciados; a aplicação ao Actor é uma ação separada e, se já houver raça, exige confirmação explícita de substituição.</p>';
+      '<p class="foundry-export-footnote">Destino: <code>grimorio-importer 0.13.0-rc.1</code>. A materialização permanece nos compêndios gerenciados; a aplicação ao Actor é uma ação separada e, se já houver raça, exige confirmação explícita de substituição.</p>';
   }
 
   function open(raceId) {

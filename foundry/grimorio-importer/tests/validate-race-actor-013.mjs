@@ -85,6 +85,7 @@ const support = raceActorApplicationSupport();
 assert.equal(support.phase,"RB-8");
 assert.equal(support.actorApplication,true);
 assert.equal(support.replacementConfirmation,"required");
+assert.equal(support.replacementRollback,"advancement-manager");
 assert.equal(support.multipleRacePolicy,"block");
 assert.equal(support.worldItemsExpected,0);
 
@@ -150,6 +151,14 @@ assert.equal(support.worldItemsExpected,0);
   runtime.runAdvancementManager=async manager=> manager.kind==="delete" ? {completed:false,cancelled:true} : {completed:true};
   const result=await applyRaceBuildToActor(bundle,{actor:a,runtime});
   assert.equal(result.state,"removal-cancelled"); assert.equal(runtime.materializeCalls,1);
+}
+{
+  const old=raceItem({id:"old",name:"Elfo",grimorioId:"other",contentHash:"old"});
+  const a=actor([old]); const {runtime}=baseRuntime({a,confirm:true});
+  let newAttempts=0;
+  runtime.runAdvancementManager=async manager=>{ runtime.managerCalls.push(manager.kind); if(manager.kind==="delete"){await manager.actor.deleteEmbeddedDocuments("Item",[manager.id]);return {completed:true};} newAttempts+=1; if(newAttempts===1)return {completed:false,cancelled:true}; await manager.actor.createEmbeddedDocuments("Item",[manager.source]); return {completed:true}; };
+  const result=await applyRaceBuildToActor(bundle,{actor:a,runtime});
+  assert.equal(result.state,"application-cancelled-restored"); assert.equal(result.restored,true); assert.equal(a.items.length,1); assert.equal(a.items[0].name,"Elfo"); assert.deepEqual(runtime.managerCalls,["delete","new","new"]);
 }
 
 const source=fs.readFileSync(path.join(ROOT,"foundry/grimorio-importer/scripts/race-actor-application.js"),"utf8");

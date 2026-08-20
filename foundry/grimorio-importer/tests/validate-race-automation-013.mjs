@@ -17,8 +17,8 @@ const importerRoot = path.resolve(here, "..");
 const projectRoot = path.resolve(importerRoot, "../..");
 const clone = value => JSON.parse(JSON.stringify(value));
 
-assert.equal(IMPORTER_VERSION, "0.13.0-beta.1");
-assert.equal(IMPORTER_BUILD.phase, "RB-8");
+assert.equal(IMPORTER_VERSION, "0.13.0-rc.1");
+assert.equal(IMPORTER_BUILD.phase, "0.13.0 RC.1");
 assert.equal(RACE_AUTOMATION_PHASE, "RB-7");
 assert.equal(RACE_AUTOMATION_SCHEMA, "grimorio-foundry-race-automation-plan");
 assert.equal(RACE_AUTOMATION_SCHEMA_VERSION, 1);

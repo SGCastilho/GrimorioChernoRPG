@@ -1,6 +1,6 @@
 {
   "name": "grimorio-cherno-rpg",
-  "version": "5.67.0",
+  "version": "5.69.0",
   "private": true,
   "description": "Grimório D&D estático com painel administrativo Git-backed.",
   "engines": {
@@ -11,12 +11,13 @@
     "admin:dev": "node --env-file-if-exists=.env.local tools/dev-admin-server.mjs",
     "test:admin": "node --test --test-concurrency=1 tests/admin/*.test.mjs",
     "test:foundry": "node foundry/grimorio-importer/tests/run-all.mjs",
-    "validate:admin": "node tools/validate-admin-5.67.0.mjs",
-    "validate": "node tools/validate-project.js && node tools/validate-paraprismatic-content-5.67.js && node tools/validate-paraprismatic-spells-5.67.js && npm run validate:race-build && node tools/validate-foundry-class-bundle.js && node tools/validate-deep-links-5.39.js && npm run test:foundry-rb8 && npm run test:admin && npm run validate:admin",
-    "validate:race-build": "node tools/validate-race-build-rb8-5.67.js",
+    "validate:admin": "node tools/validate-admin-5.69.0.mjs",
+    "validate": "node tools/validate-project.js && node tools/validate-paraprismatic-content-5.69.js && node tools/validate-paraprismatic-spells-5.69.js && node tools/validate-advanced-weapon-masteries-5.69.js && npm run validate:race-build && node tools/validate-foundry-class-bundle.js && node tools/validate-deep-links-5.39.js && npm run test:foundry && npm run test:admin && npm run validate:admin",
+    "validate:race-build": "node tools/validate-race-build-rc-5.69.js",
     "test:foundry-rb6": "node foundry/grimorio-importer/tests/validate-race-materializer-013.mjs && node foundry/grimorio-importer/tests/validate-race-preflight-013.mjs",
     "test:foundry-rb7": "node foundry/grimorio-importer/tests/validate-race-automation-013.mjs && node foundry/grimorio-importer/tests/validate-race-materializer-013.mjs && node foundry/grimorio-importer/tests/validate-race-preflight-013.mjs",
-    "test:foundry-rb8": "node foundry/grimorio-importer/tests/validate-race-actor-013.mjs && node foundry/grimorio-importer/tests/validate-race-automation-013.mjs && node foundry/grimorio-importer/tests/validate-race-materializer-013.mjs && node foundry/grimorio-importer/tests/validate-race-preflight-013.mjs"
+    "test:foundry-rb8": "node foundry/grimorio-importer/tests/validate-race-actor-013.mjs && node foundry/grimorio-importer/tests/validate-race-automation-013.mjs && node foundry/grimorio-importer/tests/validate-race-materializer-013.mjs && node foundry/grimorio-importer/tests/validate-race-preflight-013.mjs",
+    "test:foundry-rc": "node foundry/grimorio-importer/tests/validate-release-rc-013.mjs && node foundry/grimorio-importer/tests/validate-release-homologation-013.mjs && node foundry/grimorio-importer/tests/validate-race-actor-013.mjs && node foundry/grimorio-importer/tests/validate-race-automation-013.mjs && node foundry/grimorio-importer/tests/validate-race-materializer-013.mjs && node foundry/grimorio-importer/tests/validate-race-preflight-013.mjs"
   },
   "dependencies": {
     "acorn": "8.18.0"

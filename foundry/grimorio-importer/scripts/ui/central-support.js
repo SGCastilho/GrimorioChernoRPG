@@ -28,7 +28,7 @@ export function centralParitySupport() {
     gmOnly: true,
     releaseReadinessGate: true,
     developmentReadinessGate: true,
-    finalReadinessGate: false,
+    finalReadinessGate: true,
     stableIntegrityGate: false,
     accessibilityPass: true,
     regressionSuite: true

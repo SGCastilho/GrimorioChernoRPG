@@ -422,9 +422,9 @@
                 <div class="{{#if sectionData.legacy.clean}}is-good{{else}}is-warning{{/if}}"><span>Items legados</span><strong>{{sectionData.legacy.total}}</strong><small>protótipo Fase 5</small></div>
                 <div><span>Importer</span><strong>v{{importerVersion}}</strong><small>{{buildLabel}}</small></div>
               </div>
-              <section class="grimorio-admin-card grimorio-readiness is-{{sectionData.readiness.state}}" aria-label="Prontidão técnica da linha 0.13.x em desenvolvimento">
+              <section class="grimorio-admin-card grimorio-readiness is-{{sectionData.readiness.state}}" aria-label="Prontidão técnica do Grimório Importer 0.13.0 RC.1">
                 <header>
-                  <div><span>{{sectionData.readiness.phase}} · {{sectionData.readiness.buildLabel}}</span><h3>Prontidão de homologação · RB-8</h3></div>
+                  <div><span>{{sectionData.readiness.phase}} · {{sectionData.readiness.buildLabel}}</span><h3>Prontidão de release · 0.13.0 RC.1</h3></div>
                   <div class="grimorio-readiness__headline"><i class="{{sectionData.readiness.stateIcon}}"></i><strong>{{sectionData.readiness.stateLabel}}</strong><small>{{sectionData.readiness.passed}}/{{sectionData.readiness.total}} verificações</small></div>
                 </header>
                 <div class="grimorio-readiness__checks">
@@ -437,10 +437,21 @@
                   {{/each}}
                 </div>
                 {{#if sectionData.readiness.blockingFailures}}
-                  <p class="grimorio-admin-note is-warning"><i class="fa-solid fa-shield-halved"></i> Existem {{sectionData.readiness.blockingFailures}} bloqueio(s) no gate RB-8. Corrija os itens marcados como Bloqueio e atualize o Status.</p>
+                  <p class="grimorio-admin-note is-warning"><i class="fa-solid fa-shield-halved"></i> Existem {{sectionData.readiness.blockingFailures}} bloqueio(s) no gate RC. Corrija os itens marcados como Bloqueio e atualize o Status.</p>
                 {{else}}
-                  <p class="grimorio-admin-note is-good"><i class="fa-solid fa-shield-halved"></i> Nenhum bloqueio estrutural da RB-8 foi detectado. A aplicação ao Actor está disponível no perfil Foundry 13.351 / DnD5e 5.3.3; a homologação in-app ainda deve ser concluída antes de promover a linha 0.13 a estável.</p>
+                  <p class="grimorio-admin-note is-good"><i class="fa-solid fa-shield-halved"></i> O RC não possui bloqueios estruturais. A promoção Stable só é liberada quando o checklist in-app estiver integralmente registrado no perfil Foundry 13.351 / DnD5e 5.3.3.</p>
                 {{/if}}
+              </section>
+              <section class="grimorio-admin-card {{sectionData.homologation.stateClass}}">
+                <header><div><span>Gate Stable</span><h3>Homologação in-app do pipeline racial</h3></div><strong>{{sectionData.homologation.completed}}/{{sectionData.homologation.required}}</strong></header>
+                <div class="grimorio-runtime-grid">
+                  <div><span>Estado</span><strong>{{sectionData.homologation.stateLabel}}</strong><small>checklist v{{sectionData.homologation.checklistVersion}}</small></div>
+                  <div><span>Registrada com</span><strong>{{#if sectionData.homologation.recordedWithVersion}}{{sectionData.homologation.recordedWithVersion}}{{else}}—{{/if}}</strong><small>versão do Importer</small></div>
+                  <div><span>Concluída em</span><strong>{{#if sectionData.homologation.completedAt}}{{sectionData.homologation.completedAt}}{{else}}—{{/if}}</strong><small>evidência local do Mundo</small></div>
+                  <div><span>Stable</span><strong>{{#if sectionData.readiness.readyForStable}}Elegível{{else}}Bloqueado{{/if}}</strong><small>RC pode ser testado sem auto-certificação</small></div>
+                </div>
+                <p class="grimorio-admin-note"><i class="fa-solid fa-flask"></i> O módulo não marca a si próprio como homologado. Execute o checklist manual descrito em <code>docs/RACE_BUILD_RB8.md</code> e registre os resultados somente depois dos testes reais.</p>
+                <div class="grimorio-admin-toolbar"><div><strong>Registro do Mestre</strong><span>{{#if sectionData.homologation.homologated}}A evidência atual satisfaz o gate Stable neste runtime.{{else}}A homologação permanece pendente.{{/if}}</span></div><div><button type="button" data-grimorio-record-homologation {{#unless sectionData.homologation.canRecord}}disabled{{/unless}}><i class="fa-solid fa-list-check"></i> Registrar checklist</button>{{#if sectionData.homologation.recorded}}<button type="button" data-grimorio-clear-homologation><i class="fa-solid fa-eraser"></i> Limpar registro</button>{{/if}}</div></div>
               </section>
               <section class="grimorio-admin-card">
                 <header><div><span>Compatibilidade</span><h3>Runtime ativo</h3></div><i class="{{#if sectionData.environmentMatches}}fa-solid fa-circle-check{{else}}fa-solid fa-triangle-exclamation{{/if}}"></i></header>

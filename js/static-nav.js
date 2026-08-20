@@ -8,6 +8,7 @@
     races:'<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19V8l7-4 7 4v11"/><path d="M8 10h8M8 14h8M9 19v-3h6v3"/></svg>',
     backgrounds:'<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h10a4 4 0 014 4v12H8a3 3 0 01-3-3z"/><path d="M8 4v16M11 8h5M11 12h5"/></svg>',
     equipment:'<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3l4 4-4 4-4-4zM13 5h8M17 5v14M13 19h8"/><path d="M4 16l5-5 4 4-5 5z"/></svg>',
+    masteries:'<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20L20 4M14 4h6v6"/><path d="M4 4l16 16M4 4v6h6M14 20h6v-6"/><circle cx="12" cy="12" r="2.2"/></svg>',
     feats:'<svg class="nav-sigil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5.1 5.6.8-4.1 4 1 5.6-5-2.6-5 2.6 1-5.6-4.1-4 5.6-.8z"/><path d="M9.2 18.2L8 22l4-2 4 2-1.2-3.8"/></svg>'
   };
   global.GRIMORIO_STATIC_NAV=Object.freeze([
@@ -16,6 +17,7 @@
     {view:'races',label:'Raças e Subraças',icon:icon.races,activeViews:['races','race']},
     {view:'backgrounds',label:'Antecedentes',icon:icon.backgrounds,activeViews:['backgrounds','background']},
     {view:'equipment',label:'Equipamentos',icon:icon.equipment,activeViews:['equipment']},
+    {view:'weapon-masteries',label:'Maestrias de Armas',icon:icon.masteries,activeViews:['weapon-masteries']},
     {view:'feats',label:'Talentos',icon:icon.feats,activeViews:['feats','feat']}
   ]);
 })(window);

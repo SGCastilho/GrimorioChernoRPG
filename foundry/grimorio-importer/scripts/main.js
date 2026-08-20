@@ -25,6 +25,7 @@ import { raceBuildSupport } from "./race-support.js";
 import { materializeRaceBuild, raceMaterializerSupport } from "./race-materializer.js";
 import { raceAutomationSupport } from "./race-automation.js";
 import { applyRaceBuildToActor, inspectActorRace, raceActorApplicationSupport } from "./race-actor-application.js";
+import { registerReleaseHomologationSettings, raceRuntimeHomologationStatus, raceRuntimeHomologationSupport, recordRaceRuntimeHomologation, clearRaceRuntimeHomologation } from "./release-homologation.js";
 
 
 export function phase10Support() {
@@ -50,6 +51,7 @@ export async function status() {
   const runtime = runtimeInfo();
   const support = phase8Support();
   const packs = packAvailability(defaultPackRuntime());
+  const raceHomologation = raceRuntimeHomologationStatus();
   const info = {
     module: MODULE_ID,
     importerVersion: IMPORTER_VERSION,
@@ -73,6 +75,9 @@ export async function status() {
     raceMaterializerSupport: raceMaterializerSupport(),
     raceAutomationSupport: raceAutomationSupport(),
     raceActorApplicationSupport: raceActorApplicationSupport(),
+    raceRuntimeHomologationSupport: raceRuntimeHomologationSupport(),
+    raceRuntimeHomologation: raceHomologation,
+    raceActorHomologated: raceHomologation.homologated === true,
     preflightSupport: preflightSupport(),
     compendiumPreflightSupport: compendiumPreflightSupport(),
     importExecutionSupport: importExecutionSupport(),
@@ -409,6 +414,8 @@ async function configureSelectedActor() {
   }
 }
 
+Hooks.once("init", () => { registerReleaseHomologationSettings(); });
+
 registerSpecialRuntimeHooks();
 registerFeatChoiceHooks();
 registerFeatRuntimeHooks();
@@ -472,6 +479,10 @@ Hooks.once("ready", () => {
       raceMaterializerSupport,
       raceAutomationSupport,
       raceActorApplicationSupport,
+      raceRuntimeHomologationSupport,
+      raceRuntimeHomologationStatus,
+      recordRaceRuntimeHomologation,
+      clearRaceRuntimeHomologation,
       inspectActorRace,
       applyRaceBuildToActor,
       syncConditionalFeatEffects,
@@ -489,7 +500,7 @@ Hooks.once("ready", () => {
   }
   const packs = packAvailability(defaultPackRuntime());
   if (game.user?.isGM && packs.some(pack => !pack.available)) ui.notifications.error("Grimório Importer: um ou mais compêndios não foram carregados. Verifique a instalação do módulo.");
-  console.info(`[${MODULE_ID}] Pronto — ${IMPORTER_VERSION} · RB-8 aplicação racial ao Actor ativa em modo de homologação; Automação de Talentos 42/42 permanece homologada. Foundry ${game.version}; ${game.system?.id} ${game.system?.version}.`, { packs, feats: featSupport(), featAutomation: featAutomationSupport(), featChoices: featChoiceSupport(), featRuntime: featRuntimeSupport(), featAudit: featAuditSupport(), preflight: compendiumPreflightSupport(), execution: importExecutionSupport(), central: centralParitySupport(), commandRouting: commandRoutingSupport(), stable: releaseReadinessSupport(), automation: automationCoverage() });
+  console.info(`[${MODULE_ID}] Pronto — ${IMPORTER_VERSION} · 0.13.0 RC.1 em feature freeze; aplicação racial RB-8 ativa e gate de homologação in-app disponível; Automação de Talentos 42/42 permanece homologada. Foundry ${game.version}; ${game.system?.id} ${game.system?.version}.`, { packs, feats: featSupport(), featAutomation: featAutomationSupport(), featChoices: featChoiceSupport(), featRuntime: featRuntimeSupport(), featAudit: featAuditSupport(), preflight: compendiumPreflightSupport(), execution: importExecutionSupport(), central: centralParitySupport(), commandRouting: commandRoutingSupport(), stable: releaseReadinessSupport(), automation: automationCoverage() });
 });
 
 Hooks.on("chatMessage", (_chatLog, message) => {
