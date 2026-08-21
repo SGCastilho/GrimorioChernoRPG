@@ -43,6 +43,7 @@
   }
 
   function allClasses() { return array(global.GRIMORIO_CLASSES); }
+  function exportableClasses() { return allClasses().filter(item => item?.foundryExport?.supported !== false); }
   function allSubclasses() { return array(global.GRIMORIO_SUBCLASSES); }
 
   function classById(id) { return allClasses().find(item => item.id === id) || null; }
@@ -87,6 +88,7 @@
     const api = bundleApi();
     const cls = classById(classId);
     if (!cls) throw new Error(`Classe não encontrada: ${classId}`);
+    if (cls?.foundryExport?.supported === false) throw new Error(cls.foundryExport.reason || 'Esta classe ainda não possui contrato Foundry compatível.');
     const classAnalysis = api.inspectClass(cls);
     if (!classAnalysis.ok) throw new Error(classAnalysis.errors.join(' '));
     const subs = allSubclasses().filter(item => item.classId === classId);
@@ -111,7 +113,7 @@
   function buildCatalogPackage() {
     const api = bundleApi();
     const bundles = [];
-    for (const cls of allClasses()) {
+    for (const cls of exportableClasses()) {
       const analysis = api.inspectClass(cls);
       if (!analysis.ok) throw new Error(`${cls.name}: ${analysis.errors.join(' ')}`);
       bundles.push(analysis.bundle);
@@ -133,6 +135,7 @@
     const api = bundleApi();
     const cls = classById(classId);
     if (!cls) throw new Error(`Classe não encontrada: ${classId}`);
+    if (cls?.foundryExport?.supported === false) throw new Error(cls.foundryExport.reason || 'Esta classe ainda não possui contrato Foundry compatível.');
     const analysis = api.inspectClass(cls);
     if (!analysis.ok) throw new Error(analysis.errors.join(' '));
     return analysis.bundle;
@@ -175,7 +178,7 @@
       } else errors.push(`Tipo de bundle não suportado: ${bundle?.kind}.`);
     }
     if (pkg?.identity?.scope === 'full-catalog') {
-      if (pkg.summary?.classes !== allClasses().length) warnings.push('A quantidade de classes do pacote difere do catálogo carregado.');
+      if (pkg.summary?.classes !== exportableClasses().length) warnings.push('A quantidade de classes exportáveis do pacote difere do catálogo carregado.');
       if (pkg.summary?.subclasses !== allSubclasses().length) warnings.push('A quantidade de subclasses do pacote difere do catálogo carregado.');
     }
     const calculated = {

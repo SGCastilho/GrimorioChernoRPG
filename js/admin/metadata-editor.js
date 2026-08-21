@@ -70,7 +70,7 @@ function inputFor(definition) {
 
 export async function renderMetadataEditor(main, setTitle) {
   setTitle('Metadados de Classes');
-  main.replaceChildren(node('p', 'admin-loading', 'Carregando 27 classes e 400 subclasses…'));
+  main.replaceChildren(node('p', 'admin-loading', 'Carregando 28 classes e 400 subclasses…'));
   let catalog;
   try { catalog = await adminRequest('class-metadata'); }
   catch (error) {

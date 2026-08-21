@@ -7,7 +7,7 @@
  */
 (function () {
   const CONSULTATION_KEY = 'grimorio-consulta-classes-v1';
-  const VALID_CLASS_TABS = ['overview','progression','features','subclasses','tables','references'];
+  const VALID_CLASS_TABS = ['overview','progression','features','specializations','subclasses','tables','references'];
   const VALID_SUBCLASS_TABS = ['overview','progression','features','tables'];
   let consultationState = readLocal(CONSULTATION_KEY, {}) || {};
   let pendingFeatureJump = null;
@@ -304,8 +304,36 @@
     const basics = c.basics ? renderBasicsPanel(c) : '';
     const progressionHtml = progression ? renderProgressionTable(c, progression, state.level) : '';
     const featuresHtml = (c.features || []).length ? featuresTab(c, state.level) : '';
+    const specializationHtml = c.specializationSystem ? specializationOverviewBlock(c) : '';
     const subclassesHtml = subs.length ? subclassesTab(c, subs, state.level) : '';
-    return '<div class="complete-overview">' + overview + basics + creation + progressionHtml + featuresHtml + subclassesHtml + '</div>';
+    return '<div class="complete-overview">' + overview + basics + creation + progressionHtml + featuresHtml + specializationHtml + subclassesHtml + '</div>';
+  }
+
+  function specializationOverviewBlock(c) {
+    const system = c.specializationSystem;
+    if (!system) return '';
+    return '<section class="class-section"><div class="content-panel alchemist-specialization-overview" style="--card-color:' + attr(c.color) + '"><div class="specialization-overview-copy"><div class="eyebrow"><span class="dot"></span>Sistema modular próprio</div><h2 class="page-title small-title">' + esc(system.label || 'Especializações') + '</h2><p class="section-help">' + esc(system.intro || '') + '</p></div><button class="action-btn" type="button" onclick="setConsultationTab(\'' + attr(c.id) + '\',\'specializations\',\'class\')">Abrir ' + esc(system.count || 0) + ' especializações →</button></div></section>';
+  }
+
+  function specializationMiniTable(table) {
+    if (!table?.columns?.length || !table?.rows?.length) return '';
+    return '<div class="specialization-mini-table"><table><thead><tr>' + table.columns.map(column => '<th>' + esc(column) + '</th>').join('') + '</tr></thead><tbody>' + table.rows.map(row => '<tr>' + row.map(value => '<td>' + esc(value) + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
+  }
+
+  function specializationsTab(c) {
+    const system = c.specializationSystem;
+    if (!system) return '<div class="empty"><b>Nenhum sistema modular</b>Esta classe usa o modelo convencional de subclasses.</div>';
+    const conflict = system.sourceConflict ? '<div class="specialization-conflict"><strong>' + esc(system.sourceConflict.title) + '</strong><p>' + esc(system.sourceConflict.text) + '</p></div>' : '';
+    const categoryConflict = system.categoryConflict ? '<div class="specialization-conflict"><strong>Quantidade de categorias na fonte</strong><p>' + esc(system.categoryConflict) + '</p></div>' : '';
+    const rules = (system.rules || []).length ? '<div class="specialization-rules-grid">' + system.rules.map(rule => '<article class="specialization-rule-card"><strong>' + esc(rule.title) + '</strong><p>' + esc(rule.text) + '</p></article>').join('') + '</div>' : '';
+    const categories = (system.categories || []).map(category => {
+      const items = category.specializations || [];
+      return '<details class="modular-specialization-category"><summary><div class="specialization-category-title"><h3>' + esc(category.name) + '</h3><span class="specialization-chip">' + items.length + ' opções</span>' + (category.improvisedBlocked ? '<span class="specialization-chip prerequisite">Não disponível por Alquimia Improvisada</span>' : '') + '<p>' + esc(category.description || '') + '</p></div><div class="specialization-category-meta"><span>p. ' + esc(category.page || '') + '</span><span class="specialization-category-chevron" aria-hidden="true">›</span></div></summary><div class="specialization-category-body">' + items.map(item => {
+        const prereq = (item.requires || []).length ? '<span class="specialization-chip prerequisite">Requer ' + esc(item.requires.join(' + ')) + '</span>' : '';
+        return '<details class="modular-specialization-card"><summary><div class="specialization-card-heading"><strong>' + esc(item.name) + '</strong><span class="specialization-chip repeatable">Repetível</span>' + prereq + '</div><div class="specialization-card-meta"><span class="source-badge">' + esc(c.source?.title || 'Fonte') + ' · p. ' + esc(item.page || category.page || '') + '</span><span aria-hidden="true">＋</span></div></summary><div class="specialization-card-body"><div class="prose">' + formatRichText(item.text || '') + '</div>' + specializationMiniTable(item.table) + '</div></details>';
+      }).join('') + '</div></details>';
+    }).join('');
+    return '<section class="class-section alchemist-specialization-section"><div class="specialization-system-intro"><div><div class="eyebrow"><span class="dot"></span>Não são subclasses</div><h2 class="page-title small-title">' + esc(system.label || 'Especializações') + '</h2><p>' + esc(system.intro || '') + '</p></div><div class="specialization-system-counts"><span>' + esc(system.count || 0) + ' especializações</span><span>' + esc(system.actualCategoryCount || (system.categories || []).length) + ' categorias listadas</span><span>Escolhas repetíveis</span></div></div>' + conflict + categoryConflict + rules + '<div class="section-heading"><div><h2 class="page-title small-title">Campos de estudo</h2><p class="section-help">As categorias começam recolhidas. Abra somente o campo que deseja consultar; dentro dele, cada Especialização também fica recolhida até ser selecionada.</p></div></div><div class="specialization-category-list">' + categories + '</div></section>';
   }
 
   function featuresTab(c, selectedLevel) {
@@ -346,6 +374,7 @@
     switch (state.tab) {
       case 'progression': return renderProgressionTable(c, progression, state.level);
       case 'features': return featuresTab(c, state.level);
+      case 'specializations': return specializationsTab(c);
       case 'subclasses': return subclassesTab(c, subs, state.level);
       case 'tables': return renderStructuredTables(c);
       case 'references': return referencesTab(c);
@@ -363,10 +392,14 @@
       {id:'overview',label:'Visão geral'},
       {id:'progression',label:'Progressão',count:progression?.rows?.length || 0},
       {id:'features',label:'Características',count:(c.features || []).length},
+      {id:'specializations',label:c.specializationSystem?.label || 'Especializações',count:c.specializationSystem?.count || 0},
       {id:'subclasses',label:'Subclasses',count:subs.length},
       {id:'tables',label:'Tabelas',count:(c.tables || []).length},
       {id:'references',label:'Referências',count:(c.references || []).filter(x => x.kind !== 'subclassIntro').length}
-    ].filter(tab => tab.id !== 'progression' || progression).filter(tab => !['tables','references'].includes(tab.id) || tab.count);
+    ].filter(tab => tab.id !== 'progression' || progression)
+      .filter(tab => tab.id !== 'specializations' || c.specializationSystem)
+      .filter(tab => tab.id !== 'subclasses' || tab.count || !c.specializationSystem)
+      .filter(tab => !['tables','references'].includes(tab.id) || tab.count);
 
     const selectedRow = state.level && progression ? progression.rows.find(row => row.level === state.level) : null;
     const contentLabel = selectedRow ? 'Nível ' + state.level + ' · ' + selectedRow.proficiency : (progression ? 'Progressão do 1º ao 20º nível' : 'Classe personalizada');

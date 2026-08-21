@@ -1,9 +1,10 @@
 {
-  "version": "5.69.1",
-  "classes": 27,
+  "version": "5.70.0",
+  "classes": 28,
   "subclasses": 400,
   "classNames": [
     "Alma Favorecida",
+    "Alquimista",
     "Artífice",
     "Bardo",
     "Bruxo",
@@ -139,6 +140,10 @@
     {
       "id": "street-fighter-homebrew",
       "name": "Lutador de Rua"
+    },
+    {
+      "id": "alchemist-fma-homebrew",
+      "name": "Alquimista"
     }
   ],
   "subclassCounts": {
@@ -168,10 +173,15 @@
     "Sábio": 1,
     "Spellblade": 9,
     "Cultivador": 3,
-    "Lutador de Rua": 1
+    "Lutador de Rua": 1,
+    "Alquimista": 0
   },
-  "uiRevision": "Arte racial estática — v5.50.1",
+  "uiRevision": "Alquimista com Especializações Modulares — v5.70.0",
   "improvements": [
+    "Integra Alquimista FMA como a 28ª classe do Grimório, com progressão 1–20, Vigor Alquímico, Círculos de Transmutação e tabelas centrais.",
+    "Cria uma aba própria de 40 Especializações Alquímicas em 10 categorias recolhíveis; Especializações não são tratadas como subclasses e todas são marcadas como repetíveis conforme a fonte.",
+    "Preserva sem correção silenciosa as duas divergências do PDF: “9 categorias” apesar de dez serem enumeradas, e níveis de aquisição de Especialização diferentes entre a tabela da p. 4 e o texto da p. 6.",
+    "Mantém o Alquimista fora do pacote Foundry de classes/subclasses enquanto o Grimório Importer 0.13.0-RC1 não possuir um contrato para especializações modulares repetíveis.",
     "Grimório Importer 0.13.0-rc.1: pipeline racial RB-1–RB-8 entra em feature freeze com gate de release separado entre RC e Stable.",
     "RC.1 adiciona registro estruturado de homologação in-app no Foundry 13.351 / DnD5e 5.3.3; o módulo não se auto-certifica e Stable permanece bloqueado sem checklist manual completo.",
     "Substituição racial ganha rollback assistido via AdvancementManager: se a aplicação da nova raça for cancelada após a remoção da anterior, o Importer inicia restauração da Race anterior antes de encerrar o fluxo.",
@@ -658,7 +668,7 @@
   "sourceRegistry": true,
   "sourceRegistryFile": "data/sources.js",
   "registryEngineFile": "js/registry.js",
-  "registeredSources": 18,
+  "registeredSources": 19,
   "registeredSpellCatalogs": 11,
   "validationScript": "tools/validate-project.js",
   "bladeBoneBenefitSpellDescriptions": 108,
@@ -1476,5 +1486,17 @@
   "advancedWeaponMasteryProgressionRows": 10,
   "advancedWeaponMasteryPlanner": true,
   "advancedWeaponMasteryPersistence": "localStorage",
-  "advancedWeaponMasteryBuilderSchema": "grimorio-advanced-weapon-mastery-builder-v1"
+  "advancedWeaponMasteryBuilderSchema": "grimorio-advanced-weapon-mastery-builder-v1",
+  "alchemistFmaClassIntegrated": true,
+  "alchemistFmaSourceTitle": "D&D Wiki — Alchemist, FMA (5e Class)",
+  "alchemistFmaProgressionRows": 20,
+  "alchemistFmaClassFeatures": 20,
+  "alchemistFmaClassTables": 3,
+  "alchemistFmaSpecializationSystem": "modular-repeatable",
+  "alchemistFmaSpecializations": 40,
+  "alchemistFmaSpecializationCategories": 10,
+  "alchemistFmaSourceCategoryClaim": 9,
+  "alchemistFmaSubclassEntries": 0,
+  "alchemistFmaFoundryExportSupported": false,
+  "alchemistFmaSourcePages": "1–18"
 }

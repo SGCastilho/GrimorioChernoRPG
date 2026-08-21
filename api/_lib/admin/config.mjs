@@ -32,6 +32,7 @@ export const METADATA_CONTENT_FILES = Object.freeze([
   'data/homebrew-spellblade-class.js',
   'data/cultivator-class.js',
   'data/homebrew-street-fighter.js',
+  'data/homebrew-alchemist-fma.js',
   'data/lyre-subclasses.js',
   'data/zagalhta-specializations.js',
   'data/zagalhta-subclasses-standard.js',

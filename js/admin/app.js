@@ -130,11 +130,11 @@ function renderDashboard() {
     const editor = element('a', 'admin-dashboard-card');
     editor.href = '/admin/class-art';
     editor.dataset.adminRoute = '';
-    editor.append(element('span', 'admin-card-kicker', 'MVP'), element('h2', '', 'Artes de Classes'), element('p', '', 'Cover e Detail Art das 27 classes, com preview, confirmação e controle de conflito.'));
+    editor.append(element('span', 'admin-card-kicker', 'MVP'), element('h2', '', 'Artes de Classes'), element('p', '', 'Cover e Detail Art das 28 classes, com preview, confirmação e controle de conflito.'));
     const metadata = element('a', 'admin-dashboard-card');
     metadata.href = '/admin/class-metadata';
     metadata.dataset.adminRoute = '';
-    metadata.append(element('span', 'admin-card-kicker', 'Conteúdo'), element('h2', '', 'Metadados'), element('p', '', 'Edite campos permitidos das 27 classes e 400 subclasses sem tocar em IDs, progressões ou features.'));
+    metadata.append(element('span', 'admin-card-kicker', 'Conteúdo'), element('h2', '', 'Metadados'), element('p', '', 'Edite campos permitidos das 28 classes e 400 subclasses sem tocar em IDs, progressões ou features.'));
     const feats = element('a', 'admin-dashboard-card');
     feats.href = '/admin/feats';
     feats.dataset.adminRoute = '';

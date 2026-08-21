@@ -170,6 +170,14 @@
       overlay: 0.80
     },
 
+    'alchemist-fma-homebrew': {
+      image: '',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80,
+      scale: 1.06
+    },
+
   };
 
   function clamp(value,min,max,fallback){

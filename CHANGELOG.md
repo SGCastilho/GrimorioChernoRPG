@@ -1,5 +1,15 @@
 ## 5.69.1
 
+## 5.70.0 — Alquimista FMA e Especializações Modulares
+
+- Integra a classe homebrew **Alquimista** com progressão do 1º ao 20º nível, Vigor Alquímico, Círculos de Transmutação, características e tabelas da fonte PT-BR fornecida.
+- Adiciona uma aba própria **Especializações Alquímicas** com 40 opções em 10 categorias recolhíveis. Elas não são subclasses, podem ser escolhidas mais de uma vez e preservam seus pré-requisitos.
+- A interface não impõe um contador automático de Especializações porque a tabela da p. 4 e o bloco mecânico da p. 6 apresentam cronogramas de aquisição incompatíveis; ambos ficam documentados.
+- Preserva a inconsistência da p. 7, que afirma haver 9 categorias apesar de enumerar dez.
+- O Alquimista fica explicitamente fora do pacote Foundry de classes/subclasses do Importer 0.13.0-RC1 até existir um contrato para escolhas modulares repetíveis.
+- Os arquivos manuais de arte racial e todas as integrações da v5.69.1 permanecem inalterados.
+
+
 - **Raças e Subraças — redução de densidade visual:** os blocos “Construção racial em Somnus Domina” e “Traços de Legado Planares” agora são painéis recolhíveis, fechados por padrão e expansíveis por clique.
 - O comportamento usa `details/summary` nativo, preservando acessibilidade por teclado e sem alterar qualquer regra do Race Builder, Sangue Misto, Legados ou exportação Foundry.
 - Adicionado gate `validate-race-collapsibles-5.69.1.js` para impedir regressões que voltem a abrir esses painéis por padrão.

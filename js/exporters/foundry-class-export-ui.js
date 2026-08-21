@@ -66,6 +66,7 @@
   function buildClassState(classId, mode='bundle') {
     const cls = typeof getClass === 'function' ? getClass(classId) : null;
     if (!cls) throw new Error('Classe não encontrada.');
+    if (cls?.foundryExport?.supported === false) throw new Error(cls.foundryExport.reason || 'Esta classe ainda não possui contrato Foundry compatível.');
     const analysis = bundleApi().inspectClass(cls);
     if (!analysis.ok) {
       return { kind:'class', mode, classId, name:cls.name, ok:false, errors:analysis.errors, warnings:[], json:'', filename:'', summary:{bundles:0,classes:0,subclasses:0,features:0} };
@@ -161,7 +162,7 @@
       '</div>';
   }
   function subclassButton(id) { return '<button class="action-btn foundry-export-trigger" type="button" onclick="openFoundrySubclassExport(\''+escapeAttr(id)+'\')"><span class="foundry-export-icon">⇩</span> Exportar Foundry</button>'; }
-  function catalogToolbar() { const c=Array.isArray(global.GRIMORIO_CLASSES)?global.GRIMORIO_CLASSES.length:0;const s=Array.isArray(global.GRIMORIO_SUBCLASSES)?global.GRIMORIO_SUBCLASSES.length:0;return '<div class="foundry-batch-toolbar foundry-class-catalog-toolbar"><div><strong>Foundry VTT · Classes</strong><span>Baixe as '+c+' classes e '+s+' subclasses integradas em um único pacote para o Grimório Importer.</span></div><button class="action-btn foundry-export-trigger" type="button" onclick="openFoundryClassCatalogExport()"><span class="foundry-export-icon">⇩</span> Exportar catálogo <b>'+(c+s)+'</b></button></div>'; }
+  function catalogToolbar() { const classes=Array.isArray(global.GRIMORIO_CLASSES)?global.GRIMORIO_CLASSES:[];const c=classes.filter(item=>item?.foundryExport?.supported!==false).length;const s=Array.isArray(global.GRIMORIO_SUBCLASSES)?global.GRIMORIO_SUBCLASSES.length:0;return '<div class="foundry-batch-toolbar foundry-class-catalog-toolbar"><div><strong>Foundry VTT · Classes</strong><span>Baixe as '+c+' classes compatíveis e '+s+' subclasses em um único pacote. Sistemas modulares ainda sem contrato ficam fora do JSON.</span></div><button class="action-btn foundry-export-trigger" type="button" onclick="openFoundryClassCatalogExport()"><span class="foundry-export-icon">⇩</span> Exportar catálogo <b>'+(c+s)+'</b></button></div>'; }
 
   if (typeof viewClass === 'function') {
     const base=viewClass;

@@ -173,6 +173,13 @@
       overlay: 0.80
     },
 
+    'alchemist-fma-homebrew': {
+      image: '',
+      position: 'center 10%',
+      blur: 2,
+      overlay: 0.80
+    },
+
   };
 
   function imgurParts(url){

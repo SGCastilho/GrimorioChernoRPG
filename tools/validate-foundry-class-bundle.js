@@ -39,14 +39,15 @@ function load(file) {
   'data/tasha-subclasses.js',
   'data/scag-subclasses.js',
   'data/homebrew-paladin-bahamut.js',
-  'data/homebrew-spellblade-class.js','data/cultivator-class.js','data/homebrew-street-fighter.js',
+  'data/homebrew-spellblade-class.js','data/cultivator-class.js','data/homebrew-street-fighter.js','data/homebrew-alchemist-fma.js',
   'data/export/foundry-class-overrides.js',
   'js/exporters/registry.js',
   'js/exporters/foundry-class-bundle.js'
 ].forEach(load);
 
 const api = global.GRIMORIO_FOUNDRY_CLASS_BUNDLE;
-const classes = global.GRIMORIO_CLASSES || [];
+const allLoadedClasses = global.GRIMORIO_CLASSES || [];
+const classes = allLoadedClasses.filter(item => item?.foundryExport?.supported !== false);
 const subclasses = global.GRIMORIO_SUBCLASSES || [];
 const report = api.inspectCatalog(classes, subclasses);
 const errors = [];
@@ -64,6 +65,9 @@ const EXPECTED = {
 };
 
 function assert(condition, message) { if (!condition) errors.push(message); }
+
+const unsupportedClass = allLoadedClasses.find(item => item.id === 'alchemist-fma-homebrew');
+assert(Boolean(unsupportedClass) && unsupportedClass.foundryExport?.supported === false, 'Alquimista FMA deve permanecer fora do contrato Foundry legado de classes/subclasses.');
 
 assert(report.classes.total === EXPECTED.classes, `Esperadas ${EXPECTED.classes} classes; obtidas ${report.classes.total}.`);
 assert(report.classes.bundleReady === EXPECTED.classes, `Todas as classes devem gerar bundle; prontas ${report.classes.bundleReady}/${EXPECTED.classes}.`);

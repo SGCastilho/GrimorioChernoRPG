@@ -21,7 +21,7 @@ As classes vêm de `manifest.classIndex`, que o gate do projeto valida contra `G
 
 ## Metadados de classes e subclasses
 
-`/admin/class-metadata` descobre as 27 classes e 400 subclasses diretamente nos 23 arquivos de conteúdo autorizados. O módulo não aceita paths, IDs novos nem alterações estruturais.
+`/admin/class-metadata` descobre as 28 classes e 400 subclasses diretamente nos 24 arquivos de conteúdo autorizados. O módulo não aceita paths, IDs novos nem alterações estruturais.
 
 - Classes: nome, nome original, descrição, dado de vida, habilidade principal, salvaguardas, armaduras, armas, ferramentas, perícias, chave de sigilo, cor, página da tabela e fonte.
 - Subclasses: nome, nome original, descrição, página principal e fonte.

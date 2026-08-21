@@ -16,10 +16,10 @@ test('mock lê fontes reais e nunca escreve no disco', async () => {
   assert.equal(again.files['data/class-covers.js'].content, snapshot.files['data/class-covers.js'].content);
 });
 
-test('serviço lista 27 classes e simula cover sem persistência', async () => {
+test('serviço lista 28 classes e simula cover sem persistência', async () => {
   const service = new ClassArtService(new MockRepositoryService());
   const initial = await service.list();
-  assert.equal(initial.classes.length, 27);
+  assert.equal(initial.classes.length, 28);
   const selected = initial.classes.find(item => item.id === 'sorcerer');
   const saved = await service.save({
     classId: 'sorcerer',

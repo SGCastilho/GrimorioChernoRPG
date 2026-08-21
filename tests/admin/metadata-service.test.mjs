@@ -9,7 +9,7 @@ process.env.VERCEL_ENV = 'development';
 test('lista e simula metadados de classe sem persistir no disco', async () => {
   const service = new MetadataService(new MockRepositoryService());
   const catalog = await service.list();
-  assert.equal(catalog.classes.length, 27);
+  assert.equal(catalog.classes.length, 28);
   assert.equal(catalog.subclasses.length, 400);
   const entity = catalog.classes.find(item => item.id === 'sorcerer');
   const saved = await service.save({ entityType: 'class', entityId: entity.id, changes: { ability: 'Carisma e teste' }, expected: { entryHash: entity.revision.entryHash } });

@@ -309,6 +309,27 @@
       ]
     },
     {
+      id: 'dandwiki-alchemist-fma',
+      title: 'D&D Wiki — Alchemist, FMA (5e Class)',
+      shortTitle: 'Alquimista FMA — D&D Wiki',
+      filterLabel: 'Alquimista FMA — D&D Wiki',
+      homeLabel: 'Alquimista FMA — D&D Wiki',
+      catalogLabel: 'Alquimista FMA — D&D Wiki',
+      kind: 'homebrew',
+      order: 86,
+      showOnHome: true,
+      showInAbout: true,
+      aliases: ['Alchemist, FMA (5e Class)', 'Alquimista FMA', 'Alchemist FMA'],
+      matchIncludes: ['Alchemist, FMA', 'Alquimista FMA'],
+      about: [
+        'Classe homebrew Alquimista integrada a partir da edição PT-BR diagramada fornecida pelo usuário, com Círculos de Transmutação, Vigor Alquímico, progressão do 1º ao 20º nível e 40 Especializações Alquímicas.',
+        'As Especializações Alquímicas são tratadas como um sistema modular próprio, não como subclasses: podem ser adquiridas várias vezes, possuem pré-requisitos e a mesma Especialização pode ser escolhida mais de uma vez.',
+        'A fonte afirma possuir 9 categorias, mas enumera dez. O Grimório apresenta as dez categorias efetivamente listadas e preserva essa divergência.',
+        'A tabela de progressão e o texto da característica Especialização Alquímica também indicam níveis diferentes de aquisição. O Grimório preserva ambas as versões e, por isso, não cria um contador automático de Especializações.',
+        'A fonte registra a revisão oldid=1926577 da página D&D Wiki e informa disponibilidade sob GNU Free Documentation License 1.3, exceto quando indicado de outra forma.'
+      ]
+    },
+    {
       id: 'custom',
       title: 'Conteúdo próprio',
       shortTitle: 'Conteúdo próprio',

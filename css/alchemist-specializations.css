@@ -1,0 +1,89 @@
+/* Grimório v5.70.0 — Especializações modulares do Alquimista FMA. */
+.alchemist-specialization-overview{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;
+  border:1px solid rgba(196,143,83,.28);background:linear-gradient(135deg,rgba(165,109,67,.13),rgba(21,25,36,.78));
+}
+.alchemist-specialization-overview .specialization-overview-copy{max-width:68ch}
+.alchemist-specialization-overview .action-btn{white-space:nowrap}
+.specialization-system-intro{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:start;
+  padding:1.15rem 1.25rem;border:1px solid rgba(196,143,83,.32);border-radius:14px;
+  background:linear-gradient(135deg,rgba(165,109,67,.15),rgba(21,25,36,.84));
+  margin-bottom:1rem;
+}
+.specialization-system-intro h2{margin:.2rem 0 .45rem}
+.specialization-system-intro p{margin:0;color:var(--muted);line-height:1.65}
+.specialization-system-counts{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:flex-end}
+.specialization-system-counts span,
+.specialization-chip{
+  display:inline-flex;align-items:center;gap:.35rem;border:1px solid rgba(198,159,91,.35);
+  border-radius:999px;padding:.3rem .58rem;font-size:.72rem;line-height:1.1;color:var(--gold);
+  background:rgba(198,159,91,.08);font-weight:700;letter-spacing:.025em;
+}
+.specialization-chip.prerequisite{color:#d9c6a5;border-color:rgba(217,198,165,.25);background:rgba(217,198,165,.06)}
+.specialization-chip.repeatable{color:#c8d8ff;border-color:rgba(128,158,222,.3);background:rgba(91,116,174,.08)}
+.specialization-conflict{
+  border:1px solid rgba(213,154,73,.42);border-left:3px solid #d59a49;border-radius:12px;
+  padding:1rem 1.05rem;background:rgba(213,154,73,.075);margin:0 0 1rem;
+}
+.specialization-conflict strong{display:block;color:#efc57f;margin-bottom:.35rem}
+.specialization-conflict p{margin:.25rem 0 0;color:var(--muted);line-height:1.6}
+.specialization-rules-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem;margin:1rem 0 1.25rem}
+.specialization-rule-card{
+  padding:.85rem .9rem;border-radius:12px;border:1px solid var(--border);
+  background:rgba(17,21,31,.62);
+}
+.specialization-rule-card strong{display:block;margin-bottom:.35rem;color:var(--text)}
+.specialization-rule-card p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.55}
+.specialization-category-list{display:grid;gap:.75rem}
+.modular-specialization-category{
+  border:1px solid var(--border);border-radius:14px;background:rgba(16,20,30,.56);overflow:hidden;
+}
+.modular-specialization-category>summary{
+  list-style:none;cursor:pointer;padding:1rem 1.05rem;display:grid;grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;gap:1rem;transition:background .16s ease;
+}
+.modular-specialization-category>summary::-webkit-details-marker,
+.modular-specialization-card>summary::-webkit-details-marker{display:none}
+.modular-specialization-category>summary:hover{background:rgba(255,255,255,.025)}
+.specialization-category-title{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.specialization-category-title h3{margin:0;font-size:1.02rem}
+.specialization-category-title p{flex-basis:100%;margin:.2rem 0 0;color:var(--muted);font-size:.85rem;line-height:1.45}
+.specialization-category-meta{display:flex;align-items:center;gap:.6rem;color:var(--muted);font-size:.76rem;white-space:nowrap}
+.specialization-category-chevron{font-size:1rem;transition:transform .16s ease}
+.modular-specialization-category[open] .specialization-category-chevron{transform:rotate(90deg)}
+.specialization-category-body{padding:0 1rem 1rem;display:grid;gap:.6rem}
+.modular-specialization-card{
+  border:1px solid rgba(255,255,255,.09);border-radius:11px;background:rgba(7,10,17,.44);overflow:hidden;
+}
+.modular-specialization-card>summary{
+  list-style:none;cursor:pointer;padding:.75rem .82rem;display:flex;align-items:center;justify-content:space-between;gap:.8rem;
+}
+.modular-specialization-card>summary:hover{background:rgba(255,255,255,.025)}
+.specialization-card-heading{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;min-width:0}
+.specialization-card-heading strong{font-family:var(--serif);font-size:.95rem}
+.specialization-card-meta{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;justify-content:flex-end}
+.specialization-card-body{padding:.05rem .85rem .9rem;border-top:1px solid rgba(255,255,255,.07)}
+.specialization-card-body .prose{font-size:.9rem}
+.specialization-mini-table{margin-top:.85rem;overflow:auto;border:1px solid var(--border);border-radius:9px}
+.specialization-mini-table table{width:100%;border-collapse:collapse;font-size:.83rem}
+.specialization-mini-table th,.specialization-mini-table td{padding:.48rem .62rem;border-bottom:1px solid var(--border);text-align:left}
+.specialization-mini-table tr:last-child td{border-bottom:0}
+.specialization-mini-table th{color:var(--gold);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;background:rgba(198,159,91,.06)}
+.foundry-unsupported-note{
+  display:inline-flex;align-items:center;gap:.4rem;color:var(--muted);font-size:.78rem;
+  border:1px solid var(--border);border-radius:8px;padding:.45rem .65rem;background:rgba(255,255,255,.025)
+}
+@media(max-width:1000px){
+  .specialization-rules-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:720px){
+  .specialization-system-intro{grid-template-columns:1fr}
+  .specialization-system-counts{justify-content:flex-start}
+  .specialization-rules-grid{grid-template-columns:1fr}
+  .alchemist-specialization-overview{display:block}
+  .alchemist-specialization-overview .action-btn{margin-top:.75rem;width:100%}
+  .modular-specialization-category>summary{grid-template-columns:1fr auto}
+  .specialization-card-meta{justify-content:flex-start}
+  .modular-specialization-card>summary{align-items:flex-start;flex-direction:column}
+}

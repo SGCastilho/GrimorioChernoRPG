@@ -6,9 +6,9 @@ import { editArtSource, parseArtSource } from '../../api/_lib/admin/art-source.m
 const covers = await readFile(new URL('../../data/class-covers.js', import.meta.url), 'utf8');
 const details = await readFile(new URL('../../data/class-detail-art.js', import.meta.url), 'utf8');
 
-test('analisa os dois mapas reais com as 27 entradas do manifesto', () => {
-  assert.equal(Object.keys(parseArtSource(covers, 'covers').entries).length, 27);
-  assert.equal(Object.keys(parseArtSource(details, 'detailArt').entries).length, 27);
+test('analisa os dois mapas reais com as 28 entradas do manifesto', () => {
+  assert.equal(Object.keys(parseArtSource(covers, 'covers').entries).length, 28);
+  assert.equal(Object.keys(parseArtSource(details, 'detailArt').entries).length, 28);
 });
 
 test('edita somente a entrada e os campos solicitados', () => {
