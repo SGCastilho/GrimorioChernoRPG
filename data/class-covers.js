@@ -174,7 +174,7 @@
     },
 
     'alchemist-fma-homebrew': {
-      image: '',
+      image: 'https://imgur.com/D0HcZWh.png',
       position: 'center 10%',
       blur: 2,
       overlay: 0.80
